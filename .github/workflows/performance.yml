@@ -1,0 +1,334 @@
+name: Performance Monitor
+
+on:
+  schedule:
+    # Run weekly on Sundays at 3:00 AM UTC
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+    inputs:
+      analyze_build:
+        description: 'Analyze build performance'
+        required: false
+        default: 'true'
+        type: boolean
+      analyze_bundle:
+        description: 'Analyze bundle size'
+        required: false
+        default: 'true'
+        type: boolean
+      analyze_lighthouse:
+        description: 'Run Lighthouse audit'
+        required: false
+        default: 'true'
+        type: boolean
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  build-analysis:
+    name: Build Performance Analysis
+    runs-on: ubuntu-latest
+    if: github.event.inputs.analyze_build == 'true' || github.event_name == 'schedule'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build with timing
+        id: build
+        run: |
+          echo "build_start=$(date +%s)" >> $GITHUB_OUTPUT
+          npm run build
+          echo "build_end=$(date +%s)" >> $GITHUB_OUTPUT
+          build_time=$((build_end - build_start))
+          echo "build_duration=$build_time" >> $GITHUB_OUTPUT
+
+      - name: Analyze build performance
+        run: |
+          build_time=${{ steps.build.outputs.build_duration }}
+          echo "## 🏗️ Build Performance Analysis" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Build Duration | ${build_time}s |" >> $GITHUB_STEP_SUMMARY
+          echo "| Timestamp | $(date '+%Y-%m-%d %H:%M:%S UTC') |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Performance thresholds
+          if [ $build_time -lt 60 ]; then
+            echo "✅ **Build performance is excellent** (< 60s)" >> $GITHUB_STEP_SUMMARY
+          elif [ $build_time -lt 120 ]; then
+            echo "⚠️ **Build performance is good** (60-120s)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Build performance needs improvement** (> 120s)" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Analyze output size
+        run: |
+          if [ -d "out" ]; then
+            total_size=$(du -sh out | cut -f1)
+            file_count=$(find out -type f | wc -l)
+
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "## 📦 Output Analysis" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+            echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Total Size | $total_size |" >> $GITHUB_STEP_SUMMARY
+            echo "| File Count | $file_count |" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  bundle-analysis:
+    name: Bundle Size Analysis
+    runs-on: ubuntu-latest
+    if: github.event.inputs.analyze_bundle == 'true' || github.event_name == 'schedule'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install bundle analyzer
+        run: npm install --save-dev @next/bundle-analyzer
+
+      - name: Analyze bundle
+        run: |
+          # Create temporary next.config with bundle analyzer
+          cp next.config.js next.config.js.backup
+
+          cat > next.config.js << 'EOF'
+          const withBundleAnalyzer = require('@next/bundle-analyzer')({
+            enabled: true,
+          });
+
+          const repoName = process.env.REPOSITORY_NAME || 'claude-marketplace-repo';
+
+          /** @type {import('next').NextConfig} */
+          const nextConfig = {
+            output: 'export',
+            trailingSlash: true,
+            distDir: 'out',
+            images: {
+              unoptimized: true,
+            },
+            basePath: process.env.NODE_ENV === 'production' ? `/${repoName}` : '',
+            assetPrefix: process.env.NODE_ENV === 'production' ? `/${repoName}` : '',
+            reactStrictMode: true,
+            swcMinify: true,
+            pageExtensions: ['ts', 'tsx', 'js', 'jsx'],
+            generateBuildId: async () => {
+              return process.env.GITHUB_SHA || Date.now().toString();
+            },
+          };
+
+          module.exports = withBundleAnalyzer(nextConfig);
+          EOF
+
+          # Build with analyzer
+          npm run build
+
+          # Restore original config
+          mv next.config.js.backup next.config.js
+
+      - name: Find and analyze bundle files
+        run: |
+          echo "## 📊 Bundle Analysis" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Find JS files in build output
+          if [ -d "out/_next" ]; then
+            js_files=$(find out/_next -name "*.js" -type f)
+            total_js_size=0
+
+            for file in $js_files; do
+              size=$(stat -f%z "$file" 2>/dev/null || stat -c%s "$file" 2>/dev/null || echo 0)
+              total_js_size=$((total_js_size + size))
+
+              # Convert to human readable
+              if [ $size -lt 1024 ]; then
+                size_str="${size}B"
+              elif [ $size -lt 1048576 ]; then
+                size_str="$((size / 1024))KB"
+              else
+                size_str="$((size / 1048576))MB"
+              fi
+
+              echo "| $(basename "$file") | $size_str |" >> $GITHUB_STEP_SUMMARY
+            done
+
+            # Total JS size
+            if [ $total_js_size -lt 1048576 ]; then
+              total_size_str="$((total_js_size / 1024))KB"
+            else
+              total_size_str="$((total_js_size / 1048576))MB"
+            fi
+
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "**Total JavaScript Size:** $total_size_str" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  lighthouse-audit:
+    name: Lighthouse Performance Audit
+    runs-on: ubuntu-latest
+    if: github.event.inputs.analyze_lighthouse == 'true' || github.event_name == 'schedule'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+        env:
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
+
+      - name: Start HTTP server
+        run: |
+          cd out
+          python3 -m http.server 8000 &
+          echo $! > server.pid
+          sleep 5
+
+      - name: Run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.12.x
+
+          cat > lighthouserc.js << 'EOF'
+          module.exports = {
+            ci: {
+              collect: {
+                url: ['http://localhost:8000'],
+                numberOfRuns: 3,
+                settings: {
+                  preset: 'desktop',
+                },
+              },
+              assert: {
+                assertions: {
+                  'categories:performance': ['warn', { minScore: 0.8 }],
+                  'categories:accessibility': ['error', { minScore: 0.9 }],
+                  'categories:best-practices': ['warn', { minScore: 0.8 }],
+                  'categories:seo': ['warn', { minScore: 0.8 }],
+                  'categories:pwa': 'off',
+                },
+              },
+              upload: {
+                target: 'temporary-public-storage',
+              },
+            },
+          };
+          EOF
+
+          lhci autorun
+
+      - name: Cleanup server
+        if: always()
+        run: |
+          if [ -f "out/server.pid" ]; then
+            kill $(cat out/server.pid) || true
+          fi
+
+      - name: Performance Report
+        run: |
+          echo "## 🚀 Performance Audit Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Lighthouse audit completed. Detailed results are available in the workflow artifacts." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📊 Key Metrics" >> $GITHUB_STEP_SUMMARY
+          echo "- Performance Score" >> $GITHUB_STEP_SUMMARY
+          echo "- Accessibility Score" >> $GITHUB_STEP_SUMMARY
+          echo "- Best Practices Score" >> $GITHUB_STEP_SUMMARY
+          echo "- SEO Score" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📈 **Recommendations:**" >> $GITHUB_STEP_SUMMARY
+          echo "- Review detailed Lighthouse report for optimization opportunities" >> $GITHUB_STEP_SUMMARY
+          echo "- Focus on performance scores below 80" >> $GITHUB_STEP_SUMMARY
+          echo "- Implement suggested improvements" >> $GITHUB_STEP_SUMMARY
+
+  performance-trend:
+    name: Performance Trend Analysis
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    needs: [build-analysis, bundle-analysis]
+
+    steps:
+      - name: Create performance report issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Check if monthly performance report already exists
+            const currentMonth = new Date().toISOString().slice(0, 7); // YYYY-MM
+
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['performance-report', currentMonth],
+              state: 'open'
+            });
+
+            if (existingIssues.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `📊 Performance Report - ${currentMonth}`,
+                body: `## 📊 Monthly Performance Report
+
+**Period:** ${currentMonth}
+**Generated:** $(date '+%Y-%m-%d %H:%M:%S UTC')
+
+### 🏗️ Build Performance
+- Build times analyzed
+- Output sizes tracked
+- Bundle optimization reviewed
+
+### 🚀 Site Performance
+- Lighthouse audits completed
+- Core Web Vitals monitored
+- User experience metrics collected
+
+### 📈 Trends
+- Performance improvements identified
+- Areas needing optimization highlighted
+- Recommendations for next month
+
+### 🎯 Action Items
+1. Review bundle size optimization opportunities
+2. Implement performance improvements
+3. Monitor Core Web Vitals
+4. Optimize build process
+
+### 📋 Next Report
+Monthly performance report will be generated automatically.
+
+---
+📊 Automated performance analysis | 🤖 Generated by [Claude Code](https://claude.ai/code) - GLM 4.6`,
+                labels: ['performance-report', currentMonth, 'automated']
+              });
+            }

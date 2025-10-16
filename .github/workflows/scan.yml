@@ -1,0 +1,311 @@
+name: Scan Marketplaces
+
+on:
+  schedule:
+    # Run every 6 hours at minute 0
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      scan_type:
+        description: 'Type of scan to run'
+        required: false
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - marketplaces
+          - validation
+          - data
+      force_update:
+        description: 'Force update even if no changes detected'
+        required: false
+        default: false
+        type: boolean
+      commit_changes:
+        description: 'Commit changes automatically'
+        required: false
+        default: true
+        type: boolean
+
+env:
+  NODE_VERSION: '18'
+  CACHE_VERSION: 'v1'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: "scan"
+  cancel-in-progress: false
+
+jobs:
+  scan-marketplaces:
+    name: Scan for New Marketplaces
+    runs-on: ubuntu-latest
+    if: github.event.inputs.scan_type == 'marketplaces' || github.event.inputs.scan_type == 'full' || github.event_name == 'schedule'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Cache GitHub API results
+        uses: actions/cache@v4
+        with:
+          path: ./cache/github-api
+          key: github-api-${{ env.CACHE_VERSION }}-${{ hashFiles('src/services/github-search.ts') }}
+          restore-keys: |
+            github-api-${{ env.CACHE_VERSION }}-
+
+      - name: Run marketplace scan
+        run: npm run scan:marketplaces
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_ENV: production
+          FORCE_UPDATE: ${{ github.event.inputs.force_update || 'false' }}
+
+      - name: Upload scan results
+        uses: actions/upload-artifact@v4
+        with:
+          name: marketplace-scan-results
+          path: data/marketplaces/
+          retention-days: 1
+
+  validate-plugins:
+    name: Validate Plugins
+    runs-on: ubuntu-latest
+    needs: scan-marketplaces
+    if: github.event.inputs.scan_type == 'validation' || github.event.inputs.scan_type == 'full' || github.event_name == 'schedule'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download scan results
+        uses: actions/download-artifact@v4
+        with:
+          name: marketplace-scan-results
+          path: data/marketplaces/
+
+      - name: Run plugin validation
+        run: npm run validate:plugins
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_ENV: production
+
+      - name: Upload validation results
+        uses: actions/upload-artifact@v4
+        with:
+          name: plugin-validation-results
+          path: data/plugins/
+          retention-days: 1
+
+  generate-data:
+    name: Generate Data Files
+    runs-on: ubuntu-latest
+    needs: [scan-marketplaces, validate-plugins]
+    if: github.event.inputs.scan_type == 'data' || github.event.inputs.scan_type == 'full' || github.event_name == 'schedule'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download previous artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: "*-results"
+          path: data/
+          merge-multiple: true
+
+      - name: Generate data files
+        run: npm run generate:data
+        env:
+          NODE_ENV: production
+
+      - name: Build website with new data
+        run: npm run build
+
+      - name: Upload generated data
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-data
+          path: |
+            data/
+            out/
+          retention-days: 1
+
+  commit-changes:
+    name: Commit Changes
+    runs-on: ubuntu-latest
+    needs: [scan-marketplaces, validate-plugins, generate-data]
+    if: (github.event.inputs.commit_changes == 'true' || github.event_name == 'schedule') && needs.generate-data.result == 'success'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download generated data
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-data
+          path: ./
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Add all changes
+          git add data/ out/
+
+          # Create commit
+          git commit -m "🔄 Update marketplace data - $(date '+%Y-%m-%d %H:%M:%S') [skip ci]" || echo "No changes to commit"
+
+          # Push changes
+          git push
+
+  create-pull-request:
+    name: Create Update Pull Request
+    runs-on: ubuntu-latest
+    needs: [commit-changes]
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.commit_changes == 'true'
+
+    steps:
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "🔄 Update marketplace data [skip ci]"
+          title: "🔄 Automated Marketplace Data Update"
+          body: |
+            ## 🤖 Automated Marketplace Data Update
+
+            This PR contains the latest marketplace data from the scanning pipeline.
+
+            **Changes included:**
+            - New marketplace discoveries
+            - Plugin validation results
+            - Generated data files
+            - Updated website build
+
+            **Scan details:**
+            - **Timestamp:** $(date '+%Y-%m-%d %H:%M:%S UTC')
+            - **Trigger:** Manual workflow dispatch
+            - **Scan type:** ${{ github.event.inputs.scan_type || 'full' }}
+
+            ---
+
+            🤖 Generated by [Claude Code](https://claude.ai/code) - GLM 4.6
+          branch: automated-data-update
+          delete-branch: true
+          labels: |
+            automated-update
+            data-update
+
+  notify:
+    name: Notify Scan Results
+    runs-on: ubuntu-latest
+    needs: [scan-marketplaces, validate-plugins, generate-data, commit-changes]
+    if: always()
+
+    steps:
+      - name: Build scan summary
+        run: |
+          echo "## 📊 Marketplace Scan Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Step | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Marketplace Scan | ${{ needs.scan-marketplaces.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Plugin Validation | ${{ needs.validate-plugins.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Data Generation | ${{ needs.generate-data.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Commit Changes | ${{ needs.commit-changes.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [[ "${{ needs.scan-marketplaces.result }}" == "success" && "${{ needs.validate-plugins.result }}" == "success" && "${{ needs.generate-data.result }}" == "success" ]]; then
+            echo "✅ **Scan completed successfully!**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+
+            if [[ "${{ needs.commit-changes.result }}" == "success" ]]; then
+              echo "📝 **Changes have been committed to the repository.**" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "ℹ️ **No changes were committed (either no changes found or commit failed).**" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "❌ **Scan encountered issues.**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Please check the failed jobs for more details." >> $GITHUB_STEP_SUMMARY
+          fi
+
+  # Optional: Trigger deployment if we have new data
+  trigger-deploy:
+    name: Trigger Deployment
+    runs-on: ubuntu-latest
+    needs: [commit-changes]
+    if: needs.commit-changes.result == 'success' && github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: Trigger deployment workflow
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: data-updated
+          repository: ${{ github.repository }}
+          client-payload: '{"ref": "${{ github.ref }}", "workflow": "scan.yml"}'

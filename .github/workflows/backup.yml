@@ -1,0 +1,429 @@
+name: 💾 Automated Data Backup
+
+on:
+  schedule:
+    # Run backup every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      backup_type:
+        description: 'Type of backup to create'
+        required: false
+        default: 'daily'
+        type: choice
+        options:
+          - daily
+          - weekly
+          - monthly
+      force_backup:
+        description: 'Force backup even if recent backup exists'
+        required: false
+        default: false
+        type: boolean
+      restore_backup:
+        description: 'Restore from a specific backup (emergency only)'
+        required: false
+        default: ''
+        type: string
+
+env:
+  NODE_VERSION: '18'
+  BACKUP_DIR: './backups'
+  MAX_BACKUP_SIZE_MB: 100
+  RETENTION_DAYS: 30
+
+jobs:
+  pre-check:
+    name: 🔍 Pre-Backup Checks
+    runs-on: ubuntu-latest
+    outputs:
+      should_backup: ${{ steps.check.outputs.should_backup }}
+      backup_reason: ${{ steps.check.outputs.backup_reason }}
+      last_backup: ${{ steps.check.outputs.last_backup }}
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm ci --prefer-offline --no-audit
+
+      - name: 🔍 Check Backup Necessity
+        id: check
+        run: |
+          echo "Checking if backup is needed..."
+
+          # Check if data files exist
+          if [ ! -d "public/data" ]; then
+            echo "should_backup=false" >> $GITHUB_OUTPUT
+            echo "backup_reason=No data directory found" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Check if data files are recent
+          data_files=$(find public/data -name "*.json" -type f)
+          if [ -z "$data_files" ]; then
+            echo "should_backup=false" >> $GITHUB_OUTPUT
+            echo "backup_reason=No JSON data files found" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Get most recent data modification
+          latest_data=$(find public/data -name "*.json" -type f -exec stat -c %Y {} \; | sort -nr | head -1)
+          current_time=$(date +%s)
+          data_age=$((current_time - latest_data))
+          data_age_hours=$((data_age / 3600))
+
+          echo "Data age: ${data_age_hours} hours"
+
+          # Check last backup time
+          if [ -f ".backup_info" ]; then
+            last_backup_time=$(cat .backup_info)
+            last_backup_age=$((current_time - last_backup_time))
+            last_backup_hours=$((last_backup_age / 3600))
+            echo "Last backup: ${last_backup_hours} hours ago"
+            echo "last_backup=${last_backup_hours}" >> $GITHUB_OUTPUT
+          else
+            echo "last_backup=never" >> $GITHUB_OUTPUT
+            last_backup_hours=999
+          fi
+
+          # Determine if backup is needed
+          backup_needed=false
+          reason=""
+
+          if [ "${{ github.event.inputs.force_backup }}" == "true" ]; then
+            backup_needed=true
+            reason="Force backup requested"
+          elif [ $last_backup_hours -ge 6 ]; then
+            backup_needed=true
+            reason="Last backup more than 6 hours ago"
+          elif [ $data_age_hours -lt 1 ]; then
+            backup_needed=true
+            reason="Fresh data available"
+          fi
+
+          echo "should_backup=$backup_needed" >> $GITHUB_OUTPUT
+          echo "backup_reason=$reason" >> $GITHUB_OUTPUT
+
+          echo "Backup needed: $backup_needed"
+          echo "Reason: $reason"
+
+      - name: 📊 Log Check Results
+        run: |
+          echo "## Pre-Backup Check Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Should Backup**: ${{ steps.check.outputs.should_backup }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Reason**: ${{ steps.check.outputs.backup_reason }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Last Backup**: ${{ steps.check.outputs.last_backup }} hours ago" >> $GITHUB_STEP_SUMMARY
+
+  create-backup:
+    name: 💾 Create Backup
+    runs-on: ubuntu-latest
+    needs: pre-check
+    if: needs.pre-check.outputs.should_backup == 'true'
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm ci --prefer-offline --no-audit
+
+      - name: 💾 Create Data Backup
+        id: backup
+        run: |
+          echo "Starting backup process..."
+          echo "Reason: ${{ needs.pre-check.outputs.backup_reason }}"
+
+          # Run backup script
+          npm run backup backup
+
+          # Get backup info
+          latest_backup=$(ls -t backups/daily/ | head -1)
+          backup_path="backups/daily/$latest_backup"
+
+          if [ -d "$backup_path" ]; then
+            echo "backup_path=$backup_path" >> $GITHUB_OUTPUT
+            echo "backup_id=$latest_backup" >> $GITHUB_OUTPUT
+
+            # Calculate backup size
+            backup_size=$(du -sb "$backup_path" | cut -f1)
+            backup_size_mb=$((backup_size / 1024 / 1024))
+            echo "backup_size_mb=$backup_size_mb" >> $GITHUB_OUTPUT
+
+            echo "Backup created successfully:"
+            echo "- ID: $latest_backup"
+            echo "- Path: $backup_path"
+            echo "- Size: ${backup_size_mb} MB"
+
+            # Update backup timestamp
+            date +%s > .backup_info
+          else
+            echo "Backup failed - no backup directory created"
+            exit 1
+          fi
+
+      - name: ✅ Verify Backup Integrity
+        run: |
+          backup_path="${{ steps.backup.outputs.backup_path }}"
+          backup_id="${{ steps.backup.outputs.backup_id }}"
+
+          echo "Verifying backup integrity for: $backup_id"
+
+          # Check if backup info file exists
+          if [ ! -f "$backup_path/backup-info.json" ]; then
+            echo "❌ Backup info file missing"
+            exit 1
+          fi
+
+          # Verify checksum if available
+          if [ -f "$backup_path/backup-checksum.sha256" ]; then
+            expected_checksum=$(cat "$backup_path/backup-checksum.sha256")
+            actual_checksum=$(sha256sum "$backup_path/backup-info.json" | cut -d' ' -f1)
+
+            if [ "$expected_checksum" != "$actual_checksum" ]; then
+              echo "❌ Backup checksum verification failed"
+              echo "Expected: $expected_checksum"
+              echo "Actual: $actual_checksum"
+              exit 1
+            else
+              echo "✅ Checksum verification passed"
+            fi
+          fi
+
+          # Validate JSON files
+          json_files=$(find "$backup_path" -name "*.json" -type f)
+          for file in $json_files; do
+            if ! jq empty "$file" 2>/dev/null; then
+              echo "❌ Invalid JSON file: $file"
+              exit 1
+            fi
+          done
+
+          echo "✅ All backup integrity checks passed"
+
+      - name: 📤 Upload Backup Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backup-${{ steps.backup.outputs.backup_id }}
+          path: ${{ steps.backup.outputs.backup_path }}
+          retention-days: 30
+          compression-level: 0  # Don't compress since backups are already compressed
+
+      - name: 📊 Log Backup Results
+        run: |
+          echo "## Backup Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Backup ID**: ${{ steps.backup.outputs.backup_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Size**: ${{ steps.backup.outputs.backup_size_mb }} MB" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY
+          echo "- **Integrity**: ✅ Verified" >> $GITHUB_STEP_SUMMARY
+
+      - name: 🧹 Cleanup Old Backups
+        run: |
+          echo "Cleaning up old backup artifacts..."
+
+          # Remove old artifacts (keep last 10)
+          artifacts=$(gh api repos/${{ github.repository }}/actions/artifacts --jq '.artifacts[] | select(.name | startswith("backup-")) | .id' | head -n -10)
+
+          for artifact_id in $artifacts; do
+            echo "Deleting old artifact: $artifact_id"
+            gh api --method DELETE repos/${{ github.repository }}/actions/artifacts/$artifact_id || true
+          done
+
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  emergency-restore:
+    name: 🚨 Emergency Restore
+    runs-on: ubuntu-latest
+    if: github.event.inputs.restore_backup != ''
+    environment: production
+
+    steps:
+      - name: 🚨 Emergency Restore Confirmation
+        run: |
+          echo "⚠️ EMERGENCY RESTORE INITIATED ⚠️"
+          echo "Backup ID: ${{ github.event.inputs.restore_backup }}"
+          echo "This will overwrite current data!"
+          echo "Proceeding in 30 seconds..."
+          sleep 30
+
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm ci --prefer-offline --no-audit
+
+      - name: 💾 Download Backup Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: backup-${{ github.event.inputs.restore_backup }}
+          path: ./temp-backup
+
+      - name: 🔄 Restore Data
+        run: |
+          echo "Restoring from backup: ${{ github.event.inputs.restore_backup }}"
+
+          # Create emergency backup of current state
+          if [ -d "public/data" ]; then
+            mkdir -p emergency-backup-$(date +%Y%m%d-%H%M%S)
+            cp -r public/data emergency-backup-$(date +%Y%m%d-%H%M%S)/
+            echo "Emergency backup created"
+          fi
+
+          # Restore data from backup
+          if [ -d "./temp-backup" ]; then
+            rm -rf public/data
+            cp -r ./temp-backup/* public/ 2>/dev/null || true
+            echo "Data restored from backup"
+          else
+            echo "❌ Backup artifact not found"
+            exit 1
+          fi
+
+      - name: ✅ Validate Restored Data
+        run: |
+          echo "Validating restored data..."
+
+          # Check if data files exist
+          if [ ! -d "public/data" ]; then
+            echo "❌ Data directory not found after restore"
+            exit 1
+          fi
+
+          # Validate JSON files
+          json_files=$(find public/data -name "*.json" -type f)
+          if [ -z "$json_files" ]; then
+            echo "❌ No JSON files found after restore"
+            exit 1
+          fi
+
+          # Run validation
+          npm run validate:plugins || {
+            echo "❌ Data validation failed after restore"
+            exit 1
+          }
+
+          echo "✅ Restored data validation passed"
+
+      - name: 🚀 Deploy Restored Data
+        run: |
+          echo "Deploying restored data..."
+
+          # Configure git
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          # Commit restored data
+          git add public/data
+          git add emergency-backup-*
+          git commit -m "🚨 emergency: restore data from backup ${{ github.event.inputs.restore_backup }}
+
+          Backup ID: ${{ github.event.inputs.restore_backup }}
+          Timestamp: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          Triggered by: ${{ github.actor }}
+
+          🤖 Generated by [Claude Code](https://claude.ai/code) - GLM 4.6" || echo "No changes to commit"
+
+          # Push changes
+          git push origin main
+
+          echo "✅ Restored data deployed successfully"
+
+      - name: 📢 Emergency Notification
+        if: always()
+        run: |
+          echo "## 🚨 Emergency Restore Completed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Backup ID**: ${{ github.event.inputs.restore_backup }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Initiated by**: ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "⚠️ This was an emergency restore operation. Please verify all systems are functioning correctly." >> $GITHUB_STEP_SUMMARY
+
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+  backup-report:
+    name: 📊 Backup Report
+    runs-on: ubuntu-latest
+    needs: [pre-check, create-backup]
+    if: always()
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 📊 Generate Backup Report
+        run: |
+          echo "## Backup Report - $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Should Backup**: ${{ needs.pre-check.outputs.should_backup }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Reason**: ${{ needs.pre-check.outputs.backup_reason }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Backup Job Status**: ${{ needs.create-backup.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ "${{ needs.create-backup.result }}" == "success" ]; then
+            echo "### ✅ Backup Successful" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### ❌ Backup Failed" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # Add backup statistics
+          if [ -d "backups/daily" ]; then
+            backup_count=$(ls -1 backups/daily/ | wc -l)
+            total_size=$(du -sh backups/daily/ | cut -f1)
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 📊 Backup Statistics" >> $GITHUB_STEP_SUMMARY
+            echo "- **Daily Backups**: $backup_count" >> $GITHUB_STEP_SUMMARY
+            echo "- **Total Size**: $total_size" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # List recent backups
+          if [ -f "backups/backups.json" ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 📋 Recent Backups" >> $GITHUB_STEP_SUMMARY
+            jq -r '.[-5:] | reverse | .[] | "- \(.timestamp | strftime("%Y-%m-%d %H:%M")) - \(.id) - \(.size | . / 1024 / 1024 | round | . + " MB")"' backups/backups.json >> $GITHUB_STEP_SUMMARY 2>/dev/null || echo "No backup history available" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: 🧹 Cleanup Workflow
+        if: always()
+        run: |
+          # Clean up any temporary files
+          rm -rf temp-backup emergency-backup-* 2>/dev/null || true
+
+          # Clean up old workflow runs (keep last 20)
+          gh run list --repo ${{ github.repository }} --limit 50 --json databaseId | \
+            jq -r '.[20:] | .[].databaseId' | \
+            xargs -I {} gh run delete --repo ${{ github.repository }} {} || true
+
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
