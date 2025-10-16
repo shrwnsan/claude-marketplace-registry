@@ -1,8 +1,8 @@
-# GitHub API Integration
-
-This document describes the GitHub API integration implementation for the Claude Marketplace Aggregator project.
+# GitHub Integration Implementation Guide
 
 ## Overview
+
+This document describes the internal GitHub API integration implementation used by the Claude Marketplace Aggregator to discover and collect marketplace data. This is technical documentation for developers who need to understand or modify the GitHub integration components.
 
 The GitHub API integration consists of several components that work together to:
 
@@ -12,6 +12,8 @@ The GitHub API integration consists of several components that work together to:
 4. **Download and parse manifest files** from repositories
 5. **Handle rate limiting** with exponential backoff
 6. **Provide comprehensive error handling** for API failures
+
+**Note**: For the public REST API documentation, see [DEVELOPER_API.md](DEVELOPER_API.md).
 
 ## Architecture
 

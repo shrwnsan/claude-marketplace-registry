@@ -564,6 +564,44 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ---
 
+## 📚 Documentation
+
+### 📖 User Documentation
+- **[User Guide](./docs/USER_GUIDE.md)** - Complete guide for using the marketplace
+- **[Setup Guide](./SETUP.md)** - Step-by-step installation and configuration
+- **[Developer API](./docs/DEVELOPER_API.md)** - Public API documentation and examples
+
+### 🔧 Technical Documentation
+- **[Security Documentation](./docs/SECURITY.md)** - Security measures and best practices
+- **[Maintenance Guide](./docs/MAINTENANCE_GUIDE.md)** - Operations, monitoring, and troubleshooting
+- **[Disaster Recovery](./docs/DISASTER_RECOVERY.md)** - Backup and recovery procedures
+
+### 🔌 Integration Documentation
+- **[GitHub Integration](./docs/GITHUB_INTEGRATION.md)** - Internal GitHub API implementation
+- **[Contributing Guide](./CONTRIBUTING.md)** - Development workflow and contribution guidelines
+
+### 📊 Project Documentation
+- **[Product Requirements](./docs/prd-001-claude-marketplace-aggregator.md)** - Complete PRD with specifications
+- **[Task Breakdown](./docs/tasks-001-prd-claude-marketplace-aggregator.md)** - Detailed development tasks
+- **[Research Documents](./docs/)** - Ecosystem analysis and development paradigms
+
+### 📋 Documentation Structure
+```
+docs/
+├── USER_GUIDE.md              # User-facing documentation
+├── DEVELOPER_API.md           # Public REST API reference
+├── SECURITY.md                # Security implementation and best practices
+├── MAINTENANCE_GUIDE.md       # Operations and maintenance procedures
+├── DISASTER_RECOVERY.md       # Backup and recovery procedures
+├── GITHUB_INTEGRATION.md     # Internal GitHub API implementation
+├── SETUP.md                   # Installation and setup guide
+├── prd-*.md                   # Product requirements documents
+├── research-*.md              # Research and analysis documents
+└── tasks-*.md                 # Development task breakdowns
+```
+
+---
+
 ## 📞 Support
 
 - 📖 [Documentation](./docs)
