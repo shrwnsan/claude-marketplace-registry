@@ -33,20 +33,20 @@ curl -I https://claude-marketplace.github.io/aggregator
 
 **Health Endpoint Status**:
 ```bash
-curl https://claude-marketplace.github.io/aggregator/api/health
-# Verify all checks return true
+curl https://claude-marketplace.github.io/aggregator/data/health.json
+# Verify status is "healthy"
 ```
 
 **Data Freshness**:
 ```bash
-curl https://claude-marketplace.github.io/aggregator/api/status | jq '.systems.data.dataFreshness'
-# Expected: Less than 6 hours old
+curl https://claude-marketplace.github.io/aggregator/data/status.json | jq '.lastUpdated'
+# Expected: Recent timestamp (less than 6 hours old)
 ```
 
-**GitHub API Status**:
+**System Status**:
 ```bash
-curl https://claude-marketplace.github.io/aggregator/api/status | jq '.systems.github.status'
-# Expected: "operational"
+curl https://claude-marketplace.github.io/aggregator/data/status.json
+# Verify all systems show "operational" status
 ```
 
 ### Weekly Checklist

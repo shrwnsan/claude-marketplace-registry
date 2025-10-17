@@ -37,10 +37,10 @@
 - 🔒 **Security First**: Built with security best practices and validation
 
 ### 📈 Monitoring & Observability
-- 🏥 **Health Monitoring**: `/api/health` endpoint for basic system health checks
-- 📊 **System Status**: `/api/status` endpoint for detailed system diagnostics
-- 📈 **Performance Metrics**: `/api/metrics` endpoint with Prometheus-compatible metrics
-- 📉 **Analytics Dashboard**: `/api/analytics` endpoint with comprehensive ecosystem insights
+- 🏥 **Health Monitoring**: `/data/health.json` static file for basic system health checks
+- 📊 **System Status**: `/data/status.json` static file for detailed system diagnostics
+- 📈 **Performance Metrics**: `/data/metrics.json` static file with performance metrics
+- 📉 **Analytics Dashboard**: `/data/analytics.json` static file with comprehensive ecosystem insights
 - 🔔 **Automated Alerts**: Real-time monitoring with Slack/webhook notifications
 - 📋 **Uptime Tracking**: Continuous monitoring with incident response procedures
 
@@ -88,17 +88,46 @@
    cp .env.example .env.local
    ```
 
-   Edit `.env.local` and add your GitHub token:
+   Edit `.env.local` and add your configuration:
    ```env
    GITHUB_TOKEN=ghp_your_personal_access_token_here
+   NEXT_PUBLIC_BASE_PATH=/claude-marketplace-aggregator
    ```
 
-4. **Run the development server**
+   **Environment Variables:**
+   - `GITHUB_TOKEN`: Your GitHub Personal Access Token for API access
+   - `NEXT_PUBLIC_BASE_PATH`: Base path for GitHub Pages deployment (should match your repository name)
+
+   **Base Path Configuration:**
+   - For GitHub Pages, set `NEXT_PUBLIC_BASE_PATH` to `/{your-repository-name}`
+   - For local development, you can leave it empty or set to `/`
+   - Example: If your repo is `claude-marketplace/aggregator`, use `/claude-marketplace-aggregator`
+
+4. **Add favicon assets** (required for production deployment)
+
+   Create the following favicon files in the `public/` directory:
+
+   ```bash
+   # Basic favicon files (required)
+   public/
+   ├── favicon.ico          # 16x16, 32x32, 48x48
+   ├── favicon.svg          # Scalable vector icon
+   ├── apple-touch-icon.png # 180x180 for iOS
+   └── site.webmanifest      # Web app manifest
+   ```
+
+   **Favicon Specifications:**
+   - `favicon.ico`: Multi-size ICO file (16x16, 32x32, 48x48 pixels)
+   - `favicon.svg`: Scalable vector graphics icon (any size)
+   - `apple-touch-icon.png`: PNG file, 180x180 pixels for iOS devices
+   - `site.webmanifest`: JSON manifest file for web app configuration
+
+5. **Run the development server**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
+6. **Open your browser**
 
    Navigate to [http://localhost:3000](http://localhost:3000)
 
@@ -401,7 +430,7 @@ You can manually trigger deployments:
 
 #### Health Check
 ```bash
-GET /api/health
+GET /data/health.json
 ```
 Returns basic system health status including data file status, GitHub API connectivity, build status, and memory usage.
 
@@ -423,7 +452,7 @@ Returns basic system health status including data file status, GitHub API connec
 
 #### System Status
 ```bash
-GET /api/status
+GET /data/status.json
 ```
 Provides detailed system diagnostics including rate limits, performance metrics, and error counts.
 
@@ -454,14 +483,13 @@ Provides detailed system diagnostics including rate limits, performance metrics,
 
 #### Performance Metrics
 ```bash
-GET /api/metrics
-GET /api/metrics?format=prometheus
+GET /data/metrics.json
 ```
 Returns performance metrics in JSON or Prometheus format.
 
 #### Analytics Dashboard
 ```bash
-GET /api/analytics
+GET /data/analytics.json
 ```
 Comprehensive analytics data including trends, ecosystem insights, and marketplace health.
 
@@ -508,12 +536,12 @@ interface Plugin {
 
 | Endpoint | Method | Description | Format |
 |----------|--------|-------------|---------|
-| `/api/health` | GET | Basic health check | JSON |
-| `/api/status` | GET | Detailed system status | JSON |
-| `/api/metrics` | GET | Performance metrics | JSON/Prometheus |
-| `/api/analytics` | GET | Analytics dashboard | JSON |
-| `/data/index.json` | GET | Summary and statistics | JSON |
+| `/data/health.json` | GET | Basic health check | JSON |
+| `/data/status.json` | GET | Detailed system status | JSON |
+| `/data/metrics.json` | GET | Performance metrics | JSON |
+| `/data/analytics.json` | GET | Analytics dashboard | JSON |
 | `/data/marketplaces.json` | GET | All marketplaces | JSON |
+| `/data/index.json` | GET | Summary and statistics | JSON |
 | `/data/plugins.json` | GET | All plugins | JSON |
 | `/data/complete.json` | GET | Complete data structure | JSON |
 
