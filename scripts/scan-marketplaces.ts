@@ -231,6 +231,37 @@ class MarketplaceScanner {
     console.log(`- Summary: ${summaryPath}`);
   }
 
+  async generateMarketplaceDataFile(marketplaces: Marketplace[]): Promise<void> {
+    console.log('📄 Generating UI marketplace data file...');
+
+    const publicDataDir = path.join(process.cwd(), 'public', 'data');
+
+    // Ensure directory exists
+    if (!fs.existsSync(publicDataDir)) {
+      fs.mkdirSync(publicDataDir, { recursive: true });
+    }
+
+    const marketplacesData = {
+      marketplaces: marketplaces,
+      lastUpdated: new Date().toISOString(),
+      totalCount: marketplaces.length,
+      source: 'github-scan',
+      summary: {
+        totalMarketplaces: marketplaces.length,
+        withManifests: marketplaces.filter(mp => !!mp.manifest).length,
+        totalStars: marketplaces.reduce((sum, mp) => sum + mp.stars, 0),
+        averageStars: marketplaces.length > 0 ? Math.round(marketplaces.reduce((sum, mp) => sum + mp.stars, 0) / marketplaces.length) : 0,
+        topLanguages: this.getLanguageStats(marketplaces)
+      }
+    };
+
+    const marketplacesPath = path.join(publicDataDir, 'marketplaces.json');
+    fs.writeFileSync(marketplacesPath, JSON.stringify(marketplacesData, null, 2));
+
+    console.log(`✅ Generated UI marketplace data: ${marketplacesPath}`);
+    console.log(`📊 Found ${marketplaces.length} marketplaces`);
+  }
+
   private getLanguageStats(marketplaces: Marketplace[]): Record<string, number> {
     const stats: Record<string, number> = {};
 
@@ -268,6 +299,9 @@ async function main() {
 
     const marketplaces = await scanner.scanMarketplaces();
     await scanner.saveResults(marketplaces);
+
+    // Generate UI-compatible marketplace data
+    await scanner.generateMarketplaceDataFile(marketplaces);
 
     console.log('');
     console.log('🎉 Scan completed successfully!');

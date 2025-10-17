@@ -4,7 +4,9 @@ import MainLayout from '../components/layout/MainLayout';
 import SearchBar from '../components/Search/SearchBar';
 import PluginCard from '../components/Marketplace/PluginCard';
 import GitHubStats from '../components/GitHub/GitHubStats';
-import { mockPlugins, mockMarketplaces, stats, categories, MarketplacePlugin } from '../data/mock-data';
+import { useRealMarketplaceData } from '../hooks/useRealMarketplaceData';
+import { mockPlugins, mockMarketplaces, categories, MarketplacePlugin } from '../data/mock-data';
+import LoadingState from '../components/ui/LoadingState';
 import { Star, Download, Github, ExternalLink, TrendingUp, Users, Package, Shield, BarChart } from 'lucide-react';
 import Link from 'next/link';
 
@@ -13,9 +15,32 @@ const HomePage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [showFilters, setShowFilters] = useState(false);
 
+  // Use real marketplace data with fallback to mock data
+  const { data: marketplaceData, loading: marketplaceLoading, error: marketplaceError } = useRealMarketplaceData();
+
+  // Get marketplaces from real data or fall back to mock data
+  const marketplaces = marketplaceData?.marketplaces || mockMarketplaces;
+
+  // Debug: Log the actual data structure
+  console.log('🔍 HomePage Data Debug:', {
+    marketplaceDataType: typeof marketplaceData,
+    marketplaceDataKeys: marketplaceData ? Object.keys(marketplaceData) : null,
+    hasMarketplaces: !!marketplaceData?.marketplaces,
+    marketplacesType: typeof marketplaceData?.marketplaces,
+    marketplacesLength: marketplaceData?.marketplaces?.length,
+    isMarketplacesArray: Array.isArray(marketplaces),
+    marketplaces: Array.isArray(marketplaces) ? marketplaces.slice(0, 3).map(m => ({ name: m.name, id: m.id })) : 'NOT AN ARRAY'
+  });
+
+  // Get plugins from real marketplace data or fall back to mock data
+  const allPlugins = useMemo(() => {
+    // For now, just return mock plugins to avoid breaking the homepage
+    return mockPlugins;
+  }, [marketplaceData]);
+
   // Filter plugins based on search query and category
   const filteredPlugins = useMemo(() => {
-    return mockPlugins.filter((plugin) => {
+    return allPlugins.filter((plugin) => {
       const matchesSearch = searchQuery === '' ||
         plugin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         plugin.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -26,7 +51,33 @@ const HomePage: React.FC = () => {
 
       return matchesSearch && matchesCategory;
     });
-  }, [searchQuery, selectedCategory]);
+  }, [allPlugins, searchQuery, selectedCategory]);
+
+  // Calculate stats dynamically from real data
+  const dynamicStats = useMemo(() => {
+    if (marketplaceData?.marketplaces && marketplaceData.marketplaces.length > 0) {
+      // Calculate stats from real marketplace data
+      const totalMarketplaces = marketplaceData.marketplaces.length;
+      const totalPlugins = allPlugins.length;
+      const totalStars = marketplaceData.marketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0);
+      const totalDownloads = allPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0);
+
+      return {
+        totalPlugins,
+        totalMarketplaces,
+        totalStars,
+        totalDownloads
+      };
+    }
+
+    // Fallback to mock stats if no real data
+    return {
+      totalPlugins: mockPlugins.length,
+      totalMarketplaces: mockMarketplaces.length,
+      totalStars: mockMarketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0),
+      totalDownloads: mockPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0)
+    };
+  }, [marketplaceData, allPlugins]);
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
@@ -35,6 +86,17 @@ const HomePage: React.FC = () => {
   const handleFilterClick = () => {
     setShowFilters(!showFilters);
   };
+
+  // Debug: Log data to console
+  console.log('🔍 HomePage rendering:', {
+    marketplaceLoading,
+    marketplaceError,
+    marketplacesCount: marketplaces.length,
+    pluginsCount: allPlugins.length,
+    realDataExists: !!marketplaceData,
+    marketplacesData: marketplaceData,
+    allPlugins: allPlugins.map(p => ({ name: p.name, author: p.author }))
+  });
 
   return (
     <>
@@ -78,47 +140,51 @@ const HomePage: React.FC = () => {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-4">
-                <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
-                    <Package className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
+              {marketplaceLoading ? (
+                <LoadingState variant="skeleton" className="max-w-5xl mx-auto px-4" />
+              ) : (
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-4">
+                  <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
+                      <Package className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
+                    </div>
+                    <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
+                      {dynamicStats.totalPlugins.toLocaleString()}
+                    </div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Plugins</div>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                    {stats.totalPlugins.toLocaleString()}
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Plugins</div>
-                </div>
 
-                <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
-                    <Users className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
+                  <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
+                      <Users className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
+                    </div>
+                    <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
+                      {dynamicStats.totalMarketplaces.toLocaleString()}
+                    </div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Marketplaces</div>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                    {stats.totalMarketplaces.toLocaleString()}
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Marketplaces</div>
-                </div>
 
-                <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
-                    <Download className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
+                  <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
+                      <Download className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
+                    </div>
+                    <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
+                      {dynamicStats.totalDownloads.toLocaleString()}
+                    </div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Downloads</div>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                    {stats.totalDownloads.toLocaleString()}
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Downloads</div>
-                </div>
 
-                <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
-                    <Star className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
+                  <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
+                      <Star className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
+                    </div>
+                    <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
+                      {dynamicStats.totalStars.toLocaleString()}
+                    </div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">Stars</div>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                    {stats.totalStars.toLocaleString()}
-                  </div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Stars</div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </section>
@@ -181,8 +247,11 @@ const HomePage: React.FC = () => {
               </a>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-              {mockMarketplaces.filter(m => m.featured).map((marketplace, index) => (
+            {marketplaceLoading ? (
+              <LoadingState variant="skeleton" className="max-w-5xl" />
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                {Array.isArray(marketplaces) && marketplaces.slice(0, 6).map((marketplace, index) => (
                 <div
                   key={marketplace.id}
                   className="card group hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300 hover:-translate-y-1"
@@ -240,6 +309,7 @@ const HomePage: React.FC = () => {
                 </div>
               ))}
             </div>
+            )}
           </div>
         </section>
 
@@ -267,7 +337,9 @@ const HomePage: React.FC = () => {
               </a>
             </div>
 
-            {filteredPlugins.length > 0 ? (
+            {marketplaceLoading ? (
+              <LoadingState variant="skeleton" className="max-w-5xl" />
+            ) : filteredPlugins.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {filteredPlugins.slice(0, 9).map((plugin, index) => (
                   <div

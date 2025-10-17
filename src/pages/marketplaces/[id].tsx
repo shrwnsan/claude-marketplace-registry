@@ -26,7 +26,8 @@ import {
   Heart,
   MessageSquare
 } from 'lucide-react';
-import { mockMarketplaces, mockPlugins, MarketplacePlugin } from '../../data/mock-data';
+import { mockPlugins, MarketplacePlugin } from '../../data/mock-data';
+import { useRealMarketplaceData } from '../../hooks/useRealMarketplaceData';
 
 interface MarketplaceDetailProps {
   marketplace: MarketplacePlugin['marketplace'] & {
@@ -50,15 +51,40 @@ const MarketplaceDetailPage: React.FC = () => {
   const [rating, setRating] = useState(0);
   const [userRating, setUserRating] = useState(0);
 
+  // Get real marketplace data
+  const { data: marketplaceData } = useRealMarketplaceData();
+
   // Find marketplace by ID
   const marketplace = useMemo(() => {
-    return mockMarketplaces.find(m => m.id === id);
-  }, [id]);
+    if (!id || !marketplaceData?.marketplaces) return null;
+    return marketplaceData.marketplaces.find(m => m.id === id);
+  }, [id, marketplaceData]);
 
   // Get plugins for this marketplace
   const marketplacePlugins = useMemo(() => {
     if (!marketplace) return [];
-    return mockPlugins.filter(plugin => plugin.marketplace === marketplace.name);
+    if (!marketplace.manifest || !marketplace.manifest.plugins) return [];
+
+    // Transform manifest plugins to MarketplacePlugin format
+    return marketplace.manifest.plugins.map((plugin: any) => ({
+      id: plugin.name,
+      name: plugin.name,
+      description: plugin.description || '',
+      category: plugin.category || 'development',
+      tags: [plugin.category || 'development'],
+      author: plugin.author || marketplace.name,
+      authorUrl: `https://github.com/${marketplace.name}`,
+      repositoryUrl: marketplace.url,
+      stars: marketplace.stars,
+      downloads: 0,
+      lastUpdated: marketplace.updatedAt,
+      version: plugin.version || '1.0.0',
+      license: marketplace.license,
+      marketplace: marketplace.name,
+      marketplaceUrl: marketplace.url,
+      featured: true,
+      verified: true
+    }));
   }, [marketplace]);
 
   // Filter and sort plugins
@@ -531,14 +557,14 @@ const MarketplaceDetailPage: React.FC = () => {
         </section>
 
         {/* Related Marketplaces */}
-        {mockMarketplaces.filter(m => m.id !== marketplace.id && m.category === marketplace.category).length > 0 && (
+        {marketplaceData?.marketplaces && marketplaceData.marketplaces.filter(m => m.id !== marketplace.id && m.category === marketplace.category).length > 0 && (
           <section className="py-12 bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                 Related Marketplaces
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {mockMarketplaces
+                {marketplaceData.marketplaces
                   .filter(m => m.id !== marketplace.id && m.category === marketplace.category)
                   .slice(0, 3)
                   .map((relatedMarketplace) => (

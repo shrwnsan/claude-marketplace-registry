@@ -1,0 +1,23 @@
+{
+  "performance": {
+    "buildTime": "2025-10-17T19:40:21.972Z",
+    "bundleSize": "2.1MB",
+    "lighthouseScore": 95
+  },
+  "usage": {
+    "totalScans": 0,
+    "totalApiCalls": 0,
+    "errorRate": 0
+  },
+  "system": {
+    "nodeVersion": "v22.17.1",
+    "platform": "darwin",
+    "memory": {
+      "rss": 503676928,
+      "heapTotal": 379404288,
+      "heapUsed": 340811784,
+      "external": 7857534,
+      "arrayBuffers": 5195115
+    }
+  }
+}
