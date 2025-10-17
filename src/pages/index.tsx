@@ -21,17 +21,7 @@ const HomePage: React.FC = () => {
   // Get marketplaces from real data or fall back to mock data
   const marketplaces = marketplaceData?.marketplaces || mockMarketplaces;
 
-  // Debug: Log the actual data structure
-  console.log('🔍 HomePage Data Debug:', {
-    marketplaceDataType: typeof marketplaceData,
-    marketplaceDataKeys: marketplaceData ? Object.keys(marketplaceData) : null,
-    hasMarketplaces: !!marketplaceData?.marketplaces,
-    marketplacesType: typeof marketplaceData?.marketplaces,
-    marketplacesLength: marketplaceData?.marketplaces?.length,
-    isMarketplacesArray: Array.isArray(marketplaces),
-    marketplaces: Array.isArray(marketplaces) ? marketplaces.slice(0, 3).map(m => ({ name: m.name, id: m.id })) : 'NOT AN ARRAY'
-  });
-
+  
   // Get plugins from real marketplace data or fall back to mock data
   const allPlugins = useMemo(() => {
     // For now, just return mock plugins to avoid breaking the homepage
@@ -87,17 +77,7 @@ const HomePage: React.FC = () => {
     setShowFilters(!showFilters);
   };
 
-  // Debug: Log data to console
-  console.log('🔍 HomePage rendering:', {
-    marketplaceLoading,
-    marketplaceError,
-    marketplacesCount: marketplaces.length,
-    pluginsCount: allPlugins.length,
-    realDataExists: !!marketplaceData,
-    marketplacesData: marketplaceData,
-    allPlugins: allPlugins.map(p => ({ name: p.name, author: p.author }))
-  });
-
+  
   return (
     <>
       <Head>
@@ -108,6 +88,7 @@ const HomePage: React.FC = () => {
       </Head>
 
       <MainLayout>
+        
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-primary-900/20 py-12 sm:py-16 lg:py-24 overflow-hidden">
           {/* Background decoration */}
