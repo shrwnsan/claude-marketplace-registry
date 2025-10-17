@@ -5,7 +5,8 @@ import SearchBar from '../components/Search/SearchBar';
 import PluginCard from '../components/Marketplace/PluginCard';
 import GitHubStats from '../components/GitHub/GitHubStats';
 import { useRealMarketplaceData } from '../hooks/useRealMarketplaceData';
-import { mockPlugins, mockMarketplaces, categories, MarketplacePlugin } from '../data/mock-data';
+import { usePluginData } from '../hooks/usePluginData';
+import { mockMarketplaces, categories, MarketplacePlugin } from '../data/mock-data';
 import LoadingState from '../components/ui/LoadingState';
 import { Star, Download, Github, ExternalLink, TrendingUp, Users, Package, Shield, BarChart } from 'lucide-react';
 import Link from 'next/link';
@@ -17,16 +18,10 @@ const HomePage: React.FC = () => {
 
   // Use real marketplace data with fallback to mock data
   const { data: marketplaceData, loading: marketplaceLoading, error: marketplaceError } = useRealMarketplaceData();
+  const { plugins: allPlugins, loading: pluginsLoading, error: pluginsError } = usePluginData();
 
   // Get marketplaces from real data or fall back to mock data
   const marketplaces = marketplaceData?.marketplaces || mockMarketplaces;
-
-  
-  // Get plugins from real marketplace data or fall back to mock data
-  const allPlugins = useMemo(() => {
-    // For now, just return mock plugins to avoid breaking the homepage
-    return mockPlugins;
-  }, [marketplaceData]);
 
   // Filter plugins based on search query and category
   const filteredPlugins = useMemo(() => {
@@ -62,10 +57,10 @@ const HomePage: React.FC = () => {
 
     // Fallback to mock stats if no real data
     return {
-      totalPlugins: mockPlugins.length,
+      totalPlugins: allPlugins.length,
       totalMarketplaces: mockMarketplaces.length,
       totalStars: mockMarketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0),
-      totalDownloads: mockPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0)
+      totalDownloads: allPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0)
     };
   }, [marketplaceData, allPlugins]);
 
@@ -121,7 +116,7 @@ const HomePage: React.FC = () => {
               </div>
 
               {/* Stats */}
-              {marketplaceLoading ? (
+              {marketplaceLoading || pluginsLoading ? (
                 <LoadingState variant="skeleton" className="max-w-5xl mx-auto px-4" />
               ) : (
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-4">
@@ -228,7 +223,7 @@ const HomePage: React.FC = () => {
               </a>
             </div>
 
-            {marketplaceLoading ? (
+            {marketplaceLoading || pluginsLoading ? (
               <LoadingState variant="skeleton" className="max-w-5xl" />
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -318,7 +313,7 @@ const HomePage: React.FC = () => {
               </a>
             </div>
 
-            {marketplaceLoading ? (
+            {marketplaceLoading || pluginsLoading ? (
               <LoadingState variant="skeleton" className="max-w-5xl" />
             ) : filteredPlugins.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
