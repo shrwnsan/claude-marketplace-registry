@@ -26,26 +26,27 @@ export function usePluginData(): UsePluginDataReturn {
           const extractedPlugins: MarketplacePlugin[] = [];
 
           marketplaceData.marketplaces.forEach((marketplace) => {
-            if (marketplace.plugins && Array.isArray(marketplace.plugins)) {
-              marketplace.plugins.forEach((plugin, index) => {
+            // Check for plugins in manifest.plugins (correct location in our data structure)
+            if (marketplace.manifest?.plugins && Array.isArray(marketplace.manifest.plugins)) {
+              marketplace.manifest.plugins.forEach((plugin, index) => {
                 extractedPlugins.push({
-                  id: plugin.id || `${marketplace.id}-${index}`,
+                  id: `${marketplace.id}-${plugin.name}`,
                   name: plugin.name || `Plugin ${index + 1}`,
                   description: plugin.description || 'No description available',
                   category: plugin.category || 'General',
                   tags: Array.isArray(plugin.tags) ? plugin.tags : [],
-                  author: plugin.author || marketplace.owner || 'Unknown',
-                  authorUrl: plugin.authorUrl || marketplace.repositoryUrl,
-                  repositoryUrl: plugin.repositoryUrl || marketplace.repositoryUrl,
-                  stars: plugin.stars || 0,
-                  downloads: plugin.downloads || 0,
-                  lastUpdated: plugin.lastUpdated || new Date().toISOString(),
+                  author: marketplace.manifest.owner?.name || marketplace.owner || 'Unknown',
+                  authorUrl: marketplace.repositoryUrl,
+                  repositoryUrl: marketplace.repositoryUrl,
+                  stars: marketplace.stars || 0, // Use marketplace stars since plugins don't have individual stars
+                  downloads: 0, // Not available in current data structure
+                  lastUpdated: marketplace.updatedAt || new Date().toISOString(),
                   version: plugin.version || '1.0.0',
-                  license: plugin.license || 'MIT',
+                  license: marketplace.license || 'MIT',
                   marketplace: marketplace.name,
                   marketplaceUrl: marketplace.url,
-                  featured: plugin.featured || false,
-                  verified: plugin.verified || marketplace.verified || false,
+                  featured: index === 0, // Make first plugin featured
+                  verified: marketplace.verified || false,
                 });
               });
             }
