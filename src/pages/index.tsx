@@ -427,7 +427,7 @@ const HomePage: React.FC = () => {
                 <div className="mt-8">
                   <Link
                     href="/admin/analytics"
-                    className="btn btn-primary group"
+                    className="btn btn-primary group inline-flex items-center"
                   >
                     <BarChart className="w-5 h-5 mr-2" />
                     View Analytics Dashboard
