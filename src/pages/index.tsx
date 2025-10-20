@@ -382,7 +382,7 @@ const HomePage: React.FC = () => {
               </p>
             </div>
             <GitHubStats
-              repository="https://github.com/claude-marketplace/aggregator"
+              repository="https://github.com/shrwnsan/claude-marketplace-registry"
               className="max-w-4xl mx-auto"
             />
           </div>
@@ -500,7 +500,7 @@ const HomePage: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
                 <a
-                  href="https://github.com/claude-marketplace/aggregator"
+                  href="https://github.com/shrwnsan/claude-marketplace-registry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn bg-white text-primary-600 hover:bg-gray-50 font-medium px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg group min-w-[200px] justify-center"

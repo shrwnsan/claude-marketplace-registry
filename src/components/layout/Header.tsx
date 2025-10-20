@@ -113,7 +113,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
 
             {/* GitHub button */}
             <a
-              href="https://github.com/claude-marketplace/aggregator"
+              href="https://github.com/shrwnsan/claude-marketplace-registry"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex items-center space-x-2 px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all group"
@@ -170,7 +170,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
 
               <div className="border-t border-gray-200 dark:border-gray-600 my-2 pt-2">
                 <a
-                  href="https://github.com/claude-marketplace/aggregator"
+                  href="https://github.com/shrwnsan/claude-marketplace-registry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 px-4 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all"
