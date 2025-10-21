@@ -16,8 +16,7 @@ export default function Document() {
 
         {/* Meta tags */}
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <meta name="theme-color" content="#2563eb" />
+          <meta name="theme-color" content="#2563eb" />
         <meta name="msapplication-TileColor" content="#2563eb" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -110,9 +109,7 @@ export default function Document() {
           rel="stylesheet"
         />
 
-        {/* Critical CSS preloading */}
-        <link rel="preload" href="/styles/globals.css" as="style" />
-
+        
         {/* Preload key images */}
         <link rel="preload" href="/og-image.png" as="image" />
       </Head>

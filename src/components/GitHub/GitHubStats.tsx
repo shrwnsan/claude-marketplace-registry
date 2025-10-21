@@ -75,7 +75,27 @@ const GitHubStats: React.FC<GitHubStatsProps> = ({ repository, className = '' })
         }
 
         const repoData: RepoStats = await repoResponse.json();
-        setStats(repoData);
+
+        // Ensure all numeric fields have default values
+        const safeStats: RepoStats = {
+          stars: repoData.stars || 0,
+          forks: repoData.forks || 0,
+          watchers: repoData.watchers || 0,
+          openIssues: repoData.openIssues || 0,
+          language: repoData.language || 'Unknown',
+          createdAt: repoData.createdAt || new Date().toISOString(),
+          updatedAt: repoData.updatedAt || new Date().toISOString(),
+          defaultBranch: repoData.defaultBranch || 'main',
+          size: repoData.size || 0,
+          license: repoData.license,
+          topics: repoData.topics || [],
+          description: repoData.description,
+          homepage: repoData.homepage,
+          subscribersCount: repoData.subscribersCount || 0,
+          networkCount: repoData.networkCount || 0
+        };
+
+        setStats(safeStats);
 
         // Fetch recent commits
         const commitsResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=5`);
@@ -128,7 +148,8 @@ const GitHubStats: React.FC<GitHubStatsProps> = ({ repository, className = '' })
     return `${Math.floor(diffDays / 365)} years ago`;
   };
 
-  const formatNumber = (num: number): string => {
+  const formatNumber = (num: number | undefined | null): string => {
+    if (num === undefined || num === null) return '0';
     if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
     if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
     return num.toString();
