@@ -141,7 +141,7 @@ const MarketplacesPage: React.FC = () => {
 
                 {/* Search Bar */}
                 <div className="max-w-2xl mx-auto mb-8">
-                  <SearchBar onSearch={handleSearch} className="w-full" />
+                  <SearchBar onSearch={handleSearch} onFilterClick={() => {}} className="w-full" />
                 </div>
               </div>
 
