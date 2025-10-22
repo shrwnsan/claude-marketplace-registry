@@ -1,0 +1,226 @@
+# Dependabot Configuration
+# GitHub-native dependency update automation
+# https://docs.github.com/en/code-security/dependabot
+
+version: 2
+updates:
+  # Enable version updates for npm packages
+  - package-ecosystem: "npm"
+
+  # Security updates (high priority)
+  - directory: "/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "America/Los_Angeles"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "claude-marketplace-registry"
+      - "dependabot[bot]"
+    assignees:
+      - "claude-marketplace-registry"
+    commit-message:
+      prefix: "security"
+      include: "scope"
+
+  # Production dependencies (medium priority)
+  - directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "10:00"
+      timezone: "America/Los_Angeles"
+    open-pull-requests-limit: 3
+    reviewers:
+      - "claude-marketplace-registry"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+
+  # Development dependencies (low priority)
+  - directory: "/"
+    schedule:
+      interval: "monthly"
+      day: "1st"
+      time: "09:00"
+      timezone: " America/Los_Angeles"
+    open-pull-requests-limit: 2
+    reviewers:
+      - "claude-marketplace-_registry"
+    commit-message:
+      prefix: "dev-deps"
+      include: "scope"
+
+# Dependency groups to prevent unnecessary updates
+groups:
+  # Core Next.js ecosystem - update together
+  nextjs:
+    patterns:
+      - "next"
+      - "react"
+      - "react-dom"
+      - "@types/react*"
+    dependency-type: "production"
+  # TypeScript ecosystem - update together
+  typescript:
+    patterns:
+      - "typescript"
+      - "@types/*"
+      - "ts-*"
+    dependency-type: "production"
+  # Testing framework - update together
+  testing:
+    patterns:
+      - "jest"
+      - "@testing-library/*"
+      - "ts-jest"
+    dependency-type: "devDependencies"
+  # Linting and formatting - update together
+  linting:
+    patterns:
+      - "eslint*"
+      - "prettier"
+      "@typescript-eslint/*"
+    dependency-type: "devDependencies"
+  # Build tools and bundlers - update together
+  build:
+    patterns:
+      - "webpack"
+      "postcss"
+      "autoprefixer"
+    dependency-type: "devDependencies"
+  # Tailwind CSS ecosystem - update together
+  tailwind:
+    patterns:
+      - "tailwindcss"
+      "@tailwindcss/*"
+    dependency-type: devDependencies"
+
+# High-priority packages that should always be updated
+# These are core to the application functionality
+high-priority:
+  - "next"
+  - "react"
+  - "react-dom"
+  - "@octokit/rest"
+  - "lucide-react"
+
+# Medium-priority packages
+# Important but can be scheduled updates
+medium-priority:
+  - "axios"
+  - "zod"
+  - "date-fns"
+  - "recharts"
+
+# Low-priority packages
+# Development tools and testing frameworks
+low-priority:
+  - "prettier"
+  - "eslint"
+  - "typescript"
+
+# Security packages that should be auto-approved
+# These have security implications and should be updated promptly
+security-approval:
+  - "@octokit/rest"
+  - "axios"
+  - "zod"
+  - "isomorphic-dompurify"
+
+# Prevent updates to packages that might cause breaking changes
+# These are either very stable or require manual review
+ignore:
+  - "husky" # Git hooks might need manual updates
+  - "lint-staged" # Linting configuration changes require review
+  - "tailwind-merge" # CSS merging logic is sensitive
+
+# Custom rules for specific packages
+# Override default schedules for critical dependencies
+custom:
+  # React ecosystem - check daily but batch updates
+  react:
+    patterns:
+      - "react"
+      - "react-dom"
+      - "@types/react*"
+    dependency-type: "production"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+      time: "14:00"
+      timezone: "America/Los_Angeles"
+
+  # Next.js - check daily but only patch/minor updates
+  nextjs:
+    patterns:
+      - "next"
+    dependency-type: "production"
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+      time: "14:30"
+      timezone: " America/Los_Angeles"
+    allow:
+      - "patch"
+      "minor"
+
+  # Lucide icons - update monthly (new icons are rare)
+  icons:
+    patterns:
+      - "lucide-react"
+    dependency-type: "production"
+    schedule:
+      interval: "monthly"
+      day: "1st"
+      time: "09:00"
+      timezone: "America/Los_Angeles"
+
+# Auto-merge rules for low-risk updates
+# Allow Dependabot to auto-merge certain types of updates
+merge:
+  - auto-merge: true
+    - dependency-type: "devDependencies"
+      update-types: ["version-update:semver-patch"]
+    dependency-type: "production"
+      update-types: ["version-update:semver-patch"]
+    - "auto"
+      - "security"
+
+# Labels for PR categorization
+labels:
+  - "security"
+  - "dependencies"
+  - "documentation"
+  - "enhancement"
+  - "bug"
+
+# Limit concurrent PRs to avoid overwhelming reviewers
+limit: 5
+
+# Add reviewers to PRs based on file changes
+reviewers:
+  - "claude-marketplace-registry"
+
+# Assignees for automatic PR assignment
+assignees:
+  - "claude-marketplace-registry"
+
+# Configure PR templates
+pull-requests:
+  add-labels: ["dependencies", "automated"]
+  delete-branch: true
+
+# Configure status checks
+status-checks:
+  tests: true
+  ci: true
+
+# Configure commit message templates
+commit-message:
+  prefix: "dependabot"
+  include: "scope"
+  prefix-development: "feat"
+  prefix-production: "fix"
+  prefix-dependency: "chore"
+  prefix-security: "security"
