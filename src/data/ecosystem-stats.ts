@@ -25,6 +25,7 @@ import {
   QualityMetrics,
   TimeRange,
 } from '../utils/data-processor';
+import { QualityIndicators } from '../types/ecosystem-stats';
 import { CollectionResult } from '../services/ecosystem-data';
 
 /**
@@ -42,7 +43,7 @@ export interface EcosystemStats {
   /** Top developer analytics */
   developers: DeveloperAnalytics[];
   /** Quality and trust metrics */
-  quality: QualityMetrics;
+  quality: QualityIndicators;
   /** Metadata about the data */
   metadata: EcosystemMetadata;
 }
@@ -381,6 +382,13 @@ export class MockDataGenerator {
       averageQualityScore,
       totalCategories,
       lastUpdated: new Date().toISOString(),
+      growthRate: {
+        plugins: Math.random() * 20 - 5, // -5% to +15% growth
+        marketplaces: Math.random() * 10 - 2, // -2% to +8% growth
+        developers: Math.random() * 25 - 5, // -5% to +20% growth
+        downloads: Math.random() * 30 - 5, // -5% to +25% growth
+      },
+      healthScore: Math.floor(Math.random() * 20 + 75), // 75-95
     };
   }
 
@@ -404,7 +412,7 @@ export class MockDataGenerator {
   private generateGrowthDataPoints(timeRange: TimeRange): GrowthDataPoint[] {
     const points: GrowthDataPoint[] = [];
     const now = new Date();
-    let startDate = new Date(now);
+    const startDate = new Date(now);
     let interval = 1; // days
 
     switch (timeRange) {
@@ -576,23 +584,44 @@ export class MockDataGenerator {
   /**
    * Generate mock quality metrics
    */
-  private generateMockQuality(): QualityMetrics {
+  private generateMockQuality(): QualityIndicators {
     const totalPlugins = this.config.marketplaceCount * this.config.pluginsPerMarketplace;
     const verifiedPlugins = Math.floor(totalPlugins * 0.7);
     const highQualityPlugins = Math.floor(totalPlugins * 0.4);
+    const recentlyUpdated = Math.floor(totalPlugins * 0.6);
+    const abandonedPlugins = Math.floor(totalPlugins * 0.1);
 
     return {
-      verifiedPluginPercentage: (verifiedPlugins / totalPlugins) * 100,
-      verifiedMarketplacePercentage: 60, // Fixed for mock data
-      highQualityPlugins,
-      recentlyUpdatedPlugins: Math.floor(totalPlugins * 0.6),
-      activeDevelopers: Math.floor(this.config.developerCount * 0.8),
-      averagePluginAge: Math.random() * 180 + 30, // 30-210 days
-      qualityDistribution: {
-        excellent: Math.floor(totalPlugins * 0.2),
-        good: Math.floor(totalPlugins * 0.3),
-        fair: Math.floor(totalPlugins * 0.3),
-        poor: Math.floor(totalPlugins * 0.2),
+      verification: {
+        verifiedPlugins,
+        verificationRate: (verifiedPlugins / totalPlugins) * 100,
+        badges: [
+          { type: 'security', count: Math.floor(verifiedPlugins * 0.6) },
+          { type: 'quality', count: Math.floor(verifiedPlugins * 0.8) },
+          { type: 'popularity', count: Math.floor(verifiedPlugins * 0.4) },
+          { type: 'maintenance', count: Math.floor(verifiedPlugins * 0.7) },
+        ],
+      },
+      maintenance: {
+        recentlyUpdated,
+        activeMaintenanceRate: (recentlyUpdated / totalPlugins) * 100,
+        avgUpdateFrequency: Math.floor(Math.random() * 30 + 7), // 7-37 days
+        abandonedPlugins,
+      },
+      qualityMetrics: {
+        avgQualityScore: Math.floor(Math.random() * 20 + 75), // 75-95
+        highQualityPlugins,
+        commonIssues: [
+          { issue: 'Missing documentation', frequency: Math.floor(totalPlugins * 0.3), severity: 'medium' },
+          { issue: 'No recent updates', frequency: abandonedPlugins, severity: 'high' },
+          { issue: 'Low test coverage', frequency: Math.floor(totalPlugins * 0.2), severity: 'medium' },
+          { issue: 'Security vulnerabilities', frequency: Math.floor(totalPlugins * 0.05), severity: 'high' },
+        ],
+      },
+      security: {
+        scannedPlugins: Math.floor(totalPlugins * 0.8),
+        criticalIssues: Math.floor(totalPlugins * 0.02),
+        securityScore: Math.floor(Math.random() * 25 + 70), // 70-95
       },
     };
   }

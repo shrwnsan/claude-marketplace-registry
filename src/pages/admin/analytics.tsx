@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import MainLayout from '../../components/layout/MainLayout';
@@ -6,8 +6,6 @@ import { useAnalytics } from '../../utils/analytics/hooks';
 import {
   BarChart,
   Bar,
-  LineChart,
-  Line,
   PieChart,
   Pie,
   Cell,
@@ -15,22 +13,16 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer
 } from 'recharts';
 import {
   TrendingUp,
   Users,
   Eye,
-  Download,
   Search,
-  Filter,
   Star,
-  Share2,
-  Calendar,
   Clock,
   Package,
-  Github,
   ArrowLeft,
   Download as DownloadIcon,
   Trash2,
@@ -128,7 +120,7 @@ const AnalyticsDashboard: React.FC = () => {
     });
   }, [topPlugins]);
 
-  const marketplacesChartData = useMemo(() => {
+  const _marketplacesChartData = useMemo(() => {
     return topMarketplaces.slice(0, 8).map(({ id, clicks }) => {
       const marketplace = mockMarketplaces.find(m => m.id === id);
       return {

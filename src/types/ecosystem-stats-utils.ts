@@ -14,14 +14,9 @@ import type {
   EcosystemOverview,
   GrowthTrends,
   CategoryAnalytics,
-  CommunityData,
   QualityIndicators,
-  MarketplaceData,
   PluginData,
-  TrendDataPoint,
-  CategoryData,
   ChartData,
-  ChartFormatting,
   EcosystemStatsResponse,
   PaginatedResponse,
   PaginationInfo,
@@ -524,7 +519,7 @@ export const prepareRechartsData = (
     sortX?: boolean;
   } = {}
 ): any[] => {
-  let prepared = data.map(item => ({
+  const prepared = data.map(item => ({
     ...item,
     [xField]: options.formatX ? options.formatX(item[xField]) : item[xField],
     [yField]: options.formatY ? options.formatY(item[yField]) : item[yField],

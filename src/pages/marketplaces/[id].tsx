@@ -6,15 +6,10 @@ import MainLayout from '../../components/layout/MainLayout';
 import PluginCard from '../../components/Marketplace/PluginCard';
 import {
   Star,
-  Download,
   Github,
   ExternalLink,
-  Users,
   Package,
   Shield,
-  Calendar,
-  GitBranch,
-  AlertCircle,
   Code,
   Book,
   Filter,
@@ -22,14 +17,12 @@ import {
   ArrowLeft,
   Copy,
   Check,
-  Share2,
-  Heart,
-  MessageSquare
+  Share2
 } from 'lucide-react';
-import { mockPlugins, MarketplacePlugin } from '../../data/mock-data';
+import { MarketplacePlugin } from '../../data/mock-data';
 import { useRealMarketplaceData } from '../../hooks/useRealMarketplaceData';
 
-interface MarketplaceDetailProps {
+interface _MarketplaceDetailProps {
   marketplace: MarketplacePlugin['marketplace'] & {
     owner: string;
     repositoryUrl: string;
@@ -89,11 +82,11 @@ const MarketplaceDetailPage: React.FC = () => {
 
   // Filter and sort plugins
   const filteredPlugins = useMemo(() => {
-    let filtered = marketplacePlugins.filter((plugin) => {
+    const filtered = marketplacePlugins.filter((plugin: any) => {
       const matchesSearch = searchQuery === '' ||
         plugin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         plugin.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        plugin.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase())) ||
+        plugin.tags.some((tag: string) => tag.toLowerCase().includes(searchQuery.toLowerCase())) ||
         plugin.author.toLowerCase().includes(searchQuery.toLowerCase());
 
       const matchesCategory = selectedCategory === 'All' || plugin.category === selectedCategory;
@@ -102,7 +95,7 @@ const MarketplaceDetailPage: React.FC = () => {
     });
 
     // Sort plugins
-    filtered.sort((a, b) => {
+    filtered.sort((a: any, b: any) => {
       switch (sortBy) {
         case 'name':
           return a.name.localeCompare(b.name);
@@ -119,9 +112,10 @@ const MarketplaceDetailPage: React.FC = () => {
   }, [marketplacePlugins, searchQuery, selectedCategory, sortBy]);
 
   // Get unique categories from plugins
-  const categories = useMemo(() => {
-    const cats = ['All', ...new Set(marketplacePlugins.map(p => p.category))];
-    return cats.filter(Boolean);
+  const categories = useMemo((): string[] => {
+    const uniqueCats = new Set<string>(marketplacePlugins.map((p: any) => p.category).filter((cat: any) => cat));
+    const cats = ['All', ...Array.from(uniqueCats)];
+    return cats;
   }, [marketplacePlugins]);
 
   // Calculate stats
@@ -129,9 +123,9 @@ const MarketplaceDetailPage: React.FC = () => {
     if (!marketplace) return { totalDownloads: 0, totalStars: 0, verifiedPlugins: 0 };
 
     return {
-      totalDownloads: marketplacePlugins.reduce((sum, plugin) => sum + plugin.downloads, 0),
-      totalStars: marketplacePlugins.reduce((sum, plugin) => sum + plugin.stars, 0) + marketplace.stars,
-      verifiedPlugins: marketplacePlugins.filter(plugin => plugin.verified).length,
+      totalDownloads: marketplacePlugins.reduce((sum: number, plugin: any) => sum + plugin.downloads, 0),
+      totalStars: marketplacePlugins.reduce((sum: number, plugin: any) => sum + plugin.stars, 0) + marketplace.stars,
+      verifiedPlugins: marketplacePlugins.filter((plugin: any) => plugin.verified).length,
     };
   }, [marketplace, marketplacePlugins]);
 
@@ -206,7 +200,7 @@ const MarketplaceDetailPage: React.FC = () => {
               Marketplace not found
             </h1>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
-              The marketplace you're looking for doesn't exist or has been removed.
+              The marketplace you&apos;re looking for doesn&apos;t exist or has been removed.
             </p>
             <Link href="/" className="btn btn-primary">
               <ArrowLeft className="w-4 h-4 mr-2" />
@@ -423,7 +417,7 @@ const MarketplaceDetailPage: React.FC = () => {
                   onChange={(e) => setSelectedCategory(e.target.value)}
                   className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 >
-                  {categories.map((category) => (
+                  {categories.map((category: string) => (
                     <option key={category} value={category}>
                       {category}
                     </option>
@@ -470,7 +464,7 @@ const MarketplaceDetailPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {filteredPlugins.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredPlugins.map((plugin) => (
+                {filteredPlugins.map((plugin: any) => (
                   <PluginCard key={plugin.id} plugin={plugin} />
                 ))}
               </div>
@@ -526,7 +520,7 @@ const MarketplaceDetailPage: React.FC = () => {
                         {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                       </button>
                     </div>
-                    <code>marketplace_url: "{marketplace.url}"</code>
+                    <code>marketplace_url: &quot;{marketplace.url}&quot;</code>
                   </div>
                 </div>
               </div>

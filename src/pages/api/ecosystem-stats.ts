@@ -31,20 +31,10 @@ import {
   getEcosystemStats,
   getCacheStatistics,
   clearAllCache,
-  mockDataGenerator,
 } from '../../data/ecosystem-stats';
 import {
-  getEcosystemMarketplaces,
-  getEcosystemPlugins,
   clearEcosystemCache,
 } from '../../services/ecosystem-data';
-import {
-  processOverview,
-  processGrowth,
-  processCategories,
-  processDevelopers,
-  processQuality,
-} from '../../utils/data-processor';
 import { TimeRange } from '../../utils/data-processor';
 
 /**
@@ -253,7 +243,7 @@ export default async function handler(
 
     // Parse query parameters
     const params = parseQueryParams(req.query);
-    const refreshCache = params.refresh === 'true';
+    const _refreshCache = params.refresh === 'true';
 
     console.log(`📊 Processing ecosystem stats request ${requestId}:`, {
       method: req.method,

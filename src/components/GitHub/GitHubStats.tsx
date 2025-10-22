@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Star, GitBranch, GitCommit, Users, Calendar, Eye, Package, Clock, AlertCircle } from 'lucide-react';
+import { Star, GitBranch, GitCommit, Users, Eye, AlertCircle } from 'lucide-react';
 
 interface GitHubStatsProps {
   repository: string;

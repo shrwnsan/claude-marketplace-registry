@@ -6,7 +6,7 @@ import PluginCard from '../../components/Marketplace/PluginCard';
 import { usePluginData } from '../../hooks/usePluginData';
 import { categories } from '../../data/mock-data';
 import LoadingState from '../../components/ui/LoadingState';
-import { Star, Download, Filter, Grid, List, Package } from 'lucide-react';
+import { Star, Download, Grid, List, Package } from 'lucide-react';
 import Link from 'next/link';
 
 const PluginsPage: React.FC = () => {
@@ -22,7 +22,7 @@ const PluginsPage: React.FC = () => {
 
   // Filter and sort plugins
   const filteredAndSortedPlugins = useMemo(() => {
-    let filtered = plugins.filter((plugin) => {
+    const filtered = plugins.filter((plugin) => {
       const matchesSearch = searchQuery === '' ||
         plugin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         plugin.description.toLowerCase().includes(searchQuery.toLowerCase()) ||

@@ -1,0 +1,181 @@
+/**
+ * EcosystemStats Component Styles
+ *
+ * Contains styles for the main EcosystemStats dashboard component.
+ * This includes responsive layouts, animations, and visual consistency
+ * with the existing design system.
+ */
+
+.ecosystem-stats {
+  /* Base styles */
+  @apply w-full;
+}
+
+.ecosystem-stats--compact {
+  /* Compact mode styles */
+  @apply space-y-8;
+}
+
+.ecosystem-stats--compact .ecosystem-stats__header {
+  @apply mb-6;
+}
+
+.ecosystem-stats--compact .ecosystem-stats__section {
+  @apply py-6;
+}
+
+/* Header styles */
+.ecosystem-stats__header {
+  @apply relative;
+}
+
+.ecosystem-stats__header h2 {
+  @apply tracking-tight;
+}
+
+.ecosystem-stats__header p {
+  @apply leading-relaxed;
+}
+
+/* Section styles */
+.ecosystem-stats__section {
+  @apply py-12;
+}
+
+.ecosystem-stats__section--overview {
+  @apply bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800;
+}
+
+.ecosystem-stats__section--growth {
+  @apply bg-gray-50 dark:bg-gray-800/50 rounded-xl;
+}
+
+.ecosystem-stats__section--categories {
+  @apply bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800;
+}
+
+.ecosystem-stats__section--quality {
+  @apply bg-gray-50 dark:bg-gray-800/50 rounded-xl;
+}
+
+/* Section headers */
+.ecosystem-stats__section header {
+  @apply mb-8;
+}
+
+.ecosystem-stats__section h3 {
+  @apply font-bold tracking-tight;
+}
+
+.ecosystem-stats__section p {
+  @apply text-base leading-relaxed;
+}
+
+/* Content layout */
+.ecosystem-stats__content {
+  @apply space-y-12;
+}
+
+.ecosystem-stats__content > div {
+  @apply space-y-12;
+}
+
+/* Footer styles */
+.ecosystem-stats__footer {
+  @apply border-t border-gray-200 dark:border-gray-700 pt-8 mt-12;
+}
+
+/* Loading states */
+.ecosystem-stats--loading {
+  @apply opacity-75 pointer-events-none;
+}
+
+/* Error states */
+.ecosystem-stats--error {
+  @apply border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/10;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .ecosystem-stats__section {
+    @apply py-8;
+  }
+
+  .ecosystem-stats__header h2 {
+    @apply text-2xl;
+  }
+
+  .ecosystem-stats__section h3 {
+    @apply text-lg;
+  }
+
+  .ecosystem-stats__header .flex {
+    @apply flex-col items-center gap-4;
+  }
+
+  .ecosystem-stats__header .flex-1 {
+    @apply flex-none w-full;
+  }
+
+  .ecosystem-stats__header .justify-end {
+    @apply justify-center;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .ecosystem-stats__section {
+    @apply py-10;
+  }
+}
+
+/* Animation styles */
+.ecosystem-stats__section {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.ecosystem-stats__section:hover {
+  @apply transform translate-y-[-1px];
+}
+
+/* Focus styles for accessibility */
+.ecosystem-stats__section:focus-within {
+  @apply ring-2 ring-blue-500 ring-opacity-50 rounded-xl;
+}
+
+/* Print styles */
+@media print {
+  .ecosystem-stats {
+    @apply text-black bg-white;
+  }
+
+  .ecosystem-stats__section {
+    @apply shadow-none border border-gray-300 break-inside-avoid;
+  }
+
+  .ecosystem-stats__header button {
+    @apply hidden;
+  }
+
+  .ecosystem-stats__footer {
+    @apply border-t-2 border-gray-900;
+  }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .ecosystem-stats__section--overview,
+  .ecosystem-stats__section--categories {
+    @apply shadow-lg;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .ecosystem-stats__section {
+    @apply transition-none;
+  }
+
+  .ecosystem-stats__section:hover {
+    @apply transform-none;
+  }
+}

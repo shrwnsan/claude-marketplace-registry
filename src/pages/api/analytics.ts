@@ -155,12 +155,12 @@ export default async function handler(
 
         // Calculate total stars and forks
         let totalStars = 0;
-        let totalForks = 0;
+        let _totalForks = 0;
         const languageCount: Record<string, number> = {};
 
         marketplaces.forEach((marketplace: any) => {
           totalStars += marketplace.stars || 0;
-          totalForks += marketplace.forks || 0;
+          _totalForks += marketplace.forks || 0;
 
           if (marketplace.language) {
             languageCount[marketplace.language] = (languageCount[marketplace.language] || 0) + 1;

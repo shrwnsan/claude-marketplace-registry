@@ -28,7 +28,7 @@ export function usePluginData(): UsePluginDataReturn {
           marketplaceData.marketplaces.forEach((marketplace) => {
             // Check for plugins in manifest.plugins (correct location in our data structure)
             if (marketplace.manifest?.plugins && Array.isArray(marketplace.manifest.plugins)) {
-              marketplace.manifest.plugins.forEach((plugin, index) => {
+              marketplace.manifest.plugins.forEach((plugin: any, index: number) => {
                 extractedPlugins.push({
                   id: `${marketplace.id}-${plugin.name}`,
                   name: plugin.name || `Plugin ${index + 1}`,

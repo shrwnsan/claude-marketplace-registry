@@ -11,8 +11,6 @@ import {
   CategoryAnalytics,
   CommunityData,
   QualityIndicators,
-  MarketplaceData,
-  PluginData,
   EcosystemStatsResponse,
   validators,
   createSuccessResponse,

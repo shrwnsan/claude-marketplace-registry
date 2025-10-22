@@ -5,10 +5,10 @@ import SearchBar from '../../components/Search/SearchBar';
 import { useRealMarketplaceData } from '../../hooks/useRealMarketplaceData';
 import { mockMarketplaces, categories } from '../../data/mock-data';
 import LoadingState from '../../components/ui/LoadingState';
-import { Star, Download, Github, ExternalLink, Shield, Filter, Grid, List } from 'lucide-react';
+import { Star, Github, ExternalLink, Shield, Filter, Grid, List } from 'lucide-react';
 import Link from 'next/link';
 
-interface Marketplace {
+interface _Marketplace {
   id: string;
   name: string;
   description: string;
@@ -34,7 +34,7 @@ const MarketplacesPage: React.FC = () => {
 
   // Filter and sort marketplaces
   const filteredAndSortedMarketplaces = useMemo(() => {
-    let filtered = marketplaces.filter((marketplace) => {
+    const filtered = marketplaces.filter((marketplace) => {
       const matchesSearch = searchQuery === '' ||
         marketplace.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         marketplace.description.toLowerCase().includes(searchQuery.toLowerCase());

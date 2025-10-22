@@ -3,10 +3,10 @@ import Head from 'next/head';
 import MainLayout from '../components/layout/MainLayout';
 import SearchBar from '../components/Search/SearchBar';
 import PluginCard from '../components/Marketplace/PluginCard';
-import GitHubStats from '../components/GitHub/GitHubStats';
+import { EcosystemStats } from '../components/EcosystemStats';
 import { useRealMarketplaceData } from '../hooks/useRealMarketplaceData';
 import { usePluginData } from '../hooks/usePluginData';
-import { mockMarketplaces, categories, MarketplacePlugin } from '../data/mock-data';
+import { mockMarketplaces, categories } from '../data/mock-data';
 import LoadingState from '../components/ui/LoadingState';
 import { Star, Download, Github, ExternalLink, TrendingUp, Users, Package, Shield, BarChart } from 'lucide-react';
 import Link from 'next/link';
@@ -17,8 +17,8 @@ const HomePage: React.FC = () => {
   const [showFilters, setShowFilters] = useState(false);
 
   // Use real marketplace data with fallback to mock data
-  const { data: marketplaceData, loading: marketplaceLoading, error: marketplaceError } = useRealMarketplaceData();
-  const { plugins: allPlugins, loading: pluginsLoading, error: pluginsError } = usePluginData();
+  const { data: marketplaceData, loading: marketplaceLoading, error: _marketplaceError } = useRealMarketplaceData();
+  const { plugins: allPlugins, loading: pluginsLoading, error: _pluginsError } = usePluginData();
 
   // Get marketplaces from real data or fall back to mock data
   const marketplaces = marketplaceData?.marketplaces || mockMarketplaces;
@@ -214,13 +214,13 @@ const HomePage: React.FC = () => {
                   Discover the most popular Claude Code marketplaces
                 </p>
               </div>
-              <a
+              <Link
                 href="/marketplaces"
                 className="inline-flex items-center justify-center px-4 py-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium group transition-colors self-center sm:self-auto"
               >
                 View all
                 <span className="ml-1 transform transition-transform group-hover:translate-x-1">→</span>
-              </a>
+              </Link>
             </div>
 
             {marketplaceLoading || pluginsLoading ? (
@@ -304,13 +304,13 @@ const HomePage: React.FC = () => {
                   }
                 </p>
               </div>
-              <a
+              <Link
                 href="/plugins"
                 className="inline-flex items-center justify-center px-4 py-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium group transition-colors self-center sm:self-auto"
               >
                 View all
                 <span className="ml-1 transform transition-transform group-hover:translate-x-1">→</span>
-              </a>
+              </Link>
             </div>
 
             {marketplaceLoading || pluginsLoading ? (
@@ -357,33 +357,29 @@ const HomePage: React.FC = () => {
 
             {filteredPlugins.length > 9 && (
               <div className="text-center mt-8 sm:mt-12">
-                <a
+                <Link
                   href="/plugins"
                   className="btn btn-primary inline-flex items-center group"
                   aria-label={`View all ${filteredPlugins.length} plugins`}
                 >
                   View all {filteredPlugins.length} plugins
                   <span className="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-                </a>
+                </Link>
               </div>
             )}
           </div>
         </section>
 
-        {/* GitHub Stats Section */}
+        {/* Ecosystem Statistics Section */}
         <section className="py-12 sm:py-16 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-                Project Statistics
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 text-lg">
-                Real-time GitHub statistics and community insights
-              </p>
-            </div>
-            <GitHubStats
-              repository="https://github.com/shrwnsan/claude-marketplace-registry"
-              className="max-w-4xl mx-auto"
+            <EcosystemStats
+              title="Ecosystem Statistics"
+              subtitle="Real-time insights into the growing Claude Code plugin ecosystem"
+              showRefreshButton={true}
+              showLastUpdated={true}
+              autoRefresh={false}
+              className="max-w-7xl mx-auto"
             />
           </div>
         </section>

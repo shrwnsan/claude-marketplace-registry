@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Star, Download, ExternalLink, Github, Verified, Shield, Copy, Check } from 'lucide-react';
+import { Star, Download, ExternalLink, Github, Verified, Copy, Check } from 'lucide-react';
 import { MarketplacePlugin } from '../../data/mock-data';
 import { useClickTracking } from '../../utils/analytics/hooks';
 

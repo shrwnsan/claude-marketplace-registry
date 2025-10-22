@@ -3,14 +3,13 @@
  * Handles searching for repositories containing .claude-plugin/marketplace.json files
  */
 
-import { GitHubClient } from '@/utils/github-client';
+import { GitHubClient, getDefaultGitHubClient } from '@/utils/github-client';
 import {
   GitHubSearchResponse,
   GitHubSearchParams,
   GitHubSearchRepositoryItem,
   RepositorySearchFilters,
   GitHubApiResponse,
-  RepositoryMetadata,
 } from '@/types/github';
 
 /**
@@ -478,7 +477,6 @@ let defaultSearchService: GitHubSearchService | null = null;
  */
 export function getDefaultGitHubSearchService(): GitHubSearchService {
   if (!defaultSearchService) {
-    const { getDefaultGitHubClient } = require('@/utils/github-client');
     const githubClient = getDefaultGitHubClient();
     defaultSearchService = new GitHubSearchService(githubClient);
   }

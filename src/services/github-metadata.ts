@@ -3,7 +3,7 @@
  * Handles fetching comprehensive repository metadata from GitHub API
  */
 
-import { GitHubClient } from '@/utils/github-client';
+import { GitHubClient, getDefaultGitHubClient } from '@/utils/github-client';
 import {
   GitHubRepository,
   GitHubCommit,
@@ -634,7 +634,6 @@ let defaultMetadataService: GitHubMetadataService | null = null;
  */
 export function getDefaultGitHubMetadataService(): GitHubMetadataService {
   if (!defaultMetadataService) {
-    const { getDefaultGitHubClient } = require('@/utils/github-client');
     const githubClient = getDefaultGitHubClient();
     defaultMetadataService = new GitHubMetadataService(githubClient);
   }

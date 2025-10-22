@@ -23,7 +23,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
   className = '',
 }) => {
   const [query, setQuery] = useState('');
-  const [isFocused, setIsFocused] = useState(false);
+  const [_isFocused, setIsFocused] = useState(false);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [suggestions, setSuggestions] = useState<SearchSuggestion[]>([]);
   const [recentSearches, setRecentSearches] = useState<string[]>([]);
@@ -302,7 +302,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
             {/* No results */}
             {suggestions.length === 0 && query.length >= 2 && (
               <div className="p-4 text-center text-sm text-gray-500 dark:text-gray-400">
-                No suggestions found for "{query}"
+                No suggestions found for &quot;{query}&quot;
               </div>
             )}
           </div>

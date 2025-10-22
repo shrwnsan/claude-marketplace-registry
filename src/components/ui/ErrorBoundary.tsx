@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { AlertTriangle, RefreshCw, Home } from 'lucide-react';
 
 interface ErrorBoundaryState {
@@ -80,7 +81,7 @@ const DefaultErrorFallback: React.FC<{
         </h1>
 
         <p className="text-gray-600 dark:text-gray-400 mb-6">
-          We're sorry, but something unexpected happened. Our team has been notified.
+          We&apos;re sorry, but something unexpected happened. Our team has been notified.
         </p>
 
         {process.env.NODE_ENV === 'development' && error && (
@@ -112,14 +113,14 @@ const DefaultErrorFallback: React.FC<{
             Try Again
           </button>
 
-          <a
+          <Link
             href="/"
             className="btn btn-secondary inline-flex items-center justify-center"
             aria-label="Go to homepage"
           >
             <Home className="w-4 h-4 mr-2" />
             Go Home
-          </a>
+          </Link>
         </div>
 
         <div className="mt-6 text-xs text-gray-500 dark:text-gray-400">
