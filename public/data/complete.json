@@ -1,15 +1,1857 @@
 {
-  "marketplaces": [],
+  "marketplaces": [
+    {
+      "id": "1076658131",
+      "name": "vibekit-claude-plugins",
+      "description": "VibeKit: Productivity Plus Claude Code Plugin Marketplace. A curated collection of productivity-enhancing plugins for developers, vibe coders, context engineers, indie hackers, etc.",
+      "url": "https://github.com/shrwnsan/vibekit-claude-plugins",
+      "stars": 2,
+      "forks": 0,
+      "language": "JavaScript",
+      "updatedAt": "2025-10-22T06:50:19Z",
+      "topics": [
+        "claude-code",
+        "developer-tools",
+        "marketplace",
+        "plugins",
+        "productivity"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1073224021",
+      "name": "every-marketplace",
+      "description": "Official Every-Env plugin marketplace for Claude Code extensions",
+      "url": "https://github.com/EveryInc/every-marketplace",
+      "stars": 399,
+      "forks": 43,
+      "language": "Unknown",
+      "updatedAt": "2025-10-22T06:40:15Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073337396",
+      "name": "claude-code-plugins-plus",
+      "description": "Claude Code Plugins Hub — browse and install 227 plugins. Featuring Skills Powerkit - first Agent Skills plugin.",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus",
+      "stars": 131,
+      "forks": 19,
+      "language": "JavaScript",
+      "updatedAt": "2025-10-22T06:37:35Z",
+      "topics": [
+        "ai",
+        "automation",
+        "claude-code",
+        "devops",
+        "marketplace",
+        "mcp",
+        "plugins",
+        "productivity"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1073277224",
+      "name": "claude-code-marketplace",
+      "description": "Marketplace repo for Claude Code Plugins",
+      "url": "https://github.com/ananddtyagi/claude-code-marketplace",
+      "stars": 115,
+      "forks": 19,
+      "language": "Python",
+      "updatedAt": "2025-10-22T05:34:39Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073277224",
+      "name": "claude-code-marketplace",
+      "description": "Marketplace repo for Claude Code Plugins",
+      "url": "https://github.com/ananddtyagi/claude-code-marketplace",
+      "stars": 115,
+      "forks": 19,
+      "language": "Python",
+      "updatedAt": "2025-10-22T05:34:39Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073224871",
+      "name": "superpowers-marketplace",
+      "description": "Curated Claude Code plugin marketplace",
+      "url": "https://github.com/obra/superpowers-marketplace",
+      "stars": 53,
+      "forks": 22,
+      "language": "Unknown",
+      "updatedAt": "2025-10-22T04:59:03Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1071171085",
+      "name": "vibe-garden",
+      "description": "A Claude Code plugin marketplace with this and that. And a lot of notes.",
+      "url": "https://github.com/rjroy/vibe-garden",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-22T04:37:18Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1077522298",
+      "name": "claude-plugins",
+      "description": "Claude Code Plugins Marketplace - Collection of plugins for Claude Code",
+      "url": "https://github.com/ankushdixit/claude-plugins",
+      "stars": 3,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-22T01:18:40Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073297494",
+      "name": "cc-plugins",
+      "description": "Claude Code plugin marketplace for brainworm",
+      "url": "https://github.com/lsmith090/cc-plugins",
+      "stars": 2,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-21T23:29:10Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1075634813",
+      "name": "claude-code-marketplace",
+      "description": "Claude Code plugins & extensions - Hooks, commands, and agents for developer productivity and workflow automation",
+      "url": "https://github.com/Dev-GOM/claude-code-marketplace",
+      "stars": 9,
+      "forks": 1,
+      "language": "JavaScript",
+      "updatedAt": "2025-10-21T22:44:08Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079174299",
+      "name": "claude-marketplace",
+      "description": "Marketplace de plugins pour Claude Code : dev tools (Git, Symfony, PHPStan, API Platform), customization (hooks, output styles) et documentation interactive",
+      "url": "https://github.com/atournayre/claude-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-21T20:58:27Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079737722",
+      "name": "sb-marketplace",
+      "description": "Claude plugin marketplace for SuperBenefit",
+      "url": "https://github.com/superbenefit/sb-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T17:31:19Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073772728",
+      "name": "Warren-Claude-Code-Plugin-Marketplace",
+      "description": "A personal plugin marketplace for Claude Code",
+      "url": "https://github.com/WarrenZhu050413/Warren-Claude-Code-Plugin-Marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-21T17:05:51Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073801953",
+      "name": "marketplace",
+      "description": "Curated collection of Claude Code plugins for fullstack development teams",
+      "url": "https://github.com/1broseidon/marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T16:02:15Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074632841",
+      "name": "ashknk-marketplace",
+      "description": "Claude Code Plugins Market Place - Understanding the Plugin Creation",
+      "url": "https://github.com/AshokNaik009/ashknk-marketplace",
+      "stars": 3,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T15:38:57Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073983725",
+      "name": "cluade-code-plugins",
+      "description": "Claude Plugin Marketplace",
+      "url": "https://github.com/huangdijia/cluade-code-plugins",
+      "stars": 3,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T15:38:29Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074416423",
+      "name": "cc",
+      "description": "🔬 Claude Code toolchain",
+      "url": "https://github.com/samber/cc",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T14:36:58Z",
+      "topics": [
+        "agentic",
+        "ai",
+        "caffeine",
+        "claude",
+        "claude-code",
+        "coding",
+        "hook",
+        "marketplace",
+        "mcp",
+        "plugin",
+        "vibe-coding"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079739578",
+      "name": "claude-marketplace",
+      "description": "Codes for Claude marketplace and plugins.",
+      "url": "https://github.com/megmogmog1965/claude-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "updatedAt": "2025-10-21T13:06:06Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1080477214",
+      "name": "claude-code-marketplace",
+      "description": "A starter template for creating Claude Code plugin marketplaces to share custom skills and MCP servers",
+      "url": "https://github.com/ehudhal/claude-code-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T12:31:55Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1080471646",
+      "name": "mcp-plugin-marketplace",
+      "description": "An in-app hub for discovering, testing, and reviewing custom MCP tools — like a mini App Store for Claude integrations.",
+      "url": "https://github.com/thomasdegan/mcp-plugin-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T12:22:17Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1078490821",
+      "name": "dot-claude",
+      "description": "Repository for making use of Claude Code's marketplace plugin feature for sharing agents, commands, hooks, and mcp servers",
+      "url": "https://github.com/chambridge/dot-claude",
+      "stars": 1,
+      "forks": 0,
+      "language": "Shell",
+      "updatedAt": "2025-10-21T07:31:49Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074806595",
+      "name": "comeonzhj-cc-marketplace",
+      "description": "Claude Code Plugins",
+      "url": "https://github.com/comeonzhj/comeonzhj-cc-marketplace",
+      "stars": 1,
+      "forks": 2,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T07:14:40Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074261959",
+      "name": "plugin-marketplace",
+      "description": "Claude Code plugin marketplace showcasing all component types",
+      "url": "https://github.com/kivilaid/plugin-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-21T04:44:27Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074261959",
+      "name": "plugin-marketplace",
+      "description": "Claude Code plugin marketplace showcasing all component types",
+      "url": "https://github.com/kivilaid/plugin-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-21T04:44:27Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1080190709",
+      "name": "claude-plugins",
+      "description": "Claude Code plugin marketplace",
+      "url": "https://github.com/jrentmeister/claude-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T02:31:26Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1075603547",
+      "name": "open-plugins",
+      "description": "OpenPlugins is a AI-curated marketplace of high-quality, open-source plugins for Claude Code. Our mission is to foster a vibrant ecosystem of productivity tools, development utilities, and specialized agents that extend Claude Code's capabilities.",
+      "url": "https://github.com/dhofheinz/open-plugins",
+      "stars": 1,
+      "forks": 0,
+      "language": "Shell",
+      "updatedAt": "2025-10-21T02:24:07Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079528930",
+      "name": "devkit-marketplace",
+      "description": "Official marketplace for DevKit plugin - comprehensive development toolkit for Claude Code",
+      "url": "https://github.com/CuriousLearner/devkit-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T01:24:52Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079528930",
+      "name": "devkit-marketplace",
+      "description": "Official marketplace for DevKit plugin - comprehensive development toolkit for Claude Code",
+      "url": "https://github.com/CuriousLearner/devkit-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-21T01:24:52Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073358900",
+      "name": "marketplace",
+      "description": "DotClaude Plugin Marketplace - Revolutionary AI interaction platform for Claude Code",
+      "url": "https://github.com/dotclaude/marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-20T22:58:01Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079509532",
+      "name": "human-frontier-labs-marketplace",
+      "description": "Public Claude Code plugin marketplace - Bubble Tea TUI tools and CareBridge development standards",
+      "url": "https://github.com/Human-Frontier-Labs-Inc/human-frontier-labs-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-20T17:49:23Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079509532",
+      "name": "human-frontier-labs-marketplace",
+      "description": "Public Claude Code plugin marketplace - Bubble Tea TUI tools and CareBridge development standards",
+      "url": "https://github.com/Human-Frontier-Labs-Inc/human-frontier-labs-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-20T17:49:23Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1053779296",
+      "name": "claude-equity-research",
+      "description": "🔌 Claude Code Plugin for institutional-grade equity research.   Install with /plugin marketplace add. Generates professional   buy/sell recommendations with comprehensive fundamental   analysis, technical indicators, and risk assessment. Educational    use only - not financial advice.",
+      "url": "https://github.com/quant-sentiment-ai/claude-equity-research",
+      "stars": 101,
+      "forks": 13,
+      "language": "Unknown",
+      "updatedAt": "2025-10-20T17:39:19Z",
+      "topics": [
+        "ai-powered",
+        "claude-code",
+        "claude-code-plugin",
+        "equity-research",
+        "finance",
+        "financial-analysis",
+        "financial-analysis-ai",
+        "financial-analysis-tools",
+        "financial-analyst",
+        "investment-research",
+        "stock-analysis",
+        "stock-analyst",
+        "trading-analysis"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079973762",
+      "name": "claude-plugins",
+      "description": "Claude Code plugin marketplace for Banyan AI development tools",
+      "url": "https://github.com/banyanai/claude-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-20T17:29:42Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079758789",
+      "name": "nau-marketplace",
+      "description": "my marketplace for Claude Code plugins",
+      "url": "https://github.com/ANezbudy/nau-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-20T12:20:25Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079722055",
+      "name": "developer-claude-plugins",
+      "description": "An experimental marketplace + set of plugins to aid software development using Claude Code.",
+      "url": "https://github.com/vidarh/developer-claude-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-20T09:41:32Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1079722055",
+      "name": "developer-claude-plugins",
+      "description": "An experimental marketplace + set of plugins to aid software development using Claude Code.",
+      "url": "https://github.com/vidarh/developer-claude-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-20T09:41:32Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1075298792",
+      "name": "claude-plugins-marketplace",
+      "description": "A simple marketplace for claude code plugins",
+      "url": "https://github.com/cicababba/claude-plugins-marketplace",
+      "stars": 3,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-20T09:09:03Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074774731",
+      "name": "claude-plugins-marketplace",
+      "description": "Enterprise-grade Claude Code plugins with security, automation, and AI-powered workflows",
+      "url": "https://github.com/haddock-development/claude-plugins-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-20T09:08:14Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079398155",
+      "name": "claude-plugins",
+      "description": "Claude Code plugin marketplace - productivity and learning plugins",
+      "url": "https://github.com/JoshuaOliphant/claude-plugins",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-20T09:06:54Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079398155",
+      "name": "claude-plugins",
+      "description": "Claude Code plugin marketplace - productivity and learning plugins",
+      "url": "https://github.com/JoshuaOliphant/claude-plugins",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-20T09:06:54Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1076415154",
+      "name": "claude-plugins",
+      "description": "A Claude Code plugin marketplace",
+      "url": "https://github.com/cblecker/claude-plugins",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-20T09:06:10Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1076415154",
+      "name": "claude-plugins",
+      "description": "A Claude Code plugin marketplace",
+      "url": "https://github.com/cblecker/claude-plugins",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-20T09:06:10Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079655124",
+      "name": "claude-marketplace-registry",
+      "description": "A comprehensive registry of Claude Code marketplaces and plugins for developers to quickly discover and integrate ecosystem tools",
+      "url": "https://github.com/shrwnsan/claude-marketplace-registry",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-20T08:47:30Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1079655124",
+      "name": "claude-marketplace-registry",
+      "description": "A comprehensive registry of Claude Code marketplaces and plugins for developers to quickly discover and integrate ecosystem tools",
+      "url": "https://github.com/shrwnsan/claude-marketplace-registry",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-20T08:47:30Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1079572067",
+      "name": "davideasaf-marketplace",
+      "description": "Claude Plugin Marketplace",
+      "url": "https://github.com/davideasaf/davideasaf-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-20T04:11:47Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079572067",
+      "name": "davideasaf-marketplace",
+      "description": "Claude Plugin Marketplace",
+      "url": "https://github.com/davideasaf/davideasaf-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-20T04:11:47Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074570523",
+      "name": "claude-code-plugin-marketplace",
+      "description": "Multi-agent trading, swarm intelligence, and GitHub automation plugins for Claude Code. 19 production-grade plugins built from 68+ specialized agents.",
+      "url": "https://github.com/jmanhype/claude-code-plugin-marketplace",
+      "stars": 3,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T21:02:01Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1075081788",
+      "name": "marketplace",
+      "description": "A curated marketplace of Claude Code plugins for enhanced development workflows",
+      "url": "https://github.com/epicpast/marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-19T20:57:02Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074282134",
+      "name": "dev-utils-marketplace",
+      "description": "Modular Claude Code plugin marketplace with 15 focused, independently installable plugins for enhanced development workflows",
+      "url": "https://github.com/AojdevStudio/dev-utils-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-19T20:46:07Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1076526367",
+      "name": "claude-code-marketplace",
+      "description": "Official marketplace for Claude Code plugins.",
+      "url": "https://github.com/anthropic-claude-cli/claude-code-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T20:43:46Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1073235745",
+      "name": "claude-marketplace",
+      "description": "Personal Claude Code marketplace featuring Python development plugins for best practices, documentation standards, and Zen of Python enforcement.",
+      "url": "https://github.com/daviguides/claude-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T20:43:26Z",
+      "topics": [
+        "claude-code"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1077167117",
+      "name": "claude-marketplace",
+      "description": "Marketplace for Claude Code plugins",
+      "url": "https://github.com/mthalman/claude-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T20:36:33Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1075414940",
+      "name": "claude-toolbox",
+      "description": "Official marketplace for Claude Code plugins from Kanopi Studios.",
+      "url": "https://github.com/kanopi/claude-toolbox",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T20:32:24Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079332792",
+      "name": "claude-plugins",
+      "description": "my personal curated claude plugins marketplace",
+      "url": "https://github.com/rjmoggach/claude-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "PowerShell",
+      "updatedAt": "2025-10-19T19:59:23Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079332792",
+      "name": "claude-plugins",
+      "description": "my personal curated claude plugins marketplace",
+      "url": "https://github.com/rjmoggach/claude-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "PowerShell",
+      "updatedAt": "2025-10-19T19:59:23Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079302600",
+      "name": "docflow-marketplace",
+      "description": "Document workflow tools for Claude with plugins, commands, agents and skills.",
+      "url": "https://github.com/martinnormark/docflow-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T19:15:35Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079302600",
+      "name": "docflow-marketplace",
+      "description": "Document workflow tools for Claude with plugins, commands, agents and skills.",
+      "url": "https://github.com/martinnormark/docflow-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T19:15:35Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079418986",
+      "name": "tailwindcss-marketplace",
+      "description": "Production-ready Claude Code plugins for Tailwind CSS 3+ utility-first design, dark mode, and component systems",
+      "url": "https://github.com/rdimascio/tailwindcss-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "HTML",
+      "updatedAt": "2025-10-19T19:09:29Z",
+      "topics": [
+        "claude-code",
+        "design-systems",
+        "marketplace",
+        "plugins",
+        "tailwindcss",
+        "utility-first"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079418986",
+      "name": "tailwindcss-marketplace",
+      "description": "Production-ready Claude Code plugins for Tailwind CSS 3+ utility-first design, dark mode, and component systems",
+      "url": "https://github.com/rdimascio/tailwindcss-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "HTML",
+      "updatedAt": "2025-10-19T19:09:29Z",
+      "topics": [
+        "claude-code",
+        "design-systems",
+        "marketplace",
+        "plugins",
+        "tailwindcss",
+        "utility-first"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079418950",
+      "name": "supabase-marketplace",
+      "description": "Production-ready Claude Code plugins for Supabase database, auth, storage, realtime, and edge functions",
+      "url": "https://github.com/rdimascio/supabase-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-19T19:09:26Z",
+      "topics": [
+        "authentication",
+        "claude-code",
+        "marketplace",
+        "plugins",
+        "postgresql",
+        "supabase"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079418950",
+      "name": "supabase-marketplace",
+      "description": "Production-ready Claude Code plugins for Supabase database, auth, storage, realtime, and edge functions",
+      "url": "https://github.com/rdimascio/supabase-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-19T19:09:26Z",
+      "topics": [
+        "authentication",
+        "claude-code",
+        "marketplace",
+        "plugins",
+        "postgresql",
+        "supabase"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079418922",
+      "name": "react-marketplace",
+      "description": "Production-ready Claude Code plugins for React 18+ hooks, state management, and modern patterns",
+      "url": "https://github.com/rdimascio/react-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-19T19:09:24Z",
+      "topics": [
+        "claude-code",
+        "hooks",
+        "marketplace",
+        "plugins",
+        "react",
+        "state-management"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079418922",
+      "name": "react-marketplace",
+      "description": "Production-ready Claude Code plugins for React 18+ hooks, state management, and modern patterns",
+      "url": "https://github.com/rdimascio/react-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-19T19:09:24Z",
+      "topics": [
+        "claude-code",
+        "hooks",
+        "marketplace",
+        "plugins",
+        "react",
+        "state-management"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079418879",
+      "name": "nextjs-marketplace",
+      "description": "Production-ready Claude Code plugins for Next.js 14+ App Router, Server Components, and Server Actions",
+      "url": "https://github.com/rdimascio/nextjs-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-19T19:09:22Z",
+      "topics": [
+        "app-router",
+        "claude-code",
+        "marketplace",
+        "nextjs",
+        "plugins",
+        "server-components"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079418879",
+      "name": "nextjs-marketplace",
+      "description": "Production-ready Claude Code plugins for Next.js 14+ App Router, Server Components, and Server Actions",
+      "url": "https://github.com/rdimascio/nextjs-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "updatedAt": "2025-10-19T19:09:22Z",
+      "topics": [
+        "app-router",
+        "claude-code",
+        "marketplace",
+        "nextjs",
+        "plugins",
+        "server-components"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1074285571",
+      "name": "agents",
+      "description": "Claude Code agents, plugins, marketplace",
+      "url": "https://github.com/bodis/agents",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T18:38:51Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074285571",
+      "name": "agents",
+      "description": "Claude Code agents, plugins, marketplace",
+      "url": "https://github.com/bodis/agents",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T18:38:51Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1075743932",
+      "name": "marketplace",
+      "description": " Official plugin marketplace for Claude Code. Browse, discover, and install community tools for enhanced AI-powered development.",
+      "url": "https://github.com/ClaudeRegistry/marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T18:26:54Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1075743932",
+      "name": "marketplace",
+      "description": " Official plugin marketplace for Claude Code. Browse, discover, and install community tools for enhanced AI-powered development.",
+      "url": "https://github.com/ClaudeRegistry/marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T18:26:54Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079326094",
+      "name": "claude-code-plugins-marketplace",
+      "description": "claude code plugins marketplace",
+      "url": "https://github.com/unnode001/claude-code-plugins-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-19T15:29:19Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079326094",
+      "name": "claude-code-plugins-marketplace",
+      "description": "claude code plugins marketplace",
+      "url": "https://github.com/unnode001/claude-code-plugins-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2025-10-19T15:29:19Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1079039074",
+      "name": "fake-claude-plugins",
+      "description": "Fugazi Marketplace? ",
+      "url": "https://github.com/linehaul-ai/fake-claude-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T03:40:37Z",
+      "topics": [
+        "claude",
+        "claudecode",
+        "go",
+        "golang",
+        "marketplace",
+        "mcp",
+        "mcp-server",
+        "plugins",
+        "sdk",
+        "subagents"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1079039074",
+      "name": "fake-claude-plugins",
+      "description": "Fugazi Marketplace? ",
+      "url": "https://github.com/linehaul-ai/fake-claude-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T03:40:37Z",
+      "topics": [
+        "claude",
+        "claudecode",
+        "go",
+        "golang",
+        "marketplace",
+        "mcp",
+        "mcp-server",
+        "plugins",
+        "sdk",
+        "subagents"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1078874915",
+      "name": "claude-code-learning-marketplace",
+      "description": "A Claude Code plugin marketplace dedicated to AI-powered codebase learning. Discover specialized plugins designed to help you understand architecture, trace code flows, identify patterns, and explore domain concepts—making onboarding and knowledge sharing effortless.",
+      "url": "https://github.com/Jsnnmsc/claude-code-learning-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T02:05:58Z",
+      "topics": [
+        "claude-code",
+        "claude-code-plugin",
+        "learning"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1078874915",
+      "name": "claude-code-learning-marketplace",
+      "description": "A Claude Code plugin marketplace dedicated to AI-powered codebase learning. Discover specialized plugins designed to help you understand architecture, trace code flows, identify patterns, and explore domain concepts—making onboarding and knowledge sharing effortless.",
+      "url": "https://github.com/Jsnnmsc/claude-code-learning-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-19T02:05:58Z",
+      "topics": [
+        "claude-code",
+        "claude-code-plugin",
+        "learning"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1078393147",
+      "name": "claude-plugins",
+      "description": "A Claude Code plugin marketplace",
+      "url": "https://github.com/quotably/claude-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-17T18:45:59Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1078213337",
+      "name": "claude-plugins-marketplace",
+      "description": "",
+      "url": "https://github.com/vitalmasterr/claude-plugins-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-17T12:42:53Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073618420",
+      "name": "claude-meow-marketplace",
+      "description": "Marketplace for Claude Code plugins",
+      "url": "https://github.com/shaurgon/claude-meow-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "updatedAt": "2025-10-17T05:12:27Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073261397",
+      "name": "claude",
+      "description": "Claude Code plugin marketplace for ATXP",
+      "url": "https://github.com/atxp-dev/claude",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "updatedAt": "2025-10-16T21:48:07Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1077247334",
+      "name": "claude-mkt",
+      "description": "my personal claude marketplace for claude plugins",
+      "url": "https://github.com/phaezer/claude-mkt",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-16T20:29:57Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074955010",
+      "name": "llm",
+      "description": "Claude Code plugin marketplace featuring MCP integrations",
+      "url": "https://github.com/terkelg/llm",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-16T10:07:39Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1077267077",
+      "name": "claude-marketplace",
+      "description": "Claude Code plugins",
+      "url": "https://github.com/nobodyiscertain/claude-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-16T03:00:32Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1077047977",
+      "name": "sth-claude-plugin-marketplace",
+      "description": "",
+      "url": "https://github.com/SeeThruHead/sth-claude-plugin-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-15T18:35:43Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073721282",
+      "name": "claudex.directory",
+      "description": "A curated directory of hand-selected Claude Code plugins, agents, and extensions. Browse and install from trusted community marketplaces.",
+      "url": "https://github.com/sambarrowclough/claudex.directory",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "updatedAt": "2025-10-15T17:13:51Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1076462009",
+      "name": "claude-code-marketplace",
+      "description": "Claude Code Marketplace Plugins",
+      "url": "https://github.com/robertmurray/claude-code-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-14T22:33:35Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1076323496",
+      "name": "samsung-ads-marketplace",
+      "description": "Claude Code plugin marketplace featuring GenAI productivity plugins for Samsung Ads development workflows",
+      "url": "https://github.com/stevechiou-samsung/samsung-ads-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-14T17:42:43Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1076091292",
+      "name": "claude-code-plugins",
+      "description": "My Claude Code marketplace",
+      "url": "https://github.com/igor-gorohovsky/claude-code-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-14T12:40:45Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1075198782",
+      "name": "claude-code-plugins",
+      "description": "Claude code plugin marketplace for the BuildAtScale YouTube Channel",
+      "url": "https://github.com/buildatscale-tv/claude-code-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "updatedAt": "2025-10-14T03:35:04Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1075773066",
+      "name": ".github",
+      "description": "Collect high-quality Claude Code plugins.  Visually and flexibly build your own Claude Code plugin marketplace for team publishing.",
+      "url": "https://github.com/claude-code-plugin-marketplaces/.github",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-14T01:23:08Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1075691346",
+      "name": "claude-code-plugin-test",
+      "description": "testing a claude code marketplace",
+      "url": "https://github.com/samuelgarrett/claude-code-plugin-test",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-13T21:55:51Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1075211518",
+      "name": "claude-code-plugins-marketplace",
+      "description": "",
+      "url": "https://github.com/imambux/claude-code-plugins-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-13T07:35:57Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1074252748",
+      "name": "claude-code-plugins",
+      "description": "Anthropic Claude Code Plugin marketplace",
+      "url": "https://github.com/devops-infinity/claude-code-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-12T12:50:21Z",
+      "topics": [],
+      "hasManifest": false
+    },
+    {
+      "id": "1074073972",
+      "name": "playeola-plugins",
+      "description": "GitHub-hosted plugin marketplace for your team to share custom Claude Code plugins (slash commands, agents, MCP servers, and hooks).",
+      "url": "https://github.com/Play-E-Ola/playeola-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-12T11:21:55Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074408045",
+      "name": "telecom-ops-claude-code-plugins",
+      "description": "[Developing] Claude Code plugins & marketplace for telecom cloud automation. Wraps O-RAN O2-IMS/DMS, Nephio (Porch/kpt) and Kubernetes as MCP tools to realize Intent→KRM→GitOps with QoS assurance.",
+      "url": "https://github.com/thc1006/telecom-ops-claude-code-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Shell",
+      "updatedAt": "2025-10-11T19:30:03Z",
+      "topics": [
+        "claude-code",
+        "claude-code-plugins",
+        "gitops",
+        "kpt",
+        "kubernetes",
+        "mcp",
+        "model-context-protocol",
+        "nephio",
+        "o-ran",
+        "o-ran-o2",
+        "plugin-marketplace",
+        "porch"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1074268188",
+      "name": "cc-plugins",
+      "description": "Claude code plugins marketplace",
+      "url": "https://github.com/leoweb57/cc-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-11T16:58:58Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1074141890",
+      "name": "ima-mcp-marketplace",
+      "description": "IMA Knowledge Assistant Plugin Marketplace - 涓撻棬涓鸿吘璁疘MA Copilot骞冲彴寮€鍙戠殑Claude Code鎻掍欢闆嗗悎",
+      "url": "https://github.com/hzblkm/ima-mcp-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "updatedAt": "2025-10-11T08:14:55Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073943272",
+      "name": "claude-code-plugins",
+      "description": "Custom Claude Code plugins marketplace for the discerning developer",
+      "url": "https://github.com/russellslater/claude-code-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-10T22:19:13Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073709370",
+      "name": "claude-code-plugins",
+      "description": "A marketplace of useful claude code plugins",
+      "url": "https://github.com/Parslee-ai/claude-code-plugins",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-10T20:09:29Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073657811",
+      "name": "claude-plugin-marketplace",
+      "description": "",
+      "url": "https://github.com/Zal4DW/claude-plugin-marketplace",
+      "stars": 0,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-10T13:17:17Z",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1073334992",
+      "name": "claude-plugins-marketplace",
+      "description": "",
+      "url": "https://github.com/aaronsb/claude-plugins-marketplace",
+      "stars": 1,
+      "forks": 0,
+      "language": "Unknown",
+      "updatedAt": "2025-10-10T01:18:13Z",
+      "topics": [],
+      "hasManifest": true
+    }
+  ],
   "plugins": [],
   "stats": {
-    "totalMarketplaces": 0,
+    "totalMarketplaces": 100,
     "totalPlugins": 0,
     "validPlugins": 0,
-    "lastUpdated": "2025-10-17T19:40:21.969Z",
-    "topLanguages": [],
-    "topMarketplaces": [],
-    "recentActivity": []
+    "lastUpdated": "2025-10-22T06:52:01.465Z",
+    "topLanguages": [
+      {
+        "language": "Unknown",
+        "count": 56
+      },
+      {
+        "language": "Python",
+        "count": 18
+      },
+      {
+        "language": "TypeScript",
+        "count": 10
+      },
+      {
+        "language": "JavaScript",
+        "count": 6
+      },
+      {
+        "language": "Shell",
+        "count": 6
+      },
+      {
+        "language": "PowerShell",
+        "count": 2
+      },
+      {
+        "language": "HTML",
+        "count": 2
+      }
+    ],
+    "topMarketplaces": [
+      {
+        "name": "every-marketplace",
+        "stars": 399,
+        "url": "https://github.com/EveryInc/every-marketplace"
+      },
+      {
+        "name": "claude-code-plugins-plus",
+        "stars": 131,
+        "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
+      },
+      {
+        "name": "claude-code-marketplace",
+        "stars": 115,
+        "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+      },
+      {
+        "name": "claude-code-marketplace",
+        "stars": 115,
+        "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+      },
+      {
+        "name": "claude-equity-research",
+        "stars": 101,
+        "url": "https://github.com/quant-sentiment-ai/claude-equity-research"
+      },
+      {
+        "name": "superpowers-marketplace",
+        "stars": 53,
+        "url": "https://github.com/obra/superpowers-marketplace"
+      },
+      {
+        "name": "claude-code-marketplace",
+        "stars": 9,
+        "url": "https://github.com/Dev-GOM/claude-code-marketplace"
+      },
+      {
+        "name": "claude-plugins",
+        "stars": 3,
+        "url": "https://github.com/ankushdixit/claude-plugins"
+      },
+      {
+        "name": "claude-code-plugin-marketplace",
+        "stars": 3,
+        "url": "https://github.com/jmanhype/claude-code-plugin-marketplace"
+      },
+      {
+        "name": "claude-plugins-marketplace",
+        "stars": 3,
+        "url": "https://github.com/cicababba/claude-plugins-marketplace"
+      }
+    ],
+    "recentActivity": [
+      {
+        "name": "vibekit-claude-plugins",
+        "updatedAt": "2025-10-22T06:50:19Z",
+        "url": "https://github.com/shrwnsan/vibekit-claude-plugins"
+      },
+      {
+        "name": "every-marketplace",
+        "updatedAt": "2025-10-22T06:40:15Z",
+        "url": "https://github.com/EveryInc/every-marketplace"
+      },
+      {
+        "name": "claude-code-plugins-plus",
+        "updatedAt": "2025-10-22T06:37:35Z",
+        "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
+      },
+      {
+        "name": "claude-code-marketplace",
+        "updatedAt": "2025-10-22T05:34:39Z",
+        "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+      },
+      {
+        "name": "claude-code-marketplace",
+        "updatedAt": "2025-10-22T05:34:39Z",
+        "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+      },
+      {
+        "name": "superpowers-marketplace",
+        "updatedAt": "2025-10-22T04:59:03Z",
+        "url": "https://github.com/obra/superpowers-marketplace"
+      },
+      {
+        "name": "vibe-garden",
+        "updatedAt": "2025-10-22T04:37:18Z",
+        "url": "https://github.com/rjroy/vibe-garden"
+      },
+      {
+        "name": "claude-plugins",
+        "updatedAt": "2025-10-22T01:18:40Z",
+        "url": "https://github.com/ankushdixit/claude-plugins"
+      },
+      {
+        "name": "cc-plugins",
+        "updatedAt": "2025-10-21T23:29:10Z",
+        "url": "https://github.com/lsmith090/cc-plugins"
+      },
+      {
+        "name": "claude-code-marketplace",
+        "updatedAt": "2025-10-21T22:44:08Z",
+        "url": "https://github.com/Dev-GOM/claude-code-marketplace"
+      }
+    ]
   },
-  "categories": [],
-  "tags": []
+  "categories": [
+    {
+      "id": "development",
+      "name": "Development Tools",
+      "description": "Tools for software development and coding",
+      "count": 78,
+      "marketplaces": [
+        "vibekit-claude-plugins",
+        "every-marketplace",
+        "claude-code-plugins-plus",
+        "claude-code-marketplace",
+        "claude-code-marketplace",
+        "superpowers-marketplace",
+        "vibe-garden",
+        "claude-plugins",
+        "cc-plugins",
+        "claude-code-marketplace",
+        "claude-marketplace",
+        "Warren-Claude-Code-Plugin-Marketplace",
+        "marketplace",
+        "ashknk-marketplace",
+        "cc",
+        "claude-code-marketplace",
+        "comeonzhj-cc-marketplace",
+        "plugin-marketplace",
+        "plugin-marketplace",
+        "claude-plugins",
+        "open-plugins",
+        "devkit-marketplace",
+        "devkit-marketplace",
+        "marketplace",
+        "human-frontier-labs-marketplace",
+        "human-frontier-labs-marketplace",
+        "claude-equity-research",
+        "claude-plugins",
+        "nau-marketplace",
+        "developer-claude-plugins",
+        "developer-claude-plugins",
+        "claude-plugins-marketplace",
+        "claude-plugins-marketplace",
+        "claude-plugins",
+        "claude-plugins",
+        "claude-plugins",
+        "claude-plugins",
+        "claude-marketplace-registry",
+        "claude-marketplace-registry",
+        "claude-code-plugin-marketplace",
+        "marketplace",
+        "dev-utils-marketplace",
+        "claude-code-marketplace",
+        "claude-marketplace",
+        "claude-marketplace",
+        "claude-toolbox",
+        "tailwindcss-marketplace",
+        "tailwindcss-marketplace",
+        "supabase-marketplace",
+        "supabase-marketplace",
+        "react-marketplace",
+        "react-marketplace",
+        "nextjs-marketplace",
+        "nextjs-marketplace",
+        "agents",
+        "agents",
+        "claude-code-plugins-marketplace",
+        "claude-code-plugins-marketplace",
+        "claude-code-learning-marketplace",
+        "claude-code-learning-marketplace",
+        "claude-plugins",
+        "claude-meow-marketplace",
+        "claude",
+        "llm",
+        "claude-marketplace",
+        "claudex.directory",
+        "claude-code-marketplace",
+        "samsung-ads-marketplace",
+        "claude-code-plugins",
+        "claude-code-plugins",
+        ".github",
+        "claude-code-plugin-test",
+        "claude-code-plugins",
+        "playeola-plugins",
+        "telecom-ops-claude-code-plugins",
+        "cc-plugins",
+        "claude-code-plugins",
+        "claude-code-plugins"
+      ]
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity",
+      "description": "Tools to boost productivity and workflow",
+      "count": 10,
+      "marketplaces": [
+        "vibekit-claude-plugins",
+        "claude-code-plugins-plus",
+        "claude-code-marketplace",
+        "open-plugins",
+        "claude-plugins",
+        "claude-plugins",
+        "claude-code-plugin-marketplace",
+        "docflow-marketplace",
+        "docflow-marketplace",
+        "samsung-ads-marketplace"
+      ]
+    },
+    {
+      "id": "ai-ml",
+      "name": "AI & Machine Learning",
+      "description": "Artificial intelligence and machine learning tools",
+      "count": 4,
+      "marketplaces": [
+        "claude-code-plugins-plus",
+        "cc",
+        "marketplace",
+        "claude-plugins"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "claude-code",
+      "name": "claude-code",
+      "count": 16
+    },
+    {
+      "id": "marketplace",
+      "name": "marketplace",
+      "count": 13
+    },
+    {
+      "id": "plugins",
+      "name": "plugins",
+      "count": 12
+    },
+    {
+      "id": "mcp",
+      "name": "mcp",
+      "count": 5
+    },
+    {
+      "id": "claude",
+      "name": "claude",
+      "count": 3
+    },
+    {
+      "id": "claude-code-plugin",
+      "name": "claude-code-plugin",
+      "count": 3
+    },
+    {
+      "id": "productivity",
+      "name": "productivity",
+      "count": 2
+    },
+    {
+      "id": "ai",
+      "name": "ai",
+      "count": 2
+    },
+    {
+      "id": "design-systems",
+      "name": "design-systems",
+      "count": 2
+    },
+    {
+      "id": "tailwindcss",
+      "name": "tailwindcss",
+      "count": 2
+    },
+    {
+      "id": "utility-first",
+      "name": "utility-first",
+      "count": 2
+    },
+    {
+      "id": "authentication",
+      "name": "authentication",
+      "count": 2
+    },
+    {
+      "id": "postgresql",
+      "name": "postgresql",
+      "count": 2
+    },
+    {
+      "id": "supabase",
+      "name": "supabase",
+      "count": 2
+    },
+    {
+      "id": "hooks",
+      "name": "hooks",
+      "count": 2
+    },
+    {
+      "id": "react",
+      "name": "react",
+      "count": 2
+    },
+    {
+      "id": "state-management",
+      "name": "state-management",
+      "count": 2
+    },
+    {
+      "id": "app-router",
+      "name": "app-router",
+      "count": 2
+    },
+    {
+      "id": "nextjs",
+      "name": "nextjs",
+      "count": 2
+    },
+    {
+      "id": "server-components",
+      "name": "server-components",
+      "count": 2
+    },
+    {
+      "id": "claudecode",
+      "name": "claudecode",
+      "count": 2
+    },
+    {
+      "id": "go",
+      "name": "go",
+      "count": 2
+    },
+    {
+      "id": "golang",
+      "name": "golang",
+      "count": 2
+    },
+    {
+      "id": "mcp-server",
+      "name": "mcp-server",
+      "count": 2
+    },
+    {
+      "id": "sdk",
+      "name": "sdk",
+      "count": 2
+    },
+    {
+      "id": "subagents",
+      "name": "subagents",
+      "count": 2
+    },
+    {
+      "id": "learning",
+      "name": "learning",
+      "count": 2
+    },
+    {
+      "id": "developer-tools",
+      "name": "developer-tools",
+      "count": 1
+    },
+    {
+      "id": "automation",
+      "name": "automation",
+      "count": 1
+    },
+    {
+      "id": "devops",
+      "name": "devops",
+      "count": 1
+    },
+    {
+      "id": "agentic",
+      "name": "agentic",
+      "count": 1
+    },
+    {
+      "id": "caffeine",
+      "name": "caffeine",
+      "count": 1
+    },
+    {
+      "id": "coding",
+      "name": "coding",
+      "count": 1
+    },
+    {
+      "id": "hook",
+      "name": "hook",
+      "count": 1
+    },
+    {
+      "id": "plugin",
+      "name": "plugin",
+      "count": 1
+    },
+    {
+      "id": "vibe-coding",
+      "name": "vibe-coding",
+      "count": 1
+    },
+    {
+      "id": "ai-powered",
+      "name": "ai-powered",
+      "count": 1
+    },
+    {
+      "id": "equity-research",
+      "name": "equity-research",
+      "count": 1
+    },
+    {
+      "id": "finance",
+      "name": "finance",
+      "count": 1
+    },
+    {
+      "id": "financial-analysis",
+      "name": "financial-analysis",
+      "count": 1
+    },
+    {
+      "id": "financial-analysis-ai",
+      "name": "financial-analysis-ai",
+      "count": 1
+    },
+    {
+      "id": "financial-analysis-tools",
+      "name": "financial-analysis-tools",
+      "count": 1
+    },
+    {
+      "id": "financial-analyst",
+      "name": "financial-analyst",
+      "count": 1
+    },
+    {
+      "id": "investment-research",
+      "name": "investment-research",
+      "count": 1
+    },
+    {
+      "id": "stock-analysis",
+      "name": "stock-analysis",
+      "count": 1
+    },
+    {
+      "id": "stock-analyst",
+      "name": "stock-analyst",
+      "count": 1
+    },
+    {
+      "id": "trading-analysis",
+      "name": "trading-analysis",
+      "count": 1
+    },
+    {
+      "id": "claude-code-plugins",
+      "name": "claude-code-plugins",
+      "count": 1
+    },
+    {
+      "id": "gitops",
+      "name": "gitops",
+      "count": 1
+    },
+    {
+      "id": "kpt",
+      "name": "kpt",
+      "count": 1
+    }
+  ]
 }

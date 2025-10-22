@@ -1,9 +1,140 @@
 {
-  "totalMarketplaces": 0,
+  "totalMarketplaces": 100,
   "totalPlugins": 0,
   "validPlugins": 0,
-  "lastUpdated": "2025-10-17T19:40:21.969Z",
-  "topLanguages": [],
-  "topMarketplaces": [],
-  "recentActivity": []
+  "lastUpdated": "2025-10-22T06:52:01.465Z",
+  "topLanguages": [
+    {
+      "language": "Unknown",
+      "count": 56
+    },
+    {
+      "language": "Python",
+      "count": 18
+    },
+    {
+      "language": "TypeScript",
+      "count": 10
+    },
+    {
+      "language": "JavaScript",
+      "count": 6
+    },
+    {
+      "language": "Shell",
+      "count": 6
+    },
+    {
+      "language": "PowerShell",
+      "count": 2
+    },
+    {
+      "language": "HTML",
+      "count": 2
+    }
+  ],
+  "topMarketplaces": [
+    {
+      "name": "every-marketplace",
+      "stars": 399,
+      "url": "https://github.com/EveryInc/every-marketplace"
+    },
+    {
+      "name": "claude-code-plugins-plus",
+      "stars": 131,
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
+    },
+    {
+      "name": "claude-code-marketplace",
+      "stars": 115,
+      "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+    },
+    {
+      "name": "claude-code-marketplace",
+      "stars": 115,
+      "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+    },
+    {
+      "name": "claude-equity-research",
+      "stars": 101,
+      "url": "https://github.com/quant-sentiment-ai/claude-equity-research"
+    },
+    {
+      "name": "superpowers-marketplace",
+      "stars": 53,
+      "url": "https://github.com/obra/superpowers-marketplace"
+    },
+    {
+      "name": "claude-code-marketplace",
+      "stars": 9,
+      "url": "https://github.com/Dev-GOM/claude-code-marketplace"
+    },
+    {
+      "name": "claude-plugins",
+      "stars": 3,
+      "url": "https://github.com/ankushdixit/claude-plugins"
+    },
+    {
+      "name": "claude-code-plugin-marketplace",
+      "stars": 3,
+      "url": "https://github.com/jmanhype/claude-code-plugin-marketplace"
+    },
+    {
+      "name": "claude-plugins-marketplace",
+      "stars": 3,
+      "url": "https://github.com/cicababba/claude-plugins-marketplace"
+    }
+  ],
+  "recentActivity": [
+    {
+      "name": "vibekit-claude-plugins",
+      "updatedAt": "2025-10-22T06:50:19Z",
+      "url": "https://github.com/shrwnsan/vibekit-claude-plugins"
+    },
+    {
+      "name": "every-marketplace",
+      "updatedAt": "2025-10-22T06:40:15Z",
+      "url": "https://github.com/EveryInc/every-marketplace"
+    },
+    {
+      "name": "claude-code-plugins-plus",
+      "updatedAt": "2025-10-22T06:37:35Z",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
+    },
+    {
+      "name": "claude-code-marketplace",
+      "updatedAt": "2025-10-22T05:34:39Z",
+      "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+    },
+    {
+      "name": "claude-code-marketplace",
+      "updatedAt": "2025-10-22T05:34:39Z",
+      "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+    },
+    {
+      "name": "superpowers-marketplace",
+      "updatedAt": "2025-10-22T04:59:03Z",
+      "url": "https://github.com/obra/superpowers-marketplace"
+    },
+    {
+      "name": "vibe-garden",
+      "updatedAt": "2025-10-22T04:37:18Z",
+      "url": "https://github.com/rjroy/vibe-garden"
+    },
+    {
+      "name": "claude-plugins",
+      "updatedAt": "2025-10-22T01:18:40Z",
+      "url": "https://github.com/ankushdixit/claude-plugins"
+    },
+    {
+      "name": "cc-plugins",
+      "updatedAt": "2025-10-21T23:29:10Z",
+      "url": "https://github.com/lsmith090/cc-plugins"
+    },
+    {
+      "name": "claude-code-marketplace",
+      "updatedAt": "2025-10-21T22:44:08Z",
+      "url": "https://github.com/Dev-GOM/claude-code-marketplace"
+    }
+  ]
 }
