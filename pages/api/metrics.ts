@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import performanceMonitor from '../../utils/performance-monitor';
+import performanceMonitor from '../../src/utils/performance-monitor';
 
 interface MetricsResponse {
   timestamp: string;
