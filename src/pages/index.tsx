@@ -8,7 +8,7 @@ import { useRealMarketplaceData } from '../hooks/useRealMarketplaceData';
 import { usePluginData } from '../hooks/usePluginData';
 import { mockMarketplaces, categories } from '../data/mock-data';
 import LoadingState from '../components/ui/LoadingState';
-import { Star, Download, Github, ExternalLink, TrendingUp, Users, Package, Shield, BarChart } from 'lucide-react';
+import { Star, Download, Github, ExternalLink, TrendingUp, Users, Package, BarChart, Shield } from 'lucide-react';
 import Link from 'next/link';
 
 const HomePage: React.FC = () => {

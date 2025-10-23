@@ -329,33 +329,33 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({
     return [
       {
         label: 'Verification Rate',
-        value: data.verification.verificationRate,
+        value: data.verification?.verificationRate || 0,
         change: 0, // Would come from trend data
         trend: 'up',
         icon: ShieldCheck,
         color: 'success',
         description: 'Percentage of plugins that have been verified',
-        ariaLabel: `Plugin verification rate: ${data.verification.verificationRate}%`,
+        ariaLabel: `Plugin verification rate: ${data.verification?.verificationRate || 0}%`,
       },
       {
         label: 'Active Maintenance',
-        value: data.maintenance.activeMaintenanceRate,
+        value: data.maintenance?.activeMaintenanceRate || 0,
         change: 0,
         trend: 'stable',
         icon: Activity,
         color: 'primary',
         description: 'Plugins updated within the last 30 days',
-        ariaLabel: `Active maintenance rate: ${data.maintenance.activeMaintenanceRate}%`,
+        ariaLabel: `Active maintenance rate: ${data.maintenance?.activeMaintenanceRate || 0}%`,
       },
       {
         label: 'Quality Score',
-        value: data.qualityMetrics.avgQualityScore,
+        value: data.qualityMetrics?.avgQualityScore || 0,
         change: 0,
         trend: 'up',
         icon: Star,
         color: 'success',
         description: 'Average quality score across all plugins',
-        ariaLabel: `Average quality score: ${data.qualityMetrics.avgQualityScore}/100`,
+        ariaLabel: `Average quality score: ${data.qualityMetrics?.avgQualityScore || 0}/100`,
       },
       {
         label: 'Security Score',
@@ -377,7 +377,7 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({
     return [
       {
         type: 'security',
-        count: data.verification.badges.find(b => b.type === 'security')?.count || 0,
+        count: data.verification?.badges?.find(b => b.type === 'security')?.count || 0,
         icon: Shield,
         label: 'Security Verified',
         description: 'Plugins with security verification',
@@ -385,7 +385,7 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({
       },
       {
         type: 'quality',
-        count: data.verification.badges.find(b => b.type === 'quality')?.count || 0,
+        count: data.verification?.badges?.find(b => b.type === 'quality')?.count || 0,
         icon: Award,
         label: 'Quality Assured',
         description: 'Plugins meeting quality standards',
@@ -393,7 +393,7 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({
       },
       {
         type: 'popularity',
-        count: data.verification.badges.find(b => b.type === 'popularity')?.count || 0,
+        count: data.verification?.badges?.find(b => b.type === 'popularity')?.count || 0,
         icon: Users,
         label: 'Popular Choice',
         description: 'Highly rated and frequently used',
@@ -401,7 +401,7 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({
       },
       {
         type: 'maintenance',
-        count: data.verification.badges.find(b => b.type === 'maintenance')?.count || 0,
+        count: data.verification?.badges?.find(b => b.type === 'maintenance')?.count || 0,
         icon: Clock,
         label: 'Well Maintained',
         description: 'Regularly updated plugins',
@@ -562,17 +562,19 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({
           </h3>
 
           <div className="space-y-4">
+            {data?.maintenance ? (
+              <>
             <div>
               <div className="flex justify-between items-center mb-2">
                 <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                   Recently Updated
                 </span>
                 <span className="text-sm text-gray-600 dark:text-gray-400">
-                  {data?.maintenance.recentlyUpdated} plugins
+                  {data?.maintenance?.recentlyUpdated || 0} plugins
                 </span>
               </div>
               <ProgressBar
-                value={data?.maintenance.activeMaintenanceRate || 0}
+                value={data?.maintenance?.activeMaintenanceRate || 0}
                 color="success"
                 size="sm"
                 ariaLabel="Recently updated plugins percentage"
@@ -585,19 +587,25 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({
                   Average Update Frequency
                 </span>
                 <span className="text-sm text-gray-600 dark:text-gray-400">
-                  Every {data?.maintenance.avgUpdateFrequency} days
+                  Every {data?.maintenance?.avgUpdateFrequency || 'N/A'} days
                 </span>
               </div>
             </div>
 
-            {data?.maintenance.abandonedPlugins && data.maintenance.abandonedPlugins > 0 && (
+            {data?.maintenance?.abandonedPlugins && data.maintenance.abandonedPlugins > 0 && (
               <div className="p-3 bg-warning-100 dark:bg-warning-900/30 rounded-lg border border-warning-200 dark:border-warning-700">
                 <div className="flex items-center text-warning-800 dark:text-warning-200">
                   <AlertTriangle className="w-4 h-4 mr-2" />
                   <span className="text-sm font-medium">
-                    {data.maintenance.abandonedPlugins} plugins haven&apos;t been updated in 6+ months
+                    {data.maintenance?.abandonedPlugins || 0} plugins haven&apos;t been updated in 6+ months
                   </span>
                 </div>
+              </div>
+            )}
+            </>
+            ) : (
+              <div className="text-center py-8 text-gray-500 dark:text-gray-400">
+                <p className="text-sm">Maintenance data not available</p>
               </div>
             )}
           </div>
