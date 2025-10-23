@@ -1,5 +1,286 @@
 [
   {
+    "id": "1071171085",
+    "name": "vibe-garden",
+    "description": "A Claude Code plugin marketplace with this and that. And a lot of notes.",
+    "url": "https://github.com/rjroy/vibe-garden",
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2025-10-23T03:10:57Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073224021",
+    "name": "every-marketplace",
+    "description": "Official Every-Env plugin marketplace for Claude Code extensions",
+    "url": "https://github.com/EveryInc/every-marketplace",
+    "stars": 407,
+    "forks": 45,
+    "language": "Unknown",
+    "updatedAt": "2025-10-23T03:02:44Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073224021",
+    "name": "every-marketplace",
+    "description": "Official Every-Env plugin marketplace for Claude Code extensions",
+    "url": "https://github.com/EveryInc/every-marketplace",
+    "stars": 407,
+    "forks": 45,
+    "language": "Unknown",
+    "updatedAt": "2025-10-23T03:02:44Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073337396",
+    "name": "claude-code-plugins-plus",
+    "description": "Claude Code Plugins Hub — browse and install 227 plugins. Featuring Skills Powerkit - first Agent Skills plugin.",
+    "url": "https://github.com/jeremylongshore/claude-code-plugins-plus",
+    "stars": 139,
+    "forks": 19,
+    "language": "JavaScript",
+    "updatedAt": "2025-10-23T02:30:56Z",
+    "topics": [
+      "ai",
+      "automation",
+      "claude-code",
+      "devops",
+      "marketplace",
+      "mcp",
+      "plugins",
+      "productivity"
+    ],
+    "hasManifest": true
+  },
+  {
+    "id": "1073337396",
+    "name": "claude-code-plugins-plus",
+    "description": "Claude Code Plugins Hub — browse and install 227 plugins. Featuring Skills Powerkit - first Agent Skills plugin.",
+    "url": "https://github.com/jeremylongshore/claude-code-plugins-plus",
+    "stars": 139,
+    "forks": 19,
+    "language": "JavaScript",
+    "updatedAt": "2025-10-23T02:30:56Z",
+    "topics": [
+      "ai",
+      "automation",
+      "claude-code",
+      "devops",
+      "marketplace",
+      "mcp",
+      "plugins",
+      "productivity"
+    ],
+    "hasManifest": true
+  },
+  {
+    "id": "1081587362",
+    "name": "claude-marketplace",
+    "description": "Marketplace for Claude Plugins, Agents, Skills",
+    "url": "https://github.com/maxfindel/claude-marketplace",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-23T02:20:42Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1081579861",
+    "name": "aida-marketplace",
+    "description": "AIDA plugin marketplace - Personal productivity system for Claude Code",
+    "url": "https://github.com/oakensoul/aida-marketplace",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-23T02:18:26Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1074955010",
+    "name": "llm",
+    "description": "Claude Code plugin marketplace featuring MCP integrations",
+    "url": "https://github.com/terkelg/llm",
+    "stars": 1,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-23T01:53:37Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1077522298",
+    "name": "claude-plugins",
+    "description": "Claude Code Plugins Marketplace - Collection of plugins for Claude Code",
+    "url": "https://github.com/ankushdixit/claude-plugins",
+    "stars": 3,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2025-10-22T22:29:36Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073224871",
+    "name": "superpowers-marketplace",
+    "description": "Curated Claude Code plugin marketplace",
+    "url": "https://github.com/obra/superpowers-marketplace",
+    "stars": 56,
+    "forks": 22,
+    "language": "Unknown",
+    "updatedAt": "2025-10-22T22:19:22Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1081290959",
+    "name": "marketplace",
+    "description": "Claude code plugin marketplace.",
+    "url": "https://github.com/LinuxIsCool/marketplace",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-22T21:34:15Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1081351348",
+    "name": "claude-marketplace",
+    "description": "Personal curated Claude Code marketplace with SuperClaude framework, Chrome DevTools, NetSuite workflows, and community plugins",
+    "url": "https://github.com/tchow-twistedxcom/claude-marketplace",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-22T17:40:14Z",
+    "topics": [
+      "automation",
+      "claude-code",
+      "claude-plugins",
+      "developer-tools",
+      "mcp-servers",
+      "productivity",
+      "superclaude",
+      "workflow-automation"
+    ],
+    "hasManifest": true
+  },
+  {
+    "id": "1073277224",
+    "name": "claude-code-marketplace",
+    "description": "Marketplace repo for Claude Code Plugins",
+    "url": "https://github.com/ananddtyagi/claude-code-marketplace",
+    "stars": 116,
+    "forks": 19,
+    "language": "Python",
+    "updatedAt": "2025-10-22T16:06:51Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1078490821",
+    "name": "dot-claude",
+    "description": "Repository for making use of Claude Code's marketplace plugin feature for sharing agents, commands, hooks, and mcp servers",
+    "url": "https://github.com/chambridge/dot-claude",
+    "stars": 1,
+    "forks": 0,
+    "language": "Shell",
+    "updatedAt": "2025-10-22T14:17:30Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1078490821",
+    "name": "dot-claude",
+    "description": "Repository for making use of Claude Code's marketplace plugin feature for sharing agents, commands, hooks, and mcp servers",
+    "url": "https://github.com/chambridge/dot-claude",
+    "stars": 1,
+    "forks": 0,
+    "language": "Shell",
+    "updatedAt": "2025-10-22T14:17:30Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1075298792",
+    "name": "claude-plugins-marketplace",
+    "description": "A simple marketplace for claude code plugins",
+    "url": "https://github.com/cicababba/claude-plugins-marketplace",
+    "stars": 3,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-22T14:09:19Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073358900",
+    "name": "marketplace",
+    "description": "DotClaude Plugin Marketplace - Revolutionary AI interaction platform for Claude Code",
+    "url": "https://github.com/dotclaude/marketplace",
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2025-10-22T13:38:48Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073358900",
+    "name": "marketplace",
+    "description": "DotClaude Plugin Marketplace - Revolutionary AI interaction platform for Claude Code",
+    "url": "https://github.com/dotclaude/marketplace",
+    "stars": 1,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2025-10-22T13:38:48Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1079739578",
+    "name": "claude-marketplace",
+    "description": "Codes for Claude marketplace and plugins.",
+    "url": "https://github.com/megmogmog1965/claude-marketplace",
+    "stars": 0,
+    "forks": 0,
+    "language": "Shell",
+    "updatedAt": "2025-10-22T12:45:06Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073235745",
+    "name": "claude-marketplace",
+    "description": "Personal Claude Code marketplace featuring Python development plugins for best practices, documentation standards, and Zen of Python enforcement.",
+    "url": "https://github.com/daviguides/claude-marketplace",
+    "stars": 1,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-22T10:56:57Z",
+    "topics": [
+      "claude-code"
+    ],
+    "hasManifest": true
+  },
+  {
+    "id": "1079655124",
+    "name": "claude-marketplace-registry",
+    "description": "A comprehensive registry of Claude Code marketplaces and plugins for developers to quickly discover and integrate ecosystem tools",
+    "url": "https://github.com/shrwnsan/claude-marketplace-registry",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2025-10-22T08:04:45Z",
+    "topics": [],
+    "hasManifest": false
+  },
+  {
     "id": "1076658131",
     "name": "vibekit-claude-plugins",
     "description": "VibeKit: Productivity Plus Claude Code Plugin Marketplace. A curated collection of productivity-enhancing plugins for developers, vibe coders, context engineers, indie hackers, etc.",
@@ -15,99 +296,6 @@
       "plugins",
       "productivity"
     ],
-    "hasManifest": true
-  },
-  {
-    "id": "1073224021",
-    "name": "every-marketplace",
-    "description": "Official Every-Env plugin marketplace for Claude Code extensions",
-    "url": "https://github.com/EveryInc/every-marketplace",
-    "stars": 399,
-    "forks": 43,
-    "language": "Unknown",
-    "updatedAt": "2025-10-22T06:40:15Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1073337396",
-    "name": "claude-code-plugins-plus",
-    "description": "Claude Code Plugins Hub — browse and install 227 plugins. Featuring Skills Powerkit - first Agent Skills plugin.",
-    "url": "https://github.com/jeremylongshore/claude-code-plugins-plus",
-    "stars": 131,
-    "forks": 19,
-    "language": "JavaScript",
-    "updatedAt": "2025-10-22T06:37:35Z",
-    "topics": [
-      "ai",
-      "automation",
-      "claude-code",
-      "devops",
-      "marketplace",
-      "mcp",
-      "plugins",
-      "productivity"
-    ],
-    "hasManifest": true
-  },
-  {
-    "id": "1073277224",
-    "name": "claude-code-marketplace",
-    "description": "Marketplace repo for Claude Code Plugins",
-    "url": "https://github.com/ananddtyagi/claude-code-marketplace",
-    "stars": 115,
-    "forks": 19,
-    "language": "Python",
-    "updatedAt": "2025-10-22T05:34:39Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1073277224",
-    "name": "claude-code-marketplace",
-    "description": "Marketplace repo for Claude Code Plugins",
-    "url": "https://github.com/ananddtyagi/claude-code-marketplace",
-    "stars": 115,
-    "forks": 19,
-    "language": "Python",
-    "updatedAt": "2025-10-22T05:34:39Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1073224871",
-    "name": "superpowers-marketplace",
-    "description": "Curated Claude Code plugin marketplace",
-    "url": "https://github.com/obra/superpowers-marketplace",
-    "stars": 53,
-    "forks": 22,
-    "language": "Unknown",
-    "updatedAt": "2025-10-22T04:59:03Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1071171085",
-    "name": "vibe-garden",
-    "description": "A Claude Code plugin marketplace with this and that. And a lot of notes.",
-    "url": "https://github.com/rjroy/vibe-garden",
-    "stars": 1,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2025-10-22T04:37:18Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1077522298",
-    "name": "claude-plugins",
-    "description": "Claude Code Plugins Marketplace - Collection of plugins for Claude Code",
-    "url": "https://github.com/ankushdixit/claude-plugins",
-    "stars": 3,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2025-10-22T01:18:40Z",
-    "topics": [],
     "hasManifest": true
   },
   {
@@ -128,7 +316,7 @@
     "description": "Claude Code plugins & extensions - Hooks, commands, and agents for developer productivity and workflow automation",
     "url": "https://github.com/Dev-GOM/claude-code-marketplace",
     "stars": 9,
-    "forks": 1,
+    "forks": 2,
     "language": "JavaScript",
     "updatedAt": "2025-10-21T22:44:08Z",
     "topics": [],
@@ -231,18 +419,6 @@
     "hasManifest": true
   },
   {
-    "id": "1079739578",
-    "name": "claude-marketplace",
-    "description": "Codes for Claude marketplace and plugins.",
-    "url": "https://github.com/megmogmog1965/claude-marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "Shell",
-    "updatedAt": "2025-10-21T13:06:06Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
     "id": "1080477214",
     "name": "claude-code-marketplace",
     "description": "A starter template for creating Claude Code plugin marketplaces to share custom skills and MCP servers",
@@ -267,16 +443,16 @@
     "hasManifest": false
   },
   {
-    "id": "1078490821",
-    "name": "dot-claude",
-    "description": "Repository for making use of Claude Code's marketplace plugin feature for sharing agents, commands, hooks, and mcp servers",
-    "url": "https://github.com/chambridge/dot-claude",
-    "stars": 1,
+    "id": "1080471646",
+    "name": "mcp-plugin-marketplace",
+    "description": "An in-app hub for discovering, testing, and reviewing custom MCP tools — like a mini App Store for Claude integrations.",
+    "url": "https://github.com/thomasdegan/mcp-plugin-marketplace",
+    "stars": 0,
     "forks": 0,
-    "language": "Shell",
-    "updatedAt": "2025-10-21T07:31:49Z",
+    "language": "Unknown",
+    "updatedAt": "2025-10-21T12:22:17Z",
     "topics": [],
-    "hasManifest": true
+    "hasManifest": false
   },
   {
     "id": "1074806595",
@@ -327,6 +503,30 @@
     "hasManifest": true
   },
   {
+    "id": "1080190709",
+    "name": "claude-plugins",
+    "description": "Claude Code plugin marketplace",
+    "url": "https://github.com/jrentmeister/claude-plugins",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-21T02:31:26Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1075603547",
+    "name": "open-plugins",
+    "description": "OpenPlugins is a AI-curated marketplace of high-quality, open-source plugins for Claude Code. Our mission is to foster a vibrant ecosystem of productivity tools, development utilities, and specialized agents that extend Claude Code's capabilities.",
+    "url": "https://github.com/dhofheinz/open-plugins",
+    "stars": 1,
+    "forks": 0,
+    "language": "Shell",
+    "updatedAt": "2025-10-21T02:24:07Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
     "id": "1075603547",
     "name": "open-plugins",
     "description": "OpenPlugins is a AI-curated marketplace of high-quality, open-source plugins for Claude Code. Our mission is to foster a vibrant ecosystem of productivity tools, development utilities, and specialized agents that extend Claude Code's capabilities.",
@@ -359,18 +559,6 @@
     "forks": 0,
     "language": "Unknown",
     "updatedAt": "2025-10-21T01:24:52Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1073358900",
-    "name": "marketplace",
-    "description": "DotClaude Plugin Marketplace - Revolutionary AI interaction platform for Claude Code",
-    "url": "https://github.com/dotclaude/marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2025-10-20T22:58:01Z",
     "topics": [],
     "hasManifest": true
   },
@@ -437,6 +625,30 @@
     "hasManifest": true
   },
   {
+    "id": "1079973762",
+    "name": "claude-plugins",
+    "description": "Claude Code plugin marketplace for Banyan AI development tools",
+    "url": "https://github.com/banyanai/claude-plugins",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-20T17:29:42Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1079758789",
+    "name": "nau-marketplace",
+    "description": "my marketplace for Claude Code plugins",
+    "url": "https://github.com/ANezbudy/nau-marketplace",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-20T12:20:25Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
     "id": "1079758789",
     "name": "nau-marketplace",
     "description": "my marketplace for Claude Code plugins",
@@ -471,18 +683,6 @@
     "updatedAt": "2025-10-20T09:41:32Z",
     "topics": [],
     "hasManifest": false
-  },
-  {
-    "id": "1075298792",
-    "name": "claude-plugins-marketplace",
-    "description": "A simple marketplace for claude code plugins",
-    "url": "https://github.com/cicababba/claude-plugins-marketplace",
-    "stars": 3,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-20T09:09:03Z",
-    "topics": [],
-    "hasManifest": true
   },
   {
     "id": "1074774731",
@@ -531,42 +731,6 @@
     "updatedAt": "2025-10-20T09:06:10Z",
     "topics": [],
     "hasManifest": true
-  },
-  {
-    "id": "1076415154",
-    "name": "claude-plugins",
-    "description": "A Claude Code plugin marketplace",
-    "url": "https://github.com/cblecker/claude-plugins",
-    "stars": 1,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-20T09:06:10Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1079655124",
-    "name": "claude-marketplace-registry",
-    "description": "A comprehensive registry of Claude Code marketplaces and plugins for developers to quickly discover and integrate ecosystem tools",
-    "url": "https://github.com/shrwnsan/claude-marketplace-registry",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2025-10-20T08:47:30Z",
-    "topics": [],
-    "hasManifest": false
-  },
-  {
-    "id": "1079655124",
-    "name": "claude-marketplace-registry",
-    "description": "A comprehensive registry of Claude Code marketplaces and plugins for developers to quickly discover and integrate ecosystem tools",
-    "url": "https://github.com/shrwnsan/claude-marketplace-registry",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2025-10-20T08:47:30Z",
-    "topics": [],
-    "hasManifest": false
   },
   {
     "id": "1079572067",
@@ -639,20 +803,6 @@
     "updatedAt": "2025-10-19T20:43:46Z",
     "topics": [],
     "hasManifest": false
-  },
-  {
-    "id": "1073235745",
-    "name": "claude-marketplace",
-    "description": "Personal Claude Code marketplace featuring Python development plugins for best practices, documentation standards, and Zen of Python enforcement.",
-    "url": "https://github.com/daviguides/claude-marketplace",
-    "stars": 1,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-19T20:43:26Z",
-    "topics": [
-      "claude-code"
-    ],
-    "hasManifest": true
   },
   {
     "id": "1077167117",
@@ -746,25 +896,6 @@
     "hasManifest": true
   },
   {
-    "id": "1079418986",
-    "name": "tailwindcss-marketplace",
-    "description": "Production-ready Claude Code plugins for Tailwind CSS 3+ utility-first design, dark mode, and component systems",
-    "url": "https://github.com/rdimascio/tailwindcss-marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "HTML",
-    "updatedAt": "2025-10-19T19:09:29Z",
-    "topics": [
-      "claude-code",
-      "design-systems",
-      "marketplace",
-      "plugins",
-      "tailwindcss",
-      "utility-first"
-    ],
-    "hasManifest": true
-  },
-  {
     "id": "1079418950",
     "name": "supabase-marketplace",
     "description": "Production-ready Claude Code plugins for Supabase database, auth, storage, realtime, and edge functions",
@@ -780,44 +911,6 @@
       "plugins",
       "postgresql",
       "supabase"
-    ],
-    "hasManifest": true
-  },
-  {
-    "id": "1079418950",
-    "name": "supabase-marketplace",
-    "description": "Production-ready Claude Code plugins for Supabase database, auth, storage, realtime, and edge functions",
-    "url": "https://github.com/rdimascio/supabase-marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2025-10-19T19:09:26Z",
-    "topics": [
-      "authentication",
-      "claude-code",
-      "marketplace",
-      "plugins",
-      "postgresql",
-      "supabase"
-    ],
-    "hasManifest": true
-  },
-  {
-    "id": "1079418922",
-    "name": "react-marketplace",
-    "description": "Production-ready Claude Code plugins for React 18+ hooks, state management, and modern patterns",
-    "url": "https://github.com/rdimascio/react-marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2025-10-19T19:09:24Z",
-    "topics": [
-      "claude-code",
-      "hooks",
-      "marketplace",
-      "plugins",
-      "react",
-      "state-management"
     ],
     "hasManifest": true
   },
@@ -860,37 +953,6 @@
     "hasManifest": true
   },
   {
-    "id": "1079418879",
-    "name": "nextjs-marketplace",
-    "description": "Production-ready Claude Code plugins for Next.js 14+ App Router, Server Components, and Server Actions",
-    "url": "https://github.com/rdimascio/nextjs-marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "TypeScript",
-    "updatedAt": "2025-10-19T19:09:22Z",
-    "topics": [
-      "app-router",
-      "claude-code",
-      "marketplace",
-      "nextjs",
-      "plugins",
-      "server-components"
-    ],
-    "hasManifest": true
-  },
-  {
-    "id": "1074285571",
-    "name": "agents",
-    "description": "Claude Code agents, plugins, marketplace",
-    "url": "https://github.com/bodis/agents",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-19T18:38:51Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
     "id": "1074285571",
     "name": "agents",
     "description": "Claude Code agents, plugins, marketplace",
@@ -911,30 +973,6 @@
     "forks": 0,
     "language": "Unknown",
     "updatedAt": "2025-10-19T18:26:54Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1075743932",
-    "name": "marketplace",
-    "description": " Official plugin marketplace for Claude Code. Browse, discover, and install community tools for enhanced AI-powered development.",
-    "url": "https://github.com/ClaudeRegistry/marketplace",
-    "stars": 1,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-19T18:26:54Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1079326094",
-    "name": "claude-code-plugins-marketplace",
-    "description": "claude code plugins marketplace",
-    "url": "https://github.com/unnode001/claude-code-plugins-marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2025-10-19T15:29:19Z",
     "topics": [],
     "hasManifest": true
   },
@@ -970,45 +1008,6 @@
       "plugins",
       "sdk",
       "subagents"
-    ],
-    "hasManifest": true
-  },
-  {
-    "id": "1079039074",
-    "name": "fake-claude-plugins",
-    "description": "Fugazi Marketplace? ",
-    "url": "https://github.com/linehaul-ai/fake-claude-plugins",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-19T03:40:37Z",
-    "topics": [
-      "claude",
-      "claudecode",
-      "go",
-      "golang",
-      "marketplace",
-      "mcp",
-      "mcp-server",
-      "plugins",
-      "sdk",
-      "subagents"
-    ],
-    "hasManifest": true
-  },
-  {
-    "id": "1078874915",
-    "name": "claude-code-learning-marketplace",
-    "description": "A Claude Code plugin marketplace dedicated to AI-powered codebase learning. Discover specialized plugins designed to help you understand architecture, trace code flows, identify patterns, and explore domain concepts—making onboarding and knowledge sharing effortless.",
-    "url": "https://github.com/Jsnnmsc/claude-code-learning-marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-19T02:05:58Z",
-    "topics": [
-      "claude-code",
-      "claude-code-plugin",
-      "learning"
     ],
     "hasManifest": true
   },
@@ -1037,18 +1036,6 @@
     "forks": 0,
     "language": "Unknown",
     "updatedAt": "2025-10-17T18:45:59Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1078213337",
-    "name": "claude-plugins-marketplace",
-    "description": "",
-    "url": "https://github.com/vitalmasterr/claude-plugins-marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-17T12:42:53Z",
     "topics": [],
     "hasManifest": true
   },
@@ -1085,18 +1072,6 @@
     "forks": 0,
     "language": "Unknown",
     "updatedAt": "2025-10-16T20:29:57Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1074955010",
-    "name": "llm",
-    "description": "Claude Code plugin marketplace featuring MCP integrations",
-    "url": "https://github.com/terkelg/llm",
-    "stars": 1,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-16T10:07:39Z",
     "topics": [],
     "hasManifest": true
   },

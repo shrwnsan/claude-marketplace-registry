@@ -2,26 +2,26 @@
   "totalMarketplaces": 100,
   "totalPlugins": 0,
   "validPlugins": 0,
-  "lastUpdated": "2025-10-22T06:52:01.465Z",
+  "lastUpdated": "2025-10-23T03:19:53.214Z",
   "topLanguages": [
     {
       "language": "Unknown",
-      "count": 56
+      "count": 59
     },
     {
       "language": "Python",
-      "count": 18
-    },
-    {
-      "language": "TypeScript",
-      "count": 10
-    },
-    {
-      "language": "JavaScript",
-      "count": 6
+      "count": 17
     },
     {
       "language": "Shell",
+      "count": 8
+    },
+    {
+      "language": "JavaScript",
+      "count": 7
+    },
+    {
+      "language": "TypeScript",
       "count": 6
     },
     {
@@ -30,28 +30,33 @@
     },
     {
       "language": "HTML",
-      "count": 2
+      "count": 1
     }
   ],
   "topMarketplaces": [
     {
       "name": "every-marketplace",
-      "stars": 399,
+      "stars": 407,
+      "url": "https://github.com/EveryInc/every-marketplace"
+    },
+    {
+      "name": "every-marketplace",
+      "stars": 407,
       "url": "https://github.com/EveryInc/every-marketplace"
     },
     {
       "name": "claude-code-plugins-plus",
-      "stars": 131,
+      "stars": 139,
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
+    },
+    {
+      "name": "claude-code-plugins-plus",
+      "stars": 139,
       "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
     },
     {
       "name": "claude-code-marketplace",
-      "stars": 115,
-      "url": "https://github.com/ananddtyagi/claude-code-marketplace"
-    },
-    {
-      "name": "claude-code-marketplace",
-      "stars": 115,
+      "stars": 116,
       "url": "https://github.com/ananddtyagi/claude-code-marketplace"
     },
     {
@@ -61,7 +66,7 @@
     },
     {
       "name": "superpowers-marketplace",
-      "stars": 53,
+      "stars": 56,
       "url": "https://github.com/obra/superpowers-marketplace"
     },
     {
@@ -78,63 +83,58 @@
       "name": "claude-code-plugin-marketplace",
       "stars": 3,
       "url": "https://github.com/jmanhype/claude-code-plugin-marketplace"
-    },
-    {
-      "name": "claude-plugins-marketplace",
-      "stars": 3,
-      "url": "https://github.com/cicababba/claude-plugins-marketplace"
     }
   ],
   "recentActivity": [
     {
-      "name": "vibekit-claude-plugins",
-      "updatedAt": "2025-10-22T06:50:19Z",
-      "url": "https://github.com/shrwnsan/vibekit-claude-plugins"
+      "name": "vibe-garden",
+      "updatedAt": "2025-10-23T03:10:57Z",
+      "url": "https://github.com/rjroy/vibe-garden"
     },
     {
       "name": "every-marketplace",
-      "updatedAt": "2025-10-22T06:40:15Z",
+      "updatedAt": "2025-10-23T03:02:44Z",
+      "url": "https://github.com/EveryInc/every-marketplace"
+    },
+    {
+      "name": "every-marketplace",
+      "updatedAt": "2025-10-23T03:02:44Z",
       "url": "https://github.com/EveryInc/every-marketplace"
     },
     {
       "name": "claude-code-plugins-plus",
-      "updatedAt": "2025-10-22T06:37:35Z",
+      "updatedAt": "2025-10-23T02:30:56Z",
       "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
     },
     {
-      "name": "claude-code-marketplace",
-      "updatedAt": "2025-10-22T05:34:39Z",
-      "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+      "name": "claude-code-plugins-plus",
+      "updatedAt": "2025-10-23T02:30:56Z",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
     },
     {
-      "name": "claude-code-marketplace",
-      "updatedAt": "2025-10-22T05:34:39Z",
-      "url": "https://github.com/ananddtyagi/claude-code-marketplace"
+      "name": "claude-marketplace",
+      "updatedAt": "2025-10-23T02:20:42Z",
+      "url": "https://github.com/maxfindel/claude-marketplace"
     },
     {
-      "name": "superpowers-marketplace",
-      "updatedAt": "2025-10-22T04:59:03Z",
-      "url": "https://github.com/obra/superpowers-marketplace"
+      "name": "aida-marketplace",
+      "updatedAt": "2025-10-23T02:18:26Z",
+      "url": "https://github.com/oakensoul/aida-marketplace"
     },
     {
-      "name": "vibe-garden",
-      "updatedAt": "2025-10-22T04:37:18Z",
-      "url": "https://github.com/rjroy/vibe-garden"
+      "name": "llm",
+      "updatedAt": "2025-10-23T01:53:37Z",
+      "url": "https://github.com/terkelg/llm"
     },
     {
       "name": "claude-plugins",
-      "updatedAt": "2025-10-22T01:18:40Z",
+      "updatedAt": "2025-10-22T22:29:36Z",
       "url": "https://github.com/ankushdixit/claude-plugins"
     },
     {
-      "name": "cc-plugins",
-      "updatedAt": "2025-10-21T23:29:10Z",
-      "url": "https://github.com/lsmith090/cc-plugins"
-    },
-    {
-      "name": "claude-code-marketplace",
-      "updatedAt": "2025-10-21T22:44:08Z",
-      "url": "https://github.com/Dev-GOM/claude-code-marketplace"
+      "name": "superpowers-marketplace",
+      "updatedAt": "2025-10-22T22:19:22Z",
+      "url": "https://github.com/obra/superpowers-marketplace"
     }
   ]
 }
