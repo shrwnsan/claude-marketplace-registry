@@ -268,7 +268,9 @@ describe('GrowthTrends Component', () => {
   });
 
   it('shows appropriate ARIA live regions for accessibility', async () => {
-    render(<GrowthTrends />);
+    act(() => {
+      render(<GrowthTrends />);
+    });
 
     await waitFor(() => {
       expect(screen.getByText('Showing growth data for last month')).toBeInTheDocument();
@@ -276,7 +278,9 @@ describe('GrowthTrends Component', () => {
   });
 
   it('displays trend indicators correctly', async () => {
-    render(<GrowthTrends />);
+    act(() => {
+      render(<GrowthTrends />);
+    });
 
     await waitFor(() => {
       // Should show trending up indicators for positive changes

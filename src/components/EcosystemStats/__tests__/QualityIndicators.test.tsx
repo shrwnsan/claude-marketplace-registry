@@ -115,10 +115,11 @@ describe('QualityIndicators Component', () => {
       expect(screen.getByText('Security Score')).toBeInTheDocument();
 
       // Check values are displayed correctly
-      expect(screen.getByText('68.0%')).toBeInTheDocument();
-      expect(screen.getByText('57.6%')).toBeInTheDocument();
-      expect(screen.getByText('78.5%')).toBeInTheDocument();
-      expect(screen.getByText('82.3%')).toBeInTheDocument();
+      // Use getAllByText since percentages may appear in both aria-labels and content
+      expect(screen.getAllByText('68.0%').length).toBeGreaterThanOrEqual(1);
+      expect(screen.getAllByText('57.6%').length).toBeGreaterThanOrEqual(1);
+      expect(screen.getAllByText('78.5%').length).toBeGreaterThanOrEqual(1);
+      expect(screen.getAllByText('82.3%').length).toBeGreaterThanOrEqual(1);
     });
 
     it('renders trust signals section correctly', async () => {
@@ -768,7 +769,7 @@ describe('QualityIndicators Component', () => {
       });
 
       // Check maximum values are displayed correctly
-      expect(screen.getByText('100.0%')).toBeInTheDocument();
+      expect(screen.getAllByText('100.0%')).toHaveLength(1);
       expect(screen.getByText('1000 plugins')).toBeInTheDocument();
       expect(screen.getByText('Every 365 days')).toBeInTheDocument();
     });

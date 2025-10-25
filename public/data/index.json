@@ -3,7 +3,7 @@
     "totalMarketplaces": 100,
     "totalPlugins": 0,
     "validPlugins": 0,
-    "lastUpdated": "2025-10-23T03:19:53.214Z",
+    "lastUpdated": "2025-10-25T05:06:29.590Z",
     "topLanguages": [
       {
         "language": "Unknown",
@@ -11,11 +11,11 @@
       },
       {
         "language": "Python",
-        "count": 17
+        "count": 15
       },
       {
         "language": "Shell",
-        "count": 8
+        "count": 9
       },
       {
         "language": "JavaScript",
@@ -26,48 +26,47 @@
         "count": 6
       },
       {
-        "language": "PowerShell",
+        "language": "HTML",
         "count": 2
       },
       {
-        "language": "HTML",
+        "language": "Nix",
+        "count": 1
+      },
+      {
+        "language": "PowerShell",
         "count": 1
       }
     ],
     "topMarketplaces": [
       {
         "name": "every-marketplace",
-        "stars": 407,
-        "url": "https://github.com/EveryInc/every-marketplace"
-      },
-      {
-        "name": "every-marketplace",
-        "stars": 407,
+        "stars": 414,
         "url": "https://github.com/EveryInc/every-marketplace"
       },
       {
         "name": "claude-code-plugins-plus",
-        "stars": 139,
+        "stars": 159,
         "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
       },
       {
         "name": "claude-code-plugins-plus",
-        "stars": 139,
+        "stars": 159,
         "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
       },
       {
         "name": "claude-code-marketplace",
-        "stars": 116,
+        "stars": 119,
         "url": "https://github.com/ananddtyagi/claude-code-marketplace"
       },
       {
         "name": "claude-equity-research",
-        "stars": 101,
+        "stars": 103,
         "url": "https://github.com/quant-sentiment-ai/claude-equity-research"
       },
       {
         "name": "superpowers-marketplace",
-        "stars": 56,
+        "stars": 59,
         "url": "https://github.com/obra/superpowers-marketplace"
       },
       {
@@ -76,66 +75,71 @@
         "url": "https://github.com/Dev-GOM/claude-code-marketplace"
       },
       {
+        "name": "claude-code-plugin-marketplace",
+        "stars": 4,
+        "url": "https://github.com/jmanhype/claude-code-plugin-marketplace"
+      },
+      {
         "name": "claude-plugins",
         "stars": 3,
         "url": "https://github.com/ankushdixit/claude-plugins"
       },
       {
-        "name": "claude-code-plugin-marketplace",
+        "name": "vibekit-claude-plugins",
         "stars": 3,
-        "url": "https://github.com/jmanhype/claude-code-plugin-marketplace"
+        "url": "https://github.com/shrwnsan/vibekit-claude-plugins"
       }
     ],
     "recentActivity": [
       {
-        "name": "vibe-garden",
-        "updatedAt": "2025-10-23T03:10:57Z",
-        "url": "https://github.com/rjroy/vibe-garden"
+        "name": "claude-code",
+        "updatedAt": "2025-10-25T04:58:13Z",
+        "url": "https://github.com/dgomezs/claude-code"
       },
       {
-        "name": "every-marketplace",
-        "updatedAt": "2025-10-23T03:02:44Z",
-        "url": "https://github.com/EveryInc/every-marketplace"
+        "name": "claude",
+        "updatedAt": "2025-10-25T04:26:16Z",
+        "url": "https://github.com/atxp-dev/claude"
       },
       {
-        "name": "every-marketplace",
-        "updatedAt": "2025-10-23T03:02:44Z",
-        "url": "https://github.com/EveryInc/every-marketplace"
+        "name": "ow-claude-plugins",
+        "updatedAt": "2025-10-25T03:07:35Z",
+        "url": "https://github.com/omniwaifu/ow-claude-plugins"
+      },
+      {
+        "name": "CodeStack.Marketplace",
+        "updatedAt": "2025-10-25T01:47:46Z",
+        "url": "https://github.com/Jonk0000/CodeStack.Marketplace"
+      },
+      {
+        "name": "CodeStack.Marketplace",
+        "updatedAt": "2025-10-25T01:47:46Z",
+        "url": "https://github.com/Jonk0000/CodeStack.Marketplace"
+      },
+      {
+        "name": "claude-plugins",
+        "updatedAt": "2025-10-25T01:14:48Z",
+        "url": "https://github.com/ankushdixit/claude-plugins"
+      },
+      {
+        "name": "claude-plugins",
+        "updatedAt": "2025-10-25T01:14:48Z",
+        "url": "https://github.com/ankushdixit/claude-plugins"
       },
       {
         "name": "claude-code-plugins-plus",
-        "updatedAt": "2025-10-23T02:30:56Z",
+        "updatedAt": "2025-10-25T00:12:40Z",
         "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
       },
       {
         "name": "claude-code-plugins-plus",
-        "updatedAt": "2025-10-23T02:30:56Z",
+        "updatedAt": "2025-10-25T00:12:40Z",
         "url": "https://github.com/jeremylongshore/claude-code-plugins-plus"
       },
       {
         "name": "claude-marketplace",
-        "updatedAt": "2025-10-23T02:20:42Z",
-        "url": "https://github.com/maxfindel/claude-marketplace"
-      },
-      {
-        "name": "aida-marketplace",
-        "updatedAt": "2025-10-23T02:18:26Z",
-        "url": "https://github.com/oakensoul/aida-marketplace"
-      },
-      {
-        "name": "llm",
-        "updatedAt": "2025-10-23T01:53:37Z",
-        "url": "https://github.com/terkelg/llm"
-      },
-      {
-        "name": "claude-plugins",
-        "updatedAt": "2025-10-22T22:29:36Z",
-        "url": "https://github.com/ankushdixit/claude-plugins"
-      },
-      {
-        "name": "superpowers-marketplace",
-        "updatedAt": "2025-10-22T22:19:22Z",
-        "url": "https://github.com/obra/superpowers-marketplace"
+        "updatedAt": "2025-10-25T00:11:42Z",
+        "url": "https://github.com/kjenney/claude-marketplace"
       }
     ]
   },
@@ -148,13 +152,18 @@
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 14
+      "count": 12
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 7
+      "count": 5
+    },
+    {
+      "id": "data",
+      "name": "Data & Analytics",
+      "count": 1
     }
   ],
-  "lastUpdated": "2025-10-23T03:19:53.214Z"
+  "lastUpdated": "2025-10-25T05:06:29.590Z"
 }
