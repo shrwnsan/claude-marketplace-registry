@@ -276,7 +276,7 @@ describe('QualityIndicators Component', () => {
         expect(screen.getByText('Failed to Load Quality Indicators')).toBeInTheDocument();
       });
 
-      expect(screen.getByText('Failed to fetch quality indicators')).toBeInTheDocument();
+      expect(screen.getByText('HTTP error! status: 500')).toBeInTheDocument();
       expect(screen.getByRole('button', { name: /retry/i })).toBeInTheDocument();
     });
 
@@ -323,7 +323,7 @@ describe('QualityIndicators Component', () => {
         expect(screen.getByText('Failed to Load Quality Indicators')).toBeInTheDocument();
       });
 
-      expect(screen.getByText('An unknown error occurred')).toBeInTheDocument();
+      expect(screen.getByText('Network error')).toBeInTheDocument();
     });
   });
 

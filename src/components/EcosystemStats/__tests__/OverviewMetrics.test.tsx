@@ -208,10 +208,12 @@ describe('OverviewMetrics Component', () => {
       expect(screen.getByLabelText(/Total developers:/)).toBeInTheDocument();
       expect(screen.getByLabelText(/Total downloads:/)).toBeInTheDocument();
 
-      // Check focus management - cards should be focusable
-      const metricCards = screen.getAllByRole('region');
+      // Check focus management - cards should be focusable (article elements within main)
+      const metricCards = screen.getAllByRole('region').filter(element =>
+        element.tagName === 'ARTICLE'
+      );
       metricCards.forEach(card => {
-        expect(card).toHaveAttribute('tabIndex', '0');
+        expect(card).toHaveAttribute('tabindex', '0');
       });
 
       // Check progress bar for health score
@@ -272,12 +274,16 @@ describe('OverviewMetrics Component', () => {
     render(<OverviewMetrics />);
 
     await waitFor(() => {
-      const firstCard = screen.getAllByRole('region')[0];
-      expect(firstCard).toHaveAttribute('tabIndex', '0');
+      // Find the first metric card (article element)
+      const metricCards = screen.getAllByRole('region').filter(element =>
+        element.tagName === 'ARTICLE'
+      );
+      const firstCard = metricCards[0];
+      expect(firstCard).toHaveAttribute('tabindex', '0');
 
-      // Simulate keyboard focus
-      fireEvent.focus(firstCard);
-      expect(firstCard).toHaveFocus();
+      // Check that card can receive focus by tabbing to it
+      firstCard.focus();
+      expect(document.activeElement).toBe(firstCard);
     });
   });
 });

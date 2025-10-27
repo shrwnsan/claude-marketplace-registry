@@ -1,13 +1,130 @@
 [
   {
-    "id": "1082960059",
-    "name": "claude-code",
-    "description": "Marketplace for my Claude Code plugins",
-    "url": "https://github.com/dgomezs/claude-code",
+    "id": "1073224871",
+    "name": "superpowers-marketplace",
+    "description": "Curated Claude Code plugin marketplace",
+    "url": "https://github.com/obra/superpowers-marketplace",
+    "stars": 59,
+    "forks": 22,
+    "language": "Unknown",
+    "updatedAt": "2025-10-25T20:59:59Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073224021",
+    "name": "every-marketplace",
+    "description": "Official Every-Env plugin marketplace for Claude Code extensions",
+    "url": "https://github.com/EveryInc/every-marketplace",
+    "stars": 422,
+    "forks": 46,
+    "language": "Unknown",
+    "updatedAt": "2025-10-25T20:40:16Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073358900",
+    "name": "marketplace",
+    "description": "DotClaude Plugin Marketplace - Revolutionary AI interaction platform for Claude Code",
+    "url": "https://github.com/dotclaude/marketplace",
+    "stars": 4,
+    "forks": 1,
+    "language": "Python",
+    "updatedAt": "2025-10-25T20:16:39Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1073337396",
+    "name": "claude-code-plugins-plus",
+    "description": "Claude Code Plugins Hub — browse and install 227 plugins. Featuring Skills Powerkit - first Agent Skills plugin.",
+    "url": "https://github.com/jeremylongshore/claude-code-plugins-plus",
+    "stars": 164,
+    "forks": 22,
+    "language": "JavaScript",
+    "updatedAt": "2025-10-25T20:10:47Z",
+    "topics": [
+      "ai",
+      "automation",
+      "claude-code",
+      "devops",
+      "marketplace",
+      "mcp",
+      "plugins",
+      "productivity"
+    ],
+    "hasManifest": true
+  },
+  {
+    "id": "1082396892",
+    "name": "puerto",
+    "description": "A curated marketplace of 140+ Claude Code plugins: essential MCP servers, specialized agents for web/mobile development, data analytics, marketing, finance, HR, and personal productivity. Install individually or as pre-configured squads. Global & local installation support.",
+    "url": "https://github.com/bandofai/puerto",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2025-10-25T19:38:45Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1077522298",
+    "name": "claude-plugins",
+    "description": "Claude Code Plugins Marketplace - Collection of plugins for Claude Code",
+    "url": "https://github.com/ankushdixit/claude-plugins",
+    "stars": 3,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2025-10-25T19:24:31Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1077522298",
+    "name": "claude-plugins",
+    "description": "Claude Code Plugins Marketplace - Collection of plugins for Claude Code",
+    "url": "https://github.com/ankushdixit/claude-plugins",
+    "stars": 3,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2025-10-25T19:24:31Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1083139723",
+    "name": "claude-plugins",
+    "description": "claude plugins marketplace",
+    "url": "https://github.com/anhermon/claude-plugins",
     "stars": 0,
     "forks": 0,
     "language": "Unknown",
-    "updatedAt": "2025-10-25T04:58:13Z",
+    "updatedAt": "2025-10-25T12:29:40Z",
+    "topics": [],
+    "hasManifest": false
+  },
+  {
+    "id": "1083139723",
+    "name": "claude-plugins",
+    "description": "claude plugins marketplace",
+    "url": "https://github.com/anhermon/claude-plugins",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2025-10-25T12:29:40Z",
+    "topics": [],
+    "hasManifest": false
+  },
+  {
+    "id": "1075634813",
+    "name": "claude-code-marketplace",
+    "description": "Claude Code plugins & extensions - Hooks, commands, and agents for developer productivity and workflow automation",
+    "url": "https://github.com/Dev-GOM/claude-code-marketplace",
+    "stars": 10,
+    "forks": 2,
+    "language": "JavaScript",
+    "updatedAt": "2025-10-25T06:53:54Z",
     "topics": [],
     "hasManifest": true
   },
@@ -19,7 +136,19 @@
     "stars": 0,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2025-10-25T04:26:16Z",
+    "updatedAt": "2025-10-25T05:59:47Z",
+    "topics": [],
+    "hasManifest": true
+  },
+  {
+    "id": "1082960059",
+    "name": "claude-code",
+    "description": "Marketplace for my Claude Code plugins",
+    "url": "https://github.com/dgomezs/claude-code",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2025-10-25T05:53:19Z",
     "topics": [],
     "hasManifest": true
   },
@@ -51,84 +180,6 @@
     "hasManifest": false
   },
   {
-    "id": "1082917855",
-    "name": "CodeStack.Marketplace",
-    "description": "CodeStack Claude Plugin Marketplace",
-    "url": "https://github.com/Jonk0000/CodeStack.Marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2025-10-25T01:47:46Z",
-    "topics": [],
-    "hasManifest": false
-  },
-  {
-    "id": "1077522298",
-    "name": "claude-plugins",
-    "description": "Claude Code Plugins Marketplace - Collection of plugins for Claude Code",
-    "url": "https://github.com/ankushdixit/claude-plugins",
-    "stars": 3,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2025-10-25T01:14:48Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1077522298",
-    "name": "claude-plugins",
-    "description": "Claude Code Plugins Marketplace - Collection of plugins for Claude Code",
-    "url": "https://github.com/ankushdixit/claude-plugins",
-    "stars": 3,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2025-10-25T01:14:48Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1073337396",
-    "name": "claude-code-plugins-plus",
-    "description": "Claude Code Plugins Hub — browse and install 227 plugins. Featuring Skills Powerkit - first Agent Skills plugin.",
-    "url": "https://github.com/jeremylongshore/claude-code-plugins-plus",
-    "stars": 159,
-    "forks": 20,
-    "language": "JavaScript",
-    "updatedAt": "2025-10-25T00:12:40Z",
-    "topics": [
-      "ai",
-      "automation",
-      "claude-code",
-      "devops",
-      "marketplace",
-      "mcp",
-      "plugins",
-      "productivity"
-    ],
-    "hasManifest": true
-  },
-  {
-    "id": "1073337396",
-    "name": "claude-code-plugins-plus",
-    "description": "Claude Code Plugins Hub — browse and install 227 plugins. Featuring Skills Powerkit - first Agent Skills plugin.",
-    "url": "https://github.com/jeremylongshore/claude-code-plugins-plus",
-    "stars": 159,
-    "forks": 20,
-    "language": "JavaScript",
-    "updatedAt": "2025-10-25T00:12:40Z",
-    "topics": [
-      "ai",
-      "automation",
-      "claude-code",
-      "devops",
-      "marketplace",
-      "mcp",
-      "plugins",
-      "productivity"
-    ],
-    "hasManifest": true
-  },
-  {
     "id": "1082892190",
     "name": "claude-marketplace",
     "description": "My Claude Marketplace of Plugins",
@@ -137,18 +188,6 @@
     "forks": 0,
     "language": "Unknown",
     "updatedAt": "2025-10-25T00:11:42Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1073224021",
-    "name": "every-marketplace",
-    "description": "Official Every-Env plugin marketplace for Claude Code extensions",
-    "url": "https://github.com/EveryInc/every-marketplace",
-    "stars": 414,
-    "forks": 46,
-    "language": "Unknown",
-    "updatedAt": "2025-10-24T22:49:00Z",
     "topics": [],
     "hasManifest": true
   },
@@ -195,18 +234,6 @@
     "hasManifest": true
   },
   {
-    "id": "1073224871",
-    "name": "superpowers-marketplace",
-    "description": "Curated Claude Code plugin marketplace",
-    "url": "https://github.com/obra/superpowers-marketplace",
-    "stars": 59,
-    "forks": 22,
-    "language": "Unknown",
-    "updatedAt": "2025-10-24T18:32:02Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
     "id": "1073277224",
     "name": "claude-code-marketplace",
     "description": "Marketplace repo for Claude Code Plugins",
@@ -229,18 +256,6 @@
     "updatedAt": "2025-10-24T17:13:56Z",
     "topics": [],
     "hasManifest": false
-  },
-  {
-    "id": "1082396892",
-    "name": "puerto",
-    "description": "A curated marketplace of 153+ Claude Code plugins: essential MCP servers, specialized agents for web/mobile development, data analytics, marketing, finance, HR, and personal productivity. Install individually or as pre-configured squads. Global & local installation support.",
-    "url": "https://github.com/bandofai/puerto",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2025-10-24T16:48:38Z",
-    "topics": [],
-    "hasManifest": true
   },
   {
     "id": "1082611259",
@@ -390,18 +405,6 @@
     "forks": 0,
     "language": "Python",
     "updatedAt": "2025-10-23T15:22:51Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1073358900",
-    "name": "marketplace",
-    "description": "DotClaude Plugin Marketplace - Revolutionary AI interaction platform for Claude Code",
-    "url": "https://github.com/dotclaude/marketplace",
-    "stars": 2,
-    "forks": 1,
-    "language": "Python",
-    "updatedAt": "2025-10-23T13:58:06Z",
     "topics": [],
     "hasManifest": true
   },
@@ -557,18 +560,6 @@
     "forks": 0,
     "language": "Python",
     "updatedAt": "2025-10-21T23:29:10Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1075634813",
-    "name": "claude-code-marketplace",
-    "description": "Claude Code plugins & extensions - Hooks, commands, and agents for developer productivity and workflow automation",
-    "url": "https://github.com/Dev-GOM/claude-code-marketplace",
-    "stars": 9,
-    "forks": 2,
-    "language": "JavaScript",
-    "updatedAt": "2025-10-21T22:44:08Z",
     "topics": [],
     "hasManifest": true
   },
