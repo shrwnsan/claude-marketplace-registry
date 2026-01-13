@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
 
   // Calculate stats dynamically from real data using same logic as ecosystem statistics
   const dynamicStats = useMemo(() => {
-    if (marketplaceData?.marketplaces?.length > 0) {
+    if (marketplaceData?.marketplaces && marketplaceData.marketplaces.length > 0) {
       const marketplaces = marketplaceData.marketplaces;
       const totalPlugins = marketplaces.reduce((sum, mp) =>
         sum + extractPluginCount(mp.description || ''), 0
