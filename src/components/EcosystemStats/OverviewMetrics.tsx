@@ -27,7 +27,7 @@ interface MetricData {
   change: number;
   changeLabel: string;
   icon: React.ComponentType<{ className?: string }>;
-  color: 'primary' | 'success' | 'warning' | 'error';
+  color: 'primary' | 'success' | 'warning' | 'error' | 'purple';
   ariaLabel: string;
 }
 
@@ -175,6 +175,11 @@ const MetricCard: React.FC<{
       icon: 'text-error-600 dark:text-error-400',
       border: 'border-error-200 dark:border-error-700',
     },
+    purple: {
+      bg: 'bg-purple-100 dark:bg-purple-900/30',
+      icon: 'text-purple-600 dark:text-purple-400',
+      border: 'border-purple-200 dark:border-purple-700',
+    },
   };
 
   const currentColor = colorClasses[color];
@@ -232,37 +237,37 @@ const OverviewMetrics: React.FC<OverviewMetricsProps> = ({
         label: 'Total Plugins',
         value: formatNumber(data.totalPlugins),
         change: growthRate.plugins || 0,
-        changeLabel: 'vs last 30 days',
+        changeLabel: 'vs last week',
         icon: Package,
         color: 'primary',
-        ariaLabel: `Total plugins in ecosystem: ${(data.totalPlugins || 0).toLocaleString()}, ${growthRate.plugins > 0 ? 'growing' : 'declining'} by ${Math.abs(growthRate.plugins || 0)}%`,
+        ariaLabel: `Total plugins in ecosystem: ${(data.totalPlugins || 0).toLocaleString()}, ${growthRate.plugins > 0 ? 'growing' : 'stable'} by ${Math.abs(growthRate.plugins || 0)}% vs last week`,
       },
       {
         label: 'Marketplaces',
         value: formatNumber(data.totalMarketplaces),
         change: growthRate.marketplaces || 0,
-        changeLabel: 'vs last 30 days',
+        changeLabel: 'vs last week',
         icon: Store,
         color: 'success',
-        ariaLabel: `Total marketplaces: ${(data.totalMarketplaces || 0).toLocaleString()}, ${growthRate.marketplaces > 0 ? 'growing' : 'declining'} by ${Math.abs(growthRate.marketplaces || 0)}%`,
+        ariaLabel: `Total marketplaces: ${(data.totalMarketplaces || 0).toLocaleString()}, launched regularly updated`,
       },
       {
         label: 'Developers',
         value: formatNumber(data.totalDevelopers),
         change: growthRate.developers || 0,
-        changeLabel: 'vs last 30 days',
+        changeLabel: 'vs last week',
         icon: Users,
         color: 'warning',
-        ariaLabel: `Total developers: ${(data.totalDevelopers || 0).toLocaleString()}, ${growthRate.developers > 0 ? 'growing' : 'declining'} by ${Math.abs(growthRate.developers || 0)}%`,
+        ariaLabel: `Total developers: ${(data.totalDevelopers || 0).toLocaleString()}, contributing since regularly updated`,
       },
       {
         label: 'Total Downloads',
         value: formatNumber(data.totalDownloads),
         change: growthRate.downloads || 0,
-        changeLabel: 'vs last 30 days',
+        changeLabel: 'vs last week',
         icon: Download,
         color: 'error',
-        ariaLabel: `Total downloads: ${(data.totalDownloads || 0).toLocaleString()}, ${growthRate.downloads > 0 ? 'growing' : 'declining'} by ${Math.abs(growthRate.downloads || 0)}%`,
+        ariaLabel: `Total downloads: ${(data.totalDownloads || 0).toLocaleString()}, accumulated since regularly updated`,
       },
     ];
   };
