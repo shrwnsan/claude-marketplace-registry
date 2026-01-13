@@ -23,7 +23,9 @@ interface ErrorContext {
   endpoint?: string;
   statusCode?: number;
   userId?: string;
-  sessionId: string;
+  sessionId?: string;
+  stack?: string;
+  [key: string]: any;
 }
 
 class ErrorTracker {
@@ -46,7 +48,7 @@ class ErrorTracker {
    * Generate unique session ID
    */
   private generateSessionId(): string {
-    return `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+    return `${Date.now()}-${Math.random().toString(36).slice(2, 11)}`;
   }
 
   /**
@@ -55,7 +57,7 @@ class ErrorTracker {
   private initializeErrorHandlers(): void {
     // Unhandled JavaScript errors
     window.addEventListener('error', (event) => {
-      this.trackError(event.message, 'javascript', {
+      this.trackError(event.message, 'javascript', 'error', {
         filename: event.filename,
         lineno: event.lineno,
         colno: event.colno,
@@ -68,6 +70,7 @@ class ErrorTracker {
       this.trackError(
         `Unhandled promise rejection: ${event.reason}`,
         'javascript',
+        'error',
         {
           reason: event.reason,
           stack: event.reason?.stack,
@@ -78,14 +81,14 @@ class ErrorTracker {
     // Network errors
     if ('navigator' in window && 'onLine' in navigator) {
       window.addEventListener('online', () => {
-        this.trackError('Network connection restored', 'info', {
+        this.trackError('Network connection restored', 'network', 'info', {
           type: 'network_status',
           online: true,
         });
       });
 
       window.addEventListener('offline', () => {
-        this.trackError('Network connection lost', 'warning', {
+        this.trackError('Network connection lost', 'network', 'warning', {
           type: 'network_status',
           online: false,
         });
@@ -174,7 +177,7 @@ class ErrorTracker {
    * Track user interactions for context
    */
   public trackUserAction(action: string, context?: Record<string, any>): void {
-    this.trackError(`User action: ${action}`, 'info', 'info', {
+    this.trackError(`User action: ${action}`, 'javascript', 'info', {
       action,
       ...context,
     });
@@ -184,7 +187,7 @@ class ErrorTracker {
    * Generate unique error ID
    */
   private generateErrorId(): string {
-    return `err_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
+    return `err_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
   }
 
   /**

@@ -64,7 +64,7 @@ class EcosystemAnalytics {
       ...options,
     };
 
-    this.isEnabled = this.options.enableTracking && typeof window !== 'undefined';
+    this.isEnabled = this.options.enableTracking === true && typeof window !== 'undefined';
     this.sessionId = this.generateSessionId();
     this.sessionStartTime = Date.now();
     this.lastActivity = this.sessionStartTime;
@@ -100,7 +100,7 @@ class EcosystemAnalytics {
    * Generate unique session ID
    */
   private generateSessionId(): string {
-    return `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    return `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
   }
 
   /**
@@ -163,11 +163,7 @@ class EcosystemAnalytics {
    * Track chart interactions
    */
   public trackChartInteraction(chartType: string, action: string, data?: any): void {
-    this.trackEcosystemInteraction(`chart_${action}`, chartType, undefined, {
-      chartType,
-      chartAction: action,
-      chartData: data,
-    });
+    this.trackEcosystemInteraction(`chart_${action}`, chartType);
   }
 
   /**
@@ -181,10 +177,7 @@ class EcosystemAnalytics {
    * Track export functionality
    */
   public trackExport(format: string, data?: any): void {
-    this.trackEcosystemInteraction('export', format, undefined, {
-      exportFormat: format,
-      exportData: data,
-    });
+    this.trackEcosystemInteraction('export', format);
   }
 
   /**
@@ -192,10 +185,7 @@ class EcosystemAnalytics {
    */
   public trackFeatureUsage(feature: string, startTime: number): void {
     const duration = Date.now() - startTime;
-    this.trackEcosystemInteraction('feature_time', feature, duration, {
-      feature,
-      duration,
-    });
+    this.trackEcosystemInteraction('feature_time', feature, duration);
 
     performanceMonitor.recordMetric(`feature_${feature}_time`, duration);
   }
@@ -280,8 +270,8 @@ class EcosystemAnalytics {
    */
   private sendEvent(event: AnalyticsEvent): void {
     // Send to Google Analytics if available
-    if (typeof gtag !== 'undefined') {
-      gtag('event', event.action, {
+    if (typeof window !== 'undefined' && 'gtag' in window) {
+      (window as any).gtag('event', event.action, {
         event_category: event.category,
         event_label: event.label,
         value: event.value,
@@ -325,7 +315,7 @@ class EcosystemAnalytics {
 
       if (!userId) {
         // Generate new user ID
-        userId = `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        userId = `user_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
         localStorage.setItem('ecosystem_user_id', userId);
       }
 

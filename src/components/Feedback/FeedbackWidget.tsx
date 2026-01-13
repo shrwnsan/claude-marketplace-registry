@@ -117,11 +117,7 @@ const FeedbackWidget: React.FC<FeedbackWidgetProps> = ({
       if (response.ok) {
         setSubmitStatus('success');
         setCurrentStep('confirmation');
-        trackEcosystemInteraction('feedback_submit', 'success', {
-          rating,
-          category,
-          messageLength: message.length,
-        });
+        trackEcosystemInteraction('feedback_submit', 'success', rating);
       } else {
         throw new Error('Failed to submit feedback');
       }

@@ -195,7 +195,6 @@ class SuccessMetricsTracker {
       trend,
       status: this.calculateStatus(value, threshold),
       description: this.generateMetricDescription(name, value, threshold),
-      metadata,
     };
 
     // Store metric
@@ -437,7 +436,8 @@ ${metric.description}`;
       const observer = new PerformanceObserver((list) => {
         for (const entry of list.getEntries()) {
           if (entry.entryType === 'navigation') {
-            this.recordMetric('page_load_time', entry.loadEventEnd - entry.fetchStart);
+            const navEntry = entry as PerformanceNavigationTiming;
+            this.recordMetric('page_load_time', navEntry.loadEventEnd - navEntry.fetchStart);
           }
         }
       });

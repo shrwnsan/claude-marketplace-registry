@@ -72,6 +72,7 @@ const mockFetchResponse = (data: any, ok = true, status = 200) => {
     blob: jest.fn(),
     formData: jest.fn(),
     text: jest.fn(),
+    bytes: jest.fn(),
   });
 };
 
@@ -487,6 +488,7 @@ describe('QualityIndicators Component', () => {
           blob: jest.fn(),
           formData: jest.fn(),
           text: jest.fn(),
+          bytes: jest.fn(),
         }), 100))
       );
 

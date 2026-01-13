@@ -45,9 +45,10 @@ class PerformanceMonitor {
         const navigationObserver = new PerformanceObserver((list) => {
           for (const entry of list.getEntries()) {
             if (entry.entryType === 'navigation') {
-              this.recordMetric('navigation', entry.loadEventEnd - entry.fetchStart, {
+              const navEntry = entry as PerformanceNavigationTiming;
+              this.recordMetric('navigation', navEntry.loadEventEnd - navEntry.fetchStart, {
                 type: 'page_load',
-                domContentLoaded: entry.domContentLoadedEventEnd - entry.domContentLoadedEventStart,
+                domContentLoaded: navEntry.domContentLoadedEventEnd - navEntry.domContentLoadedEventStart,
               });
             }
           }
@@ -254,8 +255,8 @@ class PerformanceMonitor {
   private sendMetric(event: PerformanceEvent): void {
     try {
       // Send to analytics service (e.g., Google Analytics, DataDog, etc.)
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'performance_metric', {
+      if (typeof window !== 'undefined' && 'gtag' in window) {
+        (window as any).gtag('event', 'performance_metric', {
           custom_parameter: {
             metric_name: event.name,
             metric_value: event.value,

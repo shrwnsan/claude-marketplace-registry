@@ -132,14 +132,15 @@ class HealthChecker {
           responseTime: duration,
         },
       });
-    } catch (error) {
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error';
       this.addCheck({
         name: 'api_connectivity',
         status: 'fail',
         duration: Date.now() - startTime,
-        message: `API connectivity check failed: ${error.message}`,
+        message: `API connectivity check failed: ${errorMessage}`,
         metadata: {
-          error: error.message,
+          error: errorMessage,
         },
       });
     }
@@ -186,12 +187,13 @@ class HealthChecker {
       } else {
         throw new Error(`HTTP ${response.status}`);
       }
-    } catch (error) {
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error';
       this.addCheck({
         name: 'data_freshness',
         status: 'fail',
         duration: 0,
-        message: `Data freshness check failed: ${error.message}`,
+        message: `Data freshness check failed: ${errorMessage}`,
       });
     }
   }
@@ -211,12 +213,13 @@ class HealthChecker {
           duration,
           success: response.ok,
         };
-      } catch (error) {
+      } catch (err) {
+        const errorMessage = err instanceof Error ? err.message : 'Unknown error';
         return {
           endpoint,
           duration: this.config.timeout,
           success: false,
-          error: error.message,
+          error: errorMessage,
         };
       }
     });
@@ -245,12 +248,13 @@ class HealthChecker {
           })),
         },
       });
-    } catch (error) {
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error';
       this.addCheck({
         name: 'response_times',
         status: 'fail',
         duration: 0,
-        message: `Response time check failed: ${error.message}`,
+        message: `Response time check failed: ${errorMessage}`,
       });
     }
   }
@@ -289,7 +293,8 @@ class HealthChecker {
           message: 'Error rate check not available, assuming good health',
         });
       }
-    } catch (error) {
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error';
       // If error endpoint fails, assume good health
       this.addCheck({
         name: 'error_rates',
@@ -297,7 +302,7 @@ class HealthChecker {
         duration: 0,
         message: 'Error rate check failed, assuming good health',
         metadata: {
-          error: error.message,
+          error: errorMessage,
         },
       });
     }
@@ -358,14 +363,15 @@ class HealthChecker {
           bundleCount: jsResources.length,
         },
       });
-    } catch (error) {
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error';
       this.addCheck({
         name: 'bundle_size',
         status: 'warn',
         duration: 0,
         message: 'Bundle size check failed',
         metadata: {
-          error: error.message,
+          error: errorMessage,
         },
       });
     }

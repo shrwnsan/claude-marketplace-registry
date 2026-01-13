@@ -13,7 +13,7 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'Content-Type',
 };
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -51,7 +51,7 @@ export default function handler(
     if (overview !== undefined) {
       responseData = mockEcosystemData.overview;
     } else if (quality !== undefined) {
-      responseData = mockEcosystemData.quality;
+      responseData = mockEcosystemData.qualityIndicators;
     } else if (growth !== undefined) {
       responseData = mockEcosystemData.growthTrends;
     } else if (categories !== undefined) {
@@ -75,7 +75,7 @@ export default function handler(
       data: responseData,
       meta: {
         timestamp: new Date().toISOString(),
-        requestId: `req_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+        requestId: `req_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`,
         responseTime: Math.round(200 + Math.random() * 300),
         cacheStatus: 'miss',
         dataFreshness: new Date().toISOString(),
