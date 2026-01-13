@@ -145,8 +145,13 @@ docs/.doctrees/
 *.old
 
 # Generated data files (keep structure, ignore content)
-data/*.json
+data/**/*.json
 !data/.gitkeep
+
+# Generated public data files
+public/data/**/*.json
+public/*.xml
+!public/data/.gitkeep
 
 # GitHub Pages
 .github-pages/

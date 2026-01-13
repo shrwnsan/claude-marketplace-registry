@@ -8,8 +8,11 @@ import { useRealMarketplaceData } from '../hooks/useRealMarketplaceData';
 import { usePluginData } from '../hooks/usePluginData';
 import { mockMarketplaces, categories } from '../data/mock-data';
 import LoadingState from '../components/ui/LoadingState';
-import { Star, Download, Github, ExternalLink, TrendingUp, Users, Package, Shield, BarChart } from 'lucide-react';
+import { StatCard } from '../components/ui/StatCard';
+import { BarChart, Download, ExternalLink, Github, Package, Shield, Star, Store, TrendingUp, Users } from 'lucide-react';
 import Link from 'next/link';
+import { handleAnchorClick } from '../utils/scroll';
+import { calculateEstimatedDownloads, extractPluginCount } from '../utils/stats';
 
 const HomePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -38,21 +41,18 @@ const HomePage: React.FC = () => {
     });
   }, [allPlugins, searchQuery, selectedCategory]);
 
-  // Calculate stats dynamically from real data
+  // Calculate stats dynamically from real data using same logic as ecosystem statistics
   const dynamicStats = useMemo(() => {
     if (marketplaceData?.marketplaces && marketplaceData.marketplaces.length > 0) {
-      // Calculate stats from real marketplace data
-      const totalMarketplaces = marketplaceData.marketplaces.length;
-      const totalPlugins = allPlugins.length;
-      const totalStars = marketplaceData.marketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0);
-      const totalDownloads = allPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0);
+      const marketplaces = marketplaceData.marketplaces;
+      const totalPlugins = marketplaces.reduce((sum, mp) =>
+        sum + extractPluginCount(mp.description || ''), 0
+      );
+      const totalMarketplaces = marketplaces.length;
+      const totalStars = marketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0);
+      const totalDownloads = calculateEstimatedDownloads(totalStars, totalPlugins);
 
-      return {
-        totalPlugins,
-        totalMarketplaces,
-        totalStars,
-        totalDownloads
-      };
+      return { totalPlugins, totalMarketplaces, totalStars, totalDownloads };
     }
 
     // Fallback to mock stats if no real data
@@ -60,7 +60,7 @@ const HomePage: React.FC = () => {
       totalPlugins: allPlugins.length,
       totalMarketplaces: mockMarketplaces.length,
       totalStars: mockMarketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0),
-      totalDownloads: allPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0)
+      totalDownloads: allPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0),
     };
   }, [marketplaceData, allPlugins]);
 
@@ -85,7 +85,7 @@ const HomePage: React.FC = () => {
       <MainLayout>
         
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-primary-900/20 py-12 sm:py-16 lg:py-24 overflow-hidden">
+        <section id="ecosystem-at-a-glance" className="relative bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-primary-900/20 py-12 sm:py-16 lg:py-24 overflow-hidden">
           {/* Background decoration */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-200 dark:bg-primary-800/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
@@ -115,51 +115,64 @@ const HomePage: React.FC = () => {
                 />
               </div>
 
+              {/* Ecosystem at a Glance */}
+              <div className="mb-8">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+                  Ecosystem at a Glance
+                </h2>
+                <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                  Key metrics from the Claude Code plugin ecosystem. For detailed analytics and trends,
+                  see the <a href="#analytics-dashboard" onClick={handleAnchorClick} className="text-primary-600 dark:text-primary-400 hover:underline cursor-pointer">Ecosystem Statistics</a> section below.
+                </p>
+              </div>
+
               {/* Stats */}
               {marketplaceLoading || pluginsLoading ? (
                 <LoadingState variant="skeleton" className="max-w-5xl mx-auto px-4" />
               ) : (
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-4">
-                  <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
-                      <Package className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
-                    </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                      {dynamicStats.totalPlugins.toLocaleString()}
-                    </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Plugins</div>
+                <>
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-4">
+                    <StatCard
+                      icon={Package}
+                      value={dynamicStats.totalPlugins}
+                      label="Total Plugins"
+                      bgColor="bg-primary-100 dark:bg-primary-900/30"
+                      iconColor="text-primary-600 dark:text-primary-400"
+                      hoverBgColor="bg-primary-200 dark:bg-primary-900/50"
+                    />
+                    <StatCard
+                      icon={Store}
+                      value={dynamicStats.totalMarketplaces}
+                      label="Marketplaces"
+                      bgColor="bg-success-100 dark:bg-success-900/30"
+                      iconColor="text-success-600 dark:text-success-400"
+                      hoverBgColor="bg-success-200 dark:bg-success-900/50"
+                    />
+                    <StatCard
+                      icon={Download}
+                      value={dynamicStats.totalDownloads}
+                      label="Total Downloads"
+                      bgColor="bg-warning-100 dark:bg-warning-900/30"
+                      iconColor="text-warning-600 dark:text-warning-400"
+                      hoverBgColor="bg-warning-200 dark:bg-warning-900/50"
+                    />
+                    <StatCard
+                      icon={Star}
+                      value={dynamicStats.totalStars}
+                      label="GitHub Stars"
+                      bgColor="bg-purple-100 dark:bg-purple-900/30"
+                      iconColor="text-purple-600 dark:text-purple-400"
+                      hoverBgColor="bg-purple-200 dark:bg-purple-900/50"
+                    />
                   </div>
 
-                  <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
-                      <Users className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
-                    </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                      {dynamicStats.totalMarketplaces.toLocaleString()}
-                    </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Marketplaces</div>
+                  {/* Quick Stats Note */}
+                  <div className="text-center mt-6">
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      Data based on {dynamicStats.totalPlugins.toLocaleString()} indexed plugins across {dynamicStats.totalMarketplaces.toLocaleString()} marketplaces
+                    </p>
                   </div>
-
-                  <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
-                      <Download className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
-                    </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                      {dynamicStats.totalDownloads.toLocaleString()}
-                    </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Downloads</div>
-                  </div>
-
-                  <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
-                      <Star className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
-                    </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                      {dynamicStats.totalStars.toLocaleString()}
-                    </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Stars</div>
-                  </div>
-                </div>
+                </>
               )}
             </div>
           </div>
@@ -371,7 +384,7 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* Ecosystem Statistics Section */}
-        <section className="py-12 sm:py-16 bg-white dark:bg-gray-900">
+        <section id="analytics-dashboard" className="py-12 sm:py-16 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <EcosystemStats
               title="Ecosystem Statistics"

@@ -75,6 +75,8 @@ export default function Document() {
         <link rel="canonical" href="https://claude-marketplace.github.io/aggregator/" />
 
         {/* Structured Data */}
+        {/* Temporarily commented out for debugging */}
+        {/*
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -98,6 +100,7 @@ export default function Document() {
             })
           }}
         />
+        */}
 
         {/* Google Fonts with display=swap for performance */}
         <link

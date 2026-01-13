@@ -208,7 +208,7 @@ function generateMockData(timeRange: TimeRange): GrowthDataResponse {
  * Transform growth data for chart visualization
  */
 function transformDataForChart(growthData: GrowthDataResponse): ChartDataPoint[] {
-  const { plugins, marketplaces, developers, downloads } = growthData;
+  const { plugins = [], marketplaces = [], developers = [], downloads = [] } = growthData;
 
   // Find the longest array to use as base
   const maxLength = Math.max(plugins.length, marketplaces.length, developers.length, downloads.length);
