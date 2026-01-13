@@ -8,9 +8,11 @@ import { useRealMarketplaceData } from '../hooks/useRealMarketplaceData';
 import { usePluginData } from '../hooks/usePluginData';
 import { mockMarketplaces, categories } from '../data/mock-data';
 import LoadingState from '../components/ui/LoadingState';
-import { Star, Download, Github, ExternalLink, TrendingUp, Users, Package, BarChart, Shield, Store } from 'lucide-react';
+import { StatCard } from '../components/ui/StatCard';
+import { BarChart, Download, ExternalLink, Github, Package, Shield, Star, Store, TrendingUp, Users } from 'lucide-react';
 import Link from 'next/link';
 import { handleAnchorClick } from '../utils/scroll';
+import { calculateEstimatedDownloads, extractPluginCount } from '../utils/stats';
 
 const HomePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -41,38 +43,16 @@ const HomePage: React.FC = () => {
 
   // Calculate stats dynamically from real data using same logic as ecosystem statistics
   const dynamicStats = useMemo(() => {
-    if (marketplaceData?.marketplaces && marketplaceData.marketplaces.length > 0) {
-      // Use the same logic as ecosystem-stats API
+    if (marketplaceData?.marketplaces?.length > 0) {
       const marketplaces = marketplaceData.marketplaces;
-
-      // Extract plugin counts from marketplace descriptions (same as ecosystem-stats)
-      const extractPluginCount = (description: string): number => {
-        const matches = description.match(/(\d+)\s+(?:plugins?|tools?|commands?)/i);
-        return matches ? parseInt(matches[1]) : 0;
-      };
-
-      // Calculate estimated plugin counts from marketplace descriptions
-      const totalEstimatedPlugins = marketplaces.reduce((sum: number, m: any) => {
-        return sum + extractPluginCount(m.description || '');
-      }, 0);
-
+      const totalPlugins = marketplaces.reduce((sum, mp) =>
+        sum + extractPluginCount(mp.description || ''), 0
+      );
       const totalMarketplaces = marketplaces.length;
-      const totalStars = marketplaces.reduce((sum: number, mp: any) => sum + (mp.stars || 0), 0);
+      const totalStars = marketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0);
+      const totalDownloads = calculateEstimatedDownloads(totalStars, totalPlugins);
 
-      // Estimate downloads based on stars and ecosystem growth (same as ecosystem-stats)
-      const now = new Date();
-      const launchDate = new Date('2025-10-10');
-      const daysSinceLaunch = Math.max(1, Math.floor((now.getTime() - launchDate.getTime()) / (1000 * 60 * 60 * 24)));
-
-      const estimatedTotalDownloads = totalStars * 15 + // Base downloads from stars
-        Math.floor(totalEstimatedPlugins * 25 * (daysSinceLaunch / 30)); // Growth since launch
-
-      return {
-        totalPlugins: totalEstimatedPlugins,
-        totalMarketplaces,
-        totalStars,
-        totalDownloads: estimatedTotalDownloads
-      };
+      return { totalPlugins, totalMarketplaces, totalStars, totalDownloads };
     }
 
     // Fallback to mock stats if no real data
@@ -80,7 +60,7 @@ const HomePage: React.FC = () => {
       totalPlugins: allPlugins.length,
       totalMarketplaces: mockMarketplaces.length,
       totalStars: mockMarketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0),
-      totalDownloads: allPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0)
+      totalDownloads: allPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0),
     };
   }, [marketplaceData, allPlugins]);
 
@@ -152,45 +132,38 @@ const HomePage: React.FC = () => {
               ) : (
                 <>
                   <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-4">
-                    <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center group-hover:bg-primary-200 dark:group-hover:bg-primary-900/50 transition-colors">
-                        <Package className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 dark:text-primary-400" />
-                      </div>
-                      <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                        {dynamicStats.totalPlugins.toLocaleString()}
-                      </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400">Total Plugins</div>
-                    </div>
-
-                    <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-success-100 dark:bg-success-900/30 rounded-lg flex items-center justify-center group-hover:bg-success-200 dark:group-hover:bg-success-900/50 transition-colors">
-                        <Store className="w-6 h-6 sm:w-8 sm:h-8 text-success-600 dark:text-success-400" />
-                      </div>
-                      <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                        {dynamicStats.totalMarketplaces.toLocaleString()}
-                      </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400">Marketplaces</div>
-                    </div>
-
-                    <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-warning-100 dark:bg-warning-900/30 rounded-lg flex items-center justify-center group-hover:bg-warning-200 dark:group-hover:bg-warning-900/50 transition-colors">
-                        <Download className="w-6 h-6 sm:w-8 sm:h-8 text-warning-600 dark:text-warning-400" />
-                      </div>
-                      <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                        {dynamicStats.totalDownloads.toLocaleString()}
-                      </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400">Total Downloads</div>
-                    </div>
-
-                    <div className="glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group">
-                      <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center group-hover:bg-purple-200 dark:group-hover:bg-purple-900/50 transition-colors">
-                        <Star className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600 dark:text-purple-400" />
-                      </div>
-                      <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-                        {dynamicStats.totalStars.toLocaleString()}
-                      </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400">GitHub Stars</div>
-                    </div>
+                    <StatCard
+                      icon={Package}
+                      value={dynamicStats.totalPlugins}
+                      label="Total Plugins"
+                      bgColor="bg-primary-100 dark:bg-primary-900/30"
+                      iconColor="text-primary-600 dark:text-primary-400"
+                      hoverBgColor="bg-primary-200 dark:bg-primary-900/50"
+                    />
+                    <StatCard
+                      icon={Store}
+                      value={dynamicStats.totalMarketplaces}
+                      label="Marketplaces"
+                      bgColor="bg-success-100 dark:bg-success-900/30"
+                      iconColor="text-success-600 dark:text-success-400"
+                      hoverBgColor="bg-success-200 dark:bg-success-900/50"
+                    />
+                    <StatCard
+                      icon={Download}
+                      value={dynamicStats.totalDownloads}
+                      label="Total Downloads"
+                      bgColor="bg-warning-100 dark:bg-warning-900/30"
+                      iconColor="text-warning-600 dark:text-warning-400"
+                      hoverBgColor="bg-warning-200 dark:bg-warning-900/50"
+                    />
+                    <StatCard
+                      icon={Star}
+                      value={dynamicStats.totalStars}
+                      label="GitHub Stars"
+                      bgColor="bg-purple-100 dark:bg-purple-900/30"
+                      iconColor="text-purple-600 dark:text-purple-400"
+                      hoverBgColor="bg-purple-200 dark:bg-purple-900/50"
+                    />
                   </div>
 
                   {/* Quick Stats Note */}

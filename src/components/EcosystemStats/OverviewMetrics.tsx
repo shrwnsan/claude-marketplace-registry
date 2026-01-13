@@ -10,7 +10,7 @@ import {
   Calendar
 } from 'lucide-react';
 import { EcosystemOverview, EcosystemStatsResponse } from '../../types/ecosystem-stats';
-// import LoadingSpinner from '../ui/LoadingSpinner'; // Unused - can be removed when needed
+import { formatNumber } from '../../utils/format';
 import ErrorDisplay from '../ui/ErrorDisplay';
 
 // Interface for component props
@@ -85,21 +85,6 @@ const useEcosystemOverview = (autoRefresh: boolean = false, refreshInterval: num
   }, [autoRefresh, refreshInterval]);
 
   return { data, loading, error, lastUpdated, refetch: fetchData };
-};
-
-// Utility function to format numbers with K, M, B suffixes
-const formatNumber = (num: number | undefined | null): string => {
-  if (num === undefined || num === null || isNaN(num)) {
-    return '0';
-  }
-  if (num >= 1000000000) {
-    return (num / 1000000000).toFixed(1) + 'B';
-  } else if (num >= 1000000) {
-    return (num / 1000000).toFixed(1) + 'M';
-  } else if (num >= 1000) {
-    return (num / 1000).toFixed(1) + 'K';
-  }
-  return num.toString();
 };
 
 // Utility function to get change indicator component
