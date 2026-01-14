@@ -26,7 +26,7 @@ This PRD addresses the redundancy issues in the current metrics display system w
 5. **Inconsistent Iconography**: Different icons for same concepts (e.g., Users vs Store for marketplaces)
 
 ### Current Metrics Locations:
-1. **Hero Section** (`src/pages/index.tsx:122-163`): Total Plugins, Marketplaces, Downloads, Stars
+1. **Hero Section** (`pages/index.tsx:122-163`): Total Plugins, Marketplaces, Downloads, Stars
 2. **Ecosystem Overview** (`src/components/EcosystemStats/OverviewMetrics.tsx`): Total Plugins, Marketplaces, Developers, Downloads
 3. **Growth Trends** (`src/components/EcosystemStats/GrowthTrends.tsx`): Plugins, Marketplaces, Developers, Downloads
 
@@ -128,7 +128,7 @@ This PRD addresses the redundancy issues in the current metrics display system w
 ### Phase 1: Foundation Updates (Priority: High)
 
 #### Task 1.1: Update Hero Section Information Architecture
-**File**: `src/pages/index.tsx`
+**File**: `pages/index.tsx`
 **Changes Required**:
 - Add section header "Ecosystem at a Glance"
 - Update metric labels for clarity
@@ -144,7 +144,7 @@ This PRD addresses the redundancy issues in the current metrics display system w
 - [ ] Data freshness indicator displays
 
 #### Task 1.2: Standardize Icon Usage Across Components
-**Files**: `src/pages/index.tsx`, `src/components/EcosystemStats/OverviewMetrics.tsx`
+**Files**: `pages/index.tsx`, `src/components/EcosystemStats/OverviewMetrics.tsx`
 **Changes Required**:
 - Use `Store` icon for marketplaces everywhere
 - Use `Package` icon for plugins consistently
@@ -157,7 +157,7 @@ This PRD addresses the redundancy issues in the current metrics display system w
 - [ ] Hover states work uniformly
 
 #### Task 1.3: Add Section Anchors and Navigation
-**Files**: `src/pages/index.tsx`, `src/components/EcosystemStats/EcosystemStats.tsx`
+**Files**: `pages/index.tsx`, `src/components/EcosystemStats/EcosystemStats.tsx`
 **Changes Required**:
 - Add `id="ecosystem-at-a-glance"` to hero section
 - Add `id="analytics-dashboard"` to ecosystem overview

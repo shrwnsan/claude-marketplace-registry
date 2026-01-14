@@ -33,7 +33,7 @@
 
 ### 1. Fix Plugin Extraction Runtime Errors
 **Problem:** Plugin extraction logic causes React to not render
-**Files:** `src/pages/index.tsx`, `src/pages/marketplaces/[id].tsx`
+**Files:** `pages/index.tsx`, `pages/marketplaces/[id].tsx`
 **Impact:** Critical - blocks core functionality
 
 **Steps:**
@@ -44,7 +44,7 @@
 
 ### 2. Fix Marketplace Cards Display
 **Problem:** Homepage shows 22 marketplace cards (mock) instead of real data
-**File:** `src/pages/index.tsx`
+**File:** `pages/index.tsx`
 **Root Cause:** `marketplaces` variable fallback logic issue
 
 **Steps:**
@@ -67,7 +67,7 @@
 ## 🔧 Medium Priority Tasks
 
 ### 4. Enhance Marketplace Detail Pages
-**File:** `src/pages/marketplaces/[id].tsx`
+**File:** `pages/marketplaces/[id].tsx`
 **Issues:** Runtime errors prevent rendering
 
 **Steps:**

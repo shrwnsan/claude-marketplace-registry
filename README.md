@@ -228,12 +228,25 @@ claude-marketplace-aggregator/
 │   ├── scan-marketplaces.ts # Marketplace scanner
 │   ├── validate-plugins.ts  # Plugin validator
 │   └── generate-data.ts     # Data generator
+├── pages/                   # Next.js pages
+│   ├── _app.tsx           # App wrapper
+│   ├── _document.tsx      # Document structure
+│   ├── index.tsx          # Homepage
+│   ├── api/               # API routes
+│   ├── marketplaces/      # Marketplace pages
+│   ├── plugins/           # Plugin pages
+│   ├── admin/             # Admin pages
+│   ├── demo/              # Demo pages
+│   └── docs/              # Documentation pages
 ├── src/
-│   ├── components/          # React components
-│   ├── pages/              # Next.js pages
-│   ├── types/              # TypeScript type definitions
-│   ├── utils/              # Utility functions
-│   └── services/           # API services
+│   ├── components/        # React components
+│   ├── contexts/          # React contexts
+│   ├── hooks/             # Custom React hooks
+│   ├── types/             # TypeScript type definitions
+│   ├── utils/             # Utility functions
+│   ├── services/          # API services
+│   ├── parsers/           # Data parsers
+│   └── data/              # Static data and mock data
 ├── .env.example            # Environment variables template
 ├── next.config.js          # Next.js configuration
 ├── package.json            # Dependencies and scripts

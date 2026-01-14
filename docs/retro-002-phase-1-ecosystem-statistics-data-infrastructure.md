@@ -109,7 +109,7 @@ interface EcosystemOverview {
 }
 ```
 
-### **RESTful API** (`src/pages/api/ecosystem-stats.ts`)
+### **RESTful API** (`pages/api/ecosystem-stats.ts`)
 ```typescript
 // 8 endpoints with full CRUD operations
 GET    /api/ecosystem-stats              // Complete ecosystem data
@@ -182,7 +182,7 @@ const mockConfig = {
 1. `src/services/ecosystem-data.ts` - Data collection service (450+ lines)
 2. `src/utils/data-processor.ts` - Data processing pipeline (380+ lines)
 3. `src/data/ecosystem-stats.ts` - Storage interfaces and caching (320+ lines)
-4. `src/pages/api/ecosystem-stats.ts` - RESTful API endpoints (280+ lines)
+4. `pages/api/ecosystem-stats.ts` - RESTful API endpoints (280+ lines)
 
 ### **Type System**
 5. `src/types/ecosystem-stats.ts` - Core interfaces (850+ lines)

@@ -117,29 +117,38 @@ The project uses several automated workflows:
 ## Key File Structure
 
 ```
+├── pages/               # Next.js pages
+│   ├── _app.tsx        # App wrapper
+│   ├── _document.tsx   # Document structure
+│   ├── index.tsx       # Homepage
+│   ├── api/            # API routes
+│   ├── marketplaces/   # Marketplace pages
+│   ├── plugins/        # Plugin pages
+│   ├── admin/          # Admin pages
+│   ├── demo/           # Demo pages
+│   └── docs/           # Documentation pages
 ├── src/
-│   ├── types/           # TypeScript interfaces
+│   ├── types/          # TypeScript interfaces
 │   │   ├── marketplace.ts
 │   │   ├── plugin.ts
 │   │   └── github.ts
-│   ├── services/        # Business logic
+│   ├── services/       # Business logic
 │   │   ├── github-search.ts
 │   │   ├── github-metadata.ts
 │   │   └── quality-scoring.ts
-│   ├── utils/           # Utility functions
+│   ├── utils/          # Utility functions
 │   │   ├── github-client.ts
 │   │   ├── content-fetcher.ts
 │   │   └── data-exporter.ts
-│   ├── parsers/         # Data parsing
+│   ├── parsers/        # Data parsing
 │   │   └── manifest-parser.ts
-│   ├── components/      # React components
+│   ├── components/     # React components
 │   │   ├── layout/
 │   │   ├── Search/
 │   │   ├── Filters/
 │   │   └── Marketplace/
-│   ├── pages/           # Next.js pages
-│   ├── hooks/           # React hooks
-│   └── data/            # Static data and mock data
+│   ├── hooks/          # React hooks
+│   └── data/           # Static data and mock data
 ├── data/                # Generated JSON data
 │   ├── marketplaces.json
 │   ├── plugins.json

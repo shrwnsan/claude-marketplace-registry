@@ -154,7 +154,7 @@
 - [x] Test: Components render without errors ✅ **Cross-browser compatibility tested**
 
 **1.3.3 Home Page Structure** ✅ **COMPLETED**
-- [x] Create `src/pages/index.tsx` ✅ **Production-ready homepage with full features**
+- [x] Create `pages/index.tsx` ✅ **Production-ready homepage with full features**
 - [x] Add hero section with project description ✅ **Professional hero with animations**
 - [x] Create search bar placeholder ✅ **Advanced search with real-time suggestions**
 - [x] Add empty marketplace grid ✅ **Dynamic grid with marketplace cards**
@@ -908,7 +908,7 @@ This task breakdown document now serves as a **permanent record** of the excepti
 - [x] Test: Hook loads data correctly
 
 **4.3.2 Update UI Components**
-- [x] Modify `src/pages/index.tsx` to use `useRealMarketplaceData`
+- [x] Modify `pages/index.tsx` to use `useRealMarketplaceData`
 - [x] Update search components to use real data from `/data/marketplaces.json`
 - [x] Update filter components to use real data
 - [x] Remove any API route dependencies (`/api/*`) from production UI
@@ -955,7 +955,7 @@ This task breakdown document now serves as a **permanent record** of the excepti
 #### Subtasks - **ALL COMPLETED**:
 
 **4.4.1 Update _document.tsx with CSP Headers**
-- [x] Open `src/pages/_document.tsx` (correct path)
+- [x] Open `pages/_document.tsx` (correct path)
 - [x] Add CSP meta tag with comprehensive security policy
 - [x] Add X-Frame-Options, X-Content-Type-Options meta tags
 - [x] Add Referrer-Policy and Permissions-Policy meta tags
@@ -998,7 +998,7 @@ This task breakdown document now serves as a **permanent record** of the excepti
 - [x] Push: `git push origin fix/static-export-configuration`
 - [x] Create pull request with static export verification
 
-**Evidence:** ✅ CSP headers applied via meta tags in `src/pages/_document.tsx`, favicon files present and working, static export completes successfully without header errors, `NEXT_PUBLIC_BASE_PATH` environment variable configured for flexible deployment.
+**Evidence:** ✅ CSP headers applied via meta tags in `pages/_document.tsx`, favicon files present and working, static export completes successfully without header errors, `NEXT_PUBLIC_BASE_PATH` environment variable configured for flexible deployment.
 
 ---
 
@@ -1049,7 +1049,7 @@ This task breakdown document now serves as a **permanent record** of the excepti
 - [x] Tag release: `git tag -a v1.0.1 -m "Critical Production Fixes - GitHub Pages Ready"`
 - [x] Push tags: `git push origin --tags`
 
-**Evidence:** ✅ All 4 critical issues resolved with corrected architecture: ESLint fixed, static JSON data generated pre-build with correct basePath, UI displays real data without API routes, CSP headers applied via meta tags in `src/pages/_document.tsx`, ready for GitHub Pages deployment.
+**Evidence:** ✅ All 4 critical issues resolved with corrected architecture: ESLint fixed, static JSON data generated pre-build with correct basePath, UI displays real data without API routes, CSP headers applied via meta tags in `pages/_document.tsx`, ready for GitHub Pages deployment.
 
 ---
 

@@ -27,7 +27,6 @@
       "@/services/*": ["./src/services/*"],
       "@/components/*": ["./src/components/*"],
       "@/hooks/*": ["./src/hooks/*"],
-      "@/pages/*": ["./src/pages/*"],
       "@/data/*": ["./src/data/*"],
       "@/parsers/*": ["./src/parsers/*"]
     }

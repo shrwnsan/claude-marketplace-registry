@@ -470,7 +470,7 @@ const nextConfig = {
 
 #### 1. Update _document.tsx
 ```typescript
-// src/pages/_document.tsx
+// pages/_document.tsx
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
@@ -535,7 +535,7 @@ const nextConfig = {
     unoptimized: true
   },
   // Remove headers section as they don't work with static export
-  // Headers are now handled via meta tags in src/pages/_document.tsx
+  // Headers are now handled via meta tags in pages/_document.tsx
 };
 
 export default nextConfig;
@@ -738,12 +738,12 @@ public/
 
 #### ✅ **Issue 3: Real Data Pipeline**
 - Created `src/hooks/useRealMarketplaceData.ts` hook
-- Updated `src/pages/index.tsx` to use real data with mock fallback
+- Updated `pages/index.tsx` to use real data with mock fallback
 - Modified `scripts/scan-marketplaces.ts` to generate UI-compatible data
 - **Result:** UI displays real marketplace data when available
 
 #### ✅ **Issue 4: Static Export Configuration**
-- Added comprehensive CSP meta tag to `src/pages/_document.tsx`
+- Added comprehensive CSP meta tag to `pages/_document.tsx`
 - Added security headers: Referrer-Policy, Permissions-Policy
 - Created favicon files: `favicon.svg`, `favicon-32x32.png`, etc.
 - **Result:** Professional appearance with proper security
@@ -753,8 +753,8 @@ public/
 - `scripts/generate-data.ts` - Added static API generation
 - `scripts/scan-marketplaces.ts` - Added UI data generation
 - `src/hooks/useRealMarketplaceData.ts` - New real data hook
-- `src/pages/index.tsx` - Updated to use real data
-- `src/pages/_document.tsx` - Added CSP headers
+- `pages/index.tsx` - Updated to use real data
+- `pages/_document.tsx` - Added CSP headers
 - `package.json` - Updated build scripts
 - Created favicon files in `public/`
 

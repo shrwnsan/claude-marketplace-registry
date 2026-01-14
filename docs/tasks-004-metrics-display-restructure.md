@@ -45,7 +45,7 @@ Restructure the metrics display throughout the application to improve user exper
 ### 🔧 Technical Requirements
 
 **Files to Modify:**
-- `src/pages/index.tsx` (lines 118-166)
+- `pages/index.tsx` (lines 118-166)
 
 **Specific Changes Required:**
 
@@ -121,7 +121,7 @@ Restructure the metrics display throughout the application to improve user exper
 
 **Files to Modify:**
 - `src/components/EcosystemStats/OverviewMetrics.tsx`
-- `src/pages/index.tsx` (already handled in Task-004-01)
+- `pages/index.tsx` (already handled in Task-004-01)
 - Any other components displaying metrics
 
 ### Icon Mapping Standard:
@@ -251,7 +251,7 @@ return [
 ### 🔧 Technical Requirements
 
 **Files to Modify:**
-- `src/pages/index.tsx`
+- `pages/index.tsx`
 - `src/components/EcosystemStats/EcosystemStats.tsx`
 - `src/components/layout/MainLayout.tsx` (if navigation exists)
 

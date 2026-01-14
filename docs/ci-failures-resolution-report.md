@@ -88,12 +88,12 @@ Successfully resolved all CI failures related to Task 004 changes. The failing C
    - `src/lib/success-metrics.ts` - Type mismatches
 
 6. **API Routes** (10 errors)
-   - `src/pages/api/ecosystem-stats.ts` - Property access issues
-   - `src/pages/api/feedback-test.ts` - Missing exports and argument mismatches
-   - `src/pages/api/analytics.ts` - Various type issues
+   - `pages/api/ecosystem-stats.ts` - Property access issues
+   - `pages/api/feedback-test.ts` - Missing exports and argument mismatches
+   - `pages/api/analytics.ts` - Various type issues
 
 7. **Pages** (2 errors)
-   - `src/pages/index.tsx` - Null/undefined checks
+   - `pages/index.tsx` - Null/undefined checks
 
 ### Test Failures (13 tests)
 

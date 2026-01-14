@@ -19,7 +19,7 @@ Transform the current "Project Statistics" section from single-repository GitHub
 - **Current Component:** `GitHubStats.tsx` displays stats for `shrwnsan/claude-marketplace-registry`
 - **Current Metrics:** Stars, forks, commits, contributors for single repo
 - **Problem:** Doesn't represent the aggregator's true value or ecosystem scope
-- **Target Location:** `src/pages/index.tsx:374-389` (Project Statistics section)
+- **Target Location:** `pages/index.tsx:374-389` (Project Statistics section)
 
 ### 🎯 Desired End State
 - **New Component:** `EcosystemStats.tsx` with comprehensive ecosystem metrics
@@ -61,7 +61,7 @@ Transform the current "Project Statistics" section from single-repository GitHub
 - [x] Test: Store and retrieve ecosystem statistics
 
 **1.1.4 API Endpoints**
-- [x] Create `src/pages/api/ecosystem-stats.ts` for frontend data access
+- [x] Create `pages/api/ecosystem-stats.ts` for frontend data access
 - [x] Implement RESTful endpoints for different metric types
 - [x] Add response caching and rate limiting
 - [x] Create error responses and status codes
@@ -492,13 +492,13 @@ Phase 2 deliverables are fully functional and provide a robust foundation for in
 ### 🗂️ Task 3.1: Homepage Integration - Broken into Atomic Units
 
 #### 3.1.1: Component Replacement Integration (Junior Dev A)
-**File:** `src/pages/index.tsx`
+**File:** `pages/index.tsx`
 **Time:** 2-3 hours | **Dependencies:** All Phase 2 ✅
 **PR:** `feature/ecosystem-stats-homepage-replacement`
 
 **Atomic Checklist:**
 - [x] Review: Current homepage layout and GitHubStats section
-- [x] Code: Update import from GitHubStats to EcosystemStats at `src/pages/index.tsx:374-389`
+- [x] Code: Update import from GitHubStats to EcosystemStats at `pages/index.tsx:374-389`
 - [x] Code: Update section title from "Project Statistics" to "Ecosystem Statistics"
 - [x] Code: Update section description for ecosystem messaging
 - [x] Code: Update props and data source references
