@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import MainLayout from '../../components/layout/MainLayout';
+import MainLayout from '@/components/layout/MainLayout';
 import {
   Star,
   Download,
@@ -33,7 +33,7 @@ import {
   ChevronRight,
   ArrowLeft
 } from 'lucide-react';
-import { mockPlugins, mockMarketplaces, MarketplacePlugin } from '../../data/mock-data';
+import { mockPlugins, mockMarketplaces, MarketplacePlugin } from '@/data/mock-data';
 
 const PluginDetailPage: React.FC = () => {
   const router = useRouter();

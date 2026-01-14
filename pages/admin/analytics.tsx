@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import MainLayout from '../../components/layout/MainLayout';
-import { useAnalytics } from '../../utils/analytics/hooks';
+import MainLayout from '@/components/layout/MainLayout';
+import { useAnalytics } from '@/utils/analytics/hooks';
 import {
   BarChart,
   Bar,
@@ -28,7 +28,7 @@ import {
   Trash2,
   RefreshCw
 } from 'lucide-react';
-import { mockPlugins, mockMarketplaces } from '../../data/mock-data';
+import { mockPlugins, mockMarketplaces } from '@/data/mock-data';
 
 const AnalyticsDashboard: React.FC = () => {
   const {

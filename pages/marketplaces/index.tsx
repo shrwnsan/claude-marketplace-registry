@@ -1,64 +1,71 @@
 import React, { useState, useMemo } from 'react';
 import Head from 'next/head';
-import MainLayout from '../../components/layout/MainLayout';
-import SearchBar from '../../components/Search/SearchBar';
-import PluginCard from '../../components/Marketplace/PluginCard';
-import { usePluginData } from '../../hooks/usePluginData';
-import { categories } from '../../data/mock-data';
-import LoadingState from '../../components/ui/LoadingState';
-import { Star, Download, Grid, List, Package } from 'lucide-react';
+import MainLayout from '@/components/layout/MainLayout';
+import SearchBar from '@/components/Search/SearchBar';
+import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
+import { mockMarketplaces, categories } from '@/data/mock-data';
+import LoadingState from '@/components/ui/LoadingState';
+import { Star, Github, ExternalLink, Shield, Filter, Grid, List } from 'lucide-react';
 import Link from 'next/link';
 
-const PluginsPage: React.FC = () => {
+interface _Marketplace {
+  id: string;
+  name: string;
+  description: string;
+  url: string;
+  repositoryUrl: string;
+  stars: number;
+  category: string;
+  verified?: boolean;
+  plugins?: number;
+}
+
+const MarketplacesPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [sortBy, setSortBy] = useState<'stars' | 'downloads' | 'name' | 'updated'>('stars');
+  const [sortBy, setSortBy] = useState<'stars' | 'name' | 'updated'>('stars');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
 
-  // Use plugin data hook
-  const { plugins, loading, error, totalCount } = usePluginData();
+  // Use real marketplace data with fallback to mock data
+  const { data: marketplaceData, loading, error } = useRealMarketplaceData();
+  const marketplaces = marketplaceData?.marketplaces || mockMarketplaces;
 
-  // Filter and sort plugins
-  const filteredAndSortedPlugins = useMemo(() => {
-    const filtered = plugins.filter((plugin) => {
+  // Filter and sort marketplaces
+  const filteredAndSortedMarketplaces = useMemo(() => {
+    const filtered = marketplaces.filter((marketplace) => {
       const matchesSearch = searchQuery === '' ||
-        plugin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        plugin.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        plugin.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase())) ||
-        plugin.author.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        plugin.marketplace.toLowerCase().includes(searchQuery.toLowerCase());
+        marketplace.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        marketplace.description.toLowerCase().includes(searchQuery.toLowerCase());
 
       const matchesCategory = selectedCategory === 'All' ||
-        plugin.category === selectedCategory;
+        marketplace.category === selectedCategory;
 
       return matchesSearch && matchesCategory;
     });
 
-    // Sort plugins
+    // Sort marketplaces
     filtered.sort((a, b) => {
       switch (sortBy) {
         case 'stars':
           return (b.stars || 0) - (a.stars || 0);
-        case 'downloads':
-          return (b.downloads || 0) - (a.downloads || 0);
         case 'name':
           return a.name.localeCompare(b.name);
         case 'updated':
-          return new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime();
+          return 0; // TODO: Add updated date when available
         default:
           return 0;
       }
     });
 
     return filtered;
-  }, [plugins, searchQuery, selectedCategory, sortBy]);
+  }, [marketplaces, searchQuery, selectedCategory, sortBy]);
 
   // Pagination
-  const totalPages = Math.ceil(filteredAndSortedPlugins.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredAndSortedMarketplaces.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const paginatedPlugins = filteredAndSortedPlugins.slice(
+  const paginatedMarketplaces = filteredAndSortedMarketplaces.slice(
     startIndex,
     startIndex + itemsPerPage
   );
@@ -73,7 +80,7 @@ const PluginsPage: React.FC = () => {
     setCurrentPage(1); // Reset to first page on category change
   };
 
-  const handleSortChange = (sort: 'stars' | 'downloads' | 'name' | 'updated') => {
+  const handleSortChange = (sort: 'stars' | 'name' | 'updated') => {
     setSortBy(sort);
     setCurrentPage(1); // Reset to first page on sort change
   };
@@ -101,7 +108,7 @@ const PluginsPage: React.FC = () => {
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="text-center">
-              <h1 className="text-2xl font-bold text-red-600 mb-4">Error Loading Plugins</h1>
+              <h1 className="text-2xl font-bold text-red-600 mb-4">Error Loading Marketplaces</h1>
               <p className="text-gray-600 dark:text-gray-400">{error}</p>
             </div>
           </div>
@@ -113,8 +120,8 @@ const PluginsPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>All Plugins - Claude Marketplace Aggregator</title>
-        <meta name="description" content="Browse all Claude Code plugins from marketplaces across GitHub. Find tools to enhance your development workflow." />
+        <title>All Marketplaces - Claude Marketplace Aggregator</title>
+        <meta name="description" content="Browse all Claude Code marketplaces from across GitHub. Discover new plugins and tools for your development workflow." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -126,10 +133,10 @@ const PluginsPage: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
               <div className="text-center mb-8">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-                  All Plugins
+                  All Marketplaces
                 </h1>
                 <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                  Discover {filteredAndSortedPlugins.length} Claude Code plugins from {totalCount} total across all marketplaces
+                  Discover {filteredAndSortedMarketplaces.length} Claude Code marketplaces from across GitHub
                 </p>
 
                 {/* Search Bar */}
@@ -165,11 +172,10 @@ const PluginsPage: React.FC = () => {
                     </label>
                     <select
                       value={sortBy}
-                      onChange={(e) => handleSortChange(e.target.value as 'stars' | 'downloads' | 'name' | 'updated')}
+                      onChange={(e) => handleSortChange(e.target.value as 'stars' | 'name' | 'updated')}
                       className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     >
                       <option value="stars">Stars</option>
-                      <option value="downloads">Downloads</option>
                       <option value="name">Name</option>
                       <option value="updated">Updated</option>
                     </select>
@@ -201,86 +207,138 @@ const PluginsPage: React.FC = () => {
             {/* Results Count */}
             <div className="mb-6">
               <p className="text-gray-600 dark:text-gray-400">
-                Showing {paginatedPlugins.length} of {filteredAndSortedPlugins.length} plugins
-                {searchQuery && ` matching "${searchQuery}"`}
-                {selectedCategory !== 'All' && ` in ${selectedCategory}`}
+                Showing {paginatedMarketplaces.length} of {filteredAndSortedMarketplaces.length} marketplaces
               </p>
             </div>
 
-            {/* Plugins Grid/List */}
-            {paginatedPlugins.length > 0 ? (
+            {/* Marketplaces Grid/List */}
+            {paginatedMarketplaces.length > 0 ? (
               <div className={
                 viewMode === 'grid'
                   ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
                   : "space-y-4"
               }>
-                {paginatedPlugins.map((plugin) => (
-                  <div key={plugin.id}>
+                {paginatedMarketplaces.map((marketplace) => (
+                  <div
+                    key={marketplace.id}
+                    className={
+                      viewMode === 'grid'
+                        ? "card group hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300 hover:-translate-y-1"
+                        : "card flex items-center gap-4 p-6 hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300"
+                    }
+                  >
                     {viewMode === 'grid' ? (
-                      <PluginCard plugin={plugin} />
+                      // Grid View
+                      <>
+                        <div className="flex items-start justify-between mb-4">
+                          <div className="flex-1 min-w-0">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate">
+                              <Link href={`/marketplaces/${marketplace.id}`}>
+                                {marketplace.name}
+                              </Link>
+                            </h3>
+                            <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3 leading-relaxed">
+                              {marketplace.description}
+                            </p>
+                          </div>
+                          {marketplace.verified && (
+                            <div className="flex-shrink-0 ml-2">
+                              <Shield className="w-5 h-5 text-blue-500" aria-label="Verified marketplace" />
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4">
+                          <div className="flex items-center space-x-4">
+                            <div className="flex items-center space-x-1 group">
+                              <Star className="w-4 h-4 group-hover:fill-current group-hover:text-yellow-500 transition-colors" />
+                              <span className="font-medium">{marketplace.stars.toLocaleString()}</span>
+                            </div>
+                            <span className="badge badge-secondary text-xs">
+                              {marketplace.category}
+                            </span>
+                            {marketplace.plugins !== undefined && (
+                              <span className="text-xs">
+                                {marketplace.plugins} plugins
+                              </span>
+                            )}
+                          </div>
+                        </div>
+
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+                          <a
+                            href={marketplace.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary text-sm w-full sm:w-auto justify-center group"
+                            aria-label={`Visit ${marketplace.name} marketplace`}
+                          >
+                            Visit Marketplace
+                            <ExternalLink className="w-4 h-4 ml-2 transform transition-transform group-hover:scale-110" />
+                          </a>
+                          <a
+                            href={marketplace.repositoryUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-ghost p-2 sm:p-3 group"
+                            aria-label={`View ${marketplace.name} repository`}
+                          >
+                            <Github className="w-4 h-4 sm:w-5 sm:h-5 transform transition-transform group-hover:scale-110" />
+                          </a>
+                        </div>
+                      </>
                     ) : (
                       // List View
-                      <div className="card flex items-center gap-4 p-6 hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300">
+                      <>
                         <div className="flex-1">
                           <div className="flex items-center gap-3 mb-2">
                             <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                              <Link href={`/plugins/${plugin.id}`}>
-                                {plugin.name}
+                              <Link href={`/marketplaces/${marketplace.id}`}>
+                                {marketplace.name}
                               </Link>
                             </h3>
-                            {plugin.verified && (
-                              <div className="w-5 h-5 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center">
-                                <span className="text-blue-600 dark:text-blue-400 text-xs font-bold">✓</span>
-                              </div>
-                            )}
-                            {plugin.featured && (
-                              <span className="badge badge-primary text-xs">Featured</span>
+                            {marketplace.verified && (
+                              <Shield className="w-5 h-5 text-blue-500" aria-label="Verified marketplace" />
                             )}
                             <span className="badge badge-secondary text-xs">
-                              {plugin.category}
+                              {marketplace.category}
                             </span>
                           </div>
                           <p className="text-gray-600 dark:text-gray-300 mb-3 line-clamp-2">
-                            {plugin.description}
+                            {marketplace.description}
                           </p>
-                          <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-2">
-                            <span>by {plugin.author}</span>
-                            <span>•</span>
-                            <span>from {plugin.marketplace}</span>
-                          </div>
                           <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
                             <div className="flex items-center space-x-1">
                               <Star className="w-4 h-4" />
-                              <span>{plugin.stars.toLocaleString()}</span>
+                              <span>{marketplace.stars.toLocaleString()}</span>
                             </div>
-                            <div className="flex items-center space-x-1">
-                              <Download className="w-4 h-4" />
-                              <span>{plugin.downloads.toLocaleString()}</span>
-                            </div>
-                            <span className="text-xs">v{plugin.version}</span>
+                            {marketplace.plugins !== undefined && (
+                              <span>{marketplace.plugins} plugins</span>
+                            )}
                           </div>
                         </div>
-                        <div className="flex flex-col gap-2">
-                          <Link
-                            href={plugin.repositoryUrl}
+                        <div className="flex items-center gap-2">
+                          <a
+                            href={marketplace.repositoryUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-ghost p-2 group"
+                            aria-label={`View ${marketplace.name} repository`}
+                          >
+                            <Github className="w-5 h-5 transform transition-transform group-hover:scale-110" />
+                          </a>
+                          <a
+                            href={marketplace.url}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-primary text-sm px-4 py-2 group"
-                            aria-label={`View ${plugin.name} repository`}
+                            aria-label={`Visit ${marketplace.name} marketplace`}
                           >
-                            View Plugin
-                          </Link>
-                          <Link
-                            href={plugin.marketplaceUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn-ghost text-sm px-4 py-2 text-center"
-                            aria-label={`Visit ${plugin.marketplace}`}
-                          >
-                            {plugin.marketplace}
-                          </Link>
+                            Visit
+                            <ExternalLink className="w-4 h-4 ml-2 transform transition-transform group-hover:scale-110" />
+                          </a>
                         </div>
-                      </div>
+                      </>
                     )}
                   </div>
                 ))}
@@ -288,15 +346,15 @@ const PluginsPage: React.FC = () => {
             ) : (
               <div className="text-center py-16">
                 <div className="text-gray-400 dark:text-gray-500 mb-6">
-                  <Package className="w-16 h-16 mx-auto" />
+                  <Filter className="w-16 h-16 mx-auto" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">
-                  No plugins found
+                  No marketplaces found
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto">
                   {searchQuery || selectedCategory !== 'All'
-                    ? `No plugins found matching your criteria. Try different filters or search terms.`
-                    : 'No plugins available at the moment.'
+                    ? `No marketplaces found matching your criteria. Try different filters or search terms.`
+                    : 'No marketplaces available at the moment.'
                   }
                 </p>
                 {(searchQuery || selectedCategory !== 'All') && (
@@ -374,4 +432,4 @@ const PluginsPage: React.FC = () => {
   );
 };
 
-export default PluginsPage;
+export default MarketplacesPage;

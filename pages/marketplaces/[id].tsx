@@ -2,8 +2,8 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import MainLayout from '../../components/layout/MainLayout';
-import PluginCard from '../../components/Marketplace/PluginCard';
+import MainLayout from '@/components/layout/MainLayout';
+import PluginCard from '@/components/Marketplace/PluginCard';
 import {
   Star,
   Github,
@@ -19,8 +19,8 @@ import {
   Check,
   Share2
 } from 'lucide-react';
-import { MarketplacePlugin } from '../../data/mock-data';
-import { useRealMarketplaceData } from '../../hooks/useRealMarketplaceData';
+import { MarketplacePlugin } from '@/data/mock-data';
+import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 
 interface _MarketplaceDetailProps {
   marketplace: MarketplacePlugin['marketplace'] & {

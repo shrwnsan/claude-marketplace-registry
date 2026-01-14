@@ -1,18 +1,18 @@
 import React, { useState, useMemo } from 'react';
 import Head from 'next/head';
-import MainLayout from '../components/layout/MainLayout';
-import SearchBar from '../components/Search/SearchBar';
-import PluginCard from '../components/Marketplace/PluginCard';
-import { EcosystemStats } from '../components/EcosystemStats';
-import { useRealMarketplaceData } from '../hooks/useRealMarketplaceData';
-import { usePluginData } from '../hooks/usePluginData';
-import { mockMarketplaces, categories } from '../data/mock-data';
-import LoadingState from '../components/ui/LoadingState';
-import { StatCard } from '../components/ui/StatCard';
+import MainLayout from '@/components/layout/MainLayout';
+import SearchBar from '@/components/Search/SearchBar';
+import PluginCard from '@/components/Marketplace/PluginCard';
+import { EcosystemStats } from '@/components/EcosystemStats';
+import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
+import { usePluginData } from '@/hooks/usePluginData';
+import { mockMarketplaces, categories } from '@/data/mock-data';
+import LoadingState from '@/components/ui/LoadingState';
+import { StatCard } from '@/components/ui/StatCard';
 import { BarChart, Download, ExternalLink, Github, Package, Shield, Star, Store, TrendingUp, Users } from 'lucide-react';
 import Link from 'next/link';
-import { handleAnchorClick } from '../utils/scroll';
-import { calculateEstimatedDownloads, extractPluginCount } from '../utils/stats';
+import { handleAnchorClick } from '@/utils/scroll';
+import { calculateEstimatedDownloads, extractPluginCount } from '@/utils/stats';
 
 const HomePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
