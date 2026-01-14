@@ -7,6 +7,11 @@
  * and extracts marketplace metadata.
  */
 
+// Load environment variables from .env.local for local development
+import { config } from 'dotenv';
+const envPath = process.env.NODE_ENV === 'production' ? '.env.production' : '.env.local';
+config({ path: envPath });
+
 import { Octokit } from '@octokit/rest';
 import fs from 'fs';
 import path from 'path';
