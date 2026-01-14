@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { mockPlugins, mockMarketplaces } from '../../src/data/mock-data';
+import { mockPlugins, mockMarketplaces } from '@/data/mock-data';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const {
