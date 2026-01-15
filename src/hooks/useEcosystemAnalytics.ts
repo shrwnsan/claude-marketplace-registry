@@ -3,7 +3,7 @@
  * Tracks user interactions, feature usage, and engagement metrics
  */
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useRef, useCallback } from 'react';
 import { performanceMonitor } from '../lib/monitoring/performance-monitor';
 import { errorTracker } from '../lib/monitoring/error-tracker';
 
@@ -169,7 +169,7 @@ class EcosystemAnalytics {
   /**
    * Track chart interactions
    */
-  public trackChartInteraction(chartType: string, action: string, data?: any): void {
+  public trackChartInteraction(chartType: string, action: string, _data?: any): void {
     this.trackEcosystemInteraction(`chart_${action}`, chartType);
   }
 
@@ -183,7 +183,7 @@ class EcosystemAnalytics {
   /**
    * Track export functionality
    */
-  public trackExport(format: string, data?: any): void {
+  public trackExport(format: string, _data?: any): void {
     this.trackEcosystemInteraction('export', format);
   }
 

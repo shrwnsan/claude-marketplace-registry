@@ -179,7 +179,7 @@ class SuccessMetricsTracker {
   /**
    * Record a metric value
    */
-  public recordMetric(name: string, value: number, metadata?: Record<string, any>): void {
+  public recordMetric(name: string, value: number, _metadata?: Record<string, any>): void {
     const threshold = this.thresholds.get(name);
     if (!threshold) return;
 
@@ -523,7 +523,7 @@ ${metric.description}`;
     const latestMetrics: SuccessMetric[] = [];
 
     // Collect latest values for each metric
-    for (const [name, metrics] of this.metrics.entries()) {
+    for (const [_name, metrics] of this.metrics.entries()) {
       if (metrics.length > 0) {
         const latest = metrics[metrics.length - 1];
         allMetrics.push(...metrics);
@@ -705,7 +705,7 @@ ${metric.description}`;
   private async sendSlackReport(report: ReportData): Promise<void> {
     if (!process.env.SLACK_WEBHOOK_URL) return;
 
-    const { summary, recommendations } = report;
+    const { summary, recommendations: _recommendations } = report;
 
     try {
       await fetch(process.env.SLACK_WEBHOOK_URL, {
@@ -777,7 +777,7 @@ ${metric.description}`;
   public getCurrentMetrics(): SuccessMetric[] {
     const latestMetrics: SuccessMetric[] = [];
 
-    for (const [name, metrics] of this.metrics.entries()) {
+    for (const [_name, metrics] of this.metrics.entries()) {
       if (metrics.length > 0) {
         latestMetrics.push(metrics[metrics.length - 1]);
       }
@@ -792,7 +792,7 @@ ${metric.description}`;
   public getMetricsByCategory(category: SuccessMetric['category']): SuccessMetric[] {
     const latestMetrics: SuccessMetric[] = [];
 
-    for (const [name, metrics] of this.metrics.entries()) {
+    for (const [_name, metrics] of this.metrics.entries()) {
       if (metrics.length > 0) {
         const latest = metrics[metrics.length - 1];
         if (latest.category === category) {

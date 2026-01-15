@@ -154,7 +154,7 @@ describe('MainLayout Component', () => {
     });
 
     it('should have skip link with proper positioning classes', () => {
-      const { container } = render(<MainLayout>Content</MainLayout>);
+      render(<MainLayout>Content</MainLayout>);
 
       const skipLink = screen.getByRole('link', { name: /skip to main content/i });
       expect(skipLink).toHaveClass('focus:absolute');
@@ -194,7 +194,7 @@ describe('MainLayout Component', () => {
 
   describe('Edge Cases', () => {
     it('should render with empty children', () => {
-      const { container } = render(<MainLayout>{null}</MainLayout>);
+      render(<MainLayout>{null}</MainLayout>);
 
       const main = screen.getByRole('main');
       expect(main).toBeInTheDocument();

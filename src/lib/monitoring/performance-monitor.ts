@@ -3,7 +3,7 @@
  * Tracks component performance, API response times, and user interactions
  */
 
-interface PerformanceMetrics {
+interface _PerformanceMetrics {
   componentLoadTime: number;
   apiResponseTime: number;
   renderTime: number;

@@ -8,7 +8,6 @@ import {
   GitHubClientConfig,
   GitHubApiResponse,
   GitHubRateLimit,
-  GitHubError,
 } from '@/types/github';
 import { RateLimiter } from './security';
 
@@ -71,7 +70,7 @@ export class GitHubClient {
   /**
    * Handle rate limit exceeded
    */
-  private handleRateLimit(retryAfter: number, options: any, octokit: Octokit): boolean {
+  private handleRateLimit(retryAfter: number, _options: any, _octokit: Octokit): boolean {
     console.warn(`Rate limit exceeded. Retrying after ${retryAfter} seconds`);
     return this.config.retry?.maxRetries ? true : false;
   }
@@ -79,7 +78,7 @@ export class GitHubClient {
   /**
    * Handle abuse limit exceeded
    */
-  private handleAbuseLimit(retryAfter: number, options: any, octokit: Octokit): void {
+  private handleAbuseLimit(retryAfter: number, _options: any, _octokit: Octokit): void {
     console.error(`Abuse limit detected. Waiting ${retryAfter} seconds`);
   }
 

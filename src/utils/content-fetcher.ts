@@ -3,7 +3,7 @@
  * Handles downloading and parsing manifest files from GitHub repositories
  */
 
-import { GitHubClient } from './github-client';
+import { GitHubClient, getDefaultGitHubClient } from './github-client';
 import { GitHubContent, GitHubApiResponse, ContentFetchOptions } from '@/types/github';
 import { validateManifest, SchemaValidationResult, ValidationContext } from './schema-validation';
 
@@ -210,7 +210,7 @@ export class ContentFetcher {
     options: ContentFetchOptions = {}
   ): Promise<GitHubApiResponse<FetchedContent>> {
     try {
-      const { ref, mediaType } = options;
+      const { ref, mediaType: _mediaType } = options;
       const cacheKey = this.getCacheKey(owner, repo, path, ref);
 
       // Check cache first
@@ -618,7 +618,6 @@ let defaultContentFetcher: ContentFetcher | null = null;
  */
 export function getDefaultContentFetcher(): ContentFetcher {
   if (!defaultContentFetcher) {
-    const { getDefaultGitHubClient } = require('./github-client');
     const githubClient = getDefaultGitHubClient();
     defaultContentFetcher = new ContentFetcher(githubClient);
   }

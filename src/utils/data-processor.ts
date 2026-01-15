@@ -649,7 +649,7 @@ export class DataProcessor {
   /**
    * Get marketplace count at a specific date (simplified)
    */
-  private getMarketplacesCountAtDate(date: Date): number {
+  private getMarketplacesCountAtDate(_date: Date): number {
     // Simplified: assume all marketplaces existed from start
     // In a real implementation, this would use marketplace creation dates
     return 5;
