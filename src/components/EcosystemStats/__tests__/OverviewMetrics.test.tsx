@@ -42,10 +42,12 @@ describe('OverviewMetrics Component', () => {
     jest.clearAllMocks();
   });
 
-  it('renders loading state initially', () => {
+  it('renders loading state initially', async () => {
     (fetch as jest.Mock).mockImplementation(() => new Promise(() => {})); // Never resolves
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     // Should show 4 skeleton cards
     const skeletonCards = document.querySelectorAll('[class*="animate-pulse"]');
@@ -58,7 +60,9 @@ describe('OverviewMetrics Component', () => {
   it('renders metrics correctly when data is loaded', async () => {
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(mockEcosystemData));
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     // Wait for data to load
     await waitFor(() => {
@@ -90,7 +94,9 @@ describe('OverviewMetrics Component', () => {
   it('displays error message when API call fails', async () => {
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(null, false));
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     await waitFor(() => {
       expect(screen.getByText('Failed to Load Ecosystem Metrics')).toBeInTheDocument();
@@ -102,7 +108,9 @@ describe('OverviewMetrics Component', () => {
   it('handles network errors gracefully', async () => {
     (fetch as jest.Mock).mockRejectedValue(new Error('Network error'));
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     await waitFor(() => {
       expect(screen.getByText('Network error')).toBeInTheDocument();
@@ -112,7 +120,9 @@ describe('OverviewMetrics Component', () => {
   it('allows manual refresh', async () => {
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(mockEcosystemData));
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     // Wait for initial load
     await waitFor(() => {
@@ -157,7 +167,9 @@ describe('OverviewMetrics Component', () => {
 
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(largeNumbersData));
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     await waitFor(() => {
       expect(screen.getByText('2.5M')).toBeInTheDocument(); // Total Plugins
@@ -184,7 +196,9 @@ describe('OverviewMetrics Component', () => {
 
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(negativeGrowthData));
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     await waitFor(() => {
       expect(screen.getByText('-5.2%')).toBeInTheDocument(); // Plugins decline
@@ -197,7 +211,9 @@ describe('OverviewMetrics Component', () => {
   it('has proper accessibility attributes', async () => {
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(mockEcosystemData));
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     await waitFor(() => {
       // Check ARIA labels
@@ -228,7 +244,9 @@ describe('OverviewMetrics Component', () => {
   it('shows last updated timestamp', async () => {
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(mockEcosystemData));
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     await waitFor(() => {
       expect(screen.getByText(/Updated \d{1,2}\/\d{1,2}\/\d{4}/)).toBeInTheDocument();
@@ -240,7 +258,9 @@ describe('OverviewMetrics Component', () => {
 
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(mockEcosystemData));
 
-    render(<OverviewMetrics autoRefresh={true} refreshInterval={5000} />);
+    await act(async () => {
+      render(<OverviewMetrics autoRefresh={true} refreshInterval={5000} />);
+    });
 
     // Initial load
     await waitFor(() => {
@@ -248,7 +268,7 @@ describe('OverviewMetrics Component', () => {
     });
 
     // Fast-forward 5 seconds
-    act(() => {
+    await act(async () => {
       jest.advanceTimersByTime(5000);
     });
 
@@ -261,7 +281,9 @@ describe('OverviewMetrics Component', () => {
   it('applies custom className correctly', async () => {
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(mockEcosystemData));
 
-    const { container } = render(<OverviewMetrics className="custom-class" />);
+    const { container } = await act(async () => {
+      return render(<OverviewMetrics className="custom-class" />);
+    });
 
     await waitFor(() => {
       const section = container.querySelector('section.custom-class');
@@ -272,7 +294,9 @@ describe('OverviewMetrics Component', () => {
   it('handles keyboard navigation', async () => {
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(mockEcosystemData));
 
-    render(<OverviewMetrics />);
+    await act(async () => {
+      render(<OverviewMetrics />);
+    });
 
     await waitFor(() => {
       // Find the first metric card (article element)

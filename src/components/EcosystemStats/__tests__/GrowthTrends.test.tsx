@@ -79,11 +79,14 @@ describe('GrowthTrends Component', () => {
     });
   });
 
-  it('renders the component with initial loading state', () => {
+  it('renders the component with initial loading state', async () => {
     render(<GrowthTrends />);
 
-    expect(screen.getByTestId('loading-state')).toBeInTheDocument();
-    expect(screen.getByText('Loading growth trends...')).toBeInTheDocument();
+    // Loading state should be present initially before data loads
+    await waitFor(() => {
+      expect(screen.getByTestId('loading-state')).toBeInTheDocument();
+      expect(screen.getByText('Loading growth trends...')).toBeInTheDocument();
+    }, { timeout: 100 });
   });
 
   it('renders the component title and description', async () => {
@@ -114,7 +117,9 @@ describe('GrowthTrends Component', () => {
     });
 
     const ninetyDaysButton = screen.getByText('90 Days');
-    fireEvent.click(ninetyDaysButton);
+    await act(async () => {
+      fireEvent.click(ninetyDaysButton);
+    });
 
     // Verify fetch was called with the new time range
     await waitFor(() => {
@@ -145,7 +150,9 @@ describe('GrowthTrends Component', () => {
   it('handles API errors gracefully', async () => {
     (fetch as jest.Mock).mockRejectedValueOnce(new Error('Network error'));
 
-    render(<GrowthTrends />);
+    await act(async () => {
+      render(<GrowthTrends />);
+    });
 
     await waitFor(() => {
       // Should still render with mock data as fallback
@@ -159,7 +166,9 @@ describe('GrowthTrends Component', () => {
       json: async () => ({ success: false, error: 'API Error' }),
     });
 
-    render(<GrowthTrends />);
+    await act(async () => {
+      render(<GrowthTrends />);
+    });
 
     await waitFor(() => {
       // Should still render with mock data as fallback
@@ -211,14 +220,18 @@ describe('GrowthTrends Component', () => {
   it('supports auto-refresh functionality', async () => {
     jest.useFakeTimers();
 
-    render(<GrowthTrends refreshInterval={30000} />);
+    await act(async () => {
+      render(<GrowthTrends refreshInterval={30000} />);
+    });
 
     await waitFor(() => {
       expect(fetch).toHaveBeenCalledTimes(1);
     });
 
-    // Fast-forward time
-    jest.advanceTimersByTime(30000);
+    // Fast-forward time and run timers in act
+    await act(async () => {
+      jest.advanceTimersByTime(30000);
+    });
 
     await waitFor(() => {
       expect(fetch).toHaveBeenCalledTimes(2);
@@ -228,14 +241,18 @@ describe('GrowthTrends Component', () => {
   });
 
   it('displays refresh button and handles manual refresh', async () => {
-    render(<GrowthTrends refreshInterval={30000} />);
+    await act(async () => {
+      render(<GrowthTrends refreshInterval={30000} />);
+    });
 
     await waitFor(() => {
       expect(screen.getByText('Refresh')).toBeInTheDocument();
     });
 
     const refreshButton = screen.getByText('Refresh');
-    fireEvent.click(refreshButton);
+    await act(async () => {
+      fireEvent.click(refreshButton);
+    });
 
     await waitFor(() => {
       expect(fetch).toHaveBeenCalledTimes(2);
