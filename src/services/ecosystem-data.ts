@@ -243,6 +243,11 @@ class DataCache {
     this.keys.clear();
   }
 
+  delete(key: string): boolean {
+    this.keys.delete(key);
+    return this.cache.delete(key);
+  }
+
   size(): number {
     return this.cache.size;
   }
