@@ -285,7 +285,8 @@ export class EcosystemDataService {
       const cached = dataCache.get(cacheKey);
       if (cached) {
         logger.debug('Returning cached marketplace data');
-        return cached;
+        // Type assertion: we know this cache key only stores Marketplace data
+        return cached as CollectionResult<Marketplace>;
       }
     }
 
@@ -369,7 +370,8 @@ export class EcosystemDataService {
       const cached = dataCache.get(cacheKey);
       if (cached) {
         logger.debug('Returning cached plugin data');
-        return cached;
+        // Type assertion: we know this cache key only stores Plugin data
+        return cached as CollectionResult<Plugin>;
       }
     }
 
