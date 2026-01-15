@@ -17,6 +17,9 @@
  */
 
 import { Marketplace, Plugin } from '../types';
+import { createLogger } from '@/utils/logger';
+
+const logger = createLogger('EcosystemDataService');
 
 /**
  * Interface for raw marketplace data from GitHub API
@@ -270,7 +273,7 @@ export class EcosystemDataService {
   constructor(config: Partial<CollectionConfig> = {}) {
     this.config = { ...DEFAULT_CONFIG, ...config };
     if (this.config.enableDebugLogging) {
-      console.log('🚀 EcosystemDataService initialized with config:', this.config);
+      logger.debug('EcosystemDataService initialized with config:', this.config);
     }
   }
 
@@ -286,12 +289,12 @@ export class EcosystemDataService {
     if (!refreshCache) {
       const cached = dataCache.get(cacheKey);
       if (cached) {
-        console.log('📦 Returning cached marketplace data');
+        logger.debug('Returning cached marketplace data');
         return cached;
       }
     }
 
-    console.log('🔄 Starting marketplace data collection...');
+    logger.info('Starting marketplace data collection...');
     const startTime = Date.now();
     const errors: string[] = [];
     const warnings: string[] = [];
@@ -301,7 +304,7 @@ export class EcosystemDataService {
     try {
       // Collect from real GitHub repositories if enabled
       if (this.config.enableGitHubApi) {
-        console.log('🌐 Collecting from GitHub repositories...');
+        logger.debug('Collecting from GitHub repositories...');
         const githubResults = await this.collectFromGitHubRepos();
         marketplaces.push(...githubResults.data);
         errors.push(...githubResults.errors);
@@ -311,7 +314,7 @@ export class EcosystemDataService {
 
       // Add mock data if enabled
       if (this.config.includeMockData) {
-        console.log('🎭 Adding mock marketplace data...');
+        logger.debug('Adding mock marketplace data...');
         const mockMarketplaces = this.generateMockMarketplaces();
         marketplaces.push(...mockMarketplaces);
         sources.push('mock-data');
@@ -335,12 +338,12 @@ export class EcosystemDataService {
       // Cache the results
       dataCache.set(cacheKey, result, this.config.cacheTTL * 60 * 1000);
 
-      console.log(`✅ Marketplace collection completed: ${marketplaces.length} marketplaces in ${collectionTime}ms`);
+      logger.info(`Marketplace collection completed: ${marketplaces.length} marketplaces in ${collectionTime}ms`);
       return result;
 
     } catch (error) {
       const errorMessage = `Failed to collect marketplaces: ${error instanceof Error ? error.message : 'Unknown error'}`;
-      console.error('❌', errorMessage);
+      logger.error(errorMessage);
       errors.push(errorMessage);
 
       return {
@@ -370,12 +373,12 @@ export class EcosystemDataService {
     if (!refreshCache) {
       const cached = dataCache.get(cacheKey);
       if (cached) {
-        console.log('📦 Returning cached plugin data');
+        logger.debug('Returning cached plugin data');
         return cached;
       }
     }
 
-    console.log('🔄 Starting plugin data collection...');
+    logger.info('Starting plugin data collection...');
     const startTime = Date.now();
     const errors: string[] = [];
     const warnings: string[] = [];
@@ -392,17 +395,17 @@ export class EcosystemDataService {
           const marketplacePlugins = await this.collectPluginsFromMarketplace(marketplace);
           plugins.push(...marketplacePlugins);
           sources.push(marketplace.id);
-          console.log(`📦 Collected ${marketplacePlugins.length} plugins from ${marketplace.name}`);
+          logger.debug(`Collected ${marketplacePlugins.length} plugins from ${marketplace.name}`);
         } catch (error) {
           const errorMsg = `Failed to collect plugins from ${marketplace.name}: ${error instanceof Error ? error.message : 'Unknown error'}`;
           errors.push(errorMsg);
-          console.warn('⚠️', errorMsg);
+          logger.warn(errorMsg);
         }
       }
 
       // Add mock plugins if enabled
       if (this.config.includeMockData) {
-        console.log('🎭 Adding mock plugin data...');
+        logger.debug('Adding mock plugin data...');
         plugins.push(...MOCK_PLUGINS);
         sources.push('mock-plugins');
         warnings.push('Mock plugin data included for development/testing purposes');
@@ -425,12 +428,12 @@ export class EcosystemDataService {
       // Cache the results
       dataCache.set(cacheKey, result, this.config.cacheTTL * 60 * 1000);
 
-      console.log(`✅ Plugin collection completed: ${plugins.length} plugins in ${collectionTime}ms`);
+      logger.info(`Plugin collection completed: ${plugins.length} plugins in ${collectionTime}ms`);
       return result;
 
     } catch (error) {
       const errorMessage = `Failed to collect plugins: ${error instanceof Error ? error.message : 'Unknown error'}`;
-      console.error('❌', errorMessage);
+      logger.error(errorMessage);
       errors.push(errorMessage);
 
       return {
@@ -472,7 +475,7 @@ export class EcosystemDataService {
         } catch (error) {
           const errorMsg = `Failed to fetch ${repo.owner}/${repo.repo}: ${error instanceof Error ? error.message : 'Unknown error'}`;
           errors.push(errorMsg);
-          console.warn('⚠️', errorMsg);
+          logger.warn(errorMsg);
           return null;
         }
       });
@@ -536,7 +539,8 @@ export class EcosystemDataService {
         plugins = this.parseManifestToPlugins(manifestData.plugins || [], repoData);
       }
     } catch (error) {
-      console.warn(`⚠️ Could not fetch manifest from ${repo.manifestUrl}:`, error);
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.warn(`Could not fetch manifest from ${repo.manifestUrl}:`, message);
     }
 
     // Convert to Marketplace interface
@@ -695,7 +699,7 @@ export class EcosystemDataService {
    */
   clearCache(): void {
     dataCache.clear();
-    console.log('🗑️ Cache cleared');
+    logger.debug('Cache cleared');
   }
 
   /**

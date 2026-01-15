@@ -4,6 +4,7 @@
  */
 
 import { GitHubClient, getDefaultGitHubClient } from '@/utils/github-client';
+import { createLogger } from '@/utils/logger';
 import {
   GitHubSearchResponse,
   GitHubSearchParams,
@@ -11,6 +12,8 @@ import {
   RepositorySearchFilters,
   GitHubApiResponse,
 } from '@/types/github';
+
+const logger = createLogger('GitHubSearchService');
 
 /**
  * Configuration for GitHub search service
@@ -174,7 +177,7 @@ export class GitHubSearchService {
         page,
       };
 
-      console.log(`Searching GitHub with query: "${query}" (page ${page})`);
+      logger.debug(`Searching GitHub with query: "${query}" (page ${page})`);
 
       // Execute search
       const response = await this.githubClient.searchRepositories(searchParams);
@@ -209,12 +212,13 @@ export class GitHubSearchService {
         data: result,
         rateLimit: response.rateLimit,
       };
-    } catch (error: any) {
-      console.error('Search failed:', error);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.error('Search failed:', message);
       return {
         success: false,
         error: {
-          message: error.message || 'Search operation failed',
+          message: message || 'Search operation failed',
         },
       };
     }
@@ -236,12 +240,12 @@ export class GitHubSearchService {
     const maxPagesToFetch = maxPages || Math.ceil(this.config.maxTotalResults! / this.config.maxResultsPerPage!);
 
     while (hasMore && page <= maxPagesToFetch) {
-      console.log(`Fetching page ${page} of marketplace repositories...`);
+      logger.debug(`Fetching page ${page} of marketplace repositories...`);
 
       const response = await this.searchMarketplaceRepositories(filters, page);
 
       if (!response.success) {
-        console.warn(`Failed to fetch page ${page}:`, response.error?.message);
+        logger.warn(`Failed to fetch page ${page}:`, response.error?.message);
         break;
       }
 
@@ -264,19 +268,19 @@ export class GitHubSearchService {
         const waitTime = Math.max(0, resetTime - Date.now());
 
         if (waitTime > 0) {
-          console.warn(`Search rate limit exceeded. Waiting ${Math.ceil(waitTime / 1000)} seconds...`);
+          logger.warn(`Search rate limit exceeded. Waiting ${Math.ceil(waitTime / 1000)} seconds...`);
           await this.sleep(waitTime);
         }
       }
 
       // Stop if we've reached the maximum total results
       if (allRepositories.length >= this.config.maxTotalResults!) {
-        console.log(`Reached maximum total results limit (${this.config.maxTotalResults})`);
+        logger.debug(`Reached maximum total results limit (${this.config.maxTotalResults})`);
         break;
       }
     }
 
-    console.log(`Search complete. Found ${allRepositories.length} repositories.`);
+    logger.info(`Search complete. Found ${allRepositories.length} repositories.`);
 
     return {
       success: true,
@@ -367,12 +371,13 @@ export class GitHubSearchService {
         success: true,
         data: true,
       };
-    } catch (error: any) {
-      console.error(`Failed to validate repository ${owner}/${repo}:`, error);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.error(`Failed to validate repository ${owner}/${repo}:`, message);
       return {
         success: false,
         error: {
-          message: error.message || 'Repository validation failed',
+          message: message || 'Repository validation failed',
         },
       };
     }
