@@ -21,6 +21,15 @@ This directory contains the complete CI/CD pipeline configuration for the Claude
 | **dependency-update.yml** | Dependency Updates | Weekly, manual | ![Deps](https://github.com/${{ github.repository }}/workflows/Dependency%20Update/badge.svg) |
 | **issue-triage.yml** | Issue Automation | Issue opened/commented | ![Triage](https://github.com/${{ github.repository }}/workflows/Issue%20Triage/badge.svg) |
 
+### AI Assistant Workflows
+
+| Workflow | Purpose | Triggers | Commands |
+|----------|---------|----------|----------|
+| **claude-code.yml** | Claude Code AI Assistant | Issue/PR comments, PRs, Issues | `@claude` |
+| **opencode.yml** | OpenCode AI Assistant | Issue/PR comments | `/opencode` or `/oc` |
+
+> **Note:** AI assistant workflows are restricted to repository members, owners, and collaborators only. |
+
 ## 📋 Workflow Details
 
 ### CI Pipeline (`ci.yml`)
@@ -121,15 +130,46 @@ This directory contains the complete CI/CD pipeline configuration for the Claude
 - ✅ Common question responses
 - ✅ Context-aware help
 
+### AI Assistant Workflows
+
+#### Claude Code Assistant (`claude-code.yml`)
+
+**Purpose:** AI-powered code assistance via Anthropic Claude
+
+**Commands:** `@claude` in issues, PRs, or comments
+
+**Features:**
+- ✅ Multi-tool support (Read, Write, Edit, Bash, etc.)
+- ✅ Web search and content fetching
+- ✅ 10-turn conversation limit
+- ✅ Member-only access
+
+**Documentation:** [Claude Code Action](https://github.com/anthropics/claude-code-action)
+
+#### OpenCode Assistant (`opencode.yml`)
+
+**Purpose:** AI-powered code assistance via OpenCode with Z.ai
+
+**Commands:** `/opencode` or `/oc` in issue/PR comments
+
+**Features:**
+- ✅ GLM-4.7 model via Z.ai
+- ✅ Lightweight alternative to Claude Code
+- ✅ Member-only access
+
+**Documentation:** [OpenCode GitHub Actions Docs](https://opencode.ai/docs/github/)
+
 ## 🔧 Configuration
 
 ### Required Secrets
 
-| Secret | Purpose | Required |
-|--------|---------|----------|
-| `GITHUB_TOKEN` | GitHub API access | ✅ (Built-in) |
-| `CODECOV_TOKEN` | Coverage reporting | ⚠️ Optional |
-| `GITLEAKS_LICENSE` | Gitleaks advanced features | ⚠️ Optional |
+| Secret | Purpose | Workflow | Required |
+|--------|---------|----------|----------|
+| `GITHUB_TOKEN` | GitHub API access | All | ✅ (Built-in) |
+| `ANTHROPIC_API_KEY` | Claude Code AI assistant | claude-code.yml | ⚠️ For AI features |
+| `OPENCODE_ZAI_API_KEY` | OpenCode AI assistant | opencode.yml | ⚠️ For AI features |
+| `CODECOV_TOKEN` | Coverage reporting | ci.yml | ⚠️ Optional |
+| `GITLEAKS_LICENSE` | Gitleaks advanced features | security.yml | ⚠️ Optional |
 
 ### Environment Variables
 
