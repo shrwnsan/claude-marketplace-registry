@@ -105,7 +105,7 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
             key={tag}
             className='badge badge-secondary text-xs hover:border-primary-300 dark:hover:border-primary-600 transition-colors cursor-pointer'
             onClick={() => copyToClipboard(tag)}
-            title={`Click to copy &quot;${tag}&quot;`}
+            title={`Click to copy "${tag}"`}
           >
             {tag}
           </span>

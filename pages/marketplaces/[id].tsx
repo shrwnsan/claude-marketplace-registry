@@ -309,7 +309,7 @@ const MarketplaceDetailPage: React.FC = () => {
                 {/* Rating and Stats */}
                 <div className='flex flex-wrap items-center gap-4 mb-6'>
                   <div className='flex items-center space-x-1'>
-                    {[1, 2, 3, 4, 5].map((star: number) => (
+                    {[1, 2, 3, 4, 5].map((star) => (
                       <button
                         key={star}
                         onClick={() => handleRating(star)}
