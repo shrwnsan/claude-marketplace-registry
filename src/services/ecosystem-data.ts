@@ -243,7 +243,6 @@ class DataCache {
   }
 
   delete(key: string): boolean {
-    this.keys.delete(key);
     return this.cache.delete(key);
   }
 
