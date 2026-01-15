@@ -141,6 +141,54 @@ The `ANTHROPIC_BASE_URL` is set in the `env:` section. Verify it's correct for y
 - Bash commands are limited to allowlisted npm/git/node commands
 - All changes appear as commits in your repository
 
+## Usage & Costs
+
+### GitHub Actions Limits
+
+GitHub Actions runners are not completely free. Usage depends on your account type:
+
+| Repository Type | Free Minutes/Month | Overage Rate |
+|-----------------|-------------------|--------------|
+| **Public** | 2,000-3,000¹ | Free |
+| **Private (Free account)** | 2,000 | $0.008/min |
+| **Private (Team account)** | 3,000 | $0.008/min |
+| **Private (Enterprise)** | 50,000 | Varies |
+
+¹Varies by region (e.g., 2,000 for macOS, 3,000 for Linux/Windows)
+
+### What Counts Toward Usage
+
+- Workflow execution time on GitHub-hosted runners
+- All runners count: ubuntu-latest, windows-latest, macos-latest
+- Sleep/wait time is included
+
+### Estimated Costs for Claude Code Action
+
+| Task Type | Estimated Time | Cost (at $0.008/min) |
+|-----------|----------------|---------------------|
+| Simple code review | 1-3 min | ~$0.01-0.02 |
+| Bug fix / refactor | 5-15 min | ~$0.04-0.12 |
+| Feature implementation | 10-30 min | ~$0.08-0.24 |
+
+**Example**: With 2,000 free minutes/month, you could run ~650 code reviews or ~130 bug fixes.
+
+### Monitoring Usage
+
+Check your usage: **Settings → Actions → Usage**
+
+### Ways to Reduce Costs
+
+1. **Limit trigger scope**: Only enable for specific branches
+2. **Reduce max-turns**: Lower conversation limit
+3. **Use self-hosted runners**: Run on your own infrastructure
+4. **Be selective**: Only use `@claude` for complex tasks
+
+For moderate personal use, the free tier is usually sufficient.
+
+### Billing Details
+
+See [GitHub Actions Pricing](https://github.com/features/actions) for complete details.
+
 ## Resources
 
 - [Official Documentation](https://github.com/anthropics/claude-code-action)
