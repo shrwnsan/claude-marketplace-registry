@@ -50,7 +50,7 @@ export interface EnhancedRepositoryMetadata extends RepositoryMetadata {
 export class GitHubMetadataService {
   private githubClient: GitHubClient;
   private config: MetadataConfig;
-  private cache: Map<string, { data: any; timestamp: number }> = new Map();
+  private cache: Map<string, { data: unknown; timestamp: number }> = new Map();
 
   constructor(
     githubClient: GitHubClient,
@@ -102,7 +102,7 @@ export class GitHubMetadataService {
   /**
    * Cache data with timestamp
    */
-  private setCachedData(key: string, data: any): void {
+  private setCachedData(key: string, data: unknown): void {
     if (!this.config.cacheEnabled) {
       return;
     }

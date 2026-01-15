@@ -215,10 +215,10 @@ const MOCK_PLUGINS: Plugin[] = [
  * In-memory cache for data collection results
  */
 class DataCache {
-  private cache = new Map<string, { data: any; timestamp: number; ttl: number }>();
+  private cache = new Map<string, { data: CollectionResult<Marketplace | Plugin>; timestamp: number; ttl: number }>();
   private keys = new Set<string>();
 
-  set(key: string, data: any, ttl: number): void {
+  set(key: string, data: CollectionResult<Marketplace | Plugin>, ttl: number): void {
     this.cache.set(key, {
       data,
       timestamp: Date.now(),
@@ -227,7 +227,7 @@ class DataCache {
     this.keys.add(key);
   }
 
-  get(key: string): any | null {
+  get(key: string): CollectionResult<Marketplace | Plugin> | null {
     const entry = this.cache.get(key);
     if (!entry) return null;
 
