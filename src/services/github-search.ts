@@ -49,10 +49,7 @@ export class GitHubSearchService {
   private githubClient: GitHubClient;
   private config: GitHubSearchConfig;
 
-  constructor(
-    githubClient: GitHubClient,
-    config: GitHubSearchConfig = {}
-  ) {
+  constructor(githubClient: GitHubClient, config: GitHubSearchConfig = {}) {
     this.githubClient = githubClient;
     this.config = {
       maxResultsPerPage: 100,
@@ -130,22 +127,20 @@ export class GitHubSearchService {
 
     // Topics
     if (filters.topics && filters.topics.length > 0) {
-      const topicQuery = filters.topics.map(topic => `topic:${topic}`).join(' ');
+      const topicQuery = filters.topics.map((topic) => `topic:${topic}`).join(' ');
       queryParts.push(`(${topicQuery})`);
     }
 
     // Exclude forks
-    const excludeForks = filters.excludeForks !== undefined
-      ? filters.excludeForks
-      : this.config.excludeForks;
+    const excludeForks =
+      filters.excludeForks !== undefined ? filters.excludeForks : this.config.excludeForks;
     if (excludeForks) {
       queryParts.push('fork:false');
     }
 
     // Exclude archived
-    const excludeArchived = filters.excludeArchived !== undefined
-      ? filters.excludeArchived
-      : this.config.excludeArchived;
+    const excludeArchived =
+      filters.excludeArchived !== undefined ? filters.excludeArchived : this.config.excludeArchived;
     if (excludeArchived) {
       queryParts.push('archived:false');
     }
@@ -238,7 +233,8 @@ export class GitHubSearchService {
     let hasMore = true;
     let rateLimit: GitHubRateLimit | undefined;
 
-    const maxPagesToFetch = maxPages || Math.ceil(this.config.maxTotalResults! / this.config.maxResultsPerPage!);
+    const maxPagesToFetch =
+      maxPages || Math.ceil(this.config.maxTotalResults! / this.config.maxResultsPerPage!);
 
     while (hasMore && page <= maxPagesToFetch) {
       logger.debug(`Fetching page ${page} of marketplace repositories...`);
@@ -269,7 +265,9 @@ export class GitHubSearchService {
         const waitTime = Math.max(0, resetTime - Date.now());
 
         if (waitTime > 0) {
-          logger.warn(`Search rate limit exceeded. Waiting ${Math.ceil(waitTime / 1000)} seconds...`);
+          logger.warn(
+            `Search rate limit exceeded. Waiting ${Math.ceil(waitTime / 1000)} seconds...`
+          );
           await this.sleep(waitTime);
         }
       }
@@ -394,7 +392,9 @@ export class GitHubSearchService {
     const filters: RepositorySearchFilters = {
       query: '',
       stars: { min: minStars },
-      updated: { from: new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString().split('T')[0] }, // Last 90 days
+      updated: {
+        from: new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+      }, // Last 90 days
     };
 
     const response = await this.searchMarketplaceRepositories(filters, 1, limit);
@@ -422,7 +422,9 @@ export class GitHubSearchService {
   ): Promise<GitHubApiResponse<GitHubSearchRepositoryItem[]>> {
     const filters: RepositorySearchFilters = {
       query: '',
-      updated: { from: new Date(Date.now() - daysBack * 24 * 60 * 60 * 1000).toISOString().split('T')[0] },
+      updated: {
+        from: new Date(Date.now() - daysBack * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+      },
     };
 
     const response = await this.searchMarketplaceRepositories(filters, 1, limit);
@@ -445,7 +447,7 @@ export class GitHubSearchService {
    * Sleep helper for delays
    */
   private sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
   /**

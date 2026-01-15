@@ -37,7 +37,7 @@ export const mockApiResponse = {
 // Simulated API function for local development
 export const fetchMockEcosystemData = async (): Promise<Response> => {
   // Simulate network delay
-  await new Promise(resolve => setTimeout(resolve, 800));
+  await new Promise((resolve) => setTimeout(resolve, 800));
 
   return new Response(JSON.stringify(mockApiResponse), {
     status: 200,

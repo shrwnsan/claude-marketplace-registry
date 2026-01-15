@@ -265,14 +265,15 @@ export class InMemoryDataStorage implements IDataStorage {
   async getCacheStats(): Promise<CacheStats> {
     const entries = Array.from(this.cache.values());
     const now = Date.now();
-    const ages = entries.map(e => now - e.createdAt);
+    const ages = entries.map((e) => now - e.createdAt);
 
     return {
       totalEntries: this.cache.size,
       totalSize: this.stats.totalSize,
-      hitRate: this.stats.hits + this.stats.misses > 0
-        ? (this.stats.hits / (this.stats.hits + this.stats.misses)) * 100
-        : 0,
+      hitRate:
+        this.stats.hits + this.stats.misses > 0
+          ? (this.stats.hits / (this.stats.hits + this.stats.misses)) * 100
+          : 0,
       hits: this.stats.hits,
       misses: this.stats.misses,
       oldestEntry: Math.min(...ages),
@@ -439,10 +440,11 @@ export class MockDataGenerator {
     const finalPlugins = this.config.marketplaceCount * this.config.pluginsPerMarketplace;
     const finalMarketplaces = this.config.marketplaceCount;
     const finalDevelopers = this.config.developerCount;
-    const finalDownloads = finalPlugins * (Math.floor(Math.random() * 1000 + 500));
+    const finalDownloads = finalPlugins * Math.floor(Math.random() * 1000 + 500);
 
     while (currentDate <= now) {
-      const progress = (currentDate.getTime() - startDate.getTime()) / (now.getTime() - startDate.getTime());
+      const progress =
+        (currentDate.getTime() - startDate.getTime()) / (now.getTime() - startDate.getTime());
 
       // Apply realistic growth curves
       let growthProgress = progress;
@@ -506,7 +508,7 @@ export class MockDataGenerator {
       remainingPlugins -= categoryPlugins;
 
       const developerCount = Math.floor(Math.random() * 5 + 2);
-      const totalDownloads = categoryPlugins * (Math.floor(Math.random() * 800 + 200));
+      const totalDownloads = categoryPlugins * Math.floor(Math.random() * 800 + 200);
       const averageQualityScore = this.config.realisticQuality
         ? Math.floor(Math.random() * 20 + 75)
         : Math.floor(Math.random() * 30 + 60);
@@ -545,8 +547,8 @@ export class MockDataGenerator {
 
     for (let i = 0; i < this.config.developerCount; i++) {
       const pluginCount = Math.floor(Math.random() * 5 + 1);
-      const totalDownloads = pluginCount * (Math.floor(Math.random() * 1000 + 100));
-      const totalStars = pluginCount * (Math.floor(Math.random() * 50 + 10));
+      const totalDownloads = pluginCount * Math.floor(Math.random() * 1000 + 100);
+      const totalStars = pluginCount * Math.floor(Math.random() * 50 + 10);
       const averageQualityScore = this.config.realisticQuality
         ? Math.floor(Math.random() * 20 + 75)
         : Math.floor(Math.random() * 30 + 60);
@@ -605,10 +607,22 @@ export class MockDataGenerator {
         avgQualityScore: Math.floor(Math.random() * 20 + 75), // 75-95
         highQualityPlugins,
         commonIssues: [
-          { issue: 'Missing documentation', frequency: Math.floor(totalPlugins * 0.3), severity: 'medium' },
+          {
+            issue: 'Missing documentation',
+            frequency: Math.floor(totalPlugins * 0.3),
+            severity: 'medium',
+          },
           { issue: 'No recent updates', frequency: abandonedPlugins, severity: 'high' },
-          { issue: 'Low test coverage', frequency: Math.floor(totalPlugins * 0.2), severity: 'medium' },
-          { issue: 'Security vulnerabilities', frequency: Math.floor(totalPlugins * 0.05), severity: 'high' },
+          {
+            issue: 'Low test coverage',
+            frequency: Math.floor(totalPlugins * 0.2),
+            severity: 'medium',
+          },
+          {
+            issue: 'Security vulnerabilities',
+            frequency: Math.floor(totalPlugins * 0.05),
+            severity: 'high',
+          },
         ],
       },
       security: {
@@ -646,9 +660,22 @@ export class MockDataGenerator {
    */
   private generateMockTags(): string[] {
     const allTags = [
-      'automation', 'productivity', 'development', 'testing', 'documentation',
-      'api', 'database', 'security', 'frontend', 'backend', 'devops',
-      'ai', 'machine-learning', 'code-review', 'debugging', 'monitoring',
+      'automation',
+      'productivity',
+      'development',
+      'testing',
+      'documentation',
+      'api',
+      'database',
+      'security',
+      'frontend',
+      'backend',
+      'devops',
+      'ai',
+      'machine-learning',
+      'code-review',
+      'debugging',
+      'monitoring',
     ];
 
     return allTags.sort(() => Math.random() - 0.5).slice(0, 5);
@@ -701,7 +728,9 @@ function generateRealEcosystemStats(realData: any): EcosystemStats {
   const marketplaces = realData.marketplaces || [];
   const plugins = realData.plugins || [];
 
-  console.log(`📊 Generating ecosystem stats from ${marketplaces.length} marketplaces and ${plugins.length} plugins`);
+  console.log(
+    `📊 Generating ecosystem stats from ${marketplaces.length} marketplaces and ${plugins.length} plugins`
+  );
 
   // Extract plugin counts from marketplace descriptions
   const extractPluginCount = (description: string): number => {
@@ -715,21 +744,28 @@ function generateRealEcosystemStats(realData: any): EcosystemStats {
   }, 0);
 
   // If no plugins found in descriptions, estimate based on marketplace popularity
-  const estimatedPlugins = totalEstimatedPlugins > 0
-    ? totalEstimatedPlugins
-    : Math.floor(marketplaces.reduce((sum: number, m: any) => sum + (m.stars || 0), 0) * 0.5);
+  const estimatedPlugins =
+    totalEstimatedPlugins > 0
+      ? totalEstimatedPlugins
+      : Math.floor(marketplaces.reduce((sum: number, m: any) => sum + (m.stars || 0), 0) * 0.5);
 
   // Extract unique developers from marketplace owners and calculate contributors
   const uniqueOwners = new Set(marketplaces.map((m: any) => m.owner?.login || 'unknown'));
   const estimatedContributors = Math.floor(marketplaces.length * 2.5); // Estimated contributors per marketplace
 
   // Calculate estimated total downloads
-  const estimatedTotalDownloads = Math.floor(estimatedPlugins * 150 + marketplaces.reduce((sum: number, m: any) => sum + ((m.stars || 0) * 10), 0));
+  const estimatedTotalDownloads = Math.floor(
+    estimatedPlugins * 150 +
+      marketplaces.reduce((sum: number, m: any) => sum + (m.stars || 0) * 10, 0)
+  );
 
   // Calculate weekly growth rates (since launch on October 10, 2025)
   const now = new Date();
   const launchDate = new Date('2025-10-10');
-  const daysSinceLaunch = Math.max(1, Math.floor((now.getTime() - launchDate.getTime()) / (1000 * 60 * 60 * 24)));
+  const daysSinceLaunch = Math.max(
+    1,
+    Math.floor((now.getTime() - launchDate.getTime()) / (1000 * 60 * 60 * 24))
+  );
   const weeksSinceLaunch = daysSinceLaunch / 7;
 
   // Calculate realistic weekly growth for a new ecosystem
@@ -740,8 +776,8 @@ function generateRealEcosystemStats(realData: any): EcosystemStats {
   const totalForks = marketplaces.reduce((sum: number, m: any) => sum + (m.forks || 0), 0);
 
   // Count verified marketplaces (has description and stars > threshold)
-  const verifiedMarketplaces = marketplaces.filter((m: any) =>
-    m.description && (m.stars || 0) > 5
+  const verifiedMarketplaces = marketplaces.filter(
+    (m: any) => m.description && (m.stars || 0) > 5
   ).length;
 
   // Estimate verified plugins
@@ -776,7 +812,7 @@ function generateRealEcosystemStats(realData: any): EcosystemStats {
     '90d': generateGrowthDataPoints(90, overview),
     '6m': generateGrowthDataPoints(180, overview),
     '1y': generateGrowthDataPoints(365, overview),
-    'all': generateGrowthDataPoints(365, overview),
+    all: generateGrowthDataPoints(365, overview),
   };
 
   // Generate category analytics
@@ -825,7 +861,10 @@ function generateGrowthDataPoints(days: number, overview: EcosystemOverview): Gr
 
   // Claude Code Plugins launched on October 10, 2025
   const launchDate = new Date('2025-10-10');
-  const daysSinceLaunch = Math.max(0, Math.floor((now.getTime() - launchDate.getTime()) / (1000 * 60 * 60 * 24)));
+  const daysSinceLaunch = Math.max(
+    0,
+    Math.floor((now.getTime() - launchDate.getTime()) / (1000 * 60 * 60 * 24))
+  );
 
   // Estimate base downloads per plugin and user engagement
   const baseDownloadsPerPlugin = 150;
@@ -840,7 +879,7 @@ function generateGrowthDataPoints(days: number, overview: EcosystemOverview): Gr
     const maxPossibleDays = daysSinceLaunch;
 
     // Simulate growth since launch (rapid early adoption for new ecosystem)
-    const progress = maxPossibleDays > 0 ? (daysSinceLaunchAtPoint / maxPossibleDays) : 1;
+    const progress = maxPossibleDays > 0 ? daysSinceLaunchAtPoint / maxPossibleDays : 1;
 
     // Apply exponential growth curve for new ecosystem (faster early growth)
     const growthCurve = 1 - Math.exp(-3 * progress); // Steeper early growth
@@ -867,8 +906,14 @@ function generateGrowthDataPoints(days: number, overview: EcosystemOverview): Gr
  */
 function generateCategoryAnalytics(marketplaces: any[], plugins: any[]): CategoryAnalytics[] {
   const categories = [
-    'Development Tools', 'AI & Machine Learning', 'Data Analysis', 'Productivity',
-    'Communication', 'Design', 'Security', 'Testing'
+    'Development Tools',
+    'AI & Machine Learning',
+    'Data Analysis',
+    'Productivity',
+    'Communication',
+    'Design',
+    'Security',
+    'Testing',
   ];
 
   return categories.map((category) => ({
@@ -879,12 +924,10 @@ function generateCategoryAnalytics(marketplaces: any[], plugins: any[]): Categor
     totalDownloads: Math.floor(Math.random() * 10000) + 1000,
     developerCount: Math.floor(marketplaces.length * (0.1 + Math.random() * 0.15)),
     growthRate: Math.random() * 0.3 - 0.05, // -5% to 25% growth
-    popularTags: [
-      `${category.toLowerCase()}`,
-      'productivity',
-      'automation',
-      'ai-powered'
-    ].slice(0, Math.floor(Math.random() * 3) + 2),
+    popularTags: [`${category.toLowerCase()}`, 'productivity', 'automation', 'ai-powered'].slice(
+      0,
+      Math.floor(Math.random() * 3) + 2
+    ),
     topPlugins: plugins.slice(0, 3).map((p: any) => ({
       id: p.id || 'unknown',
       name: p.name || 'Unknown Plugin',
@@ -899,7 +942,10 @@ function generateCategoryAnalytics(marketplaces: any[], plugins: any[]): Categor
  * Generate developer analytics from marketplace data
  */
 function generateDeveloperAnalytics(marketplaces: any[], plugins: any[]): DeveloperAnalytics[] {
-  const developers = new Map<string, { marketplaces: number; plugins: number; stars: number; forks: number }>();
+  const developers = new Map<
+    string,
+    { marketplaces: number; plugins: number; stars: number; forks: number }
+  >();
 
   marketplaces.forEach((marketplace: any) => {
     const owner = marketplace.owner?.login || 'unknown';
@@ -926,10 +972,14 @@ function generateDeveloperAnalytics(marketplaces: any[], plugins: any[]): Develo
       }, 0);
 
       // Estimate downloads based on stars and forks (community engagement)
-      const engagementScore = (data.stars * 10) + (data.forks * 25);
+      const engagementScore = data.stars * 10 + data.forks * 25;
       const estimatedDownloads = Math.floor(engagementScore * 5 + Math.random() * 1000);
 
-      const firstDate = new Date(2024 - Math.floor(Math.random() * 2), Math.floor(Math.random() * 12), Math.floor(Math.random() * 28));
+      const firstDate = new Date(
+        2024 - Math.floor(Math.random() * 2),
+        Math.floor(Math.random() * 12),
+        Math.floor(Math.random() * 28)
+      );
       const lastDate = new Date();
 
       return {
@@ -938,11 +988,10 @@ function generateDeveloperAnalytics(marketplaces: any[], plugins: any[]): Develo
         totalDownloads: estimatedDownloads,
         totalStars: data.stars,
         averageQualityScore: Math.random() * 0.3 + 0.7, // 0.7-1.0
-        categories: [
-          'Development Tools',
-          'AI & Machine Learning',
-          'Productivity'
-        ].slice(0, Math.floor(Math.random() * 3) + 1),
+        categories: ['Development Tools', 'AI & Machine Learning', 'Productivity'].slice(
+          0,
+          Math.floor(Math.random() * 3) + 1
+        ),
         firstPluginDate: firstDate.toISOString(),
         lastPluginDate: lastDate.toISOString(),
         verifiedPluginCount: Math.floor(estimatedPlugins * (Math.random() * 0.5 + 0.3)), // 30-80% verified
@@ -962,7 +1011,10 @@ function generateQualityMetrics(marketplaces: any[], plugins: any[]): any {
   const withTests = Math.floor(totalItems * 0.3);
 
   return {
-    overall: (withManifest / marketplaces.length) * 0.3 + (withDocs / totalItems) * 0.4 + (withTests / totalItems) * 0.3,
+    overall:
+      (withManifest / marketplaces.length) * 0.3 +
+      (withDocs / totalItems) * 0.4 +
+      (withTests / totalItems) * 0.3,
     documentation: withDocs / totalItems,
     testing: withTests / totalItems,
     compatibility: 0.9,

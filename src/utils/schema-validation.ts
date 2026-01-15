@@ -170,8 +170,8 @@ export function validateMarketplaceManifest(
       } else {
         data.plugins.forEach((plugin: any, index: number) => {
           const pluginValidation = validatePluginManifestStructure(plugin, true);
-          errors.push(...pluginValidation.errors.map(e => `Plugin ${index + 1}: ${e}`));
-          warnings.push(...pluginValidation.warnings.map(w => `Plugin ${index + 1}: ${w}`));
+          errors.push(...pluginValidation.errors.map((e) => `Plugin ${index + 1}: ${e}`));
+          warnings.push(...pluginValidation.warnings.map((w) => `Plugin ${index + 1}: ${w}`));
         });
       }
     }
@@ -312,8 +312,17 @@ export function validatePluginManifest(
         errors.push('Permissions must be an array');
       } else {
         const allowedPermissions = [
-          'read', 'write', 'execute', 'network', 'filesystem', 'system',
-          'clipboard', 'notification', 'camera', 'microphone', 'location'
+          'read',
+          'write',
+          'execute',
+          'network',
+          'filesystem',
+          'system',
+          'clipboard',
+          'notification',
+          'camera',
+          'microphone',
+          'location',
         ];
 
         for (const permission of data.permissions) {
@@ -508,7 +517,8 @@ function performSecurityValidation(data: any): ValidationResult {
 
   // Check for excessive data size
   const jsonString = JSON.stringify(data);
-  if (jsonString.length > 10 * 1024 * 1024) { // 10MB
+  if (jsonString.length > 10 * 1024 * 1024) {
+    // 10MB
     warnings.push('Manifest is very large, consider optimizing');
   }
 

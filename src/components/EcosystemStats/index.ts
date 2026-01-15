@@ -22,11 +22,7 @@ export { default as GrowthTrendsDemo } from './GrowthTrendsDemo';
 export { default as QualityIndicatorsDemo } from './QualityIndicatorsDemo';
 
 // Mock data for testing and development
-export {
-  mockEcosystemOverview,
-  mockApiResponse,
-  fetchMockEcosystemData
-} from './mock-api-data';
+export { mockEcosystemOverview, mockApiResponse, fetchMockEcosystemData } from './mock-api-data';
 
 // Re-export commonly used types for convenience
 export type {

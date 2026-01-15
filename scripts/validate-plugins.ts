@@ -43,7 +43,7 @@ class PluginValidator {
   constructor() {
     this.octokit = new Octokit({
       auth: process.env.GITHUB_TOKEN,
-      userAgent: 'claude-marketplace-aggregator/1.0.0'
+      userAgent: 'claude-marketplace-aggregator/1.0.0',
     });
 
     this.inputDir = path.join(process.cwd(), 'data', 'marketplaces');
@@ -65,7 +65,7 @@ class PluginValidator {
       invalidPlugins: 0,
       validationDate: new Date().toISOString(),
       errors: [],
-      warnings: []
+      warnings: [],
     };
 
     try {
@@ -87,8 +87,8 @@ class PluginValidator {
       }
 
       result.totalPlugins = allPlugins.length;
-      result.validPlugins = allPlugins.filter(p => p.isValid).length;
-      result.invalidPlugins = allPlugins.filter(p => !p.isValid).length;
+      result.validPlugins = allPlugins.filter((p) => p.isValid).length;
+      result.invalidPlugins = allPlugins.filter((p) => !p.isValid).length;
 
       // Save results
       await this.saveValidationResults(allPlugins, result);
@@ -100,7 +100,6 @@ class PluginValidator {
       console.log(`❌ Invalid plugins: ${result.invalidPlugins}`);
 
       return result;
-
     } catch (error) {
       console.error('❌ Validation failed:', error);
       throw error;
@@ -144,7 +143,6 @@ class PluginValidator {
 
       // Also check for plugin directories
       await this.scanPluginDirectories(owner, repo, plugins);
-
     } catch (error) {
       console.error(`Error processing ${marketplace.name}:`, error);
     }
@@ -164,7 +162,7 @@ class PluginValidator {
       isValid: true,
       errors: [],
       warnings: [],
-      metadata: plugin
+      metadata: plugin,
     };
 
     // Validation checks
@@ -200,20 +198,19 @@ class PluginValidator {
     return validatedPlugin;
   }
 
-  private async scanPluginDirectories(owner: string, repo: string, plugins: Plugin[]): Promise<void> {
-    const possiblePaths = [
-      'plugins/',
-      '.claude-plugin/plugins/',
-      'claude-plugins/',
-      'extensions/'
-    ];
+  private async scanPluginDirectories(
+    owner: string,
+    repo: string,
+    plugins: Plugin[]
+  ): Promise<void> {
+    const possiblePaths = ['plugins/', '.claude-plugin/plugins/', 'claude-plugins/', 'extensions/'];
 
     for (const dirPath of possiblePaths) {
       try {
         const contents = await this.octokit.repos.getContent({
           owner,
           repo,
-          path: dirPath
+          path: dirPath,
         });
 
         if (Array.isArray(contents.data)) {
@@ -229,13 +226,18 @@ class PluginValidator {
     }
   }
 
-  private async scanPluginDirectory(owner: string, repo: string, pluginDir: string, plugins: Plugin[]): Promise<void> {
+  private async scanPluginDirectory(
+    owner: string,
+    repo: string,
+    pluginDir: string,
+    plugins: Plugin[]
+  ): Promise<void> {
     try {
       const pluginManifestPath = `${pluginDir}/plugin.json`;
       const response = await this.octokit.repos.getContent({
         owner,
         repo,
-        path: pluginManifestPath
+        path: pluginManifestPath,
       });
 
       if ('content' in response.data) {
@@ -253,7 +255,7 @@ class PluginValidator {
           isValid: true,
           errors: [],
           warnings: [],
-          metadata: pluginData
+          metadata: pluginData,
         };
 
         plugins.push(plugin);
@@ -267,7 +269,7 @@ class PluginValidator {
     const manifestPaths = [
       '.claude-plugin/marketplace.json',
       'marketplace.json',
-      'claude-marketplace.json'
+      'claude-marketplace.json',
     ];
 
     for (const manifestPath of manifestPaths) {
@@ -275,7 +277,7 @@ class PluginValidator {
         const response = await this.octokit.repos.getContent({
           owner,
           repo,
-          path: manifestPath
+          path: manifestPath,
         });
 
         if ('content' in response.data) {
@@ -298,12 +300,12 @@ class PluginValidator {
     fs.writeFileSync(allPluginsPath, JSON.stringify(plugins, null, 2));
 
     // Save valid plugins only
-    const validPlugins = plugins.filter(p => p.isValid);
+    const validPlugins = plugins.filter((p) => p.isValid);
     const validPluginsPath = path.join(this.outputDir, 'valid-plugins.json');
     fs.writeFileSync(validPluginsPath, JSON.stringify(validPlugins, null, 2));
 
     // Save invalid plugins with errors
-    const invalidPlugins = plugins.filter(p => !p.isValid);
+    const invalidPlugins = plugins.filter((p) => !p.isValid);
     const invalidPluginsPath = path.join(this.outputDir, 'invalid-plugins.json');
     fs.writeFileSync(invalidPluginsPath, JSON.stringify(invalidPlugins, null, 2));
 
@@ -316,12 +318,15 @@ class PluginValidator {
       totalPlugins: result.totalPlugins,
       validPlugins: result.validPlugins,
       invalidPlugins: result.invalidPlugins,
-      validationRate: result.totalPlugins > 0 ? (result.validPlugins / result.totalPlugins * 100).toFixed(2) : 0,
+      validationRate:
+        result.totalPlugins > 0
+          ? ((result.validPlugins / result.totalPlugins) * 100).toFixed(2)
+          : 0,
       errors: result.errors,
       warnings: result.warnings,
       commonErrors: this.getCommonErrors(invalidPlugins),
       topAuthors: this.getTopAuthors(validPlugins),
-      pluginTypes: this.getPluginTypes(plugins)
+      pluginTypes: this.getPluginTypes(plugins),
     };
 
     const statsPath = path.join(this.outputDir, 'stats.json');
@@ -342,7 +347,7 @@ class PluginValidator {
     return errors;
   }
 
-  private getTopAuthors(plugins: Plugin[]): Array<{author: string, count: number}> {
+  private getTopAuthors(plugins: Plugin[]): Array<{ author: string; count: number }> {
     const authorCount: Record<string, number> = {};
 
     for (const plugin of plugins) {
@@ -395,14 +400,15 @@ async function main() {
 
     console.log('');
     console.log('🎉 Validation completed successfully!');
-    console.log(`📊 Validation rate: ${((result.validPlugins / result.totalPlugins) * 100).toFixed(2)}%`);
+    console.log(
+      `📊 Validation rate: ${((result.validPlugins / result.totalPlugins) * 100).toFixed(2)}%`
+    );
 
     if (result.errors.length > 0) {
       console.log('');
       console.log('⚠️ Errors encountered:');
-      result.errors.forEach(error => console.log(`  - ${error}`));
+      result.errors.forEach((error) => console.log(`  - ${error}`));
     }
-
   } catch (error) {
     console.error('❌ Validation failed:', error);
     process.exit(1);

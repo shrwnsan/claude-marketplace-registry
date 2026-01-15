@@ -5,7 +5,10 @@
 /**
  * Announce messages to screen readers
  */
-export function announceToScreenReader(message: string, priority: 'polite' | 'assertive' = 'polite') {
+export function announceToScreenReader(
+  message: string,
+  priority: 'polite' | 'assertive' = 'polite'
+) {
   const announcement = document.createElement('div');
   announcement.setAttribute('aria-live', priority);
   announcement.setAttribute('aria-atomic', 'true');
@@ -72,7 +75,7 @@ export class FocusTrap {
       'input:not([disabled]):not([type="hidden"])',
       'select:not([disabled])',
       '[tabindex]:not([tabindex="-1"])',
-      '[contenteditable="true"]'
+      '[contenteditable="true"]',
     ].join(', ');
 
     return Array.from(this.container.querySelectorAll(selector)) as HTMLElement[];
@@ -106,17 +109,18 @@ export function createSkipLinks() {
   const skipLinks = [
     { href: '#main-content', text: 'Skip to main content' },
     { href: '#navigation', text: 'Skip to navigation' },
-    { href: '#search', text: 'Skip to search' }
+    { href: '#search', text: 'Skip to search' },
   ];
 
   const skipLinksContainer = document.createElement('div');
   skipLinksContainer.className = 'fixed top-0 left-0 z-50 flex flex-col p-2';
 
-  skipLinks.forEach(link => {
+  skipLinks.forEach((link) => {
     const skipLink = document.createElement('a');
     skipLink.href = link.href;
     skipLink.textContent = link.text;
-    skipLink.className = 'sr-only focus:not-sr-only focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 bg-primary-600 text-white px-4 py-2 rounded-md mb-2';
+    skipLink.className =
+      'sr-only focus:not-sr-only focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 bg-primary-600 text-white px-4 py-2 rounded-md mb-2';
     skipLinksContainer.appendChild(skipLink);
   });
 
@@ -133,15 +137,17 @@ export function checkColorContrast(
   // Convert hex to RGB
   const hexToRgb = (hex: string) => {
     const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? {
-      r: parseInt(result[1], 16),
-      g: parseInt(result[2], 16),
-      b: parseInt(result[3], 16)
-    } : { r: 0, g: 0, b: 0 };
+    return result
+      ? {
+          r: parseInt(result[1], 16),
+          g: parseInt(result[2], 16),
+          b: parseInt(result[3], 16),
+        }
+      : { r: 0, g: 0, b: 0 };
   };
 
   const getLuminance = (r: number, g: number, b: number) => {
-    const [rs, gs, bs] = [r, g, b].map(c => {
+    const [rs, gs, bs] = [r, g, b].map((c) => {
       c = c / 255;
       return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
     });
@@ -162,7 +168,7 @@ export function checkColorContrast(
   return {
     ratio,
     wcagAA: ratio >= 4.5,
-    wcagAAA: ratio >= 7
+    wcagAAA: ratio >= 7,
   };
 }
 
@@ -175,7 +181,7 @@ export function enhanceKeyboardNavigation() {
     if (e.key === 'Escape') {
       // Close any open modals or dropdowns
       const openElements = document.querySelectorAll('[data-open="true"]');
-      openElements.forEach(element => {
+      openElements.forEach((element) => {
         (element as HTMLElement).dataset.open = 'false';
       });
     }
@@ -235,25 +241,27 @@ export function validateHeadingStructure(): {
   const warnings: string[] = [];
 
   // Check for multiple h1s
-  const h1s = headings.filter(h => h.tagName === 'H1');
+  const h1s = headings.filter((h) => h.tagName === 'H1');
   if (h1s.length > 1) {
     errors.push('Multiple H1 headings found. There should be only one H1 per page.');
   }
 
   // Check heading hierarchy
   let previousLevel = 0;
-  headings.forEach(heading => {
+  headings.forEach((heading) => {
     const currentLevel = parseInt(heading.tagName.charAt(1));
 
     if (previousLevel > 0 && currentLevel > previousLevel + 1) {
-      warnings.push(`Heading level skipped: H${previousLevel} to H${currentLevel} at "${heading.textContent}"`);
+      warnings.push(
+        `Heading level skipped: H${previousLevel} to H${currentLevel} at "${heading.textContent}"`
+      );
     }
 
     previousLevel = currentLevel;
   });
 
   // Check for empty headings
-  headings.forEach(heading => {
+  headings.forEach((heading) => {
     if (!heading.textContent?.trim()) {
       warnings.push(`Empty ${heading.tagName} found.`);
     }
@@ -262,7 +270,7 @@ export function validateHeadingStructure(): {
   return {
     isValid: errors.length === 0,
     errors,
-    warnings
+    warnings,
   };
 }
 
@@ -289,14 +297,16 @@ export function validateImageAccessibility(): {
         warnings.push(`Image ${index + 1} has empty alt text but appears to be content.`);
       }
     } else if (alt.length > 125) {
-      warnings.push(`Image ${index + 1} alt text is very long (${alt.length} characters). Consider using a description.`);
+      warnings.push(
+        `Image ${index + 1} alt text is very long (${alt.length} characters). Consider using a description.`
+      );
     }
   });
 
   return {
     isValid: errors.length === 0,
     errors,
-    warnings
+    warnings,
   };
 }
 
@@ -340,7 +350,7 @@ export function validateLinkAccessibility(): {
   return {
     isValid: errors.length === 0,
     errors,
-    warnings
+    warnings,
   };
 }
 
@@ -364,8 +374,8 @@ export function runAccessibilityAudit(): {
     checks: {
       headings: validateHeadingStructure(),
       images: validateImageAccessibility(),
-      links: validateLinkAccessibility()
-    }
+      links: validateLinkAccessibility(),
+    },
   };
 }
 

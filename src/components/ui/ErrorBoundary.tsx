@@ -10,7 +10,11 @@ interface ErrorBoundaryState {
 
 interface ErrorBoundaryProps {
   children: React.ReactNode;
-  fallback?: React.ComponentType<{ error?: Error; errorInfo?: React.ErrorInfo; onReset?: () => void }>;
+  fallback?: React.ComponentType<{
+    error?: Error;
+    errorInfo?: React.ErrorInfo;
+    onReset?: () => void;
+  }>;
   onError?: (error: Error, errorInfo: React.ErrorInfo) => void;
 }
 
@@ -68,68 +72,68 @@ const DefaultErrorFallback: React.FC<{
   onReset?: () => void;
 }> = ({ error, errorInfo, onReset }) => {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4">
-      <div className="max-w-md w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8 text-center">
-        <div className="flex justify-center mb-4">
-          <div className="w-16 h-16 bg-error-100 dark:bg-error-900/20 rounded-full flex items-center justify-center">
-            <AlertTriangle className="w-8 h-8 text-error-600 dark:text-error-400" />
+    <div className='min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4'>
+      <div className='max-w-md w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8 text-center'>
+        <div className='flex justify-center mb-4'>
+          <div className='w-16 h-16 bg-error-100 dark:bg-error-900/20 rounded-full flex items-center justify-center'>
+            <AlertTriangle className='w-8 h-8 text-error-600 dark:text-error-400' />
           </div>
         </div>
 
-        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+        <h1 className='text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
           Oops! Something went wrong
         </h1>
 
-        <p className="text-gray-600 dark:text-gray-400 mb-6">
+        <p className='text-gray-600 dark:text-gray-400 mb-6'>
           We&apos;re sorry, but something unexpected happened. Our team has been notified.
         </p>
 
         {process.env.NODE_ENV === 'development' && error && (
-          <details className="mb-6 text-left">
-            <summary className="cursor-pointer text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          <details className='mb-6 text-left'>
+            <summary className='cursor-pointer text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'>
               Error Details (Development Only)
             </summary>
-            <div className="mt-2 p-3 bg-gray-100 dark:bg-gray-700 rounded text-xs font-mono text-gray-800 dark:text-gray-200 overflow-auto max-h-40">
-              <div className="mb-2">
+            <div className='mt-2 p-3 bg-gray-100 dark:bg-gray-700 rounded text-xs font-mono text-gray-800 dark:text-gray-200 overflow-auto max-h-40'>
+              <div className='mb-2'>
                 <strong>Error:</strong> {error.toString()}
               </div>
               {errorInfo && (
                 <div>
                   <strong>Stack:</strong>
-                  <pre className="whitespace-pre-wrap mt-1">{errorInfo.componentStack}</pre>
+                  <pre className='whitespace-pre-wrap mt-1'>{errorInfo.componentStack}</pre>
                 </div>
               )}
             </div>
           </details>
         )}
 
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+        <div className='flex flex-col sm:flex-row gap-3 justify-center'>
           <button
             onClick={onReset}
-            className="btn btn-primary inline-flex items-center justify-center"
-            aria-label="Try again"
+            className='btn btn-primary inline-flex items-center justify-center'
+            aria-label='Try again'
           >
-            <RefreshCw className="w-4 h-4 mr-2" />
+            <RefreshCw className='w-4 h-4 mr-2' />
             Try Again
           </button>
 
           <Link
-            href="/"
-            className="btn btn-secondary inline-flex items-center justify-center"
-            aria-label="Go to homepage"
+            href='/'
+            className='btn btn-secondary inline-flex items-center justify-center'
+            aria-label='Go to homepage'
           >
-            <Home className="w-4 h-4 mr-2" />
+            <Home className='w-4 h-4 mr-2' />
             Go Home
           </Link>
         </div>
 
-        <div className="mt-6 text-xs text-gray-500 dark:text-gray-400">
+        <div className='mt-6 text-xs text-gray-500 dark:text-gray-400'>
           If this problem persists, please{' '}
           <a
-            href="https://github.com/claude-marketplace/aggregator/issues"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary-600 dark:text-primary-400 hover:underline"
+            href='https://github.com/claude-marketplace/aggregator/issues'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-primary-600 dark:text-primary-400 hover:underline'
           >
             report an issue
           </a>

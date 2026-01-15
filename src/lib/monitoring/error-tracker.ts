@@ -67,15 +67,10 @@ class ErrorTracker {
 
     // Unhandled promise rejections
     window.addEventListener('unhandledrejection', (event) => {
-      this.trackError(
-        `Unhandled promise rejection: ${event.reason}`,
-        'javascript',
-        'error',
-        {
-          reason: event.reason,
-          stack: event.reason?.stack,
-        }
-      );
+      this.trackError(`Unhandled promise rejection: ${event.reason}`, 'javascript', 'error', {
+        reason: event.reason,
+        stack: event.reason?.stack,
+      });
     });
 
     // Network errors
@@ -161,11 +156,7 @@ class ErrorTracker {
   /**
    * Track component errors specifically
    */
-  public trackComponentError(
-    componentName: string,
-    error: Error,
-    action?: string
-  ): void {
+  public trackComponentError(componentName: string, error: Error, action?: string): void {
     this.trackError(`Component Error in ${componentName}: ${error.message}`, 'component', 'error', {
       component: componentName,
       action,
@@ -209,8 +200,8 @@ class ErrorTracker {
    * Log error to console in development
    */
   private logError(error: ErrorEvent): void {
-    const logLevel = error.level === 'error' ? 'error' :
-                   error.level === 'warning' ? 'warn' : 'info';
+    const logLevel =
+      error.level === 'error' ? 'error' : error.level === 'warning' ? 'warn' : 'info';
 
     console[logLevel](`[${error.level.toUpperCase()}] ${error.message}`, {
       id: error.id,
@@ -245,7 +236,7 @@ class ErrorTracker {
           version: process.env.NEXT_PUBLIC_APP_VERSION || 'unknown',
           buildTime: process.env.NEXT_PUBLIC_BUILD_TIME,
         }),
-      }).catch(reportError => {
+      }).catch((reportError) => {
         console.warn('Failed to report error to monitoring service:', reportError);
       });
     } catch (error) {
@@ -268,7 +259,7 @@ class ErrorTracker {
     const now = Date.now();
     const oneHourAgo = now - 60 * 60 * 1000;
 
-    this.errors.forEach(error => {
+    this.errors.forEach((error) => {
       // Count by level
       byLevel[error.level] = (byLevel[error.level] || 0) + 1;
 
@@ -280,8 +271,8 @@ class ErrorTracker {
       total: this.errors.length,
       byLevel,
       bySource,
-      recent: this.errors.filter(error => error.timestamp > oneHourAgo),
-      critical: this.errors.filter(error => error.level === 'error'),
+      recent: this.errors.filter((error) => error.timestamp > oneHourAgo),
+      critical: this.errors.filter((error) => error.level === 'error'),
     };
   }
 
@@ -318,15 +309,28 @@ class ErrorTracker {
 export const errorTracker = new ErrorTracker();
 
 // Utility functions for easy usage
-export const trackError = (message: string, source?: ErrorEvent['source'], context?: Partial<ErrorContext>) => {
+export const trackError = (
+  message: string,
+  source?: ErrorEvent['source'],
+  context?: Partial<ErrorContext>
+) => {
   errorTracker.trackError(message, source, 'error', context);
 };
 
-export const trackWarning = (message: string, source?: ErrorEvent['source'], context?: Partial<ErrorContext>) => {
+export const trackWarning = (
+  message: string,
+  source?: ErrorEvent['source'],
+  context?: Partial<ErrorContext>
+) => {
   errorTracker.trackError(message, source, 'warning', context);
 };
 
-export const trackApiError = (endpoint: string, statusCode: number, message: string, context?: Record<string, any>) => {
+export const trackApiError = (
+  endpoint: string,
+  statusCode: number,
+  message: string,
+  context?: Record<string, any>
+) => {
   errorTracker.trackApiError(endpoint, statusCode, message, context);
 };
 

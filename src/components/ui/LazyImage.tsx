@@ -66,19 +66,21 @@ const LazyImage: React.FC<LazyImageProps> = ({
   };
 
   // Generate a low-quality placeholder (LQIP)
-  const placeholderSrc = placeholder || `data:image/svg+xml,%3Csvg width='${width || 400}' height='${height || 300}' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23f3f4f6'/%3E%3C/svg%3E`;
+  const placeholderSrc =
+    placeholder ||
+    `data:image/svg+xml,%3Csvg width='${width || 400}' height='${height || 300}' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='%23f3f4f6'/%3E%3C/svg%3E`;
 
   if (hasError) {
     return (
       <div
         className={`flex items-center justify-center bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg ${className}`}
         style={{ width, height }}
-        role="img"
+        role='img'
         aria-label={`Failed to load image: ${alt}`}
       >
-        <div className="text-center p-4">
-          <ImageOff className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-          <p className="text-xs text-gray-500 dark:text-gray-400">Image unavailable</p>
+        <div className='text-center p-4'>
+          <ImageOff className='w-8 h-8 text-gray-400 mx-auto mb-2' />
+          <p className='text-xs text-gray-500 dark:text-gray-400'>Image unavailable</p>
         </div>
       </div>
     );
@@ -90,11 +92,11 @@ const LazyImage: React.FC<LazyImageProps> = ({
       <img
         ref={imgRef}
         src={placeholderSrc}
-        alt=""
+        alt=''
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
           isLoaded ? 'opacity-0' : 'opacity-100'
         }`}
-        aria-hidden="true"
+        aria-hidden='true'
       />
 
       {/* Main image */}
@@ -117,7 +119,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
 
       {/* Loading shimmer effect */}
       {!isLoaded && !hasError && (
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 dark:from-gray-700 dark:via-gray-600 dark:to-gray-700 bg-[length:200%_100%] animate-shimmer" />
+        <div className='absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 dark:from-gray-700 dark:via-gray-600 dark:to-gray-700 bg-[length:200%_100%] animate-shimmer' />
       )}
     </div>
   );

@@ -13,13 +13,11 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'Content-Type',
 };
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   // Handle preflight requests
   if (req.method === 'OPTIONS') {
-    return res.status(200)
+    return res
+      .status(200)
       .setHeader('Access-Control-Allow-Origin', '*')
       .setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
       .setHeader('Access-Control-Allow-Headers', 'Content-Type')
@@ -27,7 +25,8 @@ export default async function handler(
   }
 
   if (req.method !== 'GET') {
-    return res.status(405)
+    return res
+      .status(405)
       .setHeader('Access-Control-Allow-Origin', '*')
       .setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
       .setHeader('Access-Control-Allow-Headers', 'Content-Type')
@@ -62,45 +61,46 @@ export default async function handler(
     }
 
     // Simulate some processing delay
-    await new Promise(resolve => setTimeout(resolve, 200 + Math.random() * 300));
+    await new Promise((resolve) => setTimeout(resolve, 200 + Math.random() * 300));
 
-    return res.status(200)
+    return res
+      .status(200)
       .setHeader('Access-Control-Allow-Origin', '*')
       .setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
       .setHeader('Access-Control-Allow-Headers', 'Content-Type')
       .setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
       .setHeader('Content-Type', 'application/json')
       .json({
-      success: true,
-      data: responseData,
-      meta: {
-        timestamp: new Date().toISOString(),
-        requestId: `req_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`,
-        responseTime: Math.round(200 + Math.random() * 300),
-        cacheStatus: 'miss',
-        dataFreshness: new Date().toISOString(),
-      },
-    });
-
+        success: true,
+        data: responseData,
+        meta: {
+          timestamp: new Date().toISOString(),
+          requestId: `req_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`,
+          responseTime: Math.round(200 + Math.random() * 300),
+          cacheStatus: 'miss',
+          dataFreshness: new Date().toISOString(),
+        },
+      });
   } catch (error) {
     console.error('Ecosystem stats API error:', error);
 
-    return res.status(500)
+    return res
+      .status(500)
       .setHeader('Access-Control-Allow-Origin', '*')
       .setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
       .setHeader('Access-Control-Allow-Headers', 'Content-Type')
       .setHeader('Content-Type', 'application/json')
       .json({
-      success: false,
-      error: {
-        code: 'INTERNAL_SERVER_ERROR',
-        message: 'Failed to fetch ecosystem statistics',
-      },
-      meta: {
-        timestamp: new Date().toISOString(),
-        requestId: `req_${Date.now()}_error`,
-        responseTime: 0,
-      },
-    });
+        success: false,
+        error: {
+          code: 'INTERNAL_SERVER_ERROR',
+          message: 'Failed to fetch ecosystem statistics',
+        },
+        meta: {
+          timestamp: new Date().toISOString(),
+          requestId: `req_${Date.now()}_error`,
+          responseTime: 0,
+        },
+      });
   }
 }

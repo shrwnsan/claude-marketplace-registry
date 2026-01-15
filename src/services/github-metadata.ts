@@ -52,10 +52,7 @@ export class GitHubMetadataService {
   private config: MetadataConfig;
   private cache: Map<string, { data: unknown; timestamp: number }> = new Map();
 
-  constructor(
-    githubClient: GitHubClient,
-    config: MetadataConfig = {}
-  ) {
+  constructor(githubClient: GitHubClient, config: MetadataConfig = {}) {
     this.githubClient = githubClient;
     this.config = {
       fetchLanguages: true,
@@ -168,9 +165,12 @@ export class GitHubMetadataService {
     const oldestDate = new Date(oldestCommit.commit.author.date);
     const newestDate = new Date(newestCommit.commit.author.date);
 
-    const diffWeeks = Math.max(1, (newestDate.getTime() - oldestDate.getTime()) / (1000 * 60 * 60 * 24 * 7));
+    const diffWeeks = Math.max(
+      1,
+      (newestDate.getTime() - oldestDate.getTime()) / (1000 * 60 * 60 * 24 * 7)
+    );
 
-    return Math.round(commits.length / diffWeeks * 10) / 10;
+    return Math.round((commits.length / diffWeeks) * 10) / 10;
   }
 
   /**
@@ -197,9 +197,12 @@ export class GitHubMetadataService {
 
     // Age score (0-20 points)
     const ageInDays = this.calculateAgeInDays(metadata.createdAt);
-    if (ageInDays > 365) score += 20; // More than 1 year old
-    else if (ageInDays > 90) score += 15; // More than 3 months old
-    else if (ageInDays > 30) score += 10; // More than 1 month old
+    if (ageInDays > 365)
+      score += 20; // More than 1 year old
+    else if (ageInDays > 90)
+      score += 15; // More than 3 months old
+    else if (ageInDays > 30)
+      score += 10; // More than 1 month old
     else score += 5; // Less than 1 month old
 
     // Stars score (0-20 points)
@@ -215,8 +218,10 @@ export class GitHubMetadataService {
 
     // Activity score (0-15 points)
     const daysSinceLastUpdate = this.calculateAgeInDays(metadata.updatedAt);
-    if (daysSinceLastUpdate < 7) score += 15; // Updated within week
-    else if (daysSinceLastUpdate < 30) score += 10; // Updated within month
+    if (daysSinceLastUpdate < 7)
+      score += 15; // Updated within week
+    else if (daysSinceLastUpdate < 30)
+      score += 10; // Updated within month
     else if (daysSinceLastUpdate < 90) score += 5; // Updated within 3 months
 
     // Description score (0-10 points)
@@ -500,8 +505,8 @@ export class GitHubMetadataService {
       });
 
       const docResults = await Promise.allSettled(docPromises);
-      metadata.hasDocumentation = docResults.some(result =>
-        result.status === 'fulfilled' && result.value === true
+      metadata.hasDocumentation = docResults.some(
+        (result) => result.status === 'fulfilled' && result.value === true
       );
 
       // Check test files (we'll just check for common test directories)
@@ -509,7 +514,6 @@ export class GitHubMetadataService {
 
       // Check CI files
       metadata.hasCI = await this.checkDirectoryExists(owner, repo, ciFiles);
-
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Unknown error';
       logger.warn(`Failed to check repository features for ${owner}/${repo}:`, message);
@@ -563,9 +567,10 @@ export class GitHubMetadataService {
           successfulResults.push(result.value.data as EnhancedRepositoryMetadata);
         } else {
           const { owner, repo } = repositories[index];
-          const errorMsg = result.status === 'rejected'
-            ? result.reason?.message || 'Unknown error'
-            : result.value.error?.message || 'API error';
+          const errorMsg =
+            result.status === 'rejected'
+              ? result.reason?.message || 'Unknown error'
+              : result.value.error?.message || 'API error';
           errors.push(`${owner}/${repo}: ${errorMsg}`);
         }
       });

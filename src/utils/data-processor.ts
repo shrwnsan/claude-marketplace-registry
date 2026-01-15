@@ -137,9 +137,9 @@ export interface QualityMetrics {
   /** Distribution of quality scores */
   qualityDistribution: {
     excellent: number; // 90-100
-    good: number;      // 80-89
-    fair: number;      // 70-79
-    poor: number;      // <70
+    good: number; // 80-89
+    fair: number; // 70-79
+    poor: number; // <70
   };
 }
 
@@ -220,8 +220,8 @@ export class DataProcessor {
     const totalDownloads = this.estimateTotalDownloads(pluginData);
 
     // Calculate quality and verification metrics
-    const verifiedMarketplaces = marketplaceData.filter(mp => mp.verified).length;
-    const verifiedPlugins = pluginData.filter(p => p.validated).length;
+    const verifiedMarketplaces = marketplaceData.filter((mp) => mp.verified).length;
+    const verifiedPlugins = pluginData.filter((p) => p.validated).length;
     const averageQualityScore = this.calculateAverageQualityScore(pluginData);
 
     // Calculate categories
@@ -310,7 +310,7 @@ export class DataProcessor {
     const analytics: CategoryAnalytics[] = [];
 
     for (const category of categories) {
-      const categoryPlugins = pluginData.filter(p => p.category === category);
+      const categoryPlugins = pluginData.filter((p) => p.category === category);
 
       if (categoryPlugins.length < this.config.minCategorySize) {
         continue;
@@ -321,9 +321,7 @@ export class DataProcessor {
       const averageQualityScore = this.calculateAverageQualityScore(categoryPlugins);
 
       // Calculate growth rate (simplified - based on recent plugin additions)
-      const recentPlugins = categoryPlugins.filter(p =>
-        this.isRecentDate(p.lastScanned, 30)
-      );
+      const recentPlugins = categoryPlugins.filter((p) => this.isRecentDate(p.lastScanned, 30));
       const growthRate = (recentPlugins.length / categoryPlugins.length) * 100;
 
       // Get popular tags
@@ -332,12 +330,12 @@ export class DataProcessor {
       // Get top plugins
       const topPlugins = categoryPlugins
         .sort((a, b) => {
-          const scoreA = (a.qualityScore || 0) + (this.getPluginStars(a) * 0.1);
-          const scoreB = (b.qualityScore || 0) + (this.getPluginStars(b) * 0.1);
+          const scoreA = (a.qualityScore || 0) + this.getPluginStars(a) * 0.1;
+          const scoreB = (b.qualityScore || 0) + this.getPluginStars(b) * 0.1;
           return scoreB - scoreA;
         })
         .slice(0, 5)
-        .map(p => ({
+        .map((p) => ({
           id: p.id,
           name: p.name,
           stars: this.getPluginStars(p),
@@ -375,10 +373,7 @@ export class DataProcessor {
    * @param limit - Maximum number of developers to return
    * @returns Array of developer analytics
    */
-  processDeveloperAnalytics(
-    plugins: CollectionResult<Plugin>,
-    limit = 50
-  ): DeveloperAnalytics[] {
+  processDeveloperAnalytics(plugins: CollectionResult<Plugin>, limit = 50): DeveloperAnalytics[] {
     if (this.config.enableDebugLogging) {
       console.log('👥 Processing developer analytics...');
     }
@@ -402,10 +397,10 @@ export class DataProcessor {
       const totalStars = this.calculatePluginStars(developerPlugins);
       const averageQualityScore = this.calculateAverageQualityScore(developerPlugins);
       const categories = this.getUniqueCategories(developerPlugins);
-      const verifiedCount = developerPlugins.filter(p => p.validated).length;
+      const verifiedCount = developerPlugins.filter((p) => p.validated).length;
 
       // Get first and last plugin dates
-      const dates = developerPlugins.map(p => new Date(p.lastScanned)).sort();
+      const dates = developerPlugins.map((p) => new Date(p.lastScanned)).sort();
       const firstPluginDate = dates[0]?.toISOString() || '';
       const lastPluginDate = dates[dates.length - 1]?.toISOString() || '';
 
@@ -452,17 +447,19 @@ export class DataProcessor {
     const pluginData = plugins.data;
 
     // Calculate verification percentages
-    const verifiedPluginPercentage = pluginData.length > 0
-      ? (pluginData.filter(p => p.validated).length / pluginData.length) * 100
-      : 0;
+    const verifiedPluginPercentage =
+      pluginData.length > 0
+        ? (pluginData.filter((p) => p.validated).length / pluginData.length) * 100
+        : 0;
 
-    const verifiedMarketplacePercentage = marketplaceData.length > 0
-      ? (marketplaceData.filter(mp => mp.verified).length / marketplaceData.length) * 100
-      : 0;
+    const verifiedMarketplacePercentage =
+      marketplaceData.length > 0
+        ? (marketplaceData.filter((mp) => mp.verified).length / marketplaceData.length) * 100
+        : 0;
 
     // Calculate quality-based metrics
-    const highQualityPlugins = pluginData.filter(p => (p.qualityScore || 0) > 80).length;
-    const recentlyUpdatedPlugins = pluginData.filter(p =>
+    const highQualityPlugins = pluginData.filter((p) => (p.qualityScore || 0) > 80).length;
+    const recentlyUpdatedPlugins = pluginData.filter((p) =>
       this.isRecentDate(p.lastScanned, this.config.recentUpdateThreshold)
     ).length;
 
@@ -471,20 +468,21 @@ export class DataProcessor {
 
     // Calculate plugin ages
     const now = new Date();
-    const pluginAges = pluginData.map(p => {
+    const pluginAges = pluginData.map((p) => {
       const created = new Date(p.lastScanned);
       return (now.getTime() - created.getTime()) / (1000 * 60 * 60 * 24);
     });
-    const averagePluginAge = pluginAges.length > 0
-      ? pluginAges.reduce((sum, age) => sum + age, 0) / pluginAges.length
-      : 0;
+    const averagePluginAge =
+      pluginAges.length > 0 ? pluginAges.reduce((sum, age) => sum + age, 0) / pluginAges.length : 0;
 
     // Calculate quality distribution
     const qualityDistribution = {
-      excellent: pluginData.filter(p => (p.qualityScore || 0) >= 90).length,
-      good: pluginData.filter(p => (p.qualityScore || 0) >= 80 && (p.qualityScore || 0) < 90).length,
-      fair: pluginData.filter(p => (p.qualityScore || 0) >= 70 && (p.qualityScore || 0) < 80).length,
-      poor: pluginData.filter(p => (p.qualityScore || 0) < 70).length,
+      excellent: pluginData.filter((p) => (p.qualityScore || 0) >= 90).length,
+      good: pluginData.filter((p) => (p.qualityScore || 0) >= 80 && (p.qualityScore || 0) < 90)
+        .length,
+      fair: pluginData.filter((p) => (p.qualityScore || 0) >= 70 && (p.qualityScore || 0) < 80)
+        .length,
+      poor: pluginData.filter((p) => (p.qualityScore || 0) < 70).length,
     };
 
     const metrics: QualityMetrics = {
@@ -645,7 +643,7 @@ export class DataProcessor {
    * Get plugins created before a specific date
    */
   private getPluginsCreatedBefore(plugins: Plugin[], date: Date): Plugin[] {
-    return plugins.filter(p => new Date(p.lastScanned) <= date);
+    return plugins.filter((p) => new Date(p.lastScanned) <= date);
   }
 
   /**
@@ -694,7 +692,10 @@ export class DataProcessor {
     const developers = new Set<string>();
 
     for (const plugin of plugins) {
-      if (plugin.author && this.isRecentDate(plugin.lastScanned, this.config.activeDeveloperThreshold)) {
+      if (
+        plugin.author &&
+        this.isRecentDate(plugin.lastScanned, this.config.activeDeveloperThreshold)
+      ) {
         developers.add(plugin.author);
       }
     }

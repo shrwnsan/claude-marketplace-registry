@@ -19,10 +19,10 @@ import { z } from 'zod';
 /**
  * Schema for ISO date strings
  */
-export const isoDateString = z.string().datetime().refine(
-  (date) => !isNaN(Date.parse(date)),
-  { message: 'Invalid ISO date string' }
-);
+export const isoDateString = z
+  .string()
+  .datetime()
+  .refine((date) => !isNaN(Date.parse(date)), { message: 'Invalid ISO date string' });
 
 /**
  * Schema for non-negative numbers
@@ -92,12 +92,16 @@ export const categoryDataSchema = z.object({
   count: nonNegativeNumber,
   percentage: percentage,
   growthRate: growthRate,
-  topPlugins: z.array(z.object({
-    id: pluginId,
-    name: z.string().min(1).max(100),
-    downloads: nonNegativeNumber,
-    rating: z.number().min(0).max(5).optional(),
-  })).max(10),
+  topPlugins: z
+    .array(
+      z.object({
+        id: pluginId,
+        name: z.string().min(1).max(100),
+        downloads: nonNegativeNumber,
+        rating: z.number().min(0).max(5).optional(),
+      })
+    )
+    .max(10),
   trending: z.boolean(),
   description: z.string().max(200).optional(),
 });
@@ -166,10 +170,12 @@ export const growthTrendsSchema = z.object({
   downloads: z.array(trendDataPointSchema).min(1),
   period: z.enum(['7d', '30d', '90d', '1y']),
   aggregation: z.enum(['daily', 'weekly', 'monthly']),
-  predictions: z.object({
-    plugins: z.array(trendDataPointSchema),
-    marketplaces: z.array(trendDataPointSchema),
-  }).optional(),
+  predictions: z
+    .object({
+      plugins: z.array(trendDataPointSchema),
+      marketplaces: z.array(trendDataPointSchema),
+    })
+    .optional(),
 });
 
 /**
@@ -181,11 +187,13 @@ export const categoryAnalyticsSchema = z.object({
   emerging: z.array(z.string()).max(10),
   underserved: z.array(z.string()).max(10).optional(),
   insights: z.array(z.string().max(200)).max(5),
-  performance: z.object({
-    bestPerforming: z.string(),
-    fastestGrowing: z.string(),
-    mostPopular: z.string(),
-  }).optional(),
+  performance: z
+    .object({
+      bestPerforming: z.string(),
+      fastestGrowing: z.string(),
+      mostPopular: z.string(),
+    })
+    .optional(),
 });
 
 /**
@@ -229,11 +237,13 @@ export const qualityIndicatorsSchema = z.object({
     highQualityPlugins: nonNegativeNumber,
     commonIssues: z.array(qualityIssueSchema).max(10),
   }),
-  security: z.object({
-    scannedPlugins: nonNegativeNumber,
-    criticalIssues: nonNegativeNumber,
-    securityScore: qualityScore,
-  }).optional(),
+  security: z
+    .object({
+      scannedPlugins: nonNegativeNumber,
+      criticalIssues: nonNegativeNumber,
+      securityScore: qualityScore,
+    })
+    .optional(),
 });
 
 /**
@@ -302,11 +312,13 @@ export const pluginDataSchema = z.object({
     communityContributions: nonNegativeNumber.optional(),
     discussionActivity: nonNegativeNumber.optional(),
   }),
-  usage: z.object({
-    activeUsers: nonNegativeNumber.optional(),
-    avgSessionDuration: nonNegativeNumber.optional(),
-    retentionRate: percentage.optional(),
-  }).optional(),
+  usage: z
+    .object({
+      activeUsers: nonNegativeNumber.optional(),
+      avgSessionDuration: nonNegativeNumber.optional(),
+      retentionRate: percentage.optional(),
+    })
+    .optional(),
 });
 
 // ============================================================================
@@ -374,20 +386,22 @@ export const lastUpdatedSchema = z.object({
  * Schema for EcosystemStatsResponse
  */
 export const ecosystemStatsResponseSchema = <T extends z.ZodType>(dataSchema: T) =>
-  z.object({
-    success: z.boolean(),
-    data: dataSchema.optional(),
-    error: ecosystemErrorSchema.optional(),
-    meta: responseMetaSchema,
-  }).refine(
-    (data) => {
-      // Either data or error must be present, but not both
-      const hasData = data.data !== undefined;
-      const hasError = data.error !== undefined;
-      return hasData !== hasError; // XOR
-    },
-    { message: 'Either data or error must be present, but not both' }
-  );
+  z
+    .object({
+      success: z.boolean(),
+      data: dataSchema.optional(),
+      error: ecosystemErrorSchema.optional(),
+      meta: responseMetaSchema,
+    })
+    .refine(
+      (data) => {
+        // Either data or error must be present, but not both
+        const hasData = data.data !== undefined;
+        const hasError = data.error !== undefined;
+        return hasData !== hasError; // XOR
+      },
+      { message: 'Either data or error must be present, but not both' }
+    );
 
 /**
  * Schema for PaginatedResponse
@@ -409,10 +423,19 @@ export const paginatedResponseSchema = <T extends z.ZodType>(dataSchema: T) =>
  * Schema for ecosystem stats query parameters
  */
 export const ecosystemStatsQuerySchema = z.object({
-  sections: z.array(z.enum([
-    'overview', 'growthTrends', 'categoryAnalytics',
-    'communityData', 'qualityIndicators', 'marketplaceData', 'pluginData'
-  ])).optional(),
+  sections: z
+    .array(
+      z.enum([
+        'overview',
+        'growthTrends',
+        'categoryAnalytics',
+        'communityData',
+        'qualityIndicators',
+        'marketplaceData',
+        'pluginData',
+      ])
+    )
+    .optional(),
   period: z.enum(['7d', '30d', '90d', '1y']).optional(),
   aggregation: z.enum(['daily', 'weekly', 'monthly']).optional(),
   includePredictions: z.boolean().optional(),
@@ -456,35 +479,49 @@ export const pluginFilterSchema = z.object({
 export const chartDataSchema = z.object({
   type: z.enum(['line', 'bar', 'pie', 'donut', 'area', 'scatter']),
   title: z.string().min(1).max(100),
-  xAxis: z.object({
-    label: z.string().max(50),
-    type: z.enum(['category', 'datetime', 'linear']),
-    format: z.string().max(20).optional(),
-  }).optional(),
-  yAxis: z.object({
-    label: z.string().max(50),
-    type: z.enum(['linear', 'logarithmic']),
-    format: z.string().max(20).optional(),
-    min: z.number().optional(),
-    max: z.number().optional(),
-  }).optional(),
-  series: z.array(z.object({
-    name: z.string().min(1).max(50),
-    data: z.union([
-      z.array(z.tuple([z.union([z.string(), z.number()]), z.number()])),
-      z.array(trendDataPointSchema)
-    ]),
-    color: z.string().regex(/^#[0-9A-Fa-f]{6}$/).optional(),
-    type: z.enum(['line', 'bar', 'area']).optional(),
-  })).min(1).max(10),
-  options: z.object({
-    responsive: z.boolean().optional(),
-    interactive: z.boolean().optional(),
-    animation: z.boolean().optional(),
-    legend: z.boolean().optional(),
-    grid: z.boolean().optional(),
-    tooltips: z.boolean().optional(),
-  }).optional(),
+  xAxis: z
+    .object({
+      label: z.string().max(50),
+      type: z.enum(['category', 'datetime', 'linear']),
+      format: z.string().max(20).optional(),
+    })
+    .optional(),
+  yAxis: z
+    .object({
+      label: z.string().max(50),
+      type: z.enum(['linear', 'logarithmic']),
+      format: z.string().max(20).optional(),
+      min: z.number().optional(),
+      max: z.number().optional(),
+    })
+    .optional(),
+  series: z
+    .array(
+      z.object({
+        name: z.string().min(1).max(50),
+        data: z.union([
+          z.array(z.tuple([z.union([z.string(), z.number()]), z.number()])),
+          z.array(trendDataPointSchema),
+        ]),
+        color: z
+          .string()
+          .regex(/^#[0-9A-Fa-f]{6}$/)
+          .optional(),
+        type: z.enum(['line', 'bar', 'area']).optional(),
+      })
+    )
+    .min(1)
+    .max(10),
+  options: z
+    .object({
+      responsive: z.boolean().optional(),
+      interactive: z.boolean().optional(),
+      animation: z.boolean().optional(),
+      legend: z.boolean().optional(),
+      grid: z.boolean().optional(),
+      tooltips: z.boolean().optional(),
+    })
+    .optional(),
 });
 
 /**
@@ -516,9 +553,9 @@ export const createValidator = <T>(schema: z.ZodType<T>) => {
   return (data: unknown): T => {
     const result = schema.safeParse(data);
     if (!result.success) {
-      const errorMessages = result.error.issues.map(err =>
-        `${err.path.join('.')}: ${err.message}`
-      ).join(', ');
+      const errorMessages = result.error.issues
+        .map((err) => `${err.path.join('.')}: ${err.message}`)
+        .join(', ');
       throw new Error(`Validation failed: ${errorMessages}`);
     }
     return result.data;

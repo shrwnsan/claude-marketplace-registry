@@ -42,12 +42,12 @@ export default async function handler(
       platform: process.platform,
       arch: process.arch,
       memory: process.memoryUsage(),
-      cpuUsage: process.cpuUsage()
+      cpuUsage: process.cpuUsage(),
     };
 
     // Determine response format based on Accept header
     const acceptHeader = req.headers.accept || '';
-    const format = req.query.format as string || 'json';
+    const format = (req.query.format as string) || 'json';
 
     const responseTime = Date.now() - startTime;
 
@@ -69,9 +69,12 @@ export default async function handler(
         performance: {
           report,
           // Include Prometheus metrics if requested
-          prometheus: req.query.include === 'prometheus' ? performanceMonitor.exportPrometheusMetrics() : undefined
+          prometheus:
+            req.query.include === 'prometheus'
+              ? performanceMonitor.exportPrometheusMetrics()
+              : undefined,
         },
-        system
+        system,
       };
 
       res.setHeader('Content-Type', 'application/json');
@@ -80,14 +83,13 @@ export default async function handler(
 
       return res.status(200).json(response);
     }
-
   } catch (error) {
     console.error('Metrics endpoint error:', error);
 
     const errorResponse = {
       error: 'Failed to retrieve metrics',
       timestamp: new Date().toISOString(),
-      details: error instanceof Error ? error.message : 'Unknown error'
+      details: error instanceof Error ? error.message : 'Unknown error',
     };
 
     return res.status(500).json(errorResponse as any);

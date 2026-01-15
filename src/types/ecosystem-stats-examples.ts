@@ -51,7 +51,12 @@ const generateTrendData = (
     data.push({
       date: date.toISOString(),
       value: Math.max(0, value),
-      change: i > 0 ? data[data.length - 1]?.value ? value - data[data.length - 1].value : 0 : undefined,
+      change:
+        i > 0
+          ? data[data.length - 1]?.value
+            ? value - data[data.length - 1].value
+            : 0
+          : undefined,
     });
   }
 
@@ -69,11 +74,11 @@ export const mockGrowthTrends: GrowthTrends = {
   period: '30d',
   aggregation: 'daily',
   predictions: {
-    plugins: generateTrendData(1250, 30, 0.018).map(point => ({
+    plugins: generateTrendData(1250, 30, 0.018).map((point) => ({
       ...point,
       date: new Date(new Date(point.date).getTime() + 30 * 24 * 60 * 60 * 1000).toISOString(),
     })),
-    marketplaces: generateTrendData(15, 30, 0.010).map(point => ({
+    marketplaces: generateTrendData(15, 30, 0.01).map((point) => ({
       ...point,
       date: new Date(new Date(point.date).getTime() + 30 * 24 * 60 * 60 * 1000).toISOString(),
     })),
@@ -569,7 +574,8 @@ export const mockErrorResponse: EcosystemStatsResponse = {
   error: {
     code: 'DATA_UNAVAILABLE',
     message: 'Ecosystem statistics are temporarily unavailable',
-    details: 'The data aggregation service is currently undergoing maintenance. Please try again later.',
+    details:
+      'The data aggregation service is currently undergoing maintenance. Please try again later.',
     suggestions: [
       'Try refreshing the page in a few minutes',
       'Check the status page for service updates',
@@ -628,16 +634,15 @@ export const mockPluginGrowthChart: ChartData = {
   series: [
     {
       name: 'Total Plugins',
-      data: mockGrowthTrends.plugins.map(point => [point.date, point.value] as [string, number]),
+      data: mockGrowthTrends.plugins.map((point) => [point.date, point.value] as [string, number]),
       color: '#3b82f6',
       type: 'line',
     },
     {
       name: 'Verified Plugins',
-      data: mockGrowthTrends.plugins.map(point => [
-        point.date,
-        Math.round(point.value * 0.42)
-      ] as [string, number]),
+      data: mockGrowthTrends.plugins.map(
+        (point) => [point.date, Math.round(point.value * 0.42)] as [string, number]
+      ),
       color: '#10b981',
       type: 'line',
     },
@@ -661,7 +666,7 @@ export const mockCategoryPieChart: ChartData = {
   series: [
     {
       name: 'Categories',
-      data: mockCategories.map(cat => [cat.name, cat.count] as [string, number]),
+      data: mockCategories.map((cat) => [cat.name, cat.count] as [string, number]),
       color: '#3b82f6',
     },
   ],
@@ -692,12 +697,16 @@ export const mockMarketplaceBarChart: ChartData = {
   series: [
     {
       name: 'Total Plugins',
-      data: mockMarketplaceData.map(mp => [mp.marketplace.name, mp.pluginStats.totalPlugins] as [string, number]),
+      data: mockMarketplaceData.map(
+        (mp) => [mp.marketplace.name, mp.pluginStats.totalPlugins] as [string, number]
+      ),
       color: '#3b82f6',
     },
     {
       name: 'Verified Plugins',
-      data: mockMarketplaceData.map(mp => [mp.marketplace.name, mp.pluginStats.verifiedPlugins] as [string, number]),
+      data: mockMarketplaceData.map(
+        (mp) => [mp.marketplace.name, mp.pluginStats.verifiedPlugins] as [string, number]
+      ),
       color: '#10b981',
     },
   ],
@@ -797,7 +806,7 @@ export const createFilteredPluginData = (filters: {
   minQualityScore?: number;
   minDownloads?: number;
 }) => {
-  return mockPluginData.filter(plugin => {
+  return mockPluginData.filter((plugin) => {
     if (filters.verified !== undefined && plugin.quality.verified !== filters.verified) {
       return false;
     }
@@ -827,7 +836,7 @@ export const generateSampleChartData = (
   series: [
     {
       name: title,
-      data: data.map(item => [item.name, item.value] as [string, number]),
+      data: data.map((item) => [item.name, item.value] as [string, number]),
     },
   ],
   options: {

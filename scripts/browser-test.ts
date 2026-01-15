@@ -31,7 +31,7 @@ class BrowserTester {
 
     this.browser = await puppeteer.launch({
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
 
     this.page = await this.browser.newPage();
@@ -73,13 +73,13 @@ class BrowserTester {
       // Navigate to the page
       const response = await this.page.goto(url, {
         waitUntil: 'networkidle2',
-        timeout: 10000
+        timeout: 10000,
       });
 
       console.log(`📄 Page loaded with status: ${response?.status()}`);
 
       // Wait a bit for React to potentially render
-      await new Promise(resolve => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 3000));
 
       // Get page title
       const title = await this.page.title();
@@ -108,7 +108,7 @@ class BrowserTester {
 
         return {
           marketplacesCount: marketplaces.length || marketplaceHeadings.length,
-          pluginsCount: plugins.length || pluginCards.length
+          pluginsCount: plugins.length || pluginCards.length,
         };
       });
 
@@ -117,18 +117,20 @@ class BrowserTester {
       // Check if it's using real data or mock data by looking for specific content
       const dataSource = await this.page.evaluate(() => {
         // Look for anthropic/claude-code specific content
-        const hasAnthropic = document.body.innerText.includes('anthropic') ||
-                           document.body.innerText.includes('claude-code');
+        const hasAnthropic =
+          document.body.innerText.includes('anthropic') ||
+          document.body.innerText.includes('claude-code');
 
         // Look for mock data indicators
-        const hasMockIndicators = document.body.innerText.includes('npm marketplace') ||
-                               document.body.innerText.includes('GitHub Marketplace') ||
-                               document.body.innerText.includes('Community Hub');
+        const hasMockIndicators =
+          document.body.innerText.includes('npm marketplace') ||
+          document.body.innerText.includes('GitHub Marketplace') ||
+          document.body.innerText.includes('Community Hub');
 
         return {
           hasAnthropic,
           hasMockIndicators,
-          bodyText: document.body.innerText.substring(0, 500) // First 500 chars
+          bodyText: document.body.innerText.substring(0, 500), // First 500 chars
         };
       });
 
@@ -137,7 +139,7 @@ class BrowserTester {
       // Take full page screenshot
       const fullPageScreenshot = await this.page.screenshot({
         path: 'screenshots/fullpage.png',
-        fullPage: true
+        fullPage: true,
       });
 
       console.log('📸 Full page screenshot saved');
@@ -160,10 +162,9 @@ class BrowserTester {
         errors,
         screenshots: {
           fullPage: 'screenshots/fullpage.png',
-          marketplacesSection: 'screenshots/fullpage.png' // We'll take a more targeted one if needed
-        }
+          marketplacesSection: 'screenshots/fullpage.png', // We'll take a more targeted one if needed
+        },
       };
-
     } catch (error) {
       console.error('❌ Error testing homepage:', error);
       throw error;
@@ -177,19 +178,27 @@ class BrowserTester {
 
     const requests = await this.page.evaluate(() => {
       // Check if our data endpoint was requested
-      return performance.getEntriesByType('resource')
-        .filter(entry => entry.name.includes('marketplaces.json'));
+      return performance
+        .getEntriesByType('resource')
+        .filter((entry) => entry.name.includes('marketplaces.json'));
     });
 
-    console.log(`📡 Found ${requests.length} marketplace.json requests:`, requests.map(r => r.name));
+    console.log(
+      `📡 Found ${requests.length} marketplace.json requests:`,
+      requests.map((r) => r.name)
+    );
 
     // Also check if any API calls were made
     const apiCalls = await this.page.evaluate(() => {
-      return performance.getEntriesByType('resource')
-        .filter(entry => entry.name.includes('/data/'));
+      return performance
+        .getEntriesByType('resource')
+        .filter((entry) => entry.name.includes('/data/'));
     });
 
-    console.log(`📡 Found ${apiCalls.length} data requests:`, apiCalls.map(r => r.name));
+    console.log(
+      `📡 Found ${apiCalls.length} data requests:`,
+      apiCalls.map((r) => r.name)
+    );
   }
 
   async testDataHook(): Promise<void> {
@@ -201,8 +210,8 @@ class BrowserTester {
     const hookData = await this.page.evaluate(() => {
       // Try to access the data that our hook should be loading
       return fetch('data/marketplaces.json')
-        .then(response => response.json())
-        .catch(error => {
+        .then((response) => response.json())
+        .catch((error) => {
           console.error('Fetch error:', error);
           return null;
         });
@@ -223,9 +232,11 @@ class BrowserTester {
     // Also check what's being rendered in the DOM
     const domData = await this.page.evaluate(() => {
       const marketplaceCards = document.querySelectorAll('[class*="marketplace"], [class*="card"]');
-      const marketplaceHeadings = Array.from(document.querySelectorAll('h2, h3, h4'))
-        .filter(h => h.textContent?.toLowerCase().includes('marketplace') ||
-                       h.textContent?.toLowerCase().includes('claude'));
+      const marketplaceHeadings = Array.from(document.querySelectorAll('h2, h3, h4')).filter(
+        (h) =>
+          h.textContent?.toLowerCase().includes('marketplace') ||
+          h.textContent?.toLowerCase().includes('claude')
+      );
 
       const pluginCards = document.querySelectorAll('[class*="plugin"], [class*="card"]');
 
@@ -233,8 +244,8 @@ class BrowserTester {
         marketplaceCards: marketplaceCards.length,
         marketplaceHeadings: marketplaceHeadings.length,
         pluginCards: pluginCards.length,
-        marketplaceHeadingsText: marketplaceHeadings.map(h => h.textContent?.trim()),
-        bodyText: document.body.innerText.substring(0, 200)
+        marketplaceHeadingsText: marketplaceHeadings.map((h) => h.textContent?.trim()),
+        bodyText: document.body.innerText.substring(0, 200),
       };
     });
 
@@ -261,7 +272,7 @@ class BrowserTester {
         console.log('📋 First marketplace:', {
           name: firstMarketplace.name,
           stars: firstMarketplace.stars,
-          plugins: firstMarketplace.plugins?.length || 0
+          plugins: firstMarketplace.plugins?.length || 0,
         });
       }
     } catch (error) {
@@ -311,12 +322,12 @@ async function runTests(): Promise<void> {
 
     if (result.errors.length > 0) {
       console.log('\n❌ ERRORS:');
-      result.errors.forEach(error => console.log(`  - ${error}`));
+      result.errors.forEach((error) => console.log(`  - ${error}`));
     }
 
     if (result.consoleLogs.length > 0) {
       console.log('\n📝 CONSOLE LOGS:');
-      result.consoleLogs.forEach(log => console.log(`  - ${log}`));
+      result.consoleLogs.forEach((log) => console.log(`  - ${log}`));
     }
 
     console.log(`\n📸 Screenshots saved to: ${result.screenshots.fullPage}`);
@@ -335,11 +346,14 @@ async function runTests(): Promise<void> {
     if (result.marketplacesCount === 1 && result.pluginsCount === 5) {
       console.log('✅ CORRECT: Shows 1 marketplace with 5 plugins (real data)');
     } else if (result.marketplacesCount > 1) {
-      console.log(`⚠️  UNEXPECTED: Shows ${result.marketplacesCount} marketplaces (likely mock data)`);
+      console.log(
+        `⚠️  UNEXPECTED: Shows ${result.marketplacesCount} marketplaces (likely mock data)`
+      );
     } else {
-      console.log(`❓ UNKNOWN: Shows ${result.marketplacesCount} marketplaces and ${result.pluginsCount} plugins`);
+      console.log(
+        `❓ UNKNOWN: Shows ${result.marketplacesCount} marketplaces and ${result.pluginsCount} plugins`
+      );
     }
-
   } catch (error) {
     console.error('❌ Test failed:', error);
   } finally {

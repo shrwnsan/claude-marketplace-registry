@@ -106,7 +106,14 @@ class EcosystemAnalytics {
   /**
    * Track an analytics event
    */
-  public track(event: string, category: AnalyticsEvent['category'], action: string, label?: string, value?: number, metadata?: Record<string, any>): void {
+  public track(
+    event: string,
+    category: AnalyticsEvent['category'],
+    action: string,
+    label?: string,
+    value?: number,
+    metadata?: Record<string, any>
+  ): void {
     if (!this.isEnabled) return;
 
     const analyticsEvent: AnalyticsEvent = {
@@ -228,7 +235,8 @@ class EcosystemAnalytics {
    */
   private trackPageEnter(): void {
     const inactiveTime = Date.now() - this.lastActivity;
-    if (inactiveTime > 30 * 60 * 1000) { // 30 minutes
+    if (inactiveTime > 30 * 60 * 1000) {
+      // 30 minutes
       // Start new session
       this.sessionId = this.generateSessionId();
       this.sessionStartTime = Date.now();
@@ -294,11 +302,11 @@ class EcosystemAnalytics {
             userAgent: navigator.userAgent,
             url: window.location.href,
           }),
-        }).catch(error => {
-            if (this.options.debug) {
-              console.warn('[Analytics] Failed to send event:', error);
-            }
-          });
+        }).catch((error) => {
+          if (this.options.debug) {
+            console.warn('[Analytics] Failed to send event:', error);
+          }
+        });
       } catch (error) {
         // Silently fail to not break user experience
       }
@@ -350,14 +358,14 @@ class EcosystemAnalytics {
 
     // Count feature usage from events
     this.events
-      .filter(event => event.category === 'interaction')
-      .forEach(event => {
+      .filter((event) => event.category === 'interaction')
+      .forEach((event) => {
         const feature = event.label || event.action;
         featureUsage[feature] = (featureUsage[feature] || 0) + 1;
       });
 
-    const mostUsedFeature = Object.entries(featureUsage)
-      .sort(([, a], [, b]) => b - a)[0]?.[0] || '';
+    const mostUsedFeature =
+      Object.entries(featureUsage).sort(([, a], [, b]) => b - a)[0]?.[0] || '';
 
     return {
       totalTime,
@@ -402,37 +410,61 @@ export const useEcosystemAnalytics = (options: UseEcosystemAnalyticsOptions = {}
   const analytics = analyticsRef.current;
 
   // Memoized callback functions
-  const trackPageView = useCallback((path: string, title?: string) => {
-    analytics.trackPageView(path, title);
-  }, [analytics]);
+  const trackPageView = useCallback(
+    (path: string, title?: string) => {
+      analytics.trackPageView(path, title);
+    },
+    [analytics]
+  );
 
-  const trackEcosystemInteraction = useCallback((action: string, label?: string, value?: number) => {
-    analytics.trackEcosystemInteraction(action, label, value);
-  }, [analytics]);
+  const trackEcosystemInteraction = useCallback(
+    (action: string, label?: string, value?: number) => {
+      analytics.trackEcosystemInteraction(action, label, value);
+    },
+    [analytics]
+  );
 
-  const trackChartInteraction = useCallback((chartType: string, action: string, data?: any) => {
-    analytics.trackChartInteraction(chartType, action, data);
-  }, [analytics]);
+  const trackChartInteraction = useCallback(
+    (chartType: string, action: string, data?: any) => {
+      analytics.trackChartInteraction(chartType, action, data);
+    },
+    [analytics]
+  );
 
-  const trackFilterUsage = useCallback((filterType: string, filterValue: string) => {
-    analytics.trackFilterUsage(filterType, filterValue);
-  }, [analytics]);
+  const trackFilterUsage = useCallback(
+    (filterType: string, filterValue: string) => {
+      analytics.trackFilterUsage(filterType, filterValue);
+    },
+    [analytics]
+  );
 
-  const trackExport = useCallback((format: string, data?: any) => {
-    analytics.trackExport(format, data);
-  }, [analytics]);
+  const trackExport = useCallback(
+    (format: string, data?: any) => {
+      analytics.trackExport(format, data);
+    },
+    [analytics]
+  );
 
-  const trackFeatureUsage = useCallback((feature: string, startTime: number) => {
-    analytics.trackFeatureUsage(feature, startTime);
-  }, [analytics]);
+  const trackFeatureUsage = useCallback(
+    (feature: string, startTime: number) => {
+      analytics.trackFeatureUsage(feature, startTime);
+    },
+    [analytics]
+  );
 
-  const trackPerformance = useCallback((name: string, value: number, unit?: string) => {
-    analytics.trackPerformance(name, value, unit);
-  }, [analytics]);
+  const trackPerformance = useCallback(
+    (name: string, value: number, unit?: string) => {
+      analytics.trackPerformance(name, value, unit);
+    },
+    [analytics]
+  );
 
-  const trackError = useCallback((error: Error, context?: Record<string, any>) => {
-    analytics.trackError(error, context);
-  }, [analytics]);
+  const trackError = useCallback(
+    (error: Error, context?: Record<string, any>) => {
+      analytics.trackError(error, context);
+    },
+    [analytics]
+  );
 
   return {
     analytics,

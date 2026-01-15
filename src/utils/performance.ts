@@ -40,7 +40,7 @@ export function throttle<T extends (...args: any[]) => any>(
     if (!inThrottle) {
       func(...args);
       inThrottle = true;
-      setTimeout(() => inThrottle = false, limit);
+      setTimeout(() => (inThrottle = false), limit);
     }
   };
 }
@@ -198,12 +198,7 @@ export function getResponsiveImageSrc(
     format?: 'webp' | 'avif' | 'jpeg' | 'png';
   } = {}
 ): string {
-  const {
-    width = 800,
-    height = 600,
-    quality = 80,
-    format = 'webp',
-  } = options;
+  const { width = 800, height = 600, quality = 80, format = 'webp' } = options;
 
   // This is a placeholder - in a real app, you'd use an image optimization service
   // like Cloudinary, Imgix, or your own image processing API
@@ -226,11 +221,7 @@ export class VirtualScrollManager<T> {
   private containerHeight: number;
   private scrollTop: number = 0;
 
-  constructor(
-    items: T[],
-    itemHeight: number,
-    containerHeight: number
-  ) {
+  constructor(items: T[], itemHeight: number, containerHeight: number) {
     this.items = items;
     this.itemHeight = itemHeight;
     this.containerHeight = containerHeight;
@@ -277,10 +268,7 @@ export class ProgressiveLoader<T> {
   }
 
   loadNextBatch(): T[] {
-    const endIndex = Math.min(
-      this.currentIndex + this.batchSize,
-      this.items.length
-    );
+    const endIndex = Math.min(this.currentIndex + this.batchSize, this.items.length);
     const batch = this.items.slice(this.currentIndex, endIndex);
     this.currentIndex = endIndex;
     return batch;

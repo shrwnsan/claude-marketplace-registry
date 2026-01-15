@@ -151,7 +151,7 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
   showLastUpdated = true,
   onError,
   onLoadingChange,
-  onDataUpdate
+  onDataUpdate,
 }) => {
   // Component state
   const [isRefreshing, setIsRefreshing] = useState(false);
@@ -171,7 +171,7 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
       setLastUpdated(new Date());
 
       // Small delay to show loading state
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise((resolve) => setTimeout(resolve, 1000));
     } catch (error) {
       const err = error instanceof Error ? error : new Error('Refresh failed');
       setGlobalError(err);
@@ -193,30 +193,39 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
   }, [autoRefresh, refreshInterval, handleManualRefresh]);
 
   // Handle component loading changes
-  const _handleComponentLoadingChange = useCallback((loading: boolean, component: string) => {
-    setComponentStates(prev => ({ ...prev, [component]: loading }));
-    onLoadingChange?.(loading, component);
-  }, [onLoadingChange]);
+  const _handleComponentLoadingChange = useCallback(
+    (loading: boolean, component: string) => {
+      setComponentStates((prev) => ({ ...prev, [component]: loading }));
+      onLoadingChange?.(loading, component);
+    },
+    [onLoadingChange]
+  );
 
   // Handle component errors
-  const _handleComponentError = useCallback((error: Error, component: string) => {
-    // Log error for debugging purposes
-    onError?.(error, component);
-  }, [onError]);
+  const _handleComponentError = useCallback(
+    (error: Error, component: string) => {
+      // Log error for debugging purposes
+      onError?.(error, component);
+    },
+    [onError]
+  );
 
   // Handle component data updates
-  const _handleComponentDataUpdate = useCallback((data: unknown, component: string) => {
-    onDataUpdate?.(data, component);
+  const _handleComponentDataUpdate = useCallback(
+    (data: unknown, component: string) => {
+      onDataUpdate?.(data, component);
 
-    // Update last updated timestamp when any component gets new data
-    if (data) {
-      setLastUpdated(new Date());
-    }
-  }, [onDataUpdate]);
+      // Update last updated timestamp when any component gets new data
+      if (data) {
+        setLastUpdated(new Date());
+      }
+    },
+    [onDataUpdate]
+  );
 
   // Calculate global loading state
   const isAnyComponentLoading = useMemo(() => {
-    return Object.values(componentStates).some(loading => loading);
+    return Object.values(componentStates).some((loading) => loading);
   }, [componentStates]);
 
   // Determine if dashboard is in loading state
@@ -229,44 +238,49 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
       minute: '2-digit',
       second: '2-digit',
       hour12: true,
-      timeZoneName: 'short'
+      timeZoneName: 'short',
     }).format(date);
   }, []);
 
   // Component configuration based on props
-  const componentConfig = useMemo(() => ({
-    overview: {
-      enabled: showOverview,
-      title: 'Ecosystem Overview',
-      description: 'Key metrics showing the size and growth of the ecosystem'
-    },
-    growthTrends: {
-      enabled: showGrowthTrends,
-      title: 'Growth Trends',
-      description: 'Track ecosystem growth over time with interactive charts',
-      initialTimeRange
-    },
-    categories: {
-      enabled: showCategories,
-      title: 'Category Analytics',
-      description: 'Explore plugin categories and discover trending areas'
-    },
-    quality: {
-      enabled: showQuality,
-      title: 'Quality Indicators',
-      description: 'Trust signals and quality metrics across the ecosystem'
-    }
-  }), [showOverview, showGrowthTrends, showCategories, showQuality, initialTimeRange]);
+  const componentConfig = useMemo(
+    () => ({
+      overview: {
+        enabled: showOverview,
+        title: 'Ecosystem Overview',
+        description: 'Key metrics showing the size and growth of the ecosystem',
+      },
+      growthTrends: {
+        enabled: showGrowthTrends,
+        title: 'Growth Trends',
+        description: 'Track ecosystem growth over time with interactive charts',
+        initialTimeRange,
+      },
+      categories: {
+        enabled: showCategories,
+        title: 'Category Analytics',
+        description: 'Explore plugin categories and discover trending areas',
+      },
+      quality: {
+        enabled: showQuality,
+        title: 'Quality Indicators',
+        description: 'Trust signals and quality metrics across the ecosystem',
+      },
+    }),
+    [showOverview, showGrowthTrends, showCategories, showQuality, initialTimeRange]
+  );
 
   // If no components are enabled, show message
-  const enabledComponents = Object.values(componentConfig).filter(config => config.enabled).length;
+  const enabledComponents = Object.values(componentConfig).filter(
+    (config) => config.enabled
+  ).length;
   if (enabledComponents === 0) {
     return (
-      <div className="text-center py-12">
-        <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
+      <div className='text-center py-12'>
+        <h3 className='text-lg font-medium text-gray-900 dark:text-gray-100 mb-2'>
           No Components Enabled
         </h3>
-        <p className="text-gray-600 dark:text-gray-400">
+        <p className='text-gray-600 dark:text-gray-400'>
           Please enable at least one component to display ecosystem statistics.
         </p>
       </div>
@@ -280,50 +294,50 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
         <ErrorDisplay
           message={error?.message || globalError?.message || 'Dashboard failed to load'}
           onRetry={onReset || handleManualRefresh}
-          className="max-w-4xl mx-auto"
+          className='max-w-4xl mx-auto'
         />
       )}
     >
       <div className={`${compact ? 'space-y-8' : 'space-y-12'} ${className}`}>
         {/* Header Section */}
         {showHeaders && (
-          <header className="text-center mb-8 sm:mb-12">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex-1" />
-              <div className="flex-1">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          <header className='text-center mb-8 sm:mb-12'>
+            <div className='flex items-center justify-between mb-4'>
+              <div className='flex-1' />
+              <div className='flex-1'>
+                <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4'>
                   {title}
                 </h2>
-                <p className="text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto">
+                <p className='text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto'>
                   {subtitle}
                 </p>
               </div>
-              <div className="flex-1 flex justify-end">
+              <div className='flex-1 flex justify-end'>
                 {showRefreshButton && (
                   <button
                     onClick={handleManualRefresh}
                     disabled={isLoading}
-                    className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
-                    aria-label="Refresh all data"
+                    className='inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200'
+                    aria-label='Refresh all data'
                   >
                     {isLoading ? (
                       <>
-                        <LoadingSpinner size="sm" className="mr-2" />
+                        <LoadingSpinner size='sm' className='mr-2' />
                         Refreshing...
                       </>
                     ) : (
                       <>
                         <svg
-                          className="w-4 h-4 mr-2"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
+                          className='w-4 h-4 mr-2'
+                          fill='none'
+                          stroke='currentColor'
+                          viewBox='0 0 24 24'
                         >
                           <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
                             strokeWidth={2}
-                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                            d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
                           />
                         </svg>
                         Refresh
@@ -336,7 +350,7 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
 
             {/* Last Updated */}
             {showLastUpdated && lastUpdated && (
-              <div className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+              <div className='text-sm text-gray-500 dark:text-gray-400 mt-2'>
                 Last updated: {formatLastUpdated(lastUpdated)}
               </div>
             )}
@@ -345,30 +359,33 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
 
         {/* Global Error Display */}
         {globalError && (
-          <div className="mb-8">
+          <div className='mb-8'>
             <ErrorDisplay
               message={globalError?.message || 'Unknown error occurred'}
               onRetry={handleManualRefresh}
-                          />
+            />
           </div>
         )}
 
         {/* Component Grid */}
-        <main className="space-y-12">
-          <div className="space-y-12">
+        <main className='space-y-12'>
+          <div className='space-y-12'>
             {/* Overview Metrics */}
             {componentConfig.overview.enabled && (
               <section
-                className="py-12 bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800"
-                aria-labelledby="overview-heading"
+                className='py-12 bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800'
+                aria-labelledby='overview-heading'
               >
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                   {showHeaders && (
-                    <header className="text-center mb-8">
-                      <h3 id="overview-heading" className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                    <header className='text-center mb-8'>
+                      <h3
+                        id='overview-heading'
+                        className='text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2'
+                      >
                         {componentConfig.overview.title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-400">
+                      <p className='text-gray-600 dark:text-gray-400'>
                         {componentConfig.overview.description}
                       </p>
                     </header>
@@ -378,15 +395,12 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
                     onError={(error) => _handleComponentError(error, 'OverviewMetrics')}
                     fallback={({ onReset }) => (
                       <ErrorDisplay
-                        message="Overview metrics failed to load"
+                        message='Overview metrics failed to load'
                         onRetry={onReset || handleManualRefresh}
                       />
                     )}
                   >
-                    <OverviewMetrics
-                      autoRefresh={autoRefresh}
-                      refreshInterval={refreshInterval}
-                                          />
+                    <OverviewMetrics autoRefresh={autoRefresh} refreshInterval={refreshInterval} />
                   </ErrorBoundary>
                 </div>
               </section>
@@ -395,16 +409,19 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
             {/* Growth Trends */}
             {componentConfig.growthTrends.enabled && (
               <section
-                className="py-12 bg-gray-50 dark:bg-gray-800/50 rounded-xl"
-                aria-labelledby="growth-heading"
+                className='py-12 bg-gray-50 dark:bg-gray-800/50 rounded-xl'
+                aria-labelledby='growth-heading'
               >
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                   {showHeaders && (
-                    <header className="text-center mb-8">
-                      <h3 id="growth-heading" className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                    <header className='text-center mb-8'>
+                      <h3
+                        id='growth-heading'
+                        className='text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2'
+                      >
                         {componentConfig.growthTrends.title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-400">
+                      <p className='text-gray-600 dark:text-gray-400'>
                         {componentConfig.growthTrends.description}
                       </p>
                     </header>
@@ -414,7 +431,7 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
                     onError={(error) => _handleComponentError(error, 'GrowthTrends')}
                     fallback={({ onReset }) => (
                       <ErrorDisplay
-                        message="Growth trends failed to load"
+                        message='Growth trends failed to load'
                         onRetry={onReset || handleManualRefresh}
                       />
                     )}
@@ -437,16 +454,19 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
             {/* Category Analytics */}
             {componentConfig.categories.enabled && (
               <section
-                className="py-12 bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800"
-                aria-labelledby="categories-heading"
+                className='py-12 bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800'
+                aria-labelledby='categories-heading'
               >
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                   {showHeaders && (
-                    <header className="text-center mb-8">
-                      <h3 id="categories-heading" className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                    <header className='text-center mb-8'>
+                      <h3
+                        id='categories-heading'
+                        className='text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2'
+                      >
                         {componentConfig.categories.title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-400">
+                      <p className='text-gray-600 dark:text-gray-400'>
                         {componentConfig.categories.description}
                       </p>
                     </header>
@@ -456,14 +476,12 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
                     onError={(error) => _handleComponentError(error, 'CategoryAnalytics')}
                     fallback={({ onReset }) => (
                       <ErrorDisplay
-                        message="Category analytics failed to load"
+                        message='Category analytics failed to load'
                         onRetry={onReset || handleManualRefresh}
                       />
                     )}
                   >
-                    <CategoryAnalytics
-                      period={initialTimeRange}
-                    />
+                    <CategoryAnalytics period={initialTimeRange} />
                   </ErrorBoundary>
                 </div>
               </section>
@@ -472,16 +490,19 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
             {/* Quality Indicators */}
             {componentConfig.quality.enabled && (
               <section
-                className="py-12 bg-gray-50 dark:bg-gray-800/50 rounded-xl"
-                aria-labelledby="quality-heading"
+                className='py-12 bg-gray-50 dark:bg-gray-800/50 rounded-xl'
+                aria-labelledby='quality-heading'
               >
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                   {showHeaders && (
-                    <header className="text-center mb-8">
-                      <h3 id="quality-heading" className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                    <header className='text-center mb-8'>
+                      <h3
+                        id='quality-heading'
+                        className='text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2'
+                      >
                         {componentConfig.quality.title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-400">
+                      <p className='text-gray-600 dark:text-gray-400'>
                         {componentConfig.quality.description}
                       </p>
                     </header>
@@ -491,7 +512,7 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
                     onError={(error) => _handleComponentError(error, 'QualityIndicators')}
                     fallback={({ onReset }) => (
                       <ErrorDisplay
-                        message="Quality indicators failed to load"
+                        message='Quality indicators failed to load'
                         onRetry={onReset || handleManualRefresh}
                       />
                     )}
@@ -508,8 +529,11 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
 
         {/* Footer */}
         {showLastUpdated && lastUpdated && (
-          <footer className="text-center mt-12 text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 pt-8">
-            <p>Data refreshed automatically • Next update: {formatLastUpdated(new Date(lastUpdated.getTime() + refreshInterval))}</p>
+          <footer className='text-center mt-12 text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 pt-8'>
+            <p>
+              Data refreshed automatically • Next update:{' '}
+              {formatLastUpdated(new Date(lastUpdated.getTime() + refreshInterval))}
+            </p>
           </footer>
         )}
       </div>

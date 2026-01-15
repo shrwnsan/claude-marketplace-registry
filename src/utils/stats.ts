@@ -35,6 +35,8 @@ export function calculateDaysSince(date: Date): number {
  */
 export function calculateEstimatedDownloads(totalStars: number, totalPlugins: number): number {
   const daysSinceLaunch = calculateDaysSince(LAUNCH_DATE);
-  return totalStars * DOWNLOADS_PER_STAR +
-    Math.floor(totalPlugins * DOWNLOADS_PER_PLUGIN_PER_MONTH * (daysSinceLaunch / 30));
+  return (
+    totalStars * DOWNLOADS_PER_STAR +
+    Math.floor(totalPlugins * DOWNLOADS_PER_PLUGIN_PER_MONTH * (daysSinceLaunch / 30))
+  );
 }

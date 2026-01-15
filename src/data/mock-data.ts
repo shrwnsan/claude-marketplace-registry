@@ -38,7 +38,8 @@ export const mockMarketplaces: Marketplace[] = [
   {
     id: 'official-claude-marketplace',
     name: 'Official Claude Marketplace',
-    description: 'The official marketplace for Claude Code plugins and extensions maintained by Anthropic.',
+    description:
+      'The official marketplace for Claude Code plugins and extensions maintained by Anthropic.',
     url: 'https://claude.ai/marketplace',
     repositoryUrl: 'https://github.com/anthropic/claude-marketplace',
     owner: 'Anthropic',
@@ -81,7 +82,8 @@ export const mockPlugins: MarketplacePlugin[] = [
   {
     id: 'code-review-assistant',
     name: 'Code Review Assistant',
-    description: 'Automated code review suggestions and best practices enforcement for various programming languages.',
+    description:
+      'Automated code review suggestions and best practices enforcement for various programming languages.',
     category: 'Development Tools',
     tags: ['code-review', 'automation', 'best-practices', 'quality-assurance'],
     author: 'Claude Dev Team',
@@ -100,7 +102,8 @@ export const mockPlugins: MarketplacePlugin[] = [
   {
     id: 'api-documentation-generator',
     name: 'API Documentation Generator',
-    description: 'Automatically generate comprehensive API documentation from code comments and OpenAPI specs.',
+    description:
+      'Automatically generate comprehensive API documentation from code comments and OpenAPI specs.',
     category: 'Documentation',
     tags: ['api', 'documentation', 'openapi', 'auto-generation'],
     author: 'DocGen Inc',
@@ -119,7 +122,8 @@ export const mockPlugins: MarketplacePlugin[] = [
   {
     id: 'database-schema-analyzer',
     name: 'Database Schema Analyzer',
-    description: 'Analyze and optimize database schemas with AI-powered suggestions for performance improvements.',
+    description:
+      'Analyze and optimize database schemas with AI-powered suggestions for performance improvements.',
     category: 'Database',
     tags: ['database', 'sql', 'schema', 'optimization', 'performance'],
     author: 'DBTools Co',
@@ -138,7 +142,8 @@ export const mockPlugins: MarketplacePlugin[] = [
   {
     id: 'unit-test-generator',
     name: 'Unit Test Generator',
-    description: 'Generate comprehensive unit tests for your codebase with intelligent test case suggestions.',
+    description:
+      'Generate comprehensive unit tests for your codebase with intelligent test case suggestions.',
     category: 'Testing',
     tags: ['testing', 'unit-tests', 'tdd', 'automation'],
     author: 'TestGen Team',
@@ -157,7 +162,8 @@ export const mockPlugins: MarketplacePlugin[] = [
   {
     id: 'security-audit-scanner',
     name: 'Security Audit Scanner',
-    description: 'Comprehensive security vulnerability scanning and remediation suggestions for your codebase.',
+    description:
+      'Comprehensive security vulnerability scanning and remediation suggestions for your codebase.',
     category: 'Security',
     tags: ['security', 'vulnerability', 'audit', 'compliance'],
     author: 'SecureCode Labs',
@@ -176,7 +182,8 @@ export const mockPlugins: MarketplacePlugin[] = [
   {
     id: 'react-component-builder',
     name: 'React Component Builder',
-    description: 'Build React components with TypeScript, accessibility features, and modern best practices.',
+    description:
+      'Build React components with TypeScript, accessibility features, and modern best practices.',
     category: 'Frontend',
     tags: ['react', 'typescript', 'components', 'ui', 'accessibility'],
     author: 'ReactCraft',
@@ -214,9 +221,11 @@ export const stats = {
   totalMarketplaces: mockMarketplaces.length,
   totalPlugins: mockPlugins.length,
   totalDownloads: mockPlugins.reduce((sum, plugin) => sum + plugin.downloads, 0),
-  totalStars: mockPlugins.reduce((sum, plugin) => sum + plugin.stars, 0) + mockMarketplaces.reduce((sum, marketplace) => sum + marketplace.stars, 0),
-  verifiedPlugins: mockPlugins.filter(plugin => plugin.verified).length,
-  featuredPlugins: mockPlugins.filter(plugin => plugin.featured).length,
+  totalStars:
+    mockPlugins.reduce((sum, plugin) => sum + plugin.stars, 0) +
+    mockMarketplaces.reduce((sum, marketplace) => sum + marketplace.stars, 0),
+  verifiedPlugins: mockPlugins.filter((plugin) => plugin.verified).length,
+  featuredPlugins: mockPlugins.filter((plugin) => plugin.featured).length,
 };
 
 export default {

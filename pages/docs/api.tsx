@@ -14,7 +14,7 @@ import {
   ChevronRight,
   Terminal,
   Package,
-  BarChart
+  BarChart,
 } from 'lucide-react';
 import { mockPlugins } from '@/data/mock-data';
 
@@ -54,10 +54,14 @@ const ApiDocumentation: React.FC = () => {
         { name: 'featured', type: 'boolean', description: 'Filter featured plugins only' },
         { name: 'limit', type: 'integer', description: 'Number of results to return (max 100)' },
         { name: 'offset', type: 'integer', description: 'Number of results to skip' },
-        { name: 'sort', type: 'string', description: 'Sort field (name, stars, downloads, updated, author, category)' },
-        { name: 'order', type: 'string', description: 'Sort order (asc, desc)' }
+        {
+          name: 'sort',
+          type: 'string',
+          description: 'Sort field (name, stars, downloads, updated, author, category)',
+        },
+        { name: 'order', type: 'string', description: 'Sort order (asc, desc)' },
       ],
-      example: `GET /api/plugins?category=Development%20Tools&verified=true&sort=stars&order=desc&limit=10`
+      example: `GET /api/plugins?category=Development%20Tools&verified=true&sort=stars&order=desc&limit=10`,
     },
     {
       method: 'GET',
@@ -70,9 +74,9 @@ const ApiDocumentation: React.FC = () => {
         { name: 'limit', type: 'integer', description: 'Number of results to return (max 100)' },
         { name: 'offset', type: 'integer', description: 'Number of results to skip' },
         { name: 'sort', type: 'string', description: 'Sort field (name, stars, category, owner)' },
-        { name: 'order', type: 'string', description: 'Sort order (asc, desc)' }
+        { name: 'order', type: 'string', description: 'Sort order (asc, desc)' },
       ],
-      example: `GET /api/marketplaces?featured=true&sort=stars&order=desc&limit=5`
+      example: `GET /api/marketplaces?featured=true&sort=stars&order=desc&limit=5`,
     },
     {
       method: 'GET',
@@ -82,21 +86,26 @@ const ApiDocumentation: React.FC = () => {
         { name: 'q', type: 'string', description: 'Search query (required)' },
         { name: 'type', type: 'string', description: 'Search type (plugins, marketplaces, all)' },
         { name: 'limit', type: 'integer', description: 'Number of results to return (max 100)' },
-        { name: 'offset', type: 'integer', description: 'Number of results to skip' }
+        { name: 'offset', type: 'integer', description: 'Number of results to skip' },
       ],
-      example: `GET /api/search?q=code%20review&type=plugins&limit=10`
+      example: `GET /api/search?q=code%20review&type=plugins&limit=10`,
     },
     {
       method: 'GET',
       path: '/api/analytics',
       description: 'Get analytics data (requires API key)',
       parameters: [
-        { name: 'type', type: 'string', description: 'Analytics type (overview, plugins, marketplaces, searches, pageviews, events)' },
+        {
+          name: 'type',
+          type: 'string',
+          description:
+            'Analytics type (overview, plugins, marketplaces, searches, pageviews, events)',
+        },
         { name: 'timeRange', type: 'string', description: 'Time range (24h, 7d, 30d)' },
-        { name: 'limit', type: 'string', description: 'Number of results to return' }
+        { name: 'limit', type: 'string', description: 'Number of results to return' },
       ],
-      example: `GET /api/analytics?type=overview&timeRange=7d`
-    }
+      example: `GET /api/analytics?type=overview&timeRange=7d`,
+    },
   ];
 
   const codeExamples = [
@@ -106,7 +115,7 @@ const ApiDocumentation: React.FC = () => {
 const response = await fetch('https://claude-marketplace.vercel.app/api/plugins?verified=true&sort=stars&order=desc&limit=10');
 const data = await response.json();
 
-console.log('Top verified plugins:', data.plugins);`
+console.log('Top verified plugins:', data.plugins);`,
     },
     {
       title: 'Python',
@@ -119,7 +128,7 @@ response = requests.get(
 )
 data = response.json()
 
-print('Search results:', data['results'])`
+print('Search results:', data['results'])`,
     },
     {
       title: 'cURL',
@@ -129,39 +138,43 @@ curl -X GET "https://claude-marketplace.vercel.app/api/marketplaces?featured=tru
 
 # Search with query
 curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentation&type=plugins" \\
-  -H "Accept: application/json"`
-    }
+  -H "Accept: application/json"`,
+    },
   ];
 
   return (
     <>
       <Head>
         <title>API Documentation - Claude Marketplace Aggregator</title>
-        <meta name="description" content="Complete API documentation for the Claude Marketplace Aggregator" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name='description'
+          content='Complete API documentation for the Claude Marketplace Aggregator'
+        />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <MainLayout>
         {/* Header */}
-        <section className="bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-primary-900/20 py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+        <section className='bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-primary-900/20 py-16'>
+          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <div className='text-center'>
+              <h1 className='text-4xl sm:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-6'>
                 API Documentation
               </h1>
-              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Build amazing applications with the Claude Marketplace API. Access comprehensive data about plugins, marketplaces, and ecosystem analytics.
+              <p className='text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto'>
+                Build amazing applications with the Claude Marketplace API. Access comprehensive
+                data about plugins, marketplaces, and ecosystem analytics.
               </p>
             </div>
           </div>
         </section>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+          <div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
             {/* Sidebar Navigation */}
-            <div className="lg:col-span-1">
-              <nav className="sticky top-8 space-y-2">
+            <div className='lg:col-span-1'>
+              <nav className='sticky top-8 space-y-2'>
                 {sections.map((section) => (
                   <button
                     key={section.id}
@@ -172,89 +185,100 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
                         : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'
                     }`}
                   >
-                    <section.icon className="w-5 h-5" />
-                    <span className="font-medium">{section.title}</span>
+                    <section.icon className='w-5 h-5' />
+                    <span className='font-medium'>{section.title}</span>
                   </button>
                 ))}
               </nav>
             </div>
 
             {/* Main Content */}
-            <div className="lg:col-span-3 space-y-12">
+            <div className='lg:col-span-3 space-y-12'>
               {/* Overview Section */}
               {activeSection === 'overview' && (
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center">
-                    <Globe className="w-8 h-8 mr-3 text-primary-500" />
+                  <h2 className='text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center'>
+                    <Globe className='w-8 h-8 mr-3 text-primary-500' />
                     API Overview
                   </h2>
 
-                  <div className="space-y-8">
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                  <div className='space-y-8'>
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         Welcome to the Claude Marketplace API
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-6">
-                        The Claude Marketplace API provides programmatic access to our comprehensive database of Claude Code plugins and marketplaces.
-                        Build powerful integrations, analytics dashboards, and custom applications using our RESTful API.
+                      <p className='text-gray-600 dark:text-gray-300 mb-6'>
+                        The Claude Marketplace API provides programmatic access to our comprehensive
+                        database of Claude Code plugins and marketplaces. Build powerful
+                        integrations, analytics dashboards, and custom applications using our
+                        RESTful API.
                       </p>
 
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div className="text-center p-6 bg-primary-50 dark:bg-primary-900/20 rounded-lg">
-                          <Package className="w-12 h-12 text-primary-500 mx-auto mb-3" />
-                          <div className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                      <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+                        <div className='text-center p-6 bg-primary-50 dark:bg-primary-900/20 rounded-lg'>
+                          <Package className='w-12 h-12 text-primary-500 mx-auto mb-3' />
+                          <div className='font-semibold text-gray-900 dark:text-gray-100 mb-2'>
                             {mockPlugins.length}+ Plugins
                           </div>
-                          <div className="text-sm text-gray-600 dark:text-gray-400">
+                          <div className='text-sm text-gray-600 dark:text-gray-400'>
                             Access comprehensive plugin data
                           </div>
                         </div>
-                        <div className="text-center p-6 bg-green-50 dark:bg-green-900/20 rounded-lg">
-                          <Database className="w-12 h-12 text-green-500 mx-auto mb-3" />
-                          <div className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                        <div className='text-center p-6 bg-green-50 dark:bg-green-900/20 rounded-lg'>
+                          <Database className='w-12 h-12 text-green-500 mx-auto mb-3' />
+                          <div className='font-semibold text-gray-900 dark:text-gray-100 mb-2'>
                             Real-time Data
                           </div>
-                          <div className="text-sm text-gray-600 dark:text-gray-400">
+                          <div className='text-sm text-gray-600 dark:text-gray-400'>
                             Always up-to-date information
                           </div>
                         </div>
-                        <div className="text-center p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                          <BarChart className="w-12 h-12 text-blue-500 mx-auto mb-3" />
-                          <div className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                        <div className='text-center p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg'>
+                          <BarChart className='w-12 h-12 text-blue-500 mx-auto mb-3' />
+                          <div className='font-semibold text-gray-900 dark:text-gray-100 mb-2'>
                             Analytics
                           </div>
-                          <div className="text-sm text-gray-600 dark:text-gray-400">
+                          <div className='text-sm text-gray-600 dark:text-gray-400'>
                             Usage insights and trends
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         Base URL
                       </h3>
-                      <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono">
-                        <div className="flex items-center justify-between">
+                      <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono'>
+                        <div className='flex items-center justify-between'>
                           <code>https://claude-marketplace.vercel.app/api</code>
                           <button
-                            onClick={() => copyToClipboard('https://claude-marketplace.vercel.app/api', 'base-url')}
-                            className="text-gray-400 hover:text-white transition-colors"
+                            onClick={() =>
+                              copyToClipboard(
+                                'https://claude-marketplace.vercel.app/api',
+                                'base-url'
+                              )
+                            }
+                            className='text-gray-400 hover:text-white transition-colors'
                           >
-                            {copied === 'base-url' ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                            {copied === 'base-url' ? (
+                              <Check className='w-5 h-5' />
+                            ) : (
+                              <Copy className='w-5 h-5' />
+                            )}
                           </button>
                         </div>
                       </div>
                     </div>
 
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         Response Format
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-4">
+                      <p className='text-gray-600 dark:text-gray-300 mb-4'>
                         All API responses are in JSON format with the following structure:
                       </p>
-                      <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                      <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto'>
                         <pre>{`{
   "data": [...],
   "pagination": {
@@ -278,44 +302,48 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
               {/* Authentication Section */}
               {activeSection === 'authentication' && (
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center">
-                    <Key className="w-8 h-8 mr-3 text-primary-500" />
+                  <h2 className='text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center'>
+                    <Key className='w-8 h-8 mr-3 text-primary-500' />
                     Authentication
                   </h2>
 
-                  <div className="space-y-8">
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                  <div className='space-y-8'>
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         API Key Authentication
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-6">
-                        Some endpoints, particularly analytics endpoints, require an API key for authentication.
-                        Include your API key in the request header:
+                      <p className='text-gray-600 dark:text-gray-300 mb-6'>
+                        Some endpoints, particularly analytics endpoints, require an API key for
+                        authentication. Include your API key in the request header:
                       </p>
 
-                      <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm">
-                        <div className="flex items-center justify-between mb-3">
-                          <span className="text-gray-400"># HTTP Header</span>
+                      <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm'>
+                        <div className='flex items-center justify-between mb-3'>
+                          <span className='text-gray-400'># HTTP Header</span>
                           <button
-                            onClick={() => copyToClipboard('X-API-Key: your-api-key-here', 'auth-header')}
-                            className="text-gray-400 hover:text-white transition-colors"
+                            onClick={() =>
+                              copyToClipboard('X-API-Key: your-api-key-here', 'auth-header')
+                            }
+                            className='text-gray-400 hover:text-white transition-colors'
                           >
-                            {copied === 'auth-header' ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                            {copied === 'auth-header' ? (
+                              <Check className='w-5 h-5' />
+                            ) : (
+                              <Copy className='w-5 h-5' />
+                            )}
                           </button>
                         </div>
                         <code>X-API-Key: your-api-key-here</code>
                       </div>
                     </div>
 
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         Getting an API Key
                       </h3>
-                      <div className="space-y-4 text-gray-600 dark:text-gray-300">
-                        <p>
-                          To get an API key for accessing analytics and premium features:
-                        </p>
-                        <ol className="list-decimal list-inside space-y-2 ml-4">
+                      <div className='space-y-4 text-gray-600 dark:text-gray-300'>
+                        <p>To get an API key for accessing analytics and premium features:</p>
+                        <ol className='list-decimal list-inside space-y-2 ml-4'>
                           <li>Sign up for a Claude Marketplace account</li>
                           <li>Navigate to your account settings</li>
                           <li>Generate an API key under the "Developer" section</li>
@@ -324,12 +352,12 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
                       </div>
                     </div>
 
-                    <div className="card bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800">
-                      <h3 className="text-xl font-semibold text-yellow-800 dark:text-yellow-200 mb-4">
-                        <Shield className="w-6 h-6 inline mr-2" />
+                    <div className='card bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800'>
+                      <h3 className='text-xl font-semibold text-yellow-800 dark:text-yellow-200 mb-4'>
+                        <Shield className='w-6 h-6 inline mr-2' />
                         Security Best Practices
                       </h3>
-                      <ul className="space-y-2 text-yellow-700 dark:text-yellow-300">
+                      <ul className='space-y-2 text-yellow-700 dark:text-yellow-300'>
                         <li>• Never expose your API key in client-side code</li>
                         <li>• Use environment variables to store API keys</li>
                         <li>• Implement proper error handling for rate limits</li>
@@ -343,56 +371,76 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
               {/* Endpoints Section */}
               {activeSection === 'endpoints' && (
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center">
-                    <Server className="w-8 h-8 mr-3 text-primary-500" />
+                  <h2 className='text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center'>
+                    <Server className='w-8 h-8 mr-3 text-primary-500' />
                     API Endpoints
                   </h2>
 
-                  <div className="space-y-8">
+                  <div className='space-y-8'>
                     {apiEndpoints.map((endpoint, index) => (
-                      <div key={index} className="card">
-                        <div className="flex items-center justify-between mb-4">
-                          <div className="flex items-center space-x-3">
-                            <span className={`px-3 py-1 rounded-full text-sm font-mono ${
-                              endpoint.method === 'GET'
-                                ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400'
-                                : 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400'
-                            }`}>
+                      <div key={index} className='card'>
+                        <div className='flex items-center justify-between mb-4'>
+                          <div className='flex items-center space-x-3'>
+                            <span
+                              className={`px-3 py-1 rounded-full text-sm font-mono ${
+                                endpoint.method === 'GET'
+                                  ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400'
+                                  : 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400'
+                              }`}
+                            >
                               {endpoint.method}
                             </span>
-                            <code className="text-lg font-mono text-gray-900 dark:text-gray-100">
+                            <code className='text-lg font-mono text-gray-900 dark:text-gray-100'>
                               {endpoint.path}
                             </code>
                           </div>
                           <button
                             onClick={() => copyToClipboard(endpoint.example, `endpoint-${index}`)}
-                            className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                            className='text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors'
                           >
-                            {copied === `endpoint-${index}` ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                            {copied === `endpoint-${index}` ? (
+                              <Check className='w-5 h-5' />
+                            ) : (
+                              <Copy className='w-5 h-5' />
+                            )}
                           </button>
                         </div>
 
-                        <p className="text-gray-600 dark:text-gray-300 mb-6">
+                        <p className='text-gray-600 dark:text-gray-300 mb-6'>
                           {endpoint.description}
                         </p>
 
-                        <div className="mb-6">
-                          <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Parameters</h4>
-                          <div className="overflow-x-auto">
-                            <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                        <div className='mb-6'>
+                          <h4 className='font-semibold text-gray-900 dark:text-gray-100 mb-3'>
+                            Parameters
+                          </h4>
+                          <div className='overflow-x-auto'>
+                            <table className='min-w-full divide-y divide-gray-200 dark:divide-gray-700'>
                               <thead>
                                 <tr>
-                                  <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Name</th>
-                                  <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Type</th>
-                                  <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Description</th>
+                                  <th className='px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase'>
+                                    Name
+                                  </th>
+                                  <th className='px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase'>
+                                    Type
+                                  </th>
+                                  <th className='px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase'>
+                                    Description
+                                  </th>
                                 </tr>
                               </thead>
-                              <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+                              <tbody className='divide-y divide-gray-200 dark:divide-gray-700'>
                                 {endpoint.parameters.map((param, paramIndex) => (
                                   <tr key={paramIndex}>
-                                    <td className="px-4 py-2 text-sm font-mono text-gray-900 dark:text-gray-100">{param.name}</td>
-                                    <td className="px-4 py-2 text-sm text-gray-600 dark:text-gray-400">{param.type}</td>
-                                    <td className="px-4 py-2 text-sm text-gray-600 dark:text-gray-400">{param.description}</td>
+                                    <td className='px-4 py-2 text-sm font-mono text-gray-900 dark:text-gray-100'>
+                                      {param.name}
+                                    </td>
+                                    <td className='px-4 py-2 text-sm text-gray-600 dark:text-gray-400'>
+                                      {param.type}
+                                    </td>
+                                    <td className='px-4 py-2 text-sm text-gray-600 dark:text-gray-400'>
+                                      {param.description}
+                                    </td>
                                   </tr>
                                 ))}
                               </tbody>
@@ -401,8 +449,10 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
                         </div>
 
                         <div>
-                          <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Example</h4>
-                          <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                          <h4 className='font-semibold text-gray-900 dark:text-gray-100 mb-3'>
+                            Example
+                          </h4>
+                          <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto'>
                             <code>{endpoint.example}</code>
                           </div>
                         </div>
@@ -415,25 +465,29 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
               {/* Examples Section */}
               {activeSection === 'examples' && (
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center">
-                    <Code className="w-8 h-8 mr-3 text-primary-500" />
+                  <h2 className='text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center'>
+                    <Code className='w-8 h-8 mr-3 text-primary-500' />
                     Code Examples
                   </h2>
 
-                  <div className="space-y-8">
+                  <div className='space-y-8'>
                     {codeExamples.map((example, index) => (
-                      <div key={index} className="card">
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                      <div key={index} className='card'>
+                        <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                           {example.title}
                         </h3>
-                        <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto">
-                          <div className="flex items-center justify-between mb-3">
-                            <span className="text-gray-400">Example code</span>
+                        <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto'>
+                          <div className='flex items-center justify-between mb-3'>
+                            <span className='text-gray-400'>Example code</span>
                             <button
                               onClick={() => copyToClipboard(example.code, `example-${index}`)}
-                              className="text-gray-400 hover:text-white transition-colors"
+                              className='text-gray-400 hover:text-white transition-colors'
                             >
-                              {copied === `example-${index}` ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                              {copied === `example-${index}` ? (
+                                <Check className='w-5 h-5' />
+                              ) : (
+                                <Copy className='w-5 h-5' />
+                              )}
                             </button>
                           </div>
                           <pre>{example.code}</pre>
@@ -441,14 +495,14 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
                       </div>
                     ))}
 
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         Complete Example: Plugin Search Application
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-6">
+                      <p className='text-gray-600 dark:text-gray-300 mb-6'>
                         Here's a complete example of a web application that searches for plugins:
                       </p>
-                      <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto max-h-96 overflow-y-auto">
+                      <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto max-h-96 overflow-y-auto'>
                         <pre>{`<!DOCTYPE html>
 <html>
 <head>
@@ -525,43 +579,68 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
               {/* Rate Limiting Section */}
               {activeSection === 'rate-limiting' && (
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center">
-                    <Shield className="w-8 h-8 mr-3 text-primary-500" />
+                  <h2 className='text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center'>
+                    <Shield className='w-8 h-8 mr-3 text-primary-500' />
                     Rate Limiting
                   </h2>
 
-                  <div className="space-y-8">
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                  <div className='space-y-8'>
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         API Rate Limits
                       </h3>
-                      <div className="space-y-4 text-gray-600 dark:text-gray-300">
+                      <div className='space-y-4 text-gray-600 dark:text-gray-300'>
                         <p>
-                          To ensure fair usage and maintain service quality, the API implements rate limiting:
+                          To ensure fair usage and maintain service quality, the API implements rate
+                          limiting:
                         </p>
 
-                        <div className="overflow-x-auto">
-                          <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                        <div className='overflow-x-auto'>
+                          <table className='min-w-full divide-y divide-gray-200 dark:divide-gray-700'>
                             <thead>
                               <tr>
-                                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Plan</th>
-                                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Requests/Minute</th>
-                                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Requests/Hour</th>
-                                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Requests/Day</th>
+                                <th className='px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase'>
+                                  Plan
+                                </th>
+                                <th className='px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase'>
+                                  Requests/Minute
+                                </th>
+                                <th className='px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase'>
+                                  Requests/Hour
+                                </th>
+                                <th className='px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase'>
+                                  Requests/Day
+                                </th>
                               </tr>
                             </thead>
-                            <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+                            <tbody className='divide-y divide-gray-200 dark:divide-gray-700'>
                               <tr>
-                                <td className="px-4 py-3 text-sm font-medium text-gray-900 dark:text-gray-100">Free</td>
-                                <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">60</td>
-                                <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">1,000</td>
-                                <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">10,000</td>
+                                <td className='px-4 py-3 text-sm font-medium text-gray-900 dark:text-gray-100'>
+                                  Free
+                                </td>
+                                <td className='px-4 py-3 text-sm text-gray-600 dark:text-gray-400'>
+                                  60
+                                </td>
+                                <td className='px-4 py-3 text-sm text-gray-600 dark:text-gray-400'>
+                                  1,000
+                                </td>
+                                <td className='px-4 py-3 text-sm text-gray-600 dark:text-gray-400'>
+                                  10,000
+                                </td>
                               </tr>
                               <tr>
-                                <td className="px-4 py-3 text-sm font-medium text-gray-900 dark:text-gray-100">Pro</td>
-                                <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">300</td>
-                                <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">10,000</td>
-                                <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">100,000</td>
+                                <td className='px-4 py-3 text-sm font-medium text-gray-900 dark:text-gray-100'>
+                                  Pro
+                                </td>
+                                <td className='px-4 py-3 text-sm text-gray-600 dark:text-gray-400'>
+                                  300
+                                </td>
+                                <td className='px-4 py-3 text-sm text-gray-600 dark:text-gray-400'>
+                                  10,000
+                                </td>
+                                <td className='px-4 py-3 text-sm text-gray-600 dark:text-gray-400'>
+                                  100,000
+                                </td>
                               </tr>
                             </tbody>
                           </table>
@@ -569,25 +648,25 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
                       </div>
                     </div>
 
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         Rate Limit Headers
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-6">
+                      <p className='text-gray-600 dark:text-gray-300 mb-6'>
                         Each API response includes rate limit information in the headers:
                       </p>
-                      <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm">
+                      <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm'>
                         <pre>{`X-RateLimit-Limit: 60
 X-RateLimit-Remaining: 45
 X-RateLimit-Reset: 1640995200`}</pre>
                       </div>
                     </div>
 
-                    <div className="card bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-                      <h3 className="text-xl font-semibold text-blue-800 dark:text-blue-200 mb-4">
+                    <div className='card bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800'>
+                      <h3 className='text-xl font-semibold text-blue-800 dark:text-blue-200 mb-4'>
                         Best Practices
                       </h3>
-                      <ul className="space-y-2 text-blue-700 dark:text-blue-300">
+                      <ul className='space-y-2 text-blue-700 dark:text-blue-300'>
                         <li>• Implement exponential backoff for retry logic</li>
                         <li>• Cache responses when appropriate</li>
                         <li>• Monitor rate limit headers in your application</li>
@@ -601,50 +680,77 @@ X-RateLimit-Reset: 1640995200`}</pre>
               {/* Error Handling Section */}
               {activeSection === 'error-handling' && (
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center">
-                    <Zap className="w-8 h-8 mr-3 text-primary-500" />
+                  <h2 className='text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center'>
+                    <Zap className='w-8 h-8 mr-3 text-primary-500' />
                     Error Handling
                   </h2>
 
-                  <div className="space-y-8">
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                  <div className='space-y-8'>
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         HTTP Status Codes
                       </h3>
-                      <div className="space-y-4">
+                      <div className='space-y-4'>
                         {[
                           { code: '200', message: 'OK', description: 'Request successful' },
-                          { code: '400', message: 'Bad Request', description: 'Invalid request parameters' },
-                          { code: '401', message: 'Unauthorized', description: 'Missing or invalid API key' },
+                          {
+                            code: '400',
+                            message: 'Bad Request',
+                            description: 'Invalid request parameters',
+                          },
+                          {
+                            code: '401',
+                            message: 'Unauthorized',
+                            description: 'Missing or invalid API key',
+                          },
                           { code: '404', message: 'Not Found', description: 'Resource not found' },
-                          { code: '429', message: 'Too Many Requests', description: 'Rate limit exceeded' },
-                          { code: '500', message: 'Internal Server Error', description: 'Server error' }
+                          {
+                            code: '429',
+                            message: 'Too Many Requests',
+                            description: 'Rate limit exceeded',
+                          },
+                          {
+                            code: '500',
+                            message: 'Internal Server Error',
+                            description: 'Server error',
+                          },
                         ].map((status, index) => (
-                          <div key={index} className="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-                            <div className={`px-3 py-1 rounded-full text-sm font-mono ${
-                              status.code.startsWith('2') ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' :
-                              status.code.startsWith('4') ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400' :
-                              'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400'
-                            }`}>
+                          <div
+                            key={index}
+                            className='flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg'
+                          >
+                            <div
+                              className={`px-3 py-1 rounded-full text-sm font-mono ${
+                                status.code.startsWith('2')
+                                  ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400'
+                                  : status.code.startsWith('4')
+                                    ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400'
+                                    : 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400'
+                              }`}
+                            >
                               {status.code}
                             </div>
-                            <div className="flex-1">
-                              <div className="font-medium text-gray-900 dark:text-gray-100">{status.message}</div>
-                              <div className="text-sm text-gray-600 dark:text-gray-400">{status.description}</div>
+                            <div className='flex-1'>
+                              <div className='font-medium text-gray-900 dark:text-gray-100'>
+                                {status.message}
+                              </div>
+                              <div className='text-sm text-gray-600 dark:text-gray-400'>
+                                {status.description}
+                              </div>
                             </div>
                           </div>
                         ))}
                       </div>
                     </div>
 
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         Error Response Format
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-6">
+                      <p className='text-gray-600 dark:text-gray-300 mb-6'>
                         Error responses follow this consistent format:
                       </p>
-                      <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm">
+                      <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm'>
                         <pre>{`{
   "error": "Error type",
   "message": "Human-readable error message",
@@ -654,11 +760,11 @@ X-RateLimit-Reset: 1640995200`}</pre>
                       </div>
                     </div>
 
-                    <div className="card">
-                      <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+                    <div className='card'>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
                         Handling Rate Limit Errors
                       </h3>
-                      <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                      <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto'>
                         <pre>{`// JavaScript example with retry logic
 async function fetchWithRetry(url, maxRetries = 3) {
   for (let i = 0; i < maxRetries; i++) {
@@ -699,28 +805,28 @@ async function fetchWithRetry(url, maxRetries = 3) {
         </div>
 
         {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-700 dark:to-primary-800">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-white mb-6">
+        <section className='py-16 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-700 dark:to-primary-800'>
+          <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+            <h2 className='text-3xl font-bold text-white mb-6'>
               Ready to Build Something Amazing?
             </h2>
-            <p className="text-xl text-primary-100 mb-8">
+            <p className='text-xl text-primary-100 mb-8'>
               Get started with the Claude Marketplace API and create powerful integrations.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className='flex flex-col sm:flex-row gap-4 justify-center'>
               <a
-                href="/api/plugins"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn bg-white text-primary-600 hover:bg-gray-50 font-medium px-6 py-3 text-base group"
+                href='/api/plugins'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='btn bg-white text-primary-600 hover:bg-gray-50 font-medium px-6 py-3 text-base group'
               >
-                <Terminal className="w-5 h-5 mr-2" />
+                <Terminal className='w-5 h-5 mr-2' />
                 Try the API
-                <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                <ChevronRight className='w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform' />
               </a>
               <a
-                href="mailto:support@claude-marketplace.com"
-                className="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium px-6 py-3 text-base"
+                href='mailto:support@claude-marketplace.com'
+                className='btn border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium px-6 py-3 text-base'
               >
                 Get Support
               </a>

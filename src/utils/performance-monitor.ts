@@ -51,13 +51,18 @@ class PerformanceMonitor {
   }
 
   // Record a metric
-  recordMetric(name: string, value: number, unit: PerformanceMetric['unit'], tags?: Record<string, string>): void {
+  recordMetric(
+    name: string,
+    value: number,
+    unit: PerformanceMetric['unit'],
+    tags?: Record<string, string>
+  ): void {
     const metric: PerformanceMetric = {
       name,
       value,
       unit,
       timestamp: new Date(),
-      tags
+      tags,
     };
 
     this.metrics.push(metric);
@@ -79,14 +84,14 @@ class PerformanceMonitor {
       endpoint,
       method,
       status_code: statusCode.toString(),
-      success: (statusCode < 400).toString()
+      success: (statusCode < 400).toString(),
     });
 
     if (statusCode >= 400) {
       this.recordMetric('api_error_count', 1, 'count', {
         endpoint,
         method,
-        status_code: statusCode.toString()
+        status_code: statusCode.toString(),
       });
     }
   }
@@ -108,7 +113,7 @@ class PerformanceMonitor {
   recordDatabaseOperation(operation: string, duration: number, success: boolean): void {
     this.recordMetric('db_operation_duration', duration, 'ms', {
       operation,
-      success: success.toString()
+      success: success.toString(),
     });
 
     if (!success) {
@@ -119,7 +124,7 @@ class PerformanceMonitor {
   // Record GitHub API usage
   recordGitHubApiCall(endpoint: string, responseTime: number, rateLimitRemaining?: number): void {
     this.recordMetric('github_api_duration', responseTime, 'ms', {
-      endpoint
+      endpoint,
     });
 
     if (rateLimitRemaining !== undefined) {
@@ -140,7 +145,11 @@ class PerformanceMonitor {
       this.endTimer(name, { ...tags, success: 'true' });
       return result;
     } catch (error) {
-      this.endTimer(name, { ...tags, success: 'false', error: error instanceof Error ? error.message : 'Unknown error' });
+      this.endTimer(name, {
+        ...tags,
+        success: 'false',
+        error: error instanceof Error ? error.message : 'Unknown error',
+      });
       this.recordMetric('function_error_count', 1, 'count', { name, ...tags });
       throw error;
     }
@@ -152,12 +161,13 @@ class PerformanceMonitor {
     const memoryUsage = process.memoryUsage();
 
     // Calculate metrics summary
-    const apiCallMetrics = this.metrics.filter(m => m.name === 'api_call_duration');
-    const averageResponseTime = apiCallMetrics.length > 0
-      ? apiCallMetrics.reduce((sum, m) => sum + m.value, 0) / apiCallMetrics.length
-      : undefined;
+    const apiCallMetrics = this.metrics.filter((m) => m.name === 'api_call_duration');
+    const averageResponseTime =
+      apiCallMetrics.length > 0
+        ? apiCallMetrics.reduce((sum, m) => sum + m.value, 0) / apiCallMetrics.length
+        : undefined;
 
-    const errorMetrics = this.metrics.filter(m => m.name.includes('error_count'));
+    const errorMetrics = this.metrics.filter((m) => m.name.includes('error_count'));
     const errorCount = errorMetrics.reduce((sum, m) => sum + m.value, 0);
 
     return {
@@ -167,19 +177,19 @@ class PerformanceMonitor {
         totalMetrics: this.metrics.length,
         averageResponseTime,
         memoryUsage,
-        errorCount
-      }
+        errorCount,
+      },
     };
   }
 
   // Get metrics by name
   getMetricsByName(name: string): PerformanceMetric[] {
-    return this.metrics.filter(m => m.name === name);
+    return this.metrics.filter((m) => m.name === name);
   }
 
   // Get metrics by tag
   getMetricsByTag(tagName: string, tagValue: string): PerformanceMetric[] {
-    return this.metrics.filter(m => m.tags && m.tags[tagName] === tagValue);
+    return this.metrics.filter((m) => m.tags && m.tags[tagName] === tagValue);
   }
 
   // Clear all metrics
@@ -209,7 +219,9 @@ class PerformanceMonitor {
 
         // Log slow requests
         if (responseTime > 1000) {
-          console.warn(`🐌 Slow request: ${method} ${url} - ${responseTime.toFixed(2)}ms (${statusCode})`);
+          console.warn(
+            `🐌 Slow request: ${method} ${url} - ${responseTime.toFixed(2)}ms (${statusCode})`
+          );
         }
       });
 
@@ -222,7 +234,7 @@ class PerformanceMonitor {
     const metricsByType = new Map<string, PerformanceMetric[]>();
 
     // Group metrics by name
-    this.metrics.forEach(metric => {
+    this.metrics.forEach((metric) => {
       if (!metricsByType.has(metric.name)) {
         metricsByType.set(metric.name, []);
       }
@@ -293,8 +305,12 @@ export const startTimer = (name: string, tags?: Record<string, string>) =>
 export const endTimer = (name: string, tags?: Record<string, string>) =>
   performanceMonitor.endTimer(name, tags);
 
-export const recordMetric = (name: string, value: number, unit: PerformanceMetric['unit'], tags?: Record<string, string>) =>
-  performanceMonitor.recordMetric(name, value, unit, tags);
+export const recordMetric = (
+  name: string,
+  value: number,
+  unit: PerformanceMetric['unit'],
+  tags?: Record<string, string>
+) => performanceMonitor.recordMetric(name, value, unit, tags);
 
 export const measureFunction = async <T>(
   name: string,
