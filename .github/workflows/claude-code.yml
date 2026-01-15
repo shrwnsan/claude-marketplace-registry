@@ -52,7 +52,7 @@ jobs:
       - name: Claude Code Action
         uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           # Enable specific tools for this repo
           claude_args: |
             --allowedTools "Read,Write,Edit,NotebookEdit,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(node:*),TodoWrite,AskUserQuestion,WebSearch,WebFetch,mcp__web_reader__webReader"
