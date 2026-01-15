@@ -9,3 +9,6 @@ export * from './content-fetcher';
 // Utility factory functions
 export { createGitHubClient, getDefaultGitHubClient } from './github-client';
 export { createContentFetcher, getDefaultContentFetcher } from './content-fetcher';
+
+// Logger
+export * from './logger';

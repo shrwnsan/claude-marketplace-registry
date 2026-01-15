@@ -4,6 +4,7 @@
  */
 
 import { GitHubClient, getDefaultGitHubClient } from '@/utils/github-client';
+import { createLogger } from '@/utils/logger';
 import {
   GitHubRepository,
   GitHubCommit,
@@ -11,6 +12,8 @@ import {
   GitHubApiResponse,
   RepositoryMetadata,
 } from '@/types/github';
+
+const logger = createLogger('GitHubMetadataService');
 
 /**
  * Configuration for metadata fetching
@@ -265,12 +268,13 @@ export class GitHubMetadataService {
         success: true,
         data: metadata,
       };
-    } catch (error: any) {
-      console.error(`Failed to get metadata for ${owner}/${repo}:`, error);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.error(`Failed to get metadata for ${owner}/${repo}:`, message);
       return {
         success: false,
         error: {
-          message: error.message || 'Failed to fetch repository metadata',
+          message: message || 'Failed to fetch repository metadata',
         },
       };
     }
@@ -333,12 +337,13 @@ export class GitHubMetadataService {
         success: true,
         data: enhanced,
       };
-    } catch (error: any) {
-      console.error(`Failed to get enhanced metadata for ${owner}/${repo}:`, error);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.error(`Failed to get enhanced metadata for ${owner}/${repo}:`, message);
       return {
         success: false,
         error: {
-          message: error.message || 'Failed to fetch enhanced repository metadata',
+          message: message || 'Failed to fetch enhanced repository metadata',
         },
       };
     }
@@ -367,7 +372,8 @@ export class GitHubMetadataService {
         this.setCachedData(cacheKey, metadata.languages);
       }
     } catch (error) {
-      console.warn(`Failed to fetch languages for ${owner}/${repo}:`, error);
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.warn(`Failed to fetch languages for ${owner}/${repo}:`, message);
     }
   }
 
@@ -397,7 +403,8 @@ export class GitHubMetadataService {
         this.setCachedData(cacheKey, metadata.contributors);
       }
     } catch (error) {
-      console.warn(`Failed to fetch contributors for ${owner}/${repo}:`, error);
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.warn(`Failed to fetch contributors for ${owner}/${repo}:`, message);
     }
   }
 
@@ -435,7 +442,8 @@ export class GitHubMetadataService {
         this.setCachedData(cacheKey, metadata.recentCommits);
       }
     } catch (error) {
-      console.warn(`Failed to fetch commits for ${owner}/${repo}:`, error);
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.warn(`Failed to fetch commits for ${owner}/${repo}:`, message);
     }
   }
 
@@ -503,7 +511,8 @@ export class GitHubMetadataService {
       metadata.hasCI = await this.checkDirectoryExists(owner, repo, ciFiles);
 
     } catch (error) {
-      console.warn(`Failed to check repository features for ${owner}/${repo}:`, error);
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.warn(`Failed to check repository features for ${owner}/${repo}:`, message);
     }
   }
 
@@ -536,7 +545,7 @@ export class GitHubMetadataService {
     enhanced: boolean = false
   ): Promise<GitHubApiResponse<EnhancedRepositoryMetadata[]>> {
     try {
-      console.log(`Fetching metadata for ${repositories.length} repositories...`);
+      logger.debug(`Fetching metadata for ${repositories.length} repositories...`);
 
       const promises = repositories.map(({ owner, repo }) =>
         enhanced
@@ -562,21 +571,22 @@ export class GitHubMetadataService {
       });
 
       if (errors.length > 0) {
-        console.warn(`Failed to fetch metadata for ${errors.length} repositories:`, errors);
+        logger.warn(`Failed to fetch metadata for ${errors.length} repositories:`, errors.length);
       }
 
-      console.log(`Successfully fetched metadata for ${successfulResults.length} repositories`);
+      logger.info(`Successfully fetched metadata for ${successfulResults.length} repositories`);
 
       return {
         success: true,
         data: successfulResults,
       };
-    } catch (error: any) {
-      console.error('Failed to fetch multiple repository metadata:', error);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      logger.error('Failed to fetch multiple repository metadata:', message);
       return {
         success: false,
         error: {
-          message: error.message || 'Failed to fetch multiple repository metadata',
+          message: message || 'Failed to fetch multiple repository metadata',
         },
       };
     }
