@@ -208,7 +208,7 @@ const MarketplaceDetailPage: React.FC = () => {
               Marketplace not found
             </h1>
             <p className='text-gray-600 dark:text-gray-400 mb-8'>
-              The marketplace you're looking for doesn't exist or has been removed.
+              The marketplace you&apos;re looking for doesn&apos;t exist or has been removed.
             </p>
             <Link href='/' className='btn btn-primary'>
               <ArrowLeft className='w-4 h-4 mr-2' />
@@ -309,7 +309,7 @@ const MarketplaceDetailPage: React.FC = () => {
                 {/* Rating and Stats */}
                 <div className='flex flex-wrap items-center gap-4 mb-6'>
                   <div className='flex items-center space-x-1'>
-                    {[1, 2, 3, 4, 5].map((star) => (
+                    {[1, 2, 3, 4, 5].map((star: number) => (
                       <button
                         key={star}
                         onClick={() => handleRating(star)}
@@ -544,7 +544,7 @@ const MarketplaceDetailPage: React.FC = () => {
                         {copied ? <Check className='w-4 h-4' /> : <Copy className='w-4 h-4' />}
                       </button>
                     </div>
-                    <code>marketplace_url: "{marketplace.url}"</code>
+                    <code>marketplace_url: &quot;{marketplace.url}&quot;</code>
                   </div>
                 </div>
               </div>

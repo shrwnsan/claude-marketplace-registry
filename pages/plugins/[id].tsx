@@ -11,29 +11,24 @@ import {
   Users,
   Package,
   Shield,
-  Calendar,
-  Code,
   Terminal,
   Copy,
   Check,
   Share2,
-  Heart,
   MessageSquare,
   FileText,
   AlertTriangle,
   CheckCircle,
   GitBranch,
   GitCommit,
-  Clock,
   User,
   Book,
   Zap,
   Lock,
-  Unlock,
   ChevronRight,
   ArrowLeft,
 } from 'lucide-react';
-import { mockPlugins, mockMarketplaces, MarketplacePlugin } from '@/data/mock-data';
+import { mockPlugins, mockMarketplaces } from '@/data/mock-data';
 
 const PluginDetailPage: React.FC = () => {
   const router = useRouter();
@@ -209,7 +204,7 @@ const PluginDetailPage: React.FC = () => {
               Plugin not found
             </h1>
             <p className='text-gray-600 dark:text-gray-400 mb-8'>
-              The plugin you're looking for doesn't exist or has been removed.
+              The plugin you&apos;re looking for doesn&apos;t exist or has been removed.
             </p>
             <Link href='/' className='btn btn-primary'>
               <ArrowLeft className='w-4 h-4 mr-2' />
@@ -951,7 +946,7 @@ const PluginDetailPage: React.FC = () => {
                       </li>
                       <li className='flex items-start'>
                         <Lock className='w-5 h-5 text-gray-400 mr-2 flex-shrink-0 mt-0.5' />
-                        <span>Review the plugin's permissions and access requirements</span>
+                        <span>Review the plugin&apos;s permissions and access requirements</span>
                       </li>
                     </ul>
                   </div>
@@ -1026,7 +1021,7 @@ const PluginDetailPage: React.FC = () => {
                 Feedback & Support
               </h2>
               <p className='text-gray-600 dark:text-gray-300 mb-6'>
-                Found an issue or have a suggestion? We'd love to hear from you!
+                Found an issue or have a suggestion? We&apos;d love to hear from you!
               </p>
 
               <div className='flex flex-col sm:flex-row gap-4'>
