@@ -11,6 +11,7 @@ import {
   GitHubSearchRepositoryItem,
   RepositorySearchFilters,
   GitHubApiResponse,
+  GitHubRateLimit,
 } from '@/types/github';
 
 const logger = createLogger('GitHubSearchService');
@@ -38,7 +39,7 @@ export interface SearchResult {
   totalPages: number;
   hasNextPage: boolean;
   hasPreviousPage: boolean;
-  rateLimit?: any;
+  rateLimit?: GitHubRateLimit;
 }
 
 /**
@@ -235,7 +236,7 @@ export class GitHubSearchService {
     const allRepositories: GitHubSearchRepositoryItem[] = [];
     let page = 1;
     let hasMore = true;
-    let rateLimit: any;
+    let rateLimit: GitHubRateLimit | undefined;
 
     const maxPagesToFetch = maxPages || Math.ceil(this.config.maxTotalResults! / this.config.maxResultsPerPage!);
 
