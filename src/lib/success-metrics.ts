@@ -156,7 +156,7 @@ class SuccessMetricsTracker {
       },
     ];
 
-    thresholds.forEach(threshold => {
+    thresholds.forEach((threshold) => {
       this.thresholds.set(threshold.name, threshold);
     });
   }
@@ -227,7 +227,10 @@ class SuccessMetricsTracker {
   /**
    * Calculate trend direction
    */
-  private calculateTrend(previous: SuccessMetric | null, current: number): 'up' | 'down' | 'stable' {
+  private calculateTrend(
+    previous: SuccessMetric | null,
+    current: number
+  ): 'up' | 'down' | 'stable' {
     if (!previous) return 'stable';
 
     const change = current - previous.value;
@@ -240,7 +243,10 @@ class SuccessMetricsTracker {
   /**
    * Calculate metric status based on thresholds
    */
-  private calculateStatus(value: number, threshold: MetricThreshold): 'on-track' | 'at-risk' | 'critical' {
+  private calculateStatus(
+    value: number,
+    threshold: MetricThreshold
+  ): 'on-track' | 'at-risk' | 'critical' {
     if (value <= threshold.target) return 'on-track';
     if (value <= threshold.warning) return 'at-risk';
     return 'critical';
@@ -251,15 +257,21 @@ class SuccessMetricsTracker {
    */
   private getMetricCategory(name: string): SuccessMetric['category'] {
     if (['page_load_time', 'api_response_time'].includes(name)) return 'performance';
-    if (['session_duration', 'bounce_rate', 'feature_adoption_rate'].includes(name)) return 'engagement';
-    if (['test_coverage', 'error_rate', 'plugin_verification_rate'].includes(name)) return 'quality';
+    if (['session_duration', 'bounce_rate', 'feature_adoption_rate'].includes(name))
+      return 'engagement';
+    if (['test_coverage', 'error_rate', 'plugin_verification_rate'].includes(name))
+      return 'quality';
     return 'business';
   }
 
   /**
    * Generate human-readable metric description
    */
-  private generateMetricDescription(name: string, value: number, threshold: MetricThreshold): string {
+  private generateMetricDescription(
+    name: string,
+    value: number,
+    threshold: MetricThreshold
+  ): string {
     const unit = threshold.unit;
     const target = threshold.target;
 
@@ -305,7 +317,7 @@ ${metric.description}`;
     };
 
     // Send to configured channels
-    const promises = this.config.channels.map(channel => {
+    const promises = this.config.channels.map((channel) => {
       switch (channel) {
         case 'email':
           return this.sendEmailAlert(alertMessage, alertData);
@@ -371,32 +383,34 @@ ${metric.description}`;
         },
         body: JSON.stringify({
           text: message,
-          attachments: [{
-            color: data.status === 'critical' ? 'danger' : 'warning',
-            fields: [
-              {
-                title: 'Metric',
-                value: data.metric,
-                short: true,
-              },
-              {
-                title: 'Status',
-                value: data.status,
-                short: true,
-              },
-              {
-                title: 'Value',
-                value: data.value,
-                short: true,
-              },
-              {
-                title: 'Target',
-                value: data.target,
-                short: true,
-              },
-            ],
-            timestamp: data.timestamp,
-          }],
+          attachments: [
+            {
+              color: data.status === 'critical' ? 'danger' : 'warning',
+              fields: [
+                {
+                  title: 'Metric',
+                  value: data.metric,
+                  short: true,
+                },
+                {
+                  title: 'Status',
+                  value: data.status,
+                  short: true,
+                },
+                {
+                  title: 'Value',
+                  value: data.value,
+                  short: true,
+                },
+                {
+                  title: 'Target',
+                  value: data.target,
+                  short: true,
+                },
+              ],
+              timestamp: data.timestamp,
+            },
+          ],
         }),
       });
     } catch (error) {
@@ -466,9 +480,12 @@ ${metric.description}`;
   private scheduleReports(): void {
     // In a real implementation, this would use a cron job scheduler
     // For now, we'll simulate with setInterval (24 hours)
-    this.reportInterval = setInterval(async () => {
-      await this.generateAndSendReport();
-    }, 24 * 60 * 60 * 1000); // 24 hours
+    this.reportInterval = setInterval(
+      async () => {
+        await this.generateAndSendReport();
+      },
+      24 * 60 * 60 * 1000
+    ); // 24 hours
   }
 
   /**
@@ -479,7 +496,7 @@ ${metric.description}`;
       const report = this.generateReport();
 
       // Send to all configured channels
-      const promises = this.config.channels.map(channel => {
+      const promises = this.config.channels.map((channel) => {
         switch (channel) {
           case 'email':
             return this.sendEmailReport(report);
@@ -493,7 +510,6 @@ ${metric.description}`;
       });
 
       await Promise.allSettled(promises);
-
     } catch (error) {
       console.error('Failed to generate/send report:', error);
     }
@@ -516,13 +532,12 @@ ${metric.description}`;
     }
 
     // Calculate summary
-    const onTrack = latestMetrics.filter(m => m.status === 'on-track').length;
-    const atRisk = latestMetrics.filter(m => m.status === 'at-risk').length;
-    const critical = latestMetrics.filter(m => m.status === 'critical').length;
+    const onTrack = latestMetrics.filter((m) => m.status === 'on-track').length;
+    const atRisk = latestMetrics.filter((m) => m.status === 'at-risk').length;
+    const critical = latestMetrics.filter((m) => m.status === 'critical').length;
 
-    const overallScore = latestMetrics.length > 0
-      ? Math.round((onTrack / latestMetrics.length) * 100)
-      : 0;
+    const overallScore =
+      latestMetrics.length > 0 ? Math.round((onTrack / latestMetrics.length) * 100) : 0;
 
     return {
       timestamp: new Date().toISOString(),
@@ -545,27 +560,39 @@ ${metric.description}`;
     const recommendations: string[] = [];
 
     // Analyze critical metrics
-    const criticalMetrics = metrics.filter(m => m.status === 'critical');
+    const criticalMetrics = metrics.filter((m) => m.status === 'critical');
 
     for (const metric of criticalMetrics) {
       switch (metric.name) {
         case 'page_load_time':
-          recommendations.push('⚡ Optimize page load time by implementing code splitting and lazy loading');
+          recommendations.push(
+            '⚡ Optimize page load time by implementing code splitting and lazy loading'
+          );
           break;
         case 'api_response_time':
-          recommendations.push('🔧 Improve API response times by optimizing database queries and implementing caching');
+          recommendations.push(
+            '🔧 Improve API response times by optimizing database queries and implementing caching'
+          );
           break;
         case 'test_coverage':
-          recommendations.push('🧪 Increase test coverage by adding more unit and integration tests');
+          recommendations.push(
+            '🧪 Increase test coverage by adding more unit and integration tests'
+          );
           break;
         case 'error_rate':
-          recommendations.push('🐛 Reduce error rate by improving error handling and adding more comprehensive testing');
+          recommendations.push(
+            '🐛 Reduce error rate by improving error handling and adding more comprehensive testing'
+          );
           break;
         case 'bounce_rate':
-          recommendations.push('📱 Reduce bounce rate by improving page performance and user engagement');
+          recommendations.push(
+            '📱 Reduce bounce rate by improving page performance and user engagement'
+          );
           break;
         case 'ecosystem_health_score':
-          recommendations.push('🏥 Improve ecosystem health by addressing quality metrics and developer retention');
+          recommendations.push(
+            '🏥 Improve ecosystem health by addressing quality metrics and developer retention'
+          );
           break;
         default:
           recommendations.push(`📊 Address ${metric.name} to improve overall performance`);
@@ -640,7 +667,9 @@ ${metric.description}`;
           </div>
 
           <h2>📊 Detailed Metrics</h2>
-          ${metrics.map(metric => `
+          ${metrics
+            .map(
+              (metric) => `
             <div class="metric ${metric.status}">
               <h3>${metric.name}</h3>
               <p><strong>Value:</strong> ${metric.value} ${metric.unit}</p>
@@ -648,16 +677,22 @@ ${metric.description}`;
               <p><strong>Status:</strong> ${metric.status}</p>
               <p><strong>Description:</strong> ${metric.description}</p>
             </div>
-          `).join('')}
+          `
+            )
+            .join('')}
 
-          ${this.config.includeRecommendations && recommendations.length > 0 ? `
+          ${
+            this.config.includeRecommendations && recommendations.length > 0
+              ? `
             <div class="recommendations">
               <h2>💡 Recommendations</h2>
               <ul>
-                ${recommendations.map(rec => `<li>${rec}</li>`).join('')}
+                ${recommendations.map((rec) => `<li>${rec}</li>`).join('')}
               </ul>
             </div>
-          ` : ''}
+          `
+              : ''
+          }
         </div>
       </body>
       </html>
@@ -684,21 +719,28 @@ ${metric.description}`;
 ✅ On Track: ${summary.onTrack}
 ⚠️ At Risk: ${summary.atRisk}
 🚨 Critical: ${summary.critical}`,
-          attachments: [{
-            color: summary.overallScore >= 80 ? 'good' : summary.overallScore >= 60 ? 'warning' : 'danger',
-            fields: [
-              {
-                title: 'Date',
-                value: new Date(report.timestamp).toLocaleDateString(),
-                short: true,
-              },
-              {
-                title: 'Overall Score',
-                value: `${summary.overallScore}/100`,
-                short: true,
-              },
-            ],
-          }],
+          attachments: [
+            {
+              color:
+                summary.overallScore >= 80
+                  ? 'good'
+                  : summary.overallScore >= 60
+                    ? 'warning'
+                    : 'danger',
+              fields: [
+                {
+                  title: 'Date',
+                  value: new Date(report.timestamp).toLocaleDateString(),
+                  short: true,
+                },
+                {
+                  title: 'Overall Score',
+                  value: `${summary.overallScore}/100`,
+                  short: true,
+                },
+              ],
+            },
+          ],
         }),
       });
     } catch (error) {

@@ -25,7 +25,7 @@ describe('LoadingSpinner Component', () => {
     });
 
     it('should render with small size', () => {
-      render(<LoadingSpinner size="sm" />);
+      render(<LoadingSpinner size='sm' />);
 
       const spinner = screen.getByRole('status');
       expect(spinner).toHaveClass('w-4');
@@ -33,7 +33,7 @@ describe('LoadingSpinner Component', () => {
     });
 
     it('should render with medium size', () => {
-      render(<LoadingSpinner size="md" />);
+      render(<LoadingSpinner size='md' />);
 
       const spinner = screen.getByRole('status');
       expect(spinner).toHaveClass('w-6');
@@ -41,7 +41,7 @@ describe('LoadingSpinner Component', () => {
     });
 
     it('should render with large size', () => {
-      render(<LoadingSpinner size="lg" />);
+      render(<LoadingSpinner size='lg' />);
 
       const spinner = screen.getByRole('status');
       expect(spinner).toHaveClass('w-8');
@@ -74,14 +74,14 @@ describe('LoadingSpinner Component', () => {
     });
 
     it('should apply custom className', () => {
-      render(<LoadingSpinner className="custom-class" />);
+      render(<LoadingSpinner className='custom-class' />);
 
       const spinner = screen.getByRole('status');
       expect(spinner).toHaveClass('custom-class');
     });
 
     it('should preserve default classes with custom className', () => {
-      render(<LoadingSpinner className="custom-class" />);
+      render(<LoadingSpinner className='custom-class' />);
 
       const spinner = screen.getByRole('status');
       expect(spinner).toHaveClass('animate-spin');
@@ -116,13 +116,13 @@ describe('LoadingSpinner Component', () => {
 
   describe('Size Variants', () => {
     it('should apply correct width and height for each size', () => {
-      const { rerender } = render(<LoadingSpinner size="sm" />);
+      const { rerender } = render(<LoadingSpinner size='sm' />);
       expect(screen.getByRole('status')).toHaveClass('w-4', 'h-4');
 
-      rerender(<LoadingSpinner size="md" />);
+      rerender(<LoadingSpinner size='md' />);
       expect(screen.getByRole('status')).toHaveClass('w-6', 'h-6');
 
-      rerender(<LoadingSpinner size="lg" />);
+      rerender(<LoadingSpinner size='lg' />);
       expect(screen.getByRole('status')).toHaveClass('w-8', 'h-8');
     });
   });
@@ -137,7 +137,7 @@ describe('LoadingSpinner Component', () => {
     });
 
     it('should handle empty className', () => {
-      render(<LoadingSpinner className="" />);
+      render(<LoadingSpinner className='' />);
 
       const spinner = screen.getByRole('status');
       expect(spinner).toBeInTheDocument();
@@ -146,8 +146,8 @@ describe('LoadingSpinner Component', () => {
     it('should render multiple spinners independently', () => {
       render(
         <div>
-          <LoadingSpinner size="sm" className="spinner1" />
-          <LoadingSpinner size="lg" className="spinner2" />
+          <LoadingSpinner size='sm' className='spinner1' />
+          <LoadingSpinner size='lg' className='spinner2' />
         </div>
       );
 

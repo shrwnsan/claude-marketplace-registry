@@ -107,9 +107,11 @@ jest.mock('@octokit/rest', () => {
             sha: 'abc123',
             size: 100,
             url: 'https://api.github.com/repos/test-owner/test-repo/contents/.claude-plugin/marketplace.json',
-            html_url: 'https://github.com/test-owner/test-repo/blob/main/.claude-plugin/marketplace.json',
+            html_url:
+              'https://github.com/test-owner/test-repo/blob/main/.claude-plugin/marketplace.json',
             git_url: 'https://api.github.com/repos/test-owner/test-repo/git/blobs/abc123',
-            download_url: 'https://raw.githubusercontent.com/test-owner/test-repo/main/.claude-plugin/marketplace.json',
+            download_url:
+              'https://raw.githubusercontent.com/test-owner/test-repo/main/.claude-plugin/marketplace.json',
             type: 'file',
             content: Buffer.from('{"name": "Test Marketplace"}').toString('base64'),
             encoding: 'base64',

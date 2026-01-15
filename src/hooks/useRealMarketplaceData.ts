@@ -35,7 +35,7 @@ export function useRealMarketplaceData(): UseRealMarketplaceDataReturn {
             marketplaces: realDataArray,
             lastUpdated: new Date().toISOString(),
             totalCount: realDataArray.length,
-            source: 'real'
+            source: 'real',
           };
           setData(realData);
           console.log('✅ Loaded real marketplace data:', realDataArray.length, 'marketplaces');
@@ -47,7 +47,7 @@ export function useRealMarketplaceData(): UseRealMarketplaceDataReturn {
             marketplaces: mockMarketplaces,
             lastUpdated: new Date().toISOString(),
             totalCount: mockMarketplaces.length,
-            source: 'mock'
+            source: 'mock',
           };
           setData(mockData);
         }
@@ -61,7 +61,7 @@ export function useRealMarketplaceData(): UseRealMarketplaceDataReturn {
           marketplaces: mockMarketplaces,
           lastUpdated: new Date().toISOString(),
           totalCount: mockMarketplaces.length,
-          source: 'mock-fallback'
+          source: 'mock-fallback',
         };
         setData(mockData);
       } finally {

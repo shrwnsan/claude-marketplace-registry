@@ -65,12 +65,7 @@ const COMMAND_INJECTION_PATTERNS = [
 /**
  * Path traversal patterns
  */
-const PATH_TRAVERSAL_PATTERNS = [
-  /\.\.\//g,
-  /\.\.\\/g,
-  /[\/\\]\.\.[\/\\]/g,
-  /[\/\\]\.\.$/g,
-];
+const PATH_TRAVERSAL_PATTERNS = [/\.\.\//g, /\.\.\\/g, /[\/\\]\.\.[\/\\]/g, /[\/\\]\.\.$/g];
 
 /**
  * Validates and sanitizes input string
@@ -120,7 +115,7 @@ export function validateAndSanitizeInput(
 
   // Blacklist validation
   if (blacklist) {
-    const foundBlacklist = blacklist.find(term =>
+    const foundBlacklist = blacklist.find((term) =>
       sanitized.toLowerCase().includes(term.toLowerCase())
     );
     if (foundBlacklist) {
@@ -130,7 +125,7 @@ export function validateAndSanitizeInput(
 
   // Whitelist validation
   if (whitelist) {
-    const foundWhitelist = whitelist.find(term =>
+    const foundWhitelist = whitelist.find((term) =>
       sanitized.toLowerCase().includes(term.toLowerCase())
     );
     if (!foundWhitelist) {
@@ -175,15 +170,18 @@ export function validateAndSanitizeInput(
 /**
  * Checks for security threats in input
  */
-export function checkForSecurityThreats(input: string, isSearchQuery: boolean = false): ValidationResult {
+export function checkForSecurityThreats(
+  input: string,
+  isSearchQuery: boolean = false
+): ValidationResult {
   const errors: string[] = [];
   const warnings: string[] = [];
   let sanitized = input;
 
   // SQL Injection check - more lenient for search queries
-  const sqlPatterns = isSearchQuery ?
-    SQL_INJECTION_PATTERNS.slice(0, 1) : // Only check for keywords in search
-    SQL_INJECTION_PATTERNS;
+  const sqlPatterns = isSearchQuery
+    ? SQL_INJECTION_PATTERNS.slice(0, 1) // Only check for keywords in search
+    : SQL_INJECTION_PATTERNS;
 
   sqlPatterns.forEach((pattern, index) => {
     if (pattern.test(input)) {
@@ -360,7 +358,10 @@ export function validateRepositoryIdentifier(identifier: string): ValidationResu
 /**
  * Validates JSON content before parsing
  */
-export function validateJsonContent(jsonString: string, maxSize: number = 1024 * 1024): ValidationResult {
+export function validateJsonContent(
+  jsonString: string,
+  maxSize: number = 1024 * 1024
+): ValidationResult {
   const errors: string[] = [];
   const warnings: string[] = [];
 
@@ -389,7 +390,7 @@ export function validateJsonContent(jsonString: string, maxSize: number = 1024 *
       'onerror=',
     ];
 
-    dangerousPatterns.forEach(pattern => {
+    dangerousPatterns.forEach((pattern) => {
       if (jsonStringLower.includes(pattern)) {
         errors.push(`Potentially dangerous content detected: ${pattern}`);
       }
@@ -443,7 +444,7 @@ function checkJsonDepth(obj: any, currentDepth: number = 0): number {
 export function createCspNonce(): string {
   const array = new Uint8Array(16);
   crypto.getRandomValues(array);
-  return Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');
+  return Array.from(array, (byte) => byte.toString(16).padStart(2, '0')).join('');
 }
 
 /**
@@ -503,7 +504,7 @@ export class RateLimiter {
     const now = Date.now();
 
     // Remove old requests outside the window
-    this.requests = this.requests.filter(time => now - time < this.windowMs);
+    this.requests = this.requests.filter((time) => now - time < this.windowMs);
 
     // Check if under the limit
     if (this.requests.length < this.maxRequests) {
@@ -519,7 +520,7 @@ export class RateLimiter {
    */
   getRemainingRequests(): number {
     const now = Date.now();
-    this.requests = this.requests.filter(time => now - time < this.windowMs);
+    this.requests = this.requests.filter((time) => now - time < this.windowMs);
     return Math.max(0, this.maxRequests - this.requests.length);
   }
 

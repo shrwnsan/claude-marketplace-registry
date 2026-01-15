@@ -167,9 +167,9 @@ class HealthChecker {
             name: 'data_freshness',
             status: isFresh ? 'pass' : 'warn',
             duration,
-            message: isFresh ?
-              `Data is fresh (${Math.round(dataAge / 1000 / 60)} minutes old)` :
-              `Data is stale (${Math.round(dataAge / 1000 / 60)} minutes old)`,
+            message: isFresh
+              ? `Data is fresh (${Math.round(dataAge / 1000 / 60)} minutes old)`
+              : `Data is stale (${Math.round(dataAge / 1000 / 60)} minutes old)`,
             metadata: {
               lastUpdated,
               dataAge,
@@ -226,11 +226,12 @@ class HealthChecker {
 
     try {
       const results = await Promise.all(endpointChecks);
-      const averageDuration = results.reduce((sum, result) => sum + result.duration, 0) / results.length;
-      const successRate = results.filter(result => result.success).length / results.length;
+      const averageDuration =
+        results.reduce((sum, result) => sum + result.duration, 0) / results.length;
+      const successRate = results.filter((result) => result.success).length / results.length;
 
       const isWithinThreshold = averageDuration <= this.config.thresholds.responseTime;
-      const hasGoodSuccessRate = successRate >= (1 - this.config.thresholds.errorRate);
+      const hasGoodSuccessRate = successRate >= 1 - this.config.thresholds.errorRate;
 
       this.addCheck({
         name: 'response_times',
@@ -241,7 +242,7 @@ class HealthChecker {
           averageDuration,
           successRate,
           threshold: this.config.thresholds.responseTime,
-          endpoints: results.map(r => ({
+          endpoints: results.map((r) => ({
             endpoint: r.endpoint,
             duration: r.duration,
             success: r.success,
@@ -344,7 +345,7 @@ class HealthChecker {
 
     try {
       const resources = performance.getEntriesByType('resource');
-      const jsResources = resources.filter(resource => resource.name.includes('.js'));
+      const jsResources = resources.filter((resource) => resource.name.includes('.js'));
       const totalSize = jsResources.reduce((sum, resource) => {
         return sum + (resource as any).transferSize || 0;
       }, 0);
@@ -419,9 +420,9 @@ class HealthChecker {
     const checksArray = Array.from(this.checks.values());
 
     const total = checksArray.length;
-    const passing = checksArray.filter(check => check.status === 'pass').length;
-    const failing = checksArray.filter(check => check.status === 'fail').length;
-    const warning = checksArray.filter(check => check.status === 'warn').length;
+    const passing = checksArray.filter((check) => check.status === 'pass').length;
+    const failing = checksArray.filter((check) => check.status === 'fail').length;
+    const warning = checksArray.filter((check) => check.status === 'warn').length;
 
     // Determine overall status
     let status: HealthStatus['status'];

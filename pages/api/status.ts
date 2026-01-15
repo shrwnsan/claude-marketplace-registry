@@ -65,10 +65,7 @@ interface SystemStatus {
   };
 }
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<SystemStatus>
-) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse<SystemStatus>) {
   const startTime = Date.now();
   const version = process.env.npm_package_version || '1.0.0';
   const environment = process.env.NODE_ENV || 'development';
@@ -88,7 +85,7 @@ export default async function handler(
           totalMarketplaces: 0,
           totalPlugins: 0,
           dataFreshness: '',
-          errors: []
+          errors: [],
         },
         github: {
           status: 'operational',
@@ -96,37 +93,37 @@ export default async function handler(
             limit: 0,
             remaining: 0,
             reset: '',
-            used: 0
+            used: 0,
           },
           lastCheck: new Date().toISOString(),
-          errors: []
+          errors: [],
         },
         build: {
           status: 'operational',
           lastBuild: '',
           buildTime: '',
-          errors: []
+          errors: [],
         },
         performance: {
           status: 'operational',
           memory: {
             used: 0,
             total: 0,
-            percentage: 0
+            percentage: 0,
           },
           cpu: {
-            loadAverage: [0, 0, 0]
+            loadAverage: [0, 0, 0],
           },
-          responseTime: 0
-        }
+          responseTime: 0,
+        },
       },
       incidents: [],
       metrics: {
         requestsToday: 0,
         errorsToday: 0,
         averageResponseTime: 0,
-        uptimePercentage: 0
-      }
+        uptimePercentage: 0,
+      },
     };
 
     // Check data system
@@ -165,27 +162,32 @@ export default async function handler(
       // Count actual marketplace and plugin files
       if (fs.existsSync(marketplacesFile)) {
         const marketplacesData = JSON.parse(fs.readFileSync(marketplacesFile, 'utf8'));
-        status.systems.data.totalMarketplaces = Array.isArray(marketplacesData) ? marketplacesData.length : Object.keys(marketplacesData).length;
+        status.systems.data.totalMarketplaces = Array.isArray(marketplacesData)
+          ? marketplacesData.length
+          : Object.keys(marketplacesData).length;
       }
 
       if (fs.existsSync(pluginsFile)) {
         const pluginsData = JSON.parse(fs.readFileSync(pluginsFile, 'utf8'));
-        status.systems.data.totalPlugins = Array.isArray(pluginsData) ? pluginsData.length : Object.keys(pluginsData).length;
+        status.systems.data.totalPlugins = Array.isArray(pluginsData)
+          ? pluginsData.length
+          : Object.keys(pluginsData).length;
       }
-
     } catch (error) {
       status.systems.data.status = 'down';
-      status.systems.data.errors?.push(`Data check failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      status.systems.data.errors?.push(
+        `Data check failed: ${error instanceof Error ? error.message : 'Unknown error'}`
+      );
     }
 
     // Check GitHub API
     try {
       const response = await fetch('https://api.github.com/rate_limit', {
         headers: {
-          'Authorization': `token ${process.env.GITHUB_TOKEN}`,
-          'Accept': 'application/vnd.github.v3+json',
+          Authorization: `token ${process.env.GITHUB_TOKEN}`,
+          Accept: 'application/vnd.github.v3+json',
         },
-        signal: AbortSignal.timeout(5000)
+        signal: AbortSignal.timeout(5000),
       });
 
       if (response.ok) {
@@ -194,7 +196,7 @@ export default async function handler(
           limit: rateLimitData.rate.limit,
           remaining: rateLimitData.rate.remaining,
           reset: new Date(rateLimitData.rate.reset * 1000).toISOString(),
-          used: rateLimitData.rate.used
+          used: rateLimitData.rate.used,
         };
 
         // Check rate limit status
@@ -209,7 +211,9 @@ export default async function handler(
       }
     } catch (error) {
       status.systems.github.status = 'down';
-      status.systems.github.errors?.push(`GitHub API check failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      status.systems.github.errors?.push(
+        `GitHub API check failed: ${error instanceof Error ? error.message : 'Unknown error'}`
+      );
     }
 
     // Check build status
@@ -232,7 +236,9 @@ export default async function handler(
       }
     } catch (error) {
       status.systems.build.status = 'down';
-      status.systems.build.errors?.push(`Build check failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      status.systems.build.errors?.push(
+        `Build check failed: ${error instanceof Error ? error.message : 'Unknown error'}`
+      );
     }
 
     // Check performance
@@ -244,12 +250,13 @@ export default async function handler(
       status.systems.performance.memory = {
         used: Math.round(memoryUsedMB),
         total: Math.round(memoryTotalMB),
-        percentage: Math.round((memoryUsage.heapUsed / memoryUsage.heapTotal) * 100)
+        percentage: Math.round((memoryUsage.heapUsed / memoryUsage.heapTotal) * 100),
       };
 
       // Get CPU load average (available on Unix systems)
       if (process.platform !== 'win32') {
-        status.systems.performance.cpu.loadAverage = process.cpuUsage().user !== undefined ? [0, 0, 0] : [0, 0, 0];
+        status.systems.performance.cpu.loadAverage =
+          process.cpuUsage().user !== undefined ? [0, 0, 0] : [0, 0, 0];
       }
 
       status.systems.performance.responseTime = Date.now() - startTime;
@@ -264,13 +271,15 @@ export default async function handler(
       }
     } catch (error) {
       status.systems.performance.status = 'down';
-      status.systems.performance.errors?.push(`Performance check failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      status.systems.performance.errors?.push(
+        `Performance check failed: ${error instanceof Error ? error.message : 'Unknown error'}`
+      );
     }
 
     // Determine overall status
     const systemStatuses = Object.values(status.systems);
-    const hasDown = systemStatuses.some(s => s.status === 'down');
-    const hasDegraded = systemStatuses.some(s => s.status === 'degraded');
+    const hasDown = systemStatuses.some((s) => s.status === 'down');
+    const hasDegraded = systemStatuses.some((s) => s.status === 'degraded');
 
     if (hasDown) {
       status.status = 'down';
@@ -283,16 +292,16 @@ export default async function handler(
       requestsToday: Math.floor(Math.random() * 10000) + 1000,
       errorsToday: status.systems.data.errors?.length || 0,
       averageResponseTime: Math.round(status.systems.performance.responseTime),
-      uptimePercentage: Math.round((status.uptime / (24 * 60 * 60)) * 100) // Convert to percentage of current day
+      uptimePercentage: Math.round((status.uptime / (24 * 60 * 60)) * 100), // Convert to percentage of current day
     };
 
     // Set cache headers
     res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
     res.setHeader('X-Response-Time', `${status.systems.performance.responseTime}ms`);
 
-    const statusCode = status.status === 'operational' ? 200 : status.status === 'degraded' ? 200 : 503;
+    const statusCode =
+      status.status === 'operational' ? 200 : status.status === 'degraded' ? 200 : 503;
     return res.status(statusCode).json(status);
-
   } catch (error) {
     console.error('Status check failed:', error);
 
@@ -303,25 +312,44 @@ export default async function handler(
       version,
       environment,
       systems: {
-        data: { status: 'down', lastUpdate: '', totalMarketplaces: 0, totalPlugins: 0, dataFreshness: '', errors: ['System unavailable'] },
-        github: { status: 'down', rateLimit: { limit: 0, remaining: 0, reset: '', used: 0 }, lastCheck: '', errors: ['System unavailable'] },
+        data: {
+          status: 'down',
+          lastUpdate: '',
+          totalMarketplaces: 0,
+          totalPlugins: 0,
+          dataFreshness: '',
+          errors: ['System unavailable'],
+        },
+        github: {
+          status: 'down',
+          rateLimit: { limit: 0, remaining: 0, reset: '', used: 0 },
+          lastCheck: '',
+          errors: ['System unavailable'],
+        },
         build: { status: 'down', lastBuild: '', buildTime: '', errors: ['System unavailable'] },
-        performance: { status: 'down', memory: { used: 0, total: 0, percentage: 0 }, cpu: { loadAverage: [0, 0, 0] }, responseTime: 0 }
+        performance: {
+          status: 'down',
+          memory: { used: 0, total: 0, percentage: 0 },
+          cpu: { loadAverage: [0, 0, 0] },
+          responseTime: 0,
+        },
       },
-      incidents: [{
-        id: 'system-down',
-        title: 'System Unavailable',
-        description: error instanceof Error ? error.message : 'Unknown system error',
-        severity: 'critical',
-        status: 'open',
-        createdAt: new Date().toISOString()
-      }],
+      incidents: [
+        {
+          id: 'system-down',
+          title: 'System Unavailable',
+          description: error instanceof Error ? error.message : 'Unknown system error',
+          severity: 'critical',
+          status: 'open',
+          createdAt: new Date().toISOString(),
+        },
+      ],
       metrics: {
         requestsToday: 0,
         errorsToday: 1,
         averageResponseTime: 0,
-        uptimePercentage: 0
-      }
+        uptimePercentage: 0,
+      },
     };
 
     return res.status(503).json(errorResponse);

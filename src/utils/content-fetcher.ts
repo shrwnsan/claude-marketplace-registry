@@ -4,11 +4,7 @@
  */
 
 import { GitHubClient } from './github-client';
-import {
-  GitHubContent,
-  GitHubApiResponse,
-  ContentFetchOptions,
-} from '@/types/github';
+import { GitHubContent, GitHubApiResponse, ContentFetchOptions } from '@/types/github';
 import { validateManifest, SchemaValidationResult, ValidationContext } from './schema-validation';
 
 /**
@@ -66,10 +62,7 @@ export class ContentFetcher {
   private config: ContentFetcherConfig;
   private cache: Map<string, { content: FetchedContent; timestamp: number }> = new Map();
 
-  constructor(
-    githubClient: GitHubClient,
-    config: ContentFetcherConfig = {}
-  ) {
+  constructor(githubClient: GitHubClient, config: ContentFetcherConfig = {}) {
     this.githubClient = githubClient;
     this.config = {
       maxFileSize: 1024 * 1024, // 1MB
@@ -197,7 +190,9 @@ export class ContentFetcher {
     } catch (error: any) {
       if (attempt < (this.config.retryAttempts || 3)) {
         const delay = (this.config.retryDelay || 1000) * attempt;
-        console.warn(`Fetch attempt ${attempt} failed for ${owner}/${repo}/${path}, retrying in ${delay}ms...`);
+        console.warn(
+          `Fetch attempt ${attempt} failed for ${owner}/${repo}/${path}, retrying in ${delay}ms...`
+        );
         await this.sleep(delay);
         return this.fetchContentWithRetry(owner, repo, path, ref, attempt + 1);
       }
@@ -509,7 +504,11 @@ export class ContentFetcher {
   async fetchMultipleManifests(
     repositories: Array<{ owner: string; repo: string }>,
     options: ContentFetchOptions = {}
-  ): Promise<GitHubApiResponse<Array<{ owner: string; repo: string; content?: FetchedContent; error?: string }>>> {
+  ): Promise<
+    GitHubApiResponse<
+      Array<{ owner: string; repo: string; content?: FetchedContent; error?: string }>
+    >
+  > {
     try {
       console.log(`Fetching manifests from ${repositories.length} repositories...`);
 
@@ -527,7 +526,12 @@ export class ContentFetcher {
       });
 
       const results = await Promise.allSettled(promises);
-      const manifestResults: Array<{ owner: string; repo: string; content?: FetchedContent; error?: string }> = [];
+      const manifestResults: Array<{
+        owner: string;
+        repo: string;
+        content?: FetchedContent;
+        error?: string;
+      }> = [];
 
       results.forEach((result) => {
         if (result.status === 'fulfilled') {
@@ -537,7 +541,7 @@ export class ContentFetcher {
         }
       });
 
-      const successful = manifestResults.filter(r => r.content).length;
+      const successful = manifestResults.filter((r) => r.content).length;
       console.log(`Successfully fetched ${successful}/${repositories.length} manifests`);
 
       return {
@@ -559,7 +563,7 @@ export class ContentFetcher {
    * Sleep helper for delays
    */
   private sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
   /**

@@ -226,10 +226,10 @@ describe('OverviewMetrics Component', () => {
       expect(screen.getByLabelText(/Total downloads:/)).toBeInTheDocument();
 
       // Check focus management - cards should be focusable (article elements within main)
-      const metricCards = screen.getAllByRole('region').filter(element =>
-        element.tagName === 'ARTICLE'
-      );
-      metricCards.forEach(card => {
+      const metricCards = screen
+        .getAllByRole('region')
+        .filter((element) => element.tagName === 'ARTICLE');
+      metricCards.forEach((card) => {
         expect(card).toHaveAttribute('tabindex', '0');
       });
 
@@ -282,7 +282,7 @@ describe('OverviewMetrics Component', () => {
     (fetch as jest.Mock).mockResolvedValue(createMockResponse(mockEcosystemData));
 
     const { container } = await act(async () => {
-      return render(<OverviewMetrics className="custom-class" />);
+      return render(<OverviewMetrics className='custom-class' />);
     });
 
     await waitFor(() => {
@@ -300,9 +300,9 @@ describe('OverviewMetrics Component', () => {
 
     await waitFor(() => {
       // Find the first metric card (article element)
-      const metricCards = screen.getAllByRole('region').filter(element =>
-        element.tagName === 'ARTICLE'
-      );
+      const metricCards = screen
+        .getAllByRole('region')
+        .filter((element) => element.tagName === 'ARTICLE');
       const firstCard = metricCards[0];
       expect(firstCard).toHaveAttribute('tabindex', '0');
 

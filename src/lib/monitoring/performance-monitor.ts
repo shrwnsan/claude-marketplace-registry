@@ -26,9 +26,8 @@ class PerformanceMonitor {
   private isEnabled: boolean = false;
 
   constructor() {
-    this.isEnabled = typeof window !== 'undefined' &&
-                   'performance' in window &&
-                   'PerformanceObserver' in window;
+    this.isEnabled =
+      typeof window !== 'undefined' && 'performance' in window && 'PerformanceObserver' in window;
 
     if (this.isEnabled) {
       this.initializeObservers();
@@ -48,7 +47,8 @@ class PerformanceMonitor {
               const navEntry = entry as PerformanceNavigationTiming;
               this.recordMetric('navigation', navEntry.loadEventEnd - navEntry.fetchStart, {
                 type: 'page_load',
-                domContentLoaded: navEntry.domContentLoadedEventEnd - navEntry.domContentLoadedEventStart,
+                domContentLoaded:
+                  navEntry.domContentLoadedEventEnd - navEntry.domContentLoadedEventStart,
               });
             }
           }
@@ -203,15 +203,16 @@ class PerformanceMonitor {
       return null;
     }
 
-    const values = events.map(event => event.value).sort((a, b) => a - b);
+    const values = events.map((event) => event.value).sort((a, b) => a - b);
     const count = values.length;
     const sum = values.reduce((acc, val) => acc + val, 0);
     const average = sum / count;
     const min = values[0];
     const max = values[count - 1];
-    const median = count % 2 === 0
-      ? (values[count / 2 - 1] + values[count / 2]) / 2
-      : values[Math.floor(count / 2)];
+    const median =
+      count % 2 === 0
+        ? (values[count / 2 - 1] + values[count / 2]) / 2
+        : values[Math.floor(count / 2)];
 
     return {
       count,
@@ -278,7 +279,7 @@ class PerformanceMonitor {
             url: window.location.href,
             timestamp: Date.now(),
           }),
-        }).catch(error => {
+        }).catch((error) => {
           console.warn('Failed to send performance data:', error);
         });
       }
@@ -317,7 +318,7 @@ class PerformanceMonitor {
    * Cleanup observers
    */
   public cleanup(): void {
-    this.observers.forEach(observer => observer.disconnect());
+    this.observers.forEach((observer) => observer.disconnect());
     this.observers = [];
     this.metrics.clear();
   }
@@ -336,20 +337,26 @@ export const startComponentMeasure = (componentName: string) => {
 export const endComponentMeasure = (componentName: string, startTime: number) => {
   const markName = `component_${componentName}_end`;
   performanceMonitor.mark(markName);
-  performanceMonitor.measure(`component_${componentName}`, `component_${componentName}_start`, markName);
+  performanceMonitor.measure(
+    `component_${componentName}`,
+    `component_${componentName}_start`,
+    markName
+  );
   performanceMonitor.measureComponentLoad(componentName, startTime);
 };
 
 export const measureApiCall = (endpoint: string, apiCall: () => Promise<any>) => {
   const startTime = performance.now();
 
-  return apiCall().then(response => {
-    performanceMonitor.measureApiCall(endpoint, startTime, 200); // Assume success
-    return response;
-  }).catch(error => {
-    performanceMonitor.measureApiCall(endpoint, startTime, error.status || 500);
-    throw error;
-  });
+  return apiCall()
+    .then((response) => {
+      performanceMonitor.measureApiCall(endpoint, startTime, 200); // Assume success
+      return response;
+    })
+    .catch((error) => {
+      performanceMonitor.measureApiCall(endpoint, startTime, error.status || 500);
+      throw error;
+    });
 };
 
 export default performanceMonitor;

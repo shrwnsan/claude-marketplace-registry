@@ -60,9 +60,9 @@ class DataBackupManager {
         enabled: false,
         token: process.env.GITHUB_TOKEN || '',
         repo: process.env.GITHUB_REPOSITORY || 'claude-marketplace/aggregator',
-        branch: 'main'
+        branch: 'main',
       },
-      ...config
+      ...config,
     };
 
     this.ensureDirectories();
@@ -152,8 +152,8 @@ class DataBackupManager {
         totalPlugins: 0,
         totalStars: 0,
         lastScan: '',
-        scanDuration: 0
-      }
+        scanDuration: 0,
+      },
     };
 
     try {
@@ -207,7 +207,7 @@ class DataBackupManager {
               ...backupInfo.metadata,
               totalMarketplaces: indexData.stats.totalMarketplaces || 0,
               totalPlugins: indexData.stats.totalPlugins || 0,
-              totalStars: indexData.stats.totalStars || 0
+              totalStars: indexData.stats.totalStars || 0,
             };
           }
           if (indexData.metadata) {
@@ -233,11 +233,12 @@ class DataBackupManager {
       console.log(`✅ Backup completed: ${backupId}`);
       console.log(`📊 Size: ${this.formatBytes(backupInfo.size)}`);
       if (backupInfo.compressedSize) {
-        console.log(`📦 Compressed: ${this.formatBytes(backupInfo.compressedSize)} (${Math.round((1 - backupInfo.compressedSize / backupInfo.size) * 100)}% reduction)`);
+        console.log(
+          `📦 Compressed: ${this.formatBytes(backupInfo.compressedSize)} (${Math.round((1 - backupInfo.compressedSize / backupInfo.size) * 100)}% reduction)`
+        );
       }
 
       return backupInfo;
-
     } catch (error) {
       // Cleanup failed backup
       if (fs.existsSync(backupPath)) {
@@ -283,7 +284,7 @@ class DataBackupManager {
     const sizes = ['Bytes', 'KB', 'MB', 'GB'];
     if (bytes === 0) return '0 Bytes';
     const i = Math.floor(Math.log(bytes) / Math.log(1024));
-    return Math.round(bytes / Math.pow(1024, i) * 100) / 100 + ' ' + sizes[i];
+    return Math.round((bytes / Math.pow(1024, i)) * 100) / 100 + ' ' + sizes[i];
   }
 
   private async cleanupOldBackups(): Promise<void> {
@@ -307,8 +308,9 @@ class DataBackupManager {
 
   private async cleanupDirectory(dir: string, keepCount: number): Promise<void> {
     try {
-      const items = fs.readdirSync(dir)
-        .map(item => {
+      const items = fs
+        .readdirSync(dir)
+        .map((item) => {
           const itemPath = path.join(dir, item);
           const stats = fs.statSync(itemPath);
           return { name: item, path: itemPath, mtime: stats.mtime };
@@ -343,13 +345,14 @@ class DataBackupManager {
 
     // Find the most recent daily backup from this week
     const dailyDir = path.join(this.config.backupDir, 'daily');
-    const dailyBackups = fs.readdirSync(dailyDir)
-      .map(item => {
+    const dailyBackups = fs
+      .readdirSync(dailyDir)
+      .map((item) => {
         const itemPath = path.join(dailyDir, item);
         const stats = fs.statSync(itemPath);
         return { name: item, path: itemPath, mtime: stats.mtime };
       })
-      .filter(item => item.mtime >= weekStart)
+      .filter((item) => item.mtime >= weekStart)
       .sort((a, b) => b.mtime.getTime() - a.mtime.getTime());
 
     if (dailyBackups.length > 0) {
@@ -373,13 +376,14 @@ class DataBackupManager {
 
     // Find the most recent weekly backup from this month
     const weeklyDir = path.join(this.config.backupDir, 'weekly');
-    const weeklyBackups = fs.readdirSync(weeklyDir)
-      .map(item => {
+    const weeklyBackups = fs
+      .readdirSync(weeklyDir)
+      .map((item) => {
         const itemPath = path.join(weeklyDir, item);
         const stats = fs.statSync(itemPath);
         return { name: item, path: itemPath, mtime: stats.mtime };
       })
-      .filter(item => item.mtime >= monthStart)
+      .filter((item) => item.mtime >= monthStart)
       .sort((a, b) => b.mtime.getTime() - a.mtime.getTime());
 
     if (weeklyBackups.length > 0) {
@@ -409,7 +413,6 @@ class DataBackupManager {
 
       console.log('✅ Backup verification passed');
       return true;
-
     } catch (error) {
       console.error('❌ Backup verification failed:', error);
       return false;
@@ -445,7 +448,6 @@ class DataBackupManager {
       this.saveBackupInfo();
 
       console.log('✅ Backup process completed successfully');
-
     } catch (error) {
       console.error('❌ Backup process failed:', error);
       throw error;
@@ -495,7 +497,9 @@ class DataBackupManager {
   }
 
   public listBackups(): BackupInfo[] {
-    return this.backupInfo.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
+    return this.backupInfo.sort(
+      (a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+    );
   }
 }
 
@@ -523,8 +527,10 @@ async function main(): Promise<void> {
       case 'list':
         const backups = backupManager.listBackups();
         console.log('📋 Available backups:');
-        backups.forEach(backup => {
-          console.log(`  ${backup.id} - ${backup.timestamp} (${(backup.size / 1024 / 1024).toFixed(2)} MB)`);
+        backups.forEach((backup) => {
+          console.log(
+            `  ${backup.id} - ${backup.timestamp} (${(backup.size / 1024 / 1024).toFixed(2)} MB)`
+          );
         });
         break;
 

@@ -49,9 +49,9 @@ interface GeneratedData {
     totalPlugins: number;
     validPlugins: number;
     lastUpdated: string;
-    topLanguages: Array<{language: string, count: number}>;
-    topMarketplaces: Array<{name: string, stars: number, url: string}>;
-    recentActivity: Array<{name: string, updatedAt: string, url: string}>;
+    topLanguages: Array<{ language: string; count: number }>;
+    topMarketplaces: Array<{ name: string; stars: number; url: string }>;
+    recentActivity: Array<{ name: string; updatedAt: string; url: string }>;
   };
   categories: Array<{
     id: string;
@@ -78,7 +78,7 @@ class DataGenerator {
     this.websiteOutputDir = path.join(process.cwd(), 'public', 'data');
 
     // Ensure output directories exist
-    [this.outputDir, this.websiteOutputDir].forEach(dir => {
+    [this.outputDir, this.websiteOutputDir].forEach((dir) => {
       if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
       }
@@ -101,7 +101,7 @@ class DataGenerator {
         plugins,
         stats: this.generateStats(marketplaces, plugins),
         categories: this.generateCategories(marketplaces, plugins),
-        tags: this.generateTags(marketplaces)
+        tags: this.generateTags(marketplaces),
       };
 
       // Save generated data
@@ -120,7 +120,6 @@ class DataGenerator {
       await this.generateStaticApiFiles();
 
       console.log('✅ Data generation completed successfully!');
-
     } catch (error) {
       console.error('❌ Data generation failed:', error);
       throw error;
@@ -153,11 +152,11 @@ class DataGenerator {
     const stats = {
       totalMarketplaces: marketplaces.length,
       totalPlugins: plugins.length,
-      validPlugins: plugins.filter(p => p.isValid).length,
+      validPlugins: plugins.filter((p) => p.isValid).length,
       lastUpdated: new Date().toISOString(),
       topLanguages: this.getTopLanguages(marketplaces),
       topMarketplaces: this.getTopMarketplaces(marketplaces),
-      recentActivity: this.getRecentActivity(marketplaces)
+      recentActivity: this.getRecentActivity(marketplaces),
     };
 
     console.log('📊 Generated statistics:');
@@ -168,7 +167,7 @@ class DataGenerator {
     return stats;
   }
 
-  private getTopLanguages(marketplaces: Marketplace[]): Array<{language: string, count: number}> {
+  private getTopLanguages(marketplaces: Marketplace[]): Array<{ language: string; count: number }> {
     const languageCount: Record<string, number> = {};
 
     for (const mp of marketplaces) {
@@ -182,29 +181,36 @@ class DataGenerator {
       .slice(0, 10);
   }
 
-  private getTopMarketplaces(marketplaces: Marketplace[]): Array<{name: string, stars: number, url: string}> {
+  private getTopMarketplaces(
+    marketplaces: Marketplace[]
+  ): Array<{ name: string; stars: number; url: string }> {
     return marketplaces
       .sort((a, b) => b.stars - a.stars)
       .slice(0, 10)
-      .map(mp => ({
+      .map((mp) => ({
         name: mp.name,
         stars: mp.stars,
-        url: mp.url
+        url: mp.url,
       }));
   }
 
-  private getRecentActivity(marketplaces: Marketplace[]): Array<{name: string, updatedAt: string, url: string}> {
+  private getRecentActivity(
+    marketplaces: Marketplace[]
+  ): Array<{ name: string; updatedAt: string; url: string }> {
     return marketplaces
       .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())
       .slice(0, 10)
-      .map(mp => ({
+      .map((mp) => ({
         name: mp.name,
         updatedAt: mp.updatedAt,
-        url: mp.url
+        url: mp.url,
       }));
   }
 
-  private generateCategories(marketplaces: Marketplace[], plugins: Plugin[]): Array<{
+  private generateCategories(
+    marketplaces: Marketplace[],
+    plugins: Plugin[]
+  ): Array<{
     id: string;
     name: string;
     description: string;
@@ -217,79 +223,81 @@ class DataGenerator {
         name: 'Development Tools',
         description: 'Tools for software development and coding',
         count: 0,
-        marketplaces: [] as string[]
+        marketplaces: [] as string[],
       },
       {
         id: 'productivity',
         name: 'Productivity',
         description: 'Tools to boost productivity and workflow',
         count: 0,
-        marketplaces: [] as string[]
+        marketplaces: [] as string[],
       },
       {
         id: 'ai-ml',
         name: 'AI & Machine Learning',
         description: 'Artificial intelligence and machine learning tools',
         count: 0,
-        marketplaces: [] as string[]
+        marketplaces: [] as string[],
       },
       {
         id: 'design',
         name: 'Design & Creative',
         description: 'Design tools and creative applications',
         count: 0,
-        marketplaces: [] as string[]
+        marketplaces: [] as string[],
       },
       {
         id: 'data',
         name: 'Data & Analytics',
         description: 'Data analysis and visualization tools',
         count: 0,
-        marketplaces: [] as string[]
+        marketplaces: [] as string[],
       },
       {
         id: 'utilities',
         name: 'Utilities',
         description: 'General utilities and helper tools',
         count: 0,
-        marketplaces: [] as string[]
-      }
+        marketplaces: [] as string[],
+      },
     ];
 
     // Categorize marketplaces based on topics and description
     for (const mp of marketplaces) {
       const keywords = [
-        ...mp.topics.map(t => t.toLowerCase()),
+        ...mp.topics.map((t) => t.toLowerCase()),
         ...(mp.description || '').toLowerCase().split(' '),
-        mp.name.toLowerCase()
+        mp.name.toLowerCase(),
       ];
 
       for (const category of categories) {
         const categoryKeywords = this.getCategoryKeywords(category.id);
-        if (keywords.some(keyword => categoryKeywords.includes(keyword))) {
+        if (keywords.some((keyword) => categoryKeywords.includes(keyword))) {
           category.marketplaces.push(mp.name);
           category.count++;
         }
       }
     }
 
-    return categories.filter(cat => cat.count > 0);
+    return categories.filter((cat) => cat.count > 0);
   }
 
   private getCategoryKeywords(categoryId: string): string[] {
     const keywordMap: Record<string, string[]> = {
-      'development': ['development', 'coding', 'programming', 'developer', 'code', 'git', 'github'],
-      'productivity': ['productivity', 'workflow', 'automation', 'efficiency', 'task', 'management'],
+      development: ['development', 'coding', 'programming', 'developer', 'code', 'git', 'github'],
+      productivity: ['productivity', 'workflow', 'automation', 'efficiency', 'task', 'management'],
       'ai-ml': ['ai', 'machine learning', 'ml', 'artificial intelligence', 'neural', 'model'],
-      'design': ['design', 'creative', 'ui', 'ux', 'graphics', 'visual', 'art'],
-      'data': ['data', 'analytics', 'visualization', 'database', 'charts', 'statistics'],
-      'utilities': ['utility', 'helper', 'tool', 'utility', 'general', 'misc']
+      design: ['design', 'creative', 'ui', 'ux', 'graphics', 'visual', 'art'],
+      data: ['data', 'analytics', 'visualization', 'database', 'charts', 'statistics'],
+      utilities: ['utility', 'helper', 'tool', 'utility', 'general', 'misc'],
     };
 
     return keywordMap[categoryId] || [];
   }
 
-  private generateTags(marketplaces: Marketplace[]): Array<{id: string, name: string, count: number}> {
+  private generateTags(
+    marketplaces: Marketplace[]
+  ): Array<{ id: string; name: string; count: number }> {
     const tagCount: Record<string, number> = {};
 
     for (const mp of marketplaces) {
@@ -302,7 +310,7 @@ class DataGenerator {
       .map(([name, count]) => ({
         id: name.toLowerCase().replace(/[^a-z0-9]/g, '-'),
         name,
-        count
+        count,
       }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 50); // Top 50 tags
@@ -343,7 +351,7 @@ class DataGenerator {
       'marketplaces.json',
       'plugins.json',
       'stats.json',
-      'data.min.json'
+      'data.min.json',
     ];
 
     for (const file of files) {
@@ -360,12 +368,12 @@ class DataGenerator {
     const indexPath = path.join(this.websiteOutputDir, 'index.json');
     const indexData = {
       stats: data.stats,
-      categories: data.categories.map(cat => ({
+      categories: data.categories.map((cat) => ({
         id: cat.id,
         name: cat.name,
-        count: cat.count
+        count: cat.count,
       })),
-      lastUpdated: data.stats.lastUpdated
+      lastUpdated: data.stats.lastUpdated,
     };
 
     fs.writeFileSync(indexPath, JSON.stringify(indexData, null, 2));
@@ -387,7 +395,7 @@ class DataGenerator {
       timestamp: new Date().toISOString(),
       version: '1.0.0',
       uptime: process.uptime(),
-      environment: process.env.NODE_ENV || 'production'
+      environment: process.env.NODE_ENV || 'production',
     };
     const healthPath = path.join(publicDataDir, 'health.json');
     fs.writeFileSync(healthPath, JSON.stringify(healthData, null, 2));
@@ -400,7 +408,7 @@ class DataGenerator {
       lastScan: new Date().toISOString(),
       totalMarketplaces: 0, // Will be updated by scan
       totalPlugins: 0, // Will be updated by scan
-      version: '1.0.0'
+      version: '1.0.0',
     };
     const statusPath = path.join(publicDataDir, 'status.json');
     fs.writeFileSync(statusPath, JSON.stringify(statusData, null, 2));
@@ -410,18 +418,18 @@ class DataGenerator {
       performance: {
         buildTime: new Date().toISOString(),
         bundleSize: '2.1MB',
-        lighthouseScore: 95
+        lighthouseScore: 95,
       },
       usage: {
         totalScans: 0,
         totalApiCalls: 0,
-        errorRate: 0
+        errorRate: 0,
       },
       system: {
         nodeVersion: process.version,
         platform: process.platform,
-        memory: process.memoryUsage()
-      }
+        memory: process.memoryUsage(),
+      },
     };
     const metricsPath = path.join(publicDataDir, 'metrics.json');
     fs.writeFileSync(metricsPath, JSON.stringify(metricsData, null, 2));
@@ -444,8 +452,8 @@ class DataGenerator {
             totalMarketplaces: (marketplacesData.marketplaces || []).length,
             totalPlugins: this.countAllPlugins(marketplacesData.marketplaces || []),
             averageRating: this.calculateAverageRating(marketplacesData.marketplaces || []),
-            topCategories: this.getTopCategories(marketplacesData.marketplaces || [])
-          }
+            topCategories: this.getTopCategories(marketplacesData.marketplaces || []),
+          },
         };
       } else {
         // Fallback analytics data
@@ -458,8 +466,8 @@ class DataGenerator {
             totalMarketplaces: 0,
             totalPlugins: 0,
             averageRating: 0,
-            topCategories: []
-          }
+            topCategories: [],
+          },
         };
       }
     } catch (error) {
@@ -473,8 +481,8 @@ class DataGenerator {
           totalMarketplaces: 0,
           totalPlugins: 0,
           averageRating: 0,
-          topCategories: []
-        }
+          topCategories: [],
+        },
       };
     }
 
@@ -517,7 +525,7 @@ class DataGenerator {
     return Math.round((totalStars / marketplaces.length) * 10) / 10;
   }
 
-  private getTopCategories(marketplaces: any[]): Array<{name: string, count: number}> {
+  private getTopCategories(marketplaces: any[]): Array<{ name: string; count: number }> {
     const categoryCount: Record<string, number> = {};
     for (const marketplace of marketplaces) {
       if (marketplace.topics) {
@@ -558,20 +566,29 @@ class DataGenerator {
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  ${data.categories.map(cat => `
+  ${data.categories
+    .map(
+      (cat) => `
   <url>
     <loc>${baseUrl}/category/${cat.id}</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>`).join('')}
-  ${data.marketplaces.slice(0, 100).map(mp => `
+  </url>`
+    )
+    .join('')}
+  ${data.marketplaces
+    .slice(0, 100)
+    .map(
+      (mp) => `
   <url>
     <loc>${baseUrl}/marketplace/${mp.id}</loc>
     <lastmod>${format(parseISO(mp.updatedAt), 'yyyy-MM-dd')}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>`).join('')}
+  </url>`
+    )
+    .join('')}
 </urlset>`;
 
     const sitemapPath = path.join(process.cwd(), 'public', 'sitemap.xml');
@@ -594,14 +611,19 @@ class DataGenerator {
     <language>en-us</language>
     <lastBuildDate>${currentDate}</lastBuildDate>
     <generator>Claude Marketplace Aggregator</generator>
-    ${data.marketplaces.slice(0, 20).map(mp => `
+    ${data.marketplaces
+      .slice(0, 20)
+      .map(
+        (mp) => `
     <item>
       <title>${mp.name}</title>
       <description>${mp.description}</description>
       <link>${mp.url}</link>
       <guid>${mp.id}</guid>
       <pubDate>${new Date(mp.updatedAt).toUTCString()}</pubDate>
-    </item>`).join('')}
+    </item>`
+      )
+      .join('')}
   </channel>
 </rss>`;
 
@@ -640,7 +662,6 @@ async function main() {
     console.log('');
     console.log('🎉 Data generation completed successfully!');
     console.log('📁 Files are ready for website deployment');
-
   } catch (error) {
     console.error('❌ Data generation failed:', error);
     process.exit(1);

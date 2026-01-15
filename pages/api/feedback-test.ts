@@ -12,10 +12,7 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'Content-Type',
 };
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   // Handle preflight requests
   if (req.method === 'OPTIONS') {
     Object.entries(corsHeaders).forEach(([key, value]) => {
@@ -39,7 +36,7 @@ export default async function handler(
 
   try {
     // Simulate some processing delay
-    await new Promise(resolve => setTimeout(resolve, 200 + Math.random() * 300));
+    await new Promise((resolve) => setTimeout(resolve, 200 + Math.random() * 300));
 
     Object.entries(corsHeaders).forEach(([key, value]) => {
       res.setHeader(key, value);
@@ -58,7 +55,6 @@ export default async function handler(
         responseTime: Math.round(200 + Math.random() * 300),
       },
     });
-
   } catch (error) {
     console.error('Feedback test API error:', error);
 

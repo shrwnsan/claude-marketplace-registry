@@ -4,7 +4,15 @@
  */
 
 interface AnalyticsEvent {
-  type: 'page_view' | 'plugin_click' | 'marketplace_click' | 'search' | 'filter' | 'download' | 'rating' | 'share';
+  type:
+    | 'page_view'
+    | 'plugin_click'
+    | 'marketplace_click'
+    | 'search'
+    | 'filter'
+    | 'download'
+    | 'rating'
+    | 'share';
   data: Record<string, any>;
   timestamp: number;
   sessionId: string;
@@ -48,7 +56,7 @@ class AnalyticsTracker {
         filters: {},
         downloads: {},
         ratings: {},
-        shares: {}
+        shares: {},
       };
     }
 
@@ -57,8 +65,9 @@ class AnalyticsTracker {
       if (stored) {
         const parsed = JSON.parse(stored);
         // Clean old data (older than 30 days)
-        const thirtyDaysAgo = Date.now() - (30 * 24 * 60 * 60 * 1000);
-        parsed.events = parsed.events?.filter((e: AnalyticsEvent) => e.timestamp > thirtyDaysAgo) || [];
+        const thirtyDaysAgo = Date.now() - 30 * 24 * 60 * 60 * 1000;
+        parsed.events =
+          parsed.events?.filter((e: AnalyticsEvent) => e.timestamp > thirtyDaysAgo) || [];
         return parsed;
       }
     } catch (error) {
@@ -74,7 +83,7 @@ class AnalyticsTracker {
       filters: {},
       downloads: {},
       ratings: {},
-      shares: {}
+      shares: {},
     };
   }
 
@@ -85,7 +94,7 @@ class AnalyticsTracker {
       // Keep only last 1000 events to prevent storage issues
       const limitedData = {
         ...this.data,
-        events: this.data.events.slice(-1000)
+        events: this.data.events.slice(-1000),
       };
       localStorage.setItem('claude-marketplace-analytics', JSON.stringify(limitedData));
     } catch (error) {
@@ -103,7 +112,7 @@ class AnalyticsTracker {
       type: 'page_view',
       data: { path, referrer: document.referrer },
       timestamp: Date.now(),
-      sessionId: this.sessionId
+      sessionId: this.sessionId,
     };
 
     this.addEvent(event);
@@ -115,7 +124,7 @@ class AnalyticsTracker {
       type: 'plugin_click',
       data: { pluginId, pluginName, source },
       timestamp: Date.now(),
-      sessionId: this.sessionId
+      sessionId: this.sessionId,
     };
 
     this.addEvent(event);
@@ -127,11 +136,12 @@ class AnalyticsTracker {
       type: 'marketplace_click',
       data: { marketplaceId, marketplaceName, source },
       timestamp: Date.now(),
-      sessionId: this.sessionId
+      sessionId: this.sessionId,
     };
 
     this.addEvent(event);
-    this.data.marketplaceClicks[marketplaceId] = (this.data.marketplaceClicks[marketplaceId] || 0) + 1;
+    this.data.marketplaceClicks[marketplaceId] =
+      (this.data.marketplaceClicks[marketplaceId] || 0) + 1;
   }
 
   trackSearch(query: string, resultCount: number): void {
@@ -139,13 +149,13 @@ class AnalyticsTracker {
       type: 'search',
       data: { query, resultCount },
       timestamp: Date.now(),
-      sessionId: this.sessionId
+      sessionId: this.sessionId,
     };
 
     this.addEvent(event);
 
     // Update search counts
-    const existingSearch = this.data.searches.find(s => s.query === query);
+    const existingSearch = this.data.searches.find((s) => s.query === query);
     if (existingSearch) {
       existingSearch.count++;
     } else {
@@ -163,7 +173,7 @@ class AnalyticsTracker {
       type: 'filter',
       data: { filterType, filterValue },
       timestamp: Date.now(),
-      sessionId: this.sessionId
+      sessionId: this.sessionId,
     };
 
     this.addEvent(event);
@@ -176,7 +186,7 @@ class AnalyticsTracker {
       type: 'download',
       data: { itemId, itemType, itemName },
       timestamp: Date.now(),
-      sessionId: this.sessionId
+      sessionId: this.sessionId,
     };
 
     this.addEvent(event);
@@ -188,7 +198,7 @@ class AnalyticsTracker {
       type: 'rating',
       data: { itemId, itemType, rating },
       timestamp: Date.now(),
-      sessionId: this.sessionId
+      sessionId: this.sessionId,
     };
 
     this.addEvent(event);
@@ -204,7 +214,7 @@ class AnalyticsTracker {
       type: 'share',
       data: { itemId, itemType, platform },
       timestamp: Date.now(),
-      sessionId: this.sessionId
+      sessionId: this.sessionId,
     };
 
     this.addEvent(event);
@@ -231,19 +241,19 @@ class AnalyticsTracker {
   }
 
   getPopularSearches(limit: number = 10): Array<{ query: string; count: number }> {
-    return this.data.searches
-      .sort((a, b) => b.count - a.count)
-      .slice(0, limit);
+    return this.data.searches.sort((a, b) => b.count - a.count).slice(0, limit);
   }
 
   getPageViewStats(timeRange?: number): Record<string, number> {
     if (!timeRange) return this.data.pageViews;
 
     const cutoff = Date.now() - timeRange;
-    const recentEvents = this.data.events.filter(e => e.type === 'page_view' && e.timestamp > cutoff);
+    const recentEvents = this.data.events.filter(
+      (e) => e.type === 'page_view' && e.timestamp > cutoff
+    );
     const stats: Record<string, number> = {};
 
-    recentEvents.forEach(event => {
+    recentEvents.forEach((event) => {
       const path = event.data.path;
       stats[path] = (stats[path] || 0) + 1;
     });
@@ -253,11 +263,11 @@ class AnalyticsTracker {
 
   getEventCounts(timeRange?: number): Record<string, number> {
     const events = timeRange
-      ? this.data.events.filter(e => e.timestamp > (Date.now() - timeRange))
+      ? this.data.events.filter((e) => e.timestamp > Date.now() - timeRange)
       : this.data.events;
 
     const counts: Record<string, number> = {};
-    events.forEach(event => {
+    events.forEach((event) => {
       counts[event.type] = (counts[event.type] || 0) + 1;
     });
 
@@ -272,7 +282,7 @@ class AnalyticsTracker {
 
     const sessionEvents = new Map<string, AnalyticsEvent[]>();
 
-    this.data.events.forEach(event => {
+    this.data.events.forEach((event) => {
       if (!sessionEvents.has(event.sessionId)) {
         sessionEvents.set(event.sessionId, []);
       }
@@ -281,7 +291,7 @@ class AnalyticsTracker {
 
     sessionEvents.forEach((events, sessionId) => {
       sessions.add(sessionId);
-      const pageViews = events.filter(e => e.type === 'page_view');
+      const pageViews = events.filter((e) => e.type === 'page_view');
 
       if (pageViews.length === 1) {
         singlePageSessions++;
@@ -296,7 +306,7 @@ class AnalyticsTracker {
     return {
       totalSessions: sessions.size,
       avgSessionDuration: sessions.size > 0 ? totalDuration / sessions.size : 0,
-      bounceRate: sessions.size > 0 ? singlePageSessions / sessions.size : 0
+      bounceRate: sessions.size > 0 ? singlePageSessions / sessions.size : 0,
     };
   }
 
@@ -310,7 +320,7 @@ class AnalyticsTracker {
       filters: {},
       downloads: {},
       ratings: {},
-      shares: {}
+      shares: {},
     };
     this.saveData();
   }

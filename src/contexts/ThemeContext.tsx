@@ -44,7 +44,9 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     let newResolvedTheme: 'light' | 'dark';
 
     if (theme === 'system') {
-      newResolvedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      newResolvedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light';
     } else {
       newResolvedTheme = theme;
     }
@@ -69,9 +71,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(currentTheme =>
-      currentTheme === 'light' ? 'dark' :
-      currentTheme === 'dark' ? 'system' : 'light'
+    setTheme((currentTheme) =>
+      currentTheme === 'light' ? 'dark' : currentTheme === 'dark' ? 'system' : 'light'
     );
   };
 
@@ -87,11 +88,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     return <div suppressHydrationWarning />;
   }
 
-  return (
-    <ThemeContext.Provider value={value}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
 };
 
 export const useTheme = (): ThemeContextType => {

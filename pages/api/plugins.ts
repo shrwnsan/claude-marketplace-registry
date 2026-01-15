@@ -13,8 +13,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       limit = '20',
       offset = '0',
       sort = 'name',
-      order = 'asc'
-    }
+      order = 'asc',
+    },
   } = req;
 
   switch (method) {
@@ -24,16 +24,16 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
         // Apply filters
         if (category && category !== 'all') {
-          filteredPlugins = filteredPlugins.filter(plugin =>
-            plugin.category.toLowerCase() === (category as string).toLowerCase()
+          filteredPlugins = filteredPlugins.filter(
+            (plugin) => plugin.category.toLowerCase() === (category as string).toLowerCase()
           );
         }
 
         if (tags) {
           const tagArray = Array.isArray(tags) ? tags : [tags];
-          filteredPlugins = filteredPlugins.filter(plugin =>
-            tagArray.some(tag =>
-              plugin.tags.some(pluginTag =>
+          filteredPlugins = filteredPlugins.filter((plugin) =>
+            tagArray.some((tag) =>
+              plugin.tags.some((pluginTag) =>
                 pluginTag.toLowerCase().includes((tag as string).toLowerCase())
               )
             )
@@ -41,17 +41,17 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         }
 
         if (author) {
-          filteredPlugins = filteredPlugins.filter(plugin =>
+          filteredPlugins = filteredPlugins.filter((plugin) =>
             plugin.author.toLowerCase().includes((author as string).toLowerCase())
           );
         }
 
         if (verified === 'true') {
-          filteredPlugins = filteredPlugins.filter(plugin => plugin.verified);
+          filteredPlugins = filteredPlugins.filter((plugin) => plugin.verified);
         }
 
         if (featured === 'true') {
-          filteredPlugins = filteredPlugins.filter(plugin => plugin.featured);
+          filteredPlugins = filteredPlugins.filter((plugin) => plugin.featured);
         }
 
         // Apply sorting
@@ -96,25 +96,25 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             total: filteredPlugins.length,
             limit: limitNum,
             offset: offsetNum,
-            hasMore: offsetNum + limitNum < filteredPlugins.length
+            hasMore: offsetNum + limitNum < filteredPlugins.length,
           },
           filters: {
             category,
             tags: tags ? (Array.isArray(tags) ? tags : [tags]) : undefined,
             author,
             verified: verified === 'true',
-            featured: featured === 'true'
+            featured: featured === 'true',
           },
           sort: {
             by: sort,
-            order
-          }
+            order,
+          },
         });
       } catch (error) {
         console.error('Error fetching plugins:', error);
         res.status(500).json({
           error: 'Internal Server Error',
-          message: 'Failed to fetch plugins'
+          message: 'Failed to fetch plugins',
         });
       }
       break;
@@ -128,7 +128,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         if (!newPlugin.name || !newPlugin.description || !newPlugin.author) {
           return res.status(400).json({
             error: 'Bad Request',
-            message: 'Missing required fields: name, description, author'
+            message: 'Missing required fields: name, description, author',
           });
         }
 
@@ -141,18 +141,18 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           lastUpdated: new Date().toISOString().split('T')[0],
           verified: false,
           featured: false,
-          createdAt: new Date().toISOString()
+          createdAt: new Date().toISOString(),
         };
 
         res.status(201).json({
           message: 'Plugin created successfully',
-          plugin: pluginWithMetadata
+          plugin: pluginWithMetadata,
         });
       } catch (error) {
         console.error('Error creating plugin:', error);
         res.status(500).json({
           error: 'Internal Server Error',
-          message: 'Failed to create plugin'
+          message: 'Failed to create plugin',
         });
       }
       break;
@@ -161,7 +161,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       res.setHeader('Allow', ['GET', 'POST']);
       res.status(405).json({
         error: 'Method Not Allowed',
-        message: `Method ${method} not allowed`
+        message: `Method ${method} not allowed`,
       });
       break;
   }

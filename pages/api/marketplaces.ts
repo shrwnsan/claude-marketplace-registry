@@ -11,8 +11,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       limit = '20',
       offset = '0',
       sort = 'name',
-      order = 'asc'
-    }
+      order = 'asc',
+    },
   } = req;
 
   switch (method) {
@@ -22,17 +22,18 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
         // Apply filters
         if (category && category !== 'all') {
-          filteredMarketplaces = filteredMarketplaces.filter(marketplace =>
-            marketplace.category.toLowerCase() === (category as string).toLowerCase()
+          filteredMarketplaces = filteredMarketplaces.filter(
+            (marketplace) =>
+              marketplace.category.toLowerCase() === (category as string).toLowerCase()
           );
         }
 
         if (verified === 'true') {
-          filteredMarketplaces = filteredMarketplaces.filter(marketplace => marketplace.verified);
+          filteredMarketplaces = filteredMarketplaces.filter((marketplace) => marketplace.verified);
         }
 
         if (featured === 'true') {
-          filteredMarketplaces = filteredMarketplaces.filter(marketplace => marketplace.featured);
+          filteredMarketplaces = filteredMarketplaces.filter((marketplace) => marketplace.featured);
         }
 
         // Apply sorting
@@ -71,23 +72,23 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             total: filteredMarketplaces.length,
             limit: limitNum,
             offset: offsetNum,
-            hasMore: offsetNum + limitNum < filteredMarketplaces.length
+            hasMore: offsetNum + limitNum < filteredMarketplaces.length,
           },
           filters: {
             category,
             verified: verified === 'true',
-            featured: featured === 'true'
+            featured: featured === 'true',
           },
           sort: {
             by: sort,
-            order
-          }
+            order,
+          },
         });
       } catch (error) {
         console.error('Error fetching marketplaces:', error);
         res.status(500).json({
           error: 'Internal Server Error',
-          message: 'Failed to fetch marketplaces'
+          message: 'Failed to fetch marketplaces',
         });
       }
       break;
@@ -101,7 +102,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         if (!newMarketplace.name || !newMarketplace.description || !newMarketplace.owner) {
           return res.status(400).json({
             error: 'Bad Request',
-            message: 'Missing required fields: name, description, owner'
+            message: 'Missing required fields: name, description, owner',
           });
         }
 
@@ -113,18 +114,18 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           plugins: [],
           verified: false,
           featured: false,
-          createdAt: new Date().toISOString()
+          createdAt: new Date().toISOString(),
         };
 
         res.status(201).json({
           message: 'Marketplace created successfully',
-          marketplace: marketplaceWithMetadata
+          marketplace: marketplaceWithMetadata,
         });
       } catch (error) {
         console.error('Error creating marketplace:', error);
         res.status(500).json({
           error: 'Internal Server Error',
-          message: 'Failed to create marketplace'
+          message: 'Failed to create marketplace',
         });
       }
       break;
@@ -133,7 +134,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       res.setHeader('Allow', ['GET', 'POST']);
       res.status(405).json({
         error: 'Method Not Allowed',
-        message: `Method ${method} not allowed`
+        message: `Method ${method} not allowed`,
       });
       break;
   }

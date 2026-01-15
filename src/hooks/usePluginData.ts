@@ -10,7 +10,11 @@ interface UsePluginDataReturn {
 }
 
 export function usePluginData(): UsePluginDataReturn {
-  const { data: marketplaceData, loading: marketplaceLoading, error: marketplaceError } = useRealMarketplaceData();
+  const {
+    data: marketplaceData,
+    loading: marketplaceLoading,
+    error: marketplaceError,
+  } = useRealMarketplaceData();
   const [plugins, setPlugins] = useState<MarketplacePlugin[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -53,7 +57,9 @@ export function usePluginData(): UsePluginDataReturn {
           });
 
           setPlugins(extractedPlugins);
-          console.log(`✅ Extracted ${extractedPlugins.length} plugins from ${marketplaceData.marketplaces.length} marketplaces`);
+          console.log(
+            `✅ Extracted ${extractedPlugins.length} plugins from ${marketplaceData.marketplaces.length} marketplaces`
+          );
         } else {
           // Fallback to mock plugins
           setPlugins(mockPlugins);
@@ -80,6 +86,6 @@ export function usePluginData(): UsePluginDataReturn {
     plugins,
     loading: loading || marketplaceLoading,
     error: error || marketplaceError,
-    totalCount
+    totalCount,
   };
 }

@@ -38,11 +38,7 @@ export type {
 } from './types';
 
 // Export utilities
-export {
-  GitHubClient,
-  createGitHubClient,
-  getDefaultGitHubClient,
-} from './utils/github-client';
+export { GitHubClient, createGitHubClient, getDefaultGitHubClient } from './utils/github-client';
 
 export {
   ContentFetcher,

@@ -158,7 +158,7 @@ describe('useEcosystemAnalytics Hook', () => {
       result.current.trackEcosystemInteraction('button_click', 'submit_button');
 
       const events = result.current.getEvents();
-      const interactionEvent = events.find(e => e.event === 'ecosystem_interaction');
+      const interactionEvent = events.find((e) => e.event === 'ecosystem_interaction');
 
       expect(interactionEvent).toBeDefined();
       expect(interactionEvent?.category).toBe('interaction');
@@ -172,7 +172,7 @@ describe('useEcosystemAnalytics Hook', () => {
       result.current.trackChartInteraction('line_chart', 'hover', { data: 'test' });
 
       const events = result.current.getEvents();
-      const chartEvent = events.find(e => e.action === 'chart_hover');
+      const chartEvent = events.find((e) => e.action === 'chart_hover');
 
       expect(chartEvent).toBeDefined();
       expect(chartEvent?.label).toBe('line_chart');
@@ -184,7 +184,7 @@ describe('useEcosystemAnalytics Hook', () => {
       result.current.trackFilterUsage('category', 'plugins');
 
       const events = result.current.getEvents();
-      const filterEvent = events.find(e => e.action === 'filter_use');
+      const filterEvent = events.find((e) => e.action === 'filter_use');
 
       expect(filterEvent).toBeDefined();
       expect(filterEvent?.label).toBe('category:plugins');
@@ -196,7 +196,7 @@ describe('useEcosystemAnalytics Hook', () => {
       result.current.trackExport('csv', { data: 'test' });
 
       const events = result.current.getEvents();
-      const exportEvent = events.find(e => e.action === 'export');
+      const exportEvent = events.find((e) => e.action === 'export');
 
       expect(exportEvent).toBeDefined();
       expect(exportEvent?.label).toBe('csv');
@@ -209,7 +209,7 @@ describe('useEcosystemAnalytics Hook', () => {
       result.current.trackFeatureUsage('search', startTime);
 
       const events = result.current.getEvents();
-      const featureEvent = events.find(e => e.action === 'feature_time');
+      const featureEvent = events.find((e) => e.action === 'feature_time');
 
       expect(featureEvent).toBeDefined();
       expect(featureEvent?.label).toBe('search');
@@ -227,7 +227,7 @@ describe('useEcosystemAnalytics Hook', () => {
       result.current.trackError(error, context);
 
       const events = result.current.getEvents();
-      const errorEvent = events.find(e => e.category === 'error');
+      const errorEvent = events.find((e) => e.category === 'error');
 
       expect(errorEvent).toBeDefined();
       expect(errorEvent?.action).toBe('Error'); // Error.name defaults to "Error"
@@ -241,7 +241,7 @@ describe('useEcosystemAnalytics Hook', () => {
       result.current.analytics.trackEcosystemError(error, { feature: 'analytics' });
 
       const events = result.current.getEvents();
-      const ecosystemErrorEvent = events.find(e => e.event === 'ecosystem_error');
+      const ecosystemErrorEvent = events.find((e) => e.event === 'ecosystem_error');
 
       expect(ecosystemErrorEvent).toBeDefined();
       expect(ecosystemErrorEvent?.category).toBe('error');
@@ -250,12 +250,14 @@ describe('useEcosystemAnalytics Hook', () => {
 
   describe('Performance Tracking', () => {
     it('should track performance metrics', () => {
-      const { result } = renderHook(() => useEcosystemAnalytics({ enableTracking: true, trackPerformance: true }));
+      const { result } = renderHook(() =>
+        useEcosystemAnalytics({ enableTracking: true, trackPerformance: true })
+      );
 
       result.current.trackPerformance('page_load', 1500, 'ms');
 
       const events = result.current.getEvents();
-      const perfEvent = events.find(e => e.category === 'performance');
+      const perfEvent = events.find((e) => e.category === 'performance');
 
       expect(perfEvent).toBeDefined();
       expect(perfEvent?.action).toBe('page_load');
@@ -266,9 +268,7 @@ describe('useEcosystemAnalytics Hook', () => {
 
   describe('Custom Options', () => {
     it('should respect enableTracking option', () => {
-      const { result } = renderHook(() =>
-        useEcosystemAnalytics({ enableTracking: false })
-      );
+      const { result } = renderHook(() => useEcosystemAnalytics({ enableTracking: false }));
 
       result.current.trackEcosystemInteraction('click', 'button');
 
@@ -285,7 +285,7 @@ describe('useEcosystemAnalytics Hook', () => {
       result.current.trackEcosystemInteraction('click', 'button');
 
       const events = result.current.getEvents();
-      const interactionEvents = events.filter(e => e.category === 'interaction');
+      const interactionEvents = events.filter((e) => e.category === 'interaction');
       expect(interactionEvents.length).toBe(0);
     });
 
@@ -297,7 +297,7 @@ describe('useEcosystemAnalytics Hook', () => {
       result.current.trackPerformance('load', 1000);
 
       const events = result.current.getEvents();
-      const perfEvents = events.filter(e => e.category === 'performance');
+      const perfEvents = events.filter((e) => e.category === 'performance');
       expect(perfEvents.length).toBe(0);
     });
   });

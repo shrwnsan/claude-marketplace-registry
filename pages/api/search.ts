@@ -8,8 +8,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       q: query,
       type = 'all', // 'plugins', 'marketplaces', or 'all'
       limit = '20',
-      offset = '0'
-    }
+      offset = '0',
+    },
   } = req;
 
   switch (method) {
@@ -18,7 +18,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         if (!query || (query as string).trim().length === 0) {
           return res.status(400).json({
             error: 'Bad Request',
-            message: 'Search query is required'
+            message: 'Search query is required',
           });
         }
 
@@ -29,21 +29,22 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         const results = {
           plugins: [] as any[],
           marketplaces: [] as any[],
-          total: 0
+          total: 0,
         };
 
         // Search plugins
         if (type === 'all' || type === 'plugins') {
-          const pluginResults = mockPlugins.filter(plugin =>
-            plugin.name.toLowerCase().includes(searchTerm) ||
-            plugin.description.toLowerCase().includes(searchTerm) ||
-            plugin.author.toLowerCase().includes(searchTerm) ||
-            plugin.category.toLowerCase().includes(searchTerm) ||
-            plugin.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+          const pluginResults = mockPlugins.filter(
+            (plugin) =>
+              plugin.name.toLowerCase().includes(searchTerm) ||
+              plugin.description.toLowerCase().includes(searchTerm) ||
+              plugin.author.toLowerCase().includes(searchTerm) ||
+              plugin.category.toLowerCase().includes(searchTerm) ||
+              plugin.tags.some((tag) => tag.toLowerCase().includes(searchTerm))
           );
 
           // Add search score
-          const scoredPlugins = pluginResults.map(plugin => {
+          const scoredPlugins = pluginResults.map((plugin) => {
             let score = 0;
 
             // Exact name match gets highest score
@@ -57,7 +58,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             if (plugin.description.toLowerCase().includes(searchTerm)) score += 40;
 
             // Tag match
-            plugin.tags.forEach(tag => {
+            plugin.tags.forEach((tag) => {
               if (tag.toLowerCase() === searchTerm) score += 50;
               else if (tag.toLowerCase().includes(searchTerm)) score += 30;
             });
@@ -70,7 +71,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
             return {
               ...plugin,
-              _searchScore: score
+              _searchScore: score,
             };
           });
 
@@ -82,15 +83,16 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
         // Search marketplaces
         if (type === 'all' || type === 'marketplaces') {
-          const marketplaceResults = mockMarketplaces.filter(marketplace =>
-            marketplace.name.toLowerCase().includes(searchTerm) ||
-            marketplace.description.toLowerCase().includes(searchTerm) ||
-            marketplace.owner.toLowerCase().includes(searchTerm) ||
-            marketplace.category.toLowerCase().includes(searchTerm)
+          const marketplaceResults = mockMarketplaces.filter(
+            (marketplace) =>
+              marketplace.name.toLowerCase().includes(searchTerm) ||
+              marketplace.description.toLowerCase().includes(searchTerm) ||
+              marketplace.owner.toLowerCase().includes(searchTerm) ||
+              marketplace.category.toLowerCase().includes(searchTerm)
           );
 
           // Add search score
-          const scoredMarketplaces = marketplaceResults.map(marketplace => {
+          const scoredMarketplaces = marketplaceResults.map((marketplace) => {
             let score = 0;
 
             // Exact name match gets highest score
@@ -111,7 +113,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
             return {
               ...marketplace,
-              _searchScore: score
+              _searchScore: score,
             };
           });
 
@@ -137,8 +139,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
         // Add categories from results
         [...results.plugins, ...results.marketplaces].forEach((item: any) => {
-          if (item.category && item.category.toLowerCase() !== searchTerm &&
-              item.category.toLowerCase().includes(searchTerm)) {
+          if (
+            item.category &&
+            item.category.toLowerCase() !== searchTerm &&
+            item.category.toLowerCase().includes(searchTerm)
+          ) {
             suggestions.add(item.category);
           }
         });
@@ -151,15 +156,15 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             total: results.total,
             limit: limitNum,
             offset: offsetNum,
-            hasMore: results.total > offsetNum + limitNum
+            hasMore: results.total > offsetNum + limitNum,
           },
-          suggestions: Array.from(suggestions).slice(0, 10)
+          suggestions: Array.from(suggestions).slice(0, 10),
         });
       } catch (error) {
         console.error('Error performing search:', error);
         res.status(500).json({
           error: 'Internal Server Error',
-          message: 'Failed to perform search'
+          message: 'Failed to perform search',
         });
       }
       break;
@@ -168,7 +173,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       res.setHeader('Allow', ['GET']);
       res.status(405).json({
         error: 'Method Not Allowed',
-        message: `Method ${method} not allowed`
+        message: `Method ${method} not allowed`,
       });
       break;
   }

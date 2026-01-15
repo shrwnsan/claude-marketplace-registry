@@ -340,9 +340,7 @@ describe('GitHubSearchService', () => {
         success: true,
         data: {
           total_count: 50,
-          items: [
-            { id: 1, name: 'popular-repo', stargazers_count: 100 },
-          ],
+          items: [{ id: 1, name: 'popular-repo', stargazers_count: 100 }],
           incomplete_results: false,
         },
       });
@@ -362,9 +360,7 @@ describe('GitHubSearchService', () => {
         success: true,
         data: {
           total_count: 30,
-          items: [
-            { id: 1, name: 'recent-repo', updated_at: '2025-01-01' },
-          ],
+          items: [{ id: 1, name: 'recent-repo', updated_at: '2025-01-01' }],
           incomplete_results: false,
         },
       });

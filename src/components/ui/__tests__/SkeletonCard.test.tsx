@@ -30,14 +30,14 @@ describe('SkeletonCard Component', () => {
     });
 
     it('should apply custom className', () => {
-      const { container } = render(<SkeletonCard className="custom-skeleton" />);
+      const { container } = render(<SkeletonCard className='custom-skeleton' />);
 
       const card = container.querySelector('.custom-skeleton');
       expect(card).toBeInTheDocument();
     });
 
     it('should preserve default classes with custom className', () => {
-      const { container } = render(<SkeletonCard className="custom-class" />);
+      const { container } = render(<SkeletonCard className='custom-class' />);
 
       const card = container.firstChild as HTMLElement;
       expect(card).toHaveClass('card');
@@ -216,7 +216,7 @@ describe('SkeletonCard Component', () => {
     });
 
     it('should handle empty className', () => {
-      const { container } = render(<SkeletonCard className="" />);
+      const { container } = render(<SkeletonCard className='' />);
 
       const card = container.firstChild as HTMLElement;
       expect(card).toBeInTheDocument();
@@ -225,8 +225,8 @@ describe('SkeletonCard Component', () => {
     it('should render multiple skeleton cards independently', () => {
       const { container } = render(
         <div>
-          <SkeletonCard className="card1" />
-          <SkeletonCard className="card2" />
+          <SkeletonCard className='card1' />
+          <SkeletonCard className='card2' />
         </div>
       );
 

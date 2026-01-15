@@ -11,8 +11,6 @@
 
 import {
   EcosystemDataService,
-  CollectionResult,
-  CollectionConfig,
   getEcosystemMarketplaces,
   getEcosystemPlugins,
   clearEcosystemCache,
@@ -132,9 +130,7 @@ describe('EcosystemDataService', () => {
     it('should include warnings when mock data is used', async () => {
       const result = await service.collectMarketplaces();
 
-      expect(result.warnings).toContain(
-        'Mock data included for development/testing purposes'
-      );
+      expect(result.warnings).toContain('Mock data included for development/testing purposes');
     });
 
     it('should return proper metadata structure', async () => {

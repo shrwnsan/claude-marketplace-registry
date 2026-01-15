@@ -18,27 +18,39 @@ global.fetch = jest.fn();
 
 // Mock the recharts components to avoid rendering issues in tests
 jest.mock('recharts', () => ({
-  LineChart: ({ children }: { children: React.ReactNode }) => <div data-testid="line-chart">{children}</div>,
-  Line: () => <div data-testid="line" />,
-  XAxis: () => <div data-testid="x-axis" />,
-  YAxis: () => <div data-testid="y-axis" />,
-  CartesianGrid: () => <div data-testid="cartesian-grid" />,
-  Tooltip: ({ content }: { content: React.ReactNode }) => <div data-testid="tooltip">{content}</div>,
-  Legend: () => <div data-testid="legend" />,
-  ResponsiveContainer: ({ children }: { children: React.ReactNode }) => <div data-testid="responsive-container">{children}</div>,
+  LineChart: ({ children }: { children: React.ReactNode }) => (
+    <div data-testid='line-chart'>{children}</div>
+  ),
+  Line: () => <div data-testid='line' />,
+  XAxis: () => <div data-testid='x-axis' />,
+  YAxis: () => <div data-testid='y-axis' />,
+  CartesianGrid: () => <div data-testid='cartesian-grid' />,
+  Tooltip: ({ content }: { content: React.ReactNode }) => (
+    <div data-testid='tooltip'>{content}</div>
+  ),
+  Legend: () => <div data-testid='legend' />,
+  ResponsiveContainer: ({ children }: { children: React.ReactNode }) => (
+    <div data-testid='responsive-container'>{children}</div>
+  ),
 }));
 
 // Mock LoadingState and ErrorDisplay
 jest.mock('../../ui/LoadingState', () => {
   return function MockLoadingState({ message }: { message?: string }) {
-    return <div data-testid="loading-state">{message || 'Loading...'}</div>;
+    return <div data-testid='loading-state'>{message || 'Loading...'}</div>;
   };
 });
 
 jest.mock('../../ui/ErrorDisplay', () => {
-  return function MockErrorDisplay({ message, onRetry }: { message: string; onRetry?: () => void }) {
+  return function MockErrorDisplay({
+    message,
+    onRetry,
+  }: {
+    message: string;
+    onRetry?: () => void;
+  }) {
     return (
-      <div data-testid="error-display">
+      <div data-testid='error-display'>
         <span>{message}</span>
         {onRetry && <button onClick={onRetry}>Retry</button>}
       </div>
@@ -83,10 +95,13 @@ describe('GrowthTrends Component', () => {
     render(<GrowthTrends />);
 
     // Loading state should be present initially before data loads
-    await waitFor(() => {
-      expect(screen.getByTestId('loading-state')).toBeInTheDocument();
-      expect(screen.getByText('Loading growth trends...')).toBeInTheDocument();
-    }, { timeout: 100 });
+    await waitFor(
+      () => {
+        expect(screen.getByTestId('loading-state')).toBeInTheDocument();
+        expect(screen.getByText('Loading growth trends...')).toBeInTheDocument();
+      },
+      { timeout: 100 }
+    );
   });
 
   it('renders the component title and description', async () => {
@@ -94,7 +109,11 @@ describe('GrowthTrends Component', () => {
 
     await waitFor(() => {
       expect(screen.getByText('Ecosystem Growth Trends')).toBeInTheDocument();
-      expect(screen.getByText(/Track the growth of plugins, marketplaces, developers, and downloads over time/)).toBeInTheDocument();
+      expect(
+        screen.getByText(
+          /Track the growth of plugins, marketplaces, developers, and downloads over time/
+        )
+      ).toBeInTheDocument();
     });
   });
 
@@ -213,7 +232,10 @@ describe('GrowthTrends Component', () => {
 
     await waitFor(() => {
       expect(screen.getByRole('region')).toHaveAttribute('aria-labelledby', 'growth-trends-title');
-      expect(screen.getByRole('img')).toHaveAttribute('aria-label', 'Ecosystem growth chart showing trends over time');
+      expect(screen.getByRole('img')).toHaveAttribute(
+        'aria-label',
+        'Ecosystem growth chart showing trends over time'
+      );
     });
   });
 

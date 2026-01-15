@@ -17,7 +17,7 @@ import MainLayout from '../MainLayout';
 jest.mock('../Header', () => ({
   __esModule: true,
   default: ({ className }: { className?: string }) => (
-    <header className={className} data-testid="header">
+    <header className={className} data-testid='header'>
       Header
     </header>
   ),
@@ -26,7 +26,7 @@ jest.mock('../Header', () => ({
 jest.mock('../Footer', () => ({
   __esModule: true,
   default: ({ className }: { className?: string }) => (
-    <footer className={className} data-testid="footer">
+    <footer className={className} data-testid='footer'>
       Footer
     </footer>
   ),
@@ -37,7 +37,7 @@ describe('MainLayout Component', () => {
     it('should render children in main content area', () => {
       render(
         <MainLayout>
-          <div data-testid="test-content">Test Content</div>
+          <div data-testid='test-content'>Test Content</div>
         </MainLayout>
       );
 
@@ -83,9 +83,9 @@ describe('MainLayout Component', () => {
     it('should render multiple children', () => {
       render(
         <MainLayout>
-          <div data-testid="child1">Child 1</div>
-          <div data-testid="child2">Child 2</div>
-          <div data-testid="child3">Child 3</div>
+          <div data-testid='child1'>Child 1</div>
+          <div data-testid='child2'>Child 2</div>
+          <div data-testid='child3'>Child 3</div>
         </MainLayout>
       );
 
@@ -98,7 +98,7 @@ describe('MainLayout Component', () => {
   describe('Custom Classes', () => {
     it('should apply custom className to wrapper', () => {
       const { container } = render(
-        <MainLayout className="custom-wrapper-class">Content</MainLayout>
+        <MainLayout className='custom-wrapper-class'>Content</MainLayout>
       );
 
       const wrapper = container.firstChild as HTMLElement;
@@ -106,21 +106,19 @@ describe('MainLayout Component', () => {
     });
 
     it('should apply custom className to header', () => {
-      render(<MainLayout headerClassName="custom-header">Content</MainLayout>);
+      render(<MainLayout headerClassName='custom-header'>Content</MainLayout>);
 
       expect(screen.getByTestId('header')).toHaveClass('custom-header');
     });
 
     it('should apply custom className to footer', () => {
-      render(<MainLayout footerClassName="custom-footer">Content</MainLayout>);
+      render(<MainLayout footerClassName='custom-footer'>Content</MainLayout>);
 
       expect(screen.getByTestId('footer')).toHaveClass('custom-footer');
     });
 
     it('should include default classes along with custom classes', () => {
-      const { container } = render(
-        <MainLayout className="custom-class">Content</MainLayout>
-      );
+      const { container } = render(<MainLayout className='custom-class'>Content</MainLayout>);
 
       const wrapper = container.firstChild as HTMLElement;
       expect(wrapper).toHaveClass('min-h-screen');
@@ -218,9 +216,9 @@ describe('MainLayout Component', () => {
     it('should render with all custom classes', () => {
       const { container } = render(
         <MainLayout
-          className="wrapper-custom"
-          headerClassName="header-custom"
-          footerClassName="footer-custom"
+          className='wrapper-custom'
+          headerClassName='header-custom'
+          footerClassName='footer-custom'
         >
           Content
         </MainLayout>

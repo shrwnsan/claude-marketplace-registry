@@ -129,25 +129,29 @@ const MOCK_MARKETPLACE_REPOS = [
   {
     owner: 'anthropic',
     repo: 'claude-marketplace',
-    manifestUrl: 'https://raw.githubusercontent.com/anthropic/claude-marketplace/main/marketplace.json',
+    manifestUrl:
+      'https://raw.githubusercontent.com/anthropic/claude-marketplace/main/marketplace.json',
     description: 'Official Claude Marketplace by Anthropic',
   },
   {
     owner: 'claude-community',
     repo: 'claude-plugins',
-    manifestUrl: 'https://raw.githubusercontent.com/claude-community/claude-plugins/main/marketplace.json',
+    manifestUrl:
+      'https://raw.githubusercontent.com/claude-community/claude-plugins/main/marketplace.json',
     description: 'Community-curated Claude plugins collection',
   },
   {
     owner: 'awesome-claude',
     repo: 'awesome-claude',
-    manifestUrl: 'https://raw.githubusercontent.com/awesome-claude/awesome-claude/main/marketplace.json',
+    manifestUrl:
+      'https://raw.githubusercontent.com/awesome-claude/awesome-claude/main/marketplace.json',
     description: 'Curated list of awesome Claude resources',
   },
   {
     owner: 'claude-dev-tools',
     repo: 'marketplace',
-    manifestUrl: 'https://raw.githubusercontent.com/claude-dev-tools/marketplace/main/marketplace.json',
+    manifestUrl:
+      'https://raw.githubusercontent.com/claude-dev-tools/marketplace/main/marketplace.json',
     description: 'Developer tools marketplace for Claude',
   },
   {
@@ -215,7 +219,10 @@ const MOCK_PLUGINS: Plugin[] = [
  * In-memory cache for data collection results
  */
 class DataCache {
-  private cache = new Map<string, { data: CollectionResult<Marketplace | Plugin>; timestamp: number; ttl: number }>();
+  private cache = new Map<
+    string,
+    { data: CollectionResult<Marketplace | Plugin>; timestamp: number; ttl: number }
+  >();
 
   set(key: string, data: CollectionResult<Marketplace | Plugin>, ttl: number): void {
     this.cache.set(key, {
@@ -334,9 +341,10 @@ export class EcosystemDataService {
       // Cache the results
       dataCache.set(cacheKey, result, this.config.cacheTTL * 60 * 1000);
 
-      logger.info(`Marketplace collection completed: ${marketplaces.length} marketplaces in ${collectionTime}ms`);
+      logger.info(
+        `Marketplace collection completed: ${marketplaces.length} marketplaces in ${collectionTime}ms`
+      );
       return result;
-
     } catch (error) {
       const errorMessage = `Failed to collect marketplaces: ${error instanceof Error ? error.message : 'Unknown error'}`;
       logger.error(errorMessage);
@@ -427,7 +435,6 @@ export class EcosystemDataService {
 
       logger.info(`Plugin collection completed: ${plugins.length} plugins in ${collectionTime}ms`);
       return result;
-
     } catch (error) {
       const errorMessage = `Failed to collect plugins: ${error instanceof Error ? error.message : 'Unknown error'}`;
       logger.error(errorMessage);
@@ -512,7 +519,7 @@ export class EcosystemDataService {
     // Fetch repository data
     const repoResponse = await fetch(repoUrl, {
       headers: {
-        'Accept': 'application/vnd.github.v3+json',
+        Accept: 'application/vnd.github.v3+json',
         'User-Agent': 'Claude-Marketplace-Registry/1.0.0',
       },
       signal: AbortSignal.timeout(this.config.apiTimeout),
@@ -578,7 +585,10 @@ export class EcosystemDataService {
    * @param repoData - Repository data for context
    * @returns Array of Plugin objects
    */
-  private parseManifestToPlugins(manifestPlugins: RawPluginManifest[], repoData: RawMarketplaceData): Plugin[] {
+  private parseManifestToPlugins(
+    manifestPlugins: RawPluginManifest[],
+    repoData: RawMarketplaceData
+  ): Plugin[] {
     return manifestPlugins.map((plugin, index) => ({
       id: `${repoData.owner.login}-${repoData.name}-${plugin.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
       name: plugin.name,
@@ -626,7 +636,8 @@ export class EcosystemDataService {
     score += Math.min(plugins.length * 2, 25);
 
     // Recent activity (max 15 points)
-    const daysSinceUpdate = (Date.now() - new Date(repoData.updated_at).getTime()) / (1000 * 60 * 60 * 24);
+    const daysSinceUpdate =
+      (Date.now() - new Date(repoData.updated_at).getTime()) / (1000 * 60 * 60 * 24);
     if (daysSinceUpdate < 30) score += 15;
     else if (daysSinceUpdate < 90) score += 10;
     else if (daysSinceUpdate < 365) score += 5;
@@ -662,7 +673,7 @@ export class EcosystemDataService {
       id: `${repo.owner}-${repo.repo}`,
       name: repo.repo
         .split('-')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' '),
       description: repo.description,
       owner: {
@@ -720,7 +731,9 @@ export const ecosystemDataService = new EcosystemDataService();
 /**
  * Convenience functions for common operations
  */
-export async function getEcosystemMarketplaces(refreshCache = false): Promise<CollectionResult<Marketplace>> {
+export async function getEcosystemMarketplaces(
+  refreshCache = false
+): Promise<CollectionResult<Marketplace>> {
   return ecosystemDataService.collectMarketplaces(refreshCache);
 }
 

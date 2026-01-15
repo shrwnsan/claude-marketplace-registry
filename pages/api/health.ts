@@ -21,10 +21,7 @@ interface HealthResponse {
   };
 }
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<HealthResponse>
-) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse<HealthResponse>) {
   const startTime = Date.now();
   const version = process.env.npm_package_version || '1.0.0';
 
@@ -34,11 +31,11 @@ export default async function handler(
       dataFiles: false,
       githubApi: false,
       buildStatus: false,
-      memoryUsage: false
+      memoryUsage: false,
     };
 
     const details: HealthResponse['details'] = {
-      memoryUsage: process.memoryUsage()
+      memoryUsage: process.memoryUsage(),
     };
 
     // Check 1: Data files existence and freshness
@@ -63,10 +60,10 @@ export default async function handler(
     try {
       const response = await fetch('https://api.github.com/rate_limit', {
         headers: {
-          'Authorization': `token ${process.env.GITHUB_TOKEN}`,
-          'Accept': 'application/vnd.github.v3+json',
+          Authorization: `token ${process.env.GITHUB_TOKEN}`,
+          Accept: 'application/vnd.github.v3+json',
         },
-        signal: AbortSignal.timeout(5000) // 5 second timeout
+        signal: AbortSignal.timeout(5000), // 5 second timeout
       });
 
       checks.githubApi = response.ok;
@@ -89,7 +86,7 @@ export default async function handler(
     checks.memoryUsage = memoryUsageMB < 500;
 
     // Determine overall health
-    const allChecksPass = Object.values(checks).every(check => check === true);
+    const allChecksPass = Object.values(checks).every((check) => check === true);
     const status = allChecksPass ? 'healthy' : 'unhealthy';
 
     // Calculate response time
@@ -101,7 +98,7 @@ export default async function handler(
       uptime: process.uptime(),
       version,
       checks,
-      details: status === 'unhealthy' ? details : undefined
+      details: status === 'unhealthy' ? details : undefined,
     };
 
     // Set cache headers
@@ -109,7 +106,6 @@ export default async function handler(
     res.setHeader('X-Response-Time', `${responseTime}ms`);
 
     return res.status(status === 'healthy' ? 200 : 503).json(healthResponse);
-
   } catch (error) {
     console.error('Health check failed:', error);
 
@@ -122,11 +118,11 @@ export default async function handler(
         dataFiles: false,
         githubApi: false,
         buildStatus: false,
-        memoryUsage: false
+        memoryUsage: false,
       },
       details: {
-        error: error instanceof Error ? error.message : 'Unknown error'
-      }
+        error: error instanceof Error ? error.message : 'Unknown error',
+      },
     };
 
     return res.status(503).json(errorResponse);

@@ -33,9 +33,7 @@ describe('useRealMarketplaceData Hook', () => {
 
     it('should load real data successfully', async () => {
       const mockRealData = {
-        marketplaces: [
-          { id: '1', name: 'Real Marketplace', description: 'Real data' },
-        ],
+        marketplaces: [{ id: '1', name: 'Real Marketplace', description: 'Real data' }],
       };
 
       (global.fetch as jest.Mock).mockResolvedValue({

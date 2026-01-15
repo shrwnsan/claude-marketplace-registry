@@ -4,8 +4,21 @@
  */
 
 // Core data types
-export type { Marketplace, MarketplaceListItem, MarketplaceCreateInput, MarketplaceUpdateInput } from './marketplace';
-export type { Plugin, PluginListItem, PluginCreateInput, PluginUpdateInput, PluginManifest, PluginValidationResult, PluginSearchFilters } from './plugin';
+export type {
+  Marketplace,
+  MarketplaceListItem,
+  MarketplaceCreateInput,
+  MarketplaceUpdateInput,
+} from './marketplace';
+export type {
+  Plugin,
+  PluginListItem,
+  PluginCreateInput,
+  PluginUpdateInput,
+  PluginManifest,
+  PluginValidationResult,
+  PluginSearchFilters,
+} from './plugin';
 
 // GitHub API types
 export type {
@@ -24,7 +37,7 @@ export type {
   ContentFetchOptions,
   GitHubApiResponse,
   GitHubClientConfig,
-  RepositorySearchFilters
+  RepositorySearchFilters,
 } from './github';
 
 // Common utility types
@@ -33,16 +46,11 @@ export type {
   SearchFilters,
   SortOptions,
   PaginationOptions,
-  SearchResult
+  SearchResult,
 } from './common';
 
 // Data processing types
-export type {
-  QualityMetrics,
-  ValidationResult,
-  ProcessingResult,
-  ScanResult
-} from './processing';
+export type { QualityMetrics, ValidationResult, ProcessingResult, ScanResult } from './processing';
 
 // Ecosystem Statistics types
 export type {

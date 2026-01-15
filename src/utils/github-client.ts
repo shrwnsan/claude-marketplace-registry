@@ -8,7 +8,7 @@ import {
   GitHubClientConfig,
   GitHubApiResponse,
   GitHubRateLimit,
-  GitHubError
+  GitHubError,
 } from '@/types/github';
 import { RateLimiter } from './security';
 
@@ -55,10 +55,12 @@ export class GitHubClient {
       auth: this.config.token || process.env.GITHUB_TOKEN,
       userAgent: this.config.userAgent,
       baseUrl: this.config.baseUrl,
-      throttle: this.config.throttle?.enabled ? {
-        onRateLimit: this.handleRateLimit.bind(this),
-        onAbuseLimit: this.handleAbuseLimit.bind(this),
-      } : undefined,
+      throttle: this.config.throttle?.enabled
+        ? {
+            onRateLimit: this.handleRateLimit.bind(this),
+            onAbuseLimit: this.handleAbuseLimit.bind(this),
+          }
+        : undefined,
       request: {
         retries: this.config.retry?.enabled ? this.config.retry.maxRetries : 0,
         retryAfter: this.config.retry?.baseDelay || 1000,
@@ -69,11 +71,7 @@ export class GitHubClient {
   /**
    * Handle rate limit exceeded
    */
-  private handleRateLimit(
-    retryAfter: number,
-    options: any,
-    octokit: Octokit
-  ): boolean {
+  private handleRateLimit(retryAfter: number, options: any, octokit: Octokit): boolean {
     console.warn(`Rate limit exceeded. Retrying after ${retryAfter} seconds`);
     return this.config.retry?.maxRetries ? true : false;
   }
@@ -81,21 +79,14 @@ export class GitHubClient {
   /**
    * Handle abuse limit exceeded
    */
-  private handleAbuseLimit(
-    retryAfter: number,
-    options: any,
-    octokit: Octokit
-  ): void {
+  private handleAbuseLimit(retryAfter: number, options: any, octokit: Octokit): void {
     console.error(`Abuse limit detected. Waiting ${retryAfter} seconds`);
   }
 
   /**
    * Exponential backoff retry logic
    */
-  private async retryWithBackoff<T>(
-    operation: () => Promise<T>,
-    retryCount = 0
-  ): Promise<T> {
+  private async retryWithBackoff<T>(operation: () => Promise<T>, retryCount = 0): Promise<T> {
     try {
       return await operation();
     } catch (error: any) {
@@ -106,7 +97,9 @@ export class GitHubClient {
       }
 
       const delay = this.calculateBackoffDelay(retryCount);
-      console.warn(`Request failed, retrying in ${delay}ms (attempt ${retryCount + 1}/${this.config.retry!.maxRetries})`);
+      console.warn(
+        `Request failed, retrying in ${delay}ms (attempt ${retryCount + 1}/${this.config.retry!.maxRetries})`
+      );
 
       await this.sleep(delay);
       return this.retryWithBackoff(operation, retryCount + 1);
@@ -153,7 +146,7 @@ export class GitHubClient {
    * Sleep helper for delays
    */
   private sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
   /**
@@ -167,9 +160,7 @@ export class GitHubClient {
   /**
    * Execute a GitHub API request with error handling and retry logic
    */
-  private async executeRequest<T>(
-    operation: () => Promise<T>
-  ): Promise<GitHubApiResponse<T>> {
+  private async executeRequest<T>(operation: () => Promise<T>): Promise<GitHubApiResponse<T>> {
     try {
       // Check rate limit before making request
       if (!this.rateLimiter.isAllowed()) {

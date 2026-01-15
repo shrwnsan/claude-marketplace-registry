@@ -45,7 +45,7 @@ function runCommand(command, description, options = {}) {
     log(`Running: ${description}...`);
     const result = execSync(command, {
       stdio: 'inherit',
-      ...options
+      ...options,
     });
     logSuccess(`${description} completed successfully`);
     return true;
@@ -58,9 +58,7 @@ function runCommand(command, description, options = {}) {
 function validateEnvironment() {
   logStep(1, 'Environment Validation');
 
-  const requiredEnvVars = [
-    'NODE_ENV',
-  ];
+  const requiredEnvVars = ['NODE_ENV'];
 
   const optionalEnvVars = [
     'NEXT_PUBLIC_SITE_URL',
@@ -72,7 +70,7 @@ function validateEnvironment() {
   let allValid = true;
 
   // Check required variables
-  requiredEnvVars.forEach(envVar => {
+  requiredEnvVars.forEach((envVar) => {
     if (!process.env[envVar]) {
       logError(`Missing required environment variable: ${envVar}`);
       allValid = false;
@@ -82,7 +80,7 @@ function validateEnvironment() {
   });
 
   // Check optional variables
-  optionalEnvVars.forEach(envVar => {
+  optionalEnvVars.forEach((envVar) => {
     if (process.env[envVar]) {
       logSuccess(`✓ ${envVar} is configured`);
     } else {
@@ -153,9 +151,7 @@ function buildProject() {
   }
 
   // Build the project
-  const buildCmd = process.env.ANALYZE === 'true'
-    ? 'npm run build -- --analyze'
-    : 'npm run build';
+  const buildCmd = process.env.ANALYZE === 'true' ? 'npm run build -- --analyze' : 'npm run build';
 
   if (!runCommand(buildCmd, 'Next.js production build')) {
     logError('Build failed');
@@ -177,10 +173,7 @@ function validateBuild() {
   }
 
   // Check for essential build files
-  const essentialFiles = [
-    '.next/BUILD_ID',
-    '.next/routes-manifest.json',
-  ];
+  const essentialFiles = ['.next/BUILD_ID', '.next/routes-manifest.json'];
 
   for (const file of essentialFiles) {
     if (fs.existsSync(path.join(buildDir, file))) {
@@ -232,7 +225,7 @@ function generateBuildReport() {
 
 function main() {
   log('\n🚀 Claude Marketplace Registry - Production Build', colors.magenta);
-  log('=' .repeat(60));
+  log('='.repeat(60));
 
   const startTime = Date.now();
 
@@ -271,7 +264,6 @@ function main() {
     log('  - Test the build: npm run start');
     log('  - Deploy to staging/production');
     log('  - Monitor performance and error rates');
-
   } catch (error) {
     logError(`Build process failed: ${error.message}`);
     process.exit(1);

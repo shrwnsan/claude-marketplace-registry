@@ -11,7 +11,6 @@
 
 import { GitHubMetadataService, MetadataConfig } from '../github-metadata';
 import { GitHubClient } from '@/utils/github-client';
-import { RepositoryMetadata } from '@/types/github';
 
 // Mock the GitHubClient
 jest.mock('@/utils/github-client');
@@ -133,7 +132,7 @@ describe('GitHubMetadataService', () => {
       // First call
       await shortCacheService.getRepositoryMetadata('test-owner', 'test-repo');
       // Wait for cache to expire
-      await new Promise(resolve => setTimeout(resolve, 10));
+      await new Promise((resolve) => setTimeout(resolve, 10));
       // Second call should not use cache (TTL expired)
       await shortCacheService.getRepositoryMetadata('test-owner', 'test-repo');
 
@@ -345,10 +344,7 @@ describe('GitHubMetadataService', () => {
         error: { message: 'Not found' },
       });
 
-      const result = await minimalService.getEnhancedRepositoryMetadata(
-        'test-owner',
-        'test-repo'
-      );
+      const result = await minimalService.getEnhancedRepositoryMetadata('test-owner', 'test-repo');
 
       expect(result.success).toBe(true);
       expect(mockClient.getLanguages).not.toHaveBeenCalled();

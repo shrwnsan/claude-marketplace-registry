@@ -181,7 +181,9 @@ describe('QualityIndicators Component', () => {
       render(<QualityIndicators />);
 
       await waitFor(() => {
-        expect(screen.getByText(/15 plugins haven't been updated in 6\+ months/i)).toBeInTheDocument();
+        expect(
+          screen.getByText(/15 plugins haven't been updated in 6\+ months/i)
+        ).toBeInTheDocument();
       });
     });
   });
@@ -476,32 +478,39 @@ describe('QualityIndicators Component', () => {
 
       // Trigger a refresh and verify it becomes disabled during loading
       (fetch as jest.MockedFunction<typeof fetch>).mockImplementationOnce(
-        () => new Promise(resolve => setTimeout(() => resolve({
-          ok: true,
-          status: 200,
-          json: async () => ({
-            success: true,
-            data: mockQualityData,
-            meta: {
-              timestamp: '2025-10-21T10:30:00Z',
-              requestId: 'test-123',
-              responseTime: 150,
-            },
-          }),
-          headers: new Headers(),
-          redirected: false,
-          statusText: 'OK',
-          type: 'basic',
-          url: '/api/ecosystem-stats?quality',
-          clone: jest.fn(),
-          body: null,
-          bodyUsed: false,
-          arrayBuffer: jest.fn(),
-          blob: jest.fn(),
-          formData: jest.fn(),
-          text: jest.fn(),
-          bytes: jest.fn(),
-        }), 100))
+        () =>
+          new Promise((resolve) =>
+            setTimeout(
+              () =>
+                resolve({
+                  ok: true,
+                  status: 200,
+                  json: async () => ({
+                    success: true,
+                    data: mockQualityData,
+                    meta: {
+                      timestamp: '2025-10-21T10:30:00Z',
+                      requestId: 'test-123',
+                      responseTime: 150,
+                    },
+                  }),
+                  headers: new Headers(),
+                  redirected: false,
+                  statusText: 'OK',
+                  type: 'basic',
+                  url: '/api/ecosystem-stats?quality',
+                  clone: jest.fn(),
+                  body: null,
+                  bodyUsed: false,
+                  arrayBuffer: jest.fn(),
+                  blob: jest.fn(),
+                  formData: jest.fn(),
+                  text: jest.fn(),
+                  bytes: jest.fn(),
+                }),
+              100
+            )
+          )
       );
 
       fireEvent.click(refreshButton);

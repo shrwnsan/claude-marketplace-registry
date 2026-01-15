@@ -139,7 +139,10 @@ export const formatFileSize = (bytes: number, decimals: number = 1): string => {
  * formatDate("2025-10-21T10:30:00Z", "short") // "Oct 21, 2025"
  * formatDate("2025-10-21T10:30:00Z", "relative") // "2 hours ago"
  */
-export const formatDate = (isoString: string, format: 'short' | 'medium' | 'long' | 'relative' = 'short'): string => {
+export const formatDate = (
+  isoString: string,
+  format: 'short' | 'medium' | 'long' | 'relative' = 'short'
+): string => {
   const date = new Date(isoString);
   const now = new Date();
 
@@ -163,11 +166,19 @@ export const formatDate = (isoString: string, format: 'short' | 'medium' | 'long
     }
   }
 
-  const options: Intl.DateTimeFormatOptions = format === 'short'
-    ? { month: 'short', day: 'numeric', year: 'numeric' }
-    : format === 'medium'
-    ? { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }
-    : { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+  const options: Intl.DateTimeFormatOptions =
+    format === 'short'
+      ? { month: 'short', day: 'numeric', year: 'numeric' }
+      : format === 'medium'
+        ? { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }
+        : {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+          };
 
   return date.toLocaleDateString('en-US', options);
 };
@@ -181,7 +192,9 @@ export const formatDate = (isoString: string, format: 'short' | 'medium' | 'long
  * @example
  * getDateRange('30d') // { start: "2025-09-21T...", end: "2025-10-21T..." }
  */
-export const getDateRange = (period: '7d' | '30d' | '90d' | '1y'): { start: string; end: string } => {
+export const getDateRange = (
+  period: '7d' | '30d' | '90d' | '1y'
+): { start: string; end: string } => {
   const end = new Date();
   const start = new Date();
 
@@ -268,9 +281,7 @@ export const calculateMedian = (values: number[]): number => {
   const sorted = [...values].sort((a, b) => a - b);
   const mid = Math.floor(sorted.length / 2);
 
-  return sorted.length % 2 === 0
-    ? (sorted[mid - 1] + sorted[mid]) / 2
-    : sorted[mid];
+  return sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
 };
 
 /**
@@ -308,12 +319,12 @@ export const transformTrendsToChartData = (
   trends: GrowthTrends,
   metrics: Array<'plugins' | 'marketplaces' | 'developers' | 'downloads'>
 ): Array<{ date: string; [key: string]: string | number }> => {
-  const maxLength = Math.max(...metrics.map(metric => trends[metric].length));
+  const maxLength = Math.max(...metrics.map((metric) => trends[metric].length));
 
   return Array.from({ length: maxLength }, (_, index) => {
     const dataPoint: any = {};
 
-    metrics.forEach(metric => {
+    metrics.forEach((metric) => {
       const trendData = trends[metric][index];
       if (trendData) {
         dataPoint.date = trendData.date;
@@ -325,7 +336,7 @@ export const transformTrendsToChartData = (
     });
 
     return dataPoint;
-  }).filter(point => point.date);
+  }).filter((point) => point.date);
 };
 
 /**
@@ -346,7 +357,7 @@ export const transformCategoriesToPieChart = (
   return categories.categories
     .sort((a, b) => b.count - a.count)
     .slice(0, limit)
-    .map(category => ({
+    .map((category) => ({
       name: category.name,
       value: category.count,
       percentage: category.percentage,
@@ -387,7 +398,7 @@ export const createPublicEcosystemStats = (fullStats: {
     categories: fullStats.categoryAnalytics.categories
       .sort((a, b) => b.count - a.count)
       .slice(0, 5)
-      .map(cat => ({
+      .map((cat) => ({
         name: cat.name,
         count: cat.count,
         percentage: cat.percentage,
@@ -413,25 +424,29 @@ export const createPublicEcosystemStats = (fullStats: {
 export const aggregatePluginsByMarketplace = (
   plugins: PluginData[]
 ): Record<string, { count: number; avgQuality: number; totalDownloads: number }> => {
-  return plugins.reduce((acc, plugin) => {
-    const marketplaceId = plugin.plugin.marketplaceId;
+  return plugins.reduce(
+    (acc, plugin) => {
+      const marketplaceId = plugin.plugin.marketplaceId;
 
-    if (!acc[marketplaceId]) {
-      acc[marketplaceId] = {
-        count: 0,
-        avgQuality: 0,
-        totalDownloads: 0,
-      };
-    }
+      if (!acc[marketplaceId]) {
+        acc[marketplaceId] = {
+          count: 0,
+          avgQuality: 0,
+          totalDownloads: 0,
+        };
+      }
 
-    acc[marketplaceId].count++;
-    acc[marketplaceId].totalDownloads += plugin.popularity.downloads;
-    acc[marketplaceId].avgQuality =
-      (acc[marketplaceId].avgQuality * (acc[marketplaceId].count - 1) + plugin.quality.qualityScore) /
-      acc[marketplaceId].count;
+      acc[marketplaceId].count++;
+      acc[marketplaceId].totalDownloads += plugin.popularity.downloads;
+      acc[marketplaceId].avgQuality =
+        (acc[marketplaceId].avgQuality * (acc[marketplaceId].count - 1) +
+          plugin.quality.qualityScore) /
+        acc[marketplaceId].count;
 
-    return acc;
-  }, {} as Record<string, { count: number; avgQuality: number; totalDownloads: number }>);
+      return acc;
+    },
+    {} as Record<string, { count: number; avgQuality: number; totalDownloads: number }>
+  );
 };
 
 /**
@@ -457,7 +472,7 @@ export const filterAndSortData = <T>(
   // Apply filters
   Object.entries(filters).forEach(([key, value]) => {
     if (value !== undefined && value !== null) {
-      filtered = filtered.filter(item => {
+      filtered = filtered.filter((item) => {
         const itemValue = (item as any)[key];
         if (typeof value === 'boolean') {
           return itemValue === value;
@@ -480,9 +495,7 @@ export const filterAndSortData = <T>(
       const bValue = (b as any)[sortBy];
 
       if (typeof aValue === 'string' && typeof bValue === 'string') {
-        return sortOrder === 'asc'
-          ? aValue.localeCompare(bValue)
-          : bValue.localeCompare(aValue);
+        return sortOrder === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
       }
 
       if (typeof aValue === 'number' && typeof bValue === 'number') {
@@ -519,7 +532,7 @@ export const prepareRechartsData = (
     sortX?: boolean;
   } = {}
 ): any[] => {
-  const prepared = data.map(item => ({
+  const prepared = data.map((item) => ({
     ...item,
     [xField]: options.formatX ? options.formatX(item[xField]) : item[xField],
     [yField]: options.formatY ? options.formatY(item[yField]) : item[yField],
@@ -588,9 +601,10 @@ export const createSuccessResponse = <T>(
   data,
   meta: {
     timestamp: new Date().toISOString(),
-    requestId: typeof crypto !== 'undefined' && crypto.randomUUID
-      ? crypto.randomUUID()
-      : Math.random().toString(36).substring(2, 15),
+    requestId:
+      typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID()
+        : Math.random().toString(36).substring(2, 15),
     responseTime: 0,
     ...meta,
   },
@@ -620,9 +634,10 @@ export const createErrorResponse = (
   },
   meta: {
     timestamp: new Date().toISOString(),
-    requestId: typeof crypto !== 'undefined' && crypto.randomUUID
-      ? crypto.randomUUID()
-      : Math.random().toString(36).substring(2, 15),
+    requestId:
+      typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID()
+        : Math.random().toString(36).substring(2, 15),
     responseTime: 0,
   },
 });
@@ -644,9 +659,10 @@ export const createPaginatedResponse = <T>(
   data,
   meta: {
     timestamp: new Date().toISOString(),
-    requestId: typeof crypto !== 'undefined' && crypto.randomUUID
-      ? crypto.randomUUID()
-      : Math.random().toString(36).substring(2, 15),
+    requestId:
+      typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID()
+        : Math.random().toString(36).substring(2, 15),
     responseTime: 0,
     ...meta,
   },
@@ -714,7 +730,7 @@ export const measureExecutionTime = <T>(fn: () => T): { result: T; time: number 
 export const debounce = <T extends (...args: any[]) => any>(
   func: T,
   delay: number
-): (...args: Parameters<T>) => void => {
+): ((...args: Parameters<T>) => void) => {
   let timeoutId: NodeJS.Timeout;
 
   return (...args: Parameters<T>) => {
@@ -736,7 +752,7 @@ export const debounce = <T extends (...args: any[]) => any>(
 export const throttle = <T extends (...args: any[]) => any>(
   func: T,
   delay: number
-): (...args: Parameters<T>) => void => {
+): ((...args: Parameters<T>) => void) => {
   let lastCall = 0;
 
   return (...args: Parameters<T>) => {

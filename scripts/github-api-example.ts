@@ -134,7 +134,10 @@ async function main() {
 
       if (manifestExists) {
         console.log('✅ Marketplace manifest found, fetching...');
-        const manifestResponse = await contentFetcher.fetchAndParseMarketplaceManifest(owner, repoName);
+        const manifestResponse = await contentFetcher.fetchAndParseMarketplaceManifest(
+          owner,
+          repoName
+        );
 
         if (manifestResponse.success && manifestResponse.data) {
           const manifest = manifestResponse.data;
@@ -148,7 +151,9 @@ async function main() {
             console.log(`   Description: ${data.description || 'No description'}`);
             console.log(`   Plugins: ${Array.isArray(data.plugins) ? data.plugins.length : 0}`);
           } else {
-            console.log(`   Validation errors: ${manifest.validationErrors?.join(', ') || 'Unknown'}`);
+            console.log(
+              `   Validation errors: ${manifest.validationErrors?.join(', ') || 'Unknown'}`
+            );
           }
         } else {
           console.log(`❌ Failed to fetch manifest: ${manifestResponse.error?.message}`);
@@ -180,7 +185,9 @@ async function main() {
     if (recentResponse.success && recentResponse.data) {
       console.log('Recently updated marketplaces:');
       recentResponse.data.forEach((repo: any, index: number) => {
-        const daysAgo = Math.floor((Date.now() - new Date(repo.pushed_at).getTime()) / (1000 * 60 * 60 * 24));
+        const daysAgo = Math.floor(
+          (Date.now() - new Date(repo.pushed_at).getTime()) / (1000 * 60 * 60 * 24)
+        );
         console.log(`   ${index + 1}. ${repo.full_name} (updated ${daysAgo} days ago)`);
       });
     } else {
@@ -204,7 +211,6 @@ async function main() {
         console.log(`   ❌ Validation failed: ${validationResponse.error?.message}`);
       }
     }
-
   } catch (error: any) {
     console.error('❌ Unexpected error:', error.message);
   }

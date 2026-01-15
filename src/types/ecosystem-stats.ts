@@ -566,8 +566,13 @@ export interface LastUpdated {
 export interface EcosystemStatsQuery {
   /** Which data sections to include */
   sections?: Array<
-    'overview' | 'growthTrends' | 'categoryAnalytics' |
-    'communityData' | 'qualityIndicators' | 'marketplaceData' | 'pluginData'
+    | 'overview'
+    | 'growthTrends'
+    | 'categoryAnalytics'
+    | 'communityData'
+    | 'qualityIndicators'
+    | 'marketplaceData'
+    | 'pluginData'
   >;
 
   /** Time period for trend data */
@@ -727,7 +732,10 @@ export interface ChartFormatting {
  * Allows partial updates to ecosystem statistics
  */
 export type PartialEcosystemUpdate = Partial<
-  Pick<EcosystemOverview, 'totalPlugins' | 'totalMarketplaces' | 'totalDevelopers' | 'totalDownloads'>
+  Pick<
+    EcosystemOverview,
+    'totalPlugins' | 'totalMarketplaces' | 'totalDevelopers' | 'totalDownloads'
+  >
 > & {
   /** Update timestamp */
   lastUpdated: string;
@@ -790,25 +798,44 @@ export interface PublicEcosystemStats {
  * Type guards for runtime type checking
  */
 export const isEcosystemOverview = (obj: unknown): obj is EcosystemOverview => {
-  return typeof obj === 'object' && obj !== null &&
-         'totalPlugins' in obj && typeof (obj as any).totalPlugins === 'number' &&
-         'totalMarketplaces' in obj && typeof (obj as any).totalMarketplaces === 'number' &&
-         'totalDevelopers' in obj && typeof (obj as any).totalDevelopers === 'number' &&
-         'totalDownloads' in obj && typeof (obj as any).totalDownloads === 'number' &&
-         'lastUpdated' in obj && typeof (obj as any).lastUpdated === 'string';
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    'totalPlugins' in obj &&
+    typeof (obj as any).totalPlugins === 'number' &&
+    'totalMarketplaces' in obj &&
+    typeof (obj as any).totalMarketplaces === 'number' &&
+    'totalDevelopers' in obj &&
+    typeof (obj as any).totalDevelopers === 'number' &&
+    'totalDownloads' in obj &&
+    typeof (obj as any).totalDownloads === 'number' &&
+    'lastUpdated' in obj &&
+    typeof (obj as any).lastUpdated === 'string'
+  );
 };
 
 export const isTrendDataPoint = (obj: unknown): obj is TrendDataPoint => {
-  return typeof obj === 'object' && obj !== null &&
-         'date' in obj && typeof (obj as any).date === 'string' &&
-         'value' in obj && typeof (obj as any).value === 'number';
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    'date' in obj &&
+    typeof (obj as any).date === 'string' &&
+    'value' in obj &&
+    typeof (obj as any).value === 'number'
+  );
 };
 
 export const isGrowthTrends = (obj: unknown): obj is GrowthTrends => {
-  return typeof obj === 'object' && obj !== null &&
-         'plugins' in obj && Array.isArray((obj as any).plugins) &&
-         'marketplaces' in obj && Array.isArray((obj as any).marketplaces) &&
-         'period' in obj && ['7d', '30d', '90d', '1y'].includes((obj as any).period);
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    'plugins' in obj &&
+    Array.isArray((obj as any).plugins) &&
+    'marketplaces' in obj &&
+    Array.isArray((obj as any).marketplaces) &&
+    'period' in obj &&
+    ['7d', '30d', '90d', '1y'].includes((obj as any).period)
+  );
 };
 
 // ============================================================================

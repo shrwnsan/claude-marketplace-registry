@@ -84,10 +84,7 @@ interface AnalyticsData {
   };
 }
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<AnalyticsData>
-) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse<AnalyticsData>) {
   // Only allow GET requests
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' } as any);
@@ -106,17 +103,17 @@ export default async function handler(
         totalStars: 0,
         activeDevelopers: 0,
         languages: [],
-        categories: []
+        categories: [],
       },
       trends: {
         daily: [],
         weekly: [],
-        monthly: []
+        monthly: [],
       },
       ecosystem: {
         topMarketplaces: [],
         topPlugins: [],
-        activeContributors: []
+        activeContributors: [],
       },
       health: {
         dataFreshness: '',
@@ -128,8 +125,8 @@ export default async function handler(
         rateLimitStatus: {
           limit: 0,
           remaining: 0,
-          reset: ''
-        }
+          reset: '',
+        },
       },
       performance: {
         averageResponseTime: 0,
@@ -137,11 +134,13 @@ export default async function handler(
         memoryUsage: {
           used: Math.round(process.memoryUsage().heapUsed / 1024 / 1024),
           total: Math.round(process.memoryUsage().heapTotal / 1024 / 1024),
-          percentage: Math.round((process.memoryUsage().heapUsed / process.memoryUsage().heapTotal) * 100)
+          percentage: Math.round(
+            (process.memoryUsage().heapUsed / process.memoryUsage().heapTotal) * 100
+          ),
         },
         errorRate: 0,
-        requestsPerMinute: 0
-      }
+        requestsPerMinute: 0,
+      },
     };
 
     // Load and analyze marketplaces data
@@ -149,7 +148,9 @@ export default async function handler(
       const marketplacesPath = path.join(dataDir, 'marketplaces.json');
       if (fs.existsSync(marketplacesPath)) {
         const marketplacesData = JSON.parse(fs.readFileSync(marketplacesPath, 'utf8'));
-        const marketplaces = Array.isArray(marketplacesData) ? marketplacesData : Object.values(marketplacesData);
+        const marketplaces = Array.isArray(marketplacesData)
+          ? marketplacesData
+          : Object.values(marketplacesData);
 
         analyticsData.overview.totalMarketplaces = marketplaces.length;
 
@@ -170,12 +171,15 @@ export default async function handler(
         analyticsData.overview.totalStars = totalStars;
 
         // Convert language counts to percentages
-        const totalLanguageCount = Object.values(languageCount).reduce((sum, count) => sum + count, 0);
+        const totalLanguageCount = Object.values(languageCount).reduce(
+          (sum, count) => sum + count,
+          0
+        );
         analyticsData.overview.languages = Object.entries(languageCount)
           .map(([name, count]) => ({
             name,
             count,
-            percentage: Math.round((count / totalLanguageCount) * 100)
+            percentage: Math.round((count / totalLanguageCount) * 100),
           }))
           .sort((a, b) => b.count - a.count)
           .slice(0, 10);
@@ -190,7 +194,7 @@ export default async function handler(
             stars: marketplace.stars || 0,
             forks: marketplace.forks || 0,
             plugins: marketplace.pluginCount || 0,
-            lastUpdated: marketplace.updatedAt || ''
+            lastUpdated: marketplace.updatedAt || '',
           }));
 
         // Count active developers (unique repository owners)
@@ -227,12 +231,15 @@ export default async function handler(
         analyticsData.overview.totalDownloads = totalDownloads;
 
         // Convert category counts to percentages
-        const totalCategoryCount = Object.values(categoryCount).reduce((sum, count) => sum + count, 0);
+        const totalCategoryCount = Object.values(categoryCount).reduce(
+          (sum, count) => sum + count,
+          0
+        );
         analyticsData.overview.categories = Object.entries(categoryCount)
           .map(([name, count]) => ({
             name,
             count,
-            percentage: Math.round((count / totalCategoryCount) * 100)
+            percentage: Math.round((count / totalCategoryCount) * 100),
           }))
           .sort((a, b) => b.count - a.count)
           .slice(0, 10);
@@ -247,17 +254,17 @@ export default async function handler(
             stars: plugin.stars || 0,
             downloads: plugin.downloads || 0,
             author: plugin.author || '',
-            lastUpdated: plugin.updatedAt || ''
+            lastUpdated: plugin.updatedAt || '',
           }));
 
         // Get unique plugin authors (active contributors)
         const uniqueAuthors = new Set(plugins.map((p: any) => p.author).filter(Boolean));
         analyticsData.ecosystem.activeContributors = Array.from(uniqueAuthors)
           .slice(0, 10)
-          .map(author => ({
+          .map((author) => ({
             username: author as string,
             contributions: plugins.filter((p: any) => p.author === author).length,
-            repositories: 0 // Would need additional data to calculate this
+            repositories: 0, // Would need additional data to calculate this
           }));
       }
     } catch (error) {
@@ -272,10 +279,14 @@ export default async function handler(
 
         if (indexData.stats) {
           // Override with more accurate stats if available
-          analyticsData.overview.totalMarketplaces = indexData.stats.totalMarketplaces || analyticsData.overview.totalMarketplaces;
-          analyticsData.overview.totalPlugins = indexData.stats.totalPlugins || analyticsData.overview.totalPlugins;
-          analyticsData.overview.totalDownloads = indexData.stats.totalDownloads || analyticsData.overview.totalDownloads;
-          analyticsData.overview.totalStars = indexData.stats.totalStars || analyticsData.overview.totalStars;
+          analyticsData.overview.totalMarketplaces =
+            indexData.stats.totalMarketplaces || analyticsData.overview.totalMarketplaces;
+          analyticsData.overview.totalPlugins =
+            indexData.stats.totalPlugins || analyticsData.overview.totalPlugins;
+          analyticsData.overview.totalDownloads =
+            indexData.stats.totalDownloads || analyticsData.overview.totalDownloads;
+          analyticsData.overview.totalStars =
+            indexData.stats.totalStars || analyticsData.overview.totalStars;
         }
 
         if (indexData.metadata) {
@@ -306,10 +317,10 @@ export default async function handler(
     try {
       const response = await fetch('https://api.github.com/rate_limit', {
         headers: {
-          'Authorization': `token ${process.env.GITHUB_TOKEN}`,
-          'Accept': 'application/vnd.github.v3+json',
+          Authorization: `token ${process.env.GITHUB_TOKEN}`,
+          Accept: 'application/vnd.github.v3+json',
         },
-        signal: AbortSignal.timeout(3000)
+        signal: AbortSignal.timeout(3000),
       });
 
       if (response.ok) {
@@ -317,7 +328,7 @@ export default async function handler(
         analyticsData.health.rateLimitStatus = {
           limit: rateLimitData.rate.limit,
           remaining: rateLimitData.rate.remaining,
-          reset: new Date(rateLimitData.rate.reset * 1000).toISOString()
+          reset: new Date(rateLimitData.rate.reset * 1000).toISOString(),
         };
 
         const percentageUsed = (rateLimitData.rate.used / rateLimitData.rate.limit) * 100;
@@ -343,13 +354,13 @@ export default async function handler(
         marketplaces: Math.floor(Math.random() * 5) + 1,
         plugins: Math.floor(Math.random() * 20) + 5,
         stars: Math.floor(Math.random() * 100) + 10,
-        downloads: Math.floor(Math.random() * 500) + 50
+        downloads: Math.floor(Math.random() * 500) + 50,
       };
     }).reverse();
 
     analyticsData.trends.weekly = Array.from({ length: 12 }, (_, i) => {
       const date = new Date(now);
-      date.setDate(date.getDate() - (i * 7));
+      date.setDate(date.getDate() - i * 7);
       const weekStart = new Date(date);
       weekStart.setDate(date.getDate() - date.getDay());
       return {
@@ -357,7 +368,7 @@ export default async function handler(
         marketplaces: Math.floor(Math.random() * 25) + 5,
         plugins: Math.floor(Math.random() * 100) + 20,
         stars: Math.floor(Math.random() * 500) + 100,
-        downloads: Math.floor(Math.random() * 2500) + 500
+        downloads: Math.floor(Math.random() * 2500) + 500,
       };
     }).reverse();
 
@@ -369,7 +380,7 @@ export default async function handler(
         marketplaces: Math.floor(Math.random() * 50) + 10,
         plugins: Math.floor(Math.random() * 200) + 50,
         stars: Math.floor(Math.random() * 1000) + 200,
-        downloads: Math.floor(Math.random() * 5000) + 1000
+        downloads: Math.floor(Math.random() * 5000) + 1000,
       };
     }).reverse();
 
@@ -381,14 +392,13 @@ export default async function handler(
     res.setHeader('X-Response-Time', `${analyticsData.performance.averageResponseTime}ms`);
 
     return res.status(200).json(analyticsData);
-
   } catch (error) {
     console.error('Analytics endpoint error:', error);
 
     const errorResponse = {
       error: 'Failed to retrieve analytics data',
       timestamp: new Date().toISOString(),
-      details: error instanceof Error ? error.message : 'Unknown error'
+      details: error instanceof Error ? error.message : 'Unknown error',
     };
 
     return res.status(500).json(errorResponse as any);
