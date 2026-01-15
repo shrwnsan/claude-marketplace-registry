@@ -216,7 +216,6 @@ const MOCK_PLUGINS: Plugin[] = [
  */
 class DataCache {
   private cache = new Map<string, { data: CollectionResult<Marketplace | Plugin>; timestamp: number; ttl: number }>();
-  private keys = new Set<string>();
 
   set(key: string, data: CollectionResult<Marketplace | Plugin>, ttl: number): void {
     this.cache.set(key, {
@@ -224,7 +223,6 @@ class DataCache {
       timestamp: Date.now(),
       ttl,
     });
-    this.keys.add(key);
   }
 
   get(key: string): CollectionResult<Marketplace | Plugin> | null {
@@ -234,7 +232,6 @@ class DataCache {
     const isExpired = Date.now() - entry.timestamp > entry.ttl;
     if (isExpired) {
       this.cache.delete(key);
-      this.keys.delete(key);
       return null;
     }
 
@@ -243,7 +240,6 @@ class DataCache {
 
   clear(): void {
     this.cache.clear();
-    this.keys.clear();
   }
 
   delete(key: string): boolean {
@@ -256,7 +252,7 @@ class DataCache {
   }
 
   getKeys(): string[] {
-    return Array.from(this.keys);
+    return Array.from(this.cache.keys());
   }
 }
 
