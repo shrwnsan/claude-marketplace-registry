@@ -16,7 +16,7 @@ import {
   Package,
   BarChart
 } from 'lucide-react';
-import { mockPlugins } from '../../data/mock-data';
+import { mockPlugins } from '@/data/mock-data';
 
 const ApiDocumentation: React.FC = () => {
   const [copied, setCopied] = useState('');

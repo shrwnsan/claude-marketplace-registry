@@ -104,14 +104,7 @@ class Logger {
 
     const formatted = this.formatMessage('debug', message);
     const colored = this.colorize('debug', formatted);
-
-    if (typeof window !== 'undefined') {
-      // Browser environment
-      console.log(colored, ...args);
-    } else {
-      // Node.js environment
-      console.log(colored, ...args);
-    }
+    console.log(colored, ...args);
   }
 
   /**

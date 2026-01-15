@@ -571,7 +571,7 @@ export class GitHubMetadataService {
       });
 
       if (errors.length > 0) {
-        logger.warn(`Failed to fetch metadata for ${errors.length} repositories:`, errors.length);
+        logger.warn(`Failed to fetch metadata for ${errors.length} repositories:`, errors);
       }
 
       logger.info(`Successfully fetched metadata for ${successfulResults.length} repositories`);
