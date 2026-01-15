@@ -4,11 +4,7 @@
  */
 
 import { Octokit } from '@octokit/rest';
-import {
-  GitHubClientConfig,
-  GitHubApiResponse,
-  GitHubRateLimit,
-} from '@/types/github';
+import { GitHubClientConfig, GitHubApiResponse, GitHubRateLimit } from '@/types/github';
 import { RateLimiter } from './security';
 
 /**
