@@ -4,21 +4,21 @@
 
 ![Claude Marketplace Aggregator](https://img.shields.io/badge/Claude-Marketplace_Aggregator-blue?style=for-the-badge&logo=anthropic)
 
-[![CI](https://github.com/claude-marketplace/aggregator/actions/workflows/ci.yml/badge.svg)](https://github.com/claude-marketplace/aggregator/actions/workflows/ci.yml)
-[![Deploy](https://github.com/claude-marketplace/aggregator/actions/workflows/deploy.yml/badge.svg)](https://github.com/claude-marketplace/aggregator/actions/workflows/deploy.yml)
-[![Scan](https://github.com/claude-marketplace/aggregator/actions/workflows/scan.yml/badge.svg)](https://github.com/claude-marketplace/aggregator/actions/workflows/scan.yml)
-[![Monitoring](https://github.com/claude-marketplace/aggregator/actions/workflows/monitoring.yml/badge.svg)](https://github.com/claude-marketplace/aggregator/actions/workflows/monitoring.yml)
-[![Backup](https://github.com/claude-marketplace/aggregator/actions/workflows/backup.yml/badge.svg)](https://github.com/claude-marketplace/aggregator/actions/workflows/backup.yml)
+[![CI](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/ci.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/ci.yml)
+[![Deploy](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/deploy.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/deploy.yml)
+[![Scan](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/scan.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/scan.yml)
+[![Monitoring](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/monitoring.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/monitoring.yml)
+[![Backup](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/backup.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/backup.yml)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18.x+-green?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Coverage](https://img.shields.io/codecov/c/github/claude-marketplace/aggregator)](https://codecov.io/gh/claude-marketplace/aggregator)
+[![Coverage](https://img.shields.io/codecov/c/github/shrwnsan/claude-marketplace-registry)](https://codecov.io/gh/shrwnsan/claude-marketplace-registry)
 
 **🚀 Production-ready, automated, open-source aggregator that discovers and curates Claude Code marketplaces and plugins from across GitHub with comprehensive monitoring and disaster recovery**
 
-[🌐 Live Demo](https://claude-marketplace.github.io/aggregator) • [📖 Documentation](./docs) • [🤝 Contributing](./CONTRIBUTING.md) • [🐛 Report Issues](https://github.com/claude-marketplace/aggregator/issues)
+[🌐 Live Demo](https://shrwnsan.github.io/claude-marketplace-registry) • [📖 Documentation](./docs) • [🤝 Contributing](./CONTRIBUTING.md) • [🐛 Report Issues](https://github.com/shrwnsan/claude-marketplace-registry/issues)
 
 </div>
 
@@ -74,8 +74,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/claude-marketplace/aggregator.git
-   cd aggregator
+   git clone https://github.com/shrwnsan/claude-marketplace-registry.git
+   cd claude-marketplace-registry
    ```
 
 2. **Install dependencies**
@@ -101,7 +101,7 @@
    **Base Path Configuration:**
    - For GitHub Pages, set `NEXT_PUBLIC_BASE_PATH` to `/{your-repository-name}`
    - For local development, you can leave it empty or set to `/`
-   - Example: If your repo is `claude-marketplace/aggregator`, use `/claude-marketplace-aggregator`
+   - Example: If your repo is `shrwnsan/claude-marketplace-registry`, use `/claude-marketplace-registry`
 
 4. **Add favicon assets** (required for production deployment)
 
@@ -270,7 +270,7 @@ GITHUB_USERNAME=your_github_username
 
 # Site Configuration
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_GITHUB_REPO=claude-marketplace/aggregator
+NEXT_PUBLIC_GITHUB_REPO=shrwnsan/claude-marketplace-registry
 ```
 
 #### Optional Variables
@@ -646,8 +646,8 @@ docs/
 ## 📞 Support
 
 - 📖 [Documentation](./docs)
-- 🐛 [Report Issues](https://github.com/claude-marketplace/aggregator/issues)
-- 💬 [Discussions](https://github.com/claude-marketplace/aggregator/discussions)
+- 🐛 [Report Issues](https://github.com/shrwnsan/claude-marketplace-registry/issues)
+- 💬 [Discussions](https://github.com/shrwnsan/claude-marketplace-registry/discussions)
 - 📧 [Email Support](mailto:support@claude-marketplace.com)
 
 ---
@@ -656,6 +656,6 @@ docs/
 
 **Made with ❤️ by the Claude Community**
 
-[⭐ Star this repository](https://github.com/claude-marketplace/aggregator) • [🐛 Report issues](https://github.com/claude-marketplace/aggregator/issues) • [💬 Suggest features](https://github.com/claude-marketplace/aggregator/discussions)
+[⭐ Star this repository](https://github.com/shrwnsan/claude-marketplace-registry) • [🐛 Report issues](https://github.com/shrwnsan/claude-marketplace-registry/issues) • [💬 Suggest features](https://github.com/shrwnsan/claude-marketplace-registry/discussions)
 
 </div>
