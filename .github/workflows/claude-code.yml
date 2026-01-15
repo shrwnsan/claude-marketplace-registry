@@ -19,8 +19,11 @@ jobs:
   claude-code:
     name: Claude Code
     runs-on: ubuntu-latest
-    # Only run when @claude is mentioned in comments
-    if: contains(github.event.comment.*.body, '@claude')
+    # Only run when @claude is mentioned
+    if: |
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request' && contains(github.event.pull_request.body || '', '@claude')) ||
+      (github.event_name == 'issues' && contains(github.event.issue.body || '', '@claude'))
 
     steps:
       - name: Checkout
