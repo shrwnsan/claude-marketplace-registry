@@ -103,6 +103,7 @@
   "overrides": {
     "diff": "^8.0.3",
     "glob": "^10.4.6",
+    "babel-plugin-istanbul": "^7.0.0",
     "test-exclude": "^7.0.0"
   },
   "lint-staged": {
