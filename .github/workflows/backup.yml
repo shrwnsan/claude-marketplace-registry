@@ -27,7 +27,7 @@ on:
         type: string
 
 env:
-  NODE_VERSION: '18'
+  NODE_VERSION: '20'
   BACKUP_DIR: './backups'
   MAX_BACKUP_SIZE_MB: 100
   RETENTION_DAYS: 30

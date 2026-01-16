@@ -22,7 +22,6 @@ import {
   GrowthDataPoint,
   CategoryAnalytics,
   DeveloperAnalytics,
-  QualityMetrics,
   TimeRange,
 } from '../utils/data-processor';
 import { QualityIndicators } from '../types/ecosystem-stats';
@@ -769,7 +768,7 @@ function generateRealEcosystemStats(realData: any): EcosystemStats {
   const weeksSinceLaunch = daysSinceLaunch / 7;
 
   // Calculate realistic weekly growth for a new ecosystem
-  const weeklyGrowthRate = Math.min(25, Math.floor(100 / Math.max(1, weeksSinceLaunch))); // High growth early, slowing over time
+  const _weeklyGrowthRate = Math.min(25, Math.floor(100 / Math.max(1, weeksSinceLaunch))); // High growth early, slowing over time
 
   // Calculate total stars and forks
   const totalStars = marketplaces.reduce((sum: number, m: any) => sum + (m.stars || 0), 0);
@@ -784,7 +783,7 @@ function generateRealEcosystemStats(realData: any): EcosystemStats {
   const verifiedPlugins = Math.floor(estimatedPlugins * 0.7); // Assume 70% are verified
 
   // Generate overview metrics from real data
-  const activeMarketplaces = marketplaces.filter((m: any) => {
+  const _activeMarketplaces = marketplaces.filter((m: any) => {
     const lastUpdate = new Date(m.updatedAt);
     const thirtyDaysAgo = new Date();
     thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
@@ -868,7 +867,7 @@ function generateGrowthDataPoints(days: number, overview: EcosystemOverview): Gr
 
   // Estimate base downloads per plugin and user engagement
   const baseDownloadsPerPlugin = 150;
-  const baseUsersPerMarketplace = 75;
+  const _baseUsersPerMarketplace = 75;
 
   for (let i = Math.min(days, daysSinceLaunch); i >= 0; i--) {
     const date = new Date(now);
@@ -941,7 +940,7 @@ function generateCategoryAnalytics(marketplaces: any[], plugins: any[]): Categor
 /**
  * Generate developer analytics from marketplace data
  */
-function generateDeveloperAnalytics(marketplaces: any[], plugins: any[]): DeveloperAnalytics[] {
+function generateDeveloperAnalytics(marketplaces: any[], _plugins: any[]): DeveloperAnalytics[] {
   const developers = new Map<
     string,
     { marketplaces: number; plugins: number; stars: number; forks: number }
@@ -1039,8 +1038,8 @@ export async function getEcosystemStats(refreshCache = false): Promise<Ecosystem
 
   try {
     // Load real marketplace data
-    const fs = require('fs').promises;
-    const path = require('path');
+    const fs = await import('fs').then((m) => m.promises);
+    const path = await import('path');
 
     const dataPath = path.join(process.cwd(), 'data', 'generated', 'complete.json');
     const rawData = await fs.readFile(dataPath, 'utf-8');

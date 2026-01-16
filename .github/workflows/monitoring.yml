@@ -18,7 +18,7 @@ on:
         type: boolean
 
 env:
-  NODE_VERSION: '18'
+  NODE_VERSION: '20'
   HEALTH_CHECK_URL: https://claude-marketplace.github.io/aggregator/api/health
   STATUS_CHECK_URL: https://claude-marketplace.github.io/aggregator/api/status
   WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}

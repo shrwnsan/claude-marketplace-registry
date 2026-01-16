@@ -589,7 +589,7 @@ export class EcosystemDataService {
     manifestPlugins: RawPluginManifest[],
     repoData: RawMarketplaceData
   ): Plugin[] {
-    return manifestPlugins.map((plugin, index) => ({
+    return manifestPlugins.map((plugin, _index) => ({
       id: `${repoData.owner.login}-${repoData.name}-${plugin.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
       name: plugin.name,
       description: plugin.description,

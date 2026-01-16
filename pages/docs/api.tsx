@@ -346,7 +346,7 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
                         <ol className='list-decimal list-inside space-y-2 ml-4'>
                           <li>Sign up for a Claude Marketplace account</li>
                           <li>Navigate to your account settings</li>
-                          <li>Generate an API key under the "Developer" section</li>
+                          <li>Generate an API key under the &quot;Developer&quot; section</li>
                           <li>Include the API key in your requests</li>
                         </ol>
                       </div>
@@ -500,7 +500,8 @@ curl -X GET "https://claude-marketplace.vercel.app/api/search?q=API%20documentat
                         Complete Example: Plugin Search Application
                       </h3>
                       <p className='text-gray-600 dark:text-gray-300 mb-6'>
-                        Here's a complete example of a web application that searches for plugins:
+                        Here&apos;s a complete example of a web application that searches for
+                        plugins:
                       </p>
                       <div className='bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto max-h-96 overflow-y-auto'>
                         <pre>{`<!DOCTYPE html>
