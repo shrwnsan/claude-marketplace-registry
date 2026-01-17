@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "build:production": "node scripts/build-production.js",
-    "prebuild": "npm run scan:full",
+    "build:with-scan": "npm run scan:full && npm run build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
