@@ -65,21 +65,21 @@ jobs:
 
             // Add welcome comment for new issues
             if (context.payload.action === 'opened') {
+              const labelsList = labels.length > 0
+                ? labels.map(label => '- `' + label + '`').join('\n')
+                : 'No labels applied';
+              const welcomeBody = '## 👋 Welcome! Thank you for opening an issue.\n\n' +
+                '### 📋 Next Steps\n' +
+                '1. A maintainer will review your issue shortly\n' +
+                '2. Please provide any additional information if requested\n' +
+                '3. Check for updates on this issue\n\n' +
+                '### 🏷️ Auto-applied labels\n' +
+                labelsList + '\n';
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                body: `## 👋 Welcome! Thank you for opening an issue.
-
-### 📋 Next Steps
-1. A maintainer will review your issue shortly
-2. Please provide any additional information if requested
-3. Check for updates on this issue
-
-### 🏷️ Auto-applied labels
-${labels.length > 0 ? labels.map(label => `- \`${label}\``).join('\n') : 'No labels applied'}
-
-
+                body: welcomeBody
               });
             }
 
@@ -105,103 +105,80 @@ ${labels.length > 0 ? labels.map(label => `- \`${label}\``).join('\n') : 'No lab
 
             // Common responses
             if (body.includes('how to deploy') || body.includes('deployment')) {
-              response = `## 🚀 Deployment Information
-
-This project uses GitHub Pages for deployment. The deployment process is automated through GitHub Actions.
-
-### 📝 Deployment Steps
-1. Push changes to the \`main\` branch
-2. CI pipeline runs automatically
-3. If all checks pass, deployment to GitHub Pages occurs
-4. Site is live at: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
-
-### 🔧 Configuration
-- Deployment workflow: \`.github/workflows/deploy.yml\`
-- Static export configuration in \`next.config.js\`
-- GitHub Pages settings in repository settings
-
-Need help? Check the [README](../README.md) or open a new issue.
-
+              response = '## 🚀 Deployment Information\n\n' +
+                'This project uses GitHub Pages for deployment. The deployment process is automated through GitHub Actions.\n\n' +
+                '### 📝 Deployment Steps\n' +
+                '1. Push changes to the `main` branch\n' +
+                '2. CI pipeline runs automatically\n' +
+                '3. If all checks pass, deployment to GitHub Pages occurs\n' +
+                '4. Site is live at: https://' + context.repo.owner + '.github.io/' + context.repo.repo + '\n\n' +
+                '### 🔧 Configuration\n' +
+                '- Deployment workflow: `.github/workflows/deploy.yml`\n' +
+                '- Static export configuration in `next.config.js`\n' +
+                '- GitHub Pages settings in repository settings\n\n' +
+                'Need help? Check the [README](../README.md) or open a new issue.\n';
             }
 
             if (body.includes('how to scan') || body.includes('scan marketplaces')) {
-              response = `## 🔍 Scanning Information
-
-This project includes automated marketplace scanning capabilities.
-
-### 📋 Scan Types
-- **Marketplace Scan**: Searches GitHub for new marketplaces
-- **Plugin Validation**: Validates plugin metadata and functionality
-- **Data Generation**: Generates JSON data files for the website
-
-### 🚀 Running Scans
-\`\`\`bash
-# Run full scan
-npm run scan:full
-
-# Run individual scans
-npm run scan:marketplaces
-npm run validate:plugins
-npm run generate:data
-\`\`\`
-
-### ⏰ Scheduled Scans
-- Automatic scans run every 6 hours
-- Workflow: \`.github/workflows/scan.yml\`
-- Results are committed automatically
-
-### 🔧 Configuration
-- Environment variables in \`.env.example\`
-- GitHub API rate limits
-- Cache configuration for performance
-
-Need help? Check the scripts in \`/scripts/\` directory or open a new issue.
-
+              response = '## 🔍 Scanning Information\n\n' +
+                'This project includes automated marketplace scanning capabilities.\n\n' +
+                '### 📋 Scan Types\n' +
+                '- **Marketplace Scan**: Searches GitHub for new marketplaces\n' +
+                '- **Plugin Validation**: Validates plugin metadata and functionality\n' +
+                '- **Data Generation**: Generates JSON data files for the website\n\n' +
+                '### 🚀 Running Scans\n' +
+                '```bash\n' +
+                '# Run full scan\n' +
+                'npm run scan:full\n\n' +
+                '# Run individual scans\n' +
+                'npm run scan:marketplaces\n' +
+                'npm run validate:plugins\n' +
+                'npm run generate:data\n' +
+                '```\n\n' +
+                '### ⏰ Scheduled Scans\n' +
+                '- Automatic scans run every 6 hours\n' +
+                '- Workflow: `.github/workflows/scan.yml`\n' +
+                '- Results are committed automatically\n\n' +
+                '### 🔧 Configuration\n' +
+                '- Environment variables in `.env.example`\n' +
+                '- GitHub API rate limits\n' +
+                '- Cache configuration for performance\n\n' +
+                'Need help? Check the scripts in `/scripts/` directory or open a new issue.\n';
             }
 
             if (body.includes('contribute') || body.includes('how to help')) {
-              response = `## 🤝 Contributing Information
-
-Thank you for your interest in contributing! Here's how you can help:
-
-### 📋 Ways to Contribute
-1. **Report Issues**: Found a bug? Open an issue with details
-2. **Feature Requests**: Have an idea? Suggest it in an issue
-3. **Code Contributions**: Submit pull requests for improvements
-4. **Documentation**: Help improve README and docs
-5. **Marketplace Data**: Suggest new marketplaces to include
-
-### 🚀 Getting Started
-1. Fork the repository
-2. Clone your fork locally
-3. Create a feature branch: \`git checkout -b feature-name\`
-4. Make your changes
-5. Run tests: \`npm test\`
-6. Submit a pull request
-
-### 📝 Development Setup
-\`\`\`bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Run tests
-npm test
-
-# Build for production
-npm run build
-\`\`\`
-
-### 🔧 Project Structure
-- \`/src\`: Next.js application source code
-- \`/scripts\`: TypeScript scripts for scanning and data processing
-- \`/data\`: Generated marketplace data files
-- \`/.github/workflows\`: CI/CD pipeline configurations
-
-Need more help? Check the [CONTRIBUTING.md](../CONTRIBUTING.md) file or ask in the comments.
-
+              response = '## 🤝 Contributing Information\n\n' +
+                'Thank you for your interest in contributing! Here is how you can help:\n\n' +
+                '### 📋 Ways to Contribute\n' +
+                '1. **Report Issues**: Found a bug? Open an issue with details\n' +
+                '2. **Feature Requests**: Have an idea? Suggest it in an issue\n' +
+                '3. **Code Contributions**: Submit pull requests for improvements\n' +
+                '4. **Documentation**: Help improve README and docs\n' +
+                '5. **Marketplace Data**: Suggest new marketplaces to include\n\n' +
+                '### 🚀 Getting Started\n' +
+                '1. Fork the repository\n' +
+                '2. Clone your fork locally\n' +
+                '3. Create a feature branch: `git checkout -b feature-name`\n' +
+                '4. Make your changes\n' +
+                '5. Run tests: `npm test`\n' +
+                '6. Submit a pull request\n\n' +
+                '### 📝 Development Setup\n' +
+                '```bash\n' +
+                '# Install dependencies\n' +
+                'npm install\n\n' +
+                '# Start development server\n' +
+                'npm run dev\n\n' +
+                '# Run tests\n' +
+                'npm test\n\n' +
+                '# Build for production\n' +
+                'npm run build\n' +
+                '```\n\n' +
+                '### 🔧 Project Structure\n' +
+                '- `/src`: Next.js application source code\n' +
+                '- `/scripts`: TypeScript scripts for scanning and data processing\n' +
+                '- `/data`: Generated marketplace data files\n' +
+                '- `/.github/workflows`: CI/CD pipeline configurations\n\n' +
+                'Need more help? Check the [CONTRIBUTING.md](../CONTRIBUTING.md) file or ask in the comments.\n';
             }
 
             // Post response if generated
