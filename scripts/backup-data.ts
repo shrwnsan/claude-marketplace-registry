@@ -12,7 +12,6 @@ import path from 'path';
 import { createGzip } from 'zlib';
 import { pipeline } from 'stream/promises';
 import { createHash } from 'crypto';
-import { execSync } from 'child_process';
 
 interface BackupConfig {
   sourceDir: string;
