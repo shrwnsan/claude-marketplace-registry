@@ -9,7 +9,6 @@ import {
   validateSearchQuery,
   validateRepositoryIdentifier,
   validateJsonContent,
-  checkForSecurityThreats,
 } from '../src/utils/security';
 import {
   validateMarketplaceManifest,
