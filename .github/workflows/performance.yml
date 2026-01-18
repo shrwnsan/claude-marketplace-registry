@@ -191,6 +191,12 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.inputs.analyze_lighthouse == 'true' || github.event_name == 'schedule'
     continue-on-error: true
+    # TODO: Re-enable and configure Lighthouse before going live
+    # Issues:
+    # - Expects static build in 'out/' directory
+    # - Next.js needs static export configuration in next.config.js
+    # - Or use deployed GitHub Pages URL
+    # - Or run against Next.js dev server during build
 
     steps:
       - name: Checkout code
