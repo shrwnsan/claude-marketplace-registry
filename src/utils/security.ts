@@ -10,10 +10,13 @@ import DOMPurify from 'isomorphic-dompurify';
  * This is the recommended method for HTML sanitization as regex-based filtering
  * is inherently fragile and can be bypassed.
  */
-export function sanitizeHtmlContent(input: string, options?: {
-  allowedTags?: string[];
-  allowedAttrs?: string[];
-}): string {
+export function sanitizeHtmlContent(
+  input: string,
+  options?: {
+    allowedTags?: string[];
+    allowedAttrs?: string[];
+  }
+): string {
   return DOMPurify.sanitize(input, {
     ALLOWED_TAGS: options?.allowedTags || ['b', 'i', 'em', 'strong', 'span', 'p', 'br'],
     ALLOWED_ATTR: options?.allowedAttrs || ['class'],

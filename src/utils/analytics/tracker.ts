@@ -42,11 +42,12 @@ class AnalyticsTracker {
   }
 
   private generateSessionId(): string {
-    const randomPart = typeof crypto !== 'undefined' && crypto.randomUUID
-      ? crypto.randomUUID().slice(0, 9)
-      : Array.from(crypto.getRandomValues(new Uint8Array(9)))
-          .map(b => b.toString(36))
-          .join('');
+    const randomPart =
+      typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID().slice(0, 9)
+        : Array.from(crypto.getRandomValues(new Uint8Array(9)))
+            .map((b) => b.toString(36))
+            .join('');
     return randomPart + Date.now().toString(36);
   }
 

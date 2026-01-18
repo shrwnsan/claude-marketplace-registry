@@ -48,11 +48,12 @@ class ErrorTracker {
    * Generate unique session ID using cryptographically secure random values
    */
   private generateSessionId(): string {
-    const randomPart = typeof crypto !== 'undefined' && crypto.randomUUID
-      ? crypto.randomUUID().slice(0, 9)
-      : Array.from(crypto.getRandomValues(new Uint8Array(9)))
-          .map(b => b.toString(36))
-          .join('');
+    const randomPart =
+      typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID().slice(0, 9)
+        : Array.from(crypto.getRandomValues(new Uint8Array(9)))
+            .map((b) => b.toString(36))
+            .join('');
     return `${Date.now()}-${randomPart}`;
   }
 
@@ -183,11 +184,12 @@ class ErrorTracker {
    * Generate unique error ID using cryptographically secure random values
    */
   private generateErrorId(): string {
-    const randomPart = typeof crypto !== 'undefined' && crypto.randomUUID
-      ? crypto.randomUUID().slice(0, 6)
-      : Array.from(crypto.getRandomValues(new Uint8Array(6)))
-          .map(b => b.toString(36))
-          .join('');
+    const randomPart =
+      typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID().slice(0, 6)
+        : Array.from(crypto.getRandomValues(new Uint8Array(6)))
+            .map((b) => b.toString(36))
+            .join('');
     return `err_${Date.now()}_${randomPart}`;
   }
 
