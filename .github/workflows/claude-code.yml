@@ -16,8 +16,8 @@ permissions:
   id-token: write
 
 jobs:
-  claude-code:
-    name: Claude Code
+  pre-check:
+    name: Pre-Check Validation
     runs-on: ubuntu-latest
     # Only run when @claude is mentioned by members/collaborators
     if: |
@@ -34,6 +34,10 @@ jobs:
        github.event.pull_request.user.author_association == 'OWNER' ||
        github.event.pull_request.user.author_association == 'COLLABORATOR')
 
+    outputs:
+      lint-status: ${{ steps.lint.outputs.status }}
+      format-status: ${{ steps.format.outputs.status }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -49,22 +53,93 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Run ESLint (continue on failure)
+        id: lint
+        run: |
+          if npm run lint 2>&1 | tee /tmp/lint.log; then
+            echo "status=pass" >> $GITHUB_OUTPUT
+          else
+            echo "status=fail" >> $GITHUB_OUTPUT
+          fi
+        continue-on-error: true
+
+      - name: Check formatting (continue on failure)
+        id: format
+        run: |
+          if npm run format:check 2>&1 | tee /tmp/format.log; then
+            echo "status=pass" >> $GITHUB_OUTPUT
+          else
+            echo "status=fail" >> $GITHUB_OUTPUT
+          fi
+        continue-on-error: true
+
+      - name: Upload lint results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pre-check-results
+          path: |
+            /tmp/lint.log
+            /tmp/format.log
+          retention-days: 1
+
+  claude-code:
+    name: Claude Code
+    runs-on: ubuntu-latest
+    needs: pre-check
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download pre-check results
+        uses: actions/download-artifact@v4
+        with:
+          name: pre-check-results
+          path: /tmp
+        continue-on-error: true
+
+      - name: Display pre-check status
+        run: |
+          echo "## Pre-Check Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| ESLint | ${{ needs.pre-check.outputs.lint-status }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Prettier | ${{ needs.pre-check.outputs.format-status }} |" >> $GITHUB_STEP_SUMMARY
+
       - name: Claude Code Action
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           # Enable specific tools for this repo
+          # Added npx:* to allow running prettier for auto-fixing
           claude_args: |
             --allowedTools "Read,Write,Edit,NotebookEdit,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(node:*),TodoWrite,AskUserQuestion,WebSearch,WebFetch,mcp__web_reader__webReader"
-            --max-turns 10
-          # Optional: Add environment variables
+            --max-turns 15
+          # Optional: Add environment variables and instructions
           settings: |
             {
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true"
-              }
+              },
+              "instructions": "Before making code changes, check if there are any lint or formatting issues. Use 'npx prettier --write' to auto-fix formatting issues when appropriate. Always run tests before committing."
             }
         env:
           # Use custom API base URL for Z.ai
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
+          # Pass pre-check status to Claude for context
+          LINT_STATUS: ${{ needs.pre-check.outputs.lint-status }}
+          FORMAT_STATUS: ${{ needs.pre-check.outputs.format-status }}
