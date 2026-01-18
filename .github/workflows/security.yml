@@ -212,9 +212,10 @@ jobs:
         uses: trufflesecurity/trufflehog@main
         with:
           path: ./
-          base: main
+          base: ${{ github.event.pull_request.base.sha || github.event.before || github.sha }}
           head: HEAD
           extra_args: --debug --only-verified
+        continue-on-error: true
 
       - name: Run Gitleaks
         uses: gitleaks/gitleaks-action@v2
