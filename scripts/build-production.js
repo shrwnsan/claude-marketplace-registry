@@ -43,7 +43,7 @@ function logError(message) {
 function runCommand(command, description, options = {}) {
   try {
     log(`Running: ${description}...`);
-    const result = execSync(command, {
+    execSync(command, {
       stdio: 'inherit',
       ...options,
     });

@@ -151,8 +151,9 @@ class HealthChecker {
    */
   private async checkDataFreshness(): Promise<void> {
     try {
+      const startTime = Date.now();
       const response = await this.makeRequest('/api/ecosystem-stats?overview');
-      const duration = Date.now() - Date.now();
+      const duration = Date.now() - startTime;
 
       if (response.ok) {
         const data = await response.json();

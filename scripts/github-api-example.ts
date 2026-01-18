@@ -220,7 +220,6 @@ async function main() {
   const requestStats = githubClient.getRequestStats();
   console.log(`   Total requests: ${requestStats.requestCount}`);
 
-  const searchCacheStats = searchService.getConfig();
   const metadataCacheStats = metadataService.getCacheStats();
   const contentCacheStats = contentFetcher.getCacheStats();
 

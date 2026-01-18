@@ -137,7 +137,7 @@ class BrowserTester {
       console.log(`🔍 Data source analysis:`, dataSource);
 
       // Take full page screenshot
-      const fullPageScreenshot = await this.page.screenshot({
+      await this.page.screenshot({
         path: 'screenshots/fullpage.png',
         fullPage: true,
       });
