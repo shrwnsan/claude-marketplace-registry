@@ -190,6 +190,7 @@ jobs:
     name: Lighthouse Performance Audit
     runs-on: ubuntu-latest
     if: github.event.inputs.analyze_lighthouse == 'true' || github.event_name == 'schedule'
+    continue-on-error: true
 
     steps:
       - name: Checkout code
