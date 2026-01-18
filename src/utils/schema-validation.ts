@@ -391,8 +391,18 @@ function validateRepositoryInfo(repository: any): ValidationResult {
     const urlValidation = validateUrl(repository.url, ['https:']);
     if (!urlValidation.isValid) {
       errors.push(`Invalid repository URL: ${urlValidation.errors[0]}`);
-    } else if (!repository.url.includes('github.com')) {
-      warnings.push('Repository should be hosted on GitHub');
+    } else {
+      // Properly validate GitHub hostname
+      try {
+        const parsedUrl = new URL(repository.url);
+        const hostname = parsedUrl.hostname.toLowerCase();
+        // Check for exact GitHub domain or subdomain
+        if (hostname !== 'github.com' && !hostname.endsWith('.github.com')) {
+          warnings.push('Repository should be hosted on GitHub');
+        }
+      } catch {
+        warnings.push('Could not validate repository hostname');
+      }
     }
   }
 

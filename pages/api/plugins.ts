@@ -174,7 +174,8 @@ export function rateLimit(req: NextApiRequest, res: NextApiResponse, next: () =>
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
   // For demo purposes, we'll just log the request
-  console.log(`API Request: ${req.method} from ${ip} (${userAgent})`);
+  // Sanitize log input to prevent log injection
+  console.log(`API Request: ${req.method} from ${String(ip)} (${JSON.stringify(userAgent)})`);
 
   next();
 }

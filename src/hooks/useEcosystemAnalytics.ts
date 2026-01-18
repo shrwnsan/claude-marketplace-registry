@@ -97,10 +97,15 @@ class EcosystemAnalytics {
   }
 
   /**
-   * Generate unique session ID
+   * Generate unique session ID using cryptographically secure random values
    */
   private generateSessionId(): string {
-    return `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+    const randomPart = typeof crypto !== 'undefined' && crypto.randomUUID
+      ? crypto.randomUUID().slice(0, 9)
+      : Array.from(crypto.getRandomValues(new Uint8Array(9)))
+          .map(b => b.toString(36))
+          .join('');
+    return `session_${Date.now()}_${randomPart}`;
   }
 
   /**
@@ -322,8 +327,13 @@ class EcosystemAnalytics {
       let userId = localStorage.getItem('ecosystem_user_id');
 
       if (!userId) {
-        // Generate new user ID
-        userId = `user_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+        // Generate new user ID using cryptographically secure random values
+        const randomPart = typeof crypto !== 'undefined' && crypto.randomUUID
+          ? crypto.randomUUID().slice(0, 9)
+          : Array.from(crypto.getRandomValues(new Uint8Array(9)))
+              .map(b => b.toString(36))
+              .join('');
+        userId = `user_${Date.now()}_${randomPart}`;
         localStorage.setItem('ecosystem_user_id', userId);
       }
 
