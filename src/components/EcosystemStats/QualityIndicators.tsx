@@ -204,7 +204,8 @@ const TrendIndicator: React.FC<{
     lg: 'w-5 h-5',
   };
 
-  if (trend === 'stable' || !value || Math.abs(value) < 0.1) {
+  // Show stable indicator when trend is stable, value is not provided, or value is effectively zero
+  if (trend === 'stable' || value === null || value === undefined || Math.abs(value) < 0.1) {
     return (
       <div className='flex items-center text-gray-500'>
         <Minus className={sizeClasses[size]} />
