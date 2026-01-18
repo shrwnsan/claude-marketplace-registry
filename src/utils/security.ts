@@ -6,6 +6,24 @@
 import DOMPurify from 'isomorphic-dompurify';
 
 /**
+ * Sanitizes HTML content using DOMPurify
+ * This is the recommended method for HTML sanitization as regex-based filtering
+ * is inherently fragile and can be bypassed.
+ */
+export function sanitizeHtmlContent(
+  input: string,
+  options?: {
+    allowedTags?: string[];
+    allowedAttrs?: string[];
+  }
+): string {
+  return DOMPurify.sanitize(input, {
+    ALLOWED_TAGS: options?.allowedTags || ['b', 'i', 'em', 'strong', 'span', 'p', 'br'],
+    ALLOWED_ATTR: options?.allowedAttrs || ['class'],
+  });
+}
+
+/**
  * Configuration for input validation
  */
 export interface ValidationConfig {
@@ -38,20 +56,6 @@ const SQL_INJECTION_PATTERNS = [
   /(\bWHERE\b.*\bOR\b.*=)|(\bWHERE\b.*\bAND\b.*=)/gi,
   /[\'"]\s*(OR|AND)\s+[\'"]?\w+[\'"]?\s*=/gi,
   /(?<![\w-])[<>\"'=;](?![\w-])/g, // Only match special chars not part of words
-];
-
-/**
- * XSS patterns
- */
-const XSS_PATTERNS = [
-  /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
-  /<iframe\b[^<]*(?:(?!<\/iframe>)<[^<]*)*<\/iframe>/gi,
-  /<object\b[^<]*(?:(?!<\/object>)<[^<]*)*<\/object>/gi,
-  /<embed\b[^<]*(?:(?!<\/embed>)<[^<]*)*<\/embed>/gi,
-  /javascript:/gi,
-  /on\w+\s*=/gi,
-  /<img[^>]*src[^>]*javascript:/gi,
-  /<[^>]*style[^>]*expression\s*\(/gi,
 ];
 
 /**
@@ -169,6 +173,7 @@ export function validateAndSanitizeInput(
 
 /**
  * Checks for security threats in input
+ * Note: For HTML/XSS sanitization, use DOMPurify via sanitizeHtmlContent() instead
  */
 export function checkForSecurityThreats(
   input: string,
@@ -186,14 +191,6 @@ export function checkForSecurityThreats(
   sqlPatterns.forEach((pattern, index) => {
     if (pattern.test(input)) {
       errors.push(`Potential SQL injection pattern detected (pattern ${index + 1})`);
-      sanitized = sanitized.replace(pattern, '');
-    }
-  });
-
-  // XSS check
-  XSS_PATTERNS.forEach((pattern, index) => {
-    if (pattern.test(input)) {
-      errors.push(`Potential XSS pattern detected (pattern ${index + 1})`);
       sanitized = sanitized.replace(pattern, '');
     }
   });
@@ -306,18 +303,10 @@ export function validateSearchQuery(query: string): ValidationResult {
     };
   }
 
-  // Check for obvious XSS patterns only (not SQL injection for search)
-  const xssPatterns = [
-    /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
-    /javascript:/gi,
-    /on\w+\s*=/gi,
-  ];
-
-  xssPatterns.forEach((pattern, index) => {
-    if (pattern.test(sanitized)) {
-      errors.push(`Potential XSS pattern detected (pattern ${index + 1})`);
-      sanitized = sanitized.replace(pattern, '');
-    }
+  // Use DOMPurify for XSS sanitization instead of regex patterns
+  sanitized = DOMPurify.sanitize(sanitized, {
+    ALLOWED_TAGS: [], // No HTML tags allowed in search queries
+    ALLOWED_ATTR: [],
   });
 
   // Basic sanitization

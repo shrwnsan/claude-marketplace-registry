@@ -127,7 +127,13 @@ const FeedbackWidget: React.FC<FeedbackWidgetProps> = ({
   const generateSessionId = (): string => {
     let sessionId = sessionStorage.getItem('feedback_session_id');
     if (!sessionId) {
-      sessionId = `feedback_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+      const randomPart =
+        typeof crypto !== 'undefined' && crypto.randomUUID
+          ? crypto.randomUUID().slice(0, 9)
+          : Array.from(crypto.getRandomValues(new Uint8Array(9)))
+              .map((b) => b.toString(36))
+              .join('');
+      sessionId = `feedback_${Date.now()}_${randomPart}`;
       sessionStorage.setItem('feedback_session_id', sessionId);
     }
     return sessionId;

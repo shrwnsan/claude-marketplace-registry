@@ -11,6 +11,7 @@
  */
 
 import { z } from 'zod';
+import DOMPurify from 'isomorphic-dompurify';
 
 // ============================================================================
 // BASE SCHEMAS
@@ -607,13 +608,13 @@ export const safeValidators = {
 
 /**
  * Sanitize user input by removing potentially harmful content
+ * Uses DOMPurify for robust HTML sanitization instead of regex patterns
  */
 export const sanitizeInput = (input: string): string => {
-  return input
-    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '') // Remove scripts
-    .replace(/javascript:/gi, '') // Remove javascript: protocol
-    .replace(/on\w+\s*=/gi, '') // Remove event handlers
-    .trim();
+  return DOMPurify.sanitize(input, {
+    ALLOWED_TAGS: ['b', 'i', 'em', 'strong', 'span', 'p', 'br'],
+    ALLOWED_ATTR: ['class'],
+  }).trim();
 };
 
 /**

@@ -172,9 +172,12 @@ export function rateLimit(req: NextApiRequest, res: NextApiResponse, next: () =>
   // Simple rate limiting - in production, use a proper rate limiting library
   const userAgent = req.headers['user-agent'];
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  const sanitizedIp = String(ip).replace(/[\r\n]/g, '');
+  const sanitizedUserAgent = JSON.stringify(userAgent).replace(/[\r\n]/g, '');
 
   // For demo purposes, we'll just log the request
-  console.log(`API Request: ${req.method} from ${ip} (${userAgent})`);
+  // Sanitize log input to prevent log injection
+  console.log(`API Request: ${req.method} from ${sanitizedIp} (${sanitizedUserAgent})`);
 
   next();
 }

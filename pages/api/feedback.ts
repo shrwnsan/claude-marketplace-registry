@@ -14,7 +14,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     const body = req.body;
-    console.log('Feedback received:', body);
+    // Sanitize log input to prevent log injection
+    console.log('Feedback received:', JSON.stringify(body));
 
     res.status(200).json({
       success: true,
