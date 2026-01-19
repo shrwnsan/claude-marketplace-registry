@@ -6,6 +6,7 @@
 import { useRef, useCallback } from 'react';
 import { performanceMonitor } from '../lib/monitoring/performance-monitor';
 import { errorTracker } from '../lib/monitoring/error-tracker';
+import { generateSecureId } from '../utils/crypto';
 
 interface AnalyticsEvent {
   event: string;
@@ -100,12 +101,7 @@ class EcosystemAnalytics {
    * Generate unique session ID using cryptographically secure random values
    */
   private generateSessionId(): string {
-    const randomPart =
-      typeof crypto !== 'undefined' && crypto.randomUUID
-        ? crypto.randomUUID().slice(0, 9)
-        : Array.from(crypto.getRandomValues(new Uint8Array(9)))
-            .map((b) => b.toString(36))
-            .join('');
+    const randomPart = generateSecureId(9);
     return `session_${Date.now()}_${randomPart}`;
   }
 
@@ -329,12 +325,7 @@ class EcosystemAnalytics {
 
       if (!userId) {
         // Generate new user ID using cryptographically secure random values
-        const randomPart =
-          typeof crypto !== 'undefined' && crypto.randomUUID
-            ? crypto.randomUUID().slice(0, 9)
-            : Array.from(crypto.getRandomValues(new Uint8Array(9)))
-                .map((b) => b.toString(36))
-                .join('');
+        const randomPart = generateSecureId(9);
         userId = `user_${Date.now()}_${randomPart}`;
         localStorage.setItem('ecosystem_user_id', userId);
       }

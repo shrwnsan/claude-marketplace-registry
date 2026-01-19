@@ -6,6 +6,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Star, MessageCircle, X, Minimize2, AlertTriangle, CheckCircle } from 'lucide-react';
 import { useEcosystemAnalytics } from '../../hooks/useEcosystemAnalytics';
+import { generateSecureId } from '../../utils/crypto';
 
 interface FeedbackData {
   rating: number;
@@ -127,12 +128,7 @@ const FeedbackWidget: React.FC<FeedbackWidgetProps> = ({
   const generateSessionId = (): string => {
     let sessionId = sessionStorage.getItem('feedback_session_id');
     if (!sessionId) {
-      const randomPart =
-        typeof crypto !== 'undefined' && crypto.randomUUID
-          ? crypto.randomUUID().slice(0, 9)
-          : Array.from(crypto.getRandomValues(new Uint8Array(9)))
-              .map((b) => b.toString(36))
-              .join('');
+      const randomPart = generateSecureId(9);
       sessionId = `feedback_${Date.now()}_${randomPart}`;
       sessionStorage.setItem('feedback_session_id', sessionId);
     }

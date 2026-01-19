@@ -173,7 +173,7 @@ export function rateLimit(req: NextApiRequest, res: NextApiResponse, next: () =>
   const userAgent = req.headers['user-agent'];
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   const sanitizedIp = String(ip).replace(/[\r\n]/g, '');
-  const sanitizedUserAgent = JSON.stringify(userAgent).replace(/[\r\n]/g, '');
+  const sanitizedUserAgent = JSON.stringify(userAgent);
 
   // For demo purposes, we'll just log the request
   // Sanitize log input to prevent log injection
