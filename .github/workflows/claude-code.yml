@@ -56,7 +56,9 @@ jobs:
       - name: Run ESLint (continue on failure)
         id: lint
         run: |
-          if npm run lint 2>&1 | tee /tmp/lint.log; then
+          npm run lint 2>&1 | tee /tmp/lint.log
+          LINT_EXIT_CODE=${PIPESTATUS[0]}
+          if [ $LINT_EXIT_CODE -eq 0 ]; then
             echo "status=pass" >> $GITHUB_OUTPUT
           else
             echo "status=fail" >> $GITHUB_OUTPUT
@@ -66,7 +68,9 @@ jobs:
       - name: Check formatting (continue on failure)
         id: format
         run: |
-          if npm run format:check 2>&1 | tee /tmp/format.log; then
+          npm run format:check 2>&1 | tee /tmp/format.log
+          FORMAT_EXIT_CODE=${PIPESTATUS[0]}
+          if [ $FORMAT_EXIT_CODE -eq 0 ]; then
             echo "status=pass" >> $GITHUB_OUTPUT
           else
             echo "status=fail" >> $GITHUB_OUTPUT
@@ -87,6 +91,7 @@ jobs:
     name: Claude Code
     runs-on: ubuntu-latest
     needs: pre-check
+    if: always() && needs.pre-check.result == 'success'
 
     steps:
       - name: Checkout
@@ -127,6 +132,7 @@ jobs:
           # Added npx:* to allow running prettier for auto-fixing
           claude_args: |
             --allowedTools "Read,Write,Edit,NotebookEdit,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(node:*),TodoWrite,AskUserQuestion,WebSearch,WebFetch,mcp__web_reader__webReader"
+            # Increased from 10 to 15 to accommodate pre-check review + fixes + validation
             --max-turns 15
           # Optional: Add environment variables and instructions
           settings: |
@@ -135,7 +141,7 @@ jobs:
                 "NODE_ENV": "test",
                 "CI": "true"
               },
-              "instructions": "Before making code changes, check if there are any lint or formatting issues. Use 'npx prettier --write' to auto-fix formatting issues when appropriate. Always run tests before committing."
+              "instructions": "Before making code changes, check the LINT_STATUS and FORMAT_STATUS environment variables to understand code quality. Use 'npx prettier --write' to auto-fix formatting issues when appropriate. Always run tests before committing."
             }
         env:
           # Use custom API base URL for Z.ai
