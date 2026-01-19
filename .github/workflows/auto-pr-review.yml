@@ -42,18 +42,18 @@ jobs:
               - 'src/contexts/**'
 
       - name: Setup Node.js
-        if: steps.filter.outputs.match == 'true'
+        if: steps.filter.outputs.critical == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
-        if: steps.filter.outputs.match == 'true'
+        if: steps.filter.outputs.critical == 'true'
         run: npm ci
 
       - name: Run Code Review
-        if: steps.filter.outputs.match == 'true'
+        if: steps.filter.outputs.critical == 'true'
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
