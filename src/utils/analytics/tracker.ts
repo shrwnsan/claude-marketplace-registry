@@ -3,6 +3,8 @@
  * Tracks user interactions, page views, and system metrics
  */
 
+import { generateSecureId } from '../crypto';
+
 interface AnalyticsEvent {
   type:
     | 'page_view'
@@ -42,12 +44,7 @@ class AnalyticsTracker {
   }
 
   private generateSessionId(): string {
-    const randomPart =
-      typeof crypto !== 'undefined' && crypto.randomUUID
-        ? crypto.randomUUID().slice(0, 9)
-        : Array.from(crypto.getRandomValues(new Uint8Array(9)))
-            .map((b) => b.toString(36))
-            .join('');
+    const randomPart = generateSecureId(9);
     return randomPart + Date.now().toString(36);
   }
 

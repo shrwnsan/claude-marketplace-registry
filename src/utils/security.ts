@@ -303,10 +303,10 @@ export function validateSearchQuery(query: string): ValidationResult {
     };
   }
 
-  // Use DOMPurify for XSS sanitization instead of regex patterns
-  sanitized = DOMPurify.sanitize(sanitized, {
-    ALLOWED_TAGS: [], // No HTML tags allowed in search queries
-    ALLOWED_ATTR: [],
+  // Use the helper function for consistent DOMPurify sanitization
+  sanitized = sanitizeHtmlContent(sanitized, {
+    allowedTags: [], // No HTML tags allowed in search queries
+    allowedAttrs: [],
   });
 
   // Basic sanitization
