@@ -13,11 +13,12 @@ jobs:
   auto-review:
     name: Claude Code Review
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     # Only run for authorized users (OWNER, MEMBER, or COLLABORATOR)
     if: |
-      github.event.pull_request.user.author_association == 'OWNER' ||
-      github.event.pull_request.user.author_association == 'MEMBER' ||
-      github.event.pull_request.user.author_association == 'COLLABORATOR'
+      github.event.pull_request.author_association == 'OWNER' ||
+      github.event.pull_request.author_association == 'MEMBER' ||
+      github.event.pull_request.author_association == 'COLLABORATOR'
 
     steps:
       - name: Checkout code
@@ -27,6 +28,7 @@ jobs:
 
       - name: Check for critical path changes
         id: filter
+        continue-on-error: true
         uses: dorny/paths-filter@v3
         with:
           filters: |
@@ -69,6 +71,7 @@ jobs:
               }
             }
         env:
+          # Using api.z.ai proxy for cost optimization and rate limiting
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
 
       - name: Post Skip Notice
