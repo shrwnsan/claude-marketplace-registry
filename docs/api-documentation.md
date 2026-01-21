@@ -618,9 +618,9 @@ function Dashboard() {
 
 ### Support Channels
 
-- **API Issues**: [GitHub Issues](https://github.com/example/issues)
-- **Security Issues**: security@example.com
-- **General Support**: support@example.com
+- **API Issues**: [GitHub Issues](https://github.com/shrwnsan/claude-marketplace-registry/issues)
+- **Security Issues**: [GitHub Issues](https://github.com/shrwnsan/claude-marketplace-registry/issues) (use `security` label)
+- **General Support**: [GitHub Issues](https://github.com/shrwnsan/claude-marketplace-registry/issues)
 - **Developer Community**: [Discord](https://discord.gg/example)
 
 ### Monitoring

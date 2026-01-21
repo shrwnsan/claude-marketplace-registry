@@ -265,11 +265,10 @@ The application uses several security middleware layers:
 
 ### Reporting Security Issues
 
-If you discover a security vulnerability, please report it privately:
+If you discover a security vulnerability, please report it:
 
-1. **Email**: security@claude-marketplace.org
-2. **GitHub Security**: Use GitHub's private vulnerability reporting
-3. **Response Time**: We aim to respond within 48 hours
+1. **GitHub Issues**: Create an issue with the `security` label
+2. **Response Time**: We aim to respond within 48 hours
 
 ### Responsible Disclosure Policy
 
@@ -364,9 +363,8 @@ The application aims to comply with:
 
 For security-related questions or concerns:
 
-- **Security Team**: security@claude-marketplace.org
-- **GitHub Issues**: Use the `security` label for security issues
-- **Emergency**: For critical security incidents, contact us immediately
+- **GitHub Issues**: Create an issue with the `security` label
+- **Emergency**: For critical security incidents, create an issue with both `critical` and `security` labels
 
 ---
 
