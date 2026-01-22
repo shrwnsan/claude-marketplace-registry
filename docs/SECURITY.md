@@ -270,6 +270,8 @@ If you discover a security vulnerability, please report it:
 1. **GitHub Issues**: Create an issue with the `security` label
 2. **Response Time**: We aim to respond within 48 hours
 
+> **Note**: As the project grows, we will adopt GitHub's private vulnerability reporting for sensitive issues.
+
 ### Responsible Disclosure Policy
 
 - We request responsible disclosure and will work with researchers

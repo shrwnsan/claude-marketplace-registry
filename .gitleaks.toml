@@ -11,9 +11,11 @@ useDefault = true
 [allowlist]
 description = "Global allowlist for known false positives"
 
-# Allow example.com patterns (RFC 2606 standard examples)
+# Allow RFC 2606 example domains (standard documentation examples)
 # These are used in documentation and are not real credentials
 regexes = [
   '''[a-zA-Z0-9._%+-]+@example\.com''',
+  '''[a-zA-Z0-9._%+-]+@example\.org''',
+  '''[a-zA-Z0-9._%+-]+@example\.net''',
   '''[a-zA-Z0-9._%+-]+@users\.noreply\.github\.com''',
 ]
