@@ -55,6 +55,31 @@ jobs:
         if: steps.filter.outputs.critical == 'true'
         run: npm ci
 
+      - name: Check CI workflow status
+        id: ci-status
+        if: steps.filter.outputs.critical == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Query latest CI workflow run for this PR branch
+            // Note: workflow_id hardcoded to 'ci.yml' - update if CI workflow is renamed
+            const runs = await github.rest.actions.listWorkflowRuns({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'ci.yml',
+              branch: context.payload.pull_request.head.ref,
+              per_page: 1
+            });
+
+            // Handle case where CI hasn't run yet (e.g., first-time contributor)
+            const latestRun = runs.data.workflow_runs[0];
+            const status = latestRun
+              ? (latestRun.status === 'completed' ? latestRun.conclusion : 'pending')
+              : 'not_run';
+
+            core.setOutput('status', status);
+            core.setOutput('url', latestRun?.html_url || '');
+
       - name: Run Code Review
         if: steps.filter.outputs.critical == 'true'
         uses: anthropics/claude-code-action@v1
@@ -65,7 +90,7 @@ jobs:
             --max-turns 10
           settings: |
             {
-              "instructions": "You are a code reviewer. Analyze this PR for:\n\n1. **Security Issues** (OWASP Top 10, auth flaws, injection vulnerabilities)\n2. **Code Quality** (type safety, error handling, performance)\n3. **Best Practices** (framework patterns, project conventions)\n4. **Breaking Changes** (API changes, migration requirements)\n\nFormat your response as:\n\n## 🚨 Critical Issues (must fix)\n## ⚠️ Medium/Low Issues (should fix)\n## ✅ Positive Findings\n## 📋 Recommendation\n\nFinal line must be one of:\n- `APPROVED`\n- `NEEDS_CHANGES`\n- `REVIEW_REQUIRED`",
+              "instructions": "You are a code reviewer for a PR that changes critical paths.\n\nCI Status: \"${{ steps.ci-status.outputs.status }}\"\nCI Workflow: ${{ steps.ci-status.outputs.url }}\n\nCI Status Handling:\n- 'failure': CRITICAL ISSUE - tests failing, must fix before approval\n- 'not_run': WARNING - CI hasn't run yet, recommend running tests first\n- 'pending': CI still running, review code but tests may fail\n- 'success': All tests passed, proceed with review\n\nAnalyze this PR for:\n\n1. **CI Test Results** (check above - handle based on status)\n2. **Security Issues** (OWASP Top 10, auth flaws, injection vulnerabilities)\n3. **Code Quality** (type safety, error handling, performance)\n4. **Best Practices** (framework patterns, project conventions)\n5. **Breaking Changes** (API changes, migration requirements)\n\nFormat your response as:\n\n## 🚨 Critical Issues (must fix)\n## ⚠️ Medium/Low Issues (should fix)\n## ✅ Positive Findings\n## 📋 Recommendation\n\nFinal line must be one of:\n- `APPROVED`\n- `NEEDS_CHANGES`\n- `REVIEW_REQUIRED`",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true"
