@@ -606,6 +606,68 @@ Option B: Add full test execution to auto-pr-review.yml (when needed)
 Future: Multi-stage testing with staging environment
 ```
 
+### Implementation Considerations
+
+#### Race Condition Behavior
+
+**Current Implementation**: Branch-based CI status check
+
+```javascript
+branch: context.payload.pull_request.head.ref
+```
+
+**Behavior**:
+- Queries most recent CI run on the branch (regardless of commit)
+- Auto-review workflow and CI workflow run in parallel
+- May get `'pending'` status if review runs before CI completes
+- If CI finishes during review, review has stale data
+
+**Why This Is Acceptable**:
+- ✅ Lightweight approach for early-stage project
+- ✅ `'pending'` status still provides useful context
+- ✅ Branch protection prevents merging failing tests regardless
+- ✅ CI runs quickly (~5 minutes), so stale data is minimal
+- ✅ Review can proceed with code analysis while CI runs
+
+**When to Reconsider**:
+- CI runtime increases significantly (>15 minutes)
+- Need real-time CI status updates during review
+- Implementing Option B (full test execution)
+
+#### Branch Name vs Commit SHA Trade-off
+
+**Current**: Branch-based query
+```javascript
+branch: context.payload.pull_request.head.ref
+```
+
+**Alternative**: Commit SHA-based query
+```javascript
+head_sha: context.payload.pull_request.head.sha
+```
+
+| Aspect | Branch-Based | SHA-Based |
+|--------|--------------|-----------|
+| **Scope** | Most recent run on branch | Exact commit CI run |
+| **Force-push handling** | May show different commit's CI | Always shows current commit's CI |
+| **New branches** | Shows CI if any exists | Only shows CI for this commit |
+| **Context** | Includes recent branch history | Limited to specific commit |
+| **Use case** | General branch health | Specific commit verification |
+
+**Current Rationale**:
+- **Better context**: Shows recent CI runs on the branch, not just this commit
+- **New contributor friendly**: First-time contributors may not have CI run yet on their branch
+- **Pragmatic**: For early-stage projects, branch health is more important than per-commit precision
+- **Simpler**: Branch-based queries are more intuitive
+
+**When to Switch to SHA-based**:
+- Enforcing strict per-commit CI requirements
+- High-frequency force-pushing to branches
+- Need precise commit-to-CI mapping
+- Implementing gated merges with exact CI verification
+
+**Note**: Both approaches have valid use cases. The branch-based approach prioritizes context and contributor experience, while SHA-based prioritizes precision and correctness.
+
 ---
 
 **Last Updated**: 2025-01-22
