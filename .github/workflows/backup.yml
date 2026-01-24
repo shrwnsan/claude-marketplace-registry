@@ -224,7 +224,7 @@ jobs:
         with:
           name: backup-${{ steps.backup.outputs.backup_id }}
           path: ${{ steps.backup.outputs.backup_path }}
-          retention-days: 30
+          retention-days: 7
           compression-level: 0  # Don't compress since backups are already compressed
 
       - name: 📊 Log Backup Results

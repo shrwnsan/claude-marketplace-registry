@@ -159,7 +159,7 @@ jobs:
           path: |
             detailed-status.json
             status-summary.json
-          retention-days: 7
+          retention-days: 3
 
   notify-team:
     name: 📢 Notify Team
@@ -369,7 +369,7 @@ jobs:
           path: |
             performance-report.json
             lighthouse-report.json
-          retention-days: 7
+          retention-days: 3
 
   cleanup:
     name: 🧹 Cleanup Old Reports
