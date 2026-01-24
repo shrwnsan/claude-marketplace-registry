@@ -19,3 +19,9 @@ regexes = [
   '''[a-zA-Z0-9._%+-]+@example\.net''',
   '''[a-zA-Z0-9._%+-]+@users\.noreply\.github\.com''',
 ]
+
+# Allow documentation files that contain example credentials
+# These are clearly marked as examples and use placeholder values
+paths = [
+  '''docs/''',
+]
