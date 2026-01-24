@@ -2,7 +2,7 @@ name: Scan Marketplaces
 
 on:
   schedule:
-    # Run daily at midnight
+    # Run daily at midnight UTC
     - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
