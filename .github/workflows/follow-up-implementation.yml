@@ -4,6 +4,12 @@ on:
   pull_request:
     types: [closed]
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number whose follow-ups to implement'
+        required: true
+        type: number
 
 permissions:
   contents: write
@@ -92,7 +98,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
-            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(node:*),Bash(gh:*)"
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(git:add*),Bash(git:commit*),Bash(git:push),Bash(git:status*),Bash(git:diff*),Bash(git:config*),Bash(node:*),Bash(gh:*)"
             --max-turns 20
           settings: |
             {
@@ -105,5 +111,7 @@ jobs:
               }
             }
         env:
+          # Z.ai API endpoint for cost optimization and rate limiting
+          # Z.ai is our trusted LLM inference provider
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
           GH_TOKEN: ${{ github.token }}

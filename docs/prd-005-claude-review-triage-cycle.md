@@ -1,7 +1,7 @@
 # Claude Review-Triage-Implementation Cycle
 
 > **Status:** Implemented
-> **Last Updated:** 2025-01-25
+> **Last Updated:** 2026-01-25
 
 ## Overview
 
@@ -83,11 +83,11 @@ Processes validated findings:
 | Severity | Action |
 |----------|--------|
 | **Critical** | Implement immediately, commit to PR branch |
-| **Medium** | Create follow-up issue with `medium-priority` label |
-| **Low** | Create follow-up issue with `low-priority` label |
+| **Medium** | Create follow-up issue with `priority/medium` label |
+| **Low** | Create follow-up issue with `priority/low` label |
 
 **Follow-up issue structure:**
-- Labels: `follow-up`, `{severity}-priority`, `claude-generated`
+- Labels: `follow-up`, `priority/{severity}`, `claude-generated`
 - References source PR number
 - Includes location, description, suggested fix
 
@@ -118,7 +118,7 @@ Set in workflow files or repository secrets:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `CLAUDE_ZAI_API_KEY` | *required* | API key for Claude Code action |
-| `ANTHROPIC_BASE_URL` | `https://api.z.ai/api/anthropic` | API endpoint |
+| `ANTHROPIC_BASE_URL` | `https://api.z.ai/api/anthropic` | Z.ai API endpoint (cost optimization, trusted LLM provider) |
 | `GH_TOKEN` | auto-provided | GitHub token for API operations |
 
 ### Disabling
@@ -209,8 +209,8 @@ Auto-created on first use (via gh CLI):
 | Label | Color | Purpose |
 |-------|-------|---------|
 | `follow-up` | yellow | Auto-generated follow-up |
-| `medium-priority` | orange | Medium severity |
-| `low-priority` | blue | Low severity |
+| `priority/medium` | orange | Medium severity |
+| `priority/low` | blue | Low severity |
 | `claude-generated` | purple | Created by Claude |
 | `auto-implementation` | green | Auto-implemented PR |
 
