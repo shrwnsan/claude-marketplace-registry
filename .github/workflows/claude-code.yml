@@ -172,13 +172,18 @@ jobs:
           PR_NUMBER="${{ github.event.issue.number || github.event.pull_request.number }}"
           echo "Fetching comments for PR #$PR_NUMBER"
 
+          # Wait a moment to ensure previous job's comment is posted
+          sleep 10
+
           # Get all comments from the review job (by claude bot)
           gh pr view "$PR_NUMBER" --json comments --jq \
             '.comments | map(select(.author.login == "claude")) | .[].body' \
             > /tmp/review-comments.txt
 
           echo "Fetched $(wc -l < /tmp/review-comments.txt) comment(s)"
+          echo "=== Review Comments ==="
           cat /tmp/review-comments.txt
+          echo "======================"
 
       - name: Validate Review
         id: validate
@@ -229,13 +234,18 @@ jobs:
           PR_NUMBER="${{ github.event.issue.number || github.event.pull_request.number }}"
           echo "Fetching all comments for PR #$PR_NUMBER"
 
+          # Wait to ensure previous jobs' comments are posted
+          sleep 5
+
           # Get all claude comments (review + self-review)
           gh pr view "$PR_NUMBER" --json comments --jq \
             '.comments | map(select(.author.login == "claude")) | .[].body' \
             > /tmp/all-review-comments.txt
 
           echo "Fetched $(wc -l < /tmp/all-review-comments.txt) comment(s)"
+          echo "=== All Review Comments ==="
           cat /tmp/all-review-comments.txt
+          echo "=========================="
 
       - name: Configure Git
         run: |
