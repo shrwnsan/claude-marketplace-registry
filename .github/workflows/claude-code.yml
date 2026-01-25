@@ -194,7 +194,7 @@ jobs:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
             --allowedTools "Read,Glob,Grep,WebSearch,WebFetch"
-            --max-turns 8
+            --max-turns 15
           settings: |
             {
               "instructions": "You are validating a code review.\n\nRead /tmp/review-comments.txt which contains the previous review job's comments.\n\nYour tasks:\n1. **Check for misses**: Look for issues the original review missed:\n   - OWASP Top 10 vulnerabilities\n   - Performance anti-patterns\n   - Breaking changes\n   - Type safety issues\n\n2. **Validate findings**: For each item in the original review:\n   - Is this a real issue? (not false positive)\n   - Is the location accurate?\n   - Is the severity correct?\n\n3. **Post your validation results** as a comment on this PR.",
