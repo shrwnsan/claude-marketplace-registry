@@ -134,7 +134,7 @@ jobs:
             --max-turns 10
           settings: |
             {
-              "instructions": "You are a code reviewer for this PR.\n\nPre-check status:\n- ESLint: ${{ needs.pre-check.outputs.lint-status }}\n- Prettier: ${{ needs.pre-check.outputs.format-status }}\n\nAnalyze this PR for:\n1. Security Issues (OWASP Top 10, auth flaws, injection)\n2. Code Quality (type safety, error handling, performance)\n3. Best Practices (framework patterns, conventions)\n4. Breaking Changes (API changes, migration needed)\n\nCategorize findings by severity:\n- **critical**: Security vulnerabilities, crashes, data loss risks\n- **medium**: Code quality issues, missing error handling, performance concerns\n- **low**: Style inconsistencies, minor improvements, nice-to-haves\n\nOutput your findings as JSON to /tmp/review.json:\n{\n  \"critical\": [{\"location\": \"file:line\", \"issue\": \"description\", \"fix\": \"suggestion\"}],\n  \"medium\": [...],\n  \"low\": [...]\n}\n\nAlso provide a human-readable summary in a comment.",
+              "instructions": "You are a code reviewer for this PR.\n\nPre-check status:\n- ESLint: ${{ needs.pre-check.outputs.lint-status }}\n- Prettier: ${{ needs.pre-check.outputs.format-status }}\n\nAnalyze this PR for:\n1. Security Issues (OWASP Top 10, auth flaws, injection)\n2. Code Quality (type safety, error handling, performance)\n3. Best Practices (framework patterns, conventions)\n4. Breaking Changes (API changes, migration needed)\n\nCategorize findings by severity:\n- **critical**: Security vulnerabilities, crashes, data loss risks\n- **medium**: Code quality issues, missing error handling, performance concerns\n- **low**: Style inconsistencies, minor improvements, nice-to-haves\n\nPost your findings as a comment on this PR. Include structured findings that can be parsed by downstream jobs.",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true"
@@ -145,22 +145,11 @@ jobs:
           # Z.ai is our trusted LLM inference provider
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
 
-      - name: Upload review results
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: review-results
-          path: /tmp/review.json
-          retention-days: 7
-
   self-review:
     name: Review Validation
     runs-on: ubuntu-latest
     needs: [pre-check, review]
     if: always() && needs.review.result == 'success'
-
-    outputs:
-      validated-artifact: ${{ steps.validate.outputs.artifact_name }}
 
     steps:
       - name: Checkout
@@ -177,11 +166,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Download review results
-        uses: actions/download-artifact@v4
-        with:
-          name: review-results
-          path: /tmp
+      - name: Fetch PR comments
+        id: comments
+        run: |
+          PR_NUMBER="${{ github.event.issue.number || github.event.pull_request.number }}"
+          echo "Fetching comments for PR #$PR_NUMBER"
+
+          # Get all comments from the review job (by claude bot)
+          gh pr view "$PR_NUMBER" --json comments --jq \
+            '.comments | map(select(.author.login == "claude")) | .[].body' \
+            > /tmp/review-comments.txt
+
+          echo "Fetched $(wc -l < /tmp/review-comments.txt) comment(s)"
+          cat /tmp/review-comments.txt
 
       - name: Validate Review
         id: validate
@@ -193,7 +190,7 @@ jobs:
             --max-turns 8
           settings: |
             {
-              "instructions": "You are validating a code review.\n\nRead /tmp/review.json which contains:\n- critical: []\n- medium: []\n- low: []\n\nYour tasks:\n1. **Check for misses**: Look for issues the original review missed:\n   - OWASP Top 10 vulnerabilities\n   - Performance anti-patterns\n   - Breaking changes\n   - Type safety issues\n\n2. **Validate findings**: For each item in the original review:\n   - Is this a real issue? (not false positive)\n   - Is the location accurate?\n   - Is the severity correct?\n\n3. **Output merged results** to /tmp/validated-findings.json:\n{\n  \"validated\": {\n    \"critical\": [original items that passed validation],\n    \"medium\": [...],\n    \"low\": [...]\n  },\n  \"missed\": [issues you found that were missing],\n  \"false_positives\": [original items that are invalid]\n}",
+              "instructions": "You are validating a code review.\n\nRead /tmp/review-comments.txt which contains the previous review job's comments.\n\nYour tasks:\n1. **Check for misses**: Look for issues the original review missed:\n   - OWASP Top 10 vulnerabilities\n   - Performance anti-patterns\n   - Breaking changes\n   - Type safety issues\n\n2. **Validate findings**: For each item in the original review:\n   - Is this a real issue? (not false positive)\n   - Is the location accurate?\n   - Is the severity correct?\n\n3. **Post your validation results** as a comment on this PR.",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true"
@@ -203,14 +200,7 @@ jobs:
           # Z.ai API endpoint for cost optimization and rate limiting
           # Z.ai is our trusted LLM inference provider
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
-
-      - name: Upload validated findings
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: validated-findings
-          path: /tmp/validated-findings.json
-          retention-days: 7
+          GH_TOKEN: ${{ github.token }}
 
   triage:
     name: Finding Triage
@@ -233,11 +223,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Download validated findings
-        uses: actions/download-artifact@v4
-        with:
-          name: validated-findings
-          path: /tmp
+      - name: Fetch all PR comments
+        id: comments
+        run: |
+          PR_NUMBER="${{ github.event.issue.number || github.event.pull_request.number }}"
+          echo "Fetching all comments for PR #$PR_NUMBER"
+
+          # Get all claude comments (review + self-review)
+          gh pr view "$PR_NUMBER" --json comments --jq \
+            '.comments | map(select(.author.login == "claude")) | .[].body' \
+            > /tmp/all-review-comments.txt
+
+          echo "Fetched $(wc -l < /tmp/all-review-comments.txt) comment(s)"
+          cat /tmp/all-review-comments.txt
 
       - name: Configure Git
         run: |
@@ -253,7 +251,7 @@ jobs:
             --max-turns 15
           settings: |
             {
-              "instructions": "You are triaging code review findings.\n\nRead /tmp/validated-findings.json.\n\nFor each finding:\n\n**CRITICAL findings** - Implement immediately:\n1. Use Edit/Write tools to fix the code\n2. Run tests: npm test\n3. Commit changes\n4. Push to the PR branch\n\n**MEDIUM findings** - Create follow-up issue:\n- Use gh issue create with title prefix '[FOLLOW-UP]'\n- Add labels: follow-up, priority/medium, claude-generated\n- Reference source PR in body: 'From PR #${PR_NUMBER}'\n- Include location, description, and suggested fix\n\n**LOW findings** - Create follow-up issue:\n- Use gh issue create with title prefix '[FOLLOW-UP]'\n- Add labels: follow-up, priority/low, claude-generated\n- Reference source PR in body: 'From PR #${PR_NUMBER}'\n- Include location, description, and suggested fix\n\nAfter processing, comment on the PR with a summary of actions taken.",
+              "instructions": "You are triaging code review findings.\n\nRead /tmp/all-review-comments.txt which contains the review and self-review comments.\n\nFor each finding:\n\n**CRITICAL findings** - Implement immediately:\n1. Use Edit/Write tools to fix the code\n2. Run tests: npm test\n3. Commit changes\n4. Push to the PR branch\n\n**MEDIUM findings** - Create follow-up issue:\n- Use gh issue create with title prefix '[FOLLOW-UP]'\n- Add labels: follow-up, priority/medium, claude-generated\n- Reference source PR in body: 'From PR #${PR_NUMBER}'\n- Include location, description, and suggested fix\n\n**LOW findings** - Create follow-up issue:\n- Use gh issue create with title prefix '[FOLLOW-UP]'\n- Add labels: follow-up, priority/low, claude-generated\n- Reference source PR in body: 'From PR #${PR_NUMBER}'\n- Include location, description, and suggested fix\n\nAfter processing, comment on the PR with a summary of actions taken.",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
