@@ -168,6 +168,8 @@ jobs:
 
       - name: Fetch PR comments
         id: comments
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           PR_NUMBER="${{ github.event.issue.number || github.event.pull_request.number }}"
           echo "Fetching comments for PR #$PR_NUMBER"
@@ -230,12 +232,14 @@ jobs:
 
       - name: Fetch all PR comments
         id: comments
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           PR_NUMBER="${{ github.event.issue.number || github.event.pull_request.number }}"
           echo "Fetching all comments for PR #$PR_NUMBER"
 
           # Wait to ensure previous jobs' comments are posted
-          sleep 5
+          sleep 10
 
           # Get all claude comments (review + self-review)
           gh pr view "$PR_NUMBER" --json comments --jq \
