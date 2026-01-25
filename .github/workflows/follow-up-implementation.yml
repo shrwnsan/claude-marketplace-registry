@@ -1,0 +1,117 @@
+name: Follow-Up Issue Implementation
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number whose follow-ups to implement'
+        required: true
+        type: number
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+jobs:
+  detect-linked-issues:
+    name: Detect Linked Issues
+    runs-on: ubuntu-latest
+    # Only run for merged PRs by authorized users
+    if: |
+      github.event.pull_request.merged == true &&
+      (github.event.pull_request.user.author_association == 'OWNER' ||
+       github.event.pull_request.user.author_association == 'MEMBER' ||
+       github.event.pull_request.user.author_association == 'COLLABORATOR')
+
+    outputs:
+      issue_numbers: ${{ steps.detect.outputs.issue_numbers }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect linked issues
+        id: detect
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const repo = context.repo;
+
+            // Find issues that reference this PR
+            const query = `repo:${repo.owner}/${repo.repo} is:issue linked:${prNumber}`;
+            const issues = await github.rest.search.issuesAndPullRequests({
+              q: query
+            });
+
+            const issueNumbers = issues.data.items
+              .filter(i => i.number !== prNumber)
+              .map(i => i.number);
+
+            core.setOutput('issue_numbers', issueNumbers.join(','));
+            core.summary.addRaw(`Found ${issueNumbers.length} linked issues: ${issueNumbers.join(', ') || 'none'}`);
+            await core.summary.write();
+
+      - name: Verify issues found
+        run: |
+          ISSUE_NUMBERS="${{ steps.detect.outputs.issue_numbers }}"
+          if [ -z "$ISSUE_NUMBERS" ]; then
+            echo "No linked issues found"
+          else
+            echo "Linked issues: $ISSUE_NUMBERS"
+          fi
+
+  validate-and-implement:
+    name: Validate and Implement
+    runs-on: ubuntu-latest
+    needs: detect-linked-issues
+    # Only run if we found linked issues
+    if: needs.detect-linked-issues.outputs.issue_numbers != ''
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "claude-code[bot]"
+          git config --global user.email "claude-code[bot]@users.noreply.github.com"
+
+      - name: Process follow-up issues
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
+          claude_args: |
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(git:add*),Bash(git:commit*),Bash(git:push),Bash(git:status*),Bash(git:diff*),Bash(git:config*),Bash(node:*),Bash(gh:*)"
+            --max-turns 20
+          settings: |
+            {
+              "instructions": "You are implementing follow-up issues from a merged PR.\n\nContext:\n- Source PR number is available via SOURCE_PR env var\n- Linked issues are available via LINKED_ISSUES env var\n\nFor each linked issue:\n\n1. Read the issue details using gh issue view\n\n2. Check if obsolete:\n   - Did the merged PR already address this?\n   - Is this issue no longer relevant?\n   - If obsolete, close with explanation\n\n3. If still valid:\n   - Create branch auto/issue-NUMBER-implementation\n   - Implement the fix\n   - Run: npm test, npm run lint, npm run format:check\n   - Commit and push\n   - Create PR to main with labels claude-generated,auto-implementation\n   - Close original issue (referenced by new PR)\n\nProcess issues sequentially.",
+              "env": {
+                "NODE_ENV": "test",
+                "CI": "true",
+                "SOURCE_PR": "${{ github.event.pull_request.number }}",
+                "LINKED_ISSUES": "${{ needs.detect-linked-issues.outputs.issue_numbers }}"
+              }
+            }
+        env:
+          # Z.ai API endpoint for cost optimization and rate limiting
+          # Z.ai is our trusted LLM inference provider
+          ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
+          GH_TOKEN: ${{ github.token }}

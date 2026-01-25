@@ -7,6 +7,12 @@ on:
     types: [opened, synchronize, reopened]
   issues:
     types: [opened, edited]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to review'
+        required: true
+        type: number
 
 permissions:
   contents: write
@@ -86,6 +92,179 @@ jobs:
             /tmp/lint.log
             /tmp/format.log
           retention-days: 1
+
+  review:
+    name: Code Review
+    runs-on: ubuntu-latest
+    needs: pre-check
+    if: always() && needs.pre-check.result == 'success'
+
+    outputs:
+      review-artifact: ${{ steps.review.outputs.artifact_name }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download pre-check results
+        uses: actions/download-artifact@v4
+        with:
+          name: pre-check-results
+          path: /tmp
+        continue-on-error: true
+
+      - name: Run Code Review
+        id: review
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
+          claude_args: |
+            --allowedTools "Read,Glob,Grep,WebSearch,WebFetch"
+            --max-turns 10
+          settings: |
+            {
+              "instructions": "You are a code reviewer for this PR.\n\nPre-check status:\n- ESLint: ${{ needs.pre-check.outputs.lint-status }}\n- Prettier: ${{ needs.pre-check.outputs.format-status }}\n\nAnalyze this PR for:\n1. Security Issues (OWASP Top 10, auth flaws, injection)\n2. Code Quality (type safety, error handling, performance)\n3. Best Practices (framework patterns, conventions)\n4. Breaking Changes (API changes, migration needed)\n\nCategorize findings by severity:\n- **critical**: Security vulnerabilities, crashes, data loss risks\n- **medium**: Code quality issues, missing error handling, performance concerns\n- **low**: Style inconsistencies, minor improvements, nice-to-haves\n\nOutput your findings as JSON to /tmp/review.json:\n{\n  \"critical\": [{\"location\": \"file:line\", \"issue\": \"description\", \"fix\": \"suggestion\"}],\n  \"medium\": [...],\n  \"low\": [...]\n}\n\nAlso provide a human-readable summary in a comment.",
+              "env": {
+                "NODE_ENV": "test",
+                "CI": "true"
+              }
+            }
+        env:
+          # Z.ai API endpoint for cost optimization and rate limiting
+          # Z.ai is our trusted LLM inference provider
+          ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
+
+      - name: Upload review results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: review-results
+          path: /tmp/review.json
+          retention-days: 7
+
+  self-review:
+    name: Review Validation
+    runs-on: ubuntu-latest
+    needs: [pre-check, review]
+    if: always() && needs.review.result == 'success'
+
+    outputs:
+      validated-artifact: ${{ steps.validate.outputs.artifact_name }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download review results
+        uses: actions/download-artifact@v4
+        with:
+          name: review-results
+          path: /tmp
+
+      - name: Validate Review
+        id: validate
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
+          claude_args: |
+            --allowedTools "Read,Glob,Grep,WebSearch,WebFetch"
+            --max-turns 8
+          settings: |
+            {
+              "instructions": "You are validating a code review.\n\nRead /tmp/review.json which contains:\n- critical: []\n- medium: []\n- low: []\n\nYour tasks:\n1. **Check for misses**: Look for issues the original review missed:\n   - OWASP Top 10 vulnerabilities\n   - Performance anti-patterns\n   - Breaking changes\n   - Type safety issues\n\n2. **Validate findings**: For each item in the original review:\n   - Is this a real issue? (not false positive)\n   - Is the location accurate?\n   - Is the severity correct?\n\n3. **Output merged results** to /tmp/validated-findings.json:\n{\n  \"validated\": {\n    \"critical\": [original items that passed validation],\n    \"medium\": [...],\n    \"low\": [...]\n  },\n  \"missed\": [issues you found that were missing],\n  \"false_positives\": [original items that are invalid]\n}",
+              "env": {
+                "NODE_ENV": "test",
+                "CI": "true"
+              }
+            }
+        env:
+          # Z.ai API endpoint for cost optimization and rate limiting
+          # Z.ai is our trusted LLM inference provider
+          ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
+
+      - name: Upload validated findings
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validated-findings
+          path: /tmp/validated-findings.json
+          retention-days: 7
+
+  triage:
+    name: Finding Triage
+    runs-on: ubuntu-latest
+    needs: [pre-check, review, self-review]
+    if: always() && needs.self-review.result == 'success'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download validated findings
+        uses: actions/download-artifact@v4
+        with:
+          name: validated-findings
+          path: /tmp
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "claude-code[bot]"
+          git config --global user.email "claude-code[bot]@users.noreply.github.com"
+
+      - name: Triage and Act
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
+          claude_args: |
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(git:add*),Bash(git:commit*),Bash(git:push),Bash(git:status*),Bash(git:diff*),Bash(git:config*),Bash(node:*),Bash(gh:*)"
+            --max-turns 15
+          settings: |
+            {
+              "instructions": "You are triaging code review findings.\n\nRead /tmp/validated-findings.json.\n\nFor each finding:\n\n**CRITICAL findings** - Implement immediately:\n1. Use Edit/Write tools to fix the code\n2. Run tests: npm test\n3. Commit changes\n4. Push to the PR branch\n\n**MEDIUM findings** - Create follow-up issue:\n- Use gh issue create with title prefix '[FOLLOW-UP]'\n- Add labels: follow-up, priority/medium, claude-generated\n- Reference source PR in body: 'From PR #${PR_NUMBER}'\n- Include location, description, and suggested fix\n\n**LOW findings** - Create follow-up issue:\n- Use gh issue create with title prefix '[FOLLOW-UP]'\n- Add labels: follow-up, priority/low, claude-generated\n- Reference source PR in body: 'From PR #${PR_NUMBER}'\n- Include location, description, and suggested fix\n\nAfter processing, comment on the PR with a summary of actions taken.",
+              "env": {
+                "NODE_ENV": "test",
+                "CI": "true",
+                "PR_NUMBER": "${{ github.event.pull_request.number || github.event.issue.number }}"
+              }
+            }
+        env:
+          # Z.ai API endpoint for cost optimization and rate limiting
+          # Z.ai is our trusted LLM inference provider
+          ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
+          GH_TOKEN: ${{ github.token }}
 
   claude-code:
     name: Claude Code
