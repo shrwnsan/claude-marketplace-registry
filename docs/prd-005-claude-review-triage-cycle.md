@@ -1,7 +1,7 @@
 # Claude Review-Triage-Implementation Cycle
 
 > **Status:** Implemented
-> **Last Updated:** 2026-01-25
+> **Last Updated:** 2026-01-26
 
 ## Overview
 
@@ -15,9 +15,9 @@ An autonomous development cycle where Claude reviews pull requests, validates it
 │                    (triggered by @claude mention)                       │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                                                                          │
-│  review → self-review → triage                                          │
-│    ↓           ↓             ↓                                          │
-│  artifacts   validated    critical fixes + follow-up issues             │
+│  review (🔍) → self-review (✅) → triage (🎯)                            │
+│    ↓               ↓                   ↓                                │
+│  PR comments   validated findings  critical fixes + follow-up issues     │
 │                                                                          │
 └─────────────────────────────────────────────────────────────────────────┘
                                     │
@@ -39,7 +39,7 @@ An autonomous development cycle where Claude reviews pull requests, validates it
 
 **Trigger:** `@claude` mention in PR comment
 
-**Job:** `review`
+**Job:** `review` (🔍 CODE REVIEW - Job 1/3)
 
 Runs `claude-code-action` with read-only tools to analyze the PR:
 - Security vulnerabilities (OWASP Top 10)
@@ -47,38 +47,31 @@ Runs `claude-code-action` with read-only tools to analyze the PR:
 - Breaking changes
 - Performance concerns
 
-**Output:** `/tmp/review.json` artifact with categorized findings:
-```json
-{
-  "critical": [{"location": "src/auth.ts:45", "issue": "...", "fix": "..."}],
-  "medium": [...],
-  "low": [...]
-}
-```
+**Output:** PR comment with findings categorized by severity:
+- **critical**: Security vulnerabilities, crashes, data loss risks
+- **medium**: Code quality issues, missing error handling, performance concerns
+- **low**: Style inconsistencies, minor improvements, nice-to-haves
+
+Comment header: `## 🔍 CODE REVIEW (Job 1/3)`
 
 ### Stage 2: Self-Review
 
-**Job:** `self-review`
+**Job:** `self-review` (✅ REVIEW VALIDATION - Job 2/3)
 
-Validates the initial review output:
+Fetches previous job's comments via `gh` CLI and validates:
 - **Catches misses:** Issues the first review overlooked
 - **Validates findings:** Removes false positives, confirms accuracy
-- **Merges results:** Combines original + new findings
+- **Checks severity:** Ensures severity levels are correct
 
-**Output:** `/tmp/validated-findings.json`:
-```json
-{
-  "validated": {"critical": [...], "medium": [...], "low": [...]},
-  "missed": [...],
-  "false_positives": [...]
-}
-```
+**Output:** PR comment with validation results
+
+Comment header: `## ✅ REVIEW VALIDATION (Job 2/3)`
 
 ### Stage 3: Triage
 
-**Job:** `triage`
+**Job:** `triage` (🎯 TRIAGE - Job 3/3)
 
-Processes validated findings:
+Fetches all previous comments via `gh` CLI and processes validated findings:
 
 | Severity | Action |
 |----------|--------|
@@ -86,10 +79,16 @@ Processes validated findings:
 | **Medium** | Create follow-up issue with `priority/medium` label |
 | **Low** | Create follow-up issue with `priority/low` label |
 
+**Output:** PR comment with summary of actions taken
+
+Comment header: `## 🎯 TRIAGE (Job 3/3)`
+
 **Follow-up issue structure:**
+- Title prefix: `[FOLLOW-UP]`
 - Labels: `follow-up`, `priority/{severity}`, `claude-generated`
-- References source PR number
+- References source PR number: `From PR #123`
 - Includes location, description, suggested fix
+- Created via: `gh issue create --title "[FOLLOW-UP] ..." --body "..." --label ...`
 
 ### Stage 4: Follow-Up Implementation
 
@@ -192,8 +191,9 @@ Check:
 
 Check:
 1. Self-review job completed successfully
-2. Validated findings artifact exists
+2. Triage job found medium/low severity issues
 3. GH_TOKEN has `issues:write` permission
+4. Triage job has `Bash(gh:*)` in allowedTools
 
 ### Follow-up implementation didn't run
 
@@ -206,13 +206,12 @@ Check:
 
 Auto-created on first use (via gh CLI):
 
-| Label | Color | Purpose |
-|-------|-------|---------|
-| `follow-up` | yellow | Auto-generated follow-up |
-| `priority/medium` | orange | Medium severity |
-| `priority/low` | blue | Low severity |
-| `claude-generated` | purple | Created by Claude |
-| `auto-implementation` | green | Auto-implemented PR |
+| Label | Purpose |
+|-------|---------|
+| `follow-up` | Auto-generated follow-up issue |
+| `priority/medium` | Medium severity finding |
+| `priority/low` | Low severity finding |
+| `claude-generated` | Created by Claude workflow |
 
 ## Related Files
 
