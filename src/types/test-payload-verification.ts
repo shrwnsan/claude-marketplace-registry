@@ -3,5 +3,5 @@
 
 export function testFunction(): string {
   // Testing if workflow creates proper JSON payloads
-  return "test";
+  return 'test';
 }
