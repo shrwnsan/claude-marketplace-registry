@@ -1,6 +1,6 @@
 # Claude Review-Triage-Implementation Cycle
 
-> **Status:** Partially Implemented - Known Issues (see Testing Results)
+> **Status:** Implemented - Structured Payload Architecture
 > **Last Updated:** 2026-01-26
 
 ## Overview
@@ -32,6 +32,81 @@ An autonomous development cycle where Claude reviews pull requests, validates it
 │                                                                          │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
+
+## Payload Format
+
+Jobs communicate via structured JSON payloads embedded in PR comments as HTML comments.
+
+### CLAUDE_REVIEW_PAYLOAD
+
+Each job embeds its output in this format:
+
+```html
+<!-- CLAUDE_REVIEW_PAYLOAD_START{"version":1,"job":"review",...}CLAUDE_REVIEW_PAYLOAD_END -->
+```
+
+The `version` field (currently `1`) allows future schema changes while maintaining backward compatibility.
+
+### Finding Interface
+
+```typescript
+interface Finding {
+  id: string;                    // Unique identifier (e.g., "SEC-001")
+  severity: 'critical' | 'medium' | 'low';
+  category: 'security' | 'quality' | 'performance' | 'breaking-change' | 'style';
+  file: string;                  // File path
+  lineStart?: number;
+  lineEnd?: number;
+  title: string;
+  description: string;
+  recommendation: string;
+  validated?: boolean;           // Set by self-review job
+  falsePositive?: boolean;       // Set by self-review job
+}
+```
+
+### Payload Types by Job
+
+| Job | Payload Type | Key Fields |
+|-----|--------------|------------|
+| review | `ReviewPayload` | `findings[]` |
+| self-review | `ValidationPayload` | `validatedFindings[]`, `additionalFindings[]`, `sourceRunId` |
+| triage | `TriagePayload` | `actions[]` (fixed/issue-created/skipped) |
+
+### CLAUDE_JOB Marker
+
+Each job also emits a simple job identifier for quick detection:
+
+```html
+<!-- CLAUDE_JOB:review -->
+<!-- CLAUDE_JOB:self-review -->
+<!-- CLAUDE_JOB:triage -->
+```
+
+## Issue Linkage Format
+
+Follow-up issues include a linkage block for the implementation workflow to parse:
+
+```html
+<!-- ISSUE_LINKAGE_START
+Source-PR: #123
+Source-SHA: abc123def
+Claude-Run-ID: 9876543210
+Finding-ID: SEC-001
+ISSUE_LINKAGE_END -->
+```
+
+| Field | Description |
+|-------|-------------|
+| `Source-PR` | The PR number where the finding was discovered |
+| `Source-SHA` | Commit SHA at time of review |
+| `Claude-Run-ID` | GitHub Actions run ID for traceability |
+| `Finding-ID` | Links back to specific finding in review payload |
+
+The follow-up implementation workflow uses these fields to:
+1. Identify which PR the issue originated from
+2. Check if the source SHA was already merged (obsolescence detection)
+3. Trace back to the original review for context
 
 ## Workflow Stages
 
@@ -202,6 +277,40 @@ Check:
 2. Issues are linked via `#123` in issue body/comments
 3. Workflow has correct permissions
 
+### Debugging Payloads
+
+Use the payload helpers to inspect workflow data:
+
+```bash
+# Source the helpers
+source scripts/workflow-payload-helpers.sh
+
+# Get latest review payload from PR
+get_latest_payload 123 "review"
+
+# Get validation payload
+get_latest_payload 123 "self-review"
+
+# Parse issue linkage from issue body
+gh issue view 45 --json body --jq '.body' | parse_issue_linkage
+```
+
+### Missing or Invalid Payloads
+
+**Symptom:** Downstream job can't find payload from previous job
+
+Check:
+1. Previous job completed successfully (check Actions tab)
+2. Comment contains `CLAUDE_REVIEW_PAYLOAD_START` marker
+3. Payload is valid JSON (no truncation or encoding issues)
+
+**Symptom:** JSON parse errors in payload
+
+Check:
+1. No special characters breaking JSON (use `jq .` to validate)
+2. Payload wasn't truncated by comment length limits
+3. Run `extract_payload` manually to see raw content
+
 ## Labels
 
 Auto-created on first use (via gh CLI):
@@ -218,13 +327,17 @@ Auto-created on first use (via gh CLI):
 - `.github/workflows/claude-code.yml` - Main review workflow
 - `.github/workflows/follow-up-implementation.yml` - Follow-up automation
 - `.github/ISSUE_TEMPLATE/follow-up-*.md` - Issue templates
+- `src/types/workflow-payload.ts` - TypeScript interfaces for payload structures
+- `scripts/workflow-payload-helpers.sh` - Bash helpers for parsing/generating payloads
 - `docs/ARCHITECTURE.md` - System architecture
 
 ---
 
-## Testing Results
+## Testing Results (Historical)
 
 ### Test PR #39 (2026-01-26)
+
+> **Note:** These issues have been addressed with the structured payload architecture implemented above.
 
 **What Was Tested:**
 - Job identification headers (🔍, ✅, 🎯)
@@ -238,99 +351,12 @@ Auto-created on first use (via gh CLI):
 - Jobs executed in correct order with proper dependencies
 - PR comments were posted by all jobs
 
-❌ **Issues Found:**
+**Issues Found (Now Resolved):**
 
-1. **Job Identification Headers Not Working**
-   - **Expected:** Each job uses distinct header (🔍 CODE REVIEW, ✅ REVIEW VALIDATION, 🎯 TRIAGE)
-   - **Actual:** All 3 comments use `### 🔍 CODE REVIEW (Job 1/3)`
-   - **Root Cause:** The `anthropics/claude-code-action@v1` has built-in comment formatting that overrides custom header instructions
-   - **Impact:** Cannot distinguish which job posted which comment
-
-2. **Follow-Up Issues Not Created**
-   - **Expected:** Triage job creates issues for medium/low findings via `gh issue create`
-   - **Actual:** Zero issues created despite clear instructions
-   - **Root Cause:** Unknown - job completed successfully but didn't execute issue creation commands
-   - **Impact:** Triage workflow is non-functional
-
-3. **Comment Count Mismatch**
-   - **Expected:** 3 jobs → 3 comments with distinct headers
-   - **Actual:** 3 comments but all with identical headers
-   - **Impact:** Confusion about which findings come from which job
+1. **Job Identification Headers** → Resolved via `CLAUDE_JOB` markers in HTML comments
+2. **Follow-Up Issues Not Created** → Resolved via structured `ISSUE_LINKAGE` blocks
+3. **Comment Parsing Reliability** → Resolved via `CLAUDE_REVIEW_PAYLOAD` JSON format
 
 ---
 
-## Next Steps
-
-### Option A: Work Within Action Constraints
-
-**Approach:** Accept the claude-code-action's built-in comment format and adapt to it.
-
-**Actions:**
-1. Research `anthropics/claude-code-action@v1` documentation for:
-   - Built-in features for job identification
-   - Configuration options for comment formatting
-   - Alternative ways to distinguish jobs
-2. Use job-specific content indicators:
-   - Add job identifiers in comment body (e.g., "This is Job 1/3")
-   - Use unique emoji combinations in findings
-   - Structure findings differently per job
-3. Investigate triage failure:
-   - Check if `gh issue create` commands are being executed
-   - Verify permissions and API access
-   - Add debug logging to triage job
-
-**Pros:**
-- Works within the action's design
-- May be more stable long-term
-- Less maintenance overhead
-
-**Cons:**
-- Limited customization options
-- May not solve all issues
-- Dependent on action's feature set
-
-### Option B: Override Action Formatting
-
-**Approach:** Find ways to disable or override the action's default header formatting.
-
-**Actions:**
-1. Research:
-   - Action source code for formatting logic
-   - Environment variables or settings to disable default headers
-   - Alternative GitHub Actions with more customization
-2. Potential solutions:
-   - Fork and modify the claude-code-action
-   - Use the action's raw output and post comments manually
-   - Switch to a different implementation approach
-3. Address triage failure:
-   - Debug why `gh issue create` isn't working
-   - Consider alternative issue creation methods
-   - Add explicit error handling and logging
-
-**Pros:**
-- Full control over comment format
-- Can implement custom workflows
-- Potentially solves all issues
-
-**Cons:**
-- Higher maintenance burden
-- May break with action updates
-- More complex implementation
-
----
-
-## Recommendation
-
-**Start with Option A** (Work Within Action Constraints) to:
-1. Quickly resolve the triage/issue creation issue (highest priority)
-2. Document workarounds for job identification
-3. Gather more data on action limitations
-
-**If Option A is insufficient**, proceed to Option B:
-1. Fork or find alternative action
-2. Implement custom comment posting
-3. Full control over workflow behavior
-
----
-
-🤖 Generated by [Claude Code](https://claude.ai/code) - GLM 4.7
+🤖 Generated by [Claude Code](https://claude.ai/code)

@@ -37,25 +37,28 @@ jobs:
 
       - name: Detect linked issues
         id: detect
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const prNumber = context.payload.pull_request.number;
-            const repo = context.repo;
-
-            // Find issues that reference this PR
-            const query = `repo:${repo.owner}/${repo.repo} is:issue linked:${prNumber}`;
-            const issues = await github.rest.search.issuesAndPullRequests({
-              q: query
-            });
-
-            const issueNumbers = issues.data.items
-              .filter(i => i.number !== prNumber)
-              .map(i => i.number);
-
-            core.setOutput('issue_numbers', issueNumbers.join(','));
-            core.summary.addRaw(`Found ${issueNumbers.length} linked issues: ${issueNumbers.join(', ') || 'none'}`);
-            await core.summary.write();
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          echo "Finding follow-up issues for PR #$PR_NUMBER"
+          
+          # Find issues with follow-up label that reference this PR
+          ISSUES=$(gh issue list \
+            --label "follow-up" \
+            --label "claude-generated" \
+            --state open \
+            --json number,body \
+            --jq ".[] | select(.body | contains(\"Source-PR: #$PR_NUMBER\")) | .number")
+          
+          if [ -z "$ISSUES" ]; then
+            echo "No linked follow-up issues found"
+            echo "issue_numbers=" >> $GITHUB_OUTPUT
+          else
+            ISSUE_LIST=$(echo "$ISSUES" | tr '\n' ',' | sed 's/,$//')
+            echo "Found issues: $ISSUE_LIST"
+            echo "issue_numbers=$ISSUE_LIST" >> $GITHUB_OUTPUT
+          fi
 
       - name: Verify issues found
         run: |
@@ -102,7 +105,7 @@ jobs:
             --max-turns 20
           settings: |
             {
-              "instructions": "You are implementing follow-up issues from a merged PR.\n\nContext:\n- Source PR number is available via SOURCE_PR env var\n- Linked issues are available via LINKED_ISSUES env var\n\nFor each linked issue:\n\n1. Read the issue details using gh issue view\n\n2. Check if obsolete:\n   - Did the merged PR already address this?\n   - Is this issue no longer relevant?\n   - If obsolete, close with explanation\n\n3. If still valid:\n   - Create branch auto/issue-NUMBER-implementation\n   - Implement the fix\n   - Run: npm test, npm run lint, npm run format:check\n   - Commit and push\n   - Create PR to main with labels claude-generated,auto-implementation\n   - Close original issue (referenced by new PR)\n\nProcess issues sequentially.",
+              "instructions": "You are implementing follow-up issues from a merged PR.\n\nContext:\n- Source PR number is available via SOURCE_PR env var\n- Linked issues are available via LINKED_ISSUES env var\n\nFor each linked issue:\n\n1. Read the issue details using gh issue view\n\n2. Parse the ISSUE_LINKAGE block from the issue body to extract:\n   - Source-PR: The originating PR number\n   - Source-SHA: The commit SHA when the issue was created\n   - File and Line-Range if present\n\n3. Check if obsolete using Source-SHA:\n   - Run: git diff <Source-SHA>..HEAD -- <file> to see changes since issue creation\n   - If the file+lines have changed significantly, the issue may already be resolved\n   - Did the merged PR already address this?\n   - Is this issue no longer relevant?\n   - If obsolete, close with explanation\n\n4. If still valid:\n   - Create branch auto/issue-NUMBER-implementation\n   - Implement the fix\n   - Run: npm test, npm run lint, npm run format:check\n   - Commit and push\n   - Create PR to main with labels claude-generated,auto-implementation\n   - Close original issue (referenced by new PR)\n\nProcess issues sequentially.",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
