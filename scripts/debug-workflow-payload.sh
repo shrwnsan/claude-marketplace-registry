@@ -29,11 +29,11 @@ echo "$COMMENTS" | jq -r '.body' | while read -r body; do
     echo "Found job marker: $job_marker"
   fi
   
-  # Check for payload
-  if echo "$body" | grep -q "CLAUDE_REVIEW_PAYLOAD_START"; then
+  # Check for payload (new markers: CLAUDE_PAYLOAD...END_PAYLOAD)
+  if echo "$body" | grep -q "CLAUDE_PAYLOAD"; then
     echo "Found payload block"
-    payload=$(echo "$body" | sed -n '/CLAUDE_REVIEW_PAYLOAD_START/,/CLAUDE_REVIEW_PAYLOAD_END/p' | grep -v 'CLAUDE_REVIEW_PAYLOAD')
-    echo "$payload" | jq '.' 2>/dev/null || echo "Invalid JSON in payload"
+    payload=$(echo "$body" | sed -n '/<!-- CLAUDE_PAYLOAD/,/END_PAYLOAD -->/p' | grep -v 'CLAUDE_PAYLOAD' | grep -v 'END_PAYLOAD')
+    echo "$payload" | jq '.' 2>/dev/null || echo "Invalid JSON in payload: $payload"
   fi
 done
 
