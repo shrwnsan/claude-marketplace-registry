@@ -169,8 +169,8 @@ curl "http://localhost:3001/api/ecosystem-stats?metric=overview"
 ```
 
 ### **Manual Testing**
-- Complete testing guide: `docs/ecosystem-stats-testing-guide.md`
-- Quick testing checklist: `docs/quick-testing-guide.md`
+- Complete testing guide: `docs/guides/ecosystem-stats-testing-guide.md`
+- Quick testing checklist: `docs/guides/quick-testing-guide.md`
 - Browser DevTools testing procedures
 - Mobile testing guidelines
 

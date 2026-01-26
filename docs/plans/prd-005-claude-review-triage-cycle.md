@@ -329,7 +329,7 @@ Auto-created on first use (via gh CLI):
 - `.github/ISSUE_TEMPLATE/follow-up-*.md` - Issue templates
 - `src/types/workflow-payload.ts` - TypeScript interfaces for payload structures
 - `scripts/workflow-payload-helpers.sh` - Bash helpers for parsing/generating payloads
-- `docs/ARCHITECTURE.md` - System architecture
+- `docs/ref/ARCHITECTURE.md` - System architecture
 
 ---
 
