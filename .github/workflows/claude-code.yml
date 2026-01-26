@@ -168,27 +168,8 @@ jobs:
             FINDINGS_MD=$(jq -r '.findingsMarkdown // "No findings provided"' /tmp/claude-output/review-results.json)
             FINDINGS_JSON=$(jq -c '.findingsJson // []' /tmp/claude-output/review-results.json)
 
-            # Build the comment body (using heredoc for multi-line)
-            COMMENT_BODY=$(cat <<EOF
-            ## 🔍 CODE REVIEW (Job 1/3)
-
-            CLAUDE_JOB=review
-
-            > **Run:** $RUN_ID | **Timestamp:** $TIMESTAMP
-
-            ### Findings
-
-            $FINDINGS_MD
-
-            ---
-
-            <!-- CLAUDE_PAYLOAD
-            {"version":1,"job":"review","runId":"$RUN_ID","prNumber":$PR_NUMBER,"timestamp":"$TIMESTAMP","findings":$FINDINGS_JSON}
-            END_PAYLOAD -->
-
-            *🤖 Claude Code Review*
-            EOF
-            )
+            # Build the comment body using printf for proper escaping
+            COMMENT_BODY=$(printf "## 🔍 CODE REVIEW (Job 1/3)\n\nCLAUDE_JOB=review\n\n> **Run:** %s | **Timestamp:** %s\n\n### Findings\n\n%s\n\n---\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":1,\"job\":\"review\",\"runId\":\"%s\",\"prNumber\":%s,\"timestamp\":\"%s\",\"findings\":%s}\nEND_PAYLOAD -->\n\n*🤖 Claude Code Review*" "$RUN_ID" "$TIMESTAMP" "$FINDINGS_MD" "$RUN_ID" "$PR_NUMBER" "$TIMESTAMP" "$FINDINGS_JSON")
 
             # Post the comment
             gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
@@ -284,27 +265,8 @@ jobs:
             VALIDATED_JSON=$(jq -c '.validatedFindings // []' /tmp/claude-output/validation-results.json)
             ADDITIONAL_JSON=$(jq -c '.additionalFindings // []' /tmp/claude-output/validation-results.json)
 
-            # Build the comment body
-            COMMENT_BODY=$(cat <<EOF
-            ## ✅ REVIEW VALIDATION (Job 2/3)
-
-            CLAUDE_JOB=self-review
-
-            > **Run:** $RUN_ID | **Timestamp:** $TIMESTAMP
-
-            ### Validation Results
-
-            $VALIDATION_MD
-
-            ---
-
-            <!-- CLAUDE_PAYLOAD
-            {"version":1,"job":"validation","runId":"$RUN_ID","prNumber":$PR_NUMBER,"timestamp":"$TIMESTAMP","validatedFindings":$VALIDATED_JSON,"additionalFindings":$ADDITIONAL_JSON}
-            END_PAYLOAD -->
-
-            *🤖 Claude Code Review*
-            EOF
-            )
+            # Build the comment body using printf for proper escaping
+            COMMENT_BODY=$(printf "## ✅ REVIEW VALIDATION (Job 2/3)\n\nCLAUDE_JOB=self-review\n\n> **Run:** %s | **Timestamp:** %s\n\n### Validation Results\n\n%s\n\n---\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":1,\"job\":\"validation\",\"runId\":\"%s\",\"prNumber\":%s,\"timestamp\":\"%s\",\"validatedFindings\":%s,\"additionalFindings\":%s}\nEND_PAYLOAD -->\n\n*🤖 Claude Code Review*" "$RUN_ID" "$TIMESTAMP" "$VALIDATION_MD" "$RUN_ID" "$PR_NUMBER" "$TIMESTAMP" "$VALIDATED_JSON" "$ADDITIONAL_JSON")
 
             # Post the comment
             gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
@@ -404,27 +366,8 @@ jobs:
             ACTIONS_JSON=$(jq -c '.actions // []' /tmp/claude-output/triage-results.json)
             SUMMARY_JSON=$(jq -c '.summary // {"criticalFixed":0,"issuesCreated":0,"skipped":0}' /tmp/claude-output/triage-results.json)
 
-            # Build the comment body
-            COMMENT_BODY=$(cat <<EOF
-            ## 🎯 TRIAGE (Job 3/3)
-
-            CLAUDE_JOB=triage
-
-            > **Run:** $RUN_ID | **SHA:** $SHA | **Timestamp:** $TIMESTAMP
-
-            ### Summary
-
-            $TRIAGE_MD
-
-            ---
-
-            <!-- CLAUDE_PAYLOAD
-            {"version":1,"job":"triage","runId":"$RUN_ID","prNumber":$PR_NUMBER,"sha":"$SHA","timestamp":"$TIMESTAMP","actions":$ACTIONS_JSON,"summary":$SUMMARY_JSON}
-            END_PAYLOAD -->
-
-            *🤖 Claude Code Review*
-            EOF
-            )
+            # Build the comment body using printf for proper escaping
+            COMMENT_BODY=$(printf "## 🎯 TRIAGE (Job 3/3)\n\nCLAUDE_JOB=triage\n\n> **Run:** %s | **SHA:** %s | **Timestamp:** %s\n\n### Summary\n\n%s\n\n---\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":1,\"job\":\"triage\",\"runId\":\"%s\",\"prNumber\":%s,\"sha\":\"%s\",\"timestamp\":\"%s\",\"actions\":%s,\"summary\":%s}\nEND_PAYLOAD -->\n\n*🤖 Claude Code Review*" "$RUN_ID" "$SHA" "$TIMESTAMP" "$TRIAGE_MD" "$RUN_ID" "$PR_NUMBER" "$SHA" "$TIMESTAMP" "$ACTIONS_JSON" "$SUMMARY_JSON")
 
             # Post the comment
             gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
