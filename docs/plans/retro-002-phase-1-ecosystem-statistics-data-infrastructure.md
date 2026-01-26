@@ -192,7 +192,7 @@ const mockConfig = {
 9. `src/types/__tests__/ecosystem-stats-test.ts` - Test suite (200+ lines)
 
 ### **Documentation**
-10. `docs/ecosystem-stats-types-guide.md` - Integration guide
+10. `docs/guides/ecosystem-stats-types-guide.md` - Integration guide
 11. `src/types/README.md` - Implementation summary
 
 **Total: ~4,800 lines of production-ready code and documentation**

@@ -488,7 +488,7 @@ Improvements implemented with a **"lean documentation"** approach—keeping file
 
 #### ✅ 3. Architecture Documentation (Condensed)
 - **Status**: Completed
-- **File Created**: `docs/ARCHITECTURE.md` (~80 lines, down from initial 393)
+- **File Created**: `docs/ref/ARCHITECTURE.md` (~80 lines, down from initial 393)
 - **Contents**:
   - Pipeline flow diagram (GitHub API → Scan → Validate → Generate → Deploy)
   - Key scripts table with inputs/outputs

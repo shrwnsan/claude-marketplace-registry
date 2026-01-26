@@ -150,7 +150,7 @@ npm run type-check
 
 ## 📚 Documentation
 
-- **[Complete Guide](../../docs/ecosystem-stats-types-guide.md)** - Comprehensive documentation
+- **[Complete Guide](../../docs/guides/ecosystem-stats-types-guide.md)** - Comprehensive documentation
 - **[Type Definitions](ecosystem-stats.ts)** - Inline JSDoc comments
 - **[Examples](ecosystem-stats-examples.ts)** - Real-world usage examples
 - **[Tests](__tests__/ecosystem-stats.test.ts)** - Usage patterns

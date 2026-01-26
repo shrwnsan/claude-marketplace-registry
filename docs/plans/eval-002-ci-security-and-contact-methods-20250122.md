@@ -35,7 +35,7 @@ Resolved GitLeaks false positives in CI/CD pipeline and updated security contact
 GitLeaks scanner in `.github/workflows/security.yml` was flagging legitimate email patterns as potential credential leaks:
 
 **False Positives Detected**:
-- `security@example.com` and `support@example.com` in `docs/api-documentation.md:622-623`
+- `security@example.com` and `support@example.com` in `docs/ref/api-documentation.md:622-623`
 - `38465+shrwnsan@users.noreply.github.com` in Git commit metadata
 
 **Impact**:
@@ -170,8 +170,8 @@ Replaced all placeholder emails with GitHub Issues:
 
 ### Files Modified
 
-- `docs/SECURITY.md` (2 sections updated)
-- `docs/api-documentation.md` (support channels updated)
+- `docs/ref/SECURITY.md` (2 sections updated)
+- `docs/ref/api-documentation.md` (support channels updated)
 
 ---
 
@@ -459,8 +459,8 @@ However, branch protection prevents merging failing tests, so this is **not a cr
    - Documented configuration rationale
 
 3. **Replaced placeholder emails**
-   - `docs/SECURITY.md`: GitHub Issues with labels
-   - `docs/api-documentation.md`: GitHub Issues links
+   - `docs/ref/SECURITY.md`: GitHub Issues with labels
+   - `docs/ref/api-documentation.md`: GitHub Issues links
    - Removed all `@example.com` placeholders
 
 4. **Documented early-stage best practices**
@@ -519,8 +519,8 @@ However, branch protection prevents merging failing tests, so this is **not a cr
 |------|--------|------|
 | `.gitleaks.toml` | Created - GitLeaks allowlist config | 2025-01-22 |
 | `.github/workflows/security.yml` | Added config-path to Gitleaks step | 2025-01-22 |
-| `docs/SECURITY.md` | Updated contact methods to GitHub Issues | 2025-01-22 |
-| `docs/api-documentation.md` | Updated support channels to GitHub Issues | 2025-01-22 |
+| `docs/ref/SECURITY.md` | Updated contact methods to GitHub Issues | 2025-01-22 |
+| `docs/ref/api-documentation.md` | Updated support channels to GitHub Issues | 2025-01-22 |
 
 ---
 
@@ -546,7 +546,7 @@ However, branch protection prevents merging failing tests, so this is **not a cr
 - [eval-001-workflow-health-report-20250117.md](eval-001-workflow-health-report-20250117.md) - Previous workflow fixes
 - [eval-001-workflow-fixes-summary.md](eval-001-workflow-fixes-summary.md) - Fix documentation
 - [CONTRIBUTING.md](../CONTRIBUTING.md) - Contribution guidelines
-- [docs/SECURITY.md](../docs/SECURITY.md) - Security documentation
+- [docs/ref/SECURITY.md](../ref/SECURITY.md) - Security documentation
 
 ### External Standards
 - [RFC 2606](https://www.rfc-editor.org/rfc/rfc2606.html) - Reserved Top Level DNS Names

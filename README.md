@@ -614,37 +614,45 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - **[Current Release](https://github.com/shrwnsan/claude-marketplace-registry/releases/tag/v0.3.0-beta.1)** - Latest release (v0.3.0-beta.1)
 
 ### 📖 User Documentation
-- **[User Guide](./docs/USER_GUIDE.md)** - Complete guide for using the marketplace
+- **[User Guide](./docs/guides/USER_GUIDE.md)** - Complete guide for using the marketplace
 - **[Setup Guide](./SETUP.md)** - Step-by-step installation and configuration
-- **[Developer API](./docs/DEVELOPER_API.md)** - Public API documentation and examples
+- **[Developer API](./docs/ref/DEVELOPER_API.md)** - Public API documentation and examples
 
 ### 🔧 Technical Documentation
-- **[Security Documentation](./docs/SECURITY.md)** - Security measures and best practices
-- **[Maintenance Guide](./docs/MAINTENANCE_GUIDE.md)** - Operations, monitoring, and troubleshooting
-- **[Disaster Recovery](./docs/DISASTER_RECOVERY.md)** - Backup and recovery procedures
+- **[Security Documentation](./docs/ref/SECURITY.md)** - Security measures and best practices
+- **[Maintenance Guide](./docs/guides/MAINTENANCE_GUIDE.md)** - Operations, monitoring, and troubleshooting
+- **[Disaster Recovery](./docs/ref/DISASTER_RECOVERY.md)** - Backup and recovery procedures
 
 ### 🔌 Integration Documentation
-- **[GitHub Integration](./docs/GITHUB_INTEGRATION.md)** - Internal GitHub API implementation
+- **[GitHub Integration](./docs/ref/GITHUB_INTEGRATION.md)** - Internal GitHub API implementation
 - **[Contributing Guide](./CONTRIBUTING.md)** - Development workflow and contribution guidelines
 
 ### 📊 Project Documentation
-- **[Product Requirements](./docs/prd-001-claude-marketplace-aggregator.md)** - Complete PRD with specifications
-- **[Task Breakdown](./docs/tasks-001-prd-claude-marketplace-aggregator.md)** - Detailed development tasks
-- **[Research Documents](./docs/)** - Ecosystem analysis and development paradigms
+- **[Product Requirements](./docs/plans/prd-001-claude-marketplace-aggregator.md)** - Complete PRD with specifications
+- **[Task Breakdown](./docs/plans/tasks-001-prd-claude-marketplace-aggregator.md)** - Detailed development tasks
+- **[Research Documents](./docs/plans/)** - Ecosystem analysis and development paradigms
 
 ### 📋 Documentation Structure
 ```
 docs/
-├── USER_GUIDE.md              # User-facing documentation
-├── DEVELOPER_API.md           # Public REST API reference
-├── SECURITY.md                # Security implementation and best practices
-├── MAINTENANCE_GUIDE.md       # Operations and maintenance procedures
-├── DISASTER_RECOVERY.md       # Backup and recovery procedures
-├── GITHUB_INTEGRATION.md     # Internal GitHub API implementation
-├── SETUP.md                   # Installation and setup guide
-├── prd-*.md                   # Product requirements documents
-├── research-*.md              # Research and analysis documents
-└── tasks-*.md                 # Development task breakdowns
+├── plans/                     # Product requirements, research, tasks
+│   ├── prd-*.md              # Product requirements documents
+│   ├── research-*.md         # Research and analysis documents
+│   ├── tasks-*.md            # Development task breakdowns
+│   ├── eval-*.md             # Evaluations and assessments
+│   ├── bugs-*.md             # Bug fix plans
+│   └── retro-*.md            # Retrospectives
+├── guides/                    # User and maintenance guides
+│   ├── USER_GUIDE.md         # User-facing documentation
+│   ├── MAINTENANCE_GUIDE.md  # Operations and maintenance procedures
+│   ├── quick-testing-guide.md
+│   └── ecosystem-*-guide.md  # Ecosystem feature guides
+└── ref/                       # Technical reference documentation
+    ├── DEVELOPER_API.md      # Public REST API reference
+    ├── SECURITY.md           # Security implementation and best practices
+    ├── DISASTER_RECOVERY.md  # Backup and recovery procedures
+    ├── GITHUB_INTEGRATION.md # Internal GitHub API implementation
+    └── ARCHITECTURE.md       # System architecture
 ```
 
 ---
