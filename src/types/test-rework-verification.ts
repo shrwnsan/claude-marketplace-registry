@@ -7,5 +7,5 @@ export interface TestInterface {
 }
 
 export function createTestItem(): TestInterface {
-  return { id: "test", value: 42 };
+  return { id: 'test', value: 42 };
 }
