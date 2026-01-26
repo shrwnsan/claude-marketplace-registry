@@ -128,17 +128,22 @@ jobs:
         id: timestamp
         run: echo "value=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
 
+      - name: Create output file
+        run: |
+          mkdir -p /tmp/claude-output
+          echo '{"findingsMarkdown":"","findingsJson":[]}' > /tmp/claude-output/review-results.json
+
       - name: Run Code Review
         id: review
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
-            --allowedTools "Read,Glob,Grep,WebSearch,WebFetch,Bash(gh:*)"
-            --max-turns 12
+            --allowedTools "Read,Glob,Grep,WebSearch,WebFetch,Write,Bash(cat:*)"
+            --max-turns 15
           settings: |
             {
-              "instructions": "# 🔍 CODE REVIEW (Job 1 of 3)\\n\\nCLAUDE_JOB=review\\n\\nPR: #${{ github.event.pull_request.number || github.event.issue.number }}\\nESLint: ${{ needs.pre-check.outputs.lint-status }} | Prettier: ${{ needs.pre-check.outputs.format-status }}\\n\\n## STEP 1: Analyze the PR\\n\\nReview for: Security (OWASP), Code Quality, Best Practices, Breaking Changes.\\n\\nFor each issue found, note: id (F-001, F-002...), severity (critical/medium/low), category, file, lineStart, lineEnd, title, description, recommendation.\\n\\n## STEP 2: EXECUTE THIS COMMAND\\n\\nAfter your analysis, you MUST execute the following gh command. Build the JSON findings array from your analysis and substitute it into FINDINGS_JSON.\\n\\n```\\ngh pr comment ${{ github.event.pull_request.number || github.event.issue.number }} --body \\\"## 🔍 CODE REVIEW (Job 1/3)\\n\\nCLAUDE_JOB=review\\n\\n> **Run:** ${{ github.run_id }} | **Timestamp:** ${{ steps.timestamp.outputs.value }}\\n\\n### Findings\\n\\n[PASTE YOUR FINDINGS HERE AS MARKDOWN]\\n\\n---\\n\\n<!-- CLAUDE_PAYLOAD\\n{\\\\\\\"version\\\\\\\":1,\\\\\\\"job\\\\\\\":\\\\\\\"review\\\\\\\",\\\\\\\"runId\\\\\\\":\\\\\\\"${{ github.run_id }}\\\\\\\",\\\\\\\"prNumber\\\\\\\":${{ github.event.pull_request.number || github.event.issue.number }},\\\\\\\"timestamp\\\\\\\":\\\\\\\"${{ steps.timestamp.outputs.value }}\\\\\\\",\\\\\\\"findings\\\\\\\":[PASTE JSON ARRAY HERE]}\\nEND_PAYLOAD -->\\n\\n*🤖 Claude Code Review*\\\"\\n```\\n\\nIMPORTANT: Replace [PASTE JSON ARRAY HERE] with actual JSON like [{\\\\\\\"id\\\\\\\":\\\\\\\"F-001\\\\\\\",...}] or [] if none.\\nIMPORTANT: Replace [PASTE YOUR FINDINGS HERE AS MARKDOWN] with your actual findings.\\nIMPORTANT: Execute the command - do not just show it.",
+              "instructions": "# 🔍 CODE REVIEW (Job 1 of 3)\\n\\nCLAUDE_JOB=review\\n\\nPR: #${{ github.event.pull_request.number || github.event.issue.number }}\\nESLint: ${{ needs.pre-check.outputs.lint-status }} | Prettier: ${{ needs.pre-check.outputs.format-status }}\\n\\n## TASK: Analyze and Write Results\\n\\nReview the PR for: Security (OWASP), Code Quality, Best Practices, Breaking Changes.\\n\\nFor each issue found, note: id (F-001, F-002...), severity (critical/medium/low), category, file, lineStart, lineEnd, title, description, recommendation.\\n\\n## CRITICAL: Write Your Results\\n\\nYou MUST write your results to /tmp/claude-output/review-results.json in this exact format:\\n\\n```json\\n{\\n  \\\"findingsMarkdown\\\": \\\"Your detailed findings in markdown format\\\",\\n  \\\"findingsJson\\\": [\\n    {\\\"id\\\":\\\"F-001\\\",\\\"severity\\\":\\\"critical\\\",\\\"category\\\":\\\"security\\\",\\\"file\\\":\\\"src/example.ts\\\",\\\"lineStart\\\":10,\\\"lineEnd\\\":15,\\\"title\\\":\\\"Issue title\\\",\\\"description\\\":\\\"Description\\\",\\\"recommendation\\\":\\\"Fix recommendation\\\"}\\n  ]\\n}\\n```\\n\\nUse the Write tool to create/update /tmp/claude-output/review-results.json with your actual findings.\\n\\nIf no issues found, use findingsJson: [] and findingsMarkdown: \\\"No issues found.\\\"\\n\\nAfter writing the file, run: cat /tmp/claude-output/review-results.json to confirm.",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
@@ -148,6 +153,49 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
           GH_TOKEN: ${{ github.token }}
+
+      - name: Post review comment
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number || github.event.issue.number }}"
+          RUN_ID="${{ github.run_id }}"
+          TIMESTAMP="${{ steps.timestamp.outputs.value }}"
+
+          # Read Claude's results
+          if [ -f "/tmp/claude-output/review-results.json" ]; then
+            FINDINGS_MD=$(jq -r '.findingsMarkdown // "No findings provided"' /tmp/claude-output/review-results.json)
+            FINDINGS_JSON=$(jq -c '.findingsJson // []' /tmp/claude-output/review-results.json)
+
+            # Build the comment body (using heredoc for multi-line)
+            COMMENT_BODY=$(cat <<EOF
+            ## 🔍 CODE REVIEW (Job 1/3)
+
+            CLAUDE_JOB=review
+
+            > **Run:** $RUN_ID | **Timestamp:** $TIMESTAMP
+
+            ### Findings
+
+            $FINDINGS_MD
+
+            ---
+
+            <!-- CLAUDE_PAYLOAD
+            {"version":1,"job":"review","runId":"$RUN_ID","prNumber":$PR_NUMBER,"timestamp":"$TIMESTAMP","findings":$FINDINGS_JSON}
+            END_PAYLOAD -->
+
+            *🤖 Claude Code Review*
+            EOF
+            )
+
+            # Post the comment
+            gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
+          else
+            echo "Warning: Claude output file not found"
+            ls -la /tmp/claude-output/ || true
+          fi
 
   self-review:
     name: Review Validation
@@ -195,17 +243,22 @@ jobs:
         id: timestamp
         run: echo "value=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
 
+      - name: Create output file
+        run: |
+          mkdir -p /tmp/claude-output
+          echo '{"validationMarkdown":"","validatedFindings":[],"additionalFindings":[]}' > /tmp/claude-output/validation-results.json
+
       - name: Validate Review
         id: validate
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
-            --allowedTools "Read,Glob,Grep,WebSearch,WebFetch,Bash(gh:*),Bash(cat:*)"
+            --allowedTools "Read,Glob,Grep,WebSearch,WebFetch,Write,Bash(cat:*)"
             --max-turns 15
           settings: |
             {
-              "instructions": "# ✅ REVIEW VALIDATION (Job 2 of 3)\\n\\nCLAUDE_JOB=self-review\\n\\nPR: #${{ github.event.pull_request.number || github.event.issue.number }}\\n\\n## STEP 1: Extract Previous Findings\\n\\nRun: cat /tmp/review-comments.txt\\n\\nFind the CLAUDE_PAYLOAD block and parse the JSON to get the findings array.\\n\\n## STEP 2: Validate Each Finding\\n\\nFor each finding: verify file/line exists, confirm severity is appropriate, check if it's a false positive.\\n\\nMark each as validated:true or falsePositive:true.\\n\\nAlso check for any issues the review missed.\\n\\n## STEP 3: EXECUTE THIS COMMAND\\n\\nBuild your validated findings and additional findings arrays, then execute:\\n\\n```\\ngh pr comment ${{ github.event.pull_request.number || github.event.issue.number }} --body \\\"## ✅ REVIEW VALIDATION (Job 2/3)\\n\\nCLAUDE_JOB=self-review\\n\\n> **Run:** ${{ github.run_id }} | **Timestamp:** ${{ steps.timestamp.outputs.value }}\\n\\n### Validation Results\\n\\n- Validated: X findings confirmed\\n- False Positives: Y findings rejected\\n- Additional Issues: Z new issues found\\n\\n---\\n\\n<!-- CLAUDE_PAYLOAD\\n{\\\\\\\"version\\\\\\\":1,\\\\\\\"job\\\\\\\":\\\\\\\"validation\\\\\\\",\\\\\\\"runId\\\\\\\":\\\\\\\"${{ github.run_id }}\\\\\\\",\\\\\\\"prNumber\\\\\\\":${{ github.event.pull_request.number || github.event.issue.number }},\\\\\\\"timestamp\\\\\\\":\\\\\\\"${{ steps.timestamp.outputs.value }}\\\\\\\",\\\\\\\"validatedFindings\\\\\\\":[PASTE VALIDATED ARRAY],\\\\\\\"additionalFindings\\\\\\\":[PASTE ADDITIONAL ARRAY]}\\nEND_PAYLOAD -->\\n\\n*🤖 Claude Code Review*\\\"\\n```\\n\\nIMPORTANT: Replace [PASTE VALIDATED ARRAY] and [PASTE ADDITIONAL ARRAY] with actual JSON arrays.\\nIMPORTANT: Execute the command - do not just show it.",
+              "instructions": "# ✅ REVIEW VALIDATION (Job 2 of 3)\\n\\nCLAUDE_JOB=self-review\\n\\nPR: #${{ github.event.pull_request.number || github.event.issue.number }}\\n\\n## STEP 1: Extract Previous Findings\\n\\nRun: cat /tmp/review-comments.txt\\n\\nFind the CLAUDE_PAYLOAD block and parse the JSON to get the findings array.\\n\\n## STEP 2: Validate Each Finding\\n\\nFor each finding: verify file/line exists, confirm severity is appropriate, check if it's a false positive.\\n\\nMark each as validated:true or falsePositive:true.\\n\\nAlso check for any issues the review missed.\\n\\n## CRITICAL: Write Your Results\\n\\nYou MUST write your results to /tmp/claude-output/validation-results.json in this exact format:\\n\\n```json\\n{\\n  \\\"validationMarkdown\\\": \\\"Your validation summary in markdown\\\",\\n  \\\"validatedFindings\\\": [{...validated findings...}],\\n  \\\"additionalFindings\\\": [{...additional findings...}]\\n}\\n```\\n\\nUse the Write tool to create/update /tmp/claude-output/validation-results.json with your actual validation results.\\n\\nAfter writing the file, run: cat /tmp/claude-output/validation-results.json to confirm.",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
@@ -215,6 +268,49 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
           GH_TOKEN: ${{ github.token }}
+
+      - name: Post validation comment
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number || github.event.issue.number }}"
+          RUN_ID="${{ github.run_id }}"
+          TIMESTAMP="${{ steps.timestamp.outputs.value }}"
+
+          # Read Claude's results
+          if [ -f "/tmp/claude-output/validation-results.json" ]; then
+            VALIDATION_MD=$(jq -r '.validationMarkdown // "No validation results provided"' /tmp/claude-output/validation-results.json)
+            VALIDATED_JSON=$(jq -c '.validatedFindings // []' /tmp/claude-output/validation-results.json)
+            ADDITIONAL_JSON=$(jq -c '.additionalFindings // []' /tmp/claude-output/validation-results.json)
+
+            # Build the comment body
+            COMMENT_BODY=$(cat <<EOF
+            ## ✅ REVIEW VALIDATION (Job 2/3)
+
+            CLAUDE_JOB=self-review
+
+            > **Run:** $RUN_ID | **Timestamp:** $TIMESTAMP
+
+            ### Validation Results
+
+            $VALIDATION_MD
+
+            ---
+
+            <!-- CLAUDE_PAYLOAD
+            {"version":1,"job":"validation","runId":"$RUN_ID","prNumber":$PR_NUMBER,"timestamp":"$TIMESTAMP","validatedFindings":$VALIDATED_JSON,"additionalFindings":$ADDITIONAL_JSON}
+            END_PAYLOAD -->
+
+            *🤖 Claude Code Review*
+            EOF
+            )
+
+            # Post the comment
+            gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
+          else
+            echo "Warning: Claude output file not found"
+          fi
 
   triage:
     name: Finding Triage
@@ -267,6 +363,11 @@ jobs:
         id: timestamp
         run: echo "value=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
 
+      - name: Create output file
+        run: |
+          mkdir -p /tmp/claude-output
+          echo '{"triageMarkdown":"","actions":[],"summary":{"criticalFixed":0,"issuesCreated":0,"skipped":0}}' > /tmp/claude-output/triage-results.json
+
       - name: Triage and Act
         uses: anthropics/claude-code-action@v1
         with:
@@ -276,7 +377,7 @@ jobs:
             --max-turns 20
           settings: |
             {
-              "instructions": "# 🎯 TRIAGE (Job 3 of 3)\\n\\nCLAUDE_JOB=triage\\n\\nPR: #${{ github.event.pull_request.number || github.event.issue.number }}\\n\\n## STEP 1: Get Validated Findings\\n\\nRun: cat /tmp/all-review-comments.txt\\n\\nFind the validation job's CLAUDE_PAYLOAD block and extract validatedFindings and additionalFindings.\\n\\n## STEP 2: Process Each Finding\\n\\n- CRITICAL (not false positive): Fix code, run tests, commit, push\\n- MEDIUM/LOW (not false positive): Create issue with gh issue create\\n- False positives: Skip and record\\n\\n## STEP 3: EXECUTE THIS COMMAND\\n\\nAfter processing, execute this command with your actual data:\\n\\n```\\ngh pr comment ${{ github.event.pull_request.number || github.event.issue.number }} --body \\\"## 🎯 TRIAGE (Job 3/3)\\n\\nCLAUDE_JOB=triage\\n\\n> **Run:** ${{ github.run_id }} | **SHA:** ${{ github.sha }} | **Timestamp:** ${{ steps.timestamp.outputs.value }}\\n\\n### Summary\\n\\n| Metric | Count |\\n|--------|-------|\\n| Critical Fixed | N |\\n| Issues Created | N |\\n| Skipped | N |\\n\\n### Actions\\n\\n| Finding | Action | Result |\\n|---------|--------|--------|\\n| F-XXX | fixed/issue/skipped | details |\\n\\n---\\n\\n<!-- CLAUDE_PAYLOAD\\n{\\\\\\\"version\\\\\\\":1,\\\\\\\"job\\\\\\\":\\\\\\\"triage\\\\\\\",\\\\\\\"runId\\\\\\\":\\\\\\\"${{ github.run_id }}\\\\\\\",\\\\\\\"prNumber\\\\\\\":${{ github.event.pull_request.number || github.event.issue.number }},\\\\\\\"sha\\\\\\\":\\\\\\\"${{ github.sha }}\\\\\\\",\\\\\\\"timestamp\\\\\\\":\\\\\\\"${{ steps.timestamp.outputs.value }}\\\\\\\",\\\\\\\"actions\\\\\\\":[PASTE ACTIONS ARRAY],\\\\\\\"summary\\\\\\\":{\\\\\\\"criticalFixed\\\\\\\":N,\\\\\\\"issuesCreated\\\\\\\":N,\\\\\\\"skipped\\\\\\\":N}}\\nEND_PAYLOAD -->\\n\\n*🤖 Claude Code Review*\\\"\\n```\\n\\nIMPORTANT: Replace [PASTE ACTIONS ARRAY] with your actual actions array and N with counts.\\nIMPORTANT: Execute the command - do not just show it.",
+              "instructions": "# 🎯 TRIAGE (Job 3 of 3)\\n\\nCLAUDE_JOB=triage\\n\\nPR: #${{ github.event.pull_request.number || github.event.issue.number }}\\n\\n## STEP 1: Get Validated Findings\\n\\nRun: cat /tmp/all-review-comments.txt\\n\\nFind the validation job's CLAUDE_PAYLOAD block and extract validatedFindings and additionalFindings.\\n\\n## STEP 2: Process Each Finding\\n\\n- CRITICAL (not false positive): Fix code, run tests, commit, push\\n- MEDIUM/LOW (not false positive): Create issue with gh issue create\\n- False positives: Skip and record\\n\\n## CRITICAL: Write Your Results\\n\\nAfter processing, you MUST write your results to /tmp/claude-output/triage-results.json in this exact format:\\n\\n```json\\n{\\n  \\\"triageMarkdown\\\": \\\"Your triage summary in markdown\\\",\\n  \\\"actions\\\": [{\\\"findingId\\\":\\\"F-001\\\",\\\"action\\\":\\\"fixed/issue/skipped\\\",\\\"details\\\":\\\"Description\\\"}],\\n  \\\"summary\\\": {\\\"criticalFixed\\\":N,\\\"issuesCreated\\\":N,\\\"skipped\\\":N}\\n}\\n```\\n\\nUse the Write tool to create/update /tmp/claude-output/triage-results.json with your actual triage results.\\n\\nAfter writing the file, run: cat /tmp/claude-output/triage-results.json to confirm.",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
@@ -286,3 +387,47 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
           GH_TOKEN: ${{ github.token }}
+
+      - name: Post triage comment
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number || github.event.issue.number }}"
+          RUN_ID="${{ github.run_id }}"
+          SHA="${{ github.sha }}"
+          TIMESTAMP="${{ steps.timestamp.outputs.value }}"
+
+          # Read Claude's results
+          if [ -f "/tmp/claude-output/triage-results.json" ]; then
+            TRIAGE_MD=$(jq -r '.triageMarkdown // "No triage results provided"' /tmp/claude-output/triage-results.json)
+            ACTIONS_JSON=$(jq -c '.actions // []' /tmp/claude-output/triage-results.json)
+            SUMMARY_JSON=$(jq -c '.summary // {"criticalFixed":0,"issuesCreated":0,"skipped":0}' /tmp/claude-output/triage-results.json)
+
+            # Build the comment body
+            COMMENT_BODY=$(cat <<EOF
+            ## 🎯 TRIAGE (Job 3/3)
+
+            CLAUDE_JOB=triage
+
+            > **Run:** $RUN_ID | **SHA:** $SHA | **Timestamp:** $TIMESTAMP
+
+            ### Summary
+
+            $TRIAGE_MD
+
+            ---
+
+            <!-- CLAUDE_PAYLOAD
+            {"version":1,"job":"triage","runId":"$RUN_ID","prNumber":$PR_NUMBER,"sha":"$SHA","timestamp":"$TIMESTAMP","actions":$ACTIONS_JSON,"summary":$SUMMARY_JSON}
+            END_PAYLOAD -->
+
+            *🤖 Claude Code Review*
+            EOF
+            )
+
+            # Post the comment
+            gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
+          else
+            echo "Warning: Claude output file not found"
+          fi

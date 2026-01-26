@@ -563,7 +563,98 @@ Two paths forward:
 - Guaranteed to work but loses Claude's natural formatting
 
 **Next Step:**
-Decide between Option 1 (try simpler placeholders) or Option 2 (workflow-controlled posting).
+Proceeding with Option 1 (ultra-simple placeholders) in PR #46.
+
+---
+
+### Test PR #46 (2026-01-26)
+
+> **Status:** PR Merged - Applied Option 1 fixes
+
+**What Was Applied:**
+- Removed ALL bash heredoc syntax from workflow instructions
+- Restored CLAUDE_JOB markers (regression from PR #40)
+- Used ultra-simple text placeholders: `[PASTE ... HERE]`
+- No bash syntax in instruction strings at all
+
+**Changes:**
+- Job instructions now use `[PASTE YOUR FINDINGS HERE AS MARKDOWN]`
+- Job instructions now use `[PASTE JSON ARRAY HERE]`
+- CLAUDE_JOB markers restored for all jobs (review, self-review, triage)
+
+---
+
+### Test PR #47 (2026-01-26)
+
+> **Status:** Option 1 FAILED - Claude still not executing gh pr comment
+
+**What Was Tested:**
+- Option 1 ultra-simple placeholders from PR #46
+- All bash heredoc syntax removed
+- Only text placeholders like `[PASTE JSON ARRAY HERE]`
+
+**Workflow Execution:**
+❌ **Job failed with `error_max_turns` (hit 12 turn limit)**
+- Review job took 13 turns and hit max_turns limit
+- Never executed the `gh pr comment` command
+- Exited with error before completion
+
+**Results:**
+
+⚠️ **Issue Still Present:**
+
+1. **gh pr Comment Not Executed**
+   - **Problem:** Claude still not executing the `gh pr comment` command
+   - **Evidence:** Hit max_turns (13 turns) without executing command
+   - **Impact:** No separate branded comments per job
+
+2. **Workflow Failed**
+   - **Problem:** Job exited with `error_max_turns` status
+   - **Evidence:** `"subtype": "error_max_turns"`, `"num_turns": 13`
+   - **Impact:** Downstream jobs (validation, triage) didn't run
+
+**Root Cause - Final Understanding:**
+
+Claude will NOT execute bash commands embedded in workflow instructions, even with:
+- ✅ No bash heredoc syntax
+- ✅ Ultra-simple text placeholders
+- ✅ Imperative "EXECUTE THIS COMMAND" language
+- ✅ CLAUDE_JOB markers
+
+**Conclusion:** **Option 1 FAILED.**
+
+The fundamental issue is that Claude interprets commands in workflow instructions as examples/documentation, not as executable directives. This appears to be a fundamental behavior of how Claude processes workflow instructions.
+
+**Decision:**
+
+Proceeding with **Option 2** - Move comment posting to separate workflow step.
+
+---
+
+### Option 2 Implementation (PR #48 - Planned)
+
+**Approach:**
+Instead of asking Claude to execute `gh pr comment`, we will:
+1. Have Claude output findings to a structured JSON file
+2. Use a workflow step to read the file and post the comment
+3. This guarantees execution (workflow-controlled) but requires structured output
+
+**Benefits:**
+- ✅ Guaranteed comment posting (workflow-controlled)
+- ✅ Reliable JSON structure
+- ✅ No dependence on Claude interpreting bash commands
+- ✅ Predictable behavior
+
+**Trade-offs:**
+- ⚠️ Requires Claude to write structured JSON to file
+- ⚠️ Less natural formatting than Claude's direct comments
+- ⚠️ Additional workflow complexity
+
+**Implementation Plan:**
+1. Add workflow step to read Claude's output file
+2. Parse the structured JSON from the file
+3. Post branded comment via `gh pr comment` (workflow step, not Claude)
+4. Update instructions to ask Claude to write to file instead of execute gh command
 
 ---
 
