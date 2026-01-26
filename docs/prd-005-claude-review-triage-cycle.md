@@ -1,6 +1,6 @@
 # Claude Review-Triage-Implementation Cycle
 
-> **Status:** Implemented
+> **Status:** Partially Implemented - Known Issues (see Testing Results)
 > **Last Updated:** 2026-01-26
 
 ## Overview
@@ -219,6 +219,117 @@ Auto-created on first use (via gh CLI):
 - `.github/workflows/follow-up-implementation.yml` - Follow-up automation
 - `.github/ISSUE_TEMPLATE/follow-up-*.md` - Issue templates
 - `docs/ARCHITECTURE.md` - System architecture
+
+---
+
+## Testing Results
+
+### Test PR #39 (2026-01-26)
+
+**What Was Tested:**
+- Job identification headers (🔍, ✅, 🎯)
+- Follow-up issue creation for medium/low findings
+- All three jobs executing sequentially
+
+**Results:**
+
+✅ **Working:**
+- All 3 jobs ran successfully (review → self-review → triage)
+- Jobs executed in correct order with proper dependencies
+- PR comments were posted by all jobs
+
+❌ **Issues Found:**
+
+1. **Job Identification Headers Not Working**
+   - **Expected:** Each job uses distinct header (🔍 CODE REVIEW, ✅ REVIEW VALIDATION, 🎯 TRIAGE)
+   - **Actual:** All 3 comments use `### 🔍 CODE REVIEW (Job 1/3)`
+   - **Root Cause:** The `anthropics/claude-code-action@v1` has built-in comment formatting that overrides custom header instructions
+   - **Impact:** Cannot distinguish which job posted which comment
+
+2. **Follow-Up Issues Not Created**
+   - **Expected:** Triage job creates issues for medium/low findings via `gh issue create`
+   - **Actual:** Zero issues created despite clear instructions
+   - **Root Cause:** Unknown - job completed successfully but didn't execute issue creation commands
+   - **Impact:** Triage workflow is non-functional
+
+3. **Comment Count Mismatch**
+   - **Expected:** 3 jobs → 3 comments with distinct headers
+   - **Actual:** 3 comments but all with identical headers
+   - **Impact:** Confusion about which findings come from which job
+
+---
+
+## Next Steps
+
+### Option A: Work Within Action Constraints
+
+**Approach:** Accept the claude-code-action's built-in comment format and adapt to it.
+
+**Actions:**
+1. Research `anthropics/claude-code-action@v1` documentation for:
+   - Built-in features for job identification
+   - Configuration options for comment formatting
+   - Alternative ways to distinguish jobs
+2. Use job-specific content indicators:
+   - Add job identifiers in comment body (e.g., "This is Job 1/3")
+   - Use unique emoji combinations in findings
+   - Structure findings differently per job
+3. Investigate triage failure:
+   - Check if `gh issue create` commands are being executed
+   - Verify permissions and API access
+   - Add debug logging to triage job
+
+**Pros:**
+- Works within the action's design
+- May be more stable long-term
+- Less maintenance overhead
+
+**Cons:**
+- Limited customization options
+- May not solve all issues
+- Dependent on action's feature set
+
+### Option B: Override Action Formatting
+
+**Approach:** Find ways to disable or override the action's default header formatting.
+
+**Actions:**
+1. Research:
+   - Action source code for formatting logic
+   - Environment variables or settings to disable default headers
+   - Alternative GitHub Actions with more customization
+2. Potential solutions:
+   - Fork and modify the claude-code-action
+   - Use the action's raw output and post comments manually
+   - Switch to a different implementation approach
+3. Address triage failure:
+   - Debug why `gh issue create` isn't working
+   - Consider alternative issue creation methods
+   - Add explicit error handling and logging
+
+**Pros:**
+- Full control over comment format
+- Can implement custom workflows
+- Potentially solves all issues
+
+**Cons:**
+- Higher maintenance burden
+- May break with action updates
+- More complex implementation
+
+---
+
+## Recommendation
+
+**Start with Option A** (Work Within Action Constraints) to:
+1. Quickly resolve the triage/issue creation issue (highest priority)
+2. Document workarounds for job identification
+3. Gather more data on action limitations
+
+**If Option A is insufficient**, proceed to Option B:
+1. Fork or find alternative action
+2. Implement custom comment posting
+3. Full control over workflow behavior
 
 ---
 
