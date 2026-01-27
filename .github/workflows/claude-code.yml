@@ -12,12 +12,12 @@ on:
       - 'pages/**/*.ts'
       - 'pages/**/*.tsx'
       - 'scripts/**/*.ts'
-      - '.github/workflows/**/*.yml'
-      # Ignore documentation, configs, and test artifacts
+      # Ignore documentation, configs, test artifacts, and self
       - '!**/*.md'
       - '!**/*.json'
       - '!**/test-*.ts'
       - '!docs/**'
+      - '!.github/workflows/claude-code.yml'
   issues:
     types: [opened, edited]
   workflow_dispatch:
