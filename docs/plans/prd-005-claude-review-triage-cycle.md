@@ -938,7 +938,7 @@ The workflow asks Claude to perform code review, but Claude's output focuses on 
 
 ## PR #52: Scope Limiting & Prompt Improvements (2026-01-27)
 
-> **Status:** Implementation in progress
+> **Status:** ✅ Merged
 
 ### Changes Made
 
@@ -980,21 +980,117 @@ Removed verbose job branding from comments:
 
 Payload version bumped to `2` to track schema change.
 
-### Expected Improvements
+---
 
-| Metric | Before (PR #51) | Expected (PR #52) |
-|--------|-----------------|-------------------|
-| Comment lines | 426 | < 50 |
-| Duplicate comments | 3 | 1 per job |
-| Meta-commentary | 100% | 0% |
-| Actual findings | 0/2 | TBD |
+## PR #53: Workflow Verification & New Findings (2026-01-27)
 
-### Verification
+> **Status:** ✅ Tested - Critical Issues Discovered
+> **PR:** https://github.com/shrwnsan/claude-marketplace-registry/pull/53
 
-After merging, create a test PR with known issues to verify:
-1. Path filters working (docs-only PRs don't trigger)
-2. Prompts produce code review, not meta-analysis
-3. Comments are concise and actionable
+### Test Results
+
+Created a minimal PR (2-line change) to verify PR #52 improvements using `@claude` mention.
+
+### ✅ PR #52 Improvements Verified
+
+| Metric | Before (PR #51) | After (PR #52/53) | Status |
+|--------|----------------|-------------------|--------|
+| github-actions[bot] comments | 426 lines, verbose | Concise, structured | ✅ Fixed |
+| Comment header format | `## 🔍 CODE REVIEW (Job 1/3)` | `## Code Review` | ✅ Fixed |
+| Job branding | Visible (`CLAUDE_JOB=review`) | Removed | ✅ Fixed |
+| Payload version | 1 | 2 | ✅ Updated |
+| Meta-commentary | 100% | 0% (in structured comments) | ✅ Fixed |
+
+### ❌ NEW CRITICAL ISSUE: Dual Comment System
+
+**Discovery:** PR #53 revealed that **TWO separate comment systems** are operating:
+
+#### 1. github-actions[bot] Comments (Controlled by Workflow)
+- **Format:** `## Code Review\n\n{findingsMarkdown}\n\n<!-- CLAUDE_PAYLOAD...`
+- **Control:** Shell script posts these based on JSON output
+- **Status:** ✅ Working as intended (clean, concise)
+
+#### 2. claude-bot Comments (Automatic from Action)
+- **Format:** Free-form verbose analysis with checklists
+- **Control:** `anthropic/claude-code-action@v1` posts these automatically
+- **Status:** ❌ UNINTENDED - 3 separate verbose comments posted
+
+### The Problem
+
+Each of the 3 workflow jobs (Review, Validation, Triage) runs Claude via the action, and the action **automatically posts its own verbose comments** in addition to writing to the JSON file.
+
+**Evidence from PR #53:**
+
+| Job | claude-bot Comment | Lines | Similarity |
+|-----|-------------------|-------|------------|
+| Review | "LGTM with minor suggestions" | ~140 | "Verdict: LGTM..." |
+| Validation | "Approve with minor suggestions" | ~110 | "Verdict: Approve..." |
+| Triage | "LGTM with minor suggestions" | ~100 | "Verdict: LGTM..." |
+
+**All three comments contained:**
+- Task completion status checklists
+- Similar analysis of the same 2-line change
+- Identical feedback about the "Updated" sort label
+- Similar verdicts and recommendations
+
+### Root Cause Analysis
+
+The `anthropic/claude-code-action@v1` has built-in behavior to **automatically post comments to PRs**. The workflow attempts to control output via JSON file instructions, but the action posts its own free-form commentary regardless.
+
+**Workflow Flow:**
+```
+1. Job runs Claude via action
+2. Action analyzes code
+3. Action posts verbose comment (UNINTENDED)
+4. Action writes to JSON file (INTENDED)
+5. Shell script reads JSON and posts structured comment (INTENDED)
+```
+
+### Impact Assessment
+
+| Issue | Severity | Impact |
+|-------|----------|--------|
+| **Comment Noise** | Medium | 3x redundant verbose comments on every PR |
+| **Confusion** | Medium | Two different comment formats from two different bots |
+| **Cost** | Low-Medium | Verbose comments consume extra tokens |
+| **Maintainability** | Low | Hard to distinguish intended vs unintended output |
+
+### Comparison Table
+
+| Comment Type | Author | Trigger | Format | Control |
+|--------------|--------|---------|--------|---------|
+| **Structured Review** | github-actions[bot] | Shell script | `## Header\n\n{markdown}\n\n<!-- PAYLOAD -->` | ✅ Workflow-controlled |
+| **Verbose Analysis** | claude-bot | Action auto-post | Free-form with checklist | ❌ Action default behavior |
+
+### Next Steps
+
+#### Immediate Actions Required
+
+1. **Investigate action configuration** - Check if `anthropic/claude-code-action@v1` has a flag to disable automatic commenting
+2. **Alternative solutions:**
+   - Add explicit prompt instruction: "DO NOT post comments to the PR, only write to JSON file"
+   - Switch to a different action or custom Claude invocation
+   - Accept dual comments and clarify purpose (structured for parsing, verbose for humans)
+
+#### Questions to Resolve
+
+- [ ] Does the action have a `disable_comments` or similar parameter?
+- [ ] Can we suppress the automatic comment posting via environment variable?
+- [ ] Is there an alternative to `anthropic/claude-code-action@v1` that gives us full control?
+- [ ] Should we keep the verbose comments but make them optional/conditional?
+
+#### Hypothesis for Testing
+
+The prompts say "USE STRUCTURED FORMAT - Write findings to JSON file, nothing else" but the action may be posting comments **before** the prompt is even processed, or the action's automatic posting behavior overrides the prompt instructions.
+
+---
+
+## Lessons Learned
+
+1. **Workflow-level improvements work** - PR #52 successfully cleaned up the structured comments
+2. **Action behavior matters** - The GitHub Action itself has behaviors that prompts can't control
+3. **Testing with real PRs is critical** - PR #53 revealed issues that static analysis couldn't catch
+4. **Dual systems create confusion** - Having two comment sources makes it unclear which is the "official" output
 
 ---
 
