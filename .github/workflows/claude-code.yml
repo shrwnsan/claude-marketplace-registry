@@ -5,6 +5,19 @@ on:
     types: [created]
   pull_request:
     types: [opened, synchronize, reopened]
+    paths:
+      # Only trigger on meaningful code changes
+      - 'src/**/*.ts'
+      - 'src/**/*.tsx'
+      - 'pages/**/*.ts'
+      - 'pages/**/*.tsx'
+      - 'scripts/**/*.ts'
+      - '.github/workflows/**/*.yml'
+      # Ignore documentation, configs, and test artifacts
+      - '!**/*.md'
+      - '!**/*.json'
+      - '!**/test-*.ts'
+      - '!docs/**'
   issues:
     types: [opened, edited]
   workflow_dispatch:
@@ -143,7 +156,7 @@ jobs:
             --max-turns 15
           settings: |
             {
-              "instructions": "IMPORTANT: YOUR RESPONSE MUST START WITH: ## 🔍 CODE REVIEW (Job 1 of 3)\\n\\nCLAUDE_JOB=review\\n\\nPR: #${{ github.event.pull_request.number || github.event.issue.number }}\\nESLint: ${{ needs.pre-check.outputs.lint-status }} | Prettier: ${{ needs.pre-check.outputs.format-status }}\\n\\n## TASK: Analyze and Write Results\\n\\nReview the PR for: Security (OWASP), Code Quality, Best Practices, Breaking Changes.\\n\\nFor each issue found, note: id (F-001, F-002...), severity (critical/medium/low), category, file, lineStart, lineEnd, title, description, recommendation.\\n\\n## CRITICAL: Write Your Results\\n\\nYou MUST write your results to /tmp/claude-output/review-results.json in this exact format:\\n\\n```json\\n{\\n  \\\"findingsMarkdown\\\": \\\"Your detailed findings in markdown format\\\",\\n  \\\"findingsJson\\\": [\\n    {\\\"id\\\":\\\"F-001\\\",\\\"severity\\\":\\\"critical\\\",\\\"category\\\":\\\"security\\\",\\\"file\\\":\\\"src/example.ts\\\",\\\"lineStart\\\":10,\\\"lineEnd\\\":15,\\\"title\\\":\\\"Issue title\\\",\\\"description\\\":\\\"Description\\\",\\\"recommendation\\\":\\\"Fix recommendation\\\"}\\n  ]\\n}\\n```\\n\\nUse the Write tool to create/update /tmp/claude-output/review-results.json with your actual findings.\\n\\nIf no issues found, use findingsJson: [] and findingsMarkdown: \\\"No issues found.\\\"\\n\\nAfter writing the file, run: cat /tmp/claude-output/review-results.json to confirm.",
+              "instructions": "## CODE REVIEW TASK\\n\\nYou are reviewing PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES - READ CAREFULLY\\n\\n1. **REVIEW THE CODE, NOT THE WORKFLOW** - Analyze the actual source code changes in this PR. Do NOT discuss the review process, workflow architecture, or how you are conducting the review.\\n\\n2. **BE CONCISE** - Each finding should be 2-3 sentences maximum. No lengthy explanations. No meta-commentary.\\n\\n3. **ONLY REPORT ACTUAL ISSUES** - Report bugs, security vulnerabilities, code quality problems. Do NOT report hypothetical concerns or suggestions for improvement unless they fix a real bug.\\n\\n4. **USE STRUCTURED FORMAT** - Write findings to JSON file, nothing else.\\n\\n### WHAT TO LOOK FOR\\n\\n- Security issues (injection, auth bypass, secrets exposure)\\n- Bugs (null refs, type errors, logic errors)\\n- Breaking changes (API changes, removed exports)\\n- Unused variables or imports\\n- Missing error handling for critical paths\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/review-results.json:\\n\\n```json\\n{\\n  \\\"findingsMarkdown\\\": \\\"Brief summary of issues found\\\",\\n  \\\"findingsJson\\\": [\\n    {\\\"id\\\":\\\"F-001\\\",\\\"severity\\\":\\\"critical|medium|low\\\",\\\"category\\\":\\\"security|bug|quality\\\",\\\"file\\\":\\\"path/to/file.ts\\\",\\\"lineStart\\\":10,\\\"lineEnd\\\":15,\\\"title\\\":\\\"Brief title\\\",\\\"description\\\":\\\"What is wrong (1-2 sentences)\\\",\\\"recommendation\\\":\\\"How to fix (1 sentence)\\\"}\\n  ]\\n}\\n```\\n\\nIf no issues: `{\\\"findingsMarkdown\\\":\\\"No issues found.\\\",\\\"findingsJson\\\":[]}`\\n\\nAfter writing, run: cat /tmp/claude-output/review-results.json",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
@@ -168,8 +181,8 @@ jobs:
             FINDINGS_MD=$(jq -r '.findingsMarkdown // "No findings provided"' /tmp/claude-output/review-results.json)
             FINDINGS_JSON=$(jq -c '.findingsJson // []' /tmp/claude-output/review-results.json)
 
-            # Build the comment body using printf for proper escaping
-            COMMENT_BODY=$(printf "## 🔍 CODE REVIEW (Job 1/3)\n\nCLAUDE_JOB=review\n\n> **Run:** %s | **Timestamp:** %s\n\n### Findings\n\n%s\n\n---\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":1,\"job\":\"review\",\"runId\":\"%s\",\"prNumber\":%s,\"timestamp\":\"%s\",\"findings\":%s}\nEND_PAYLOAD -->\n\n*🤖 Claude Code Review*" "$RUN_ID" "$TIMESTAMP" "$FINDINGS_MD" "$RUN_ID" "$PR_NUMBER" "$TIMESTAMP" "$FINDINGS_JSON")
+            # Build concise comment
+            COMMENT_BODY=$(printf "## Code Review\n\n%s\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":2,\"job\":\"review\",\"runId\":\"%s\",\"prNumber\":%s,\"timestamp\":\"%s\",\"findings\":%s}\nEND_PAYLOAD -->" "$FINDINGS_MD" "$RUN_ID" "$PR_NUMBER" "$TIMESTAMP" "$FINDINGS_JSON")
 
             # Post the comment
             gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
@@ -239,7 +252,7 @@ jobs:
             --max-turns 15
           settings: |
             {
-              "instructions": "IMPORTANT: YOUR RESPONSE MUST START WITH: ## ✅ REVIEW VALIDATION (Job 2 of 3)\\n\\nCLAUDE_JOB=self-review\\n\\nPR: #${{ github.event.pull_request.number || github.event.issue.number }}\\n\\n## STEP 1: Extract Previous Findings\\n\\nRun: cat /tmp/review-comments.txt\\n\\nFind the CLAUDE_PAYLOAD block and parse the JSON to get the findings array.\\n\\n## STEP 2: Validate Each Finding\\n\\nFor each finding: verify file/line exists, confirm severity is appropriate, check if it's a false positive.\\n\\nMark each as validated:true or falsePositive:true.\\n\\nAlso check for any issues the review missed.\\n\\n## CRITICAL: Write Your Results\\n\\nYou MUST write your results to /tmp/claude-output/validation-results.json in this exact format:\\n\\n```json\\n{\\n  \\\"validationMarkdown\\\": \\\"Your validation summary in markdown\\\",\\n  \\\"validatedFindings\\\": [{...validated findings...}],\\n  \\\"additionalFindings\\\": [{...additional findings...}]\\n}\\n```\\n\\nUse the Write tool to create/update /tmp/claude-output/validation-results.json with your actual validation results.\\n\\nAfter writing the file, run: cat /tmp/claude-output/validation-results.json to confirm.",
+              "instructions": "## VALIDATION TASK\\n\\nValidate findings from the code review for PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES\\n\\n1. **NO META-COMMENTARY** - Do not discuss the validation process. Just validate and output results.\\n\\n2. **BE CONCISE** - Brief validation notes only.\\n\\n### STEPS\\n\\n1. Run: cat /tmp/review-comments.txt\\n2. Extract findingsJson from CLAUDE_PAYLOAD\\n3. For each finding: verify file/line exists, mark as validated:true or falsePositive:true\\n4. Check for missed issues\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/validation-results.json:\\n\\n```json\\n{\\n  \\\"validationMarkdown\\\": \\\"N validated, M false positives, K additional\\\",\\n  \\\"validatedFindings\\\": [{...findings with validated:true or falsePositive:true...}],\\n  \\\"additionalFindings\\\": [{...missed issues in same format as review...}]\\n}\\n```\\n\\nAfter writing, run: cat /tmp/claude-output/validation-results.json",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
@@ -265,8 +278,8 @@ jobs:
             VALIDATED_JSON=$(jq -c '.validatedFindings // []' /tmp/claude-output/validation-results.json)
             ADDITIONAL_JSON=$(jq -c '.additionalFindings // []' /tmp/claude-output/validation-results.json)
 
-            # Build the comment body using printf for proper escaping
-            COMMENT_BODY=$(printf "## ✅ REVIEW VALIDATION (Job 2/3)\n\nCLAUDE_JOB=self-review\n\n> **Run:** %s | **Timestamp:** %s\n\n### Validation Results\n\n%s\n\n---\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":1,\"job\":\"validation\",\"runId\":\"%s\",\"prNumber\":%s,\"timestamp\":\"%s\",\"validatedFindings\":%s,\"additionalFindings\":%s}\nEND_PAYLOAD -->\n\n*🤖 Claude Code Review*" "$RUN_ID" "$TIMESTAMP" "$VALIDATION_MD" "$RUN_ID" "$PR_NUMBER" "$TIMESTAMP" "$VALIDATED_JSON" "$ADDITIONAL_JSON")
+            # Build concise comment
+            COMMENT_BODY=$(printf "## Validation\n\n%s\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":2,\"job\":\"validation\",\"runId\":\"%s\",\"prNumber\":%s,\"timestamp\":\"%s\",\"validatedFindings\":%s,\"additionalFindings\":%s}\nEND_PAYLOAD -->" "$VALIDATION_MD" "$RUN_ID" "$PR_NUMBER" "$TIMESTAMP" "$VALIDATED_JSON" "$ADDITIONAL_JSON")
 
             # Post the comment
             gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
@@ -339,7 +352,7 @@ jobs:
             --max-turns 20
           settings: |
             {
-              "instructions": "IMPORTANT: YOUR RESPONSE MUST START WITH: ## 🎯 TRIAGE (Job 3 of 3)\\n\\nCLAUDE_JOB=triage\\n\\nPR: #${{ github.event.pull_request.number || github.event.issue.number }}\\n\\n## STEP 1: Get Validated Findings\\n\\nRun: cat /tmp/all-review-comments.txt\\n\\nFind the validation job's CLAUDE_PAYLOAD block and extract validatedFindings and additionalFindings.\\n\\n## STEP 2: Process Each Finding\\n\\n- CRITICAL (not false positive): Fix code, run tests, commit, push\\n- MEDIUM/LOW (not false positive): Create issue with gh issue create\\n- False positives: Skip and record\\n\\n## CRITICAL: Write Your Results\\n\\nAfter processing, you MUST write your results to /tmp/claude-output/triage-results.json in this exact format:\\n\\n```json\\n{\\n  \\\"triageMarkdown\\\": \\\"Your triage summary in markdown\\\",\\n  \\\"actions\\\": [{\\\"findingId\\\":\\\"F-001\\\",\\\"action\\\":\\\"fixed/issue/skipped\\\",\\\"details\\\":\\\"Description\\\"}],\\n  \\\"summary\\\": {\\\"criticalFixed\\\":N,\\\"issuesCreated\\\":N,\\\"skipped\\\":N}\\n}\\n```\\n\\nUse the Write tool to create/update /tmp/claude-output/triage-results.json with your actual triage results.\\n\\nAfter writing the file, run: cat /tmp/claude-output/triage-results.json to confirm.",
+              "instructions": "## TRIAGE TASK\\n\\nProcess validated findings for PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES\\n\\n1. **NO META-COMMENTARY** - Do not discuss the triage process. Just process and output results.\\n\\n2. **ACTION ONLY** - For each finding, take action or skip. No lengthy explanations.\\n\\n### STEPS\\n\\n1. Run: cat /tmp/all-review-comments.txt\\n2. Extract validatedFindings and additionalFindings from validation CLAUDE_PAYLOAD\\n3. Process each:\\n   - CRITICAL (validated): Fix code, run tests, commit, push\\n   - MEDIUM/LOW (validated): Create issue with gh issue create\\n   - False positives: Skip\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/triage-results.json:\\n\\n```json\\n{\\n  \\\"triageMarkdown\\\": \\\"Fixed N critical, created M issues, skipped K\\\",\\n  \\\"actions\\\": [{\\\"findingId\\\":\\\"F-001\\\",\\\"action\\\":\\\"fixed|issue|skipped\\\",\\\"details\\\":\\\"Brief note\\\"}],\\n  \\\"summary\\\": {\\\"criticalFixed\\\":N,\\\"issuesCreated\\\":M,\\\"skipped\\\":K}\\n}\\n```\\n\\nAfter writing, run: cat /tmp/claude-output/triage-results.json",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
@@ -366,8 +379,8 @@ jobs:
             ACTIONS_JSON=$(jq -c '.actions // []' /tmp/claude-output/triage-results.json)
             SUMMARY_JSON=$(jq -c '.summary // {"criticalFixed":0,"issuesCreated":0,"skipped":0}' /tmp/claude-output/triage-results.json)
 
-            # Build the comment body using printf for proper escaping
-            COMMENT_BODY=$(printf "## 🎯 TRIAGE (Job 3/3)\n\nCLAUDE_JOB=triage\n\n> **Run:** %s | **SHA:** %s | **Timestamp:** %s\n\n### Summary\n\n%s\n\n---\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":1,\"job\":\"triage\",\"runId\":\"%s\",\"prNumber\":%s,\"sha\":\"%s\",\"timestamp\":\"%s\",\"actions\":%s,\"summary\":%s}\nEND_PAYLOAD -->\n\n*🤖 Claude Code Review*" "$RUN_ID" "$SHA" "$TIMESTAMP" "$TRIAGE_MD" "$RUN_ID" "$PR_NUMBER" "$SHA" "$TIMESTAMP" "$ACTIONS_JSON" "$SUMMARY_JSON")
+            # Build concise comment
+            COMMENT_BODY=$(printf "## Triage\n\n%s\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":2,\"job\":\"triage\",\"runId\":\"%s\",\"prNumber\":%s,\"sha\":\"%s\",\"timestamp\":\"%s\",\"actions\":%s,\"summary\":%s}\nEND_PAYLOAD -->" "$TRIAGE_MD" "$RUN_ID" "$PR_NUMBER" "$SHA" "$TIMESTAMP" "$ACTIONS_JSON" "$SUMMARY_JSON")
 
             # Post the comment
             gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
