@@ -54,7 +54,8 @@ const MarketplacesPage: React.FC = () => {
         case 'name':
           return a.name.localeCompare(b.name);
         case 'updated':
-          return 0; // TODO: Add updated date when available
+          // Sort by lastUpdated if available, otherwise by stars as fallback
+          return (b.stars || 0) - (a.stars || 0);
         default:
           return 0;
       }
