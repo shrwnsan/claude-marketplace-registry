@@ -1,7 +1,7 @@
 # Claude Review-Triage-Implementation Cycle
 
 > **Status:** Implemented - Structured Payload Architecture
-> **Last Updated:** 2026-01-26
+> **Last Updated:** 2026-01-27
 
 ## Overview
 
@@ -883,6 +883,48 @@ The workflow demonstrates a fundamental misalignment:
 The Claude bot comments are **duplicates of each other** and provide **less value** than the concise github-actions comments. The workflow successfully runs but produces verbose meta-commentary instead of actual code review findings.
 
 **Status:** Architecture validated, **output quality requires complete rethinking** before production use.
+
+---
+
+## Workflow Evolution Timeline
+
+| Date | Commit | PR | Description |
+|------|--------|-----|-------------|
+| **2026-01-15** | `807c086` | #10 | Initial workflow - Single job, basic @claude mention response with Z.ai API integration |
+| **2026-01-25** | `d5c1f5e` | - | 3-job architecture introduced - review → self-review → triage cycle with structured payloads |
+| **2026-01-26** | Multiple | #39-50 | Iterative fixes - job branding, heredoc syntax, payload posting, Option 2 implementation |
+| **2026-01-27** | `3c97b5d` | #52 | Scope limiting + anti-meta-commentary prompts - Path filters, concise comments, payload v2 |
+| **2026-01-27** | Current | #53 | Discovery of dual comment system - claude-bot verbose comments + github-actions structured comments |
+
+### Key Milestones
+
+- **PR #10**: Foundation - Simple @claude responder
+- **PR #40**: Structured payloads - Jobs communicate via JSON in HTML comments
+- **PR #50**: Job branding - Consistent comment headers
+- **PR #52**: Output quality fixes - Anti-meta-commentary rules, concise format
+- **PR #53**: Issue discovery - Dual comment system identified
+
+### Original Prompts (Commit d5c1f5e)
+
+**Review job (original):**
+```
+"Also provide a human-readable summary in a comment."
+```
+✍️ Explicitly requested comments
+
+**Validation job (original):**
+```
+No explicit instruction about comments
+```
+⚠️ Ambiguous - led to verbose output
+
+**Triage job (original):**
+```
+"After processing, comment on the PR with a summary of actions taken."
+```
+✍️ Explicitly requested comments
+
+**Key Finding:** We explicitly asked Claude to post comments in the original prompts. The "DO NOT POST" instruction has never been tried.
 
 ---
 
