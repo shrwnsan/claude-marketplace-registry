@@ -35,85 +35,9 @@ permissions:
   id-token: write
 
 jobs:
-  pre-check:
-    name: Pre-Check Validation
-    runs-on: ubuntu-latest
-    # Only run when @claude is mentioned by members/collaborators
-    if: |
-      ((github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
-       (github.event_name == 'pull_request' && contains(github.event.pull_request.body || '', '@claude')) ||
-       (github.event_name == 'issues' && contains(github.event.issue.body || '', '@claude'))) &&
-      (github.event.comment.author_association == 'MEMBER' ||
-       github.event.comment.author_association == 'OWNER' ||
-       github.event.comment.author_association == 'COLLABORATOR' ||
-       github.event.issue.author_association == 'MEMBER' ||
-       github.event.issue.author_association == 'OWNER' ||
-       github.event.issue.author_association == 'COLLABORATOR' ||
-       github.event.pull_request.user.author_association == 'MEMBER' ||
-       github.event.pull_request.user.author_association == 'OWNER' ||
-       github.event.pull_request.user.author_association == 'COLLABORATOR')
-
-    outputs:
-      lint-status: ${{ steps.lint.outputs.status }}
-      format-status: ${{ steps.format.outputs.status }}
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 20
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run ESLint (continue on failure)
-        id: lint
-        run: |
-          npm run lint 2>&1 | tee /tmp/lint.log
-          LINT_EXIT_CODE=${PIPESTATUS[0]}
-          if [ $LINT_EXIT_CODE -eq 0 ]; then
-            echo "status=pass" >> $GITHUB_OUTPUT
-          else
-            echo "status=fail" >> $GITHUB_OUTPUT
-          fi
-        continue-on-error: true
-
-      - name: Check formatting (continue on failure)
-        id: format
-        run: |
-          npm run format:check 2>&1 | tee /tmp/format.log
-          FORMAT_EXIT_CODE=${PIPESTATUS[0]}
-          if [ $FORMAT_EXIT_CODE -eq 0 ]; then
-            echo "status=pass" >> $GITHUB_OUTPUT
-          else
-            echo "status=fail" >> $GITHUB_OUTPUT
-          fi
-        continue-on-error: true
-
-      - name: Upload lint results
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: pre-check-results
-          path: |
-            /tmp/lint.log
-            /tmp/format.log
-          retention-days: 1
-
   review:
     name: Code Review
     runs-on: ubuntu-latest
-    needs: pre-check
-    if: always() && needs.pre-check.result == 'success'
-
-    outputs:
-      review-artifact: ${{ steps.review.outputs.artifact_name }}
 
     steps:
       - name: Checkout
@@ -129,13 +53,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Download pre-check results
-        uses: actions/download-artifact@v4
-        with:
-          name: pre-check-results
-          path: /tmp
-        continue-on-error: true
 
       - name: Generate timestamp
         id: timestamp
@@ -191,10 +108,10 @@ jobs:
             ls -la /tmp/claude-output/ || true
           fi
 
-  self-review:
-    name: Review Validation
+  triage:
+    name: Finding Triage
     runs-on: ubuntu-latest
-    needs: [pre-check, review]
+    needs: review
     if: always() && needs.review.result == 'success'
 
     steps:
@@ -220,114 +137,18 @@ jobs:
           PR_NUMBER="${{ github.event.issue.number || github.event.pull_request.number }}"
           echo "Fetching comments for PR #$PR_NUMBER"
 
-          # Wait a moment to ensure previous job's comment is posted
+          # Wait to ensure review job's comment is posted
           sleep 10
 
-          # Get all comments from the review job (by claude bot)
+          # Get review comments from github-actions bot (structured payloads)
           gh pr view "$PR_NUMBER" --json comments --jq \
-            '.comments | map(select(.author.login == "claude")) | .[].body' \
+            '.comments | map(select(.author.login == "github-actions[bot]")) | .[].body' \
             > /tmp/review-comments.txt
 
           echo "Fetched $(wc -l < /tmp/review-comments.txt) comment(s)"
           echo "=== Review Comments ==="
           cat /tmp/review-comments.txt
-          echo "======================"
-
-      - name: Generate timestamp
-        id: timestamp
-        run: echo "value=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
-
-      - name: Create output file
-        run: |
-          mkdir -p /tmp/claude-output
-          echo '{"validationMarkdown":"","validatedFindings":[],"additionalFindings":[]}' > /tmp/claude-output/validation-results.json
-
-      - name: Validate Review
-        id: validate
-        uses: anthropics/claude-code-action@v1
-        with:
-          anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
-          claude_args: |
-            --allowedTools "Read,Glob,Grep,WebSearch,WebFetch,Write,Bash(cat:*)"
-            --max-turns 15
-          settings: |
-            {
-              "instructions": "## VALIDATION TASK\\n\\nValidate findings from the code review for PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES\\n\\n1. **NO META-COMMENTARY** - Do not discuss the validation process. Just validate and output results.\\n\\n2. **BE CONCISE** - Brief validation notes only.\\n\\n### STEPS\\n\\n1. Run: cat /tmp/review-comments.txt\\n2. Extract findingsJson from CLAUDE_PAYLOAD\\n3. For each finding: verify file/line exists, mark as validated:true or falsePositive:true\\n4. Check for missed issues\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/validation-results.json:\\n\\n```json\\n{\\n  \\\"validationMarkdown\\\": \\\"N validated, M false positives, K additional\\\",\\n  \\\"validatedFindings\\\": [{...findings with validated:true or falsePositive:true...}],\\n  \\\"additionalFindings\\\": [{...missed issues in same format as review...}]\\n}\\n```\\n\\nAfter writing, run: cat /tmp/claude-output/validation-results.json",
-              "env": {
-                "NODE_ENV": "test",
-                "CI": "true",
-                "PR_NUMBER": "${{ github.event.pull_request.number || github.event.issue.number }}"
-              }
-            }
-        env:
-          ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
-          GH_TOKEN: ${{ github.token }}
-
-      - name: Post validation comment
-        if: always()
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          PR_NUMBER="${{ github.event.pull_request.number || github.event.issue.number }}"
-          RUN_ID="${{ github.run_id }}"
-          TIMESTAMP="${{ steps.timestamp.outputs.value }}"
-
-          # Read Claude's results
-          if [ -f "/tmp/claude-output/validation-results.json" ]; then
-            VALIDATION_MD=$(jq -r '.validationMarkdown // "No validation results provided"' /tmp/claude-output/validation-results.json)
-            VALIDATED_JSON=$(jq -c '.validatedFindings // []' /tmp/claude-output/validation-results.json)
-            ADDITIONAL_JSON=$(jq -c '.additionalFindings // []' /tmp/claude-output/validation-results.json)
-
-            # Build concise comment
-            COMMENT_BODY=$(printf "## Validation\n\n%s\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":2,\"job\":\"validation\",\"runId\":\"%s\",\"prNumber\":%s,\"timestamp\":\"%s\",\"validatedFindings\":%s,\"additionalFindings\":%s}\nEND_PAYLOAD -->" "$VALIDATION_MD" "$RUN_ID" "$PR_NUMBER" "$TIMESTAMP" "$VALIDATED_JSON" "$ADDITIONAL_JSON")
-
-            # Post the comment
-            gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
-          else
-            echo "Warning: Claude output file not found"
-          fi
-
-  triage:
-    name: Finding Triage
-    runs-on: ubuntu-latest
-    needs: [pre-check, review, self-review]
-    if: always() && needs.self-review.result == 'success'
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 20
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Fetch all PR comments
-        id: comments
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          PR_NUMBER="${{ github.event.issue.number || github.event.pull_request.number }}"
-          echo "Fetching all comments for PR #$PR_NUMBER"
-
-          # Wait to ensure previous jobs' comments are posted
-          sleep 10
-
-          # Get all claude comments (review + self-review)
-          gh pr view "$PR_NUMBER" --json comments --jq \
-            '.comments | map(select(.author.login == "claude")) | .[].body' \
-            > /tmp/all-review-comments.txt
-
-          echo "Fetched $(wc -l < /tmp/all-review-comments.txt) comment(s)"
-          echo "=== All Review Comments ==="
-          cat /tmp/all-review-comments.txt
-          echo "=========================="
+          echo "======================="
 
       - name: Configure Git
         run: |
@@ -352,7 +173,7 @@ jobs:
             --max-turns 20
           settings: |
             {
-              "instructions": "## TRIAGE TASK\\n\\nProcess validated findings for PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES\\n\\n1. **NO META-COMMENTARY** - Do not discuss the triage process. Just process and output results.\\n\\n2. **ACTION ONLY** - For each finding, take action or skip. No lengthy explanations.\\n\\n### STEPS\\n\\n1. Run: cat /tmp/all-review-comments.txt\\n2. Extract validatedFindings and additionalFindings from validation CLAUDE_PAYLOAD\\n3. Process each:\\n   - CRITICAL (validated): Fix code, run tests, commit, push\\n   - MEDIUM/LOW (validated): Create issue with gh issue create\\n   - False positives: Skip\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/triage-results.json:\\n\\n```json\\n{\\n  \\\"triageMarkdown\\\": \\\"Fixed N critical, created M issues, skipped K\\\",\\n  \\\"actions\\\": [{\\\"findingId\\\":\\\"F-001\\\",\\\"action\\\":\\\"fixed|issue|skipped\\\",\\\"details\\\":\\\"Brief note\\\"}],\\n  \\\"summary\\\": {\\\"criticalFixed\\\":N,\\\"issuesCreated\\\":M,\\\"skipped\\\":K}\\n}\\n```\\n\\nAfter writing, run: cat /tmp/claude-output/triage-results.json",
+              "instructions": "## TRIAGE TASK\\n\\nProcess findings from the code review for PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES\\n\\n1. **NO META-COMMENTARY** - Do not discuss the triage process. Just process and output results.\\n\\n2. **ACTION ONLY** - For each finding, take action or skip. No lengthy explanations.\\n\\n### STEPS\\n\\n1. Run: cat /tmp/review-comments.txt\\n2. Extract findings from review CLAUDE_PAYLOAD\\n3. Process each:\\n   - CRITICAL: Fix code, run tests, commit, push\\n   - MEDIUM/LOW: Create issue with gh issue create\\n   - Skip if not applicable\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/triage-results.json:\\n\\n```json\\n{\\n  \\\"triageMarkdown\\\": \\\"Fixed N critical, created M issues, skipped K\\\",\\n  \\\"actions\\\": [{\\\"findingId\\\":\\\"F-001\\\",\\\"action\\\":\\\"fixed|issue|skipped\\\",\\\"details\\\":\\\"Brief note\\\"}],\\n  \\\"summary\\\": {\\\"criticalFixed\\\":N,\\\"issuesCreated\\\":M,\\\"skipped\\\":K}\\n}\\n```\\n\\nAfter writing, run: cat /tmp/claude-output/triage-results.json",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
