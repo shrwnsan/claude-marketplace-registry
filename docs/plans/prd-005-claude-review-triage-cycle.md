@@ -886,6 +886,89 @@ The Claude bot comments are **duplicates of each other** and provide **less valu
 
 ---
 
+## GitHub Actions Comment History
+
+### Why github-actions[bot] Comments Exist
+
+**TL;DR:** The structured github-actions[bot] comments are **intentional and necessary** for:
+1. **Structured payload parsing** between workflow jobs
+2. **Guaranteed execution** (fixing Option 1's reliability issues)
+3. **Machine-readable output** for automation
+
+### Evolution
+
+| Phase | Commit/PR | Comment Source | Why |
+|-------|-----------|---------------|-----|
+| **Phase 1** | `807c086` (PR #10) | claude-bot only | Action default behavior |
+| **Phase 2** | `80da3c7` (PR #43) | claude-bot via `gh pr comment` | Attempt: Claude posts directly - **FAILED** |
+| **Phase 3** | `0221400` (Option 2) | github-actions[bot] + claude-bot | **CURRENT**: Workflow reads JSON, posts structured comments |
+
+### Why Option 2 Was Implemented
+
+From commit `0221400`:
+> "After PR #47 confirmed Option 1 failed, this implements Option 2: workflow-controlled comment posting. Claude writes to JSON files, workflow steps read and post comments. **Guaranteed execution.**"
+
+**Option 1 Failure:**
+```yaml
+# Claude tried to post via gh pr comment
+instructions: "... gh pr comment $PR_NUMBER --body '...'"
+```
+**Problems:**
+- Unreliable execution
+- Race conditions
+- Claude's `gh` authentication issues
+- No guaranteed posting
+
+**Option 2 Solution (Current):**
+```yaml
+- name: Post review comment
+  run: |
+    FINDINGS_MD=$(jq -r '.findingsMarkdown' /tmp/claude-output/review-results.json)
+    COMMENT_BODY=$(printf "## Code Review\n\n%s\n\n<!-- CLAUDE_PAYLOAD...")" "$FINDINGS_MD")
+    gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
+```
+**Benefits:**
+- ✅ Guaranteed execution (shell script, not Claude)
+- ✅ Structured JSON format for parsing
+- ✅ Reliable job-to-job communication
+- ✅ Consistent format regardless of Claude's verbose output
+
+### Dual Comment System Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     Review Job Execution                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  1. Claude runs via action → Posts claude-bot verbose comment ❌    │
+│  2. Claude writes to /tmp/claude-output/review-results.json ✅     │
+│  3. Shell script reads JSON → Posts github-actions comment ✅     │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Result:** 2 comments per job
+- **claude-bot**: Verbose analysis (automatic, unavoidable with current action)
+- **github-actions[bot]**: Structured payload (intentional, necessary)
+
+### Cannot Combine Review + Triage Comments
+
+**Question:** Can `use_sticky_comment: true` combine review + triage into 1 comment?
+
+**Answer:** NO. `use_sticky_comment` only applies **within a single job execution**. It cannot combine comments from different jobs because:
+1. Review and Triage are separate workflow jobs
+2. Each job has its own execution context
+3. Jobs run sequentially, not as a single unit
+4. `use_sticky_comment` only consolidates multiple comments **from the same job**
+
+To truly combine into 1 comment would require merging review + triage into a single job, losing:
+- Parallel execution benefits
+- Job dependency architecture
+- Clean separation of concerns
+- Payload-based job communication
+
+---
+
 ## Workflow Evolution Timeline
 
 | Date | Commit | PR | Description |
