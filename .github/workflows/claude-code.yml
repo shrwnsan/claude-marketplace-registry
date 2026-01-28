@@ -90,29 +90,13 @@ jobs:
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
           GH_TOKEN: ${{ github.token }}
 
-      - name: Post review comment
+      - name: Upload review results
+        uses: actions/upload-artifact@v4
         if: always()
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          PR_NUMBER="${{ github.event.pull_request.number || github.event.issue.number }}"
-          RUN_ID="${{ github.run_id }}"
-          TIMESTAMP="${{ steps.timestamp.outputs.value }}"
-
-          # Read Claude's results
-          if [ -f "/tmp/claude-output/review-results.json" ]; then
-            FINDINGS_MD=$(jq -r '.findingsMarkdown // "No findings provided"' /tmp/claude-output/review-results.json)
-            FINDINGS_JSON=$(jq -c '.findingsJson // []' /tmp/claude-output/review-results.json)
-
-            # Build concise comment
-            COMMENT_BODY=$(printf "## Code Review\n\n%s\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":2,\"job\":\"review\",\"runId\":\"%s\",\"prNumber\":%s,\"timestamp\":\"%s\",\"findings\":%s}\nEND_PAYLOAD -->" "$FINDINGS_MD" "$RUN_ID" "$PR_NUMBER" "$TIMESTAMP" "$FINDINGS_JSON")
-
-            # Post the comment
-            gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
-          else
-            echo "Warning: Claude output file not found"
-            ls -la /tmp/claude-output/ || true
-          fi
+        with:
+          name: review-results
+          path: /tmp/claude-output/review-results.json
+          retention-days: 1
 
   triage:
     name: Finding Triage
@@ -144,26 +128,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch PR comments
-        id: comments
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          PR_NUMBER="${{ github.event.issue.number || github.event.pull_request.number }}"
-          echo "Fetching comments for PR #$PR_NUMBER"
-
-          # Wait to ensure review job's comment is posted
-          sleep 10
-
-          # Get review comments from github-actions bot (structured payloads)
-          gh pr view "$PR_NUMBER" --json comments --jq \
-            '.comments | map(select(.author.login == "github-actions[bot]")) | .[].body' \
-            > /tmp/review-comments.txt
-
-          echo "Fetched $(wc -l < /tmp/review-comments.txt) comment(s)"
-          echo "=== Review Comments ==="
-          cat /tmp/review-comments.txt
-          echo "======================="
+      - name: Download review results
+        uses: actions/download-artifact@v4
+        with:
+          name: review-results
+          path: /tmp/claude-output/
 
       - name: Configure Git
         run: |
@@ -188,7 +157,7 @@ jobs:
             --max-turns 20
           settings: |
             {
-              "instructions": "## TRIAGE TASK\\n\\nProcess findings from the code review for PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES\\n\\n1. **NO META-COMMENTARY** - Do not discuss the triage process. Just process and output results.\\n\\n2. **ACTION ONLY** - For each finding, take action or skip. No lengthy explanations.\\n\\n### STEPS\\n\\n1. Run: cat /tmp/review-comments.txt\\n2. Extract findings from review CLAUDE_PAYLOAD\\n3. Process each:\\n   - CRITICAL: Fix code, run tests, commit, push\\n   - MEDIUM/LOW: Create issue with gh issue create\\n   - Skip if not applicable\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/triage-results.json:\\n\\n```json\\n{\\n  \\\"triageMarkdown\\\": \\\"Fixed N critical, created M issues, skipped K\\\",\\n  \\\"actions\\\": [{\\\"findingId\\\":\\\"F-001\\\",\\\"action\\\":\\\"fixed|issue|skipped\\\",\\\"details\\\":\\\"Brief note\\\"}],\\n  \\\"summary\\\": {\\\"criticalFixed\\\":N,\\\"issuesCreated\\\":M,\\\"skipped\\\":K}\\n}\\n```\\n\\nAfter writing, run: cat /tmp/claude-output/triage-results.json",
+              "instructions": "## TRIAGE TASK\\n\\nProcess findings from the code review for PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES\\n\\n1. **NO META-COMMENTARY** - Do not discuss the triage process. Just process and output results.\\n\\n2. **ACTION ONLY** - For each finding, take action or skip. No lengthy explanations.\\n\\n### STEPS\\n\\n1. Run: cat /tmp/claude-output/review-results.json\\n2. Extract findingsJson from the file\\n3. Process each:\\n   - CRITICAL: Fix code, run tests, commit, push\\n   - MEDIUM/LOW: Create issue with gh issue create\\n   - Skip if not applicable\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/triage-results.json:\\n\\n```json\\n{\\n  \\\"triageMarkdown\\\": \\\"Fixed N critical, created M issues, skipped K\\\",\\n  \\\"actions\\\": [{\\\"findingId\\\":\\\"F-001\\\",\\\"action\\\":\\\"fixed|issue|skipped\\\",\\\"details\\\":\\\"Brief note\\\"}],\\n  \\\"summary\\\": {\\\"criticalFixed\\\":N,\\\"issuesCreated\\\":M,\\\"skipped\\\":K}\\n}\\n```\\n\\nAfter writing, run: cat /tmp/claude-output/triage-results.json",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
@@ -199,27 +168,10 @@ jobs:
           ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
           GH_TOKEN: ${{ github.token }}
 
-      - name: Post triage comment
+      - name: Upload triage results
+        uses: actions/upload-artifact@v4
         if: always()
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          PR_NUMBER="${{ github.event.pull_request.number || github.event.issue.number }}"
-          RUN_ID="${{ github.run_id }}"
-          SHA="${{ github.sha }}"
-          TIMESTAMP="${{ steps.timestamp.outputs.value }}"
-
-          # Read Claude's results
-          if [ -f "/tmp/claude-output/triage-results.json" ]; then
-            TRIAGE_MD=$(jq -r '.triageMarkdown // "No triage results provided"' /tmp/claude-output/triage-results.json)
-            ACTIONS_JSON=$(jq -c '.actions // []' /tmp/claude-output/triage-results.json)
-            SUMMARY_JSON=$(jq -c '.summary // {"criticalFixed":0,"issuesCreated":0,"skipped":0}' /tmp/claude-output/triage-results.json)
-
-            # Build concise comment
-            COMMENT_BODY=$(printf "## Triage\n\n%s\n\n<!-- CLAUDE_PAYLOAD\n{\"version\":2,\"job\":\"triage\",\"runId\":\"%s\",\"prNumber\":%s,\"sha\":\"%s\",\"timestamp\":\"%s\",\"actions\":%s,\"summary\":%s}\nEND_PAYLOAD -->" "$TRIAGE_MD" "$RUN_ID" "$PR_NUMBER" "$SHA" "$TIMESTAMP" "$ACTIONS_JSON" "$SUMMARY_JSON")
-
-            # Post the comment
-            gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
-          else
-            echo "Warning: Claude output file not found"
-          fi
+        with:
+          name: triage-results
+          path: /tmp/claude-output/triage-results.json
+          retention-days: 1
