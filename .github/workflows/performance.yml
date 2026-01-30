@@ -2,8 +2,8 @@ name: Performance Monitor
 
 on:
   schedule:
-    # Run weekly on Sundays at 3:00 AM UTC
-    - cron: '0 3 * * 0'
+    # Run monthly on the 1st at 3:00 AM UTC
+    - cron: '0 3 1 * *'
   workflow_dispatch:
     inputs:
       analyze_build:
