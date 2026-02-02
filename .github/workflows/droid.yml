@@ -13,10 +13,10 @@ on:
 jobs:
   droid:
     if: |
-      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@droid')) ||
-      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@droid')) ||
-      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@droid')) ||
-      (github.event_name == 'issues' && (contains(github.event.issue.body, '@droid') || contains(github.event.issue.title, '@droid')))
+      (github.event_name == 'issue_comment' && github.event.issue.state == 'open' && contains(github.event.comment.body, '@droid')) ||
+      (github.event_name == 'pull_request_review_comment' && github.event.pull_request.state == 'open' && contains(github.event.comment.body, '@droid')) ||
+      (github.event_name == 'pull_request_review' && github.event.pull_request.state == 'open' && contains(github.event.review.body, '@droid')) ||
+      (github.event_name == 'issues' && github.event.issue.state == 'open' && (contains(github.event.issue.body, '@droid') || contains(github.event.issue.title, '@droid')))
     runs-on: ubuntu-latest
     permissions:
       contents: write
