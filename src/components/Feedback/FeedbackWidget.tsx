@@ -51,7 +51,7 @@ const FeedbackWidget: React.FC<FeedbackWidgetProps> = ({
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const autoShowTimerRef = useRef<NodeJS.Timeout>();
+  const autoShowTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     // Auto-show after specified time

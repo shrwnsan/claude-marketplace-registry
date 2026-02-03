@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, screen, waitFor, fireEvent, act } from '@testing-library/react';
+import { render, waitFor, fireEvent, act } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import '@testing-library/jest-dom';
 import OverviewMetrics from '../OverviewMetrics';
 import { EcosystemOverview } from '../../../types/ecosystem-stats';
@@ -228,8 +229,8 @@ describe('OverviewMetrics Component', () => {
       // Check focus management - cards should be focusable (article elements within main)
       const metricCards = screen
         .getAllByRole('region')
-        .filter((element) => element.tagName === 'ARTICLE');
-      metricCards.forEach((card) => {
+        .filter((element: HTMLElement) => element.tagName === 'ARTICLE');
+      metricCards.forEach((card: HTMLElement) => {
         expect(card).toHaveAttribute('tabindex', '0');
       });
 
@@ -302,7 +303,7 @@ describe('OverviewMetrics Component', () => {
       // Find the first metric card (article element)
       const metricCards = screen
         .getAllByRole('region')
-        .filter((element) => element.tagName === 'ARTICLE');
+        .filter((element: HTMLElement) => element.tagName === 'ARTICLE');
       const firstCard = metricCards[0];
       expect(firstCard).toHaveAttribute('tabindex', '0');
 

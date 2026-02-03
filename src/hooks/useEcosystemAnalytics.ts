@@ -403,7 +403,7 @@ class EcosystemAnalytics {
 
 // Custom hook for using ecosystem analytics
 export const useEcosystemAnalytics = (options: UseEcosystemAnalyticsOptions = {}) => {
-  const analyticsRef = useRef<EcosystemAnalytics>();
+  const analyticsRef = useRef<EcosystemAnalytics | null>(null);
 
   // Initialize analytics on first render
   if (!analyticsRef.current) {
