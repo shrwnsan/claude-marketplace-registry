@@ -9,7 +9,8 @@
  */
 
 import React from 'react';
-import { render, screen, fireEvent, waitFor, act } from '@testing-library/react';
+import { render, fireEvent, waitFor, act } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import '@testing-library/jest-dom';
 import GrowthTrends from '../GrowthTrends';
 

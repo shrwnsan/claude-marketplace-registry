@@ -209,7 +209,7 @@ class DataGenerator {
 
   private generateCategories(
     marketplaces: Marketplace[],
-    plugins: Plugin[]
+    _plugins: Plugin[]
   ): Array<{
     id: string;
     name: string;

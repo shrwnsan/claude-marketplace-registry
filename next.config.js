@@ -19,17 +19,8 @@ const nextConfig = {
     ANALYTICS_ID: process.env.NEXT_PUBLIC_ANALYTICS_ID,
   },
 
-  // Disable ESLint and TypeScript checks during builds
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-
-  // Enable strict mode and SWC minification
+  // Enable strict mode
   reactStrictMode: true,
-  swcMinify: true,
   compress: true,
 
   // Configure page extensions
@@ -43,50 +34,12 @@ const nextConfig = {
     removeConsole: isProd ? { exclude: ['error', 'warn'] } : false,
   },
 
-  // Webpack configuration
-  webpack: (config, { dev, isServer }) => {
+  // Use Turbopack instead of Webpack (Next.js 16 default)
+  turbopack: {
     // Fallbacks for server-side modules in client bundles
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-        net: false,
-        tls: false,
-      };
-    }
-
-    // Production optimizations
-    if (!dev) {
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        cacheGroups: {
-          charts: {
-            test: /[\\/]node_modules[\\/](recharts|d3)[\\/]/,
-            name: 'charts',
-            priority: 20,
-          },
-          ecosystem: {
-            test: /[\\/]src[\\/]components[\\/]EcosystemStats[\\/]/,
-            name: 'ecosystem',
-            priority: 10,
-          },
-        },
-      };
-    }
-
-    // Bundle analyzer
-    if (isAnalyzing) {
-      const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-      config.plugins.push(
-        new BundleAnalyzerPlugin({
-          analyzerMode: 'static',
-          openAnalyzer: false,
-          reportFilename: 'bundle-analysis.html',
-        })
-      );
-    }
-
-    return config;
+    resolveAlias: {
+      // Add any aliases needed for client-side compatibility
+    },
   },
 
   // Performance and monitoring headers

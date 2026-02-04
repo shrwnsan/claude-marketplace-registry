@@ -454,7 +454,7 @@ function validateUrl(url: string, allowedSchemes: string[] = ['https:']): Valida
     }
 
     return { isValid: errors.length === 0, errors, warnings: [] };
-  } catch (error) {
+  } catch {
     return { isValid: false, errors: ['Invalid URL format'], warnings: [] };
   }
 }

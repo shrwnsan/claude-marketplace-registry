@@ -267,7 +267,7 @@ export function validateGitHubUrl(url: string): ValidationResult {
       errors,
       warnings,
     };
-  } catch (error) {
+  } catch {
     errors.push('Invalid URL format');
     return {
       isValid: false,

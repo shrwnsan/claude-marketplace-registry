@@ -141,13 +141,13 @@ class MarketplaceScanner {
         if (manifest) {
           marketplace.manifest = manifest;
         }
-      } catch (error) {
+      } catch {
         console.log(`ℹ️ No manifest found for ${repo.full_name}`);
       }
 
       return marketplace;
-    } catch (error) {
-      console.error(`Error processing repository ${repo.full_name}:`, error);
+    } catch (err) {
+      console.error(`Error processing repository ${repo.full_name}:`, err);
       return null;
     }
   }
@@ -172,7 +172,7 @@ class MarketplaceScanner {
           const content = Buffer.from(response.data.content, 'base64').toString('utf-8');
           return JSON.parse(content);
         }
-      } catch (error) {
+      } catch {
         // Continue to next path
       }
     }
