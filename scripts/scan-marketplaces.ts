@@ -27,7 +27,11 @@ const KNOWN_MARKETPLACES = [
 // Search strategies for discovering Claude Code plugins and skills
 const SEARCH_STRATEGIES = [
   // Marketplace registries with manifest files
-  { name: 'marketplace-manifest', query: 'path:.claude-plugin marketplace.json', type: 'code' as const },
+  {
+    name: 'marketplace-manifest',
+    query: 'path:.claude-plugin marketplace.json',
+    type: 'code' as const,
+  },
   { name: 'plugin-manifest', query: 'path:.claude-plugin plugin.json', type: 'code' as const },
   // Skill definitions
   { name: 'skill-files', query: 'filename:SKILL.md claude', type: 'code' as const },
@@ -37,10 +41,18 @@ const SEARCH_STRATEGIES = [
   { name: 'topic-claude-code', query: 'topic:claude-code-plugin', type: 'repo' as const },
   // Repository names
   { name: 'name-awesome-skills', query: 'awesome-claude-skills in:name', type: 'repo' as const },
-  { name: 'name-claude-marketplace', query: 'claude-code-marketplace in:name', type: 'repo' as const },
+  {
+    name: 'name-claude-marketplace',
+    query: 'claude-code-marketplace in:name',
+    type: 'repo' as const,
+  },
   { name: 'name-claude-plugins', query: 'claude-plugins in:name', type: 'repo' as const },
   // Description-based search
-  { name: 'desc-claude-plugin', query: '"claude code" plugin in:description', type: 'repo' as const },
+  {
+    name: 'desc-claude-plugin',
+    query: '"claude code" plugin in:description',
+    type: 'repo' as const,
+  },
   { name: 'desc-claude-skill', query: '"claude code" skill in:description', type: 'repo' as const },
 ];
 
@@ -96,7 +108,9 @@ class MarketplaceScanner {
   async scanMarketplaces(): Promise<Marketplace[]> {
     console.log('🔍 Starting marketplace scan...');
     console.log(`Max results: ${this.maxResults}`);
-    console.log(`Strategy: ${this.useMultiStrategy ? 'Multi-strategy search' : `Single query: ${this.searchQuery}`}`);
+    console.log(
+      `Strategy: ${this.useMultiStrategy ? 'Multi-strategy search' : `Single query: ${this.searchQuery}`}`
+    );
 
     const repoMap = new Map<string, Marketplace>();
 
@@ -172,7 +186,10 @@ class MarketplaceScanner {
     }
   }
 
-  private async runCodeSearch(repoMap: Map<string, Marketplace>, strategy: SearchStrategy): Promise<void> {
+  private async runCodeSearch(
+    repoMap: Map<string, Marketplace>,
+    strategy: SearchStrategy
+  ): Promise<void> {
     const startSize = repoMap.size;
 
     try {
@@ -274,7 +291,10 @@ class MarketplaceScanner {
     console.log(`   ➕ Added ${newFound} new repositories`);
   }
 
-  private async processRepository(repo: any, discoverySource?: string): Promise<Marketplace | null> {
+  private async processRepository(
+    repo: any,
+    discoverySource?: string
+  ): Promise<Marketplace | null> {
     try {
       // Use repo data directly if it has full details, otherwise fetch
       let repoData = repo;
@@ -387,7 +407,9 @@ class MarketplaceScanner {
                 });
 
                 if ('content' in skillMdResponse.data) {
-                  const content = Buffer.from(skillMdResponse.data.content, 'base64').toString('utf-8');
+                  const content = Buffer.from(skillMdResponse.data.content, 'base64').toString(
+                    'utf-8'
+                  );
                   skills.push({
                     name: item.name,
                     path: `${skillPath}/${item.name}`,
