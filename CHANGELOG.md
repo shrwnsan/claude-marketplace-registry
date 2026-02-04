@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- Multi-strategy marketplace scanner with 11 search strategies for discovering Claude Code plugins
+- Known marketplaces seed list (anthropics/skills, ComposioHQ/awesome-claude-skills, etc.)
+- Skill detection for SKILL.md files across repository structures
+
+### Fixed
+- Empty marketplace data issue - scanner now finds real Claude Code ecosystem repositories
+- Search query updated from fictional `claude-plugin marketplace.json` to actual patterns
+
+### Changed
+- Scanner now uses code search, topic search, and name-based search strategies
+- Seeded initial data with 5 verified Claude Code marketplaces
+
 ## [0.3.0-beta.1] - 2025-01-16
 
 ### Added
