@@ -1,9 +1,70 @@
 {
-  "totalMarketplaces": 0,
+  "totalMarketplaces": 5,
   "totalPlugins": 0,
   "validPlugins": 0,
-  "lastUpdated": "2026-01-15T18:59:14.351Z",
-  "topLanguages": [],
-  "topMarketplaces": [],
-  "recentActivity": []
+  "lastUpdated": "2026-02-04T20:17:46.544Z",
+  "topLanguages": [
+    {
+      "language": "TypeScript",
+      "count": 4
+    },
+    {
+      "language": "Markdown",
+      "count": 1
+    }
+  ],
+  "topMarketplaces": [
+    {
+      "name": "Anthropic Official Skills",
+      "stars": 2847,
+      "url": "https://github.com/anthropics/skills"
+    },
+    {
+      "name": "Awesome Claude Skills",
+      "stars": 1256,
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    },
+    {
+      "name": "Claude Plugins",
+      "stars": 234,
+      "url": "https://github.com/adawalli/claude-plugins"
+    },
+    {
+      "name": "Claude Plugin Marketplace",
+      "stars": 156,
+      "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
+    },
+    {
+      "name": "Claude Skills Marketplace",
+      "stars": 89,
+      "url": "https://github.com/mhattingpete/claude-skills-marketplace"
+    }
+  ],
+  "recentActivity": [
+    {
+      "name": "Anthropic Official Skills",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "url": "https://github.com/anthropics/skills"
+    },
+    {
+      "name": "Awesome Claude Skills",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    },
+    {
+      "name": "Claude Plugins",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "url": "https://github.com/adawalli/claude-plugins"
+    },
+    {
+      "name": "Claude Plugin Marketplace",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
+    },
+    {
+      "name": "Claude Skills Marketplace",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "url": "https://github.com/mhattingpete/claude-skills-marketplace"
+    }
+  ]
 }

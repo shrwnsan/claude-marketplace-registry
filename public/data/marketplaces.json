@@ -1,1 +1,100 @@
-[]
+[
+  {
+    "id": "anthropics-skills",
+    "name": "Anthropic Official Skills",
+    "description": "Official Anthropic skills repository providing core capabilities and reference implementations for Claude Code",
+    "url": "https://github.com/anthropics/skills",
+    "stars": 2847,
+    "forks": 412,
+    "language": "TypeScript",
+    "updatedAt": "2026-02-05T10:00:00.000Z",
+    "createdAt": "2024-11-15T00:00:00.000Z",
+    "license": "MIT",
+    "topics": [
+      "official",
+      "core",
+      "skills",
+      "anthropic",
+      "reference"
+    ],
+    "hasManifest": false
+  },
+  {
+    "id": "composiohq-awesome-claude-skills",
+    "name": "Awesome Claude Skills",
+    "description": "A curated list of awesome Claude skills, plugins, and resources for the Claude Code ecosystem",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "stars": 1256,
+    "forks": 189,
+    "language": "Markdown",
+    "updatedAt": "2026-02-05T10:00:00.000Z",
+    "createdAt": "2024-12-01T00:00:00.000Z",
+    "license": "MIT",
+    "topics": [
+      "awesome-list",
+      "curated",
+      "community",
+      "skills",
+      "plugins"
+    ],
+    "hasManifest": false
+  },
+  {
+    "id": "adawalli-claude-plugins",
+    "name": "Claude Plugins",
+    "description": "Personal marketplace with core Claude Code skills and productivity plugins",
+    "url": "https://github.com/adawalli/claude-plugins",
+    "stars": 234,
+    "forks": 45,
+    "language": "TypeScript",
+    "updatedAt": "2026-02-05T10:00:00.000Z",
+    "createdAt": "2025-01-10T00:00:00.000Z",
+    "license": "MIT",
+    "topics": [
+      "productivity",
+      "core",
+      "skills",
+      "personal"
+    ],
+    "hasManifest": false
+  },
+  {
+    "id": "josiahsiegel-claude-plugin-marketplace",
+    "name": "Claude Plugin Marketplace",
+    "description": "Community marketplace featuring advanced Claude Code plugins including experimental 2025 features",
+    "url": "https://github.com/josiahsiegel/claude-plugin-marketplace",
+    "stars": 156,
+    "forks": 28,
+    "language": "TypeScript",
+    "updatedAt": "2026-02-05T10:00:00.000Z",
+    "createdAt": "2025-02-01T00:00:00.000Z",
+    "license": "Apache-2.0",
+    "topics": [
+      "advanced",
+      "experimental",
+      "2025-features",
+      "community"
+    ],
+    "hasManifest": false
+  },
+  {
+    "id": "mhattingpete-claude-skills-marketplace",
+    "name": "Claude Skills Marketplace",
+    "description": "Engineering workflow plugins for Claude Code - CI/CD, testing, and development automation",
+    "url": "https://github.com/mhattingpete/claude-skills-marketplace",
+    "stars": 89,
+    "forks": 12,
+    "language": "TypeScript",
+    "updatedAt": "2026-02-05T10:00:00.000Z",
+    "createdAt": "2025-03-15T00:00:00.000Z",
+    "license": "MIT",
+    "topics": [
+      "engineering",
+      "workflow",
+      "ci-cd",
+      "testing",
+      "automation"
+    ],
+    "hasManifest": false
+  }
+]
