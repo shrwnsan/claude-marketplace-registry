@@ -1,0 +1,70 @@
+{
+  "totalMarketplaces": 5,
+  "verifiedMarketplaces": 1,
+  "communityMarketplaces": 4,
+  "totalStars": 4582,
+  "totalForks": 686,
+  "averageQualityScore": 77.6,
+  "byOwnerType": {
+    "Organization": 2,
+    "User": 3
+  },
+  "byLanguage": {
+    "TypeScript": 4,
+    "Markdown": 1
+  },
+  "byLicense": {
+    "MIT": 4,
+    "Apache-2.0": 1
+  },
+  "topMarketplaces": [
+    {
+      "id": "anthropics-skills",
+      "name": "Anthropic Official Skills",
+      "stars": 2847,
+      "qualityScore": 98
+    },
+    {
+      "id": "composiohq-awesome-claude-skills",
+      "name": "Awesome Claude Skills",
+      "stars": 1256,
+      "qualityScore": 85
+    },
+    {
+      "id": "adawalli-claude-plugins",
+      "name": "Claude Plugins",
+      "stars": 234,
+      "qualityScore": 72
+    },
+    {
+      "id": "josiahsiegel-claude-plugin-marketplace",
+      "name": "Claude Plugin Marketplace",
+      "stars": 156,
+      "qualityScore": 68
+    },
+    {
+      "id": "mhattingpete-claude-skills-marketplace",
+      "name": "Claude Skills Marketplace",
+      "stars": 89,
+      "qualityScore": 65
+    }
+  ],
+  "recentlyUpdated": [
+    {
+      "id": "anthropics-skills",
+      "name": "Anthropic Official Skills",
+      "updatedAt": "2026-02-04T12:30:00.000Z"
+    },
+    {
+      "id": "composiohq-awesome-claude-skills",
+      "name": "Awesome Claude Skills",
+      "updatedAt": "2026-02-03T18:45:00.000Z"
+    },
+    {
+      "id": "josiahsiegel-claude-plugin-marketplace",
+      "name": "Claude Plugin Marketplace",
+      "updatedAt": "2026-02-01T09:15:00.000Z"
+    }
+  ],
+  "generatedAt": "2026-02-05T10:00:00.000Z"
+}

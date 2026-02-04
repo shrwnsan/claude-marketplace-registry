@@ -1,0 +1,88 @@
+{
+  "totalMarketplaces": 5,
+  "totalPlugins": 0,
+  "validPlugins": 0,
+  "lastUpdated": "2026-02-05T10:00:00.000Z",
+  "topLanguages": [
+    { "name": "TypeScript", "count": 4 },
+    { "name": "Markdown", "count": 1 }
+  ],
+  "topMarketplaces": [
+    {
+      "id": "anthropics-skills",
+      "name": "Anthropic Official Skills",
+      "stars": 2847,
+      "pluginCount": 0,
+      "verified": true
+    },
+    {
+      "id": "composiohq-awesome-claude-skills",
+      "name": "Awesome Claude Skills",
+      "stars": 1256,
+      "pluginCount": 0,
+      "verified": false
+    },
+    {
+      "id": "adawalli-claude-plugins",
+      "name": "Claude Plugins",
+      "stars": 234,
+      "pluginCount": 0,
+      "verified": false
+    },
+    {
+      "id": "josiahsiegel-claude-plugin-marketplace",
+      "name": "Claude Plugin Marketplace",
+      "stars": 156,
+      "pluginCount": 0,
+      "verified": false
+    },
+    {
+      "id": "mhattingpete-claude-skills-marketplace",
+      "name": "Claude Skills Marketplace",
+      "stars": 89,
+      "pluginCount": 0,
+      "verified": false
+    }
+  ],
+  "recentActivity": [
+    {
+      "type": "marketplace_updated",
+      "marketplaceId": "anthropics-skills",
+      "marketplaceName": "Anthropic Official Skills",
+      "timestamp": "2026-02-04T12:30:00.000Z"
+    },
+    {
+      "type": "marketplace_updated",
+      "marketplaceId": "composiohq-awesome-claude-skills",
+      "marketplaceName": "Awesome Claude Skills",
+      "timestamp": "2026-02-03T18:45:00.000Z"
+    },
+    {
+      "type": "marketplace_updated",
+      "marketplaceId": "josiahsiegel-claude-plugin-marketplace",
+      "marketplaceName": "Claude Plugin Marketplace",
+      "timestamp": "2026-02-01T09:15:00.000Z"
+    },
+    {
+      "type": "marketplace_added",
+      "marketplaceId": "mhattingpete-claude-skills-marketplace",
+      "marketplaceName": "Claude Skills Marketplace",
+      "timestamp": "2026-01-28T00:00:00.000Z"
+    },
+    {
+      "type": "marketplace_added",
+      "marketplaceId": "josiahsiegel-claude-plugin-marketplace",
+      "marketplaceName": "Claude Plugin Marketplace",
+      "timestamp": "2026-01-25T00:00:00.000Z"
+    }
+  ],
+  "summary": {
+    "verifiedMarketplaces": 1,
+    "communityMarketplaces": 4,
+    "totalStars": 4582,
+    "totalForks": 686,
+    "averageQualityScore": 77.6,
+    "organizationOwned": 2,
+    "userOwned": 3
+  }
+}
