@@ -6,10 +6,54 @@ import globals from 'globals';
 
 const eslintConfig = [
   {
-    ignores: ['node_modules/**', '.next/**', 'out/**', 'dist/**', 'build/**', 'coverage/**'],
+    ignores: [
+      'node_modules/**',
+      '.next/**',
+      'out/**',
+      'dist/**',
+      'build/**',
+      'coverage/**',
+    ],
   },
+  // JavaScript config files (CommonJS)
   {
-    files: ['**/*.{js,jsx,ts,tsx}'],
+    files: ['*.config.js', 'postcss.config.js', 'tailwind.config.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'commonjs',
+      globals: {
+        ...globals.node,
+        ...globals.es2022,
+      },
+    },
+    rules: {
+      'prefer-const': 'error',
+      'no-var': 'error',
+      'no-console': 'warn',
+      'no-debugger': 'error',
+    },
+  },
+  // JavaScript setup files (ES modules)
+  {
+    files: ['*.setup.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+        ...globals.es2022,
+      },
+    },
+    rules: {
+      'prefer-const': 'error',
+      'no-var': 'error',
+      'no-console': 'warn',
+      'no-debugger': 'error',
+    },
+  },
+  // TypeScript and React files
+  {
+    files: ['**/*.{ts,tsx}', 'pages/**/*.{js,jsx}', 'src/**/*.{js,jsx}'],
     plugins: {
       '@typescript-eslint': tseslint,
       react,
