@@ -146,8 +146,8 @@ class MarketplaceScanner {
       }
 
       return marketplace;
-    } catch {
-      console.error(`Error processing repository ${repo.full_name}:`, error);
+    } catch (err) {
+      console.error(`Error processing repository ${repo.full_name}:`, err);
       return null;
     }
   }
