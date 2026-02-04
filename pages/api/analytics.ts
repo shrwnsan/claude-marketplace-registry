@@ -309,7 +309,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         analyticsData.health.dataFreshness = `${Math.round(hoursSinceModified)} hours ago`;
         analyticsData.health.lastScan = stats.mtime.toISOString();
       }
-    } catch (error) {
+    } catch {
       analyticsData.health.dataFreshness = 'Unknown';
     }
 
@@ -340,7 +340,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
       } else {
         analyticsData.health.githubApiStatus = 'down';
       }
-    } catch (error) {
+    } catch {
       analyticsData.health.githubApiStatus = 'down';
     }
 

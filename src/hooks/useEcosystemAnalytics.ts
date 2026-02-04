@@ -309,7 +309,7 @@ class EcosystemAnalytics {
             console.warn('[Analytics] Failed to send event:', error);
           }
         });
-      } catch (error) {
+      } catch {
         // Silently fail to not break user experience
       }
     }
@@ -331,7 +331,7 @@ class EcosystemAnalytics {
       }
 
       return userId;
-    } catch (error) {
+    } catch {
       // If localStorage is not available
       return undefined;
     }

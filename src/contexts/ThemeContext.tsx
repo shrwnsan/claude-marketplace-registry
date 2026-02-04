@@ -29,9 +29,13 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   useEffect(() => {
     setMounted(true);
     // Get saved theme from localStorage
-    const savedTheme = localStorage.getItem(storageKey) as Theme;
-    if (savedTheme) {
-      setTheme(savedTheme);
+    try {
+      const savedTheme = localStorage.getItem(storageKey) as Theme;
+      if (savedTheme) {
+        setTheme(savedTheme);
+      }
+    } catch {
+      // localStorage not available
     }
   }, [storageKey]);
 
@@ -53,7 +57,11 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
 
     root.classList.add(newResolvedTheme);
     setResolvedTheme(newResolvedTheme);
-    localStorage.setItem(storageKey, theme);
+    try {
+      localStorage.setItem(storageKey, theme);
+    } catch {
+      // localStorage not available
+    }
   }, [theme, storageKey, mounted]);
 
   // Listen for system theme changes

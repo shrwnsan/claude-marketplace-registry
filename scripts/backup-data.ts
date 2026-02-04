@@ -274,7 +274,7 @@ class DataBackupManager {
       const packageJsonPath = path.join(process.cwd(), 'package.json');
       const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
       return packageJson.version || '1.0.0';
-    } catch (error) {
+    } catch {
       return '1.0.0';
     }
   }

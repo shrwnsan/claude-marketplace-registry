@@ -193,7 +193,7 @@ const AnalyticsDashboard: React.FC = () => {
           const jsonData = e.target?.result as string;
           importData(jsonData);
           alert('Analytics data imported successfully!');
-        } catch (error) {
+        } catch {
           alert('Error importing data. Please check the file format.');
         }
       };

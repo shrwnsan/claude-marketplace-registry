@@ -220,7 +220,7 @@ class PluginValidator {
             }
           }
         }
-      } catch (error) {
+      } catch {
         // Directory doesn't exist, continue
       }
     }
@@ -260,7 +260,7 @@ class PluginValidator {
 
         plugins.push(plugin);
       }
-    } catch (error) {
+    } catch {
       // Plugin doesn't have a manifest, skip
     }
   }
@@ -284,7 +284,7 @@ class PluginValidator {
           const content = Buffer.from(response.data.content, 'base64').toString('utf-8');
           return JSON.parse(content);
         }
-      } catch (error) {
+      } catch {
         // Continue to next path
       }
     }
