@@ -134,7 +134,32 @@ class DataGenerator {
       return [];
     }
 
-    return JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+    const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+    
+    // Handle both wrapped format { marketplaces: [...] } and direct array format [...]
+    let marketplaces: any[];
+    if (data && typeof data === 'object' && !Array.isArray(data) && Array.isArray(data.marketplaces)) {
+      marketplaces = data.marketplaces;
+    } else {
+      marketplaces = Array.isArray(data) ? data : [];
+    }
+    
+    // Normalize marketplace data to handle different formats (scanner vs UI format)
+    return marketplaces.map((mp: any) => ({
+      id: mp.id || '',
+      name: mp.name || '',
+      description: mp.description || '',
+      url: mp.url || mp.repository?.url || '',
+      stars: mp.stars ?? mp.repository?.stars ?? 0,
+      forks: mp.forks ?? mp.repository?.forks ?? 0,
+      language: mp.language || mp.repository?.language || 'Unknown',
+      updatedAt: mp.updatedAt || mp.lastScanned || mp.repository?.updatedAt || new Date().toISOString(),
+      createdAt: mp.createdAt || mp.repository?.createdAt || new Date().toISOString(),
+      license: mp.license || mp.repository?.license || 'None',
+      topics: mp.topics || mp.tags || [],
+      hasManifest: mp.hasManifest ?? !!mp.manifest,
+      manifest: mp.manifest,
+    }));
   }
 
   private loadPluginData(): Plugin[] {
