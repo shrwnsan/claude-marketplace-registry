@@ -94,10 +94,10 @@ class MarketplaceScanner {
     });
 
     this.outputDir = path.join(process.cwd(), 'data', 'marketplaces');
-    this.searchQuery = process.env.SEARCH_QUERY?.trim() || '';
+    this.searchQuery = process.env.SEARCH_QUERY || '';
     this.maxResults = parseInt(process.env.SEARCH_RESULTS_LIMIT || '100');
     // Use multi-strategy by default unless a specific query is provided
-    this.useMultiStrategy = !this.searchQuery;
+    this.useMultiStrategy = !process.env.SEARCH_QUERY;
 
     // Ensure output directory exists
     if (!fs.existsSync(this.outputDir)) {
@@ -298,7 +298,7 @@ class MarketplaceScanner {
     try {
       // Use repo data directly if it has full details, otherwise fetch
       let repoData = repo;
-      if (repo.stargazers_count === undefined && repo.owner) {
+      if (!repo.stargazers_count && repo.owner) {
         const response = await this.octokit.repos.get({
           owner: repo.owner.login,
           repo: repo.name,
