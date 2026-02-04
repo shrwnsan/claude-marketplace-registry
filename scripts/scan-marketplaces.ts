@@ -4,7 +4,7 @@
  * Marketplace Scanner
  *
  * This script searches GitHub for repositories containing Claude marketplace configurations
- * and extracts marketplace metadata.
+ * and extracts marketplace metadata using multiple search strategies.
  */
 
 // Load environment variables from .env.local for local development
@@ -15,6 +15,40 @@ config({ path: envPath });
 import { Octokit } from '@octokit/rest';
 import fs from 'fs';
 import path from 'path';
+
+// Known Claude Code marketplaces and skill repositories to seed the scanner
+const KNOWN_MARKETPLACES = [
+  'anthropics/skills',
+  'ComposioHQ/awesome-claude-skills',
+  'anthropics/claude-code-plugins',
+  'anthropics/claude-plugins-official',
+];
+
+// Search strategies for discovering Claude Code plugins and skills
+const SEARCH_STRATEGIES = [
+  // Marketplace registries with manifest files
+  { name: 'marketplace-manifest', query: 'path:.claude-plugin marketplace.json', type: 'code' as const },
+  { name: 'plugin-manifest', query: 'path:.claude-plugin plugin.json', type: 'code' as const },
+  // Skill definitions
+  { name: 'skill-files', query: 'filename:SKILL.md claude', type: 'code' as const },
+  // Repository topics
+  { name: 'topic-claude-plugins', query: 'topic:claude-plugins', type: 'repo' as const },
+  { name: 'topic-claude-skills', query: 'topic:claude-skills', type: 'repo' as const },
+  { name: 'topic-claude-code', query: 'topic:claude-code-plugin', type: 'repo' as const },
+  // Repository names
+  { name: 'name-awesome-skills', query: 'awesome-claude-skills in:name', type: 'repo' as const },
+  { name: 'name-claude-marketplace', query: 'claude-code-marketplace in:name', type: 'repo' as const },
+  { name: 'name-claude-plugins', query: 'claude-plugins in:name', type: 'repo' as const },
+  // Description-based search
+  { name: 'desc-claude-plugin', query: '"claude code" plugin in:description', type: 'repo' as const },
+  { name: 'desc-claude-skill', query: '"claude code" skill in:description', type: 'repo' as const },
+];
+
+interface SearchStrategy {
+  name: string;
+  query: string;
+  type: 'code' | 'repo';
+}
 
 interface Marketplace {
   id: string;
@@ -30,6 +64,7 @@ interface Marketplace {
   topics: string[];
   manifest?: any;
   plugins?: any[];
+  discoverySource?: string;
 }
 
 class MarketplaceScanner {
@@ -37,6 +72,7 @@ class MarketplaceScanner {
   private outputDir: string;
   private searchQuery: string;
   private maxResults: number;
+  private useMultiStrategy: boolean;
 
   constructor() {
     // Initialize GitHub client
@@ -46,8 +82,10 @@ class MarketplaceScanner {
     });
 
     this.outputDir = path.join(process.cwd(), 'data', 'marketplaces');
-    this.searchQuery = process.env.SEARCH_QUERY || 'claude-plugin marketplace.json';
+    this.searchQuery = process.env.SEARCH_QUERY || '';
     this.maxResults = parseInt(process.env.SEARCH_RESULTS_LIMIT || '100');
+    // Use multi-strategy by default unless a specific query is provided
+    this.useMultiStrategy = !process.env.SEARCH_QUERY;
 
     // Ensure output directory exists
     if (!fs.existsSync(this.outputDir)) {
@@ -57,55 +95,25 @@ class MarketplaceScanner {
 
   async scanMarketplaces(): Promise<Marketplace[]> {
     console.log('🔍 Starting marketplace scan...');
-    console.log(`Search query: ${this.searchQuery}`);
     console.log(`Max results: ${this.maxResults}`);
+    console.log(`Strategy: ${this.useMultiStrategy ? 'Multi-strategy search' : `Single query: ${this.searchQuery}`}`);
 
-    const marketplaces: Marketplace[] = [];
-    let page = 1;
-    const perPage = 100;
+    const repoMap = new Map<string, Marketplace>();
 
     try {
-      while (marketplaces.length < this.maxResults) {
-        console.log(`📄 Searching page ${page}...`);
+      // First, fetch known marketplaces
+      await this.fetchKnownMarketplaces(repoMap);
 
-        const searchResponse = await this.octokit.search.repos({
-          q: this.searchQuery,
-          sort: 'updated',
-          order: 'desc',
-          per_page: Math.min(perPage, this.maxResults - marketplaces.length),
-          page,
-        });
-
-        if (searchResponse.data.items.length === 0) {
-          console.log('✅ No more results found');
-          break;
-        }
-
-        console.log(`Found ${searchResponse.data.items.length} repositories`);
-
-        for (const repo of searchResponse.data.items) {
-          try {
-            const marketplace = await this.processRepository(repo);
-            if (marketplace) {
-              marketplaces.push(marketplace);
-              console.log(`✅ Processed: ${repo.full_name}`);
-            }
-          } catch (error) {
-            console.error(`❌ Error processing ${repo.full_name}:`, error);
-          }
-
-          if (marketplaces.length >= this.maxResults) {
-            break;
-          }
-        }
-
-        page++;
-
-        // Rate limiting protection
-        await this.delay(1000);
+      if (this.useMultiStrategy) {
+        // Run multiple search strategies
+        await this.runMultiStrategySearch(repoMap);
+      } else {
+        // Use single query (backward compatibility)
+        await this.runSingleQuerySearch(repoMap, this.searchQuery, 'custom-query');
       }
 
-      console.log(`🎉 Scan complete! Found ${marketplaces.length} marketplaces`);
+      const marketplaces = Array.from(repoMap.values());
+      console.log(`\n🎉 Scan complete! Found ${marketplaces.length} unique marketplaces`);
       return marketplaces;
     } catch (error) {
       console.error('❌ Scan failed:', error);
@@ -113,41 +121,211 @@ class MarketplaceScanner {
     }
   }
 
-  private async processRepository(repo: any): Promise<Marketplace | null> {
+  private async fetchKnownMarketplaces(repoMap: Map<string, Marketplace>): Promise<void> {
+    console.log('\n📌 Fetching known marketplaces...');
+
+    for (const repoPath of KNOWN_MARKETPLACES) {
+      const [owner, repo] = repoPath.split('/');
+      try {
+        const response = await this.octokit.repos.get({ owner, repo });
+        const marketplace = await this.processRepository(response.data, 'known-seed');
+        if (marketplace) {
+          repoMap.set(marketplace.id, marketplace);
+          console.log(`  ✅ Seeded: ${repoPath}`);
+        }
+      } catch (error: any) {
+        if (error.status === 404) {
+          console.log(`  ⚠️ Known repo not found: ${repoPath}`);
+        } else {
+          console.error(`  ❌ Error fetching ${repoPath}:`, error.message);
+        }
+      }
+      await this.delay(500);
+    }
+
+    console.log(`📌 Seeded ${repoMap.size} known marketplaces`);
+  }
+
+  private async runMultiStrategySearch(repoMap: Map<string, Marketplace>): Promise<void> {
+    console.log(`\n🔎 Running ${SEARCH_STRATEGIES.length} search strategies...`);
+
+    for (const strategy of SEARCH_STRATEGIES) {
+      if (repoMap.size >= this.maxResults) {
+        console.log(`  ⏹️ Max results (${this.maxResults}) reached, stopping search`);
+        break;
+      }
+
+      console.log(`\n📍 Strategy: ${strategy.name}`);
+      console.log(`   Query: ${strategy.query}`);
+
+      try {
+        if (strategy.type === 'code') {
+          await this.runCodeSearch(repoMap, strategy);
+        } else {
+          await this.runSingleQuerySearch(repoMap, strategy.query, strategy.name);
+        }
+      } catch (error: any) {
+        console.error(`   ❌ Strategy failed: ${error.message}`);
+      }
+
+      await this.delay(2000); // Rate limiting between strategies
+    }
+  }
+
+  private async runCodeSearch(repoMap: Map<string, Marketplace>, strategy: SearchStrategy): Promise<void> {
+    const startSize = repoMap.size;
+
     try {
-      // Get detailed repository information
-      const repoData = await this.octokit.repos.get({
-        owner: repo.owner.login,
-        repo: repo.name,
+      const searchResponse = await this.octokit.search.code({
+        q: strategy.query,
+        per_page: 100,
       });
 
+      console.log(`   Found ${searchResponse.data.total_count} code matches`);
+
+      const processedRepos = new Set<string>();
+      for (const item of searchResponse.data.items) {
+        const repoFullName = item.repository.full_name;
+        if (processedRepos.has(repoFullName)) continue;
+        processedRepos.add(repoFullName);
+
+        if (repoMap.size >= this.maxResults) break;
+
+        try {
+          const repoResponse = await this.octokit.repos.get({
+            owner: item.repository.owner.login,
+            repo: item.repository.name,
+          });
+          const marketplace = await this.processRepository(repoResponse.data, strategy.name);
+          if (marketplace && !repoMap.has(marketplace.id)) {
+            repoMap.set(marketplace.id, marketplace);
+          }
+        } catch {
+          // Skip repos we can't access
+        }
+        await this.delay(300);
+      }
+
+      const newFound = repoMap.size - startSize;
+      console.log(`   ➕ Added ${newFound} new repositories`);
+    } catch (error: any) {
+      if (error.status === 422) {
+        console.log(`   ⚠️ Query returned no results or is invalid`);
+      } else {
+        throw error;
+      }
+    }
+  }
+
+  private async runSingleQuerySearch(
+    repoMap: Map<string, Marketplace>,
+    query: string,
+    source: string
+  ): Promise<void> {
+    const startSize = repoMap.size;
+    let page = 1;
+    const perPage = 100;
+
+    while (repoMap.size < this.maxResults) {
+      try {
+        const searchResponse = await this.octokit.search.repos({
+          q: query,
+          sort: 'updated',
+          order: 'desc',
+          per_page: Math.min(perPage, this.maxResults - repoMap.size),
+          page,
+        });
+
+        if (searchResponse.data.items.length === 0) {
+          break;
+        }
+
+        if (page === 1) {
+          console.log(`   Found ${searchResponse.data.total_count} total matches`);
+        }
+
+        for (const repo of searchResponse.data.items) {
+          if (repoMap.size >= this.maxResults) break;
+
+          try {
+            const marketplace = await this.processRepository(repo, source);
+            if (marketplace && !repoMap.has(marketplace.id)) {
+              repoMap.set(marketplace.id, marketplace);
+            }
+          } catch {
+            // Skip repos we can't process
+          }
+        }
+
+        page++;
+        await this.delay(1000);
+
+        // Limit pages per strategy
+        if (page > 3) break;
+      } catch (error: any) {
+        if (error.status === 422) {
+          console.log(`   ⚠️ Query returned no results`);
+        }
+        break;
+      }
+    }
+
+    const newFound = repoMap.size - startSize;
+    console.log(`   ➕ Added ${newFound} new repositories`);
+  }
+
+  private async processRepository(repo: any, discoverySource?: string): Promise<Marketplace | null> {
+    try {
+      // Use repo data directly if it has full details, otherwise fetch
+      let repoData = repo;
+      if (!repo.stargazers_count && repo.owner) {
+        const response = await this.octokit.repos.get({
+          owner: repo.owner.login,
+          repo: repo.name,
+        });
+        repoData = response.data;
+      }
+
       const marketplace: Marketplace = {
-        id: repoData.data.id.toString(),
-        name: repoData.data.name,
-        description: repoData.data.description || '',
-        url: repoData.data.html_url,
-        stars: repoData.data.stargazers_count,
-        forks: repoData.data.forks_count,
-        language: repoData.data.language || 'Unknown',
-        updatedAt: repoData.data.updated_at,
-        createdAt: repoData.data.created_at,
-        license: repoData.data.license?.name || 'None',
-        topics: repoData.data.topics || [],
+        id: repoData.id.toString(),
+        name: repoData.name,
+        description: repoData.description || '',
+        url: repoData.html_url,
+        stars: repoData.stargazers_count,
+        forks: repoData.forks_count,
+        language: repoData.language || 'Unknown',
+        updatedAt: repoData.updated_at,
+        createdAt: repoData.created_at,
+        license: repoData.license?.name || 'None',
+        topics: repoData.topics || [],
+        discoverySource,
       };
 
       // Try to fetch marketplace manifest
+      const owner = repoData.owner?.login || repo.owner?.login;
+      const repoName = repoData.name || repo.name;
       try {
-        const manifest = await this.fetchManifest(repo.owner.login, repo.name);
+        const manifest = await this.fetchManifest(owner, repoName);
         if (manifest) {
           marketplace.manifest = manifest;
         }
       } catch {
-        console.log(`ℹ️ No manifest found for ${repo.full_name}`);
+        // No manifest found, that's OK
+      }
+
+      // Check for skills in the repository
+      try {
+        const skills = await this.detectSkills(owner, repoName);
+        if (skills.length > 0) {
+          marketplace.plugins = skills;
+        }
+      } catch {
+        // No skills found, that's OK
       }
 
       return marketplace;
-    } catch (err) {
-      console.error(`Error processing repository ${repo.full_name}:`, err);
+    } catch {
+      // Silently skip repos we can't process
       return null;
     }
   }
@@ -155,9 +333,12 @@ class MarketplaceScanner {
   private async fetchManifest(owner: string, repo: string): Promise<any | null> {
     const manifestPaths = [
       '.claude-plugin/marketplace.json',
+      '.claude-plugin/plugin.json',
+      '.claude/plugin.json',
       'marketplace.json',
       'claude-marketplace.json',
       'plugins/marketplace.json',
+      'plugin.json',
     ];
 
     for (const manifestPath of manifestPaths) {
@@ -178,6 +359,94 @@ class MarketplaceScanner {
     }
 
     return null;
+  }
+
+  private async detectSkills(owner: string, repo: string): Promise<any[]> {
+    const skills: any[] = [];
+
+    // Check for skills directory
+    const skillPaths = ['skills', '.claude/skills', 'src/skills'];
+
+    for (const skillPath of skillPaths) {
+      try {
+        const response = await this.octokit.repos.getContent({
+          owner,
+          repo,
+          path: skillPath,
+        });
+
+        if (Array.isArray(response.data)) {
+          for (const item of response.data) {
+            if (item.type === 'dir') {
+              // Check for SKILL.md in subdirectory
+              try {
+                const skillMdResponse = await this.octokit.repos.getContent({
+                  owner,
+                  repo,
+                  path: `${skillPath}/${item.name}/SKILL.md`,
+                });
+
+                if ('content' in skillMdResponse.data) {
+                  const content = Buffer.from(skillMdResponse.data.content, 'base64').toString('utf-8');
+                  skills.push({
+                    name: item.name,
+                    path: `${skillPath}/${item.name}`,
+                    hasSkillMd: true,
+                    description: this.extractSkillDescription(content),
+                  });
+                }
+              } catch {
+                // No SKILL.md in this subdirectory
+              }
+            }
+          }
+        }
+      } catch {
+        // Skills path doesn't exist
+      }
+    }
+
+    // Also check root for SKILL.md
+    try {
+      const response = await this.octokit.repos.getContent({
+        owner,
+        repo,
+        path: 'SKILL.md',
+      });
+
+      if ('content' in response.data) {
+        const content = Buffer.from(response.data.content, 'base64').toString('utf-8');
+        skills.push({
+          name: repo,
+          path: '.',
+          hasSkillMd: true,
+          description: this.extractSkillDescription(content),
+        });
+      }
+    } catch {
+      // No root SKILL.md
+    }
+
+    return skills;
+  }
+
+  private extractSkillDescription(skillMdContent: string): string {
+    // Extract first paragraph or description from SKILL.md
+    const lines = skillMdContent.split('\n');
+    let description = '';
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      // Skip headers and empty lines
+      if (trimmed.startsWith('#') || trimmed === '') continue;
+      // Skip frontmatter
+      if (trimmed === '---') continue;
+      // Get first non-empty, non-header line
+      description = trimmed.slice(0, 200);
+      break;
+    }
+
+    return description;
   }
 
   private delay(ms: number): Promise<void> {
