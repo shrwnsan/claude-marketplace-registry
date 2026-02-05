@@ -224,15 +224,17 @@ jobs:
           SCAN_TYPE: ${{ github.event.inputs.scan_type || 'full' }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          # Check if we need to rebase first (in case main moved forward)
-          git fetch origin main
-          git rebase origin/main
-
-          # Stage and commit changes
+          # Stage changes first (required before rebase)
           git add data/
           if [ -d "out" ]; then
             git add out/
           fi
+
+          # Stash staged changes, rebase, then restore
+          git stash --staged
+          git fetch origin main
+          git rebase origin/main
+          git stash pop
 
           # Use heredoc for clean commit message formatting
           git commit -F - <<EOF
