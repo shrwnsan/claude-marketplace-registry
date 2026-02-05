@@ -224,6 +224,9 @@ jobs:
           # Create commit
           git commit -m "🔄 Update marketplace data - $(date '+%Y-%m-%d %H:%M:%S') [skip ci]" || echo "No changes to commit"
 
+          # Pull rebase to handle any remote changes that occurred during workflow
+          git pull --rebase --autostash || echo "No remote changes to rebase"
+
           # Push changes
           git push
 
