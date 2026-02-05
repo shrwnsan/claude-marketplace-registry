@@ -344,6 +344,89 @@ The application aims to comply with:
 - **Threat Intelligence**: Regular threat briefings
 - **Compliance Checks**: Automated compliance verification
 
+## External Data Ingestion Threat Model
+
+### Overview
+
+The Scan Marketplaces workflow ingests `marketplace.json` and `plugin.json` files from external GitHub repositories. This creates a potential attack surface where malicious repository owners could inject harmful content.
+
+### Data Flow
+
+```
+External GitHub repos → Scan → Validate → Store as JSON → Display on website
+```
+
+### Attack Vectors & Defenses
+
+| Attack Vector | Risk Level | Defense | Location |
+|--------------|-----------|---------|----------|
+| **XSS in plugin description** | Medium | DOMPurify sanitization, HTML escaping | `src/utils/security.ts` |
+| **Malicious `<script>` tags** | Medium | Blocked by `validateJsonContent()` | `src/utils/security.ts` |
+| **SQL injection in fields** | Low | Pattern detection and sanitization | `src/utils/security.ts` |
+| **JSON bomb (DoS)** | Low | Max depth check (10), max size limit (1MB) | `src/utils/security.ts` |
+| **Path traversal in URLs** | Low | `validateGitHubUrl()` checks domain | `src/utils/security.ts` |
+| **Prompt injection** | Low | See below | N/A |
+
+### Prompt Injection Analysis
+
+**Current Risk: LOW**
+
+The ingested marketplace/plugin data is:
+1. Stored as static JSON files
+2. Displayed via React (auto-escapes by default)
+3. **Not processed by any LLM** in the current pipeline
+
+No AI/LLM currently reads or processes the marketplace descriptions, names, or other user-controlled fields from external repositories.
+
+### If AI Features Are Added
+
+If future features involve LLM processing of ingested data (e.g., AI-powered search, auto-generated summaries), additional defenses should be implemented:
+
+```typescript
+// Example: sanitize before sending to LLM
+function sanitizeForLLM(input: string): string {
+  return input
+    .replace(/ignore previous instructions/gi, '[FILTERED]')
+    .replace(/system:/gi, '[FILTERED]')
+    .replace(/\bprompt\b.*\binjection\b/gi, '[FILTERED]')
+    .substring(0, 500); // Limit length
+}
+```
+
+**Recommended controls for AI features:**
+1. **Input length limits** - Truncate descriptions before LLM processing
+2. **Prompt injection patterns** - Filter known attack patterns
+3. **Output validation** - Validate LLM responses before displaying
+4. **Sandboxing** - Use system prompts that instruct the LLM to treat data as untrusted
+
+### GitHub Actions Automation Security
+
+The automated data update workflow has additional security layers:
+
+| Layer | Protection |
+|-------|-----------|
+| Actor check | Only `github-actions[bot]` can trigger auto-merge |
+| Branch check | Only `automated/marketplace-data-update` branch |
+| File check | Rejects if any file outside `data/` or `out/` is modified |
+| Workflow protection | Changes to `.github/workflows/` require human review |
+
+**Location**: `.github/workflows/auto-merge-data-updates.yml`
+
+### Data Validation Pipeline
+
+All ingested data passes through multiple validation stages:
+
+1. **JSON parsing** with error handling (`src/utils/content-fetcher.ts`)
+2. **Schema validation** for required fields (`src/utils/schema-validation.ts`)
+3. **Security sanitization** for dangerous patterns (`src/utils/security.ts`)
+4. **URL validation** to ensure GitHub domain (`validateGitHubUrl()`)
+
+### Monitoring Recommendations
+
+1. **Log suspicious content** - Flag manifests containing security-filtered patterns
+2. **Review flagged repos** - Manual review before including in aggregator
+3. **Rate limit ingestion** - Prevent bulk injection attempts
+
 ## Future Security Enhancements
 
 ### Planned Improvements
@@ -370,6 +453,6 @@ For security-related questions or concerns:
 
 ---
 
-**Last Updated**: 2025-01-17
-**Version**: 1.0.0
+**Last Updated**: 2026-02-05
+**Version**: 1.1.0
 **Review Required**: Every 6 months or after major security incidents
