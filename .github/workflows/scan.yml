@@ -213,8 +213,13 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          # Add all changes
-          git add data/ out/
+          # Add data changes (always exists)
+          git add data/
+
+          # Add build output if it exists (for static export builds)
+          if [ -d "out" ]; then
+            git add out/
+          fi
 
           # Create commit
           git commit -m "🔄 Update marketplace data - $(date '+%Y-%m-%d %H:%M:%S') [skip ci]" || echo "No changes to commit"
