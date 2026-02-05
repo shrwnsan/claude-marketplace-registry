@@ -158,6 +158,11 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Validate generated data
+        run: npm run validate:data
+        env:
+          NODE_ENV: production
+
       - name: Build website with new data
         run: npm run build
 
