@@ -10,8 +10,6 @@
 import fs from 'fs';
 import path from 'path';
 
-/* eslint-disable no-console */
-
 interface ValidationResult {
   isValid: boolean;
   errors: string[];
@@ -105,18 +103,31 @@ class GeneratedDataValidator {
     const warnings: string[] = [];
 
     try {
-      // Check file exists and is readable
-      if (!fs.existsSync(filePath)) {
+      // Read file content and stats atomically to avoid TOCTOU race condition
+      let content: string;
+      let stats: fs.Stats;
+      try {
+        stats = fs.statSync(filePath);
+        content = fs.readFileSync(filePath, 'utf-8');
+      } catch (readError) {
+        const err = readError as NodeJS.ErrnoException;
+        if (err.code === 'ENOENT') {
+          return {
+            isValid: false,
+            errors: ['File does not exist'],
+            warnings: [],
+            file: relativePath,
+          };
+        }
         return {
           isValid: false,
-          errors: [`File does not exist`],
+          errors: [`Cannot read file: ${err.message}`],
           warnings: [],
           file: relativePath,
         };
       }
 
       // Check file size
-      const stats = fs.statSync(filePath);
       const maxSize = 10 * 1024 * 1024; // 10MB
       if (stats.size > maxSize) {
         errors.push(
@@ -127,10 +138,9 @@ class GeneratedDataValidator {
         errors.push('File is empty');
       }
 
-      // Read and parse JSON
+      // Parse JSON
       let data: unknown;
       try {
-        const content = fs.readFileSync(filePath, 'utf-8');
         data = JSON.parse(content);
       } catch (parseError) {
         errors.push(`Invalid JSON: ${(parseError as Error).message}`);

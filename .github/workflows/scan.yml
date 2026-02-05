@@ -234,7 +234,9 @@ jobs:
             git add out/
           fi
 
-          git commit -m "🔄 Update marketplace data [skip ci]
+          # Use heredoc for clean commit message formatting
+          git commit -F - <<EOF
+          🔄 Update marketplace data [skip ci]
 
           - Automated marketplace scan results
           - Plugin validation updates
@@ -245,7 +247,7 @@ jobs:
           - Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')
           - Trigger: ${EVENT_NAME}
           - Scan type: ${SCAN_TYPE}
-          "
+          EOF
 
           # Push to main
           git push origin HEAD:main
