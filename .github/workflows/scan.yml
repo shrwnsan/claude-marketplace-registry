@@ -207,55 +207,19 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit and push changes
+      - name: Create Pull Request for data update
+        id: create-pr
         if: steps.verify-changed-files.outputs.changed == 'true'
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-
-          # Stash changes, fetch and rebase before committing to handle any remote changes
-          # Only stash if there are actual changes (avoid no-op error)
-          git diff --quiet || git stash push -m "WIP: automated data update"
-
-          git fetch origin main
-          # Abort and exit 1 if rebase fails (don't continue on unreconciled history)
-          if ! git rebase origin/main; then
-            git rebase --abort
-            exit 1
-          fi
-
-          # Only pop if we actually stashed something
-          if git stash list | grep -q "WIP: automated data update"; then
-            git stash pop
-          fi
-
-          # Add data changes (always exists)
-          git add data/
-
-          # Add build output if it exists (for static export builds)
-          if [ -d "out" ]; then
-            git add out/
-          fi
-
-          # Create commit
-          git commit -m "🔄 Update marketplace data - $(date '+%Y-%m-%d %H:%M:%S') [skip ci]" || echo "No changes to commit"
-
-          # Push changes
-          git push
-
-  create-pull-request:
-    name: Create Update Pull Request
-    runs-on: ubuntu-latest
-    needs: [commit-changes]
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.commit_changes == 'true'
-
-    steps:
-      - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "🔄 Update marketplace data [skip ci]"
           title: "🔄 Automated Marketplace Data Update"
+          branch: automated/marketplace-data-update
+          delete-branch: true
+          add-paths: |
+            data/
+            out/
           body: |
             ## 🤖 Automated Marketplace Data Update
 
@@ -269,15 +233,17 @@ jobs:
 
             **Scan details:**
             - **Timestamp:** $(date '+%Y-%m-%d %H:%M:%S UTC')
-            - **Trigger:** Manual workflow dispatch
+            - **Trigger:** ${{ github.event_name }}
             - **Scan type:** ${{ github.event.inputs.scan_type || 'full' }}
-
-
-          branch: automated-data-update
-          delete-branch: true
           labels: |
             automated-update
             data-update
+
+      - name: Enable auto-merge
+        if: steps.create-pr.outputs.pull-request-number
+        run: gh pr merge --auto --squash "${{ steps.create-pr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   notify:
     name: Notify Scan Results

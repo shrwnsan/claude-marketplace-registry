@@ -1,0 +1,74 @@
+name: Auto-merge Data Updates
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-approve-data-updates:
+    name: Auto-approve Data Update PRs
+    runs-on: ubuntu-latest
+    if: |
+      github.actor == 'github-actions[bot]' &&
+      startsWith(github.head_ref, 'automated/marketplace-data-update')
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify only data files changed
+        id: verify-data-only
+        run: |
+          # Get list of changed files in the PR
+          CHANGED_FILES=$(gh pr diff ${{ github.event.pull_request.number }} --name-only)
+          
+          # Check if any non-data files are modified
+          NON_DATA_FILES=$(echo "$CHANGED_FILES" | grep -vE '^(data/|out/)' || true)
+          
+          if [ -n "$NON_DATA_FILES" ]; then
+            echo "❌ PR contains non-data files, skipping auto-approve:"
+            echo "$NON_DATA_FILES"
+            echo "safe=false" >> $GITHUB_OUTPUT
+          else
+            echo "✅ Only data files modified, safe to auto-approve"
+            echo "safe=true" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Approve PR
+        if: steps.verify-data-only.outputs.safe == 'true'
+        uses: hmarr/auto-approve-action@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add approval comment
+        if: steps.verify-data-only.outputs.safe == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: '✅ Auto-approved: This is an automated data update from the Scan Marketplaces workflow.\n\n**Security check passed:** Only data files (`data/`, `out/`) were modified.'
+            });
+
+      - name: Add rejection comment
+        if: steps.verify-data-only.outputs.safe == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: '⚠️ **Auto-approve skipped:** This PR contains non-data files and requires manual review.'
+            });
