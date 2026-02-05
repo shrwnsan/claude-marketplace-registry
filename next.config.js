@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 
 const isProd = process.env.NODE_ENV === 'production';
-const isAnalyzing = process.env.ANALYZE === 'true';
 
 const nextConfig = {
   // Image configuration
