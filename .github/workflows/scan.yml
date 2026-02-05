@@ -207,6 +207,16 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
+          # Build add-paths dynamically based on what exists
+          ADD_PATHS="data/"
+          if [ -d "out" ]; then
+            ADD_PATHS="${ADD_PATHS}
+          out/"
+          fi
+          echo "add_paths<<EOF" >> $GITHUB_OUTPUT
+          echo "$ADD_PATHS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
       - name: Create Pull Request for data update
         id: create-pr
         if: steps.verify-changed-files.outputs.changed == 'true'
@@ -217,9 +227,7 @@ jobs:
           title: "🔄 Automated Marketplace Data Update"
           branch: automated/marketplace-data-update
           delete-branch: true
-          add-paths: |
-            data/
-            out/
+          add-paths: ${{ steps.verify-changed-files.outputs.add_paths }}
           body: |
             ## 🤖 Automated Marketplace Data Update
 
