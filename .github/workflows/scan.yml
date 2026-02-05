@@ -207,51 +207,43 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
-          # Build add-paths dynamically based on what exists
-          ADD_PATHS="data/"
-          if [ -d "out" ]; then
-            ADD_PATHS="${ADD_PATHS}
-          out/"
-          fi
-          echo "add_paths<<EOF" >> $GITHUB_OUTPUT
-          echo "$ADD_PATHS" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-      - name: Create Pull Request for data update
-        id: create-pr
+      - name: Configure Git
         if: steps.verify-changed-files.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "🔄 Update marketplace data [skip ci]"
-          title: "🔄 Automated Marketplace Data Update"
-          branch: automated/marketplace-data-update
-          delete-branch: true
-          add-paths: ${{ steps.verify-changed-files.outputs.add_paths }}
-          body: |
-            ## 🤖 Automated Marketplace Data Update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-            This PR contains the latest marketplace data from the scanning pipeline.
-
-            **Changes included:**
-            - New marketplace discoveries
-            - Plugin validation results
-            - Generated data files
-            - Updated website build
-
-            **Scan details:**
-            - **Timestamp:** $(date '+%Y-%m-%d %H:%M:%S UTC')
-            - **Trigger:** ${{ github.event_name }}
-            - **Scan type:** ${{ github.event.inputs.scan_type || 'full' }}
-          labels: |
-            automated-update
-            data-update
-
-      - name: Enable auto-merge
-        if: steps.create-pr.outputs.pull-request-number
-        run: gh pr merge --auto --squash "${{ steps.create-pr.outputs.pull-request-number }}"
+      - name: Commit data changes directly to main
+        if: steps.verify-changed-files.outputs.changed == 'true'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SCAN_TYPE: ${{ github.event.inputs.scan_type || 'full' }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          # Check if we need to rebase first (in case main moved forward)
+          git fetch origin main
+          git rebase origin/main
+
+          # Stage and commit changes
+          git add data/
+          if [ -d "out" ]; then
+            git add out/
+          fi
+
+          git commit -m "🔄 Update marketplace data [skip ci]
+
+          - Automated marketplace scan results
+          - Plugin validation updates
+          - Generated data files
+          - Updated website build
+
+          Scan details:
+          - Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')
+          - Trigger: ${EVENT_NAME}
+          - Scan type: ${SCAN_TYPE}
+          "
+
+          # Push to main
+          git push origin HEAD:main
 
   notify:
     name: Notify Scan Results
