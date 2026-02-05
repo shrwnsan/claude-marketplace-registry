@@ -123,6 +123,14 @@ const eslintConfig = [
       },
     },
   },
+  // Scripts and API routes - console.log is expected for CLI output and server logging
+  // This must come AFTER the main TypeScript config to override rules
+  {
+    files: ['scripts/**/*.ts', 'scripts/**/*.js', 'pages/api/**/*.ts'],
+    rules: {
+      'no-console': 'off',
+    },
+  },
 ];
 
 export default eslintConfig;
