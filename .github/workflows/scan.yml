@@ -213,9 +213,21 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          # Fetch and rebase before committing to handle any remote changes
+          # Stash changes, fetch and rebase before committing to handle any remote changes
+          # Only stash if there are actual changes (avoid no-op error)
+          git diff --quiet || git stash push -m "WIP: automated data update"
+
           git fetch origin main
-          git rebase origin/main
+          # Abort and exit 1 if rebase fails (don't continue on unreconciled history)
+          if ! git rebase origin/main; then
+            git rebase --abort
+            exit 1
+          fi
+
+          # Only pop if we actually stashed something
+          if git stash list | grep -q "WIP: automated data update"; then
+            git stash pop
+          fi
 
           # Add data changes (always exists)
           git add data/
