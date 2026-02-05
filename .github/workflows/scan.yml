@@ -213,6 +213,10 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
+          # Fetch and rebase before committing to handle any remote changes
+          git fetch origin main
+          git rebase origin/main
+
           # Add data changes (always exists)
           git add data/
 
