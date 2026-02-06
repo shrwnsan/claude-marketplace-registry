@@ -49,10 +49,9 @@ jobs:
             const changedLines = additions + deletions;
 
             // Categorize changes
-            const docOnly = changedFiles.every(f => f.match(/\.(md|txt)$|docs\//i));
-            const hasConfigOnly = changedFiles.every(f => 
-              f.match(/package\.json|tsconfig|jest\.config|\.prettierrc|postcss\.config/) ||
-              f.match(/\.md$|docs\//)
+            const docOnly = changedFiles.every(f => f.match(/(\.(md|txt)$|^docs\/)/i));
+            const configOnly = changedFiles.every(f => 
+              f.match(/package\.json|tsconfig|jest\.config|\.prettierrc|postcss\.config|\.gitignore|\.eslintrc/i)
             );
             const hasCriticalPaths = changedFiles.some(f =>
               f.match(/^(src\/services|pages\/api|pages\/admin|scripts|\.github\/workflows)/)
@@ -66,7 +65,7 @@ jobs:
             const hasBreakingChange = prDetails.body?.match(/breaking change|major|breaking/i);
 
             core.setOutput('doc_only', docOnly);
-            core.setOutput('config_only', hasConfigOnly);
+            core.setOutput('config_only', configOnly);
             core.setOutput('has_critical_paths', hasCriticalPaths);
             core.setOutput('has_security', hasSecurity);
             core.setOutput('has_api', hasAPI);
