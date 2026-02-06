@@ -28,8 +28,14 @@ jobs:
         id: extract
         run: |
           if [ -f routing-analysis.json ]; then
-            TIER=$(jq -r '.tier' routing-analysis.json)
-            echo "tier=${TIER}" >> $GITHUB_OUTPUT
+            # Validate artifact contains required fields
+            if ! jq -e '.tier' routing-analysis.json > /dev/null 2>&1; then
+              echo "⚠️ Invalid routing-analysis.json structure, falling back to Tier 2"
+              echo "tier=2" >> $GITHUB_OUTPUT
+            else
+              TIER=$(jq -r '.tier' routing-analysis.json)
+              echo "tier=${TIER}" >> $GITHUB_OUTPUT
+            fi
           else
             echo "tier=2" >> $GITHUB_OUTPUT
           fi
