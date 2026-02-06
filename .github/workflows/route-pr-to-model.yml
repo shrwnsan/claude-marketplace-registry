@@ -155,7 +155,8 @@ jobs:
             "doc_only": ${{ steps.analyze.outputs.doc_only }},
             "has_critical_paths": ${{ steps.analyze.outputs.has_critical_paths }},
             "has_security": ${{ steps.analyze.outputs.has_security }},
-            "changed_lines": ${{ steps.analyze.outputs.changed_lines }}
+            "changed_lines": ${{ steps.analyze.outputs.changed_lines }},
+            "author_association": "${{ github.event.pull_request.author_association }}"
           }
           EOF
 

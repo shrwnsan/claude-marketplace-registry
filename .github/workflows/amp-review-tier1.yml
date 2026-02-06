@@ -46,19 +46,24 @@ jobs:
             echo "reason=Default to Tier 2" >> $GITHUB_OUTPUT
           fi
 
-          # Extract PR details from workflow_run context
+          # Extract author_association from routing artifact (workflow_run.pull_requests[] doesn't carry it)
+          if [ -f routing-analysis.json ]; then
+            AUTHOR_ASSOCIATION=$(jq -r '.author_association // "NONE"' routing-analysis.json)
+          else
+            AUTHOR_ASSOCIATION="NONE"
+          fi
+          echo "author_association=${AUTHOR_ASSOCIATION}" >> $GITHUB_OUTPUT
+
+          # Extract PR number and head SHA from workflow_run context
           PR_COUNT=$(jq -r '.workflow_run.pull_requests | length' "$GITHUB_EVENT_PATH")
           if [ "$PR_COUNT" -gt 0 ]; then
             PR_NUMBER=$(jq -r '.workflow_run.pull_requests[0].number' "$GITHUB_EVENT_PATH")
-            AUTHOR_ASSOCIATION=$(jq -r '.workflow_run.pull_requests[0].author_association // "NONE"' "$GITHUB_EVENT_PATH")
             HEAD_SHA=$(jq -r '.workflow_run.head_sha // ""' "$GITHUB_EVENT_PATH")
             echo "pr_number=${PR_NUMBER}" >> $GITHUB_OUTPUT
-            echo "author_association=${AUTHOR_ASSOCIATION}" >> $GITHUB_OUTPUT
             echo "head_sha=${HEAD_SHA}" >> $GITHUB_OUTPUT
           else
             echo "⚠️ No pull requests found in workflow_run event"
             echo "pr_number=0" >> $GITHUB_OUTPUT
-            echo "author_association=NONE" >> $GITHUB_OUTPUT
             echo "head_sha=" >> $GITHUB_OUTPUT
           fi
 
@@ -119,7 +124,12 @@ jobs:
           script: |
             const tier = '${{ needs.get-tier.outputs.tier }}';
             const reason = '${{ needs.get-tier.outputs.reason }}';
-            const prNumber = '${{ needs.get-tier.outputs.pr_number }}';
+            const prNumber = parseInt('${{ needs.get-tier.outputs.pr_number }}', 10);
+
+            if (!prNumber || prNumber === 0) {
+              console.log('No PR number available, skipping comment');
+              return;
+            }
 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
@@ -145,7 +155,12 @@ jobs:
           script: |
             const tier = '${{ needs.get-tier.outputs.tier }}';
             const reason = '${{ needs.get-tier.outputs.reason }}';
-            const prNumber = '${{ needs.get-tier.outputs.pr_number }}';
+            const prNumber = parseInt('${{ needs.get-tier.outputs.pr_number }}', 10);
+
+            if (!prNumber || prNumber === 0) {
+              console.log('No PR number available, skipping comment');
+              return;
+            }
 
             let reviewType = '';
             if (tier === '2') {
