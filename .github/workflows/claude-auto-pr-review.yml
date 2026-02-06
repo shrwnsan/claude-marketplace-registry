@@ -78,6 +78,7 @@ jobs:
     needs: get-tier
     # Only run for Tier 2 (standard) or fallback tier 2
     if: |
+      needs.get-tier.result == 'success' &&
       (needs.get-tier.outputs.tier == '2' || needs.get-tier.outputs.tier == '') &&
       (needs.get-tier.outputs.author_association == 'OWNER' ||
        needs.get-tier.outputs.author_association == 'MEMBER' ||
@@ -107,7 +108,13 @@ jobs:
         with:
           script: |
             const prNumber = parseInt('${{ needs.get-tier.outputs.pr_number }}', 10);
-            const headBranch = '${{ github.event.workflow_run.head_branch }}';
+
+            if (!prNumber || prNumber === 0) {
+              console.log('No PR number available, skipping CI status check');
+              core.setOutput('status', 'unknown');
+              core.setOutput('url', '');
+              return;
+            }
 
             // Get the PR to find the head ref
             const { data: pr } = await github.rest.pulls.get({
@@ -124,7 +131,9 @@ jobs:
               per_page: 1
             });
 
-            const latestRun = runs.data.workflow_runs[0];
+            const latestRun = runs.data.workflow_runs && runs.data.workflow_runs.length > 0
+              ? runs.data.workflow_runs[0]
+              : null;
             const status = latestRun
               ? (latestRun.status === 'completed' ? latestRun.conclusion : 'pending')
               : 'not_run';

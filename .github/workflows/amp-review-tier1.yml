@@ -21,6 +21,7 @@ jobs:
       pr_number: ${{ steps.extract.outputs.pr_number }}
       author_association: ${{ steps.extract.outputs.author_association }}
       head_sha: ${{ steps.extract.outputs.head_sha }}
+      is_draft: ${{ steps.extract.outputs.is_draft }}
     steps:
       - name: Download routing artifacts
         uses: actions/download-artifact@v4
@@ -56,17 +57,20 @@ jobs:
           fi
           echo "author_association=${AUTHOR_ASSOCIATION}" >> $GITHUB_OUTPUT
 
-          # Extract PR number and head SHA from workflow_run context
+          # Extract PR details from workflow_run context
           PR_COUNT=$(jq -r '.workflow_run.pull_requests | length' "$GITHUB_EVENT_PATH")
           if [ "$PR_COUNT" -gt 0 ]; then
             PR_NUMBER=$(jq -r '.workflow_run.pull_requests[0].number' "$GITHUB_EVENT_PATH")
             HEAD_SHA=$(jq -r '.workflow_run.head_sha // ""' "$GITHUB_EVENT_PATH")
+            IS_DRAFT=$(jq -r '.workflow_run.pull_requests[0].draft // "false"' "$GITHUB_EVENT_PATH")
             echo "pr_number=${PR_NUMBER}" >> $GITHUB_OUTPUT
             echo "head_sha=${HEAD_SHA}" >> $GITHUB_OUTPUT
+            echo "is_draft=${IS_DRAFT}" >> $GITHUB_OUTPUT
           else
             echo "⚠️ No pull requests found in workflow_run event"
             echo "pr_number=0" >> $GITHUB_OUTPUT
             echo "head_sha=" >> $GITHUB_OUTPUT
+            echo "is_draft=false" >> $GITHUB_OUTPUT
           fi
 
   amp-review:
@@ -74,6 +78,7 @@ jobs:
     needs: get-tier
     # Only run for Tier 1 (fast triage)
     if: |
+      needs.get-tier.result == 'success' &&
       needs.get-tier.outputs.tier == '1' &&
       (needs.get-tier.outputs.author_association == 'OWNER' ||
        needs.get-tier.outputs.author_association == 'MEMBER' ||
@@ -145,6 +150,7 @@ jobs:
     needs: get-tier
     # Post a comment if PR doesn't qualify for Tier 1
     if: |
+      needs.get-tier.result == 'success' &&
       needs.get-tier.outputs.tier != '1' &&
       (needs.get-tier.outputs.author_association == 'OWNER' ||
        needs.get-tier.outputs.author_association == 'MEMBER' ||

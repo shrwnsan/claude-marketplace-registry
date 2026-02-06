@@ -73,8 +73,8 @@ jobs:
   droid-review:
     needs: get-tier
     if: |
+      needs.get-tier.result == 'success' &&
       needs.get-tier.outputs.tier == '3' &&
-      github.event.workflow_run.conclusion == 'success' &&
       needs.get-tier.outputs.is_draft == 'false' &&
       (needs.get-tier.outputs.author_association == 'OWNER' ||
        needs.get-tier.outputs.author_association == 'MEMBER' ||
