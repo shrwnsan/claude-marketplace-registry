@@ -12,6 +12,8 @@ permissions:
 
 jobs:
   get-tier:
+    # Skip if not triggered by a PR workflow (e.g., Scan Marketplaces)
+    if: github.event.workflow_run.event == 'pull_request'
     runs-on: ubuntu-latest
     outputs:
       tier: ${{ steps.extract.outputs.tier }}
@@ -86,11 +88,11 @@ jobs:
           fetch-depth: 0
           ref: ${{ needs.get-tier.outputs.head_sha }}
 
-      - name: Run Amp Code Review (Tier 1: Fast Triage)
+      - name: Run Amp Code Review - Tier 1 Fast Triage
         uses: ampcode/action@v1
         with:
           mode: rush
-          instructions: >-
+          instructions: |
             ## TIER 1 CODE REVIEW (Fast Triage)
 
             This is a lightweight review for documentation-only or minimal changes.

@@ -14,9 +14,15 @@ permissions:
 
 jobs:
   get-tier:
+    # Skip if not triggered by a PR workflow (e.g., Scan Marketplaces)
+    if: github.event.workflow_run.event == 'pull_request'
     runs-on: ubuntu-latest
     outputs:
       tier: ${{ steps.extract.outputs.tier }}
+      pr_number: ${{ steps.extract.outputs.pr_number }}
+      author_association: ${{ steps.extract.outputs.author_association }}
+      head_sha: ${{ steps.extract.outputs.head_sha }}
+      is_draft: ${{ steps.extract.outputs.is_draft }}
     steps:
       - name: Download routing artifacts
         uses: actions/download-artifact@v4
@@ -40,15 +46,39 @@ jobs:
             echo "tier=2" >> $GITHUB_OUTPUT
           fi
 
+          # Extract author_association from routing artifact (workflow_run.pull_requests[] doesn't carry it)
+          if [ -f routing-analysis.json ]; then
+            AUTHOR_ASSOCIATION=$(jq -r '.author_association // "NONE"' routing-analysis.json)
+          else
+            AUTHOR_ASSOCIATION="NONE"
+          fi
+          echo "author_association=${AUTHOR_ASSOCIATION}" >> $GITHUB_OUTPUT
+
+          # Extract PR details from workflow_run context
+          PR_COUNT=$(jq -r '.workflow_run.pull_requests | length' "$GITHUB_EVENT_PATH")
+          if [ "$PR_COUNT" -gt 0 ]; then
+            PR_NUMBER=$(jq -r '.workflow_run.pull_requests[0].number' "$GITHUB_EVENT_PATH")
+            HEAD_SHA=$(jq -r '.workflow_run.head_sha // ""' "$GITHUB_EVENT_PATH")
+            IS_DRAFT=$(jq -r '.workflow_run.pull_requests[0].draft // "false"' "$GITHUB_EVENT_PATH")
+            echo "pr_number=${PR_NUMBER}" >> $GITHUB_OUTPUT
+            echo "head_sha=${HEAD_SHA}" >> $GITHUB_OUTPUT
+            echo "is_draft=${IS_DRAFT}" >> $GITHUB_OUTPUT
+          else
+            echo "⚠️ No pull requests found in workflow_run event"
+            echo "pr_number=0" >> $GITHUB_OUTPUT
+            echo "head_sha=" >> $GITHUB_OUTPUT
+            echo "is_draft=false" >> $GITHUB_OUTPUT
+          fi
+
   droid-review:
     needs: get-tier
     if: |
       needs.get-tier.outputs.tier == '3' &&
       github.event.workflow_run.conclusion == 'success' &&
-      github.event.pull_request.draft == false &&
-      (github.event.pull_request.author_association == 'OWNER' ||
-       github.event.pull_request.author_association == 'MEMBER' ||
-       github.event.pull_request.author_association == 'COLLABORATOR')
+      needs.get-tier.outputs.is_draft == 'false' &&
+      (needs.get-tier.outputs.author_association == 'OWNER' ||
+       needs.get-tier.outputs.author_association == 'MEMBER' ||
+       needs.get-tier.outputs.author_association == 'COLLABORATOR')
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -56,10 +86,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 20
+          ref: ${{ needs.get-tier.outputs.head_sha }}
 
-      - name: Run Droid Auto Review (Tier 3: Deep Analysis)
-        continue-on-error: true
+      - name: Run Droid Auto Review - Tier 3 Deep Analysis
         uses: Factory-AI/droid-action@v1
+        continue-on-error: true
         with:
           factory_api_key: ${{ secrets.FACTORY_API_KEY }}
           automatic_review: true
