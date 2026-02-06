@@ -1,46 +1,63 @@
-name: Droid Auto Review
+name: Droid Auto Review (Tier 3 - Deep Analysis)
 
 on:
-  pull_request:
-    types: [opened, ready_for_review, reopened]
-    branches: [main]
-    paths:
-      # Only trigger on critical code changes
-      - '.github/workflows/**'
-      - 'pages/api/**'
-      - 'pages/admin/**'
-      - 'scripts/**'
-      - 'src/services/**'
-      - 'src/lib/**'
-      - 'src/contexts/**'
-      - 'next.config.js'
-      - 'package.json'
-      # Ignore documentation and minor changes
-      - '!**/*.md'
-      - '!docs/**'
+  workflow_run:
+    workflows: [Route PR to Model]
+    types: [completed]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+  actions: read
 
 jobs:
+  get-tier:
+    runs-on: ubuntu-latest
+    outputs:
+      tier: ${{ steps.extract.outputs.tier }}
+    steps:
+      - name: Download routing artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: routing-analysis
+          github-token: ${{ github.token }}
+
+      - name: Extract tier
+        id: extract
+        run: |
+          if [ -f routing-analysis.json ]; then
+            # Validate artifact contains required fields
+            if ! jq -e '.tier' routing-analysis.json > /dev/null 2>&1; then
+              echo "⚠️ Invalid routing-analysis.json structure, falling back to Tier 2"
+              echo "tier=2" >> $GITHUB_OUTPUT
+            else
+              TIER=$(jq -r '.tier' routing-analysis.json)
+              echo "tier=${TIER}" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "tier=2" >> $GITHUB_OUTPUT
+          fi
+
   droid-review:
+    needs: get-tier
     if: |
+      needs.get-tier.outputs.tier == '3' &&
+      github.event.workflow_run.conclusion == 'success' &&
       github.event.pull_request.draft == false &&
       (github.event.pull_request.author_association == 'OWNER' ||
        github.event.pull_request.author_association == 'MEMBER' ||
        github.event.pull_request.author_association == 'COLLABORATOR')
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    permissions:
-      contents: write
-      pull-requests: write
-      issues: write
-      id-token: write
-      actions: read
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
           fetch-depth: 20
 
-      - name: Run Droid Auto Review
+      - name: Run Droid Auto Review (Tier 3: Deep Analysis)
         continue-on-error: true
         uses: Factory-AI/droid-action@v1
         with:

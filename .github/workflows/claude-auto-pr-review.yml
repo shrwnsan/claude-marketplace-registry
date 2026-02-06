@@ -1,0 +1,140 @@
+name: Claude Auto PR Review (Tier 2 - Standard)
+
+on:
+  workflow_run:
+    workflows: [Route PR to Model]
+    types: [completed]
+
+permissions:
+  contents: read
+  pull-requests: write
+  id-token: write
+
+jobs:
+  get-tier:
+    runs-on: ubuntu-latest
+    outputs:
+      tier: ${{ steps.extract.outputs.tier }}
+      reason: ${{ steps.extract.outputs.reason }}
+    steps:
+      - name: Download routing artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: routing-analysis
+          github-token: ${{ github.token }}
+
+      - name: Extract tier and reason
+        id: extract
+        run: |
+          if [ -f routing-analysis.json ]; then
+            # Validate artifact contains required fields
+            if ! jq -e '.tier and .reason' routing-analysis.json > /dev/null 2>&1; then
+              echo "⚠️ Invalid routing-analysis.json structure, falling back to Tier 2"
+              echo "tier=2" >> $GITHUB_OUTPUT
+              echo "reason=Artifact validation failed, defaulting to Tier 2" >> $GITHUB_OUTPUT
+            else
+              TIER=$(jq -r '.tier' routing-analysis.json)
+              REASON=$(jq -r '.reason' routing-analysis.json)
+              echo "tier=${TIER}" >> $GITHUB_OUTPUT
+              echo "reason=${REASON}" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "tier=2" >> $GITHUB_OUTPUT
+            echo "reason=Default to Tier 2" >> $GITHUB_OUTPUT
+          fi
+
+  auto-review:
+    name: Claude Code Review (Tier 2)
+    needs: get-tier
+    # Only run for Tier 2 (standard) or fallback tier 2
+    if: |
+      (needs.get-tier.outputs.tier == '2' || needs.get-tier.outputs.tier == '') &&
+      (github.event.pull_request.author_association == 'OWNER' ||
+       github.event.pull_request.author_association == 'MEMBER' ||
+       github.event.pull_request.author_association == 'COLLABORATOR')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check CI workflow status
+        id: ci-status
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runs = await github.rest.actions.listWorkflowRuns({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'ci.yml',
+              branch: context.payload.pull_request.head.ref,
+              per_page: 1
+            });
+
+            const latestRun = runs.data.workflow_runs[0];
+            const status = latestRun
+              ? (latestRun.status === 'completed' ? latestRun.conclusion : 'pending')
+              : 'not_run';
+
+            core.setOutput('status', status);
+            core.setOutput('url', latestRun?.html_url || '');
+
+      - name: Run Code Review
+        if: steps.ci-status.outputs.status == 'success'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
+          claude_args: |
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(node:*)"
+            --max-turns 10
+          settings: |
+            {
+              "instructions": "You are a code reviewer for a PR that changes critical paths.\n\nTier: 2 (Standard complexity)\nReason: ${{ needs.get-tier.outputs.reason }}\nCI Status: \"${{ steps.ci-status.outputs.status }}\"\nCI Workflow: ${{ steps.ci-status.outputs.url }}\n\nCI Status Handling:\n- 'failure': CRITICAL ISSUE - tests failing, must fix before approval\n- 'not_run': WARNING - CI hasn't run yet, recommend running tests first\n- 'pending': CI still running, review code but tests may fail\n- 'success': All tests passed, proceed with review\n\nAnalyze this PR for:\n\n1. **CI Test Results** (check above - handle based on status)\n2. **Security Issues** (OWASP Top 10, auth flaws, injection vulnerabilities)\n3. **Code Quality** (type safety, error handling, performance)\n4. **Best Practices** (framework patterns, project conventions)\n5. **Breaking Changes** (API changes, migration requirements)\n\nFormat your response as:\n\n## 🚨 Critical Issues (must fix)\n## ⚠️ Medium/Low Issues (should fix)\n## ✅ Positive Findings\n## 📋 Recommendation\n\nFinal line must be one of:\n- `APPROVED`\n- `NEEDS_CHANGES`\n- `REVIEW_REQUIRED`",
+              "env": {
+                "NODE_ENV": "test",
+                "CI": "true"
+              }
+            }
+        env:
+          # Using api.z.ai proxy for cost optimization and rate limiting
+          ANTHROPIC_BASE_URL: https://api.z.ai/api/anthropic
+
+      - name: Post Skip Notice
+        if: |
+          github.event.pull_request.draft ||
+          steps.ci-status.outputs.status != 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const isDraft = context.payload.pull_request.draft;
+            const ciStatus = '${{ steps.ci-status.outputs.status }}' || '';
+            const tier = '${{ needs.get-tier.outputs.tier }}';
+            const reason = '${{ needs.get-tier.outputs.reason }}';
+
+            let skipReason = '';
+            if (isDraft) {
+              skipReason = 'This is a draft PR.';
+            } else if (ciStatus !== 'success') {
+              skipReason = `CI has not passed yet (status: ${ciStatus || 'unknown'}).`;
+            }
+
+            if (skipReason) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                body: `### ℹ️ Automated Review Skipped\n\n${skipReason}\n\n**PR Analysis:**\n- Tier: ${tier}\n- Reason: ${reason}\n\nIf you need a code review, mention \`@claude\` in a comment.`
+              });
+            }

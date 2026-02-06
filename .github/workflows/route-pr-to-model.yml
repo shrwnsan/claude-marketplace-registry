@@ -1,0 +1,167 @@
+name: Route PR to Model
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  analyze:
+    name: Analyze PR Complexity
+    runs-on: ubuntu-latest
+    outputs:
+      tier: ${{ steps.calculate.outputs.tier }}
+      reason: ${{ steps.calculate.outputs.reason }}
+      complexity_score: ${{ steps.calculate.outputs.complexity_score }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Analyze PR
+        id: analyze
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const { data: prDetails } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pr.number
+            });
+
+            // Get changed files
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pr.number,
+              per_page: 100
+            });
+
+            const changedFiles = files.map(f => f.filename);
+            const additions = prDetails.additions || 0;
+            const deletions = prDetails.deletions || 0;
+            const changedLines = additions + deletions;
+
+            // Categorize changes
+            const docOnly = changedFiles.every(f => f.match(/(\.(md|txt)$|^docs\/)/i));
+            const configOnly = changedFiles.every(f => 
+              f.match(/package\.json|tsconfig|jest\.config|\.prettierrc|postcss\.config|\.gitignore|\.eslintrc/i)
+            );
+            const hasCriticalPaths = changedFiles.some(f =>
+              f.match(/^(src\/services|pages\/api|pages\/admin|scripts|\.github\/workflows)/)
+            );
+            const hasSecurity = changedFiles.some(f =>
+              f.match(/auth|permission|secret|token|key|credential/i)
+            ) || prDetails.body?.match(/security|vulnerability|cve|breach|exploit/i);
+            const hasAPI = changedFiles.some(f =>
+              f.match(/pages\/api|src\/services|src\/types/)
+            );
+            const hasBreakingChange = prDetails.body?.match(/breaking change|major|breaking/i);
+
+            core.setOutput('doc_only', docOnly);
+            core.setOutput('config_only', configOnly);
+            core.setOutput('has_critical_paths', hasCriticalPaths);
+            core.setOutput('has_security', hasSecurity);
+            core.setOutput('has_api', hasAPI);
+            core.setOutput('has_breaking_change', hasBreakingChange);
+            core.setOutput('changed_lines', changedLines);
+            core.setOutput('changed_files', changedFiles.join('\n'));
+
+      - name: Calculate tier
+        id: calculate
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const docOnly = ${{ steps.analyze.outputs.doc_only }};
+            const configOnly = ${{ steps.analyze.outputs.config_only }};
+            const hasCriticalPaths = ${{ steps.analyze.outputs.has_critical_paths }};
+            const hasSecurity = ${{ steps.analyze.outputs.has_security }};
+            const hasAPI = ${{ steps.analyze.outputs.has_api }};
+            const hasBreakingChange = ${{ steps.analyze.outputs.has_breaking_change }};
+            const changedLines = ${{ steps.analyze.outputs.changed_lines }};
+
+            let tier = 2; // Default: standard testing (GPT-5.2 or GLM 4.7)
+            let reason = 'Standard complexity';
+            let complexity = 5;
+
+            // TIER 1: Fast triage (docs, minimal config, <50 lines)
+            if (docOnly) {
+              tier = 1;
+              reason = 'Documentation only';
+              complexity = 1;
+            } else if (configOnly && changedLines < 50) {
+              tier = 1;
+              reason = 'Config changes only, minimal';
+              complexity = 2;
+            }
+
+            // TIER 3: Deep analysis (security, breaking, critical paths)
+            if (hasSecurity && hasCriticalPaths) {
+              tier = 3;
+              reason = 'Security-critical paths touched';
+              complexity = 9;
+            } else if (hasBreakingChange && hasAPI) {
+              tier = 3;
+              reason = 'Breaking API changes';
+              complexity = 8;
+            } else if (hasCriticalPaths && changedLines > 500) {
+              tier = 3;
+              reason = 'Large critical path refactor';
+              complexity = 8;
+            }
+
+            // TIER 2 (elevated from default)
+            if (!docOnly && hasCriticalPaths && changedLines < 100) {
+              tier = 2;
+              reason = 'Focused critical path change';
+              complexity = 6;
+            } else if (hasSecurity && !hasCriticalPaths) {
+              tier = 2;
+              reason = 'Security consideration, standard scope';
+              complexity = 7;
+            } else if (hasAPI && changedLines > 200) {
+              tier = 2;
+              reason = 'Substantial API changes';
+              complexity = 6;
+            }
+
+            core.setOutput('tier', tier);
+            core.setOutput('reason', reason);
+            core.setOutput('complexity_score', complexity);
+
+            console.log(`\n📊 PR Analysis:`);
+            console.log(`   Tier: ${tier}`);
+            console.log(`   Reason: ${reason}`);
+            console.log(`   Complexity: ${complexity}/10`);
+            console.log(`   Lines changed: ${changedLines}`);
+            console.log(`   Doc only: ${docOnly}`);
+            console.log(`   Critical paths: ${hasCriticalPaths}`);
+            console.log(`   Security: ${hasSecurity}`);
+
+      - name: Save routing analysis
+        run: |
+          mkdir -p /tmp/routing
+          cat > /tmp/routing/routing-analysis.json <<EOF
+          {
+            "tier": ${{ steps.calculate.outputs.tier }},
+            "reason": "${{ steps.calculate.outputs.reason }}",
+            "complexity_score": ${{ steps.calculate.outputs.complexity_score }},
+            "doc_only": ${{ steps.analyze.outputs.doc_only }},
+            "has_critical_paths": ${{ steps.analyze.outputs.has_critical_paths }},
+            "has_security": ${{ steps.analyze.outputs.has_security }},
+            "changed_lines": ${{ steps.analyze.outputs.changed_lines }}
+          }
+          EOF
+
+      - name: Upload routing analysis
+        uses: actions/upload-artifact@v4
+        with:
+          name: routing-analysis
+          path: /tmp/routing/routing-analysis.json
+          retention-days: 1
