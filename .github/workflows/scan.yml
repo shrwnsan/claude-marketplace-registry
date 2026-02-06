@@ -266,7 +266,10 @@ jobs:
           echo "Created PR: $PR_URL"
 
           # Enable auto-merge directly (works when using PAT)
-          gh pr merge "$PR_URL" --auto --squash --delete-branch
+          # Note: --delete-branch is omitted because it can fail with --auto
+          # (branch deletion only happens at merge time). Branch cleanup is
+          # handled by the auto-merge-data-updates workflow instead.
+          gh pr merge "$PR_URL" --auto --squash
 
   notify:
     name: Notify Scan Results
