@@ -78,12 +78,12 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const docOnly = ${{ steps.analyze.outputs.doc_only }};
-            const configOnly = ${{ steps.analyze.outputs.config_only }};
-            const hasCriticalPaths = ${{ steps.analyze.outputs.has_critical_paths }};
-            const hasSecurity = ${{ steps.analyze.outputs.has_security }};
-            const hasAPI = ${{ steps.analyze.outputs.has_api }};
-            const hasBreakingChange = ${{ steps.analyze.outputs.has_breaking_change }};
+            const docOnly = '${{ steps.analyze.outputs.doc_only }}' === 'true';
+            const configOnly = '${{ steps.analyze.outputs.config_only }}' === 'true';
+            const hasCriticalPaths = '${{ steps.analyze.outputs.has_critical_paths }}' === 'true';
+            const hasSecurity = '${{ steps.analyze.outputs.has_security }}' === 'true';
+            const hasAPI = '${{ steps.analyze.outputs.has_api }}' === 'true';
+            const hasBreakingChange = '${{ steps.analyze.outputs.has_breaking_change }}' === 'true';
             const changedLines = ${{ steps.analyze.outputs.changed_lines }};
 
             let tier = 2; // Default: standard testing (GPT-5.2 or GLM 4.7)
