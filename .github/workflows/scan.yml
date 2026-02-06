@@ -186,7 +186,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DATA_UPDATES_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -203,10 +203,10 @@ jobs:
           name: generated-data
           path: ./
 
-      - name: Check for changes
+      - name: Check for data changes
         id: verify-changed-files
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
+          if ! git diff --quiet -- data/ || [ -n "$(git ls-files --others --exclude-standard data/)" ]; then
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             echo "changed=false" >> $GITHUB_OUTPUT
@@ -218,30 +218,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Commit data changes directly to main
+      - name: Create data update PR
         if: steps.verify-changed-files.outputs.changed == 'true'
         env:
           SCAN_TYPE: ${{ github.event.inputs.scan_type || 'full' }}
           EVENT_NAME: ${{ github.event_name }}
+          GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT || secrets.GITHUB_TOKEN }}
+          HUSKY: '0'
         run: |
-          # Stage changes first (required before rebase)
+          BRANCH_NAME="automated/marketplace-data-update-$(date '+%Y%m%d-%H%M%S')"
+          git checkout -b "$BRANCH_NAME"
+
           git add data/
           if [ -d "out" ]; then
             git add out/
           fi
 
-          git fetch origin main
-          if ! git diff --cached --quiet; then
-            git stash --staged
-            git rebase origin/main
-            git stash pop
-          else
-            git rebase origin/main
-          fi
-
-          # Use heredoc for clean commit message formatting
-          git commit -F - <<EOF
-          🔄 Update marketplace data [skip ci]
+          git commit -m "🔄 Update marketplace data
 
           - Automated marketplace scan results
           - Plugin validation updates
@@ -251,11 +244,32 @@ jobs:
           Scan details:
           - Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')
           - Trigger: ${EVENT_NAME}
-          - Scan type: ${SCAN_TYPE}
-          EOF
+          - Scan type: ${SCAN_TYPE}"
 
-          # Push to main
-          git push origin HEAD:main
+          git push origin "$BRANCH_NAME"
+
+          PR_URL=$(gh pr create \
+            --title "🔄 Automated marketplace data update" \
+            --body "## Automated Data Update
+
+          This PR was created by the Scan Marketplaces workflow.
+
+          **Scan details:**
+          - Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')
+          - Trigger: ${EVENT_NAME}
+          - Scan type: ${SCAN_TYPE}
+
+          This PR will be auto-approved if only data files are modified." \
+            --base main \
+            --head "$BRANCH_NAME")
+
+          echo "Created PR: $PR_URL"
+
+          # Enable auto-merge directly (works when using PAT)
+          # Note: --delete-branch is omitted because it can fail with --auto
+          # (branch deletion only happens at merge time). Branch cleanup is
+          # handled by the auto-merge-data-updates workflow instead.
+          gh pr merge "$PR_URL" --auto --squash
 
   notify:
     name: Notify Scan Results
