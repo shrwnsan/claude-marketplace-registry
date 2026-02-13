@@ -229,7 +229,8 @@ jobs:
         if: steps.create-pr.outputs.pull-request-number
         env:
           PR_NUMBER: ${{ steps.create-pr.outputs.pull-request-number }}
-        run: echo "Created/updated PR #${PR_NUMBER}"
+        run: |
+          echo "Created/updated PR number: ${PR_NUMBER}"
 
   notify:
     name: Notify Scan Results
