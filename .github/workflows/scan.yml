@@ -218,12 +218,47 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Create data update PR
+      - name: Check for PAT availability
         if: steps.verify-changed-files.outputs.changed == 'true'
+        id: check-pat
+        run: |
+          if [ -n "${{ secrets.DATA_UPDATES_PAT }}" ]; then
+            echo "has_pat=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_pat=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit data directly to main
+        if: steps.verify-changed-files.outputs.changed == 'true' && steps.check-pat.outputs.has_pat != 'true'
         env:
           SCAN_TYPE: ${{ github.event.inputs.scan_type || 'full' }}
           EVENT_NAME: ${{ github.event_name }}
-          GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT || secrets.GITHUB_TOKEN }}
+          HUSKY: '0'
+        run: |
+          git add data/
+          if [ -d "out" ]; then
+            git add out/
+          fi
+
+          git commit -m "🔄 Update marketplace data
+
+          - Automated marketplace scan results
+          - Plugin validation updates
+          - Generated data files
+
+          Scan details:
+          - Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')
+          - Trigger: ${EVENT_NAME}
+          - Scan type: ${SCAN_TYPE}"
+
+          git push origin main
+
+      - name: Create data update PR
+        if: steps.verify-changed-files.outputs.changed == 'true' && steps.check-pat.outputs.has_pat == 'true'
+        env:
+          SCAN_TYPE: ${{ github.event.inputs.scan_type || 'full' }}
+          EVENT_NAME: ${{ github.event_name }}
+          GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
           HUSKY: '0'
         run: |
           BRANCH_NAME="automated/marketplace-data-update-$(date '+%Y%m%d-%H%M%S')"
@@ -239,7 +274,6 @@ jobs:
           - Automated marketplace scan results
           - Plugin validation updates
           - Generated data files
-          - Updated website build
 
           Scan details:
           - Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')
@@ -265,10 +299,6 @@ jobs:
 
           echo "Created PR: $PR_URL"
 
-          # Enable auto-merge directly (works when using PAT)
-          # Note: --delete-branch is omitted because it can fail with --auto
-          # (branch deletion only happens at merge time). Branch cleanup is
-          # handled by the auto-merge-data-updates workflow instead.
           gh pr merge "$PR_URL" --auto --squash
 
   notify:
