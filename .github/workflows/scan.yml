@@ -186,16 +186,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.DATA_UPDATES_PAT || secrets.GITHUB_TOKEN }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
 
       - name: Download generated data
         uses: actions/download-artifact@v4
@@ -203,103 +193,41 @@ jobs:
           name: generated-data
           path: ./
 
-      - name: Check for data changes
-        id: verify-changed-files
-        run: |
-          if ! git diff --quiet -- data/ || [ -n "$(git ls-files --others --exclude-standard data/)" ]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Configure Git
-        if: steps.verify-changed-files.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Check for PAT availability
-        if: steps.verify-changed-files.outputs.changed == 'true'
-        id: check-pat
-        run: |
-          if [ -n "${{ secrets.DATA_UPDATES_PAT }}" ]; then
-            echo "has_pat=true" >> $GITHUB_OUTPUT
-          else
-            echo "has_pat=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Commit data directly to main
-        if: steps.verify-changed-files.outputs.changed == 'true' && steps.check-pat.outputs.has_pat != 'true'
-        env:
-          SCAN_TYPE: ${{ github.event.inputs.scan_type || 'full' }}
-          EVENT_NAME: ${{ github.event_name }}
-          HUSKY: '0'
-        run: |
-          git add data/
-          if [ -d "out" ]; then
-            git add out/
-          fi
-
-          git commit -m "🔄 Update marketplace data
-
-          - Automated marketplace scan results
-          - Plugin validation updates
-          - Generated data files
-
-          Scan details:
-          - Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')
-          - Trigger: ${EVENT_NAME}
-          - Scan type: ${SCAN_TYPE}"
-
-          git push origin main
-
       - name: Create data update PR
-        if: steps.verify-changed-files.outputs.changed == 'true' && steps.check-pat.outputs.has_pat == 'true'
-        env:
-          SCAN_TYPE: ${{ github.event.inputs.scan_type || 'full' }}
-          EVENT_NAME: ${{ github.event_name }}
-          GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
-          HUSKY: '0'
-        run: |
-          BRANCH_NAME="automated/marketplace-data-update-$(date '+%Y%m%d-%H%M%S')"
-          git checkout -b "$BRANCH_NAME"
+        uses: peter-evans/create-pull-request@v8
+        id: create-pr
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: |
+            🔄 Update marketplace data
 
-          git add data/
-          if [ -d "out" ]; then
-            git add out/
-          fi
+            - Automated marketplace scan results
+            - Plugin validation updates
+            - Generated data files
 
-          git commit -m "🔄 Update marketplace data
+            Trigger: ${{ github.event_name }}
+            Scan type: ${{ github.event.inputs.scan_type || 'full' }}
+          branch: automated/marketplace-data-update
+          delete-branch: true
+          title: "🔄 Automated marketplace data update"
+          body: |
+            ## Automated Data Update
 
-          - Automated marketplace scan results
-          - Plugin validation updates
-          - Generated data files
+            This PR was created by the Scan Marketplaces workflow.
 
-          Scan details:
-          - Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')
-          - Trigger: ${EVENT_NAME}
-          - Scan type: ${SCAN_TYPE}"
+            **Scan details:**
+            - Trigger: `${{ github.event_name }}`
+            - Scan type: `${{ github.event.inputs.scan_type || 'full' }}`
 
-          git push origin "$BRANCH_NAME"
+            This PR will be auto-approved if only data files are modified.
+          add-paths: |
+            data/
+          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
 
-          PR_URL=$(gh pr create \
-            --title "🔄 Automated marketplace data update" \
-            --body "## Automated Data Update
-
-          This PR was created by the Scan Marketplaces workflow.
-
-          **Scan details:**
-          - Timestamp: $(date '+%Y-%m-%d %H:%M:%S UTC')
-          - Trigger: ${EVENT_NAME}
-          - Scan type: ${SCAN_TYPE}
-
-          This PR will be auto-approved if only data files are modified." \
-            --base main \
-            --head "$BRANCH_NAME")
-
-          echo "Created PR: $PR_URL"
-
-          gh pr merge "$PR_URL" --auto --squash
+      - name: Summary
+        if: steps.create-pr.outputs.pull-request-number
+        run: echo "Created/updated PR #${{ steps.create-pr.outputs.pull-request-number }}"
 
   notify:
     name: Notify Scan Results
