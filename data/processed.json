@@ -1,0 +1,60 @@
+[
+  {
+    "id": "1061953414",
+    "name": "skills",
+    "description": "Public repository for Agent Skills",
+    "url": "https://github.com/anthropics/skills",
+    "stars": 69229,
+    "forks": 6964,
+    "language": "Python",
+    "updatedAt": "2026-02-13T15:19:39Z",
+    "topics": [
+      "agent-skills"
+    ],
+    "hasManifest": true
+  },
+  {
+    "id": "1078079172",
+    "name": "awesome-claude-skills",
+    "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "stars": 34509,
+    "forks": 3330,
+    "language": "Python",
+    "updatedAt": "2026-02-13T15:19:13Z",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "antigravity",
+      "automation",
+      "claude",
+      "claude-code",
+      "codex",
+      "composio",
+      "cursor",
+      "gemini-cli",
+      "mcp",
+      "rube",
+      "saas",
+      "skill",
+      "workflow-automation"
+    ],
+    "hasManifest": true
+  },
+  {
+    "id": "1100776768",
+    "name": "claude-plugins-official",
+    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "stars": 7348,
+    "forks": 698,
+    "language": "Shell",
+    "updatedAt": "2026-02-13T15:17:04Z",
+    "topics": [
+      "claude-code",
+      "mcp",
+      "skills"
+    ],
+    "hasManifest": true
+  }
+]
