@@ -11,7 +11,7 @@
 [![Scan](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/scan.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/scan.yml)
 [![Auto-merge](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/auto-merge-data-updates.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/auto-merge-data-updates.yml)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20.x+-green?logo=node.js&logoColor=white)](https://nodejs.org/)
@@ -40,7 +40,7 @@ Every day at midnight UTC, GitHub Actions scans the GitHub API for Claude Code p
 └──────────────────────────────────────────────────────────────────┘
 ```
 
-The entire pipeline is self-healing: if the scan finds new data, it creates a PR, verifies only data files changed, auto-approves, and merges — no human intervention needed. Code changes always require manual review.
+Data updates happen automatically — the pipeline creates PRs, verifies they only modify data files, and merges them without manual work. Code changes always require human review.
 
 ## Features
 
@@ -127,7 +127,7 @@ MIT — see [LICENSE](./LICENSE).
 
 <div align="center">
 
-**Made with ❤️ by the Claude Community**
+**Made with ❤️ for the Claude Community**
 
 [⭐ Star this repository](https://github.com/shrwnsan/claude-marketplace-registry) · [🐛 Report issues](https://github.com/shrwnsan/claude-marketplace-registry/issues) · [💬 Suggest features](https://github.com/shrwnsan/claude-marketplace-registry/discussions)
 
