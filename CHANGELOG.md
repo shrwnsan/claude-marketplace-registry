@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Empty marketplace data issue - scanner now finds real Claude Code ecosystem repositories
 - Search query updated from fictional `claude-plugin marketplace.json` to actual patterns
+- Scan workflow auto-merge pipeline now works end-to-end (PRs #74–#82)
+- Auto-merge workflow now triggers correctly using `DATA_UPDATES_PAT` instead of `GITHUB_TOKEN` (resolves GitHub's recursive workflow prevention)
+- Removed stale `github-actions[bot]` author check from auto-merge — branch name + data-only file verification remain as security gates
 
 ### Changed
 - Scanner now uses code search, topic search, and name-based search strategies

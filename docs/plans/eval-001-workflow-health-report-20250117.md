@@ -82,10 +82,10 @@ STATUS_CHECK_URL: https://claude-marketplace.github.io/aggregator/api/status
 The workflow is checking health endpoints at `claude-marketplace.github.io/aggregator`, but this repository is `claude-marketplace-registry`. These URLs likely don't exist or are incorrect.
 
 **Recommended Actions**:
-- [ ] Verify correct health check URLs for this repository
-- [ ] Update or disable health endpoint checks
-- [ ] Consider disabling until correct endpoints are available
-- [ ] Alternative: Check if these are meant for a different repository
+- [x] Verify correct health check URLs for this repository — confirmed checking wrong repository URLs
+- [x] Update or disable health endpoint checks — workflow disabled, then workflow file removed entirely
+- [x] Consider disabling until correct endpoints are available — workflow removed (file no longer exists)
+- [x] Alternative: Check if these are meant for a different repository — confirmed, was for `claude-marketplace.github.io/aggregator`, not this repo
 
 ---
 
@@ -111,10 +111,10 @@ npm run generate:data
 ```
 
 **Recommended Actions**:
-- [ ] Verify npm scripts exist in package.json
-- [ ] Check GitHub token permissions
-- [ ] Review scan logs for specific error messages
-- [ ] Test scripts locally: `npm run scan:full`
+- [x] Verify npm scripts exist in package.json — all scripts verified and working
+- [x] Check GitHub token permissions — resolved; uses `DATA_UPDATES_PAT` for PR creation
+- [x] Review scan logs for specific error messages — prebuild circular dependency was root cause (fixed in eval-001-workflow-fixes-summary)
+- [x] Test scripts locally: `npm run scan:full` — verified working; full E2E pipeline now operational (scan → PR → auto-approve → auto-merge)
 
 ---
 
@@ -145,10 +145,10 @@ These workflows all use `github-script@v7` and require specific permissions. The
 ```
 
 **Recommended Actions**:
-- [ ] Review workflow permissions in repository settings
-- [ ] Standardize Node.js versions across all workflows
-- [ ] Check github-script action version compatibility
-- [ ] Verify secrets are properly configured
+- [x] Review workflow permissions in repository settings — permissions configured correctly
+- [x] Standardize Node.js versions across all workflows — all standardized to Node 20
+- [x] Check github-script action version compatibility — YAML parsing issues were root cause, not action version
+- [x] Verify secrets are properly configured — `DATA_UPDATES_PAT` added for scan workflow auto-merge
 
 ---
 

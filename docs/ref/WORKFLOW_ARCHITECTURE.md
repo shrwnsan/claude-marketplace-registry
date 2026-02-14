@@ -33,6 +33,7 @@ graph TB
     subgraph "Data Processing"
         SCAN[scan.yml]
         BACKUP[backup.yml]
+        AUTOMERGE[auto-merge-data-updates.yml]
     end
 
     subgraph "Monitoring & Analysis"
@@ -60,8 +61,8 @@ graph TB
     PR --> TRIAGE
 
     %% Scheduled triggers
-    SCHEDULE_6H[Every 6 hours] --> SCAN
-    SCHEDULE_6H --> BACKUP
+    SCHEDULE_MIDNIGHT[Daily midnight UTC] --> SCAN
+    SCHEDULE_6H[Every 6 hours] --> BACKUP
     SCHEDULE_DAILY[Daily 2:00 UTC] --> SEC
     SCHEDULE_5MIN[Every 5 min] --> MONITOR
     SCHEDULE_WEEKLY[Weekly Sundays] --> PERF
@@ -83,6 +84,8 @@ graph TB
     %% Workflow dependencies
     CI -->|success| DEPLOY
     SCAN -->|data updated| DEPLOY
+    PR --> AUTOMERGE
+    SCAN -->|PR created| AUTOMERGE
     SEC -.->|vulnerability found| DEPS
 
     %% Style
@@ -93,7 +96,7 @@ graph TB
     classDef community fill:#9C27B0,stroke:#6A1B9A,color:#fff
 
     class CI,DEPLOY cicd
-    class SCAN,BACKUP data
+    class SCAN,BACKUP,AUTOMERGE data
     class MONITOR,PERF monitor
     class SEC,DEPS sec
     class TRIAGE,CLAUDE,OPENCODE community
@@ -206,6 +209,27 @@ graph TB
     SCAN -.->|data updated| BACKUP
 ```
 
+#### Scan → Auto-Merge Flow
+
+The following diagram shows the end-to-end automation flow from marketplace scanning to automatic merge. The scan workflow creates a PR using `DATA_UPDATES_PAT` (a Personal Access Token) because events triggered by the built-in `GITHUB_TOKEN` do not fire downstream workflows such as `pull_request`. Using a PAT ensures the auto-merge workflow is triggered when the PR is created.
+
+```mermaid
+sequenceDiagram
+    participant Scan as scan.yml
+    participant GH as GitHub
+    participant AutoMerge as auto-merge-data-updates.yml
+    participant CI as CI Checks
+
+    Scan->>GH: Create PR (using DATA_UPDATES_PAT)
+    GH->>AutoMerge: pull_request event fires
+    AutoMerge->>AutoMerge: Verify only data files changed
+    AutoMerge->>GH: Approve PR
+    AutoMerge->>GH: Enable auto-merge (squash)
+    GH->>CI: Run status checks
+    CI->>GH: Checks pass
+    GH->>GH: Squash merge into main
+```
+
 **Purpose**: Automated data collection and backup
 
 **Key Features**:
@@ -216,7 +240,7 @@ graph TB
 - Incremental updates with smart caching
 
 **Triggers**:
-- Scheduled every 6 hours (`0 */6 * * *`)
+- Scheduled daily at midnight UTC (`0 0 * * *`)
 - Manual dispatch with options (full/marketplaces/validation/data)
 
 ---
@@ -421,6 +445,7 @@ graph TB
     subgraph "Time-Based Triggers"
         direction TB
         MIN_5["Every 5 Minutes"]
+        MIDNIGHT["Daily Midnight UTC"]
         HOUR_6["Every 6 Hours"]
         DAY_2["Daily 2:00 UTC"]
         WEEK_SUN["Weekly Sunday 3:00 UTC"]
@@ -437,7 +462,7 @@ graph TB
     end
 
     MIN_5 --> MONITOR
-    HOUR_6 --> SCAN
+    MIDNIGHT --> SCAN
     HOUR_6 --> BACKUP
     DAY_2 --> SEC
     WEEK_SUN --> PERF
@@ -707,6 +732,7 @@ graph TB
 | backup.yml | ✅ | | | | | | | |
 | claude-code.yml | ✅ | ✅ | ✅ | | | ✅ | ✅ | ✅ |
 | opencode.yml | ✅ | ✅ | | | | ✅ | ✅ | ✅ |
+| auto-merge-data-updates.yml | ✅ | ✅ | | | | | ✅ | |
 
 ### Secrets Usage
 
@@ -714,6 +740,7 @@ graph TB
 graph TB
     subgraph "Required Secrets"
         GITHUB_TOKEN[GITHUB_TOKEN<br/>Built-in]
+        DATA_PAT[DATA_UPDATES_PAT<br/>PR creation for scan]
     end
 
     subgraph "Optional Secrets"
@@ -727,6 +754,7 @@ graph TB
 
     subgraph "Workflows"
         ALL[All Workflows] --> GITHUB_TOKEN
+        SCAN_WF[scan.yml] --> DATA_PAT
         CI[ci.yml] --> CODECOV
         CLAUDE[claude-code.yml] --> ANTHROPIC
         OPENCODE[opencode.yml] --> OPENCODE
@@ -768,7 +796,7 @@ gantt
 |----------|------------------|-----------|---------------|
 | ci.yml | 3-5 min | On push/PR | Variable |
 | deploy.yml | 2-3 min | On push to main | Variable |
-| scan.yml | 5-10 min | Every 6h | ~20 min |
+| scan.yml | 5-10 min | Daily at midnight UTC | ~10 min |
 | backup.yml | 1-2 min | Every 6h | ~4 min |
 | security.yml | 2-4 min | Daily | ~3 min |
 | monitoring.yml | 1-2 min | Every 5 min | ~288 min |
@@ -832,6 +860,6 @@ gh run rerun <run-id>
 
 ---
 
-**Last Updated**: 2025-01-17
-**Version**: 1.0.0
+**Last Updated**: 2026-02-15
+**Version**: 1.1.0
 **Maintained By**: Infrastructure Team

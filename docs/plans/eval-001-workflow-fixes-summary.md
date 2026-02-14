@@ -1,7 +1,7 @@
 # Workflow Fixes Summary
 
 **Date**: 2025-01-17
-**Last Updated**: 2025-01-19
+**Last Updated**: 2026-02-15
 **Related Eval**: [eval-001-workflow-health-report-20250117.md](eval-001-workflow-health-report-20250117.md)
 **Status**: 🟢 Complete - 8 of 8 critical issues resolved
 
@@ -403,14 +403,15 @@ body: '## 🚀 Deployment\n\n' +
 
 | Workflow | Status | Notes |
 |----------|--------|-------|
-| CI | 🟢 Healthy | Recently recovered |
+| CI | 🟢 Healthy | Stable |
 | Deploy | 🟢 Healthy | 100% success rate |
-| Scan | 🟢 Fixed | Prebuild hook removed, verified working |
-| Backup | 🟢 Healthy | 100% success rate |
-| Monitoring | ⚫ Disabled | Pending endpoint verification |
+| Scan | 🟢 Fixed | Full E2E automation working: scan → PR → auto-approve → auto-merge (PR #82-#83) |
+| Auto-merge | 🟢 Working | Triggers on scan PRs via `DATA_UPDATES_PAT`; verifies data-only changes before approving |
+| Monitoring | ⚫ Removed | Workflow file deleted; was checking incorrect endpoints for wrong repository |
+| Backup | ⚫ Removed | Workflow file deleted; functionality not needed for static site |
 | Security | 🟢 Fixed | YAML parsing resolved, all jobs pass |
 | Performance | 🟢 Fixed | YAML parsing resolved, all 3 jobs pass (Lighthouse with continue-on-error) |
-| Issue Triage | 🟢 Fixed | YAML parsing resolved, string concatenation applied |
+| Issue Triage | ⚫ Disabled | Disabled manually; YAML parsing was fixed but workflow disabled |
 
 **All critical workflow issues resolved!** 🎉
 
@@ -428,10 +429,10 @@ body: '## 🚀 Deployment\n\n' +
    - Add badges to README
    - Implement alerting for failures
 
-6. **[ ] Document runbook**
-   - Create troubleshooting guide
-   - Document common issues and fixes
-   - Add recovery procedures
+6. **[x] Document runbook** ✅
+   - `docs/guides/MAINTENANCE_GUIDE.md` covers operational procedures
+   - `docs/ref/WORKFLOW_ARCHITECTURE.md` covers workflow documentation
+   - `docs/guides/deployment-runbook.md` covers deployment procedures
 
 ---
 
@@ -453,12 +454,15 @@ body: '## 🚀 Deployment\n\n' +
 
 **All critical issues resolved!** ✅
 
+**2026-02-15 update:** Scan → auto-merge E2E pipeline now fully working (PRs #82-#83). Uses `DATA_UPDATES_PAT` to create PRs that trigger the auto-merge workflow. `monitoring.yml` and `backup.yml` have been removed (files no longer exist). `issue-triage.yml` disabled manually.
+
 Optional future work:
-- Re-enable monitoring.yml when correct endpoints are available
-- Consider implementing workflow testing and status dashboard
+- Consider implementing workflow testing (actionlint) and status dashboard
+- Re-enable and configure Lighthouse in performance.yml before launch
+- Rotate `DATA_UPDATES_PAT` before expiry (90-day token)
 
 ---
 
-**Last Updated**: 2025-01-19
+**Last Updated**: 2026-02-15
 **Status**: 🟢 All critical workflow issues resolved
 **Completion**: 8 of 8 workflows fixed (100%)

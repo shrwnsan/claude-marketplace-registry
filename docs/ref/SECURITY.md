@@ -405,10 +405,10 @@ The automated data update workflow has additional security layers:
 
 | Layer | Protection |
 |-------|-----------|
-| Actor check | Only `github-actions[bot]` can trigger auto-merge |
 | Branch check | Only `automated/marketplace-data-update` branch |
 | File check | Rejects if any file outside `data/` or `out/` is modified |
 | Workflow protection | Changes to `.github/workflows/` require human review |
+| Authentication | Uses fine-grained `DATA_UPDATES_PAT` with scoped repository permissions |
 
 **Location**: `.github/workflows/auto-merge-data-updates.yml`
 
