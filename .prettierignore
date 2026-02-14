@@ -7,6 +7,9 @@ out/
 dist/
 build/
 
+# Generated data (committed by scan workflow)
+data/
+
 # Generated files
 *.log
 .DS_Store
