@@ -21,10 +21,10 @@ Your project now includes a comprehensive CI/CD pipeline with the following comp
    - Deployment status notifications
 
 3. **Marketplace Scanning** (`.github/workflows/scan.yml`)
-   - Scheduled scanning every 6 hours
-   - Modular pipeline (scan → validate → generate → commit)
+   - Daily scanning at midnight UTC
+   - Modular pipeline (scan → validate → generate → PR)
    - Manual dispatch with configurable options
-   - Automatic data updates and PR creation
+   - Auto-merge via `auto-merge-data-updates.yml` for data-only changes
 
 ### 🛡️ Security & Quality
 
