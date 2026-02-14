@@ -197,7 +197,7 @@ jobs:
         uses: peter-evans/create-pull-request@v8
         id: create-pr
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DATA_UPDATES_PAT }}
           commit-message: |
             🔄 Update marketplace data
 
