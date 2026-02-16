@@ -1,8 +1,9 @@
 # Data Strategy Improvement PRD
 
-> **Status:** Phase 1 Partial | Phase 2 Not Started | Phase 3 Not Started | Phase 4 Not Started
+> **Status:** Phase 1 Partial | Phase 2 In Progress | Phase 3 Not Started | Phase 4 Not Started
 > **Maps to:** PRD-001 Phase 1 & 2 (Data Pipeline, Quality Scoring)
-> **Last Updated:** 2026-02-15
+> **Design Doc:** [2026-02-16-plugin-discovery-design.md](./2026-02-16-plugin-discovery-design.md)
+> **Last Updated:** 2026-02-16
 
 ## 📋 Executive Summary
 
@@ -239,13 +240,21 @@ interface ErrorHandling {
 
 ### Phase 2: Plugin Discovery (Week 3-4)
 **Goal**: Comprehensive plugin indexing from marketplaces
-**Status**: ❌ Not Started
+**Status**: 🔄 In Progress
+**Design**: See [2026-02-16-plugin-discovery-design.md](./2026-02-16-plugin-discovery-design.md)
+
+#### Scope Refinement (2026-02-16)
+Per official Claude Code spec:
+- Plugins MUST have `.claude-plugin/plugin.json` - no fallback mechanisms
+- Marketplaces MUST have `.claude-plugin/marketplace.json`
+- Skills discovery is future work (out of scope for this phase)
 
 #### Sprint 2.1: Plugin Scanning Engine
 - [x] **Implement marketplace manifest parsing** for plugin arrays ✅ (`parseManifestToPlugins` in ecosystem-data.ts)
-- [ ] **Add repository file system scanning** for plugin discovery ❌
+- [x] **Tighten manifest paths to official spec only** ✅ (design approved, implementation pending)
+- [ ] ~~Add repository file system scanning~~ **REMOVED** - not per spec
 - [x] **Create plugin validation pipeline** with schema enforcement ✅ (`validatePluginManifest` in schema-validation.ts)
-- [ ] **Build plugin metadata extraction** from multiple sources ❌
+- [x] **Build plugin metadata extraction** from manifest sources ✅ (design approved)
 
 #### Sprint 2.2: Plugin Data Integration
 - [ ] **Update data pipeline** to process plugin data ❌
@@ -254,10 +263,11 @@ interface ErrorHandling {
 - [ ] **Implement plugin search and filtering** ❌
 
 **Deliverables**:
-- New `plugin-discovery.ts` scanner ❌
+- New `plugin-discovery.ts` scanner 🔄 (designed, implementation pending)
+- Updated `scan-marketplaces.ts` with official paths only 🔄 (designed, implementation pending)
 - Updated `generate-data.ts` for plugin processing ❌
 - Plugin API endpoints with search/filter capabilities ❌
-- Index of 300+ plugins across 80+ marketplaces ❌ (currently 0 plugins indexed)
+- Index of plugins from spec-compliant marketplaces ❌ (currently 0 plugins indexed)
 
 ### Phase 3: Optimization (Week 5-6)
 **Goal**: Performance, reliability, and automation
@@ -614,15 +624,21 @@ interface DataQualityMetrics {
 |------|--------|-------|
 | Incremental Updates | ❌ | Full scan on each run |
 | Change Detection | ❌ | Not implemented |
-| Plugin Discovery | ❌ | Manifest parsing exists but 0 plugins indexed |
+| Plugin Discovery | 🔄 | Design approved, implementation pending |
 | API Optimization | 🔄 | Rate limiting done, no caching |
 | Data Quality | ✅ | Schema validation implemented |
 
 | Phase | Status | Completion |
 |-------|--------|------------|
 | Phase 1: Foundation | 🔄 | ~30% (caching partial) |
-| Phase 2: Plugin Discovery | ❌ | ~10% (validation only) |
+| Phase 2: Plugin Discovery | 🔄 | ~25% (design done, implementation pending) |
 | Phase 3: Optimization | 🔄 | ~40% (daily scans, health checks) |
 | Phase 4: Production Readiness | ❌ | ~20% (deployment automation) |
 
-**Overall Progress**: ~25% Complete
+**Overall Progress**: ~30% Complete
+
+### Design Decisions (2026-02-16)
+- **Manifest paths**: Tightened to official spec only (`.claude-plugin/marketplace.json`, `.claude-plugin/plugin.json`)
+- **No fallback discovery**: Plugins MUST have manifest per Claude Code spec
+- **Skills out of scope**: Agent Skills discovery deferred to future phase
+- See [design doc](./2026-02-16-plugin-discovery-design.md) for full details
