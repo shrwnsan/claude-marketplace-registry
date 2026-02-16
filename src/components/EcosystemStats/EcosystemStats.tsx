@@ -409,6 +409,7 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
             {/* Growth Trends */}
             {componentConfig.growthTrends.enabled && (
               <section
+                id='trend-analysis'
                 className='py-12 bg-gray-50 dark:bg-gray-800/50 rounded-xl'
                 aria-labelledby='growth-heading'
               >
