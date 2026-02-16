@@ -62,6 +62,12 @@ interface SearchStrategy {
   type: 'code' | 'repo';
 }
 
+// Official manifest paths per Claude Code spec
+// https://docs.anthropic.com/en/docs/claude-code/plugins
+const MANIFEST_PATHS = {
+  marketplace: '.claude-plugin/marketplace.json',
+} as const;
+
 interface Marketplace {
   id: string;
   name: string;
@@ -351,31 +357,20 @@ class MarketplaceScanner {
   }
 
   private async fetchManifest(owner: string, repo: string): Promise<any | null> {
-    const manifestPaths = [
-      '.claude-plugin/marketplace.json',
-      '.claude-plugin/plugin.json',
-      '.claude/plugin.json',
-      'marketplace.json',
-      'claude-marketplace.json',
-      'plugins/marketplace.json',
-      'plugin.json',
-    ];
+    // Only check official marketplace manifest path per Claude Code spec
+    try {
+      const response = await this.octokit.repos.getContent({
+        owner,
+        repo,
+        path: MANIFEST_PATHS.marketplace,
+      });
 
-    for (const manifestPath of manifestPaths) {
-      try {
-        const response = await this.octokit.repos.getContent({
-          owner,
-          repo,
-          path: manifestPath,
-        });
-
-        if ('content' in response.data) {
-          const content = Buffer.from(response.data.content, 'base64').toString('utf-8');
-          return JSON.parse(content);
-        }
-      } catch {
-        // Continue to next path
+      if ('content' in response.data) {
+        const content = Buffer.from(response.data.content, 'base64').toString('utf-8');
+        return JSON.parse(content);
       }
+    } catch {
+      // No manifest found - repo is not a spec-compliant marketplace
     }
 
     return null;
