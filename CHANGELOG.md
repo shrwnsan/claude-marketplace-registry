@@ -7,21 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
-- Multi-strategy marketplace scanner with 11 search strategies for discovering Claude Code plugins
-- Known marketplaces seed list (anthropics/skills, ComposioHQ/awesome-claude-skills, etc.)
-- Skill detection for SKILL.md files across repository structures
+## [0.4.0-beta.1] - 2026-02-18
 
-### Fixed
-- Empty marketplace data issue - scanner now finds real Claude Code ecosystem repositories
-- Search query updated from fictional `claude-plugin marketplace.json` to actual patterns
-- Scan workflow auto-merge pipeline now works end-to-end (PRs #74–#82)
-- Auto-merge workflow now triggers correctly using `DATA_UPDATES_PAT` instead of `GITHUB_TOKEN` (resolves GitHub's recursive workflow prevention)
-- Removed stale `github-actions[bot]` author check from auto-merge — branch name + data-only file verification remain as security gates
+### Added
+- Plugin discovery module for extracting plugins from marketplace manifests
+- Spec-compliant manifest path handling (`.claude-plugin/marketplace.json` only)
+- Plugin data generation (`plugins.json`) from marketplace scans
+- Design document for plugin discovery (PRD-003 Phase 2)
+- Implementation plan for plugin discovery integration
 
 ### Changed
-- Scanner now uses code search, topic search, and name-based search strategies
-- Seeded initial data with 5 verified Claude Code marketplaces
+- Tightened manifest paths to official Claude Code spec
+- Integrated plugin discovery into scan workflow
 
 ## [0.3.0-beta.1] - 2025-01-16
 

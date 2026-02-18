@@ -4,7 +4,7 @@
 
 ![Claude Marketplace Aggregator](https://img.shields.io/badge/Claude-Marketplace_Aggregator-blue?style=for-the-badge&logo=anthropic)
 
-[![Version](https://img.shields.io/badge/version-v0.3.0--beta.1-blue)](https://github.com/shrwnsan/claude-marketplace-registry/releases/tag/v0.3.0-beta.1)
+[![Version](https://img.shields.io/badge/version-v0.4.0--beta.1-blue)](https://github.com/shrwnsan/claude-marketplace-registry/releases/tag/v0.4.0-beta.1)
 [![Changelog](https://img.shields.io/badge/changelog-keep--a--changelog-05A2E4?logo=gitbook)](./CHANGELOG.md)
 [![CI](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/ci.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/ci.yml)
 [![Deploy](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/deploy.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/deploy.yml)
