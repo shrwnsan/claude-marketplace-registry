@@ -15,6 +15,7 @@ config({ path: envPath });
 import { Octokit } from '@octokit/rest';
 import fs from 'fs';
 import path from 'path';
+import { createPluginDiscovery, MarketplaceInfo, DiscoveredPlugin } from './plugin-discovery';
 
 // Known Claude Code marketplaces and skill repositories to seed the scanner
 const KNOWN_MARKETPLACES = [
@@ -88,9 +89,11 @@ interface Marketplace {
 class MarketplaceScanner {
   private octokit: Octokit;
   private outputDir: string;
+  private pluginsDir: string;
   private searchQuery: string;
   private maxResults: number;
   private useMultiStrategy: boolean;
+  private pluginDiscovery: ReturnType<typeof createPluginDiscovery>;
 
   constructor() {
     // Initialize GitHub client
@@ -100,14 +103,21 @@ class MarketplaceScanner {
     });
 
     this.outputDir = path.join(process.cwd(), 'data', 'marketplaces');
+    this.pluginsDir = path.join(process.cwd(), 'data', 'plugins');
     this.searchQuery = process.env.SEARCH_QUERY || '';
     this.maxResults = parseInt(process.env.SEARCH_RESULTS_LIMIT || '100');
     // Use multi-strategy by default unless a specific query is provided
     this.useMultiStrategy = !process.env.SEARCH_QUERY;
 
-    // Ensure output directory exists
+    // Initialize plugin discovery
+    this.pluginDiscovery = createPluginDiscovery(this.octokit);
+
+    // Ensure output directories exist
     if (!fs.existsSync(this.outputDir)) {
       fs.mkdirSync(this.outputDir, { recursive: true });
+    }
+    if (!fs.existsSync(this.pluginsDir)) {
+      fs.mkdirSync(this.pluginsDir, { recursive: true });
     }
   }
 
@@ -564,6 +574,116 @@ class MarketplaceScanner {
 
     return stats;
   }
+
+  /**
+   * Discover plugins from all marketplaces with manifests
+   */
+  async discoverPluginsFromMarketplaces(marketplaces: Marketplace[]): Promise<DiscoveredPlugin[]> {
+    console.log('\n🔌 Discovering plugins from marketplaces...');
+
+    const allPlugins: DiscoveredPlugin[] = [];
+    const marketplacesWithManifests = marketplaces.filter((mp) => mp.manifest);
+
+    console.log(`Found ${marketplacesWithManifests.length} marketplaces with manifests`);
+
+    for (const marketplace of marketplacesWithManifests) {
+      // Extract owner from URL
+      const urlParts = marketplace.url.split('/');
+      const owner = urlParts[urlParts.length - 2];
+      const repo = urlParts[urlParts.length - 1];
+
+      console.log(`\n📦 Processing marketplace: ${owner}/${repo}`);
+
+      const marketplaceInfo: MarketplaceInfo = {
+        owner,
+        repo,
+        id: marketplace.id,
+        name: marketplace.name,
+        url: marketplace.url,
+        manifest: marketplace.manifest,
+      };
+
+      try {
+        const plugins = await this.pluginDiscovery.discoverPlugins(marketplaceInfo);
+        allPlugins.push(...plugins);
+      } catch (error: any) {
+        console.error(`  ❌ Failed to discover plugins: ${error.message}`);
+      }
+
+      // Rate limiting
+      await this.delay(500);
+    }
+
+    return allPlugins;
+  }
+
+  /**
+   * Save plugin discovery results to various output files
+   */
+  async savePluginResults(plugins: DiscoveredPlugin[]): Promise<void> {
+    console.log('\n💾 Saving plugin discovery results...');
+
+    const { valid, invalid } = this.pluginDiscovery.validatePlugins(plugins);
+
+    // Save raw data (all plugins, valid and invalid)
+    const rawDataPath = path.join(this.pluginsDir, 'raw.json');
+    fs.writeFileSync(rawDataPath, JSON.stringify(plugins, null, 2));
+    console.log(`  ✅ Saved raw data: ${rawDataPath}`);
+
+    // Save valid plugins
+    const validPluginsPath = path.join(this.pluginsDir, 'valid-plugins.json');
+    fs.writeFileSync(validPluginsPath, JSON.stringify(valid, null, 2));
+    console.log(`  ✅ Saved valid plugins: ${validPluginsPath}`);
+
+    // Generate UI-ready plugin data
+    const publicDataDir = path.join(process.cwd(), 'public', 'data');
+    if (!fs.existsSync(publicDataDir)) {
+      fs.mkdirSync(publicDataDir, { recursive: true });
+    }
+
+    // UI-ready format with metadata
+    const uiPluginData = {
+      plugins: valid.map((p) => ({
+        id: p.id,
+        name: p.name,
+        description: p.description,
+        version: p.version,
+        author: p.author,
+        repository: p.repository,
+        marketplaceId: p.marketplaceId,
+        marketplaceName: p.marketplaceName,
+      })),
+      lastUpdated: new Date().toISOString(),
+      totalCount: valid.length,
+      source: 'plugin-discovery',
+      summary: {
+        totalDiscovered: plugins.length,
+        validPlugins: valid.length,
+        invalidPlugins: invalid.length,
+        marketplaces: Array.from(new Set(plugins.map((p) => p.marketplaceName))),
+      },
+    };
+
+    const pluginsPath = path.join(publicDataDir, 'plugins.json');
+    fs.writeFileSync(pluginsPath, JSON.stringify(uiPluginData, null, 2));
+    console.log(`  ✅ Saved UI data: ${pluginsPath}`);
+
+    // Log summary
+    console.log('\n📊 Plugin Discovery Summary:');
+    console.log(`  Total discovered: ${plugins.length}`);
+    console.log(`  Valid plugins: ${valid.length}`);
+    console.log(`  Invalid plugins: ${invalid.length}`);
+
+    if (invalid.length > 0) {
+      console.log('\n⚠️ Invalid plugins:');
+      for (const plugin of invalid.slice(0, 5)) {
+        console.log(`  - ${plugin.name}: ${plugin.errors.join(', ')}`);
+      }
+      if (invalid.length > 5) {
+        console.log(`  ... and ${invalid.length - 5} more`);
+      }
+    }
+  }
 }
 
 // CLI execution
@@ -595,9 +715,14 @@ async function main() {
     // Generate UI-compatible marketplace data
     await scanner.generateMarketplaceDataFile(marketplaces);
 
+    // Discover plugins from marketplaces with manifests
+    const plugins = await scanner.discoverPluginsFromMarketplaces(marketplaces);
+    await scanner.savePluginResults(plugins);
+
     console.log('');
     console.log('🎉 Scan completed successfully!');
     console.log(`📊 Found ${marketplaces.length} marketplaces`);
+    console.log(`🔌 Discovered ${plugins.length} plugins`);
   } catch (error) {
     console.error('❌ Scan failed:', error);
     process.exit(1);
