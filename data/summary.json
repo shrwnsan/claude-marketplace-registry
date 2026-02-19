@@ -1,26 +1,25 @@
 {
   "totalFound": 3,
   "withManifest": 3,
-  "lastUpdated": "2026-02-18T02:10:16.033Z",
+  "lastUpdated": "2026-02-19T02:08:57.299Z",
   "searchQuery": "claude-plugin+marketplace.json",
   "languages": {
-    "Python": 2,
-    "Shell": 1
+    "Python": 3
   },
   "topRepos": [
     {
       "name": "skills",
-      "stars": 71091,
+      "stars": 71511,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 35513,
+      "stars": 35752,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 7569,
+      "stars": 7611,
       "url": "https://github.com/anthropics/claude-plugins-official"
     }
   ]
