@@ -10,12 +10,10 @@
 import { Octokit } from '@octokit/rest';
 import { PluginDiscovery, MarketplaceInfo } from '../plugin-discovery';
 
-// Mock Octokit
-jest.mock('@octokit/rest');
-
 describe('PluginDiscovery', () => {
   let discovery: PluginDiscovery;
-  let mockOctokit: jest.Mocked<Octokit>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let mockOctokit: any;
 
   const mockMarketplace: MarketplaceInfo = {
     owner: 'test-owner',
@@ -31,9 +29,8 @@ describe('PluginDiscovery', () => {
       repos: {
         getContent: jest.fn(),
       },
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } as any;
-    discovery = new PluginDiscovery(mockOctokit);
+    };
+    discovery = new PluginDiscovery(mockOctokit as Octokit);
   });
 
   describe('processPluginEntry - ID Generation', () => {
