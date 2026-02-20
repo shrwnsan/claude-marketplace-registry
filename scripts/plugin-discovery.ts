@@ -84,7 +84,12 @@ export class PluginDiscovery {
     // Generate unique ID
     const pluginId = pluginRepo
       ? pluginRepo.replace('/', '-')
-      : `${marketplace.id}-${pluginPath.replace(/\//g, '-')}`;
+      : pluginPath
+        ? `${marketplace.id}-${pluginPath.replace(/\//g, '-')}`
+        : `${marketplace.id}-${pluginName
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '')}`;
 
     try {
       let manifest: any = null;
