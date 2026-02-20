@@ -35,6 +35,8 @@ const customJestConfig = {
     '<rootDir>/src/**/*.{test,spec}.{js,jsx,ts,tsx}',
     '<rootDir>/pages/**/__tests__/**/*.{js,jsx,ts,tsx}',
     '<rootDir>/pages/**/*.{test,spec}.{js,jsx,ts,tsx}',
+    '<rootDir>/scripts/**/__tests__/**/*.{js,jsx,ts,tsx}',
+    '<rootDir>/scripts/**/*.{test,spec}.{js,jsx,ts,tsx}',
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   transform: {
