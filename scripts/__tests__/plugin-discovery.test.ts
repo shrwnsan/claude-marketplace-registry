@@ -31,6 +31,7 @@ describe('PluginDiscovery', () => {
       repos: {
         getContent: jest.fn(),
       },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any;
     discovery = new PluginDiscovery(mockOctokit);
   });
@@ -49,6 +50,7 @@ describe('PluginDiscovery', () => {
       });
 
       // Access private method via type assertion
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const result = await (discovery as any).processPluginEntry(pluginEntry, mockMarketplace);
 
       expect(result.id).toBe('external-repo');
@@ -66,6 +68,7 @@ describe('PluginDiscovery', () => {
         },
       });
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const result = await (discovery as any).processPluginEntry(pluginEntry, mockMarketplace);
 
       expect(result.id).toBe('test-marketplace-plugins-my-plugin');
@@ -82,6 +85,7 @@ describe('PluginDiscovery', () => {
         },
       });
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const result = await (discovery as any).processPluginEntry(pluginEntry, mockMarketplace);
 
       // Should use plugin name as fallback, not just marketplace.id + "-"
@@ -100,6 +104,7 @@ describe('PluginDiscovery', () => {
         },
       });
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const result = await (discovery as any).processPluginEntry(pluginEntry, mockMarketplace);
 
       expect(result.id).toBe('test-marketplace-my-cool-plugin');
