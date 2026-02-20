@@ -29,6 +29,7 @@ jobs:
         with:
           name: routing-analysis
           github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
 
       - name: Extract tier
         id: extract
