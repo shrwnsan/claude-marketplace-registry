@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 71511,
-    "forks": 7290,
+    "stars": 71990,
+    "forks": 7355,
     "language": "Python",
-    "updatedAt": "2026-02-19T02:04:26Z",
+    "updatedAt": "2026-02-20T02:03:44Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 35752,
-    "forks": 3474,
+    "stars": 35994,
+    "forks": 3513,
     "language": "Python",
-    "updatedAt": "2026-02-19T02:01:07Z",
+    "updatedAt": "2026-02-20T01:57:47Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -39,17 +39,17 @@
       "skill",
       "workflow-automation"
     ],
-    "hasManifest": true
+    "hasManifest": false
   },
   {
     "id": "1100776768",
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 7611,
-    "forks": 730,
+    "stars": 7674,
+    "forks": 753,
     "language": "Python",
-    "updatedAt": "2026-02-19T02:07:03Z",
+    "updatedAt": "2026-02-20T01:57:48Z",
     "topics": [
       "claude-code",
       "mcp",
