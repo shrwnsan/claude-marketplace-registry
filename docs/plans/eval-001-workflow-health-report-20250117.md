@@ -75,17 +75,17 @@ A comprehensive health check of all GitHub Actions workflows reveals significant
 **Likely Root Cause**:
 ```yaml
 # Lines 22-23 in monitoring.yml
-HEALTH_CHECK_URL: https://claude-marketplace.github.io/aggregator/api/health
-STATUS_CHECK_URL: https://claude-marketplace.github.io/aggregator/api/status
+HEALTH_CHECK_URL: https://shrwnsan.github.io/claude-marketplace-registry/api/health
+STATUS_CHECK_URL: https://shrwnsan.github.io/claude-marketplace-registry/api/status
 ```
 
-The workflow is checking health endpoints at `claude-marketplace.github.io/aggregator`, but this repository is `claude-marketplace-registry`. These URLs likely don't exist or are incorrect.
+The workflow is checking health endpoints at `shrwnsan.github.io/claude-marketplace-registry`, but this repository is `claude-marketplace-registry`. These URLs likely don't exist or are incorrect.
 
 **Recommended Actions**:
 - [x] Verify correct health check URLs for this repository — confirmed checking wrong repository URLs
 - [x] Update or disable health endpoint checks — workflow disabled, then workflow file removed entirely
 - [x] Consider disabling until correct endpoints are available — workflow removed (file no longer exists)
-- [x] Alternative: Check if these are meant for a different repository — confirmed, was for `claude-marketplace.github.io/aggregator`, not this repo
+- [x] Alternative: Check if these are meant for a different repository — confirmed, was for `shrwnsan.github.io/claude-marketplace-registry`, not this repo
 
 ---
 

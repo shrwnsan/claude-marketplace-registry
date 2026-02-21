@@ -21,7 +21,7 @@ The Claude Marketplace Aggregator provides a comprehensive REST API for accessin
 
 ### Base URL
 ```
-https://claude-marketplace.github.io/aggregator
+https://shrwnsan.github.io/claude-marketplace-registry
 ```
 
 ### Authentication
@@ -656,7 +656,7 @@ yarn add @claude-marketplace/sdk
 import { ClaudeMarketplaceAPI } from '@claude-marketplace/sdk';
 
 const api = new ClaudeMarketplaceAPI({
-  baseURL: 'https://claude-marketplace.github.io/aggregator',
+  baseURL: 'https://shrwnsan.github.io/claude-marketplace-registry',
   timeout: 10000,
   retries: 3
 });
@@ -695,7 +695,7 @@ pip install claude-marketplace-sdk
 from claude_marketplace import ClaudeMarketplaceAPI
 
 api = ClaudeMarketplaceAPI(
-    base_url="https://claude-marketplace.github.io/aggregator"
+    base_url="https://shrwnsan.github.io/claude-marketplace-registry"
 )
 
 # Get marketplaces
@@ -735,7 +735,7 @@ import (
 )
 
 func main() {
-    api := claudeMarketplace.NewAPI("https://claude-marketplace.github.io/aggregator")
+    api := claudeMarketplace.NewAPI("https://shrwnsan.github.io/claude-marketplace-registry")
 
     // Get marketplaces
     marketplaces, err := api.GetMarketplaces(&claudeMarketplace.GetMarketplacesOptions{
@@ -822,7 +822,7 @@ function verifyWebhookSignature(payload: string, signature: string, secret: stri
 ```typescript
 async function getAllMarketplaces() {
   const response = await fetch(
-    'https://claude-marketplace.github.io/aggregator/data/marketplaces.json'
+    'https://shrwnsan.github.io/claude-marketplace-registry/data/marketplaces.json'
   );
 
   const data = await response.json();
@@ -847,7 +847,7 @@ async function searchPlugins(query: string, category?: string) {
   }
 
   const response = await fetch(
-    `https://claude-marketplace.github.io/aggregator/data/plugins.json?${params}`
+    `https://shrwnsan.github.io/claude-marketplace-registry/data/plugins.json?${params}`
   );
 
   const data = await response.json();
@@ -862,7 +862,7 @@ const databasePlugins = await searchPlugins('postgresql', 'Database');
 ```typescript
 async function getSystemHealth() {
   const response = await fetch(
-    'https://claude-marketplace.github.io/aggregator/api/health'
+    'https://shrwnsan.github.io/claude-marketplace-registry/api/health'
   );
 
   const health = await response.json();
@@ -1007,7 +1007,7 @@ async function exportToPrometheus() {
 
 The complete OpenAPI 3.0 specification is available at:
 ```
-https://claude-marketplace.github.io/aggregator/api/openapi.json
+https://shrwnsan.github.io/claude-marketplace-registry/api/openapi.json
 ```
 
 ### Interactive Documentation
@@ -1037,7 +1037,7 @@ https://claude-marketplace.github.io/aggregator/api/openapi.json
 ## Support
 
 ### Getting Help
-- **Documentation**: [Complete API Docs](https://claude-marketplace.github.io/aggregator/docs)
+- **Documentation**: [Complete API Docs](https://shrwnsan.github.io/claude-marketplace-registry/docs)
 - **GitHub Issues**: [Report Issues](https://github.com/claude-marketplace/aggregator/issues)
 - **Discussions**: [Community Forum](https://github.com/claude-marketplace/aggregator/discussions)
 
@@ -1050,6 +1050,6 @@ https://claude-marketplace.github.io/aggregator/api/openapi.json
 
 **Last Updated**: October 17, 2024
 **API Version**: 1.0.0
-**Base URL**: https://claude-marketplace.github.io/aggregator
+**Base URL**: https://shrwnsan.github.io/claude-marketplace-registry
 
 For questions about the API or to report issues, please visit our GitHub repository or join our community discussions.

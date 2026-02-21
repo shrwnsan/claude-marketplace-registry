@@ -21,7 +21,7 @@ The Claude Marketplace Aggregator is a comprehensive platform that discovers, cu
 
 ### Accessing the Platform
 
-1. **Visit the Website**: Navigate to [claude-marketplace.github.io/aggregator](https://claude-marketplace.github.io/aggregator)
+1. **Visit the Website**: Navigate to [shrwnsan.github.io/claude-marketplace-registry](https://shrwnsan.github.io/claude-marketplace-registry)
 2. **Explore the Homepage**: Get an overview of the ecosystem with statistics and featured content
 3. **Use the Search Bar**: Find specific plugins or marketplaces
 4. **Browse Categories**: Explore content organized by functionality
@@ -282,10 +282,10 @@ interface OverviewStats {
 #### API Access
 ```bash
 # Get analytics data
-curl https://claude-marketplace.github.io/aggregator/api/analytics
+curl https://shrwnsan.github.io/claude-marketplace-registry/api/analytics
 
 # Get specific metrics
-curl https://claude-marketplace.github.io/aggregator/api/metrics
+curl https://shrwnsan.github.io/claude-marketplace-registry/api/metrics
 ```
 
 ---
@@ -438,7 +438,7 @@ GET /api/analytics
 #### JavaScript/TypeScript
 ```typescript
 class ClaudeMarketplaceAPI {
-  private baseURL = 'https://claude-marketplace.github.io/aggregator';
+  private baseURL = 'https://shrwnsan.github.io/claude-marketplace-registry';
 
   async getMarketplaces(): Promise<Marketplace[]> {
     const response = await fetch(`${this.baseURL}/data/marketplaces.json`);
@@ -467,7 +467,7 @@ import requests
 from typing import List, Dict, Any
 
 class ClaudeMarketplaceAPI:
-    def __init__(self, base_url: str = "https://claude-marketplace.github.io/aggregator"):
+    def __init__(self, base_url: str = "https://shrwnsan.github.io/claude-marketplace-registry"):
         self.base_url = base_url
 
     def get_marketplaces(self) -> List[Dict[str, Any]]:
@@ -553,7 +553,7 @@ class ClaudeMarketplaceAPI:
 #### Contact Information
 - **GitHub Issues**: [Report Issues](https://github.com/claude-marketplace/aggregator/issues)
 - **Discussions**: [Ask Questions](https://github.com/claude-marketplace/aggregator/discussions)
-- **Documentation**: [View Docs](https://claude-marketplace.github.io/aggregator/docs)
+- **Documentation**: [View Docs](https://shrwnsan.github.io/claude-marketplace-registry/docs)
 
 ### Error Messages
 
