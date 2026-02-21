@@ -14,7 +14,8 @@
 
 **Current Evaluation (eval-004)**: Focuses on **performance optimization & hidden bugs** — workflows running but suboptimal
 - ⚠️ Identified 10 new optimization/reliability issues
-- Found 1 regression (security audit logic bug that was never fixed)
+- Found 1 original defect (security audit logic bug — never worked correctly, not a regression)
+- 2 critical issues fixed (security audit logic, deploy dependency)
 
 **Key Difference**: eval-001 fixed **blocking issues**. eval-004 addresses **efficiency & correctness issues** that don't break workflows but harm performance and reliability.
 
@@ -26,9 +27,9 @@
 
 | Issue | Severity | Root Cause | Status in eval-001 |
 |-------|----------|-----------|-------------------|
-| **npm ci duplication** | HIGH | Each job re-installs deps | Not mentioned |
-| **Security audit logic bug** | HIGH | Always overwrites check to false | Not mentioned |
-| **Deploy job dependency** | HIGH | Optional scan breaks build chain | Not mentioned |
+| **npm ci duplication** | MEDIUM | Each job re-installs deps (~5 min, not 20+) | Not mentioned |
+| **Security audit logic bug** | HIGH | Always overwrites check to false | Not mentioned | ✅ Fixed |
+| **Deploy job dependency** | CRITICAL | Scan skip → build skip → **deploy never runs on push** | Not mentioned | ✅ Fixed |
 
 ### 🟡 Medium Priority - Reliability & Operations
 
@@ -66,19 +67,29 @@ These were critical **failures** - workflows not running at all:
 
 ---
 
-## Regression Found: Security Audit Logic Bug
+## Original Defect Found: Security Audit Logic Bug ✅ FIXED
+
+> **Terminology correction:** This was originally labeled a "regression," but it is an **original defect** — the logic was never correct. A regression implies something worked before and then broke; this never worked.
 
 ### Details
 
-**File**: `security.yml` (lines 42-45)  
-**Severity**: HIGH  
-**Status**: NOT in eval-001 ❌
+**File**: `security.yml` (lines 42-45)
+**Severity**: HIGH
+**Status**: ✅ Fixed (2026-02-21)
 
 ```yaml
-# Current broken code:
+# BEFORE (broken):
 run: |
   npm audit --audit-level=moderate --json > audit-results.json || echo "vulnerabilities_found=true" >> $GITHUB_OUTPUT
   echo "vulnerabilities_found=false" >> $GITHUB_OUTPUT  # ❌ Always overwrites!
+
+# AFTER (fixed):
+run: |
+  if npm audit --audit-level=moderate --json > audit-results.json; then
+    echo "vulnerabilities_found=false" >> $GITHUB_OUTPUT
+  else
+    echo "vulnerabilities_found=true" >> $GITHUB_OUTPUT
+  fi
 ```
 
 ### Why Missed in eval-001?
@@ -106,7 +117,7 @@ eval-001 was focused on **"Is the workflow running?"**
 eval-004 asks **"Is the workflow running efficiently?"**
 
 **Examples:**
-- npm ci duplication: Workflows **work fine**, but waste 20+ minutes
+- npm ci duplication: Workflows **work fine**, but waste ~5 minutes (originally estimated at 20+, but `cache: 'npm'` is already configured)
 - Artifact retention: Workflows **work fine**, but debugging is harder
 - Timeouts: Workflows **work fine**, until they don't (timeout edge case)
 
@@ -137,20 +148,20 @@ External Reliability → Cascading failures (no retry backoff)
 
 ## Recommendation: Implementation Priority
 
-**Phase 1 (Critical - Breaks Functionality)**
-1. ✅ Fix security audit logic bug (eval-004 #2) — 5 min
-2. ✅ Fix deploy job dependency (eval-004 #3) — 10 min
-3. ✅ Add npm caching (eval-004 #1) — 15 min
+**Phase 1 (Critical - Breaks Functionality)** ✅ COMPLETE
+1. ✅ ~~Fix security audit logic bug (eval-004 #2) — 5 min~~ Fixed (2026-02-21)
+2. ✅ ~~Fix deploy job dependency (eval-004 #3) — 10 min~~ Fixed (2026-02-21)
+3. 📋 Add npm caching (eval-004 #1) — 15 min (impact revised: ~5 min savings, not 20+)
 
 **Phase 2 (Important - Improves Reliability)**
-4. ✅ Fix CI concurrency (eval-004 #6) — 5 min
-5. ✅ Adjust artifact retention (eval-004 #5) — 5 min
-6. ✅ Improve timeout configs (eval-004 #4) — 10 min
-7. ✅ Add rate limit handling (eval-004 #7) — 20 min
+4. 📋 Fix CI concurrency (eval-004 #6) — 5 min
+5. 📋 Adjust artifact retention (eval-004 #5) — 5 min
+6. 📋 Improve timeout configs (eval-004 #4) — 10 min
+7. 📋 Add rate limit handling (eval-004 #7) — 20 min (requires app code changes, not just workflow config)
 
 **Phase 3 (Nice to Have - Improves Visibility)**
-8. ⚠️ Improve logging (eval-004 #8) — 10 min
-9. ⚠️ Add secret validation (eval-004 #9) — 15 min
+8. 📋 Improve logging (eval-004 #8) — 10 min
+9. ⚠️ Add secret validation (eval-004 #9) — 15 min (recommendation needs revision: anti-pattern)
 10. 📝 Cost documentation (eval-004 #10) — 5 min
 
 ---
@@ -164,13 +175,13 @@ External Reliability → Cascading failures (no retry backoff)
 - `issue-triage.yml` - YAML parsing
 - Various - Node version standardization
 
-### eval-004 (To Be Fixed)
-- `ci.yml` - Add npm caching, concurrency
-- `security.yml` - Fix audit logic, improve logging
-- `deploy.yml` - Fix job dependency chain
-- `scan.yml` - Add rate limiting
-- `*-review.yml` - Adjust timeouts (3 files)
-- All files - Adjust artifact retention
+### eval-004 (Partial — 2 of 10 fixed)
+- `security.yml` - ✅ Fixed audit logic; logging improvement still open
+- `deploy.yml` - ✅ Fixed job dependency chain
+- `ci.yml` - 📋 Add npm caching, concurrency (open)
+- `scan.yml` - 📋 Add rate limiting (open; requires app code changes)
+- `*-review.yml` - 📋 Adjust timeouts (open; 3 files)
+- All files - 📋 Adjust artifact retention (open)
 
 ---
 
@@ -179,17 +190,18 @@ External Reliability → Cascading failures (no retry backoff)
 | Period | Focus | Issue Type | Count | Status |
 |--------|-------|-----------|-------|--------|
 | **eval-001** (2025-01-17) | Operational Failures | Blocking issues | 8 | ✅ Fixed |
-| **eval-004** (2026-02-21) | Performance Optimization | Efficiency issues | 10 | 📋 Identified |
-| **Next Phase** | Implementation | Mixed priority | 10 | ⏳ Pending |
+| **eval-004** (2026-02-21) | Performance Optimization | Efficiency issues | 10 | 2 ✅ Fixed, 8 📋 Open |
+| **Next Phase** | Implementation | Mixed priority | 8 | ⏳ Pending |
 
 ---
 
 ## Key Insights
 
-1. **eval-001 was comprehensive** for operational failures - didn't miss blocking issues
-2. **Security audit logic bug is a regression**, not a previous miss - the logic was never tested for correctness
-3. **Performance issues require different evaluation criteria** than operational failures
-4. **Both evaluations are valuable** - they answer different questions:
+1. **eval-001 was comprehensive** for operational failures — didn't miss blocking issues
+2. **Security audit logic bug is an original defect**, not a regression — the logic was never correct, it was never tested for correctness
+3. **Deploy dependency was more severe than initially assessed** — not just "confusing failures" but a completely broken deploy pipeline on push to main
+4. **Performance impact claims need code-level verification** — npm ci duplication impact was overstated (5 min, not 20+), rate limit env vars are no-ops without app code changes, and secret validation recommendation contains an anti-pattern
+5. **Both evaluations are valuable** — they answer different questions:
    - eval-001: "Does it work?"
    - eval-004: "Does it work well?"
 
@@ -200,9 +212,10 @@ External Reliability → Cascading failures (no retry backoff)
 | Category | eval-001 | eval-004 |
 |----------|----------|----------|
 | **Scope** | Operational failures | Performance optimization |
-| **Issues Found** | 8 critical | 10 mixed priority |
-| **Status** | ✅ All fixed | 📋 Identified, awaiting fix |
-| **Regression** | N/A | 1 logic bug not caught before |
-| **Next Action** | ✅ Complete | Implement fixes in 3 phases |
+| **Issues Found** | 8 critical | 10 mixed priority (1 CRITICAL, 1 HIGH, 5 MEDIUM, 3 LOW) |
+| **Status** | ✅ All fixed | 2 ✅ Fixed, 8 📋 Open |
+| **Defects** | N/A | 1 original defect (security audit), 1 critical deploy bug |
+| **Review Notes** | N/A | 3 recommendations need revision (#1 impact, #7 incomplete, #9 anti-pattern) |
+| **Next Action** | ✅ Complete | Implement remaining 8 fixes in 2 phases |
 
-The project went from **non-functional workflows** (eval-001) to **functional but inefficient workflows** (eval-004). Next step is to optimize for **performance and reliability** while maintaining the operational stability eval-001 achieved.
+The project went from **non-functional workflows** (eval-001) to **functional but inefficient workflows** (eval-004). The two most critical issues (security audit logic and deploy pipeline) are now fixed. Next step is to optimize for **performance and reliability** while maintaining the operational stability achieved.

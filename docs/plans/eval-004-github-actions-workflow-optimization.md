@@ -9,13 +9,13 @@
 
 **Issue:** Each job runs `npm ci` independently, re-installing dependencies multiple times per workflow.
 
-**Impact:** 
-- 3-5 minutes wasted per job × 5-8 jobs = 15-40 minutes total per CI run
-- Even with npm cache, the install step is slow
+**Impact:**
+- ~30-60 seconds per job × 5 jobs = ~5 minutes total per CI run
+- ⚠️ **Note:** Original estimate of "3-5 min per job / 20+ min total" was overstated. All workflows already use `actions/setup-node` with `cache: 'npm'`, which caches the npm download cache. The actual overhead is the `node_modules/` extraction step, not full downloads.
 
 **Recommendation:**
 ```yaml
-# Option A: Cache the node_modules directory explicitly
+# Option A: Cache the node_modules directory explicitly (bigger win but has correctness tradeoffs)
 - uses: actions/cache@v4
   with:
     path: node_modules
@@ -31,23 +31,24 @@
     cache-dependency-path: package-lock.json  # Be explicit
 ```
 
-**Priority:** HIGH - Could save 20+ minutes per CI run
+**Priority:** MEDIUM - Could save ~5 minutes per CI run (downgraded from HIGH)
 
 ---
 
-#### 2. **Security Audit Logic Bug** 
+#### 2. **Security Audit Logic Bug** ✅ FIXED
 **File:** `security.yml` (lines 42-45)
 
 **Issue:**
 ```yaml
+# BEFORE (broken):
 run: |
   npm audit --audit-level=moderate --json > audit-results.json || echo "vulnerabilities_found=true" >> $GITHUB_OUTPUT
   echo "vulnerabilities_found=false" >> $GITHUB_OUTPUT  # ❌ This always overwrites to false!
 ```
 
-The second echo always overwrites the first, so `vulnerabilities_found` is **always false**.
+The second echo always overwrites the first, so `vulnerabilities_found` is **always false**. This silently broke the issue-creation gate (line 59) and PR security comments (line 135). This is an **original defect** (not a regression) — the logic was never correct.
 
-**Fix:**
+**Fix applied:**
 ```yaml
 run: |
   if npm audit --audit-level=moderate --json > audit-results.json; then
@@ -58,27 +59,28 @@ run: |
 ```
 
 **Priority:** HIGH - Security alerts won't trigger properly
+**Status:** ✅ Fixed (2026-02-21)
 
 ---
 
-#### 3. **Deploy Workflow Dependency Issue**
-**File:** `deploy.yml` (lines 67)
+#### 3. **Deploy Workflow Dependency Issue** ✅ FIXED
+**File:** `deploy.yml` (line 67)
 
-**Issue:** Build job has `needs: [scan]`, but scan is optional (`if:` condition).
+**Issue:** Build job has `needs: [scan]`, but scan is optional (`if: github.event.inputs.scan_before_deploy == 'true'`).
 
-If scan is skipped, build job will still wait for it but scan won't run, causing unclear failures.
+⚠️ **Severity was underestimated.** On `push` events (the primary deploy trigger), `github.event.inputs` is null, so `scan` is always skipped → `build` is silently skipped → `deploy` is silently skipped → **the deploy workflow never deploys on push to main**. This is not just "confusing failures" — it's a fundamentally broken deploy pipeline for its primary trigger.
 
-**Fix:**
+**Fix applied:**
 ```yaml
 build:
-  needs: scan
-  if: |
-    (github.event.inputs.scan_before_deploy == 'false' || 
-     needs.scan.result == 'success' ||
-     needs.scan.result == 'skipped')
+  needs: [scan]
+  if: ${{ always() && (needs.scan.result == 'success' || needs.scan.result == 'skipped') }}
 ```
 
-**Priority:** HIGH - Can cause confusing job dependency failures
+This ensures `build` runs when `scan` succeeds or is skipped, but still blocks if `scan` explicitly fails.
+
+**Priority:** HIGH (CRITICAL) - Deploy pipeline broken on push to main
+**Status:** ✅ Fixed (2026-02-21)
 
 ---
 
@@ -140,7 +142,7 @@ concurrency:
 #### 7. **API Rate Limiting Risk**
 **Files:** `scan.yml` (GitHub API calls), `route-pr-to-model.yml`
 
-**Issue:** 
+**Issue:**
 - Scan runs daily + can be triggered manually = potential rate limit issues
 - No exponential backoff configured for retries
 
@@ -154,6 +156,8 @@ concurrency:
     RETRY_DELAY: 5  # seconds
     BACKOFF_MULTIPLIER: 2
 ```
+
+⚠️ **Review note:** The env vars above (`MAX_RETRIES`, `RETRY_DELAY`, `BACKOFF_MULTIPLIER`) are no-ops unless the scan scripts are updated to read and act on them. This recommendation requires **both** workflow and application code changes to be effective.
 
 **Priority:** MEDIUM - Could cause scan failures
 
@@ -198,6 +202,8 @@ jobs:
           [[ -n "${{ secrets.DATA_UPDATES_PAT }}" ]] || (echo "DATA_UPDATES_PAT missing" && exit 1)
 ```
 
+⚠️ **Review note:** The recommended approach is an **anti-pattern** — `${{ secrets.X }}` expands the secret value into the shell script text. Prefer job-level `if: secrets.DATA_UPDATES_PAT != ''` conditions instead. Also, `GITHUB_TOKEN` is auto-provided by GitHub Actions and never needs validation.
+
 **Priority:** LOW - Nice to have
 
 ---
@@ -221,34 +227,37 @@ Add comments to expensive operations:
 
 ## Summary Table
 
-| Issue | File | Severity | Impact | Fix Time |
-|-------|------|----------|--------|----------|
-| npm ci duplication | ci.yml, security.yml, deploy.yml | HIGH | 20+ min/run | 15 min |
-| Security audit logic bug | security.yml | HIGH | Broken alerts | 5 min |
-| Deploy dependency | deploy.yml | HIGH | Job failures | 10 min |
-| Timeout inconsistency | *-review.yml | MEDIUM | Timeout errors | 10 min |
-| Artifact retention | multiple | MEDIUM | Poor debugging | 5 min |
-| No CI concurrency | ci.yml | MEDIUM | Resource waste | 5 min |
-| Rate limiting | scan.yml | MEDIUM | Scan failures | 20 min |
-| Logging/continue-on-error | security.yml | LOW | Unclear failures | 10 min |
-| No secret validation | multiple | LOW | Late failure detection | 15 min |
-| Cost markers | droid-review.yml | LOW | Documentation | 5 min |
+| Issue | File | Severity | Impact | Fix Time | Status |
+|-------|------|----------|--------|----------|--------|
+| npm ci duplication | ci.yml, security.yml, deploy.yml | MEDIUM | ~5 min/run | 15 min | 📋 Open |
+| Security audit logic bug | security.yml | HIGH | Broken alerts | 5 min | ✅ Fixed |
+| Deploy dependency | deploy.yml | CRITICAL | Deploy broken on push | 10 min | ✅ Fixed |
+| Timeout inconsistency | *-review.yml | MEDIUM | Timeout errors | 10 min | 📋 Open |
+| Artifact retention | multiple | MEDIUM | Poor debugging | 5 min | 📋 Open |
+| No CI concurrency | ci.yml | MEDIUM | Resource waste | 5 min | 📋 Open |
+| Rate limiting | scan.yml | MEDIUM | Scan failures | 20 min | 📋 Open (needs code changes too) |
+| Logging/continue-on-error | security.yml | LOW | Unclear failures | 10 min | 📋 Open |
+| No secret validation | multiple | LOW | Late failure detection | 15 min | ⚠️ Open (anti-pattern in recommendation) |
+| Cost markers | droid-review.yml | LOW | Documentation | 5 min | 📋 Open |
 
 ## Recommended Implementation Order
 
-1. **Fix security audit logic** (5 min) - Immediate impact
-2. **Fix deploy job dependency** (10 min) - Prevents failures
-3. **Add npm caching optimization** (15 min) - Biggest perf gain
+1. ~~**Fix security audit logic** (5 min) - Immediate impact~~ ✅ Done
+2. ~~**Fix deploy job dependency** (10 min) - Prevents failures~~ ✅ Done
+3. **Add npm caching optimization** (15 min) - Moderate perf gain (~5 min/run)
 4. **Fix CI concurrency** (5 min) - Prevents waste
 5. **Adjust artifact retention** (5 min) - Better debugging
 6. **Improve timeout configs** (10 min) - Prevent timeouts
-7. **Add rate limit handling** (20 min) - Robustness
-8. **Others** (10-20 min) - Polish
+7. **Add rate limit handling** (20 min) - Requires workflow + application code changes
+8. **Others** (10-20 min) - Polish (note: #9 secret validation needs revised approach)
 
-**Total estimated time: ~90 minutes for all fixes**
+**Total estimated time: ~75 minutes for remaining fixes**
 
-**Expected outcome:** 
-- ✅ 20+ min faster CI runs
-- ✅ Security alerts work properly
-- ✅ No more mysterious job failures
+**Progress:**
+- ✅ Security alerts now trigger correctly (was silently broken since creation)
+- ✅ Deploy pipeline now works on push to main (was completely non-functional)
+
+**Expected outcome for remaining fixes:**
+- ✅ ~5 min faster CI runs
 - ✅ Better error handling & debugging
+- ✅ Reduced CI minute waste via concurrency control

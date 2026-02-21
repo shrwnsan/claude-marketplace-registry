@@ -41,8 +41,11 @@ jobs:
       - name: Run npm audit
         id: audit
         run: |
-          npm audit --audit-level=moderate --json > audit-results.json || echo "vulnerabilities_found=true" >> $GITHUB_OUTPUT
-          echo "vulnerabilities_found=false" >> $GITHUB_OUTPUT
+          if npm audit --audit-level=moderate --json > audit-results.json; then
+            echo "vulnerabilities_found=false" >> $GITHUB_OUTPUT
+          else
+            echo "vulnerabilities_found=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Parse audit results
         id: parse
