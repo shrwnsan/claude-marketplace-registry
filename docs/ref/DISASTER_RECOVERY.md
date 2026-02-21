@@ -101,7 +101,7 @@ This document outlines the comprehensive disaster recovery (DR) procedures for t
 1. **Assess Impact** (Time: 5-15 minutes)
    ```bash
    # Check system status
-   curl https://claude-marketplace.github.io/aggregator/api/status
+   curl https://shrwnsan.github.io/claude-marketplace-registry/api/status
 
    # Verify data integrity
    npm run validate:plugins
@@ -486,10 +486,10 @@ We apologize for any inconvenience.
 
 ```bash
 # System Health Check
-curl https://claude-marketplace.github.io/aggregator/api/health
+curl https://shrwnsan.github.io/claude-marketplace-registry/api/health
 
 # Detailed Status
-curl https://claude-marketplace.github.io/aggregator/api/status
+curl https://shrwnsan.github.io/claude-marketplace-registry/api/status
 
 # Create Backup
 npm run backup backup

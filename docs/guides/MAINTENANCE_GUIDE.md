@@ -27,25 +27,25 @@ This comprehensive guide provides maintenance procedures, troubleshooting steps,
 
 **Website Accessibility**:
 ```bash
-curl -I https://claude-marketplace.github.io/aggregator
+curl -I https://shrwnsan.github.io/claude-marketplace-registry
 # Expected: 200 OK response
 ```
 
 **Health Endpoint Status**:
 ```bash
-curl https://claude-marketplace.github.io/aggregator/data/health.json
+curl https://shrwnsan.github.io/claude-marketplace-registry/data/health.json
 # Verify status is "healthy"
 ```
 
 **Data Freshness**:
 ```bash
-curl https://claude-marketplace.github.io/aggregator/data/status.json | jq '.lastUpdated'
+curl https://shrwnsan.github.io/claude-marketplace-registry/data/status.json | jq '.lastUpdated'
 # Expected: Recent timestamp (less than 6 hours old)
 ```
 
 **System Status**:
 ```bash
-curl https://claude-marketplace.github.io/aggregator/data/status.json
+curl https://shrwnsan.github.io/claude-marketplace-registry/data/status.json
 # Verify all systems show "operational" status
 ```
 
@@ -257,7 +257,7 @@ GET /api/status
 **Commands**:
 ```bash
 # Check deployment status
-curl -I https://claude-marketplace.github.io/aggregator
+curl -I https://shrwnsan.github.io/claude-marketplace-registry
 
 # Check DNS resolution
 nslookup claude-marketplace.github.io
@@ -283,7 +283,7 @@ openssl s_client -connect claude-marketplace.github.io:443
 **Commands**:
 ```bash
 # Check GitHub API status
-curl https://claude-marketplace.github.io/aggregator/api/status
+curl https://shrwnsan.github.io/claude-marketplace-registry/api/status
 
 # Manually trigger scan
 gh workflow run scan.yml
@@ -309,10 +309,10 @@ gh run list --workflow=scan.yml
 **Commands**:
 ```bash
 # Check performance metrics
-curl https://claude-marketplace.github.io/aggregator/api/metrics
+curl https://shrwnsan.github.io/claude-marketplace-registry/api/metrics
 
 # Analyze page load
-lighthouse https://claude-marketplace.github.io/aggregator --output=json
+lighthouse https://shrwnsan.github.io/claude-marketplace-registry --output=json
 
 # Check data file sizes
 du -sh data/*.json
@@ -432,10 +432,10 @@ gh run view <run-id> --job=<job-id>
 npm run build -- --analyze
 
 # Check performance metrics
-curl https://claude-marketplace.github.io/aggregator/api/metrics
+curl https://shrwnsan.github.io/claude-marketplace-registry/api/metrics
 
 # Run Lighthouse audit
-lighthouse https://claude-marketplace.github.io/aggregator
+lighthouse https://shrwnsan.github.io/claude-marketplace-registry
 
 # Monitor resource usage
 npm run dev -- --profile
@@ -599,7 +599,7 @@ echo "=== System Health Check ==="
 echo "Time: $(date)"
 
 # Check website accessibility
-if curl -f -s https://claude-marketplace.github.io/aggregator > /dev/null; then
+if curl -f -s https://shrwnsan.github.io/claude-marketplace-registry > /dev/null; then
     echo "✅ Website accessible"
 else
     echo "❌ Website not accessible"
@@ -607,7 +607,7 @@ else
 fi
 
 # Check API health
-health_response=$(curl -s https://claude-marketplace.github.io/aggregator/api/health)
+health_response=$(curl -s https://shrwnsan.github.io/claude-marketplace-registry/api/health)
 if echo "$health_response" | grep -q '"status":"healthy"'; then
     echo "✅ API healthy"
 else
@@ -617,7 +617,7 @@ else
 fi
 
 # Check data freshness
-data_age=$(curl -s https://claude-marketplace.github.io/aggregator/api/status | jq -r '.systems.data.dataFreshness')
+data_age=$(curl -s https://shrwnsan.github.io/claude-marketplace-registry/api/status | jq -r '.systems.data.dataFreshness')
 if [[ "$data_age" == *"hour"* ]] && [[ $(echo "$data_age" | cut -d' ' -f1) -lt 6 ]]; then
     echo "✅ Data fresh ($data_age)"
 else
@@ -637,7 +637,7 @@ echo "Time: $(date)"
 
 # Check page load time
 start_time=$(date +%s%N)
-curl -s https://claude-marketplace.github.io/aggregator > /dev/null
+curl -s https://shrwnsan.github.io/claude-marketplace-registry > /dev/null
 end_time=$(date +%s%N)
 load_time=$(( (end_time - start_time) / 1000000 ))
 
@@ -653,7 +653,7 @@ fi
 
 # Check API response time
 start_time=$(date +%s%N)
-curl -s https://claude-marketplace.github.io/aggregator/api/health > /dev/null
+curl -s https://shrwnsan.github.io/claude-marketplace-registry/api/health > /dev/null
 end_time=$(date +%s%N)
 api_time=$(( (end_time - start_time) / 1000000 ))
 
