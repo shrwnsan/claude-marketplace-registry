@@ -157,6 +157,10 @@ public/*.xml
 # GitHub Pages
 .github-pages/
 
+# Git worktrees
+.worktrees/
+worktrees/
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
