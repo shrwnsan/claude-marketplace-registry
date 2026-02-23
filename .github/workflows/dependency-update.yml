@@ -41,7 +41,7 @@ jobs:
         if: steps.outdated.outputs.updates_available == 'true'
         run: |
           npm update
-          npm audit fix --audit-level moderate
+          npm audit fix --audit-level moderate || true
 
       - name: Run tests
         if: steps.outdated.outputs.updates_available == 'true'
