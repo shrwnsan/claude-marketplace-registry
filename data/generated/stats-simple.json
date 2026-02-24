@@ -1,0 +1,50 @@
+{
+  "totalMarketplaces": 3,
+  "totalPlugins": 178,
+  "validPlugins": 178,
+  "lastUpdated": "2026-02-23T15:14:54.429Z",
+  "topLanguages": [
+    {
+      "language": "Python",
+      "count": 2
+    },
+    {
+      "language": "Shell",
+      "count": 1
+    }
+  ],
+  "topMarketplaces": [
+    {
+      "name": "skills",
+      "stars": 71105,
+      "url": "https://github.com/anthropics/skills"
+    },
+    {
+      "name": "awesome-claude-skills",
+      "stars": 35518,
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    },
+    {
+      "name": "claude-plugins-official",
+      "stars": 7570,
+      "url": "https://github.com/anthropics/claude-plugins-official"
+    }
+  ],
+  "recentActivity": [
+    {
+      "name": "skills",
+      "updatedAt": "2026-02-18T02:53:05Z",
+      "url": "https://github.com/anthropics/skills"
+    },
+    {
+      "name": "claude-plugins-official",
+      "updatedAt": "2026-02-18T02:50:43Z",
+      "url": "https://github.com/anthropics/claude-plugins-official"
+    },
+    {
+      "name": "awesome-claude-skills",
+      "updatedAt": "2026-02-18T02:48:47Z",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    }
+  ]
+}

@@ -1,70 +1,297 @@
 {
-  "totalMarketplaces": 5,
-  "totalPlugins": 0,
-  "validPlugins": 0,
-  "lastUpdated": "2026-02-04T20:19:05.522Z",
-  "topLanguages": [
-    {
-      "language": "TypeScript",
-      "count": 4
+  "success": true,
+  "data": {
+    "overview": {
+      "totalPlugins": 178,
+      "totalMarketplaces": 3,
+      "totalDevelopers": 31,
+      "totalDownloads": 1168630,
+      "lastUpdated": "2026-02-23T15:14:54.431Z",
+      "growthRate": {
+        "plugins": 0,
+        "marketplaces": 0,
+        "developers": 0,
+        "downloads": 0
+      },
+      "healthScore": 85
     },
-    {
-      "language": "Markdown",
-      "count": 1
+    "plugins": [
+      {
+        "date": "2026-01-26",
+        "value": 35
+      },
+      {
+        "date": "2026-02-02",
+        "value": 71,
+        "change": 36
+      },
+      {
+        "date": "2026-02-09",
+        "value": 106,
+        "change": 35
+      },
+      {
+        "date": "2026-02-16",
+        "value": 142,
+        "change": 36
+      },
+      {
+        "date": "2026-02-23",
+        "value": 178,
+        "change": 36
+      }
+    ],
+    "marketplaces": [
+      {
+        "date": "2026-01-26",
+        "value": 0
+      },
+      {
+        "date": "2026-02-02",
+        "value": 1,
+        "change": 1
+      },
+      {
+        "date": "2026-02-09",
+        "value": 1,
+        "change": 0
+      },
+      {
+        "date": "2026-02-16",
+        "value": 2,
+        "change": 1
+      },
+      {
+        "date": "2026-02-23",
+        "value": 3,
+        "change": 1
+      }
+    ],
+    "developers": [
+      {
+        "date": "2026-01-26",
+        "value": 1
+      },
+      {
+        "date": "2026-02-02",
+        "value": 3,
+        "change": 2
+      },
+      {
+        "date": "2026-02-09",
+        "value": 5,
+        "change": 2
+      },
+      {
+        "date": "2026-02-16",
+        "value": 7,
+        "change": 2
+      },
+      {
+        "date": "2026-02-23",
+        "value": 8,
+        "change": 1
+      }
+    ],
+    "downloads": [
+      {
+        "date": "2026-01-26",
+        "value": 5340
+      },
+      {
+        "date": "2026-02-02",
+        "value": 10680,
+        "change": 5340
+      },
+      {
+        "date": "2026-02-09",
+        "value": 16020,
+        "change": 5340
+      },
+      {
+        "date": "2026-02-16",
+        "value": 21360,
+        "change": 5340
+      },
+      {
+        "date": "2026-02-23",
+        "value": 26700,
+        "change": 5340
+      }
+    ],
+    "period": "30d",
+    "aggregation": "weekly",
+    "categories": [
+      {
+        "id": "claude-code",
+        "name": "claude-code",
+        "count": 160,
+        "percentage": 89.9,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with claude-code"
+      },
+      {
+        "id": "mcp",
+        "name": "mcp",
+        "count": 160,
+        "percentage": 89.9,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with mcp"
+      },
+      {
+        "id": "agent-skills",
+        "name": "agent-skills",
+        "count": 125,
+        "percentage": 70.2,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with agent-skills"
+      },
+      {
+        "id": "ai-agents",
+        "name": "ai-agents",
+        "count": 107,
+        "percentage": 60.1,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with ai-agents"
+      },
+      {
+        "id": "antigravity",
+        "name": "antigravity",
+        "count": 107,
+        "percentage": 60.1,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with antigravity"
+      },
+      {
+        "id": "automation",
+        "name": "automation",
+        "count": 107,
+        "percentage": 60.1,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with automation"
+      },
+      {
+        "id": "claude",
+        "name": "claude",
+        "count": 107,
+        "percentage": 60.1,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with claude"
+      },
+      {
+        "id": "codex",
+        "name": "codex",
+        "count": 107,
+        "percentage": 60.1,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with codex"
+      },
+      {
+        "id": "composio",
+        "name": "composio",
+        "count": 107,
+        "percentage": 60.1,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with composio"
+      },
+      {
+        "id": "cursor",
+        "name": "cursor",
+        "count": 107,
+        "percentage": 60.1,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with cursor"
+      }
+    ],
+    "trending": [
+      "claude-code",
+      "mcp",
+      "agent-skills",
+      "ai-agents",
+      "antigravity",
+      "automation",
+      "claude",
+      "codex",
+      "composio",
+      "cursor"
+    ],
+    "emerging": [],
+    "insights": [
+      "178 plugins discovered across 3 marketplaces"
+    ],
+    "verification": {
+      "verifiedPlugins": 178,
+      "verificationRate": 100,
+      "badges": [
+        {
+          "type": "quality",
+          "count": 178
+        },
+        {
+          "type": "maintenance",
+          "count": 142
+        },
+        {
+          "type": "security",
+          "count": 106
+        },
+        {
+          "type": "popularity",
+          "count": 71
+        }
+      ]
+    },
+    "maintenance": {
+      "recentlyUpdated": 3,
+      "activeMaintenanceRate": 80,
+      "avgUpdateFrequency": 14,
+      "abandonedPlugins": 0
+    },
+    "qualityMetrics": {
+      "avgQualityScore": 85,
+      "highQualityPlugins": 178,
+      "commonIssues": [
+        {
+          "issue": "Missing documentation",
+          "frequency": 35,
+          "severity": "medium"
+        },
+        {
+          "issue": "No version specified",
+          "frequency": 17,
+          "severity": "low"
+        }
+      ]
+    },
+    "security": {
+      "scannedPlugins": 178,
+      "criticalIssues": 0,
+      "securityScore": 90
     }
-  ],
-  "topMarketplaces": [
-    {
-      "name": "Anthropic Official Skills",
-      "stars": 2847,
-      "url": "https://github.com/anthropics/skills"
-    },
-    {
-      "name": "Awesome Claude Skills",
-      "stars": 1256,
-      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
-    },
-    {
-      "name": "Claude Plugins",
-      "stars": 234,
-      "url": "https://github.com/adawalli/claude-plugins"
-    },
-    {
-      "name": "Claude Plugin Marketplace",
-      "stars": 156,
-      "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
-    },
-    {
-      "name": "Claude Skills Marketplace",
-      "stars": 89,
-      "url": "https://github.com/mhattingpete/claude-skills-marketplace"
-    }
-  ],
-  "recentActivity": [
-    {
-      "name": "Anthropic Official Skills",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
-      "url": "https://github.com/anthropics/skills"
-    },
-    {
-      "name": "Awesome Claude Skills",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
-      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
-    },
-    {
-      "name": "Claude Plugins",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
-      "url": "https://github.com/adawalli/claude-plugins"
-    },
-    {
-      "name": "Claude Plugin Marketplace",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
-      "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
-    },
-    {
-      "name": "Claude Skills Marketplace",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
-      "url": "https://github.com/mhattingpete/claude-skills-marketplace"
-    }
-  ]
+  },
+  "meta": {
+    "timestamp": "2026-02-23T15:14:54.431Z",
+    "requestId": "static-build",
+    "responseTime": 0
+  }
 }

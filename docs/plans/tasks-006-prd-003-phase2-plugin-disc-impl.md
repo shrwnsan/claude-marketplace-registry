@@ -8,7 +8,7 @@
 
 **Tech Stack:** TypeScript, Octokit (GitHub API), fs (file system)
 
-**Design Doc:** `docs/plans/2026-02-16-plugin-discovery-design.md`
+**Design Doc:** `docs/plans/archive/2026-02-16-plugin-discovery-design.md`
 
 ---
 

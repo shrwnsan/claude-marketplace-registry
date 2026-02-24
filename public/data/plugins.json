@@ -1,1 +1,3328 @@
-[]
+[
+  {
+    "id": "1061953414-document-skills",
+    "name": "document-skills",
+    "description": "Collection of document processing suite including Excel, Word, PowerPoint, and PDF capabilities",
+    "version": "1.0.0",
+    "author": "Keith Lazuka",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "skills": [
+        "./skills/xlsx",
+        "./skills/docx",
+        "./skills/pptx",
+        "./skills/pdf"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1061953414-example-skills",
+    "name": "example-skills",
+    "description": "Collection of example skills demonstrating various capabilities including skill creation, MCP building, visual design, algorithmic art, internal communications, web testing, artifact building, Slack GIFs, and theme styling",
+    "version": "1.0.0",
+    "author": "Keith Lazuka",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "skills": [
+        "./skills/algorithmic-art",
+        "./skills/brand-guidelines",
+        "./skills/canvas-design",
+        "./skills/doc-coauthoring",
+        "./skills/frontend-design",
+        "./skills/internal-comms",
+        "./skills/mcp-builder",
+        "./skills/skill-creator",
+        "./skills/slack-gif-creator",
+        "./skills/theme-factory",
+        "./skills/web-artifacts-builder",
+        "./skills/webapp-testing"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1061953414-algorithmic-art",
+    "name": "algorithmic-art",
+    "description": "name: algorithmic-art",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/algorithmic-art",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-brand-guidelines",
+    "name": "brand-guidelines",
+    "description": "name: brand-guidelines",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/brand-guidelines",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-canvas-design",
+    "name": "canvas-design",
+    "description": "name: canvas-design",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/canvas-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-doc-coauthoring",
+    "name": "doc-coauthoring",
+    "description": "name: doc-coauthoring",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/doc-coauthoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-docx",
+    "name": "docx",
+    "description": "name: docx",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/docx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-frontend-design",
+    "name": "frontend-design",
+    "description": "name: frontend-design",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-internal-comms",
+    "name": "internal-comms",
+    "description": "name: internal-comms",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/internal-comms",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-mcp-builder",
+    "name": "mcp-builder",
+    "description": "name: mcp-builder",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/mcp-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-pdf",
+    "name": "pdf",
+    "description": "name: pdf",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/pdf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-pptx",
+    "name": "pptx",
+    "description": "name: pptx",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/pptx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-skill-creator",
+    "name": "skill-creator",
+    "description": "name: skill-creator",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-slack-gif-creator",
+    "name": "slack-gif-creator",
+    "description": "name: slack-gif-creator",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/slack-gif-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-theme-factory",
+    "name": "theme-factory",
+    "description": "name: theme-factory",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/theme-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-web-artifacts-builder",
+    "name": "web-artifacts-builder",
+    "description": "name: web-artifacts-builder",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/web-artifacts-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-webapp-testing",
+    "name": "webapp-testing",
+    "description": "name: webapp-testing",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/webapp-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-xlsx",
+    "name": "xlsx",
+    "description": "name: xlsx",
+    "version": "1.0.0",
+    "author": "skills",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/xlsx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1078079172-brand-guidelines",
+    "name": "brand-guidelines",
+    "description": "Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./brand-guidelines",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-competitive-ads-extractor",
+    "name": "competitive-ads-extractor",
+    "description": "Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./competitive-ads-extractor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-domain-name-brainstormer",
+    "name": "domain-name-brainstormer",
+    "description": "Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./domain-name-brainstormer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-internal-comms",
+    "name": "internal-comms",
+    "description": "Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./internal-comms",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-lead-research-assistant",
+    "name": "lead-research-assistant",
+    "description": "Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./lead-research-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-content-research-writer",
+    "name": "content-research-writer",
+    "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./content-research-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-meeting-insights-analyzer",
+    "name": "meeting-insights-analyzer",
+    "description": "Analyzes meeting transcripts to uncover behavioral patterns including conflict avoidance, speaking ratios, filler words, and leadership style.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./meeting-insights-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-twitter-algorithm-optimizer",
+    "name": "twitter-algorithm-optimizer",
+    "description": "Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit tweets to improve engagement and visibility.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./twitter-algorithm-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-canvas-design",
+    "name": "canvas-design",
+    "description": "Creates beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, designs, and static pieces.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./canvas-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-image-enhancer",
+    "name": "image-enhancer",
+    "description": "Improves image and screenshot quality by enhancing resolution, sharpness, and clarity for professional presentations and documentation.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./image-enhancer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-slack-gif-creator",
+    "name": "slack-gif-creator",
+    "description": "Creates animated GIFs optimized for Slack with validators for size constraints and composable animation primitives.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./slack-gif-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-theme-factory",
+    "name": "theme-factory",
+    "description": "Applies professional font and color themes to artifacts including slides, docs, reports, and HTML landing pages with 10 pre-set themes.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./theme-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-video-downloader",
+    "name": "video-downloader",
+    "description": "Downloads videos from YouTube and other platforms for offline viewing, editing, or archival with support for various formats and quality options.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./video-downloader",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-algorithmic-art",
+    "name": "algorithmic-art",
+    "description": "Creates algorithmic art and generative designs using computational creativity techniques.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./algorithmic-art",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-artifacts-builder",
+    "name": "artifacts-builder",
+    "description": "Builds elaborate, multi-component Claude.ai HTML artifacts using modern frontend technologies including React, Tailwind CSS, and shadcn/ui.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./artifacts-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-changelog-generator",
+    "name": "changelog-generator",
+    "description": "Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./changelog-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-developer-growth-analysis",
+    "name": "developer-growth-analysis",
+    "description": "Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and areas for improvement, curates relevant learning resources from HackerNews, and automatically sends a personalized growth report to your Slack DMs.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./developer-growth-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-mcp-builder",
+    "name": "mcp-builder",
+    "description": "Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./mcp-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-skill-creator",
+    "name": "skill-creator",
+    "description": "Provides guidance for creating effective Claude Skills that extend capabilities with specialized knowledge, workflows, and tool integrations.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-webapp-testing",
+    "name": "webapp-testing",
+    "description": "Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./webapp-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-template-skill",
+    "name": "template-skill",
+    "description": "A template skill that demonstrates the structure and format for creating new Claude Skills.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./template-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-file-organizer",
+    "name": "file-organizer",
+    "description": "Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./file-organizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-invoice-organizer",
+    "name": "invoice-organizer",
+    "description": "Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./invoice-organizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-raffle-winner-picker",
+    "name": "raffle-winner-picker",
+    "description": "Randomly selects winners from lists, spreadsheets, or Google Sheets for giveaways and contests with cryptographically secure randomness.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./raffle-winner-picker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-tailored-resume-generator",
+    "name": "tailored-resume-generator",
+    "description": "Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./tailored-resume-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-document-skills-docx",
+    "name": "document-skills-docx",
+    "description": "Skills for working with Microsoft Word documents including creation, editing, and formatting using DOCX format.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./document-skills/docx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-document-skills-pdf",
+    "name": "document-skills-pdf",
+    "description": "Skills for working with PDF documents including creation, editing, forms, and advanced PDF operations.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./document-skills/pdf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-document-skills-pptx",
+    "name": "document-skills-pptx",
+    "description": "Skills for working with PowerPoint presentations including creation, editing, and formatting using PPTX format.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./document-skills/pptx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-document-skills-xlsx",
+    "name": "document-skills-xlsx",
+    "description": "Skills for working with Excel spreadsheets including creation, editing, formulas, and data manipulation.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./document-skills/xlsx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-activecampaign-automation",
+    "name": "activecampaign-automation",
+    "description": "Automate ActiveCampaign tasks via Rube MCP (Composio): manage contacts, tags, list subscriptions, automation enrollment, and tasks.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./activecampaign-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-airtable-automation",
+    "name": "airtable-automation",
+    "description": "Automate Airtable tasks via Rube MCP (Composio): records, bases, tables, fields, views.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./airtable-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-amplitude-automation",
+    "name": "amplitude-automation",
+    "description": "Automate Amplitude tasks via Rube MCP (Composio): events, user activity, cohorts, user identification.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./amplitude-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-asana-automation",
+    "name": "asana-automation",
+    "description": "Automate Asana tasks via Rube MCP (Composio): tasks, projects, sections, teams, workspaces.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./asana-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-bamboohr-automation",
+    "name": "bamboohr-automation",
+    "description": "Automate BambooHR tasks via Rube MCP (Composio): employees, time-off, benefits, dependents, employee updates.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./bamboohr-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-basecamp-automation",
+    "name": "basecamp-automation",
+    "description": "Automate Basecamp project management, to-dos, messages, people, and to-do list organization via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./basecamp-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-bitbucket-automation",
+    "name": "bitbucket-automation",
+    "description": "Automate Bitbucket repositories, pull requests, branches, issues, and workspace management via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./bitbucket-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-box-automation",
+    "name": "box-automation",
+    "description": "Automate Box cloud storage operations including file upload/download, search, folder management, sharing, collaborations, and metadata queries via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./box-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-brevo-automation",
+    "name": "brevo-automation",
+    "description": "Automate Brevo (Sendinblue) tasks via Rube MCP (Composio): manage email campaigns, create/edit templates, track senders, and monitor campaign performance.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./brevo-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-cal-com-automation",
+    "name": "cal-com-automation",
+    "description": "Automate Cal.com tasks via Rube MCP (Composio): manage bookings, check availability, configure webhooks, and handle teams.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./cal-com-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-calendly-automation",
+    "name": "calendly-automation",
+    "description": "Automate Calendly scheduling, event management, invitee tracking, availability checks, and organization administration via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./calendly-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-canva-automation",
+    "name": "canva-automation",
+    "description": "Automate Canva tasks via Rube MCP (Composio): designs, exports, folders, brand templates, autofill.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./canva-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-circleci-automation",
+    "name": "circleci-automation",
+    "description": "Automate CircleCI tasks via Rube MCP (Composio): trigger pipelines, monitor workflows/jobs, retrieve artifacts and test metadata.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./circleci-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-clickup-automation",
+    "name": "clickup-automation",
+    "description": "Automate ClickUp project management including tasks, spaces, folders, lists, comments, and team operations via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./clickup-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-close-automation",
+    "name": "close-automation",
+    "description": "Automate Close CRM tasks via Rube MCP (Composio): create leads, manage calls/SMS, handle tasks, and track notes.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./close-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-coda-automation",
+    "name": "coda-automation",
+    "description": "Automate Coda tasks via Rube MCP (Composio): manage docs, pages, tables, rows, formulas, permissions, and publishing.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./coda-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-confluence-automation",
+    "name": "confluence-automation",
+    "description": "Automate Confluence page creation, content search, space management, labels, and hierarchy navigation via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./confluence-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-convertkit-automation",
+    "name": "convertkit-automation",
+    "description": "Automate ConvertKit (Kit) tasks via Rube MCP (Composio): manage subscribers, tags, broadcasts, and broadcast stats.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./convertkit-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-datadog-automation",
+    "name": "datadog-automation",
+    "description": "Automate Datadog tasks via Rube MCP (Composio): query metrics, search logs, manage monitors/dashboards, create events and downtimes.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./datadog-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-discord-automation",
+    "name": "discord-automation",
+    "description": "Automate Discord tasks via Rube MCP (Composio): messages, channels, roles, webhooks, reactions.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./discord-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-docusign-automation",
+    "name": "docusign-automation",
+    "description": "Automate DocuSign tasks via Rube MCP (Composio): templates, envelopes, signatures, document management.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./docusign-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-dropbox-automation",
+    "name": "dropbox-automation",
+    "description": "Automate Dropbox file management, sharing, search, uploads, downloads, and folder operations via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./dropbox-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-figma-automation",
+    "name": "figma-automation",
+    "description": "Automate Figma tasks via Rube MCP (Composio): files, components, design tokens, comments, exports.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./figma-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-freshdesk-automation",
+    "name": "freshdesk-automation",
+    "description": "Automate Freshdesk helpdesk operations including tickets, contacts, companies, notes, and replies via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./freshdesk-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-freshservice-automation",
+    "name": "freshservice-automation",
+    "description": "Automate Freshservice ITSM tasks via Rube MCP (Composio): create/update tickets, bulk operations, service requests, and outbound emails.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./freshservice-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-github-automation",
+    "name": "github-automation",
+    "description": "Automate GitHub repositories, issues, pull requests, branches, CI/CD, and permissions via Rube MCP (Composio). Manage code workflows, review PRs, search code, and handle deployments programmatically.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./github-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-gitlab-automation",
+    "name": "gitlab-automation",
+    "description": "Automate GitLab project management, issues, merge requests, pipelines, branches, and user operations via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./gitlab-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-gmail-automation",
+    "name": "gmail-automation",
+    "description": "Automate Gmail tasks via Rube MCP (Composio): send/reply, search, labels, drafts, attachments.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./gmail-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-google-analytics-automation",
+    "name": "google-analytics-automation",
+    "description": "Automate Google Analytics tasks via Rube MCP (Composio): run reports, list accounts/properties, funnels, pivots, key events.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./google-analytics-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-google-calendar-automation",
+    "name": "google-calendar-automation",
+    "description": "Automate Google Calendar events, scheduling, availability checks, and attendee management via Rube MCP (Composio). Create events, find free slots, manage attendees, and list calendars programmatically.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./google-calendar-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-google-drive-automation",
+    "name": "google-drive-automation",
+    "description": "Automate Google Drive file operations (upload, download, search, share, organize) via Rube MCP (Composio). Upload/download files, manage folders, share with permissions, and search across drives programmatically.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./google-drive-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-googlesheets-automation",
+    "name": "googlesheets-automation",
+    "description": "Automate Google Sheets operations (read, write, format, filter, manage spreadsheets) via Rube MCP (Composio). Read/write data, manage tabs, apply formatting, and search rows programmatically.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./googlesheets-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-helpdesk-automation",
+    "name": "helpdesk-automation",
+    "description": "Automate HelpDesk tasks via Rube MCP (Composio): list tickets, manage views, use canned responses, and configure custom fields.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./helpdesk-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-hubspot-automation",
+    "name": "hubspot-automation",
+    "description": "Automate HubSpot CRM operations (contacts, companies, deals, tickets, properties) via Rube MCP using Composio integration.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./hubspot-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-instagram-automation",
+    "name": "instagram-automation",
+    "description": "Automate Instagram tasks via Rube MCP (Composio): create posts, carousels, manage media, get insights, and publishing limits.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./instagram-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-intercom-automation",
+    "name": "intercom-automation",
+    "description": "Automate Intercom tasks via Rube MCP (Composio): conversations, contacts, companies, segments, admins.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./intercom-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-jira-automation",
+    "name": "jira-automation",
+    "description": "Automate Jira tasks via Rube MCP (Composio): issues, projects, sprints, boards, comments, users.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./jira-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-klaviyo-automation",
+    "name": "klaviyo-automation",
+    "description": "Automate Klaviyo tasks via Rube MCP (Composio): manage email/SMS campaigns, inspect campaign messages, track tags, and monitor send jobs.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./klaviyo-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-linear-automation",
+    "name": "linear-automation",
+    "description": "Automate Linear tasks via Rube MCP (Composio): issues, projects, cycles, teams, labels.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./linear-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-linkedin-automation",
+    "name": "linkedin-automation",
+    "description": "Automate LinkedIn tasks via Rube MCP (Composio): create posts, manage profile, company info, comments, and image uploads.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./linkedin-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-mailchimp-automation",
+    "name": "mailchimp-automation",
+    "description": "Automate Mailchimp email marketing including campaigns, audiences, subscribers, segments, and analytics via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./mailchimp-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-make-automation",
+    "name": "make-automation",
+    "description": "Automate Make (Integromat) tasks via Rube MCP (Composio): operations, enums, language and timezone lookups.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./make-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-microsoft-teams-automation",
+    "name": "microsoft-teams-automation",
+    "description": "Automate Microsoft Teams tasks via Rube MCP (Composio): send messages, manage channels, create meetings, handle chats, and search messages.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./microsoft-teams-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-miro-automation",
+    "name": "miro-automation",
+    "description": "Automate Miro tasks via Rube MCP (Composio): boards, items, sticky notes, frames, sharing, connectors.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./miro-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-mixpanel-automation",
+    "name": "mixpanel-automation",
+    "description": "Automate Mixpanel tasks via Rube MCP (Composio): events, segmentation, funnels, cohorts, user profiles, JQL queries.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./mixpanel-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-monday-automation",
+    "name": "monday-automation",
+    "description": "Automate Monday.com work management including boards, items, columns, groups, subitems, and updates via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./monday-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-notion-automation",
+    "name": "notion-automation",
+    "description": "Automate Notion tasks via Rube MCP (Composio): pages, databases, blocks, comments, users.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./notion-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-one-drive-automation",
+    "name": "one-drive-automation",
+    "description": "Automate OneDrive file management, search, uploads, downloads, sharing, permissions, and folder operations via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./one-drive-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-outlook-automation",
+    "name": "outlook-automation",
+    "description": "Automate Outlook tasks via Rube MCP (Composio): emails, calendar, contacts, folders, attachments.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./outlook-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-outlook-calendar-automation",
+    "name": "outlook-calendar-automation",
+    "description": "Automate Outlook Calendar tasks via Rube MCP (Composio): create events, manage attendees, find meeting times, and handle invitations.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./outlook-calendar-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-pagerduty-automation",
+    "name": "pagerduty-automation",
+    "description": "Automate PagerDuty tasks via Rube MCP (Composio): manage incidents, services, schedules, escalation policies, and on-call rotations.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./pagerduty-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-pipedrive-automation",
+    "name": "pipedrive-automation",
+    "description": "Automate Pipedrive CRM operations including deals, contacts, organizations, activities, notes, and pipeline management via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./pipedrive-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-posthog-automation",
+    "name": "posthog-automation",
+    "description": "Automate PostHog tasks via Rube MCP (Composio): events, feature flags, projects, user profiles, annotations.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./posthog-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-postmark-automation",
+    "name": "postmark-automation",
+    "description": "Automate Postmark email delivery tasks via Rube MCP (Composio): send templated emails, manage templates, monitor delivery stats and bounces.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./postmark-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-reddit-automation",
+    "name": "reddit-automation",
+    "description": "Automate Reddit tasks via Rube MCP (Composio): search subreddits, create posts, manage comments, and browse top content.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./reddit-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-render-automation",
+    "name": "render-automation",
+    "description": "Automate Render tasks via Rube MCP (Composio): services, deployments, projects.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./render-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-salesforce-automation",
+    "name": "salesforce-automation",
+    "description": "Automate Salesforce tasks via Rube MCP (Composio): leads, contacts, accounts, opportunities, SOQL queries.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./salesforce-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-segment-automation",
+    "name": "segment-automation",
+    "description": "Automate Segment tasks via Rube MCP (Composio): track events, identify users, manage groups, page views, aliases, batch operations.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./segment-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-sendgrid-automation",
+    "name": "sendgrid-automation",
+    "description": "Automate SendGrid email operations including sending emails, managing contacts/lists, sender identities, templates, and analytics via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./sendgrid-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-sentry-automation",
+    "name": "sentry-automation",
+    "description": "Automate Sentry tasks via Rube MCP (Composio): manage issues/events, configure alerts, track releases, monitor projects and teams.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./sentry-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-shopify-automation",
+    "name": "shopify-automation",
+    "description": "Automate Shopify tasks via Rube MCP (Composio): products, orders, customers, inventory, collections.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./shopify-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-slack-automation",
+    "name": "slack-automation",
+    "description": "Automate Slack messaging, channel management, search, reactions, and threads via Rube MCP (Composio). Send messages, search conversations, manage channels/users, and react to messages programmatically.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./slack-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-square-automation",
+    "name": "square-automation",
+    "description": "Automate Square tasks via Rube MCP (Composio): payments, orders, invoices, locations.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./square-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-stripe-automation",
+    "name": "stripe-automation",
+    "description": "Automate Stripe tasks via Rube MCP (Composio): customers, charges, subscriptions, invoices, products, refunds.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./stripe-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-supabase-automation",
+    "name": "supabase-automation",
+    "description": "Automate Supabase database queries, table management, project administration, storage, edge functions, and SQL execution via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./supabase-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-telegram-automation",
+    "name": "telegram-automation",
+    "description": "Automate Telegram tasks via Rube MCP (Composio): send messages, manage chats, share photos/documents, and handle bot commands.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./telegram-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-tiktok-automation",
+    "name": "tiktok-automation",
+    "description": "Automate TikTok tasks via Rube MCP (Composio): upload/publish videos, post photos, manage content, and view user profiles/stats.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./tiktok-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-todoist-automation",
+    "name": "todoist-automation",
+    "description": "Automate Todoist task management, projects, sections, filtering, and bulk operations via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./todoist-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-trello-automation",
+    "name": "trello-automation",
+    "description": "Automate Trello boards, cards, and workflows via Rube MCP (Composio). Create cards, manage lists, assign members, and search across boards programmatically.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./trello-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-twitter-automation",
+    "name": "twitter-automation",
+    "description": "Automate Twitter/X tasks via Rube MCP (Composio): posts, search, users, bookmarks, lists, media.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./twitter-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-vercel-automation",
+    "name": "vercel-automation",
+    "description": "Automate Vercel tasks via Rube MCP (Composio): manage deployments, domains, DNS, env vars, projects, and teams.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./vercel-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-webflow-automation",
+    "name": "webflow-automation",
+    "description": "Automate Webflow CMS collections, site publishing, page management, asset uploads, and ecommerce orders via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./webflow-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-whatsapp-automation",
+    "name": "whatsapp-automation",
+    "description": "Automate WhatsApp Business tasks via Rube MCP (Composio): send messages, manage templates, upload media, and handle contacts.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./whatsapp-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-wrike-automation",
+    "name": "wrike-automation",
+    "description": "Automate Wrike project management via Rube MCP (Composio): create tasks/folders, manage projects, assign work, and track progress.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./wrike-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-youtube-automation",
+    "name": "youtube-automation",
+    "description": "Automate YouTube tasks via Rube MCP (Composio): upload videos, manage playlists, search content, get analytics, and handle comments.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./youtube-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-zendesk-automation",
+    "name": "zendesk-automation",
+    "description": "Automate Zendesk tasks via Rube MCP (Composio): tickets, users, organizations, replies.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./zendesk-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-zoho-crm-automation",
+    "name": "zoho-crm-automation",
+    "description": "Automate Zoho CRM tasks via Rube MCP (Composio): create/update records, search contacts, manage leads, and convert leads.",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./zoho-crm-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1078079172-zoom-automation",
+    "name": "zoom-automation",
+    "description": "Automate Zoom meeting creation, management, recordings, webinars, and participant tracking via Rube MCP (Composio).",
+    "version": "1.0.0",
+    "author": "ComposioHQ",
+    "repository": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "manifestPath": "./zoom-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1078079172",
+      "marketplaceName": "awesome-claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-typescript-lsp",
+    "name": "typescript-lsp",
+    "description": "TypeScript/JavaScript language server for enhanced code intelligence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/typescript-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-pyright-lsp",
+    "name": "pyright-lsp",
+    "description": "Python language server (Pyright) for type checking and code intelligence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/pyright-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-gopls-lsp",
+    "name": "gopls-lsp",
+    "description": "Go language server for code intelligence and refactoring",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/gopls-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-rust-analyzer-lsp",
+    "name": "rust-analyzer-lsp",
+    "description": "Rust language server for code intelligence and analysis",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/rust-analyzer-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-clangd-lsp",
+    "name": "clangd-lsp",
+    "description": "C/C++ language server (clangd) for code intelligence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/clangd-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-php-lsp",
+    "name": "php-lsp",
+    "description": "PHP language server (Intelephense) for code intelligence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/php-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-swift-lsp",
+    "name": "swift-lsp",
+    "description": "Swift language server (SourceKit-LSP) for code intelligence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/swift-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-kotlin-lsp",
+    "name": "kotlin-lsp",
+    "description": "Kotlin language server for code intelligence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/kotlin-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-csharp-lsp",
+    "name": "csharp-lsp",
+    "description": "C# language server for code intelligence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/csharp-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-jdtls-lsp",
+    "name": "jdtls-lsp",
+    "description": "Java language server (Eclipse JDT.LS) for code intelligence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/jdtls-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-lua-lsp",
+    "name": "lua-lsp",
+    "description": "Lua language server for code intelligence",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/lua-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-agent-sdk-dev",
+    "name": "agent-sdk-dev",
+    "description": "Development kit for working with the Claude Agent SDK",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/agent-sdk-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-pr-review-toolkit",
+    "name": "pr-review-toolkit",
+    "description": "Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/pr-review-toolkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-commit-commands",
+    "name": "commit-commands",
+    "description": "Commands for git commit workflows including commit, push, and PR creation",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/commit-commands",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-feature-dev",
+    "name": "feature-dev",
+    "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/feature-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-security-guidance",
+    "name": "security-guidance",
+    "description": "Security reminder hook that warns about potential security issues when editing files, including command injection, XSS, and unsafe code patterns",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/security-guidance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-code-review",
+    "name": "code-review",
+    "description": "Automated code review for pull requests using multiple specialized agents with confidence-based scoring to filter false positives",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-code-simplifier",
+    "name": "code-simplifier",
+    "description": "Agent that simplifies and refines code for clarity, consistency, and maintainability while preserving functionality. Focuses on recently modified code.",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/code-simplifier",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-explanatory-output-style",
+    "name": "explanatory-output-style",
+    "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/explanatory-output-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-learning-output-style",
+    "name": "learning-output-style",
+    "description": "Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style)",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/learning-output-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-frontend-design",
+    "name": "frontend-design",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Generates creative, polished code that avoids generic AI aesthetics.",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-playground",
+    "name": "playground",
+    "description": "Creates interactive HTML playgrounds — self-contained single-file explorers with visual controls, live preview, and prompt output with copy button. Includes templates for design playgrounds, data explorers, concept maps, and document critique.",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/playground",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-ralph-loop",
+    "name": "ralph-loop",
+    "description": "Interactive self-referential AI loops for iterative development, implementing the Ralph Wiggum technique. Claude works on the same task repeatedly, seeing its previous work, until completion.",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/ralph-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-hookify",
+    "name": "hookify",
+    "description": "Easily create custom hooks to prevent unwanted behaviors by analyzing conversation patterns or from explicit instructions. Define rules via simple markdown files.",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/hookify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-plugin-dev",
+    "name": "plugin-dev",
+    "description": "Comprehensive toolkit for developing Claude Code plugins. Includes 7 expert skills covering hooks, MCP integration, commands, agents, and best practices. AI-assisted plugin creation and validation.",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/plugin-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-claude-code-setup",
+    "name": "claude-code-setup",
+    "description": "Analyze codebases and recommend tailored Claude Code automations such as hooks, skills, MCP servers, and subagents.",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/claude-code-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-claude-md-management",
+    "name": "claude-md-management",
+    "description": "Tools to maintain and improve CLAUDE.md files - audit quality, capture session learnings, and keep project memory current.",
+    "version": "1.0.0",
+    "author": {
+      "name": "Anthropic",
+      "email": "support@anthropic.com"
+    },
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/claude-md-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-greptile",
+    "name": "greptile",
+    "description": "AI-powered codebase search and understanding. Query your repositories using natural language to find relevant code, understand dependencies, and get contextual answers about your codebase architecture.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/greptile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-serena",
+    "name": "serena",
+    "description": "Semantic code analysis MCP server providing intelligent code understanding, refactoring suggestions, and codebase navigation through language server protocol integration.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/serena",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-playwright",
+    "name": "playwright",
+    "description": "Browser automation and end-to-end testing MCP server by Microsoft. Enables Claude to interact with web pages, take screenshots, fill forms, click elements, and perform automated browser testing workflows.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/playwright",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-github",
+    "name": "github",
+    "description": "Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub's full API directly from Claude Code.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/github",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-supabase",
+    "name": "supabase",
+    "description": "Supabase MCP integration for database operations, authentication, storage, and real-time subscriptions. Manage your Supabase projects, run SQL queries, and interact with your backend directly.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/supabase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-atlassian",
+    "name": "atlassian",
+    "description": "Connect to Atlassian products including Jira and Confluence. Search and create issues, access documentation, manage sprints, and integrate your development workflow with Atlassian's collaboration tools.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/atlassian/atlassian-mcp-server.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-laravel-boost",
+    "name": "laravel-boost",
+    "description": "Laravel development toolkit MCP server. Provides intelligent assistance for Laravel applications including Artisan commands, Eloquent queries, routing, migrations, and framework-specific code generation.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/laravel-boost",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-figma",
+    "name": "figma",
+    "description": "Figma design platform integration. Access design files, extract component information, read design tokens, and translate designs into code. Bridge the gap between design and development workflows.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/figma/mcp-server-guide.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-asana",
+    "name": "asana",
+    "description": "Asana project management integration. Create and manage tasks, search projects, update assignments, track progress, and integrate your development workflow with Asana's work management platform.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/asana",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-linear",
+    "name": "linear",
+    "description": "Linear issue tracking integration. Create issues, manage projects, update statuses, search across workspaces, and streamline your software development workflow with Linear's modern issue tracker.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/linear",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-notion",
+    "name": "Notion",
+    "description": "Notion workspace integration. Search pages, create and update documents, manage databases, and access your team's knowledge base directly from Claude Code for seamless documentation workflows.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/makenotion/claude-code-notion-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-gitlab",
+    "name": "gitlab",
+    "description": "GitLab DevOps platform integration. Manage repositories, merge requests, CI/CD pipelines, issues, and wikis. Full access to GitLab's comprehensive DevOps lifecycle tools.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/gitlab",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-sentry",
+    "name": "sentry",
+    "description": "Sentry error monitoring integration. Access error reports, analyze stack traces, search issues by fingerprint, and debug production errors directly from your development environment.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/getsentry/sentry-for-claude.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-slack",
+    "name": "slack",
+    "description": "Slack workspace integration. Search messages, access channels, read threads, and stay connected with your team's communications while coding. Find relevant discussions and context quickly.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/slack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-vercel",
+    "name": "vercel",
+    "description": "Vercel deployment platform integration. Manage deployments, check build status, access logs, configure domains, and control your frontend infrastructure directly from Claude Code.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/vercel/vercel-deploy-claude-code-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-stripe",
+    "name": "stripe",
+    "description": "Stripe development plugin for Claude",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/stripe",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-firebase",
+    "name": "firebase",
+    "description": "Google Firebase MCP integration. Manage Firestore databases, authentication, cloud functions, hosting, and storage. Build and manage your Firebase backend directly from your development workflow.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/firebase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-context7",
+    "name": "context7",
+    "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Pull version-specific documentation and code examples directly from source repositories into your LLM context.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./external_plugins/context7",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-pinecone",
+    "name": "pinecone",
+    "description": "Pinecone vector database integration. Streamline your Pinecone development with powerful tools for managing vector indexes, querying data, and rapid prototyping. Use slash commands like /quickstart to generate AGENTS.md files and initialize Python projects and /query to quickly explore indexes. Access the Pinecone MCP server for creating, describing, upserting and querying indexes with Claude. Perfect for developers building semantic search, RAG applications, recommendation systems, and other vector-based applications with Pinecone.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/pinecone-io/pinecone-claude-code-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-huggingface-skills",
+    "name": "huggingface-skills",
+    "description": "Build, train, evaluate, and use open source AI models, datasets, and spaces.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/huggingface/skills.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-circleback",
+    "name": "circleback",
+    "description": "Circleback conversational context integration. Search and access meetings, emails, calendar events, and more.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/circlebackai/claude-code-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-superpowers",
+    "name": "superpowers",
+    "description": "Superpowers teaches Claude brainstorming, subagent driven development with built in code review, systematic debugging, and red/green TDD. Additionally, it teaches Claude how to author and test new skills.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/obra/superpowers.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-posthog",
+    "name": "posthog",
+    "description": "Connect Claude Code to your PostHog analytics platform. Query insights, manage feature flags, run A/B experiments, track errors, and analyze LLM costs all through natural language. The plugin provides 10 slash commands for common workflows and full access to PostHog's MCP tools. Ask questions like \"What are my top errors?\" or \"Create a feature flag for 50% of users\" and Claude handles the API calls. Supports OAuth authentication, EU and US cloud regions, and self-hosted instances.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/PostHog/posthog-for-claude.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-coderabbit",
+    "name": "coderabbit",
+    "description": "Your code review partner. CodeRabbit provides external validation using a specialized AI architecture and 40+ integrated static analyzers—offering a different perspective that catches bugs, security vulnerabilities, logic errors, and edge cases. Context-aware analysis via AST parsing and codegraph relationships. Automatically incorporates CLAUDE.md and project coding guidelines into reviews. Useful after writing or modifying code, before commits, when implementing complex or security-sensitive logic, or when a second opinion would increase confidence in the changes. Returns specific findings with suggested fixes that can be applied immediately. Free to use.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/coderabbitai/claude-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-sonatype-guide",
+    "name": "sonatype-guide",
+    "description": "Sonatype Guide MCP server for software supply chain intelligence and dependency security. Analyze dependencies for vulnerabilities, get secure version recommendations, and check component quality metrics.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/sonatype/sonatype-guide-claude-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1100776768-firecrawl",
+    "name": "firecrawl",
+    "description": "Web scraping and crawling powered by Firecrawl. Turn any website into clean, LLM-ready markdown or structured data. Scrape single pages, crawl entire sites, search the web, and extract structured information. Includes an AI agent for autonomous multi-source data gathering - just describe what you need and it finds, navigates, and extracts automatically.",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/firecrawl/firecrawl-claude-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

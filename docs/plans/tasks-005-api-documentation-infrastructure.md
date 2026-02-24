@@ -90,5 +90,5 @@ docs/
 ---
 
 **Created**: 2025-10-23
-**Status**: Deferred — API routes are incompatible with the GitHub Pages static site architecture (see bugs-001). Would require a backend service or serverless functions.
+**Status**: Deferred — API routes have been removed (incompatible with GitHub Pages static site architecture). Would require a backend service or serverless functions.
 **Assignee**: TBD

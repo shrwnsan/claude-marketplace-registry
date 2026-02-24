@@ -384,7 +384,7 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({
         setError(null);
 
         const response = await fetch(
-          `/api/ecosystem-stats?metric=growth&timeRange=${selectedTimeRange}`
+          `/data/stats.json`
         );
 
         if (!response.ok) {

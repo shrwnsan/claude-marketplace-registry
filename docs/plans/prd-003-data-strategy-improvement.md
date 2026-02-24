@@ -2,7 +2,7 @@
 
 > **Status:** Phase 1 Partial | Phase 2 Complete | Phase 3 Not Started | Phase 4 Not Started
 > **Maps to:** PRD-001 Phase 1 & 2 (Data Pipeline, Quality Scoring)
-> **Design Doc:** [2026-02-16-plugin-discovery-design.md](./2026-02-16-plugin-discovery-design.md)
+> **Design Doc:** [2026-02-16-plugin-discovery-design.md](./archive/2026-02-16-plugin-discovery-design.md)
 > **Last Updated:** 2026-02-19
 
 ## 📋 Executive Summary
@@ -241,7 +241,7 @@ interface ErrorHandling {
 ### Phase 2: Plugin Discovery (Week 3-4)
 **Goal**: Comprehensive plugin indexing from marketplaces
 **Status**: ✅ Complete
-**Design**: See [2026-02-16-plugin-discovery-design.md](./2026-02-16-plugin-discovery-design.md)
+**Design**: See [2026-02-16-plugin-discovery-design.md](./archive/2026-02-16-plugin-discovery-design.md)
 
 #### Scope Refinement (2026-02-16)
 Per official Claude Code spec:
@@ -641,4 +641,4 @@ interface DataQualityMetrics {
 - **Manifest paths**: Tightened to official spec only (`.claude-plugin/marketplace.json`, `.claude-plugin/plugin.json`)
 - **No fallback discovery**: Plugins MUST have manifest per Claude Code spec
 - **Skills out of scope**: Agent Skills discovery deferred to future phase
-- See [design doc](./2026-02-16-plugin-discovery-design.md) for full details
+- See [design doc](./archive/2026-02-16-plugin-discovery-design.md) for full details
