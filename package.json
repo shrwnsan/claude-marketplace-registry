@@ -36,7 +36,7 @@
     "performance:test": "npm run build -- --analyze",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,css}\"",
-    "prepare": "husky install"
+    "prepare": "git config core.hooksPath .husky"
   },
   "keywords": [
     "claude",
