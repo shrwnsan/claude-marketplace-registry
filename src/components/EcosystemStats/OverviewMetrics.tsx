@@ -43,7 +43,7 @@ const useEcosystemOverview = (autoRefresh: boolean = false, refreshInterval: num
       setLoading(true);
       setError(null);
 
-      const response = await fetch('/api/ecosystem-stats?overview', {
+      const response = await fetch('/data/stats.json', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
