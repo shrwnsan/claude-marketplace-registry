@@ -65,7 +65,7 @@ const mockFetchResponse = (data: any, ok = true, status = 200) => {
     redirected: false,
     statusText: ok ? 'OK' : 'Error',
     type: 'basic',
-    url: '/api/ecosystem-stats?quality',
+    url: '/data/stats.json',
     clone: jest.fn(),
     body: null,
     bodyUsed: false,
@@ -369,7 +369,7 @@ describe('QualityIndicators Component', () => {
 
       // Should have made another fetch call
       await waitFor(() => {
-        expect(fetch).toHaveBeenCalledWith('/api/ecosystem-stats?quality', {
+        expect(fetch).toHaveBeenCalledWith('/data/stats.json', {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' },
           cache: 'no-cache',
@@ -446,7 +446,7 @@ describe('QualityIndicators Component', () => {
       fireEvent.click(refreshButton);
 
       await waitFor(() => {
-        expect(fetch).toHaveBeenCalledWith('/api/ecosystem-stats?quality', {
+        expect(fetch).toHaveBeenCalledWith('/data/stats.json', {
           method: 'GET',
           headers: { 'Content-Type': 'application/json' },
           cache: 'no-cache',
@@ -499,7 +499,7 @@ describe('QualityIndicators Component', () => {
                   redirected: false,
                   statusText: 'OK',
                   type: 'basic',
-                  url: '/api/ecosystem-stats?quality',
+                  url: '/data/stats.json',
                   clone: jest.fn(),
                   body: null,
                   bodyUsed: false,

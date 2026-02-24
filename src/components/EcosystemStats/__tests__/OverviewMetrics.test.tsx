@@ -142,7 +142,7 @@ describe('OverviewMetrics Component', () => {
     });
 
     // Should trigger new API call
-    expect(fetch).toHaveBeenCalledWith('/api/ecosystem-stats?overview', {
+    expect(fetch).toHaveBeenCalledWith('/data/stats.json', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

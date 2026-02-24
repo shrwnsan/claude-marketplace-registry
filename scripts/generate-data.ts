@@ -290,16 +290,13 @@ class DataGenerator {
   private generateEcosystemStats(data: GeneratedData): any {
     const now = new Date();
     const totalStars = data.marketplaces.reduce((s, m) => s + m.stars, 0);
-    const totalForks = data.marketplaces.reduce((s, m) => s + m.forks, 0);
 
     // Load previous snapshot to compute growth rates
     const historyPath = path.join(this.websiteOutputDir, 'history.json');
     let history: Array<{ date: string; marketplaces: number; plugins: number; stars: number }> = [];
-    if (fs.existsSync(historyPath)) {
-      try {
-        history = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
-      } catch { /* ignore corrupt history */ }
-    }
+    try {
+      history = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
+    } catch { /* ignore missing/corrupt history */ }
 
     // Append current snapshot
     history.push({
