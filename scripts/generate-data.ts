@@ -257,7 +257,11 @@ class DataGenerator {
     }
     fs.writeFileSync(
       path.join(pluginsDir, 'valid-plugins.json'),
-      JSON.stringify(plugins.filter((p) => p.isValid), null, 2)
+      JSON.stringify(
+        plugins.filter((p) => p.isValid),
+        null,
+        2
+      )
     );
 
     return plugins;
@@ -296,7 +300,9 @@ class DataGenerator {
     let history: Array<{ date: string; marketplaces: number; plugins: number; stars: number }> = [];
     try {
       history = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
-    } catch { /* ignore missing/corrupt history */ }
+    } catch {
+      /* ignore missing/corrupt history */
+    }
 
     // Append current snapshot
     history.push({
@@ -311,9 +317,7 @@ class DataGenerator {
 
     // Compute growth rates from history (compare to ~30 days ago)
     const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
-    const oldSnapshot = history.find(
-      (h) => new Date(h.date) >= thirtyDaysAgo
-    ) || history[0];
+    const oldSnapshot = history.find((h) => new Date(h.date) >= thirtyDaysAgo) || history[0];
     const growthRate = (current: number, previous: number) =>
       previous > 0 ? Number((((current - previous) / previous) * 100).toFixed(1)) : 0;
 
@@ -332,7 +336,10 @@ class DataGenerator {
         plugins: growthRate(data.stats.totalPlugins, oldSnapshot.plugins),
         marketplaces: growthRate(data.stats.totalMarketplaces, oldSnapshot.marketplaces),
         developers: 0,
-        downloads: growthRate(estimatedDownloads, oldSnapshot.stars * 10 + oldSnapshot.plugins * 150),
+        downloads: growthRate(
+          estimatedDownloads,
+          oldSnapshot.stars * 10 + oldSnapshot.plugins * 150
+        ),
       },
       healthScore: 85,
     };
@@ -355,9 +362,10 @@ class DataGenerator {
         id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
         name,
         count: pluginIds.length,
-        percentage: data.stats.totalPlugins > 0
-          ? Number(((pluginIds.length / data.stats.totalPlugins) * 100).toFixed(1))
-          : 0,
+        percentage:
+          data.stats.totalPlugins > 0
+            ? Number(((pluginIds.length / data.stats.totalPlugins) * 100).toFixed(1))
+            : 0,
         growthRate: 0,
         topPlugins: [] as any[],
         trending: pluginIds.length > data.stats.totalPlugins * 0.1,
@@ -371,9 +379,10 @@ class DataGenerator {
     const quality = {
       verification: {
         verifiedPlugins: validCount,
-        verificationRate: data.stats.totalPlugins > 0
-          ? Number(((validCount / data.stats.totalPlugins) * 100).toFixed(1))
-          : 0,
+        verificationRate:
+          data.stats.totalPlugins > 0
+            ? Number(((validCount / data.stats.totalPlugins) * 100).toFixed(1))
+            : 0,
         badges: [
           { type: 'quality' as const, count: validCount },
           { type: 'maintenance' as const, count: Math.floor(validCount * 0.8) },
@@ -394,8 +403,16 @@ class DataGenerator {
         avgQualityScore: 85,
         highQualityPlugins: validCount,
         commonIssues: [
-          { issue: 'Missing documentation', frequency: Math.floor(data.stats.totalPlugins * 0.2), severity: 'medium' as const },
-          { issue: 'No version specified', frequency: Math.floor(data.stats.totalPlugins * 0.1), severity: 'low' as const },
+          {
+            issue: 'Missing documentation',
+            frequency: Math.floor(data.stats.totalPlugins * 0.2),
+            severity: 'medium' as const,
+          },
+          {
+            issue: 'No version specified',
+            frequency: Math.floor(data.stats.totalPlugins * 0.1),
+            severity: 'low' as const,
+          },
         ],
       },
       security: {
@@ -438,35 +455,37 @@ class DataGenerator {
   ) {
     const now = new Date();
     // Use history if available; otherwise synthesise from current counts
-    const points = history.length >= 2
-      ? history.map((h) => ({
-          date: h.date.split('T')[0],
-          value: h.plugins,
-          marketplaces: h.marketplaces,
-          plugins: h.plugins,
-          developers: Math.floor(h.plugins * 0.05),
-          downloads: h.stars * 10 + h.plugins * 150,
-        }))
-      : Array.from({ length: 5 }, (_, i) => {
-          const d = new Date(now);
-          d.setDate(d.getDate() - (4 - i) * 7);
-          const progress = (i + 1) / 5;
-          return {
-            date: format(d, 'yyyy-MM-dd'),
-            value: Math.floor(data.stats.totalPlugins * progress),
-            marketplaces: Math.floor(data.stats.totalMarketplaces * progress),
-            plugins: Math.floor(data.stats.totalPlugins * progress),
-            developers: Math.floor(data.stats.totalPlugins * progress * 0.05),
-            downloads: Math.floor((data.stats.totalPlugins * progress) * 150),
-          };
-        });
+    const points =
+      history.length >= 2
+        ? history.map((h) => ({
+            date: h.date.split('T')[0],
+            value: h.plugins,
+            marketplaces: h.marketplaces,
+            plugins: h.plugins,
+            developers: Math.floor(h.plugins * 0.05),
+            downloads: h.stars * 10 + h.plugins * 150,
+          }))
+        : Array.from({ length: 5 }, (_, i) => {
+            const d = new Date(now);
+            d.setDate(d.getDate() - (4 - i) * 7);
+            const progress = (i + 1) / 5;
+            return {
+              date: format(d, 'yyyy-MM-dd'),
+              value: Math.floor(data.stats.totalPlugins * progress),
+              marketplaces: Math.floor(data.stats.totalMarketplaces * progress),
+              plugins: Math.floor(data.stats.totalPlugins * progress),
+              developers: Math.floor(data.stats.totalPlugins * progress * 0.05),
+              downloads: Math.floor(data.stats.totalPlugins * progress * 150),
+            };
+          });
 
     // Build TrendDataPoint arrays
     const toTrendPoints = (key: 'plugins' | 'marketplaces' | 'developers' | 'downloads') =>
       points.map((p, i) => ({
         date: p.date,
         value: (p as any)[key] as number,
-        change: i > 0 ? ((p as any)[key] as number) - ((points[i - 1] as any)[key] as number) : undefined,
+        change:
+          i > 0 ? ((p as any)[key] as number) - ((points[i - 1] as any)[key] as number) : undefined,
       }));
 
     return {
