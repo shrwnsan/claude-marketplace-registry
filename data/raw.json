@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 74084,
-    "forks": 7621,
+    "stars": 74893,
+    "forks": 7732,
     "language": "Python",
-    "updatedAt": "2026-02-24T02:06:05Z",
+    "updatedAt": "2026-02-25T02:06:31Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -163,10 +163,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 37011,
-    "forks": 3633,
+    "stars": 37380,
+    "forks": 3675,
     "language": "Python",
-    "updatedAt": "2026-02-24T02:05:21Z",
+    "updatedAt": "2026-02-25T02:07:39Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -193,10 +193,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 8182,
-    "forks": 798,
+    "stars": 8274,
+    "forks": 806,
     "language": "Python",
-    "updatedAt": "2026-02-24T01:38:58Z",
+    "updatedAt": "2026-02-25T02:04:02Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -765,8 +765,11 @@
           "name": "slack",
           "description": "Slack workspace integration. Search messages, access channels, read threads, and stay connected with your team's communications while coding. Find relevant discussions and context quickly.",
           "category": "productivity",
-          "source": "./external_plugins/slack",
-          "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/slack"
+          "source": {
+            "source": "url",
+            "url": "https://github.com/slackapi/slack-mcp-plugin.git"
+          },
+          "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main"
         },
         {
           "name": "vercel",
