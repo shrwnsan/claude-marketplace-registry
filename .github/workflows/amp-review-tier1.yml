@@ -53,7 +53,7 @@ jobs:
           fi
 
           # Extract author_association from routing artifact (workflow_run.pull_requests[] doesn't carry it)
-          if [ -f routing-analysis.json ]; then
+          if [ -f routing-analysis.json ] && jq -e '.' routing-analysis.json > /dev/null 2>&1; then
             AUTHOR_ASSOCIATION=$(jq -r '.author_association // "NONE"' routing-analysis.json)
           else
             AUTHOR_ASSOCIATION="NONE"
