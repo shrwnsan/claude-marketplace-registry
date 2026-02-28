@@ -2,7 +2,16 @@
 
 const isProd = process.env.NODE_ENV === 'production';
 
+const repoName = process.env.REPOSITORY_NAME || '';
+
 const nextConfig = {
+  // Static export for GitHub Pages
+  output: 'export',
+
+  // Base path for GitHub Pages (repo is served under /<repo-name>/)
+  basePath: repoName ? `/${repoName}` : '',
+  assetPrefix: repoName ? `/${repoName}/` : '',
+
   // Image configuration
   images: {
     unoptimized: true,
