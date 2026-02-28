@@ -143,7 +143,7 @@ describe('GrowthTrends Component', () => {
 
     // Verify fetch was called with the new time range
     await waitFor(() => {
-      expect(fetch).toHaveBeenCalledWith('/api/ecosystem-stats?metric=growth&timeRange=90d');
+      expect(fetch).toHaveBeenCalledWith('/data/stats.json');
     });
   });
 

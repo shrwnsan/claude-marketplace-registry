@@ -319,9 +319,9 @@ NODE_ENV=production
 ## Related Documentation
 
 - **PRD**: `docs/plans/prd-001-claude-marketplace-aggregator.md`
-- **Research**: `docs/plans/research-001-claude-code-plugins-ecosystem-analysis.md`
+- **Research**: `docs/plans/archive/research-001-claude-code-plugins-ecosystem-analysis.md`
 - **Development Tasks**: `docs/plans/tasks-001-prd-claude-marketplace-aggregator.md`
-- **LLM Pricing**: `docs/plans/research-003-current-llm-pricing-openrouter.md`
+- **LLM Pricing**: `docs/plans/archive/research-003-current-llm-pricing-openrouter.md`
 
 ## Contact & Support
 

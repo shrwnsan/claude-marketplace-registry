@@ -50,10 +50,10 @@ class HealthChecker {
       timeout: 10000, // 10 seconds
       retries: 3,
       endpoints: [
-        '/api/ecosystem-stats?overview',
-        '/api/ecosystem-stats?quality',
-        '/api/ecosystem-stats?growth',
-        '/api/ecosystem-stats?categories',
+        '/data/health.json',
+        '/data/stats.json',
+        '/data/marketplaces.json',
+        '/data/plugins.json',
       ],
       thresholds: {
         responseTime: 2000, // 2 seconds
@@ -119,7 +119,7 @@ class HealthChecker {
 
     try {
       // Check a simple health endpoint
-      const response = await this.makeRequest('/api/health', 5000);
+      const response = await this.makeRequest('/data/health.json', 5000);
       const duration = Date.now() - startTime;
 
       this.addCheck({
@@ -152,7 +152,7 @@ class HealthChecker {
   private async checkDataFreshness(): Promise<void> {
     try {
       const startTime = Date.now();
-      const response = await this.makeRequest('/api/ecosystem-stats?overview');
+      const response = await this.makeRequest('/data/stats.json');
       const duration = Date.now() - startTime;
 
       if (response.ok) {
@@ -267,7 +267,7 @@ class HealthChecker {
   private async checkErrorRates(): Promise<void> {
     try {
       // Simulate checking error logs or monitoring service
-      const response = await this.makeRequest('/api/health/errors', this.config.timeout);
+      const response = await this.makeRequest('/data/health.json', this.config.timeout);
 
       if (response.ok) {
         const data = await response.json();

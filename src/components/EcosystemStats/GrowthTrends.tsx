@@ -383,9 +383,7 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({
         }
         setError(null);
 
-        const response = await fetch(
-          `/api/ecosystem-stats?metric=growth&timeRange=${selectedTimeRange}`
-        );
+        const response = await fetch(`/data/stats.json`);
 
         if (!response.ok) {
           throw new Error(`Failed to fetch growth data: ${response.status} ${response.statusText}`);

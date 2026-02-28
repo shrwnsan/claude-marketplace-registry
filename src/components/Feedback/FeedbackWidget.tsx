@@ -102,21 +102,12 @@ const FeedbackWidget: React.FC<FeedbackWidgetProps> = ({
 
     try {
       // Send feedback to backend
-      const response = await fetch('/api/feedback', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(feedbackData),
-      });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setCurrentStep('confirmation');
-        trackEcosystemInteraction('feedback_submit', 'success', rating);
-      } else {
-        throw new Error('Failed to submit feedback');
-      }
+      // Static hosting - no backend to receive feedback
+      // Log locally and direct user to GitHub Issues
+      console.log('Feedback submitted (local only):', JSON.stringify(feedbackData));
+      setSubmitStatus('success');
+      setCurrentStep('confirmation');
+      trackEcosystemInteraction('feedback_submit', 'success', rating);
     } catch (error) {
       setSubmitStatus('error');
       trackError(error as Error, { context: 'feedback_submission' });

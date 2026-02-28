@@ -1,71 +1,51 @@
 {
   "stats": {
-    "totalMarketplaces": 5,
-    "totalPlugins": 0,
-    "validPlugins": 0,
-    "lastUpdated": "2026-02-04T20:19:05.522Z",
+    "totalMarketplaces": 3,
+    "totalPlugins": 178,
+    "validPlugins": 178,
+    "lastUpdated": "2026-02-23T15:14:54.429Z",
     "topLanguages": [
       {
-        "language": "TypeScript",
-        "count": 4
+        "language": "Python",
+        "count": 2
       },
       {
-        "language": "Markdown",
+        "language": "Shell",
         "count": 1
       }
     ],
     "topMarketplaces": [
       {
-        "name": "Anthropic Official Skills",
-        "stars": 2847,
+        "name": "skills",
+        "stars": 71105,
         "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "Awesome Claude Skills",
-        "stars": 1256,
+        "name": "awesome-claude-skills",
+        "stars": 35518,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
-        "name": "Claude Plugins",
-        "stars": 234,
-        "url": "https://github.com/adawalli/claude-plugins"
-      },
-      {
-        "name": "Claude Plugin Marketplace",
-        "stars": 156,
-        "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
-      },
-      {
-        "name": "Claude Skills Marketplace",
-        "stars": 89,
-        "url": "https://github.com/mhattingpete/claude-skills-marketplace"
+        "name": "claude-plugins-official",
+        "stars": 7570,
+        "url": "https://github.com/anthropics/claude-plugins-official"
       }
     ],
     "recentActivity": [
       {
-        "name": "Anthropic Official Skills",
-        "updatedAt": "2026-02-05T10:00:00.000Z",
+        "name": "skills",
+        "updatedAt": "2026-02-18T02:53:05Z",
         "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "Awesome Claude Skills",
-        "updatedAt": "2026-02-05T10:00:00.000Z",
+        "name": "claude-plugins-official",
+        "updatedAt": "2026-02-18T02:50:43Z",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      {
+        "name": "awesome-claude-skills",
+        "updatedAt": "2026-02-18T02:48:47Z",
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
-      },
-      {
-        "name": "Claude Plugins",
-        "updatedAt": "2026-02-05T10:00:00.000Z",
-        "url": "https://github.com/adawalli/claude-plugins"
-      },
-      {
-        "name": "Claude Plugin Marketplace",
-        "updatedAt": "2026-02-05T10:00:00.000Z",
-        "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
-      },
-      {
-        "name": "Claude Skills Marketplace",
-        "updatedAt": "2026-02-05T10:00:00.000Z",
-        "url": "https://github.com/mhattingpete/claude-skills-marketplace"
       }
     ]
   },
@@ -73,13 +53,18 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 5
+      "count": 1
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 2
+      "count": 1
+    },
+    {
+      "id": "ai-ml",
+      "name": "AI & Machine Learning",
+      "count": 1
     }
   ],
-  "lastUpdated": "2026-02-04T20:19:05.522Z"
+  "lastUpdated": "2026-02-23T15:14:54.429Z"
 }
