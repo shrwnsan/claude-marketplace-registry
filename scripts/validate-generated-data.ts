@@ -299,8 +299,36 @@ class GeneratedDataValidator {
 
   /**
    * Validate stats.json structure
+   *
+   * stats.json is generated in EcosystemStatsResponse format:
+   *   { success: boolean, data: { overview: { totalMarketplaces, totalPlugins, lastUpdated, ... }, ... }, meta: { ... } }
+   * Unwrap the envelope before validating the inner stats object.
    */
   private validateStatsData(data: unknown, errors: string[], warnings: string[]): void {
+    if (!data || typeof data !== 'object') {
+      errors.push('Stats must be an object');
+      return;
+    }
+
+    const obj = data as Record<string, unknown>;
+
+    // Handle EcosystemStatsResponse wrapper format
+    if ('success' in obj && 'data' in obj) {
+      const inner = obj.data as Record<string, unknown> | undefined;
+      if (!inner || typeof inner !== 'object') {
+        errors.push('EcosystemStatsResponse data field must be an object');
+        return;
+      }
+      const overview = inner.overview as Record<string, unknown> | undefined;
+      if (!overview || typeof overview !== 'object') {
+        errors.push('EcosystemStatsResponse data.overview field must be an object');
+        return;
+      }
+      this.validateStatsObject(overview, errors, warnings);
+      return;
+    }
+
+    // Fallback: validate as a flat stats object
     this.validateStatsObject(data, errors, warnings);
   }
 
