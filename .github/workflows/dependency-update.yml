@@ -27,11 +27,14 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Check for outdated dependencies
         id: outdated
         run: |
-          npm outdated --json > outdated.json || echo "outdated=true" >> $GITHUB_OUTPUT
-          if [ -s outdated.json ]; then
+          npm outdated --json > outdated.json || true
+          if [ -s outdated.json ] && [ "$(cat outdated.json)" != "{}" ]; then
             echo "updates_available=true" >> $GITHUB_OUTPUT
           else
             echo "updates_available=false" >> $GITHUB_OUTPUT
