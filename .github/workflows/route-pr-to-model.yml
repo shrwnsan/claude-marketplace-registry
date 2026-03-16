@@ -4,10 +4,6 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     branches: [main]
-    paths-ignore:
-      - '**.md'
-      - 'docs/**'
-      - 'LICENSE'
 
 permissions:
   contents: read

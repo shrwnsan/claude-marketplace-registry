@@ -105,7 +105,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Check CI workflow status
+      - name: Wait for CI workflow and check status
         id: ci-status
         uses: actions/github-script@v7
         with:
@@ -126,23 +126,41 @@ jobs:
               pull_number: prNumber
             });
 
-            const runs = await github.rest.actions.listWorkflowRuns({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'ci.yml',
-              branch: pr.head.ref,
-              per_page: 1
-            });
+            // Poll for CI completion (30s intervals, up to 10 minutes)
+            const maxAttempts = 20;
+            const pollInterval = 30000; // 30 seconds
 
-            const latestRun = runs.data.workflow_runs && runs.data.workflow_runs.length > 0
-              ? runs.data.workflow_runs[0]
-              : null;
-            const status = latestRun
-              ? (latestRun.status === 'completed' ? latestRun.conclusion : 'pending')
-              : 'not_run';
+            for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+              const runs = await github.rest.actions.listWorkflowRuns({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: 'ci.yml',
+                head_sha: pr.head.sha,
+                per_page: 1
+              });
 
-            core.setOutput('status', status);
-            core.setOutput('url', latestRun?.html_url || '');
+              const latestRun = runs.data.workflow_runs?.[0] ?? null;
+
+              if (!latestRun) {
+                console.log(`Attempt ${attempt}/${maxAttempts}: No CI run found yet`);
+              } else if (latestRun.status === 'completed') {
+                console.log(`CI completed with conclusion: ${latestRun.conclusion}`);
+                core.setOutput('status', latestRun.conclusion);
+                core.setOutput('url', latestRun.html_url || '');
+                return;
+              } else {
+                console.log(`Attempt ${attempt}/${maxAttempts}: CI status is '${latestRun.status}', waiting...`);
+              }
+
+              if (attempt < maxAttempts) {
+                await new Promise(r => setTimeout(r, pollInterval));
+              }
+            }
+
+            // Timed out waiting for CI
+            console.log('Timed out waiting for CI to complete');
+            core.setOutput('status', 'timeout');
+            core.setOutput('url', '');
 
       - name: Run Code Review
         if: steps.ci-status.outputs.status == 'success'
@@ -185,8 +203,10 @@ jobs:
             let skipReason = '';
             if (isDraft) {
               skipReason = 'This is a draft PR.';
+            } else if (ciStatus === 'timeout') {
+              skipReason = 'CI did not complete within 10 minutes.';
             } else if (ciStatus !== 'success') {
-              skipReason = `CI has not passed yet (status: ${ciStatus || 'unknown'}).`;
+              skipReason = `CI has not passed (status: ${ciStatus || 'unknown'}).`;
             }
 
             if (skipReason) {
