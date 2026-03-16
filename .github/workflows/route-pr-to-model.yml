@@ -4,10 +4,6 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
     branches: [main]
-    paths-ignore:
-      - '**.md'
-      - 'docs/**'
-      - 'LICENSE'
 
 permissions:
   contents: read
@@ -90,7 +86,7 @@ jobs:
             const hasBreakingChange = '${{ steps.analyze.outputs.has_breaking_change }}' === 'true';
             const changedLines = ${{ steps.analyze.outputs.changed_lines }};
 
-            let tier = 2; // Default: standard testing (GPT-5.2 or GLM 4.7)
+            let tier = 2; // Default: standard testing (GPT-5.2 or GLM-5)
             let reason = 'Standard complexity';
             let complexity = 5;
 

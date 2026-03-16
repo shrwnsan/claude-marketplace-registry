@@ -175,7 +175,7 @@ jobs:
 
             let reviewType = '';
             if (tier === '2') {
-              reviewType = '**Tier 2** - Standard complexity (Claude with GLM 4.7)';
+              reviewType = '**Tier 2** - Standard complexity (Claude with GLM-5)';
             } else if (tier === '3') {
               reviewType = '**Tier 3** - Deep analysis required (Factory Droid with GPT-5.2)';
             }

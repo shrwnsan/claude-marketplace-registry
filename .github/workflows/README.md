@@ -153,7 +153,7 @@ This directory contains the complete CI/CD pipeline configuration for the Claude
 **Commands:** `/opencode` or `/oc` in issue/PR comments
 
 **Features:**
-- ✅ GLM-4.7 model via Z.ai
+- ✅ GLM-5 model via Z.ai
 - ✅ Lightweight alternative to Claude Code
 - ✅ Member-only access
 
