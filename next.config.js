@@ -4,12 +4,14 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const repoName = process.env.REPOSITORY_NAME || '';
 
+const basePath = repoName ? `/${repoName}` : '';
+
 const nextConfig = {
   // Static export for GitHub Pages
   output: 'export',
 
   // Base path for GitHub Pages (repo is served under /<repo-name>/)
-  basePath: repoName ? `/${repoName}` : '',
+  basePath,
   assetPrefix: repoName ? `/${repoName}/` : '',
 
   // Image configuration
@@ -19,6 +21,7 @@ const nextConfig = {
 
   // Environment variables
   env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
     SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     GITHUB_REPO: process.env.NEXT_PUBLIC_GITHUB_REPO || 'claude-marketplace/aggregator',
     ECOSYSTEM_API_URL: process.env.NEXT_PUBLIC_ECOSYSTEM_API_URL || '/api/ecosystem-stats',
