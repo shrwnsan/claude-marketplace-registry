@@ -1,50 +1,70 @@
 {
-  "totalMarketplaces": 3,
+  "totalMarketplaces": 5,
   "totalPlugins": 178,
   "validPlugins": 178,
-  "lastUpdated": "2026-02-23T15:14:54.429Z",
+  "lastUpdated": "2026-03-17T02:07:49.883Z",
   "topLanguages": [
     {
-      "language": "Python",
-      "count": 2
+      "language": "TypeScript",
+      "count": 4
     },
     {
-      "language": "Shell",
+      "language": "Markdown",
       "count": 1
     }
   ],
   "topMarketplaces": [
     {
-      "name": "skills",
-      "stars": 71105,
+      "name": "Anthropic Official Skills",
+      "stars": 2847,
       "url": "https://github.com/anthropics/skills"
     },
     {
-      "name": "awesome-claude-skills",
-      "stars": 35518,
+      "name": "Awesome Claude Skills",
+      "stars": 1256,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
-      "name": "claude-plugins-official",
-      "stars": 7570,
-      "url": "https://github.com/anthropics/claude-plugins-official"
+      "name": "Claude Plugins",
+      "stars": 234,
+      "url": "https://github.com/adawalli/claude-plugins"
+    },
+    {
+      "name": "Claude Plugin Marketplace",
+      "stars": 156,
+      "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
+    },
+    {
+      "name": "Claude Skills Marketplace",
+      "stars": 89,
+      "url": "https://github.com/mhattingpete/claude-skills-marketplace"
     }
   ],
   "recentActivity": [
     {
-      "name": "skills",
-      "updatedAt": "2026-02-18T02:53:05Z",
+      "name": "Anthropic Official Skills",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
       "url": "https://github.com/anthropics/skills"
     },
     {
-      "name": "claude-plugins-official",
-      "updatedAt": "2026-02-18T02:50:43Z",
-      "url": "https://github.com/anthropics/claude-plugins-official"
+      "name": "Awesome Claude Skills",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
-      "name": "awesome-claude-skills",
-      "updatedAt": "2026-02-18T02:48:47Z",
-      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+      "name": "Claude Plugins",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "url": "https://github.com/adawalli/claude-plugins"
+    },
+    {
+      "name": "Claude Plugin Marketplace",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
+    },
+    {
+      "name": "Claude Skills Marketplace",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "url": "https://github.com/mhattingpete/claude-skills-marketplace"
     }
   ]
 }
