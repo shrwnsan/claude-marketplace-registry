@@ -3,241 +3,69 @@
   "data": {
     "overview": {
       "totalPlugins": 178,
-      "totalMarketplaces": 3,
+      "totalMarketplaces": 5,
       "totalDevelopers": 31,
-      "totalDownloads": 1168630,
-      "lastUpdated": "2026-02-23T15:14:54.431Z",
+      "totalDownloads": 72520,
+      "lastUpdated": "2026-03-17T02:07:49.886Z",
       "growthRate": {
         "plugins": 0,
-        "marketplaces": 0,
+        "marketplaces": 66.7,
         "developers": 0,
-        "downloads": 0
+        "downloads": -93.8
       },
       "healthScore": 85
     },
     "plugins": [
       {
-        "date": "2026-01-26",
-        "value": 35
-      },
-      {
-        "date": "2026-02-02",
-        "value": 71,
-        "change": 36
-      },
-      {
-        "date": "2026-02-09",
-        "value": 106,
-        "change": 35
-      },
-      {
-        "date": "2026-02-16",
-        "value": 142,
-        "change": 36
-      },
-      {
         "date": "2026-02-23",
+        "value": 178
+      },
+      {
+        "date": "2026-03-17",
         "value": 178,
-        "change": 36
+        "change": 0
       }
     ],
     "marketplaces": [
       {
-        "date": "2026-01-26",
-        "value": 0
-      },
-      {
-        "date": "2026-02-02",
-        "value": 1,
-        "change": 1
-      },
-      {
-        "date": "2026-02-09",
-        "value": 1,
-        "change": 0
-      },
-      {
-        "date": "2026-02-16",
-        "value": 2,
-        "change": 1
-      },
-      {
         "date": "2026-02-23",
-        "value": 3,
-        "change": 1
+        "value": 3
+      },
+      {
+        "date": "2026-03-17",
+        "value": 5,
+        "change": 2
       }
     ],
     "developers": [
       {
-        "date": "2026-01-26",
-        "value": 1
-      },
-      {
-        "date": "2026-02-02",
-        "value": 3,
-        "change": 2
-      },
-      {
-        "date": "2026-02-09",
-        "value": 5,
-        "change": 2
-      },
-      {
-        "date": "2026-02-16",
-        "value": 7,
-        "change": 2
-      },
-      {
         "date": "2026-02-23",
+        "value": 8
+      },
+      {
+        "date": "2026-03-17",
         "value": 8,
-        "change": 1
+        "change": 0
       }
     ],
     "downloads": [
       {
-        "date": "2026-01-26",
-        "value": 5340
-      },
-      {
-        "date": "2026-02-02",
-        "value": 10680,
-        "change": 5340
-      },
-      {
-        "date": "2026-02-09",
-        "value": 16020,
-        "change": 5340
-      },
-      {
-        "date": "2026-02-16",
-        "value": 21360,
-        "change": 5340
-      },
-      {
         "date": "2026-02-23",
-        "value": 26700,
-        "change": 5340
+        "value": 1168630
+      },
+      {
+        "date": "2026-03-17",
+        "value": 72520,
+        "change": -1096110
       }
     ],
     "period": "30d",
     "aggregation": "weekly",
-    "categories": [
-      {
-        "id": "claude-code",
-        "name": "claude-code",
-        "count": 160,
-        "percentage": 89.9,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with claude-code"
-      },
-      {
-        "id": "mcp",
-        "name": "mcp",
-        "count": 160,
-        "percentage": 89.9,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with mcp"
-      },
-      {
-        "id": "agent-skills",
-        "name": "agent-skills",
-        "count": 125,
-        "percentage": 70.2,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with agent-skills"
-      },
-      {
-        "id": "ai-agents",
-        "name": "ai-agents",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with ai-agents"
-      },
-      {
-        "id": "antigravity",
-        "name": "antigravity",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with antigravity"
-      },
-      {
-        "id": "automation",
-        "name": "automation",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with automation"
-      },
-      {
-        "id": "claude",
-        "name": "claude",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with claude"
-      },
-      {
-        "id": "codex",
-        "name": "codex",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with codex"
-      },
-      {
-        "id": "composio",
-        "name": "composio",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with composio"
-      },
-      {
-        "id": "cursor",
-        "name": "cursor",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with cursor"
-      }
-    ],
-    "trending": [
-      "claude-code",
-      "mcp",
-      "agent-skills",
-      "ai-agents",
-      "antigravity",
-      "automation",
-      "claude",
-      "codex",
-      "composio",
-      "cursor"
-    ],
+    "categories": [],
+    "trending": [],
     "emerging": [],
     "insights": [
-      "178 plugins discovered across 3 marketplaces"
+      "178 plugins discovered across 5 marketplaces"
     ],
     "verification": {
       "verifiedPlugins": 178,
@@ -262,7 +90,7 @@
       ]
     },
     "maintenance": {
-      "recentlyUpdated": 3,
+      "recentlyUpdated": 0,
       "activeMaintenanceRate": 80,
       "avgUpdateFrequency": 14,
       "abandonedPlugins": 0
@@ -290,7 +118,7 @@
     }
   },
   "meta": {
-    "timestamp": "2026-02-23T15:14:54.431Z",
+    "timestamp": "2026-03-17T02:07:49.886Z",
     "requestId": "static-build",
     "responseTime": 0
   }

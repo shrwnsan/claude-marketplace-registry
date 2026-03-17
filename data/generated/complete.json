@@ -1,68 +1,102 @@
 {
   "marketplaces": [
     {
-      "id": "1061953414",
-      "name": "skills",
-      "description": "Public repository for Agent Skills",
+      "id": "anthropics-skills",
+      "name": "Anthropic Official Skills",
+      "description": "Official Anthropic skills repository providing core capabilities and reference implementations for Claude Code",
       "url": "https://github.com/anthropics/skills",
-      "stars": 71105,
-      "forks": 7247,
-      "language": "Python",
-      "updatedAt": "2026-02-18T02:53:05Z",
-      "createdAt": "2026-02-23T15:14:54.428Z",
-      "license": "None",
+      "stars": 2847,
+      "forks": 412,
+      "language": "TypeScript",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "createdAt": "2024-11-15T00:00:00.000Z",
+      "license": "MIT",
       "topics": [
-        "agent-skills"
+        "official",
+        "core",
+        "skills",
+        "anthropic",
+        "reference"
       ],
-      "hasManifest": true
+      "hasManifest": false
     },
     {
-      "id": "1100776768",
-      "name": "claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "stars": 7570,
-      "forks": 725,
-      "language": "Shell",
-      "updatedAt": "2026-02-18T02:50:43Z",
-      "createdAt": "2026-02-23T15:14:54.428Z",
-      "license": "None",
-      "topics": [
-        "claude-code",
-        "mcp",
-        "skills"
-      ],
-      "hasManifest": true
-    },
-    {
-      "id": "1078079172",
-      "name": "awesome-claude-skills",
-      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "id": "composiohq-awesome-claude-skills",
+      "name": "Awesome Claude Skills",
+      "description": "A curated list of awesome Claude skills, plugins, and resources for the Claude Code ecosystem",
       "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "stars": 35518,
-      "forks": 3449,
-      "language": "Python",
-      "updatedAt": "2026-02-18T02:48:47Z",
-      "createdAt": "2026-02-23T15:14:54.428Z",
-      "license": "None",
+      "stars": 1256,
+      "forks": 189,
+      "language": "Markdown",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "createdAt": "2024-12-01T00:00:00.000Z",
+      "license": "MIT",
       "topics": [
-        "agent-skills",
-        "ai-agents",
-        "antigravity",
-        "automation",
-        "claude",
-        "claude-code",
-        "codex",
-        "composio",
-        "cursor",
-        "gemini-cli",
-        "mcp",
-        "rube",
-        "saas",
-        "skill",
-        "workflow-automation"
+        "awesome-list",
+        "curated",
+        "community",
+        "skills",
+        "plugins"
       ],
-      "hasManifest": true
+      "hasManifest": false
+    },
+    {
+      "id": "adawalli-claude-plugins",
+      "name": "Claude Plugins",
+      "description": "Personal marketplace with core Claude Code skills and productivity plugins",
+      "url": "https://github.com/adawalli/claude-plugins",
+      "stars": 234,
+      "forks": 45,
+      "language": "TypeScript",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "createdAt": "2025-01-10T00:00:00.000Z",
+      "license": "MIT",
+      "topics": [
+        "productivity",
+        "core",
+        "skills",
+        "personal"
+      ],
+      "hasManifest": false
+    },
+    {
+      "id": "josiahsiegel-claude-plugin-marketplace",
+      "name": "Claude Plugin Marketplace",
+      "description": "Community marketplace featuring advanced Claude Code plugins including experimental 2025 features",
+      "url": "https://github.com/josiahsiegel/claude-plugin-marketplace",
+      "stars": 156,
+      "forks": 28,
+      "language": "TypeScript",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "createdAt": "2025-02-01T00:00:00.000Z",
+      "license": "Apache-2.0",
+      "topics": [
+        "advanced",
+        "experimental",
+        "2025-features",
+        "community"
+      ],
+      "hasManifest": false
+    },
+    {
+      "id": "mhattingpete-claude-skills-marketplace",
+      "name": "Claude Skills Marketplace",
+      "description": "Engineering workflow plugins for Claude Code - CI/CD, testing, and development automation",
+      "url": "https://github.com/mhattingpete/claude-skills-marketplace",
+      "stars": 89,
+      "forks": 12,
+      "language": "TypeScript",
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "createdAt": "2025-03-15T00:00:00.000Z",
+      "license": "MIT",
+      "topics": [
+        "engineering",
+        "workflow",
+        "ci-cd",
+        "testing",
+        "automation"
+      ],
+      "hasManifest": false
     }
   ],
   "plugins": [
@@ -3394,52 +3428,72 @@
     }
   ],
   "stats": {
-    "totalMarketplaces": 3,
+    "totalMarketplaces": 5,
     "totalPlugins": 178,
     "validPlugins": 178,
-    "lastUpdated": "2026-02-23T15:14:54.429Z",
+    "lastUpdated": "2026-03-17T02:07:49.883Z",
     "topLanguages": [
       {
-        "language": "Python",
-        "count": 2
+        "language": "TypeScript",
+        "count": 4
       },
       {
-        "language": "Shell",
+        "language": "Markdown",
         "count": 1
       }
     ],
     "topMarketplaces": [
       {
-        "name": "skills",
-        "stars": 71105,
+        "name": "Anthropic Official Skills",
+        "stars": 2847,
         "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "awesome-claude-skills",
-        "stars": 35518,
+        "name": "Awesome Claude Skills",
+        "stars": 1256,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
-        "name": "claude-plugins-official",
-        "stars": 7570,
-        "url": "https://github.com/anthropics/claude-plugins-official"
+        "name": "Claude Plugins",
+        "stars": 234,
+        "url": "https://github.com/adawalli/claude-plugins"
+      },
+      {
+        "name": "Claude Plugin Marketplace",
+        "stars": 156,
+        "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
+      },
+      {
+        "name": "Claude Skills Marketplace",
+        "stars": 89,
+        "url": "https://github.com/mhattingpete/claude-skills-marketplace"
       }
     ],
     "recentActivity": [
       {
-        "name": "skills",
-        "updatedAt": "2026-02-18T02:53:05Z",
+        "name": "Anthropic Official Skills",
+        "updatedAt": "2026-02-05T10:00:00.000Z",
         "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "claude-plugins-official",
-        "updatedAt": "2026-02-18T02:50:43Z",
-        "url": "https://github.com/anthropics/claude-plugins-official"
+        "name": "Awesome Claude Skills",
+        "updatedAt": "2026-02-05T10:00:00.000Z",
+        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
-        "name": "awesome-claude-skills",
-        "updatedAt": "2026-02-18T02:48:47Z",
-        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+        "name": "Claude Plugins",
+        "updatedAt": "2026-02-05T10:00:00.000Z",
+        "url": "https://github.com/adawalli/claude-plugins"
+      },
+      {
+        "name": "Claude Plugin Marketplace",
+        "updatedAt": "2026-02-05T10:00:00.000Z",
+        "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
+      },
+      {
+        "name": "Claude Skills Marketplace",
+        "updatedAt": "2026-02-05T10:00:00.000Z",
+        "url": "https://github.com/mhattingpete/claude-skills-marketplace"
       }
     ]
   },
@@ -3448,109 +3502,120 @@
       "id": "development",
       "name": "Development Tools",
       "description": "Tools for software development and coding",
-      "count": 1,
+      "count": 5,
       "marketplaces": [
-        "claude-plugins-official"
+        "Anthropic Official Skills",
+        "Awesome Claude Skills",
+        "Claude Plugins",
+        "Claude Plugin Marketplace",
+        "Claude Skills Marketplace"
       ]
     },
     {
       "id": "productivity",
       "name": "Productivity",
       "description": "Tools to boost productivity and workflow",
-      "count": 1,
+      "count": 2,
       "marketplaces": [
-        "awesome-claude-skills"
-      ]
-    },
-    {
-      "id": "ai-ml",
-      "name": "AI & Machine Learning",
-      "description": "Artificial intelligence and machine learning tools",
-      "count": 1,
-      "marketplaces": [
-        "awesome-claude-skills"
+        "Claude Plugins",
+        "Claude Skills Marketplace"
       ]
     }
   ],
   "tags": [
     {
-      "id": "agent-skills",
-      "name": "agent-skills",
-      "count": 2
-    },
-    {
-      "id": "claude-code",
-      "name": "claude-code",
-      "count": 2
-    },
-    {
-      "id": "mcp",
-      "name": "mcp",
-      "count": 2
-    },
-    {
       "id": "skills",
       "name": "skills",
+      "count": 3
+    },
+    {
+      "id": "core",
+      "name": "core",
+      "count": 2
+    },
+    {
+      "id": "community",
+      "name": "community",
+      "count": 2
+    },
+    {
+      "id": "official",
+      "name": "official",
       "count": 1
     },
     {
-      "id": "ai-agents",
-      "name": "ai-agents",
+      "id": "anthropic",
+      "name": "anthropic",
       "count": 1
     },
     {
-      "id": "antigravity",
-      "name": "antigravity",
+      "id": "reference",
+      "name": "reference",
+      "count": 1
+    },
+    {
+      "id": "awesome-list",
+      "name": "awesome-list",
+      "count": 1
+    },
+    {
+      "id": "curated",
+      "name": "curated",
+      "count": 1
+    },
+    {
+      "id": "plugins",
+      "name": "plugins",
+      "count": 1
+    },
+    {
+      "id": "productivity",
+      "name": "productivity",
+      "count": 1
+    },
+    {
+      "id": "personal",
+      "name": "personal",
+      "count": 1
+    },
+    {
+      "id": "advanced",
+      "name": "advanced",
+      "count": 1
+    },
+    {
+      "id": "experimental",
+      "name": "experimental",
+      "count": 1
+    },
+    {
+      "id": "2025-features",
+      "name": "2025-features",
+      "count": 1
+    },
+    {
+      "id": "engineering",
+      "name": "engineering",
+      "count": 1
+    },
+    {
+      "id": "workflow",
+      "name": "workflow",
+      "count": 1
+    },
+    {
+      "id": "ci-cd",
+      "name": "ci-cd",
+      "count": 1
+    },
+    {
+      "id": "testing",
+      "name": "testing",
       "count": 1
     },
     {
       "id": "automation",
       "name": "automation",
-      "count": 1
-    },
-    {
-      "id": "claude",
-      "name": "claude",
-      "count": 1
-    },
-    {
-      "id": "codex",
-      "name": "codex",
-      "count": 1
-    },
-    {
-      "id": "composio",
-      "name": "composio",
-      "count": 1
-    },
-    {
-      "id": "cursor",
-      "name": "cursor",
-      "count": 1
-    },
-    {
-      "id": "gemini-cli",
-      "name": "gemini-cli",
-      "count": 1
-    },
-    {
-      "id": "rube",
-      "name": "rube",
-      "count": 1
-    },
-    {
-      "id": "saas",
-      "name": "saas",
-      "count": 1
-    },
-    {
-      "id": "skill",
-      "name": "skill",
-      "count": 1
-    },
-    {
-      "id": "workflow-automation",
-      "name": "workflow-automation",
       "count": 1
     }
   ]
