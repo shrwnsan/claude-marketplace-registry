@@ -89,7 +89,7 @@ const useQualityIndicators = (autoRefresh: boolean = false, refreshInterval: num
       setLoading(true);
       setError(null);
 
-      const response = await fetch('/data/stats.json', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/data/stats.json`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

@@ -138,7 +138,7 @@ const useCategoryAnalytics = (period: string = '30d') => {
       setLoading(true);
       setError(null);
 
-      const response = await fetch(`/data/stats.json`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/data/stats.json`);
 
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);

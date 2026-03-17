@@ -383,7 +383,7 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({
         }
         setError(null);
 
-        const response = await fetch(`/data/stats.json`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/data/stats.json`);
 
         if (!response.ok) {
           throw new Error(`Failed to fetch growth data: ${response.status} ${response.statusText}`);
