@@ -116,8 +116,10 @@ jobs:
               complexity = 8;
             }
 
-            // TIER 2 (elevated from default)
-            if (!docOnly && hasCriticalPaths && changedLines < 100) {
+            // TIER 2 (elevated from default, but don't downgrade Tier 3)
+            if (tier === 3) {
+              // Already assigned Tier 3, don't downgrade
+            } else if (!docOnly && hasCriticalPaths && changedLines < 100) {
               tier = 2;
               reason = 'Focused critical path change';
               complexity = 6;

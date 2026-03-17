@@ -25,3 +25,13 @@ regexes = [
 paths = [
   '''docs/''',
 ]
+
+# Suppress false positives on git commit SHAs in plugin manifest data
+# The sourcegraph-access-token rule matches 40-char hex strings which
+# collide with the "sha" fields used to pin plugin versions
+[[rules]]
+id = "sourcegraph-access-token"
+[rules.allowlist]
+paths = [
+  '''data/''',
+]

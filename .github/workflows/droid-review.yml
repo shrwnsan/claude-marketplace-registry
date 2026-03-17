@@ -1,9 +1,9 @@
 name: Droid Auto Review (Tier 3 - Deep Analysis)
 
 on:
-  workflow_run:
-    workflows: [Route PR to Model]
-    types: [completed]
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
 
 permissions:
   contents: write
@@ -13,74 +13,103 @@ permissions:
   actions: read
 
 jobs:
-  get-tier:
-    # Skip if not triggered by a PR workflow (e.g., Scan Marketplaces)
-    if: github.event.workflow_run.event == 'pull_request'
+  wait-for-routing:
+    # Gate: only run for trusted authors, skip drafts
+    if: |
+      github.event.pull_request.draft == false &&
+      (github.event.pull_request.author_association == 'OWNER' ||
+       github.event.pull_request.author_association == 'MEMBER' ||
+       github.event.pull_request.author_association == 'COLLABORATOR')
     runs-on: ubuntu-latest
     outputs:
-      tier: ${{ steps.extract.outputs.tier }}
-      pr_number: ${{ steps.extract.outputs.pr_number }}
-      author_association: ${{ steps.extract.outputs.author_association }}
-      head_sha: ${{ steps.extract.outputs.head_sha }}
-      is_draft: ${{ steps.extract.outputs.is_draft }}
+      tier: ${{ steps.get-routing.outputs.tier }}
+      should_review: ${{ steps.get-routing.outputs.should_review }}
     steps:
-      - name: Download routing artifacts
-        uses: actions/download-artifact@v4
-        continue-on-error: true
+      - name: Wait for Route PR to Model and get tier
+        id: get-routing
+        uses: actions/github-script@v7
         with:
-          name: routing-analysis
-          run-id: ${{ github.event.workflow_run.id }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            // Poll for the "Route PR to Model" workflow to complete
+            // and upload its routing-analysis artifact
+            const maxAttempts = 20;
+            const pollInterval = 15000; // 15 seconds
 
-      - name: Extract tier
-        id: extract
-        run: |
-          if [ -f routing-analysis.json ]; then
-            # Validate artifact contains required fields
-            if ! jq -e '.tier' routing-analysis.json > /dev/null 2>&1; then
-              echo "⚠️ Invalid routing-analysis.json structure, falling back to Tier 2"
-              echo "tier=2" >> $GITHUB_OUTPUT
-            else
-              TIER=$(jq -r '.tier' routing-analysis.json)
-              echo "tier=${TIER}" >> $GITHUB_OUTPUT
-            fi
-          else
-            echo "tier=2" >> $GITHUB_OUTPUT
-          fi
+            for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+              const runs = await github.rest.actions.listWorkflowRuns({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: 'route-pr-to-model.yml',
+                head_sha: context.payload.pull_request.head.sha,
+                per_page: 1
+              });
 
-          # Extract author_association from routing artifact (workflow_run.pull_requests[] doesn't carry it)
-          if [ -f routing-analysis.json ] && jq -e '.' routing-analysis.json > /dev/null 2>&1; then
-            AUTHOR_ASSOCIATION=$(jq -r '.author_association // "NONE"' routing-analysis.json)
-          else
-            AUTHOR_ASSOCIATION="NONE"
-          fi
-          echo "author_association=${AUTHOR_ASSOCIATION}" >> $GITHUB_OUTPUT
+              const latestRun = runs.data.workflow_runs?.[0] ?? null;
 
-          # Extract PR details from workflow_run context
-          PR_COUNT=$(jq -r '.workflow_run.pull_requests | length' "$GITHUB_EVENT_PATH")
-          if [ "$PR_COUNT" -gt 0 ]; then
-            PR_NUMBER=$(jq -r '.workflow_run.pull_requests[0].number' "$GITHUB_EVENT_PATH")
-            HEAD_SHA=$(jq -r '.workflow_run.head_sha // ""' "$GITHUB_EVENT_PATH")
-            IS_DRAFT=$(jq -r '.workflow_run.pull_requests[0].draft // "false"' "$GITHUB_EVENT_PATH")
-            echo "pr_number=${PR_NUMBER}" >> $GITHUB_OUTPUT
-            echo "head_sha=${HEAD_SHA}" >> $GITHUB_OUTPUT
-            echo "is_draft=${IS_DRAFT}" >> $GITHUB_OUTPUT
-          else
-            echo "⚠️ No pull requests found in workflow_run event"
-            echo "pr_number=0" >> $GITHUB_OUTPUT
-            echo "head_sha=" >> $GITHUB_OUTPUT
-            echo "is_draft=false" >> $GITHUB_OUTPUT
-          fi
+              if (latestRun && latestRun.status === 'completed') {
+                console.log(`Route PR to Model completed (run ${latestRun.id})`);
+
+                // Download the routing artifact
+                try {
+                  const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    run_id: latestRun.id
+                  });
+
+                  const routingArtifact = artifacts.data.artifacts.find(
+                    a => a.name === 'routing-analysis'
+                  );
+
+                  if (routingArtifact) {
+                    const download = await github.rest.actions.downloadArtifact({
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      artifact_id: routingArtifact.id,
+                      archive_format: 'zip'
+                    });
+
+                    const fs = require('fs');
+                    fs.writeFileSync('/tmp/routing.zip', Buffer.from(download.data));
+
+                    const { execSync } = require('child_process');
+                    execSync('unzip -o /tmp/routing.zip -d /tmp/routing');
+
+                    const routing = JSON.parse(
+                      fs.readFileSync('/tmp/routing/routing-analysis.json', 'utf8')
+                    );
+
+                    const tier = routing.tier;
+                    console.log(`Routing tier: ${tier}, reason: ${routing.reason}`);
+                    core.setOutput('tier', tier);
+                    core.setOutput('should_review', tier === 3 ? 'true' : 'false');
+                    return;
+                  }
+                } catch (e) {
+                  console.log(`Failed to download artifact: ${e.message}`);
+                }
+
+                // Artifact not found — default to skip
+                core.setOutput('tier', '0');
+                core.setOutput('should_review', 'false');
+                return;
+              }
+
+              console.log(`Attempt ${attempt}/${maxAttempts}: Route PR to Model ${latestRun ? `status '${latestRun.status}'` : 'not found'}, waiting...`);
+
+              if (attempt < maxAttempts) {
+                await new Promise(r => setTimeout(r, pollInterval));
+              }
+            }
+
+            // Timed out
+            console.log('Timed out waiting for Route PR to Model');
+            core.setOutput('tier', '0');
+            core.setOutput('should_review', 'false');
 
   droid-review:
-    needs: get-tier
-    if: |
-      needs.get-tier.result == 'success' &&
-      needs.get-tier.outputs.tier == '3' &&
-      needs.get-tier.outputs.is_draft == 'false' &&
-      (needs.get-tier.outputs.author_association == 'OWNER' ||
-       needs.get-tier.outputs.author_association == 'MEMBER' ||
-       needs.get-tier.outputs.author_association == 'COLLABORATOR')
+    needs: wait-for-routing
+    if: needs.wait-for-routing.outputs.should_review == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -88,7 +117,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 20
-          ref: ${{ needs.get-tier.outputs.head_sha }}
 
       - name: Run Droid Auto Review - Tier 3 Deep Analysis
         uses: Factory-AI/droid-action@v1
