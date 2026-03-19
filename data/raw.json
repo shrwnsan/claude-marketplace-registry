@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 96028,
-    "forks": 10347,
+    "stars": 96979,
+    "forks": 10473,
     "language": "Python",
-    "updatedAt": "2026-03-18T02:09:58Z",
+    "updatedAt": "2026-03-19T02:10:50Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 45290,
-    "forks": 4590,
+    "stars": 45773,
+    "forks": 4650,
     "language": "Python",
-    "updatedAt": "2026-03-18T02:07:09Z",
+    "updatedAt": "2026-03-19T02:05:00Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 12514,
-    "forks": 1205,
+    "stars": 12657,
+    "forks": 1233,
     "language": "Python",
-    "updatedAt": "2026-03-18T02:10:21Z",
+    "updatedAt": "2026-03-19T01:56:11Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -1260,6 +1260,24 @@
             "sha": "eeef353eead2e3dc5f33f64dbaae54e1309e0d45"
           },
           "homepage": "https://github.com/intercom/claude-plugin-external"
+        },
+        {
+          "name": "telegram",
+          "description": "Telegram messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
+          "category": "productivity",
+          "source": "./external_plugins/telegram"
+        },
+        {
+          "name": "discord",
+          "description": "Discord messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
+          "category": "productivity",
+          "source": "./external_plugins/discord"
+        },
+        {
+          "name": "fakechat",
+          "description": "Localhost web chat for testing the channel notification flow. No tokens, no access control, no third-party service.",
+          "category": "development",
+          "source": "./external_plugins/fakechat"
         }
       ]
     }
