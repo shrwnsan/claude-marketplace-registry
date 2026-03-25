@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 101074,
-    "forks": 11057,
+    "stars": 102036,
+    "forks": 11197,
     "language": "Python",
-    "updatedAt": "2026-03-24T02:04:05Z",
+    "updatedAt": "2026-03-25T02:09:40Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 47260,
-    "forks": 4859,
+    "stars": 47585,
+    "forks": 4895,
     "language": "Python",
-    "updatedAt": "2026-03-24T02:03:06Z",
+    "updatedAt": "2026-03-25T02:06:35Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 14321,
-    "forks": 1475,
+    "stars": 14506,
+    "forks": 1512,
     "language": "Python",
-    "updatedAt": "2026-03-24T01:59:44Z",
+    "updatedAt": "2026-03-25T02:09:19Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -681,6 +681,16 @@
           "homepage": "https://www.firetiger.com/"
         },
         {
+          "name": "flint",
+          "description": "Build and manage websites with Flint's AI website builder through natural conversation.",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/tryflint/claude-code-plugin.git",
+            "sha": "8f57ef474f59817c7e5930dd6c295232d43c3711"
+          },
+          "homepage": "https://www.tryflint.com/docs/claude-code-plugin"
+        },
+        {
           "name": "followrabbit",
           "description": "Cloud cost optimization for GCP infrastructure. Review changes for cost impact and auto-apply savings recommendations using the followrabbit CLI.",
           "source": {
@@ -784,6 +794,12 @@
             "url": "https://github.com/huggingface/skills.git"
           },
           "homepage": "https://github.com/huggingface/skills.git"
+        },
+        {
+          "name": "imessage",
+          "description": "iMessage messaging bridge with built-in access control. Reads chat.db directly, sends via AppleScript. Manage pairing, allowlists, and policy via /imessage:access.",
+          "category": "productivity",
+          "source": "./external_plugins/imessage"
         },
         {
           "name": "intercom",
