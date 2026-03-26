@@ -6,12 +6,12 @@
       "totalMarketplaces": 5,
       "totalDevelopers": 31,
       "totalDownloads": 72520,
-      "lastUpdated": "2026-03-25T02:11:30.833Z",
+      "lastUpdated": "2026-03-26T02:25:15.206Z",
       "growthRate": {
         "plugins": 0,
-        "marketplaces": 66.7,
+        "marketplaces": 0,
         "developers": 0,
-        "downloads": -93.8
+        "downloads": 0
       },
       "healthScore": 85
     },
@@ -21,7 +21,7 @@
         "value": 178
       },
       {
-        "date": "2026-03-25",
+        "date": "2026-03-26",
         "value": 178,
         "change": 0
       }
@@ -32,7 +32,7 @@
         "value": 3
       },
       {
-        "date": "2026-03-25",
+        "date": "2026-03-26",
         "value": 5,
         "change": 2
       }
@@ -43,7 +43,7 @@
         "value": 8
       },
       {
-        "date": "2026-03-25",
+        "date": "2026-03-26",
         "value": 8,
         "change": 0
       }
@@ -54,7 +54,7 @@
         "value": 1168630
       },
       {
-        "date": "2026-03-25",
+        "date": "2026-03-26",
         "value": 72520,
         "change": -1096110
       }
@@ -118,7 +118,7 @@
     }
   },
   "meta": {
-    "timestamp": "2026-03-25T02:11:30.833Z",
+    "timestamp": "2026-03-26T02:25:15.206Z",
     "requestId": "static-build",
     "responseTime": 0
   }
