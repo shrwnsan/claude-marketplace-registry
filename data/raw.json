@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 105804,
-    "forks": 11710,
+    "stars": 106710,
+    "forks": 11805,
     "language": "Python",
-    "updatedAt": "2026-03-30T02:29:54Z",
+    "updatedAt": "2026-03-31T02:25:03Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 49167,
-    "forks": 5082,
+    "stars": 49546,
+    "forks": 5136,
     "language": "Python",
-    "updatedAt": "2026-03-30T02:28:18Z",
+    "updatedAt": "2026-03-31T02:25:16Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 15308,
-    "forks": 1659,
+    "stars": 15433,
+    "forks": 1676,
     "language": "Python",
-    "updatedAt": "2026-03-30T02:27:21Z",
+    "updatedAt": "2026-03-31T02:22:44Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -917,6 +917,17 @@
           }
         },
         {
+          "name": "math-olympiad",
+          "description": "Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing.",
+          "author": {
+            "name": "Anthropic",
+            "email": "support@anthropic.com"
+          },
+          "source": "./plugins/math-olympiad",
+          "category": "math",
+          "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-olympiad"
+        },
+        {
           "name": "mcp-server-dev",
           "description": "Skills for designing and building MCP servers that work seamlessly with Claude. Guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
           "author": {
@@ -959,6 +970,17 @@
             "sha": "ce435be18a700dc849d6a63a80da4816d1e2128c"
           },
           "homepage": "https://www.mintlify.com/"
+        },
+        {
+          "name": "mongodb",
+          "description": "Official Claude plugin for MongoDB (MCP Server + Skills). Connect to databases, explore data, manage collections, optimize queries, generate reliable code, implement best practices, develop advanced features, and more.",
+          "category": "database",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/mongodb/agent-skills.git",
+            "sha": "c47079f65e88a113c52d1ce0618684cef300246c"
+          },
+          "homepage": "https://www.mongodb.com/docs/mcp-server/overview/"
         },
         {
           "name": "neon",
@@ -1145,7 +1167,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/Postman-Devrel/postman-claude-code-plugin.git",
-            "sha": "0714280351c1a137e79aad465a66730511ffbd57"
+            "sha": "40b11ac3466c500cf4625ac016d5c01cd00046f4"
           },
           "homepage": "https://learning.postman.com/docs/developer/postman-mcp-server/"
         },
@@ -1552,6 +1574,32 @@
               }
             }
           }
+        },
+        {
+          "name": "ui5",
+          "description": "SAPUI5 / OpenUI5 plugin for Claude. Create and validate UI5 projects, access API documentation, run UI5 linter, get development guidelines and best practices for UI5 development.",
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "UI5/plugins-claude",
+            "path": "plugins/ui5",
+            "ref": "main",
+            "sha": "5070dfc1cef711d6efad40beb43750027039d71f"
+          },
+          "homepage": "https://github.com/UI5/plugins-claude"
+        },
+        {
+          "name": "ui5-typescript-conversion",
+          "description": "SAPUI5 / OpenUI5 plugin for Claude. Convert JavaScript based UI5 projects to TypeScript.",
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "UI5/plugins-claude",
+            "path": "plugins/ui5-typescript-conversion",
+            "ref": "main",
+            "sha": "5070dfc1cef711d6efad40beb43750027039d71f"
+          },
+          "homepage": "https://github.com/UI5/plugins-claude"
         },
         {
           "name": "vercel",
