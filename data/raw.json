@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 106710,
-    "forks": 11805,
+    "stars": 107654,
+    "forks": 11956,
     "language": "Python",
-    "updatedAt": "2026-03-31T02:25:03Z",
+    "updatedAt": "2026-04-01T02:35:05Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 49546,
-    "forks": 5136,
+    "stars": 49925,
+    "forks": 5179,
     "language": "Python",
-    "updatedAt": "2026-03-31T02:25:16Z",
+    "updatedAt": "2026-04-01T02:34:48Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 15433,
-    "forks": 1676,
+    "stars": 15586,
+    "forks": 1701,
     "language": "Python",
-    "updatedAt": "2026-03-31T02:22:44Z",
+    "updatedAt": "2026-04-01T02:19:57Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -1145,8 +1145,7 @@
           "category": "monitoring",
           "source": {
             "source": "url",
-            "url": "https://github.com/PostHog/ai-plugin.git",
-            "sha": "f2f37954ecef9f1afce4fa81b6a612454a96c410"
+            "url": "https://github.com/PostHog/ai-plugin.git"
           },
           "homepage": "https://posthog.com/docs/model-context-protocol"
         },
