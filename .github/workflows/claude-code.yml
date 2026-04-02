@@ -71,7 +71,7 @@ jobs:
 
       - name: Run Code Review
         id: review
-        uses: anthropics/claude-code-action@174211465610921a3cbbe9e49ef243a0232c48cb  # v1.0.11
+        uses: anthropics/claude-code-action@ac1a3207f3f00b4a37e2f3a6f0935733c7c64651  # v1.0.11
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
@@ -129,7 +129,7 @@ jobs:
         run: npm ci
 
       - name: Download review results
-        uses: actions/download-artifact@d3f86a106a0bac45b97c39fac9b9d150701026f  # v4.3.0
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093  # v4.3.0
         with:
           name: review-results
           path: /tmp/claude-output/
@@ -149,7 +149,7 @@ jobs:
           echo '{"triageMarkdown":"","actions":[],"summary":{"criticalFixed":0,"issuesCreated":0,"skipped":0}}' > /tmp/claude-output/triage-results.json
 
       - name: Triage and Act
-        uses: anthropics/claude-code-action@174211465610921a3cbbe9e49ef243a0232c48cb  # v1.0.11
+        uses: anthropics/claude-code-action@ac1a3207f3f00b4a37e2f3a6f0935733c7c64651  # v1.0.11
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
