@@ -47,12 +47,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
         with:
           fetch-depth: 20
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a  # v4.2.0
         with:
           node-version: '20'
           cache: 'npm'
@@ -71,7 +71,7 @@ jobs:
 
       - name: Run Code Review
         id: review
-        uses: anthropics/claude-code-action@v1
+        uses: anthropics/claude-code-action@ac1a3207f3f00b4a37e2f3a6f0935733c7c64651  # v1.0.11
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
@@ -91,7 +91,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: Upload review results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4.6.2
         if: always()
         with:
           name: review-results
@@ -115,12 +115,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
         with:
           fetch-depth: 20
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a  # v4.2.0
         with:
           node-version: '20'
           cache: 'npm'
@@ -129,7 +129,7 @@ jobs:
         run: npm ci
 
       - name: Download review results
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093  # v4.3.0
         with:
           name: review-results
           path: /tmp/claude-output/
@@ -149,7 +149,7 @@ jobs:
           echo '{"triageMarkdown":"","actions":[],"summary":{"criticalFixed":0,"issuesCreated":0,"skipped":0}}' > /tmp/claude-output/triage-results.json
 
       - name: Triage and Act
-        uses: anthropics/claude-code-action@v1
+        uses: anthropics/claude-code-action@ac1a3207f3f00b4a37e2f3a6f0935733c7c64651  # v1.0.11
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
@@ -169,7 +169,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: Upload triage results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4.6.2
         if: always()
         with:
           name: triage-results

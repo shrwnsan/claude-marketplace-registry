@@ -181,9 +181,20 @@ describe('QualityIndicators Component', () => {
 
       render(<QualityIndicators />);
 
+      // Wait for component to finish loading data
+      await waitFor(() => {
+        expect(screen.getByText('Maintenance Status')).toBeInTheDocument();
+      });
+
+      // Use a function matcher to handle text split across whitespace/lines
       await waitFor(() => {
         expect(
-          screen.getByText(/15 plugins haven't been updated in 6\+ months/i)
+          screen.getByText((_content, element) => {
+            return (
+              element?.tagName === 'SPAN' &&
+              /15 plugins haven.t been updated\s+in 6\+ months/i.test(element?.textContent || '')
+            );
+          })
         ).toBeInTheDocument();
       });
     });
