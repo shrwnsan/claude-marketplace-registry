@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 109359,
-    "forks": 12276,
+    "stars": 110083,
+    "forks": 12400,
     "language": "Python",
-    "updatedAt": "2026-04-03T02:22:16Z",
+    "updatedAt": "2026-04-04T02:06:05Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 50642,
-    "forks": 5298,
+    "stars": 50930,
+    "forks": 5343,
     "language": "Python",
-    "updatedAt": "2026-04-03T02:20:31Z",
+    "updatedAt": "2026-04-04T02:07:04Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 15809,
-    "forks": 1755,
+    "stars": 15918,
+    "forks": 1774,
     "language": "Python",
-    "updatedAt": "2026-04-03T02:15:07Z",
+    "updatedAt": "2026-04-04T01:35:22Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -1423,6 +1423,17 @@
           "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main"
         },
         {
+          "name": "sonarqube-agent-plugins",
+          "description": "Integrate SonarQube code quality and security analysis into Claude Code: namespaced slash commands, a guided skill to setup the SonarQube CLI, and a startup check for CLI wiring. MCP server registration and secrets-scanning hooks are installed by the SonarQube CLI as part of setup.",
+          "category": "security",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/SonarSource/sonarqube-agent-plugins.git",
+            "sha": "0cae644cee9318e6245b62ca779abdc60e6daa49"
+          },
+          "homepage": "https://github.com/SonarSource/sonarqube-agent-plugins"
+        },
+        {
           "name": "sonatype-guide",
           "description": "Sonatype Guide MCP server for software supply chain intelligence and dependency security. Analyze dependencies for vulnerabilities, get secure version recommendations, and check component quality metrics.",
           "category": "security",
@@ -1653,17 +1664,6 @@
             "sha": "b93007e9a726c6ee93c57a949e732744ef5acbfd"
           },
           "homepage": "https://github.com/zapier/zapier-mcp/tree/main/plugins/zapier"
-        },
-        {
-          "name": "zoominfo",
-          "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows.",
-          "category": "productivity",
-          "source": {
-            "source": "url",
-            "url": "https://github.com/Zoominfo/zoominfo-mcp-plugin.git",
-            "sha": "0705316ef8a2d0c64f81e50d4612ccc6a74edf03"
-          },
-          "homepage": "https://zoominfo.com"
         }
       ]
     }
