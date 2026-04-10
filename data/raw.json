@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 113257,
-    "forks": 12878,
+    "stars": 114003,
+    "forks": 12993,
     "language": "Python",
-    "updatedAt": "2026-04-09T02:12:48Z",
+    "updatedAt": "2026-04-10T02:32:26Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -91,7 +91,7 @@
         "name": "claude-api",
         "path": "skills/claude-api",
         "hasSkillMd": true,
-        "description": "This skill helps you build LLM-powered applications with Claude. Choose the right surface based on your needs, detect the project language, then read the relevant language-specific documentation."
+        "description": "name: claude-api"
       },
       {
         "name": "doc-coauthoring",
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 52222,
-    "forks": 5538,
+    "stars": 52508,
+    "forks": 5567,
     "language": "Python",
-    "updatedAt": "2026-04-09T02:11:53Z",
+    "updatedAt": "2026-04-10T02:32:46Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 16380,
-    "forks": 1859,
+    "stars": 16489,
+    "forks": 1885,
     "language": "Python",
-    "updatedAt": "2026-04-09T02:13:16Z",
+    "updatedAt": "2026-04-10T02:28:11Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -370,6 +370,17 @@
           "homepage": "https://github.com/awslabs/agent-plugins"
         },
         {
+          "name": "box",
+          "description": "Work with your Box content directly from Claude Code — search files, organize folders, collaborate with your team, and use Box AI to answer questions, summarize documents, and extract data without leaving your workflow.",
+          "category": "productivity",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/box/box-for-ai.git",
+            "sha": "6f4ec3549f3e869b115628403555b1c9220b2b34"
+          },
+          "homepage": "https://github.com/box/box-for-ai"
+        },
+        {
           "name": "brightdata-plugin",
           "description": "Web scraping, Google search, structured data extraction, and MCP server integration powered by Bright Data. Includes 7 skills: scrape any webpage as markdown (with bot detection/CAPTCHA bypass), search Google with structured JSON results, extract data from 40+ websites (Amazon, LinkedIn, Instagram, TikTok, YouTube, and more), orchestrate Bright Data's 60+ MCP tools, built-in best practices for Web Unlocker, SERP API, Web Scraper API, and Browser API, Python SDK best practices for the brightda...",
           "source": {
@@ -378,6 +389,17 @@
             "sha": "e671da495f7ec0ed6be5e9fa71e260f886a1dc36"
           },
           "homepage": "https://docs.brightdata.com"
+        },
+        {
+          "name": "cds-mcp",
+          "description": "AI-assisted development of SAP Cloud Application Programming Model (CAP) projects. Search CDS models and CAP documentation.",
+          "category": "development",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/cap-js/mcp-server.git",
+            "sha": "4d59d7070a52761a9b8028cbe710c8d7477cbc92"
+          },
+          "homepage": "https://cap.cloud.sap/"
         },
         {
           "name": "chrome-devtools-mcp",
