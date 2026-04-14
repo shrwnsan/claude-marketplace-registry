@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 115903,
-    "forks": 13288,
+    "stars": 116703,
+    "forks": 13402,
     "language": "Python",
-    "updatedAt": "2026-04-13T02:37:50Z",
+    "updatedAt": "2026-04-14T02:33:06Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 53293,
-    "forks": 5698,
+    "stars": 53575,
+    "forks": 5731,
     "language": "Python",
-    "updatedAt": "2026-04-13T02:39:15Z",
+    "updatedAt": "2026-04-14T02:33:05Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 16783,
-    "forks": 1941,
+    "stars": 16865,
+    "forks": 1959,
     "language": "Python",
-    "updatedAt": "2026-04-13T02:35:02Z",
+    "updatedAt": "2026-04-14T02:30:05Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -229,6 +229,16 @@
         "email": "support@anthropic.com"
       },
       "plugins": [
+        {
+          "name": "adlc",
+          "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, and optimize .agent files",
+          "category": "development",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git"
+          },
+          "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc"
+        },
         {
           "name": "adspirer-ads-agent",
           "description": "Cross-platform ad management for Google Ads, Meta Ads, TikTok Ads, and LinkedIn Ads. 91 tools for keyword research, campaign creation, performance analysis, and budget optimization.",
@@ -390,6 +400,17 @@
           "description": "Expert assistant for Azure Cosmos DB — data modeling, query optimization, performance tuning, and best practices.",
           "category": "database",
           "homepage": "https://github.com/AzureCosmosDB/cosmosdb-claude-code-plugin"
+        },
+        {
+          "name": "base44",
+          "description": "Build and deploy Base44 full-stack apps with CLI project management and JavaScript/TypeScript SDK development skills",
+          "category": "development",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/base44/skills.git",
+            "sha": "c7039b37eca0e2916a565a7395040c00055bcf8b"
+          },
+          "homepage": "https://docs.base44.com"
         },
         {
           "name": "box",
