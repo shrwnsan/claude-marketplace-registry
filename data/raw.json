@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 119015,
-    "forks": 13749,
+    "stars": 119619,
+    "forks": 13838,
     "language": "Python",
-    "updatedAt": "2026-04-17T02:30:14Z",
+    "updatedAt": "2026-04-18T02:24:40Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 54343,
-    "forks": 5831,
+    "stars": 54570,
+    "forks": 5854,
     "language": "Python",
-    "updatedAt": "2026-04-17T02:33:52Z",
+    "updatedAt": "2026-04-18T02:22:37Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 17126,
-    "forks": 2001,
+    "stars": 17205,
+    "forks": 2023,
     "language": "Python",
-    "updatedAt": "2026-04-17T02:25:23Z",
+    "updatedAt": "2026-04-18T02:11:22Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -377,6 +377,18 @@
           "category": "security",
           "source": "./external_plugins/autofix-bot",
           "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/autofix-bot"
+        },
+        {
+          "name": "aws-amplify",
+          "description": "Build full-stack apps with AWS Amplify Gen 2 using guided workflows for authentication, data models, storage, GraphQL APIs, and Lambda functions.",
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/awslabs/agent-plugins.git",
+            "path": "plugins/aws-amplify",
+            "ref": "main"
+          },
+          "homepage": "https://github.com/awslabs/agent-plugins"
         },
         {
           "name": "aws-serverless",
@@ -667,6 +679,18 @@
             "sha": "85d6053b1e21724f9cefb1e3f5219bd54fc77224"
           },
           "homepage": "https://github.com/astronomer/agents"
+        },
+        {
+          "name": "databases-on-aws",
+          "description": "Expert database guidance for the AWS database portfolio. Design schemas, execute queries, handle migrations, and choose the right database for your workload.",
+          "category": "database",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/awslabs/agent-plugins.git",
+            "path": "plugins/databases-on-aws",
+            "ref": "main"
+          },
+          "homepage": "https://github.com/awslabs/agent-plugins"
         },
         {
           "name": "dataverse",
@@ -1074,18 +1098,6 @@
           "homepage": "https://github.com/microsoftdocs/mcp"
         },
         {
-          "name": "migration-to-aws",
-          "description": "Assess current cloud provider usage and billing to estimate and compare AWS services and pricing, with recommendations for migration or continued use of current provider.",
-          "category": "migration",
-          "source": {
-            "source": "git-subdir",
-            "url": "https://github.com/awslabs/agent-plugins.git",
-            "path": "plugins/migration-to-aws",
-            "ref": "main"
-          },
-          "homepage": "https://github.com/awslabs/agent-plugins"
-        },
-        {
           "name": "mintlify",
           "description": "Build beautiful documentation sites with Mintlify. Convert non-markdown files into properly formatted MDX pages, add and modify content with correct component use, and automate documentation updates.",
           "category": "development",
@@ -1095,6 +1107,21 @@
             "sha": "ce435be18a700dc849d6a63a80da4816d1e2128c"
           },
           "homepage": "https://www.mintlify.com/"
+        },
+        {
+          "name": "miro",
+          "description": "Secure access to Miro boards. Enables AI to read board context, create diagrams, and generate code with enterprise-grade security.",
+          "author": {
+            "name": "Miro"
+          },
+          "category": "design",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/miroapp/miro-ai.git",
+            "path": "claude-plugins/miro",
+            "ref": "main"
+          },
+          "homepage": "https://miro.com"
         },
         {
           "name": "mongodb",
@@ -1129,6 +1156,28 @@
             "url": "https://github.com/netlify/context-and-tools.git"
           },
           "homepage": "https://github.com/netlify/context-and-tools"
+        },
+        {
+          "name": "netsuite-suitecloud",
+          "description": "NetSuite agent skills from Oracle — authoring guidance for SuiteCloud Development Framework (SDF) objects and UIF single-page-app components, plus runtime guidance for the NetSuite AI Service Connector.",
+          "author": {
+            "name": "Oracle NetSuite"
+          },
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/oracle/netsuite-suitecloud-sdk.git",
+            "path": "packages/agent-skills",
+            "ref": "master",
+            "sha": "43bacf43763e1eedd0892b4652be3d45df94f0e7"
+          },
+          "strict": false,
+          "skills": [
+            "./netsuite-ai-connector-instructions",
+            "./netsuite-sdf-roles-and-permissions",
+            "./netsuite-uif-spa-reference"
+          ],
+          "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk"
         },
         {
           "name": "nightvision",
@@ -1470,6 +1519,18 @@
               }
             }
           }
+        },
+        {
+          "name": "sagemaker-ai",
+          "description": "Build, train, and deploy AI models with deep AWS AI/ML expertise brought directly into your coding assistants, covering the surface area of Amazon SageMaker AI.",
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/awslabs/agent-plugins.git",
+            "path": "plugins/sagemaker-ai",
+            "ref": "main"
+          },
+          "homepage": "https://github.com/awslabs/agent-plugins"
         },
         {
           "name": "sanity",
