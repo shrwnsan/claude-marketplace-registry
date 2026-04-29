@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 124906,
-    "forks": 14634,
+    "stars": 125527,
+    "forks": 14701,
     "language": "Python",
-    "updatedAt": "2026-04-28T02:52:51Z",
+    "updatedAt": "2026-04-29T02:50:09Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 56704,
-    "forks": 6109,
+    "stars": 56920,
+    "forks": 6138,
     "language": "Python",
-    "updatedAt": "2026-04-28T02:49:01Z",
+    "updatedAt": "2026-04-29T02:49:47Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 18052,
-    "forks": 2171,
+    "stars": 18130,
+    "forks": 2186,
     "language": "Python",
-    "updatedAt": "2026-04-28T02:32:55Z",
+    "updatedAt": "2026-04-29T02:51:12Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -254,6 +254,21 @@
             "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git"
           },
           "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc"
+        },
+        {
+          "name": "adobe-for-creativity",
+          "description": "Harness Adobe's creative AI-powered tools to edit images, automate design workflows, and bring creative visions to life — from background removal to vectorization and professional retouching.",
+          "author": {
+            "name": "Adobe"
+          },
+          "category": "design",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/adobe/skills.git",
+            "path": "plugins/creative-cloud/adobe-for-creativity",
+            "ref": "main"
+          },
+          "homepage": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity"
         },
         {
           "name": "adspirer-ads-agent",
@@ -476,6 +491,22 @@
           "homepage": "https://github.com/awslabs/agent-plugins"
         },
         {
+          "name": "aws-dev-toolkit",
+          "description": "AWS development toolkit — 34 skills, 11 agents, and 3 MCP servers for building, migrating, and performing architecture reviews on AWS.",
+          "author": {
+            "name": "aws-samples"
+          },
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/aws-samples/sample-claude-code-plugins-for-startups.git",
+            "path": "plugins/aws-dev-toolkit",
+            "ref": "main",
+            "sha": "ddea7fdd605b42ed3900374815f358a2d4600db5"
+          },
+          "homepage": "https://github.com/aws-samples/sample-claude-code-plugins-for-startups"
+        },
+        {
           "name": "aws-serverless",
           "description": "Design, build, deploy, test, and debug serverless applications with AWS Serverless services.",
           "category": "development",
@@ -686,6 +717,17 @@
             "url": "https://github.com/cockroachdb/claude-plugin.git"
           },
           "homepage": "https://github.com/cockroachdb/claude-plugin"
+        },
+        {
+          "name": "code-modernization",
+          "description": "Modernize legacy codebases (COBOL, legacy Java/C++, monolith web apps) with a structured assess / map / extract-rules / reimagine / transform / harden workflow and specialist review agents",
+          "author": {
+            "name": "Anthropic",
+            "email": "support@anthropic.com"
+          },
+          "source": "./plugins/code-modernization",
+          "category": "development",
+          "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization"
         },
         {
           "name": "code-review",
@@ -2143,8 +2185,7 @@
           "category": "security",
           "source": {
             "source": "url",
-            "url": "https://github.com/VantaInc/vanta-mcp-plugin.git",
-            "sha": "46e5bebf0484f08fc4a3c4054437cf5ec06298c9"
+            "url": "https://github.com/VantaInc/vanta-mcp-plugin.git"
           },
           "homepage": "https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337"
         },
