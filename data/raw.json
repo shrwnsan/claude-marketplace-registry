@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 125527,
-    "forks": 14701,
+    "stars": 126169,
+    "forks": 14787,
     "language": "Python",
-    "updatedAt": "2026-04-29T02:50:09Z",
+    "updatedAt": "2026-04-30T02:49:18Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 56920,
-    "forks": 6138,
+    "stars": 57127,
+    "forks": 6157,
     "language": "Python",
-    "updatedAt": "2026-04-29T02:49:47Z",
+    "updatedAt": "2026-04-30T02:51:55Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 18130,
-    "forks": 2186,
+    "stars": 18228,
+    "forks": 2204,
     "language": "Python",
-    "updatedAt": "2026-04-29T02:51:12Z",
+    "updatedAt": "2026-04-30T02:53:07Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -781,6 +781,19 @@
           "tags": [
             "community-managed"
           ]
+        },
+        {
+          "name": "crowdstrike-falcon-foundry",
+          "description": "CrowdStrike Falcon Foundry development skills for building cybersecurity applications on the Falcon platform. Includes UI development, collections, functions, workflows, API integration, security patterns, and debugging workflows.",
+          "author": {
+            "name": "CrowdStrike"
+          },
+          "category": "security",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/CrowdStrike/foundry-skills.git"
+          },
+          "homepage": "https://github.com/CrowdStrike/foundry-skills"
         },
         {
           "name": "csharp-lsp",
@@ -2296,6 +2309,20 @@
         }
       ]
     }
+  },
+  {
+    "id": "1224771062",
+    "name": "cognitum-claude-plugin",
+    "description": "Cognitum Claude Code plugins (cognitum-mcp cloud + cognitum-seed local). Marketplace at https://cognitum.one/marketplace.json",
+    "url": "https://github.com/cognitum-one/cognitum-claude-plugin",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2026-04-29T15:59:44Z",
+    "createdAt": "2026-04-29T15:58:36Z",
+    "license": "None",
+    "topics": [],
+    "discoverySource": "custom-query"
   },
   {
     "id": "1192221605",
