@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 130566,
-    "forks": 15358,
+    "stars": 131169,
+    "forks": 15433,
     "language": "Python",
-    "updatedAt": "2026-05-09T02:45:06Z",
+    "updatedAt": "2026-05-10T02:54:33Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 58799,
-    "forks": 6360,
+    "stars": 58974,
+    "forks": 6386,
     "language": "Python",
-    "updatedAt": "2026-05-09T02:46:39Z",
+    "updatedAt": "2026-05-10T02:52:34Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 18912,
-    "forks": 2320,
+    "stars": 18978,
+    "forks": 2336,
     "language": "Python",
-    "updatedAt": "2026-05-09T02:42:33Z",
+    "updatedAt": "2026-05-10T02:29:41Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -1900,6 +1900,24 @@
             "sha": "bc09fa9854507c538a856648aafbd4e1a775a95c"
           },
           "homepage": "https://www.sanity.io"
+        },
+        {
+          "name": "sap-fiori-mcp-server",
+          "description": "MCP server for SAP Fiori development tools for Claude Code. Build and modify SAP Fiori applications with AI assistance.",
+          "author": {
+            "name": "SAP SE",
+            "email": "ospo@sap.com",
+            "url": "https://www.sap.com"
+          },
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/SAP/open-ux-tools.git",
+            "path": "packages/fiori-mcp-server",
+            "ref": "main",
+            "sha": "d9d4ab7e69fe453f8fd682304ff1e3ac40a216c6"
+          },
+          "homepage": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server"
         },
         {
           "name": "sap-mdk-server",
