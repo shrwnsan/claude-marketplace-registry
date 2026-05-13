@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 132426,
-    "forks": 15596,
+    "stars": 133096,
+    "forks": 15696,
     "language": "Python",
-    "updatedAt": "2026-05-12T02:53:48Z",
+    "updatedAt": "2026-05-13T03:24:02Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 59301,
-    "forks": 6435,
+    "stars": 59466,
+    "forks": 6461,
     "language": "Python",
-    "updatedAt": "2026-05-12T02:50:26Z",
+    "updatedAt": "2026-05-13T03:22:10Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 19133,
-    "forks": 2375,
+    "stars": 19228,
+    "forks": 2392,
     "language": "Python",
-    "updatedAt": "2026-05-12T02:44:59Z",
+    "updatedAt": "2026-05-13T03:00:51Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -897,7 +897,7 @@
         },
         {
           "name": "data-agent-kit-starter-pack",
-          "description": "Specialized suite of skills for data engineers on Google Cloud — architect data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across BigQuery, Spanner, BigLake, and Dataproc.",
+          "description": "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.",
           "author": {
             "name": "Google LLC"
           },
@@ -905,9 +905,9 @@
           "source": {
             "source": "url",
             "url": "https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack.git",
-            "sha": "7bcfcb77435ec6d544b1131333f2297ca09c3930"
+            "sha": "04c4354242c1192191c76fca2d4b03d94401d9fa"
           },
-          "homepage": "https://cloud.google.com/bigquery"
+          "homepage": "https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack"
         },
         {
           "name": "data-engineering",
@@ -2043,7 +2043,7 @@
             "source": "git-subdir",
             "url": "https://github.com/ServiceNow/sdk.git",
             "path": "providers/claude/plugin",
-            "ref": "main",
+            "ref": "master",
             "sha": "06adf37ca78c270a57f93e7b9dfbb7bf16e24611"
           },
           "homepage": "https://servicenow.github.io/sdk/"
