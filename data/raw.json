@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 135858,
-    "forks": 16018,
+    "stars": 136429,
+    "forks": 16091,
     "language": "Python",
-    "updatedAt": "2026-05-17T03:25:00Z",
+    "updatedAt": "2026-05-18T03:37:49Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 60164,
-    "forks": 6549,
+    "stars": 60332,
+    "forks": 6562,
     "language": "Python",
-    "updatedAt": "2026-05-17T03:14:25Z",
+    "updatedAt": "2026-05-18T03:27:09Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 19500,
-    "forks": 2440,
+    "stars": 19595,
+    "forks": 2461,
     "language": "Python",
-    "updatedAt": "2026-05-17T03:13:34Z",
+    "updatedAt": "2026-05-18T03:39:15Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -857,7 +857,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/CrowdStrike/foundry-skills.git",
-            "sha": "e7fa0260b5a413d9a459d3afbc5ba427da6c6e04"
+            "sha": "4b517aa5729d5bb5e397ff779f98eb05c91d1b21"
           },
           "homepage": "https://github.com/CrowdStrike/foundry-skills"
         },
@@ -2469,6 +2469,20 @@
             "sha": "ab0f09b2ddc6682a7f69055c7861009ec6062775"
           },
           "homepage": "https://developers.zoom.us/"
+        },
+        {
+          "name": "zoominfo",
+          "description": "Search companies and contacts, enrich leads, find lookalikes, and get AI-ranked contact recommendations. Pre-built skills chain multiple ZoomInfo tools into complete B2B sales workflows.",
+          "author": {
+            "name": "ZoomInfo"
+          },
+          "category": "productivity",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/Zoominfo/zoominfo-mcp-plugin.git",
+            "sha": "14752e4553312d8af3eb3a3264a97d76bb3e0215"
+          },
+          "homepage": "https://www.zoominfo.com"
         },
         {
           "name": "zscaler",
