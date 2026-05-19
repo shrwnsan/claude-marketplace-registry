@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 136429,
-    "forks": 16091,
+    "stars": 137128,
+    "forks": 16182,
     "language": "Python",
-    "updatedAt": "2026-05-18T03:37:49Z",
+    "updatedAt": "2026-05-19T03:30:21Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 60332,
-    "forks": 6562,
+    "stars": 60527,
+    "forks": 6583,
     "language": "Python",
-    "updatedAt": "2026-05-18T03:27:09Z",
+    "updatedAt": "2026-05-19T03:30:03Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -48,16 +48,28 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 19595,
-    "forks": 2461,
+    "stars": 19717,
+    "forks": 2478,
     "language": "Python",
-    "updatedAt": "2026-05-18T03:39:15Z",
+    "updatedAt": "2026-05-19T03:28:02Z",
     "topics": [
       "claude-code",
       "mcp",
       "skills"
     ],
     "hasManifest": true
+  },
+  {
+    "id": "1242893821",
+    "name": "claude-plugin-schemas",
+    "description": "Strict JSON Schema Draft 2020-12 validation pack for Claude Code plugin.json + marketplace.json, ChatGPT Apps SDK, and legacy ai-plugin.json manifests.",
+    "url": "https://github.com/pv-udpv/claude-plugin-schemas",
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "updatedAt": "2026-05-18T21:24:05Z",
+    "topics": [],
+    "hasManifest": false
   },
   {
     "id": "1239884165",

@@ -1,32 +1,38 @@
 {
-  "totalFound": 6,
+  "totalFound": 7,
   "withManifest": 2,
-  "lastUpdated": "2026-05-18T03:39:21.464Z",
+  "lastUpdated": "2026-05-19T03:32:46.100Z",
   "searchQuery": "claude-plugin+marketplace.json",
   "languages": {
     "Python": 3,
+    "JavaScript": 1,
     "Unknown": 3
   },
   "topRepos": [
     {
       "name": "skills",
-      "stars": 136429,
+      "stars": 137128,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 60332,
+      "stars": 60527,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 19595,
+      "stars": 19717,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "cognitum-claude-plugin",
       "stars": 1,
       "url": "https://github.com/cognitum-one/cognitum-claude-plugin"
+    },
+    {
+      "name": "claude-plugin-schemas",
+      "stars": 0,
+      "url": "https://github.com/pv-udpv/claude-plugin-schemas"
     },
     {
       "name": ".claude-plugin-marketplace.json",
