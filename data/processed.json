@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 137721,
-    "forks": 16249,
+    "stars": 138346,
+    "forks": 16318,
     "language": "Python",
-    "updatedAt": "2026-05-20T03:32:40Z",
+    "updatedAt": "2026-05-21T03:38:27Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 60731,
-    "forks": 6611,
+    "stars": 60937,
+    "forks": 6639,
     "language": "Python",
-    "updatedAt": "2026-05-20T03:30:32Z",
+    "updatedAt": "2026-05-21T03:36:13Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -48,15 +48,27 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 20296,
-    "forks": 2512,
+    "stars": 20868,
+    "forks": 2550,
     "language": "Python",
-    "updatedAt": "2026-05-20T03:29:57Z",
+    "updatedAt": "2026-05-21T03:32:59Z",
     "topics": [
       "claude-code",
       "mcp",
       "skills"
     ],
+    "hasManifest": true
+  },
+  {
+    "id": "1244635909",
+    "name": "marketplace",
+    "description": "Public Claude Code plugin marketplace for the Chunky Metro org. See .claude-plugin/marketplace.json.",
+    "url": "https://github.com/chunky-metro/marketplace",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2026-05-20T13:00:41Z",
+    "topics": [],
     "hasManifest": true
   },
   {
