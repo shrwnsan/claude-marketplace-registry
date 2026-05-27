@@ -109,7 +109,11 @@
     "glob": "^10.4.6",
     "babel-plugin-istanbul": "^7.0.0",
     "test-exclude": "^7.0.0",
-    "brace-expansion": "^2.0.3"
+    "brace-expansion": "^2.0.3",
+    "ws": "^8.21.0",
+    "next": {
+      "postcss": "^8.5.14"
+    }
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
