@@ -8,6 +8,88 @@ interface DemoProps {
   className?: string;
 }
 
+interface MockWrapperProps {
+  demoState: 'loading' | 'success' | 'error';
+  mockData: EcosystemOverview;
+  setDemoState: React.Dispatch<React.SetStateAction<'loading' | 'success' | 'error'>>;
+  className: string;
+}
+
+// Extracted wrapper component to avoid creating components during render
+const MockOverviewMetricsWrapper: React.FC<MockWrapperProps> = ({
+  demoState,
+  mockData,
+  setDemoState,
+  className,
+}) => {
+  const [loading, setLoading] = useState(demoState === 'loading');
+  const [error, setError] = useState<string | null>(
+    demoState === 'error' ? 'Demo error state' : null
+  );
+  const [data, setData] = useState<EcosystemOverview | null>(
+    demoState === 'error' ? null : mockData
+  );
+
+  React.useEffect(() => {
+    setDemoState((state) => {
+      if (state === 'loading') {
+        setLoading(true);
+        setError(null);
+        setTimeout(() => {
+          setLoading(false);
+          setData(mockData);
+        }, 2000);
+      } else if (state === 'error') {
+        setLoading(false);
+        setError('Failed to load ecosystem metrics. Please try again later.');
+        setData(null);
+      } else {
+        setLoading(false);
+        setError(null);
+        setData(mockData);
+      }
+      return state;
+    });
+  }, [demoState, mockData, setDemoState]);
+
+  if (loading && !data) {
+    return (
+      <section className={className} aria-label='Ecosystem Overview Metrics'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6'>
+          {[...Array(4)].map((_, index) => (
+            <div key={`skeleton-${index}`} className='card p-6 animate-pulse'>
+              <div className='flex items-center justify-between mb-4'>
+                <div className='h-8 w-8 bg-gray-200 dark:bg-gray-700 rounded-lg'></div>
+                <div className='h-6 w-16 bg-gray-200 dark:bg-gray-700 rounded'></div>
+              </div>
+              <div className='space-y-2'>
+                <div className='h-8 w-24 bg-gray-200 dark:bg-gray-700 rounded'></div>
+                <div className='h-4 w-32 bg-gray-200 dark:bg-gray-700 rounded'></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  }
+
+  if (error && !data) {
+    return (
+      <section className={className} aria-label='Ecosystem Overview Metrics'>
+        <ErrorDisplay
+          type='error'
+          title='Failed to Load Ecosystem Metrics'
+          message={error}
+          onRetry={() => setDemoState('success')}
+          className='w-full'
+        />
+      </section>
+    );
+  }
+
+  return <OverviewMetrics className={className} />;
+};
+
 // Demo component that showcases OverviewMetrics with different states
 const OverviewMetricsDemo: React.FC<DemoProps> = ({ className = '' }) => {
   const [demoState, setDemoState] = useState<'loading' | 'success' | 'error'>('success');
@@ -38,76 +120,6 @@ const OverviewMetricsDemo: React.FC<DemoProps> = ({ className = '' }) => {
       lastUpdated: new Date().toISOString(),
     };
     setMockData(newData);
-  };
-
-  // Mock component that simulates different states
-  const MockOverviewMetricsWrapper = () => {
-    const [loading, setLoading] = useState(demoState === 'loading');
-    const [error, setError] = useState<string | null>(
-      demoState === 'error' ? 'Demo error state' : null
-    );
-    const [data, setData] = useState<EcosystemOverview | null>(
-      demoState === 'error' ? null : mockData
-    );
-
-    React.useEffect(() => {
-      setDemoState((state) => {
-        if (state === 'loading') {
-          setLoading(true);
-          setError(null);
-          setTimeout(() => {
-            setLoading(false);
-            setData(mockData);
-          }, 2000);
-        } else if (state === 'error') {
-          setLoading(false);
-          setError('Failed to load ecosystem metrics. Please try again later.');
-          setData(null);
-        } else {
-          setLoading(false);
-          setError(null);
-          setData(mockData);
-        }
-        return state;
-      });
-    }, [demoState, mockData]);
-
-    if (loading && !data) {
-      return (
-        <section className={className} aria-label='Ecosystem Overview Metrics'>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6'>
-            {[...Array(4)].map((_, index) => (
-              <div key={`skeleton-${index}`} className='card p-6 animate-pulse'>
-                <div className='flex items-center justify-between mb-4'>
-                  <div className='h-8 w-8 bg-gray-200 dark:bg-gray-700 rounded-lg'></div>
-                  <div className='h-6 w-16 bg-gray-200 dark:bg-gray-700 rounded'></div>
-                </div>
-                <div className='space-y-2'>
-                  <div className='h-8 w-24 bg-gray-200 dark:bg-gray-700 rounded'></div>
-                  <div className='h-4 w-32 bg-gray-200 dark:bg-gray-700 rounded'></div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      );
-    }
-
-    if (error && !data) {
-      return (
-        <section className={className} aria-label='Ecosystem Overview Metrics'>
-          <ErrorDisplay
-            type='error'
-            title='Failed to Load Ecosystem Metrics'
-            message={error}
-            onRetry={() => setDemoState('success')}
-            className='w-full'
-          />
-        </section>
-      );
-    }
-
-    return <OverviewMetrics className={className} />;
   };
 
   return (
@@ -166,7 +178,12 @@ const OverviewMetricsDemo: React.FC<DemoProps> = ({ className = '' }) => {
       </div>
 
       {/* Component Demo */}
-      <MockOverviewMetricsWrapper />
+      <MockOverviewMetricsWrapper
+        demoState={demoState}
+        mockData={mockData}
+        setDemoState={setDemoState}
+        className={className}
+      />
 
       {/* Component Information */}
       <div className='card p-6'>
