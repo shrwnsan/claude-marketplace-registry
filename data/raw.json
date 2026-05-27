@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 140775,
-    "forks": 16630,
+    "stars": 141401,
+    "forks": 16715,
     "language": "Python",
-    "updatedAt": "2026-05-26T03:31:09Z",
+    "updatedAt": "2026-05-27T03:44:44Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 61805,
-    "forks": 6764,
+    "stars": 61994,
+    "forks": 6785,
     "language": "Python",
-    "updatedAt": "2026-05-26T03:30:54Z",
+    "updatedAt": "2026-05-27T03:34:52Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 27799,
-    "forks": 2961,
+    "stars": 28023,
+    "forks": 2984,
     "language": "Python",
-    "updatedAt": "2026-05-26T03:28:16Z",
+    "updatedAt": "2026-05-27T03:46:11Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "None",
     "topics": [
@@ -2374,14 +2374,15 @@
         },
         {
           "name": "security-guidance",
-          "description": "Security reminder hook that warns about potential security issues when editing files, including command injection, XSS, and unsafe code patterns",
+          "description": "Security review for Claude-generated code. Pattern-based warnings on edits, LLM-powered diff review on Stop, and an agentic commit reviewer that catches injection, XSS, SSRF, hardcoded secrets, and 25+ other vulnerability classes.",
+          "version": "2.0.0",
           "author": {
             "name": "Anthropic",
             "email": "support@anthropic.com"
           },
           "source": "./plugins/security-guidance",
           "category": "security",
-          "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/security-guidance"
+          "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance"
         },
         {
           "name": "semgrep",
@@ -2920,6 +2921,45 @@
             "sha": "bc56b110199294de58e6a9abf0569c49bd948670"
           },
           "homepage": "https://github.com/zscaler/zscaler-mcp-server"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1245301697",
+    "name": "agent-plugins",
+    "description": "Product on Purpose plugin marketplace registry (Claude Code). Thin host repo: lists plugins via .claude-plugin/marketplace.json; holds no plugin code.",
+    "url": "https://github.com/product-on-purpose/agent-plugins",
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "updatedAt": "2026-05-27T01:16:00Z",
+    "createdAt": "2026-05-21T05:17:16Z",
+    "license": "Apache License 2.0",
+    "topics": [],
+    "discoverySource": "custom-query",
+    "manifest": {
+      "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+      "name": "product-on-purpose",
+      "owner": {
+        "name": "Product on Purpose",
+        "url": "https://github.com/product-on-purpose"
+      },
+      "metadata": {
+        "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
+        "version": "1.0.0"
+      },
+      "plugins": [
+        {
+          "name": "pm-skills",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/product-on-purpose/pm-skills.git",
+            "sha": "1065c3ec249692c7c1c0a476e4e7e40257478cce"
+          },
+          "description": "Product management skills, sub-agents, and sprint tools across the full product lifecycle. Follows the agentskills.io specification.",
+          "version": "2.21.0",
+          "strict": true
         }
       ]
     }
