@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 143603,
-    "forks": 16941,
+    "stars": 144219,
+    "forks": 16995,
     "language": "Python",
-    "updatedAt": "2026-05-30T03:22:15Z",
+    "updatedAt": "2026-05-31T03:47:35Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 62446,
-    "forks": 6840,
+    "stars": 62562,
+    "forks": 6860,
     "language": "Python",
-    "updatedAt": "2026-05-30T03:19:37Z",
+    "updatedAt": "2026-05-31T03:50:02Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 28619,
-    "forks": 3055,
+    "stars": 28827,
+    "forks": 3064,
     "language": "Python",
-    "updatedAt": "2026-05-30T03:16:09Z",
+    "updatedAt": "2026-05-31T03:47:42Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -2966,7 +2966,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-05-27T12:11:25Z",
+    "updatedAt": "2026-05-30T18:06:13Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -2980,7 +2980,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.0.0"
+        "version": "1.0.1"
       },
       "plugins": [
         {
@@ -2988,10 +2988,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/pm-skills.git",
-            "sha": "1065c3ec249692c7c1c0a476e4e7e40257478cce"
+            "sha": "be1e400fe9bc3c3fd83289661ed56a2fb504d37d"
           },
           "description": "Product management skills, sub-agents, and sprint tools across the full product lifecycle. Follows the agentskills.io specification.",
-          "version": "2.21.0",
+          "version": "2.22.0",
           "strict": true
         }
       ]
