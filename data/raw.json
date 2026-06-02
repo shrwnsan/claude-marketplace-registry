@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 144757,
-    "forks": 17045,
+    "stars": 145271,
+    "forks": 17119,
     "language": "Python",
-    "updatedAt": "2026-06-01T04:01:46Z",
+    "updatedAt": "2026-06-02T03:54:31Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 62712,
-    "forks": 6885,
+    "stars": 62846,
+    "forks": 6899,
     "language": "Python",
-    "updatedAt": "2026-06-01T04:00:46Z",
+    "updatedAt": "2026-06-02T03:56:38Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 28983,
-    "forks": 3088,
+    "stars": 29087,
+    "forks": 3102,
     "language": "Python",
-    "updatedAt": "2026-06-01T03:58:21Z",
+    "updatedAt": "2026-06-02T03:45:43Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -259,7 +259,7 @@
             "url": "https://github.com/adobe/skills.git",
             "path": "plugins/creative-cloud/adobe-for-creativity",
             "ref": "main",
-            "sha": "0a015c06894332091b79e055e0404fbc1a18c9fe"
+            "sha": "8d74ee6b6fdce4a1c46b98b5a66706c9393fc369"
           },
           "homepage": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity"
         },
@@ -344,7 +344,7 @@
             "url": "https://github.com/awslabs/agent-plugins.git",
             "path": "plugins/amazon-location-service",
             "ref": "main",
-            "sha": "9d46cc0a092c0a8c01a5bd06a4349985cc6c8f08"
+            "sha": "f16aaf2a4ec7d59963c4fdf91e7358bd485e992e"
           },
           "homepage": "https://github.com/awslabs/agent-plugins"
         },
@@ -450,7 +450,7 @@
             "source": "url",
             "url": "https://github.com/BrainBlend-AI/atomic-agents.git",
             "path": "claude-plugin/atomic-agents",
-            "sha": "bb9708ec7c4c7145bd64033dbece0bfaed0c2ad5"
+            "sha": "57d6099f499fe21572bdf943396630bd3d968550"
           },
           "homepage": "https://github.com/BrainBlend-AI/atomic-agents",
           "tags": [
@@ -498,7 +498,7 @@
             "url": "https://github.com/awslabs/agent-plugins.git",
             "path": "plugins/aws-amplify",
             "ref": "main",
-            "sha": "9d46cc0a092c0a8c01a5bd06a4349985cc6c8f08"
+            "sha": "f16aaf2a4ec7d59963c4fdf91e7358bd485e992e"
           },
           "homepage": "https://github.com/awslabs/agent-plugins"
         },
@@ -559,9 +559,25 @@
             "url": "https://github.com/awslabs/agent-plugins.git",
             "path": "plugins/aws-serverless",
             "ref": "main",
-            "sha": "9d46cc0a092c0a8c01a5bd06a4349985cc6c8f08"
+            "sha": "f16aaf2a4ec7d59963c4fdf91e7358bd485e992e"
           },
           "homepage": "https://github.com/awslabs/agent-plugins"
+        },
+        {
+          "name": "aws-startup-advisor",
+          "description": "Skills for startups building on AWS: an Activate knowledge base (FAQ, credits, programs, partner offers, sample architectures, 277+ learn articles), a prompt library of 29+ copy-paste prompts plus installable agents, and an interactive discovery workflow that scaffolds an AWS architecture.",
+          "author": {
+            "name": "Amazon Web Services"
+          },
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/awslabs/startups.git",
+            "path": "advisor/plugins/aws-startup-advisor",
+            "ref": "main",
+            "sha": "23a4f5eaf74a0f0fcf86f8a05bd36618a3f5faae"
+          },
+          "homepage": "https://github.com/awslabs/startups"
         },
         {
           "name": "azure",
@@ -666,7 +682,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-cap-table",
             "ref": "main",
-            "sha": "e66d331cd8e669ee121c96ee35b0c91acd828970"
+            "sha": "f512df80dd54fd0a607ece2f18a9d226ca705019"
           },
           "homepage": "https://carta.com"
         },
@@ -682,7 +698,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-crm",
             "ref": "main",
-            "sha": "e66d331cd8e669ee121c96ee35b0c91acd828970"
+            "sha": "f512df80dd54fd0a607ece2f18a9d226ca705019"
           },
           "homepage": "https://carta.com"
         },
@@ -1102,7 +1118,7 @@
             "url": "https://github.com/awslabs/agent-plugins.git",
             "path": "plugins/databases-on-aws",
             "ref": "main",
-            "sha": "9d46cc0a092c0a8c01a5bd06a4349985cc6c8f08"
+            "sha": "187edde6e122116b43211049195627a5069bda80"
           },
           "homepage": "https://github.com/awslabs/agent-plugins"
         },
@@ -1170,7 +1186,7 @@
             "url": "https://github.com/awslabs/agent-plugins.git",
             "path": "plugins/deploy-on-aws",
             "ref": "main",
-            "sha": "9d46cc0a092c0a8c01a5bd06a4349985cc6c8f08"
+            "sha": "187edde6e122116b43211049195627a5069bda80"
           },
           "homepage": "https://github.com/awslabs/agent-plugins"
         },
@@ -1878,6 +1894,22 @@
           "homepage": "https://github.com/makenotion/claude-code-notion-plugin"
         },
         {
+          "name": "nvidia-skills",
+          "description": "NVIDIA agent skills for accelerated-computing workflows — starting with cuOpt vehicle-routing optimization (VRP, TSP, PDP) via the cuOpt Python API.",
+          "author": {
+            "name": "NVIDIA"
+          },
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/NVIDIA/skills.git",
+            "path": "plugins/nvidia-skills",
+            "ref": "main",
+            "sha": "62b685a20ac45285cafd1e22782abbed33172c17"
+          },
+          "homepage": "https://github.com/NVIDIA/skills"
+        },
+        {
           "name": "oracle-ai-data-platform-workbench-spark-connectors",
           "description": "Oracle AI Data Platform Workbench Spark connectors for Claude Code. 18 connector skills covering every data source workbench customers commonly need: Oracle Autonomous DB family (ALH/ADW/ATP) via wallet/IAM-DB-Token/API-key, ExaCS, Fusion ERP REST, Fusion BICC, EPM Cloud Planning, Essbase 21c, OCI Streaming (Kafka), OCI Object Storage, Apache Iceberg, plus external systems (PostgreSQL, MySQL/HeatWave, SQL Server, Snowflake, Azure ADLS Gen2, AWS S3, generic REST, custom JDBC, Excel). Live-validated on the workbench `tpcds` cluster (Spark 3.5.0): 17 PASS / 4 ship-as-is out of 21 test rows.",
           "author": {
@@ -2312,6 +2344,19 @@
           }
         },
         {
+          "name": "sagemaker-ai",
+          "description": "Build, train, and deploy AI models with deep AWS AI/ML expertise brought directly into your coding assistants, covering the surface area of Amazon SageMaker AI.",
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/awslabs/agent-plugins.git",
+            "path": "plugins/sagemaker-ai",
+            "ref": "main",
+            "sha": "187edde6e122116b43211049195627a5069bda80"
+          },
+          "homepage": "https://github.com/awslabs/agent-plugins"
+        },
+        {
           "name": "sanity",
           "description": "Sanity content platform integration with MCP server, agent skills, and slash commands. Query and author content, build and optimize GROQ queries, design schemas, and set up Visual Editing.",
           "category": "development",
@@ -2394,7 +2439,7 @@
         {
           "name": "security-guidance",
           "description": "Security review for Claude-generated code. Pattern-based warnings on edits, LLM-powered diff review on Stop, and an agentic commit reviewer that catches injection, XSS, SSRF, hardcoded secrets, and 25+ other vulnerability classes.",
-          "version": "2.0.0",
+          "version": "2.0.2",
           "author": {
             "name": "Anthropic",
             "email": "support@anthropic.com"
@@ -2966,7 +3011,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-05-31T22:18:33Z",
+    "updatedAt": "2026-06-02T01:54:31Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -2980,7 +3025,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.0.2"
+        "version": "1.2.0"
       },
       "plugins": [
         {
@@ -2988,10 +3033,21 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/pm-skills.git",
-            "sha": "b54cef0a3ba0b5d491132644492b5d6766921ef0"
+            "sha": "d3f15493177d576d8fc33e2c5be85113f7b2e27d"
           },
           "description": "Product management skills, sub-agents, and sprint tools across the full product lifecycle. Follows the agentskills.io specification.",
-          "version": "2.23.0",
+          "version": "2.24.0",
+          "strict": true
+        },
+        {
+          "name": "thinking-framework-skills",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/product-on-purpose/thinking-framework-skills.git",
+            "sha": "2b8731e72739717529bfc73fbfb85cb1ed660809"
+          },
+          "description": "Evidence-graded, agent-executable thinking-method skills: each is reduced to its working mechanism, graded honestly on its evidence, and produces a concrete artifact. Follows the agentskills.io specification.",
+          "version": "0.2.0",
           "strict": true
         }
       ]
