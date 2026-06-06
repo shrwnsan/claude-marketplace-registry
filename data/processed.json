@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 146644,
-    "forks": 17291,
+    "stars": 146991,
+    "forks": 17358,
     "language": "Python",
-    "updatedAt": "2026-06-05T03:40:21Z",
+    "updatedAt": "2026-06-06T03:24:13Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 63281,
-    "forks": 6962,
+    "stars": 63389,
+    "forks": 6973,
     "language": "Python",
-    "updatedAt": "2026-06-05T03:39:38Z",
+    "updatedAt": "2026-06-06T03:11:24Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -48,15 +48,27 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 29367,
-    "forks": 3147,
+    "stars": 29450,
+    "forks": 3159,
     "language": "Python",
-    "updatedAt": "2026-06-05T03:14:49Z",
+    "updatedAt": "2026-06-06T03:23:44Z",
     "topics": [
       "claude-code",
       "mcp",
       "skills"
     ],
+    "hasManifest": true
+  },
+  {
+    "id": "1244635909",
+    "name": "marketplace",
+    "description": "Public Claude Code plugin marketplace for the Chunky Metro org. See .claude-plugin/marketplace.json.",
+    "url": "https://github.com/chunky-metro/marketplace",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2026-06-06T01:19:25Z",
+    "topics": [],
     "hasManifest": true
   },
   {
@@ -68,18 +80,6 @@
     "forks": 0,
     "language": "JavaScript",
     "updatedAt": "2026-06-03T21:31:04Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1244635909",
-    "name": "marketplace",
-    "description": "Public Claude Code plugin marketplace for the Chunky Metro org. See .claude-plugin/marketplace.json.",
-    "url": "https://github.com/chunky-metro/marketplace",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2026-05-20T13:00:41Z",
     "topics": [],
     "hasManifest": true
   },
