@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 147300,
-    "forks": 17393,
+    "stars": 147667,
+    "forks": 17427,
     "language": "Python",
-    "updatedAt": "2026-06-07T03:51:35Z",
+    "updatedAt": "2026-06-08T03:58:13Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 63504,
-    "forks": 6985,
+    "stars": 63647,
+    "forks": 7003,
     "language": "Python",
-    "updatedAt": "2026-06-07T03:21:21Z",
+    "updatedAt": "2026-06-08T03:53:54Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 29520,
-    "forks": 3171,
+    "stars": 29596,
+    "forks": 3183,
     "language": "Python",
-    "updatedAt": "2026-06-07T03:39:31Z",
+    "updatedAt": "2026-06-08T03:28:09Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -696,7 +696,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/brightdata/skills.git",
-            "sha": "68651246ad1819b98a1fc15ce10239e55406ff37"
+            "sha": "3e6d0838285cbc107b86d61e2e1a943baf7ead29"
           },
           "homepage": "https://docs.brightdata.com"
         },
@@ -1259,7 +1259,7 @@
             "url": "https://github.com/microsoft/Dataverse-skills.git",
             "path": ".github/plugins/dataverse",
             "ref": "main",
-            "sha": "ab906c960db0f2da83c2cb92a3fd162ccaba9cb9"
+            "sha": "2d50cf65f80efc17ac50632222d61fb374115a70"
           },
           "homepage": "https://github.com/microsoft/Dataverse-skills"
         },
@@ -1350,7 +1350,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/exa-labs/exa-mcp-server.git",
-            "sha": "ad888a188cdefbe832c9feed2c3a97d1cb93cb35"
+            "sha": "f08388256c5806f457fae777b5528eb02a48e703"
           },
           "homepage": "https://exa.ai/docs/reference/exa-mcp"
         },
@@ -1585,7 +1585,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "dd9567446bce28dff9f8a163b03a0071870eb07b"
+            "sha": "fc01717c8219fd766e2b3fd8b6ea550457f03095"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -2364,7 +2364,7 @@
             "url": "https://github.com/railwayapp/railway-skills.git",
             "path": "plugins/railway",
             "ref": "main",
-            "sha": "daa677165306b5cf6db4fb763e411fdf67fe92ff"
+            "sha": "1df604ebd18f528ff16b84975125ecff944cc036"
           },
           "homepage": "https://docs.railway.com/ai/claude-code-plugin"
         },
@@ -3105,7 +3105,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "29a68ecdf5ff34bf2334afbee6d95446aa8e543e"
+            "sha": "038e0c5593f115519bfd634b1270fd897cf5b99d"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
@@ -3227,7 +3227,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-06-06T23:41:22Z",
+    "updatedAt": "2026-06-07T06:25:32Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -3241,7 +3241,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.9.0"
+        "version": "1.10.0"
       },
       "plugins": [
         {
@@ -3282,10 +3282,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/agent-skills-toolkit.git",
-            "sha": "c1ecd265e46c3e996e17ed5e87cc0411c025d4bc"
+            "sha": "d8279c22bea1dce496dc89dfdb45823bf9174983"
           },
           "description": "Toolkit and Standard for authoring, validating, governing, and scaling cross-agent skill libraries (Claude Code and Codex) to a tiered Bronze/Silver/Gold quality bar. Follows the agentskills.io specification.",
-          "version": "1.2.0",
+          "version": "1.3.0",
           "strict": true
         }
       ]
