@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 148137,
-    "forks": 17485,
+    "stars": 148635,
+    "forks": 17540,
     "language": "Python",
-    "updatedAt": "2026-06-09T03:28:37Z",
+    "updatedAt": "2026-06-10T03:39:52Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 63789,
-    "forks": 7019,
+    "stars": 63926,
+    "forks": 7044,
     "language": "Python",
-    "updatedAt": "2026-06-09T03:26:23Z",
+    "updatedAt": "2026-06-10T03:31:47Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -48,15 +48,27 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 29671,
-    "forks": 3196,
+    "stars": 29760,
+    "forks": 3213,
     "language": "Python",
-    "updatedAt": "2026-06-09T03:18:34Z",
+    "updatedAt": "2026-06-10T03:28:36Z",
     "topics": [
       "claude-code",
       "mcp",
       "skills"
     ],
+    "hasManifest": true
+  },
+  {
+    "id": "1264273456",
+    "name": "refacil-claude-plugins",
+    "description": "Marketplace de plugins de Claude Code de Refácil. Este repositorio es un catálogo declarativo (.claude-plugin/marketplace.json) que empaqueta CLIs ya publicados de Refácil como skills instalables en Claude Code, Claude Desktop y Claude Cowork",
+    "url": "https://github.com/super-pagos-sas/refacil-claude-plugins",
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "updatedAt": "2026-06-10T03:14:57Z",
+    "topics": [],
     "hasManifest": true
   },
   {
@@ -67,7 +79,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-06-07T06:25:32Z",
+    "updatedAt": "2026-06-09T23:53:43Z",
     "topics": [],
     "hasManifest": true
   },
