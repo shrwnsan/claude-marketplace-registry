@@ -544,8 +544,10 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({
           <div className='text-sm text-gray-600 dark:text-gray-400'>
             <p className='mb-2'>
               <strong>{data?.verification?.verifiedPlugins || 0}</strong> of{' '}
-              <strong>{(data?.verification?.verifiedPlugins || 0) + 100}</strong> plugins are
-              verified
+              <strong>
+                {data?.security?.scannedPlugins || data?.verification?.verifiedPlugins || 0}
+              </strong>{' '}
+              plugins are verified
             </p>
             <p>Verification ensures plugins meet security, quality, and maintenance standards.</p>
           </div>
