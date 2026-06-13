@@ -45,7 +45,7 @@ const MarketplaceDetailPage: React.FC = () => {
   const [userRating, setUserRating] = useState(0);
 
   // Get real marketplace data
-  const { data: marketplaceData } = useRealMarketplaceData();
+  const { data: marketplaceData, loading } = useRealMarketplaceData();
 
   // Find marketplace by ID
   const marketplace = useMemo(() => {
@@ -195,6 +195,19 @@ const MarketplaceDetailPage: React.FC = () => {
       copyToClipboard(window.location.href);
     }
   };
+
+  if (loading || !id) {
+    return (
+      <MainLayout>
+        <div className='min-h-screen flex items-center justify-center'>
+          <div className='text-center'>
+            <div className='animate-spin w-8 h-8 border-2 border-primary-500 border-t-transparent rounded-full mx-auto mb-4' />
+            <p className='text-gray-500 dark:text-gray-400'>Loading marketplace...</p>
+          </div>
+        </div>
+      </MainLayout>
+    );
+  }
 
   if (!marketplace) {
     return (
