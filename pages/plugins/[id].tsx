@@ -29,6 +29,7 @@ import {
   ArrowLeft,
 } from 'lucide-react';
 import { mockPlugins, mockMarketplaces } from '@/data/mock-data';
+import { usePluginData } from '@/hooks/usePluginData';
 
 const PluginDetailPage: React.FC = () => {
   const router = useRouter();
@@ -42,10 +43,11 @@ const PluginDetailPage: React.FC = () => {
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
   const [feedback, setFeedback] = useState({ type: '', message: '' });
 
-  // Find plugin by ID
+  // Find plugin by ID (real data first, fall back to mock)
+  const { plugins: realPlugins, loading: pluginsLoading } = usePluginData();
   const plugin = useMemo(() => {
-    return mockPlugins.find((p) => p.id === id);
-  }, [id]);
+    return realPlugins.find((p) => p.id === id) ?? mockPlugins.find((p) => p.id === id);
+  }, [id, realPlugins]);
 
   // Find marketplace
   const marketplace = useMemo(() => {
@@ -191,6 +193,19 @@ const PluginDetailPage: React.FC = () => {
     if (score >= 50) return { level: 'Fair', color: 'text-yellow-600', bg: 'bg-yellow-100' };
     return { level: 'Poor', color: 'text-red-600', bg: 'bg-red-100' };
   };
+
+  if (pluginsLoading || !id) {
+    return (
+      <MainLayout>
+        <div className='min-h-screen flex items-center justify-center'>
+          <div className='text-center'>
+            <div className='animate-spin w-8 h-8 border-2 border-primary-500 border-t-transparent rounded-full mx-auto mb-4' />
+            <p className='text-gray-500 dark:text-gray-400'>Loading plugin...</p>
+          </div>
+        </div>
+      </MainLayout>
+    );
+  }
 
   if (!plugin || !pluginDetails) {
     return (
