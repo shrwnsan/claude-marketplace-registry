@@ -51,19 +51,21 @@ export interface ValidationResult {
  * SQL injection patterns
  */
 const SQL_INJECTION_PATTERNS = [
-  /(\b(SELECT|INSERT|UPDATE|DELETE|DROP|CREATE|ALTER|EXEC|UNION|SCRIPT)\b)/gi,
-  /--(?!\w)|\*\/|\/\*(?!\*)|(\bOR\b.*=.*\bOR\b)|(\bAND\b.*=.*\bAND\b)/gi,
-  /(\bWHERE\b.*\bOR\b.*=)|(\bWHERE\b.*\bAND\b.*=)/gi,
-  /[\'"]\s*(OR|AND)\s+[\'"]?\w+[\'"]?\s*=/gi,
-  /(?<![\w-])[<>\"'=;](?![\w-])/g, // Only match special chars not part of words
+  /(\b(SELECT|INSERT|UPDATE|DELETE|DROP)\b\s+.*\b(FROM|INTO|TABLE|DATABASE)\b)/gi,
+  /(--|#|\/\*)\s*$/gm,
+  /(\bUNION\b\s+\bSELECT\b)/gi,
+  /(['"])\s*;\s*(DROP|DELETE|UPDATE|INSERT)/gi,
+  /(['"])\s*;\s*(--)/gi,
 ];
 
 /**
  * Command injection patterns
  */
 const COMMAND_INJECTION_PATTERNS = [
-  /[;&|`$(){}[\]]/g,
-  /\b(rm|mv|cp|cat|ls|ps|kill|chmod|chown|sudo|su|wget|curl|nc|netcat|telnet)\b/gi,
+  /[;&|`]\s*(rm|mv|cp|chmod|chown|sudo|su|wget|curl|nc|netcat)\b/gi,
+  /\$\([^)]+\)/g,
+  /`[^`]+`/g,
+  /\b(rm|sudo)\s+-rf\b/gi,
 ];
 
 /**

@@ -571,7 +571,9 @@ export class EcosystemDataService {
       manifestUrl: repo.manifestUrl,
       plugins,
       tags: repoData.topics,
-      verified: repoData.owner.type === 'Organization', // Simple verification heuristic
+      verified:
+        repoData.owner.type === 'Organization' &&
+        (repoData.stargazers_count >= 10 || repoData.forks_count >= 5),
       qualityScore: this.calculateMarketplaceQuality(repoData, plugins),
       lastScanned: new Date().toISOString(),
       addedAt: repoData.created_at,
