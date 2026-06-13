@@ -57,13 +57,11 @@ const QualityIndicatorsDemo: React.FC = () => {
   React.useEffect(() => {
     const originalFetch = global.fetch;
 
-    global.fetch = jest.fn().mockImplementation((url) => {
-      if (url.includes('/api/ecosystem-stats?quality')) {
-        return Promise.resolve({
-          ok: true,
-          status: 200,
-          json: () =>
-            Promise.resolve({
+    global.fetch = (url: string | Request | URL, init?: RequestInit): Promise<Response> => {
+      if (url.toString().includes('/api/ecosystem-stats?quality')) {
+        return Promise.resolve(
+          new Response(
+            JSON.stringify({
               success: true,
               data: mockQualityData,
               meta: {
@@ -72,22 +70,15 @@ const QualityIndicatorsDemo: React.FC = () => {
                 responseTime: 150,
               },
             }),
-          headers: new Headers(),
-          redirected: false,
-          statusText: 'OK',
-          type: 'basic',
-          url,
-          clone: jest.fn(),
-          body: null,
-          bodyUsed: false,
-          arrayBuffer: jest.fn(),
-          blob: jest.fn(),
-          formData: jest.fn(),
-          text: jest.fn(),
-        });
+            {
+              status: 200,
+              headers: { 'Content-Type': 'application/json' },
+            }
+          )
+        );
       }
-      return originalFetch(url);
-    });
+      return originalFetch(url, init);
+    };
 
     return () => {
       global.fetch = originalFetch;

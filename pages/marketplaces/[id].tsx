@@ -45,7 +45,7 @@ const MarketplaceDetailPage: React.FC = () => {
   const [userRating, setUserRating] = useState(0);
 
   // Get real marketplace data
-  const { data: marketplaceData } = useRealMarketplaceData();
+  const { data: marketplaceData, loading } = useRealMarketplaceData();
 
   // Find marketplace by ID
   const marketplace = useMemo(() => {
@@ -54,24 +54,24 @@ const MarketplaceDetailPage: React.FC = () => {
   }, [id, marketplaceData]);
 
   // Get plugins for this marketplace
-  const marketplacePlugins = useMemo(() => {
+  const marketplacePlugins = useMemo((): MarketplacePlugin[] => {
     if (!marketplace) return [];
     if (!marketplace.manifest || !marketplace.manifest.plugins) return [];
 
     // Transform manifest plugins to MarketplacePlugin format
-    return marketplace.manifest.plugins.map((plugin: any) => ({
-      id: plugin.name,
-      name: plugin.name,
-      description: plugin.description || '',
-      category: plugin.category || 'development',
-      tags: [plugin.category || 'development'],
-      author: plugin.author || marketplace.name,
+    return marketplace.manifest.plugins.map((plugin: Record<string, unknown>) => ({
+      id: String(plugin.name),
+      name: String(plugin.name),
+      description: String(plugin.description || ''),
+      category: String(plugin.category || 'development'),
+      tags: [String(plugin.category || 'development')],
+      author: String(plugin.author || marketplace.name),
       authorUrl: `https://github.com/${marketplace.name}`,
       repositoryUrl: marketplace.url,
       stars: marketplace.stars,
       downloads: 0,
       lastUpdated: marketplace.updatedAt,
-      version: plugin.version || '1.0.0',
+      version: String(plugin.version || '1.0.0'),
       license: marketplace.license,
       marketplace: marketplace.name,
       marketplaceUrl: marketplace.url,
@@ -82,7 +82,7 @@ const MarketplaceDetailPage: React.FC = () => {
 
   // Filter and sort plugins
   const filteredPlugins = useMemo(() => {
-    const filtered = marketplacePlugins.filter((plugin: any) => {
+    const filtered = marketplacePlugins.filter((plugin) => {
       const matchesSearch =
         searchQuery === '' ||
         plugin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -96,7 +96,7 @@ const MarketplaceDetailPage: React.FC = () => {
     });
 
     // Sort plugins
-    filtered.sort((a: any, b: any) => {
+    filtered.sort((a, b) => {
       switch (sortBy) {
         case 'name':
           return a.name.localeCompare(b.name);
@@ -115,7 +115,7 @@ const MarketplaceDetailPage: React.FC = () => {
   // Get unique categories from plugins
   const categories = useMemo((): string[] => {
     const uniqueCats = new Set<string>(
-      marketplacePlugins.map((p: any) => p.category).filter((cat: any) => cat)
+      marketplacePlugins.map((p) => p.category).filter((cat): cat is string => Boolean(cat))
     );
     const cats = ['All', ...Array.from(uniqueCats)];
     return cats;
@@ -126,14 +126,10 @@ const MarketplaceDetailPage: React.FC = () => {
     if (!marketplace) return { totalDownloads: 0, totalStars: 0, verifiedPlugins: 0 };
 
     return {
-      totalDownloads: marketplacePlugins.reduce(
-        (sum: number, plugin: any) => sum + plugin.downloads,
-        0
-      ),
+      totalDownloads: marketplacePlugins.reduce((sum, plugin) => sum + plugin.downloads, 0),
       totalStars:
-        marketplacePlugins.reduce((sum: number, plugin: any) => sum + plugin.stars, 0) +
-        marketplace.stars,
-      verifiedPlugins: marketplacePlugins.filter((plugin: any) => plugin.verified).length,
+        marketplacePlugins.reduce((sum, plugin) => sum + plugin.stars, 0) + marketplace.stars,
+      verifiedPlugins: marketplacePlugins.filter((plugin) => plugin.verified).length,
     };
   }, [marketplace, marketplacePlugins]);
 
@@ -195,6 +191,19 @@ const MarketplaceDetailPage: React.FC = () => {
       copyToClipboard(window.location.href);
     }
   };
+
+  if (loading || !id) {
+    return (
+      <MainLayout>
+        <div className='min-h-screen flex items-center justify-center'>
+          <div className='text-center'>
+            <div className='animate-spin w-8 h-8 border-2 border-primary-500 border-t-transparent rounded-full mx-auto mb-4' />
+            <p className='text-gray-500 dark:text-gray-400'>Loading marketplace...</p>
+          </div>
+        </div>
+      </MainLayout>
+    );
+  }
 
   if (!marketplace) {
     return (
@@ -487,7 +496,7 @@ const MarketplaceDetailPage: React.FC = () => {
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             {filteredPlugins.length > 0 ? (
               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-                {filteredPlugins.map((plugin: any) => (
+                {filteredPlugins.map((plugin) => (
                   <PluginCard key={plugin.id} plugin={plugin} />
                 ))}
               </div>

@@ -536,7 +536,7 @@ export class DataProcessor {
   }
 
   /**
-   * Calculate stars from plugins (simplified - would need GitHub API calls)
+   * Estimate stars from quality scores. NOTE: These are estimated values, not from the GitHub API.
    */
   private calculatePluginStars(plugins: Plugin[]): number {
     // Simplified calculation based on quality scores
@@ -551,7 +551,7 @@ export class DataProcessor {
   }
 
   /**
-   * Estimate total downloads across plugins
+   * Estimate downloads from stars. NOTE: These are estimated values, not real download counts.
    */
   private estimateTotalDownloads(plugins: Plugin[]): number {
     return plugins.reduce((sum, p) => sum + this.estimatePluginDownloads(p), 0);
