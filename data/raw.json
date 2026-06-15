@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 150379,
-    "forks": 17753,
+    "stars": 150760,
+    "forks": 17796,
     "language": "Python",
-    "updatedAt": "2026-06-14T03:58:54Z",
+    "updatedAt": "2026-06-15T04:04:46Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 64474,
-    "forks": 7126,
+    "stars": 64612,
+    "forks": 7145,
     "language": "Python",
-    "updatedAt": "2026-06-14T03:59:44Z",
+    "updatedAt": "2026-06-15T03:53:17Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 30066,
-    "forks": 3247,
+    "stars": 30138,
+    "forks": 3258,
     "language": "Python",
-    "updatedAt": "2026-06-14T03:56:39Z",
+    "updatedAt": "2026-06-15T03:42:05Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -259,7 +259,7 @@
             "url": "https://github.com/adobe/skills.git",
             "path": "plugins/creative-cloud/adobe-for-creativity",
             "ref": "main",
-            "sha": "253f56901e058800ccb97ffd5bf1e3329d5f2e00"
+            "sha": "cdf8738152076ea5850354c1a3de21d88e377c2e"
           },
           "homepage": "https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity"
         },
@@ -480,7 +480,7 @@
             "source": "url",
             "url": "https://github.com/BrainBlend-AI/atomic-agents.git",
             "path": "claude-plugin/atomic-agents",
-            "sha": "324399402b9b5965313de6a34ea09d6bb149a200"
+            "sha": "94220182f88df0292a8b59d01b61170ff6c61fd4"
           },
           "homepage": "https://github.com/BrainBlend-AI/atomic-agents",
           "tags": [
@@ -944,7 +944,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/cloudflare/skills.git",
-            "sha": "12520fd63a1e958be217a93f48ce1f04bc9055f3"
+            "sha": "e16d698f6be2beb3a100138ac7eb072499bf429f"
           },
           "description": "Skills for the Cloudflare developer platform: Workers, Durable Objects, Agents SDK, MCP servers, Wrangler CLI, and web performance.",
           "category": "deployment",
@@ -1585,7 +1585,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "a241f2591e7786a4586afb623c1242ccfc1a6510"
+            "sha": "e6da47d8f8bf604b2de2efcb03e4b6a7fb0515cb"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -1997,7 +1997,7 @@
             "url": "https://github.com/neondatabase/agent-skills.git",
             "path": "plugins/neon-postgres",
             "ref": "main",
-            "sha": "7c3839a19c3fc9a570cedae7b2495f7f642f9f07"
+            "sha": "e09dafdc62a11fc8a20134afcb70dc2aab2feb88"
           },
           "homepage": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres"
         },
@@ -2050,7 +2050,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/Nimbleway/agent-skills.git",
-            "sha": "bcc5159da6ae1e46ca366ff949d196112b47c5e9"
+            "sha": "e72345e283f977d4f7bb4d6d415b5964a385bdf1"
           },
           "homepage": "https://docs.nimbleway.com/integrations/agent-skills/plugin-installation"
         },
@@ -2365,7 +2365,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/quarkusio/quarkus-agent-mcp.git",
-            "sha": "0b5e64457565f04bc88ca75ed67bd9eb02aa2905"
+            "sha": "a2b67f5925ec10a8bb1d1905cbb91d0b4efb904d"
           },
           "homepage": "https://quarkus.io"
         },
@@ -2586,7 +2586,7 @@
             "url": "https://github.com/SAP/open-ux-tools.git",
             "path": "packages/fiori-mcp-server",
             "ref": "main",
-            "sha": "5f573157dd6af9f24984c5f58ad1d660c156e07b"
+            "sha": "b204616c3622abdd40e18c4c1fc09c397978d9e2"
           },
           "homepage": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server"
         },
@@ -2846,7 +2846,7 @@
             "url": "https://github.com/stripe/ai.git",
             "path": "providers/claude/plugin",
             "ref": "main",
-            "sha": "ea0ad2373fdb687c247aac4f4100dc04154bf687"
+            "sha": "7e7f72eb42e06f79e7bc75f86e9395f4c8232c00"
           },
           "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin"
         },
@@ -2914,7 +2914,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/JetBrains/teamcity-cli.git",
-            "sha": "67e21f0be908daa7ca1e04c8016d1bc81750baee"
+            "sha": "4865b1b75e77889355393a46dc56a0363ce3330d"
           },
           "homepage": "https://www.jetbrains.com/teamcity/"
         },
@@ -3007,7 +3007,7 @@
             "url": "https://github.com/UI5/plugins-coding-agents.git",
             "path": "plugins/ui5",
             "ref": "main",
-            "sha": "6d72751f0b2983c379aaa457fe4c7cf4a075a66d"
+            "sha": "80f2d93287054f9d30dd990e842e15bcfca581c9"
           },
           "homepage": "https://github.com/UI5/plugins-coding-agents"
         },
@@ -3080,7 +3080,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/vercel/vercel-plugin.git",
-            "sha": "6e51924cb249e2941de005d59f1ac6f768477b98"
+            "sha": "b73bc95636c4f4d749ea242b669e0f78f5e72751"
           },
           "homepage": "https://github.com/vercel/vercel-plugin"
         },
@@ -3119,7 +3119,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "def21835af3e6f0d86bf8c18acb1aaad7fdc9cd8"
+            "sha": "75bb86e43cad1bfdc0e51f541cd44f9612c1deee"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
@@ -3241,7 +3241,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-06-13T06:32:33Z",
+    "updatedAt": "2026-06-14T13:52:46Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -3255,7 +3255,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.23.0"
+        "version": "1.24.0"
       },
       "plugins": [
         {
@@ -3296,10 +3296,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/agent-skills-toolkit.git",
-            "sha": "7b1ba92a956f8fa3d3eeec382e94b26e5ba0b718"
+            "sha": "c2bcbe28fd887b8884bb83736415e986e903b90a"
           },
           "description": "Toolkit and Standard for authoring, validating, governing, and scaling cross-agent skill libraries (Claude Code and Codex) to a tiered Bronze/Silver/Gold quality bar. Follows the agentskills.io specification.",
-          "version": "1.5.2",
+          "version": "1.6.0",
           "strict": true
         }
       ]
