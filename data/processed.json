@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 151204,
-    "forks": 17839,
+    "stars": 151755,
+    "forks": 17897,
     "language": "Python",
-    "updatedAt": "2026-06-16T04:00:45Z",
+    "updatedAt": "2026-06-17T04:02:44Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 64744,
-    "forks": 7162,
+    "stars": 64889,
+    "forks": 7187,
     "language": "Python",
-    "updatedAt": "2026-06-16T03:48:17Z",
+    "updatedAt": "2026-06-17T03:53:39Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -48,15 +48,27 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 30211,
-    "forks": 3272,
+    "stars": 30288,
+    "forks": 3281,
     "language": "Python",
-    "updatedAt": "2026-06-16T03:58:19Z",
+    "updatedAt": "2026-06-17T03:51:02Z",
     "topics": [
       "claude-code",
       "mcp",
       "skills"
     ],
+    "hasManifest": true
+  },
+  {
+    "id": "1264273456",
+    "name": "refacil-claude-plugins",
+    "description": "Marketplace de plugins de Claude Code de Refácil. Este repositorio es un catálogo declarativo (.claude-plugin/marketplace.json) que empaqueta CLIs ya publicados de Refácil como skills instalables en Claude Code, Claude Desktop y Claude Cowork",
+    "url": "https://github.com/super-pagos-sas/refacil-claude-plugins",
+    "stars": 0,
+    "forks": 0,
+    "language": "JavaScript",
+    "updatedAt": "2026-06-16T18:46:52Z",
+    "topics": [],
     "hasManifest": true
   },
   {
@@ -68,18 +80,6 @@
     "forks": 0,
     "language": "JavaScript",
     "updatedAt": "2026-06-16T02:38:25Z",
-    "topics": [],
-    "hasManifest": true
-  },
-  {
-    "id": "1264273456",
-    "name": "refacil-claude-plugins",
-    "description": "Marketplace de plugins de Claude Code de Refácil. Este repositorio es un catálogo declarativo (.claude-plugin/marketplace.json) que empaqueta CLIs ya publicados de Refácil como skills instalables en Claude Code, Claude Desktop y Claude Cowork",
-    "url": "https://github.com/super-pagos-sas/refacil-claude-plugins",
-    "stars": 0,
-    "forks": 0,
-    "language": "JavaScript",
-    "updatedAt": "2026-06-10T14:09:08Z",
     "topics": [],
     "hasManifest": true
   },
