@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 152900,
-    "forks": 18019,
+    "stars": 153248,
+    "forks": 18069,
     "language": "Python",
-    "updatedAt": "2026-06-20T03:38:04Z",
+    "updatedAt": "2026-06-21T04:05:40Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 65253,
-    "forks": 7244,
+    "stars": 65360,
+    "forks": 7261,
     "language": "Python",
-    "updatedAt": "2026-06-20T03:36:25Z",
+    "updatedAt": "2026-06-21T03:32:18Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 30453,
-    "forks": 3316,
+    "stars": 30507,
+    "forks": 3324,
     "language": "Python",
-    "updatedAt": "2026-06-20T02:52:30Z",
+    "updatedAt": "2026-06-21T03:54:04Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -1205,7 +1205,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/dash0hq/dash0-agent-plugin.git",
-            "sha": "348610d062a763545a82cd7835bea9298cd227bf"
+            "sha": "956ff78dc7d5ee5a5aa8fb321a4e3abaeeb5f742"
           },
           "homepage": "https://dash0.com/"
         },
@@ -1648,7 +1648,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "82b6ccde7934836c100c47206bacca5455c8b3d8"
+            "sha": "0d2198e6547e73e83015cd1fc7ad602c163f7297"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -2256,7 +2256,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/gemini-cli-extensions/oracledb.git",
-            "sha": "6081bf97fc8f1a41c77a7110cb093291a5452a93"
+            "sha": "4dde67892d32017f30a0c02922219281a4c4ec82"
           },
           "homepage": "https://github.com/gemini-cli-extensions/oracledb"
         },
@@ -3415,7 +3415,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-06-20T00:07:30Z",
+    "updatedAt": "2026-06-20T08:25:05Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -3429,7 +3429,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.26.0"
+        "version": "1.28.0"
       },
       "plugins": [
         {
@@ -3437,10 +3437,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/pm-skills.git",
-            "sha": "c11de124818e95f941c31a89e552dae113d3939a"
+            "sha": "4fb0d70307a76cf779a3dc25e1ad49cc30712cae"
           },
           "description": "Product management skills, sub-agents, and sprint tools across the full product lifecycle. Follows the agentskills.io specification.",
-          "version": "2.26.0",
+          "version": "2.28.0",
           "strict": true
         },
         {
@@ -3448,10 +3448,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/thinking-framework-skills.git",
-            "sha": "0a6f0a666e88e9635449bc44edd95a865d5047d7"
+            "sha": "c129d3c368c320d1bae1550236c3bd08a3557f2c"
           },
           "description": "Evidence-graded, agent-executable thinking-method skills: each is reduced to its working mechanism, graded honestly on its evidence, and produces a concrete artifact. Includes a published Framework Library, a research engine, and routing/applicator tools. Follows the agentskills.io specification.",
-          "version": "0.10.0",
+          "version": "0.11.0",
           "strict": true
         },
         {
