@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 153248,
-    "forks": 18069,
+    "stars": 153593,
+    "forks": 18110,
     "language": "Python",
-    "updatedAt": "2026-06-21T04:05:40Z",
+    "updatedAt": "2026-06-22T04:11:49Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 65360,
-    "forks": 7261,
+    "stars": 65462,
+    "forks": 7271,
     "language": "Python",
-    "updatedAt": "2026-06-21T03:32:18Z",
+    "updatedAt": "2026-06-22T04:04:59Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 30507,
-    "forks": 3324,
+    "stars": 30584,
+    "forks": 3338,
     "language": "Python",
-    "updatedAt": "2026-06-21T03:54:04Z",
+    "updatedAt": "2026-06-22T03:53:19Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -807,7 +807,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-investors",
             "ref": "main",
-            "sha": "4cb559c373bf618b2552353f9bf6e3ab6a7e6f7a"
+            "sha": "bb45f4b388a0d96366b137a8c47d03c45434d1fa"
           },
           "homepage": "https://carta.com"
         },
@@ -1648,7 +1648,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "0d2198e6547e73e83015cd1fc7ad602c163f7297"
+            "sha": "e385d213f3f2521ecc52ea1b681d1ad759904d0a"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -1702,7 +1702,7 @@
             "source": "github",
             "repo": "jfrog/claude-plugin",
             "commit": "259c8e718266c16e99b4f30ae9b1ed0f9f00d98d",
-            "sha": "97e25cc7db106c7fb6e2343968cbfe8fe5e5963a"
+            "sha": "ac0ea16e9e96c9837b26d3c7d6bdfecd41cb6149"
           },
           "homepage": "https://jfrog.com"
         },
@@ -2256,7 +2256,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/gemini-cli-extensions/oracledb.git",
-            "sha": "4dde67892d32017f30a0c02922219281a4c4ec82"
+            "sha": "d5a26255c6f2ffb32b5920735512629014622693"
           },
           "homepage": "https://github.com/gemini-cli-extensions/oracledb"
         },
@@ -2382,7 +2382,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/PostHog/ai-plugin.git",
-            "sha": "fa6f61965c1df5c70ad2c48e1b5bd8672ce9a7e6"
+            "sha": "d09ebca2302c085cef2dd576f2b6ec88fe254ce1"
           },
           "homepage": "https://posthog.com/docs/model-context-protocol"
         },
@@ -2587,7 +2587,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/Digital-Process-Tools/claude-remember.git",
-            "sha": "ce4eb100e2082adf1a0a0f1555bf1cfa5b3fddca"
+            "sha": "e6bc86214ea62e069465c064c185e3742bac55c0"
           },
           "homepage": "https://github.com/Digital-Process-Tools/claude-remember"
         },
@@ -3293,7 +3293,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "668e6ee9dc5a9fb4d72c25962233aa819f435d9a"
+            "sha": "7d427f948b7a00416d698f52b36ff8c38cab95db"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
@@ -3415,7 +3415,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-06-20T08:25:05Z",
+    "updatedAt": "2026-06-21T06:27:31Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -3429,7 +3429,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.28.0"
+        "version": "1.29.0"
       },
       "plugins": [
         {
@@ -3448,10 +3448,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/thinking-framework-skills.git",
-            "sha": "c129d3c368c320d1bae1550236c3bd08a3557f2c"
+            "sha": "19603d25ec7854da2c869ec5db606434c2ece599"
           },
           "description": "Evidence-graded, agent-executable thinking-method skills: each is reduced to its working mechanism, graded honestly on its evidence, and produces a concrete artifact. Includes a published Framework Library, a research engine, and routing/applicator tools. Follows the agentskills.io specification.",
-          "version": "0.11.0",
+          "version": "0.12.0",
           "strict": true
         },
         {
