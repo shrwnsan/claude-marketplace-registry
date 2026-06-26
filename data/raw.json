@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 154840,
-    "forks": 18231,
+    "stars": 155252,
+    "forks": 18276,
     "language": "Python",
-    "updatedAt": "2026-06-25T03:28:27Z",
+    "updatedAt": "2026-06-26T03:37:12Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 65801,
-    "forks": 7313,
+    "stars": 65936,
+    "forks": 7325,
     "language": "Python",
-    "updatedAt": "2026-06-25T03:17:30Z",
+    "updatedAt": "2026-06-26T03:15:41Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 31061,
-    "forks": 3378,
+    "stars": 31125,
+    "forks": 3394,
     "language": "Python",
-    "updatedAt": "2026-06-25T03:11:03Z",
+    "updatedAt": "2026-06-26T03:18:21Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -281,7 +281,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
-            "sha": "772aaa20ebdd97736a94ebcd9d60fd3949342b60"
+            "sha": "2b2f59d9f29d3dae3a4bec0b953237f03bbba7af"
           },
           "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc"
         },
@@ -301,7 +301,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/AikidoSec/aikido-claude-plugin.git",
-            "sha": "01e8cf542500e579cff948a0fa0365e4f819d7b4"
+            "sha": "fbe11e287175e5eda448516dd2f741a63b276514"
           },
           "homepage": "https://github.com/AikidoSec/aikido-claude-plugin"
         },
@@ -447,7 +447,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/astronomer/agents.git",
-            "sha": "e4ebf9a7ad3f8dbf3fcfda9c245a65eb1415967b"
+            "sha": "ed2fe757381ff42337fd7bce56a50f31134d9dce"
           },
           "homepage": "https://github.com/astronomer/agents"
         },
@@ -577,7 +577,7 @@
             "url": "https://github.com/aws/agent-toolkit-for-aws.git",
             "path": "plugins/aws-data-analytics",
             "ref": "main",
-            "sha": "ff1dc6f45f5203147f6cd52662cc74ded4bb0825"
+            "sha": "49ca75209219a89ac43690d6ca0a59d976933ee8"
           },
           "homepage": "https://github.com/aws/agent-toolkit-for-aws"
         },
@@ -745,7 +745,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/brightdata/skills.git",
-            "sha": "8d427e9871566efe3f0a1c8888f98b6fe8288831"
+            "sha": "e825f02fbcd7a89087fd1053a57ddcd45113370f"
           },
           "homepage": "https://docs.brightdata.com"
         },
@@ -791,7 +791,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-crm",
             "ref": "main",
-            "sha": "2193f5ac8dc70b4b15adc46b334e6830def39bff"
+            "sha": "d73a3615864a5590ad6105df1b3e1b26324d1813"
           },
           "homepage": "https://carta.com"
         },
@@ -807,7 +807,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-investors",
             "ref": "main",
-            "sha": "d73954d3d9ce1e3fce1ec2b9ee6819922dd539e3"
+            "sha": "d73a3615864a5590ad6105df1b3e1b26324d1813"
           },
           "homepage": "https://carta.com"
         },
@@ -1205,7 +1205,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/dash0hq/dash0-agent-plugin.git",
-            "sha": "f8c31f6fcdc6588a27153ceed09e561a40da3a86"
+            "sha": "fb9a6207929e5fc45c2661e5c74a2e077b3de79d"
           },
           "homepage": "https://dash0.com/"
         },
@@ -1216,7 +1216,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/astronomer/agents.git",
-            "sha": "e4ebf9a7ad3f8dbf3fcfda9c245a65eb1415967b"
+            "sha": "ed2fe757381ff42337fd7bce56a50f31134d9dce"
           },
           "homepage": "https://github.com/astronomer/agents"
         },
@@ -1240,7 +1240,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/astronomer/agents.git",
-            "sha": "e4ebf9a7ad3f8dbf3fcfda9c245a65eb1415967b"
+            "sha": "ed2fe757381ff42337fd7bce56a50f31134d9dce"
           },
           "homepage": "https://github.com/astronomer/agents"
         },
@@ -1253,7 +1253,7 @@
             "url": "https://github.com/awslabs/agent-plugins.git",
             "path": "plugins/databases-on-aws",
             "ref": "main",
-            "sha": "66dd3cf5acdf374cc0d79af2bf51fa6fbb975c07"
+            "sha": "96a073a195491f2192c256ba66730b631ced03e1"
           },
           "homepage": "https://github.com/awslabs/agent-plugins"
         },
@@ -1311,7 +1311,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/gemini-cli-extensions/dataproc.git",
-            "sha": "c36c7f8bb53a1f8903382471366986ef226c509d"
+            "sha": "6d6ac3889bf448e33a0ad96174bc5b0849c74ebe"
           },
           "homepage": "https://github.com/gemini-cli-extensions/dataproc"
         },
@@ -1325,7 +1325,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/datarobot-oss/datarobot-agent-skills.git",
-            "sha": "f4b3c29db60e1d735285a6f51328a69a2b500338"
+            "sha": "0e28dc839859f523f4d8d418612cdadb7a4a3ce7"
           },
           "homepage": "https://datarobot.com"
         },
@@ -1445,7 +1445,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/exa-labs/exa-mcp-server.git",
-            "sha": "34a6b2aa877307639a1750ad6b1a1f74c66a34f5"
+            "sha": "40d9990f48c55301535b0ea2d950176e6f115df3"
           },
           "homepage": "https://exa.ai/docs/reference/exa-mcp"
         },
@@ -1469,7 +1469,7 @@
             "url": "https://github.com/expo/skills.git",
             "path": "plugins/expo",
             "ref": "main",
-            "sha": "81ee6546b0745dc666ebacfc1f48e4bff74fbf44"
+            "sha": "ad897fdf0c6593d0cc7523198aa752c6f62adeda"
           },
           "homepage": "https://github.com/expo/skills/blob/main/plugins/expo/README.md"
         },
@@ -1652,7 +1652,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/huggingface/skills.git",
-            "sha": "093e0bb81e568503fbb091d694fbcdb6273d7f44"
+            "sha": "35e8c35a1ae5b462e0bb23d444d25569c3bb6700"
           },
           "homepage": "https://github.com/huggingface/skills.git"
         },
@@ -1666,7 +1666,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/hunter-io/claude-plugin.git",
-            "sha": "9929ccf4f228171398049633da7afd8f1b65646b"
+            "sha": "0a03795dfe7258f46e702a2898bfc25aebbfcc58"
           },
           "homepage": "https://hunter.io"
         },
@@ -1680,7 +1680,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "1c389983de16f73ce9f272f5d6e6ae4314ac9e17"
+            "sha": "56859b618f45f646835c717a8a6dfaabbbda636d"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -1734,7 +1734,7 @@
             "source": "github",
             "repo": "jfrog/claude-plugin",
             "commit": "259c8e718266c16e99b4f30ae9b1ed0f9f00d98d",
-            "sha": "ac0ea16e9e96c9837b26d3c7d6bdfecd41cb6149"
+            "sha": "320a5585d6d9747668bd20e1c512c577d1e871d3"
           },
           "homepage": "https://jfrog.com"
         },
@@ -1787,7 +1787,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/langfuse/claude-observability-plugin.git",
-            "sha": "597af67d6c6b369f3e55db6cfa2ebe444f1af46c"
+            "sha": "938df41639efcaa22790b1a216308b6ed626a8b7"
           },
           "homepage": "https://langfuse.com/integrations/other/claude-code"
         },
@@ -2091,7 +2091,7 @@
             "url": "https://github.com/awslabs/startups.git",
             "path": "migrate/plugins/migration-to-aws",
             "ref": "main",
-            "sha": "ac1d625107f2d1905e448f4886e60c3cb264ea00"
+            "sha": "e49c21bf8b4883a9646938c00091633dfb8f483f"
           },
           "homepage": "https://github.com/awslabs/startups"
         },
@@ -2205,7 +2205,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/nvsecurity/nightvision-skills.git",
-            "sha": "c7807ab1e2064890bfa6c96af17fc5b5c58eeab7"
+            "sha": "67af610a1da439e10b1714d3896a2a02bf1ebd63"
           },
           "homepage": "https://github.com/nvsecurity/nightvision-skills"
         },
@@ -2245,6 +2245,22 @@
             "sha": "26811af1bbb5fb5c8ff3fc5dc04a6f36840615c1"
           },
           "homepage": "https://github.com/NVIDIA/skills"
+        },
+        {
+          "name": "oracle-ai-data-platform-workbench-databricks-migrator",
+          "description": "Drive the Oracle AI Data Platform (AIDP) Databricks Migration Toolkit in natural language. Plans and executes automated Databricks → AIDP migrations of notebooks, jobs, schedules, and catalog DDL — Pass-1 dependency rewrite + Pass-2 cell-by-cell execute/verify/fix on a live AIDP cluster with Claude.",
+          "author": {
+            "name": "Oracle"
+          },
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/oracle-samples/oracle-aidp-samples.git",
+            "path": "ai/claude-code-plugins/oracle-ai-data-platform-workbench-databricks-migrator",
+            "ref": "main",
+            "sha": "a88bcf3a9f9acca94663a727de42d8535e869486"
+          },
+          "homepage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html"
         },
         {
           "name": "oracle-ai-data-platform-workbench-engineer-agent",
@@ -2414,7 +2430,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/PostHog/ai-plugin.git",
-            "sha": "39a8593ef773f643c34cfdb759c0c0d6f7311c93"
+            "sha": "835f4f647fec8a8fbde8ea00cf9b2432a35d7e5b"
           },
           "homepage": "https://posthog.com/docs/model-context-protocol"
         },
@@ -2518,7 +2534,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/qdrant/skills.git",
-            "sha": "7a91f32069374463d22b0ae7836fd42f3f98b1f6"
+            "sha": "0651740b38ed466ad12907bfb848e5f4b71b25e2"
           },
           "homepage": "https://skills.qdrant.tech"
         },
@@ -2557,7 +2573,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/quarkusio/quarkus-agent-mcp.git",
-            "sha": "281e701d5381ec621f2852f1b458e57e2f8dedab"
+            "sha": "1804071ef5f0c7ca2a2e8d6708b1eef4a1fec74a"
           },
           "homepage": "https://quarkus.io"
         },
@@ -2659,7 +2675,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/rilldata/agent-skills.git",
-            "sha": "9bdc4efa38a9ad419104fc2d1bb3e89529202487"
+            "sha": "c8c8738f44826150d52304cd4fb70cc3ecbdca2e"
           },
           "homepage": "https://docs.rilldata.com/developers/build/ai-configuration"
         },
@@ -2792,9 +2808,25 @@
             "url": "https://github.com/SAP/open-ux-tools.git",
             "path": "packages/fiori-mcp-server",
             "ref": "main",
-            "sha": "10d3bfcb04eea88c6b1a61f7f13479d95398a8db"
+            "sha": "0cddd1a565895e5a12623b9e6aa19758cdbf80df"
           },
           "homepage": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server"
+        },
+        {
+          "name": "sap-hana-cli",
+          "description": "150+ SAP HANA database tools for AI assistants. Query tables, import/export data, profile data quality, compare schemas, manage backups, monitor performance, and more. Connects to SAP HANA Cloud and on-premise databases.",
+          "author": {
+            "name": "SAP SE",
+            "email": "ospo@sap.com",
+            "url": "https://www.sap.com"
+          },
+          "category": "database",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/SAP-samples/hana-cli-claude-plugin.git",
+            "sha": "abadd0aba32792b6378ed784e9f6d3e5b25dfc2a"
+          },
+          "homepage": "https://github.com/SAP-samples/hana-cli-claude-plugin"
         },
         {
           "name": "sap-mdk-server",
@@ -2859,7 +2891,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/getsentry/plugin-claude.git",
-            "sha": "17a46e37cfe35242de00de3811b75e6ca755a2c2"
+            "sha": "f69cf097dd4c2fd56cab2738442e78848ff6d206"
           },
           "homepage": "https://github.com/getsentry/plugin-claude"
         },
@@ -2875,7 +2907,7 @@
             "url": "https://github.com/getsentry/cli.git",
             "path": "plugins/sentry-cli",
             "ref": "main",
-            "sha": "6acb9aa84a8e02d2cc4b029e05266427fdb79559"
+            "sha": "20b469aa5a21acd9bad0650670a08dbe671f499b"
           },
           "homepage": "https://sentry.io"
         },
@@ -3120,7 +3152,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/JetBrains/teamcity-cli.git",
-            "sha": "25c5f8d3bada8b56244f84fb7a119c330a80d998"
+            "sha": "42ce6a22b1a8167120adbfa8de8b79f36e698133"
           },
           "homepage": "https://www.jetbrains.com/teamcity/"
         },
@@ -3213,7 +3245,25 @@
             "url": "https://github.com/UI5/plugins-coding-agents.git",
             "path": "plugins/ui5",
             "ref": "main",
-            "sha": "1d4dedd56afcd1c3269c4d80f09e2ddb7f1bf5be"
+            "sha": "d1e3a43fa80ef160cb42689b88d665e25a5a81a1"
+          },
+          "homepage": "https://github.com/UI5/plugins-coding-agents"
+        },
+        {
+          "name": "ui5-modernization",
+          "description": "Complete UI5 modernization toolkit with workflow and specialized fix patterns for modernizing SAPUI5/OpenUI5 applications.",
+          "author": {
+            "name": "SAP SE",
+            "email": "openui5@sap.com",
+            "url": "https://www.sap.com"
+          },
+          "category": "development",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/UI5/plugins-coding-agents.git",
+            "path": "plugins/ui5-modernization",
+            "ref": "main",
+            "sha": "d1e3a43fa80ef160cb42689b88d665e25a5a81a1"
           },
           "homepage": "https://github.com/UI5/plugins-coding-agents"
         },
@@ -3231,7 +3281,7 @@
             "url": "https://github.com/UI5/plugins-coding-agents.git",
             "path": "plugins/ui5-typescript-conversion",
             "ref": "main",
-            "sha": "1d4dedd56afcd1c3269c4d80f09e2ddb7f1bf5be"
+            "sha": "d1e3a43fa80ef160cb42689b88d665e25a5a81a1"
           },
           "homepage": "https://github.com/UI5/plugins-coding-agents"
         },
@@ -3247,7 +3297,7 @@
             "url": "https://github.com/val-town/plugins.git",
             "path": "plugin",
             "ref": "main",
-            "sha": "e32973e454d92280c191f30a2b814f1adc953d14"
+            "sha": "22594eb245d5b06714c99248d68c333169274b21"
           },
           "homepage": "https://val.town"
         },
@@ -3286,7 +3336,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/vercel/vercel-plugin.git",
-            "sha": "b2f2bc09dd05b15db9cb2e696f57872e85944aad"
+            "sha": "5f3f0ad7931ad49d6a4c6ed43ab4bf4781a69f6d"
           },
           "homepage": "https://github.com/vercel/vercel-plugin"
         },
@@ -3325,7 +3375,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "a50d4c068ee95aa8646137fc6b78d12985651c14"
+            "sha": "1ea953a29525ce8ff07a3b5a3a107927804c3eba"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
@@ -3378,7 +3428,7 @@
             "url": "https://github.com/zapier/zapier-mcp.git",
             "path": "plugins/zapier",
             "ref": "main",
-            "sha": "28ad6ea10009a88b9ea80748fb1524363a5d54a7"
+            "sha": "469651fe7fdaa3dfc6a476ef5bad6c354773366a"
           },
           "homepage": "https://github.com/zapier/zapier-mcp/tree/main/plugins/zapier"
         },
@@ -3461,7 +3511,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-06-24T07:17:03Z",
+    "updatedAt": "2026-06-25T15:51:32Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -3475,7 +3525,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.31.0"
+        "version": "1.32.0"
       },
       "plugins": [
         {
@@ -3494,10 +3544,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/thinking-framework-skills.git",
-            "sha": "19603d25ec7854da2c869ec5db606434c2ece599"
+            "sha": "9aab9f3d718d00d72f9a3f2f272f0c882e83e619"
           },
           "description": "Evidence-graded, agent-executable thinking-method skills: each is reduced to its working mechanism, graded honestly on its evidence, and produces a concrete artifact. Includes a published Framework Library, a research engine, and routing/applicator tools. Follows the agentskills.io specification.",
-          "version": "0.12.0",
+          "version": "0.13.0",
           "strict": true
         },
         {
