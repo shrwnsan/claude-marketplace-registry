@@ -1,38 +1,44 @@
 {
-  "totalFound": 10,
+  "totalFound": 11,
   "withManifest": 5,
-  "lastUpdated": "2026-06-27T03:25:23.468Z",
+  "lastUpdated": "2026-06-28T03:46:48.405Z",
   "searchQuery": "claude-plugin+marketplace.json",
   "languages": {
     "Python": 3,
+    "TypeScript": 1,
     "JavaScript": 3,
     "Unknown": 4
   },
   "topRepos": [
     {
       "name": "skills",
-      "stars": 155605,
+      "stars": 155939,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 66043,
+      "stars": 66145,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 31175,
+      "stars": 31216,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "cognitum-claude-plugin",
-      "stars": 2,
+      "stars": 3,
       "url": "https://github.com/cognitum-one/cognitum-claude-plugin"
     },
     {
       "name": "agent-plugins",
       "stars": 1,
       "url": "https://github.com/product-on-purpose/agent-plugins"
+    },
+    {
+      "name": "claude-plugin-marketplaces",
+      "stars": 0,
+      "url": "https://github.com/typeforged/claude-plugin-marketplaces"
     },
     {
       "name": "refacil-claude-plugins",
@@ -53,11 +59,6 @@
       "name": ".claude-plugin-marketplace.json",
       "stars": 0,
       "url": "https://github.com/jminkove/.claude-plugin-marketplace.json"
-    },
-    {
-      "name": ".claude-plugin-marketplace.json",
-      "stars": 0,
-      "url": "https://github.com/1deeplyconfused/.claude-plugin-marketplace.json"
     }
   ]
 }
