@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 155605,
-    "forks": 18328,
+    "stars": 155939,
+    "forks": 18385,
     "language": "Python",
-    "updatedAt": "2026-06-27T03:22:17Z",
+    "updatedAt": "2026-06-28T03:38:11Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 66043,
-    "forks": 7341,
+    "stars": 66145,
+    "forks": 7352,
     "language": "Python",
-    "updatedAt": "2026-06-27T03:22:51Z",
+    "updatedAt": "2026-06-28T03:28:00Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 31175,
-    "forks": 3402,
+    "stars": 31216,
+    "forks": 3406,
     "language": "Python",
-    "updatedAt": "2026-06-27T02:56:16Z",
+    "updatedAt": "2026-06-28T02:32:16Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -468,7 +468,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/atlassian/atlassian-mcp-server.git",
-            "sha": "38a17806fac2a1b546ec1b437c5f76f7c9cc0adc"
+            "sha": "201c1b20ef45a05fcece7f7b11df6e62b356d8d0"
           },
           "homepage": "https://github.com/atlassian/atlassian-mcp-server"
         },
@@ -1246,7 +1246,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack.git",
-            "sha": "9bc90f9ec22b156a71f37c45157cf3f551005a45"
+            "sha": "23d0e064cce2f7034e9270f770dc10d96bccde39"
           },
           "homepage": "https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack"
         },
@@ -1696,7 +1696,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "e3edbd55cff35884f4f0c90164e1337385e9ad08"
+            "sha": "3351fb1a6d7f0202d07db9bf9ad335fd0d1ec344"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -2446,7 +2446,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/PostHog/ai-plugin.git",
-            "sha": "835f4f647fec8a8fbde8ea00cf9b2432a35d7e5b"
+            "sha": "b2054334354599d7cc2d02e7329a5066e44d9c4f"
           },
           "homepage": "https://posthog.com/docs/model-context-protocol"
         },
@@ -2691,7 +2691,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/rilldata/agent-skills.git",
-            "sha": "c8c8738f44826150d52304cd4fb70cc3ecbdca2e"
+            "sha": "5ac72459d4ec43c6e818bfdb1f3f2696e0cb21d4"
           },
           "homepage": "https://docs.rilldata.com/developers/build/ai-configuration"
         },
@@ -3548,6 +3548,20 @@
     }
   },
   {
+    "id": "1281911870",
+    "name": "claude-plugin-marketplaces",
+    "description": "Types for marketplace.json and plugin.json. Generated from https://www.schemastore.org/claude-code-marketplace.json and https://json.schemastore.org/claude-code-plugin-manifest.json.",
+    "url": "https://github.com/typeforged/claude-plugin-marketplaces",
+    "stars": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "updatedAt": "2026-06-27T21:05:38Z",
+    "createdAt": "2026-06-27T04:34:15Z",
+    "license": "MIT License",
+    "topics": [],
+    "discoverySource": "custom-query"
+  },
+  {
     "id": "1245301697",
     "name": "agent-plugins",
     "description": "Product on Purpose plugin marketplace registry (Claude Code). Thin host repo: lists plugins via .claude-plugin/marketplace.json; holds no plugin code.",
@@ -3736,10 +3750,10 @@
     "name": "cognitum-claude-plugin",
     "description": "Cognitum Claude Code plugins (cognitum-mcp cloud + cognitum-seed local). Marketplace at https://cognitum.one/marketplace.json",
     "url": "https://github.com/cognitum-one/cognitum-claude-plugin",
-    "stars": 2,
+    "stars": 3,
     "forks": 0,
     "language": "Unknown",
-    "updatedAt": "2026-05-19T22:57:11Z",
+    "updatedAt": "2026-06-27T16:09:49Z",
     "createdAt": "2026-04-29T15:58:36Z",
     "license": "None",
     "topics": [],
