@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 155939,
-    "forks": 18385,
+    "stars": 156329,
+    "forks": 18424,
     "language": "Python",
-    "updatedAt": "2026-06-28T03:38:11Z",
+    "updatedAt": "2026-06-29T03:52:20Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 66145,
-    "forks": 7352,
+    "stars": 66238,
+    "forks": 7365,
     "language": "Python",
-    "updatedAt": "2026-06-28T03:28:00Z",
+    "updatedAt": "2026-06-29T03:51:25Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 31216,
-    "forks": 3406,
+    "stars": 31269,
+    "forks": 3418,
     "language": "Python",
-    "updatedAt": "2026-06-28T02:32:16Z",
+    "updatedAt": "2026-06-29T03:45:09Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -1696,7 +1696,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "3351fb1a6d7f0202d07db9bf9ad335fd0d1ec344"
+            "sha": "c811a2750a2f9a242b764959e7509217f9943511"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -3419,7 +3419,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "1ea953a29525ce8ff07a3b5a3a107927804c3eba"
+            "sha": "75d59c5f85f7719a25328547b0386ceb5f7c7501"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
