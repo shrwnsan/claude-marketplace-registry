@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 157409,
-    "forks": 18545,
+    "stars": 157737,
+    "forks": 18588,
     "language": "Python",
-    "updatedAt": "2026-07-02T03:30:47Z",
+    "updatedAt": "2026-07-03T02:52:10Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 66559,
-    "forks": 7405,
+    "stars": 66648,
+    "forks": 7422,
     "language": "Python",
-    "updatedAt": "2026-07-02T03:08:55Z",
+    "updatedAt": "2026-07-03T02:44:04Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -48,15 +48,39 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 31410,
-    "forks": 3437,
+    "stars": 31466,
+    "forks": 3445,
     "language": "Python",
-    "updatedAt": "2026-07-02T03:32:41Z",
+    "updatedAt": "2026-07-03T02:32:19Z",
     "topics": [
       "claude-code",
       "mcp",
       "skills"
     ],
+    "hasManifest": true
+  },
+  {
+    "id": "1224771062",
+    "name": "cognitum-claude-plugin",
+    "description": "Cognitum Claude Code plugins (cognitum-mcp cloud + cognitum-seed local). Marketplace at https://cognitum.one/marketplace.json",
+    "url": "https://github.com/cognitum-one/cognitum-claude-plugin",
+    "stars": 3,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2026-07-02T10:38:01Z",
+    "topics": [],
+    "hasManifest": false
+  },
+  {
+    "id": "1245301697",
+    "name": "agent-plugins",
+    "description": "Product on Purpose plugin marketplace registry (Claude Code). Thin host repo: lists plugins via .claude-plugin/marketplace.json; holds no plugin code.",
+    "url": "https://github.com/product-on-purpose/agent-plugins",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "updatedAt": "2026-07-02T06:43:36Z",
+    "topics": [],
     "hasManifest": true
   },
   {
@@ -70,18 +94,6 @@
     "updatedAt": "2026-06-30T03:04:56Z",
     "topics": [],
     "hasManifest": false
-  },
-  {
-    "id": "1245301697",
-    "name": "agent-plugins",
-    "description": "Product on Purpose plugin marketplace registry (Claude Code). Thin host repo: lists plugins via .claude-plugin/marketplace.json; holds no plugin code.",
-    "url": "https://github.com/product-on-purpose/agent-plugins",
-    "stars": 1,
-    "forks": 0,
-    "language": "JavaScript",
-    "updatedAt": "2026-06-25T15:51:32Z",
-    "topics": [],
-    "hasManifest": true
   },
   {
     "id": "1264273456",
@@ -128,18 +140,6 @@
     "forks": 0,
     "language": "Unknown",
     "updatedAt": "2026-05-15T14:41:52Z",
-    "topics": [],
-    "hasManifest": false
-  },
-  {
-    "id": "1224771062",
-    "name": "cognitum-claude-plugin",
-    "description": "Cognitum Claude Code plugins (cognitum-mcp cloud + cognitum-seed local). Marketplace at https://cognitum.one/marketplace.json",
-    "url": "https://github.com/cognitum-one/cognitum-claude-plugin",
-    "stars": 3,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2026-06-27T16:09:49Z",
     "topics": [],
     "hasManifest": false
   },
