@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 157737,
-    "forks": 18588,
+    "stars": 157989,
+    "forks": 18627,
     "language": "Python",
-    "updatedAt": "2026-07-03T02:52:10Z",
+    "updatedAt": "2026-07-04T02:44:00Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 66648,
-    "forks": 7422,
+    "stars": 66749,
+    "forks": 7443,
     "language": "Python",
-    "updatedAt": "2026-07-03T02:44:04Z",
+    "updatedAt": "2026-07-04T02:47:18Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 31466,
-    "forks": 3445,
+    "stars": 31510,
+    "forks": 3453,
     "language": "Python",
-    "updatedAt": "2026-07-03T02:32:19Z",
+    "updatedAt": "2026-07-04T01:43:27Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -230,6 +230,12 @@
         "name": "Anthropic",
         "email": "support@anthropic.com"
       },
+      "renames": {
+        "adlc": "agentforce-adlc",
+        "airwallex": "airwallex-agentos",
+        "convex-backend": "convex",
+        "vals": "valtown"
+      },
       "plugins": [
         {
           "name": "42crunch-api-security-testing",
@@ -243,7 +249,7 @@
             "url": "https://github.com/42Crunch-AI/claude-plugins.git",
             "path": "plugins/api-security-testing",
             "ref": "v1.5.5",
-            "sha": "0f325999a7106eadb2d0ecbcccabf6c12dc06aef"
+            "sha": "2ed4978117324165d07f43681f9a908fddefea47"
           },
           "homepage": "https://42crunch.com"
         },
@@ -415,7 +421,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/apollographql/skills.git",
-            "sha": "7a76acd4b60c41a33cbc4126c98177e51b27b2f3"
+            "sha": "7df6a608dd71f937e664b19183fb60d101bb13a1"
           },
           "homepage": "https://www.apollographql.com"
         },
@@ -823,7 +829,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-investors",
             "ref": "main",
-            "sha": "74dcec2b733f150c11b6d7c59b7a37e63da79a82"
+            "sha": "e32d1707c89887768fd8462c3942865ae3b7e343"
           },
           "homepage": "https://carta.com"
         },
@@ -850,7 +856,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp.git",
-            "sha": "cf003051706619ca084235020f62a4d6902fb226"
+            "sha": "913308263bdc8042af74924b68dc39a374ad071d"
           },
           "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
         },
@@ -1144,7 +1150,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/get-convex/convex-backend-skill.git",
-            "sha": "c7a17c89834a5755599bc9802445925f6586b09c"
+            "sha": "25815e82e848720f11c57fdaf161ecd846e0e7dd"
           },
           "homepage": "https://github.com/get-convex/convex-backend-skill",
           "keywords": [
@@ -1221,7 +1227,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/dash0hq/dash0-agent-plugin.git",
-            "sha": "28a71f7f0d449197336b941b7186e59d3a5acfa1"
+            "sha": "4aed2d535f3ee5e7c7e24f58163c2f369ae2b4b1"
           },
           "homepage": "https://dash0.com/"
         },
@@ -1285,7 +1291,7 @@
             "url": "https://github.com/databricks/databricks-agent-skills.git",
             "path": "plugins/databricks/claude",
             "ref": "main",
-            "sha": "917055a6e1d82860a98a685f5c15ee9ea57b0f53"
+            "sha": "579e6bb4dc199f5be59c8597dcd142cbf9c0d036"
           },
           "homepage": "https://developers.databricks.com/"
         },
@@ -1501,7 +1507,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/fastly/fastly-agent-toolkit.git",
-            "sha": "9a273f0b2f7a496355b6ec30c1b34614a80bf805"
+            "sha": "ea3623d5facc7053eaa802f5fc483dd7121a39aa"
           },
           "homepage": "https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md"
         },
@@ -1746,7 +1752,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/huggingface/skills.git",
-            "sha": "35e8c35a1ae5b462e0bb23d444d25569c3bb6700"
+            "sha": "4948baec814c92edd91024b76d8c2ffa6df4eb70"
           },
           "homepage": "https://github.com/huggingface/skills.git"
         },
@@ -1774,7 +1780,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "a59ff0d91b4074bd16b7e4d41fb9a9ffbc9eab8e"
+            "sha": "e92700acded50469d3fb35da3a8b198d2cdc36d8"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -2189,7 +2195,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/mergifyio/mergify-cli.git",
-            "sha": "4efb5cbc393e5e10a0c27aff5a854c187e5e5ac9"
+            "sha": "42ac9048a2bee08f724ee87a9d70589c0b8fb4e1"
           },
           "homepage": "https://mergify.com"
         },
@@ -2216,7 +2222,7 @@
             "url": "https://github.com/awslabs/startups.git",
             "path": "migrate/plugins/migration-to-aws",
             "ref": "main",
-            "sha": "b6843251c4a3f710cdd093de0f2f895989d93ae2"
+            "sha": "cc6609038a5cb89c1b85f1f97283439eb0ee256b"
           },
           "homepage": "https://github.com/awslabs/startups"
         },
@@ -2741,7 +2747,7 @@
             "url": "https://github.com/railwayapp/railway-skills.git",
             "path": "plugins/railway",
             "ref": "main",
-            "sha": "fb1956d20ffae1a5a7ddc2673f58f9bfa15fce93"
+            "sha": "770b6d16afd8257cc968a0ada598a2e52ecc8a9d"
           },
           "homepage": "https://docs.railway.com/ai/claude-code-plugin"
         },
@@ -2764,7 +2770,7 @@
             "source": "url",
             "url": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
             "path": "revenuecat",
-            "sha": "7d922e9d756dc330a369a761345f88495c3a5a1f"
+            "sha": "f9c61f12e434b3933f556a5ca169eff20cb27094"
           },
           "homepage": "https://www.revenuecat.com"
         },
@@ -2830,7 +2836,7 @@
             "source": "url",
             "url": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
             "path": "revenuecat",
-            "sha": "7d922e9d756dc330a369a761345f88495c3a5a1f"
+            "sha": "f9c61f12e434b3933f556a5ca169eff20cb27094"
           },
           "homepage": "https://www.revenuecat.com"
         },
@@ -2977,7 +2983,7 @@
             "url": "https://github.com/SAP/open-ux-tools.git",
             "path": "packages/fiori-mcp-server",
             "ref": "main",
-            "sha": "c5ecab3c1fefedc12ec39e326c658a15adee1877"
+            "sha": "fd246c48345d6405d7686aeeccab86a9b62a91d1"
           },
           "homepage": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server"
         },
@@ -3076,7 +3082,7 @@
             "url": "https://github.com/getsentry/cli.git",
             "path": "plugins/sentry-cli",
             "ref": "main",
-            "sha": "4110b3a53ba1a3892a059dd3ca2b6ab67b3298f7"
+            "sha": "564f0fc7e091a88c5b92d135432add7e23de1412"
           },
           "homepage": "https://sentry.io"
         },
@@ -3163,7 +3169,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/slackapi/slack-mcp-plugin.git",
-            "sha": "9635a2f7741ad30f86d00d6836a1ab6dd0a907b9"
+            "sha": "6af155a7082b881ba9f80bc86b449b2b7f688393"
           },
           "homepage": "https://github.com/slackapi/slack-mcp-plugin/tree/main"
         },
@@ -3193,7 +3199,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/SonarSource/sonarqube-agent-plugins.git",
-            "sha": "5b4783d8749074e8e0c26ca8590990b1489771eb"
+            "sha": "63c286b56fe9a6b142c117bc347d1a1bd5abadff"
           },
           "homepage": "https://www.sonarsource.com"
         },
@@ -3253,7 +3259,7 @@
             "url": "https://github.com/stripe/ai.git",
             "path": "providers/claude/plugin",
             "ref": "main",
-            "sha": "b2157ec24d37736756cb077f0681f366f5aed591"
+            "sha": "b8d7e28d0cc5690fb0c0be54c84cbfdd7df6e4cd"
           },
           "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin"
         },
@@ -3428,7 +3434,7 @@
             "url": "https://github.com/UI5/plugins-coding-agents.git",
             "path": "plugins/ui5",
             "ref": "main",
-            "sha": "d1e3a43fa80ef160cb42689b88d665e25a5a81a1"
+            "sha": "c61e0b7fc7e38168f1df4f705f54c57e59d44c98"
           },
           "homepage": "https://github.com/UI5/plugins-coding-agents"
         },
@@ -3586,7 +3592,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "483d35bb7bf5e59268d938cc03802cac9a324508"
+            "sha": "39165b47e23b613312c5dcf5eecc2275d428682b"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
@@ -3721,26 +3727,12 @@
           "source": {
             "source": "url",
             "url": "https://github.com/zytedata/claude-skills.git",
-            "sha": "7f9d853e65c917692142c5813b7442787544ca95"
+            "sha": "adb02df6aca7bce7c4d8614e1dd24ea1682e8ad5"
           },
           "homepage": "https://www.zyte.com"
         }
       ]
     }
-  },
-  {
-    "id": "1224771062",
-    "name": "cognitum-claude-plugin",
-    "description": "Cognitum Claude Code plugins (cognitum-mcp cloud + cognitum-seed local). Marketplace at https://cognitum.one/marketplace.json",
-    "url": "https://github.com/cognitum-one/cognitum-claude-plugin",
-    "stars": 3,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2026-07-02T10:38:01Z",
-    "createdAt": "2026-04-29T15:58:36Z",
-    "license": "None",
-    "topics": [],
-    "discoverySource": "custom-query"
   },
   {
     "id": "1245301697",
@@ -3750,7 +3742,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-07-02T06:43:36Z",
+    "updatedAt": "2026-07-03T20:27:31Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -3764,7 +3756,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.33.0"
+        "version": "1.34.0"
       },
       "plugins": [
         {
@@ -3794,10 +3786,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/writing-style-catalog.git",
-            "sha": "2869c37d19ab5e8139227e712bb573b3eebf6eef"
+            "sha": "ce0aefe2d8551669eecef18a8fa761da99ea8489"
           },
           "description": "Composable writing instructions on four orthogonal axes (Voice, Tone, Style, Format): pick one entry per axis and the builder assembles a ready-to-paste prompt prefix that steers any LLM toward a precise register, reasoning pattern, and layout. Ships 97 curated entries, 1193 worked examples, 130 diff-pairs, and 14 recipes, plus a style-profile skill that captures your personal default style. Use when you need a precise, composable writing instruction for an LLM.",
-          "version": "0.5.1",
+          "version": "0.5.2",
           "strict": true
         },
         {
@@ -3813,6 +3805,20 @@
         }
       ]
     }
+  },
+  {
+    "id": "1224771062",
+    "name": "cognitum-claude-plugin",
+    "description": "Cognitum Claude Code plugins (cognitum-mcp cloud + cognitum-seed local). Marketplace at https://cognitum.one/marketplace.json",
+    "url": "https://github.com/cognitum-one/cognitum-claude-plugin",
+    "stars": 3,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2026-07-02T10:38:01Z",
+    "createdAt": "2026-04-29T15:58:36Z",
+    "license": "None",
+    "topics": [],
+    "discoverySource": "custom-query"
   },
   {
     "id": "1281911870",
