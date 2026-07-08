@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 158883,
-    "forks": 18741,
+    "stars": 159219,
+    "forks": 18788,
     "language": "Python",
-    "updatedAt": "2026-07-07T03:11:41Z",
+    "updatedAt": "2026-07-08T02:37:07Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 67018,
-    "forks": 7494,
+    "stars": 67107,
+    "forks": 7519,
     "language": "Python",
-    "updatedAt": "2026-07-07T03:00:52Z",
+    "updatedAt": "2026-07-08T02:26:06Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -48,16 +48,28 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 31689,
-    "forks": 3487,
+    "stars": 31761,
+    "forks": 3497,
     "language": "Python",
-    "updatedAt": "2026-07-07T03:14:38Z",
+    "updatedAt": "2026-07-08T02:23:35Z",
     "topics": [
       "claude-code",
       "mcp",
       "skills"
     ],
     "hasManifest": true
+  },
+  {
+    "id": "1292147149",
+    "name": ".claude-plugin-marketplace.json",
+    "description": "",
+    "url": "https://github.com/adityxmatthxn-hub/.claude-plugin-marketplace.json",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2026-07-07T10:21:29Z",
+    "topics": [],
+    "hasManifest": false
   },
   {
     "id": "1245301697",
