@@ -1,28 +1,28 @@
 {
-  "totalFound": 12,
+  "totalFound": 13,
   "withManifest": 6,
-  "lastUpdated": "2026-07-07T03:20:13.431Z",
+  "lastUpdated": "2026-07-08T02:37:32.108Z",
   "searchQuery": "claude-plugin+marketplace.json",
   "languages": {
     "Python": 4,
+    "Unknown": 5,
     "JavaScript": 3,
-    "Unknown": 4,
     "TypeScript": 1
   },
   "topRepos": [
     {
       "name": "skills",
-      "stars": 158883,
+      "stars": 159219,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 67018,
+      "stars": 67107,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 31689,
+      "stars": 31761,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -34,6 +34,11 @@
       "name": "agent-plugins",
       "stars": 1,
       "url": "https://github.com/product-on-purpose/agent-plugins"
+    },
+    {
+      "name": ".claude-plugin-marketplace.json",
+      "stars": 0,
+      "url": "https://github.com/adityxmatthxn-hub/.claude-plugin-marketplace.json"
     },
     {
       "name": "claude-skills",
@@ -54,11 +59,6 @@
       "name": "marketplace",
       "stars": 0,
       "url": "https://github.com/chunky-metro/marketplace"
-    },
-    {
-      "name": "claude-plugin-schemas",
-      "stars": 0,
-      "url": "https://github.com/pv-udpv/claude-plugin-schemas"
     }
   ]
 }
