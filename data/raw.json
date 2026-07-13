@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 160371,
-    "forks": 18926,
+    "stars": 160608,
+    "forks": 18959,
     "language": "Python",
-    "updatedAt": "2026-07-12T02:41:47Z",
+    "updatedAt": "2026-07-13T02:42:28Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 67487,
-    "forks": 7601,
+    "stars": 67552,
+    "forks": 7619,
     "language": "Python",
-    "updatedAt": "2026-07-12T02:28:52Z",
+    "updatedAt": "2026-07-13T02:40:01Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 31990,
-    "forks": 3545,
+    "stars": 32040,
+    "forks": 3552,
     "language": "Python",
-    "updatedAt": "2026-07-12T01:45:46Z",
+    "updatedAt": "2026-07-13T02:39:01Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -678,7 +678,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/base44/skills.git",
-            "sha": "8f2e550013694b5feab5f34cc5320f27036e297b"
+            "sha": "b7610fe5082d38b9eddd7180b49e4008608700ab"
           },
           "homepage": "https://docs.base44.com"
         },
@@ -798,7 +798,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-cap-table",
             "ref": "main",
-            "sha": "193e1a48b45599aa7d1d371d1d8c70e5ad20b13a"
+            "sha": "660e3f601f3d15bcc827f56aa36e140ce4f95e0d"
           },
           "homepage": "https://carta.com"
         },
@@ -857,7 +857,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp.git",
-            "sha": "58ba1742731109a860b9c3ba5a292f7a3b1df3d8"
+            "sha": "78ccb193e08137b48cef6f665ad0b3a98c9538da"
           },
           "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
         },
@@ -1292,7 +1292,7 @@
             "url": "https://github.com/databricks/databricks-agent-skills.git",
             "path": "plugins/databricks/claude",
             "ref": "main",
-            "sha": "4ad80cdd67d1c62a737204f2fbc657fad87d22d7"
+            "sha": "59bc5d28bc8ad0d931a45f21d763b894da9e9b09"
           },
           "homepage": "https://developers.databricks.com/"
         },
@@ -1781,7 +1781,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "f53a75bfe84791b0051b0e019c485e61f0c049e5"
+            "sha": "ccf5f20b3beea2b245c398a89cb686077b546de2"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -1852,7 +1852,7 @@
             "source": "github",
             "repo": "jfrog/claude-plugin",
             "commit": "259c8e718266c16e99b4f30ae9b1ed0f9f00d98d",
-            "sha": "a828bda791913acf4a406ee4de61ae006a14e211"
+            "sha": "427d2e68848b2d04df586bd6be4904a5934828fb"
           },
           "homepage": "https://jfrog.com"
         },
@@ -2707,7 +2707,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/qodo-ai/qodo-skills.git",
-            "sha": "1b3af00dee61541f3843a0e881deb926b9c6931a"
+            "sha": "5c31f3275199c6ccf07fa84c3a34d6d338f97aee"
           },
           "homepage": "https://github.com/qodo-ai/qodo-skills.git"
         },
