@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 161463,
-    "forks": 19080,
+    "stars": 161768,
+    "forks": 19124,
     "language": "Python",
-    "updatedAt": "2026-07-16T02:29:00Z",
+    "updatedAt": "2026-07-17T02:31:25Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 67822,
-    "forks": 7662,
+    "stars": 67904,
+    "forks": 7682,
     "language": "Python",
-    "updatedAt": "2026-07-16T02:30:06Z",
+    "updatedAt": "2026-07-17T02:21:58Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -48,15 +48,27 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 32180,
-    "forks": 3582,
+    "stars": 32223,
+    "forks": 3590,
     "language": "Python",
-    "updatedAt": "2026-07-16T02:32:04Z",
+    "updatedAt": "2026-07-17T02:22:30Z",
     "topics": [
       "claude-code",
       "mcp",
       "skills"
     ],
+    "hasManifest": true
+  },
+  {
+    "id": "1245301697",
+    "name": "agent-plugins",
+    "description": "Product on Purpose plugin marketplace registry (Claude Code). Thin host repo: lists plugins via .claude-plugin/marketplace.json; holds no plugin code.",
+    "url": "https://github.com/product-on-purpose/agent-plugins",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "updatedAt": "2026-07-16T21:27:15Z",
+    "topics": [],
     "hasManifest": true
   },
   {
@@ -70,18 +82,6 @@
     "updatedAt": "2026-07-07T10:21:29Z",
     "topics": [],
     "hasManifest": false
-  },
-  {
-    "id": "1245301697",
-    "name": "agent-plugins",
-    "description": "Product on Purpose plugin marketplace registry (Claude Code). Thin host repo: lists plugins via .claude-plugin/marketplace.json; holds no plugin code.",
-    "url": "https://github.com/product-on-purpose/agent-plugins",
-    "stars": 1,
-    "forks": 0,
-    "language": "JavaScript",
-    "updatedAt": "2026-07-06T16:57:23Z",
-    "topics": [],
-    "hasManifest": true
   },
   {
     "id": "1290024070",
