@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 162150,
-    "forks": 19212,
+    "stars": 162447,
+    "forks": 19252,
     "language": "Python",
-    "updatedAt": "2026-07-18T02:19:08Z",
+    "updatedAt": "2026-07-19T02:30:07Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 67987,
-    "forks": 7702,
+    "stars": 68054,
+    "forks": 7712,
     "language": "Python",
-    "updatedAt": "2026-07-18T02:24:50Z",
+    "updatedAt": "2026-07-19T02:29:03Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 32266,
-    "forks": 3597,
+    "stars": 32305,
+    "forks": 3610,
     "language": "Python",
-    "updatedAt": "2026-07-18T02:08:44Z",
+    "updatedAt": "2026-07-19T02:18:25Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -510,7 +510,7 @@
             "source": "url",
             "url": "https://github.com/BrainBlend-AI/atomic-agents.git",
             "path": "claude-plugin/atomic-agents",
-            "sha": "7fb0741f52ae7312b6e00bf1ad2c80aab4a2709e"
+            "sha": "b15ca449a81278b1c92666bdf9a2e57a817dcacd"
           },
           "homepage": "https://github.com/BrainBlend-AI/atomic-agents",
           "tags": [
@@ -591,7 +591,7 @@
             "url": "https://github.com/aws/agent-toolkit-for-aws.git",
             "path": "plugins/aws-core",
             "ref": "main",
-            "sha": "77dc9d04f7ca56c14514eabcf8773644681f378a"
+            "sha": "36f16570de2015c0f0ce94ba9e391bd703c9ffb7"
           },
           "homepage": "https://github.com/aws/agent-toolkit-for-aws"
         },
@@ -1820,7 +1820,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "4a2c9eeedb17cb5f76582612281cbe5f1413e851"
+            "sha": "d7933aa5fa94243aba9540341529341bf9413b09"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -2901,7 +2901,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/rilldata/agent-skills.git",
-            "sha": "6dffeeee8617aceb796edb744e3c52a7c0ee88ac"
+            "sha": "6e5df00631875bc9f1119d5f08194596ad02e8f1"
           },
           "homepage": "https://docs.rilldata.com/developers/build/ai-configuration"
         },
@@ -3296,7 +3296,7 @@
             "url": "https://github.com/stripe/ai.git",
             "path": "providers/claude/plugin",
             "ref": "main",
-            "sha": "61df6113574127536db39738c4aa6fc15d3e2298"
+            "sha": "c29cd23cfd27830bf10961d58646a9fd127fa6df"
           },
           "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin"
         },
@@ -3629,7 +3629,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "e08711cc8d56d23e229b1ec68a88cec6d2c08042"
+            "sha": "9ad4cec50ae58a5f0b00d960f75029a18e58429d"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
