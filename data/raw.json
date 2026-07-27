@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 164168,
-    "forks": 19489,
+    "stars": 164363,
+    "forks": 19528,
     "language": "Python",
-    "updatedAt": "2026-07-26T02:35:15Z",
+    "updatedAt": "2026-07-27T02:44:56Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 70622,
-    "forks": 7944,
+    "stars": 70932,
+    "forks": 7958,
     "language": "Python",
-    "updatedAt": "2026-07-26T02:40:51Z",
+    "updatedAt": "2026-07-27T02:45:54Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 32658,
-    "forks": 3664,
+    "stars": 32709,
+    "forks": 3675,
     "language": "Python",
-    "updatedAt": "2026-07-26T02:38:34Z",
+    "updatedAt": "2026-07-27T02:45:53Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -898,7 +898,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-crm",
             "ref": "main",
-            "sha": "62e9f9a00ba06ab54f9f8896fb8becdbfd6dd46a"
+            "sha": "f57875b3efe079460cd586856facfcb99f177d6b"
           },
           "homepage": "https://carta.com"
         },
@@ -1962,7 +1962,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "f9f00b0efc2d1006967d5b2e0009ea3c3f6ed2e6"
+            "sha": "2dddb4c463b0f577c556c3d0f913154fba05cad9"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -3034,7 +3034,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/Digital-Process-Tools/claude-remember.git",
-            "sha": "1bf231715bb54b8bc5e6d8e3134138b82d9df141"
+            "sha": "499787644f798a89d3cf8655977389c32d1fae02"
           },
           "homepage": "https://github.com/Digital-Process-Tools/claude-remember"
         },
@@ -3864,7 +3864,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "3cff9cb02ca5bd0c562a425d8e8790a3c81129c2"
+            "sha": "87c6b285ab0f5754d7f1741a75384fdfe623be4d"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
@@ -4014,7 +4014,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-07-16T21:27:15Z",
+    "updatedAt": "2026-07-26T18:57:34Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -4028,7 +4028,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.38.0"
+        "version": "1.40.0"
       },
       "plugins": [
         {
@@ -4069,10 +4069,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/agent-skills-toolkit.git",
-            "sha": "c2bcbe28fd887b8884bb83736415e986e903b90a"
+            "sha": "8340a6fbfd3197917927bbdbbe8a9a2297aab4fc"
           },
           "description": "Toolkit and Standard for authoring, validating, governing, and scaling cross-agent skill libraries (Claude Code and Codex) to a tiered Bronze/Silver/Gold quality bar. Follows the agentskills.io specification.",
-          "version": "1.6.0",
+          "version": "1.7.0",
           "strict": true
         }
       ]
