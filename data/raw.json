@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 165660,
-    "forks": 19698,
+    "stars": 165831,
+    "forks": 19732,
     "language": "Python",
-    "updatedAt": "2026-08-02T02:39:34Z",
+    "updatedAt": "2026-08-03T02:35:23Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 71566,
-    "forks": 8053,
+    "stars": 71622,
+    "forks": 8075,
     "language": "Python",
-    "updatedAt": "2026-08-02T02:30:39Z",
+    "updatedAt": "2026-08-03T02:23:29Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 32952,
-    "forks": 3718,
+    "stars": 32980,
+    "forks": 3722,
     "language": "Python",
-    "updatedAt": "2026-08-02T02:18:40Z",
+    "updatedAt": "2026-08-03T02:19:23Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -1513,7 +1513,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/confident-ai/deepeval.git",
-            "sha": "0abedb84c7db59873125e3c8e66199fa874c4878"
+            "sha": "6b1ffe1e090b5559549c2bad8f46445208d8a8dc"
           },
           "homepage": "https://github.com/confident-ai/deepeval"
         },
@@ -1962,7 +1962,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "74fadf69c464c0e0658bd7a6b740986fc3aceba8"
+            "sha": "67ffafb11c18cd599b856c411c614cf329377d22"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -2033,7 +2033,7 @@
             "source": "github",
             "repo": "jfrog/claude-plugin",
             "commit": "259c8e718266c16e99b4f30ae9b1ed0f9f00d98d",
-            "sha": "8aa1671dfc29fa10041ff74a5afb419acde19645"
+            "sha": "fc235ef18207df0318799846a2cd36fe415b1492"
           },
           "homepage": "https://jfrog.com"
         },
@@ -2961,7 +2961,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/qodo-ai/qodo-skills.git",
-            "sha": "ad848afd32eff172ce9073d9b1b1efe462ea0af2"
+            "sha": "5c6306797ad2c9831546f9bbd6360d2515bf5c26"
           },
           "homepage": "https://github.com/qodo-ai/qodo-skills.git"
         },
@@ -3062,7 +3062,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/Digital-Process-Tools/claude-remember.git",
-            "sha": "830c224c1e759cdf997e0842b714d6b6b36d76ef"
+            "sha": "a515f546af8a5d05b7284bbd321bcd989f092b9f"
           },
           "homepage": "https://github.com/Digital-Process-Tools/claude-remember"
         },
@@ -3908,7 +3908,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "755d65e7616108cf481fc0b681adf270d453f9f4"
+            "sha": "078b84601a3d0cd493aa128c4066f12b4309fd89"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
