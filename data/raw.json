@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 166896,
-    "forks": 19884,
+    "stars": 167067,
+    "forks": 19913,
     "language": "Python",
-    "updatedAt": "2026-08-08T01:20:17Z",
+    "updatedAt": "2026-08-09T01:36:27Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 72032,
-    "forks": 8169,
+    "stars": 72091,
+    "forks": 8176,
     "language": "Python",
-    "updatedAt": "2026-08-08T01:19:47Z",
+    "updatedAt": "2026-08-09T01:23:32Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 33249,
-    "forks": 3754,
+    "stars": 33283,
+    "forks": 3758,
     "language": "Python",
-    "updatedAt": "2026-08-08T00:55:09Z",
+    "updatedAt": "2026-08-09T00:10:49Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -594,7 +594,7 @@
             "url": "https://github.com/auth0/agent-skills.git",
             "path": "plugins/auth0",
             "ref": "main",
-            "sha": "fe3d7c59d9d8721a14c4302d273de91c4cf06004"
+            "sha": "b7d5f82c3f09a5af9d140d324b73d2aba922e549"
           },
           "homepage": "https://auth0.com"
         },
@@ -961,7 +961,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-investors",
             "ref": "main",
-            "sha": "2eae38ee2b01ceaf5b8ffe629cb533b32605a93e"
+            "sha": "d65129bf40559d9b68641fe9f34203f644a4831c"
           },
           "homepage": "https://carta.com"
         },
@@ -1724,7 +1724,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/fastly/fastly-agent-toolkit.git",
-            "sha": "3502e4baee50ad5e9ab1a482ce154642d2e8e9b5"
+            "sha": "f6dc3106d928312818b0252272c68d62a74644f7"
           },
           "homepage": "https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md"
         },
@@ -2026,7 +2026,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "d9b00e57ebd6ecafdde755a2482a47057cb55907"
+            "sha": "9ec9e3a711531b3d45c30a1e2c3006df97dbe5cb"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -2334,7 +2334,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/ory/lumen.git",
-            "sha": "cce6305835a9b69ee6cabb2cac6846bed1672890"
+            "sha": "80396366e303bfb922071ae9133e74bd36367a1f"
           },
           "homepage": "https://www.ory.sh"
         },
@@ -2579,7 +2579,7 @@
             "url": "https://github.com/neondatabase/agent-skills.git",
             "path": "plugins/neon-postgres",
             "ref": "main",
-            "sha": "64e8bcce32a22aaeab3bc31e76745e0d161053ce"
+            "sha": "329882a358f05b7b1b24d64f56dc3b6d3a454f54"
           },
           "homepage": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres"
         },
@@ -3142,7 +3142,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/Digital-Process-Tools/claude-remember.git",
-            "sha": "4f33f21c761f2ca508cd97381a2e4b76a68fb9c9"
+            "sha": "a7d508aedd70606ab1fbbcc72c393696696dd28c"
           },
           "homepage": "https://github.com/Digital-Process-Tools/claude-remember"
         },
@@ -3669,7 +3669,7 @@
             "url": "https://github.com/stripe/ai.git",
             "path": "providers/claude/plugin",
             "ref": "main",
-            "sha": "4b7495aa701334e453555ce4afb0029b06df590b"
+            "sha": "89ffbee06b3782ed15d77ffd6cbc5620ad26d3bd"
           },
           "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin"
         },
@@ -4034,7 +4034,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "5e1bccc941af477f46adea1d1ce2876235e210cb"
+            "sha": "ba81655a28b148e34a36e80142d699c6b49d4c11"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
@@ -4184,7 +4184,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-08-08T01:21:30Z",
+    "updatedAt": "2026-08-08T23:49:58Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -4198,7 +4198,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.53.0"
+        "version": "1.55.0"
       },
       "plugins": [
         {
@@ -4254,6 +4254,17 @@
           },
           "description": "Rubric-cited, machine-parseable critique skills that produce measured, evidence-graded findings (usability, accessibility, clarity) instead of freeform opinion. Use when you need a structured review of an interface, document, or piece of writing with defects cited against a rubric and reported in a machine-parseable output.",
           "version": "0.1.3",
+          "strict": true
+        },
+        {
+          "name": "product-lifecycle-templates",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/product-on-purpose/product-lifecycle-templates.git",
+            "sha": "2264820932b2079106e7ee345607894567e95a12"
+          },
+          "description": "26 researched product-lifecycle document templates covering the complete Tier-1 floor of a 205-type artifact catalog: PRD, user stories, acceptance criteria, backlogs, release notes, ADR, RFC, SDD, risk register, RAID log, KPI dashboard, test plan, test case, bug report, product vision, strategy, roadmap, OKRs, business case, user persona, definition of done, runbook, incident postmortem, retrospective notes and status report. Each ships a lean and a full template, a worked example on one continuous scenario, an operator guide with a self-grade rubric, and the research log every claim traces to. Use when writing or grading a product document and you want a shape that is defensible rather than invented.",
+          "version": "0.3.0",
           "strict": true
         }
       ]
