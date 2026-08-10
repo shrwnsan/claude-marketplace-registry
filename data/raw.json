@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 167067,
-    "forks": 19913,
+    "stars": 167248,
+    "forks": 19949,
     "language": "Python",
-    "updatedAt": "2026-08-09T01:36:27Z",
+    "updatedAt": "2026-08-10T01:43:29Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 72091,
-    "forks": 8176,
+    "stars": 72153,
+    "forks": 8185,
     "language": "Python",
-    "updatedAt": "2026-08-09T01:23:32Z",
+    "updatedAt": "2026-08-10T01:41:35Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 33283,
-    "forks": 3758,
+    "stars": 33330,
+    "forks": 3763,
     "language": "Python",
-    "updatedAt": "2026-08-09T00:10:49Z",
+    "updatedAt": "2026-08-10T01:35:51Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -1577,7 +1577,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/confident-ai/deepeval.git",
-            "sha": "bd10fa61c1727996607593d26631f9b22bb41d14"
+            "sha": "5217f031c1dcf117bd34d3c290faa3ec7d0f3622"
           },
           "homepage": "https://github.com/confident-ai/deepeval"
         },
@@ -2026,7 +2026,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "9ec9e3a711531b3d45c30a1e2c3006df97dbe5cb"
+            "sha": "17ac986bfe0fffbbc8aac2a68b9e9814f561b562"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -2334,7 +2334,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/ory/lumen.git",
-            "sha": "80396366e303bfb922071ae9133e74bd36367a1f"
+            "sha": "ce62b6051ac5cb46418b8bfbc4c43ce32cb74bd2"
           },
           "homepage": "https://www.ory.sh"
         },
@@ -2650,7 +2650,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/Nimbleway/agent-skills.git",
-            "sha": "dc6ee17b12f74ff0f5d892dbec43a6b0bfdd9337"
+            "sha": "7b93ca4c67f30c8dbcf98bd44224bceb7e5368c7"
           },
           "homepage": "https://docs.nimbleway.com/integrations/agent-skills/plugin-installation"
         },
@@ -3041,7 +3041,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/qodo-ai/qodo-skills.git",
-            "sha": "5c6306797ad2c9831546f9bbd6360d2515bf5c26"
+            "sha": "e7e9a207455288fb9087107a3d8f700dc00a93fa"
           },
           "homepage": "https://github.com/qodo-ai/qodo-skills.git"
         },
@@ -3142,7 +3142,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/Digital-Process-Tools/claude-remember.git",
-            "sha": "a7d508aedd70606ab1fbbcc72c393696696dd28c"
+            "sha": "a2a3e42bebfdb787391be414f9e76fcba37c4946"
           },
           "homepage": "https://github.com/Digital-Process-Tools/claude-remember"
         },
@@ -4034,7 +4034,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "ba81655a28b148e34a36e80142d699c6b49d4c11"
+            "sha": "5ba0173577dd63a7988f0d958030935dccb01632"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
@@ -4184,7 +4184,7 @@
     "stars": 1,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-08-08T23:49:58Z",
+    "updatedAt": "2026-08-09T18:46:50Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -4198,7 +4198,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.55.0"
+        "version": "1.57.0"
       },
       "plugins": [
         {
@@ -4250,10 +4250,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/critique-skills.git",
-            "sha": "3f5b623244638363e2552cf30127b1ed0cb02594"
+            "sha": "afcebaaf03858bb9ac63bd5ac0c0d18151ecdc66"
           },
           "description": "Rubric-cited, machine-parseable critique skills that produce measured, evidence-graded findings (usability, accessibility, clarity) instead of freeform opinion. Use when you need a structured review of an interface, document, or piece of writing with defects cited against a rubric and reported in a machine-parseable output.",
-          "version": "0.1.3",
+          "version": "0.1.4",
           "strict": true
         },
         {
@@ -4261,10 +4261,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/product-lifecycle-templates.git",
-            "sha": "2264820932b2079106e7ee345607894567e95a12"
+            "sha": "ad42e7546c8058d985b1fd1f1986e85353b3091c"
           },
           "description": "26 researched product-lifecycle document templates covering the complete Tier-1 floor of a 205-type artifact catalog: PRD, user stories, acceptance criteria, backlogs, release notes, ADR, RFC, SDD, risk register, RAID log, KPI dashboard, test plan, test case, bug report, product vision, strategy, roadmap, OKRs, business case, user persona, definition of done, runbook, incident postmortem, retrospective notes and status report. Each ships a lean and a full template, a worked example on one continuous scenario, an operator guide with a self-grade rubric, and the research log every claim traces to. Use when writing or grading a product document and you want a shape that is defensible rather than invented.",
-          "version": "0.3.0",
+          "version": "0.3.1",
           "strict": true
         }
       ]
