@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 169060,
-    "forks": 20129,
+    "stars": 169403,
+    "forks": 20164,
     "language": "Python",
-    "updatedAt": "2026-08-14T01:51:33Z",
+    "updatedAt": "2026-08-15T00:45:41Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -178,10 +178,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 72439,
-    "forks": 8252,
+    "stars": 72500,
+    "forks": 8263,
     "language": "Python",
-    "updatedAt": "2026-08-14T01:32:30Z",
+    "updatedAt": "2026-08-15T00:12:06Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -210,10 +210,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 33505,
-    "forks": 3786,
+    "stars": 33530,
+    "forks": 3798,
     "language": "Python",
-    "updatedAt": "2026-08-14T01:10:47Z",
+    "updatedAt": "2026-08-15T00:07:32Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -447,7 +447,7 @@
             "url": "https://github.com/amd/skills.git",
             "path": "skills",
             "ref": "main",
-            "sha": "11c8edb0aee051b87640146bae38c82b22dff86f"
+            "sha": "b641e5fbd17ec2bf8a8f1256dc3acbd7f97b0ce4"
           },
           "strict": false,
           "skills": [
@@ -610,7 +610,7 @@
             "url": "https://github.com/aws/agent-toolkit-for-aws.git",
             "path": "plugins/aws-agents",
             "ref": "main",
-            "sha": "e2588f4b494416e68c5a991e51b21c2d99038de3"
+            "sha": "957cf377ea1dffccf1f8a54ded2be8666b6db41c"
           },
           "homepage": "https://github.com/aws/agent-toolkit-for-aws"
         },
@@ -671,25 +671,9 @@
             "url": "https://github.com/aws/agent-toolkit-for-aws.git",
             "path": "plugins/aws-data-analytics",
             "ref": "main",
-            "sha": "b33847dd218c6ceef176cd5efdcfff50560faf7d"
+            "sha": "1beb63a6a1d0760bb444961ea62cdca362edae72"
           },
           "homepage": "https://github.com/aws/agent-toolkit-for-aws"
-        },
-        {
-          "name": "aws-dev-toolkit",
-          "description": "AWS development toolkit — 34 skills, 11 agents, and 3 MCP servers for building, migrating, and performing architecture reviews on AWS.",
-          "author": {
-            "name": "aws-samples"
-          },
-          "category": "development",
-          "source": {
-            "source": "git-subdir",
-            "url": "https://github.com/aws-samples/sample-claude-code-plugins-for-startups.git",
-            "path": "plugins/aws-dev-toolkit",
-            "ref": "main",
-            "sha": "3360d439a94e59fbf13eb0019eaf5735e4a23d8a"
-          },
-          "homepage": "https://github.com/aws-samples/sample-claude-code-plugins-for-startups"
         },
         {
           "name": "aws-serverless",
@@ -743,7 +727,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/microsoft/azure-skills.git",
-            "sha": "db28f0ed1d05d23056b86d536d9a5e6967f68ef3"
+            "sha": "16dc8c51ba7fda44c18781b5e4c0ca40a7a06a55"
           },
           "homepage": "https://github.com/microsoft/azure-skills"
         },
@@ -768,7 +752,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/microsoft/azure-sql-database-container.git",
-            "sha": "eb6ab7ee1839564a3edc36c1e7bb754f3c8f1bf1"
+            "sha": "eca81cf0974b714fdff30e8f665e746a03304758"
           },
           "homepage": "https://github.com/microsoft/azure-sql-database-container"
         },
@@ -929,7 +913,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-cap-table",
             "ref": "main",
-            "sha": "49150339f8246e846eb668e375fa96dbe9c24581"
+            "sha": "dd0c286b6d25392ab0dcd9a0f237b28095608937"
           },
           "homepage": "https://carta.com"
         },
@@ -945,7 +929,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-crm",
             "ref": "main",
-            "sha": "49150339f8246e846eb668e375fa96dbe9c24581"
+            "sha": "820f497ab37d4cf943bb9c35626f4627ed861c22"
           },
           "homepage": "https://carta.com"
         },
@@ -961,7 +945,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-investors",
             "ref": "main",
-            "sha": "c4fbb077199631504a7c95c7b760b0a188d9eb4c"
+            "sha": "4fda2e0c3e87c0560dd3a40712a26f1a4f2f14fd"
           },
           "homepage": "https://carta.com"
         },
@@ -1708,7 +1692,7 @@
             "url": "https://github.com/expo/skills.git",
             "path": "plugins/expo",
             "ref": "main",
-            "sha": "948115e9e0148af1a966531530e9e948c804a3e7"
+            "sha": "0814f2c6375f873b07f144c93e855198915d5426"
           },
           "homepage": "https://github.com/expo/skills/blob/main/plugins/expo/README.md"
         },
@@ -1756,7 +1740,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/figma/mcp-server-guide.git",
-            "sha": "22b2c566d98880ebdb5a8e48eb2c66c596a6d990"
+            "sha": "72fcf1f4b170bcaa78fa8bef2f27cce15f4d58f4"
           },
           "homepage": "https://github.com/figma/mcp-server-guide"
         },
@@ -2039,7 +2023,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/heygen-com/hyperframes.git",
-            "sha": "9ba528914dafc05c54e2191c19f99847c8f4420a"
+            "sha": "12fd6d9087fab1347f8737c34901e3db61e4dfee"
           },
           "homepage": "https://hyperframes.heygen.com"
         },
@@ -2284,7 +2268,7 @@
             "url": "https://github.com/LogRocket/logrocket-claude-plugin.git",
             "path": "plugins/logrocket",
             "ref": "main",
-            "sha": "60c1b83ea558771fa92d80d2e756920286c430f7"
+            "sha": "2e44dbb47faf9bb54e3405a8ae2714e7c5ce9791"
           },
           "homepage": "https://logrocket.com"
         },
@@ -2494,7 +2478,7 @@
             "url": "https://github.com/awslabs/startups.git",
             "path": "migrate/plugins/migration-to-aws",
             "ref": "main",
-            "sha": "63f5d2c3a47c745d430f5e6047ad16cfc6d85b36"
+            "sha": "3408f10f51785634cf28944e44fc313127884c33"
           },
           "homepage": "https://github.com/awslabs/startups"
         },
@@ -2607,7 +2591,7 @@
             "url": "https://github.com/neondatabase/agent-skills.git",
             "path": "plugins/neon-postgres",
             "ref": "main",
-            "sha": "af27b52659c3c5bbf05d6c626b166163eb351e19"
+            "sha": "e20e68996aa1dbd5cf4d2c981e5357cdefd8f5bd"
           },
           "homepage": "https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres"
         },
@@ -2872,7 +2856,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/pinecone-io/pinecone-claude-code-plugin.git",
-            "sha": "d4b0ef622190d0174fc9113e55a5ee1a5fe5f109"
+            "sha": "c48ac3f67a9b672654f24a976de60c87ebeb6468"
           },
           "homepage": "https://github.com/pinecone-io/pinecone-claude-code-plugin"
         },
@@ -3184,7 +3168,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/render-oss/render-plugin-claude-code.git",
-            "sha": "da2a2491d3e5a5db83bb1f3cc68cb402371822fe"
+            "sha": "e8f889396634dbc8c368448a7f3de993ed4a5ac1"
           },
           "homepage": "https://render.com"
         },
@@ -3309,7 +3293,7 @@
             "url": "https://github.com/awslabs/agent-plugins.git",
             "path": "plugins/sagemaker-ai",
             "ref": "main",
-            "sha": "153b28e3c10de3661b8744b80d72c3a96fcdb0ab"
+            "sha": "bab56a3b9991aa0c6857b05198a61ba14a60bce4"
           },
           "homepage": "https://github.com/awslabs/agent-plugins"
         },
@@ -3325,7 +3309,7 @@
             "url": "https://github.com/forcedotcom/sf-skills.git",
             "path": "plugins/builder/salesforce-development",
             "ref": "main",
-            "sha": "81dc38272470fa835cdb19a868f359f548472232"
+            "sha": "697c208e169e6c542f3d542377939744b651ed87"
           },
           "homepage": "https://github.com/forcedotcom/sf-skills/tree/main/plugins/builder/salesforce-development"
         },
@@ -3591,7 +3575,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/SonarSource/sonarqube-agent-plugins.git",
-            "sha": "acaa5772276cd8e3ee622e54e2ebcb5dbf6f68ba"
+            "sha": "e596969a083cf27bfe439ee2e9459f7ef4124a70"
           },
           "homepage": "https://www.sonarsource.com"
         },
@@ -3627,7 +3611,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/gemini-cli-extensions/spanner.git",
-            "sha": "1a92c0f2ee20e3c51c43e0a30e7ed40f303db2f9"
+            "sha": "290f70f172bb4841a91519b140deb35f97fd4a66"
           },
           "homepage": "https://github.com/gemini-cli-extensions/spanner"
         },
@@ -3697,7 +3681,7 @@
             "url": "https://github.com/stripe/ai.git",
             "path": "providers/claude/plugin",
             "ref": "main",
-            "sha": "1953b6cce7344d880a054c42b8dd21ca3e50ebd5"
+            "sha": "2cda67e9ab99eec887c156c748d9a42d66ca5d53"
           },
           "homepage": "https://github.com/stripe/ai/tree/main/providers/claude/plugin"
         },
@@ -4075,7 +4059,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/wix/skills.git",
-            "sha": "6a19174cd727ea6faf6e23f0584261c6d32ddbeb"
+            "sha": "1c0cebc07eb52740461591e05ba1c176ee25ac6e"
           },
           "homepage": "https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills"
         },
@@ -4182,7 +4166,7 @@
           "source": {
             "source": "url",
             "url": "https://github.com/zscaler/zscaler-mcp-server.git",
-            "sha": "1b9d63a3e00e9bd7878da4dd436ec897c0c425bf"
+            "sha": "ee6354bfd20f797f3e77b69566f500e83c04f723"
           },
           "homepage": "https://github.com/zscaler/zscaler-mcp-server"
         },
@@ -4225,7 +4209,7 @@
     "stars": 0,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-08-13T21:18:50Z",
+    "updatedAt": "2026-08-14T23:59:04Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -4239,7 +4223,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.63.0"
+        "version": "1.64.0"
       },
       "plugins": [
         {
@@ -4247,10 +4231,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/pm-skills.git",
-            "sha": "32e28377de432066015819d3cb6116e65cc0a75e"
+            "sha": "e8a641c375b166566b618ae37b9d271abc952eb9"
           },
           "description": "Product management skills, sub-agents, and sprint tools across the full product lifecycle. Follows the agentskills.io specification.",
-          "version": "2.31.1",
+          "version": "2.32.0",
           "strict": true
         },
         {
@@ -4280,10 +4264,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/agent-skills-toolkit.git",
-            "sha": "13f96bd54b95ac9867e224edc05efecedb5a45ae"
+            "sha": "b95fe7a6c42a23d48df85381f371fc403e8a0776"
           },
           "description": "Toolkit and Standard for authoring, validating, governing, and scaling cross-agent skill libraries (Claude Code and Codex) to a tiered Bronze/Silver/Gold quality bar. Follows the agentskills.io specification.",
-          "version": "1.12.1",
+          "version": "1.13.0",
           "strict": true
         },
         {
