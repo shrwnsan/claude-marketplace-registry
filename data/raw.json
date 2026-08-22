@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 170692,
-    "forks": 20296,
+    "stars": 170868,
+    "forks": 20314,
     "language": "Python",
-    "updatedAt": "2026-08-21T01:08:41Z",
+    "updatedAt": "2026-08-22T01:05:13Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 72907,
-    "forks": 8334,
+    "stars": 72977,
+    "forks": 8357,
     "language": "Python",
-    "updatedAt": "2026-08-21T01:04:23Z",
+    "updatedAt": "2026-08-21T23:41:37Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -240,10 +240,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 33751,
-    "forks": 3839,
+    "stars": 33797,
+    "forks": 3845,
     "language": "Python",
-    "updatedAt": "2026-08-21T00:33:40Z",
+    "updatedAt": "2026-08-22T00:40:14Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -4239,7 +4239,7 @@
     "stars": 0,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-08-17T04:35:18Z",
+    "updatedAt": "2026-08-21T04:50:32Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -4253,7 +4253,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.66.0"
+        "version": "1.67.0"
       },
       "plugins": [
         {
@@ -4294,10 +4294,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/agent-skills-toolkit.git",
-            "sha": "90ceea8edbeaacd1ca8b3e5b2117e16dd0197e5a"
+            "sha": "9133014e25006adb629ac7767af65b1b5136c8e5"
           },
           "description": "Toolkit and Standard for authoring, validating, governing, and scaling cross-agent skill libraries (Claude Code and Codex) to a tiered Bronze/Silver/Gold quality bar. Follows the agentskills.io specification.",
-          "version": "1.14.0",
+          "version": "1.15.0",
           "strict": true
         },
         {
