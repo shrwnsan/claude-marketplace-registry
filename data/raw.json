@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 171196,
-    "forks": 20342,
+    "stars": 171378,
+    "forks": 20369,
     "language": "Python",
-    "updatedAt": "2026-08-24T01:08:24Z",
+    "updatedAt": "2026-08-25T01:06:52Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 73106,
-    "forks": 8384,
+    "stars": 73182,
+    "forks": 8398,
     "language": "Python",
-    "updatedAt": "2026-08-24T01:08:08Z",
+    "updatedAt": "2026-08-25T01:00:21Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -240,10 +240,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 33878,
-    "forks": 3850,
+    "stars": 33921,
+    "forks": 3862,
     "language": "Python",
-    "updatedAt": "2026-08-24T00:59:48Z",
+    "updatedAt": "2026-08-25T00:53:41Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -943,7 +943,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-cap-table",
             "ref": "main",
-            "sha": "7be35157286a6654783f82c701e46d06c40dcfb1"
+            "sha": "9918825a395d72ddea7401fc42aebff9099e3933"
           },
           "homepage": "https://carta.com"
         },
@@ -959,7 +959,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-crm",
             "ref": "main",
-            "sha": "3aa656ea870e1d8d7f73d0418c49043cab9df01a"
+            "sha": "e512bd67c11e4b084f2ddfacf5ba6c40100a7962"
           },
           "homepage": "https://carta.com"
         },
@@ -975,7 +975,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-investors",
             "ref": "main",
-            "sha": "7be35157286a6654783f82c701e46d06c40dcfb1"
+            "sha": "84e5df561bb7321300a024477082fcb04295611d"
           },
           "homepage": "https://carta.com"
         },
@@ -3079,6 +3079,9 @@
           "name": "qodo",
           "displayName": "Qodo",
           "description": "Qodo Skills provides a curated library of reusable AI agent capabilities that extend Claude's functionality for software development workflows. Each skill is designed to integrate seamlessly into your development process, enabling tasks like code quality checks, automated testing, security scanning, and compliance validation. Skills operate across your entire SDLC—from IDE to CI/CD—ensuring consistent standards and catching issues early.",
+          "author": {
+            "name": "Qodo"
+          },
           "category": "development",
           "source": {
             "source": "url",
@@ -3972,6 +3975,21 @@
           "homepage": "https://github.com/UI5/plugins-coding-agents"
         },
         {
+          "name": "unity",
+          "displayName": "Unity",
+          "description": "Unity's official plugin for Claude Code, with curated skills for game development, monetization, and performance optimization.",
+          "author": {
+            "name": "Unity Technologies"
+          },
+          "category": "development",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/Unity-Technologies/unity-agent-plugin.git",
+            "sha": "360523972ed0cb356d679acc612bd0f8d1ba3c2b"
+          },
+          "homepage": "https://unity.com"
+        },
+        {
           "name": "unreal-engine-skills-for-claude-code",
           "description": "Control Unreal Editor directly from Claude Code via MCP. Hundreds of tools exposed via Unreal's ToolsetRegistry across 30+ toolsets: actors, blueprints, materials, Niagara, Control Rigs, Sequencer, State Trees, widgets, Gameplay Ability System, automation testing, and more.",
           "author": {
@@ -4239,7 +4257,7 @@
     "stars": 0,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-08-21T04:50:32Z",
+    "updatedAt": "2026-08-24T04:04:11Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -4253,7 +4271,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.67.0"
+        "version": "1.69.0"
       },
       "plugins": [
         {
@@ -4294,10 +4312,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/agent-skills-toolkit.git",
-            "sha": "9133014e25006adb629ac7767af65b1b5136c8e5"
+            "sha": "1da4d1638ae16adafa5ca4ea032b481667bf425c"
           },
           "description": "Toolkit and Standard for authoring, validating, governing, and scaling cross-agent skill libraries (Claude Code and Codex) to a tiered Bronze/Silver/Gold quality bar. Follows the agentskills.io specification.",
-          "version": "1.15.0",
+          "version": "1.16.1",
           "strict": true
         },
         {
