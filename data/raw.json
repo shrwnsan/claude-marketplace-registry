@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 171378,
-    "forks": 20369,
+    "stars": 171585,
+    "forks": 20384,
     "language": "Python",
-    "updatedAt": "2026-08-25T01:06:52Z",
+    "updatedAt": "2026-08-26T01:12:59Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 73182,
-    "forks": 8398,
+    "stars": 73244,
+    "forks": 8404,
     "language": "Python",
-    "updatedAt": "2026-08-25T01:00:21Z",
+    "updatedAt": "2026-08-26T00:43:41Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -240,10 +240,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 33921,
-    "forks": 3862,
+    "stars": 34096,
+    "forks": 3869,
     "language": "Python",
-    "updatedAt": "2026-08-25T00:53:41Z",
+    "updatedAt": "2026-08-26T01:11:51Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -2637,8 +2637,40 @@
           "homepage": "https://github.com/netlify/context-and-tools"
         },
         {
+          "name": "netsuite-ai-companion",
+          "description": "Guides AI assistants that use the NetSuite AI Connector: tool-selection order, output formatting, NetSuite domain knowledge, multi-subsidiary and currency handling, and SuiteQL safety guardrails. Requires the NetSuite AI Connector Service.",
+          "author": {
+            "name": "Oracle NetSuite"
+          },
+          "category": "productivity",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/oracle/netsuite-suitecloud-sdk.git",
+            "path": "anthropic/netsuite-ai-companion",
+            "ref": "ai-plugins-dist",
+            "sha": "23793a10a9bb557c684c5cb8a97f926eb3463f12"
+          },
+          "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-ai-companion"
+        },
+        {
+          "name": "netsuite-finance-analyst",
+          "description": "Director-level finance analysis on live NetSuite data: financial reporting, period close, variance, aging and reconciliation reviews, cash reporting, and board-ready narratives with next actions. Requires the NetSuite AI Connector Service.",
+          "author": {
+            "name": "Oracle NetSuite"
+          },
+          "category": "productivity",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/oracle/netsuite-suitecloud-sdk.git",
+            "path": "anthropic/netsuite-finance-analyst",
+            "ref": "ai-plugins-dist",
+            "sha": "23793a10a9bb557c684c5cb8a97f926eb3463f12"
+          },
+          "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-finance-analyst"
+        },
+        {
           "name": "netsuite-suitecloud",
-          "description": "NetSuite agent skills from Oracle — authoring guidance for SuiteCloud Development Framework (SDF) objects and UIF single-page-app components, plus runtime guidance for the NetSuite AI Service Connector.",
+          "description": "Develop NetSuite SuiteCloud solutions with SuiteScript, SDF, and best practices: SuiteScript records and upgrades, SDF objects, roles and permissions, UIF single-page apps, OWASP secure coding, project documentation, and the SAFE Guide.",
           "author": {
             "name": "Oracle NetSuite"
           },
@@ -2646,21 +2678,11 @@
           "source": {
             "source": "git-subdir",
             "url": "https://github.com/oracle/netsuite-suitecloud-sdk.git",
-            "path": "packages/agent-skills",
-            "ref": "master",
-            "sha": "d0069ddee009765d04e1afbe6ac5dde8b6b263cf"
+            "path": "anthropic/netsuite-suitecloud",
+            "ref": "ai-plugins-dist",
+            "sha": "23793a10a9bb557c684c5cb8a97f926eb3463f12"
           },
-          "strict": false,
-          "skills": [
-            "./netsuite-ai-connector-instructions",
-            "./netsuite-sdf-roles-and-permissions",
-            "./netsuite-uif-spa-reference",
-            "./netsuite-owasp-secure-coding",
-            "./netsuite-sdf-project-documentation",
-            "./netsuite-suitescript-records-reference",
-            "./netsuite-suitescript-upgrade"
-          ],
-          "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk"
+          "homepage": "https://github.com/oracle/netsuite-suitecloud-sdk/tree/ai-plugins-dist/anthropic/netsuite-suitecloud"
         },
         {
           "name": "newrelic",
