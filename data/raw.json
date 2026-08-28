@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 171921,
-    "forks": 20441,
+    "stars": 172167,
+    "forks": 20463,
     "language": "Python",
-    "updatedAt": "2026-08-27T07:43:12Z",
+    "updatedAt": "2026-08-28T09:43:53Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 73395,
-    "forks": 8420,
+    "stars": 73753,
+    "forks": 8451,
     "language": "Python",
-    "updatedAt": "2026-08-27T07:39:31Z",
+    "updatedAt": "2026-08-28T09:38:21Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -240,10 +240,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 34459,
-    "forks": 3894,
+    "stars": 34820,
+    "forks": 3923,
     "language": "Python",
-    "updatedAt": "2026-08-27T07:37:54Z",
+    "updatedAt": "2026-08-28T09:44:38Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -943,7 +943,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-cap-table",
             "ref": "main",
-            "sha": "9918825a395d72ddea7401fc42aebff9099e3933"
+            "sha": "fa6215ff079e886a999e62dfdd569ed8272db670"
           },
           "homepage": "https://carta.com"
         },
@@ -959,7 +959,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-crm",
             "ref": "main",
-            "sha": "e512bd67c11e4b084f2ddfacf5ba6c40100a7962"
+            "sha": "fa6215ff079e886a999e62dfdd569ed8272db670"
           },
           "homepage": "https://carta.com"
         },
@@ -975,7 +975,7 @@
             "url": "https://github.com/carta/plugins.git",
             "path": "plugins/carta-investors",
             "ref": "main",
-            "sha": "84e5df561bb7321300a024477082fcb04295611d"
+            "sha": "fa6215ff079e886a999e62dfdd569ed8272db670"
           },
           "homepage": "https://carta.com"
         },
@@ -4267,6 +4267,21 @@
             "sha": "8b2d640fe82fadcb69c12af26e4e38ab8ab61ed1"
           },
           "homepage": "https://www.zyte.com"
+        },
+        {
+          "name": "activecampaign",
+          "displayName": "ActiveCampaign",
+          "description": "Marketing automation, CRM, and email marketing powered by ActiveCampaign. Manage contacts, campaigns, automations, deals, and get AI-powered marketing insights — all from Claude.",
+          "author": {
+            "name": "ActiveCampaign"
+          },
+          "category": "productivity",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/ActiveCampaign/activecampaign-plugin.git",
+            "sha": "964b2f9f9ad4c918645adf5efd6d87c2fca36c84"
+          },
+          "homepage": "https://www.activecampaign.com"
         }
       ]
     }
@@ -4279,7 +4294,7 @@
     "stars": 0,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-08-24T04:04:11Z",
+    "updatedAt": "2026-08-28T09:22:07Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -4293,7 +4308,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.69.0"
+        "version": "1.71.0"
       },
       "plugins": [
         {
@@ -4334,10 +4349,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/agent-skills-toolkit.git",
-            "sha": "1da4d1638ae16adafa5ca4ea032b481667bf425c"
+            "sha": "249513bc3c11943a51f53fa72480d2b3f21bbb60"
           },
           "description": "Toolkit and Standard for authoring, validating, governing, and scaling cross-agent skill libraries (Claude Code and Codex) to a tiered Bronze/Silver/Gold quality bar. Follows the agentskills.io specification.",
-          "version": "1.16.1",
+          "version": "1.16.3",
           "strict": true
         },
         {
@@ -4356,10 +4371,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/product-lifecycle-templates.git",
-            "sha": "ad42e7546c8058d985b1fd1f1986e85353b3091c"
+            "sha": "e501e046c40db01a3f5aea62a0c9ca0f6e9a48d6"
           },
           "description": "26 researched product-lifecycle document templates covering the complete Tier-1 floor of a 205-type artifact catalog: PRD, user stories, acceptance criteria, backlogs, release notes, ADR, RFC, SDD, risk register, RAID log, KPI dashboard, test plan, test case, bug report, product vision, strategy, roadmap, OKRs, business case, user persona, definition of done, runbook, incident postmortem, retrospective notes and status report. Each ships a lean and a full template, a worked example on one continuous scenario, an operator guide with a self-grade rubric, and the research log every claim traces to. Use when writing or grading a product document and you want a shape that is defensible rather than invented.",
-          "version": "0.3.1",
+          "version": "0.4.0",
           "strict": true
         }
       ]
@@ -4385,7 +4400,7 @@
     "description": "Cleaned copy of alirezarezvani/claude-skills with 2 stray nested zips removed so the c-level-skills plugin installs in Cowork. Marketplace root at .claude-plugin/marketplace.json",
     "url": "https://github.com/SirkoBot007/claude-skills",
     "stars": 0,
-    "forks": 1,
+    "forks": 0,
     "language": "Python",
     "updatedAt": "2026-07-05T13:47:29Z",
     "createdAt": "2026-07-05T13:45:15Z",
