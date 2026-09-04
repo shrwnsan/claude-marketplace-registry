@@ -1,28 +1,28 @@
 {
-  "totalFound": 13,
-  "withManifest": 6,
-  "lastUpdated": "2026-09-03T03:08:37.384Z",
+  "totalFound": 14,
+  "withManifest": 7,
+  "lastUpdated": "2026-09-04T03:07:37.454Z",
   "searchQuery": "claude-plugin+marketplace.json",
   "languages": {
     "Python": 4,
     "JavaScript": 3,
-    "Unknown": 5,
+    "Unknown": 6,
     "TypeScript": 1
   },
   "topRepos": [
     {
       "name": "skills",
-      "stars": 173288,
+      "stars": 173708,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 74325,
+      "stars": 74418,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 35840,
+      "stars": 35875,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -34,6 +34,11 @@
       "name": "agent-plugins",
       "stars": 0,
       "url": "https://github.com/product-on-purpose/agent-plugins"
+    },
+    {
+      "name": "agile-plugins",
+      "stars": 0,
+      "url": "https://github.com/pig0224/agile-plugins"
     },
     {
       "name": ".claude-plugin-marketplace.json",
@@ -54,11 +59,6 @@
       "name": "refacil-claude-plugins",
       "stars": 0,
       "url": "https://github.com/super-pagos-sas/refacil-claude-plugins"
-    },
-    {
-      "name": "marketplace",
-      "stars": 0,
-      "url": "https://github.com/chunky-metro/marketplace"
     }
   ]
 }
