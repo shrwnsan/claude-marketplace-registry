@@ -1,28 +1,28 @@
 {
   "totalFound": 14,
   "withManifest": 7,
-  "lastUpdated": "2026-09-04T03:07:37.454Z",
+  "lastUpdated": "2026-09-05T03:08:28.215Z",
   "searchQuery": "claude-plugin+marketplace.json",
   "languages": {
     "Python": 4,
-    "JavaScript": 3,
     "Unknown": 6,
+    "JavaScript": 3,
     "TypeScript": 1
   },
   "topRepos": [
     {
       "name": "skills",
-      "stars": 173708,
+      "stars": 174168,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 74418,
+      "stars": 74480,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 35875,
+      "stars": 35912,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -31,14 +31,14 @@
       "url": "https://github.com/cognitum-one/cognitum-claude-plugin"
     },
     {
+      "name": "agile-plugins",
+      "stars": 1,
+      "url": "https://github.com/pig0224/agile-plugins"
+    },
+    {
       "name": "agent-plugins",
       "stars": 0,
       "url": "https://github.com/product-on-purpose/agent-plugins"
-    },
-    {
-      "name": "agile-plugins",
-      "stars": 0,
-      "url": "https://github.com/pig0224/agile-plugins"
     },
     {
       "name": ".claude-plugin-marketplace.json",
