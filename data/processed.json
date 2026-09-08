@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 174881,
-    "forks": 20708,
+    "stars": 175065,
+    "forks": 20729,
     "language": "Python",
-    "updatedAt": "2026-09-07T03:01:35Z",
+    "updatedAt": "2026-09-08T03:14:42Z",
     "topics": [
       "agent-skills"
     ],
@@ -18,10 +18,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 74597,
-    "forks": 8591,
+    "stars": 74645,
+    "forks": 8606,
     "language": "Python",
-    "updatedAt": "2026-09-07T03:00:05Z",
+    "updatedAt": "2026-09-08T03:10:05Z",
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -48,27 +48,15 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 35980,
-    "forks": 4024,
+    "stars": 36023,
+    "forks": 4032,
     "language": "Python",
-    "updatedAt": "2026-09-07T02:40:07Z",
+    "updatedAt": "2026-09-08T03:11:11Z",
     "topics": [
       "claude-code",
       "mcp",
       "skills"
     ],
-    "hasManifest": true
-  },
-  {
-    "id": "1356021047",
-    "name": "agile-plugins",
-    "description": "本仓库是 Claude Code 插件市场（marketplace）：.claude-plugin/marketplace.json 声明本仓库提供的全部插件。新增插件无需改动 agile-cli —— 在本仓库加目录 + 登记 marketplace.json 即可。以 git 仓库分发，推送即发版，无需 npm。",
-    "url": "https://github.com/pig0224/agile-plugins",
-    "stars": 1,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2026-09-06T19:56:07Z",
-    "topics": [],
     "hasManifest": true
   },
   {

@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 174881,
-    "forks": 20708,
+    "stars": 175065,
+    "forks": 20729,
     "language": "Python",
-    "updatedAt": "2026-09-07T03:01:35Z",
+    "updatedAt": "2026-09-08T03:14:42Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 74597,
-    "forks": 8591,
+    "stars": 74645,
+    "forks": 8606,
     "language": "Python",
-    "updatedAt": "2026-09-07T03:00:05Z",
+    "updatedAt": "2026-09-08T03:10:05Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -240,10 +240,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 35980,
-    "forks": 4024,
+    "stars": 36023,
+    "forks": 4032,
     "language": "Python",
-    "updatedAt": "2026-09-07T02:40:07Z",
+    "updatedAt": "2026-09-08T03:11:11Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -4298,41 +4298,6 @@
             "sha": "0ff858728bc52aee335d5475b0d4eb5f3a9589b0"
           },
           "homepage": "https://www.activecampaign.com"
-        }
-      ]
-    }
-  },
-  {
-    "id": "1356021047",
-    "name": "agile-plugins",
-    "description": "本仓库是 Claude Code 插件市场（marketplace）：.claude-plugin/marketplace.json 声明本仓库提供的全部插件。新增插件无需改动 agile-cli —— 在本仓库加目录 + 登记 marketplace.json 即可。以 git 仓库分发，推送即发版，无需 npm。",
-    "url": "https://github.com/pig0224/agile-plugins",
-    "stars": 1,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2026-09-06T19:56:07Z",
-    "createdAt": "2026-09-03T13:39:46Z",
-    "license": "MIT License",
-    "topics": [],
-    "discoverySource": "custom-query",
-    "manifest": {
-      "name": "fcc",
-      "description": "agile 系列插件市场：SDD/TDD 研发流程插件（配合 fcc-agile-cli CLI 使用）",
-      "owner": {
-        "name": "fcc"
-      },
-      "plugins": [
-        {
-          "name": "agile",
-          "description": "SDD/TDD 研发流程插件：一个根、五个抽屉",
-          "source": "./plugins/agile",
-          "category": "workflow",
-          "keywords": [
-            "sdd",
-            "tdd",
-            "workflow",
-            "chinese"
-          ]
         }
       ]
     }
