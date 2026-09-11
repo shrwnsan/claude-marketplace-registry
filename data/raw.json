@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 175450,
-    "forks": 20771,
+    "stars": 175691,
+    "forks": 20789,
     "language": "Python",
-    "updatedAt": "2026-09-10T03:13:50Z",
+    "updatedAt": "2026-09-11T03:10:05Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 74769,
-    "forks": 8627,
+    "stars": 74836,
+    "forks": 8632,
     "language": "Python",
-    "updatedAt": "2026-09-10T02:26:56Z",
+    "updatedAt": "2026-09-11T03:04:26Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -240,10 +240,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 36087,
-    "forks": 4047,
+    "stars": 36122,
+    "forks": 4053,
     "language": "Python",
-    "updatedAt": "2026-09-10T01:23:51Z",
+    "updatedAt": "2026-09-11T02:57:42Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -1844,6 +1844,21 @@
             "sha": "b20614e2d08d7a7c70775bb62b5af640f60b024b"
           },
           "homepage": "https://www.fullstory.com"
+        },
+        {
+          "name": "gc-ai",
+          "displayName": "GC AI",
+          "description": "Work in your GC AI legal knowledge base from Claude: upload documents, run review playbooks, and ask questions grounded in your own files, all as you.",
+          "author": {
+            "name": "GC AI"
+          },
+          "category": "productivity",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/GC-AI-Inc/gc-ai-claude-plugin.git",
+            "sha": "efda779972c7b7162e79234e164bc2f359a8a518"
+          },
+          "homepage": "https://docs.gc.ai/api-reference/mcp/overview"
         },
         {
           "name": "github",
@@ -4329,49 +4344,26 @@
             "sha": "0ff858728bc52aee335d5475b0d4eb5f3a9589b0"
           },
           "homepage": "https://www.activecampaign.com"
+        },
+        {
+          "name": "hubspot-sales",
+          "displayName": "HubSpot Sales",
+          "description": "Run your HubSpot sales workflow directly from Claude. Adds skills that cover the full sales day: import contacts and deals into HubSpot, get a prioritised morning brief, prep for any call with full CRM context, draft personalised follow-ups grounded in deal history, log calls and update records by describing what happened, and review your pipeline to surface stalling deals. Everything writes back to HubSpot.",
+          "author": {
+            "name": "HubSpot"
+          },
+          "category": "productivity",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/HubSpot/hubspot-mcp-plugins.git",
+            "path": "HubSpot-Sales",
+            "ref": "main",
+            "sha": "843d5a38f82cdc1b275baf4953a659be0ad41247"
+          },
+          "homepage": "https://www.hubspot.com"
         }
       ]
     }
-  },
-  {
-    "id": "1354918542",
-    "name": "skill-plugin-template",
-    "description": "Starter template for Claude Code skill plugins: canonical repo layout (.claude-plugin/, skills/, rules/, sources/, refresh/) with {{…}} placeholders for plugin.json, marketplace.json, README, and agent guides. Clone, fill in the placeholders, add your skills — validation passes once templated.",
-    "url": "https://github.com/eugeneteo/skill-plugin-template",
-    "stars": 0,
-    "forks": 0,
-    "language": "Unknown",
-    "updatedAt": "2026-09-08T05:11:41Z",
-    "createdAt": "2026-09-02T15:18:47Z",
-    "license": "GNU General Public License v3.0",
-    "topics": [],
-    "discoverySource": "custom-query",
-    "manifest": {
-      "name": "{{REPO_NAME}}",
-      "owner": {
-        "name": "{{AUTHOR_NAME}}"
-      },
-      "metadata": {
-        "description": "{{ONE_SENTENCE_MARKETPLACE_DESCRIPTION}}",
-        "version": "0.1.0"
-      },
-      "plugins": [
-        {
-          "name": "{{PLUGIN_NAME}}",
-          "description": "{{ONE_SENTENCE_PLUGIN_DESCRIPTION}}",
-          "source": "./",
-          "strict": false
-        }
-      ]
-    },
-    "plugins": [
-      {
-        "name": "example-skill",
-        "path": "skills/example-skill",
-        "hasSkillMd": true,
-        "description": "name: example-skill"
-      }
-    ]
   },
   {
     "id": "1245301697",
@@ -4381,7 +4373,7 @@
     "stars": 0,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-09-03T19:01:35Z",
+    "updatedAt": "2026-09-10T21:12:26Z",
     "createdAt": "2026-05-21T05:17:16Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -4395,7 +4387,7 @@
       },
       "metadata": {
         "description": "Product on Purpose: thematic AI agent skill and tool collections for product work.",
-        "version": "1.75.0"
+        "version": "1.76.0"
       },
       "plugins": [
         {
@@ -4414,10 +4406,10 @@
           "source": {
             "source": "url",
             "url": "https://github.com/product-on-purpose/thinking-framework-skills.git",
-            "sha": "9aab9f3d718d00d72f9a3f2f272f0c882e83e619"
+            "sha": "e317da999be8c7c29d0da4cdb98d2fdd3e4a1374"
           },
           "description": "Evidence-graded, agent-executable thinking-method skills: each is reduced to its working mechanism, graded honestly on its evidence, and produces a concrete artifact. Includes a published Framework Library, a research engine, and routing/applicator tools. Follows the agentskills.io specification.",
-          "version": "0.13.0",
+          "version": "0.14.0",
           "strict": true
         },
         {
@@ -4466,6 +4458,46 @@
         }
       ]
     }
+  },
+  {
+    "id": "1354918542",
+    "name": "skill-plugin-template",
+    "description": "Starter template for Claude Code skill plugins: canonical repo layout (.claude-plugin/, skills/, rules/, sources/, refresh/) with {{…}} placeholders for plugin.json, marketplace.json, README, and agent guides. Clone, fill in the placeholders, add your skills — validation passes once templated.",
+    "url": "https://github.com/eugeneteo/skill-plugin-template",
+    "stars": 0,
+    "forks": 0,
+    "language": "Unknown",
+    "updatedAt": "2026-09-08T05:11:41Z",
+    "createdAt": "2026-09-02T15:18:47Z",
+    "license": "GNU General Public License v3.0",
+    "topics": [],
+    "discoverySource": "custom-query",
+    "manifest": {
+      "name": "{{REPO_NAME}}",
+      "owner": {
+        "name": "{{AUTHOR_NAME}}"
+      },
+      "metadata": {
+        "description": "{{ONE_SENTENCE_MARKETPLACE_DESCRIPTION}}",
+        "version": "0.1.0"
+      },
+      "plugins": [
+        {
+          "name": "{{PLUGIN_NAME}}",
+          "description": "{{ONE_SENTENCE_PLUGIN_DESCRIPTION}}",
+          "source": "./",
+          "strict": false
+        }
+      ]
+    },
+    "plugins": [
+      {
+        "name": "example-skill",
+        "path": "skills/example-skill",
+        "hasSkillMd": true,
+        "description": "name: example-skill"
+      }
+    ]
   },
   {
     "id": "1292147149",
