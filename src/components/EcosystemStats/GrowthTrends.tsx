@@ -171,8 +171,18 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({ className = '' }) => {
                   />
                   <YAxis tick={{ fontSize: 12 }} tickFormatter={(v: number) => formatNumber(v)} />
                   <Tooltip
+                    cursor={{ stroke: '#9ca3af', strokeDasharray: '3 3' }}
                     formatter={(value: number | string) => formatNumber(Number(value))}
                     labelFormatter={(label: string) => `Snapshot ${label}`}
+                    contentStyle={{
+                      backgroundColor: 'var(--tooltip-bg)',
+                      border: '1px solid var(--tooltip-border)',
+                      borderRadius: '0.5rem',
+                      color: 'var(--tooltip-text)',
+                      fontSize: '0.875rem',
+                    }}
+                    labelStyle={{ color: 'var(--tooltip-muted)' }}
+                    itemStyle={{ color: 'var(--tooltip-text)' }}
                   />
                   <Legend />
                   {SERIES.map(({ key, label, color }) => (

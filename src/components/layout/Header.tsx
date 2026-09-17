@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { Search, Menu, X, Github, Star } from 'lucide-react';
+import { Search, Menu, X, Github } from 'lucide-react';
 import ThemeToggle from '../ui/ThemeToggle';
 
 interface HeaderProps {
@@ -117,16 +117,16 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
               <Search className='w-5 h-5' />
             </button>
 
-            {/* GitHub button */}
+            {/* GitHub star button */}
             <a
               href='https://github.com/shrwnsan/claude-marketplace-registry'
               target='_blank'
               rel='noopener noreferrer'
-              className='hidden sm:flex items-center space-x-2 px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all group'
-              aria-label='View on GitHub'
+              title='Star this project on GitHub'
+              className='hidden sm:flex items-center space-x-1.5 px-3 py-1.5 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:border-primary-400 dark:hover:border-primary-500 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all group'
+              aria-label='Star this project on GitHub (opens in new tab)'
             >
-              <Github className='w-5 h-5 group-hover:scale-110 transition-transform' />
-              <Star className='w-4 h-4 group-hover:fill-current transition-all' />
+              <Github className='w-4 h-4 group-hover:scale-110 transition-transform' />
               <span className='text-sm font-medium'>Star</span>
             </a>
 

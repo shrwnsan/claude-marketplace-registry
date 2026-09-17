@@ -179,3 +179,19 @@
     @apply transform-none;
   }
 }
+
+/* Chart tooltip theming — recharts reads these CSS variables so the
+   tooltip follows light/dark mode (defaults were white-on-white in dark). */
+:root {
+  --tooltip-bg: #ffffff;
+  --tooltip-border: #e5e7eb;
+  --tooltip-text: #111827;
+  --tooltip-muted: #6b7280;
+}
+
+.dark {
+  --tooltip-bg: #1f2937;
+  --tooltip-border: #374151;
+  --tooltip-text: #f3f4f6;
+  --tooltip-muted: #9ca3af;
+}

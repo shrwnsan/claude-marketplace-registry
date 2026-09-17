@@ -86,6 +86,15 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                   cursor={{ fill: 'rgba(59,130,246,0.06)' }}
                   formatter={(value: number | string) => [formatNumber(Number(value)), 'Plugins']}
                   labelFormatter={(label: string) => `Topic "${label}"`}
+                  contentStyle={{
+                    backgroundColor: 'var(--tooltip-bg)',
+                    border: '1px solid var(--tooltip-border)',
+                    borderRadius: '0.5rem',
+                    color: 'var(--tooltip-text)',
+                    fontSize: '0.875rem',
+                  }}
+                  labelStyle={{ color: 'var(--tooltip-text)' }}
+                  itemStyle={{ color: 'var(--tooltip-text)' }}
                 />
                 <Bar dataKey='count' fill='#3b82f6' radius={[0, 4, 4, 0]} maxBarSize={22} />
               </BarChart>

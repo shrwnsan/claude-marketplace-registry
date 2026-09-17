@@ -202,6 +202,7 @@ const PluginDetailPage: React.FC = () => {
                 )}
                 {plugin.repositoryUrl && (
                   <button
+                    title={`Copy repository URL: ${plugin.repositoryUrl}`}
                     onClick={() => copySource(plugin.repositoryUrl)}
                     className='btn-ghost text-sm px-4 py-2'
                     aria-label='Copy repository URL'

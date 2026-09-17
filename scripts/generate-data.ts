@@ -206,7 +206,7 @@ class DataGenerator {
           id,
           name: pluginName,
           description: entry.description || '',
-          version: entry.version || mp.manifest?.metadata?.version || '1.0.0',
+          version: entry.version || mp.manifest?.metadata?.version || '',
           author: entry.author || mp.manifest?.owner?.name || mp.name,
           repository: mp.url,
           manifestPath: entry.source || entry.path || '',

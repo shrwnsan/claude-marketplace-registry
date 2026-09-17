@@ -105,7 +105,7 @@ class MarketplaceScanner {
     this.outputDir = path.join(process.cwd(), 'data', 'marketplaces');
     this.pluginsDir = path.join(process.cwd(), 'data', 'plugins');
     this.searchQuery = process.env.SEARCH_QUERY || '';
-    this.maxResults = parseInt(process.env.SEARCH_RESULTS_LIMIT || '100');
+    this.maxResults = parseInt(process.env.SEARCH_RESULTS_LIMIT || '250');
     // Use multi-strategy by default unless a specific query is provided
     this.useMultiStrategy = !process.env.SEARCH_QUERY;
 
