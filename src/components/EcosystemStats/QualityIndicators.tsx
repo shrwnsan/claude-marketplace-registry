@@ -1,6 +1,6 @@
 import React from 'react';
 import { Activity, Calendar, ShieldCheck, RefreshCw, Clock, Star, FileCheck } from 'lucide-react';
-import { formatNumber } from '../../utils/format';
+import { formatDateTimeWithOffset, formatNumber } from '../../utils/format';
 import { useEcosystemStats } from '../../hooks/useEcosystemStats';
 import ErrorDisplay from '../ui/ErrorDisplay';
 
@@ -96,7 +96,7 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' })
           {metaTimestamp && (
             <div className='flex items-center text-sm text-gray-500 dark:text-gray-400'>
               <Calendar className='w-4 h-4 mr-1' />
-              <span>Updated {new Date(metaTimestamp).toLocaleString()}</span>
+              <span>Updated {formatDateTimeWithOffset(metaTimestamp)}</span>
             </div>
           )}
           <button

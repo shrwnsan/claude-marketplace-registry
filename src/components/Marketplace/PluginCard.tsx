@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Star, ExternalLink, Github, Copy, Check, Package } from 'lucide-react';
+import { ExternalLink, Github, Copy, Check, Package } from 'lucide-react';
 import { CatalogPlugin } from '../../hooks/usePluginData';
 import { useClickTracking } from '../../utils/analytics/hooks';
 
@@ -11,15 +11,6 @@ interface PluginCardProps {
 
 const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
   const { handleClick } = useClickTracking(plugin.id, 'plugin', plugin.name);
-
-  const formatNumber = (num: number): string => {
-    if (num >= 1000000) {
-      return (num / 1000000).toFixed(1) + 'M';
-    } else if (num >= 1000) {
-      return (num / 1000).toFixed(1) + 'K';
-    }
-    return num.toString();
-  };
 
   return (
     <div className={`card-interactive ${className}`}>
@@ -83,18 +74,6 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
       {/* Stats */}
       <div className='flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4'>
         <div className='flex items-center space-x-4'>
-          <div className='flex items-center space-x-1 group'>
-            <Star
-              className='w-4 h-4 group-hover:fill-current group-hover:text-yellow-500 transition-colors'
-              aria-hidden='true'
-            />
-            <span
-              className='font-medium'
-              title={`Stars of parent marketplace ${plugin.marketplaceName}`}
-            >
-              {formatNumber(plugin.stars)}
-            </span>
-          </div>
           {plugin.skills.length > 0 && (
             <div className='flex items-center space-x-1'>
               <Package className='w-4 h-4' aria-hidden='true' />
@@ -114,18 +93,19 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
       {/* Actions */}
       <div className='flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700'>
         <div className='flex items-center space-x-1'>
-          {plugin.repositoryUrl && (
+          {(plugin.sourceUrl || plugin.repositoryUrl) && (
             <a
-              href={plugin.repositoryUrl}
+              href={plugin.sourceUrl || plugin.repositoryUrl}
               target='_blank'
               rel='noopener noreferrer'
               className='btn-ghost p-2 group'
-              aria-label='View repository on GitHub'
+              title={`Open ${plugin.name} source on GitHub`}
+              aria-label={`Open ${plugin.name} source on GitHub`}
             >
               <Github className='w-4 h-4 group-hover:scale-110 transition-transform' />
             </a>
           )}
-          <CopyRepoButton url={plugin.repositoryUrl} />
+          <CopyRepoButton url={plugin.sourceUrl || plugin.repositoryUrl} name={plugin.name} />
         </div>
         {plugin.marketplaceId && (
           <Link
@@ -141,12 +121,12 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
   );
 };
 
-const CopyRepoButton: React.FC<{ url: string }> = ({ url }) => {
+const CopyRepoButton: React.FC<{ url: string; name?: string }> = ({ url, name }) => {
   const [copied, setCopied] = React.useState(false);
   if (!url) return null;
   return (
     <button
-      title={`Copy repository URL: ${url}`}
+      title={`Copy source URL${name ? ` for ${name}` : ''}: ${url}`}
       onClick={async () => {
         try {
           await navigator.clipboard.writeText(url);
