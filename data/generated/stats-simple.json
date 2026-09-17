@@ -1,70 +1,152 @@
 {
-  "totalMarketplaces": 5,
-  "totalPlugins": 178,
-  "validPlugins": 178,
-  "lastUpdated": "2026-09-17T03:39:55.145Z",
+  "totalMarketplaces": 100,
+  "totalPlugins": 1274,
+  "validPlugins": 1274,
+  "lastUpdated": "2026-09-17T09:39:34.833Z",
   "topLanguages": [
     {
-      "language": "TypeScript",
-      "count": 4
+      "language": "Python",
+      "count": 33
     },
     {
-      "language": "Markdown",
+      "language": "Shell",
+      "count": 16
+    },
+    {
+      "language": "TypeScript",
+      "count": 13
+    },
+    {
+      "language": "Unknown",
+      "count": 13
+    },
+    {
+      "language": "JavaScript",
+      "count": 10
+    },
+    {
+      "language": "Go",
+      "count": 7
+    },
+    {
+      "language": "Rust",
+      "count": 3
+    },
+    {
+      "language": "PHP",
+      "count": 1
+    },
+    {
+      "language": "Java",
+      "count": 1
+    },
+    {
+      "language": "HTML",
       "count": 1
     }
   ],
   "topMarketplaces": [
     {
-      "name": "Anthropic Official Skills",
-      "stars": 2847,
+      "name": "skills",
+      "stars": 176783,
       "url": "https://github.com/anthropics/skills"
     },
     {
-      "name": "Awesome Claude Skills",
-      "stars": 1256,
+      "name": "awesome-claude-skills",
+      "stars": 75249,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
-      "name": "Claude Plugins",
-      "stars": 234,
-      "url": "https://github.com/adawalli/claude-plugins"
+      "name": "claude-plugins-official",
+      "stars": 36454,
+      "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
-      "name": "Claude Plugin Marketplace",
-      "stars": 156,
-      "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
+      "name": "claude-octopus",
+      "stars": 4079,
+      "url": "https://github.com/nyldn/claude-octopus"
     },
     {
-      "name": "Claude Skills Marketplace",
-      "stars": 89,
-      "url": "https://github.com/mhattingpete/claude-skills-marketplace"
+      "name": "awesome-ChatGPT-repositories",
+      "stars": 3249,
+      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
+    },
+    {
+      "name": "logtape",
+      "stars": 1997,
+      "url": "https://github.com/dahlia/logtape"
+    },
+    {
+      "name": "kubb",
+      "stars": 1802,
+      "url": "https://github.com/kubb-labs/kubb"
+    },
+    {
+      "name": "agent-skills",
+      "stars": 1648,
+      "url": "https://github.com/callstackincubator/agent-skills"
+    },
+    {
+      "name": "agent-skills",
+      "stars": 875,
+      "url": "https://github.com/oxylabs/agent-skills"
+    },
+    {
+      "name": "dotclaude",
+      "stars": 863,
+      "url": "https://github.com/poshan0126/dotclaude"
     }
   ],
   "recentActivity": [
     {
-      "name": "Anthropic Official Skills",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
-      "url": "https://github.com/anthropics/skills"
+      "name": "claude-plugins-official",
+      "updatedAt": "2026-09-17T09:30:26Z",
+      "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
-      "name": "Awesome Claude Skills",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "name": "awesome-claude-skills",
+      "updatedAt": "2026-09-17T09:23:47Z",
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
-      "name": "Claude Plugins",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
-      "url": "https://github.com/adawalli/claude-plugins"
+      "name": "skills",
+      "updatedAt": "2026-09-17T09:20:06Z",
+      "url": "https://github.com/anthropics/skills"
     },
     {
-      "name": "Claude Plugin Marketplace",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
-      "url": "https://github.com/josiahsiegel/claude-plugin-marketplace"
+      "name": "phoenix",
+      "updatedAt": "2026-09-17T09:19:23Z",
+      "url": "https://github.com/kamp-us/phoenix"
     },
     {
-      "name": "Claude Skills Marketplace",
-      "updatedAt": "2026-02-05T10:00:00.000Z",
-      "url": "https://github.com/mhattingpete/claude-skills-marketplace"
+      "name": "agent-skills",
+      "updatedAt": "2026-09-17T09:07:55Z",
+      "url": "https://github.com/callstackincubator/agent-skills"
+    },
+    {
+      "name": "awesome-ChatGPT-repositories",
+      "updatedAt": "2026-09-17T09:05:23Z",
+      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
+    },
+    {
+      "name": "medsci-skills",
+      "updatedAt": "2026-09-17T08:51:55Z",
+      "url": "https://github.com/Aperivue/medsci-skills"
+    },
+    {
+      "name": "otter",
+      "updatedAt": "2026-09-17T08:48:28Z",
+      "url": "https://github.com/AmadeusITGroup/otter"
+    },
+    {
+      "name": "okf-skills",
+      "updatedAt": "2026-09-17T08:32:10Z",
+      "url": "https://github.com/scaccogatto/okf-skills"
+    },
+    {
+      "name": "gadak",
+      "updatedAt": "2026-09-17T08:20:45Z",
+      "url": "https://github.com/midagedev/gadak"
     }
   ]
 }
