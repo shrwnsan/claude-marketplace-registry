@@ -127,8 +127,9 @@ jobs:
         run: npm ci
 
       - name: Run security audit
-        run: npm audit --audit-level moderate
-        continue-on-error: true  # Temporary waiver for Next.js v14 vulnerability
+        # Production deps must stay vuln-free. Known dev-only highs (extract-zip
+        # via puppeteer, js-yaml via istanbul) are tracked in security.yml.
+        run: npm audit --omit=dev --audit-level moderate
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@6bb031afdd8eb862ea3fc1848194185e076637e5  # v3.28.11
