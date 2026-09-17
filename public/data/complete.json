@@ -1,20 +1,70 @@
 {
   "marketplaces": [
     {
-      "id": "1100776768",
-      "name": "claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "stars": 36454,
-      "forks": 4082,
+      "id": "1061953414",
+      "name": "skills",
+      "description": "Public repository for Agent Skills",
+      "url": "https://github.com/anthropics/skills",
+      "stars": 176841,
+      "forks": 20935,
       "language": "Python",
-      "updatedAt": "2026-09-17T09:30:26Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "updatedAt": "2026-09-17T15:41:24Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
-        "claude-code",
+        "agent-skills"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "958852531",
+      "name": "biomcp",
+      "description": "BioMCP: Biomedical Model Context Protocol",
+      "url": "https://github.com/genomoncology/biomcp",
+      "stars": 633,
+      "forks": 115,
+      "language": "Rust",
+      "updatedAt": "2026-09-17T15:39:47Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "ai",
+        "bioinformatics",
+        "clinical-trials",
+        "genomics",
+        "llm",
         "mcp",
-        "skills"
+        "mcp-server",
+        "medical",
+        "model-context-protocol",
+        "pubmed",
+        "pubmed-central"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1244116421",
+      "name": "antislop",
+      "description": "By slop for slop, to remove slop in an AI slop world.",
+      "url": "https://github.com/drunkrhin0/antislop",
+      "stars": 24,
+      "forks": 1,
+      "language": "Python",
+      "updatedAt": "2026-09-17T15:36:04Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "ai",
+        "ai-skills",
+        "ai-writing",
+        "ai-writing-assistant",
+        "ai-writing-detection",
+        "ai-writing-detector",
+        "ai-writing-tool",
+        "aislop",
+        "skill-md",
+        "skills",
+        "slop"
       ],
       "hasManifest": true
     },
@@ -23,11 +73,11 @@
       "name": "awesome-claude-skills",
       "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
       "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "stars": 75249,
-      "forks": 8703,
+      "stars": 75270,
+      "forks": 8708,
       "language": "Python",
-      "updatedAt": "2026-09-17T09:23:47Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "updatedAt": "2026-09-17T15:34:11Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -51,47 +101,21 @@
       "hasManifest": false
     },
     {
-      "id": "1061953414",
-      "name": "skills",
-      "description": "Public repository for Agent Skills",
-      "url": "https://github.com/anthropics/skills",
-      "stars": 176783,
-      "forks": 20932,
+      "id": "1100776768",
+      "name": "claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "stars": 36466,
+      "forks": 4084,
       "language": "Python",
-      "updatedAt": "2026-09-17T09:20:06Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "updatedAt": "2026-09-17T15:34:09Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
-        "agent-skills"
+        "claude-code",
+        "mcp",
+        "skills"
       ],
-      "hasManifest": true
-    },
-    {
-      "id": "1234177275",
-      "name": "phoenix",
-      "description": "kampus is back?",
-      "url": "https://github.com/kamp-us/phoenix",
-      "stars": 30,
-      "forks": 6,
-      "language": "TypeScript",
-      "updatedAt": "2026-09-17T09:19:23Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [],
-      "hasManifest": true
-    },
-    {
-      "id": "1134388286",
-      "name": "agent-skills",
-      "description": "A collection of agent-optimized React Native skills for AI coding assistants.",
-      "url": "https://github.com/callstackincubator/agent-skills",
-      "stars": 1648,
-      "forks": 116,
-      "language": "Shell",
-      "updatedAt": "2026-09-17T09:07:55Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
-      "license": "None",
-      "topics": [],
       "hasManifest": true
     },
     {
@@ -102,8 +126,8 @@
       "stars": 3249,
       "forks": 463,
       "language": "Python",
-      "updatedAt": "2026-09-17T09:05:23Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "updatedAt": "2026-09-17T15:07:36Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent",
@@ -121,15 +145,262 @@
       "hasManifest": true
     },
     {
+      "id": "1146875291",
+      "name": "skills",
+      "description": "",
+      "url": "https://github.com/OpenRouterTeam/skills",
+      "stars": 255,
+      "forks": 41,
+      "language": "TypeScript",
+      "updatedAt": "2026-09-17T15:03:28Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1269151566",
+      "name": "okf-skills",
+      "description": "The OKF toolkit for Claude Code — author, maintain, validate & visualize Open Knowledge Format bundles. Plugin, agent skills, and a GitHub Action.",
+      "url": "https://github.com/scaccogatto/okf-skills",
+      "stars": 391,
+      "forks": 34,
+      "language": "Python",
+      "updatedAt": "2026-09-17T14:56:42Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "developer-tools",
+        "knowledge-graph",
+        "knowledge-management",
+        "llm-tools",
+        "markdown",
+        "mcp",
+        "okf",
+        "open-knowledge-format",
+        "structured-knowledge",
+        "yaml"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1152709304",
+      "name": "dataspoke-baseline",
+      "description": "A Baseline for DataHub SideCar",
+      "url": "https://github.com/selhorys/dataspoke-baseline",
+      "stars": 15,
+      "forks": 0,
+      "language": "Python",
+      "updatedAt": "2026-09-17T14:19:57Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "data",
+        "data-eng",
+        "data-gov"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1247030866",
+      "name": "yayamlls",
+      "description": "YAML language server in Go. Schema-driven diagnostics, completion, hover; pluggable rendering for Flux HelmRelease and Kustomization via flate.",
+      "url": "https://github.com/home-operations/yayamlls",
+      "stars": 24,
+      "forks": 3,
+      "language": "Go",
+      "updatedAt": "2026-09-17T14:17:11Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "0ver",
+        "flux",
+        "golang",
+        "json-schema",
+        "kubernetes",
+        "language-server",
+        "lsp",
+        "yaml"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1319995142",
+      "name": "Skills",
+      "description": "28 OSINT Agent Skills that turn Cursor, Claude & AI coding agents into a full open-source intelligence platform — reconnaissance, attribution, GEOINT, breach checks & due diligence. Ethical, sourced, passive-first.",
+      "url": "https://github.com/UseOSINT/Skills",
+      "stars": 38,
+      "forks": 2,
+      "language": "Shell",
+      "updatedAt": "2026-09-17T14:02:45Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-skills",
+        "cursor",
+        "cursor-skills",
+        "cybersecurity",
+        "digital-forensics",
+        "due-diligence",
+        "geoint",
+        "information-gathering",
+        "infosec",
+        "investigation",
+        "open-source-intelligence",
+        "osint",
+        "osint-tools",
+        "pentesting",
+        "reconnaissance",
+        "socmint",
+        "threat-intelligence"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1064514521",
+      "name": "ailang",
+      "description": "For humans, a language is a tool for expression. For AIs, it's a substrate for reasoning.",
+      "url": "https://github.com/sunholo-data/ailang",
+      "stars": 34,
+      "forks": 5,
+      "language": "Go",
+      "updatedAt": "2026-09-17T13:42:55Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "gemini",
+        "genai",
+        "openai"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1139329853",
+      "name": "superdesign-skill",
+      "description": "The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it into shippable, tasteful frontend. Install: npx skills add superdesigndev/superdesign-skill. Powered by superdesign.dev",
+      "url": "https://github.com/superdesigndev/superdesign-skill",
+      "stars": 571,
+      "forks": 41,
+      "language": "JavaScript",
+      "updatedAt": "2026-09-17T13:31:26Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "agent-skills",
+        "ai-design",
+        "claude-code",
+        "claude-skill",
+        "claude-skills",
+        "coding-agent",
+        "cursor",
+        "design-agent",
+        "dsh-plugin",
+        "frontend",
+        "superdesign",
+        "ui-design",
+        "ux-design"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "589619867",
+      "name": "otter",
+      "description": "The Otter project is a highly modular framework whose goal is to provide a common platform to accelerate and facilitate the development of runtime customizable Angular based Web Applications",
+      "url": "https://github.com/AmadeusITGroup/otter",
+      "stars": 58,
+      "forks": 44,
+      "language": "TypeScript",
+      "updatedAt": "2026-09-17T12:54:50Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "angular",
+        "chrome-extension",
+        "github-actions",
+        "github-apps",
+        "typescript",
+        "vscode-extension"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1193147839",
+      "name": "dotclaude",
+      "description": "The standard .claude/  folder structure for everyday development.",
+      "url": "https://github.com/poshan0126/dotclaude",
+      "stars": 864,
+      "forks": 202,
+      "language": "Shell",
+      "updatedAt": "2026-09-17T12:52:20Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1322948077",
+      "name": "gadak",
+      "description": "Your Jira and Confluence, mirrored into one local SQLite file — macOS app, web UI, and agent SQL/MCP. Instant search, offline, one binary.",
+      "url": "https://github.com/midagedev/gadak",
+      "stars": 41,
+      "forks": 5,
+      "language": "Go",
+      "updatedAt": "2026-09-17T12:48:05Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "ai-agents",
+        "atlassian",
+        "cli",
+        "confluence",
+        "developer-tools",
+        "full-text-search",
+        "golang",
+        "issue-tracker",
+        "jira",
+        "jira-client",
+        "local-first",
+        "mcp",
+        "offline-first",
+        "single-binary",
+        "sqlite"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1241216543",
+      "name": "skills",
+      "description": "A collection of skills used at Cline",
+      "url": "https://github.com/cline/skills",
+      "stars": 29,
+      "forks": 3,
+      "language": "Python",
+      "updatedAt": "2026-09-17T12:18:27Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
       "id": "1202576122",
       "name": "medsci-skills",
       "description": "Agent Skills for medical research — literature search, reporting-guideline & citation checks, statistics, publication figures, submission. Works with Claude Code, Codex, Cursor & GitHub Copilot. Built by a physician-researcher, tested on real publications. MIT.",
       "url": "https://github.com/Aperivue/medsci-skills",
-      "stars": 304,
+      "stars": 306,
       "forks": 73,
       "language": "Python",
-      "updatedAt": "2026-09-17T08:51:55Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "updatedAt": "2026-09-17T12:15:05Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -156,128 +427,34 @@
       "hasManifest": true
     },
     {
-      "id": "589619867",
-      "name": "otter",
-      "description": "The Otter project is a highly modular framework whose goal is to provide a common platform to accelerate and facilitate the development of runtime customizable Angular based Web Applications",
-      "url": "https://github.com/AmadeusITGroup/otter",
-      "stars": 58,
-      "forks": 44,
-      "language": "TypeScript",
-      "updatedAt": "2026-09-17T08:48:28Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "id": "12229362",
+      "name": "dotfiles",
+      "description": "🍎 macOS dotfiles for Python developers.",
+      "url": "https://github.com/kdeldycke/dotfiles",
+      "stars": 174,
+      "forks": 22,
+      "language": "Shell",
+      "updatedAt": "2026-09-17T11:54:27Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
-        "angular",
-        "chrome-extension",
-        "github-actions",
-        "github-apps",
-        "typescript",
-        "vscode-extension"
-      ],
-      "hasManifest": true
-    },
-    {
-      "id": "1269151566",
-      "name": "okf-skills",
-      "description": "The OKF toolkit for Claude Code — author, maintain, validate & visualize Open Knowledge Format bundles. Plugin, agent skills, and a GitHub Action.",
-      "url": "https://github.com/scaccogatto/okf-skills",
-      "stars": 390,
-      "forks": 34,
-      "language": "Python",
-      "updatedAt": "2026-09-17T08:32:10Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "claude-code",
-        "claude-code-plugin",
-        "developer-tools",
-        "knowledge-graph",
-        "knowledge-management",
-        "llm-tools",
-        "markdown",
-        "mcp",
-        "okf",
-        "open-knowledge-format",
-        "structured-knowledge",
-        "yaml"
-      ],
-      "hasManifest": true
-    },
-    {
-      "id": "1322948077",
-      "name": "gadak",
-      "description": "Your Jira and Confluence, mirrored into one local SQLite file — macOS app, web UI, and agent SQL/MCP. Instant search, offline, one binary.",
-      "url": "https://github.com/midagedev/gadak",
-      "stars": 40,
-      "forks": 5,
-      "language": "Go",
-      "updatedAt": "2026-09-17T08:20:45Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "ai-agents",
-        "atlassian",
-        "cli",
-        "confluence",
-        "developer-tools",
-        "full-text-search",
-        "golang",
-        "issue-tracker",
-        "jira",
-        "jira-client",
-        "local-first",
-        "mcp",
-        "offline-first",
-        "single-binary",
-        "sqlite"
-      ],
-      "hasManifest": true
-    },
-    {
-      "id": "1277989920",
-      "name": "dcode-agent-kit",
-      "description": "A Claude Code skill that scaffolds ready-to-run LangChain Deep Agents and dcode CLI agents into any project.",
-      "url": "https://github.com/EliaAlberti/dcode-agent-kit",
-      "stars": 56,
-      "forks": 12,
-      "language": "Unknown",
-      "updatedAt": "2026-09-17T08:19:42Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "agent-scaffolding",
-        "ai-agents",
-        "claude-code",
-        "claude-code-plugin",
-        "claude-code-skill",
-        "deepagents",
-        "developer-tools",
-        "langchain",
-        "llm",
-        "python"
-      ],
-      "hasManifest": true
-    },
-    {
-      "id": "1064514521",
-      "name": "ailang",
-      "description": "For humans, a language is a tool for expression. For AIs, it's a substrate for reasoning.",
-      "url": "https://github.com/sunholo-data/ailang",
-      "stars": 34,
-      "forks": 5,
-      "language": "Go",
-      "updatedAt": "2026-09-17T08:01:56Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "ai",
-        "ai-agents",
-        "anthropic",
-        "gemini",
-        "genai",
-        "openai"
+        "apple-silicon",
+        "dotfile",
+        "dotfiles",
+        "macos",
+        "macos-configuration",
+        "meta-package-manager",
+        "monokai",
+        "neovim",
+        "nerd-fonts",
+        "python",
+        "shell",
+        "sonoma",
+        "source-code-pro",
+        "starship",
+        "terminal",
+        "visual-studio-code",
+        "zsh"
       ],
       "hasManifest": true
     },
@@ -286,11 +463,11 @@
       "name": "claude-octopus",
       "description": "Run multiple AI models against the same research, design, or coding task. Surface disagreements before you ship.",
       "url": "https://github.com/nyldn/claude-octopus",
-      "stars": 4079,
+      "stars": 4080,
       "forks": 379,
       "language": "Shell",
-      "updatedAt": "2026-09-17T07:11:09Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "updatedAt": "2026-09-17T11:53:20Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ai-agents",
@@ -309,6 +486,116 @@
       "hasManifest": true
     },
     {
+      "id": "972135029",
+      "name": "hibayes",
+      "description": "",
+      "url": "https://github.com/UKGovernmentBEIS/hibayes",
+      "stars": 57,
+      "forks": 15,
+      "language": "Python",
+      "updatedAt": "2026-09-17T11:50:45Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1138027710",
+      "name": "agent-skills",
+      "description": "A collection of Agent Skills for Rstack.",
+      "url": "https://github.com/rstackjs/agent-skills",
+      "stars": 93,
+      "forks": 4,
+      "language": "JavaScript",
+      "updatedAt": "2026-09-17T10:49:15Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1166143771",
+      "name": "rekal-cli",
+      "description": "Your coding agent starts every session blank. Rekal is the memory your team is missing",
+      "url": "https://github.com/rekal-dev/rekal-cli",
+      "stars": 205,
+      "forks": 3,
+      "language": "Go",
+      "updatedAt": "2026-09-17T10:16:41Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "agent-memory",
+        "ai-coding",
+        "claude-code",
+        "cli",
+        "code-context",
+        "developer-tools",
+        "duckdb",
+        "embeddings",
+        "git",
+        "golang",
+        "llm",
+        "memory-management",
+        "rag",
+        "semantic-search"
+      ],
+      "hasManifest": true
+    },
+    {
+      "id": "1234177275",
+      "name": "phoenix",
+      "description": "kampus is back?",
+      "url": "https://github.com/kamp-us/phoenix",
+      "stars": 30,
+      "forks": 6,
+      "language": "TypeScript",
+      "updatedAt": "2026-09-17T09:45:05Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1134388286",
+      "name": "agent-skills",
+      "description": "A collection of agent-optimized React Native skills for AI coding assistants.",
+      "url": "https://github.com/callstackincubator/agent-skills",
+      "stars": 1648,
+      "forks": 116,
+      "language": "Shell",
+      "updatedAt": "2026-09-17T09:07:55Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [],
+      "hasManifest": true
+    },
+    {
+      "id": "1277989920",
+      "name": "dcode-agent-kit",
+      "description": "A Claude Code skill that scaffolds ready-to-run LangChain Deep Agents and dcode CLI agents into any project.",
+      "url": "https://github.com/EliaAlberti/dcode-agent-kit",
+      "stars": 56,
+      "forks": 12,
+      "language": "Unknown",
+      "updatedAt": "2026-09-17T08:19:42Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
+      "license": "None",
+      "topics": [
+        "agent-scaffolding",
+        "ai-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-code-skill",
+        "deepagents",
+        "developer-tools",
+        "langchain",
+        "llm",
+        "python"
+      ],
+      "hasManifest": true
+    },
+    {
       "id": "586543156",
       "name": "kubb",
       "description": "🧡 The meta framework for code generation. Automate OpenAPI to type-safe TypeScript, Zod, and TanStack Query with a modular, plugin-based engine.",
@@ -317,7 +604,7 @@
       "forks": 147,
       "language": "TypeScript",
       "updatedAt": "2026-09-17T06:43:42Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "axios",
@@ -343,34 +630,6 @@
       "hasManifest": true
     },
     {
-      "id": "1139329853",
-      "name": "superdesign-skill",
-      "description": "The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it into shippable, tasteful frontend. Install: npx skills add superdesigndev/superdesign-skill. Powered by superdesign.dev",
-      "url": "https://github.com/superdesigndev/superdesign-skill",
-      "stars": 570,
-      "forks": 41,
-      "language": "JavaScript",
-      "updatedAt": "2026-09-17T06:42:27Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "agent-skills",
-        "ai-design",
-        "claude-code",
-        "claude-skill",
-        "claude-skills",
-        "coding-agent",
-        "cursor",
-        "design-agent",
-        "dsh-plugin",
-        "frontend",
-        "superdesign",
-        "ui-design",
-        "ux-design"
-      ],
-      "hasManifest": true
-    },
-    {
       "id": "1203034717",
       "name": "sverklo",
       "description": "Repo memory for coding agents. Local-first MCP for Claude Code, Cursor, Windsurf, and Codex CLI: symbol graph, blast radius, diff-aware review, and git-pinned decisions. MIT; no API keys or code upload.",
@@ -379,7 +638,7 @@
       "forks": 10,
       "language": "TypeScript",
       "updatedAt": "2026-09-17T06:34:10Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-memory",
@@ -414,7 +673,7 @@
       "forks": 6,
       "language": "TypeScript",
       "updatedAt": "2026-09-17T06:27:52Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -428,7 +687,7 @@
       "forks": 0,
       "language": "Python",
       "updatedAt": "2026-09-17T06:16:52Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -442,7 +701,7 @@
       "forks": 7,
       "language": "Shell",
       "updatedAt": "2026-09-17T06:10:50Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -465,7 +724,7 @@
       "forks": 4,
       "language": "Python",
       "updatedAt": "2026-09-17T06:05:02Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "accessibility",
@@ -489,32 +748,6 @@
       "hasManifest": true
     },
     {
-      "id": "958852531",
-      "name": "biomcp",
-      "description": "BioMCP: Biomedical Model Context Protocol",
-      "url": "https://github.com/genomoncology/biomcp",
-      "stars": 633,
-      "forks": 115,
-      "language": "Rust",
-      "updatedAt": "2026-09-17T06:05:00Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
-      "license": "None",
-      "topics": [
-        "ai",
-        "bioinformatics",
-        "clinical-trials",
-        "genomics",
-        "llm",
-        "mcp",
-        "mcp-server",
-        "medical",
-        "model-context-protocol",
-        "pubmed",
-        "pubmed-central"
-      ],
-      "hasManifest": true
-    },
-    {
       "id": "1272139132",
       "name": "remotion-director",
       "description": "A Claude Code plugin that designs and builds a finished motion piece from a one-line brief — via the 甲乙环 (critic-loop) pipeline, judged on its real rendered frames.",
@@ -523,7 +756,7 @@
       "forks": 7,
       "language": "JavaScript",
       "updatedAt": "2026-09-17T05:14:19Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ai-design",
@@ -544,7 +777,7 @@
       "forks": 5,
       "language": "Python",
       "updatedAt": "2026-09-17T04:47:06Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -558,7 +791,7 @@
       "forks": 7,
       "language": "Unknown",
       "updatedAt": "2026-09-17T03:02:08Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -572,7 +805,7 @@
       "forks": 4,
       "language": "Typst",
       "updatedAt": "2026-09-16T23:48:53Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -586,7 +819,7 @@
       "forks": 2,
       "language": "JavaScript",
       "updatedAt": "2026-09-16T20:02:31Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "anthropic",
@@ -605,43 +838,6 @@
       "hasManifest": true
     },
     {
-      "id": "1193147839",
-      "name": "dotclaude",
-      "description": "The standard .claude/  folder structure for everyday development.",
-      "url": "https://github.com/poshan0126/dotclaude",
-      "stars": 863,
-      "forks": 201,
-      "language": "Shell",
-      "updatedAt": "2026-09-16T14:21:36Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [],
-      "hasManifest": true
-    },
-    {
-      "id": "1247030866",
-      "name": "yayamlls",
-      "description": "YAML language server in Go. Schema-driven diagnostics, completion, hover; pluggable rendering for Flux HelmRelease and Kustomization via flate.",
-      "url": "https://github.com/home-operations/yayamlls",
-      "stars": 24,
-      "forks": 3,
-      "language": "Go",
-      "updatedAt": "2026-09-16T13:06:34Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "0ver",
-        "flux",
-        "golang",
-        "json-schema",
-        "kubernetes",
-        "language-server",
-        "lsp",
-        "yaml"
-      ],
-      "hasManifest": true
-    },
-    {
       "id": "1159829402",
       "name": "agent-skills",
       "description": "Official Agent skills of Oxylabs products",
@@ -650,7 +846,7 @@
       "forks": 2,
       "language": "Unknown",
       "updatedAt": "2026-09-16T12:47:38Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skill",
@@ -675,7 +871,7 @@
       "forks": 4,
       "language": "JavaScript",
       "updatedAt": "2026-09-16T12:04:24Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "cloudflare-workers",
@@ -697,7 +893,7 @@
       "forks": 55,
       "language": "TypeScript",
       "updatedAt": "2026-09-16T12:02:29Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "bun",
@@ -717,10 +913,10 @@
       "description": "AI skill to setup and use fastlane to automate building and releasing your iOS and Android apps",
       "url": "https://github.com/greenstevester/fastlane-skill",
       "stars": 38,
-      "forks": 4,
+      "forks": 5,
       "language": "Unknown",
       "updatedAt": "2026-09-16T11:23:31Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "app-store",
@@ -735,41 +931,6 @@
       "hasManifest": true
     },
     {
-      "id": "1319995142",
-      "name": "Skills",
-      "description": "28 OSINT Agent Skills that turn Cursor, Claude & AI coding agents into a full open-source intelligence platform — reconnaissance, attribution, GEOINT, breach checks & due diligence. Ethical, sourced, passive-first.",
-      "url": "https://github.com/UseOSINT/Skills",
-      "stars": 37,
-      "forks": 2,
-      "language": "Shell",
-      "updatedAt": "2026-09-16T07:55:24Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "claude",
-        "claude-skills",
-        "cursor",
-        "cursor-skills",
-        "cybersecurity",
-        "digital-forensics",
-        "due-diligence",
-        "geoint",
-        "information-gathering",
-        "infosec",
-        "investigation",
-        "open-source-intelligence",
-        "osint",
-        "osint-tools",
-        "pentesting",
-        "reconnaissance",
-        "socmint",
-        "threat-intelligence"
-      ],
-      "hasManifest": true
-    },
-    {
       "id": "1272861960",
       "name": "meta-doctor",
       "description": "Most monitoring tells you something broke. A doctor opens the pull request that fixes it.",
@@ -778,7 +939,7 @@
       "forks": 1,
       "language": "Unknown",
       "updatedAt": "2026-09-16T01:56:05Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "claude-code",
@@ -795,7 +956,7 @@
       "forks": 107,
       "language": "Python",
       "updatedAt": "2026-09-15T22:03:04Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ai-agents",
@@ -812,52 +973,6 @@
       "hasManifest": true
     },
     {
-      "id": "1241216543",
-      "name": "skills",
-      "description": "A collection of skills used at Cline",
-      "url": "https://github.com/cline/skills",
-      "stars": 28,
-      "forks": 3,
-      "language": "Python",
-      "updatedAt": "2026-09-15T18:54:56Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [],
-      "hasManifest": true
-    },
-    {
-      "id": "12229362",
-      "name": "dotfiles",
-      "description": "🍎 macOS dotfiles for Python developers.",
-      "url": "https://github.com/kdeldycke/dotfiles",
-      "stars": 174,
-      "forks": 22,
-      "language": "Shell",
-      "updatedAt": "2026-09-15T18:16:43Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
-      "license": "None",
-      "topics": [
-        "apple-silicon",
-        "dotfile",
-        "dotfiles",
-        "macos",
-        "macos-configuration",
-        "meta-package-manager",
-        "monokai",
-        "neovim",
-        "nerd-fonts",
-        "python",
-        "shell",
-        "sonoma",
-        "source-code-pro",
-        "starship",
-        "terminal",
-        "visual-studio-code",
-        "zsh"
-      ],
-      "hasManifest": true
-    },
-    {
       "id": "1292805205",
       "name": "mastermind",
       "description": "⚗️ Experimental — A markdown brain that gives your AI coding tools judgment and rigor: sharp defaults, real decisions, and the discipline to verify before saying done. For Claude Code, Cursor and Codex. It improves itself over time.",
@@ -866,7 +981,7 @@
       "forks": 5,
       "language": "Shell",
       "updatedAt": "2026-09-15T15:17:51Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -895,7 +1010,7 @@
       "forks": 42,
       "language": "Python",
       "updatedAt": "2026-09-15T14:07:48Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agents",
@@ -914,7 +1029,7 @@
       "forks": 10,
       "language": "Python",
       "updatedAt": "2026-09-15T13:33:26Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "academic-writing",
@@ -949,7 +1064,7 @@
       "forks": 13,
       "language": "Java",
       "updatedAt": "2026-09-15T12:47:27Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "kafka",
@@ -967,7 +1082,7 @@
       "forks": 10,
       "language": "Python",
       "updatedAt": "2026-09-15T05:52:02Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "analytics",
@@ -986,7 +1101,7 @@
       "forks": 4,
       "language": "TypeScript",
       "updatedAt": "2026-09-14T23:52:03Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skill",
@@ -1002,38 +1117,6 @@
       "hasManifest": true
     },
     {
-      "id": "1152709304",
-      "name": "dataspoke-baseline",
-      "description": "A Baseline for DataHub SideCar",
-      "url": "https://github.com/selhorys/dataspoke-baseline",
-      "stars": 15,
-      "forks": 0,
-      "language": "Python",
-      "updatedAt": "2026-09-14T23:40:45Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "data",
-        "data-eng",
-        "data-gov"
-      ],
-      "hasManifest": true
-    },
-    {
-      "id": "1146875291",
-      "name": "skills",
-      "description": "",
-      "url": "https://github.com/OpenRouterTeam/skills",
-      "stars": 254,
-      "forks": 41,
-      "language": "TypeScript",
-      "updatedAt": "2026-09-14T17:12:50Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [],
-      "hasManifest": true
-    },
-    {
       "id": "1158924919",
       "name": "skills",
       "description": "A collection of Agent Skills for building AI-powered apps with Replicate",
@@ -1042,7 +1125,7 @@
       "forks": 9,
       "language": "Shell",
       "updatedAt": "2026-09-14T15:46:46Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1056,7 +1139,7 @@
       "forks": 0,
       "language": "JavaScript",
       "updatedAt": "2026-09-14T12:45:21Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -1086,7 +1169,7 @@
       "forks": 14,
       "language": "Python",
       "updatedAt": "2026-09-14T12:13:02Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "accessibility",
@@ -1113,20 +1196,6 @@
       "hasManifest": true
     },
     {
-      "id": "972135029",
-      "name": "hibayes",
-      "description": "",
-      "url": "https://github.com/UKGovernmentBEIS/hibayes",
-      "stars": 56,
-      "forks": 15,
-      "language": "Python",
-      "updatedAt": "2026-09-14T12:01:53Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [],
-      "hasManifest": true
-    },
-    {
       "id": "1295274853",
       "name": "skills",
       "description": "About Skills for Real Engineers. Straight from my experience.",
@@ -1135,35 +1204,9 @@
       "forks": 0,
       "language": "JavaScript",
       "updatedAt": "2026-09-14T03:44:58Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
-      "hasManifest": true
-    },
-    {
-      "id": "1244116421",
-      "name": "antislop",
-      "description": "By slop for slop, to remove slop in an AI slop world.",
-      "url": "https://github.com/drunkrhin0/antislop",
-      "stars": 24,
-      "forks": 1,
-      "language": "Python",
-      "updatedAt": "2026-09-14T03:05:33Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "ai",
-        "ai-skills",
-        "ai-writing",
-        "ai-writing-assistant",
-        "ai-writing-detection",
-        "ai-writing-detector",
-        "ai-writing-tool",
-        "aislop",
-        "skill-md",
-        "skills",
-        "slop"
-      ],
       "hasManifest": true
     },
     {
@@ -1175,7 +1218,7 @@
       "forks": 1,
       "language": "Unknown",
       "updatedAt": "2026-09-14T02:20:49Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1189,7 +1232,7 @@
       "forks": 5,
       "language": "JavaScript",
       "updatedAt": "2026-09-14T00:43:23Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1203,7 +1246,7 @@
       "forks": 0,
       "language": "Unknown",
       "updatedAt": "2026-09-13T06:29:17Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1217,7 +1260,7 @@
       "forks": 3,
       "language": "Go",
       "updatedAt": "2026-09-12T15:40:19Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "canvas-cli",
@@ -1230,35 +1273,6 @@
       "hasManifest": true
     },
     {
-      "id": "1166143771",
-      "name": "rekal-cli",
-      "description": "Your coding agent starts every session blank. Rekal is the memory your team is missing",
-      "url": "https://github.com/rekal-dev/rekal-cli",
-      "stars": 206,
-      "forks": 3,
-      "language": "Go",
-      "updatedAt": "2026-09-12T13:59:13Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [
-        "agent-memory",
-        "ai-coding",
-        "claude-code",
-        "cli",
-        "code-context",
-        "developer-tools",
-        "duckdb",
-        "embeddings",
-        "git",
-        "golang",
-        "llm",
-        "memory-management",
-        "rag",
-        "semantic-search"
-      ],
-      "hasManifest": true
-    },
-    {
       "id": "1172184033",
       "name": "claude-skill-b2-cloud-storage",
       "description": "Claude Skill for Backblaze B2 Cloud Storage management from the terminal. Manage buckets, list and search files, audit storage usage, detect stale or large objects, review security posture, and safely clean up data using natural language. Built on the Agent Skills specification and compatible with Claude Code and other skills-based agents.",
@@ -1267,7 +1281,7 @@
       "forks": 3,
       "language": "Python",
       "updatedAt": "2026-09-11T19:03:55Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skill",
@@ -1293,7 +1307,7 @@
       "forks": 3,
       "language": "HTML",
       "updatedAt": "2026-09-11T19:03:50Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ai",
@@ -1313,20 +1327,6 @@
       "hasManifest": true
     },
     {
-      "id": "1138027710",
-      "name": "agent-skills",
-      "description": "A collection of Agent Skills for Rstack.",
-      "url": "https://github.com/rstackjs/agent-skills",
-      "stars": 93,
-      "forks": 4,
-      "language": "JavaScript",
-      "updatedAt": "2026-09-11T07:53:16Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
-      "license": "None",
-      "topics": [],
-      "hasManifest": true
-    },
-    {
       "id": "1312438278",
       "name": "focus-friendly",
       "description": "A Codex plugin that makes dense information and complex work easier to understand, navigate, and act on.",
@@ -1335,7 +1335,7 @@
       "forks": 0,
       "language": "Python",
       "updatedAt": "2026-09-10T20:41:17Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1349,7 +1349,7 @@
       "forks": 6,
       "language": "Python",
       "updatedAt": "2026-09-10T11:11:06Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -1383,7 +1383,7 @@
       "forks": 10,
       "language": "Shell",
       "updatedAt": "2026-09-10T04:32:16Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ados",
@@ -1415,7 +1415,7 @@
       "forks": 3,
       "language": "Python",
       "updatedAt": "2026-09-09T15:20:51Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ai-agents",
@@ -1440,7 +1440,7 @@
       "forks": 6,
       "language": "AMPL",
       "updatedAt": "2026-09-09T12:30:47Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ai-agent",
@@ -1463,7 +1463,7 @@
       "forks": 13,
       "language": "Python",
       "updatedAt": "2026-09-09T04:40:42Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1477,7 +1477,7 @@
       "forks": 2,
       "language": "TypeScript",
       "updatedAt": "2026-09-09T03:52:16Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1491,7 +1491,7 @@
       "forks": 31,
       "language": "Python",
       "updatedAt": "2026-09-09T01:25:53Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1505,7 +1505,7 @@
       "forks": 4,
       "language": "Python",
       "updatedAt": "2026-09-09T01:06:11Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-monitoring",
@@ -1539,7 +1539,7 @@
       "forks": 38,
       "language": "TypeScript",
       "updatedAt": "2026-09-08T20:50:19Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ab-testing",
@@ -1571,7 +1571,7 @@
       "forks": 2,
       "language": "Go",
       "updatedAt": "2026-09-08T11:19:34Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-tools",
@@ -1606,7 +1606,7 @@
       "forks": 3,
       "language": "Unknown",
       "updatedAt": "2026-09-07T19:17:42Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1620,7 +1620,7 @@
       "forks": 40,
       "language": "PHP",
       "updatedAt": "2026-09-05T13:55:55Z",
-      "createdAt": "2026-09-17T09:39:34.791Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "php",
@@ -1638,7 +1638,7 @@
       "forks": 2,
       "language": "Python",
       "updatedAt": "2026-09-03T20:48:35Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agentic-engineering",
@@ -1661,7 +1661,7 @@
       "forks": 3,
       "language": "Python",
       "updatedAt": "2026-09-03T02:12:47Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-memory",
@@ -1686,7 +1686,7 @@
       "forks": 5,
       "language": "Unknown",
       "updatedAt": "2026-09-02T13:41:57Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1700,7 +1700,7 @@
       "forks": 0,
       "language": "Python",
       "updatedAt": "2026-09-02T08:52:09Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1714,7 +1714,7 @@
       "forks": 20,
       "language": "TypeScript",
       "updatedAt": "2026-09-01T13:30:00Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1728,7 +1728,7 @@
       "forks": 3,
       "language": "JavaScript",
       "updatedAt": "2026-09-01T08:02:45Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-plugin",
@@ -1748,7 +1748,7 @@
       "forks": 4,
       "language": "Python",
       "updatedAt": "2026-08-28T01:42:34Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -1774,7 +1774,7 @@
       "forks": 9,
       "language": "Shell",
       "updatedAt": "2026-08-26T14:57:44Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agents",
@@ -1799,7 +1799,7 @@
       "forks": 2,
       "language": "Shell",
       "updatedAt": "2026-08-25T23:24:18Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -1834,7 +1834,7 @@
       "forks": 26,
       "language": "TypeScript",
       "updatedAt": "2026-08-25T22:33:13Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -1859,7 +1859,7 @@
       "forks": 8,
       "language": "Unknown",
       "updatedAt": "2026-08-25T13:33:38Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "abp",
@@ -1888,7 +1888,7 @@
       "forks": 12,
       "language": "Shell",
       "updatedAt": "2026-08-24T18:32:39Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "claude",
@@ -1919,7 +1919,7 @@
       "forks": 3,
       "language": "Shell",
       "updatedAt": "2026-08-24T02:34:53Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ai-workflows",
@@ -1948,7 +1948,7 @@
       "forks": 7,
       "language": "Shell",
       "updatedAt": "2026-08-23T20:37:59Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "ads-mcp",
@@ -1978,7 +1978,7 @@
       "forks": 3,
       "language": "Rust",
       "updatedAt": "2026-08-22T11:04:59Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -1992,7 +1992,7 @@
       "forks": 8,
       "language": "Python",
       "updatedAt": "2026-08-20T12:33:50Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "career",
@@ -2020,7 +2020,7 @@
       "forks": 6,
       "language": "Python",
       "updatedAt": "2026-08-20T12:09:58Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "benchmark",
@@ -2044,7 +2044,7 @@
       "forks": 1,
       "language": "Unknown",
       "updatedAt": "2026-08-19T10:49:49Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -2058,7 +2058,7 @@
       "forks": 2,
       "language": "Unknown",
       "updatedAt": "2026-08-16T06:25:06Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -2072,7 +2072,7 @@
       "forks": 5,
       "language": "Python",
       "updatedAt": "2026-08-14T02:43:32Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -2086,7 +2086,7 @@
       "forks": 3,
       "language": "TypeScript",
       "updatedAt": "2026-08-08T14:11:47Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agents",
@@ -2110,7 +2110,7 @@
       "forks": 5,
       "language": "Python",
       "updatedAt": "2026-08-06T11:56:20Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agentic-coding",
@@ -2133,7 +2133,7 @@
       "forks": 4,
       "language": "Shell",
       "updatedAt": "2026-07-26T06:39:02Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -2147,7 +2147,7 @@
       "forks": 2,
       "language": "Go",
       "updatedAt": "2026-07-25T01:35:45Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -2161,7 +2161,7 @@
       "forks": 4,
       "language": "JavaScript",
       "updatedAt": "2026-07-22T02:34:30Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "antigravity",
@@ -2182,7 +2182,7 @@
       "forks": 0,
       "language": "Unknown",
       "updatedAt": "2026-07-17T01:36:08Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [
         "agent-skills",
@@ -2202,7 +2202,7 @@
       "forks": 25,
       "language": "Rust",
       "updatedAt": "2026-06-21T15:16:44Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -2216,7 +2216,7 @@
       "forks": 3,
       "language": "Shell",
       "updatedAt": "2026-05-11T11:54:51Z",
-      "createdAt": "2026-09-17T09:39:34.792Z",
+      "createdAt": "2026-09-17T15:51:35.200Z",
       "license": "None",
       "topics": [],
       "hasManifest": true
@@ -3015,7 +3015,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
-        "sha": "2adde980e45f421b7e9383d92870455627936bce"
+        "sha": "bd0513c961f02105492fcff0d7d29c9cccf1ed23"
       },
       "isValid": true,
       "errors": [],
@@ -3103,7 +3103,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/astronomer/agents.git",
-        "sha": "ba9c6113a985099f24c4d4357eceb02c40c15a5a"
+        "sha": "9b5a33171e36ecda135f22e77a845d9c405b519e"
       },
       "isValid": true,
       "errors": [],
@@ -3171,7 +3171,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/atlassian-labs/twg-plugins.git",
-        "sha": "d464e72e7750589e0f0867f171d2dd1d6eece924"
+        "sha": "b3336ef63d45e2636ff411a922ed602244e0f3db"
       },
       "isValid": true,
       "errors": [],
@@ -3247,7 +3247,7 @@
         "url": "https://github.com/aws/agent-toolkit-for-aws.git",
         "path": "plugins/aws-agents",
         "ref": "main",
-        "sha": "de9d0249ce33f56929dbf605a9e75773ab381f11"
+        "sha": "57ce9edb2126292efaf5298801e226e1ef661a4a"
       },
       "isValid": true,
       "errors": [],
@@ -3399,7 +3399,7 @@
         "url": "https://github.com/awslabs/startups.git",
         "path": "advisor/plugins/aws-startup-advisor",
         "ref": "main",
-        "sha": "57708ee00a30e6b5c90cf831daccc89d31e3b416"
+        "sha": "dd7096bd634649bc89b6511d61cff16f58623284"
       },
       "isValid": true,
       "errors": [],
@@ -3447,7 +3447,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/microsoft/azure-skills.git",
-        "sha": "4ed7ff0cabdfbdf76a15359dc7896f9daac495bc"
+        "sha": "abaf74ac8f62fbe9f83d7ccb2bd991dca929a4da"
       },
       "isValid": true,
       "errors": [],
@@ -3791,7 +3791,7 @@
         "url": "https://github.com/carta/plugins.git",
         "path": "plugins/carta-cap-table",
         "ref": "main",
-        "sha": "31d3d0bdf8aae9ee26292c72af0d5d5cbaa7cdd8"
+        "sha": "12bb447e186f52c20aee6588761498f2acf76fc3"
       },
       "isValid": true,
       "errors": [],
@@ -3843,7 +3843,7 @@
         "url": "https://github.com/carta/plugins.git",
         "path": "plugins/carta-investors",
         "ref": "main",
-        "sha": "31d3d0bdf8aae9ee26292c72af0d5d5cbaa7cdd8"
+        "sha": "12bb447e186f52c20aee6588761498f2acf76fc3"
       },
       "isValid": true,
       "errors": [],
@@ -3893,7 +3893,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/cap-js/mcp-server.git",
-        "sha": "a5debe812f06eb4f1997a300a1ae6b1fe3c83da6"
+        "sha": "79e4546395a52b1a3881d828118a1b3a2e198876"
       },
       "isValid": true,
       "errors": [],
@@ -4145,7 +4145,7 @@
         "url": "https://github.com/clay-run/agent-plugins.git",
         "path": "clay",
         "ref": "main",
-        "sha": "769ca4a37a63da6d079f6daf9aa579caed3b6639"
+        "sha": "86f0471654c2c855ad0346cd30a74c0f4ca85d7f"
       },
       "isValid": true,
       "errors": [],
@@ -4442,7 +4442,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/CodSpeedHQ/codspeed.git",
-        "sha": "37eba9ed92b0f1a17cf386303446475df380af37"
+        "sha": "f08dee66d0d200527f7f3c5a1e5276aec4d50beb"
       },
       "isValid": true,
       "errors": [],
@@ -4692,7 +4692,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/astronomer/agents.git",
-        "sha": "ba9c6113a985099f24c4d4357eceb02c40c15a5a"
+        "sha": "9b5a33171e36ecda135f22e77a845d9c405b519e"
       },
       "isValid": true,
       "errors": [],
@@ -4738,7 +4738,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/astronomer/agents.git",
-        "sha": "ba9c6113a985099f24c4d4357eceb02c40c15a5a"
+        "sha": "9b5a33171e36ecda135f22e77a845d9c405b519e"
       },
       "isValid": true,
       "errors": [],
@@ -5664,7 +5664,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/growthbook/skills.git",
-        "sha": "a0c2bf9fcb98b1bccea13395d0eaceec68fd2ba0"
+        "sha": "eb7960d4fe5034bd8d8f100320192d1691a173ac"
       },
       "isValid": true,
       "errors": [],
@@ -5781,7 +5781,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/hunter-io/claude-plugin.git",
-        "sha": "6a5c1bfdcb8f15d679b55222a9b8832602f511cd"
+        "sha": "ce0ccac337b8ccc0506c943e765d3e4506c87080"
       },
       "isValid": true,
       "errors": [],
@@ -5805,7 +5805,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/heygen-com/hyperframes.git",
-        "sha": "edf6e4b373528501f4f80284d3ce2d0e1e09fbe4"
+        "sha": "a8a9fdb0fe88d97c99d7bd30da94e64dd0a96f3d"
       },
       "isValid": true,
       "errors": [],
@@ -5922,7 +5922,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/intuit/quickbooks-claude-plugin.git",
-        "sha": "bb30cbdf7b5b1fc1a00bc210a3192f7efc78b3c4"
+        "sha": "c8daa17a64d4d0fdeabdf0516524f72549b6ad19"
       },
       "isValid": true,
       "errors": [],
@@ -6415,7 +6415,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/mapbox/mapbox-agent-skills.git",
-        "sha": "341aae50f586bc2139ed358db746b1a9ce01547b"
+        "sha": "aab3a6fef5c62b7c42c1f68e05885a1b50c42d24"
       },
       "isValid": true,
       "errors": [],
@@ -6578,7 +6578,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/mergifyio/mergify-cli.git",
-        "sha": "b2ad1a08d8c0f6c386138e454a5db2e678f06197"
+        "sha": "e7c1ebbc281361f0b2b7827cf583f57339c97ebc"
       },
       "isValid": true,
       "errors": [],
@@ -6626,7 +6626,7 @@
         "url": "https://github.com/awslabs/startups.git",
         "path": "migrate/plugins/migration-to-aws",
         "ref": "main",
-        "sha": "57708ee00a30e6b5c90cf831daccc89d31e3b416"
+        "sha": "dd7096bd634649bc89b6511d61cff16f58623284"
       },
       "isValid": true,
       "errors": [],
@@ -6822,7 +6822,7 @@
         "url": "https://github.com/neondatabase/agent-skills.git",
         "path": "plugins/neon-postgres",
         "ref": "main",
-        "sha": "dcddbf2395a8ea6f6d958c58fc5d15c0583c0801"
+        "sha": "4a4266ac3da8cf29e3c995bad040ae4ac4476b28"
       },
       "isValid": true,
       "errors": [],
@@ -6844,7 +6844,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/netlify/context-and-tools.git",
-        "sha": "5851a0e75f2065395efe5f242b4f0c6763911412"
+        "sha": "eddd0a3c67642651097a65b2d2d4194eaec173a1"
       },
       "isValid": true,
       "errors": [],
@@ -7264,7 +7264,7 @@
         "url": "https://github.com/pendo-io/claude-pendo-plugin.git",
         "path": "plugins/pendo-analytics",
         "ref": "main",
-        "sha": "a4699be3608ba134d8c7aa4b53e220cfde1c6aac"
+        "sha": "a08842848e416be803e99184130aefca6ec9afd3"
       },
       "isValid": true,
       "errors": [],
@@ -7361,7 +7361,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/gopigment/ai-plugins.git",
-        "sha": "673e6994c9cc9745e1b5655a0dc4ba3607bb08ee"
+        "sha": "824f0064ad1300c73a8f136ca938ade860f3c7f9"
       },
       "isValid": true,
       "errors": [],
@@ -7533,7 +7533,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/gitroomhq/postiz-agent.git",
-        "sha": "3e1eb995bee1d195c8a751c2321381b75b72b488"
+        "sha": "00aa5083c89fee6c673cc0ae21a70daaa3098854"
       },
       "isValid": true,
       "errors": [],
@@ -7555,7 +7555,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/Postman-Devrel/postman-claude-code-plugin.git",
-        "sha": "27f652ea98d9ae0cec0ccc9f2b46128239a36a8f"
+        "sha": "c85c881c68c9b6338b5b75e989a79d61e76c51a0"
       },
       "isValid": true,
       "errors": [],
@@ -7714,7 +7714,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/qdrant/skills.git",
-        "sha": "f672f4c917d00a7dbf5888633dc3cb9469f0d804"
+        "sha": "7d12f624a62e6b3738fe9a8460a22adb5f21d108"
       },
       "isValid": true,
       "errors": [],
@@ -7741,7 +7741,7 @@
         "url": "https://github.com/qodo-ai/qodo-skills.git",
         "path": "packages/qodo",
         "ref": "main",
-        "sha": "775e860574a35a47afcc7e708072e71f63486902"
+        "sha": "79019ff7a574383d7146502ec5ffe7f7437a55d6"
       },
       "isValid": true,
       "errors": [],
@@ -7768,7 +7768,7 @@
         "url": "https://github.com/qodo-ai/qodo-skills.git",
         "path": "packages/qodo-standards",
         "ref": "main",
-        "sha": "775e860574a35a47afcc7e708072e71f63486902"
+        "sha": "79019ff7a574383d7146502ec5ffe7f7437a55d6"
       },
       "isValid": true,
       "errors": [],
@@ -7884,7 +7884,7 @@
         "source": "url",
         "url": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
         "path": "revenuecat",
-        "sha": "b9b77b12da33213c9c2e750b06cd6270c1d8ed65"
+        "sha": "7bf32f6bf40f790c259b8c3bb9be68dc6ef76105"
       },
       "isValid": true,
       "errors": [],
@@ -8024,7 +8024,7 @@
         "source": "url",
         "url": "https://github.com/RevenueCat/rc-claude-code-plugin.git",
         "path": "revenuecat",
-        "sha": "b9b77b12da33213c9c2e750b06cd6270c1d8ed65"
+        "sha": "7bf32f6bf40f790c259b8c3bb9be68dc6ef76105"
       },
       "isValid": true,
       "errors": [],
@@ -8048,7 +8048,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/rilldata/agent-skills.git",
-        "sha": "3af884d1fcebd4319c17a36a36ab33ef02621da2"
+        "sha": "440e4081f2f56e1a130a5c679f75a0826a611264"
       },
       "isValid": true,
       "errors": [],
@@ -8212,7 +8212,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/sanity-io/agent-toolkit.git",
-        "sha": "0b3376799826fc82937770605d671b612bfc2d4f"
+        "sha": "88d6cdfa7cb06c99edd5f376efa4dac21ae3f877"
       },
       "isValid": true,
       "errors": [],
@@ -8238,7 +8238,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/cap-js/mcp-server.git",
-        "sha": "a5debe812f06eb4f1997a300a1ae6b1fe3c83da6"
+        "sha": "79e4546395a52b1a3881d828118a1b3a2e198876"
       },
       "isValid": true,
       "errors": [],
@@ -8266,7 +8266,7 @@
         "url": "https://github.com/SAP/open-ux-tools.git",
         "path": "packages/fiori-mcp-server",
         "ref": "main",
-        "sha": "11fe889e0ba08d360df3fe99e932e75d915c025e"
+        "sha": "31c1263fb76e1737dcb0a6d163c967d8f8126ddd"
       },
       "isValid": true,
       "errors": [],
@@ -8460,7 +8460,7 @@
         "url": "https://github.com/getsentry/cli.git",
         "path": "packages/cli/plugins/sentry-cli",
         "ref": "main",
-        "sha": "f5d863a6658185112128be97f9a36c0da0cc4a74"
+        "sha": "936c2cdc2ac13978ca9a843b24a0583e9309af8e"
       },
       "isValid": true,
       "errors": [],
@@ -8836,7 +8836,7 @@
         "url": "https://github.com/stackhawk/agent-skills.git",
         "path": "plugins/hawkscan",
         "ref": "main",
-        "sha": "d9b265ff67a4feaa579d37504009dd4292966460"
+        "sha": "66cac9baa5883a1007575faf1b22855a1124834a"
       },
       "isValid": true,
       "errors": [],
@@ -8862,7 +8862,7 @@
         "url": "https://github.com/stackhawk/agent-skills.git",
         "path": "plugins/api",
         "ref": "main",
-        "sha": "d9b265ff67a4feaa579d37504009dd4292966460"
+        "sha": "66cac9baa5883a1007575faf1b22855a1124834a"
       },
       "isValid": true,
       "errors": [],
@@ -8910,7 +8910,7 @@
         "url": "https://github.com/stripe/ai.git",
         "path": "providers/claude/plugin",
         "ref": "main",
-        "sha": "38d8933bffbdba219ba530803316bb3a4fbaee0d"
+        "sha": "da4991b0a0b9299d423ae2d5856e6d7e2b31b031"
       },
       "isValid": true,
       "errors": [],
@@ -9229,7 +9229,7 @@
         "url": "https://github.com/SAP/ui-theme-designer-plugins-for-coding-agents.git",
         "path": "plugins/ui-theme-designer",
         "ref": "main",
-        "sha": "05295892c722bb52ac49f637124c1f127c5fcec9"
+        "sha": "04a0a217e129422f8a995c5a9dd31712e5a32f47"
       },
       "isValid": true,
       "errors": [],
@@ -9337,7 +9337,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/Unity-Technologies/unity-agent-plugin.git",
-        "sha": "c7055702b44e58402ee481ff408aee407bcf9483"
+        "sha": "5ad4bafc1d91acfdeca800bfbae0072fcc7aeb58"
       },
       "isValid": true,
       "errors": [],
@@ -9361,7 +9361,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin.git",
-        "sha": "d1b05809e4f089bd0ef174532c692fbcf1562eb7"
+        "sha": "a6aa73ada02a9fb1f5415bec491f9942c519b297"
       },
       "isValid": true,
       "errors": [],
@@ -9505,7 +9505,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/villagesql/villagesql-skills.git",
-        "sha": "6e7edf8d984c9d50ad516d4f4fea3b167b9f573c"
+        "sha": "18f7d68673e2bd5d400b4ee91298e5a4b9e8d24e"
       },
       "isValid": true,
       "errors": [],
@@ -9551,7 +9551,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/wix/skills.git",
-        "sha": "690af85eb3c97b0bd9b278bf167d3cbb3661b08b"
+        "sha": "9c48e3f65cc869868d617c5995cf852cc71f64af"
       },
       "isValid": true,
       "errors": [],
@@ -9623,7 +9623,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/youdotcom-oss/agent-skills.git",
-        "sha": "71eeb239f7abf4f70229f676918a80e1a5210c2d"
+        "sha": "08f3d80e7ca9518ccc64b38b365a78cc4a762691"
       },
       "isValid": true,
       "errors": [],
@@ -9888,7 +9888,7 @@
       "manifestPath": {
         "source": "url",
         "url": "https://github.com/Dynatrace/dynatrace-for-ai.git",
-        "sha": "b7ae5e6c7b03bda6938133cd47ef7d69a425dcc6"
+        "sha": "9529e72715d96ab47738e8edf83d49798d0f8be5"
       },
       "isValid": true,
       "errors": [],
@@ -23910,7 +23910,7 @@
     {
       "id": "1244116421-antislop",
       "name": "antislop",
-      "description": "Writing style and audit skills that suppress detectable AI writing patterns in prose.",
+      "description": "Two prose skills: Antislop routes writing and audit work, while generate-slop creates explicit synthetic fixtures.",
       "version": "1.0.0",
       "author": "Rami Tawil",
       "repository": "https://github.com/drunkrhin0/antislop",
@@ -23926,13 +23926,13 @@
       }
     },
     {
-      "id": "1244116421-antislop-audit",
-      "name": "antislop-audit",
-      "description": "name: antislop-audit",
+      "id": "1244116421-generate-slop",
+      "name": "generate-slop",
+      "description": "name: generate-slop",
       "version": "1.0.0",
       "author": "antislop",
       "repository": "https://github.com/drunkrhin0/antislop",
-      "manifestPath": "skills/antislop-audit",
+      "manifestPath": "skills/generate-slop",
       "isValid": true,
       "errors": [],
       "warnings": [],
@@ -26449,7 +26449,7 @@
     "totalMarketplaces": 100,
     "totalPlugins": 1274,
     "validPlugins": 1274,
-    "lastUpdated": "2026-09-17T09:39:34.833Z",
+    "lastUpdated": "2026-09-17T15:51:35.241Z",
     "topLanguages": [
       {
         "language": "Python",
@@ -26495,22 +26495,22 @@
     "topMarketplaces": [
       {
         "name": "skills",
-        "stars": 176783,
+        "stars": 176841,
         "url": "https://github.com/anthropics/skills"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 75249,
+        "stars": 75270,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "claude-plugins-official",
-        "stars": 36454,
+        "stars": 36466,
         "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
         "name": "claude-octopus",
-        "stars": 4079,
+        "stars": 4080,
         "url": "https://github.com/nyldn/claude-octopus"
       },
       {
@@ -26540,60 +26540,60 @@
       },
       {
         "name": "dotclaude",
-        "stars": 863,
+        "stars": 864,
         "url": "https://github.com/poshan0126/dotclaude"
       }
     ],
     "recentActivity": [
       {
-        "name": "claude-plugins-official",
-        "updatedAt": "2026-09-17T09:30:26Z",
-        "url": "https://github.com/anthropics/claude-plugins-official"
-      },
-      {
-        "name": "awesome-claude-skills",
-        "updatedAt": "2026-09-17T09:23:47Z",
-        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
-      },
-      {
         "name": "skills",
-        "updatedAt": "2026-09-17T09:20:06Z",
+        "updatedAt": "2026-09-17T15:41:24Z",
         "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "phoenix",
-        "updatedAt": "2026-09-17T09:19:23Z",
-        "url": "https://github.com/kamp-us/phoenix"
+        "name": "biomcp",
+        "updatedAt": "2026-09-17T15:39:47Z",
+        "url": "https://github.com/genomoncology/biomcp"
       },
       {
-        "name": "agent-skills",
-        "updatedAt": "2026-09-17T09:07:55Z",
-        "url": "https://github.com/callstackincubator/agent-skills"
+        "name": "antislop",
+        "updatedAt": "2026-09-17T15:36:04Z",
+        "url": "https://github.com/drunkrhin0/antislop"
+      },
+      {
+        "name": "awesome-claude-skills",
+        "updatedAt": "2026-09-17T15:34:11Z",
+        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+      },
+      {
+        "name": "claude-plugins-official",
+        "updatedAt": "2026-09-17T15:34:09Z",
+        "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
         "name": "awesome-ChatGPT-repositories",
-        "updatedAt": "2026-09-17T09:05:23Z",
+        "updatedAt": "2026-09-17T15:07:36Z",
         "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
       },
       {
-        "name": "medsci-skills",
-        "updatedAt": "2026-09-17T08:51:55Z",
-        "url": "https://github.com/Aperivue/medsci-skills"
-      },
-      {
-        "name": "otter",
-        "updatedAt": "2026-09-17T08:48:28Z",
-        "url": "https://github.com/AmadeusITGroup/otter"
+        "name": "skills",
+        "updatedAt": "2026-09-17T15:03:28Z",
+        "url": "https://github.com/OpenRouterTeam/skills"
       },
       {
         "name": "okf-skills",
-        "updatedAt": "2026-09-17T08:32:10Z",
+        "updatedAt": "2026-09-17T14:56:42Z",
         "url": "https://github.com/scaccogatto/okf-skills"
       },
       {
-        "name": "gadak",
-        "updatedAt": "2026-09-17T08:20:45Z",
-        "url": "https://github.com/midagedev/gadak"
+        "name": "dataspoke-baseline",
+        "updatedAt": "2026-09-17T14:19:57Z",
+        "url": "https://github.com/selhorys/dataspoke-baseline"
+      },
+      {
+        "name": "yayamlls",
+        "updatedAt": "2026-09-17T14:17:11Z",
+        "url": "https://github.com/home-operations/yayamlls"
       }
     ]
   },
@@ -26605,26 +26605,26 @@
       "count": 42,
       "marketplaces": [
         "claude-plugins-official",
-        "agent-skills",
         "awesome-ChatGPT-repositories",
-        "medsci-skills",
-        "otter",
         "okf-skills",
-        "dcode-agent-kit",
-        "claude-octopus",
-        "kubb",
+        "Skills",
         "superdesign-skill",
+        "otter",
+        "medsci-skills",
+        "claude-octopus",
+        "rekal-cli",
+        "agent-skills",
+        "dcode-agent-kit",
+        "kubb",
         "sverklo",
         "maigo",
         "claude-mods",
         "remotion-director",
         "PenT3st",
         "claude-rpc",
-        "Skills",
         "Finance-Guru",
         "mastermind",
         "webmcp-kit",
-        "rekal-cli",
         "claude-skill-b2-cloud-storage",
         "fluencyloop",
         "claude-copilot",
@@ -26672,20 +26672,20 @@
       "description": "Artificial intelligence and machine learning tools",
       "count": 27,
       "marketplaces": [
+        "biomcp",
+        "antislop",
         "awesome-claude-skills",
-        "agent-skills",
         "awesome-ChatGPT-repositories",
+        "Skills",
         "ailang",
         "claude-octopus",
-        "biomcp",
+        "agent-skills",
         "Dopamine",
         "seaslides",
         "fastlane-skill",
-        "Skills",
         "mastermind",
         "fenic",
         "skills",
-        "antislop",
         "fluencyloop",
         "agentic-delivery-os",
         "dos-kernel",
@@ -26717,8 +26717,8 @@
       "description": "Data analysis and visualization tools",
       "count": 3,
       "marketplaces": [
-        "jquantstats",
         "dataspoke-baseline",
+        "jquantstats",
         "claude-skill-b2-cloud-storage"
       ]
     },
@@ -26809,13 +26809,13 @@
       "count": 7
     },
     {
-      "id": "anthropic",
-      "name": "anthropic",
+      "id": "mcp-server",
+      "name": "mcp-server",
       "count": 6
     },
     {
-      "id": "mcp-server",
-      "name": "mcp-server",
+      "id": "anthropic",
+      "name": "anthropic",
       "count": 6
     },
     {
@@ -26824,8 +26824,8 @@
       "count": 6
     },
     {
-      "id": "typescript",
-      "name": "typescript",
+      "id": "model-context-protocol",
+      "name": "model-context-protocol",
       "count": 5
     },
     {
@@ -26834,18 +26834,18 @@
       "count": 5
     },
     {
-      "id": "model-context-protocol",
-      "name": "model-context-protocol",
+      "id": "typescript",
+      "name": "typescript",
       "count": 5
-    },
-    {
-      "id": "claude-code-skill",
-      "name": "claude-code-skill",
-      "count": 4
     },
     {
       "id": "claude-skill",
       "name": "claude-skill",
+      "count": 4
+    },
+    {
+      "id": "claude-code-skill",
+      "name": "claude-code-skill",
       "count": 4
     },
     {
@@ -26904,6 +26904,16 @@
       "count": 3
     },
     {
+      "id": "pubmed",
+      "name": "pubmed",
+      "count": 2
+    },
+    {
+      "id": "ai-skills",
+      "name": "ai-skills",
+      "count": 2
+    },
+    {
       "id": "antigravity",
       "name": "antigravity",
       "count": 2
@@ -26934,11 +26944,6 @@
       "count": 2
     },
     {
-      "id": "pubmed",
-      "name": "pubmed",
-      "count": 2
-    },
-    {
       "id": "knowledge-graph",
       "name": "knowledge-graph",
       "count": 2
@@ -26949,13 +26954,13 @@
       "count": 2
     },
     {
-      "id": "jira",
-      "name": "jira",
+      "id": "kubernetes",
+      "name": "kubernetes",
       "count": 2
     },
     {
-      "id": "sqlite",
-      "name": "sqlite",
+      "id": "cybersecurity",
+      "name": "cybersecurity",
       "count": 2
     },
     {
@@ -26964,23 +26969,18 @@
       "count": 2
     },
     {
-      "id": "copilot",
-      "name": "copilot",
-      "count": 2
-    },
-    {
-      "id": "react",
-      "name": "react",
-      "count": 2
-    },
-    {
-      "id": "vue",
-      "name": "vue",
-      "count": 2
-    },
-    {
       "id": "ai-design",
       "name": "ai-design",
+      "count": 2
+    },
+    {
+      "id": "coding-agent",
+      "name": "coding-agent",
+      "count": 2
+    },
+    {
+      "id": "jira",
+      "name": "jira",
       "count": 2
     }
   ]
