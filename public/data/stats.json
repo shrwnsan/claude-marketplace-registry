@@ -5,15 +5,14 @@
       "totalPlugins": 1274,
       "totalMarketplaces": 100,
       "totalDevelopers": 396,
-      "totalDownloads": 3305380,
-      "lastUpdated": "2026-09-17T09:39:34.844Z",
+      "totalStars": 311529,
+      "lastUpdated": "2026-09-17T15:51:35.253Z",
       "growthRate": {
-        "plugins": 0,
-        "marketplaces": 0,
-        "developers": 0,
-        "downloads": 0
-      },
-      "healthScore": 85
+        "plugins": null,
+        "marketplaces": null,
+        "developers": null,
+        "stars": null
+      }
     },
     "plugins": [
       {
@@ -40,197 +39,108 @@
     "developers": [
       {
         "date": "2026-02-23",
-        "value": 8
+        "value": null
       },
       {
         "date": "2026-09-17",
-        "value": 63,
-        "change": 55
+        "value": 396
       }
     ],
-    "downloads": [
+    "stars": [
       {
         "date": "2026-02-23",
-        "value": 1168630
+        "value": 114193
       },
       {
         "date": "2026-09-17",
-        "value": 3305380,
-        "change": 2136750
+        "value": 311529,
+        "change": 197336
       }
     ],
-    "period": "30d",
-    "aggregation": "weekly",
+    "period": "all",
+    "aggregation": "daily",
     "categories": [
       {
         "id": "claude-code",
         "name": "claude-code",
         "count": 936,
-        "percentage": 73.5,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with claude-code"
+        "description": "Plugins from marketplaces tagged \"claude-code\" (topics overlap)"
       },
       {
         "id": "agent-skills",
         "name": "agent-skills",
         "count": 456,
-        "percentage": 35.8,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with agent-skills"
+        "description": "Plugins from marketplaces tagged \"agent-skills\" (topics overlap)"
       },
       {
         "id": "ai-agents",
         "name": "ai-agents",
         "count": 427,
-        "percentage": 33.5,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with ai-agents"
+        "description": "Plugins from marketplaces tagged \"ai-agents\" (topics overlap)"
       },
       {
         "id": "codex",
         "name": "codex",
         "count": 390,
-        "percentage": 30.6,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with codex"
+        "description": "Plugins from marketplaces tagged \"codex\" (topics overlap)"
       },
       {
         "id": "skills",
         "name": "skills",
         "count": 386,
-        "percentage": 30.3,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with skills"
+        "description": "Plugins from marketplaces tagged \"skills\" (topics overlap)"
       },
       {
         "id": "mcp",
         "name": "mcp",
         "count": 335,
-        "percentage": 26.3,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with mcp"
+        "description": "Plugins from marketplaces tagged \"mcp\" (topics overlap)"
       },
       {
         "id": "cursor",
         "name": "cursor",
         "count": 324,
-        "percentage": 25.4,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with cursor"
+        "description": "Plugins from marketplaces tagged \"cursor\" (topics overlap)"
       },
       {
         "id": "developer-tools",
         "name": "developer-tools",
         "count": 288,
-        "percentage": 22.6,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with developer-tools"
+        "description": "Plugins from marketplaces tagged \"developer-tools\" (topics overlap)"
       },
       {
         "id": "claude-skills",
         "name": "claude-skills",
         "count": 236,
-        "percentage": 18.5,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with claude-skills"
+        "description": "Plugins from marketplaces tagged \"claude-skills\" (topics overlap)"
       },
       {
         "id": "claude",
         "name": "claude",
         "count": 213,
-        "percentage": 16.7,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with claude"
+        "description": "Plugins from marketplaces tagged \"claude\" (topics overlap)"
       }
     ],
-    "trending": [
-      "claude-code",
-      "agent-skills",
-      "ai-agents",
-      "codex",
-      "skills",
-      "mcp",
-      "cursor",
-      "developer-tools",
-      "claude-skills",
-      "claude"
-    ],
-    "emerging": [],
     "insights": [
-      "1274 plugins discovered across 100 marketplaces"
+      "1274 plugins discovered across 100 marketplaces",
+      "Most starred: skills (176,841 stars)",
+      "Most common topic: claude-code (936 plugins)",
+      "90 marketplaces updated in the last 30 days"
     ],
-    "verification": {
-      "verifiedPlugins": 1274,
-      "verificationRate": 100,
-      "badges": [
-        {
-          "type": "quality",
-          "count": 1274
-        },
-        {
-          "type": "maintenance",
-          "count": 1019
-        },
-        {
-          "type": "security",
-          "count": 764
-        },
-        {
-          "type": "popularity",
-          "count": 509
-        }
-      ]
+    "manifestCoverage": {
+      "withManifest": 99,
+      "total": 100,
+      "rate": 99
     },
     "maintenance": {
       "recentlyUpdated": 90,
-      "activeMaintenanceRate": 80,
-      "avgUpdateFrequency": 14,
-      "abandonedPlugins": 0
+      "recentlyUpdatedRate": 90,
+      "staleOver180Days": 0
     },
-    "qualityMetrics": {
-      "avgQualityScore": 85,
-      "highQualityPlugins": 1274,
-      "commonIssues": [
-        {
-          "issue": "Missing documentation",
-          "frequency": 254,
-          "severity": "medium"
-        },
-        {
-          "issue": "No version specified",
-          "frequency": 127,
-          "severity": "low"
-        }
-      ]
-    },
-    "security": {
-      "scannedPlugins": 1274,
-      "criticalIssues": 0,
-      "securityScore": 90
-    }
+    "avgStarsPerMarketplace": 3115
   },
   "meta": {
-    "timestamp": "2026-09-17T09:39:34.844Z",
+    "timestamp": "2026-09-17T15:51:35.253Z",
     "requestId": "static-build",
     "responseTime": 0
   }
