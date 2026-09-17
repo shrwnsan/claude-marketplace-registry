@@ -61,14 +61,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Cache GitHub API results
-        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684  # v4.2.3
-        with:
-          path: ./cache/github-api
-          key: github-api-${{ env.CACHE_VERSION }}-${{ hashFiles('src/services/github-search.ts') }}
-          restore-keys: |
-            github-api-${{ env.CACHE_VERSION }}-
-
       - name: Run marketplace scan
         run: npm run scan:marketplaces
         env:
