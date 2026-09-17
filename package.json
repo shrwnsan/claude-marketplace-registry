@@ -9,7 +9,7 @@
     "build:production": "node scripts/build-production.js",
     "build:with-scan": "npm run scan:full && npm run build",
     "start": "next start",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 350",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 266",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "type-check": "npx tsc --noEmit",
     "test": "jest",
@@ -27,10 +27,10 @@
     "backup:create": "npm run backup backup",
     "backup:list": "npm run backup list",
     "backup:restore": "npm run backup restore",
-    "maintenance:health": "curl -s https://claude-marketplace.github.io/aggregator/data/health.json | jq .",
-    "maintenance:status": "curl -s https://claude-marketplace.github.io/aggregator/data/status.json | jq .",
-    "maintenance:metrics": "curl -s https://claude-marketplace.github.io/aggregator/data/metrics.json | jq .",
-    "maintenance:analytics": "curl -s https://claude-marketplace.github.io/aggregator/data/analytics.json | jq .",
+    "maintenance:health": "curl -s https://shrwnsan.github.io/claude-marketplace-registry/data/health.json | jq .",
+    "maintenance:status": "curl -s https://shrwnsan.github.io/claude-marketplace-registry/data/status.json | jq .",
+    "maintenance:metrics": "curl -s https://shrwnsan.github.io/claude-marketplace-registry/data/metrics.json | jq .",
+    "maintenance:analytics": "curl -s https://shrwnsan.github.io/claude-marketplace-registry/data/analytics.json | jq .",
     "maintenance:check": "npm run lint && npm run type-check && npm run test && npm run build",
     "maintenance:cleanup": "rm -rf .next node_modules/.cache && npm cache clean --force",
     "performance:test": "npm run build -- --analyze",
@@ -101,7 +101,7 @@
     "typescript": "^5.5.3"
   },
   "engines": {
-    "node": ">=18.0.0",
+    "node": ">=20.9.0",
     "npm": ">=8.0.0"
   },
   "overrides": {

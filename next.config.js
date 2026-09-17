@@ -23,7 +23,7 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
     SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-    GITHUB_REPO: process.env.NEXT_PUBLIC_GITHUB_REPO || 'claude-marketplace/aggregator',
+    GITHUB_REPO: process.env.NEXT_PUBLIC_GITHUB_REPO || 'shrwnsan/claude-marketplace-registry',
     ECOSYSTEM_API_URL: process.env.NEXT_PUBLIC_ECOSYSTEM_API_URL || '/api/ecosystem-stats',
     ECOSYSTEM_CACHE_TTL: process.env.NEXT_PUBLIC_ECOSYSTEM_CACHE_TTL || '21600000',
     SENTRY_DSN: process.env.NEXT_PUBLIC_SENTRY_DSN,
