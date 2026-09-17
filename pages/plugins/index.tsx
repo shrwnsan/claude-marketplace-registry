@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Head from 'next/head';
 import MainLayout from '@/components/layout/MainLayout';
 import SearchBar from '@/components/Search/SearchBar';
@@ -8,9 +8,19 @@ import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
 import { Star, Grid, List, Package } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const PluginsPage: React.FC = () => {
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Deep-link support: /plugins?q=term seeds the search
+  useEffect(() => {
+    const q = router.query.q;
+    if (typeof q === 'string' && q) {
+      setSearchQuery(q);
+    }
+  }, [router.query.q]);
   const [sortBy, setSortBy] = useState<'stars' | 'name'>('stars');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [visibleCount, setVisibleCount] = useState(12);

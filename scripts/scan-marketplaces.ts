@@ -86,6 +86,44 @@ interface Marketplace {
   discoverySource?: string;
 }
 
+/** Per-day registry refresh budget (core-API calls; retries resume next run). */
+const REGISTRY_REFRESH_CAP = 2000;
+
+export interface RegistryRecord {
+  id: string;
+  fullName: string;
+  firstSeen: string;
+  lastSeen: string;
+  discoverySource: string;
+}
+
+/**
+ * Merge today's discovered marketplaces into the persistent registry.
+ * The catalog is monotonic: a marketplace missing from today's search window
+ * keeps its record (it will be re-fetched); only explicit 404 removals drop
+ * entries. Existing records keep their original firstSeen/discoverySource.
+ */
+export function mergeRegistryRecords(
+  registry: RegistryRecord[],
+  discovered: Array<{ id: string; fullName: string; discoverySource: string }>,
+  nowISO: string
+): RegistryRecord[] {
+  const byId = new Map(registry.map((r) => [r.id, r]));
+  for (const d of discovered) {
+    const existing = byId.get(d.id);
+    byId.set(d.id, {
+      id: d.id,
+      fullName: d.fullName || existing?.fullName || '',
+      firstSeen: existing?.firstSeen ?? nowISO,
+      lastSeen: nowISO,
+      discoverySource: existing?.discoverySource ?? d.discoverySource,
+    });
+  }
+  return [...byId.values()].sort(
+    (a, b) => a.firstSeen.localeCompare(b.firstSeen) || a.id.localeCompare(b.id)
+  );
+}
+
 class MarketplaceScanner {
   private octokit: Octokit;
   private outputDir: string;
@@ -142,13 +180,96 @@ class MarketplaceScanner {
         await this.runSingleQuerySearch(repoMap, this.searchQuery, 'custom-query');
       }
 
-      const marketplaces = Array.from(repoMap.values());
-      console.log(`\n🎉 Scan complete! Found ${marketplaces.length} unique marketplaces`);
+      // Merge with the persistent registry: every marketplace ever discovered
+      // stays in the catalog, and entries today's search window missed are
+      // re-fetched. The catalog is self-healing and monotonically growing.
+      const marketplaces = await this.mergeWithRegistry(repoMap);
+      console.log(`\n🎉 Scan complete! Catalog size: ${marketplaces.length} marketplaces`);
       return marketplaces;
     } catch (error) {
       console.error('❌ Scan failed:', error);
       throw error;
     }
+  }
+
+  private registryPath(): string {
+    return path.join(this.outputDir, 'registry.json');
+  }
+
+  private loadRegistry(): RegistryRecord[] {
+    try {
+      const raw = JSON.parse(fs.readFileSync(this.registryPath(), 'utf-8'));
+      return Array.isArray(raw) ? raw : [];
+    } catch {
+      return [];
+    }
+  }
+
+  private saveRegistry(records: RegistryRecord[]): void {
+    fs.writeFileSync(this.registryPath(), JSON.stringify(records, null, 2));
+  }
+
+  /**
+   * Persist today's discoveries and re-fetch registry entries that today's
+   * search window did not surface. Search windows reshuffle daily (results
+   * are sorted by recency), so without the registry the catalog would
+   * silently drop marketplaces from one day to the next.
+   */
+  private async mergeWithRegistry(repoMap: Map<string, Marketplace>): Promise<Marketplace[]> {
+    const registry = this.loadRegistry();
+    const known = new Set(repoMap.keys());
+    const missing = registry.filter((r) => !known.has(r.id));
+    if (missing.length > 0) {
+      console.log(
+        `\n📖 Registry: ${registry.length} known marketplaces — re-fetching ${missing.length} not surfaced today...`
+      );
+    }
+
+    const removed: string[] = [];
+    let fetched = 0;
+    for (const record of missing) {
+      if (fetched >= REGISTRY_REFRESH_CAP) {
+        console.log(
+          `  ⏹️ Registry refresh cap (${REGISTRY_REFRESH_CAP}) reached — remaining entries retry tomorrow`
+        );
+        break;
+      }
+      const [owner, repo] = record.fullName.split('/');
+      try {
+        const response = await this.octokit.repos.get({ owner, repo });
+        const marketplace = await this.processRepository(response.data, record.discoverySource);
+        if (marketplace) repoMap.set(marketplace.id, marketplace);
+        fetched++;
+      } catch (error: any) {
+        if (error.status === 404) {
+          removed.push(record.id);
+          console.log(`  🗑️ Repo deleted, removing from registry: ${record.fullName}`);
+        } else {
+          console.error(`  ⚠️ Could not refresh ${record.fullName}: ${error.message}`);
+        }
+      }
+      await this.delay(150);
+    }
+
+    const nowISO = new Date().toISOString();
+    const discovered = Array.from(repoMap.values())
+      .filter((m) => !removed.includes(m.id))
+      .map((m) => ({
+        id: m.id,
+        fullName: (m.url || '').replace(/^https?:\/\/github\.com\//, ''),
+        discoverySource: m.discoverySource || 'unknown',
+      }));
+
+    let records = mergeRegistryRecords(registry, discovered, nowISO);
+    if (removed.length > 0) {
+      records = records.filter((r) => !removed.includes(r.id));
+    }
+    this.saveRegistry(records);
+    if (records.length !== registry.length || removed.length > 0) {
+      console.log(`📖 Registry now ${records.length} entries (was ${registry.length})`);
+    }
+
+    return Array.from(repoMap.values());
   }
 
   private async fetchKnownMarketplaces(repoMap: Map<string, Marketplace>): Promise<void> {

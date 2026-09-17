@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import Head from 'next/head';
 import MainLayout from '@/components/layout/MainLayout';
-import SearchBar from '@/components/Search/SearchBar';
+import SearchCombobox from '@/components/Search/SearchCombobox';
 import PluginCard from '@/components/Marketplace/PluginCard';
 import { EcosystemStats } from '@/components/EcosystemStats';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
@@ -15,10 +15,6 @@ import { handleAnchorClick } from '@/utils/scroll';
 import { selectFeaturedMarketplaces } from '@/utils/stats';
 
 const HomePage: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedTopic, setSelectedTopic] = useState('All');
-  const [showFilters, setShowFilters] = useState(false);
-
   const {
     data: marketplaceData,
     loading: marketplaceLoading,
@@ -32,62 +28,11 @@ const HomePage: React.FC = () => {
   // Real topic chips from generated stats (replaces the hardcoded mock taxonomy)
   const topics = useMemo(() => (stats?.categories || []).slice(0, 8).map((c) => c.name), [stats]);
 
-  // Marketplace id → topics, for filtering plugins by their parent marketplace
-  const topicsByMarketplace = useMemo(() => {
-    const map = new Map<string, string[]>();
-    for (const m of marketplaces) {
-      map.set(String(m.id), Array.isArray(m.topics) ? m.topics : []);
-    }
-    return map;
-  }, [marketplaces]);
-
-  // Search across real plugin fields; topic filter matches parent marketplace
-  const filteredPlugins = useMemo(() => {
-    const q = searchQuery.toLowerCase();
-    return allPlugins.filter((plugin) => {
-      const matchesSearch =
-        q === '' ||
-        plugin.name.toLowerCase().includes(q) ||
-        plugin.description.toLowerCase().includes(q) ||
-        plugin.author.toLowerCase().includes(q) ||
-        plugin.marketplaceName.toLowerCase().includes(q) ||
-        plugin.skills.some((skill) => skill.toLowerCase().includes(q));
-      const matchesTopic =
-        selectedTopic === 'All' ||
-        (topicsByMarketplace.get(String(plugin.marketplaceId)) || []).includes(selectedTopic);
-      return matchesSearch && matchesTopic;
-    });
-  }, [allPlugins, searchQuery, selectedTopic, topicsByMarketplace]);
-
-  const searching = searchQuery !== '';
-  const isFiltering = searching || selectedTopic !== 'All';
-  const displayPlugins = useMemo(
-    () => (isFiltering ? filteredPlugins : topPluginsByStars(allPlugins, 9)),
-    [isFiltering, filteredPlugins, allPlugins]
-  );
-
-  // Homepage search spans both catalogs: show matching marketplaces too
-  const matchingMarketplaces = useMemo(() => {
-    if (!searching) return [];
-    const q = searchQuery.toLowerCase();
-    return marketplaces.filter(
-      (m) =>
-        (m.name || '').toLowerCase().includes(q) ||
-        (m.description || '').toLowerCase().includes(q) ||
-        (Array.isArray(m.topics) && m.topics.some((t: string) => t.toLowerCase().includes(q)))
-    );
-  }, [marketplaces, searching, searchQuery]);
+  // Popular = top plugins by parent-marketplace stars (search lives in the combobox)
+  const displayPlugins = useMemo(() => topPluginsByStars(allPlugins, 9), [allPlugins]);
 
   // Deterministic daily rotation over the highest-signal marketplaces
   const featured = useMemo(() => selectFeaturedMarketplaces(marketplaces, 6), [marketplaces]);
-
-  const handleSearch = (query: string) => {
-    setSearchQuery(query);
-  };
-
-  const handleFilterClick = () => {
-    setShowFilters(!showFilters);
-  };
 
   return (
     <>
@@ -133,9 +78,7 @@ const HomePage: React.FC = () => {
 
               {/* Search Bar */}
               <div className='animate-slide-in max-w-4xl mx-auto px-4 mb-8 sm:mb-12'>
-                <SearchBar
-                  onSearch={handleSearch}
-                  onFilterClick={handleFilterClick}
+                <SearchCombobox
                   placeholder='Search plugins and marketplaces…'
                   trending={topics.slice(0, 4)}
                   className='w-full'
@@ -217,328 +160,156 @@ const HomePage: React.FC = () => {
           </div>
         </section>
 
-        {/* Filter Section */}
-        {showFilters && (
-          <section className='bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 py-4 sm:py-6 animate-slide-in'>
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-              <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
-                <div className='flex flex-wrap gap-2 justify-center sm:justify-start'>
-                  {['All', ...topics].map((topic) => (
-                    <button
-                      key={topic}
-                      onClick={() => setSelectedTopic(topic)}
-                      className={`px-3 sm:px-4 py-2 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 ${
-                        selectedTopic === topic
-                          ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
-                          : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                      }`}
-                      aria-label={`Filter by topic ${topic}`}
-                      aria-pressed={selectedTopic === topic}
-                    >
-                      {topic}
-                    </button>
-                  ))}
-                </div>
-                <button
-                  onClick={() => {
-                    setSelectedTopic('All');
-                    setSearchQuery('');
-                  }}
-                  className='btn-ghost text-sm px-4 py-2 self-center sm:self-auto'
-                  aria-label='Clear all filters'
-                >
-                  Clear filters
-                </button>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Search Results — spans marketplaces and plugins */}
-        {searching && (
-          <section className='py-12 sm:py-16 bg-white dark:bg-gray-900'>
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-              <h2 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1'>
-                Search results
-              </h2>
-              <p className='text-gray-600 dark:text-gray-400 mb-8'>
-                {matchingMarketplaces.length} marketplace
-                {matchingMarketplaces.length === 1 ? '' : 's'} and {filteredPlugins.length} plugin
-                {filteredPlugins.length === 1 ? '' : 's'} matching{' '}
-                <span className='font-medium text-gray-900 dark:text-gray-100'>
-                  “{searchQuery}”
-                </span>
-              </p>
-
-              {matchingMarketplaces.length === 0 && filteredPlugins.length === 0 ? (
-                <div className='text-center py-12'>
-                  <Package className='w-12 h-12 mx-auto text-gray-300 dark:text-gray-600 mb-4' />
-                  <p className='text-gray-600 dark:text-gray-400 mb-6'>
-                    Nothing matches “{searchQuery}”. Try a shorter or different keyword.
-                  </p>
-                  <button onClick={() => setSearchQuery('')} className='btn btn-primary'>
-                    Clear search
-                  </button>
-                </div>
-              ) : (
-                <div className='space-y-10'>
-                  {matchingMarketplaces.length > 0 && (
-                    <div>
-                      <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center'>
-                        <Store className='w-5 h-5 mr-2 text-success-600' />
-                        Marketplaces ({matchingMarketplaces.length})
-                      </h3>
-                      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-                        {matchingMarketplaces.slice(0, 6).map((marketplace) => (
-                          <Link
-                            key={marketplace.id}
-                            href={`/marketplaces/${marketplace.id}`}
-                            className='card p-4 group hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300 hover:-translate-y-0.5'
-                          >
-                            <div className='flex items-center justify-between gap-2 mb-1'>
-                              <h4 className='font-semibold text-gray-900 dark:text-gray-100 truncate group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors'>
-                                {marketplace.name}
-                              </h4>
-                              <span className='flex items-center text-xs text-gray-500 dark:text-gray-400 flex-shrink-0'>
-                                <Star className='w-3.5 h-3.5 text-yellow-500 mr-0.5' />
-                                {(marketplace.stars || 0).toLocaleString()}
-                              </span>
-                            </div>
-                            <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-1'>
-                              {marketplace.description}
-                            </p>
-                          </Link>
-                        ))}
-                      </div>
-                      {matchingMarketplaces.length > 6 && (
-                        <p className='text-sm text-gray-500 dark:text-gray-400 mt-3'>
-                          +{matchingMarketplaces.length - 6} more —{' '}
-                          <Link
-                            href='/marketplaces'
-                            className='text-primary-600 dark:text-primary-400 hover:underline'
-                          >
-                            browse all marketplaces
-                          </Link>
-                        </p>
-                      )}
-                    </div>
-                  )}
-
-                  {filteredPlugins.length > 0 && (
-                    <div>
-                      <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center'>
-                        <Package className='w-5 h-5 mr-2 text-primary-500' />
-                        Plugins ({filteredPlugins.length})
-                      </h3>
-                      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
-                        {filteredPlugins.slice(0, 9).map((plugin) => (
-                          <PluginCard key={plugin.id} plugin={plugin} />
-                        ))}
-                      </div>
-                      {filteredPlugins.length > 9 && (
-                        <p className='text-sm text-gray-500 dark:text-gray-400 mt-3'>
-                          +{filteredPlugins.length - 9} more —{' '}
-                          <Link
-                            href='/plugins'
-                            className='text-primary-600 dark:text-primary-400 hover:underline'
-                          >
-                            browse all plugins
-                          </Link>
-                        </p>
-                      )}
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-          </section>
-        )}
-
-        {/* Featured Marketplaces Section (hidden while searching) */}
-        {!searching && (
-          <section className='py-12 sm:py-16 bg-white dark:bg-gray-900'>
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-              <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 sm:mb-12 gap-4'>
-                <div className='text-center sm:text-left'>
-                  <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
-                    Featured Marketplaces
-                  </h2>
-                  <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg'>
-                    Top marketplaces by stars and activity — rotated daily
-                  </p>
-                </div>
-                <Link
-                  href='/marketplaces'
-                  className='inline-flex items-center justify-center px-4 py-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium group transition-colors self-center sm:self-auto'
-                >
-                  View all
-                  <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
-                    →
-                  </span>
-                </Link>
-              </div>
-
-              {marketplaceLoading ? (
-                <LoadingState variant='skeleton' className='max-w-5xl' />
-              ) : featured.length === 0 ? (
-                <p className='text-center text-gray-500 dark:text-gray-400 py-8'>
-                  {marketplaceError
-                    ? 'Marketplace data is temporarily unavailable — please refresh.'
-                    : 'No marketplaces indexed yet.'}
+        {/* Featured Marketplaces Section */}
+        <section className='py-12 sm:py-16 bg-white dark:bg-gray-900'>
+          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 sm:mb-12 gap-4'>
+              <div className='text-center sm:text-left'>
+                <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
+                  Featured Marketplaces
+                </h2>
+                <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg'>
+                  Top marketplaces by stars and activity — rotated daily
                 </p>
-              ) : (
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
-                  {featured.map((marketplace, index) => (
-                    <div
-                      key={marketplace.id}
-                      className='card group hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300 hover:-translate-y-1'
-                      style={{ animationDelay: `${index * 100}ms` }}
-                    >
-                      <div className='flex items-start justify-between mb-4'>
-                        <div className='flex-1 min-w-0'>
-                          <h3 className='text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
-                            {marketplace.name}
-                          </h3>
-                          <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed'>
-                            {marketplace.description}
-                          </p>
-                        </div>
-                        {marketplace.hasManifest && (
-                          <div className='flex-shrink-0 ml-2'>
-                            <Shield
-                              className='w-5 h-5 text-blue-500'
-                              aria-label='Valid marketplace manifest'
-                            />
-                          </div>
-                        )}
-                      </div>
-
-                      <div className='flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4'>
-                        <div className='flex items-center space-x-3 sm:space-x-4'>
-                          <div className='flex items-center space-x-1 group'>
-                            <Star className='w-4 h-4 group-hover:fill-current group-hover:text-yellow-500 transition-colors' />
-                            <span className='font-medium'>
-                              {(marketplace.stars || 0).toLocaleString()}
-                            </span>
-                          </div>
-                          {Array.isArray(marketplace.topics) && marketplace.topics[0] && (
-                            <span className='badge badge-secondary text-xs'>
-                              {marketplace.topics[0]}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-
-                      <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700'>
-                        <Link
-                          href={`/marketplaces/${marketplace.id}`}
-                          className='btn btn-primary text-sm w-full sm:w-auto justify-center group'
-                          aria-label={`Open ${marketplace.name} marketplace page`}
-                        >
-                          View Details
-                          <ExternalLink className='w-4 h-4 ml-2 transform transition-transform group-hover:scale-110' />
-                        </Link>
-                        {marketplace.url && (
-                          <a
-                            href={marketplace.url}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='btn-ghost p-2 sm:p-3 group'
-                            aria-label={`View ${marketplace.name} repository on GitHub`}
-                          >
-                            <Github className='w-4 h-4 sm:w-5 sm:h-5 transform transition-transform group-hover:scale-110' />
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </section>
-        )}
-
-        {/* Plugins Grid Section (hidden while searching) */}
-        {!searching && (
-          <section className='py-12 sm:py-16 bg-gray-50 dark:bg-gray-800/50'>
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-              <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 sm:mb-12 gap-4'>
-                <div className='text-center sm:text-left'>
-                  <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
-                    {isFiltering ? `Search Results (${filteredPlugins.length})` : 'Popular Plugins'}
-                  </h2>
-                  <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg'>
-                    {isFiltering
-                      ? `Showing results for "${searchQuery || selectedTopic}"`
-                      : 'Most-starred plugins across indexed marketplaces'}
-                  </p>
-                </div>
-                <Link
-                  href='/plugins'
-                  className='inline-flex items-center justify-center px-4 py-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium group transition-colors self-center sm:self-auto'
-                >
-                  View all
-                  <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
-                    →
-                  </span>
-                </Link>
               </div>
-
-              {marketplaceLoading || pluginsLoading ? (
-                <LoadingState variant='skeleton' className='max-w-5xl' />
-              ) : displayPlugins.length > 0 ? (
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
-                  {displayPlugins.slice(0, 9).map((plugin, index) => (
-                    <div key={plugin.id} style={{ animationDelay: `${index * 50}ms` }}>
-                      <PluginCard plugin={plugin} />
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div className='text-center py-12 sm:py-16'>
-                  <div className='text-gray-400 dark:text-gray-500 mb-6'>
-                    <Package className='w-16 h-16 sm:w-20 sm:h-20 mx-auto' />
-                  </div>
-                  <h3 className='text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-3'>
-                    No plugins found
-                  </h3>
-                  <p className='text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto'>
-                    {isFiltering
-                      ? `No plugins found matching "${searchQuery || selectedTopic}". Try different keywords or browse all plugins.`
-                      : 'No plugins available at the moment.'}
-                  </p>
-                  {isFiltering && (
-                    <button
-                      onClick={() => {
-                        setSearchQuery('');
-                        setSelectedTopic('All');
-                      }}
-                      className='btn btn-primary'
-                      aria-label='Clear search and filters'
-                    >
-                      Clear search
-                    </button>
-                  )}
-                </div>
-              )}
-
-              {isFiltering && filteredPlugins.length > 9 && (
-                <div className='text-center mt-8 sm:mt-12'>
-                  <Link
-                    href='/plugins'
-                    className='btn btn-primary inline-flex items-center group'
-                    aria-label={`View all ${filteredPlugins.length} plugins`}
-                  >
-                    View all {filteredPlugins.length} plugins
-                    <span className='ml-2 transform transition-transform group-hover:translate-x-1'>
-                      →
-                    </span>
-                  </Link>
-                </div>
-              )}
+              <Link
+                href='/marketplaces'
+                className='inline-flex items-center justify-center px-4 py-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium group transition-colors self-center sm:self-auto'
+              >
+                View all
+                <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
+                  →
+                </span>
+              </Link>
             </div>
-          </section>
-        )}
+
+            {marketplaceLoading ? (
+              <LoadingState variant='skeleton' className='max-w-5xl' />
+            ) : featured.length === 0 ? (
+              <p className='text-center text-gray-500 dark:text-gray-400 py-8'>
+                {marketplaceError
+                  ? 'Marketplace data is temporarily unavailable — please refresh.'
+                  : 'No marketplaces indexed yet.'}
+              </p>
+            ) : (
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
+                {featured.map((marketplace, index) => (
+                  <div
+                    key={marketplace.id}
+                    className='card group hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300 hover:-translate-y-1'
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <div className='flex items-start justify-between mb-4'>
+                      <div className='flex-1 min-w-0'>
+                        <h3 className='text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
+                          {marketplace.name}
+                        </h3>
+                        <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed'>
+                          {marketplace.description}
+                        </p>
+                      </div>
+                      {marketplace.hasManifest && (
+                        <div className='flex-shrink-0 ml-2'>
+                          <Shield
+                            className='w-5 h-5 text-blue-500'
+                            aria-label='Valid marketplace manifest'
+                          />
+                        </div>
+                      )}
+                    </div>
+
+                    <div className='flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4'>
+                      <div className='flex items-center space-x-3 sm:space-x-4'>
+                        <div className='flex items-center space-x-1 group'>
+                          <Star className='w-4 h-4 group-hover:fill-current group-hover:text-yellow-500 transition-colors' />
+                          <span className='font-medium'>
+                            {(marketplace.stars || 0).toLocaleString()}
+                          </span>
+                        </div>
+                        {Array.isArray(marketplace.topics) && marketplace.topics[0] && (
+                          <span className='badge badge-secondary text-xs'>
+                            {marketplace.topics[0]}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700'>
+                      <Link
+                        href={`/marketplaces/${marketplace.id}`}
+                        className='btn btn-primary text-sm w-full sm:w-auto justify-center group'
+                        aria-label={`Open ${marketplace.name} marketplace page`}
+                      >
+                        View Details
+                        <ExternalLink className='w-4 h-4 ml-2 transform transition-transform group-hover:scale-110' />
+                      </Link>
+                      {marketplace.url && (
+                        <a
+                          href={marketplace.url}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='btn-ghost p-2 sm:p-3 group'
+                          aria-label={`View ${marketplace.name} repository on GitHub`}
+                        >
+                          <Github className='w-4 h-4 sm:w-5 sm:h-5 transform transition-transform group-hover:scale-110' />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Plugins Grid Section */}
+        <section className='py-12 sm:py-16 bg-gray-50 dark:bg-gray-800/50'>
+          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 sm:mb-12 gap-4'>
+              <div className='text-center sm:text-left'>
+                <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
+                  Popular Plugins
+                </h2>
+                <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg'>
+                  Most-starred plugins across indexed marketplaces
+                </p>
+              </div>
+              <Link
+                href='/plugins'
+                className='inline-flex items-center justify-center px-4 py-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium group transition-colors self-center sm:self-auto'
+              >
+                View all
+                <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
+                  →
+                </span>
+              </Link>
+            </div>
+
+            {marketplaceLoading || pluginsLoading ? (
+              <LoadingState variant='skeleton' className='max-w-5xl' />
+            ) : displayPlugins.length > 0 ? (
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
+                {displayPlugins.slice(0, 9).map((plugin, index) => (
+                  <div key={plugin.id} style={{ animationDelay: `${index * 50}ms` }}>
+                    <PluginCard plugin={plugin} />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className='text-center py-12 sm:py-16'>
+                <div className='text-gray-400 dark:text-gray-500 mb-6'>
+                  <Package className='w-16 h-16 sm:w-20 sm:h-20 mx-auto' />
+                </div>
+                <h3 className='text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-3'>
+                  No plugins found
+                </h3>
+                <p className='text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto'>
+                  No plugins available at the moment.
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
 
         {/* Ecosystem Statistics Section */}
         <section id='analytics-dashboard' className='py-12 sm:py-16 bg-white dark:bg-gray-900'>
