@@ -147,11 +147,20 @@ jobs:
         run: npm ci
 
       - name: Download previous artifacts
+        # Download each artifact into its original directory layout.
+        # A single merged download would flatten data/marketplaces/* to
+        # data/* and generate-data would silently fall back to stale
+        # snapshots committed under data/marketplaces/.
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093  # v4.3.0
         with:
-          pattern: "*-results"
-          path: data/
-          merge-multiple: true
+          name: marketplace-scan-results
+          path: data/marketplaces/
+
+      - name: Download validation artifacts
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093  # v4.3.0
+        with:
+          name: plugin-validation-results
+          path: data/plugins/
 
       - name: Generate data files
         run: npm run generate:data
@@ -162,15 +171,6 @@ jobs:
         run: npm run validate:data
         env:
           NODE_ENV: production
-
-      - name: Sync site data
-        # The website fetches /data/*.json from public/ at runtime; without this
-        # step the site keeps serving whatever public/data/ held last time a
-        # human pushed. Sync the pipeline output into the site's data directory.
-        run: |
-          mkdir -p public/data
-          cp data/generated/*.json public/data/
-          ls -la public/data/
 
       - name: Upload generated data
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4.6.2

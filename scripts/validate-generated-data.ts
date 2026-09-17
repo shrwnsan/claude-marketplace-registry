@@ -55,6 +55,10 @@ class GeneratedDataValidator {
       this.printResult(result);
     }
 
+    const crossFileResult = this.validateCrossFileConsistency();
+    results.push(crossFileResult);
+    this.printResult(crossFileResult);
+
     const report = this.generateReport(results);
     this.printSummary(report);
 
@@ -452,6 +456,95 @@ class GeneratedDataValidator {
     if (!Array.isArray(obj.marketplaces))
       errors.push('analytics.json marketplaces must be an array');
     if (!Array.isArray(obj.plugins)) errors.push('analytics.json plugins must be an array');
+  }
+
+  /**
+   * Cross-file consistency checks that single-file validation cannot catch:
+   * - every plugin must reference a known marketplace (catches ID-format drift)
+   * - stats counts must match the actual data (catches hardcoded/stale summaries)
+   * - generated data must not be months old (catches frozen-pipeline failures)
+   */
+  private validateCrossFileConsistency(): ValidationResult {
+    const errors: string[] = [];
+    const warnings: string[] = [];
+    const file = 'cross-file consistency';
+
+    try {
+      const completePath = path.join(this.generatedDir, 'complete.json');
+      const statsPath = path.join(this.generatedDir, 'stats.json');
+
+      if (!fs.existsSync(completePath)) {
+        warnings.push('complete.json not found; skipping cross-file checks');
+        return { isValid: true, errors, warnings, file };
+      }
+
+      const complete = JSON.parse(fs.readFileSync(completePath, 'utf-8')) as Record<
+        string,
+        unknown
+      >;
+      const marketplaces = (
+        Array.isArray(complete.marketplaces) ? complete.marketplaces : []
+      ) as Array<Record<string, unknown>>;
+      const plugins = (Array.isArray(complete.plugins) ? complete.plugins : []) as Array<
+        Record<string, unknown>
+      >;
+
+      // 1. Referential integrity: plugin marketplaceId must resolve
+      const marketplaceIds = new Set(marketplaces.map((m) => String(m.id)));
+      const orphaned = plugins.filter((p) => {
+        const meta = p.metadata as Record<string, unknown> | undefined;
+        const mid = meta?.marketplaceId ?? p.marketplaceId;
+        return mid === undefined || !marketplaceIds.has(String(mid));
+      }).length;
+      if (orphaned > 0) {
+        errors.push(
+          `${orphaned} of ${plugins.length} plugins reference a marketplaceId not present in marketplaces`
+        );
+      }
+
+      // 2. Stats counts must match actual data
+      if (fs.existsSync(statsPath)) {
+        const statsRaw = JSON.parse(fs.readFileSync(statsPath, 'utf-8')) as Record<string, any>;
+        const overview = (statsRaw?.data?.overview ?? statsRaw) as Record<string, unknown>;
+
+        if (overview && typeof overview === 'object') {
+          if (
+            typeof overview.totalMarketplaces === 'number' &&
+            overview.totalMarketplaces !== marketplaces.length
+          ) {
+            errors.push(
+              `stats totalMarketplaces (${overview.totalMarketplaces}) != actual marketplace count (${marketplaces.length})`
+            );
+          }
+          if (
+            typeof overview.totalPlugins === 'number' &&
+            overview.totalPlugins !== plugins.length
+          ) {
+            errors.push(
+              `stats totalPlugins (${overview.totalPlugins}) != actual plugin count (${plugins.length})`
+            );
+          }
+        }
+
+        // 3. Freshness: fail on months-old data, warn on weeks-old data
+        const lastUpdated =
+          statsRaw?.meta?.lastUpdated ?? overview?.lastUpdated ?? statsRaw?.lastUpdated;
+        if (typeof lastUpdated === 'string') {
+          const ageDays = (Date.now() - new Date(lastUpdated).getTime()) / 86400000;
+          if (ageDays > 90) {
+            errors.push(
+              `generated data is ${Math.floor(ageDays)} days old — pipeline output is stale`
+            );
+          } else if (ageDays > 7) {
+            warnings.push(`generated data is ${Math.floor(ageDays)} days old`);
+          }
+        }
+      }
+    } catch (error) {
+      errors.push(`Cross-file validation error: ${(error as Error).message}`);
+    }
+
+    return { isValid: errors.length === 0, errors, warnings, file };
   }
 
   /**
