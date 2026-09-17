@@ -1,51 +1,153 @@
 {
   "stats": {
-    "totalMarketplaces": 3,
-    "totalPlugins": 178,
-    "validPlugins": 178,
-    "lastUpdated": "2026-02-23T15:14:54.429Z",
+    "totalMarketplaces": 100,
+    "totalPlugins": 1274,
+    "validPlugins": 1274,
+    "lastUpdated": "2026-09-17T09:39:34.833Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 2
+        "count": 33
       },
       {
         "language": "Shell",
+        "count": 16
+      },
+      {
+        "language": "TypeScript",
+        "count": 13
+      },
+      {
+        "language": "Unknown",
+        "count": 13
+      },
+      {
+        "language": "JavaScript",
+        "count": 10
+      },
+      {
+        "language": "Go",
+        "count": 7
+      },
+      {
+        "language": "Rust",
+        "count": 3
+      },
+      {
+        "language": "PHP",
+        "count": 1
+      },
+      {
+        "language": "Java",
+        "count": 1
+      },
+      {
+        "language": "HTML",
         "count": 1
       }
     ],
     "topMarketplaces": [
       {
         "name": "skills",
-        "stars": 71105,
+        "stars": 176783,
         "url": "https://github.com/anthropics/skills"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 35518,
+        "stars": 75249,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "claude-plugins-official",
-        "stars": 7570,
+        "stars": 36454,
         "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      {
+        "name": "claude-octopus",
+        "stars": 4079,
+        "url": "https://github.com/nyldn/claude-octopus"
+      },
+      {
+        "name": "awesome-ChatGPT-repositories",
+        "stars": 3249,
+        "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
+      },
+      {
+        "name": "logtape",
+        "stars": 1997,
+        "url": "https://github.com/dahlia/logtape"
+      },
+      {
+        "name": "kubb",
+        "stars": 1802,
+        "url": "https://github.com/kubb-labs/kubb"
+      },
+      {
+        "name": "agent-skills",
+        "stars": 1648,
+        "url": "https://github.com/callstackincubator/agent-skills"
+      },
+      {
+        "name": "agent-skills",
+        "stars": 875,
+        "url": "https://github.com/oxylabs/agent-skills"
+      },
+      {
+        "name": "dotclaude",
+        "stars": 863,
+        "url": "https://github.com/poshan0126/dotclaude"
       }
     ],
     "recentActivity": [
       {
-        "name": "skills",
-        "updatedAt": "2026-02-18T02:53:05Z",
-        "url": "https://github.com/anthropics/skills"
-      },
-      {
         "name": "claude-plugins-official",
-        "updatedAt": "2026-02-18T02:50:43Z",
+        "updatedAt": "2026-09-17T09:30:26Z",
         "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
         "name": "awesome-claude-skills",
-        "updatedAt": "2026-02-18T02:48:47Z",
+        "updatedAt": "2026-09-17T09:23:47Z",
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+      },
+      {
+        "name": "skills",
+        "updatedAt": "2026-09-17T09:20:06Z",
+        "url": "https://github.com/anthropics/skills"
+      },
+      {
+        "name": "phoenix",
+        "updatedAt": "2026-09-17T09:19:23Z",
+        "url": "https://github.com/kamp-us/phoenix"
+      },
+      {
+        "name": "agent-skills",
+        "updatedAt": "2026-09-17T09:07:55Z",
+        "url": "https://github.com/callstackincubator/agent-skills"
+      },
+      {
+        "name": "awesome-ChatGPT-repositories",
+        "updatedAt": "2026-09-17T09:05:23Z",
+        "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
+      },
+      {
+        "name": "medsci-skills",
+        "updatedAt": "2026-09-17T08:51:55Z",
+        "url": "https://github.com/Aperivue/medsci-skills"
+      },
+      {
+        "name": "otter",
+        "updatedAt": "2026-09-17T08:48:28Z",
+        "url": "https://github.com/AmadeusITGroup/otter"
+      },
+      {
+        "name": "okf-skills",
+        "updatedAt": "2026-09-17T08:32:10Z",
+        "url": "https://github.com/scaccogatto/okf-skills"
+      },
+      {
+        "name": "gadak",
+        "updatedAt": "2026-09-17T08:20:45Z",
+        "url": "https://github.com/midagedev/gadak"
       }
     ]
   },
@@ -53,18 +155,33 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 1
+      "count": 42
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 1
+      "count": 10
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
+      "count": 27
+    },
+    {
+      "id": "design",
+      "name": "Design & Creative",
+      "count": 2
+    },
+    {
+      "id": "data",
+      "name": "Data & Analytics",
+      "count": 3
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
       "count": 1
     }
   ],
-  "lastUpdated": "2026-02-23T15:14:54.429Z"
+  "lastUpdated": "2026-09-17T09:39:34.833Z"
 }

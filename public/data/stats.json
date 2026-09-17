@@ -2,11 +2,11 @@
   "success": true,
   "data": {
     "overview": {
-      "totalPlugins": 178,
-      "totalMarketplaces": 3,
-      "totalDevelopers": 31,
-      "totalDownloads": 1168630,
-      "lastUpdated": "2026-02-23T15:14:54.431Z",
+      "totalPlugins": 1274,
+      "totalMarketplaces": 100,
+      "totalDevelopers": 396,
+      "totalDownloads": 3305380,
+      "lastUpdated": "2026-09-17T09:39:34.844Z",
       "growthRate": {
         "plugins": 0,
         "marketplaces": 0,
@@ -17,106 +17,46 @@
     },
     "plugins": [
       {
-        "date": "2026-01-26",
-        "value": 35
-      },
-      {
-        "date": "2026-02-02",
-        "value": 71,
-        "change": 36
-      },
-      {
-        "date": "2026-02-09",
-        "value": 106,
-        "change": 35
-      },
-      {
-        "date": "2026-02-16",
-        "value": 142,
-        "change": 36
-      },
-      {
         "date": "2026-02-23",
-        "value": 178,
-        "change": 36
+        "value": 178
+      },
+      {
+        "date": "2026-09-17",
+        "value": 1274,
+        "change": 1096
       }
     ],
     "marketplaces": [
       {
-        "date": "2026-01-26",
-        "value": 0
-      },
-      {
-        "date": "2026-02-02",
-        "value": 1,
-        "change": 1
-      },
-      {
-        "date": "2026-02-09",
-        "value": 1,
-        "change": 0
-      },
-      {
-        "date": "2026-02-16",
-        "value": 2,
-        "change": 1
-      },
-      {
         "date": "2026-02-23",
-        "value": 3,
-        "change": 1
+        "value": 3
+      },
+      {
+        "date": "2026-09-17",
+        "value": 100,
+        "change": 97
       }
     ],
     "developers": [
       {
-        "date": "2026-01-26",
-        "value": 1
-      },
-      {
-        "date": "2026-02-02",
-        "value": 3,
-        "change": 2
-      },
-      {
-        "date": "2026-02-09",
-        "value": 5,
-        "change": 2
-      },
-      {
-        "date": "2026-02-16",
-        "value": 7,
-        "change": 2
-      },
-      {
         "date": "2026-02-23",
-        "value": 8,
-        "change": 1
+        "value": 8
+      },
+      {
+        "date": "2026-09-17",
+        "value": 63,
+        "change": 55
       }
     ],
     "downloads": [
       {
-        "date": "2026-01-26",
-        "value": 5340
-      },
-      {
-        "date": "2026-02-02",
-        "value": 10680,
-        "change": 5340
-      },
-      {
-        "date": "2026-02-09",
-        "value": 16020,
-        "change": 5340
-      },
-      {
-        "date": "2026-02-16",
-        "value": 21360,
-        "change": 5340
-      },
-      {
         "date": "2026-02-23",
-        "value": 26700,
-        "change": 5340
+        "value": 1168630
+      },
+      {
+        "date": "2026-09-17",
+        "value": 3305380,
+        "change": 2136750
       }
     ],
     "period": "30d",
@@ -125,28 +65,18 @@
       {
         "id": "claude-code",
         "name": "claude-code",
-        "count": 160,
-        "percentage": 89.9,
+        "count": 936,
+        "percentage": 73.5,
         "growthRate": 0,
         "topPlugins": [],
         "trending": true,
         "description": "Plugins tagged with claude-code"
       },
       {
-        "id": "mcp",
-        "name": "mcp",
-        "count": 160,
-        "percentage": 89.9,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with mcp"
-      },
-      {
         "id": "agent-skills",
         "name": "agent-skills",
-        "count": 125,
-        "percentage": 70.2,
+        "count": 456,
+        "percentage": 35.8,
         "growthRate": 0,
         "topPlugins": [],
         "trending": true,
@@ -155,142 +85,152 @@
       {
         "id": "ai-agents",
         "name": "ai-agents",
-        "count": 107,
-        "percentage": 60.1,
+        "count": 427,
+        "percentage": 33.5,
         "growthRate": 0,
         "topPlugins": [],
         "trending": true,
         "description": "Plugins tagged with ai-agents"
       },
       {
-        "id": "antigravity",
-        "name": "antigravity",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with antigravity"
-      },
-      {
-        "id": "automation",
-        "name": "automation",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with automation"
-      },
-      {
-        "id": "claude",
-        "name": "claude",
-        "count": 107,
-        "percentage": 60.1,
-        "growthRate": 0,
-        "topPlugins": [],
-        "trending": true,
-        "description": "Plugins tagged with claude"
-      },
-      {
         "id": "codex",
         "name": "codex",
-        "count": 107,
-        "percentage": 60.1,
+        "count": 390,
+        "percentage": 30.6,
         "growthRate": 0,
         "topPlugins": [],
         "trending": true,
         "description": "Plugins tagged with codex"
       },
       {
-        "id": "composio",
-        "name": "composio",
-        "count": 107,
-        "percentage": 60.1,
+        "id": "skills",
+        "name": "skills",
+        "count": 386,
+        "percentage": 30.3,
         "growthRate": 0,
         "topPlugins": [],
         "trending": true,
-        "description": "Plugins tagged with composio"
+        "description": "Plugins tagged with skills"
+      },
+      {
+        "id": "mcp",
+        "name": "mcp",
+        "count": 335,
+        "percentage": 26.3,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with mcp"
       },
       {
         "id": "cursor",
         "name": "cursor",
-        "count": 107,
-        "percentage": 60.1,
+        "count": 324,
+        "percentage": 25.4,
         "growthRate": 0,
         "topPlugins": [],
         "trending": true,
         "description": "Plugins tagged with cursor"
+      },
+      {
+        "id": "developer-tools",
+        "name": "developer-tools",
+        "count": 288,
+        "percentage": 22.6,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with developer-tools"
+      },
+      {
+        "id": "claude-skills",
+        "name": "claude-skills",
+        "count": 236,
+        "percentage": 18.5,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with claude-skills"
+      },
+      {
+        "id": "claude",
+        "name": "claude",
+        "count": 213,
+        "percentage": 16.7,
+        "growthRate": 0,
+        "topPlugins": [],
+        "trending": true,
+        "description": "Plugins tagged with claude"
       }
     ],
     "trending": [
       "claude-code",
-      "mcp",
       "agent-skills",
       "ai-agents",
-      "antigravity",
-      "automation",
-      "claude",
       "codex",
-      "composio",
-      "cursor"
+      "skills",
+      "mcp",
+      "cursor",
+      "developer-tools",
+      "claude-skills",
+      "claude"
     ],
     "emerging": [],
     "insights": [
-      "178 plugins discovered across 3 marketplaces"
+      "1274 plugins discovered across 100 marketplaces"
     ],
     "verification": {
-      "verifiedPlugins": 178,
+      "verifiedPlugins": 1274,
       "verificationRate": 100,
       "badges": [
         {
           "type": "quality",
-          "count": 178
+          "count": 1274
         },
         {
           "type": "maintenance",
-          "count": 142
+          "count": 1019
         },
         {
           "type": "security",
-          "count": 106
+          "count": 764
         },
         {
           "type": "popularity",
-          "count": 71
+          "count": 509
         }
       ]
     },
     "maintenance": {
-      "recentlyUpdated": 3,
+      "recentlyUpdated": 90,
       "activeMaintenanceRate": 80,
       "avgUpdateFrequency": 14,
       "abandonedPlugins": 0
     },
     "qualityMetrics": {
       "avgQualityScore": 85,
-      "highQualityPlugins": 178,
+      "highQualityPlugins": 1274,
       "commonIssues": [
         {
           "issue": "Missing documentation",
-          "frequency": 35,
+          "frequency": 254,
           "severity": "medium"
         },
         {
           "issue": "No version specified",
-          "frequency": 17,
+          "frequency": 127,
           "severity": "low"
         }
       ]
     },
     "security": {
-      "scannedPlugins": 178,
+      "scannedPlugins": 1274,
       "criticalIssues": 0,
       "securityScore": 90
     }
   },
   "meta": {
-    "timestamp": "2026-02-23T15:14:54.431Z",
+    "timestamp": "2026-09-17T09:39:34.844Z",
     "requestId": "static-build",
     "responseTime": 0
   }
