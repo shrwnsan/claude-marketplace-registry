@@ -5,81 +5,68 @@ import SearchBar from '@/components/Search/SearchBar';
 import PluginCard from '@/components/Marketplace/PluginCard';
 import { EcosystemStats } from '@/components/EcosystemStats';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
-import { usePluginData } from '@/hooks/usePluginData';
-import { mockMarketplaces, categories } from '@/data/mock-data';
+import { usePluginData, topPluginsByStars } from '@/hooks/usePluginData';
+import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
 import { StatCard } from '@/components/ui/StatCard';
-import {
-  BarChart,
-  Download,
-  ExternalLink,
-  Github,
-  Package,
-  Shield,
-  Star,
-  Store,
-  TrendingUp,
-  Users,
-} from 'lucide-react';
+import { ExternalLink, Github, Package, Shield, Star, Store, Users } from 'lucide-react';
 import Link from 'next/link';
 import { handleAnchorClick } from '@/utils/scroll';
-import { calculateEstimatedDownloads, extractPluginCount } from '@/utils/stats';
+import { selectFeaturedMarketplaces } from '@/utils/stats';
 
 const HomePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedTopic, setSelectedTopic] = useState('All');
   const [showFilters, setShowFilters] = useState(false);
 
-  // Use real marketplace data with fallback to mock data
   const {
     data: marketplaceData,
     loading: marketplaceLoading,
-    error: _marketplaceError,
+    error: marketplaceError,
   } = useRealMarketplaceData();
-  const { plugins: allPlugins, loading: pluginsLoading, error: _pluginsError } = usePluginData();
+  const { plugins: allPlugins, loading: pluginsLoading } = usePluginData();
+  const { data: stats, loading: statsLoading, error: statsError } = useEcosystemStats();
 
-  // Get marketplaces from real data or fall back to mock data
-  const marketplaces = marketplaceData?.marketplaces || mockMarketplaces;
+  const marketplaces = marketplaceData?.marketplaces || [];
 
-  // Filter plugins based on search query and category
+  // Real topic chips from generated stats (replaces the hardcoded mock taxonomy)
+  const topics = useMemo(() => (stats?.categories || []).slice(0, 8).map((c) => c.name), [stats]);
+
+  // Marketplace id → topics, for filtering plugins by their parent marketplace
+  const topicsByMarketplace = useMemo(() => {
+    const map = new Map<string, string[]>();
+    for (const m of marketplaces) {
+      map.set(String(m.id), Array.isArray(m.topics) ? m.topics : []);
+    }
+    return map;
+  }, [marketplaces]);
+
+  // Search across real plugin fields; topic filter matches parent marketplace
   const filteredPlugins = useMemo(() => {
+    const q = searchQuery.toLowerCase();
     return allPlugins.filter((plugin) => {
       const matchesSearch =
-        searchQuery === '' ||
-        plugin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        plugin.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        plugin.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase())) ||
-        plugin.author.toLowerCase().includes(searchQuery.toLowerCase());
-
-      const matchesCategory = selectedCategory === 'All' || plugin.category === selectedCategory;
-
-      return matchesSearch && matchesCategory;
+        q === '' ||
+        plugin.name.toLowerCase().includes(q) ||
+        plugin.description.toLowerCase().includes(q) ||
+        plugin.author.toLowerCase().includes(q) ||
+        plugin.marketplaceName.toLowerCase().includes(q) ||
+        plugin.skills.some((skill) => skill.toLowerCase().includes(q));
+      const matchesTopic =
+        selectedTopic === 'All' ||
+        (topicsByMarketplace.get(String(plugin.marketplaceId)) || []).includes(selectedTopic);
+      return matchesSearch && matchesTopic;
     });
-  }, [allPlugins, searchQuery, selectedCategory]);
+  }, [allPlugins, searchQuery, selectedTopic, topicsByMarketplace]);
 
-  // Calculate stats dynamically from real data using same logic as ecosystem statistics
-  const dynamicStats = useMemo(() => {
-    if (marketplaceData?.marketplaces && marketplaceData.marketplaces.length > 0) {
-      const marketplaces = marketplaceData.marketplaces;
-      const totalPlugins = marketplaces.reduce(
-        (sum, mp) => sum + extractPluginCount(mp.description || ''),
-        0
-      );
-      const totalMarketplaces = marketplaces.length;
-      const totalStars = marketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0);
-      const totalDownloads = calculateEstimatedDownloads(totalStars, totalPlugins);
+  const isFiltering = searchQuery !== '' || selectedTopic !== 'All';
+  const displayPlugins = useMemo(
+    () => (isFiltering ? filteredPlugins : topPluginsByStars(allPlugins, 9)),
+    [isFiltering, filteredPlugins, allPlugins]
+  );
 
-      return { totalPlugins, totalMarketplaces, totalStars, totalDownloads };
-    }
-
-    // Fallback to mock stats if no real data
-    return {
-      totalPlugins: allPlugins.length,
-      totalMarketplaces: mockMarketplaces.length,
-      totalStars: mockMarketplaces.reduce((sum, mp) => sum + (mp.stars || 0), 0),
-      totalDownloads: allPlugins.reduce((sum, plugin) => sum + (plugin.downloads || 0), 0),
-    };
-  }, [marketplaceData, allPlugins]);
+  // Deterministic daily rotation over the highest-signal marketplaces
+  const featured = useMemo(() => selectFeaturedMarketplaces(marketplaces, 6), [marketplaces]);
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
@@ -98,7 +85,7 @@ const HomePage: React.FC = () => {
           content='Discover and explore Claude Code plugins and marketplaces from across GitHub. Find the best tools to enhance your development workflow.'
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
       </Head>
 
       <MainLayout>
@@ -159,51 +146,54 @@ const HomePage: React.FC = () => {
                 </p>
               </div>
 
-              {/* Stats */}
-              {marketplaceLoading || pluginsLoading ? (
+              {/* Stats — same generated stats.json as the dashboard below */}
+              {statsLoading || marketplaceLoading || pluginsLoading ? (
                 <LoadingState variant='skeleton' className='max-w-5xl mx-auto px-4' />
+              ) : statsError && !stats ? (
+                <p className='text-sm text-gray-500 dark:text-gray-400'>
+                  Metrics temporarily unavailable — please refresh.
+                </p>
               ) : (
                 <>
                   <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-4'>
                     <StatCard
                       icon={Package}
-                      value={dynamicStats.totalPlugins}
+                      value={stats?.overview.totalPlugins ?? 0}
                       label='Total Plugins'
                       bgColor='bg-primary-100 dark:bg-primary-900/30'
                       iconColor='text-primary-600 dark:text-primary-400'
-                      hoverBgColor='bg-primary-200 dark:bg-primary-900/50'
                     />
                     <StatCard
                       icon={Store}
-                      value={dynamicStats.totalMarketplaces}
+                      value={stats?.overview.totalMarketplaces ?? 0}
                       label='Marketplaces'
                       bgColor='bg-success-100 dark:bg-success-900/30'
                       iconColor='text-success-600 dark:text-success-400'
-                      hoverBgColor='bg-success-200 dark:bg-success-900/50'
                     />
                     <StatCard
-                      icon={Download}
-                      value={dynamicStats.totalDownloads}
-                      label='Total Downloads'
+                      icon={Users}
+                      value={stats?.overview.totalDevelopers ?? 0}
+                      label='Developers'
                       bgColor='bg-warning-100 dark:bg-warning-900/30'
                       iconColor='text-warning-600 dark:text-warning-400'
-                      hoverBgColor='bg-warning-200 dark:bg-warning-900/50'
                     />
                     <StatCard
                       icon={Star}
-                      value={dynamicStats.totalStars}
+                      value={stats?.overview.totalStars ?? 0}
                       label='GitHub Stars'
                       bgColor='bg-purple-100 dark:bg-purple-900/30'
                       iconColor='text-purple-600 dark:text-purple-400'
-                      hoverBgColor='bg-purple-200 dark:bg-purple-900/50'
                     />
                   </div>
 
                   {/* Quick Stats Note */}
                   <div className='text-center mt-6'>
                     <p className='text-xs text-gray-500 dark:text-gray-400'>
-                      Data based on {dynamicStats.totalPlugins.toLocaleString()} indexed plugins
-                      across {dynamicStats.totalMarketplaces.toLocaleString()} marketplaces
+                      {(stats?.overview.totalPlugins ?? 0).toLocaleString()} plugins across{' '}
+                      {(stats?.overview.totalMarketplaces ?? 0).toLocaleString()} marketplaces
+                      {stats?.overview.lastUpdated
+                        ? ` · updated ${new Date(stats.overview.lastUpdated).toLocaleDateString()}`
+                        : ''}
                     </p>
                   </div>
                 </>
@@ -218,25 +208,25 @@ const HomePage: React.FC = () => {
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
               <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
                 <div className='flex flex-wrap gap-2 justify-center sm:justify-start'>
-                  {categories.map((category) => (
+                  {['All', ...topics].map((topic) => (
                     <button
-                      key={category}
-                      onClick={() => setSelectedCategory(category)}
+                      key={topic}
+                      onClick={() => setSelectedTopic(topic)}
                       className={`px-3 sm:px-4 py-2 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 ${
-                        selectedCategory === category
+                        selectedTopic === topic
                           ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
                           : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                       }`}
-                      aria-label={`Filter by ${category}`}
-                      aria-pressed={selectedCategory === category}
+                      aria-label={`Filter by topic ${topic}`}
+                      aria-pressed={selectedTopic === topic}
                     >
-                      {category}
+                      {topic}
                     </button>
                   ))}
                 </div>
                 <button
                   onClick={() => {
-                    setSelectedCategory('All');
+                    setSelectedTopic('All');
                     setSearchQuery('');
                   }}
                   className='btn-ghost text-sm px-4 py-2 self-center sm:self-auto'
@@ -258,7 +248,7 @@ const HomePage: React.FC = () => {
                   Featured Marketplaces
                 </h2>
                 <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg'>
-                  Discover the most popular Claude Code marketplaces
+                  Top marketplaces by stars and activity — rotated daily
                 </p>
               </div>
               <Link
@@ -272,73 +262,80 @@ const HomePage: React.FC = () => {
               </Link>
             </div>
 
-            {marketplaceLoading || pluginsLoading ? (
+            {marketplaceLoading ? (
               <LoadingState variant='skeleton' className='max-w-5xl' />
+            ) : featured.length === 0 ? (
+              <p className='text-center text-gray-500 dark:text-gray-400 py-8'>
+                {marketplaceError
+                  ? 'Marketplace data is temporarily unavailable — please refresh.'
+                  : 'No marketplaces indexed yet.'}
+              </p>
             ) : (
               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
-                {Array.isArray(marketplaces) &&
-                  marketplaces.slice(0, 6).map((marketplace, index) => (
-                    <div
-                      key={marketplace.id}
-                      className='card group hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300 hover:-translate-y-1'
-                      style={{ animationDelay: `${index * 100}ms` }}
-                    >
-                      <div className='flex items-start justify-between mb-4'>
-                        <div className='flex-1 min-w-0'>
-                          <h3 className='text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
-                            {marketplace.name}
-                          </h3>
-                          <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed'>
-                            {marketplace.description}
-                          </p>
-                        </div>
-                        {marketplace.verified && (
-                          <div className='flex-shrink-0 ml-2'>
-                            <Shield
-                              className='w-5 h-5 text-blue-500'
-                              aria-label='Verified marketplace'
-                            />
-                          </div>
-                        )}
+                {featured.map((marketplace, index) => (
+                  <div
+                    key={marketplace.id}
+                    className='card group hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300 hover:-translate-y-1'
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <div className='flex items-start justify-between mb-4'>
+                      <div className='flex-1 min-w-0'>
+                        <h3 className='text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
+                          {marketplace.name}
+                        </h3>
+                        <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed'>
+                          {marketplace.description}
+                        </p>
                       </div>
+                      {marketplace.hasManifest && (
+                        <div className='flex-shrink-0 ml-2'>
+                          <Shield
+                            className='w-5 h-5 text-blue-500'
+                            aria-label='Valid marketplace manifest'
+                          />
+                        </div>
+                      )}
+                    </div>
 
-                      <div className='flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4'>
-                        <div className='flex items-center space-x-3 sm:space-x-4'>
-                          <div className='flex items-center space-x-1 group'>
-                            <Star className='w-4 h-4 group-hover:fill-current group-hover:text-yellow-500 transition-colors' />
-                            <span className='font-medium'>
-                              {marketplace.stars.toLocaleString()}
-                            </span>
-                          </div>
-                          <span className='badge badge-secondary text-xs'>
-                            {marketplace.category}
+                    <div className='flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4'>
+                      <div className='flex items-center space-x-3 sm:space-x-4'>
+                        <div className='flex items-center space-x-1 group'>
+                          <Star className='w-4 h-4 group-hover:fill-current group-hover:text-yellow-500 transition-colors' />
+                          <span className='font-medium'>
+                            {(marketplace.stars || 0).toLocaleString()}
                           </span>
                         </div>
+                        {Array.isArray(marketplace.topics) && marketplace.topics[0] && (
+                          <span className='badge badge-secondary text-xs'>
+                            {marketplace.topics[0]}
+                          </span>
+                        )}
                       </div>
+                    </div>
 
-                      <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700'>
+                    <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700'>
+                      <Link
+                        href={`/marketplaces/${marketplace.id}`}
+                        className='btn btn-primary text-sm w-full sm:w-auto justify-center group'
+                        aria-label={`Open ${marketplace.name} marketplace page`}
+                      >
+                        View Details
+                        <ExternalLink className='w-4 h-4 ml-2 transform transition-transform group-hover:scale-110' />
+                      </Link>
+                      {marketplace.url && (
                         <a
                           href={marketplace.url}
                           target='_blank'
                           rel='noopener noreferrer'
-                          className='btn btn-primary text-sm w-full sm:w-auto justify-center group'
-                          aria-label={`Visit ${marketplace.name} marketplace`}
-                        >
-                          Visit Marketplace
-                          <ExternalLink className='w-4 h-4 ml-2 transform transition-transform group-hover:scale-110' />
-                        </a>
-                        <a
-                          href={marketplace.repositoryUrl}
-                          target='_blank'
-                          rel='noopener noreferrer'
                           className='btn-ghost p-2 sm:p-3 group'
-                          aria-label={`View ${marketplace.name} repository`}
+                          aria-label={`View ${marketplace.name} repository on GitHub`}
                         >
                           <Github className='w-4 h-4 sm:w-5 sm:h-5 transform transition-transform group-hover:scale-110' />
                         </a>
-                      </div>
+                      )}
                     </div>
-                  ))}
+                  </div>
+                ))}
               </div>
             )}
           </div>
@@ -350,12 +347,12 @@ const HomePage: React.FC = () => {
             <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 sm:mb-12 gap-4'>
               <div className='text-center sm:text-left'>
                 <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
-                  {searchQuery ? `Search Results (${filteredPlugins.length})` : 'Popular Plugins'}
+                  {isFiltering ? `Search Results (${filteredPlugins.length})` : 'Popular Plugins'}
                 </h2>
                 <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg'>
-                  {searchQuery
-                    ? `Showing results for "${searchQuery}"`
-                    : 'Discover trending Claude Code plugins'}
+                  {isFiltering
+                    ? `Showing results for "${searchQuery || selectedTopic}"`
+                    : 'Most-starred plugins across indexed marketplaces'}
                 </p>
               </div>
               <Link
@@ -371,9 +368,9 @@ const HomePage: React.FC = () => {
 
             {marketplaceLoading || pluginsLoading ? (
               <LoadingState variant='skeleton' className='max-w-5xl' />
-            ) : filteredPlugins.length > 0 ? (
+            ) : displayPlugins.length > 0 ? (
               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
-                {filteredPlugins.slice(0, 9).map((plugin, index) => (
+                {displayPlugins.slice(0, 9).map((plugin, index) => (
                   <div key={plugin.id} style={{ animationDelay: `${index * 50}ms` }}>
                     <PluginCard plugin={plugin} />
                   </div>
@@ -388,15 +385,15 @@ const HomePage: React.FC = () => {
                   No plugins found
                 </h3>
                 <p className='text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto'>
-                  {searchQuery
-                    ? `No plugins found matching "${searchQuery}". Try different keywords or browse all plugins.`
+                  {isFiltering
+                    ? `No plugins found matching "${searchQuery || selectedTopic}". Try different keywords or browse all plugins.`
                     : 'No plugins available at the moment.'}
                 </p>
-                {searchQuery && (
+                {isFiltering && (
                   <button
                     onClick={() => {
                       setSearchQuery('');
-                      setSelectedCategory('All');
+                      setSelectedTopic('All');
                     }}
                     className='btn btn-primary'
                     aria-label='Clear search and filters'
@@ -407,7 +404,7 @@ const HomePage: React.FC = () => {
               </div>
             )}
 
-            {filteredPlugins.length > 9 && (
+            {isFiltering && filteredPlugins.length > 9 && (
               <div className='text-center mt-8 sm:mt-12'>
                 <Link
                   href='/plugins'
@@ -429,100 +426,11 @@ const HomePage: React.FC = () => {
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <EcosystemStats
               title='Ecosystem Statistics'
-              subtitle='Real-time insights into the growing Claude Code plugin ecosystem'
+              subtitle='Live metrics from the daily marketplace scans'
               showRefreshButton={true}
               showLastUpdated={true}
-              autoRefresh={false}
               className='max-w-7xl mx-auto'
             />
-          </div>
-        </section>
-
-        {/* Analytics Dashboard Preview */}
-        <section className='py-12 sm:py-16 bg-gray-50 dark:bg-gray-800/50'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='text-center mb-8 sm:mb-12'>
-              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4'>
-                Analytics & Insights
-              </h2>
-              <p className='text-gray-600 dark:text-gray-400 text-lg'>
-                Track usage patterns and ecosystem trends
-              </p>
-            </div>
-
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-center'>
-              <div>
-                <h3 className='text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4'>
-                  Monitor Your Ecosystem
-                </h3>
-                <ul className='space-y-3 text-gray-600 dark:text-gray-300'>
-                  <li className='flex items-start'>
-                    <BarChart className='w-5 h-5 text-primary-500 mr-3 flex-shrink-0 mt-0.5' />
-                    <span>Track plugin usage and popular searches</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <TrendingUp className='w-5 h-5 text-primary-500 mr-3 flex-shrink-0 mt-0.5' />
-                    <span>Monitor ecosystem growth and trends</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <Users className='w-5 h-5 text-primary-500 mr-3 flex-shrink-0 mt-0.5' />
-                    <span>Understand user behavior and preferences</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <Package className='w-5 h-5 text-primary-500 mr-3 flex-shrink-0 mt-0.5' />
-                    <span>Discover top-performing plugins and marketplaces</span>
-                  </li>
-                </ul>
-
-                <div className='mt-8'>
-                  <Link
-                    href='/admin/analytics'
-                    className='btn btn-primary group inline-flex items-center'
-                  >
-                    <BarChart className='w-5 h-5 mr-2' />
-                    View Analytics Dashboard
-                    <span className='ml-2 transform transition-transform group-hover:translate-x-1 inline-block'>
-                      →
-                    </span>
-                  </Link>
-                </div>
-              </div>
-
-              <div className='grid grid-cols-2 gap-4'>
-                <div className='card'>
-                  <div className='text-center'>
-                    <div className='text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2'>
-                      15.4K
-                    </div>
-                    <div className='text-sm text-gray-600 dark:text-gray-400'>Total Events</div>
-                  </div>
-                </div>
-                <div className='card'>
-                  <div className='text-center'>
-                    <div className='text-3xl font-bold text-green-600 dark:text-green-400 mb-2'>
-                      3.4K
-                    </div>
-                    <div className='text-sm text-gray-600 dark:text-gray-400'>Active Users</div>
-                  </div>
-                </div>
-                <div className='card'>
-                  <div className='text-center'>
-                    <div className='text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2'>
-                      8.9K
-                    </div>
-                    <div className='text-sm text-gray-600 dark:text-gray-400'>Page Views</div>
-                  </div>
-                </div>
-                <div className='card'>
-                  <div className='text-center'>
-                    <div className='text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2'>
-                      2.1K
-                    </div>
-                    <div className='text-sm text-gray-600 dark:text-gray-400'>Searches</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 

@@ -1,46 +1,34 @@
 import React from 'react';
 import Link from 'next/link';
-import { Github, Twitter, Mail, Heart } from 'lucide-react';
+import { Github, ExternalLink, Heart } from 'lucide-react';
 
 interface FooterProps {
   className?: string;
 }
 
+const REPO_URL = 'https://github.com/shrwnsan/claude-marketplace-registry';
+const API_DOCS_URL = 'https://shrwnsan.github.io/claude-marketplace-registry/docs/api';
+
 const Footer: React.FC<FooterProps> = ({ className = '' }) => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    product: [
-      { name: 'Features', href: '/features' },
+    explore: [
       { name: 'Marketplaces', href: '/marketplaces' },
       { name: 'Plugins', href: '/plugins' },
-      { name: 'Pricing', href: '/pricing' },
     ],
     resources: [
       { name: 'Documentation', href: '/docs' },
-      { name: 'API Reference', href: '/api' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'Community', href: '/community' },
-    ],
-    company: [
-      { name: 'About', href: '/about' },
-      { name: 'Privacy Policy', href: '/privacy' },
-      { name: 'Terms of Service', href: '/terms' },
-      { name: 'Contact', href: '/contact' },
+      { name: 'API Reference', href: '/docs/api' },
     ],
   };
 
-  const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com/claude-marketplace/aggregator', icon: Github },
-    { name: 'Twitter', href: 'https://twitter.com/claude_market', icon: Twitter },
-    { name: 'Email', href: 'mailto:hello@claude-marketplace.com', icon: Mail },
-  ];
+  const socialLinks = [{ name: 'GitHub', href: REPO_URL, icon: Github }];
 
   return (
     <footer className={`bg-gray-900 dark:bg-gray-950 text-white ${className}`} role='contentinfo'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16'>
-        {/* Main footer content */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-12'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12'>
           {/* Brand section */}
           <div className='lg:col-span-2'>
             <div className='flex items-center space-x-3 mb-6'>
@@ -65,7 +53,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                       target='_blank'
                       rel='noopener noreferrer'
                       className='text-gray-400 dark:text-gray-500 hover:text-primary-400 dark:hover:text-primary-300 transition-colors p-2 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 group'
-                      aria-label={`Follow us on ${social.name} (opens in new tab)`}
+                      aria-label={`View the project on ${social.name} (opens in new tab)`}
                     >
                       <Icon className='w-5 h-5 transform group-hover:scale-110 transition-transform' />
                     </a>
@@ -77,9 +65,9 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
 
           {/* Links sections */}
           <div>
-            <h3 className='font-semibold text-white mb-4 text-lg'>Product</h3>
+            <h3 className='font-semibold text-white mb-4 text-lg'>Explore</h3>
             <ul className='space-y-3' role='list'>
-              {footerLinks.product.map((link) => (
+              {footerLinks.explore.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
@@ -105,22 +93,26 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                   </Link>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className='font-semibold text-white mb-4 text-lg'>Company</h3>
-            <ul className='space-y-3' role='list'>
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className='text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded'
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <a
+                  href={REPO_URL}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded inline-flex items-center'
+                >
+                  GitHub
+                  <ExternalLink className='w-3 h-3 ml-1' />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={API_DOCS_URL}
+                  className='text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded inline-flex items-center'
+                >
+                  JSON Data API
+                  <ExternalLink className='w-3 h-3 ml-1' />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -128,7 +120,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
         {/* Bottom section */}
         <div className='border-t border-gray-800 dark:border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4'>
           <p className='text-gray-400 dark:text-gray-500 text-sm text-center sm:text-left'>
-            © {currentYear} Claude Marketplace Aggregator. All rights reserved.
+            © {currentYear} Claude Marketplace Aggregator. Released under the MIT License.
           </p>
           <div className='flex items-center text-sm text-gray-400 dark:text-gray-500'>
             <span>Made with</span>

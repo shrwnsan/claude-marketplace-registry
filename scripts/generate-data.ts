@@ -288,153 +288,153 @@ class DataGenerator {
 
   /**
    * Generate the comprehensive ecosystem stats JSON consumed by frontend components.
-   * Wraps real data in the EcosystemStatsResponse shape that OverviewMetrics,
-   * GrowthTrends, CategoryAnalytics, and QualityIndicators expect.
+   * Every number here is derived from scan/manifest data or the accumulated
+   * history snapshot — no synthetic formulas, no hardcoded scores.
    */
   private generateEcosystemStats(data: GeneratedData): any {
     const now = new Date();
     const totalStars = data.marketplaces.reduce((s, m) => s + m.stars, 0);
+    const uniqueAuthors = new Set(data.plugins.map((p) => p.author)).size;
 
-    // Load previous snapshot to compute growth rates
+    // Load history, replace any same-day snapshot (repeat runs), append current
     const historyPath = path.join(this.websiteOutputDir, 'history.json');
-    let history: Array<{ date: string; marketplaces: number; plugins: number; stars: number }> = [];
+    let history: Array<{
+      date: string;
+      marketplaces: number;
+      plugins: number;
+      stars: number;
+      developers?: number;
+    }> = [];
     try {
       history = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
     } catch {
       /* ignore missing/corrupt history */
     }
-
-    // Append current snapshot
+    const today = now.toISOString().split('T')[0];
+    history = history.filter((h) => h.date.split('T')[0] !== today);
     history.push({
       date: now.toISOString(),
       marketplaces: data.stats.totalMarketplaces,
       plugins: data.stats.totalPlugins,
       stars: totalStars,
+      developers: uniqueAuthors,
     });
-    // Keep last 90 entries
-    if (history.length > 90) history = history.slice(-90);
+    if (history.length > 365) history = history.slice(-365);
     fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
 
-    // Compute growth rates from history (compare to ~30 days ago)
+    // Growth rates: compare against the oldest snapshot within the last 30 days.
+    // Null when no meaningful baseline exists yet — the UI renders "—".
     const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
-    const oldSnapshot = history.find((h) => new Date(h.date) >= thirtyDaysAgo) || history[0];
-    const growthRate = (current: number, previous: number) =>
-      previous > 0 ? Number((((current - previous) / previous) * 100).toFixed(1)) : 0;
+    const baseline = history.find(
+      (h) => new Date(h.date) >= thirtyDaysAgo && h.date.split('T')[0] !== today
+    );
+    const growthRate = (current: number, previous?: number): number | null =>
+      previous !== undefined && previous > 0
+        ? Number((((current - previous) / previous) * 100).toFixed(1))
+        : null;
 
-    // Unique authors from plugins
-    const uniqueAuthors = new Set(data.plugins.map((p) => p.author)).size;
-    const estimatedDownloads = Math.floor(totalStars * 10 + data.stats.totalPlugins * 150);
-
-    // ── Overview (for OverviewMetrics) ──
+    // ── Overview (for OverviewMetrics + homepage hero) ──
     const overview = {
       totalPlugins: data.stats.totalPlugins,
       totalMarketplaces: data.stats.totalMarketplaces,
       totalDevelopers: uniqueAuthors,
-      totalDownloads: estimatedDownloads,
+      totalStars,
       lastUpdated: now.toISOString(),
       growthRate: {
-        plugins: growthRate(data.stats.totalPlugins, oldSnapshot.plugins),
-        marketplaces: growthRate(data.stats.totalMarketplaces, oldSnapshot.marketplaces),
-        developers: 0,
-        downloads: growthRate(
-          estimatedDownloads,
-          oldSnapshot.stars * 10 + oldSnapshot.plugins * 150
-        ),
+        plugins: growthRate(data.stats.totalPlugins, baseline?.plugins),
+        marketplaces: growthRate(data.stats.totalMarketplaces, baseline?.marketplaces),
+        developers: growthRate(uniqueAuthors, baseline?.developers),
+        stars: growthRate(totalStars, baseline?.stars),
       },
-      healthScore: 85,
     };
 
-    // ── Growth data points (for GrowthTrends) ──
-    const growthPoints = this.generateDeterministicGrowth(data, history);
+    // ── Trend series built ONLY from real history snapshots ──
+    const toTrend = (
+      key: 'plugins' | 'marketplaces' | 'developers' | 'stars'
+    ): Array<{ date: string; value: number | null; change?: number }> =>
+      history.map((h, i) => {
+        const value = (h as Record<string, unknown>)[key];
+        const prev = i > 0 ? (history[i - 1] as Record<string, unknown>)[key] : undefined;
+        return {
+          date: h.date.split('T')[0],
+          value: typeof value === 'number' ? value : null,
+          change: typeof value === 'number' && typeof prev === 'number' ? value - prev : undefined,
+        };
+      });
 
-    // ── Categories (for CategoryAnalytics) ──
-    const catMap: Record<string, string[]> = {};
+    // ── Categories: real topic counts (topics overlap — never render as pie %) ──
+    const catCount: Record<string, number> = {};
     for (const p of data.plugins) {
       const mp = data.marketplaces.find((m) => m.id === p.metadata?.marketplaceId);
-      const topics = mp?.topics || [];
-      for (const t of topics) {
-        if (!catMap[t]) catMap[t] = [];
-        catMap[t].push(p.id);
+      for (const t of mp?.topics || []) {
+        catCount[t] = (catCount[t] || 0) + 1;
       }
     }
-    const categories = Object.entries(catMap)
-      .map(([name, pluginIds]) => ({
+    const categories = Object.entries(catCount)
+      .map(([name, count]) => ({
         id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
         name,
-        count: pluginIds.length,
-        percentage:
-          data.stats.totalPlugins > 0
-            ? Number(((pluginIds.length / data.stats.totalPlugins) * 100).toFixed(1))
-            : 0,
-        growthRate: 0,
-        topPlugins: [] as any[],
-        trending: pluginIds.length > data.stats.totalPlugins * 0.1,
-        description: `Plugins tagged with ${name}`,
+        count,
+        description: `Plugins from marketplaces tagged "${name}" (topics overlap)`,
       }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 10);
 
-    // ── Quality (for QualityIndicators) ──
-    const validCount = data.stats.validPlugins;
+    // ── Quality signals (all computed from real fields) ──
+    const daysAgo = (days: number) => new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
+    const withManifest = data.marketplaces.filter((m) => m.hasManifest).length;
+    const recentlyUpdated = data.marketplaces.filter(
+      (m) => new Date(m.updatedAt) >= daysAgo(30)
+    ).length;
+    const stale = data.marketplaces.filter((m) => new Date(m.updatedAt) < daysAgo(180)).length;
+
     const quality = {
-      verification: {
-        verifiedPlugins: validCount,
-        verificationRate:
-          data.stats.totalPlugins > 0
-            ? Number(((validCount / data.stats.totalPlugins) * 100).toFixed(1))
+      manifestCoverage: {
+        withManifest,
+        total: data.marketplaces.length,
+        rate:
+          data.marketplaces.length > 0
+            ? Number(((withManifest / data.marketplaces.length) * 100).toFixed(1))
             : 0,
-        badges: [
-          { type: 'quality' as const, count: validCount },
-          { type: 'maintenance' as const, count: Math.floor(validCount * 0.8) },
-          { type: 'security' as const, count: Math.floor(validCount * 0.6) },
-          { type: 'popularity' as const, count: Math.floor(validCount * 0.4) },
-        ],
       },
       maintenance: {
-        recentlyUpdated: data.marketplaces.filter((m) => {
-          const updated = new Date(m.updatedAt);
-          return now.getTime() - updated.getTime() < 30 * 24 * 60 * 60 * 1000;
-        }).length,
-        activeMaintenanceRate: 80,
-        avgUpdateFrequency: 14,
-        abandonedPlugins: 0,
+        recentlyUpdated,
+        recentlyUpdatedRate:
+          data.marketplaces.length > 0
+            ? Number(((recentlyUpdated / data.marketplaces.length) * 100).toFixed(1))
+            : 0,
+        staleOver180Days: stale,
       },
-      qualityMetrics: {
-        avgQualityScore: 85,
-        highQualityPlugins: validCount,
-        commonIssues: [
-          {
-            issue: 'Missing documentation',
-            frequency: Math.floor(data.stats.totalPlugins * 0.2),
-            severity: 'medium' as const,
-          },
-          {
-            issue: 'No version specified',
-            frequency: Math.floor(data.stats.totalPlugins * 0.1),
-            severity: 'low' as const,
-          },
-        ],
-      },
-      security: {
-        scannedPlugins: validCount,
-        criticalIssues: 0,
-        securityScore: 90,
-      },
+      avgStarsPerMarketplace:
+        data.marketplaces.length > 0 ? Math.round(totalStars / data.marketplaces.length) : 0,
     };
+
+    const topMarketplace = [...data.marketplaces].sort((a, b) => b.stars - a.stars)[0];
+    const insights = [
+      `${data.stats.totalPlugins} plugins discovered across ${data.stats.totalMarketplaces} marketplaces`,
+      topMarketplace
+        ? `Most starred: ${topMarketplace.name} (${topMarketplace.stars.toLocaleString()} stars)`
+        : '',
+      categories[0]
+        ? `Most common topic: ${categories[0].name} (${categories[0].count} plugins)`
+        : '',
+      `${recentlyUpdated} marketplaces updated in the last 30 days`,
+    ].filter(Boolean);
 
     return {
       success: true,
       data: {
         overview,
-        // GrowthTrends reads these directly from data
-        ...growthPoints,
+        // Trend series for GrowthTrends
+        plugins: toTrend('plugins'),
+        marketplaces: toTrend('marketplaces'),
+        developers: toTrend('developers'),
+        stars: toTrend('stars'),
+        period: 'all' as const,
+        aggregation: 'daily' as const,
         // CategoryAnalytics
         categories,
-        trending: categories.filter((c) => c.trending).map((c) => c.id),
-        emerging: [],
-        insights: [
-          `${data.stats.totalPlugins} plugins discovered across ${data.stats.totalMarketplaces} marketplaces`,
-        ],
+        insights,
         // QualityIndicators
         ...quality,
       },
@@ -443,58 +443,6 @@ class DataGenerator {
         requestId: 'static-build',
         responseTime: 0,
       },
-    };
-  }
-
-  /**
-   * Build deterministic growth data (no Math.random) from history + current counts.
-   */
-  private generateDeterministicGrowth(
-    data: GeneratedData,
-    history: Array<{ date: string; marketplaces: number; plugins: number; stars: number }>
-  ) {
-    const now = new Date();
-    // Use history if available; otherwise synthesise from current counts
-    const points =
-      history.length >= 2
-        ? history.map((h) => ({
-            date: h.date.split('T')[0],
-            value: h.plugins,
-            marketplaces: h.marketplaces,
-            plugins: h.plugins,
-            developers: Math.floor(h.plugins * 0.05),
-            downloads: h.stars * 10 + h.plugins * 150,
-          }))
-        : Array.from({ length: 5 }, (_, i) => {
-            const d = new Date(now);
-            d.setDate(d.getDate() - (4 - i) * 7);
-            const progress = (i + 1) / 5;
-            return {
-              date: format(d, 'yyyy-MM-dd'),
-              value: Math.floor(data.stats.totalPlugins * progress),
-              marketplaces: Math.floor(data.stats.totalMarketplaces * progress),
-              plugins: Math.floor(data.stats.totalPlugins * progress),
-              developers: Math.floor(data.stats.totalPlugins * progress * 0.05),
-              downloads: Math.floor(data.stats.totalPlugins * progress * 150),
-            };
-          });
-
-    // Build TrendDataPoint arrays
-    const toTrendPoints = (key: 'plugins' | 'marketplaces' | 'developers' | 'downloads') =>
-      points.map((p, i) => ({
-        date: p.date,
-        value: (p as any)[key] as number,
-        change:
-          i > 0 ? ((p as any)[key] as number) - ((points[i - 1] as any)[key] as number) : undefined,
-      }));
-
-    return {
-      plugins: toTrendPoints('plugins'),
-      marketplaces: toTrendPoints('marketplaces'),
-      developers: toTrendPoints('developers'),
-      downloads: toTrendPoints('downloads'),
-      period: '30d' as const,
-      aggregation: 'weekly' as const,
     };
   }
 
