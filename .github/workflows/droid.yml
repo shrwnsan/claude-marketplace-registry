@@ -12,17 +12,21 @@ on:
 
 jobs:
   droid:
+    # SECURITY: gated to trusted authors (OWNER/MEMBER/COLLABORATOR), excluding bots.
+    # This workflow holds a repo-write GITHUB_TOKEN driven by comment text, so it
+    # must never be triggerable by anonymous users.
     if: |
-      (github.event_name == 'issue_comment' && github.event.issue.state == 'open' && contains(github.event.comment.body, '@droid')) ||
-      (github.event_name == 'pull_request_review_comment' && github.event.pull_request.state == 'open' && contains(github.event.comment.body, '@droid')) ||
-      (github.event_name == 'pull_request_review' && github.event.pull_request.state == 'open' && contains(github.event.review.body, '@droid')) ||
-      (github.event_name == 'issues' && github.event.issue.state == 'open' && (contains(github.event.issue.body, '@droid') || contains(github.event.issue.title, '@droid')))
+      (
+        (github.event_name == 'issue_comment' && github.event.issue.state == 'open' && contains(github.event.comment.body, '@droid') && github.event.comment.user.type != 'Bot' && (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'COLLABORATOR')) ||
+        (github.event_name == 'pull_request_review_comment' && github.event.pull_request.state == 'open' && contains(github.event.comment.body, '@droid') && github.event.comment.user.type != 'Bot' && (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'COLLABORATOR')) ||
+        (github.event_name == 'pull_request_review' && github.event.pull_request.state == 'open' && contains(github.event.review.body, '@droid') && github.event.review.user.type != 'Bot' && (github.event.review.author_association == 'OWNER' || github.event.review.author_association == 'MEMBER' || github.event.review.author_association == 'COLLABORATOR')) ||
+        (github.event_name == 'issues' && github.event.issue.state == 'open' && (contains(github.event.issue.body, '@droid') || contains(github.event.issue.title, '@droid')) && github.event.issue.user.type != 'Bot' && (github.event.issue.author_association == 'OWNER' || github.event.issue.author_association == 'MEMBER' || github.event.issue.author_association == 'COLLABORATOR'))
+      )
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
       issues: write
-      id-token: write
       actions: read
     steps:
       - name: Checkout repository

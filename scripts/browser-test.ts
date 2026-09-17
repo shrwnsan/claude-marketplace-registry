@@ -48,7 +48,7 @@ class BrowserTester {
     // Capture errors
     const errors: string[] = [];
     this.page.on('pageerror', (error) => {
-      errors.push(`Page Error: ${error.message}`);
+      errors.push(`Page Error: ${error instanceof Error ? error.message : String(error)}`);
     });
 
     this.page.on('requestfailed', (request) => {

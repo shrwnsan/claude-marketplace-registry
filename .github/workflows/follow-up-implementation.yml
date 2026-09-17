@@ -15,7 +15,6 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
-  id-token: write
 
 jobs:
   detect-linked-issues:
@@ -43,8 +42,11 @@ jobs:
           PR_NUMBER="${{ github.event.pull_request.number }}"
           echo "Finding follow-up issues for PR #$PR_NUMBER"
           
-          # Find issues with follow-up label that reference this PR
+          # Find issues with follow-up label that reference this PR.
+          # SECURITY: only issues authored by the repo owner are implemented —
+          # issue bodies are passed to an agent holding a repo-write token.
           ISSUES=$(gh issue list \
+            --author "$GITHUB_REPOSITORY_OWNER" \
             --label "follow-up" \
             --label "claude-generated" \
             --state open \

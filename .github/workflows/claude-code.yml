@@ -27,23 +27,36 @@ on:
         required: true
         type: number
 
+# SECURITY: every trigger is gated to trusted authors (OWNER/MEMBER/COLLABORATOR)
+# and excludes bot accounts. This workflow holds a repo-write GITHUB_TOKEN and
+# executes npm ci, so it must never run on content from anonymous users.
 permissions:
   contents: write
   pull-requests: write
   issues: write
   actions: read
-  id-token: write
 
 jobs:
   review:
     name: Code Review
     runs-on: ubuntu-latest
-    # Only run on open PRs (skip closed/merged)
+    # Only run on open PRs (skip closed/merged) from trusted authors
     if: |
-      (github.event_name == 'issue_comment' && github.event.issue.state == 'open' && contains(github.event.comment.body, '@claude')) ||
-      (github.event_name == 'pull_request' && github.event.pull_request.state == 'open') ||
-      (github.event_name == 'issues' && github.event.issue.state == 'open') ||
-      github.event_name == 'workflow_dispatch'
+      (
+        (github.event_name == 'issue_comment' &&
+         github.event.issue.state == 'open' &&
+         contains(github.event.comment.body, '@claude') &&
+         github.event.comment.user.type != 'Bot' &&
+         (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'COLLABORATOR')) ||
+        (github.event_name == 'pull_request' &&
+         github.event.pull_request.state == 'open' &&
+         (github.event.pull_request.author_association == 'OWNER' || github.event.pull_request.author_association == 'MEMBER' || github.event.pull_request.author_association == 'COLLABORATOR')) ||
+        (github.event_name == 'issues' &&
+         github.event.issue.state == 'open' &&
+         github.event.issue.user.type != 'Bot' &&
+         (github.event.issue.author_association == 'OWNER' || github.event.issue.author_association == 'MEMBER' || github.event.issue.author_association == 'COLLABORATOR')) ||
+        github.event_name == 'workflow_dispatch'
+      )
 
     steps:
       - name: Checkout
@@ -102,14 +115,20 @@ jobs:
     name: Finding Triage
     runs-on: ubuntu-latest
     needs: review
-    # Only run if review succeeded AND PR is still open
+    # Only run if review succeeded AND the PR/issue is still open AND authored by a trusted user
     if: |
       always() &&
       needs.review.result == 'success' &&
       (
-        (github.event_name == 'issue_comment' && github.event.issue.state == 'open') ||
-        (github.event_name == 'pull_request' && github.event.pull_request.state == 'open') ||
-        (github.event_name == 'issues' && github.event.issue.state == 'open') ||
+        (github.event_name == 'issue_comment' &&
+         github.event.issue.state == 'open' &&
+         (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'COLLABORATOR')) ||
+        (github.event_name == 'pull_request' &&
+         github.event.pull_request.state == 'open' &&
+         (github.event.pull_request.author_association == 'OWNER' || github.event.pull_request.author_association == 'MEMBER' || github.event.pull_request.author_association == 'COLLABORATOR')) ||
+        (github.event_name == 'issues' &&
+         github.event.issue.state == 'open' &&
+         (github.event.issue.author_association == 'OWNER' || github.event.issue.author_association == 'MEMBER' || github.event.issue.author_association == 'COLLABORATOR')) ||
         github.event_name == 'workflow_dispatch'
       )
 
