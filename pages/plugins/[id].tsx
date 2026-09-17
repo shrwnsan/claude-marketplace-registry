@@ -187,25 +187,25 @@ const PluginDetailPage: React.FC = () => {
 
               {/* Source */}
               <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700 flex flex-col sm:flex-row gap-3'>
-                {plugin.repositoryUrl && (
+                {(plugin.sourceUrl || plugin.repositoryUrl) && (
                   <a
-                    href={plugin.repositoryUrl}
+                    href={plugin.sourceUrl || plugin.repositoryUrl}
                     target='_blank'
                     rel='noopener noreferrer'
                     className='btn btn-primary text-sm justify-center'
-                    aria-label='Open source repository on GitHub'
+                    aria-label={`Open ${plugin.name} source on GitHub`}
                   >
                     <Github className='w-4 h-4 mr-2' />
-                    Source Repository
+                    Source
                     <ExternalLink className='w-3.5 h-3.5 ml-1' />
                   </a>
                 )}
-                {plugin.repositoryUrl && (
+                {(plugin.sourceUrl || plugin.repositoryUrl) && (
                   <button
-                    title={`Copy repository URL: ${plugin.repositoryUrl}`}
-                    onClick={() => copySource(plugin.repositoryUrl)}
+                    title={`Copy source URL: ${plugin.sourceUrl || plugin.repositoryUrl}`}
+                    onClick={() => copySource(plugin.sourceUrl || plugin.repositoryUrl)}
                     className='btn-ghost text-sm px-4 py-2'
-                    aria-label='Copy repository URL'
+                    aria-label='Copy source URL'
                   >
                     {copied ? (
                       <Check className='w-4 h-4 text-green-500 mr-1' />

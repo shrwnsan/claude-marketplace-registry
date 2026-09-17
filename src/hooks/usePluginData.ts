@@ -13,6 +13,8 @@ export interface CatalogPlugin {
   version: string;
   author: string;
   repositoryUrl: string;
+  /** Best-known per-plugin URL (source dir when derivable, else repo root). */
+  sourceUrl: string;
   skills: string[];
   marketplaceId: string;
   marketplaceName: string;
@@ -28,6 +30,7 @@ interface RawPlugin {
   version?: string;
   author?: string | { name?: string };
   repository?: string | { url?: string };
+  manifestPath?: string | { url?: string; path?: string; ref?: string };
   isValid?: boolean;
   updatedAt?: string;
   metadata?: { marketplaceId?: string; marketplaceName?: string; skills?: string[] };
@@ -41,6 +44,33 @@ const asUrl = (repo: RawPlugin['repository']): string => {
 const asAuthor = (author: RawPlugin['author']): string => {
   if (typeof author === 'string') return author;
   return author?.name || 'Unknown';
+};
+
+/**
+ * Best per-plugin source URL. Manifest entries sometimes carry their own
+ * location (url + subdirectory + ref); otherwise fall back to the repo root.
+ */
+const toSourceUrl = (repoUrl: string, manifestPath: RawPlugin['manifestPath']): string => {
+  if (!repoUrl) return '';
+  const cleanRepo = repoUrl.replace(/\.git$/, '');
+  if (manifestPath && typeof manifestPath === 'object') {
+    const { url, path, ref } = manifestPath;
+    if (url && path) {
+      return `${url.replace(/\.git$/, '')}/tree/${ref || 'HEAD'}/${path.replace(/^\//, '')}`;
+    }
+    if (path) {
+      return `${cleanRepo}/tree/HEAD/${path.replace(/^\//, '')}`;
+    }
+    return cleanRepo;
+  }
+  if (typeof manifestPath === 'string') {
+    const dir = manifestPath.replace(/^\.\//, '').replace(/\/$/, '');
+    if (dir && dir !== '.') {
+      return `${cleanRepo}/tree/HEAD/${dir}`;
+    }
+    return cleanRepo;
+  }
+  return cleanRepo;
 };
 
 interface UsePluginDataReturn {
@@ -87,6 +117,7 @@ export function usePluginData(): UsePluginDataReturn {
             version: p.version || '',
             author: asAuthor(p.author),
             repositoryUrl: asUrl(p.repository),
+            sourceUrl: toSourceUrl(asUrl(p.repository), p.manifestPath),
             skills: Array.isArray(p.metadata?.skills)
               ? p.metadata!.skills.map((s) => s.replace(/^\.?\//, ''))
               : [],
@@ -134,10 +165,25 @@ export function usePluginData(): UsePluginDataReturn {
   };
 }
 
-/** Top plugins ordered by parent-marketplace stars (deterministic tiebreak by id). */
+/**
+ * Popular plugins for the homepage: the top plugin from each of the
+ * most-starred marketplaces first (so the list isn't dominated by a single
+ * source), then remaining plugins by parent-marketplace stars.
+ */
 export function topPluginsByStars(plugins: CatalogPlugin[], count: number): CatalogPlugin[] {
-  return [...plugins]
+  const ranked = [...plugins]
     .filter((p) => p.name)
-    .sort((a, b) => b.stars - a.stars || a.id.localeCompare(b.id))
-    .slice(0, count);
+    .sort((a, b) => b.stars - a.stars || a.id.localeCompare(b.id));
+  const seenMarketplaces = new Set<string>();
+  const perMarketplace: CatalogPlugin[] = [];
+  const rest: CatalogPlugin[] = [];
+  for (const p of ranked) {
+    if (!p.marketplaceId || seenMarketplaces.has(p.marketplaceId)) {
+      rest.push(p);
+    } else {
+      seenMarketplaces.add(p.marketplaceId);
+      perMarketplace.push(p);
+    }
+  }
+  return [...perMarketplace, ...rest].slice(0, count);
 }

@@ -271,7 +271,7 @@ const HomePage: React.FC = () => {
                   Popular Plugins
                 </h2>
                 <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg'>
-                  Most-starred plugins across indexed marketplaces
+                  Popular picks from the most-starred marketplaces
                 </p>
               </div>
               <Link
