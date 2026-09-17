@@ -163,8 +163,14 @@ jobs:
         env:
           NODE_ENV: production
 
-      - name: Build website with new data
-        run: npm run build
+      - name: Sync site data
+        # The website fetches /data/*.json from public/ at runtime; without this
+        # step the site keeps serving whatever public/data/ held last time a
+        # human pushed. Sync the pipeline output into the site's data directory.
+        run: |
+          mkdir -p public/data
+          cp data/generated/*.json public/data/
+          ls -la public/data/
 
       - name: Upload generated data
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4.6.2
@@ -172,7 +178,7 @@ jobs:
           name: generated-data
           path: |
             data/
-            out/
+            public/data/
           retention-days: 1
 
   commit-changes:
@@ -222,6 +228,7 @@ jobs:
             This PR will be auto-approved if only data files are modified.
           add-paths: |
             data/
+            public/data/
           committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
           author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
 
@@ -265,19 +272,3 @@ jobs:
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "Please check the failed jobs for more details." >> $GITHUB_STEP_SUMMARY
           fi
-
-  # Optional: Trigger deployment if we have new data
-  trigger-deploy:
-    name: Trigger Deployment
-    runs-on: ubuntu-latest
-    needs: [commit-changes]
-    if: needs.commit-changes.result == 'success' && github.event_name == 'workflow_dispatch'
-
-    steps:
-      - name: Trigger deployment workflow
-        uses: peter-evans/repository-dispatch@ff45666b9427631e3450c54a1bcbee4d9ff4d7c0  # v3.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          event-type: data-updated
-          repository: ${{ github.repository }}
-          client-payload: '{"ref": "${{ github.ref }}", "workflow": "scan.yml"}'

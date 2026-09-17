@@ -25,8 +25,11 @@ export function useRealMarketplaceData(): UseRealMarketplaceDataReturn {
         setError(null);
 
         // Try to load real data first
-        // Note: Using relative path works with Next.js base path handling
-        const response = await fetch('data/marketplaces.json');
+        // Base path is required on GitHub Pages (site served under /<repo>/);
+        // a relative path resolves against the current page URL and 404s.
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/data/marketplaces.json`
+        );
 
         if (response.ok) {
           const jsonResponse = await response.json();
