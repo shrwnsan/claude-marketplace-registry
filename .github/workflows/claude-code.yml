@@ -35,6 +35,9 @@ permissions:
   pull-requests: write
   issues: write
   actions: read
+  # Required by claude-code-action: it exchanges an OIDC token for a GitHub
+  # App token. The trusted-author gate above is the security boundary here.
+  id-token: write
 
 jobs:
   review:

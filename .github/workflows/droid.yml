@@ -28,6 +28,9 @@ jobs:
       pull-requests: write
       issues: write
       actions: read
+      # Required by droid-action's OIDC-based auth; trusted-author gate above
+      # is the security boundary.
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8  # v5.0.0

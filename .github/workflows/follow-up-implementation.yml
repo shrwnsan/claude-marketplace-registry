@@ -15,6 +15,8 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  # Required by claude-code-action (OIDC token exchange for its App token).
+  id-token: write
 
 jobs:
   detect-linked-issues:
