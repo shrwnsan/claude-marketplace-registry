@@ -1,97 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Package,
   Store,
   Users,
-  Download,
+  Star,
   TrendingUp,
   TrendingDown,
   Activity,
   Calendar,
 } from 'lucide-react';
-import { EcosystemOverview, EcosystemStatsResponse } from '../../types/ecosystem-stats';
 import { formatNumber } from '../../utils/format';
+import { useEcosystemStats } from '../../hooks/useEcosystemStats';
 import ErrorDisplay from '../ui/ErrorDisplay';
 
-// Interface for component props
 interface OverviewMetricsProps {
   className?: string;
-  refreshInterval?: number; // in milliseconds
-  autoRefresh?: boolean;
 }
 
-// Interface for metric data structure
 interface MetricData {
   label: string;
   value: string;
-  change: number;
-  changeLabel: string;
+  change: number | null;
   icon: React.ComponentType<{ className?: string }>;
-  color: 'primary' | 'success' | 'warning' | 'error' | 'purple';
+  color: 'primary' | 'success' | 'warning' | 'purple';
   ariaLabel: string;
 }
 
-// Custom hook for fetching ecosystem overview data
-const useEcosystemOverview = (autoRefresh: boolean = false, refreshInterval: number = 60000) => {
-  const [data, setData] = useState<EcosystemOverview | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
-
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/data/stats.json`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        cache: 'no-cache',
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const result: EcosystemStatsResponse<EcosystemOverview> = await response.json();
-
-      if (!result.success) {
-        throw new Error(result.error?.message || 'Failed to fetch ecosystem data');
-      }
-
-      if (result.data) {
-        // Handle both direct overview data and nested structure
-        const overviewData = (result.data as any).overview || result.data;
-        setData(overviewData);
-        setLastUpdated(overviewData.lastUpdated);
-      }
-    } catch (err) {
-      console.error('Error fetching ecosystem overview:', err);
-      setError(err instanceof Error ? err.message : 'An unknown error occurred');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-
-    if (autoRefresh && refreshInterval > 0) {
-      const interval = setInterval(fetchData, refreshInterval);
-      return () => clearInterval(interval);
-    }
-  }, [autoRefresh, refreshInterval]);
-
-  return { data, loading, error, lastUpdated, refetch: fetchData };
-};
-
-// Utility function to get change indicator component
-const ChangeIndicator = ({ change }: { change: number }) => {
+const ChangeIndicator = ({ change }: { change: number | null }) => {
+  if (change === null) {
+    return (
+      <div className='flex items-center text-gray-400 dark:text-gray-500'>
+        <span className='text-sm'>—</span>
+      </div>
+    );
+  }
   const isPositive = change > 0;
   const isNeutral = Math.abs(change) < 0.1;
-
   if (isNeutral) {
     return (
       <div className='flex items-center text-gray-500'>
@@ -100,13 +44,11 @@ const ChangeIndicator = ({ change }: { change: number }) => {
       </div>
     );
   }
-
   const Icon = isPositive ? TrendingUp : TrendingDown;
   const colorClass = isPositive ? 'text-success-600' : 'text-error-600';
   const bgColorClass = isPositive
     ? 'bg-success-100 dark:bg-success-900/30'
     : 'bg-error-100 dark:bg-error-900/30';
-
   return (
     <div className={`flex items-center ${colorClass}`}>
       <div className={`p-1 rounded-md ${bgColorClass} mr-1`}>
@@ -120,11 +62,10 @@ const ChangeIndicator = ({ change }: { change: number }) => {
   );
 };
 
-// Metric Card Component
-const MetricCard: React.FC<{
-  metric: MetricData;
-  isLoading?: boolean;
-}> = ({ metric, isLoading = false }) => {
+const MetricCard: React.FC<{ metric: MetricData; isLoading?: boolean }> = ({
+  metric,
+  isLoading = false,
+}) => {
   if (isLoading) {
     return (
       <div className='card p-6 animate-pulse'>
@@ -140,7 +81,7 @@ const MetricCard: React.FC<{
     );
   }
 
-  const { label, value, change, changeLabel, icon: Icon, color, ariaLabel } = metric;
+  const { label, value, change, icon: Icon, color, ariaLabel } = metric;
 
   const colorClasses = {
     primary: {
@@ -158,11 +99,6 @@ const MetricCard: React.FC<{
       icon: 'text-warning-600 dark:text-warning-400',
       border: 'border-warning-200 dark:border-warning-700',
     },
-    error: {
-      bg: 'bg-error-100 dark:bg-error-900/30',
-      icon: 'text-error-600 dark:text-error-400',
-      border: 'border-error-200 dark:border-error-700',
-    },
     purple: {
       bg: 'bg-purple-100 dark:bg-purple-900/30',
       icon: 'text-purple-600 dark:text-purple-400',
@@ -171,6 +107,7 @@ const MetricCard: React.FC<{
   };
 
   const currentColor = colorClasses[color];
+  const changeHint = change === null ? 'baseline pending' : 'vs last 30 days';
 
   return (
     <article
@@ -187,7 +124,7 @@ const MetricCard: React.FC<{
         </div>
         <div className='flex flex-col items-end'>
           <ChangeIndicator change={change} />
-          <span className='text-xs text-gray-500 dark:text-gray-400 mt-1'>{changeLabel}</span>
+          <span className='text-xs text-gray-500 dark:text-gray-400 mt-1'>{changeHint}</span>
         </div>
       </div>
 
@@ -198,7 +135,6 @@ const MetricCard: React.FC<{
         <p className='text-sm font-medium text-gray-600 dark:text-gray-400'>{label}</p>
       </div>
 
-      {/* Decorative element */}
       <div
         className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${currentColor.bg} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-2xl border-l border-b ${currentColor.border}`}
       ></div>
@@ -206,88 +142,60 @@ const MetricCard: React.FC<{
   );
 };
 
-// Main OverviewMetrics Component
-const OverviewMetrics: React.FC<OverviewMetricsProps> = ({
-  className = '',
-  refreshInterval = 60000, // 1 minute default
-  autoRefresh = false,
-}) => {
-  const { data, loading, error, lastUpdated, refetch } = useEcosystemOverview(
-    autoRefresh,
-    refreshInterval
-  );
+const OverviewMetrics: React.FC<OverviewMetricsProps> = ({ className = '' }) => {
+  const { data, metaTimestamp, loading, error, refresh } = useEcosystemStats();
 
-  // Transform data into metric format
-  const getMetrics = (): MetricData[] => {
-    if (!data) return [];
-
-    const growthRate = data.growthRate || {
-      plugins: 0,
-      marketplaces: 0,
-      developers: 0,
-      downloads: 0,
-    };
-
-    return [
+  const metrics: MetricData[] = [];
+  if (data) {
+    const g = data.overview.growthRate;
+    metrics.push(
       {
         label: 'Total Plugins',
-        value: formatNumber(data.totalPlugins),
-        change: growthRate.plugins || 0,
-        changeLabel: 'vs last week',
+        value: formatNumber(data.overview.totalPlugins),
+        change: g.plugins,
         icon: Package,
         color: 'primary',
-        ariaLabel: `Total plugins in ecosystem: ${(data.totalPlugins || 0).toLocaleString()}, ${growthRate.plugins > 0 ? 'growing' : 'stable'} by ${Math.abs(growthRate.plugins || 0)}% vs last week`,
+        ariaLabel: `Total plugins in ecosystem: ${data.overview.totalPlugins.toLocaleString()}`,
       },
       {
         label: 'Marketplaces',
-        value: formatNumber(data.totalMarketplaces),
-        change: growthRate.marketplaces || 0,
-        changeLabel: 'vs last week',
+        value: formatNumber(data.overview.totalMarketplaces),
+        change: g.marketplaces,
         icon: Store,
         color: 'success',
-        ariaLabel: `Total marketplaces: ${(data.totalMarketplaces || 0).toLocaleString()}, launched regularly updated`,
+        ariaLabel: `Total marketplaces: ${data.overview.totalMarketplaces.toLocaleString()}`,
       },
       {
         label: 'Developers',
-        value: formatNumber(data.totalDevelopers),
-        change: growthRate.developers || 0,
-        changeLabel: 'vs last week',
+        value: formatNumber(data.overview.totalDevelopers),
+        change: g.developers,
         icon: Users,
         color: 'warning',
-        ariaLabel: `Total developers: ${(data.totalDevelopers || 0).toLocaleString()}, contributing since regularly updated`,
+        ariaLabel: `Total plugin authors: ${data.overview.totalDevelopers.toLocaleString()}`,
       },
       {
-        label: 'Total Downloads',
-        value: formatNumber(data.totalDownloads),
-        change: growthRate.downloads || 0,
-        changeLabel: 'vs last week',
-        icon: Download,
-        color: 'error',
-        ariaLabel: `Total downloads: ${(data.totalDownloads || 0).toLocaleString()}, accumulated since regularly updated`,
-      },
-    ];
-  };
+        label: 'GitHub Stars',
+        value: formatNumber(data.overview.totalStars),
+        change: g.stars,
+        icon: Star,
+        color: 'purple',
+        ariaLabel: `Total GitHub stars across marketplaces: ${data.overview.totalStars.toLocaleString()}`,
+      }
+    );
+  }
 
-  const metrics = getMetrics();
-
-  // Loading state
   if (loading && !data) {
     return (
       <section className={className} aria-label='Ecosystem Overview Metrics'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6'>
           {[...Array(4)].map((_, index) => (
-            <MetricCard
-              key={`skeleton-${index}`}
-              metric={metrics[index] || ({} as MetricData)}
-              isLoading={true}
-            />
+            <MetricCard key={`skeleton-${index}`} metric={{} as MetricData} isLoading={true} />
           ))}
         </div>
       </section>
     );
   }
 
-  // Error state
   if (error && !data) {
     return (
       <section className={className} aria-label='Ecosystem Overview Metrics'>
@@ -295,7 +203,7 @@ const OverviewMetrics: React.FC<OverviewMetricsProps> = ({
           type='error'
           title='Failed to Load Ecosystem Metrics'
           message={error}
-          onRetry={refetch}
+          onRetry={refresh}
           className='w-full'
         />
       </section>
@@ -304,29 +212,25 @@ const OverviewMetrics: React.FC<OverviewMetricsProps> = ({
 
   return (
     <section className={`space-y-4 ${className}`} aria-label='Ecosystem Overview Metrics'>
-      {/* Header */}
       <header className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
         <div>
           <h2 className='text-xl font-semibold text-gray-900 dark:text-gray-100'>
             Ecosystem Overview
           </h2>
           <p className='text-sm text-gray-600 dark:text-gray-400 mt-1'>
-            Key metrics and growth indicators for the Claude Code plugin ecosystem
+            Live counts from the daily marketplace scans
           </p>
         </div>
 
         <div className='flex items-center gap-4'>
-          {/* Last updated info */}
-          {lastUpdated && (
+          {metaTimestamp && (
             <div className='flex items-center text-sm text-gray-500 dark:text-gray-400'>
               <Calendar className='w-4 h-4 mr-1' />
-              <span>Updated {new Date(lastUpdated).toLocaleString()}</span>
+              <span>Updated {new Date(metaTimestamp).toLocaleString()}</span>
             </div>
           )}
-
-          {/* Refresh button */}
           <button
-            onClick={refetch}
+            onClick={refresh}
             disabled={loading}
             className='btn-ghost p-2 disabled:opacity-50'
             aria-label='Refresh metrics'
@@ -337,38 +241,39 @@ const OverviewMetrics: React.FC<OverviewMetricsProps> = ({
         </div>
       </header>
 
-      {/* Metrics Grid */}
       <main>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6'>
-          {metrics.map((metric, index) => (
-            <MetricCard key={`${metric.label}-${index}`} metric={metric} isLoading={loading} />
+          {metrics.map((metric) => (
+            <MetricCard key={metric.label} metric={metric} isLoading={loading} />
           ))}
         </div>
       </main>
 
-      {/* Health score (if available) */}
-      {data?.healthScore && (
+      {/* Manifest coverage — replaces the old hardcoded "health score" */}
+      {data && (
         <footer className='mt-6 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-200 dark:border-gray-700'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center'>
-              <Activity className='w-5 h-5 text-primary-600 dark:text-primary-400 mr-2' />
+              <Package className='w-5 h-5 text-primary-600 dark:text-primary-400 mr-2' />
               <span className='text-sm font-medium text-gray-700 dark:text-gray-300'>
-                Ecosystem Health Score
+                Manifest coverage — {data.manifestCoverage.withManifest} of{' '}
+                {data.manifestCoverage.total} marketplaces
               </span>
             </div>
             <div className='flex items-center'>
               <div className='w-32 bg-gray-200 dark:bg-gray-700 rounded-full h-2 mr-3'>
                 <div
                   className='bg-gradient-to-r from-primary-500 to-primary-600 h-2 rounded-full transition-all duration-500'
-                  style={{ width: `${data.healthScore}%` }}
+                  style={{ width: `${data.manifestCoverage.rate}%` }}
                   role='progressbar'
-                  aria-valuenow={data.healthScore}
+                  aria-valuenow={data.manifestCoverage.rate}
                   aria-valuemin={0}
                   aria-valuemax={100}
+                  aria-label='Marketplace manifest coverage'
                 ></div>
               </div>
               <span className='text-sm font-bold text-primary-600 dark:text-primary-400'>
-                {data.healthScore}/100
+                {data.manifestCoverage.rate}%
               </span>
             </div>
           </div>

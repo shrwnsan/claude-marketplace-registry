@@ -3,34 +3,25 @@ import Head from 'next/head';
 import MainLayout from '@/components/layout/MainLayout';
 import SearchBar from '@/components/Search/SearchBar';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
-import { mockMarketplaces, categories } from '@/data/mock-data';
+import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
 import { Star, Github, ExternalLink, Shield, Filter, Grid, List } from 'lucide-react';
 import Link from 'next/link';
 
-interface _Marketplace {
-  id: string;
-  name: string;
-  description: string;
-  url: string;
-  repositoryUrl: string;
-  stars: number;
-  category: string;
-  verified?: boolean;
-  plugins?: number;
-}
-
 const MarketplacesPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedTopic, setSelectedTopic] = useState('All');
   const [sortBy, setSortBy] = useState<'stars' | 'name' | 'updated'>('stars');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
 
-  // Use real marketplace data with fallback to mock data
   const { data: marketplaceData, loading, error } = useRealMarketplaceData();
-  const marketplaces = marketplaceData?.marketplaces || mockMarketplaces;
+  const { data: stats } = useEcosystemStats();
+  const marketplaces = marketplaceData?.marketplaces || [];
+
+  // Real topic chips from generated stats
+  const topics = (stats?.categories || []).slice(0, 8).map((c) => c.name);
 
   // Filter and sort marketplaces
   const filteredAndSortedMarketplaces = useMemo(() => {
@@ -40,10 +31,11 @@ const MarketplacesPage: React.FC = () => {
         marketplace.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         marketplace.description.toLowerCase().includes(searchQuery.toLowerCase());
 
-      const matchesCategory =
-        selectedCategory === 'All' || marketplace.category === selectedCategory;
+      const matchesTopic =
+        selectedTopic === 'All' ||
+        (Array.isArray(marketplace.topics) && marketplace.topics.includes(selectedTopic));
 
-      return matchesSearch && matchesCategory;
+      return matchesSearch && matchesTopic;
     });
 
     // Sort marketplaces
@@ -62,7 +54,7 @@ const MarketplacesPage: React.FC = () => {
     });
 
     return filtered;
-  }, [marketplaces, searchQuery, selectedCategory, sortBy]);
+  }, [marketplaces, searchQuery, selectedTopic, sortBy]);
 
   // Pagination
   const totalPages = Math.ceil(filteredAndSortedMarketplaces.length / itemsPerPage);
@@ -77,9 +69,9 @@ const MarketplacesPage: React.FC = () => {
     setCurrentPage(1); // Reset to first page on search
   };
 
-  const handleCategoryChange = (category: string) => {
-    setSelectedCategory(category);
-    setCurrentPage(1); // Reset to first page on category change
+  const handleTopicChange = (topic: string) => {
+    setSelectedTopic(topic);
+    setCurrentPage(1); // Reset to first page on topic change
   };
 
   const handleSortChange = (sort: 'stars' | 'name' | 'updated') => {
@@ -128,7 +120,7 @@ const MarketplacesPage: React.FC = () => {
           content='Browse all Claude Code marketplaces from across GitHub. Discover new plugins and tools for your development workflow.'
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
       </Head>
 
       <MainLayout>
@@ -155,17 +147,17 @@ const MarketplacesPage: React.FC = () => {
               <div className='flex flex-col lg:flex-row gap-4 items-center justify-between'>
                 {/* Category Filter */}
                 <div className='flex flex-wrap gap-2 justify-center lg:justify-start'>
-                  {categories.map((category) => (
+                  {['All', ...topics].map((topic) => (
                     <button
-                      key={category}
-                      onClick={() => handleCategoryChange(category)}
+                      key={topic}
+                      onClick={() => handleTopicChange(topic)}
                       className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 ${
-                        selectedCategory === category
+                        selectedTopic === topic
                           ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
                           : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                       }`}
                     >
-                      {category}
+                      {topic}
                     </button>
                   ))}
                 </div>
@@ -271,7 +263,7 @@ const MarketplacesPage: React.FC = () => {
                               </span>
                             </div>
                             <span className='badge badge-secondary text-xs'>
-                              {marketplace.category}
+                              {(Array.isArray(marketplace.topics) && marketplace.topics[0]) || ''}
                             </span>
                             {marketplace.plugins !== undefined && (
                               <span className='text-xs'>{marketplace.plugins} plugins</span>
@@ -291,7 +283,7 @@ const MarketplacesPage: React.FC = () => {
                             <ExternalLink className='w-4 h-4 ml-2 transform transition-transform group-hover:scale-110' />
                           </a>
                           <a
-                            href={marketplace.repositoryUrl}
+                            href={marketplace.url}
                             target='_blank'
                             rel='noopener noreferrer'
                             className='btn-ghost p-2 sm:p-3 group'
@@ -318,7 +310,7 @@ const MarketplacesPage: React.FC = () => {
                               />
                             )}
                             <span className='badge badge-secondary text-xs'>
-                              {marketplace.category}
+                              {(Array.isArray(marketplace.topics) && marketplace.topics[0]) || ''}
                             </span>
                           </div>
                           <p className='text-gray-600 dark:text-gray-300 mb-3 line-clamp-2'>
@@ -336,7 +328,7 @@ const MarketplacesPage: React.FC = () => {
                         </div>
                         <div className='flex items-center gap-2'>
                           <a
-                            href={marketplace.repositoryUrl}
+                            href={marketplace.url}
                             target='_blank'
                             rel='noopener noreferrer'
                             className='btn-ghost p-2 group'
@@ -369,15 +361,15 @@ const MarketplacesPage: React.FC = () => {
                   No marketplaces found
                 </h3>
                 <p className='text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto'>
-                  {searchQuery || selectedCategory !== 'All'
+                  {searchQuery || selectedTopic !== 'All'
                     ? `No marketplaces found matching your criteria. Try different filters or search terms.`
                     : 'No marketplaces available at the moment.'}
                 </p>
-                {(searchQuery || selectedCategory !== 'All') && (
+                {(searchQuery || selectedTopic !== 'All') && (
                   <button
                     onClick={() => {
                       setSearchQuery('');
-                      setSelectedCategory('All');
+                      setSelectedTopic('All');
                       setCurrentPage(1);
                     }}
                     className='btn btn-primary'
