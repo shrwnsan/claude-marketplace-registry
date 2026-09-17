@@ -341,13 +341,16 @@ ${metric.description}`;
    * Send email alert
    */
   private async sendEmailAlert(message: string, data: any): Promise<void> {
-    if (!process.env.EMAIL_SERVICE_API_KEY) return;
+    if (!process.env.EMAIL_WEBHOOK_URL) return;
 
     try {
-      await fetch(process.env.EMAIL_SERVICE_API_KEY, {
+      await fetch(process.env.EMAIL_WEBHOOK_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          ...(process.env.EMAIL_SERVICE_API_KEY
+            ? { Authorization: `Bearer ${process.env.EMAIL_SERVICE_API_KEY}` }
+            : {}),
         },
         body: JSON.stringify({
           to: this.config.recipients,
@@ -606,15 +609,18 @@ ${metric.description}`;
    * Send email report
    */
   private async sendEmailReport(report: ReportData): Promise<void> {
-    if (!process.env.EMAIL_SERVICE_API_KEY || this.config.recipients.length === 0) return;
+    if (!process.env.EMAIL_WEBHOOK_URL || this.config.recipients.length === 0) return;
 
     const htmlContent = this.generateHtmlReport(report);
 
     try {
-      await fetch(process.env.EMAIL_SERVICE_API_KEY, {
+      await fetch(process.env.EMAIL_WEBHOOK_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          ...(process.env.EMAIL_SERVICE_API_KEY
+            ? { Authorization: `Bearer ${process.env.EMAIL_SERVICE_API_KEY}` }
+            : {}),
         },
         body: JSON.stringify({
           to: this.config.recipients,

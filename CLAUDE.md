@@ -5,7 +5,7 @@
 Claude Marketplace Aggregator - An automated aggregator that discovers and curates Claude Code plugins and marketplaces from GitHub.
 
 **Tech Stack:**
-- **Framework:** Next.js 14.2.5 with Pages Router (`pages/` directory structure)
+- **Framework:** Next.js 16 with Pages Router (`pages/` directory structure, static export)
 - **Language:** TypeScript (strict mode enabled)
 - **Styling:** Tailwind CSS
 - **Data:** GitHub API integration, JSON data files

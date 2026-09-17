@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Security
+- Gated AI-assist workflows (`claude-code.yml`, `droid.yml`) to OWNER/MEMBER/COLLABORATOR authors and excluded bot accounts — anonymous comments/PRs can no longer drive an agent holding a repo-write token
+- Dropped unused `id-token: write` from agent workflows; `follow-up-implementation.yml` now only implements owner-authored issues
+- Untracked `.env.production` from git (had silently pinned the scanner to legacy single-query search via `SEARCH_QUERY`)
+- CI now enforces a production `npm audit` gate; production dependencies are at 0 vulnerabilities (next 16.3.5)
+
+### Fixed
+- Daily bot merges now trigger deployment: auto-merge executes with `DATA_UPDATES_PAT` instead of `GITHUB_TOKEN` (GITHUB_TOKEN pushes never fire `on: push`)
+- Pipeline output reaches the site: `generate-data` artifacts download into `data/marketplaces/` and `data/plugins/` instead of flattening into `data/`, which caused `generate-data.ts` to silently fall back to stale committed snapshots
+- Data-update PRs now carry `public/data/`, the directory the website actually fetches
+- `useRealMarketplaceData` fetches with the basePath prefix and handles both array and wrapped JSON shapes (previously rendered real data as zero marketplaces)
+- Fixed `EMAIL_SERVICE_API_KEY` being used as a fetch URL in success-metrics
+- Fixed `TS18046` in `browser-test.ts` that broke the dependency-update workflow
+
+### Changed
+- Docs rewritten to match reality (Next.js 16 / React 19 / Node 20, daily scan cadence, real file structure, data-flow documentation)
+- Removed dead pipeline code (~2,300 lines): unused GitHub client/search/metadata/content-fetcher modules, their tests, workflow-test stub files, and an example script
+- Unified repo identity (`shrwnsan/claude-marketplace-registry`) across `next.config.js`, `.env.example`, and maintenance scripts; engines bumped to Node >=20.9
+- Lint warning budget ratcheted from 350 to 266
+
 ## [0.4.0-beta.1] - 2026-02-18
 
 ### Added

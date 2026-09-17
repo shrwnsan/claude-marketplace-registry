@@ -22,9 +22,9 @@ This is the **Claude Marketplace Aggregator** - an automated, open-source aggreg
 
 ### Technology Stack
 
-- **Frontend**: Next.js 14, React 18, Tailwind CSS, shadcn/ui
-- **Backend/Data Processing**: Node.js 18+, TypeScript
-- **API Integration**: GitHub REST API v4
+- **Frontend**: Next.js 16 (Pages Router, static export), React 19, Tailwind CSS
+- **Backend/Data Processing**: Node.js 20+, TypeScript (pipeline lives in `scripts/`)
+- **API Integration**: GitHub REST API via `@octokit/rest`
 - **Infrastructure**: GitHub Pages (hosting), GitHub Actions (CI/CD)
 - **Data Storage**: Git repository (JSON files)
 
@@ -110,52 +110,65 @@ npm run scan:full
 
 The project uses several automated workflows:
 
-1. **`.github/workflows/scan.yml`**: Scheduled marketplace scanning (every 6 hours)
-2. **`.github/workflows/ci.yml`**: Continuous integration on pull requests
-3. **`.github/workflows/deploy.yml`**: Automatic deployment to GitHub Pages
+1. **`.github/workflows/scan.yml`**: Scheduled marketplace scanning (daily at 00:00 UTC) that opens an automated data-update PR
+2. **`.github/workflows/auto-merge-data-updates.yml`**: Verifies data-update PRs touch only data paths, then auto-merges them (via `DATA_UPDATES_PAT` so the merge triggers deploy)
+3. **`.github/workflows/ci.yml`**: Continuous integration on pull requests (lint, type-check, tests, build, production `npm audit`, CodeQL)
+4. **`.github/workflows/deploy.yml`**: Builds the static export and deploys to GitHub Pages on pushes to `main`
+5. **`.github/workflows/security.yml`** / **`dependency-update.yml`** / **`performance.yml`**: Weekly/monthly maintenance
+6. AI-assist workflows (`claude-code.yml`, `droid.yml`, `follow-up-implementation.yml`) are gated to OWNER/MEMBER/COLLABORATOR authors only — do not loosen these gates
 
 ## Key File Structure
 
 ```
-├── pages/               # Next.js pages
+├── pages/               # Next.js pages (client-side data fetching, no API routes)
 │   ├── _app.tsx        # App wrapper
 │   ├── _document.tsx   # Document structure
 │   ├── index.tsx       # Homepage
-│   ├── api/            # API routes
-│   ├── marketplaces/   # Marketplace pages
-│   ├── plugins/        # Plugin pages
+│   ├── marketplaces/   # Marketplace list + [id] detail pages
+│   ├── plugins/        # Plugin list + [id] detail pages
 │   ├── admin/          # Admin pages
 │   ├── demo/           # Demo pages
 │   └── docs/           # Documentation pages
+├── scripts/            # The data pipeline (run by scan.yml, not imported by src/)
+│   ├── scan-marketplaces.ts   # Multi-strategy GitHub discovery -> data/marketplaces/
+│   ├── validate-plugins.ts    # Manifest validation -> data/plugins/
+│   ├── generate-data.ts       # Merges scan output -> data/generated/ + public/data/
+│   ├── validate-generated-data.ts  # Shape + cross-file consistency + freshness gates
+│   ├── plugin-discovery.ts
+│   └── backup-data.ts
 ├── src/
 │   ├── types/          # TypeScript interfaces
 │   │   ├── marketplace.ts
 │   │   ├── plugin.ts
 │   │   └── github.ts
-│   ├── services/       # Business logic
-│   │   ├── github-search.ts
-│   │   ├── github-metadata.ts
-│   │   └── quality-scoring.ts
-│   ├── utils/          # Utility functions
-│   │   ├── github-client.ts
-│   │   ├── content-fetcher.ts
-│   │   └── data-exporter.ts
-│   ├── parsers/        # Data parsing
-│   │   └── manifest-parser.ts
+│   ├── services/       # Ecosystem data service
+│   ├── utils/          # Utilities (data-processor, logger, security, ...)
 │   ├── components/     # React components
 │   │   ├── layout/
+│   │   ├── EcosystemStats/
 │   │   ├── Search/
-│   │   ├── Filters/
-│   │   └── Marketplace/
-│   ├── hooks/          # React hooks
-│   └── data/           # Static data and mock data
-├── data/                # Generated JSON data
-│   ├── marketplaces.json
-│   ├── plugins.json
-│   └── stats.json
+│   │   ├── Marketplace/
+│   │   └── ui/
+│   ├── hooks/          # React hooks (useRealMarketplaceData fetches public/data/)
+│   └── data/           # Static fallback (mock) data
+├── data/                # Pipeline state (JSON, committed by the daily bot PR)
+│   ├── marketplaces/   # Fresh scan output (raw.json, processed.json, summary.json)
+│   ├── plugins/        # Validation output (valid-plugins.json, ...)
+│   └── generated/      # Site-facing aggregates (also copied to public/data/)
+├── public/data/         # Served to the browser at ${basePath}/data/*.json
 ├── .github/workflows/   # GitHub Actions
 └── docs/               # Project documentation
 ```
+
+### Data Flow
+
+`scan.yml` (daily) → `scan-marketplaces.ts` discovers repos into `data/marketplaces/` →
+`validate-plugins.ts` validates manifests into `data/plugins/` → `generate-data.ts`
+merges both into `data/generated/` + `public/data/` → `validate-generated-data.ts`
+gates the PR on consistency/freshness → auto-merge merges with `DATA_UPDATES_PAT`
+→ the push triggers `deploy.yml` → static export of `public/` + pages goes live.
+The site fetches `${NEXT_PUBLIC_BASE_PATH}/data/*.json` client-side; if that fetch
+fails, pages fall back to `src/data/mock-data.ts` fixtures.
 
 ## Development Patterns
 
@@ -231,17 +244,18 @@ NODE_ENV=production
 
 ### GitHub Actions Pipeline
 
-1. **Scan Workflow**: Runs every 6 hours to discover new marketplaces
+1. **Scan Workflow**: Runs daily at 00:00 UTC to discover new marketplaces and open a data-update PR
 2. **CI Workflow**: Runs on every push/PR to validate code
-3. **Deploy Workflow**: Builds and deploys to GitHub Pages
+3. **Auto-merge Workflow**: Merges data-update PRs after checks pass (using `DATA_UPDATES_PAT` so the merge itself triggers deploy)
+4. **Deploy Workflow**: Builds and deploys to GitHub Pages
 
 ### Deployment Process
 
-1. Code is merged to main branch
-2. GitHub Actions triggers build process
-3. Next.js generates static site
-4. Site is deployed to GitHub Pages
-5. Data files are updated via scan workflow
+1. Scan workflow opens an automated data-update PR daily
+2. CI checks run on the PR; auto-merge merges it once green
+3. The merge push (PAT-attributed) triggers the Deploy workflow
+4. Next.js generates the static site and it is deployed to GitHub Pages
+5. Bot merges made with `GITHUB_TOKEN` never trigger deploy — keep merge credentials as the PAT
 
 ## Security Considerations
 
@@ -250,6 +264,10 @@ NODE_ENV=production
 - Input validation and sanitization for all user inputs
 - Content Security Policy headers on website
 - Regular dependency updates and vulnerability scanning
+- AI-assist workflows are gated to trusted authors and never run `npm ci` on
+  untrusted fork PR code — preserve these gates when editing workflows
+- CI enforces a production `npm audit` gate; `npm audit fix` before adding deps
+- Never re-add `.env.production` or any secret-bearing file to git
 
 ## Contributing Guidelines
 
@@ -282,7 +300,7 @@ NODE_ENV=production
 
 - **Website Load Time**: < 2 seconds
 - **API Response Time**: < 5 seconds per marketplace
-- **Data Freshness**: < 6 hours outdated
+- **Data Freshness**: refreshed daily by the scan workflow
 - **Uptime**: 99.9% availability
 - **Mobile Performance**: Responsive design, < 3 seconds load
 
