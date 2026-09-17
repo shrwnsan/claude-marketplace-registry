@@ -33,10 +33,16 @@ export function useRealMarketplaceData(): UseRealMarketplaceDataReturn {
 
         if (response.ok) {
           const jsonResponse = await response.json();
-          const realDataArray = jsonResponse.marketplaces || [];
+          // The pipeline writes a bare array; accept the wrapped shape too.
+          const realDataArray: any[] = Array.isArray(jsonResponse)
+            ? jsonResponse
+            : jsonResponse.marketplaces || [];
+          const lastUpdated: string | null = Array.isArray(jsonResponse)
+            ? null
+            : jsonResponse.lastUpdated || null;
           const realData = {
             marketplaces: realDataArray,
-            lastUpdated: new Date().toISOString(),
+            lastUpdated: lastUpdated || new Date().toISOString(),
             totalCount: realDataArray.length,
             source: 'real',
           };
