@@ -26,10 +26,10 @@ jobs:
         run: |
           # Get list of changed files in the PR
           CHANGED_FILES=$(gh pr diff ${{ github.event.pull_request.number }} --name-only)
-          
+
           # Check if any non-data files are modified
-          NON_DATA_FILES=$(echo "$CHANGED_FILES" | grep -vE '^(data/|out/)' || true)
-          
+          NON_DATA_FILES=$(echo "$CHANGED_FILES" | grep -vE '^(data/|public/data/|out/)' || true)
+
           if [ -n "$NON_DATA_FILES" ]; then
             echo "❌ PR contains non-data files, skipping auto-approve:"
             echo "$NON_DATA_FILES"
@@ -47,11 +47,15 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      # SECURITY/DEPLOY NOTE: the merge must be executed with DATA_UPDATES_PAT,
+      # not GITHUB_TOKEN. Pushes attributed to GITHUB_TOKEN do not fire
+      # `on: push` workflows, so a bot-token merge would silently skip the
+      # Deploy to GitHub Pages workflow and the site would never update.
       - name: Enable auto-merge
         if: steps.verify-data-only.outputs.safe == 'true'
         run: gh pr merge "${{ github.event.pull_request.html_url }}" --auto --squash --delete-branch
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
 
       - name: Add approval comment
         if: steps.verify-data-only.outputs.safe == 'true'
@@ -62,7 +66,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.pull_request.number,
-              body: '✅ Auto-approved: This is an automated data update from the Scan Marketplaces workflow.\n\n**Security check passed:** Only data files (`data/`, `out/`) were modified.\n\n🔀 Auto-merge enabled — will merge once status checks pass.'
+              body: '✅ Auto-approved: This is an automated data update from the Scan Marketplaces workflow.\n\n**Security check passed:** Only data files (`data/`, `public/data/`, `out/`) were modified.\n\n🔀 Auto-merge enabled — will merge once status checks pass.'
             });
 
       - name: Add rejection comment
