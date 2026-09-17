@@ -146,6 +146,7 @@ const CopyRepoButton: React.FC<{ url: string }> = ({ url }) => {
   if (!url) return null;
   return (
     <button
+      title={`Copy repository URL: ${url}`}
       onClick={async () => {
         try {
           await navigator.clipboard.writeText(url);

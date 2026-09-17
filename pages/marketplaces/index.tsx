@@ -13,8 +13,7 @@ const MarketplacesPage: React.FC = () => {
   const [selectedTopic, setSelectedTopic] = useState('All');
   const [sortBy, setSortBy] = useState<'stars' | 'name' | 'updated'>('stars');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 12;
+  const [visibleCount, setVisibleCount] = useState(12);
 
   const { data: marketplaceData, loading, error } = useRealMarketplaceData();
   const { data: stats } = useEcosystemStats();
@@ -57,31 +56,18 @@ const MarketplacesPage: React.FC = () => {
   }, [marketplaces, searchQuery, selectedTopic, sortBy]);
 
   // Pagination
-  const totalPages = Math.ceil(filteredAndSortedMarketplaces.length / itemsPerPage);
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const paginatedMarketplaces = filteredAndSortedMarketplaces.slice(
-    startIndex,
-    startIndex + itemsPerPage
-  );
+  const visibleMarketplaces = filteredAndSortedMarketplaces.slice(0, visibleCount);
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
-    setCurrentPage(1); // Reset to first page on search
   };
 
   const handleTopicChange = (topic: string) => {
     setSelectedTopic(topic);
-    setCurrentPage(1); // Reset to first page on topic change
   };
 
   const handleSortChange = (sort: 'stars' | 'name' | 'updated') => {
     setSortBy(sort);
-    setCurrentPage(1); // Reset to first page on sort change
-  };
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   if (loading) {
@@ -139,7 +125,13 @@ const MarketplacesPage: React.FC = () => {
 
                 {/* Search Bar */}
                 <div className='max-w-2xl mx-auto mb-8'>
-                  <SearchBar onSearch={handleSearch} onFilterClick={() => {}} className='w-full' />
+                  <SearchBar
+                    onSearch={handleSearch}
+                    placeholder='Search marketplaces…'
+                    ariaLabel='Search marketplaces'
+                    showTrending={false}
+                    className='w-full'
+                  />
                 </div>
               </div>
 
@@ -207,13 +199,13 @@ const MarketplacesPage: React.FC = () => {
             {/* Results Count */}
             <div className='mb-6'>
               <p className='text-gray-600 dark:text-gray-400'>
-                Showing {paginatedMarketplaces.length} of {filteredAndSortedMarketplaces.length}{' '}
+                Showing {visibleMarketplaces.length} of {filteredAndSortedMarketplaces.length}{' '}
                 marketplaces
               </p>
             </div>
 
             {/* Marketplaces Grid/List */}
-            {paginatedMarketplaces.length > 0 ? (
+            {visibleMarketplaces.length > 0 ? (
               <div
                 className={
                   viewMode === 'grid'
@@ -221,7 +213,7 @@ const MarketplacesPage: React.FC = () => {
                     : 'space-y-4'
                 }
               >
-                {paginatedMarketplaces.map((marketplace) => (
+                {visibleMarketplaces.map((marketplace) => (
                   <div
                     key={marketplace.id}
                     className={
@@ -370,7 +362,6 @@ const MarketplacesPage: React.FC = () => {
                     onClick={() => {
                       setSearchQuery('');
                       setSelectedTopic('All');
-                      setCurrentPage(1);
                     }}
                     className='btn btn-primary'
                     aria-label='Clear all filters'
@@ -381,55 +372,18 @@ const MarketplacesPage: React.FC = () => {
               </div>
             )}
 
-            {/* Pagination */}
-            {totalPages > 1 && (
-              <div className='flex justify-center items-center gap-2 mt-12'>
+            {/* Load more */}
+            {visibleMarketplaces.length < filteredAndSortedMarketplaces.length && (
+              <div className='flex flex-col items-center gap-3 mt-12'>
+                <p className='text-sm text-gray-500 dark:text-gray-400'>
+                  Showing {visibleMarketplaces.length} of {filteredAndSortedMarketplaces.length}
+                </p>
                 <button
-                  onClick={() => handlePageChange(currentPage - 1)}
-                  disabled={currentPage === 1}
-                  className='btn btn-secondary px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed'
-                  aria-label='Previous page'
+                  onClick={() => setVisibleCount((c) => c + 12)}
+                  className='btn btn-secondary px-6 py-2.5'
+                  aria-label={`Load 12 more marketplaces (${filteredAndSortedMarketplaces.length - visibleMarketplaces.length} remaining)`}
                 >
-                  Previous
-                </button>
-
-                <div className='flex gap-1'>
-                  {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
-                    let pageNum;
-                    if (totalPages <= 5) {
-                      pageNum = i + 1;
-                    } else if (currentPage <= 3) {
-                      pageNum = i + 1;
-                    } else if (currentPage >= totalPages - 2) {
-                      pageNum = totalPages - 4 + i;
-                    } else {
-                      pageNum = currentPage - 2 + i;
-                    }
-
-                    return (
-                      <button
-                        key={pageNum}
-                        onClick={() => handlePageChange(pageNum)}
-                        className={`w-10 h-10 rounded-lg font-medium transition-colors ${
-                          currentPage === pageNum
-                            ? 'bg-primary-600 text-white'
-                            : 'btn btn-secondary'
-                        }`}
-                        aria-label={`Go to page ${pageNum}`}
-                      >
-                        {pageNum}
-                      </button>
-                    );
-                  })}
-                </div>
-
-                <button
-                  onClick={() => handlePageChange(currentPage + 1)}
-                  disabled={currentPage === totalPages}
-                  className='btn btn-secondary px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed'
-                  aria-label='Next page'
-                >
-                  Next
+                  Load 12 more
                 </button>
               </div>
             )}
