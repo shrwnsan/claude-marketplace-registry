@@ -10,6 +10,7 @@
 import fs from 'fs';
 import path from 'path';
 import { format, parseISO } from 'date-fns';
+import { canonicalAuthor } from './validate-plugins';
 
 interface Marketplace {
   id: string;
@@ -267,6 +268,20 @@ class DataGenerator {
             hasSkillMd: disc.hasSkillMd,
           },
         });
+      }
+
+      // Author canonicalization — same rule as validate-plugins.ts: one
+      // declared author across the marketplace's entries is the publisher's
+      // display name for all of them.
+      const canonical = canonicalAuthor(
+        manifestPlugins.map((entry: any) => normalizeAuthor(entry.author))
+      );
+      if (canonical) {
+        for (const plugin of plugins) {
+          if (plugin.repository === mp.url) {
+            plugin.author = canonical;
+          }
+        }
       }
     }
 

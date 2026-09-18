@@ -32,6 +32,26 @@ function ownerFromUrl(url: string): string {
   return match ? match[1] : '';
 }
 
+/**
+ * Canonical by-line for a marketplace's plugins: when every entry that
+ * declares an author declares the SAME one, that value is the publisher's
+ * chosen display name and applies to all their plugins — otherwise entries
+ * would mix a display name ("Affaan Mustafa") with the owner login
+ * ("affaan-m") for the same person. Declares null when authors are mixed
+ * (multi-vendor marketplaces keep per-entry authors) or absent.
+ * Case-insensitive comparison; the first-seen casing wins.
+ */
+export function canonicalAuthor(declaredAuthors: string[]): string | null {
+  const unique = new Map<string, string>();
+  for (const raw of declaredAuthors) {
+    const value = (raw ?? '').trim();
+    if (!value) continue;
+    const key = value.toLowerCase();
+    if (!unique.has(key)) unique.set(key, value);
+  }
+  return unique.size === 1 ? [...unique.values()][0] : null;
+}
+
 interface Plugin {
   id: string;
   name: string;
@@ -164,6 +184,18 @@ class PluginValidator {
 
       // Also check for plugin directories
       await this.scanPluginDirectories(owner, repo, plugins);
+
+      // Author canonicalization: a single declared author across this
+      // marketplace's entries is the publisher's display name for all of
+      // them — keeps the by-line from mixing "Display Name" with "login".
+      const canonical = canonicalAuthor(
+        (manifest.plugins || []).map((p: any) => normalizeAuthor(p.author))
+      );
+      if (canonical) {
+        for (const plugin of plugins) {
+          plugin.author = canonical;
+        }
+      }
     } catch (error) {
       console.error(`Error processing ${marketplace.name}:`, error);
     }
