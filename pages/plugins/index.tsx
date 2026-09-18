@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Head from 'next/head';
 import MainLayout from '@/components/layout/MainLayout';
 import SearchBar from '@/components/Search/SearchBar';
@@ -6,9 +6,12 @@ import PluginCard from '@/components/Marketplace/PluginCard';
 import { usePluginData } from '@/hooks/usePluginData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
-import { Star, Grid, List, Package } from 'lucide-react';
+import { Star, Grid, List, Package, ArrowUp } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+
+/** Auto-loads the next chunk when the sentinel scrolls near the viewport. */
+const LOAD_CHUNK = 24;
 
 const PluginsPage: React.FC = () => {
   const router = useRouter();
@@ -24,6 +27,25 @@ const PluginsPage: React.FC = () => {
   const [sortBy, setSortBy] = useState<'stars' | 'name'>('stars');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [visibleCount, setVisibleCount] = useState(12);
+  const loadMoreRef = useRef<HTMLDivElement>(null);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  // Selections persist in the URL (shareable, survives back/forward).
+  const updateQuery = React.useCallback(
+    (patch: Record<string, string>) => {
+      const query: Record<string, string> = {};
+      for (const [key, value] of Object.entries({ ...router.query, ...patch })) {
+        if (typeof value === 'string' && value) query[key] = value;
+      }
+      router.replace({ pathname: '/plugins', query }, undefined, { shallow: true });
+    },
+    [router]
+  );
+
+  useEffect(() => {
+    const s = router.query.sort;
+    if (s === 'stars' || s === 'name') setSortBy(s);
+  }, [router.query.sort]);
 
   const { plugins, loading, error, totalCount } = usePluginData();
   const { data: stats } = useEcosystemStats();
@@ -56,16 +78,42 @@ const PluginsPage: React.FC = () => {
   }, [plugins, searchQuery, sortBy]);
 
   const visiblePlugins = filteredAndSortedPlugins.slice(0, visibleCount);
+  const hasMore = visiblePlugins.length < filteredAndSortedPlugins.length;
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
     setVisibleCount(12);
+    updateQuery({ q: query });
   };
 
   const handleSortChange = (sort: 'stars' | 'name') => {
     setSortBy(sort);
     setVisibleCount(12);
+    updateQuery({ sort: sort === 'stars' ? '' : sort });
   };
+
+  // Auto-load: watch the sentinel; when it approaches the viewport, extend the list.
+  useEffect(() => {
+    const el = loadMoreRef.current;
+    if (!el || !hasMore) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setVisibleCount((c) => Math.min(c + LOAD_CHUNK, filteredAndSortedPlugins.length));
+        }
+      },
+      { rootMargin: '700px 0px' }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [hasMore, filteredAndSortedPlugins.length]);
+
+  // Back-to-top visibility
+  useEffect(() => {
+    const onScroll = () => setShowBackToTop(window.scrollY > 800);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   if (loading) {
     return (
@@ -270,22 +318,39 @@ const PluginsPage: React.FC = () => {
               </div>
             )}
 
-            {/* Load more */}
-            {visiblePlugins.length < filteredAndSortedPlugins.length && (
+            {/* Auto-load sentinel — extends the list as it approaches the viewport */}
+            {hasMore && <div ref={loadMoreRef} className='h-1' aria-hidden='true' />}
+
+            {/* Load more (manual fallback for the scroll-triggered load) */}
+            {hasMore && (
               <div className='flex flex-col items-center gap-3 mt-12'>
                 <p className='text-sm text-gray-500 dark:text-gray-400'>
                   Showing {visiblePlugins.length} of {filteredAndSortedPlugins.length}
                 </p>
                 <button
-                  onClick={() => setVisibleCount((c) => c + 12)}
+                  onClick={() => setVisibleCount((c) => c + LOAD_CHUNK)}
                   className='btn btn-secondary px-6 py-2.5'
-                  aria-label={`Load 12 more plugins (${filteredAndSortedPlugins.length - visiblePlugins.length} remaining)`}
+                  aria-label={`Load ${LOAD_CHUNK} more plugins (${filteredAndSortedPlugins.length - visiblePlugins.length} remaining)`}
                 >
-                  Load 12 more
+                  Load {LOAD_CHUNK} more
                 </button>
               </div>
             )}
           </section>
+
+          {/* Back to top */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className={`fixed bottom-6 right-6 z-40 btn-ghost bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-medium rounded-full p-3 transition-all duration-300 ${
+              showBackToTop
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-4 pointer-events-none'
+            }`}
+            aria-label='Back to top'
+            tabIndex={showBackToTop ? 0 : -1}
+          >
+            <ArrowUp className='w-5 h-5' />
+          </button>
         </div>
       </MainLayout>
     </>

@@ -31,24 +31,35 @@ export function featuredScore(m: FeaturedMarketplace): number {
 }
 
 /**
- * Deterministic daily rotation: rank by score, take a rotating window over the
- * top `poolSize`, so the featured set changes every day without a server.
+ * Deterministic daily rotation: the top-3 highest-scoring marketplaces are
+ * anchored (flagships should not rotate away below mid-tier repos), and the
+ * remaining slots rotate through the rest of the top `poolSize` day by day.
  */
 export function selectFeaturedMarketplaces<T extends FeaturedMarketplace>(
   marketplaces: T[],
   count = 6,
-  poolSize = 12
+  poolSize = 12,
+  now: number = Date.now()
 ): T[] {
   const ranked = [...marketplaces].sort(
     (a, b) => featuredScore(b) - featuredScore(a) || String(a.id).localeCompare(String(b.id))
   );
   const pool = ranked.slice(0, Math.min(poolSize, ranked.length));
   if (pool.length <= count) return pool;
+
+  const anchors = pool.slice(0, Math.min(3, count));
+  const rotators = pool.slice(anchors.length);
+  const slots = count - anchors.length;
+  if (slots <= 0 || rotators.length === 0) return anchors;
+
   const dayOfYear = Math.floor(
-    (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (1000 * 60 * 60 * 24)
+    (now - new Date(new Date(now).getFullYear(), 0, 0).getTime()) / (1000 * 60 * 60 * 24)
   );
-  const offset = dayOfYear % pool.length;
-  return Array.from({ length: count }, (_, i) => pool[(offset + i) % pool.length]);
+  const offset = dayOfYear % rotators.length;
+  return [
+    ...anchors,
+    ...Array.from({ length: slots }, (_, i) => rotators[(offset + i) % rotators.length]),
+  ];
 }
 
 /**

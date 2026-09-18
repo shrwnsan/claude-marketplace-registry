@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Search, Menu, X, Github } from 'lucide-react';
 import ThemeToggle from '../ui/ThemeToggle';
 
@@ -8,16 +9,44 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ className = '' }) => {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   const navigation = [
-    { name: 'Home', href: '/', current: false },
-    { name: 'Marketplaces', href: '/marketplaces', current: false },
-    { name: 'Plugins', href: '/plugins', current: false },
-    { name: 'Documentation', href: '/docs', current: false },
+    { name: 'Home', href: '/' },
+    { name: 'Marketplaces', href: '/marketplaces' },
+    { name: 'Plugins', href: '/plugins' },
+    { name: 'Documentation', href: '/docs' },
   ];
+
+  const isActive = (href: string) =>
+    href === '/' ? router.pathname === '/' : router.pathname.startsWith(href);
+
+  /** Focus the site search if it exists on this page, otherwise go to it. */
+  const openSearch = () => {
+    const el = document.getElementById('site-search') as HTMLInputElement | null;
+    if (el) {
+      el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      el.focus();
+    } else {
+      router.push('/#site-search');
+    }
+  };
+
+  // Cmd/Ctrl+K focuses search from anywhere; without a search box on the
+  // current page it routes to the homepage combobox.
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'k' && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
+        openSearch();
+      }
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [router]);
 
   // Close mobile menu when clicking outside
   useEffect(() => {
@@ -94,8 +123,9 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
               <Link
                 key={item.name}
                 href={item.href}
-                className='nav-link'
+                className={`nav-link${isActive(item.href) ? ' nav-link-active' : ''}`}
                 aria-label={`Navigate to ${item.name}`}
+                aria-current={isActive(item.href) ? 'page' : undefined}
               >
                 {item.name}
               </Link>
@@ -107,15 +137,12 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             {/* Theme Toggle */}
             <ThemeToggle variant='dropdown' />
 
-            {/* Search button */}
+            {/* Search button — focuses the page combobox, or routes to it */}
             <button
               className='btn-ghost p-2'
-              aria-label='Search'
-              onClick={() => {
-                // Focus search input on page
-                const searchInput = document.getElementById('search') as HTMLInputElement;
-                searchInput?.focus();
-              }}
+              aria-label='Search (press Cmd+K)'
+              title='Search (⌘K)'
+              onClick={openSearch}
             >
               <Search className='w-5 h-5' />
             </button>
@@ -174,9 +201,12 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className='nav-link block px-4 py-3 rounded-lg text-base font-medium'
+                  className={`nav-link block px-4 py-3 rounded-lg text-base font-medium${
+                    isActive(item.href) ? ' nav-link-active' : ''
+                  }`}
                   onClick={handleNavClick}
                   aria-label={`Navigate to ${item.name}`}
+                  aria-current={isActive(item.href) ? 'page' : undefined}
                   style={{
                     animationDelay: `${index * 50}ms`,
                   }}

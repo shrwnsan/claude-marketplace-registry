@@ -59,6 +59,13 @@ const SearchCombobox: React.FC<SearchComboboxProps> = ({
     }
   }, []);
 
+  // Arriving via /#site-search (header search button on another page) focuses the combobox.
+  useEffect(() => {
+    if (window.location.hash === '#site-search') {
+      inputRef.current?.focus();
+    }
+  }, []);
+
   // Debounce the query used for matching so the dropdown stays smooth
   const [debounced, setDebounced] = useState('');
   useEffect(() => {
@@ -257,6 +264,7 @@ const SearchCombobox: React.FC<SearchComboboxProps> = ({
           </div>
           <input
             ref={inputRef}
+            id='site-search'
             type='text'
             value={query}
             onChange={(e) => {
@@ -352,8 +360,14 @@ const SearchCombobox: React.FC<SearchComboboxProps> = ({
                         aria-selected={activeIndex === index}
                       >
                         <span className='flex items-center justify-between gap-2'>
-                          <span className='text-sm font-medium text-gray-900 dark:text-gray-100 truncate'>
-                            {m.name}
+                          <span className='flex items-center gap-2 min-w-0'>
+                            <Store
+                              className='h-3.5 w-3.5 text-success-500 flex-shrink-0'
+                              aria-hidden='true'
+                            />
+                            <span className='text-sm font-medium text-gray-900 dark:text-gray-100 truncate'>
+                              {m.name}
+                            </span>
                           </span>
                           <span className='text-xs text-gray-500 dark:text-gray-400 flex-shrink-0'>
                             ★ {(m.stars || 0).toLocaleString()}
@@ -387,8 +401,14 @@ const SearchCombobox: React.FC<SearchComboboxProps> = ({
                         aria-selected={activeIndex === index}
                       >
                         <span className='flex items-center justify-between gap-2'>
-                          <span className='text-sm font-medium text-gray-900 dark:text-gray-100 truncate'>
-                            {p.name}
+                          <span className='flex items-center gap-2 min-w-0'>
+                            <Package
+                              className='h-3.5 w-3.5 text-primary-500 flex-shrink-0'
+                              aria-hidden='true'
+                            />
+                            <span className='text-sm font-medium text-gray-900 dark:text-gray-100 truncate'>
+                              {p.name}
+                            </span>
                           </span>
                           <span className='text-xs text-gray-500 dark:text-gray-400 flex-shrink-0 truncate'>
                             {p.marketplaceName}
