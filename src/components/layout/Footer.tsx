@@ -16,6 +16,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
     explore: [
       { name: 'Marketplaces', href: '/marketplaces' },
       { name: 'Plugins', href: '/plugins' },
+      { name: 'Statistics', href: '/stats' },
     ],
     resources: [
       { name: 'Documentation', href: '/docs' },

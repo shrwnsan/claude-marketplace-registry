@@ -6,7 +6,7 @@ The Claude Marketplace Registry is an automated directory of Claude Code marketp
 
 - **Search** — the hero search is a typeahead combobox: start typing and it shows grouped marketplace and plugin matches. Arrow keys navigate, Enter opens, and "See all N results" deep-links to the full listing. Press **Cmd/Ctrl+K** from any page to jump to search.
 - **Trending topics** — real tags from the catalog; clicking one fills the search.
-- **Ecosystem at a glance** — live totals from the latest scan. Detailed charts live further down the page in **Ecosystem Statistics**.
+- **Ecosystem at a glance** — live totals from the latest scan. The full dashboard lives at **/stats** (linked under the hero stats and in the navigation).
 
 ## Browsing marketplaces
 
@@ -32,7 +32,7 @@ Plugin detail pages show the description, author, skills, version, and parent ma
 
 ## Ecosystem statistics
 
-The **Ecosystem Statistics** dashboard (homepage, or the anchor link under the hero stats) covers:
+The **Ecosystem Statistics** page ([/stats](/stats), linked under the hero stats and in the navigation) covers:
 
 - **Overview** — totals with 30-day growth once a baseline exists (growth % appears automatically after ~30 days of history)
 - **Growth trends** — big-number deltas per metric; the annotated line chart appears once five daily snapshots exist
