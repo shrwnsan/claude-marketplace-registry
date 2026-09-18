@@ -197,3 +197,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+# Brand share image must ship (everything else under public/ that matters is tracked)
+!public/og-image.png
