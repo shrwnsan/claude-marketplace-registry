@@ -1,0 +1,1752 @@
+[
+  {
+    "id": "1003222647",
+    "fullName": "typedef-ai/fenic",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1020628118",
+    "fullName": "serac-labs/serac",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1026176642",
+    "fullName": "scotthavird/claude-code-template",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1026435440",
+    "fullName": "Raftersecurity/rafter-cli",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1052888010",
+    "fullName": "yi-john-huang/sdd-mcp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1061953414",
+    "fullName": "anthropics/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "known-seed"
+  },
+  {
+    "id": "1064514521",
+    "fullName": "sunholo-data/ailang",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1078079172",
+    "fullName": "ComposioHQ/awesome-claude-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "known-seed"
+  },
+  {
+    "id": "1079028084",
+    "fullName": "AojdevStudio/Finance-Guru",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1088320070",
+    "fullName": "maquina-app/rails-upgrade-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1100776768",
+    "fullName": "anthropics/claude-plugins-official",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "known-seed"
+  },
+  {
+    "id": "110216866",
+    "fullName": "dailydotdev/daily",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1103429229",
+    "fullName": "themoah/klag",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1105022950",
+    "fullName": "0xDarkMatter/claude-mods",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1109103275",
+    "fullName": "TheBeardedBearSAS/claude-craft",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1117894769",
+    "fullName": "databricks-solutions/ai-dev-kit",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1120609501",
+    "fullName": "Everyone-Needs-A-Copilot/claude-copilot",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1124151967",
+    "fullName": "greenstevester/fastlane-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1125088805",
+    "fullName": "xenitV1/claude-code-maestro",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1127415267",
+    "fullName": "BayramAnnakov/claude-reflect",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1127928851",
+    "fullName": "tctinh/agent-hive",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1130804155",
+    "fullName": "afx-team/agent-skill-npm-boilerplate",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1131383209",
+    "fullName": "jjuanrivvera/canvas-cli",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1133500581",
+    "fullName": "Belkins/revenue-os",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1134135741",
+    "fullName": "databricks/databricks-agent-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1134239413",
+    "fullName": "edjchapman/claude-code-config",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1134388286",
+    "fullName": "callstackincubator/agent-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1134819911",
+    "fullName": "nyldn/claude-octopus",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1134977240",
+    "fullName": "CSlawyer1985/china-lawyer-analyst",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1134982411",
+    "fullName": "yizhiyanhua-ai/youtube-ai-digest",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1135387321",
+    "fullName": "unclecatvn/agent-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1136438507",
+    "fullName": "rangerchaz/turkey-build",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1136590548",
+    "fullName": "affaan-m/ECC",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1137835873",
+    "fullName": "umputun/ralphex",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1137888780",
+    "fullName": "marko-php/marko",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1138027710",
+    "fullName": "rstackjs/agent-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1138885549",
+    "fullName": "op7418/Document-illustrator-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1139027061",
+    "fullName": "andrew/managing-dependencies",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1139131465",
+    "fullName": "cpuchip/scripture-study",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1139329853",
+    "fullName": "superdesigndev/superdesign-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1141791199",
+    "fullName": "ahundt/autorun",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1142649206",
+    "fullName": "nhevers/MoltBrain",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1143019303",
+    "fullName": "juliusz-cwiakalski/agentic-delivery-os",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1143408173",
+    "fullName": "xu-xiang/everything-claude-code-zh",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1145651786",
+    "fullName": "a20070322/everything-claude-code-zh",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1146875291",
+    "fullName": "OpenRouterTeam/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1147679251",
+    "fullName": "sheeki03/tirith",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1148217549",
+    "fullName": "RevenueCat/ai-toolkit",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1149281843",
+    "fullName": "this-rs/project-orchestrator",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1149289995",
+    "fullName": "madeinoz67/madeinoz-osint-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1152264645",
+    "fullName": "Sagart-cactus/claude-k8s-plugin",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1152709304",
+    "fullName": "selhorys/dataspoke-baseline",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1153065898",
+    "fullName": "jeduden/mdsmith",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1153848836",
+    "fullName": "mikeparcewski/wicked-garden",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1154555361",
+    "fullName": "zxc123aa/cc-proxy-detector",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1155330814",
+    "fullName": "gavdalf/total-recall",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1158115109",
+    "fullName": "TheRedDeveloper/ply-engine",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1158924919",
+    "fullName": "replicate/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1159220728",
+    "fullName": "win4r/claude-code-dispatch",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1159829402",
+    "fullName": "oxylabs/agent-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1162406317",
+    "fullName": "isac322/kwin-mcp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1163064509",
+    "fullName": "agent-sh/enhance",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1163066801",
+    "fullName": "hugoguerrap/crypto-claude-desk",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1163403392",
+    "fullName": "eksenova/EksenOS",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1164042207",
+    "fullName": "Canine89/hwpxskill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1165884445",
+    "fullName": "GabrielBBaldez/Notify-Hub",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1166143771",
+    "fullName": "rekal-dev/rekal-cli",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1167084305",
+    "fullName": "codybrom/clairvoyance",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1170272490",
+    "fullName": "app-incubator-xyz/skill-vetter",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1170281920",
+    "fullName": "Scottcjn/iota-agent-mcp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1171761408",
+    "fullName": "wbelk/claude-qmd-sessions",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1171974591",
+    "fullName": "maxwellsdm1867/wheeler",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1172184033",
+    "fullName": "backblaze-labs/claude-skill-b2-cloud-storage",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1172271110",
+    "fullName": "bzd6661/wechat-article-for-ai",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1172597493",
+    "fullName": "AICodeLion/agent-pack-n-go",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1173427820",
+    "fullName": "op7418/Claude-to-IM-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1176901361",
+    "fullName": "OpenRaiser/PaperFit",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1179817049",
+    "fullName": "MarioZZJ/cc-notify-hooks",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1182092040",
+    "fullName": "ai-zixun/humanizer-zh",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1182787940",
+    "fullName": "tonone-ai/tonone",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1183648658",
+    "fullName": "Factory-AI/cursed-plugins",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1184078081",
+    "fullName": "nthnclrk/enablement-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1184185044",
+    "fullName": "dvcdsys/code-index",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1184985738",
+    "fullName": "eze-is/web-access",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1185259975",
+    "fullName": "Alpha961/Vibecoding-helper-Skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1188873672",
+    "fullName": "DenisSergeevitch/repo-task-proof-loop",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1189407131",
+    "fullName": "Stieges/bpmn-generator",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1189411978",
+    "fullName": "fabio-rovai/brain-in-the-fish",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1189784242",
+    "fullName": "Dragoon0x/research-sharp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1190568968",
+    "fullName": "upstash/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1190674192",
+    "fullName": "Goldentrii/AgentRecall-X",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1192096446",
+    "fullName": "openplanr/OpenPlanr",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1192432103",
+    "fullName": "amaar-mc/wit",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1192519851",
+    "fullName": "chituai/prd-writer",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1192572634",
+    "fullName": "seldonframe/seldonframe",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1192616057",
+    "fullName": "TeamSPWK/nova",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1193147839",
+    "fullName": "poshan0126/dotclaude",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1194422563",
+    "fullName": "MetcalfSolutions/Satori",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1196589098",
+    "fullName": "snowyowlmia/persona-compass",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1197289595",
+    "fullName": "sneg55/agent-starter",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1198172135",
+    "fullName": "AdaCore/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1199582283",
+    "fullName": "sean-m-cooper/ai_tools",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1200304299",
+    "fullName": "cometchat/cometchat-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1200344086",
+    "fullName": "nikolai-vysotskyi/trace-mcp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1200595744",
+    "fullName": "AppsVortex/arness",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1201775350",
+    "fullName": "avelikiy/great_cto",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1202576122",
+    "fullName": "Aperivue/medsci-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1202721717",
+    "fullName": "Liberty91LTD/cti-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1202794571",
+    "fullName": "whystrohm/digital-twin-of-yourself",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1203034717",
+    "fullName": "sverklo/sverklo",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1205548161",
+    "fullName": "D0NMEGA/donnyclaude",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1207161577",
+    "fullName": "NatiCha/bunwv",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1207622001",
+    "fullName": "YesIamGodt/knowledge-pipline",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1207993826",
+    "fullName": "jasonkneen/agensis",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1208090885",
+    "fullName": "AlemTuzlak/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1208853607",
+    "fullName": "Schimasuperbra/distill-my-mentor",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1209169841",
+    "fullName": "leigegehaha/tavern-card-distiller",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1211523835",
+    "fullName": "omerycll/claude-aso",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1212371315",
+    "fullName": "grafana/wiresmith",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1212927136",
+    "fullName": "microsoft/copilot-brag-sheet",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1213079565",
+    "fullName": "Tencent/tencent-edgeone-agent-plugins",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1213782759",
+    "fullName": "forsonny/leyline",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1214556362",
+    "fullName": "tenfoldmarc/llm-council-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1214564285",
+    "fullName": "browser-use/browser-harness-js",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1217927485",
+    "fullName": "atuljha23/holocron",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1218000121",
+    "fullName": "ViewWay/hermes-by-everythings",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1219186676",
+    "fullName": "adologyai/content-intelligence-plugin",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1220966272",
+    "fullName": "openplanr/planr-pipeline",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1222674351",
+    "fullName": "Crysple/superteam",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "12229362",
+    "fullName": "kdeldycke/dotfiles",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1223082716",
+    "fullName": "buer2233/ai-api-test-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1223827138",
+    "fullName": "AgentTestingClamp/r02-alirezarezvani-claude-skills-seo",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1224137046",
+    "fullName": "Jason-chen-coder/dev-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1224526710",
+    "fullName": "StarryKit/starrykit-plugin",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1225439149",
+    "fullName": "zz41354899/SwiftClip",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1226415818",
+    "fullName": "daypunk/LockedIn",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1227390839",
+    "fullName": "xiaofenggan01/aigc-reduce",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1227566039",
+    "fullName": "brunobracaioli/claude-code-starter-pack",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1227684404",
+    "fullName": "brunobracaioli/business_dossie",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1227844943",
+    "fullName": "markifact/markifact-mcp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1228093729",
+    "fullName": "mingli30119/stock-analysis",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1229567447",
+    "fullName": "probabl-ai/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1230123793",
+    "fullName": "WeirdSky924/agent-handoff-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1231458473",
+    "fullName": "alamops/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1232371755",
+    "fullName": "miketigerblue/proton-bridge-mcp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1233351502",
+    "fullName": "laithalsaadoon/erpaval",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1234177275",
+    "fullName": "kamp-us/phoenix",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1236644310",
+    "fullName": "meridianlabs-ai/inspect-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1237046812",
+    "fullName": "netboxlabs/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1239825801",
+    "fullName": "anyshift-io/sre-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1240495324",
+    "fullName": "Trapezohe/Anamnesis",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1241216543",
+    "fullName": "cline/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1241544212",
+    "fullName": "Dannect/specnote-mcp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1242294338",
+    "fullName": "DemchaAV/graphcompose-ai-flow",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1242320277",
+    "fullName": "Lee-W/maigo",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1243019455",
+    "fullName": "Boom-Vitt/claude-thai-business-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1243640031",
+    "fullName": "peterctwang/codegraph-rust",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1245108765",
+    "fullName": "rar-file/claude-rpc",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1245655203",
+    "fullName": "limin112/video-subtitle",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1245919496",
+    "fullName": "itallstartedwithaidea/claude-googleadsagent",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1247030866",
+    "fullName": "home-operations/yayamlls",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1247037691",
+    "fullName": "sakibsadmanshajib/antigravity-plugin",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1247257077",
+    "fullName": "hongyi652/ppt-master-sci-fork",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1248751622",
+    "fullName": "brycewang-stanford/AER-Skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1249923101",
+    "fullName": "reiwa-travel/newt-mcp-server",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1251182451",
+    "fullName": "burakdmir/abp-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1252346445",
+    "fullName": "cliftonai/clifton-mcp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1254019975",
+    "fullName": "Hainrixz/abogado-del-diablo",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1254422214",
+    "fullName": "rollinsio/beyond-test-coverage",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1255508156",
+    "fullName": "Xopoko/build-swift-apps",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1259900796",
+    "fullName": "lucifer1004/VeloQ",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1260041117",
+    "fullName": "hirokita117/yaml-to-html-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1260418709",
+    "fullName": "pepegar/ktlsp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1260929589",
+    "fullName": "shunsaku-studio/Prhythm",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1261701225",
+    "fullName": "renanlido/tia-harness",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1262683019",
+    "fullName": "xabaras/kmp-cocoapods-to-swiftpm",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1262894625",
+    "fullName": "isas1/blindspot",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1264342841",
+    "fullName": "amydeng2000/health-self-investigation-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1265222064",
+    "fullName": "msanchezdev/agent-bridge",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1265531036",
+    "fullName": "anthony-chaudhary/dos-kernel",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1265654867",
+    "fullName": "SpaceZephyr/creator-buddy",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1266746400",
+    "fullName": "borhen68/SkillEngine",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1266896323",
+    "fullName": "EconSolider/dynare-copilot",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1267030790",
+    "fullName": "Brain-ai-biz/Brain-edit-slides",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1268462870",
+    "fullName": "ShivamGupta42/goals",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1269151566",
+    "fullName": "scaccogatto/okf-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1269893717",
+    "fullName": "Turtle-Hwan/im-ai-copyeditor",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1270626657",
+    "fullName": "astrogilda/waitbus",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1272111001",
+    "fullName": "sunfmin/claude-brain-hand",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1272139132",
+    "fullName": "Zane-0x5a/remotion-director",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1272861960",
+    "fullName": "michellemayes/meta-doctor",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1275012434",
+    "fullName": "Yuk1you/PenT3st",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1275673790",
+    "fullName": "ek33450505/attest",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1276222609",
+    "fullName": "ek33450505/looptrip",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1277000520",
+    "fullName": "luxonis/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1277549098",
+    "fullName": "microcmsio/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1277989920",
+    "fullName": "EliaAlberti/dcode-agent-kit",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1278265633",
+    "fullName": "NovusEdge/palpatine",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1279028296",
+    "fullName": "ropensci-review-tools/ropensci-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1282431625",
+    "fullName": "static-var/Keystone",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1288677794",
+    "fullName": "cth9191/cloneify",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1289577353",
+    "fullName": "liketrek/Plugin-Skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1289814824",
+    "fullName": "MhmdElGazzar/agentex",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1290095888",
+    "fullName": "ostikwhy-blip/claude-code-handoff-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1291766087",
+    "fullName": "broisnischal/phobos",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1292805205",
+    "fullName": "mehrad-dm/mastermind",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1294830436",
+    "fullName": "Bangs00/claude-media-control",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1295274853",
+    "fullName": "Oscaner/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1296570575",
+    "fullName": "baokhang83/fluencyloop",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1298747332",
+    "fullName": "noluyorAbi/claude-code-recap",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1303763995",
+    "fullName": "terse-lang/terse",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1304012236",
+    "fullName": "SpaceZephyr/cowrite",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1307804900",
+    "fullName": "ychampion/morph-public",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1308602622",
+    "fullName": "ToolMonsters/handoff-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1312192147",
+    "fullName": "sectapunterx/cpp-mentor",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1312428500",
+    "fullName": "kunal12203/swafra",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1312438278",
+    "fullName": "yappologistic/focus-friendly",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1312966353",
+    "fullName": "Djarvur/go-ultimate",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1313799199",
+    "fullName": "Makoto20S/codex-handoff-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1317066429",
+    "fullName": "edvardgrishin27/nativeprompt",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "1319148154",
+    "fullName": "saiday/kukuroo",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1319995142",
+    "fullName": "UseOSINT/Skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1320242957",
+    "fullName": "aaddrick/attention-control",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1320379092",
+    "fullName": "touying-typ/seaslides",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1322948077",
+    "fullName": "midagedev/gadak",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1332665268",
+    "fullName": "ujjwalredd/Dopamine",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "1347341275",
+    "fullName": "forta-network/forta-risk-skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1349000066",
+    "fullName": "denniswon/skills",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "1354760955",
+    "fullName": "aws-samples/sample-sagemaker-marketplace-onboarding-skill",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "305321080",
+    "fullName": "kataras/jwt",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "359419233",
+    "fullName": "kubeshark/kubeshark",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "443121611",
+    "fullName": "microprediction/precise",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "470157595",
+    "fullName": "FlashHand/rig",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "586543156",
+    "fullName": "kubb-labs/kubb",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "589619867",
+    "fullName": "AmadeusITGroup/otter",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "605682921",
+    "fullName": "apache/hamilton",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "609940147",
+    "fullName": "featurevisor/featurevisor",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "622569125",
+    "fullName": "taishi-i/awesome-ChatGPT-repositories",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "659713215",
+    "fullName": "kataras/pg",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "705998937",
+    "fullName": "aws-samples/sample-apj-sup-sa",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "724919681",
+    "fullName": "lbnl-science-it/scienceit-docs",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "780609248",
+    "fullName": "universal-material/universal-material-web",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "787362890",
+    "fullName": "dahlia/logtape",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "795151083",
+    "fullName": "respanai/respan",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "837374387",
+    "fullName": "ihuzaifashoukat/x-use",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "skill-files"
+  },
+  {
+    "id": "914938762",
+    "fullName": "camunda/camunda-7-to-8-migration-tooling",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "917509785",
+    "fullName": "quicknode/solana-finance-claude-plugin",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "plugin-manifest"
+  },
+  {
+    "id": "958852531",
+    "fullName": "genomoncology/biomcp",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "972135029",
+    "fullName": "UKGovernmentBEIS/hibayes",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  },
+  {
+    "id": "977845118",
+    "fullName": "Jebel-Quant/jquantstats",
+    "firstSeen": "2026-09-18T03:32:59.142Z",
+    "lastSeen": "2026-09-18T03:32:59.142Z",
+    "discoverySource": "marketplace-manifest"
+  }
+]
