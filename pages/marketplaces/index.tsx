@@ -186,107 +186,60 @@ const MarketplacesPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Filters and Controls — chips wrap; sort + view pinned top-right */}
-              <div className='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-3'>
-                {/* Category Filter — curated buckets + raw deep-link topic */}
-                <div className='flex flex-wrap gap-2'>
+              {/* Category Filter — curated buckets + raw deep-link topic */}
+              <div className='flex flex-wrap gap-2'>
+                <button
+                  onClick={() => handleTopicChange('All')}
+                  className={`px-4 h-9 inline-flex items-center rounded-lg font-mono text-sm transition-all duration-200 ${
+                    selectedTopic === 'All'
+                      ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
+                      : 'bg-gray-100 dark:bg-gray-750 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                  }`}
+                >
+                  All
+                </button>
+                {MARKETPLACE_CATEGORIES.map((category) => (
                   <button
-                    onClick={() => handleTopicChange('All')}
+                    key={category.id}
+                    onClick={() => handleTopicChange(category.id)}
                     className={`px-4 h-9 inline-flex items-center rounded-lg font-mono text-sm transition-all duration-200 ${
-                      selectedTopic === 'All'
+                      selectedTopic === category.id
                         ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
                         : 'bg-gray-100 dark:bg-gray-750 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                     }`}
+                    aria-label={`${category.label} (${categoryCounts[category.id] || 0} marketplaces)`}
                   >
-                    All
-                  </button>
-                  {MARKETPLACE_CATEGORIES.map((category) => (
-                    <button
-                      key={category.id}
-                      onClick={() => handleTopicChange(category.id)}
-                      className={`px-4 h-9 inline-flex items-center rounded-lg font-mono text-sm transition-all duration-200 ${
+                    {category.label}
+                    <span
+                      className={`ml-1.5 text-xs ${
                         selectedTopic === category.id
-                          ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
-                          : 'bg-gray-100 dark:bg-gray-750 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                          ? 'text-primary-100'
+                          : 'text-gray-400 dark:text-gray-500'
                       }`}
-                      aria-label={`${category.label} (${categoryCounts[category.id] || 0} marketplaces)`}
                     >
-                      {category.label}
-                      <span
-                        className={`ml-1.5 text-xs ${
-                          selectedTopic === category.id
-                            ? 'text-primary-100'
-                            : 'text-gray-400 dark:text-gray-500'
-                        }`}
-                      >
-                        {categoryCounts[category.id] || 0}
-                      </span>
-                    </button>
-                  ))}
-                  {activeRawTopic && (
-                    <button
-                      onClick={() => handleTopicChange('All')}
-                      className='px-4 h-9 inline-flex items-center rounded-lg font-mono text-sm bg-primary-600 text-white shadow-md hover:bg-primary-700 transition-all duration-200 inline-flex items-center gap-1'
-                      aria-label={`Clear topic filter "${activeRawTopic}"`}
-                    >
-                      #{activeRawTopic}
-                      <X className='w-3.5 h-3.5' aria-hidden='true' />
-                    </button>
-                  )}
-                </div>
-
-                {/* Sort and View Controls — one unbreakable line, pinned right */}
-                <div className='flex items-center gap-3 ml-auto flex-nowrap flex-shrink-0 h-9'>
-                  <div className='flex items-center gap-2'>
-                    <label
-                      htmlFor='marketplace-sort'
-                      className='text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap'
-                    >
-                      Sort by:
-                    </label>
-                    <select
-                      id='marketplace-sort'
-                      value={sortBy}
-                      onChange={(e) =>
-                        handleSortChange(e.target.value as 'stars' | 'name' | 'updated')
-                      }
-                      className='px-3 h-9 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
-                    >
-                      <option value='stars'>Stars</option>
-                      <option value='name'>Name</option>
-                      <option value='updated'>Updated</option>
-                    </select>
-                  </div>
-
-                  <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
-
-                  <div className='flex items-center gap-1 h-9 bg-gray-100 dark:bg-gray-750 rounded-lg p-1 px-1'>
-                    <button
-                      onClick={() => setViewMode('grid')}
-                      className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
-                      aria-label='Grid view'
-                      aria-pressed={viewMode === 'grid'}
-                    >
-                      <Grid className='w-4 h-4' />
-                    </button>
-                    <button
-                      onClick={() => setViewMode('list')}
-                      className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
-                      aria-label='List view'
-                      aria-pressed={viewMode === 'list'}
-                    >
-                      <List className='w-4 h-4' />
-                    </button>
-                  </div>
-                </div>
+                      {categoryCounts[category.id] || 0}
+                    </span>
+                  </button>
+                ))}
+                {activeRawTopic && (
+                  <button
+                    onClick={() => handleTopicChange('All')}
+                    className='px-4 h-9 inline-flex items-center rounded-lg font-mono text-sm bg-primary-600 text-white shadow-md hover:bg-primary-700 transition-all duration-200 inline-flex items-center gap-1'
+                    aria-label={`Clear topic filter "${activeRawTopic}"`}
+                  >
+                    #{activeRawTopic}
+                    <X className='w-3.5 h-3.5' aria-hidden='true' />
+                  </button>
+                )}
               </div>
             </div>
           </section>
 
           {/* Results Section */}
           <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
-            {/* Results Count — narrates the active filters */}
-            <div className='mb-6'>
+            {/* Results header — count left, sort + view right: the controls
+                sit next to the list they govern */}
+            <div className='mb-6 flex flex-wrap items-center justify-between gap-3'>
               <p className='text-gray-600 dark:text-gray-400'>
                 Showing {visibleMarketplaces.length} of {filteredAndSortedMarketplaces.length}{' '}
                 marketplaces
@@ -302,6 +255,51 @@ const MarketplacesPage: React.FC = () => {
                       }`
                     : ''}
               </p>
+
+              {/* Sort and View Controls — one unbreakable line, pinned right */}
+              <div className='flex items-center gap-3 ml-auto flex-nowrap flex-shrink-0 h-9'>
+                <div className='flex items-center gap-2'>
+                  <label
+                    htmlFor='marketplace-sort'
+                    className='text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap'
+                  >
+                    Sort by:
+                  </label>
+                  <select
+                    id='marketplace-sort'
+                    value={sortBy}
+                    onChange={(e) =>
+                      handleSortChange(e.target.value as 'stars' | 'name' | 'updated')
+                    }
+                    className='px-3 h-9 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
+                  >
+                    <option value='stars'>Stars</option>
+                    <option value='name'>Name</option>
+                    <option value='updated'>Updated</option>
+                  </select>
+                </div>
+
+                <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
+
+                <div className='flex items-center gap-1 h-9 bg-gray-100 dark:bg-gray-750 rounded-lg p-1 px-1'>
+                  <button
+                    onClick={() => setViewMode('grid')}
+                    className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
+                    aria-label='Grid view'
+                    aria-pressed={viewMode === 'grid'}
+                  >
+                    <Grid className='w-4 h-4' />
+                  </button>
+                  <button
+                    onClick={() => setViewMode('list')}
+                    className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
+                    aria-label='List view'
+                    aria-pressed={viewMode === 'list'}
+                  >
+                    <List className='w-4 h-4' />
+                  </button>
+                </div>
+              </div>
             </div>
 
             {/* Marketplaces Grid/List */}
