@@ -9,6 +9,7 @@ import { usePluginData, topPluginsByStars } from '@/hooks/usePluginData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
 import { StatCard } from '@/components/ui/StatCard';
+import FriendlyTimestamp from '@/components/ui/FriendlyTimestamp';
 import { ChevronRight, Github, Package, ShieldCheck, Star, Store, Users } from 'lucide-react';
 import Link from 'next/link';
 import { handleAnchorClick } from '@/utils/scroll';
@@ -140,9 +141,14 @@ const HomePage: React.FC = () => {
                     <p className='text-xs font-mono text-gray-500 dark:text-gray-400'>
                       {(stats?.overview.totalPlugins ?? 0).toLocaleString()} plugins across{' '}
                       {(stats?.overview.totalMarketplaces ?? 0).toLocaleString()} marketplaces
-                      {stats?.overview.lastUpdated
-                        ? ` · updated ${new Date(stats.overview.lastUpdated).toLocaleDateString()}`
-                        : ''}
+                      {stats?.overview.lastUpdated ? (
+                        <>
+                          {' · updated '}
+                          <FriendlyTimestamp iso={stats.overview.lastUpdated} />
+                        </>
+                      ) : (
+                        ''
+                      )}
                     </p>
                   </div>
                 </>
