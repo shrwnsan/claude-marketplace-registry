@@ -178,63 +178,57 @@ const PluginsPage: React.FC = () => {
                   />
                 </div>
               </div>
-
-              {/* Sort and View Controls — one unbreakable line, pinned right */}
-              <div className='flex flex-wrap items-center gap-3'>
-                <p className='text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap'>
-                  Sorted by {sortBy === 'stars' ? 'parent marketplace stars' : 'name'}
-                </p>
-                <div className='flex items-center gap-3 ml-auto flex-nowrap flex-shrink-0'>
-                  <div className='flex items-center gap-2'>
-                    <label
-                      htmlFor='plugin-sort'
-                      className='text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap'
-                    >
-                      Sort by:
-                    </label>
-                    <select
-                      id='plugin-sort'
-                      value={sortBy}
-                      onChange={(e) => handleSortChange(e.target.value as 'stars' | 'name')}
-                      className='px-3 h-9 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
-                    >
-                      <option value='stars'>Stars</option>
-                      <option value='name'>Name</option>
-                    </select>
-                  </div>
-
-                  <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
-
-                  <div className='flex items-center gap-1 h-9 bg-gray-100 dark:bg-gray-750 rounded-lg p-1 px-1'>
-                    <button
-                      onClick={() => setViewMode('grid')}
-                      className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
-                      aria-label='Grid view'
-                      aria-pressed={viewMode === 'grid'}
-                    >
-                      <Grid className='w-4 h-4' />
-                    </button>
-                    <button
-                      onClick={() => setViewMode('list')}
-                      className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
-                      aria-label='List view'
-                      aria-pressed={viewMode === 'list'}
-                    >
-                      <List className='w-4 h-4' />
-                    </button>
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
 
           {/* Results Section */}
           <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
-            <div className='mb-6'>
+            {/* Results header — count left, sort + view right */}
+            <div className='mb-6 flex flex-wrap items-center justify-between gap-3'>
               <p className='text-gray-600 dark:text-gray-400'>
                 Showing {visiblePlugins.length} of {filteredAndSortedPlugins.length} plugins
                 {searchQuery && ` matching "${searchQuery}"`}
               </p>
+              <div className='flex items-center gap-3 flex-nowrap flex-shrink-0'>
+                <div className='flex items-center gap-2'>
+                  <label
+                    htmlFor='plugin-sort'
+                    className='text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap'
+                  >
+                    Sort by:
+                  </label>
+                  <select
+                    id='plugin-sort'
+                    value={sortBy}
+                    onChange={(e) => handleSortChange(e.target.value as 'stars' | 'name')}
+                    className='px-3 h-9 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
+                  >
+                    <option value='stars'>Parent stars</option>
+                    <option value='name'>Name</option>
+                  </select>
+                </div>
+
+                <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
+
+                <div className='flex items-center gap-1 h-9 bg-gray-100 dark:bg-gray-750 rounded-lg p-1 px-1'>
+                  <button
+                    onClick={() => setViewMode('grid')}
+                    className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
+                    aria-label='Grid view'
+                    aria-pressed={viewMode === 'grid'}
+                  >
+                    <Grid className='w-4 h-4' />
+                  </button>
+                  <button
+                    onClick={() => setViewMode('list')}
+                    className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
+                    aria-label='List view'
+                    aria-pressed={viewMode === 'list'}
+                  >
+                    <List className='w-4 h-4' />
+                  </button>
+                </div>
+              </div>
             </div>
 
             {visiblePlugins.length > 0 ? (
