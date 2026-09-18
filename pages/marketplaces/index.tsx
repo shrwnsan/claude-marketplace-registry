@@ -3,11 +3,11 @@ import Head from 'next/head';
 import MainLayout from '@/components/layout/MainLayout';
 import SearchBar from '@/components/Search/SearchBar';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
-import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
-import { Star, ChevronRight, ShieldCheck, Filter, Grid, List } from 'lucide-react';
+import { Star, ChevronRight, ShieldCheck, Filter, Grid, List, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { MARKETPLACE_CATEGORIES, matchesCategory, countByCategory } from '@/utils/categories';
 
 const MarketplacesPage: React.FC = () => {
   const router = useRouter();
@@ -43,34 +43,41 @@ const MarketplacesPage: React.FC = () => {
   }, [router.query.sort]);
 
   const { data: marketplaceData, loading, error } = useRealMarketplaceData();
-  const { data: stats } = useEcosystemStats();
   const marketplaces = marketplaceData?.marketplaces || [];
 
-  // Real topic chips from generated stats
-  const topics = useMemo(() => (stats?.categories || []).slice(0, 8).map((c) => c.name), [stats]);
+  // Curated functional categories, counted from real data (raw GitHub topics
+  // like "claude-code" are too generic to be useful filters).
+  const categoryCounts = useMemo(() => countByCategory(marketplaces), [marketplaces]);
 
-  // Deep-link support: /marketplaces?topic=tag (from the topic chart bars)
-  // seeds the topic filter
+  // A raw GitHub topic arriving via ?topic= (chart deep links) — not one of
+  // the curated categories but still a valid filter.
+  const activeRawTopic =
+    selectedTopic !== 'All' && !MARKETPLACE_CATEGORIES.some((c) => c.id === selectedTopic)
+      ? selectedTopic
+      : null;
+
+  // Deep-link support: /marketplaces?topic= accepts curated category ids and
+  // raw GitHub topics alike.
   useEffect(() => {
     const t = router.query.topic;
-    if (typeof t === 'string' && t && topics.includes(t)) {
-      setSelectedTopic(t);
-    }
-  }, [router.query.topic, topics]);
+    if (typeof t !== 'string' || !t) return;
+    const validCategory = MARKETPLACE_CATEGORIES.some((c) => c.id === t);
+    const validRawTopic = marketplaces.some((m: { topics?: string[] }) =>
+      matchesCategory(Array.isArray(m.topics) ? m.topics : [], t)
+    );
+    if (validCategory || validRawTopic) setSelectedTopic(t);
+  }, [router.query.topic, marketplaces]);
 
   // Filter and sort marketplaces
   const filteredAndSortedMarketplaces = useMemo(() => {
     const filtered = marketplaces.filter((marketplace) => {
+      const topics: string[] = Array.isArray(marketplace.topics) ? marketplace.topics : [];
       const matchesSearch =
         searchQuery === '' ||
         marketplace.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         marketplace.description.toLowerCase().includes(searchQuery.toLowerCase());
 
-      const matchesTopic =
-        selectedTopic === 'All' ||
-        (Array.isArray(marketplace.topics) && marketplace.topics.includes(selectedTopic));
-
-      return matchesSearch && matchesTopic;
+      return matchesSearch && matchesCategory(topics, selectedTopic);
     });
 
     // Sort marketplaces
@@ -81,8 +88,10 @@ const MarketplacesPage: React.FC = () => {
         case 'name':
           return a.name.localeCompare(b.name);
         case 'updated':
-          // Sort by lastUpdated if available, otherwise by stars as fallback
-          return (b.stars || 0) - (a.stars || 0);
+          return (
+            new Date((b as { updatedAt?: string }).updatedAt || 0).getTime() -
+            new Date((a as { updatedAt?: string }).updatedAt || 0).getTime()
+          );
         default:
           return 0;
       }
@@ -179,35 +188,69 @@ const MarketplacesPage: React.FC = () => {
 
               {/* Filters and Controls */}
               <div className='flex flex-col lg:flex-row gap-4 items-center justify-between'>
-                {/* Category Filter */}
+                {/* Category Filter — curated buckets + raw deep-link topic */}
                 <div className='flex flex-wrap gap-2 justify-center lg:justify-start'>
-                  {['All', ...topics].map((topic) => (
+                  <button
+                    onClick={() => handleTopicChange('All')}
+                    className={`px-4 py-2 rounded-lg font-mono text-sm transition-all duration-200 ${
+                      selectedTopic === 'All'
+                        ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
+                        : 'bg-gray-100 dark:bg-gray-750 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                    }`}
+                  >
+                    All
+                  </button>
+                  {MARKETPLACE_CATEGORIES.map((category) => (
                     <button
-                      key={topic}
-                      onClick={() => handleTopicChange(topic)}
-                      className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 ${
-                        selectedTopic === topic
+                      key={category.id}
+                      onClick={() => handleTopicChange(category.id)}
+                      className={`px-4 py-2 rounded-lg font-mono text-sm transition-all duration-200 ${
+                        selectedTopic === category.id
                           ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
-                          : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                          : 'bg-gray-100 dark:bg-gray-750 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                       }`}
+                      aria-label={`${category.label} (${categoryCounts[category.id] || 0} marketplaces)`}
                     >
-                      {topic}
+                      {category.label}
+                      <span
+                        className={`ml-1.5 text-xs ${
+                          selectedTopic === category.id
+                            ? 'text-primary-100'
+                            : 'text-gray-400 dark:text-gray-500'
+                        }`}
+                      >
+                        {categoryCounts[category.id] || 0}
+                      </span>
                     </button>
                   ))}
+                  {activeRawTopic && (
+                    <button
+                      onClick={() => handleTopicChange('All')}
+                      className='px-4 py-2 rounded-lg font-mono text-sm bg-primary-600 text-white shadow-md hover:bg-primary-700 transition-all duration-200 inline-flex items-center gap-1'
+                      aria-label={`Clear topic filter "${activeRawTopic}"`}
+                    >
+                      #{activeRawTopic}
+                      <X className='w-3.5 h-3.5' aria-hidden='true' />
+                    </button>
+                  )}
                 </div>
 
                 {/* Sort and View Controls */}
-                <div className='flex items-center gap-4'>
+                <div className='flex flex-wrap items-center gap-4'>
                   <div className='flex items-center gap-2'>
-                    <label className='text-sm font-medium text-gray-700 dark:text-gray-300'>
+                    <label
+                      htmlFor='marketplace-sort'
+                      className='text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap'
+                    >
                       Sort by:
                     </label>
                     <select
+                      id='marketplace-sort'
                       value={sortBy}
                       onChange={(e) =>
                         handleSortChange(e.target.value as 'stars' | 'name' | 'updated')
                       }
-                      className='px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
+                      className='px-3 py-2 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
                     >
                       <option value='stars'>Stars</option>
                       <option value='name'>Name</option>
@@ -238,11 +281,22 @@ const MarketplacesPage: React.FC = () => {
 
           {/* Results Section */}
           <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
-            {/* Results Count */}
+            {/* Results Count — narrates the active filters */}
             <div className='mb-6'>
               <p className='text-gray-600 dark:text-gray-400'>
                 Showing {visibleMarketplaces.length} of {filteredAndSortedMarketplaces.length}{' '}
                 marketplaces
+                {searchQuery && ` matching “${searchQuery}”`}
+                {activeRawTopic
+                  ? ` tagged “${activeRawTopic}”`
+                  : selectedTopic !== 'All' &&
+                      MARKETPLACE_CATEGORIES.find((c) => c.id === selectedTopic)
+                    ? ` in ${
+                        MARKETPLACE_CATEGORIES.find(
+                          (c) => c.id === selectedTopic
+                        )?.label.toLowerCase() ?? ''
+                      }`
+                    : ''}
               </p>
             </div>
 

@@ -181,18 +181,22 @@ const PluginsPage: React.FC = () => {
 
               {/* Sort and View Controls */}
               <div className='flex flex-col lg:flex-row gap-4 items-center justify-between'>
-                <p className='text-sm text-gray-500 dark:text-gray-400'>
+                <p className='text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap'>
                   Sorted by {sortBy === 'stars' ? 'parent marketplace stars' : 'name'}
                 </p>
-                <div className='flex items-center gap-4'>
+                <div className='flex flex-wrap items-center gap-4'>
                   <div className='flex items-center gap-2'>
-                    <label className='text-sm font-medium text-gray-700 dark:text-gray-300'>
+                    <label
+                      htmlFor='plugin-sort'
+                      className='text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap'
+                    >
                       Sort by:
                     </label>
                     <select
+                      id='plugin-sort'
                       value={sortBy}
                       onChange={(e) => handleSortChange(e.target.value as 'stars' | 'name')}
-                      className='px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
+                      className='px-3 py-2 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
                     >
                       <option value='stars'>Stars</option>
                       <option value='name'>Name</option>
@@ -309,7 +313,7 @@ const PluginsPage: React.FC = () => {
             {/* Load more (manual fallback for the scroll-triggered load) */}
             {hasMore && (
               <div className='flex flex-col items-center gap-3 mt-12'>
-                <p className='text-sm text-gray-500 dark:text-gray-400'>
+                <p className='text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap'>
                   Showing {visiblePlugins.length} of {filteredAndSortedPlugins.length}
                 </p>
                 <button
