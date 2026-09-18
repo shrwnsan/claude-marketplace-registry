@@ -18,8 +18,6 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
     { name: 'Home', href: '/' },
     { name: 'Marketplaces', href: '/marketplaces' },
     { name: 'Plugins', href: '/plugins' },
-    { name: 'Statistics', href: '/stats' },
-    { name: 'Documentation', href: '/docs' },
   ];
 
   const isActive = (href: string) =>
