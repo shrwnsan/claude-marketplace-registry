@@ -4,6 +4,7 @@ import MainLayout from '@/components/layout/MainLayout';
 import SearchBar from '@/components/Search/SearchBar';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
+import SortSelect from '@/components/ui/SortSelect';
 import { Star, ChevronRight, ShieldCheck, Filter, Grid, List, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -258,26 +259,17 @@ const MarketplacesPage: React.FC = () => {
 
               {/* Sort and View Controls — one unbreakable line, pinned right */}
               <div className='flex items-center gap-3 ml-auto flex-nowrap flex-shrink-0 h-9'>
-                <div className='flex items-center gap-2'>
-                  <label
-                    htmlFor='marketplace-sort'
-                    className='text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap'
-                  >
-                    Sort by:
-                  </label>
-                  <select
-                    id='marketplace-sort'
-                    value={sortBy}
-                    onChange={(e) =>
-                      handleSortChange(e.target.value as 'stars' | 'name' | 'updated')
-                    }
-                    className='px-3 h-9 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
-                  >
-                    <option value='stars'>Stars</option>
-                    <option value='name'>Name</option>
-                    <option value='updated'>Updated</option>
-                  </select>
-                </div>
+                <SortSelect
+                  id='marketplace-sort'
+                  label='Sort by:'
+                  value={sortBy}
+                  onChange={(v) => handleSortChange(v as 'stars' | 'name' | 'updated')}
+                  options={[
+                    { value: 'stars', label: 'Stars' },
+                    { value: 'name', label: 'Name' },
+                    { value: 'updated', label: 'Updated' },
+                  ]}
+                />
 
                 <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
 
