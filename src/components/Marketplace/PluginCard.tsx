@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ExternalLink, Github, Copy, Check, Package } from 'lucide-react';
+import { ChevronRight, Copy, Check, Package } from 'lucide-react';
 import { CatalogPlugin } from '../../hooks/usePluginData';
 import { useClickTracking } from '../../utils/analytics/hooks';
 
@@ -86,32 +86,17 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
         )}
       </div>
 
-      {/* Actions */}
-      <div className='flex items-center justify-between mt-auto pt-4 border-t border-gray-100 dark:border-gray-700'>
-        <div className='flex items-center space-x-1'>
-          {(plugin.sourceUrl || plugin.repositoryUrl) && (
-            <a
-              href={plugin.sourceUrl || plugin.repositoryUrl}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='btn-ghost p-2 group'
-              title={`Open ${plugin.name} source on GitHub`}
-              aria-label={`Open ${plugin.name} source on GitHub`}
-            >
-              <Github className='w-4 h-4 group-hover:scale-110 transition-transform' />
-            </a>
-          )}
-          <CopyRepoButton url={plugin.sourceUrl || plugin.repositoryUrl} name={plugin.name} />
-        </div>
-        {plugin.marketplaceId && (
-          <Link
-            href={`/marketplaces/${plugin.marketplaceId}`}
-            className='btn-ghost p-2 group'
-            aria-label={`Open ${plugin.marketplaceName} marketplace page`}
-          >
-            <ExternalLink className='w-4 h-4 group-hover:scale-110 transition-transform' />
-          </Link>
-        )}
+      {/* Actions — copy the source URL; the repository link lives on the plugin page */}
+      <div className='flex items-center justify-between gap-2 mt-auto pt-4 border-t border-gray-100 dark:border-gray-700'>
+        <CopyRepoButton url={plugin.sourceUrl || plugin.repositoryUrl} name={plugin.name} />
+        <Link
+          href={`/plugins/${plugin.id}`}
+          className='btn btn-primary text-sm group'
+          aria-label={`View details for ${plugin.name}`}
+        >
+          view details
+          <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
+        </Link>
       </div>
     </div>
   );
