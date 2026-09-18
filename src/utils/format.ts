@@ -32,13 +32,14 @@ export function formatNumber(num: number | undefined | null): string {
 export function formatDateTimeWithOffset(iso: string): string {
   const date = new Date(iso);
   if (isNaN(date.getTime())) return iso;
+  // The data source stores UTC; display the viewer's local clock with their
+  // own offset. Date getters are already timezone-aware — no shifting needed.
   const offsetMinutes = -date.getTimezoneOffset();
   const sign = offsetMinutes >= 0 ? '+' : '-';
   const abs = Math.abs(offsetMinutes);
-  const local = new Date(date.getTime() + offsetMinutes * 60000);
   const pad = (n: number) => String(n).padStart(2, '0');
-  const date_ = `${local.getFullYear()}-${pad(local.getMonth() + 1)}-${pad(local.getDate())}`;
-  const time = `${pad(local.getHours())}:${pad(local.getMinutes())}:${pad(local.getSeconds())}`;
+  const date_ = `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+  const time = `${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
   const offset = `UTC${sign}${pad(Math.floor(abs / 60))}:${pad(abs % 60)}`;
   return `${date_} ${time} ${offset}`;
 }
