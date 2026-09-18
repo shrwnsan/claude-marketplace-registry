@@ -186,13 +186,13 @@ const MarketplacesPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Filters and Controls — chips wrap; sort + view stay one line, right */}
-              <div className='flex flex-wrap items-center gap-3'>
+              {/* Filters and Controls — chips wrap; sort + view pinned top-right */}
+              <div className='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-3'>
                 {/* Category Filter — curated buckets + raw deep-link topic */}
                 <div className='flex flex-wrap gap-2'>
                   <button
                     onClick={() => handleTopicChange('All')}
-                    className={`px-4 py-2 rounded-lg font-mono text-sm transition-all duration-200 ${
+                    className={`px-4 h-9 inline-flex items-center rounded-lg font-mono text-sm transition-all duration-200 ${
                       selectedTopic === 'All'
                         ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
                         : 'bg-gray-100 dark:bg-gray-750 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -204,7 +204,7 @@ const MarketplacesPage: React.FC = () => {
                     <button
                       key={category.id}
                       onClick={() => handleTopicChange(category.id)}
-                      className={`px-4 py-2 rounded-lg font-mono text-sm transition-all duration-200 ${
+                      className={`px-4 h-9 inline-flex items-center rounded-lg font-mono text-sm transition-all duration-200 ${
                         selectedTopic === category.id
                           ? 'bg-primary-600 text-white shadow-md hover:bg-primary-700'
                           : 'bg-gray-100 dark:bg-gray-750 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -226,7 +226,7 @@ const MarketplacesPage: React.FC = () => {
                   {activeRawTopic && (
                     <button
                       onClick={() => handleTopicChange('All')}
-                      className='px-4 py-2 rounded-lg font-mono text-sm bg-primary-600 text-white shadow-md hover:bg-primary-700 transition-all duration-200 inline-flex items-center gap-1'
+                      className='px-4 h-9 inline-flex items-center rounded-lg font-mono text-sm bg-primary-600 text-white shadow-md hover:bg-primary-700 transition-all duration-200 inline-flex items-center gap-1'
                       aria-label={`Clear topic filter "${activeRawTopic}"`}
                     >
                       #{activeRawTopic}
@@ -236,7 +236,7 @@ const MarketplacesPage: React.FC = () => {
                 </div>
 
                 {/* Sort and View Controls — one unbreakable line, pinned right */}
-                <div className='flex items-center gap-3 ml-auto flex-nowrap flex-shrink-0'>
+                <div className='flex items-center gap-3 ml-auto flex-nowrap flex-shrink-0 h-9'>
                   <div className='flex items-center gap-2'>
                     <label
                       htmlFor='marketplace-sort'
@@ -250,7 +250,7 @@ const MarketplacesPage: React.FC = () => {
                       onChange={(e) =>
                         handleSortChange(e.target.value as 'stars' | 'name' | 'updated')
                       }
-                      className='px-3 py-2 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
+                      className='px-3 h-9 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
                     >
                       <option value='stars'>Stars</option>
                       <option value='name'>Name</option>
@@ -260,10 +260,10 @@ const MarketplacesPage: React.FC = () => {
 
                   <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
 
-                  <div className='flex items-center gap-1 bg-gray-100 dark:bg-gray-750 rounded-lg p-1'>
+                  <div className='flex items-center gap-1 h-9 bg-gray-100 dark:bg-gray-750 rounded-lg p-1 px-1'>
                     <button
                       onClick={() => setViewMode('grid')}
-                      className={`p-2 rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
+                      className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
                       aria-label='Grid view'
                       aria-pressed={viewMode === 'grid'}
                     >
@@ -271,7 +271,7 @@ const MarketplacesPage: React.FC = () => {
                     </button>
                     <button
                       onClick={() => setViewMode('list')}
-                      className={`p-2 rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
+                      className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
                       aria-label='List view'
                       aria-pressed={viewMode === 'list'}
                     >

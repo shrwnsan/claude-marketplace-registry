@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import MainLayout from '@/components/layout/MainLayout';
 import { Copy, Check, Database, Globe, Code } from 'lucide-react';
 
@@ -119,9 +120,24 @@ const ApiDocumentation: React.FC = () => {
           {/* Header */}
           <section className='bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700'>
             <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-              <p className='text-sm font-medium text-primary-600 dark:text-primary-400 uppercase tracking-wider mb-2'>
-                Documentation
-              </p>
+              {/* Breadcrumb — doubles as the back-link to the docs overview */}
+              <nav
+                aria-label='Breadcrumb'
+                className='font-mono text-xs uppercase tracking-[0.18em] mb-3 flex items-center gap-1.5'
+              >
+                <Link
+                  href='/docs'
+                  className='text-primary-600 dark:text-primary-400 hover:underline'
+                >
+                  docs
+                </Link>
+                <span className='text-gray-300 dark:text-gray-600' aria-hidden='true'>
+                  /
+                </span>
+                <span className='text-gray-500 dark:text-gray-400' aria-current='page'>
+                  api
+                </span>
+              </nav>
               <h1 className='text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-3'>
                 JSON Data API
               </h1>

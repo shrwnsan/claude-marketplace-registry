@@ -196,7 +196,7 @@ const PluginsPage: React.FC = () => {
                       id='plugin-sort'
                       value={sortBy}
                       onChange={(e) => handleSortChange(e.target.value as 'stars' | 'name')}
-                      className='px-3 py-2 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
+                      className='px-3 h-9 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
                     >
                       <option value='stars'>Stars</option>
                       <option value='name'>Name</option>
@@ -205,10 +205,10 @@ const PluginsPage: React.FC = () => {
 
                   <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
 
-                  <div className='flex items-center gap-1 bg-gray-100 dark:bg-gray-750 rounded-lg p-1'>
+                  <div className='flex items-center gap-1 h-9 bg-gray-100 dark:bg-gray-750 rounded-lg p-1 px-1'>
                     <button
                       onClick={() => setViewMode('grid')}
-                      className={`p-2 rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
+                      className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
                       aria-label='Grid view'
                       aria-pressed={viewMode === 'grid'}
                     >
@@ -216,7 +216,7 @@ const PluginsPage: React.FC = () => {
                     </button>
                     <button
                       onClick={() => setViewMode('list')}
-                      className={`p-2 rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
+                      className={`h-7 w-7 inline-flex items-center justify-center rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
                       aria-label='List view'
                       aria-pressed={viewMode === 'list'}
                     >
