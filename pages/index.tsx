@@ -83,21 +83,7 @@ const HomePage: React.FC = () => {
                 />
               </div>
 
-              {/* Ecosystem at a Glance — compact label row; full dashboard lives on /stats */}
-              <div className='mb-4 flex items-baseline justify-center gap-2 sm:gap-3 flex-wrap'>
-                <h2 className='eyebrow'>Ecosystem at a Glance</h2>
-                <span className='text-gray-300 dark:text-gray-600' aria-hidden='true'>
-                  {'//'}
-                </span>
-                <Link
-                  href='/stats'
-                  className='font-mono text-xs text-primary-600 dark:text-primary-400 hover:underline'
-                >
-                  full statistics →
-                </Link>
-              </div>
-
-              {/* Stats — same generated stats.json as the dashboard below */}
+              {/* Stats — same generated stats.json as the dashboard on /stats */}
               {statsLoading || marketplaceLoading || pluginsLoading ? (
                 <LoadingState variant='skeleton' className='max-w-4xl mx-auto' />
               ) : statsError && !stats ? (
@@ -106,6 +92,7 @@ const HomePage: React.FC = () => {
                 </p>
               ) : (
                 <>
+                  <h2 className='sr-only'>Ecosystem at a Glance</h2>
                   <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto'>
                     <StatCard
                       icon={Package}
@@ -133,7 +120,7 @@ const HomePage: React.FC = () => {
                     />
                   </div>
 
-                  {/* Quick Stats Note */}
+                  {/* Quick Stats Note — timestamp and the /stats link live here */}
                   <div className='text-center mt-4'>
                     <p className='text-xs font-mono text-gray-500 dark:text-gray-400'>
                       {(stats?.overview.totalPlugins ?? 0).toLocaleString()} plugins across{' '}
@@ -145,6 +132,17 @@ const HomePage: React.FC = () => {
                         </>
                       ) : (
                         ''
+                      )}
+                      {stats && (
+                        <>
+                          {' · '}
+                          <Link
+                            href='/stats'
+                            className='text-primary-500 dark:text-primary-400 hover:underline'
+                          >
+                            full statistics →
+                          </Link>
+                        </>
                       )}
                     </p>
                   </div>
@@ -289,29 +287,6 @@ const HomePage: React.FC = () => {
                 </p>
               </div>
             )}
-          </div>
-        </section>
-
-        {/* Statistics teaser — the full dashboard lives on /stats */}
-        <section className='py-10 sm:py-12 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-850'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
-            <div className='text-center sm:text-left'>
-              <p className='eyebrow eyebrow-prompt mb-1'>tail -f stats.json</p>
-              <h2 className='text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-50'>
-                Ecosystem Statistics
-              </h2>
-              <p className='text-gray-600 dark:text-gray-400 text-sm sm:text-base'>
-                Growth trends, topic distribution, and quality indicators — one snapshot per day.
-              </p>
-            </div>
-            <Link
-              href='/stats'
-              className='cta group/cta self-center sm:self-auto'
-              aria-label='Open ecosystem statistics'
-            >
-              full statistics
-              <ChevronRight className='cta-arrow w-4 h-4' />
-            </Link>
           </div>
         </section>
 
