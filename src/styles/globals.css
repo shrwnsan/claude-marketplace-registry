@@ -86,6 +86,19 @@
     @apply border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 focus:ring-gray-500 dark:focus:ring-gray-400;
   }
 
+  /* Tertiary CTA — text + arrow, no chrome; card-level navigation */
+  .cta {
+    @apply inline-flex items-center gap-1 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 ring-offset-2 ring-offset-gray-50 dark:ring-offset-gray-900;
+  }
+
+  .cta:hover .cta-arrow {
+    transform: translateX(2px);
+  }
+
+  .cta-arrow {
+    @apply transition-transform;
+  }
+
   /* Flat panel with a warm border; elevation comes from contrast, not shadow.
      Interactive variants add the lift so static cards stay calm. */
   .card {

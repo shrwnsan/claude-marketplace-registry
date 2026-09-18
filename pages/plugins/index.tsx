@@ -268,11 +268,11 @@ const PluginsPage: React.FC = () => {
                         </div>
                         <Link
                           href={`/plugins/${plugin.id}`}
-                          className='btn btn-primary text-sm px-4 py-2 group flex-shrink-0'
+                          className='cta group/cta flex-shrink-0'
                           aria-label={`View details for ${plugin.name}`}
                         >
                           view details
-                          <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
+                          <ChevronRight className='cta-arrow w-4 h-4' />
                         </Link>
                       </div>
                     )}

@@ -91,11 +91,11 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
         <CopyRepoButton url={plugin.sourceUrl || plugin.repositoryUrl} name={plugin.name} />
         <Link
           href={`/plugins/${plugin.id}`}
-          className='btn btn-primary text-sm group'
+          className='cta group/cta'
           aria-label={`View details for ${plugin.name}`}
         >
           view details
-          <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
+          <ChevronRight className='cta-arrow w-4 h-4' />
         </Link>
       </div>
     </div>

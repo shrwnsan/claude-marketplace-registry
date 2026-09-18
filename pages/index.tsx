@@ -230,14 +230,14 @@ const HomePage: React.FC = () => {
                       )}
                     </div>
 
-                    <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700'>
+                    <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-end'>
                       <Link
                         href={`/marketplaces/${marketplace.id}`}
-                        className='btn btn-primary text-sm w-full sm:w-auto justify-center group'
+                        className='cta group/cta'
                         aria-label={`Open ${marketplace.name} marketplace page`}
                       >
                         view details
-                        <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
+                        <ChevronRight className='cta-arrow w-4 h-4' />
                       </Link>
                     </div>
                   </div>
