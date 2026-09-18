@@ -9,6 +9,7 @@ import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import { usePluginData } from '@/hooks/usePluginData';
 import LoadingState from '@/components/ui/LoadingState';
 import { Star, Github, Store, Package, ArrowLeft, ChevronRight, Grid, List } from 'lucide-react';
+import { formatRelativeAge } from '@/utils/format';
 
 import fs from 'fs';
 import path from 'path';
@@ -75,6 +76,20 @@ const MarketplaceDetailPage: React.FC = () => {
   }, [marketplacePlugins, searchQuery]);
 
   const topics: string[] = Array.isArray(marketplace?.topics) ? marketplace.topics : [];
+
+  // Most common skills across this marketplace's plugins — real counts from
+  // the catalog, rendered as simple CSS bars (no chart lib on detail pages).
+  const topSkills = React.useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const plugin of marketplacePlugins) {
+      for (const skill of plugin.skills) {
+        counts.set(skill, (counts.get(skill) || 0) + 1);
+      }
+    }
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .slice(0, 6);
+  }, [marketplacePlugins]);
 
   if (marketplaceLoading || pluginsLoading) {
     return (
@@ -145,6 +160,11 @@ const MarketplaceDetailPage: React.FC = () => {
                       {marketplace.forks ? `${marketplace.forks.toLocaleString()} forks` : ''}
                     </span>
                     {marketplace.language && <span>{marketplace.language}</span>}
+                    {marketplace.updatedAt && (
+                      <span title={marketplace.updatedAt}>
+                        updated {formatRelativeAge(marketplace.updatedAt)}
+                      </span>
+                    )}
                     {marketplace.hasManifest && (
                       <span className='badge badge-secondary text-xs'>marketplace.json ✓</span>
                     )}
@@ -152,9 +172,14 @@ const MarketplaceDetailPage: React.FC = () => {
                   {topics.length > 0 && (
                     <div className='flex flex-wrap gap-1.5 mt-3'>
                       {topics.slice(0, 6).map((topic) => (
-                        <span key={topic} className='badge badge-secondary text-xs'>
+                        <Link
+                          key={topic}
+                          href={`/marketplaces?topic=${encodeURIComponent(topic)}`}
+                          className='badge badge-secondary text-xs hover:border-primary-300 dark:hover:border-primary-600 hover:text-primary-700 dark:hover:text-primary-300 transition-all'
+                          aria-label={`Browse marketplaces tagged ${topic}`}
+                        >
                           {topic}
-                        </span>
+                        </Link>
                       ))}
                     </div>
                   )}
@@ -176,24 +201,59 @@ const MarketplaceDetailPage: React.FC = () => {
               {/* Plugin count stats */}
               <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700 grid grid-cols-2 sm:grid-cols-3 gap-4'>
                 <div>
-                  <div className='text-2xl font-bold text-gray-900 dark:text-gray-100'>
+                  <div className='text-2xl font-bold font-mono text-gray-900 dark:text-gray-100'>
                     {marketplacePlugins.length}
                   </div>
                   <div className='text-xs text-gray-500 dark:text-gray-400'>Plugins indexed</div>
                 </div>
                 <div>
-                  <div className='text-2xl font-bold text-gray-900 dark:text-gray-100'>
+                  <div className='text-2xl font-bold font-mono text-gray-900 dark:text-gray-100'>
                     {new Set(marketplacePlugins.map((p) => p.author)).size}
                   </div>
                   <div className='text-xs text-gray-500 dark:text-gray-400'>Authors</div>
                 </div>
                 <div>
-                  <div className='text-2xl font-bold text-gray-900 dark:text-gray-100'>
+                  <div className='text-2xl font-bold font-mono text-gray-900 dark:text-gray-100'>
                     {new Set(marketplacePlugins.flatMap((p) => p.skills)).size}
                   </div>
                   <div className='text-xs text-gray-500 dark:text-gray-400'>Skills</div>
                 </div>
               </div>
+
+              {/* Top skills — real counts, share of this marketplace's plugins */}
+              {topSkills.length > 0 && (
+                <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700'>
+                  <p className='eyebrow'>sort --by-skills</p>
+                  <div className='mt-3 space-y-2'>
+                    {topSkills.map(([skill, count]) => (
+                      <div key={skill} className='flex items-center gap-3'>
+                        <span
+                          className='w-36 sm:w-48 truncate font-mono text-xs text-gray-500 dark:text-gray-400'
+                          title={skill}
+                        >
+                          {skill}
+                        </span>
+                        <div className='flex-1 h-2 bg-gray-200 dark:bg-gray-750 rounded-full overflow-hidden'>
+                          <div
+                            className='h-full bg-primary-500 rounded-full'
+                            style={{
+                              width: `${Math.round((count / marketplacePlugins.length) * 100)}%`,
+                            }}
+                            role='img'
+                            aria-label={`${skill}: carried by ${count} of ${marketplacePlugins.length} plugins`}
+                          />
+                        </div>
+                        <span className='w-14 text-right font-mono text-xs tabular-nums text-gray-500 dark:text-gray-400'>
+                          {count}/{marketplacePlugins.length}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className='text-xs text-gray-400 dark:text-gray-500 mt-2'>
+                    Skills by share of this marketplace&apos;s indexed plugins.
+                  </p>
+                </div>
+              )}
             </div>
 
             {/* Plugins */}
