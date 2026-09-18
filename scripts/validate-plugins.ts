@@ -11,6 +11,27 @@ import fs from 'fs';
 import path from 'path';
 import { Octokit } from '@octokit/rest';
 
+/**
+ * Normalize an author value from a manifest (string or {name|login,email}).
+ */
+function normalizeAuthor(author: unknown): string {
+  if (typeof author === 'string') return author.trim();
+  if (author && typeof author === 'object') {
+    const a = author as { name?: string; login?: string };
+    return (a.name || a.login || '').trim();
+  }
+  return '';
+}
+
+/**
+ * The GitHub user/org that publishes the marketplace repo — the honest
+ * fallback when a plugin entry carries no author of its own.
+ */
+function ownerFromUrl(url: string): string {
+  const match = url?.match(/github\.com\/([^/]+)/);
+  return match ? match[1] : '';
+}
+
 interface Plugin {
   id: string;
   name: string;
@@ -156,7 +177,7 @@ class PluginValidator {
       name: plugin.name || '',
       description: plugin.description || '',
       version: plugin.version || '1.0.0',
-      author: plugin.author || marketplace.name,
+      author: normalizeAuthor(plugin.author) || ownerFromUrl(marketplace.url) || marketplace.name,
       repository: marketplace.url,
       manifestPath: plugin.manifestPath || '',
       isValid: true,
@@ -249,7 +270,7 @@ class PluginValidator {
           name: pluginData.name || pluginDir,
           description: pluginData.description || '',
           version: pluginData.version || '1.0.0',
-          author: pluginData.author || owner,
+          author: normalizeAuthor(pluginData.author) || owner,
           repository: `https://github.com/${owner}/${repo}`,
           manifestPath: pluginManifestPath,
           isValid: true,
