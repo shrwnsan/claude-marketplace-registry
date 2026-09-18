@@ -6,6 +6,7 @@ import PluginCard from '@/components/Marketplace/PluginCard';
 import { usePluginData } from '@/hooks/usePluginData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
+import SortSelect from '@/components/ui/SortSelect';
 import { Grid, List, Package, ArrowUp, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -190,23 +191,16 @@ const PluginsPage: React.FC = () => {
                 {searchQuery && ` matching "${searchQuery}"`}
               </p>
               <div className='flex items-center gap-3 flex-nowrap flex-shrink-0'>
-                <div className='flex items-center gap-2'>
-                  <label
-                    htmlFor='plugin-sort'
-                    className='text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap'
-                  >
-                    Sort by:
-                  </label>
-                  <select
-                    id='plugin-sort'
-                    value={sortBy}
-                    onChange={(e) => handleSortChange(e.target.value as 'stars' | 'name')}
-                    className='px-3 h-9 pr-9 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent'
-                  >
-                    <option value='stars'>Parent stars</option>
-                    <option value='name'>Name</option>
-                  </select>
-                </div>
+                <SortSelect
+                  id='plugin-sort'
+                  label='Sort by:'
+                  value={sortBy}
+                  onChange={(v) => handleSortChange(v as 'stars' | 'name')}
+                  options={[
+                    { value: 'stars', label: 'Parent stars' },
+                    { value: 'name', label: 'Name' },
+                  ]}
+                />
 
                 <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
 

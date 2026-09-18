@@ -7,8 +7,7 @@ import PluginCard from '@/components/Marketplace/PluginCard';
 import { usePluginData, CatalogPlugin } from '@/hooks/usePluginData';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
-import { Star, ExternalLink, Github, Copy, Check, Package, ArrowLeft } from 'lucide-react';
-
+import { Star, Github, Copy, Check, Package, ArrowLeft } from 'lucide-react';
 import fs from 'fs';
 import path from 'path';
 
@@ -167,6 +166,34 @@ const PluginDetailPage: React.FC = () => {
                     )}
                   </div>
                 </div>
+
+                {/* Actions — share this page's permalink; the source repo is one click out */}
+                <div className='flex items-center gap-2 flex-shrink-0'>
+                  <button
+                    onClick={() => copySource(window.location.href)}
+                    className='btn-ghost p-2.5 rounded-lg border border-gray-200 dark:border-gray-700'
+                    title='Copy page permalink'
+                    aria-label='Copy page permalink'
+                  >
+                    {copied ? (
+                      <Check className='w-5 h-5 text-success-500' />
+                    ) : (
+                      <Copy className='w-5 h-5' />
+                    )}
+                  </button>
+                  {(plugin.sourceUrl || plugin.repositoryUrl) && (
+                    <a
+                      href={plugin.sourceUrl || plugin.repositoryUrl}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='btn-ghost p-2.5 rounded-lg border border-gray-200 dark:border-gray-700'
+                      title={`${plugin.name} on GitHub`}
+                      aria-label='View source on GitHub (opens in new tab)'
+                    >
+                      <Github className='w-5 h-5' />
+                    </a>
+                  )}
+                </div>
               </div>
 
               {/* Skills */}
@@ -184,38 +211,6 @@ const PluginDetailPage: React.FC = () => {
                   </div>
                 </div>
               )}
-
-              {/* Source */}
-              <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700 flex flex-col sm:flex-row gap-3'>
-                {(plugin.sourceUrl || plugin.repositoryUrl) && (
-                  <a
-                    href={plugin.sourceUrl || plugin.repositoryUrl}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='btn btn-primary text-sm justify-center'
-                    aria-label={`Open ${plugin.name} source on GitHub`}
-                  >
-                    <Github className='w-4 h-4 mr-2' />
-                    Source
-                    <ExternalLink className='w-3.5 h-3.5 ml-1' />
-                  </a>
-                )}
-                {(plugin.sourceUrl || plugin.repositoryUrl) && (
-                  <button
-                    title={`Copy source URL: ${plugin.sourceUrl || plugin.repositoryUrl}`}
-                    onClick={() => copySource(plugin.sourceUrl || plugin.repositoryUrl)}
-                    className='btn-ghost text-sm px-4 py-2'
-                    aria-label='Copy source URL'
-                  >
-                    {copied ? (
-                      <Check className='w-4 h-4 text-green-500 mr-1' />
-                    ) : (
-                      <Copy className='w-4 h-4 mr-1' />
-                    )}
-                    {copied ? 'Copied!' : 'Copy URL'}
-                  </button>
-                )}
-              </div>
             </div>
 
             {/* Related plugins */}
