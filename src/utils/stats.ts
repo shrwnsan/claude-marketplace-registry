@@ -50,3 +50,19 @@ export function selectFeaturedMarketplaces<T extends FeaturedMarketplace>(
   const offset = dayOfYear % pool.length;
   return Array.from({ length: count }, (_, i) => pool[(offset + i) % pool.length]);
 }
+
+/**
+ * A 2-point "line" reads as noise, so the growth chart stays on big-number
+ * deltas until this many daily snapshots exist.
+ */
+export const GROWTH_LINE_MIN_POINTS = 5;
+
+export function hasEnoughHistory(pointCount: number): boolean {
+  return pointCount >= GROWTH_LINE_MIN_POINTS;
+}
+
+/** Share of the catalog a topic covers, in percent with one decimal. */
+export function topicShare(count: number, total: number): number {
+  if (total <= 0) return 0;
+  return Math.round((count / total) * 1000) / 10;
+}
