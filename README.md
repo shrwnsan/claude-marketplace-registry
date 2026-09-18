@@ -1,10 +1,10 @@
-# Claude Marketplace Aggregator
+# Claude Marketplace Registry
 
 <div align="center">
 
-![Claude Marketplace Aggregator](https://img.shields.io/badge/Claude-Marketplace_Aggregator-blue?style=for-the-badge&logo=anthropic)
+![Claude Marketplace Registry](https://img.shields.io/badge/Claude-Marketplace_Registry-d97757?style=for-the-badge&logo=anthropic)
 
-[![Version](https://img.shields.io/badge/version-v0.4.0--beta.1-blue)](https://github.com/shrwnsan/claude-marketplace-registry/releases/tag/v0.4.0-beta.1)
+[![Version](https://img.shields.io/badge/version-v0.5.0-blue)](https://github.com/shrwnsan/claude-marketplace-registry/releases)
 [![Changelog](https://img.shields.io/badge/changelog-keep--a--changelog-05A2E4?logo=gitbook)](./CHANGELOG.md)
 [![CI](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/ci.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/ci.yml)
 [![Deploy](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/deploy.yml/badge.svg)](https://github.com/shrwnsan/claude-marketplace-registry/actions/workflows/deploy.yml)
@@ -18,7 +18,7 @@
 
 An automated, open-source aggregator that discovers and curates Claude Code marketplaces and plugins from across GitHub. Zero infrastructure — runs entirely on GitHub Actions and Pages as a self-updating artifact.
 
-[🌐 Live Demo](https://shrwnsan.github.io/claude-marketplace-registry) · [📖 Documentation](./docs) · [🤝 Contributing](./CONTRIBUTING.md) · [🐛 Report Issues](https://github.com/shrwnsan/claude-marketplace-registry/issues)
+[🌐 Live site](https://shrwnsan.github.io/claude-marketplace-registry) · [📡 JSON API](./docs/ref/DEVELOPER_API.md) · [📖 Documentation](./docs) · [🤝 Contributing](./CONTRIBUTING.md) · [🐛 Report Issues](https://github.com/shrwnsan/claude-marketplace-registry/issues)
 
 </div>
 
@@ -26,15 +26,15 @@ An automated, open-source aggregator that discovers and curates Claude Code mark
 
 ## How It Works
 
-Every day at midnight UTC, GitHub Actions scans the GitHub API for Claude Code plugin repositories, validates their manifests, generates data files, and publishes the results — fully automated, no servers required.
+Every day at midnight UTC, GitHub Actions scans the GitHub API for Claude Code marketplace repositories, validates their `.claude-plugin/marketplace.json` manifests, generates data files, and publishes the results — fully automated, no servers required.
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                    GitHub Actions (Daily)                         │
+│                    GitHub Actions (Daily, 00:00 UTC)             │
 │                                                                  │
 │  Scan GitHub API  →  Validate Plugins  →  Generate Data          │
 │                                                                  │
-│  Create PR  →  Auto-approve (data-only check)  →  Merge to main  │
+│  Create PR  →  Verify data-only change  →  Merge to main         │
 │                                                                  │
 │  Build Static Site  →  Deploy to GitHub Pages                    │
 └──────────────────────────────────────────────────────────────────┘
@@ -44,13 +44,29 @@ Data updates happen automatically — the pipeline creates PRs, verifies they on
 
 ## Features
 
-- 🔍 **Automated Discovery** — Multi-strategy GitHub search finds Claude Code marketplaces and plugins daily
-- 📊 **Quality Scoring** — Repositories scored by stars, activity, manifest completeness, and more
-- 🔄 **Self-updating** — Scan → validate → PR → auto-merge → deploy, fully automated
-- 🔒 **Security Gates** — Auto-merge only fires for data-only changes on the `automated/*` branch
-- 🌐 **Static Site** — Next.js static generation on GitHub Pages, fast and free
-- 🎯 **Search & Filter** — Browse by language, category, tags, and quality metrics
-- 📱 **Responsive** — Works on desktop, tablet, and mobile
+- 🔍 **Automated discovery** — multi-strategy GitHub search finds Claude Code marketplaces daily; a persistent registry keeps the catalog monotonic and self-healing
+- ⌨️ **Typeahead search** — WAI-ARIA combobox with grouped marketplace/plugin results, keyboard navigation, and `Cmd/Ctrl+K` from anywhere
+- 🗂️ **Curated categories** — functional filters (MCP servers, skill collections, AI agents, …) derived from real topic data, plus raw topic deep links
+- 📊 **Honest metrics** — every number traces back to the daily scan; growth trends accumulate one snapshot per day, and no synthetic downloads or invented scores exist anywhere
+- 🌗 **Dark-first design** — terminal-inspired identity with a warm charcoal palette, ember accent, and full light mode
+- 🔗 **Shareable views** — search, category, and sort selections persist in the URL
+- 🔄 **Self-updating** — scan → validate → PR → auto-merge → deploy, fully automated
+- 🔒 **Security gates** — auto-merge only fires for data-only changes; AI-assist workflows are author-gated
+- 🌐 **Static site** — Next.js static generation on GitHub Pages, fast and free
+
+## The JSON API
+
+The entire catalog is available as free public JSON — no key, CORS enabled, served from the same GitHub Pages CDN as the site:
+
+```bash
+curl -s https://shrwnsan.github.io/claude-marketplace-registry/data/stats.json | jq '.data.overview'
+```
+
+Endpoints: `data/stats.json`, `data/marketplaces.json`, `data/plugins.json`, `data/history.json`. See the [API reference](./docs/ref/DEVELOPER_API.md) or the in-site [/docs/api](https://shrwnsan.github.io/claude-marketplace-registry/docs/api) page.
+
+## Getting your marketplace listed
+
+Listing is automatic: publish a spec-compliant `.claude-plugin/marketplace.json` at your repository root and the next daily scan will discover it. Adding the `claude-plugins` or `claude-skills` topic improves discoverability.
 
 ## Quick Start
 
@@ -64,7 +80,7 @@ npm run dev                  # http://localhost:3000
 
 **Prerequisites:** Node.js 20+, npm 8+, and a [GitHub Personal Access Token](https://github.com/settings/tokens).
 
-See the **[Setup Guide](./SETUP.md)** for detailed configuration including environment variables, GitHub Pages deployment, and favicon assets.
+See the **[Setup Guide](./SETUP.md)** for detailed configuration including environment variables, GitHub Pages deployment, and static asset notes.
 
 ## Available Scripts
 
@@ -96,7 +112,7 @@ For details, see [Architecture](./docs/ref/ARCHITECTURE.md) and [Workflow Archit
 |---|---|---|
 | 📖 | **[Setup Guide](./SETUP.md)** | Installation, configuration, deployment |
 | 👤 | **[User Guide](./docs/guides/USER_GUIDE.md)** | Using the marketplace browser |
-| 🔌 | **[Developer API](./docs/ref/DEVELOPER_API.md)** | Data endpoints and response formats |
+| 📡 | **[JSON API](./docs/ref/DEVELOPER_API.md)** | Public data endpoints and response shapes |
 | 🏗️ | **[Architecture](./docs/ref/ARCHITECTURE.md)** | System design and data models |
 | ⚙️ | **[Workflow Architecture](./docs/ref/WORKFLOW_ARCHITECTURE.md)** | CI/CD pipeline and automation |
 | 🔒 | **[Security](./docs/ref/SECURITY.md)** | Security measures and threat model |
@@ -112,6 +128,12 @@ We welcome contributions! See the [Contributing Guide](./CONTRIBUTING.md) for de
 2. Create a feature branch
 3. Make your changes and add tests
 4. Submit a pull request
+
+> **Note for new static assets:** `.gitignore` excludes `*.png` (browser-test
+> artifacts). Brand assets that must ship — `public/og-image.png`,
+> `public/android-chrome-*.png` — are force-listed with `!` negations in
+> `.gitignore`. If you add a new PNG under `public/`, add a negation or it
+> will silently 404 in production while working locally.
 
 ## License
 

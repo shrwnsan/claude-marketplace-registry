@@ -51,7 +51,7 @@ See: [`src/types/marketplace.ts`](../src/types/marketplace.ts), [`src/types/plug
 |----------|---------|---------|
 | `ci.yml` | Push/PR | Lint, typecheck, test, build |
 | `deploy.yml` | Push to main | Deploy to GitHub Pages |
-| `scan.yml` | Every 6 hours | Discover new marketplaces |
+| `scan.yml` | Daily at 00:00 UTC | Discover new marketplaces |
 | `claude-code.yml` | @claude mention | Review, self-review, triage PR findings |
 | `follow-up-implementation.yml` | PR merged | Auto-implement linked follow-up issues |
 | `auto-pr-review.yml` | PR opened | Automated code review |
