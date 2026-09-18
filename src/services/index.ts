@@ -1,5 +1,5 @@
 /**
- * Service exports for the Claude Marketplace Aggregator
+ * Service exports for the Claude Marketplace Registry
  */
 
 // Ecosystem data service

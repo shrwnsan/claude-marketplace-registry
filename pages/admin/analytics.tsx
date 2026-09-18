@@ -152,11 +152,11 @@ const AnalyticsDashboard: React.FC = () => {
 
   // Colors for charts
   const COLORS = [
-    '#3b82f6',
-    '#10b981',
-    '#f59e0b',
+    '#d97757',
+    '#2da44e',
+    '#dcaa3f',
     '#ef4444',
-    '#8b5cf6',
+    '#3ec0ca',
     '#ec4899',
     '#06b6d4',
     '#84cc16',
@@ -211,8 +211,8 @@ const AnalyticsDashboard: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Analytics Dashboard - Claude Marketplace Aggregator</title>
-        <meta name='description' content='Analytics dashboard for Claude Marketplace Aggregator' />
+        <title>Analytics Dashboard - Claude Marketplace Registry</title>
+        <meta name='description' content='Analytics dashboard for Claude Marketplace Registry' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
@@ -299,8 +299,8 @@ const AnalyticsDashboard: React.FC = () => {
                       {Object.values(eventCounts).reduce((sum, count) => sum + count, 0)}
                     </p>
                   </div>
-                  <div className='p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg'>
-                    <TrendingUp className='w-6 h-6 text-blue-600 dark:text-blue-400' />
+                  <div className='p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg'>
+                    <TrendingUp className='w-6 h-6 text-primary-600 dark:text-primary-400' />
                   </div>
                 </div>
               </div>

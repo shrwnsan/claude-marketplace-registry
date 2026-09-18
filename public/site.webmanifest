@@ -1,11 +1,11 @@
 {
-  "name": "Claude Marketplace Aggregator",
+  "name": "Claude Marketplace Registry",
   "short_name": "Claude Marketplace",
   "description": "Discover and explore Claude Code marketplaces and plugins",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#2563eb",
+  "background_color": "#161310",
+  "theme_color": "#d97757",
   "orientation": "portrait-primary",
   "icons": [
     {

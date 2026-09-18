@@ -97,7 +97,7 @@ const PluginsPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>All Plugins - Claude Marketplace Aggregator</title>
+        <title>All Plugins - Claude Marketplace Registry</title>
         <meta
           name='description'
           content='Browse all Claude Code plugins from marketplaces across GitHub. Find tools to enhance your development workflow.'

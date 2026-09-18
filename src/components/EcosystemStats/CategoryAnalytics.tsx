@@ -75,7 +75,11 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                 layout='vertical'
                 margin={{ top: 8, right: 24, bottom: 8, left: 8 }}
               >
-                <CartesianGrid strokeDasharray='3 3' stroke='#e5e7eb' horizontal={false} />
+                <CartesianGrid
+                  strokeDasharray='3 3'
+                  stroke='var(--chart-grid)'
+                  horizontal={false}
+                />
                 <XAxis
                   type='number'
                   tick={{ fontSize: 12 }}
@@ -96,7 +100,7 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                   labelStyle={{ color: 'var(--tooltip-text)' }}
                   itemStyle={{ color: 'var(--tooltip-text)' }}
                 />
-                <Bar dataKey='count' fill='#3b82f6' radius={[0, 4, 4, 0]} maxBarSize={22} />
+                <Bar dataKey='count' fill='#d97757' radius={[0, 4, 4, 0]} maxBarSize={22} />
               </BarChart>
             </ResponsiveContainer>
           </div>

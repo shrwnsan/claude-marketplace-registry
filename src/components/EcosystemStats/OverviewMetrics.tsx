@@ -111,7 +111,7 @@ const MetricCard: React.FC<{ metric: MetricData; isLoading?: boolean }> = ({
 
   return (
     <article
-      className='card p-6 group cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 focus-within:ring-2 focus-within:ring-primary-500 focus-within:ring-offset-2'
+      className='card p-6 group transition-all duration-200 focus-within:ring-2 focus-within:ring-primary-500'
       role='region'
       aria-label={ariaLabel}
       tabIndex={0}
@@ -129,15 +129,11 @@ const MetricCard: React.FC<{ metric: MetricData; isLoading?: boolean }> = ({
       </div>
 
       <div className='space-y-1'>
-        <h3 className='text-2xl font-bold text-gray-900 dark:text-gray-100 tabular-nums'>
+        <h3 className='text-2xl font-bold font-mono tracking-tight text-gray-900 dark:text-gray-50 tabular-nums'>
           {value}
         </h3>
         <p className='text-sm font-medium text-gray-600 dark:text-gray-400'>{label}</p>
       </div>
-
-      <div
-        className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${currentColor.bg} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-2xl border-l border-b ${currentColor.border}`}
-      ></div>
     </article>
   );
 };

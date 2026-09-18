@@ -1,5 +1,5 @@
 /**
- * Analytics tracking utility for Claude Marketplace Aggregator
+ * Analytics tracking utility for Claude Marketplace Registry
  * Tracks user interactions, page views, and system metrics
  */
 
@@ -40,7 +40,10 @@ class AnalyticsTracker {
   constructor() {
     this.sessionId = this.generateSessionId();
     this.data = this.loadData();
-    this.trackPageView(window.location.pathname);
+    // Prerendered exports construct the tracker on the server — no window there.
+    if (typeof window !== 'undefined') {
+      this.trackPageView(window.location.pathname);
+    }
   }
 
   private generateSessionId(): string {

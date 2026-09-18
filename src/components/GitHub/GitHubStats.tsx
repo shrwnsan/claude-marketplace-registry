@@ -215,7 +215,7 @@ const GitHubStats: React.FC<GitHubStatsProps> = ({ repository, className = '' })
           </div>
 
           <div className='text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg'>
-            <GitBranch className='w-6 h-6 text-blue-500 mx-auto mb-2' />
+            <GitBranch className='w-6 h-6 text-primary-500 mx-auto mb-2' />
             <div className='text-2xl font-bold text-gray-900 dark:text-gray-100'>
               {formatNumber(stats.forks)}
             </div>

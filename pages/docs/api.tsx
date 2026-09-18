@@ -106,7 +106,7 @@ const ApiDocumentation: React.FC = () => {
   return (
     <>
       <Head>
-        <title>JSON Data API - Claude Marketplace Aggregator</title>
+        <title>JSON Data API - Claude Marketplace Registry</title>
         <meta
           name='description'
           content='Free public JSON catalog of Claude Code marketplaces and plugins. No API key, CORS enabled, updated daily.'
@@ -151,9 +151,7 @@ const ApiDocumentation: React.FC = () => {
                 Base URL
               </h2>
               <div className='flex items-center justify-between bg-gray-50 dark:bg-gray-800/50 rounded-lg border border-gray-100 dark:border-gray-700 px-4 py-3'>
-                <code className='text-sm text-primary-600 dark:text-primary-400 break-all'>
-                  {BASE}
-                </code>
+                <code className='text-primary-600 dark:text-primary-400 break-all'>{BASE}</code>
                 <button
                   title={`Copy: ${BASE}`}
                   onClick={() => copyToClipboard(BASE, 'base')}
@@ -201,9 +199,15 @@ const ApiDocumentation: React.FC = () => {
                     <p className='text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1.5'>
                       Response shape
                     </p>
-                    <pre className='bg-gray-900 dark:bg-black/40 text-gray-100 rounded-lg p-4 overflow-x-auto text-xs leading-relaxed'>
-                      {endpoint.shape}
-                    </pre>
+                    <div className='code-block'>
+                      <div className='code-block__bar'>
+                        <span className='code-block__dot bg-error-400/70' aria-hidden='true' />
+                        <span className='code-block__dot bg-warning-400/70' aria-hidden='true' />
+                        <span className='code-block__dot bg-success-400/70' aria-hidden='true' />
+                        <span className='code-block__file'>{endpoint.file}</span>
+                      </div>
+                      <pre className='code-block__pre'>{endpoint.shape}</pre>
+                    </div>
                   </div>
                   <div>
                     <p className='text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1.5'>
@@ -238,43 +242,26 @@ const ApiDocumentation: React.FC = () => {
               </h2>
               <ul className='space-y-2.5 text-sm text-gray-600 dark:text-gray-300 list-disc list-inside leading-relaxed'>
                 <li>
-                  <code className='bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    marketplaces.json
-                  </code>{' '}
-                  and{' '}
-                  <code className='bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    plugins.json
-                  </code>{' '}
-                  are bare arrays;{' '}
-                  <code className='bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    stats.json
-                  </code>{' '}
-                  wraps its payload in{' '}
-                  <code className='bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>{`{success, data, meta}`}</code>
-                  .
+                  <code>marketplaces.json</code> and <code>plugins.json</code> are bare arrays;{' '}
+                  <code>stats.json</code> wraps its payload in{' '}
+                  <code>{`{success, data, meta}`}</code>.
                 </li>
                 <li>
-                  Growth rates are{' '}
-                  <code className='bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>null</code>{' '}
-                  until a baseline snapshot (&gt;0 days old) exists — treat null as “no data”, not
-                  zero.
+                  Growth rates are <code>null</code> until a baseline snapshot (&gt;0 days old)
+                  exists — treat null as “no data”, not zero.
                 </li>
                 <li>
                   Topic counts overlap: one plugin appears under every topic its marketplace
                   carries. Never render them as a pie chart.
                 </li>
                 <li>
-                  Plugin-level{' '}
-                  <code className='bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>stars</code>{' '}
-                  are the parent marketplace&#39;s stars; downloads are not published (GitHub does
-                  not expose them per plugin).
+                  Plugin-level <code>stars</code> are the parent marketplace&#39;s stars; downloads
+                  are not published (GitHub does not expose them per plugin).
                 </li>
                 <li>
                   Join plugins to marketplaces via{' '}
-                  <code className='bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    metadata.marketplaceId === marketplace.id
-                  </code>{' '}
-                  (string comparison on both sides).
+                  <code>metadata.marketplaceId === marketplace.id</code> (string comparison on both
+                  sides).
                 </li>
               </ul>
             </section>

@@ -139,7 +139,7 @@
 
 /* Focus styles for accessibility */
 .ecosystem-stats__section:focus-within {
-  @apply ring-2 ring-blue-500 ring-opacity-50 rounded-xl;
+  @apply ring-2 ring-primary-500 ring-opacity-50 rounded-xl;
 }
 
 /* Print styles */
@@ -184,14 +184,16 @@
    tooltip follows light/dark mode (defaults were white-on-white in dark). */
 :root {
   --tooltip-bg: #ffffff;
-  --tooltip-border: #e5e7eb;
-  --tooltip-text: #111827;
-  --tooltip-muted: #6b7280;
+  --tooltip-border: #e4e0d8;
+  --tooltip-text: #26221c;
+  --tooltip-muted: #7f776a;
+  --chart-grid: #e8e5de;
 }
 
 .dark {
-  --tooltip-bg: #1f2937;
-  --tooltip-border: #374151;
-  --tooltip-text: #f3f4f6;
-  --tooltip-muted: #9ca3af;
+  --tooltip-bg: #221e19;
+  --tooltip-border: #3b362e;
+  --tooltip-text: #f3f1ec;
+  --tooltip-muted: #a49c8f;
+  --chart-grid: #3b362e;
 }

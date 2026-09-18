@@ -111,7 +111,7 @@ const MarketplaceDetailPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>{marketplace.name} - Claude Marketplace Aggregator</title>
+        <title>{marketplace.name} - Claude Marketplace Registry</title>
         <meta name='description' content={marketplace.description || ''} />
         <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
       </Head>

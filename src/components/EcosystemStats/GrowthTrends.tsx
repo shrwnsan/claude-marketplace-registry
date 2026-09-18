@@ -24,10 +24,10 @@ interface SeriesConfig {
 }
 
 const SERIES: SeriesConfig[] = [
-  { key: 'plugins', label: 'Plugins', color: '#3b82f6' },
-  { key: 'marketplaces', label: 'Marketplaces', color: '#10b981' },
-  { key: 'developers', label: 'Developers', color: '#f59e0b' },
-  { key: 'stars', label: 'Stars', color: '#8b5cf6' },
+  { key: 'plugins', label: 'Plugins', color: '#d97757' },
+  { key: 'marketplaces', label: 'Marketplaces', color: '#2da44e' },
+  { key: 'developers', label: 'Developers', color: '#dcaa3f' },
+  { key: 'stars', label: 'Stars', color: '#3ec0ca' },
 ];
 
 interface ChartRow extends Record<string, string | number> {
@@ -163,7 +163,7 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({ className = '' }) => {
             <div style={{ width: '100%', height: 360 }}>
               <ResponsiveContainer>
                 <LineChart data={chartRows} margin={{ top: 8, right: 16, bottom: 8, left: 8 }}>
-                  <CartesianGrid strokeDasharray='3 3' stroke='#e5e7eb' />
+                  <CartesianGrid strokeDasharray='3 3' stroke='var(--chart-grid)' />
                   <XAxis
                     dataKey='date'
                     tick={{ fontSize: 12 }}

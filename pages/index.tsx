@@ -37,7 +37,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Claude Marketplace Aggregator - Discover Claude Code Plugins & Marketplaces</title>
+        <title>Claude Marketplace Registry — Discover Claude Code Plugins &amp; Marketplaces</title>
         <meta
           name='description'
           content='Discover and explore Claude Code plugins and marketplaces from across GitHub. Find the best tools to enhance your development workflow.'
@@ -47,37 +47,36 @@ const HomePage: React.FC = () => {
       </Head>
 
       <MainLayout>
-        {/* Hero Section */}
+        {/* Hero — search and the headline stats sit above the fold at 1440×900 */}
         <section
           id='ecosystem-at-a-glance'
-          className='relative bg-gradient-to-br from-primary-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-primary-900/20 py-12 sm:py-16 lg:py-24 overflow-hidden'
+          className='relative bg-gray-50 dark:bg-gray-900 overflow-hidden'
         >
-          {/* Background decoration */}
-          <div className='absolute inset-0 overflow-hidden'>
-            <div className='absolute -top-40 -right-40 w-80 h-80 bg-primary-200 dark:bg-primary-800/20 rounded-full blur-3xl opacity-30 animate-pulse'></div>
-            <div
-              className='absolute -bottom-40 -left-40 w-80 h-80 bg-blue-200 dark:bg-blue-800/20 rounded-full blur-3xl opacity-30 animate-pulse'
-              style={{ animationDelay: '2s' }}
-            ></div>
+          {/* Backdrop: faint dot grid + one warm glow, static (no motion cost) */}
+          <div className='absolute inset-0 dot-grid' aria-hidden='true'>
+            <div className='absolute -top-32 left-1/2 -translate-x-1/2 w-[42rem] h-[24rem] bg-primary-400/15 dark:bg-primary-400/10 rounded-full blur-3xl'></div>
           </div>
 
-          <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14'>
             <div className='text-center'>
               {/* Main heading */}
               <div className='animate-fade-in'>
-                <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-gray-100 mb-4 sm:mb-6 leading-tight'>
+                <p className='eyebrow eyebrow-prompt mb-4'>claude marketplace registry</p>
+                <h1 className='text-4xl sm:text-5xl font-bold text-gray-900 dark:text-gray-50 mb-4 leading-[1.1]'>
                   Discover Claude Code
-                  <span className='block gradient-text mt-2'>Marketplaces & Plugins</span>
+                  <span className='block gradient-text'>
+                    Marketplaces &amp; Plugins
+                    <span className='hero-cursor' aria-hidden='true'></span>
+                  </span>
                 </h1>
-                <p className='text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4'>
+                <p className='text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed'>
                   An automated, open-source aggregator that discovers and curates Claude Code
-                  marketplaces and plugins from across GitHub. Enhance your development workflow
-                  with the best tools.
+                  marketplaces and plugins from across GitHub.
                 </p>
               </div>
 
               {/* Search Bar */}
-              <div className='animate-slide-in max-w-4xl mx-auto px-4 mb-8 sm:mb-12'>
+              <div className='animate-slide-in max-w-3xl mx-auto mb-8 sm:mb-10'>
                 <SearchCombobox
                   placeholder='Search plugins and marketplaces…'
                   trending={topics.slice(0, 4)}
@@ -85,68 +84,60 @@ const HomePage: React.FC = () => {
                 />
               </div>
 
-              {/* Ecosystem at a Glance */}
-              <div className='mb-8'>
-                <h2 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
-                  Ecosystem at a Glance
-                </h2>
-                <p className='text-gray-600 dark:text-gray-400 max-w-2xl mx-auto'>
-                  Key metrics from the Claude Code plugin ecosystem. For detailed analytics and
-                  trends, see the{' '}
-                  <a
-                    href='#analytics-dashboard'
-                    onClick={handleAnchorClick}
-                    className='text-primary-600 dark:text-primary-400 hover:underline cursor-pointer'
-                  >
-                    Ecosystem Statistics
-                  </a>{' '}
-                  section below.
-                </p>
+              {/* Ecosystem at a Glance — compact label row, details one anchor away */}
+              <div className='mb-4 flex items-baseline justify-center gap-2 sm:gap-3 flex-wrap'>
+                <h2 className='eyebrow'>Ecosystem at a Glance</h2>
+                <span className='text-gray-300 dark:text-gray-600' aria-hidden='true'>
+                  {'//'}
+                </span>
+                <a
+                  href='#analytics-dashboard'
+                  onClick={handleAnchorClick}
+                  className='font-mono text-xs text-primary-600 dark:text-primary-400 hover:underline cursor-pointer'
+                >
+                  full statistics ↓
+                </a>
               </div>
 
               {/* Stats — same generated stats.json as the dashboard below */}
               {statsLoading || marketplaceLoading || pluginsLoading ? (
-                <LoadingState variant='skeleton' className='max-w-5xl mx-auto px-4' />
+                <LoadingState variant='skeleton' className='max-w-4xl mx-auto' />
               ) : statsError && !stats ? (
                 <p className='text-sm text-gray-500 dark:text-gray-400'>
                   Metrics temporarily unavailable — please refresh.
                 </p>
               ) : (
                 <>
-                  <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-4'>
+                  <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto'>
                     <StatCard
                       icon={Package}
                       value={stats?.overview.totalPlugins ?? 0}
                       label='Total Plugins'
-                      bgColor='bg-primary-100 dark:bg-primary-900/30'
-                      iconColor='text-primary-600 dark:text-primary-400'
+                      iconColor='text-primary-500 dark:text-primary-400'
                     />
                     <StatCard
                       icon={Store}
                       value={stats?.overview.totalMarketplaces ?? 0}
                       label='Marketplaces'
-                      bgColor='bg-success-100 dark:bg-success-900/30'
-                      iconColor='text-success-600 dark:text-success-400'
+                      iconColor='text-success-500 dark:text-success-400'
                     />
                     <StatCard
                       icon={Users}
                       value={stats?.overview.totalDevelopers ?? 0}
                       label='Developers'
-                      bgColor='bg-warning-100 dark:bg-warning-900/30'
-                      iconColor='text-warning-600 dark:text-warning-400'
+                      iconColor='text-warning-500 dark:text-warning-400'
                     />
                     <StatCard
                       icon={Star}
                       value={stats?.overview.totalStars ?? 0}
                       label='GitHub Stars'
-                      bgColor='bg-purple-100 dark:bg-purple-900/30'
-                      iconColor='text-purple-600 dark:text-purple-400'
+                      iconColor='text-cyan-500 dark:text-cyan-400'
                     />
                   </div>
 
                   {/* Quick Stats Note */}
-                  <div className='text-center mt-6'>
-                    <p className='text-xs text-gray-500 dark:text-gray-400'>
+                  <div className='text-center mt-4'>
+                    <p className='text-xs font-mono text-gray-500 dark:text-gray-400'>
                       {(stats?.overview.totalPlugins ?? 0).toLocaleString()} plugins across{' '}
                       {(stats?.overview.totalMarketplaces ?? 0).toLocaleString()} marketplaces
                       {stats?.overview.lastUpdated
@@ -161,22 +152,23 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* Featured Marketplaces Section */}
-        <section className='py-12 sm:py-16 bg-white dark:bg-gray-900'>
+        <section className='py-12 sm:py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-850'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 sm:mb-12 gap-4'>
+            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-3'>
               <div className='text-center sm:text-left'>
-                <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
+                <p className='eyebrow eyebrow-prompt mb-1'>ls ./featured</p>
+                <h2 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-50'>
                   Featured Marketplaces
                 </h2>
-                <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg'>
+                <p className='text-gray-600 dark:text-gray-400 text-sm sm:text-base mt-1'>
                   Top marketplaces by stars and activity — rotated daily
                 </p>
               </div>
               <Link
                 href='/marketplaces'
-                className='inline-flex items-center justify-center px-4 py-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium group transition-colors self-center sm:self-auto'
+                className='inline-flex items-center justify-center px-4 py-2 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors self-center sm:self-auto'
               >
-                View all
+                view all
                 <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
                   →
                 </span>
@@ -192,66 +184,58 @@ const HomePage: React.FC = () => {
                   : 'No marketplaces indexed yet.'}
               </p>
             ) : (
-              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
-                {featured.map((marketplace, index) => (
-                  <div
-                    key={marketplace.id}
-                    className='card group hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300 hover:-translate-y-1'
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <div className='flex items-start justify-between mb-4'>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5'>
+                {featured.map((marketplace) => (
+                  <div key={marketplace.id} className='card-interactive group h-full flex flex-col'>
+                    <div className='flex items-start justify-between mb-3'>
                       <div className='flex-1 min-w-0'>
-                        <h3 className='text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
+                        <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
                           {marketplace.name}
                         </h3>
-                        <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed'>
+                        <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed mt-1'>
                           {marketplace.description}
                         </p>
                       </div>
                       {marketplace.hasManifest && (
                         <div className='flex-shrink-0 ml-2'>
                           <Shield
-                            className='w-5 h-5 text-blue-500'
+                            className='w-5 h-5 text-success-500'
                             aria-label='Valid marketplace manifest'
                           />
                         </div>
                       )}
                     </div>
 
-                    <div className='flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4'>
-                      <div className='flex items-center space-x-3 sm:space-x-4'>
-                        <div className='flex items-center space-x-1 group'>
-                          <Star className='w-4 h-4 group-hover:fill-current group-hover:text-yellow-500 transition-colors' />
-                          <span className='font-medium'>
-                            {(marketplace.stars || 0).toLocaleString()}
-                          </span>
-                        </div>
-                        {Array.isArray(marketplace.topics) && marketplace.topics[0] && (
-                          <span className='badge badge-secondary text-xs'>
-                            {marketplace.topics[0]}
-                          </span>
-                        )}
-                      </div>
+                    <div className='flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 mb-4'>
+                      <span className='flex items-center gap-1.5 font-mono'>
+                        <Star className='w-4 h-4' aria-hidden='true' />
+                        {(marketplace.stars || 0).toLocaleString()}
+                      </span>
+                      {Array.isArray(marketplace.topics) && marketplace.topics[0] && (
+                        <span className='badge badge-secondary text-xs'>
+                          {marketplace.topics[0]}
+                        </span>
+                      )}
                     </div>
 
-                    <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700'>
+                    <div className='flex items-center justify-between gap-3 mt-auto pt-4 border-t border-gray-100 dark:border-gray-700'>
                       <Link
                         href={`/marketplaces/${marketplace.id}`}
-                        className='btn btn-primary text-sm w-full sm:w-auto justify-center group'
+                        className='btn btn-primary text-sm w-full sm:w-auto justify-center'
                         aria-label={`Open ${marketplace.name} marketplace page`}
                       >
-                        View Details
-                        <ExternalLink className='w-4 h-4 ml-2 transform transition-transform group-hover:scale-110' />
+                        view_details
+                        <ExternalLink className='w-4 h-4 ml-2' />
                       </Link>
                       {marketplace.url && (
                         <a
                           href={marketplace.url}
                           target='_blank'
                           rel='noopener noreferrer'
-                          className='btn-ghost p-2 sm:p-3 group'
+                          className='btn-ghost p-2'
                           aria-label={`View ${marketplace.name} repository on GitHub`}
                         >
-                          <Github className='w-4 h-4 sm:w-5 sm:h-5 transform transition-transform group-hover:scale-110' />
+                          <Github className='w-4 h-4' />
                         </a>
                       )}
                     </div>
@@ -263,22 +247,23 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* Plugins Grid Section */}
-        <section className='py-12 sm:py-16 bg-gray-50 dark:bg-gray-800/50'>
+        <section className='py-12 sm:py-16 bg-gray-50 dark:bg-gray-850 border-t border-gray-200 dark:border-gray-800'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 sm:mb-12 gap-4'>
+            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-3'>
               <div className='text-center sm:text-left'>
-                <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
+                <p className='eyebrow eyebrow-prompt mb-1'>cat popular.json</p>
+                <h2 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-50'>
                   Popular Plugins
                 </h2>
-                <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg'>
+                <p className='text-gray-600 dark:text-gray-400 text-sm sm:text-base mt-1'>
                   Popular picks from the most-starred marketplaces
                 </p>
               </div>
               <Link
                 href='/plugins'
-                className='inline-flex items-center justify-center px-4 py-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium group transition-colors self-center sm:self-auto'
+                className='inline-flex items-center justify-center px-4 py-2 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors self-center sm:self-auto'
               >
-                View all
+                view all
                 <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
                   →
                 </span>
@@ -288,11 +273,9 @@ const HomePage: React.FC = () => {
             {marketplaceLoading || pluginsLoading ? (
               <LoadingState variant='skeleton' className='max-w-5xl' />
             ) : displayPlugins.length > 0 ? (
-              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6'>
-                {displayPlugins.slice(0, 9).map((plugin, index) => (
-                  <div key={plugin.id} style={{ animationDelay: `${index * 50}ms` }}>
-                    <PluginCard plugin={plugin} />
-                  </div>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5'>
+                {displayPlugins.slice(0, 9).map((plugin) => (
+                  <PluginCard key={plugin.id} plugin={plugin} className='h-full' />
                 ))}
               </div>
             ) : (
@@ -312,7 +295,10 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* Ecosystem Statistics Section */}
-        <section id='analytics-dashboard' className='py-12 sm:py-16 bg-white dark:bg-gray-900'>
+        <section
+          id='analytics-dashboard'
+          className='py-12 sm:py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-850'
+        >
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <EcosystemStats
               title='Ecosystem Statistics'
@@ -325,37 +311,37 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* CTA Section */}
-        <section className='relative py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-700 dark:to-primary-800 overflow-hidden'>
+        <section className='relative py-12 sm:py-16 bg-gray-900 dark:bg-gray-950 border-t border-primary-800/40 overflow-hidden'>
           {/* Background decoration */}
-          <div className='absolute inset-0 overflow-hidden'>
-            <div className='absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl'></div>
-            <div className='absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl'></div>
+          <div className='absolute inset-0 dot-grid opacity-40' aria-hidden='true'>
+            <div className='absolute -bottom-24 left-1/2 -translate-x-1/2 w-[36rem] h-[18rem] bg-primary-500/15 rounded-full blur-3xl'></div>
           </div>
 
           <div className='relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
             <div className='animate-fade-in'>
-              <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6'>
+              <p className='eyebrow eyebrow-prompt mb-3 !text-gray-400'>./join --community</p>
+              <h2 className='text-2xl sm:text-3xl font-bold text-gray-50 mb-4'>
                 Join the Claude Code Community
               </h2>
-              <p className='text-lg sm:text-xl text-primary-100 mb-8 sm:mb-12 max-w-2xl mx-auto'>
+              <p className='text-lg text-gray-300 mb-8 max-w-2xl mx-auto'>
                 Share your plugins, discover new tools, and collaborate with developers worldwide.
               </p>
-              <div className='flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center'>
+              <div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
                 <a
                   href='https://github.com/shrwnsan/claude-marketplace-registry'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='btn bg-white text-primary-600 hover:bg-gray-50 font-medium px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg group min-w-[200px] justify-center'
+                  className='btn bg-primary-500 text-white hover:bg-primary-400 font-medium px-6 py-3 group min-w-[200px] justify-center'
                   aria-label='Contribute on GitHub'
                 >
-                  <Github className='w-5 h-5 mr-2 transform transition-transform group-hover:scale-110' />
+                  <Github className='w-5 h-5 mr-2' />
                   Contribute on GitHub
                 </a>
                 <Link
                   href='/docs/api'
-                  className='btn border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg group min-w-[200px] justify-center'
+                  className='btn border border-gray-600 text-gray-200 hover:bg-gray-800 hover:text-white hover:border-gray-500 font-medium px-6 py-3 group min-w-[200px] justify-center'
                 >
-                  View API Docs
+                  view_api_docs
                   <span className='ml-2 transform transition-transform group-hover:translate-x-1'>
                     →
                   </span>
