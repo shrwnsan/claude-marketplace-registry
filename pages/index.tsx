@@ -9,7 +9,7 @@ import { usePluginData, topPluginsByStars } from '@/hooks/usePluginData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
 import { StatCard } from '@/components/ui/StatCard';
-import { ExternalLink, Github, Package, Shield, Star, Store, Users } from 'lucide-react';
+import { ChevronRight, Github, Package, ShieldCheck, Star, Store, Users } from 'lucide-react';
 import Link from 'next/link';
 import { handleAnchorClick } from '@/utils/scroll';
 import { selectFeaturedMarketplaces } from '@/utils/stats';
@@ -190,7 +190,13 @@ const HomePage: React.FC = () => {
                     <div className='flex items-start justify-between mb-3'>
                       <div className='flex-1 min-w-0'>
                         <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
-                          {marketplace.name}
+                          <Link
+                            href={`/marketplaces/${marketplace.id}`}
+                            className='hover:underline focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded'
+                            aria-label={`View details for ${marketplace.name}`}
+                          >
+                            {marketplace.name}
+                          </Link>
                         </h3>
                         <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed mt-1'>
                           {marketplace.description}
@@ -198,9 +204,9 @@ const HomePage: React.FC = () => {
                       </div>
                       {marketplace.hasManifest && (
                         <div className='flex-shrink-0 ml-2'>
-                          <Shield
+                          <ShieldCheck
                             className='w-5 h-5 text-success-500'
-                            aria-label='Valid marketplace manifest'
+                            aria-label='Validated marketplace manifest'
                           />
                         </div>
                       )}
@@ -218,26 +224,15 @@ const HomePage: React.FC = () => {
                       )}
                     </div>
 
-                    <div className='flex items-center justify-between gap-3 mt-auto pt-4 border-t border-gray-100 dark:border-gray-700'>
+                    <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700'>
                       <Link
                         href={`/marketplaces/${marketplace.id}`}
-                        className='btn btn-primary text-sm w-full sm:w-auto justify-center'
+                        className='btn btn-primary text-sm w-full sm:w-auto justify-center group'
                         aria-label={`Open ${marketplace.name} marketplace page`}
                       >
-                        view_details
-                        <ExternalLink className='w-4 h-4 ml-2' />
+                        view details
+                        <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
                       </Link>
-                      {marketplace.url && (
-                        <a
-                          href={marketplace.url}
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className='btn-ghost p-2'
-                          aria-label={`View ${marketplace.name} repository on GitHub`}
-                        >
-                          <Github className='w-4 h-4' />
-                        </a>
-                      )}
                     </div>
                   </div>
                 ))}

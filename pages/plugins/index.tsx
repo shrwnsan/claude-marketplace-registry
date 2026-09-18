@@ -6,7 +6,7 @@ import PluginCard from '@/components/Marketplace/PluginCard';
 import { usePluginData } from '@/hooks/usePluginData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
-import { Star, Grid, List, Package, ArrowUp } from 'lucide-react';
+import { Grid, List, Package, ArrowUp, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -242,7 +242,7 @@ const PluginsPage: React.FC = () => {
                     {viewMode === 'grid' ? (
                       <PluginCard plugin={plugin} />
                     ) : (
-                      <div className='card flex items-center gap-4 p-6 hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300'>
+                      <div className='card flex items-center gap-4'>
                         <div className='flex-1'>
                           <div className='flex items-center gap-3 mb-2'>
                             <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100'>
@@ -258,33 +258,18 @@ const PluginsPage: React.FC = () => {
                           <div className='flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400'>
                             <span>by {plugin.author}</span>
                             <span>•</span>
-                            <div className='flex items-center space-x-1'>
-                              <Star className='w-4 h-4' />
-                              <span>{plugin.stars.toLocaleString()}</span>
-                            </div>
+                            <span>{plugin.skills.length} skills</span>
                             {plugin.version && <span className='text-xs'>v{plugin.version}</span>}
                           </div>
                         </div>
-                        <div className='flex flex-col gap-2'>
-                          {plugin.repositoryUrl && (
-                            <Link
-                              href={plugin.repositoryUrl}
-                              target='_blank'
-                              rel='noopener noreferrer'
-                              className='btn btn-primary text-sm px-4 py-2 group'
-                              aria-label={`View ${plugin.name} repository`}
-                            >
-                              View Plugin
-                            </Link>
-                          )}
-                          <Link
-                            href={`/marketplaces/${plugin.marketplaceId}`}
-                            className='btn-ghost text-sm px-4 py-2 text-center'
-                            aria-label={`Visit ${plugin.marketplaceName}`}
-                          >
-                            {plugin.marketplaceName}
-                          </Link>
-                        </div>
+                        <Link
+                          href={`/plugins/${plugin.id}`}
+                          className='btn btn-primary text-sm px-4 py-2 group flex-shrink-0'
+                          aria-label={`View details for ${plugin.name}`}
+                        >
+                          view details
+                          <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
+                        </Link>
                       </div>
                     )}
                   </div>

@@ -5,7 +5,7 @@ import SearchBar from '@/components/Search/SearchBar';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
-import { Star, Github, ExternalLink, Shield, Filter, Grid, List } from 'lucide-react';
+import { Star, ChevronRight, ShieldCheck, Filter, Grid, List } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -260,8 +260,8 @@ const MarketplacesPage: React.FC = () => {
                     key={marketplace.id}
                     className={
                       viewMode === 'grid'
-                        ? 'card group hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300 hover:-translate-y-1'
-                        : 'card flex items-center gap-4 p-6 hover:shadow-lg dark:hover:shadow-gray-900/30 transition-all duration-300'
+                        ? 'card-interactive group h-full flex flex-col'
+                        : 'card flex items-center gap-4'
                     }
                   >
                     {viewMode === 'grid' ? (
@@ -280,9 +280,9 @@ const MarketplacesPage: React.FC = () => {
                           </div>
                           {marketplace.verified && (
                             <div className='flex-shrink-0 ml-2'>
-                              <Shield
+                              <ShieldCheck
                                 className='w-5 h-5 text-success-500'
-                                aria-label='Verified marketplace'
+                                aria-label='Validated marketplace manifest'
                               />
                             </div>
                           )}
@@ -305,26 +305,15 @@ const MarketplacesPage: React.FC = () => {
                           </div>
                         </div>
 
-                        <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700'>
-                          <a
-                            href={marketplace.url}
-                            target='_blank'
-                            rel='noopener noreferrer'
+                        <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700'>
+                          <Link
+                            href={`/marketplaces/${marketplace.id}`}
                             className='btn btn-primary text-sm w-full sm:w-auto justify-center group'
-                            aria-label={`Visit ${marketplace.name} marketplace`}
+                            aria-label={`View details for ${marketplace.name}`}
                           >
-                            Visit Marketplace
-                            <ExternalLink className='w-4 h-4 ml-2 transform transition-transform group-hover:scale-110' />
-                          </a>
-                          <a
-                            href={marketplace.url}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='btn-ghost p-2 sm:p-3 group'
-                            aria-label={`View ${marketplace.name} repository`}
-                          >
-                            <Github className='w-4 h-4 sm:w-5 sm:h-5 transform transition-transform group-hover:scale-110' />
-                          </a>
+                            view details
+                            <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
+                          </Link>
                         </div>
                       </>
                     ) : (
@@ -338,9 +327,9 @@ const MarketplacesPage: React.FC = () => {
                               </Link>
                             </h3>
                             {marketplace.verified && (
-                              <Shield
+                              <ShieldCheck
                                 className='w-5 h-5 text-success-500'
-                                aria-label='Verified marketplace'
+                                aria-label='Validated marketplace manifest'
                               />
                             )}
                             <span className='badge badge-secondary text-xs'>
@@ -360,27 +349,14 @@ const MarketplacesPage: React.FC = () => {
                             )}
                           </div>
                         </div>
-                        <div className='flex items-center gap-2'>
-                          <a
-                            href={marketplace.url}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='btn-ghost p-2 group'
-                            aria-label={`View ${marketplace.name} repository`}
-                          >
-                            <Github className='w-5 h-5 transform transition-transform group-hover:scale-110' />
-                          </a>
-                          <a
-                            href={marketplace.url}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='btn btn-primary text-sm px-4 py-2 group'
-                            aria-label={`Visit ${marketplace.name} marketplace`}
-                          >
-                            Visit
-                            <ExternalLink className='w-4 h-4 ml-2 transform transition-transform group-hover:scale-110' />
-                          </a>
-                        </div>
+                        <Link
+                          href={`/marketplaces/${marketplace.id}`}
+                          className='btn btn-primary text-sm px-4 py-2 group flex-shrink-0'
+                          aria-label={`View details for ${marketplace.name}`}
+                        >
+                          view details
+                          <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
+                        </Link>
                       </>
                     )}
                   </div>
