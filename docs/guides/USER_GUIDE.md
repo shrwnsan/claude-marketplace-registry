@@ -20,7 +20,7 @@ The Claude Marketplace Registry is an automated directory of Claude Code marketp
 
 ## Browsing plugins
 
-`/plugins` lists the full catalog with search, sort, and the same grid/list views. The list auto-loads as you scroll; a back-to-top button appears after the first screens. Plugin cards show author, skills, and version — stars are intentionally omitted because a plugin's only stars belong to its parent marketplace.
+`/plugins` lists the full catalog with search, sort, and the same grid/list views. Long lists load on demand via the Load-more button; a back-to-top button appears after the first screens. Plugin cards show author, skills, and version — stars are intentionally omitted because a plugin's only stars belong to its parent marketplace.
 
 ## Marketplace pages
 

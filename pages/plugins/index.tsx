@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Head from 'next/head';
 import MainLayout from '@/components/layout/MainLayout';
 import SearchBar from '@/components/Search/SearchBar';
@@ -11,7 +11,7 @@ import { Grid, List, Package, ArrowUp, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-/** Auto-loads the next chunk when the sentinel scrolls near the viewport. */
+/** How many more plugins the Load-more button reveals per click. */
 const LOAD_CHUNK = 24;
 
 const PluginsPage: React.FC = () => {
@@ -28,7 +28,6 @@ const PluginsPage: React.FC = () => {
   const [sortBy, setSortBy] = useState<'stars' | 'name'>('stars');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [visibleCount, setVisibleCount] = useState(12);
-  const loadMoreRef = useRef<HTMLDivElement>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   // Selections persist in the URL (shareable, survives back/forward).
@@ -92,22 +91,6 @@ const PluginsPage: React.FC = () => {
     setVisibleCount(12);
     updateQuery({ sort: sort === 'stars' ? '' : sort });
   };
-
-  // Auto-load: watch the sentinel; when it approaches the viewport, extend the list.
-  useEffect(() => {
-    const el = loadMoreRef.current;
-    if (!el || !hasMore) return;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          setVisibleCount((c) => Math.min(c + LOAD_CHUNK, filteredAndSortedPlugins.length));
-        }
-      },
-      { rootMargin: '700px 0px' }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [hasMore, filteredAndSortedPlugins.length]);
 
   // Back-to-top visibility
   useEffect(() => {
@@ -299,10 +282,7 @@ const PluginsPage: React.FC = () => {
               </div>
             )}
 
-            {/* Auto-load sentinel — extends the list as it approaches the viewport */}
-            {hasMore && <div ref={loadMoreRef} className='h-1' aria-hidden='true' />}
-
-            {/* Load more (manual fallback for the scroll-triggered load) */}
+            {/* Load more — manual pacing keeps the button reachable */}
             {hasMore && (
               <div className='flex flex-col items-center gap-3 mt-12'>
                 <p className='text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap'>
