@@ -359,14 +359,14 @@ const MarketplacesPage: React.FC = () => {
                           </div>
                         </div>
 
-                        <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700'>
+                        <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-end'>
                           <Link
                             href={`/marketplaces/${marketplace.id}`}
-                            className='btn btn-primary text-sm w-full sm:w-auto justify-center group'
+                            className='cta group/cta'
                             aria-label={`View details for ${marketplace.name}`}
                           >
                             view details
-                            <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
+                            <ChevronRight className='cta-arrow w-4 h-4' />
                           </Link>
                         </div>
                       </>
@@ -405,11 +405,11 @@ const MarketplacesPage: React.FC = () => {
                         </div>
                         <Link
                           href={`/marketplaces/${marketplace.id}`}
-                          className='btn btn-primary text-sm px-4 py-2 group flex-shrink-0'
+                          className='cta group/cta flex-shrink-0'
                           aria-label={`View details for ${marketplace.name}`}
                         >
                           view details
-                          <ChevronRight className='w-4 h-4 transition-transform group-hover:translate-x-0.5' />
+                          <ChevronRight className='cta-arrow w-4 h-4' />
                         </Link>
                       </>
                     )}
