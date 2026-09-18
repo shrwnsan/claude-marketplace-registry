@@ -4,36 +4,23 @@ interface StatCardProps {
   icon: React.ComponentType<{ className?: string }>;
   value: string | number;
   label: string;
-  bgColor: string;
   iconColor: string;
 }
 
 /**
- * Reusable stat card component for displaying metrics.
- * Hover classes are static strings so the Tailwind JIT compiler can see them.
+ * Homepage stat card — spec-sheet style: mono label, large mono numeral.
+ * Colors come from the syntax-accent palette passed via iconColor.
  */
-export const StatCard: React.FC<StatCardProps> = ({
-  icon: Icon,
-  value,
-  label,
-  bgColor,
-  iconColor,
-}) => (
-  <div className='glass rounded-xl p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300 group'>
-    <div
-      className={`
-      w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-2 sm:mb-3
-      ${bgColor} rounded-lg flex items-center justify-center
-      group-hover:brightness-95 dark:group-hover:brightness-110 transition-colors
-    `}
-    >
-      <Icon
-        className={`w-6 h-6 sm:w-8 sm:h-8 ${iconColor} group-hover:scale-110 transition-transform`}
-      />
+export const StatCard: React.FC<StatCardProps> = ({ icon: Icon, value, label, iconColor }) => (
+  <div className='card p-4 sm:p-5 text-left'>
+    <div className='flex items-center justify-between gap-2'>
+      <span className='font-mono text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400'>
+        {label}
+      </span>
+      <Icon className={`w-4 h-4 flex-shrink-0 ${iconColor}`} aria-hidden='true' />
     </div>
-    <div className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1'>
+    <div className='mt-1.5 font-mono text-2xl sm:text-3xl font-bold tabular-nums tracking-tight text-gray-900 dark:text-gray-50'>
       {typeof value === 'number' ? value.toLocaleString() : value}
     </div>
-    <div className='text-sm text-gray-600 dark:text-gray-400'>{label}</div>
   </div>
 );

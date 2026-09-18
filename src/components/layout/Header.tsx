@@ -73,14 +73,17 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           <div className='flex items-center'>
             <Link
               href='/'
-              className='flex items-center space-x-3 group'
-              aria-label='Claude Marketplace Aggregator home'
+              className='flex items-center space-x-2.5 group'
+              aria-label='Claude Marketplace Registry home'
             >
-              <div className='w-10 h-10 bg-primary-600 dark:bg-primary-500 rounded-xl flex items-center justify-center transform transition-transform group-hover:scale-110'>
-                <span className='text-white font-bold text-xl'>C</span>
+              <div className='w-9 h-9 bg-gray-900 dark:bg-gray-100 rounded-md flex items-center justify-center transform transition-transform group-hover:scale-105'>
+                <span className='font-mono font-bold text-lg leading-none text-primary-400 dark:text-primary-600'>
+                  &gt;_
+                </span>
               </div>
-              <span className='text-xl font-bold text-gray-900 dark:text-gray-100 hidden sm:block transition-colors group-hover:text-primary-600 dark:group-hover:text-primary-400'>
-                Claude Marketplace
+              <span className='font-mono font-bold text-lg text-gray-900 dark:text-gray-100 hidden sm:block transition-colors'>
+                claude-marketplace
+                <span className='text-primary-500 dark:text-primary-400'>/registry</span>
               </span>
             </Link>
           </div>

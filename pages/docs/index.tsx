@@ -18,10 +18,10 @@ const DocsPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Documentation - Claude Marketplace Aggregator</title>
+        <title>Documentation - Claude Marketplace Registry</title>
         <meta
           name='description'
-          content='How the Claude Marketplace Aggregator discovers, validates, and serves the Claude Code plugin ecosystem.'
+          content='How the Claude Marketplace Registry discovers, validates, and serves the Claude Code plugin ecosystem.'
         />
         <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
       </Head>
@@ -38,7 +38,7 @@ const DocsPage: React.FC = () => {
                 How this aggregator works
               </h1>
               <p className='text-lg text-gray-600 dark:text-gray-300'>
-                The Claude Marketplace Aggregator scans GitHub daily for Claude Code marketplace
+                The Claude Marketplace Registry scans GitHub daily for Claude Code marketplace
                 repositories, validates their manifests, and publishes everything as a browsable
                 catalog and a free JSON API.
               </p>
@@ -59,28 +59,16 @@ const DocsPage: React.FC = () => {
                 <p>
                   Every day at 00:00 UTC a scheduled GitHub Actions run executes an 11-strategy
                   search across GitHub — manifest file paths (
-                  <code className='text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    .claude-plugin/marketplace.json
-                  </code>
-                  ), repository topics (
-                  <code className='text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    claude-plugins
-                  </code>
-                  ,{' '}
-                  <code className='text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    claude-skills
-                  </code>
-                  , …), and name/description matches. Results are deduplicated and merged with a
-                  seed list of known marketplaces.
+                  <code>.claude-plugin/marketplace.json</code>
+                  ), repository topics (<code>claude-plugins</code>, <code>claude-skills</code>, …),
+                  and name/description matches. Results are deduplicated and merged with a seed list
+                  of known marketplaces.
                 </p>
                 <p>
                   Each candidate repository is probed for a spec-compliant{' '}
-                  <code className='text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    .claude-plugin/marketplace.json
-                  </code>{' '}
-                  manifest. Plugins are extracted from valid manifests, joined to their parent
-                  marketplace, and validated. Every number on this site traces back to that scan —
-                  nothing is estimated or mocked.
+                  <code>.claude-plugin/marketplace.json</code> manifest. Plugins are extracted from
+                  valid manifests, joined to their parent marketplace, and validated. Every number
+                  on this site traces back to that scan — nothing is estimated or mocked.
                 </p>
               </div>
             </section>
@@ -178,18 +166,9 @@ const DocsPage: React.FC = () => {
               <div className='card p-6 space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed'>
                 <p>
                   Listing is automatic: publish a spec-compliant{' '}
-                  <code className='text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    .claude-plugin/marketplace.json
-                  </code>{' '}
-                  at your repository root, and the next daily scan will discover it. Adding the{' '}
-                  <code className='text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    claude-plugins
-                  </code>{' '}
-                  or{' '}
-                  <code className='text-sm bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-                    claude-skills
-                  </code>{' '}
-                  topic improves discoverability.
+                  <code>.claude-plugin/marketplace.json</code> at your repository root, and the next
+                  daily scan will discover it. Adding the <code>claude-plugins</code> or{' '}
+                  <code>claude-skills</code> topic improves discoverability.
                 </p>
                 <p>
                   Found bad data, want a repository excluded, or have an idea?{' '}

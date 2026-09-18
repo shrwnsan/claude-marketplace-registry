@@ -110,7 +110,7 @@ const MarketplacesPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>All Marketplaces - Claude Marketplace Aggregator</title>
+        <title>All Marketplaces - Claude Marketplace Registry</title>
         <meta
           name='description'
           content='Browse all Claude Code marketplaces from across GitHub. Discover new plugins and tools for your development workflow.'
@@ -249,7 +249,7 @@ const MarketplacesPage: React.FC = () => {
                           {marketplace.verified && (
                             <div className='flex-shrink-0 ml-2'>
                               <Shield
-                                className='w-5 h-5 text-blue-500'
+                                className='w-5 h-5 text-success-500'
                                 aria-label='Verified marketplace'
                               />
                             </div>
@@ -307,7 +307,7 @@ const MarketplacesPage: React.FC = () => {
                             </h3>
                             {marketplace.verified && (
                               <Shield
-                                className='w-5 h-5 text-blue-500'
+                                className='w-5 h-5 text-success-500'
                                 aria-label='Verified marketplace'
                               />
                             )}

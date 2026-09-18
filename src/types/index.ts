@@ -1,5 +1,5 @@
 /**
- * Type definitions for the Claude Marketplace Aggregator
+ * Type definitions for the Claude Marketplace Registry
  * Exports all types from individual type files
  */
 

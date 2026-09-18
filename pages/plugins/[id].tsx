@@ -119,7 +119,7 @@ const PluginDetailPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>{plugin.name} - Claude Marketplace Aggregator</title>
+        <title>{plugin.name} - Claude Marketplace Registry</title>
         <meta name='description' content={plugin.description} />
         <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
       </Head>

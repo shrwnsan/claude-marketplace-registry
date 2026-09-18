@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #161310;
+    color: #f3f1ec;
+    font-family: 'Space Mono', monospace;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px 72px;
+  }
+  /* dot grid, fading toward the bottom */
+  .grid {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(164,156,143,0.22) 1.2px, transparent 1.2px);
+    background-size: 26px 26px;
+    -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 20%, black 30%, transparent 80%);
+    mask-image: radial-gradient(ellipse 90% 80% at 50% 20%, black 30%, transparent 80%);
+  }
+  .glow {
+    position: absolute; top: -180px; left: 50%; transform: translateX(-50%);
+    width: 760px; height: 380px; border-radius: 9999px;
+    background: rgba(217,119,87,0.16); filter: blur(90px);
+  }
+  .top { position: relative; display: flex; align-items: center; gap: 18px; }
+  .mark {
+    width: 58px; height: 58px; background: #f3f1ec; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .mark span { color: #c96442; font-weight: 700; font-size: 30px; }
+  .wordmark { font-size: 26px; font-weight: 700; }
+  .wordmark em { color: #d97757; font-style: normal; }
+  .middle { position: relative; }
+  .eyebrow {
+    font-size: 19px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #a49c8f; font-weight: 700; margin-bottom: 18px;
+  }
+  .eyebrow b { color: #d97757; }
+  h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 84px; font-weight: 700; line-height: 1.04;
+    letter-spacing: -0.02em; max-width: 980px;
+  }
+  h1 .grad {
+    background: linear-gradient(90deg, #e6ab93, #d97757 45%, #dcaa3f);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .sub { margin-top: 22px; font-size: 22px; color: #c2bcb0; }
+  .bottom { position: relative; }
+  .stats { display: flex; gap: 40px; margin-bottom: 26px; }
+  .stat b { display: block; font-size: 30px; font-weight: 700; color: #f3f1ec; }
+  .stat b.hot { color: #d97757; }
+  .stat span { font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #7f776a; }
+  .url { font-size: 18px; color: #7f776a; border-top: 1px solid #3b362e; padding-top: 20px; }
+  .url em { color: #d97757; font-style: normal; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow"></div>
+  <div class="top">
+    <div class="mark"><span>&gt;_</span></div>
+    <div class="wordmark">claude-marketplace<em>/registry</em></div>
+  </div>
+  <div class="middle">
+    <div class="eyebrow"><b>$</b> the open index of the Claude Code ecosystem</div>
+    <h1>Discover Claude Code<br><span class="grad">Marketplaces &amp; Plugins</span></h1>
+    <p class="sub">Every marketplace and plugin, discovered and refreshed daily from GitHub.</p>
+  </div>
+  <div class="bottom">
+    <div class="stats">
+      <div class="stat"><b class="hot">250</b><span>marketplaces</span></div>
+      <div class="stat"><b>3,251</b><span>plugins</span></div>
+      <div class="stat"><b>410</b><span>developers</span></div>
+      <div class="stat"><b>642,501</b><span>stars</span></div>
+    </div>
+    <div class="url">shrwnsan.github.io<em>/claude-marketplace-registry</em></div>
+  </div>
+</body>
+</html>

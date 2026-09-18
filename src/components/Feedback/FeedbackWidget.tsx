@@ -295,7 +295,7 @@ const FeedbackWidget: React.FC<FeedbackWidgetProps> = ({
                   <button
                     onClick={handleSubmit}
                     disabled={!rating || !message.trim() || isSubmitting}
-                    className='flex-1 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm font-medium'
+                    className='flex-1 bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-sm font-medium'
                   >
                     {isSubmitting ? 'Sending...' : 'Send Feedback'}
                   </button>
@@ -327,7 +327,7 @@ const FeedbackWidget: React.FC<FeedbackWidgetProps> = ({
                 </p>
                 <button
                   onClick={closeWidget}
-                  className='bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors text-sm'
+                  className='bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors text-sm'
                 >
                   Done
                 </button>

@@ -1,5 +1,5 @@
 /**
- * Utility exports for the Claude Marketplace Aggregator
+ * Utility exports for the Claude Marketplace Registry
  */
 
 // Logger

@@ -31,11 +31,15 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12'>
           {/* Brand section */}
           <div className='lg:col-span-2'>
-            <div className='flex items-center space-x-3 mb-6'>
-              <div className='w-10 h-10 bg-primary-600 dark:bg-primary-500 rounded-xl flex items-center justify-center transform hover:scale-110 transition-transform'>
-                <span className='text-white font-bold text-xl'>C</span>
+            <div className='flex items-center space-x-2.5 mb-6'>
+              <div className='w-9 h-9 bg-gray-100 rounded-md flex items-center justify-center'>
+                <span className='font-mono font-bold text-lg leading-none text-primary-400'>
+                  &gt;_
+                </span>
               </div>
-              <span className='text-xl font-bold'>Claude Marketplace</span>
+              <span className='font-mono font-bold text-lg'>
+                claude-marketplace<span className='text-primary-400'>/registry</span>
+              </span>
             </div>
             <p className='text-gray-300 dark:text-gray-400 mb-6 max-w-md leading-relaxed'>
               An automated, open-source aggregator that discovers and curates Claude Code
@@ -120,7 +124,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
         {/* Bottom section */}
         <div className='border-t border-gray-800 dark:border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4'>
           <p className='text-gray-400 dark:text-gray-500 text-sm text-center sm:text-left'>
-            © {currentYear} Claude Marketplace Aggregator. Released under the MIT License.
+            © {currentYear} Claude Marketplace Registry. Released under the MIT License.
           </p>
           <div className='flex items-center text-sm text-gray-400 dark:text-gray-500'>
             <span>Made with</span>
