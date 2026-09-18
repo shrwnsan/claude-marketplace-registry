@@ -67,6 +67,24 @@ interface GeneratedData {
   }>;
 }
 
+/**
+ * Normalize an author value from a manifest (string or {name|login,email}).
+ */
+function normalizeAuthor(author: unknown): string {
+  if (typeof author === 'string') return author.trim();
+  if (author && typeof author === 'object') {
+    const a = author as { name?: string; login?: string };
+    return (a.name || a.login || '').trim();
+  }
+  return '';
+}
+
+/** GitHub user/org that publishes the marketplace repo. */
+function ownerFromUrl(url: string): string {
+  const match = url?.match(/github\.com\/([^/]+)/);
+  return match ? match[1] : '';
+}
+
 class DataGenerator {
   private inputDir: string;
   private outputDir: string;
@@ -207,7 +225,11 @@ class DataGenerator {
           name: pluginName,
           description: entry.description || '',
           version: entry.version || mp.manifest?.metadata?.version || '',
-          author: entry.author || mp.manifest?.owner?.name || mp.name,
+          author:
+            normalizeAuthor(entry.author) ||
+            ownerFromUrl(mp.url) ||
+            normalizeAuthor(mp.manifest?.owner) ||
+            mp.name,
           repository: mp.url,
           manifestPath: entry.source || entry.path || '',
           isValid: true,
@@ -233,7 +255,7 @@ class DataGenerator {
           name: disc.name || disc.path || 'unknown',
           description: disc.description || '',
           version: '1.0.0',
-          author: mp.name,
+          author: ownerFromUrl(mp.url) || mp.name,
           repository: mp.url,
           manifestPath: disc.path || '',
           isValid: disc.hasSkillMd ?? true,
