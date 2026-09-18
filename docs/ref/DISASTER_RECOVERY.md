@@ -45,7 +45,7 @@ This document outlines the comprehensive disaster recovery (DR) procedures for t
 ### Automated Backups
 
 #### Daily Backups
-- **Frequency**: Every 6 hours (4x daily)
+- **Frequency**: Daily at 00:00 UTC
 - **Retention**: 7 days
 - **Location**: GitHub repository (`/backups/daily/`)
 - **Compression**: Enabled (gzip)
