@@ -25,6 +25,23 @@ const MarketplacesPage: React.FC = () => {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [visibleCount, setVisibleCount] = useState(12);
 
+  // Selections persist in the URL (shareable, survives back/forward).
+  const updateQuery = React.useCallback(
+    (patch: Record<string, string>) => {
+      const query: Record<string, string> = {};
+      for (const [key, value] of Object.entries({ ...router.query, ...patch })) {
+        if (typeof value === 'string' && value) query[key] = value;
+      }
+      router.replace({ pathname: '/marketplaces', query }, undefined, { shallow: true });
+    },
+    [router]
+  );
+
+  useEffect(() => {
+    const s = router.query.sort;
+    if (s === 'stars' || s === 'name' || s === 'updated') setSortBy(s);
+  }, [router.query.sort]);
+
   const { data: marketplaceData, loading, error } = useRealMarketplaceData();
   const { data: stats } = useEcosystemStats();
   const marketplaces = marketplaceData?.marketplaces || [];
@@ -79,14 +96,20 @@ const MarketplacesPage: React.FC = () => {
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
+    setVisibleCount(12);
+    updateQuery({ q: query });
   };
 
   const handleTopicChange = (topic: string) => {
     setSelectedTopic(topic);
+    setVisibleCount(12);
+    updateQuery({ topic: topic === 'All' ? '' : topic });
   };
 
   const handleSortChange = (sort: 'stars' | 'name' | 'updated') => {
     setSortBy(sort);
+    setVisibleCount(12);
+    updateQuery({ sort: sort === 'stars' ? '' : sort });
   };
 
   if (loading) {

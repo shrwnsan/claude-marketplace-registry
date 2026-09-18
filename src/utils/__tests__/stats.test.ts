@@ -51,6 +51,30 @@ describe('selectFeaturedMarketplaces', () => {
     }
   });
 
+  it('anchors the top-3 by score — flagships never rotate away', () => {
+    for (let day = 1; day <= 30; day++) {
+      const now = new Date(`2026-01-${String(day).padStart(2, '0')}T00:00:00Z`).getTime();
+      const featured = selectFeaturedMarketplaces(marketplaces, 6, 12, now);
+      expect(featured.slice(0, 3).map((m) => m.id)).toEqual(['0', '1', '2']);
+    }
+  });
+
+  it('still varies the remaining slots day over day', () => {
+    const jan1 = selectFeaturedMarketplaces(
+      marketplaces,
+      6,
+      12,
+      new Date('2026-01-01T00:00:00Z').getTime()
+    ).slice(3);
+    const feb1 = selectFeaturedMarketplaces(
+      marketplaces,
+      6,
+      12,
+      new Date('2026-02-01T00:00:00Z').getTime()
+    ).slice(3);
+    expect(jan1.map((m) => m.id)).not.toEqual(feb1.map((m) => m.id));
+  });
+
   it('rotates deterministically day over day (stable within a day)', () => {
     const a = selectFeaturedMarketplaces(marketplaces, 6);
     const b = selectFeaturedMarketplaces(marketplaces, 6);
