@@ -179,12 +179,12 @@ const PluginsPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Sort and View Controls */}
-              <div className='flex flex-col lg:flex-row gap-4 items-center justify-between'>
+              {/* Sort and View Controls — one unbreakable line, pinned right */}
+              <div className='flex flex-wrap items-center gap-3'>
                 <p className='text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap'>
                   Sorted by {sortBy === 'stars' ? 'parent marketplace stars' : 'name'}
                 </p>
-                <div className='flex flex-wrap items-center gap-4'>
+                <div className='flex items-center gap-3 ml-auto flex-nowrap flex-shrink-0'>
                   <div className='flex items-center gap-2'>
                     <label
                       htmlFor='plugin-sort'
@@ -203,11 +203,14 @@ const PluginsPage: React.FC = () => {
                     </select>
                   </div>
 
-                  <div className='flex items-center gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1'>
+                  <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
+
+                  <div className='flex items-center gap-1 bg-gray-100 dark:bg-gray-750 rounded-lg p-1'>
                     <button
                       onClick={() => setViewMode('grid')}
                       className={`p-2 rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
                       aria-label='Grid view'
+                      aria-pressed={viewMode === 'grid'}
                     >
                       <Grid className='w-4 h-4' />
                     </button>
@@ -215,6 +218,7 @@ const PluginsPage: React.FC = () => {
                       onClick={() => setViewMode('list')}
                       className={`p-2 rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
                       aria-label='List view'
+                      aria-pressed={viewMode === 'list'}
                     >
                       <List className='w-4 h-4' />
                     </button>

@@ -186,10 +186,10 @@ const MarketplacesPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Filters and Controls */}
-              <div className='flex flex-col lg:flex-row gap-4 items-center justify-between'>
+              {/* Filters and Controls — chips wrap; sort + view stay one line, right */}
+              <div className='flex flex-wrap items-center gap-3'>
                 {/* Category Filter — curated buckets + raw deep-link topic */}
-                <div className='flex flex-wrap gap-2 justify-center lg:justify-start'>
+                <div className='flex flex-wrap gap-2'>
                   <button
                     onClick={() => handleTopicChange('All')}
                     className={`px-4 py-2 rounded-lg font-mono text-sm transition-all duration-200 ${
@@ -235,8 +235,8 @@ const MarketplacesPage: React.FC = () => {
                   )}
                 </div>
 
-                {/* Sort and View Controls */}
-                <div className='flex flex-wrap items-center gap-4'>
+                {/* Sort and View Controls — one unbreakable line, pinned right */}
+                <div className='flex items-center gap-3 ml-auto flex-nowrap flex-shrink-0'>
                   <div className='flex items-center gap-2'>
                     <label
                       htmlFor='marketplace-sort'
@@ -258,11 +258,14 @@ const MarketplacesPage: React.FC = () => {
                     </select>
                   </div>
 
-                  <div className='flex items-center gap-1 bg-gray-100 dark:bg-gray-700 rounded-lg p-1'>
+                  <div className='h-6 w-px bg-gray-200 dark:bg-gray-700' aria-hidden='true' />
+
+                  <div className='flex items-center gap-1 bg-gray-100 dark:bg-gray-750 rounded-lg p-1'>
                     <button
                       onClick={() => setViewMode('grid')}
                       className={`p-2 rounded ${viewMode === 'grid' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
                       aria-label='Grid view'
+                      aria-pressed={viewMode === 'grid'}
                     >
                       <Grid className='w-4 h-4' />
                     </button>
@@ -270,6 +273,7 @@ const MarketplacesPage: React.FC = () => {
                       onClick={() => setViewMode('list')}
                       className={`p-2 rounded ${viewMode === 'list' ? 'bg-white dark:bg-gray-600 shadow-sm' : ''}`}
                       aria-label='List view'
+                      aria-pressed={viewMode === 'list'}
                     >
                       <List className='w-4 h-4' />
                     </button>
