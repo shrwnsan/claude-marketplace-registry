@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  Package,
-  Store,
-  Users,
-  Star,
-  TrendingUp,
-  TrendingDown,
-  Activity,
-  Calendar,
-} from 'lucide-react';
+import { Package, Store, Users, Star, Activity, Calendar } from 'lucide-react';
 import { formatDateTimeWithOffset, formatNumber } from '../../utils/format';
 import { useEcosystemStats } from '../../hooks/useEcosystemStats';
 import ErrorDisplay from '../ui/ErrorDisplay';
@@ -25,42 +16,6 @@ interface MetricData {
   color: 'primary' | 'success' | 'warning' | 'purple';
   ariaLabel: string;
 }
-
-const ChangeIndicator = ({ change }: { change: number | null }) => {
-  if (change === null) {
-    return (
-      <div className='flex items-center text-gray-400 dark:text-gray-500'>
-        <span className='text-sm'>—</span>
-      </div>
-    );
-  }
-  const isPositive = change > 0;
-  const isNeutral = Math.abs(change) < 0.1;
-  if (isNeutral) {
-    return (
-      <div className='flex items-center text-gray-500'>
-        <Activity className='w-4 h-4 mr-1' />
-        <span className='text-sm'>0%</span>
-      </div>
-    );
-  }
-  const Icon = isPositive ? TrendingUp : TrendingDown;
-  const colorClass = isPositive ? 'text-success-600' : 'text-error-600';
-  const bgColorClass = isPositive
-    ? 'bg-success-100 dark:bg-success-900/30'
-    : 'bg-error-100 dark:bg-error-900/30';
-  return (
-    <div className={`flex items-center ${colorClass}`}>
-      <div className={`p-1 rounded-md ${bgColorClass} mr-1`}>
-        <Icon className='w-3 h-3' aria-hidden='true' />
-      </div>
-      <span className='text-sm font-medium'>
-        {isPositive ? '+' : ''}
-        {change.toFixed(1)}%
-      </span>
-    </div>
-  );
-};
 
 const MetricCard: React.FC<{ metric: MetricData; isLoading?: boolean }> = ({
   metric,
@@ -107,7 +62,6 @@ const MetricCard: React.FC<{ metric: MetricData; isLoading?: boolean }> = ({
   };
 
   const currentColor = colorClasses[color];
-  const changeHint = change === null ? 'baseline pending' : 'vs last 30 days';
 
   return (
     <article
@@ -118,13 +72,9 @@ const MetricCard: React.FC<{ metric: MetricData; isLoading?: boolean }> = ({
     >
       <div className='flex items-center justify-between mb-4'>
         <div
-          className={`p-3 rounded-lg ${currentColor.bg} group-hover:scale-110 transition-transform duration-300`}
+          className={`p-3 rounded-lg ${currentColor.bg} group-hover:scale-105 transition-transform duration-200`}
         >
           <Icon className={`w-6 h-6 ${currentColor.icon}`} aria-hidden='true' />
-        </div>
-        <div className='flex flex-col items-end'>
-          <ChangeIndicator change={change} />
-          <span className='text-xs text-gray-500 dark:text-gray-400 mt-1'>{changeHint}</span>
         </div>
       </div>
 
@@ -133,6 +83,29 @@ const MetricCard: React.FC<{ metric: MetricData; isLoading?: boolean }> = ({
           {value}
         </h3>
         <p className='text-sm font-medium text-gray-600 dark:text-gray-400'>{label}</p>
+      </div>
+
+      {/* Delta/context line — shows the honest pending state until ~30 days of
+          history exists, then activates with the real weekly growth rate. */}
+      <div className='mt-3 pt-3 border-t border-gray-100 dark:border-gray-700'>
+        {change === null ? (
+          <span className='text-xs font-mono text-gray-400 dark:text-gray-500'>
+            — baseline pending · growth % appears after 30 days of history
+          </span>
+        ) : (
+          <span
+            className={`text-xs font-mono ${
+              change > 0
+                ? 'text-success-600 dark:text-success-400'
+                : change < 0
+                  ? 'text-error-600 dark:text-error-400'
+                  : 'text-gray-500 dark:text-gray-400'
+            }`}
+          >
+            {change > 0 ? '▲' : change < 0 ? '▼' : '•'} {change >= 0 ? '+' : ''}
+            {change.toFixed(1)}% vs 30-day baseline
+          </span>
+        )}
       </div>
     </article>
   );
@@ -210,10 +183,8 @@ const OverviewMetrics: React.FC<OverviewMetricsProps> = ({ className = '' }) => 
     <section className={`space-y-4 ${className}`} aria-label='Ecosystem Overview Metrics'>
       <header className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
         <div>
-          <h2 className='text-xl font-semibold text-gray-900 dark:text-gray-100'>
-            Ecosystem Overview
-          </h2>
-          <p className='text-sm text-gray-600 dark:text-gray-400 mt-1'>
+          <p className='eyebrow eyebrow-prompt mb-1'>status --live</p>
+          <p className='text-sm text-gray-600 dark:text-gray-400'>
             Live counts from the daily marketplace scans
           </p>
         </div>

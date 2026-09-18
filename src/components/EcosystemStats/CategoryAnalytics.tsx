@@ -1,7 +1,10 @@
 import React from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Package } from 'lucide-react';
 import { formatNumber } from '../../utils/format';
+import { topicShare } from '../../utils/stats';
 import { useEcosystemStats } from '../../hooks/useEcosystemStats';
 import ErrorDisplay from '../ui/ErrorDisplay';
 
@@ -10,6 +13,7 @@ interface CategoryAnalyticsProps {
 }
 
 const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' }) => {
+  const router = useRouter();
   const { data, loading, error, refresh } = useEcosystemStats();
 
   if (loading && !data) {
@@ -39,6 +43,11 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
   }
 
   const categories = data?.categories || [];
+  const totalPlugins = data?.overview.totalPlugins ?? 0;
+
+  const browseTopic = (topic: string) => {
+    router.push(`/marketplaces?topic=${encodeURIComponent(topic)}`);
+  };
 
   return (
     <div
@@ -47,12 +56,9 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
       aria-labelledby='category-analytics-title'
     >
       <div className='p-6 border-b border-gray-200 dark:border-gray-800'>
-        <h2
-          id='category-analytics-title'
-          className='text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2'
-        >
-          Topic Distribution
-        </h2>
+        <p id='category-analytics-title' className='eyebrow eyebrow-prompt mb-2'>
+          ls --by-topic
+        </p>
         <p className='text-gray-600 dark:text-gray-400'>
           How many plugins come from marketplaces tagged with each topic. Topics overlap — a
           marketplace can carry several — so these are counts, not a partition.
@@ -87,8 +93,14 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                 />
                 <YAxis type='category' dataKey='name' width={140} tick={{ fontSize: 12 }} />
                 <Tooltip
-                  cursor={{ fill: 'rgba(59,130,246,0.06)' }}
-                  formatter={(value: number | string) => [formatNumber(Number(value)), 'Plugins']}
+                  cursor={{ fill: 'rgba(217,119,87,0.08)' }}
+                  formatter={(value: number | string) => [
+                    `${formatNumber(Number(value))} plugins · ${topicShare(
+                      Number(value),
+                      totalPlugins
+                    )}% of catalog`,
+                    'Share',
+                  ]}
                   labelFormatter={(label: string) => `Topic "${label}"`}
                   contentStyle={{
                     backgroundColor: 'var(--tooltip-bg)',
@@ -100,15 +112,41 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                   labelStyle={{ color: 'var(--tooltip-text)' }}
                   itemStyle={{ color: 'var(--tooltip-text)' }}
                 />
-                <Bar dataKey='count' fill='#d97757' radius={[0, 4, 4, 0]} maxBarSize={22} />
+                <Bar
+                  dataKey='count'
+                  fill='#d97757'
+                  radius={[0, 4, 4, 0]}
+                  maxBarSize={22}
+                  style={{ cursor: 'pointer' }}
+                  onClick={(bar: unknown) => {
+                    const topic = (bar as { payload?: { name?: string } })?.payload?.name;
+                    if (topic) browseTopic(topic);
+                  }}
+                />
               </BarChart>
             </ResponsiveContainer>
           </div>
 
           <p className='text-xs text-gray-400 dark:text-gray-500 mt-2 text-center'>
             Counts refer to plugins whose parent marketplace carries the topic; one plugin can
-            appear under several topics.
+            appear under several topics. Click a bar to browse those marketplaces.
           </p>
+
+          {/* Keyboard/screen-reader path to the same deep links the bars provide */}
+          {categories.length > 0 && (
+            <div className='mt-4 flex flex-wrap gap-2 justify-center'>
+              {categories.map((c) => (
+                <Link
+                  key={c.id}
+                  href={`/marketplaces?topic=${encodeURIComponent(c.name)}`}
+                  className='badge badge-secondary hover:border-primary-300 dark:hover:border-primary-600 hover:text-primary-700 dark:hover:text-primary-300 transition-all'
+                  aria-label={`Browse ${c.name} marketplaces (${formatNumber(c.count)} plugins)`}
+                >
+                  {c.name} · {formatNumber(c.count)}
+                </Link>
+              ))}
+            </div>
+          )}
 
           {/* Insights */}
           {(data?.insights || []).length > 0 && (

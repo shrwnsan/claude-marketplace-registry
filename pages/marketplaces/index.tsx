@@ -30,7 +30,16 @@ const MarketplacesPage: React.FC = () => {
   const marketplaces = marketplaceData?.marketplaces || [];
 
   // Real topic chips from generated stats
-  const topics = (stats?.categories || []).slice(0, 8).map((c) => c.name);
+  const topics = useMemo(() => (stats?.categories || []).slice(0, 8).map((c) => c.name), [stats]);
+
+  // Deep-link support: /marketplaces?topic=tag (from the topic chart bars)
+  // seeds the topic filter
+  useEffect(() => {
+    const t = router.query.topic;
+    if (typeof t === 'string' && t && topics.includes(t)) {
+      setSelectedTopic(t);
+    }
+  }, [router.query.topic, topics]);
 
   // Filter and sort marketplaces
   const filteredAndSortedMarketplaces = useMemo(() => {

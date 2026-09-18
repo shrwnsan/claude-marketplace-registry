@@ -1,4 +1,10 @@
-import { selectFeaturedMarketplaces, featuredScore } from '../stats';
+import {
+  selectFeaturedMarketplaces,
+  featuredScore,
+  hasEnoughHistory,
+  GROWTH_LINE_MIN_POINTS,
+  topicShare,
+} from '../stats';
 
 // Freeze time-sensitive bonuses at a fixed date
 const recent = new Date().toISOString();
@@ -58,5 +64,27 @@ describe('selectFeaturedMarketplaces', () => {
 
   it('handles an empty list', () => {
     expect(selectFeaturedMarketplaces([], 6)).toEqual([]);
+  });
+});
+
+describe('hasEnoughHistory', () => {
+  it('stays on big-number deltas until the line-chart threshold', () => {
+    expect(hasEnoughHistory(0)).toBe(false);
+    expect(hasEnoughHistory(1)).toBe(false);
+    expect(hasEnoughHistory(GROWTH_LINE_MIN_POINTS - 1)).toBe(false);
+    expect(hasEnoughHistory(GROWTH_LINE_MIN_POINTS)).toBe(true);
+    expect(hasEnoughHistory(30)).toBe(true);
+  });
+});
+
+describe('topicShare', () => {
+  it('computes share of catalog with one decimal', () => {
+    expect(topicShare(1, 3)).toBe(33.3);
+    expect(topicShare(1, 4)).toBe(25);
+    expect(topicShare(0, 100)).toBe(0);
+  });
+
+  it('never divides by zero', () => {
+    expect(topicShare(5, 0)).toBe(0);
   });
 });

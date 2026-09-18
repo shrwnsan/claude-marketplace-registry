@@ -3,6 +3,7 @@ import { Activity, Calendar, ShieldCheck, RefreshCw, Clock, Star, FileCheck } fr
 import { formatDateTimeWithOffset, formatNumber } from '../../utils/format';
 import { useEcosystemStats } from '../../hooks/useEcosystemStats';
 import ErrorDisplay from '../ui/ErrorDisplay';
+import MiniSparkline from '../ui/MiniSparkline';
 
 interface QualityIndicatorsProps {
   className?: string;
@@ -14,10 +15,48 @@ interface IndicatorCard {
   hint: string;
   progress: number | null; // null = no meaningful percentage
   icon: React.ComponentType<{ className?: string }>;
+  trendPoints?: number[];
 }
+
+/** Fills to its true level on mount so partial values read as graded, not all-or-nothing. */
+const AnimatedBar: React.FC<{ value: number; label: string }> = ({ value, label }) => {
+  const [width, setWidth] = React.useState(0);
+  React.useEffect(() => {
+    const t = setTimeout(() => setWidth(Math.min(100, Math.max(0, value))), 80);
+    return () => clearTimeout(t);
+  }, [value]);
+  return (
+    <div className='w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-3'>
+      <div
+        className='bg-gradient-to-r from-primary-500 to-primary-400 h-2 rounded-full transition-all duration-700 ease-out'
+        style={{ width: `${width}%` }}
+        role='progressbar'
+        aria-valuenow={value}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label={`${label} level`}
+      />
+    </div>
+  );
+};
 
 const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' }) => {
   const { data, metaTimestamp, loading, error, refresh } = useEcosystemStats();
+
+  // Real derived history: average stars per marketplace for every recorded day.
+  const avgStarsTrend = React.useMemo(() => {
+    const stars = data?.stars || [];
+    const markets = data?.marketplaces || [];
+    const starsByDate = new Map(stars.map((p) => [p.date, p.value]));
+    const out: number[] = [];
+    markets.forEach((m) => {
+      const s = starsByDate.get(m.date);
+      if (s !== null && s !== undefined && m.value && m.value > 0) {
+        out.push(Math.round(s / m.value));
+      }
+    });
+    return out;
+  }, [data]);
 
   if (loading && !data) {
     return (
@@ -77,6 +116,7 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' })
           hint: `${formatNumber(data.overview.totalStars)} stars across ${data.overview.totalMarketplaces} marketplaces`,
           progress: null,
           icon: Star,
+          trendPoints: avgStarsTrend.length >= 2 ? avgStarsTrend : undefined,
         },
       ]
     : [];
@@ -85,10 +125,8 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' })
     <section className={`space-y-4 ${className}`} aria-label='Quality Indicators'>
       <header className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
         <div>
-          <h2 className='text-xl font-semibold text-gray-900 dark:text-gray-100'>
-            Quality Indicators
-          </h2>
-          <p className='text-sm text-gray-600 dark:text-gray-400 mt-1'>
+          <p className='eyebrow eyebrow-prompt mb-1'>check --quality</p>
+          <p className='text-sm text-gray-600 dark:text-gray-400'>
             Trust signals computed directly from the scan data
           </p>
         </div>
@@ -116,29 +154,18 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' })
           <article key={card.label} className='card p-6' role='region' aria-label={card.label}>
             <div className='flex items-center justify-between mb-3'>
               <div className='flex items-center'>
-                <card.icon className='w-5 h-5 text-primary-600 dark:text-primary-400 mr-2' />
+                <card.icon className='w-5 h-5 text-primary-500 dark:text-primary-400 mr-2' />
                 <h3 className='text-sm font-semibold text-gray-700 dark:text-gray-200'>
                   {card.label}
                 </h3>
               </div>
-              <span className='text-2xl font-bold text-gray-900 dark:text-gray-100 tabular-nums'>
+              <span className='text-2xl font-bold font-mono text-gray-900 dark:text-gray-50 tabular-nums'>
                 {card.value}
               </span>
             </div>
-            {card.progress !== null && (
-              <div className='w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-3'>
-                <div
-                  className='bg-gradient-to-r from-primary-500 to-primary-600 h-2 rounded-full transition-all duration-500'
-                  style={{ width: `${Math.min(100, card.progress)}%` }}
-                  role='progressbar'
-                  aria-valuenow={card.progress}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  aria-label={`${card.label} progress`}
-                ></div>
-              </div>
-            )}
+            {card.progress !== null && <AnimatedBar value={card.progress} label={card.label} />}
             <p className='text-sm text-gray-500 dark:text-gray-400'>{card.hint}</p>
+            <MiniSparkline label={card.label} points={card.trendPoints} />
           </article>
         ))}
       </div>
@@ -148,11 +175,8 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' })
           <ShieldCheck className='w-5 h-5 text-success-600 dark:text-success-400 mr-2 mt-0.5 flex-shrink-0' />
           <p className='text-sm text-gray-600 dark:text-gray-300'>
             Every plugin in the catalog comes from a scanned{' '}
-            <code className='text-xs bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded'>
-              .claude-plugin/marketplace.json
-            </code>{' '}
-            manifest. Quality signals are computed from repository metadata — no plugin scoring is
-            invented.
+            <code>.claude-plugin/marketplace.json</code> manifest. Quality signals are computed from
+            repository metadata — no plugin scoring is invented.
           </p>
         </footer>
       )}

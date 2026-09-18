@@ -10,6 +10,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import { formatNumber } from '../../utils/format';
+import { hasEnoughHistory, GROWTH_LINE_MIN_POINTS } from '../../utils/stats';
 import { useEcosystemStats, TrendPoint } from '../../hooks/useEcosystemStats';
 import ErrorDisplay from '../ui/ErrorDisplay';
 
@@ -90,7 +91,8 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({ className = '' }) => {
     );
   }
 
-  const enoughHistory = chartRows.length >= 2;
+  const showLine = hasEnoughHistory(chartRows.length);
+  const showDeltas = chartRows.length >= 2;
 
   return (
     <div
@@ -99,18 +101,15 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({ className = '' }) => {
       aria-labelledby='growth-trends-title'
     >
       <div className='p-6 border-b border-gray-200 dark:border-gray-800'>
-        <h2
-          id='growth-trends-title'
-          className='text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2'
-        >
-          Ecosystem Growth Trends
-        </h2>
+        <p id='growth-trends-title' className='eyebrow eyebrow-prompt mb-2'>
+          growth --trends
+        </p>
         <p className='text-gray-600 dark:text-gray-400'>
           Snapshots recorded by each daily scan — one point per day
         </p>
       </div>
 
-      {!enoughHistory ? (
+      {!showDeltas ? (
         <div className='p-10 text-center'>
           <p className='text-gray-600 dark:text-gray-300 font-medium mb-2'>
             Growth history is collecting
@@ -118,13 +117,14 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({ className = '' }) => {
           <p className='text-sm text-gray-500 dark:text-gray-400 max-w-md mx-auto'>
             Each daily scan records a snapshot.{' '}
             {chartRows.length === 1
-              ? `The first snapshot was recorded on ${chartRows[0].date} — a trend line will appear after a few more days.`
-              : 'A trend line will appear after a few daily scans.'}
+              ? `The first snapshot was recorded on ${chartRows[0].date} — totals appear after the next scan.`
+              : 'Totals will appear after a few daily scans.'}
           </p>
         </div>
       ) : (
         <>
-          {/* Latest snapshot deltas */}
+          {/* Latest snapshot deltas — the primary display until the line has
+              enough points to be meaningful (2-point lines read as noise) */}
           <div className='p-6 border-b border-gray-200 dark:border-gray-800 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
             {SERIES.map(({ key, label, color }) => {
               const points = data?.[key] || [];
@@ -146,7 +146,7 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({ className = '' }) => {
                       aria-hidden='true'
                     />
                   </div>
-                  <div className='text-2xl font-bold text-gray-900 dark:text-gray-100 mt-1 tabular-nums'>
+                  <div className='text-2xl font-bold font-mono text-gray-900 dark:text-gray-50 mt-1 tabular-nums'>
                     {formatNumber((latest?.value as number) ?? 0)}
                   </div>
                   <div className='text-xs text-gray-500 dark:text-gray-400'>
@@ -160,50 +160,81 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({ className = '' }) => {
           </div>
 
           <div className='p-6'>
-            <div style={{ width: '100%', height: 360 }}>
-              <ResponsiveContainer>
-                <LineChart data={chartRows} margin={{ top: 8, right: 16, bottom: 8, left: 8 }}>
-                  <CartesianGrid strokeDasharray='3 3' stroke='var(--chart-grid)' />
-                  <XAxis
-                    dataKey='date'
-                    tick={{ fontSize: 12 }}
-                    tickFormatter={(d: string) => d.slice(5)}
-                  />
-                  <YAxis tick={{ fontSize: 12 }} tickFormatter={(v: number) => formatNumber(v)} />
-                  <Tooltip
-                    cursor={{ stroke: '#9ca3af', strokeDasharray: '3 3' }}
-                    formatter={(value: number | string) => formatNumber(Number(value))}
-                    labelFormatter={(label: string) => `Snapshot ${label}`}
-                    contentStyle={{
-                      backgroundColor: 'var(--tooltip-bg)',
-                      border: '1px solid var(--tooltip-border)',
-                      borderRadius: '0.5rem',
-                      color: 'var(--tooltip-text)',
-                      fontSize: '0.875rem',
-                    }}
-                    labelStyle={{ color: 'var(--tooltip-muted)' }}
-                    itemStyle={{ color: 'var(--tooltip-text)' }}
-                  />
-                  <Legend />
-                  {SERIES.map(({ key, label, color }) => (
-                    <Line
-                      key={key}
-                      type='monotone'
-                      dataKey={key}
-                      name={label}
-                      stroke={color}
-                      strokeWidth={2}
-                      dot={{ r: 3 }}
-                      activeDot={{ r: 5 }}
-                      connectNulls
+            {showLine ? (
+              <>
+                <div style={{ width: '100%', height: 360 }}>
+                  <ResponsiveContainer>
+                    <LineChart data={chartRows} margin={{ top: 8, right: 16, bottom: 8, left: 8 }}>
+                      <CartesianGrid strokeDasharray='3 3' stroke='var(--chart-grid)' />
+                      <XAxis
+                        dataKey='date'
+                        tick={{ fontSize: 12 }}
+                        tickFormatter={(d: string) => d.slice(5)}
+                      />
+                      <YAxis
+                        tick={{ fontSize: 12 }}
+                        tickFormatter={(v: number) => formatNumber(v)}
+                      />
+                      <Tooltip
+                        cursor={{ stroke: 'var(--tooltip-muted)', strokeDasharray: '3 3' }}
+                        formatter={(value: number | string) => formatNumber(Number(value))}
+                        labelFormatter={(label: string) => `Snapshot ${label}`}
+                        contentStyle={{
+                          backgroundColor: 'var(--tooltip-bg)',
+                          border: '1px solid var(--tooltip-border)',
+                          borderRadius: '0.5rem',
+                          color: 'var(--tooltip-text)',
+                          fontSize: '0.875rem',
+                        }}
+                        labelStyle={{ color: 'var(--tooltip-muted)' }}
+                        itemStyle={{ color: 'var(--tooltip-text)' }}
+                      />
+                      <Legend />
+                      {SERIES.map(({ key, label, color }) => (
+                        <Line
+                          key={key}
+                          type='monotone'
+                          dataKey={key}
+                          name={label}
+                          stroke={color}
+                          strokeWidth={2}
+                          dot={{ r: 3 }}
+                          activeDot={{ r: 5 }}
+                          connectNulls
+                        />
+                      ))}
+                    </LineChart>
+                  </ResponsiveContainer>
+                </div>
+                <p className='text-xs text-gray-400 dark:text-gray-500 mt-3 text-center'>
+                  History builds up one snapshot per daily scan — the line gets more detailed over
+                  time.
+                </p>
+              </>
+            ) : (
+              <div className='py-10 text-center'>
+                <p className='font-mono text-sm text-gray-600 dark:text-gray-300'>
+                  {chartRows.length} of {GROWTH_LINE_MIN_POINTS} daily snapshots recorded
+                </p>
+                <p className='text-sm text-gray-500 dark:text-gray-400 max-w-md mx-auto mt-2'>
+                  A two-point line reads as noise, so the trend chart switches on here once{' '}
+                  {GROWTH_LINE_MIN_POINTS} daily snapshots exist. The totals above update every
+                  scan.
+                </p>
+                {/* collection progress */}
+                <div className='max-w-xs mx-auto mt-4 flex gap-1.5'>
+                  {Array.from({ length: GROWTH_LINE_MIN_POINTS }, (_, i) => (
+                    <span
+                      key={i}
+                      className={`h-1.5 flex-1 rounded-full ${
+                        i < chartRows.length ? 'bg-primary-500' : 'bg-gray-200 dark:bg-gray-700'
+                      }`}
+                      aria-hidden='true'
                     />
                   ))}
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
-            <p className='text-xs text-gray-400 dark:text-gray-500 mt-3 text-center'>
-              History builds up one snapshot per daily scan — the line gets more detailed over time.
-            </p>
+                </div>
+              </div>
+            )}
           </div>
         </>
       )}
