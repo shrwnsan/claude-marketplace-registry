@@ -95,7 +95,7 @@ const MarketplaceDetailPage: React.FC = () => {
     return (
       <MainLayout>
         <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+          <div className='container-detail py-12'>
             <LoadingState variant='skeleton' className='max-w-4xl' />
           </div>
         </div>
@@ -107,7 +107,7 @@ const MarketplaceDetailPage: React.FC = () => {
     return (
       <MainLayout>
         <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center'>
+          <div className='container-detail py-20 text-center'>
             <Store className='w-16 h-16 mx-auto text-gray-300 dark:text-gray-600 mb-4' />
             <h1 className='text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3'>
               Marketplace not found
@@ -134,7 +134,7 @@ const MarketplaceDetailPage: React.FC = () => {
 
       <MainLayout>
         <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
+          <div className='container-detail py-8'>
             <Link
               href='/marketplaces'
               className='inline-flex items-center text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 mb-6 group'

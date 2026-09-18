@@ -109,6 +109,17 @@
     @apply card cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-medium hover:border-gray-300 dark:hover:border-gray-600;
   }
 
+  /* Content width system: listings 7xl, detail pages 6xl, prose/docs 4xl */
+  .container-detail {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Inline code inside bordered containers should not double-up boxes */
+  .card code,
+  .border code {
+    @apply border-0 bg-transparent px-0;
+  }
+
   .input {
     @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:focus:ring-primary-400 transition-colors;
   }
