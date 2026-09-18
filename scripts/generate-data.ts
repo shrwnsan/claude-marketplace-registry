@@ -872,23 +872,30 @@ class DataGenerator {
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  ${data.categories
-    .map(
-      (cat) => `
   <url>
-    <loc>${baseUrl}/category/${cat.id}</loc>
+    <loc>${baseUrl}/stats</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/docs</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>`
-    )
-    .join('')}
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/docs/api</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
   ${data.marketplaces
     .slice(0, 100)
     .map(
       (mp) => `
   <url>
-    <loc>${baseUrl}/marketplace/${mp.id}</loc>
+    <loc>${baseUrl}/marketplaces/${mp.id}</loc>
     <lastmod>${format(parseISO(mp.updatedAt), 'yyyy-MM-dd')}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

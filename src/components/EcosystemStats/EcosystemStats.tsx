@@ -79,9 +79,10 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
             <div className='flex items-center justify-between mb-4'>
               <div className='flex-1' />
               <div className='flex-1'>
-                <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4'>
+                {/* /stats is this component's only consumer, so the title is the page h1 */}
+                <h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4'>
                   {title}
-                </h2>
+                </h1>
                 <p className='text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto'>
                   {subtitle}
                 </p>

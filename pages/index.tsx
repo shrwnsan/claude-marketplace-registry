@@ -3,7 +3,6 @@ import Head from 'next/head';
 import MainLayout from '@/components/layout/MainLayout';
 import SearchCombobox from '@/components/Search/SearchCombobox';
 import PluginCard from '@/components/Marketplace/PluginCard';
-import { EcosystemStats } from '@/components/EcosystemStats';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import { usePluginData, topPluginsByStars } from '@/hooks/usePluginData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
@@ -12,7 +11,6 @@ import { StatCard } from '@/components/ui/StatCard';
 import FriendlyTimestamp from '@/components/ui/FriendlyTimestamp';
 import { ChevronRight, Github, Package, ShieldCheck, Star, Store, Users } from 'lucide-react';
 import Link from 'next/link';
-import { handleAnchorClick } from '@/utils/scroll';
 import { selectFeaturedMarketplaces } from '@/utils/stats';
 
 const HomePage: React.FC = () => {
@@ -85,19 +83,18 @@ const HomePage: React.FC = () => {
                 />
               </div>
 
-              {/* Ecosystem at a Glance — compact label row, details one anchor away */}
+              {/* Ecosystem at a Glance — compact label row; full dashboard lives on /stats */}
               <div className='mb-4 flex items-baseline justify-center gap-2 sm:gap-3 flex-wrap'>
                 <h2 className='eyebrow'>Ecosystem at a Glance</h2>
                 <span className='text-gray-300 dark:text-gray-600' aria-hidden='true'>
                   {'//'}
                 </span>
-                <a
-                  href='#analytics-dashboard'
-                  onClick={handleAnchorClick}
-                  className='font-mono text-xs text-primary-600 dark:text-primary-400 hover:underline cursor-pointer'
+                <Link
+                  href='/stats'
+                  className='font-mono text-xs text-primary-600 dark:text-primary-400 hover:underline'
                 >
-                  full statistics ↓
-                </a>
+                  full statistics →
+                </Link>
               </div>
 
               {/* Stats — same generated stats.json as the dashboard below */}
@@ -295,19 +292,26 @@ const HomePage: React.FC = () => {
           </div>
         </section>
 
-        {/* Ecosystem Statistics Section */}
-        <section
-          id='analytics-dashboard'
-          className='py-12 sm:py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-850'
-        >
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <EcosystemStats
-              title='Ecosystem Statistics'
-              subtitle='Live metrics from the daily marketplace scans'
-              showRefreshButton={true}
-              showLastUpdated={true}
-              className='max-w-7xl mx-auto'
-            />
+        {/* Statistics teaser — the full dashboard lives on /stats */}
+        <section className='py-10 sm:py-12 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-850'>
+          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
+            <div className='text-center sm:text-left'>
+              <p className='eyebrow eyebrow-prompt mb-1'>tail -f stats.json</p>
+              <h2 className='text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-50'>
+                Ecosystem Statistics
+              </h2>
+              <p className='text-gray-600 dark:text-gray-400 text-sm sm:text-base'>
+                Growth trends, topic distribution, and quality indicators — one snapshot per day.
+              </p>
+            </div>
+            <Link
+              href='/stats'
+              className='cta group/cta self-center sm:self-auto'
+              aria-label='Open ecosystem statistics'
+            >
+              full statistics
+              <ChevronRight className='cta-arrow w-4 h-4' />
+            </Link>
           </div>
         </section>
 
