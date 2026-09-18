@@ -146,17 +146,16 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
               <Search className='w-5 h-5' />
             </button>
 
-            {/* GitHub star button */}
+            {/* GitHub — quiet icon matching the other header actions */}
             <a
               href='https://github.com/shrwnsan/claude-marketplace-registry'
               target='_blank'
               rel='noopener noreferrer'
               title='Star this project on GitHub'
-              className='hidden sm:flex items-center space-x-1.5 px-3 py-1.5 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:border-primary-400 dark:hover:border-primary-500 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all group'
-              aria-label='Star this project on GitHub (opens in new tab)'
+              className='btn-ghost p-2 hidden sm:flex'
+              aria-label='GitHub repository (opens in new tab)'
             >
-              <Github className='w-4 h-4 group-hover:scale-110 transition-transform' />
-              <span className='text-sm font-medium'>Star</span>
+              <Github className='w-5 h-5' />
             </a>
 
             {/* Mobile menu button */}
