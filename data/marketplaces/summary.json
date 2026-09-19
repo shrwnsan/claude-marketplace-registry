@@ -1,19 +1,19 @@
 {
-  "totalFound": 250,
-  "withManifest": 184,
-  "lastUpdated": "2026-09-18T03:32:59.164Z",
+  "totalFound": 255,
+  "withManifest": 188,
+  "lastUpdated": "2026-09-19T03:31:22.037Z",
   "searchQuery": "",
   "languages": {
     "Python": 80,
-    "Shell": 36,
+    "Shell": 37,
     "TypeScript": 25,
     "Rust": 9,
     "PHP": 1,
-    "Unknown": 30,
-    "JavaScript": 41,
+    "JavaScript": 44,
     "Java": 2,
     "Go": 12,
-    "HTML": 7,
+    "Unknown": 30,
+    "HTML": 8,
     "Typst": 1,
     "AMPL": 1,
     "Jupyter Notebook": 1,
@@ -25,27 +25,27 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 261260,
+      "stars": 262143,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 176917,
+      "stars": 177055,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75246,
+      "stars": 75302,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 36446,
+      "stars": 36480,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "daily",
-      "stars": 20071,
+      "stars": 20072,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
@@ -55,22 +55,22 @@
     },
     {
       "name": "web-access",
-      "stars": 8965,
+      "stars": 8969,
       "url": "https://github.com/eze-is/web-access"
     },
     {
       "name": "claude-octopus",
-      "stars": 4086,
+      "stars": 4088,
       "url": "https://github.com/nyldn/claude-octopus"
     },
     {
       "name": "awesome-ChatGPT-repositories",
-      "stars": 3251,
+      "stars": 3254,
       "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
     },
     {
       "name": "Claude-to-IM-skill",
-      "stars": 2880,
+      "stars": 2881,
       "url": "https://github.com/op7418/Claude-to-IM-skill"
     }
   ]
