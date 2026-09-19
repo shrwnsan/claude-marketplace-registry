@@ -4,10 +4,10 @@
     "name": "skills",
     "description": "Public repository for Agent Skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 176917,
-    "forks": 20949,
+    "stars": 177055,
+    "forks": 20978,
     "language": "Python",
-    "updatedAt": "2026-09-18T03:18:44Z",
+    "updatedAt": "2026-09-19T03:02:03Z",
     "createdAt": "2025-09-22T15:53:31Z",
     "license": "None",
     "topics": [
@@ -208,10 +208,10 @@
     "name": "awesome-claude-skills",
     "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "stars": 75246,
-    "forks": 8708,
+    "stars": 75302,
+    "forks": 8724,
     "language": "Python",
-    "updatedAt": "2026-09-18T03:18:25Z",
+    "updatedAt": "2026-09-19T03:11:28Z",
     "createdAt": "2025-10-17T07:15:01Z",
     "license": "None",
     "topics": [
@@ -240,10 +240,10 @@
     "name": "claude-plugins-official",
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "url": "https://github.com/anthropics/claude-plugins-official",
-    "stars": 36446,
-    "forks": 4085,
+    "stars": 36480,
+    "forks": 4093,
     "language": "Python",
-    "updatedAt": "2026-09-18T03:14:25Z",
+    "updatedAt": "2026-09-19T02:24:54Z",
     "createdAt": "2025-11-20T18:36:20Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -364,6 +364,7 @@
         },
         {
           "name": "airwallex-agentos",
+          "displayName": "Airwallex",
           "description": "Bring Airwallex's global financial infrastructure to Claude. Orchestrate actions across your account in plain language, e.g., set up invoices from a PO, onboard suppliers from invoices, and check current cash position across currencies. AgentOS bundles pre-built finance Skills with MCP servers. A public CLI connects your agent to Airwallex's capabilities.",
           "author": {
             "name": "Airwallex"
@@ -2164,6 +2165,22 @@
           "source": "./external_plugins/imessage"
         },
         {
+          "name": "incident-io",
+          "description": "Work with incident.io from Claude: respond to and investigate incidents, check on-call schedules and escalations, and author the runbooks, skills and architecture docs that incident.io investigations draw on. Bundles the official incident.io MCP server (OAuth on first use).",
+          "author": {
+            "name": "incident.io"
+          },
+          "category": "monitoring",
+          "source": {
+            "source": "git-subdir",
+            "url": "https://github.com/incident-io/skills.git",
+            "path": "plugins/incident-io",
+            "ref": "main",
+            "sha": "6d0bbfc9e52256fc39326b9ba6d08f16831b60ae"
+          },
+          "homepage": "https://incident.io"
+        },
+        {
           "name": "informatica-for-claude-platform",
           "description": "Governed catalog discovery for Informatica Intelligent Data Management Cloud (CDGC): find tables, columns, files, glossary terms and policies across the enterprise catalog, check ownership, certification, sensitivity and applicable policy, and get safe-usage guidance grounded in catalog metadata before querying any data. Requires an Informatica IDMC tenant and the Informatica Catalog Discovery connector.",
           "author": {
@@ -3276,7 +3293,7 @@
         {
           "name": "qodo",
           "displayName": "Qodo",
-          "description": "Qodo setup, code intelligence, and review workflows.",
+          "description": "Bring Qodo's codebase intelligence, coding standards, and code review into your coding agent.",
           "author": {
             "name": "Qodo",
             "email": "support@qodo.ai"
@@ -4572,6 +4589,21 @@
             "sha": "9529e72715d96ab47738e8edf83d49798d0f8be5"
           },
           "homepage": "https://www.dynatrace.com/hub/detail/claude-code-cli/"
+        },
+        {
+          "name": "wingspan",
+          "displayName": "Wingspan",
+          "description": "Ask Claude about the contractors you pay through Wingspan, what you owe them, and what is holding up a payment, then onboard contractors and log payments as drafts, with a preview before anything is written. Requires a Wingspan account; bundles the Wingspan MCP server (OAuth on first use).",
+          "author": {
+            "name": "Wingspan"
+          },
+          "category": "productivity",
+          "source": {
+            "source": "url",
+            "url": "https://github.com/wingspanHQ/mcp-claude-plugin.git",
+            "sha": "b989f3b303a1f605955291e34ed29b755bf436e1"
+          },
+          "homepage": "https://github.com/wingspanHQ/mcp-claude-plugin"
         }
       ]
     }
@@ -4581,10 +4613,10 @@
     "name": "awesome-ChatGPT-repositories",
     "description": "A curated list of open source GitHub repositories related to ChatGPT, the OpenAI API, and Codex. Searchable via Claude Code skills.",
     "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
-    "stars": 3251,
+    "stars": 3254,
     "forks": 464,
     "language": "Python",
-    "updatedAt": "2026-09-18T01:53:43Z",
+    "updatedAt": "2026-09-19T00:03:08Z",
     "createdAt": "2023-04-02T14:00:07Z",
     "license": "Creative Commons Zero v1.0 Universal",
     "topics": [
@@ -4650,10 +4682,10 @@
     "name": "agent-skills",
     "description": "A collection of agent-optimized React Native skills for AI coding assistants.",
     "url": "https://github.com/callstackincubator/agent-skills",
-    "stars": 1648,
+    "stars": 1651,
     "forks": 116,
     "language": "Shell",
-    "updatedAt": "2026-09-17T09:07:55Z",
+    "updatedAt": "2026-09-18T21:29:33Z",
     "createdAt": "2026-01-14T16:45:39Z",
     "license": "MIT License",
     "topics": [],
@@ -4777,10 +4809,10 @@
     "name": "logtape",
     "description": "Unobtrusive logging library with zero dependencies for Deno, Node.js, Bun, browsers, and edge functions",
     "url": "https://github.com/dahlia/logtape",
-    "stars": 1998,
+    "stars": 1999,
     "forks": 55,
     "language": "TypeScript",
-    "updatedAt": "2026-09-17T23:42:14Z",
+    "updatedAt": "2026-09-18T07:42:11Z",
     "createdAt": "2024-04-16T11:36:21Z",
     "license": "MIT License",
     "topics": [
@@ -4825,7 +4857,7 @@
     "stars": 1802,
     "forks": 147,
     "language": "TypeScript",
-    "updatedAt": "2026-09-17T19:48:29Z",
+    "updatedAt": "2026-09-18T20:18:09Z",
     "createdAt": "2023-01-08T14:15:23Z",
     "license": "MIT License",
     "topics": [
@@ -4884,10 +4916,10 @@
     "name": "biomcp",
     "description": "BioMCP: Biomedical Model Context Protocol",
     "url": "https://github.com/genomoncology/biomcp",
-    "stars": 634,
-    "forks": 115,
+    "stars": 637,
+    "forks": 116,
     "language": "Rust",
-    "updatedAt": "2026-09-18T02:07:58Z",
+    "updatedAt": "2026-09-19T00:04:18Z",
     "createdAt": "2025-04-01T21:44:02Z",
     "license": "MIT License",
     "topics": [
@@ -4951,10 +4983,10 @@
     "name": "featurevisor",
     "description": "Feature flags, experiments, and remote config management with version control",
     "url": "https://github.com/featurevisor/featurevisor",
-    "stars": 808,
+    "stars": 809,
     "forks": 38,
     "language": "TypeScript",
-    "updatedAt": "2026-09-17T17:33:35Z",
+    "updatedAt": "2026-09-19T00:07:23Z",
     "createdAt": "2023-03-05T17:30:04Z",
     "license": "MIT License",
     "topics": [
@@ -5006,7 +5038,7 @@
     "description": "The modular PHP framework. ",
     "url": "https://github.com/marko-php/marko",
     "stars": 394,
-    "forks": 40,
+    "forks": 39,
     "language": "PHP",
     "updatedAt": "2026-09-05T13:55:55Z",
     "createdAt": "2026-01-20T01:16:01Z",
@@ -5072,10 +5104,10 @@
     "name": "agent-skills",
     "description": "Official Agent skills of Oxylabs products",
     "url": "https://github.com/oxylabs/agent-skills",
-    "stars": 875,
+    "stars": 871,
     "forks": 2,
-    "language": "Unknown",
-    "updatedAt": "2026-09-16T12:47:38Z",
+    "language": "JavaScript",
+    "updatedAt": "2026-09-18T16:56:50Z",
     "createdAt": "2026-02-17T08:00:19Z",
     "license": "MIT License",
     "topics": [
@@ -5219,7 +5251,7 @@
     "stars": 174,
     "forks": 22,
     "language": "Shell",
-    "updatedAt": "2026-09-17T11:54:27Z",
+    "updatedAt": "2026-09-18T14:28:50Z",
     "createdAt": "2013-08-19T22:42:52Z",
     "license": "BSD 2-Clause \"Simplified\" License",
     "topics": [
@@ -5335,7 +5367,7 @@
     "description": "The standard .claude/  folder structure for everyday development.",
     "url": "https://github.com/poshan0126/dotclaude",
     "stars": 865,
-    "forks": 202,
+    "forks": 203,
     "language": "Shell",
     "updatedAt": "2026-09-17T19:04:36Z",
     "createdAt": "2026-03-26T23:27:36Z",
@@ -5818,81 +5850,220 @@
     ]
   },
   {
-    "id": "1269151566",
-    "name": "okf-skills",
-    "description": "The OKF toolkit for Claude Code — author, maintain, validate & visualize Open Knowledge Format bundles. Plugin, agent skills, and a GitHub Action.",
-    "url": "https://github.com/scaccogatto/okf-skills",
-    "stars": 391,
-    "forks": 34,
-    "language": "Python",
-    "updatedAt": "2026-09-17T14:56:42Z",
-    "createdAt": "2026-06-14T11:15:31Z",
+    "id": "1170693138",
+    "name": "lattice",
+    "description": "Install engineering discipline into any AI coding assistant. Composable skills for design, implementation, review, and team standards. Better process, not just better prompts.",
+    "url": "https://github.com/techygarg/lattice",
+    "stars": 193,
+    "forks": 13,
+    "language": "JavaScript",
+    "updatedAt": "2026-09-18T21:20:59Z",
+    "createdAt": "2026-03-02T12:09:41Z",
     "license": "MIT License",
     "topics": [
+      "agent",
+      "agent-framework",
       "agent-skills",
-      "ai-agents",
-      "claude-code",
+      "agentic",
+      "agentic-ai",
       "claude-code-plugin",
-      "developer-tools",
-      "knowledge-graph",
-      "knowledge-management",
-      "llm-tools",
-      "markdown",
-      "mcp",
-      "okf",
-      "open-knowledge-format",
-      "structured-knowledge",
-      "yaml"
+      "claude-skills",
+      "clean-architecture",
+      "codex",
+      "codex-plugin",
+      "codex-skills",
+      "context-engineering",
+      "cursor-plugin",
+      "ddd",
+      "engineering-enablement",
+      "gork",
+      "kimi",
+      "kimi-code",
+      "lattice",
+      "sdlc-workflow"
     ],
     "discoverySource": "marketplace-manifest",
     "manifest": {
       "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-      "name": "scaccogatto",
-      "description": "Claude Code plugins by scaccogatto.",
+      "name": "lattice",
+      "version": "2.1.0",
+      "description": "A marketplace of composable AI skills covering the full software delivery lifecycle — from requirements and design through implementation, testing, and review. Each plugin targets a specific SDLC role: backend engineers, frontend engineers, QA, business analysts, and more.",
       "owner": {
-        "name": "Marco Boffo",
-        "email": "chat@marcoboffo.me"
+        "name": "Rahul Garg"
       },
       "plugins": [
         {
-          "name": "okf",
+          "name": "lattice",
+          "description": "Composable AI skills covering the full software delivery lifecycle — for backend engineers, frontend engineers, QA, BAs, and more. Install once, invoke the skills you need.",
+          "version": "2.1.0",
           "source": "./",
-          "description": "Author, maintain, validate, and visualize Open Knowledge Format (OKF) bundles.",
-          "category": "documentation",
-          "keywords": [
-            "okf",
-            "knowledge",
-            "markdown",
-            "agents"
-          ],
-          "license": "MIT"
+          "category": "development",
+          "homepage": "https://github.com/techygarg/lattice"
         }
       ]
     },
     "plugins": [
       {
-        "name": "backfill",
-        "path": "skills/backfill",
+        "name": "architecture-compass",
+        "path": "skills/architecture-compass",
         "hasSkillMd": true,
-        "description": "name: backfill"
+        "description": "name: architecture-compass"
       },
       {
-        "name": "okf",
-        "path": "skills/okf",
+        "name": "architecture-refiner",
+        "path": "skills/architecture-refiner",
         "hasSkillMd": true,
-        "description": "name: okf"
+        "description": "name: architecture-refiner"
       },
       {
-        "name": "validate",
-        "path": "skills/validate",
+        "name": "architecture",
+        "path": "skills/architecture",
         "hasSkillMd": true,
-        "description": "name: validate"
+        "description": "name: architecture"
       },
       {
-        "name": "visualize",
-        "path": "skills/visualize",
+        "name": "bug-fix",
+        "path": "skills/bug-fix",
         "hasSkillMd": true,
-        "description": "name: visualize"
+        "description": "name: bug-fix"
+      },
+      {
+        "name": "clean-code-refiner",
+        "path": "skills/clean-code-refiner",
+        "hasSkillMd": true,
+        "description": "name: clean-code-refiner"
+      },
+      {
+        "name": "clean-code",
+        "path": "skills/clean-code",
+        "hasSkillMd": true,
+        "description": "name: clean-code"
+      },
+      {
+        "name": "code-forge",
+        "path": "skills/code-forge",
+        "hasSkillMd": true,
+        "description": "name: code-forge"
+      },
+      {
+        "name": "collaborative-judgment",
+        "path": "skills/collaborative-judgment",
+        "hasSkillMd": true,
+        "description": "name: collaborative-judgment"
+      },
+      {
+        "name": "context-anchoring",
+        "path": "skills/context-anchoring",
+        "hasSkillMd": true,
+        "description": "name: context-anchoring"
+      },
+      {
+        "name": "ddd-refiner",
+        "path": "skills/ddd-refiner",
+        "hasSkillMd": true,
+        "description": "name: ddd-refiner"
+      },
+      {
+        "name": "design-blueprint",
+        "path": "skills/design-blueprint",
+        "hasSkillMd": true,
+        "description": "name: design-blueprint"
+      },
+      {
+        "name": "design-first",
+        "path": "skills/design-first",
+        "hasSkillMd": true,
+        "description": "name: design-first"
+      },
+      {
+        "name": "domain-driven-design",
+        "path": "skills/domain-driven-design",
+        "hasSkillMd": true,
+        "description": "name: domain-driven-design"
+      },
+      {
+        "name": "knowledge-priming-refiner",
+        "path": "skills/knowledge-priming-refiner",
+        "hasSkillMd": true,
+        "description": "name: knowledge-priming-refiner"
+      },
+      {
+        "name": "knowledge-priming",
+        "path": "skills/knowledge-priming",
+        "hasSkillMd": true,
+        "description": "name: knowledge-priming"
+      },
+      {
+        "name": "language-idioms-refiner",
+        "path": "skills/language-idioms-refiner",
+        "hasSkillMd": true,
+        "description": "name: language-idioms-refiner"
+      },
+      {
+        "name": "lattice-init",
+        "path": "skills/lattice-init",
+        "hasSkillMd": true,
+        "description": "name: lattice-init"
+      },
+      {
+        "name": "learning-harvest",
+        "path": "skills/learning-harvest",
+        "hasSkillMd": true,
+        "description": "name: learning-harvest"
+      },
+      {
+        "name": "refactor-safely",
+        "path": "skills/refactor-safely",
+        "hasSkillMd": true,
+        "description": "name: refactor-safely"
+      },
+      {
+        "name": "refiners-update",
+        "path": "skills/refiners-update",
+        "hasSkillMd": true,
+        "description": "name: refiners-update"
+      },
+      {
+        "name": "requirement-forge-refiner",
+        "path": "skills/requirement-forge-refiner",
+        "hasSkillMd": true,
+        "description": "name: requirement-forge-refiner"
+      },
+      {
+        "name": "requirement-forge",
+        "path": "skills/requirement-forge",
+        "hasSkillMd": true,
+        "description": "name: requirement-forge"
+      },
+      {
+        "name": "requirement-quality",
+        "path": "skills/requirement-quality",
+        "hasSkillMd": true,
+        "description": "name: requirement-quality"
+      },
+      {
+        "name": "review-refiner",
+        "path": "skills/review-refiner",
+        "hasSkillMd": true,
+        "description": "name: review-refiner"
+      },
+      {
+        "name": "review",
+        "path": "skills/review",
+        "hasSkillMd": true,
+        "description": "name: review"
+      },
+      {
+        "name": "secure-coding",
+        "path": "skills/secure-coding",
+        "hasSkillMd": true,
+        "description": "name: secure-coding"
+      },
+      {
+        "name": "test-quality",
+        "path": "skills/test-quality",
+        "hasSkillMd": true,
+        "description": "name: test-quality"
       }
     ]
   },
@@ -5901,10 +6072,10 @@
     "name": "agent-hive",
     "description": "",
     "url": "https://github.com/tctinh/agent-hive",
-    "stars": 161,
+    "stars": 162,
     "forks": 20,
     "language": "TypeScript",
-    "updatedAt": "2026-09-01T13:30:00Z",
+    "updatedAt": "2026-09-18T18:53:31Z",
     "createdAt": "2026-01-04T21:34:47Z",
     "license": "Other",
     "topics": [],
@@ -6109,10 +6280,10 @@
     "name": "superdesign-skill",
     "description": "The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it into shippable, tasteful frontend. Install: npx skills add superdesigndev/superdesign-skill. Powered by superdesign.dev",
     "url": "https://github.com/superdesigndev/superdesign-skill",
-    "stars": 573,
+    "stars": 574,
     "forks": 42,
     "language": "JavaScript",
-    "updatedAt": "2026-09-17T21:27:04Z",
+    "updatedAt": "2026-09-19T02:57:31Z",
     "createdAt": "2026-01-21T20:26:04Z",
     "license": "MIT License",
     "topics": [
@@ -6169,10 +6340,10 @@
     "name": "medsci-skills",
     "description": "Agent Skills for medical research — literature search, reporting-guideline & citation checks, statistics, publication figures, submission. Works with Claude Code, Codex, Cursor & GitHub Copilot. Built by a physician-researcher, tested on real publications. MIT.",
     "url": "https://github.com/Aperivue/medsci-skills",
-    "stars": 306,
+    "stars": 309,
     "forks": 73,
     "language": "Python",
-    "updatedAt": "2026-09-17T12:15:05Z",
+    "updatedAt": "2026-09-19T03:10:17Z",
     "createdAt": "2026-04-06T07:00:46Z",
     "license": "MIT License",
     "topics": [
@@ -7150,10 +7321,10 @@
     "name": "claude-octopus",
     "description": "Run multiple AI models against the same research, design, or coding task. Surface disagreements before you ship.",
     "url": "https://github.com/nyldn/claude-octopus",
-    "stars": 4086,
-    "forks": 379,
+    "stars": 4088,
+    "forks": 378,
     "language": "Shell",
-    "updatedAt": "2026-09-18T02:08:23Z",
+    "updatedAt": "2026-09-19T03:01:55Z",
     "createdAt": "2026-01-15T08:49:38Z",
     "license": "MIT License",
     "topics": [
@@ -7179,7 +7350,7 @@
       },
       "metadata": {
         "description": "nyldn plugins for Claude Code workflows.",
-        "version": "11.5.0"
+        "version": "11.6.0"
       },
       "plugins": [
         {
@@ -7188,8 +7359,8 @@
             "source": "url",
             "url": "https://github.com/nyldn/claude-octopus.git"
           },
-          "description": "v11.5.0 - Find the right command, check your installation, and repair broken plugin links safely. 31 personas, 54 commands, 63 skills. Run /octo:setup.",
-          "version": "11.5.0",
+          "description": "v11.6.0 - Smarter task planning, safer context routing, and more accurate diagnostics. 31 personas, 54 commands, 63 skills. Run /octo:setup.",
+          "version": "11.6.0",
           "author": {
             "name": "nyldn",
             "url": "https://github.com/nyldn"
@@ -8248,10 +8419,10 @@
     "name": "kukuroo",
     "description": "Self-hosted Web Push on a Cloudflare Worker: iOS and macOS notifications with no server to keep alive, no vendor, and no native app. Safari only, via Declarative Web Push.",
     "url": "https://github.com/saiday/kukuroo",
-    "stars": 128,
+    "stars": 129,
     "forks": 4,
     "language": "JavaScript",
-    "updatedAt": "2026-09-16T12:04:24Z",
+    "updatedAt": "2026-09-18T17:03:13Z",
     "createdAt": "2026-08-01T09:19:13Z",
     "license": "MIT License",
     "topics": [
@@ -8293,10 +8464,10 @@
     "name": "skills",
     "description": "",
     "url": "https://github.com/OpenRouterTeam/skills",
-    "stars": 256,
-    "forks": 41,
+    "stars": 257,
+    "forks": 44,
     "language": "TypeScript",
-    "updatedAt": "2026-09-18T00:06:55Z",
+    "updatedAt": "2026-09-18T19:23:05Z",
     "createdAt": "2026-01-31T20:27:41Z",
     "license": "None",
     "topics": [],
@@ -8429,7 +8600,7 @@
     "stars": 58,
     "forks": 44,
     "language": "TypeScript",
-    "updatedAt": "2026-09-17T17:00:48Z",
+    "updatedAt": "2026-09-18T16:49:11Z",
     "createdAt": "2023-01-16T14:47:51Z",
     "license": "BSD 3-Clause \"New\" or \"Revised\" License",
     "topics": [
@@ -8558,10 +8729,10 @@
     "name": "attention-control",
     "description": "Air traffic control discipline for agent output. Written for a reader with ADHD.",
     "url": "https://github.com/aaddrick/attention-control",
-    "stars": 111,
+    "stars": 112,
     "forks": 4,
     "language": "Python",
-    "updatedAt": "2026-09-17T06:05:02Z",
+    "updatedAt": "2026-09-18T10:51:41Z",
     "createdAt": "2026-08-02T14:04:50Z",
     "license": "MIT License",
     "topics": [
@@ -8622,10 +8793,10 @@
     "name": "kwin-mcp",
     "description": "MCP server for Linux desktop GUI automation on KDE Plasma 6 Wayland -- 30 tools for virtual and live sessions",
     "url": "https://github.com/isac322/kwin-mcp",
-    "stars": 48,
+    "stars": 51,
     "forks": 14,
     "language": "Python",
-    "updatedAt": "2026-09-14T12:13:02Z",
+    "updatedAt": "2026-09-18T22:07:50Z",
     "createdAt": "2026-02-20T08:15:53Z",
     "license": "MIT License",
     "topics": [
@@ -8747,10 +8918,10 @@
     "name": "starrykit-plugin",
     "description": "Free AI presentation maker & free AI poster maker for Codex, Claude Code, Cursor, and more—create editable slides, decks, posters, and social graphics with StarryKit.",
     "url": "https://github.com/StarryKit/starrykit-plugin",
-    "stars": 92,
+    "stars": 93,
     "forks": 3,
     "language": "JavaScript",
-    "updatedAt": "2026-09-01T08:02:45Z",
+    "updatedAt": "2026-09-18T03:42:39Z",
     "createdAt": "2026-04-29T11:19:29Z",
     "license": "MIT License",
     "topics": [
@@ -8921,7 +9092,7 @@
     "stars": 34,
     "forks": 5,
     "language": "Go",
-    "updatedAt": "2026-09-18T00:11:28Z",
+    "updatedAt": "2026-09-18T15:45:51Z",
     "createdAt": "2025-09-26T06:34:15Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -9501,7 +9672,7 @@
     "stars": 48,
     "forks": 7,
     "language": "Shell",
-    "updatedAt": "2026-08-23T20:37:59Z",
+    "updatedAt": "2026-09-18T07:33:09Z",
     "createdAt": "2026-05-03T08:43:16Z",
     "license": "MIT License",
     "topics": [
@@ -10311,7 +10482,7 @@
     "stars": 41,
     "forks": 5,
     "language": "Go",
-    "updatedAt": "2026-09-18T03:02:13Z",
+    "updatedAt": "2026-09-18T12:41:52Z",
     "createdAt": "2026-08-04T12:52:06Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -10615,10 +10786,10 @@
     "name": "claude-mods",
     "description": "Expert skills, agents, commands, rules, hooks & output styles for Claude Code — session continuity + modern CLI tooling for real-world dev workflows",
     "url": "https://github.com/0xDarkMatter/claude-mods",
-    "stars": 39,
+    "stars": 40,
     "forks": 7,
     "language": "Shell",
-    "updatedAt": "2026-09-17T06:10:50Z",
+    "updatedAt": "2026-09-18T23:49:22Z",
     "createdAt": "2025-11-27T03:02:32Z",
     "license": "MIT License",
     "topics": [
@@ -11416,7 +11587,7 @@
     "description": "Cyber Threat Intelligence Skills for each stage of the CTI Lifecycle.",
     "url": "https://github.com/Liberty91LTD/cti-skills",
     "stars": 18,
-    "forks": 6,
+    "forks": 7,
     "language": "Python",
     "updatedAt": "2026-09-10T11:11:06Z",
     "createdAt": "2026-04-06T10:26:48Z",
@@ -12316,7 +12487,7 @@
     "stars": 30,
     "forks": 6,
     "language": "TypeScript",
-    "updatedAt": "2026-09-18T02:16:38Z",
+    "updatedAt": "2026-09-18T18:26:15Z",
     "createdAt": "2026-05-09T21:05:00Z",
     "license": "MIT License",
     "topics": [],
@@ -12467,6 +12638,63 @@
         }
       ]
     }
+  },
+  {
+    "id": "1189141448",
+    "name": "skills",
+    "description": "",
+    "url": "https://github.com/sorrycc/skills",
+    "stars": 32,
+    "forks": 0,
+    "language": "HTML",
+    "updatedAt": "2026-09-03T11:57:56Z",
+    "createdAt": "2026-03-23T02:39:49Z",
+    "license": "MIT License",
+    "topics": [],
+    "discoverySource": "marketplace-manifest",
+    "manifest": {
+      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+      "name": "cc-skills",
+      "owner": {
+        "name": "sorrycc",
+        "email": "sorrycc@gmail.com",
+        "url": "https://github.com/sorrycc"
+      },
+      "description": "A collection of my custom agent skills.",
+      "plugins": [
+        {
+          "name": "cc-skills",
+          "description": "A collection of my custom agent skills.",
+          "source": "./",
+          "license": "MIT",
+          "repository": "https://github.com/sorrycc/skills",
+          "author": {
+            "name": "sorrycc",
+            "url": "https://github.com/sorrycc"
+          }
+        }
+      ]
+    },
+    "plugins": [
+      {
+        "name": "create-skill",
+        "path": "skills/create-skill",
+        "hasSkillMd": true,
+        "description": "name: create-skill"
+      },
+      {
+        "name": "karpathy-3d-story",
+        "path": "skills/karpathy-3d-story",
+        "hasSkillMd": true,
+        "description": "name: karpathy-3d-story"
+      },
+      {
+        "name": "rename-sessions",
+        "path": "skills/rename-sessions",
+        "hasSkillMd": true,
+        "description": "name: rename-sessions"
+      }
+    ]
   },
   {
     "id": "1272861960",
@@ -13315,10 +13543,10 @@
     "name": "yayamlls",
     "description": "YAML language server in Go. Schema-driven diagnostics, completion, hover; pluggable rendering for Flux HelmRelease and Kustomization via flate.",
     "url": "https://github.com/home-operations/yayamlls",
-    "stars": 24,
+    "stars": 25,
     "forks": 3,
     "language": "Go",
-    "updatedAt": "2026-09-17T18:35:52Z",
+    "updatedAt": "2026-09-18T20:06:25Z",
     "createdAt": "2026-05-22T20:32:33Z",
     "license": "GNU Affero General Public License v3.0",
     "topics": [
@@ -13482,10 +13710,10 @@
     "name": "skills",
     "description": "A collection of skills used at Cline",
     "url": "https://github.com/cline/skills",
-    "stars": 30,
+    "stars": 31,
     "forks": 3,
     "language": "Python",
-    "updatedAt": "2026-09-17T16:02:39Z",
+    "updatedAt": "2026-09-18T17:06:13Z",
     "createdAt": "2026-05-17T05:16:40Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -13770,6 +13998,52 @@
             "testing",
             "documentation"
           ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "1245108765",
+    "name": "claude-rpc",
+    "description": "Discord Rich Presence (RPC) for Claude Code — live model, project, tokens, and lifetime stats in your Discord profile. Driven by Claude Code hooks.",
+    "url": "https://github.com/rar-file/claude-rpc",
+    "stars": 22,
+    "forks": 3,
+    "language": "JavaScript",
+    "updatedAt": "2026-09-19T01:35:09Z",
+    "createdAt": "2026-05-20T23:21:35Z",
+    "license": "MIT License",
+    "topics": [
+      "anthropic",
+      "claude",
+      "claude-code",
+      "claude-code-hooks",
+      "cli",
+      "developer-tools",
+      "discord",
+      "discord-rpc",
+      "hooks",
+      "nodejs",
+      "productivity",
+      "rich-presence"
+    ],
+    "discoverySource": "marketplace-manifest",
+    "manifest": {
+      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+      "name": "claude-rpc",
+      "owner": {
+        "name": "RARcodes",
+        "url": "https://github.com/rar-file"
+      },
+      "metadata": {
+        "description": "Discord Rich Presence for Claude Code — install the claude-rpc daemon straight from Claude Code."
+      },
+      "plugins": [
+        {
+          "name": "claude-rpc",
+          "source": "./plugin",
+          "description": "Discord Rich Presence for Claude Code. Auto-installs the claude-rpc npm package and runs its setup on first session.",
+          "category": "integrations"
         }
       ]
     }
@@ -14116,7 +14390,7 @@
     "stars": 79,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-09-17T20:02:44Z",
+    "updatedAt": "2026-09-18T16:57:54Z",
     "createdAt": "2026-07-09T13:18:18Z",
     "license": "MIT License",
     "topics": [],
@@ -14382,50 +14656,276 @@
     ]
   },
   {
-    "id": "1245108765",
-    "name": "claude-rpc",
-    "description": "Discord Rich Presence (RPC) for Claude Code — live model, project, tokens, and lifetime stats in your Discord profile. Driven by Claude Code hooks.",
-    "url": "https://github.com/rar-file/claude-rpc",
-    "stars": 21,
-    "forks": 3,
-    "language": "JavaScript",
-    "updatedAt": "2026-09-16T20:02:31Z",
-    "createdAt": "2026-05-20T23:21:35Z",
+    "id": "1111774767",
+    "name": "claude-skills-collection",
+    "description": "Custom skills and agents for Claude Code - codebase research, context management, and implementation planning workflows",
+    "url": "https://github.com/mhylle/claude-skills-collection",
+    "stars": 19,
+    "forks": 1,
+    "language": "Shell",
+    "updatedAt": "2026-09-15T13:00:06Z",
+    "createdAt": "2025-12-07T16:02:03Z",
     "license": "MIT License",
-    "topics": [
-      "anthropic",
-      "claude",
-      "claude-code",
-      "claude-code-hooks",
-      "cli",
-      "developer-tools",
-      "discord",
-      "discord-rpc",
-      "hooks",
-      "nodejs",
-      "productivity",
-      "rich-presence"
-    ],
+    "topics": [],
     "discoverySource": "marketplace-manifest",
     "manifest": {
       "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-      "name": "claude-rpc",
+      "name": "mhylle",
+      "description": "Claude Code plugins published by Martin Hylleberg.",
       "owner": {
-        "name": "RARcodes",
-        "url": "https://github.com/rar-file"
-      },
-      "metadata": {
-        "description": "Discord Rich Presence for Claude Code — install the claude-rpc daemon straight from Claude Code."
+        "name": "Martin Hylleberg",
+        "url": "https://github.com/mhylle"
       },
       "plugins": [
         {
-          "name": "claude-rpc",
-          "source": "./plugin",
-          "description": "Discord Rich Presence for Claude Code. Auto-installs the claude-rpc npm package and runs its setup on first session.",
-          "category": "integrations"
+          "name": "devflow",
+          "source": "./",
+          "displayName": "DevFlow Skills Collection",
+          "description": "A verification-first development pipeline for Claude Code: brainstorm to plan to phased implementation, with quality gates (verification-loop, code-review, security-review), adversarial review, and TaskTracker-native variants.",
+          "license": "MIT",
+          "category": "workflow",
+          "tags": [
+            "workflow",
+            "planning",
+            "brainstorming",
+            "code-review",
+            "tdd",
+            "quality-gates",
+            "tasktracker"
+          ]
         }
       ]
-    }
+    },
+    "plugins": [
+      {
+        "name": "adr",
+        "path": "skills/adr",
+        "hasSkillMd": true,
+        "description": "name: adr"
+      },
+      {
+        "name": "adversarial-reviewer",
+        "path": "skills/adversarial-reviewer",
+        "hasSkillMd": true,
+        "description": "name: adversarial-reviewer"
+      },
+      {
+        "name": "agent-creator",
+        "path": "skills/agent-creator",
+        "hasSkillMd": true,
+        "description": "name: agent-creator"
+      },
+      {
+        "name": "brainstorm",
+        "path": "skills/brainstorm",
+        "hasSkillMd": true,
+        "description": "name: brainstorm"
+      },
+      {
+        "name": "code-quality-audit",
+        "path": "skills/code-quality-audit",
+        "hasSkillMd": true,
+        "description": "name: code-quality-audit"
+      },
+      {
+        "name": "code-review",
+        "path": "skills/code-review",
+        "hasSkillMd": true,
+        "description": "name: code-review"
+      },
+      {
+        "name": "codebase-audit",
+        "path": "skills/codebase-audit",
+        "hasSkillMd": true,
+        "description": "name: codebase-audit"
+      },
+      {
+        "name": "codebase-research",
+        "path": "skills/codebase-research",
+        "hasSkillMd": true,
+        "description": "name: codebase-research"
+      },
+      {
+        "name": "context-saver",
+        "path": "skills/context-saver",
+        "hasSkillMd": true,
+        "description": "name: context-saver"
+      },
+      {
+        "name": "continuous-learning",
+        "path": "skills/continuous-learning",
+        "hasSkillMd": true,
+        "description": "name: continuous-learning"
+      },
+      {
+        "name": "create-plan",
+        "path": "skills/create-plan",
+        "hasSkillMd": true,
+        "description": "name: create-plan"
+      },
+      {
+        "name": "deep-brainstorm",
+        "path": "skills/deep-brainstorm",
+        "hasSkillMd": true,
+        "description": "name: deep-brainstorm"
+      },
+      {
+        "name": "design-language",
+        "path": "skills/design-language",
+        "hasSkillMd": true,
+        "description": "name: design-language"
+      },
+      {
+        "name": "e2e-testing",
+        "path": "skills/e2e-testing",
+        "hasSkillMd": true,
+        "description": "name: e2e-testing"
+      },
+      {
+        "name": "eval-harness",
+        "path": "skills/eval-harness",
+        "hasSkillMd": true,
+        "description": "name: eval-harness"
+      },
+      {
+        "name": "grumpy-reviewer",
+        "path": "skills/grumpy-reviewer",
+        "hasSkillMd": true,
+        "description": "name: grumpy-reviewer"
+      },
+      {
+        "name": "implement-phase",
+        "path": "skills/implement-phase",
+        "hasSkillMd": true,
+        "description": "name: implement-phase"
+      },
+      {
+        "name": "implement-plan",
+        "path": "skills/implement-plan",
+        "hasSkillMd": true,
+        "description": "name: implement-plan"
+      },
+      {
+        "name": "iterate-plan",
+        "path": "skills/iterate-plan",
+        "hasSkillMd": true,
+        "description": "name: iterate-plan"
+      },
+      {
+        "name": "prompt-generator",
+        "path": "skills/prompt-generator",
+        "hasSkillMd": true,
+        "description": "name: prompt-generator"
+      },
+      {
+        "name": "security-review",
+        "path": "skills/security-review",
+        "hasSkillMd": true,
+        "description": "name: security-review"
+      },
+      {
+        "name": "ship-issue",
+        "path": "skills/ship-issue",
+        "hasSkillMd": true,
+        "description": "name: ship-issue"
+      },
+      {
+        "name": "skill-visualizer",
+        "path": "skills/skill-visualizer",
+        "hasSkillMd": true,
+        "description": "name: skill-visualizer"
+      },
+      {
+        "name": "strategic-compact",
+        "path": "skills/strategic-compact",
+        "hasSkillMd": true,
+        "description": "name: strategic-compact"
+      },
+      {
+        "name": "team-brainstorm",
+        "path": "skills/team-brainstorm",
+        "hasSkillMd": true,
+        "description": "name: team-brainstorm"
+      },
+      {
+        "name": "team-create-plan",
+        "path": "skills/team-create-plan",
+        "hasSkillMd": true,
+        "description": "name: team-create-plan"
+      },
+      {
+        "name": "team-implement-plan-full",
+        "path": "skills/team-implement-plan-full",
+        "hasSkillMd": true,
+        "description": "name: team-implement-plan-full"
+      },
+      {
+        "name": "team-implement-plan",
+        "path": "skills/team-implement-plan",
+        "hasSkillMd": true,
+        "description": "name: team-implement-plan"
+      },
+      {
+        "name": "tt-brainstorm",
+        "path": "skills/tt-brainstorm",
+        "hasSkillMd": true,
+        "description": "name: tt-brainstorm"
+      },
+      {
+        "name": "tt-create-plan",
+        "path": "skills/tt-create-plan",
+        "hasSkillMd": true,
+        "description": "name: tt-create-plan"
+      },
+      {
+        "name": "tt-implement-phase",
+        "path": "skills/tt-implement-phase",
+        "hasSkillMd": true,
+        "description": "name: tt-implement-phase"
+      },
+      {
+        "name": "tt-implement-plan",
+        "path": "skills/tt-implement-plan",
+        "hasSkillMd": true,
+        "description": "name: tt-implement-plan"
+      },
+      {
+        "name": "tt-workflow-audit",
+        "path": "skills/tt-workflow-audit",
+        "hasSkillMd": true,
+        "description": "name: tt-workflow-audit"
+      },
+      {
+        "name": "tt-workflow-build",
+        "path": "skills/tt-workflow-build",
+        "hasSkillMd": true,
+        "description": "name: tt-workflow-build"
+      },
+      {
+        "name": "tt-workflow-run",
+        "path": "skills/tt-workflow-run",
+        "hasSkillMd": true,
+        "description": "name: tt-workflow-run"
+      },
+      {
+        "name": "user-story",
+        "path": "skills/user-story",
+        "hasSkillMd": true,
+        "description": "name: user-story"
+      },
+      {
+        "name": "verification-loop",
+        "path": "skills/verification-loop",
+        "hasSkillMd": true,
+        "description": "name: verification-loop"
+      },
+      {
+        "name": "workflow-guide",
+        "path": "skills/workflow-guide",
+        "hasSkillMd": true,
+        "description": "name: workflow-guide"
+      }
+    ]
   },
   {
     "id": "1249923101",
@@ -14827,6 +15327,59 @@
     ]
   },
   {
+    "id": "1131383209",
+    "name": "canvas-cli",
+    "description": "A powerful command-line interface for Canvas LMS, built with Go.",
+    "url": "https://github.com/jjuanrivvera/canvas-cli",
+    "stars": 16,
+    "forks": 3,
+    "language": "Go",
+    "updatedAt": "2026-09-18T21:07:29Z",
+    "createdAt": "2026-01-09T23:08:48Z",
+    "license": "MIT License",
+    "topics": [
+      "canvas-cli",
+      "canvas-lms",
+      "canvas-lms-api",
+      "cli",
+      "go",
+      "golang"
+    ],
+    "discoverySource": "marketplace-manifest",
+    "manifest": {
+      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+      "name": "canvas",
+      "owner": {
+        "name": "Juan Rivera",
+        "url": "https://github.com/jjuanrivvera"
+      },
+      "plugins": [
+        {
+          "name": "canvas-cli",
+          "source": "./",
+          "version": "1.9.0",
+          "description": "Manage Canvas LMS from the terminal — courses, assignments, submissions and grading, modules, pages, quizzes, users, enrollments, files, and analytics.",
+          "homepage": "https://github.com/jjuanrivvera/canvas-cli",
+          "keywords": [
+            "canvas",
+            "lms",
+            "education",
+            "instructure",
+            "cli"
+          ]
+        }
+      ]
+    },
+    "plugins": [
+      {
+        "name": "canvas-cli",
+        "path": "skills/canvas-cli",
+        "hasSkillMd": true,
+        "description": "name: canvas-cli"
+      }
+    ]
+  },
+  {
     "id": "1152709304",
     "name": "dataspoke-baseline",
     "description": "A Baseline for DataHub SideCar",
@@ -15077,59 +15630,6 @@
     ]
   },
   {
-    "id": "1131383209",
-    "name": "canvas-cli",
-    "description": "A powerful command-line interface for Canvas LMS, built with Go.",
-    "url": "https://github.com/jjuanrivvera/canvas-cli",
-    "stars": 15,
-    "forks": 3,
-    "language": "Go",
-    "updatedAt": "2026-09-12T15:40:19Z",
-    "createdAt": "2026-01-09T23:08:48Z",
-    "license": "MIT License",
-    "topics": [
-      "canvas-cli",
-      "canvas-lms",
-      "canvas-lms-api",
-      "cli",
-      "go",
-      "golang"
-    ],
-    "discoverySource": "marketplace-manifest",
-    "manifest": {
-      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-      "name": "canvas",
-      "owner": {
-        "name": "Juan Rivera",
-        "url": "https://github.com/jjuanrivvera"
-      },
-      "plugins": [
-        {
-          "name": "canvas-cli",
-          "source": "./",
-          "version": "1.9.0",
-          "description": "Manage Canvas LMS from the terminal — courses, assignments, submissions and grading, modules, pages, quizzes, users, enrollments, files, and analytics.",
-          "homepage": "https://github.com/jjuanrivvera/canvas-cli",
-          "keywords": [
-            "canvas",
-            "lms",
-            "education",
-            "instructure",
-            "cli"
-          ]
-        }
-      ]
-    },
-    "plugins": [
-      {
-        "name": "canvas-cli",
-        "path": "skills/canvas-cli",
-        "hasSkillMd": true,
-        "description": "name: canvas-cli"
-      }
-    ]
-  },
-  {
     "id": "1242320277",
     "name": "maigo",
     "description": "Maigo 是一套以 MyGO!!!!! 五位團員為人設的多 agent 通用開發工作流（Claude Code plugin）。",
@@ -15137,7 +15637,7 @@
     "stars": 14,
     "forks": 0,
     "language": "Python",
-    "updatedAt": "2026-09-17T06:16:52Z",
+    "updatedAt": "2026-09-18T10:52:06Z",
     "createdAt": "2026-05-18T10:16:30Z",
     "license": "MIT License",
     "topics": [],
@@ -15308,56 +15808,14 @@
     ]
   },
   {
-    "id": "1252346445",
-    "name": "clifton-mcp",
-    "description": "Bring source-linked SEC filings, earnings, market reactions, and much more into Claude, Cursor, Codex, and ChatGPT — via MCP.",
-    "url": "https://github.com/cliftonai/clifton-mcp",
-    "stars": 14,
-    "forks": 1,
-    "language": "Unknown",
-    "updatedAt": "2026-09-14T02:20:49Z",
-    "createdAt": "2026-05-28T12:33:46Z",
-    "license": "MIT License",
-    "topics": [],
-    "discoverySource": "marketplace-manifest",
-    "manifest": {
-      "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
-      "name": "clifton-mcp",
-      "description": "Clifton AI — source-linked financial research over MCP for Claude, Cursor, Codex, and agents.",
-      "owner": {
-        "name": "Clifton Software, Inc.",
-        "email": "support@cliftonai.com"
-      },
-      "plugins": [
-        {
-          "name": "clifton-mcp",
-          "displayName": "Clifton MCP",
-          "description": "Source-linked financial research: SEC filings, transcripts, expectations, and market reactions, callable from your agent.",
-          "source": "./plugins/clifton-mcp",
-          "homepage": "https://github.com/cliftonai/clifton-mcp",
-          "license": "MIT",
-          "keywords": [
-            "mcp",
-            "finance",
-            "sec-filings",
-            "earnings",
-            "claude",
-            "research"
-          ],
-          "category": "finance"
-        }
-      ]
-    }
-  },
-  {
     "id": "1237046812",
     "name": "skills",
     "description": "NetBox Labs Agent Skills",
     "url": "https://github.com/netboxlabs/skills",
-    "stars": 14,
+    "stars": 15,
     "forks": 1,
     "language": "Unknown",
-    "updatedAt": "2026-08-19T10:49:49Z",
+    "updatedAt": "2026-09-18T15:32:19Z",
     "createdAt": "2026-05-12T20:30:53Z",
     "license": "Apache License 2.0",
     "topics": [],
@@ -15561,7 +16019,7 @@
     "stars": 13,
     "forks": 3,
     "language": "Python",
-    "updatedAt": "2026-09-09T15:20:51Z",
+    "updatedAt": "2026-09-18T20:17:55Z",
     "createdAt": "2025-12-21T15:23:36Z",
     "license": "MIT License",
     "topics": [
@@ -16123,7 +16581,7 @@
     "stars": 5,
     "forks": 5,
     "language": "JavaScript",
-    "updatedAt": "2026-09-17T20:50:35Z",
+    "updatedAt": "2026-09-18T15:27:08Z",
     "createdAt": "2025-01-10T16:09:13Z",
     "license": "None",
     "topics": [
@@ -16155,168 +16613,14 @@
     }
   },
   {
-    "id": "1167084305",
-    "name": "clairvoyance",
-    "description": "ESP for AI Coding — Agent skills on the philosophy on software design, grounded in decades of engineering experience.",
-    "url": "https://github.com/codybrom/clairvoyance",
-    "stars": 12,
-    "forks": 0,
-    "language": "Shell",
-    "updatedAt": "2026-08-27T15:49:38Z",
-    "createdAt": "2026-02-25T23:31:12Z",
-    "license": "MIT License",
-    "topics": [
-      "agent-skills",
-      "ai-skills",
-      "aposd",
-      "claude-plugins",
-      "code-quality",
-      "design-review",
-      "llms-txt",
-      "skills",
-      "software-design-patterns",
-      "software-philosophy"
-    ],
-    "discoverySource": "marketplace-manifest",
-    "manifest": {
-      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-      "name": "clairvoyance-plugins",
-      "owner": {
-        "name": "Cody Bromley",
-        "url": "https://github.com/codybrom",
-        "email": "esp@clairvoyance.fyi"
-      },
-      "metadata": {
-        "description": "Official Clairvoyance plugin marketplace",
-        "version": "1.0.0"
-      },
-      "plugins": [
-        {
-          "name": "clairvoyance",
-          "source": "./",
-          "description": "ESP for AI Coding — Agent skills on the philosophy of software design, grounded in decades of engineering experience.",
-          "version": "1.3.0",
-          "category": "productivity",
-          "tags": [
-            "software-design",
-            "code-quality",
-            "design-review",
-            "skills"
-          ],
-          "homepage": "https://clairvoyance.fyi",
-          "repository": "https://github.com/codybrom/clairvoyance",
-          "strict": true
-        }
-      ]
-    },
-    "plugins": [
-      {
-        "name": "abstraction-quality",
-        "path": "skills/abstraction-quality",
-        "hasSkillMd": true,
-        "description": "name: abstraction-quality"
-      },
-      {
-        "name": "code-evolution",
-        "path": "skills/code-evolution",
-        "hasSkillMd": true,
-        "description": "name: code-evolution"
-      },
-      {
-        "name": "comments-docs",
-        "path": "skills/comments-docs",
-        "hasSkillMd": true,
-        "description": "name: comments-docs"
-      },
-      {
-        "name": "complexity-recognition",
-        "path": "skills/complexity-recognition",
-        "hasSkillMd": true,
-        "description": "name: complexity-recognition"
-      },
-      {
-        "name": "deep-modules",
-        "path": "skills/deep-modules",
-        "hasSkillMd": true,
-        "description": "name: deep-modules"
-      },
-      {
-        "name": "design-it-twice",
-        "path": "skills/design-it-twice",
-        "hasSkillMd": true,
-        "description": "name: design-it-twice"
-      },
-      {
-        "name": "design-review",
-        "path": "skills/design-review",
-        "hasSkillMd": true,
-        "description": "name: design-review"
-      },
-      {
-        "name": "diagnose",
-        "path": "skills/diagnose",
-        "hasSkillMd": true,
-        "description": "name: diagnose"
-      },
-      {
-        "name": "error-design",
-        "path": "skills/error-design",
-        "hasSkillMd": true,
-        "description": "name: error-design"
-      },
-      {
-        "name": "general-vs-special",
-        "path": "skills/general-vs-special",
-        "hasSkillMd": true,
-        "description": "name: general-vs-special"
-      },
-      {
-        "name": "information-hiding",
-        "path": "skills/information-hiding",
-        "hasSkillMd": true,
-        "description": "name: information-hiding"
-      },
-      {
-        "name": "module-boundaries",
-        "path": "skills/module-boundaries",
-        "hasSkillMd": true,
-        "description": "name: module-boundaries"
-      },
-      {
-        "name": "naming-obviousness",
-        "path": "skills/naming-obviousness",
-        "hasSkillMd": true,
-        "description": "name: naming-obviousness"
-      },
-      {
-        "name": "pull-complexity-down",
-        "path": "skills/pull-complexity-down",
-        "hasSkillMd": true,
-        "description": "name: pull-complexity-down"
-      },
-      {
-        "name": "red-flags",
-        "path": "skills/red-flags",
-        "hasSkillMd": true,
-        "description": "name: red-flags"
-      },
-      {
-        "name": "strategic-mindset",
-        "path": "skills/strategic-mindset",
-        "hasSkillMd": true,
-        "description": "name: strategic-mindset"
-      }
-    ]
-  },
-  {
     "id": "1136590548",
     "name": "ECC",
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
     "url": "https://github.com/affaan-m/ECC",
-    "stars": 261260,
-    "forks": 39111,
+    "stars": 262143,
+    "forks": 39223,
     "language": "JavaScript",
-    "updatedAt": "2026-09-18T03:25:19Z",
+    "updatedAt": "2026-09-19T03:22:52Z",
     "createdAt": "2026-01-18T00:51:51Z",
     "license": "MIT License",
     "topics": [
@@ -18140,7 +18444,7 @@
     "stars": 12082,
     "forks": 549,
     "language": "Go",
-    "updatedAt": "2026-09-17T14:42:49Z",
+    "updatedAt": "2026-09-18T15:33:35Z",
     "createdAt": "2021-04-19T10:29:56Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -18253,10 +18557,10 @@
     "name": "agent-skills",
     "description": "Odoo Skills Documentation",
     "url": "https://github.com/unclecatvn/agent-skills",
-    "stars": 135,
+    "stars": 136,
     "forks": 60,
     "language": "HTML",
-    "updatedAt": "2026-09-16T21:31:50Z",
+    "updatedAt": "2026-09-18T14:12:17Z",
     "createdAt": "2026-01-16T02:56:47Z",
     "license": "MIT License",
     "topics": [
@@ -18407,10 +18711,10 @@
     "name": "skills",
     "description": "Data Science Skills for AI agents like Claude Code",
     "url": "https://github.com/probabl-ai/skills",
-    "stars": 124,
+    "stars": 125,
     "forks": 8,
     "language": "Python",
-    "updatedAt": "2026-09-15T08:17:59Z",
+    "updatedAt": "2026-09-18T11:17:29Z",
     "createdAt": "2026-05-05T07:11:07Z",
     "license": "BSD 3-Clause \"New\" or \"Revised\" License",
     "topics": [
@@ -18543,10 +18847,10 @@
     "name": "Satori",
     "description": "A Claude skill blending psychology, philosophy, and wisdom traditions into a conversation partner with actual depth. Free, open-source, not a therapist.",
     "url": "https://github.com/MetcalfSolutions/Satori",
-    "stars": 71,
+    "stars": 72,
     "forks": 8,
     "language": "Shell",
-    "updatedAt": "2026-09-15T21:28:16Z",
+    "updatedAt": "2026-09-18T09:03:08Z",
     "createdAt": "2026-03-28T10:37:16Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -18585,10 +18889,10 @@
     "name": "ralphex",
     "description": "Extended Ralph loop for autonomous AI-driven plan execution",
     "url": "https://github.com/umputun/ralphex",
-    "stars": 1486,
-    "forks": 126,
+    "stars": 1487,
+    "forks": 128,
     "language": "Go",
-    "updatedAt": "2026-09-17T17:09:05Z",
+    "updatedAt": "2026-09-18T05:23:42Z",
     "createdAt": "2026-01-19T22:44:35Z",
     "license": "MIT License",
     "topics": [
@@ -18624,10 +18928,10 @@
     "name": "ai-toolkit",
     "description": "Plugin for AI coding agents to set up and integrate RevenueCat and access RevenueCat data.",
     "url": "https://github.com/RevenueCat/ai-toolkit",
-    "stars": 67,
+    "stars": 69,
     "forks": 9,
     "language": "JavaScript",
-    "updatedAt": "2026-09-17T18:01:08Z",
+    "updatedAt": "2026-09-18T23:56:57Z",
     "createdAt": "2026-02-02T18:00:41Z",
     "license": "MIT License",
     "topics": [],
@@ -18649,7 +18953,7 @@
           "displayName": "RevenueCat",
           "source": "./revenuecat",
           "description": "Set up RevenueCat, integrate it, and access data.",
-          "version": "2.2.1",
+          "version": "2.3.0",
           "category": "developer-tools",
           "author": {
             "name": "RevenueCat"
@@ -19030,10 +19334,10 @@
     "name": "ai-dev-kit",
     "description": "Databricks Toolkit for Coding Agents provided by Field Engineering",
     "url": "https://github.com/databricks-solutions/ai-dev-kit",
-    "stars": 1907,
-    "forks": 423,
+    "stars": 1908,
+    "forks": 422,
     "language": "Python",
-    "updatedAt": "2026-09-17T14:41:59Z",
+    "updatedAt": "2026-09-18T16:36:37Z",
     "createdAt": "2025-12-17T01:12:36Z",
     "license": "Other",
     "topics": [
@@ -19075,10 +19379,10 @@
     "name": "solana-finance-claude-plugin",
     "description": "The Solana and Anchor Claude skill",
     "url": "https://github.com/quicknode/solana-finance-claude-plugin",
-    "stars": 88,
+    "stars": 89,
     "forks": 11,
     "language": "Unknown",
-    "updatedAt": "2026-09-16T10:42:03Z",
+    "updatedAt": "2026-09-18T22:54:34Z",
     "createdAt": "2025-01-16T05:55:48Z",
     "license": "MIT License",
     "topics": [],
@@ -19112,10 +19416,10 @@
     "name": "everything-claude-code-zh",
     "description": "everything-claude-code 中文翻译项目：完整的 Claude Code 配置集合（agents, skills, hooks, commands, rules, MCPs）。源自 Anthropic 黑客松获胜者的实战配置，助力中文工程师高效理解与使用 Claude Code。",
     "url": "https://github.com/xu-xiang/everything-claude-code-zh",
-    "stars": 1950,
-    "forks": 318,
+    "stars": 1957,
+    "forks": 319,
     "language": "JavaScript",
-    "updatedAt": "2026-09-18T02:33:12Z",
+    "updatedAt": "2026-09-19T01:47:51Z",
     "createdAt": "2026-01-27T14:46:32Z",
     "license": "MIT License",
     "topics": [
@@ -19542,10 +19846,10 @@
     "name": "agent-starter",
     "description": "A toolkit of skills, templates, and guides for bootstrapping AI-agent-friendly projects. Started from Anthropic's Claude Code engineering patterns, extended with a per-project self-improvement loop and more.",
     "url": "https://github.com/sneg55/agent-starter",
-    "stars": 77,
+    "stars": 76,
     "forks": 4,
     "language": "Shell",
-    "updatedAt": "2026-09-14T23:28:20Z",
+    "updatedAt": "2026-09-18T16:56:49Z",
     "createdAt": "2026-03-31T13:19:37Z",
     "license": "MIT License",
     "topics": [
@@ -19703,10 +20007,10 @@
     "name": "seldonframe",
     "description": "Open-source AI front-office factory for agencies serving local businesses: website, booking, intake, CRM, and agents in one workspace. Self-hostable.",
     "url": "https://github.com/seldonframe/seldonframe",
-    "stars": 48,
+    "stars": 49,
     "forks": 11,
     "language": "TypeScript",
-    "updatedAt": "2026-09-14T19:01:45Z",
+    "updatedAt": "2026-09-18T11:17:02Z",
     "createdAt": "2026-03-26T10:54:25Z",
     "license": "GNU Affero General Public License v3.0",
     "topics": [
@@ -20476,10 +20780,10 @@
     "name": "skills",
     "description": "",
     "url": "https://github.com/alamops/skills",
-    "stars": 53,
+    "stars": 54,
     "forks": 5,
     "language": "Python",
-    "updatedAt": "2026-09-15T19:43:17Z",
+    "updatedAt": "2026-09-18T19:19:37Z",
     "createdAt": "2026-05-07T01:32:20Z",
     "license": "MIT License",
     "topics": [],
@@ -20840,10 +21144,10 @@
     "name": "hamilton",
     "description": "Apache Hamilton helps data scientists and engineers define testable, modular, self-documenting dataflows, that encode lineage/tracing and metadata. Runs and scales everywhere python does.",
     "url": "https://github.com/apache/hamilton",
-    "stars": 2592,
+    "stars": 2593,
     "forks": 213,
     "language": "Jupyter Notebook",
-    "updatedAt": "2026-09-17T13:30:42Z",
+    "updatedAt": "2026-09-18T11:09:39Z",
     "createdAt": "2023-02-23T17:16:48Z",
     "license": "Apache License 2.0",
     "topics": [
@@ -20960,10 +21264,10 @@
     "name": "daily",
     "description": "daily.dev is the personalized developer news feed and community. Get the best tech content from all over the web in your browser new tab or on mobile. Free and open source.",
     "url": "https://github.com/dailydotdev/daily",
-    "stars": 20071,
+    "stars": 20072,
     "forks": 568,
     "language": "JavaScript",
-    "updatedAt": "2026-09-18T01:35:46Z",
+    "updatedAt": "2026-09-18T23:50:14Z",
     "createdAt": "2017-11-10T07:30:51Z",
     "license": "GNU Affero General Public License v3.0",
     "topics": [
@@ -21063,10 +21367,10 @@
     "name": "skills",
     "description": "Collection of skills for Upstash",
     "url": "https://github.com/upstash/skills",
-    "stars": 25,
+    "stars": 28,
     "forks": 7,
     "language": "TypeScript",
-    "updatedAt": "2026-09-16T14:27:54Z",
+    "updatedAt": "2026-09-18T17:17:47Z",
     "createdAt": "2026-03-24T12:11:48Z",
     "license": "MIT License",
     "topics": [
@@ -21093,7 +21397,7 @@
           "displayName": "Upstash Redis",
           "source": "./",
           "description": "The Upstash MCP server plus agent skills for every Upstash SDK and CLI — Redis, QStash, Workflow, Box, Blob, Ratelimit, Vector, and Search.",
-          "version": "1.2.4",
+          "version": "1.2.5",
           "author": {
             "name": "Upstash",
             "email": "support@upstash.com",
@@ -22591,7 +22895,7 @@
     "stars": 321,
     "forks": 82,
     "language": "Python",
-    "updatedAt": "2026-09-17T10:01:47Z",
+    "updatedAt": "2026-09-18T08:34:07Z",
     "createdAt": "2026-01-14T09:51:58Z",
     "license": "Other",
     "topics": [],
@@ -22910,7 +23214,7 @@
     "stars": 93,
     "forks": 13,
     "language": "JavaScript",
-    "updatedAt": "2026-09-17T14:35:12Z",
+    "updatedAt": "2026-09-18T06:03:37Z",
     "createdAt": "2026-04-05T06:17:43Z",
     "license": "MIT License",
     "topics": [
@@ -23987,10 +24291,10 @@
     "name": "dev-skills",
     "description": "团队开发工作流Skills(Team Dev Workflow Skills)",
     "url": "https://github.com/Jason-chen-coder/dev-skills",
-    "stars": 5,
+    "stars": 6,
     "forks": 0,
     "language": "JavaScript",
-    "updatedAt": "2026-09-06T03:50:50Z",
+    "updatedAt": "2026-09-18T06:42:39Z",
     "createdAt": "2026-04-29T01:59:07Z",
     "license": "MIT License",
     "topics": [],
@@ -24197,127 +24501,37 @@
     ]
   },
   {
-    "id": "1282431625",
-    "name": "Keystone",
-    "description": "",
-    "url": "https://github.com/static-var/Keystone",
-    "stars": 5,
-    "forks": 1,
-    "language": "Python",
-    "updatedAt": "2026-09-04T04:52:20Z",
-    "createdAt": "2026-06-27T19:02:25Z",
-    "license": "MIT License",
-    "topics": [
-      "agent-skills",
-      "ai-agents",
-      "pi-coding-agent",
-      "skills",
-      "workflow"
-    ],
-    "discoverySource": "plugin-manifest",
-    "manifest": {
-      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-      "description": "Keystone plugin marketplace for Claude Code.",
-      "name": "keystone",
-      "owner": {
-        "name": "static-var"
-      },
-      "plugins": [
-        {
-          "author": {
-            "name": "static-var"
-          },
-          "category": "productivity",
-          "description": "Keystone proactive multi-skill AI engineering workflows for planning, implementation, review, shipping, and maintenance.",
-          "name": "keystone",
-          "source": "./",
-          "tags": [
-            "workflow",
-            "skills",
-            "engineering",
-            "review",
-            "planning"
-          ],
-          "version": "2.0.4"
-        }
-      ],
-      "version": "2.0.4"
-    },
-    "plugins": [
-      {
-        "name": "change-review",
-        "path": "skills/change-review",
-        "hasSkillMd": true,
-        "description": "name: change-review"
-      },
-      {
-        "name": "context-survey",
-        "path": "skills/context-survey",
-        "hasSkillMd": true,
-        "description": "name: context-survey"
-      },
-      {
-        "name": "implementation",
-        "path": "skills/implementation",
-        "hasSkillMd": true,
-        "description": "name: implementation"
-      },
-      {
-        "name": "product-planning",
-        "path": "skills/product-planning",
-        "hasSkillMd": true,
-        "description": "name: product-planning"
-      },
-      {
-        "name": "project-audit",
-        "path": "skills/project-audit",
-        "hasSkillMd": true,
-        "description": "name: project-audit"
-      },
-      {
-        "name": "refactoring",
-        "path": "skills/refactoring",
-        "hasSkillMd": true,
-        "description": "name: refactoring"
-      },
-      {
-        "name": "root-cause-analysis",
-        "path": "skills/root-cause-analysis",
-        "hasSkillMd": true,
-        "description": "name: root-cause-analysis"
-      },
-      {
-        "name": "shipping",
-        "path": "skills/shipping",
-        "hasSkillMd": true,
-        "description": "name: shipping"
-      },
-      {
-        "name": "task-creation",
-        "path": "skills/task-creation",
-        "hasSkillMd": true,
-        "description": "name: task-creation"
-      }
-    ]
-  },
-  {
     "id": "1192096446",
     "name": "OpenPlanr",
-    "description": "AI-powered agile planning CLI — generate epics, features, stories, and tasks with AI, then export rules for Cursor, Claude Code, and Codex",
+    "description": "Close the loop from intent to delivery. Planning, design, review, diagram, and delivery skills for Claude Code, Codex, and Cursor, plus the deterministic planr CLI. Specs, stories, and tasks live in your repository under .planr/.",
     "url": "https://github.com/openplanr/OpenPlanr",
     "stars": 4,
     "forks": 1,
     "language": "JavaScript",
-    "updatedAt": "2026-09-18T02:13:58Z",
+    "updatedAt": "2026-09-18T22:30:30Z",
     "createdAt": "2026-03-25T22:19:14Z",
     "license": "MIT License",
     "topics": [
+      "agent-skills",
       "agile",
+      "ai-agents",
+      "claude-code",
       "cli",
+      "codex",
+      "coding-agents",
+      "cursor",
+      "design-review",
+      "developer-tools",
+      "diagrams",
+      "github-issues",
+      "linear",
+      "nodejs",
       "planning",
       "project-management",
+      "spec-driven-development",
       "sprint-planning",
-      "task-management"
+      "task-management",
+      "typescript"
     ],
     "discoverySource": "plugin-manifest",
     "manifest": {
@@ -24327,14 +24541,14 @@
         "name": "AsemDevs"
       },
       "metadata": {
-        "version": "0.1.0",
+        "version": "2.3.0",
         "description": "Local-only OpenPlanr integration marketplace. Generate host packages before installation."
       },
       "plugins": [
         {
           "name": "planr",
           "source": "./dist/plugins/claude/openplanr",
-          "version": "0.1.0",
+          "version": "2.3.0",
           "description": "Host-native OpenPlanr planning, delivery, review, design, and operating skills.",
           "strict": true
         }
@@ -24506,6 +24720,110 @@
     ]
   },
   {
+    "id": "1282431625",
+    "name": "Keystone",
+    "description": "",
+    "url": "https://github.com/static-var/Keystone",
+    "stars": 4,
+    "forks": 1,
+    "language": "Python",
+    "updatedAt": "2026-09-18T12:51:01Z",
+    "createdAt": "2026-06-27T19:02:25Z",
+    "license": "MIT License",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "pi-coding-agent",
+      "skills",
+      "workflow"
+    ],
+    "discoverySource": "plugin-manifest",
+    "manifest": {
+      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+      "description": "Keystone plugin marketplace for Claude Code.",
+      "name": "keystone",
+      "owner": {
+        "name": "static-var"
+      },
+      "plugins": [
+        {
+          "author": {
+            "name": "static-var"
+          },
+          "category": "productivity",
+          "description": "Keystone proactive multi-skill AI engineering workflows for planning, implementation, review, shipping, and maintenance.",
+          "name": "keystone",
+          "source": "./",
+          "tags": [
+            "workflow",
+            "skills",
+            "engineering",
+            "review",
+            "planning"
+          ],
+          "version": "2.0.4"
+        }
+      ],
+      "version": "2.0.4"
+    },
+    "plugins": [
+      {
+        "name": "change-review",
+        "path": "skills/change-review",
+        "hasSkillMd": true,
+        "description": "name: change-review"
+      },
+      {
+        "name": "context-survey",
+        "path": "skills/context-survey",
+        "hasSkillMd": true,
+        "description": "name: context-survey"
+      },
+      {
+        "name": "implementation",
+        "path": "skills/implementation",
+        "hasSkillMd": true,
+        "description": "name: implementation"
+      },
+      {
+        "name": "product-planning",
+        "path": "skills/product-planning",
+        "hasSkillMd": true,
+        "description": "name: product-planning"
+      },
+      {
+        "name": "project-audit",
+        "path": "skills/project-audit",
+        "hasSkillMd": true,
+        "description": "name: project-audit"
+      },
+      {
+        "name": "refactoring",
+        "path": "skills/refactoring",
+        "hasSkillMd": true,
+        "description": "name: refactoring"
+      },
+      {
+        "name": "root-cause-analysis",
+        "path": "skills/root-cause-analysis",
+        "hasSkillMd": true,
+        "description": "name: root-cause-analysis"
+      },
+      {
+        "name": "shipping",
+        "path": "skills/shipping",
+        "hasSkillMd": true,
+        "description": "name: shipping"
+      },
+      {
+        "name": "task-creation",
+        "path": "skills/task-creation",
+        "hasSkillMd": true,
+        "description": "name: task-creation"
+      }
+    ]
+  },
+  {
     "id": "1232371755",
     "name": "proton-bridge-mcp",
     "description": "Local MCP server exposing Proton Mail Bridge to Claude over loopback IMAP/SMTP.",
@@ -24555,7 +24873,7 @@
     "description": "One API. Every channel. Unified notification library for Java and Spring Boot.",
     "url": "https://github.com/GabrielBBaldez/Notify-Hub",
     "stars": 5,
-    "forks": 1,
+    "forks": 2,
     "language": "Java",
     "updatedAt": "2026-09-06T18:56:29Z",
     "createdAt": "2026-02-24T16:43:36Z",
@@ -26033,6 +26351,63 @@
     ]
   },
   {
+    "id": "1299674641",
+    "name": "claude-tetris",
+    "description": "Play Tetris in a split pane beside Claude Code — auto-pauses when Claude is done, resumes on your next prompt.",
+    "url": "https://github.com/philppplik/claude-tetris",
+    "stars": 3,
+    "forks": 0,
+    "language": "JavaScript",
+    "updatedAt": "2026-09-18T14:35:50Z",
+    "createdAt": "2026-07-13T19:42:02Z",
+    "license": "MIT License",
+    "topics": [
+      "claude-code",
+      "claude-code-plugin",
+      "cli",
+      "game",
+      "hooks",
+      "plugin",
+      "productivity",
+      "terminal",
+      "tetris",
+      "tmux",
+      "tui"
+    ],
+    "discoverySource": "plugin-manifest",
+    "manifest": {
+      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+      "name": "philppplik-plugins",
+      "description": "Plugins by Philipp Paulik.",
+      "owner": {
+        "name": "Philipp Paulik",
+        "url": "https://github.com/philppplik"
+      },
+      "plugins": [
+        {
+          "name": "claude-tetris",
+          "source": "./",
+          "description": "Play Tetris in a split pane while Claude Code works. The game auto-pauses when Claude is done and resumes on your next prompt.",
+          "version": "0.4.0",
+          "category": "productivity",
+          "tags": [
+            "game",
+            "tetris",
+            "terminal",
+            "fun"
+          ],
+          "author": {
+            "name": "Philipp Paulik",
+            "url": "https://github.com/philppplik"
+          },
+          "homepage": "https://github.com/philppplik/claude-tetris#readme",
+          "repository": "https://github.com/philppplik/claude-tetris",
+          "license": "MIT"
+        }
+      ]
+    }
+  },
+  {
     "id": "1354760955",
     "name": "sample-sagemaker-marketplace-onboarding-skill",
     "description": "An Agent skill that helps model providers to package their models and list their models on AWS Marketplace as machine learning products",
@@ -26354,10 +26729,10 @@
     "name": "trace-mcp",
     "description": "Framework-aware code intelligence MCP server — 88 framework integrations, 81 languages, 72.7% fewer input tokens to review a pull request, comprehension at parity",
     "url": "https://github.com/nikolai-vysotskyi/trace-mcp",
-    "stars": 175,
+    "stars": 176,
     "forks": 21,
     "language": "TypeScript",
-    "updatedAt": "2026-09-18T00:36:47Z",
+    "updatedAt": "2026-09-18T22:28:08Z",
     "createdAt": "2026-04-03T09:54:03Z",
     "license": "MIT License",
     "topics": [
@@ -26394,7 +26769,7 @@
           "name": "trace-mcp",
           "source": "./.claude-plugin",
           "description": "Framework-aware code intelligence: semantic search, refactoring, change-impact, security scanning, and decision memory across 88 frameworks and 81 languages.",
-          "version": "3.27.1",
+          "version": "3.28.0",
           "author": {
             "name": "Nikolai Vysotskyi"
           }
@@ -27359,10 +27734,10 @@
     "name": "tonone",
     "description": "One session. Two commands. Full team. Zero meetings.",
     "url": "https://github.com/tonone-ai/tonone",
-    "stars": 72,
+    "stars": 73,
     "forks": 9,
     "language": "Python",
-    "updatedAt": "2026-09-17T07:41:08Z",
+    "updatedAt": "2026-09-18T09:50:21Z",
     "createdAt": "2026-03-16T00:37:02Z",
     "license": "MIT License",
     "topics": [],
@@ -32099,58 +32474,14 @@
     }
   },
   {
-    "id": "1349000066",
-    "name": "skills",
-    "description": "Agent skills published by Dennis Won. Install with: npx skills add denniswon/skills",
-    "url": "https://github.com/denniswon/skills",
-    "stars": 0,
-    "forks": 0,
-    "language": "Python",
-    "updatedAt": "2026-08-28T13:50:14Z",
-    "createdAt": "2026-08-27T22:33:18Z",
-    "license": "MIT License",
-    "topics": [],
-    "discoverySource": "plugin-manifest",
-    "manifest": {
-      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-      "name": "denniswon-skills",
-      "version": "0.1.0",
-      "description": "Agent skills published by Dennis Won",
-      "owner": {
-        "name": "Dennis Won"
-      },
-      "plugins": [
-        {
-          "name": "humanizer",
-          "source": ".",
-          "description": "Rewrites AI-sounding prose without changing claims, code, identifiers, or normative spec language",
-          "category": "writing",
-          "tags": [
-            "writing",
-            "editing",
-            "documentation"
-          ]
-        }
-      ]
-    },
-    "plugins": [
-      {
-        "name": "humanizer",
-        "path": "skills/humanizer",
-        "hasSkillMd": true,
-        "description": "name: humanizer"
-      }
-    ]
-  },
-  {
     "id": "1173427820",
     "name": "Claude-to-IM-skill",
     "description": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark.",
     "url": "https://github.com/op7418/Claude-to-IM-skill",
-    "stars": 2880,
+    "stars": 2881,
     "forks": 316,
     "language": "TypeScript",
-    "updatedAt": "2026-09-16T13:16:22Z",
+    "updatedAt": "2026-09-18T16:09:09Z",
     "createdAt": "2026-03-05T11:00:16Z",
     "license": "MIT License",
     "topics": [
@@ -32200,10 +32531,10 @@
     "name": "web-access",
     "description": "给 Claude Code 装上完整联网能力的 skill：三层通道调度 + 浏览器 CDP + 并行分治",
     "url": "https://github.com/eze-is/web-access",
-    "stars": 8965,
-    "forks": 638,
+    "stars": 8969,
+    "forks": 639,
     "language": "JavaScript",
-    "updatedAt": "2026-09-18T02:24:22Z",
+    "updatedAt": "2026-09-19T01:15:10Z",
     "createdAt": "2026-03-18T05:54:57Z",
     "license": "None",
     "topics": [],
@@ -32246,10 +32577,10 @@
     "name": "claude-reflect",
     "description": "A self-learning system for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.",
     "url": "https://github.com/BayramAnnakov/claude-reflect",
-    "stars": 1608,
-    "forks": 136,
+    "stars": 1658,
+    "forks": 141,
     "language": "Python",
-    "updatedAt": "2026-09-18T03:29:23Z",
+    "updatedAt": "2026-09-19T02:15:25Z",
     "createdAt": "2026-01-03T20:51:36Z",
     "license": "MIT License",
     "topics": [
@@ -32288,10 +32619,10 @@
     "name": "llm-council-skill",
     "description": "",
     "url": "https://github.com/tenfoldmarc/llm-council-skill",
-    "stars": 767,
+    "stars": 768,
     "forks": 149,
     "language": "Unknown",
-    "updatedAt": "2026-09-16T21:09:30Z",
+    "updatedAt": "2026-09-18T07:49:42Z",
     "createdAt": "2026-04-18T18:30:25Z",
     "license": "None",
     "topics": [],
@@ -32310,10 +32641,10 @@
     "name": "tirith",
     "description": "Terminal security for developers and AI agents. Intercepts homograph URLs, pipe-to-shell, ANSI injection, obfuscated payloads, data exfiltration, and malicious AI skills/configs before they execute.",
     "url": "https://github.com/sheeki03/tirith",
-    "stars": 2725,
-    "forks": 95,
+    "stars": 2727,
+    "forks": 97,
     "language": "Rust",
-    "updatedAt": "2026-09-17T12:03:02Z",
+    "updatedAt": "2026-09-18T17:37:50Z",
     "createdAt": "2026-02-02T04:33:47Z",
     "license": "GNU Affero General Public License v3.0",
     "topics": [
@@ -32343,10 +32674,10 @@
     "name": "precise",
     "description": "Online Covariance and Correlation Estimation",
     "url": "https://github.com/microprediction/precise",
-    "stars": 334,
+    "stars": 335,
     "forks": 58,
     "language": "Python",
-    "updatedAt": "2026-09-14T19:37:34Z",
+    "updatedAt": "2026-09-18T15:20:00Z",
     "createdAt": "2021-12-30T16:01:46Z",
     "license": "Other",
     "topics": [
@@ -32396,34 +32727,12 @@
     ]
   },
   {
-    "id": "1138885549",
-    "name": "Document-illustrator-skill",
-    "description": "帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。",
-    "url": "https://github.com/op7418/Document-illustrator-skill",
-    "stars": 595,
-    "forks": 67,
-    "language": "Python",
-    "updatedAt": "2026-09-17T23:30:55Z",
-    "createdAt": "2026-01-21T08:40:00Z",
-    "license": "MIT License",
-    "topics": [],
-    "discoverySource": "skill-files",
-    "plugins": [
-      {
-        "name": "Document-illustrator-skill",
-        "path": ".",
-        "hasSkillMd": true,
-        "description": "name: document-illustrator"
-      }
-    ]
-  },
-  {
     "id": "1190674192",
     "name": "AgentRecall-X",
     "description": "Correction-first persistent memory for AI agents. MCP server + SDK + CLI. Compounds across sessions.",
     "url": "https://github.com/Goldentrii/AgentRecall-X",
     "stars": 371,
-    "forks": 58,
+    "forks": 59,
     "language": "JavaScript",
     "updatedAt": "2026-09-17T20:55:03Z",
     "createdAt": "2026-03-24T14:08:00Z",
@@ -32455,10 +32764,10 @@
     "name": "x-use",
     "description": "Browser-native AI agents for X (Twitter): multi-account, MCP-ready, no X API key required.",
     "url": "https://github.com/ihuzaifashoukat/x-use",
-    "stars": 165,
+    "stars": 167,
     "forks": 29,
     "language": "Python",
-    "updatedAt": "2026-09-07T15:49:10Z",
+    "updatedAt": "2026-09-19T00:29:53Z",
     "createdAt": "2024-08-02T20:26:29Z",
     "license": "MIT License",
     "topics": [
@@ -32495,7 +32804,7 @@
     "stars": 575,
     "forks": 21,
     "language": "Python",
-    "updatedAt": "2026-09-17T17:22:00Z",
+    "updatedAt": "2026-09-18T16:38:27Z",
     "createdAt": "2026-05-02T16:07:49Z",
     "license": "MIT License",
     "topics": [],
@@ -32514,10 +32823,10 @@
     "name": "creator-buddy",
     "description": "Creator Buddy: orchestrated Agent Skills for cross-platform content search, creator analysis, and viral trend research",
     "url": "https://github.com/SpaceZephyr/creator-buddy",
-    "stars": 1467,
+    "stars": 1472,
     "forks": 234,
     "language": "Python",
-    "updatedAt": "2026-09-18T02:52:30Z",
+    "updatedAt": "2026-09-19T03:25:36Z",
     "createdAt": "2026-06-11T01:10:26Z",
     "license": "None",
     "topics": [],
@@ -32558,10 +32867,10 @@
     "name": "ply-engine",
     "description": "Beautiful UIs in Rust. Cross-platform. Dead simple.",
     "url": "https://github.com/TheRedDeveloper/ply-engine",
-    "stars": 498,
+    "stars": 500,
     "forks": 19,
     "language": "Rust",
-    "updatedAt": "2026-09-17T14:18:53Z",
+    "updatedAt": "2026-09-18T11:01:54Z",
     "createdAt": "2026-02-14T20:26:47Z",
     "license": "BSD Zero Clause License",
     "topics": [
@@ -32896,10 +33205,10 @@
     "name": "claude-qmd-sessions",
     "description": "Persistent chat session memory for Claude Code with qmd. Index updates itself via Claude hooks.",
     "url": "https://github.com/wbelk/claude-qmd-sessions",
-    "stars": 48,
+    "stars": 47,
     "forks": 6,
     "language": "JavaScript",
-    "updatedAt": "2026-09-09T08:04:39Z",
+    "updatedAt": "2026-09-18T12:50:29Z",
     "createdAt": "2026-03-03T15:25:44Z",
     "license": "None",
     "topics": [],
@@ -33004,10 +33313,10 @@
     "name": "wechat-article-for-ai",
     "description": "微信公众号文章转 Markdown 工具 | AI Agent 可直接调用的 MCP Server + Skill | Camoufox 反检测、自动重试、批量处理、图片本地化",
     "url": "https://github.com/bzd6661/wechat-article-for-ai",
-    "stars": 97,
+    "stars": 99,
     "forks": 14,
     "language": "Python",
-    "updatedAt": "2026-09-15T03:57:51Z",
+    "updatedAt": "2026-09-19T02:12:35Z",
     "createdAt": "2026-03-04T05:47:38Z",
     "license": "None",
     "topics": [],
@@ -33213,10 +33522,10 @@
     "name": "humanizer-zh",
     "description": "`humanizer-zh` 是一个兼容 Codex、Claude Code 和 OpenClaw 的中文去 AI 味技能。它用于重写、润色或审阅中文博客、评论、产品分析、newsletter、书稿章节等长文本，让文字更像中文母语者写出来的，而不是翻译腔、模型拼接稿或营销通稿。",
     "url": "https://github.com/ai-zixun/humanizer-zh",
-    "stars": 156,
+    "stars": 157,
     "forks": 17,
     "language": "Unknown",
-    "updatedAt": "2026-09-18T02:47:20Z",
+    "updatedAt": "2026-09-18T20:17:57Z",
     "createdAt": "2026-03-15T02:57:10Z",
     "license": "MIT License",
     "topics": [],
@@ -33641,10 +33950,10 @@
     "name": "prd-writer",
     "description": "A skill that encodes core product management thinking to help non-PM users write high-quality Product Requirement Documents.",
     "url": "https://github.com/chituai/prd-writer",
-    "stars": 265,
+    "stars": 267,
     "forks": 36,
     "language": "Unknown",
-    "updatedAt": "2026-09-17T14:49:12Z",
+    "updatedAt": "2026-09-19T00:45:56Z",
     "createdAt": "2026-03-26T09:49:53Z",
     "license": "MIT License",
     "topics": [],
@@ -33810,6 +34119,369 @@
         "path": ".",
         "hasSkillMd": true,
         "description": "name: antigravity"
+      }
+    ]
+  },
+  {
+    "id": "1189808872",
+    "name": "skill-evolve",
+    "description": "演进式 Skill 改进 — A Claude Code Skill that improves other skills through observation, pattern extraction, and iterative refinement. Based on OTF + JIT + Bootstrap methodology.",
+    "url": "https://github.com/OrangeViolin/skill-evolve",
+    "stars": 37,
+    "forks": 3,
+    "language": "Unknown",
+    "updatedAt": "2026-08-22T23:13:37Z",
+    "createdAt": "2026-03-23T17:29:50Z",
+    "license": "MIT License",
+    "topics": [],
+    "discoverySource": "skill-files",
+    "plugins": [
+      {
+        "name": "skill-evolve",
+        "path": ".",
+        "hasSkillMd": true,
+        "description": "name: skill-evolve"
+      }
+    ]
+  },
+  {
+    "id": "1138885549",
+    "name": "Document-illustrator-skill",
+    "description": "帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。",
+    "url": "https://github.com/op7418/Document-illustrator-skill",
+    "stars": 597,
+    "forks": 67,
+    "language": "Python",
+    "updatedAt": "2026-09-18T15:53:33Z",
+    "createdAt": "2026-01-21T08:40:00Z",
+    "license": "MIT License",
+    "topics": [],
+    "discoverySource": "skill-files",
+    "plugins": [
+      {
+        "name": "Document-illustrator-skill",
+        "path": ".",
+        "hasSkillMd": true,
+        "description": "name: document-illustrator"
+      }
+    ]
+  },
+  {
+    "id": "1167084305",
+    "name": "clairvoyance",
+    "description": "ESP for AI Coding — Agent skills on the philosophy on software design, grounded in decades of engineering experience.",
+    "url": "https://github.com/codybrom/clairvoyance",
+    "stars": 12,
+    "forks": 0,
+    "language": "Shell",
+    "updatedAt": "2026-08-27T15:49:38Z",
+    "createdAt": "2026-02-25T23:31:12Z",
+    "license": "MIT License",
+    "topics": [
+      "agent-skills",
+      "ai-skills",
+      "aposd",
+      "claude-plugins",
+      "code-quality",
+      "design-review",
+      "llms-txt",
+      "skills",
+      "software-design-patterns",
+      "software-philosophy"
+    ],
+    "discoverySource": "marketplace-manifest",
+    "manifest": {
+      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+      "name": "clairvoyance-plugins",
+      "owner": {
+        "name": "Cody Bromley",
+        "url": "https://github.com/codybrom",
+        "email": "esp@clairvoyance.fyi"
+      },
+      "metadata": {
+        "description": "Official Clairvoyance plugin marketplace",
+        "version": "1.0.0"
+      },
+      "plugins": [
+        {
+          "name": "clairvoyance",
+          "source": "./",
+          "description": "ESP for AI Coding — Agent skills on the philosophy of software design, grounded in decades of engineering experience.",
+          "version": "1.3.0",
+          "category": "productivity",
+          "tags": [
+            "software-design",
+            "code-quality",
+            "design-review",
+            "skills"
+          ],
+          "homepage": "https://clairvoyance.fyi",
+          "repository": "https://github.com/codybrom/clairvoyance",
+          "strict": true
+        }
+      ]
+    },
+    "plugins": [
+      {
+        "name": "abstraction-quality",
+        "path": "skills/abstraction-quality",
+        "hasSkillMd": true,
+        "description": "name: abstraction-quality"
+      },
+      {
+        "name": "code-evolution",
+        "path": "skills/code-evolution",
+        "hasSkillMd": true,
+        "description": "name: code-evolution"
+      },
+      {
+        "name": "comments-docs",
+        "path": "skills/comments-docs",
+        "hasSkillMd": true,
+        "description": "name: comments-docs"
+      },
+      {
+        "name": "complexity-recognition",
+        "path": "skills/complexity-recognition",
+        "hasSkillMd": true,
+        "description": "name: complexity-recognition"
+      },
+      {
+        "name": "deep-modules",
+        "path": "skills/deep-modules",
+        "hasSkillMd": true,
+        "description": "name: deep-modules"
+      },
+      {
+        "name": "design-it-twice",
+        "path": "skills/design-it-twice",
+        "hasSkillMd": true,
+        "description": "name: design-it-twice"
+      },
+      {
+        "name": "design-review",
+        "path": "skills/design-review",
+        "hasSkillMd": true,
+        "description": "name: design-review"
+      },
+      {
+        "name": "diagnose",
+        "path": "skills/diagnose",
+        "hasSkillMd": true,
+        "description": "name: diagnose"
+      },
+      {
+        "name": "error-design",
+        "path": "skills/error-design",
+        "hasSkillMd": true,
+        "description": "name: error-design"
+      },
+      {
+        "name": "general-vs-special",
+        "path": "skills/general-vs-special",
+        "hasSkillMd": true,
+        "description": "name: general-vs-special"
+      },
+      {
+        "name": "information-hiding",
+        "path": "skills/information-hiding",
+        "hasSkillMd": true,
+        "description": "name: information-hiding"
+      },
+      {
+        "name": "module-boundaries",
+        "path": "skills/module-boundaries",
+        "hasSkillMd": true,
+        "description": "name: module-boundaries"
+      },
+      {
+        "name": "naming-obviousness",
+        "path": "skills/naming-obviousness",
+        "hasSkillMd": true,
+        "description": "name: naming-obviousness"
+      },
+      {
+        "name": "pull-complexity-down",
+        "path": "skills/pull-complexity-down",
+        "hasSkillMd": true,
+        "description": "name: pull-complexity-down"
+      },
+      {
+        "name": "red-flags",
+        "path": "skills/red-flags",
+        "hasSkillMd": true,
+        "description": "name: red-flags"
+      },
+      {
+        "name": "strategic-mindset",
+        "path": "skills/strategic-mindset",
+        "hasSkillMd": true,
+        "description": "name: strategic-mindset"
+      }
+    ]
+  },
+  {
+    "id": "1252346445",
+    "name": "clifton-mcp",
+    "description": "Bring source-linked SEC filings, earnings, market reactions, and much more into Claude, Cursor, Codex, and ChatGPT — via MCP.",
+    "url": "https://github.com/cliftonai/clifton-mcp",
+    "stars": 14,
+    "forks": 1,
+    "language": "Unknown",
+    "updatedAt": "2026-09-14T02:20:49Z",
+    "createdAt": "2026-05-28T12:33:46Z",
+    "license": "MIT License",
+    "topics": [],
+    "discoverySource": "marketplace-manifest",
+    "manifest": {
+      "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+      "name": "clifton-mcp",
+      "description": "Clifton AI — source-linked financial research over MCP for Claude, Cursor, Codex, and agents.",
+      "owner": {
+        "name": "Clifton Software, Inc.",
+        "email": "support@cliftonai.com"
+      },
+      "plugins": [
+        {
+          "name": "clifton-mcp",
+          "displayName": "Clifton MCP",
+          "description": "Source-linked financial research: SEC filings, transcripts, expectations, and market reactions, callable from your agent.",
+          "source": "./plugins/clifton-mcp",
+          "homepage": "https://github.com/cliftonai/clifton-mcp",
+          "license": "MIT",
+          "keywords": [
+            "mcp",
+            "finance",
+            "sec-filings",
+            "earnings",
+            "claude",
+            "research"
+          ],
+          "category": "finance"
+        }
+      ]
+    }
+  },
+  {
+    "id": "1269151566",
+    "name": "okf-skills",
+    "description": "The OKF toolkit for Claude Code — author, maintain, validate & visualize Open Knowledge Format bundles. Plugin, agent skills, and a GitHub Action.",
+    "url": "https://github.com/scaccogatto/okf-skills",
+    "stars": 391,
+    "forks": 34,
+    "language": "Python",
+    "updatedAt": "2026-09-17T14:56:42Z",
+    "createdAt": "2026-06-14T11:15:31Z",
+    "license": "MIT License",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude-code",
+      "claude-code-plugin",
+      "developer-tools",
+      "knowledge-graph",
+      "knowledge-management",
+      "llm-tools",
+      "markdown",
+      "mcp",
+      "okf",
+      "open-knowledge-format",
+      "structured-knowledge",
+      "yaml"
+    ],
+    "discoverySource": "marketplace-manifest",
+    "manifest": {
+      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+      "name": "scaccogatto",
+      "description": "Claude Code plugins by scaccogatto.",
+      "owner": {
+        "name": "Marco Boffo",
+        "email": "chat@marcoboffo.me"
+      },
+      "plugins": [
+        {
+          "name": "okf",
+          "source": "./",
+          "description": "Author, maintain, validate, and visualize Open Knowledge Format (OKF) bundles.",
+          "category": "documentation",
+          "keywords": [
+            "okf",
+            "knowledge",
+            "markdown",
+            "agents"
+          ],
+          "license": "MIT"
+        }
+      ]
+    },
+    "plugins": [
+      {
+        "name": "backfill",
+        "path": "skills/backfill",
+        "hasSkillMd": true,
+        "description": "name: backfill"
+      },
+      {
+        "name": "okf",
+        "path": "skills/okf",
+        "hasSkillMd": true,
+        "description": "name: okf"
+      },
+      {
+        "name": "validate",
+        "path": "skills/validate",
+        "hasSkillMd": true,
+        "description": "name: validate"
+      },
+      {
+        "name": "visualize",
+        "path": "skills/visualize",
+        "hasSkillMd": true,
+        "description": "name: visualize"
+      }
+    ]
+  },
+  {
+    "id": "1349000066",
+    "name": "skills",
+    "description": "Agent skills published by Dennis Won. Install with: npx skills add denniswon/skills",
+    "url": "https://github.com/denniswon/skills",
+    "stars": 0,
+    "forks": 0,
+    "language": "Python",
+    "updatedAt": "2026-08-28T13:50:14Z",
+    "createdAt": "2026-08-27T22:33:18Z",
+    "license": "MIT License",
+    "topics": [],
+    "discoverySource": "plugin-manifest",
+    "manifest": {
+      "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+      "name": "denniswon-skills",
+      "version": "0.1.0",
+      "description": "Agent skills published by Dennis Won",
+      "owner": {
+        "name": "Dennis Won"
+      },
+      "plugins": [
+        {
+          "name": "humanizer",
+          "source": ".",
+          "description": "Rewrites AI-sounding prose without changing claims, code, identifiers, or normative spec language",
+          "category": "writing",
+          "tags": [
+            "writing",
+            "editing",
+            "documentation"
+          ]
+        }
+      ]
+    },
+    "plugins": [
+      {
+        "name": "humanizer",
+        "path": "skills/humanizer",
+        "hasSkillMd": true,
+        "description": "name: humanizer"
       }
     ]
   }

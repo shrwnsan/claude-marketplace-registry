@@ -1,9 +1,9 @@
 {
   "stats": {
-    "totalMarketplaces": 250,
-    "totalPlugins": 3251,
-    "validPlugins": 3251,
-    "lastUpdated": "2026-09-18T03:36:39.056Z",
+    "totalMarketplaces": 255,
+    "totalPlugins": 3326,
+    "validPlugins": 3326,
+    "lastUpdated": "2026-09-19T03:35:29.992Z",
     "topLanguages": [
       {
         "language": "Python",
@@ -11,11 +11,11 @@
       },
       {
         "language": "JavaScript",
-        "count": 41
+        "count": 44
       },
       {
         "language": "Shell",
-        "count": 36
+        "count": 37
       },
       {
         "language": "Unknown",
@@ -35,7 +35,7 @@
       },
       {
         "language": "HTML",
-        "count": 7
+        "count": 8
       },
       {
         "language": "Java",
@@ -49,27 +49,27 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 261260,
+        "stars": 262143,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 176917,
+        "stars": 177055,
         "url": "https://github.com/anthropics/skills"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 75246,
+        "stars": 75302,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "claude-plugins-official",
-        "stars": 36446,
+        "stars": 36480,
         "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
         "name": "daily",
-        "stars": 20071,
+        "stars": 20072,
         "url": "https://github.com/dailydotdev/daily"
       },
       {
@@ -79,75 +79,75 @@
       },
       {
         "name": "web-access",
-        "stars": 8965,
+        "stars": 8969,
         "url": "https://github.com/eze-is/web-access"
       },
       {
         "name": "claude-octopus",
-        "stars": 4086,
+        "stars": 4088,
         "url": "https://github.com/nyldn/claude-octopus"
       },
       {
         "name": "awesome-ChatGPT-repositories",
-        "stars": 3251,
+        "stars": 3254,
         "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
       },
       {
         "name": "Claude-to-IM-skill",
-        "stars": 2880,
+        "stars": 2881,
         "url": "https://github.com/op7418/Claude-to-IM-skill"
       }
     ],
     "recentActivity": [
       {
-        "name": "claude-reflect",
-        "updatedAt": "2026-09-18T03:29:23Z",
-        "url": "https://github.com/BayramAnnakov/claude-reflect"
-      },
-      {
-        "name": "ECC",
-        "updatedAt": "2026-09-18T03:25:19Z",
-        "url": "https://github.com/affaan-m/ECC"
-      },
-      {
-        "name": "abogado-del-diablo",
-        "updatedAt": "2026-09-18T03:23:49Z",
-        "url": "https://github.com/Hainrixz/abogado-del-diablo"
-      },
-      {
-        "name": "skills",
-        "updatedAt": "2026-09-18T03:18:44Z",
-        "url": "https://github.com/anthropics/skills"
-      },
-      {
-        "name": "awesome-claude-skills",
-        "updatedAt": "2026-09-18T03:18:25Z",
-        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
-      },
-      {
-        "name": "claude-plugins-official",
-        "updatedAt": "2026-09-18T03:14:25Z",
-        "url": "https://github.com/anthropics/claude-plugins-official"
-      },
-      {
-        "name": "gadak",
-        "updatedAt": "2026-09-18T03:02:13Z",
-        "url": "https://github.com/midagedev/gadak"
-      },
-      {
         "name": "creator-buddy",
-        "updatedAt": "2026-09-18T02:52:30Z",
+        "updatedAt": "2026-09-19T03:25:36Z",
         "url": "https://github.com/SpaceZephyr/creator-buddy"
       },
       {
-        "name": "humanizer-zh",
-        "updatedAt": "2026-09-18T02:47:20Z",
-        "url": "https://github.com/ai-zixun/humanizer-zh"
+        "name": "ECC",
+        "updatedAt": "2026-09-19T03:22:52Z",
+        "url": "https://github.com/affaan-m/ECC"
       },
       {
-        "name": "everything-claude-code-zh",
-        "updatedAt": "2026-09-18T02:33:12Z",
-        "url": "https://github.com/xu-xiang/everything-claude-code-zh"
+        "name": "awesome-claude-skills",
+        "updatedAt": "2026-09-19T03:11:28Z",
+        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+      },
+      {
+        "name": "medsci-skills",
+        "updatedAt": "2026-09-19T03:10:17Z",
+        "url": "https://github.com/Aperivue/medsci-skills"
+      },
+      {
+        "name": "skills",
+        "updatedAt": "2026-09-19T03:02:03Z",
+        "url": "https://github.com/anthropics/skills"
+      },
+      {
+        "name": "claude-octopus",
+        "updatedAt": "2026-09-19T03:01:55Z",
+        "url": "https://github.com/nyldn/claude-octopus"
+      },
+      {
+        "name": "superdesign-skill",
+        "updatedAt": "2026-09-19T02:57:31Z",
+        "url": "https://github.com/superdesigndev/superdesign-skill"
+      },
+      {
+        "name": "claude-plugins-official",
+        "updatedAt": "2026-09-19T02:24:54Z",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      {
+        "name": "claude-reflect",
+        "updatedAt": "2026-09-19T02:15:25Z",
+        "url": "https://github.com/BayramAnnakov/claude-reflect"
+      },
+      {
+        "name": "wechat-article-for-ai",
+        "updatedAt": "2026-09-19T02:12:35Z",
+        "url": "https://github.com/bzd6661/wechat-article-for-ai"
       }
     ]
   },
@@ -155,17 +155,17 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 96
+      "count": 100
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 28
+      "count": 29
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 63
+      "count": 64
     },
     {
       "id": "design",
@@ -183,5 +183,5 @@
       "count": 2
     }
   ],
-  "lastUpdated": "2026-09-18T03:36:39.056Z"
+  "lastUpdated": "2026-09-19T03:35:29.992Z"
 }
