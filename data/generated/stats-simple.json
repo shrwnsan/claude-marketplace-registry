@@ -1,28 +1,32 @@
 {
-  "totalMarketplaces": 250,
-  "totalPlugins": 3251,
-  "validPlugins": 3251,
-  "lastUpdated": "2026-09-18T03:36:39.056Z",
+  "totalMarketplaces": 306,
+  "totalPlugins": 3769,
+  "validPlugins": 3769,
+  "lastUpdated": "2026-09-21T03:46:24.629Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 80
+      "count": 87
     },
     {
       "language": "JavaScript",
-      "count": 41
+      "count": 51
     },
     {
       "language": "Shell",
-      "count": 36
+      "count": 45
     },
     {
       "language": "Unknown",
-      "count": 30
+      "count": 37
     },
     {
       "language": "TypeScript",
-      "count": 25
+      "count": 36
+    },
+    {
+      "language": "HTML",
+      "count": 15
     },
     {
       "language": "Go",
@@ -30,123 +34,119 @@
     },
     {
       "language": "Rust",
-      "count": 9
-    },
-    {
-      "language": "HTML",
-      "count": 7
+      "count": 10
     },
     {
       "language": "Java",
       "count": 2
     },
     {
-      "language": "PHP",
-      "count": 1
+      "language": "Jupyter Notebook",
+      "count": 2
     }
   ],
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 261260,
+      "stars": 263887,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 176917,
+      "stars": 177348,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75246,
+      "stars": 75406,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 36446,
+      "stars": 36557,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "daily",
-      "stars": 20071,
+      "stars": 20070,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12082,
+      "stars": 12084,
       "url": "https://github.com/kubeshark/kubeshark"
     },
     {
       "name": "web-access",
-      "stars": 8965,
+      "stars": 8992,
       "url": "https://github.com/eze-is/web-access"
     },
     {
       "name": "claude-octopus",
-      "stars": 4086,
+      "stars": 4091,
       "url": "https://github.com/nyldn/claude-octopus"
     },
     {
       "name": "awesome-ChatGPT-repositories",
-      "stars": 3251,
+      "stars": 3260,
       "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
     },
     {
       "name": "Claude-to-IM-skill",
-      "stars": 2880,
+      "stars": 2881,
       "url": "https://github.com/op7418/Claude-to-IM-skill"
     }
   ],
   "recentActivity": [
     {
-      "name": "claude-reflect",
-      "updatedAt": "2026-09-18T03:29:23Z",
-      "url": "https://github.com/BayramAnnakov/claude-reflect"
+      "name": "oh-story-claudecode",
+      "updatedAt": "2026-09-21T03:41:24Z",
+      "url": "https://github.com/thanhn3977/oh-story-claudecode"
     },
     {
       "name": "ECC",
-      "updatedAt": "2026-09-18T03:25:19Z",
+      "updatedAt": "2026-09-21T03:33:59Z",
       "url": "https://github.com/affaan-m/ECC"
     },
     {
-      "name": "abogado-del-diablo",
-      "updatedAt": "2026-09-18T03:23:49Z",
-      "url": "https://github.com/Hainrixz/abogado-del-diablo"
+      "name": "RAD-Claude-Agent-Toolkit",
+      "updatedAt": "2026-09-21T03:31:13Z",
+      "url": "https://github.com/nirmal77-nir/RAD-Claude-Agent-Toolkit"
+    },
+    {
+      "name": "creator-buddy",
+      "updatedAt": "2026-09-21T03:28:53Z",
+      "url": "https://github.com/SpaceZephyr/creator-buddy"
+    },
+    {
+      "name": "cc-plugins",
+      "updatedAt": "2026-09-21T03:28:52Z",
+      "url": "https://github.com/kywrl/cc-plugins"
+    },
+    {
+      "name": "software-design-philosophy-skill",
+      "updatedAt": "2026-09-21T03:26:10Z",
+      "url": "https://github.com/hotopla5976/software-design-philosophy-skill"
     },
     {
       "name": "skills",
-      "updatedAt": "2026-09-18T03:18:44Z",
+      "updatedAt": "2026-09-21T03:20:59Z",
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "updatedAt": "2026-09-18T03:18:25Z",
+      "updatedAt": "2026-09-21T03:17:40Z",
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
-      "name": "claude-plugins-official",
-      "updatedAt": "2026-09-18T03:14:25Z",
-      "url": "https://github.com/anthropics/claude-plugins-official"
+      "name": "kubeshark",
+      "updatedAt": "2026-09-21T03:13:30Z",
+      "url": "https://github.com/kubeshark/kubeshark"
     },
     {
-      "name": "gadak",
-      "updatedAt": "2026-09-18T03:02:13Z",
-      "url": "https://github.com/midagedev/gadak"
-    },
-    {
-      "name": "creator-buddy",
-      "updatedAt": "2026-09-18T02:52:30Z",
-      "url": "https://github.com/SpaceZephyr/creator-buddy"
-    },
-    {
-      "name": "humanizer-zh",
-      "updatedAt": "2026-09-18T02:47:20Z",
-      "url": "https://github.com/ai-zixun/humanizer-zh"
-    },
-    {
-      "name": "everything-claude-code-zh",
-      "updatedAt": "2026-09-18T02:33:12Z",
-      "url": "https://github.com/xu-xiang/everything-claude-code-zh"
+      "name": "biomcp",
+      "updatedAt": "2026-09-21T03:04:13Z",
+      "url": "https://github.com/genomoncology/biomcp"
     }
   ]
 }
