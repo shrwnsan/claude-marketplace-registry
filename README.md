@@ -78,7 +78,7 @@ cp .env.example .env.local   # Add your GITHUB_TOKEN
 npm run dev                  # http://localhost:3000
 ```
 
-**Prerequisites:** Node.js 20+, npm 8+, and a [GitHub Personal Access Token](https://github.com/settings/tokens).
+**Prerequisites:** Node.js 24+, npm 8+, and a [GitHub Personal Access Token](https://github.com/settings/tokens).
 
 See the **[Setup Guide](./SETUP.md)** for detailed configuration including environment variables, GitHub Pages deployment, and static asset notes.
 

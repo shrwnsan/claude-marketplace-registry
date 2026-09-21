@@ -23,7 +23,7 @@ This is the **Claude Marketplace Aggregator** - an automated, open-source aggreg
 ### Technology Stack
 
 - **Frontend**: Next.js 16 (Pages Router, static export), React 19, Tailwind CSS
-- **Backend/Data Processing**: Node.js 20+, TypeScript (pipeline lives in `scripts/`)
+- **Backend/Data Processing**: Node.js 24+, TypeScript (pipeline lives in `scripts/`)
 - **API Integration**: GitHub REST API via `@octokit/rest`
 - **Infrastructure**: GitHub Pages (hosting), GitHub Actions (CI/CD)
 - **Data Storage**: Git repository (JSON files)
