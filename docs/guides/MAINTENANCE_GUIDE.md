@@ -98,7 +98,7 @@ curl https://shrwnsan.github.io/claude-marketplace-registry/data/status.json
 | **CI/CD** | ci.yml, deploy.yml | Code integration and deployment | On push/PR |
 | **Data Processing** | scan.yml, backup.yml | Data collection and backup | Scheduled |
 | **Monitoring** | monitoring.yml, performance.yml | System health and performance | Continuous |
-| **Security** | security.yml, dependency-update.yml | Security scans and updates | Scheduled |
+| **Security** | security.yml, Dependabot | Security scans and updates | Scheduled |
 | **Community** | issue-triage.yml | Community management | Automated |
 
 ### Core Workflows

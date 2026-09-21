@@ -112,9 +112,9 @@ The project uses several automated workflows:
 
 1. **`.github/workflows/scan.yml`**: Scheduled marketplace scanning (daily at 00:00 UTC) that opens an automated data-update PR
 2. **`.github/workflows/auto-merge-data-updates.yml`**: Verifies data-update PRs touch only data paths, then auto-merges them (via `DATA_UPDATES_PAT` so the merge triggers deploy)
-3. **`.github/workflows/ci.yml`**: Continuous integration on pull requests (lint, type-check, tests, build, production `npm audit`, CodeQL)
+3. **`.github/workflows/ci.yml`**: Continuous integration on pull requests (lint, type-check, tests, build, production `npm audit`; skips heavy jobs on data-only changes — CodeQL runs once in `security.yml`)
 4. **`.github/workflows/deploy.yml`**: Builds the static export and deploys to GitHub Pages on pushes to `main`
-5. **`.github/workflows/security.yml`** / **`dependency-update.yml`** / **`performance.yml`**: Weekly/monthly maintenance
+5. **`.github/workflows/security.yml`** / **`performance.yml`**: Weekly/monthly maintenance; dependency updates come from native Dependabot (`.github/dependabot.yml`), not a scheduled workflow
 6. AI-assist workflows (`claude-code.yml`, `droid.yml`, `follow-up-implementation.yml`) are gated to OWNER/MEMBER/COLLABORATOR authors only — do not loosen these gates
 
 ## Key File Structure

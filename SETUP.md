@@ -35,15 +35,11 @@ Your project now includes a comprehensive CI/CD pipeline with the following comp
    - Automated security issue creation
 
 5. **Performance Monitoring** (`.github/workflows/performance.yml`)
-   - Weekly performance analysis
-   - Bundle size monitoring
-   - Lighthouse audits
-   - Monthly performance reports
+   - Monthly build performance analysis
 
-6. **Dependency Management** (`.github/workflows/dependency-update.yml`)
-   - Weekly dependency updates
-   - Automated PR creation for updates
-   - Security vulnerability fixes
+6. **Dependency Management** (`.github/dependabot.yml`)
+   - Native Dependabot (zero Actions minutes)
+   - Weekly npm + GitHub Actions update PRs
 
 7. **Issue Automation** (`.github/workflows/issue-triage.yml`)
    - Automatic issue labeling
@@ -58,7 +54,7 @@ Your project now includes a comprehensive CI/CD pipeline with the following comp
 - `.github/workflows/scan.yml` - Marketplace scanning
 - `.github/workflows/security.yml` - Security scanning
 - `.github/workflows/performance.yml` - Performance monitoring
-- `.github/workflows/dependency-update.yml` - Dependency updates
+- `.github/dependabot.yml` - Dependency updates
 - `.github/workflows/issue-triage.yml` - Issue automation
 
 ### Documentation & Scripts
@@ -85,7 +81,6 @@ Your project now includes a comprehensive CI/CD pipeline with the following comp
 1. Go to **Settings** → **Secrets and variables** → **Actions**
 2. Add any of these optional secrets:
    - `CODECOV_TOKEN` - For coverage reporting
-   - `GITLEAKS_LICENSE` - For advanced secrets detection
 
 ### 2. Test the Pipeline
 

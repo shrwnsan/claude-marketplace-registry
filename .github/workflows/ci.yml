@@ -15,15 +15,73 @@ env:
   CACHE_VERSION: 'v1'
 
 # Global permissions for security
+# (security-events: write was only needed by CodeQL, which now lives in security.yml)
 permissions:
   contents: read
   actions: read
-  security-events: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
+  changes:
+    name: Detect Code Changes
+    runs-on: ubuntu-latest
+    outputs:
+      code: ${{ steps.filter.outputs.code }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+        with:
+          fetch-depth: 2
+
+      - name: Check for code changes
+        id: filter
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Fail open: default to running the heavy jobs unless we positively
+          # determine the change touches only data/ or public/data/.
+          code="true"
+          files=""
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            files=$(gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" --paginate --jq '.[].filename') || files=""
+          else
+            before="${{ github.event.before }}"
+            if [[ -n "$before" && "$before" != "0000000000000000000000000000000000000000" ]]; then
+              files=$(git diff --name-only "$before" HEAD) || files=""
+            fi
+          fi
+
+          # Only skip the heavy jobs when we have a non-empty file list and
+          # every changed file is under a data path. Empty list or errors
+          # (e.g. shallow-clone diff failure, API error) keep code="true".
+          if [[ -n "$files" ]]; then
+            data_only="true"
+            while IFS= read -r f; do
+              case "$f" in
+                data/*|public/data/*) ;;
+                ?*) data_only="false" ; break ;;
+              esac
+            done <<< "$files"
+            if [[ "$data_only" == "true" ]]; then
+              code="false"
+            fi
+          fi
+
+          echo "Changed files:"
+          echo "$files"
+          echo "data-only change (skip heavy jobs): $code"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
   lint:
     name: Lint and Type Check
     runs-on: ubuntu-latest
+    needs: [changes]
+    if: needs.changes.outputs.code == 'true'
 
     steps:
       - name: Checkout code
@@ -50,6 +108,8 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    needs: [changes]
+    if: needs.changes.outputs.code == 'true'
 
     steps:
       - name: Checkout code
@@ -78,7 +138,9 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    needs: [lint, test]
+    needs: [changes, lint, test]
+    # Build still runs for data-only PRs (lint/test skipped) so the site keeps compiling.
+    if: ${{ !cancelled() && needs.changes.result == 'success' && (needs.lint.result == 'success' || needs.lint.result == 'skipped') && (needs.test.result == 'success' || needs.test.result == 'skipped') }}
 
     steps:
       - name: Checkout code
@@ -111,7 +173,8 @@ jobs:
   security:
     name: Security Audit
     runs-on: ubuntu-latest
-    needs: [lint, test]
+    needs: [changes]
+    if: needs.changes.outputs.code == 'true'
 
     steps:
       - name: Checkout code
@@ -129,20 +192,14 @@ jobs:
       - name: Run security audit
         # Production deps must stay vuln-free. Known dev-only highs (extract-zip
         # via puppeteer, js-yaml via istanbul) are tracked in security.yml.
+        # CodeQL runs once in security.yml (security-extended,security-and-quality).
         run: npm audit --omit=dev --audit-level moderate
-
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@6bb031afdd8eb862ea3fc1848194185e076637e5  # v3.28.11
-        with:
-          languages: typescript
-
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@6bb031afdd8eb862ea3fc1848194185e076637e5  # v3.28.11
 
   scan-test:
     name: Test Scan Scripts
     runs-on: ubuntu-latest
-    needs: [lint, test]
+    needs: [changes]
+    if: needs.changes.outputs.code == 'true'
 
     steps:
       - name: Checkout code
@@ -174,7 +231,7 @@ jobs:
   summary:
     name: Build Summary
     runs-on: ubuntu-latest
-    needs: [lint, test, build, security, scan-test]
+    needs: [changes, lint, test, build, security, scan-test]
     if: always()
 
     steps:
@@ -184,6 +241,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Job | Status |" >> $GITHUB_STEP_SUMMARY
           echo "|-----|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Change Detection | ${{ needs.changes.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Lint and Type Check | ${{ needs.lint.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Test | ${{ needs.test.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Build | ${{ needs.build.result }} |" >> $GITHUB_STEP_SUMMARY
@@ -191,7 +249,8 @@ jobs:
           echo "| Scan Scripts Test | ${{ needs.scan-test.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
 
-          if [[ "${{ needs.lint.result }}" == "success" && "${{ needs.test.result }}" == "success" && "${{ needs.build.result }}" == "success" ]]; then
+          # 'skipped' counts as passing (skipped jobs are expected on data-only changes)
+          if [[ "${{ needs.changes.result }}" == "success" && ("${{ needs.lint.result }}" == "success" || "${{ needs.lint.result }}" == "skipped") && ("${{ needs.test.result }}" == "success" || "${{ needs.test.result }}" == "skipped") && ("${{ needs.build.result }}" == "success" || "${{ needs.build.result }}" == "skipped") && ("${{ needs.security.result }}" == "success" || "${{ needs.security.result }}" == "skipped") && ("${{ needs.scan-test.result }}" == "success" || "${{ needs.scan-test.result }}" == "skipped") ]]; then
             echo "✅ All checks passed!" >> $GITHUB_STEP_SUMMARY
           else
             echo "❌ Some checks failed. Please review the logs." >> $GITHUB_STEP_SUMMARY
