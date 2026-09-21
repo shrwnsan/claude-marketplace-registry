@@ -133,7 +133,10 @@ const DocsPage: React.FC = () => {
                   {[
                     ['stats.json', 'Ecosystem totals, trends, topics'],
                     ['marketplaces.json', 'All discovered marketplaces'],
-                    ['plugins.json', 'The full plugin catalog'],
+                    [
+                      'plugins.json',
+                      'Compact plugin index (full records per marketplace in data/plugins/)',
+                    ],
                     ['history.json', 'Daily snapshot history'],
                   ].map(([file, desc]) => (
                     <div

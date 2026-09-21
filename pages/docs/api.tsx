@@ -60,7 +60,26 @@ const ENDPOINTS: Endpoint[] = [
   {
     file: 'data/plugins.json',
     description:
-      'The full plugin catalog extracted from valid marketplace manifests. Plugin stars are the parent marketplace\u2019s stars (plugins have no independent counts).',
+      'Compact plugin index — one row per plugin (description truncated to 160 chars, skill count only). Full records are sharded per marketplace under data/plugins/<marketplaceId>.json.',
+    shape: `[
+  {
+    "id": "1061953414-academy-guide",
+    "name": "academy-guide",
+    "description": "Recommends relevant Claude Academy courses…",
+    "version": "1.0.0",
+    "author": "Keith Lazuka",
+    "isValid": true,
+    "marketplaceId": "1061953414",
+    "marketplaceName": "skills",
+    "skillsCount": 1
+  }, … ]`,
+    example: `curl -s ${BASE}/data/plugins.json \\
+  | jq '[.[] | select(.marketplaceName == "skills")]'`,
+  },
+  {
+    file: 'data/plugins/<marketplaceId>.json',
+    description:
+      'Full plugin records for one marketplace (repository, manifestPath, skills, errors, warnings). Take the marketplaceId from the index, then fetch its shard.',
     shape: `[
   {
     "id": "1061953414-academy-guide",
@@ -69,15 +88,17 @@ const ENDPOINTS: Endpoint[] = [
     "version": "1.0.0",
     "author": "Keith Lazuka",
     "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "academy-guide",
     "isValid": true,
+    "errors": [],
+    "warnings": [],
     "metadata": {
       "marketplaceId": "1061953414",
       "marketplaceName": "skills",
       "skills": ["skills/academy-guide"]
     }
   }, … ]`,
-    example: `curl -s ${BASE}/data/plugins.json \\
-  | jq '[.[] | select(.metadata.marketplaceName == "skills")]'`,
+    example: `curl -s ${BASE}/data/plugins/1061953414.json | jq 'length'  # plugins in that marketplace`,
   },
   {
     file: 'data/history.json',
@@ -261,6 +282,11 @@ const ApiDocumentation: React.FC = () => {
                   <code>marketplaces.json</code> and <code>plugins.json</code> are bare arrays;{' '}
                   <code>stats.json</code> wraps its payload in{' '}
                   <code>{`{success, data, meta}`}</code>.
+                </li>
+                <li>
+                  <code>plugins.json</code> is a compact index — fetch{' '}
+                  <code>data/plugins/&lt;marketplaceId&gt;.json</code> for a marketplace&apos;s full
+                  plugin records (repository, manifestPath, skills).
                 </li>
                 <li>
                   Growth rates are <code>null</code> until a baseline snapshot (&gt;0 days old)

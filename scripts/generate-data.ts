@@ -29,7 +29,7 @@ interface Marketplace {
   manifest?: any;
 }
 
-interface Plugin {
+export interface Plugin {
   id: string;
   name: string;
   description: string;
@@ -85,6 +85,84 @@ function normalizeAuthor(author: unknown): string {
 function ownerFromUrl(url: string): string {
   const match = url?.match(/github\.com\/([^/]+)/);
   return match ? match[1] : '';
+}
+
+/**
+ * Compact per-plugin record served in public/data/plugins.json (the index).
+ * Full plugin records are sharded per marketplace under public/data/plugins/
+ * so pages only download the shard they need.
+ */
+export interface PluginIndexRecord {
+  id: string;
+  name: string;
+  author: string;
+  version: string;
+  isValid: boolean;
+  description: string;
+  marketplaceId: string;
+  marketplaceName: string;
+  skillsCount: number;
+}
+
+/**
+ * Number of skills a plugin carries, from whatever the pipeline recorded:
+ * a skills array when present, else the scanner's hasSkillMd boolean
+ * (one discovered skill directory), else 0.
+ */
+export function deriveSkillsCount(metadata: any): number {
+  if (metadata && Array.isArray(metadata.skills)) return metadata.skills.length;
+  if (metadata && typeof metadata.hasSkillMd === 'boolean') return metadata.hasSkillMd ? 1 : 0;
+  return 0;
+}
+
+/** Build the compact index record for one plugin (full record → 9 fields). */
+export function toPluginIndexRecord(plugin: Plugin): PluginIndexRecord {
+  return {
+    id: plugin.id,
+    name: plugin.name,
+    author: plugin.author,
+    version: plugin.version,
+    isValid: plugin.isValid,
+    description: (plugin.description || '').slice(0, 160),
+    marketplaceId: plugin.metadata?.marketplaceId ?? '',
+    marketplaceName: plugin.metadata?.marketplaceName ?? '',
+    skillsCount: deriveSkillsCount(plugin.metadata),
+  };
+}
+
+/**
+ * Group full plugin records by their parent marketplace id (metadata.marketplaceId).
+ * Records without a marketplaceId cannot be addressed by a shard and are skipped
+ * (they remain in the index with marketplaceId '').
+ */
+export function groupPluginsByMarketplace(plugins: Plugin[]): Map<string, Plugin[]> {
+  const groups = new Map<string, Plugin[]>();
+  for (const plugin of plugins) {
+    const marketplaceId = plugin.metadata?.marketplaceId;
+    if (!marketplaceId) continue;
+    const existing = groups.get(marketplaceId);
+    if (existing) {
+      existing.push(plugin);
+    } else {
+      groups.set(marketplaceId, [plugin]);
+    }
+  }
+  return groups;
+}
+
+/**
+ * Shard filenames in public/data/plugins/ that no longer correspond to a
+ * current marketplace group (e.g. a marketplace lost all its plugins, or was
+ * renamed) and must be deleted.
+ */
+export function computeStaleShardFiles(
+  existingFiles: string[],
+  currentMarketplaceIds: Set<string>
+): string[] {
+  return existingFiles.filter((file) => {
+    if (!file.endsWith('.json')) return false;
+    return !currentMarketplaceIds.has(file.replace(/\.json$/, ''));
+  });
 }
 
 class DataGenerator {
@@ -643,9 +721,10 @@ class DataGenerator {
     const marketplacesPath = path.join(this.outputDir, 'marketplaces.json');
     fs.writeFileSync(marketplacesPath, JSON.stringify(data.marketplaces, null, 2));
 
-    // Save plugins only
+    // Save plugins as the compact INDEX (full records are sharded per
+    // marketplace in generateWebsiteData → public/data/plugins/)
     const pluginsPath = path.join(this.outputDir, 'plugins.json');
-    fs.writeFileSync(pluginsPath, JSON.stringify(data.plugins, null, 2));
+    fs.writeFileSync(pluginsPath, JSON.stringify(data.plugins.map(toPluginIndexRecord), null, 2));
 
     // Save flat stats for internal use
     const statsSimplePath = path.join(this.outputDir, 'stats-simple.json');
@@ -690,6 +769,10 @@ class DataGenerator {
       }
     }
 
+    // Full plugin records, sharded per marketplace (fetched on demand by
+    // src/hooks/usePluginShard.ts; the index alone keeps plugins.json small)
+    this.writePluginShards(data.plugins);
+
     // Generate index.json with basic info
     const indexPath = path.join(this.websiteOutputDir, 'index.json');
     const indexData = {
@@ -704,6 +787,39 @@ class DataGenerator {
 
     fs.writeFileSync(indexPath, JSON.stringify(indexData, null, 2));
     console.log('📄 Generated index.json');
+  }
+
+  /**
+   * Write one JSON file of FULL plugin records per marketplace into
+   * public/data/plugins/<marketplaceId>.json.
+   */
+  private writePluginShards(plugins: Plugin[]): void {
+    const shardsDir = path.join(this.websiteOutputDir, 'plugins');
+    fs.mkdirSync(shardsDir, { recursive: true });
+
+    const groups = groupPluginsByMarketplace(plugins);
+
+    // Stale-shard cleanup: the repo doesn't track public/data/plugins/, so a
+    // marketplace whose plugins all vanished (or whose id changed) would leave
+    // its old shard behind on the deploy runner — consumers fetch shards by
+    // marketplace id and would keep serving plugins that no longer exist.
+    const stale = computeStaleShardFiles(fs.readdirSync(shardsDir), new Set(groups.keys()));
+    for (const file of stale) {
+      fs.unlinkSync(path.join(shardsDir, file));
+    }
+    if (stale.length > 0) {
+      console.log(`🧹 Removed ${stale.length} stale plugin shard(s)`);
+    }
+
+    for (const [marketplaceId, records] of groups) {
+      if (records.length === 0) continue;
+      fs.writeFileSync(
+        path.join(shardsDir, `${marketplaceId}.json`),
+        JSON.stringify(records, null, 2)
+      );
+    }
+
+    console.log(`🧩 Wrote ${groups.size} plugin shard(s) to public/data/plugins/`);
   }
 
   private async generateStaticApiFiles(data: GeneratedData): Promise<void> {

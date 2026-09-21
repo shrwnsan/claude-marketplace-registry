@@ -422,10 +422,75 @@ class GeneratedDataValidator {
   }
 
   /**
+   * Validate the per-marketplace plugin shards in public/data/plugins/.
+   * Each *.json file must be an array of records that all have an id and
+   * isValid, and every record's metadata.marketplaceId must match the shard's
+   * filename — a mismatch means the shard grouping diverged from the index.
+   */
+  private validatePluginShards(): string[] {
+    const errors: string[] = [];
+    const shardsDir = path.join(this.publicDataDir, 'plugins');
+
+    if (!fs.existsSync(shardsDir)) return errors;
+
+    for (const file of fs.readdirSync(shardsDir)) {
+      if (!file.endsWith('.json')) continue;
+      const shardId = file.replace(/\.json$/, '');
+      const shardPath = path.join(shardsDir, file);
+
+      let parsed: unknown;
+      try {
+        parsed = JSON.parse(fs.readFileSync(shardPath, 'utf-8'));
+      } catch (parseError) {
+        errors.push(`plugin shard ${file} is not valid JSON: ${(parseError as Error).message}`);
+        continue;
+      }
+      if (!Array.isArray(parsed)) {
+        errors.push(`plugin shard ${file} must be a JSON array`);
+        continue;
+      }
+
+      let missingFields = 0;
+      let wrongMarketplace = 0;
+      let firstMismatch = '';
+      for (let i = 0; i < parsed.length; i++) {
+        const record = parsed[i] as Record<string, unknown>;
+        const meta = record?.metadata as Record<string, unknown> | undefined;
+        if (!record?.id || typeof record.isValid !== 'boolean') {
+          missingFields++;
+          if (!firstMismatch) {
+            firstMismatch = `record at index ${i} missing id or isValid`;
+          }
+        } else if (String(meta?.marketplaceId) !== shardId) {
+          wrongMarketplace++;
+          if (!firstMismatch) {
+            firstMismatch = `record at index ${i} has metadata.marketplaceId '${String(
+              meta?.marketplaceId
+            )}' != shard id '${shardId}'`;
+          }
+        }
+      }
+      if (missingFields > 0) {
+        errors.push(
+          `plugin shard ${file}: ${missingFields} of ${parsed.length} records missing id or isValid (${firstMismatch})`
+        );
+      }
+      if (wrongMarketplace > 0) {
+        errors.push(
+          `plugin shard ${file}: ${wrongMarketplace} of ${parsed.length} records have a metadata.marketplaceId that does not match the filename (${firstMismatch})`
+        );
+      }
+    }
+
+    return errors;
+  }
+
+  /**
    * Cross-file consistency checks that single-file validation cannot catch:
    * - every plugin must reference a known marketplace (catches ID-format drift)
    * - stats counts must match the actual data (catches hardcoded/stale summaries)
    * - generated data must not be months old (catches frozen-pipeline failures)
+   * - per-marketplace plugin shards must be well-formed and self-consistent
    */
   private validateCrossFileConsistency(): ValidationResult {
     const errors: string[] = [];
@@ -433,6 +498,9 @@ class GeneratedDataValidator {
     const file = 'cross-file consistency';
 
     try {
+      // 0. Plugin shards (independent of the index files)
+      errors.push(...this.validatePluginShards());
+
       const marketplacesPath = path.join(this.generatedDir, 'marketplaces.json');
       const pluginsPath = path.join(this.generatedDir, 'plugins.json');
       const statsPath = path.join(this.generatedDir, 'stats.json');

@@ -57,7 +57,6 @@ const PluginsPage: React.FC = () => {
         q === '' ||
         plugin.name.toLowerCase().includes(q) ||
         plugin.description.toLowerCase().includes(q) ||
-        plugin.skills.some((skill) => skill.toLowerCase().includes(q)) ||
         plugin.author.toLowerCase().includes(q) ||
         plugin.marketplaceName.toLowerCase().includes(q);
       return matchesSearch;
@@ -237,7 +236,7 @@ const PluginsPage: React.FC = () => {
                           <div className='flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400'>
                             <span>by {plugin.author}</span>
                             <span>•</span>
-                            <span>{plugin.skills.length} skills</span>
+                            <span>{plugin.skillsCount} skills</span>
                             {plugin.version && <span className='text-xs'>v{plugin.version}</span>}
                           </div>
                         </div>

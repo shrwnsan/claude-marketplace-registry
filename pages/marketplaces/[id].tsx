@@ -6,7 +6,7 @@ import MainLayout from '@/components/layout/MainLayout';
 import SearchBar from '@/components/Search/SearchBar';
 import PluginCard from '@/components/Marketplace/PluginCard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
-import { usePluginData } from '@/hooks/usePluginData';
+import { usePluginShard } from '@/hooks/usePluginShard';
 import LoadingState from '@/components/ui/LoadingState';
 import { Star, Github, Store, Package, ArrowLeft, ChevronRight, Grid, List } from 'lucide-react';
 import { formatRelativeAge } from '@/utils/format';
@@ -51,17 +51,18 @@ const MarketplaceDetailPage: React.FC = () => {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
   const { data: marketplaceData, loading: marketplaceLoading } = useRealMarketplaceData();
-  const { plugins: allPlugins, loading: pluginsLoading } = usePluginData();
+  // Full plugin records come from this marketplace's shard — no need to
+  // download the whole cross-marketplace index to render one marketplace.
+  const {
+    plugins: marketplacePlugins,
+    loading: shardLoading,
+    error: shardError,
+  } = usePluginShard(id || undefined);
 
   const marketplace = useMemo(() => {
     if (!id || !marketplaceData?.marketplaces) return null;
     return marketplaceData.marketplaces.find((m: any) => String(m.id) === String(id)) || null;
   }, [id, marketplaceData]);
-
-  const marketplacePlugins = useMemo(
-    () => allPlugins.filter((p) => String(p.marketplaceId) === String(id)),
-    [id, allPlugins]
-  );
 
   const filteredPlugins = useMemo(() => {
     const q = searchQuery.toLowerCase();
@@ -70,7 +71,7 @@ const MarketplaceDetailPage: React.FC = () => {
         q === '' ||
         p.name.toLowerCase().includes(q) ||
         p.description.toLowerCase().includes(q) ||
-        p.skills.some((skill) => skill.toLowerCase().includes(q))
+        (p.skills || []).some((skill) => skill.toLowerCase().includes(q))
     );
     return [...filtered].sort((a, b) => a.name.localeCompare(b.name));
   }, [marketplacePlugins, searchQuery]);
@@ -82,7 +83,7 @@ const MarketplaceDetailPage: React.FC = () => {
   const topSkills = React.useMemo(() => {
     const counts = new Map<string, number>();
     for (const plugin of marketplacePlugins) {
-      for (const skill of plugin.skills) {
+      for (const skill of plugin.skills || []) {
         counts.set(skill, (counts.get(skill) || 0) + 1);
       }
     }
@@ -91,7 +92,7 @@ const MarketplaceDetailPage: React.FC = () => {
       .slice(0, 6);
   }, [marketplacePlugins]);
 
-  if (marketplaceLoading || pluginsLoading) {
+  if (marketplaceLoading || shardLoading) {
     return (
       <MainLayout>
         <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
@@ -214,7 +215,7 @@ const MarketplaceDetailPage: React.FC = () => {
                 </div>
                 <div>
                   <div className='text-2xl font-bold font-mono text-gray-900 dark:text-gray-100'>
-                    {new Set(marketplacePlugins.flatMap((p) => p.skills)).size}
+                    {new Set(marketplacePlugins.flatMap((p) => p.skills || [])).size}
                   </div>
                   <div className='text-xs text-gray-500 dark:text-gray-400'>Skills</div>
                 </div>
@@ -288,7 +289,11 @@ const MarketplaceDetailPage: React.FC = () => {
                 </div>
               </div>
 
-              {filteredPlugins.length > 0 ? (
+              {shardError ? (
+                <p className='text-center text-gray-500 dark:text-gray-400 py-10'>
+                  Plugin data temporarily unavailable — please refresh.
+                </p>
+              ) : filteredPlugins.length > 0 ? (
                 <div
                   className={
                     viewMode === 'grid'
