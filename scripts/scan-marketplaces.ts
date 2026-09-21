@@ -107,6 +107,28 @@ export function triageSkipIds(
   return ids;
 }
 
+/**
+ * Remove catalog entries the Jev sidecar triaged as likely non-marketplaces,
+ * provided they have never produced a verified manifest — structural proof
+ * (a real .claude-plugin/marketplace.json) always outranks a triage score.
+ * Mutates the map; returns the retired ids so the caller can drop them from
+ * the registry too. Searches skip re-adding them via the same skip-list;
+ * re-scoring an entry above the threshold (enrich --force) re-admits it.
+ */
+export function retireTriagedEntries<T extends { id: string; manifest?: unknown }>(
+  repoMap: Map<string, T>,
+  skipIds: Set<string>
+): string[] {
+  const retired: string[] = [];
+  for (const [id, entry] of repoMap) {
+    if (skipIds.has(id) && !entry.manifest) {
+      repoMap.delete(id);
+      retired.push(id);
+    }
+  }
+  return retired;
+}
+
 export interface RegistryRecord {
   id: string;
   fullName: string;
@@ -346,6 +368,19 @@ class MarketplaceScanner {
     if (carried > 0) {
       console.log(
         `  📎 Carried ${carried} unrefreshed entries into the catalog from the previous scan`
+      );
+    }
+
+    // Catalog self-cleaning: unverified entries Jev triaged as likely
+    // non-marketplaces retire from the catalog and the registry, so catalog
+    // growth stays quality-weighted instead of accumulating discovery noise.
+    // Searches skip re-adding them via the same skip-list.
+    const retired = retireTriagedEntries(repoMap, this.loadTriageSkip());
+    if (retired.length > 0) {
+      records = records.filter((r) => !retired.includes(r.id));
+      this.saveRegistry(records);
+      console.log(
+        `🧯 Retired ${retired.length} unverified non-marketplace(s) from the catalog (Jev triage)`
       );
     }
 
