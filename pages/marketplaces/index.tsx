@@ -8,7 +8,11 @@ import SortSelect from '@/components/ui/SortSelect';
 import { Star, ChevronRight, ShieldCheck, Filter, Grid, List, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { MARKETPLACE_CATEGORIES, matchesCategory, countByCategory } from '@/utils/categories';
+import {
+  MARKETPLACE_CATEGORIES,
+  marketplaceMatchesCategory,
+  countByCategory,
+} from '@/utils/categories';
 
 const MarketplacesPage: React.FC = () => {
   const router = useRouter();
@@ -64,7 +68,7 @@ const MarketplacesPage: React.FC = () => {
     if (typeof t !== 'string' || !t) return;
     const validCategory = MARKETPLACE_CATEGORIES.some((c) => c.id === t);
     const validRawTopic = marketplaces.some((m: { topics?: string[] }) =>
-      matchesCategory(Array.isArray(m.topics) ? m.topics : [], t)
+      marketplaceMatchesCategory(m, t)
     );
     if (validCategory || validRawTopic) setSelectedTopic(t);
   }, [router.query.topic, marketplaces]);
@@ -72,13 +76,12 @@ const MarketplacesPage: React.FC = () => {
   // Filter and sort marketplaces
   const filteredAndSortedMarketplaces = useMemo(() => {
     const filtered = marketplaces.filter((marketplace) => {
-      const topics: string[] = Array.isArray(marketplace.topics) ? marketplace.topics : [];
       const matchesSearch =
         searchQuery === '' ||
         marketplace.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         marketplace.description.toLowerCase().includes(searchQuery.toLowerCase());
 
-      return matchesSearch && matchesCategory(topics, selectedTopic);
+      return matchesSearch && marketplaceMatchesCategory(marketplace, selectedTopic);
     });
 
     // Sort marketplaces
