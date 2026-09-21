@@ -25,8 +25,9 @@ const KNOWN_MARKETPLACES = [
   'anthropics/claude-plugins-official',
 ];
 
-// Search strategies for discovering Claude Code plugins and skills
-const SEARCH_STRATEGIES = [
+// Search strategies for discovering Claude Code plugins and skills.
+// Exported so tests can assert on the assembled list (buildSearchStrategies).
+export const SEARCH_STRATEGIES = [
   // Marketplace registries with manifest files
   {
     name: 'marketplace-manifest',
@@ -61,6 +62,66 @@ interface SearchStrategy {
   name: string;
   query: string;
   type: 'code' | 'repo';
+}
+
+/**
+ * Star-banded widening strategies for the high-volume discovery topics,
+ * appended AFTER the core strategies above (order matters — see
+ * buildSearchStrategies).
+ *
+ * Measured Sep 2026: `topic:claude-skills` holds 8,766 repos and ~81% of
+ * them (7,122) sit at 0–5 stars — invisible to recency-sorted paging
+ * (`sort: 'updated'`, ≤3 pages of 100). One band per star range surfaces
+ * that pool. `topic:claude-code-plugin` (the 'topic-claude-code' strategy)
+ * is huge and generic; only its low-star band adds discoverable value, and
+ * `topic:claude-plugins` (252 repos) is already fully covered by paging.
+ *
+ * Bands are repo-search-only by construction: GitHub CODE search silently
+ * ignores the `stars:` qualifier (it returns 0 rows without an error), so a
+ * `stars:` band on a 'code' strategy would be a silent no-op. Never add one.
+ *
+ * Budget: the search API allows 30 requests/minute authenticated; the band
+ * strategies add only ~12 listing queries per day (≤3 pages each, most
+ * bands need 1). Deep-fetch cost per candidate stays bounded by maxResults
+ * and the Jev triage skip-list, exactly as for core strategies.
+ */
+export const STAR_BAND_STRATEGIES: SearchStrategy[] = [
+  {
+    name: 'topic-claude-skills-0-5',
+    query: 'topic:claude-skills stars:0..5',
+    type: 'repo' as const,
+  },
+  {
+    name: 'topic-claude-skills-6-20',
+    query: 'topic:claude-skills stars:6..20',
+    type: 'repo' as const,
+  },
+  {
+    name: 'topic-claude-skills-21-100',
+    query: 'topic:claude-skills stars:21..100',
+    type: 'repo' as const,
+  },
+  {
+    name: 'topic-claude-skills-101-plus',
+    query: 'topic:claude-skills stars:>100',
+    type: 'repo' as const,
+  },
+  {
+    name: 'topic-claude-code-0-10',
+    query: 'topic:claude-code-plugin stars:0..10',
+    type: 'repo' as const,
+  },
+];
+
+/**
+ * Assemble the full strategy list for a scan: core strategies first (they
+ * fill the proven catalog), star-band strategies last — so the bands only
+ * widen the pool with whatever remains of the maxResults budget instead of
+ * competing with the established strategies. Pure and exported so tests can
+ * assert on composition, ordering and query shape.
+ */
+export function buildSearchStrategies(): SearchStrategy[] {
+  return [...SEARCH_STRATEGIES, ...STAR_BAND_STRATEGIES];
 }
 
 // Official manifest paths per Claude Code spec
@@ -432,9 +493,10 @@ class MarketplaceScanner {
   }
 
   private async runMultiStrategySearch(repoMap: Map<string, Marketplace>): Promise<void> {
-    console.log(`\n🔎 Running ${SEARCH_STRATEGIES.length} search strategies...`);
+    const strategies = buildSearchStrategies();
+    console.log(`\n🔎 Running ${strategies.length} search strategies...`);
 
-    for (const strategy of SEARCH_STRATEGIES) {
+    for (const strategy of strategies) {
       if (repoMap.size >= this.maxResults) {
         console.log(`  ⏹️ Max results (${this.maxResults}) reached, stopping search`);
         break;
