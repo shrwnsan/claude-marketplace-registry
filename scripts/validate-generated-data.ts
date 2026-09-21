@@ -73,7 +73,7 @@ class GeneratedDataValidator {
 
     // Check generated directory
     if (fs.existsSync(this.generatedDir)) {
-      const generatedFiles = ['complete.json', 'marketplaces.json', 'plugins.json', 'stats.json'];
+      const generatedFiles = ['marketplaces.json', 'plugins.json', 'stats.json'];
 
       for (const file of generatedFiles) {
         const filePath = path.join(this.generatedDir, file);
@@ -181,9 +181,6 @@ class GeneratedDataValidator {
     const warnings: string[] = [];
 
     switch (fileName) {
-      case 'complete.json':
-        this.validateCompleteData(data, errors, warnings);
-        break;
       case 'marketplaces.json':
         this.validateMarketplacesData(data, errors, warnings);
         break;
@@ -210,40 +207,6 @@ class GeneratedDataValidator {
     }
 
     return { isValid: errors.length === 0, errors, warnings, file: fileName };
-  }
-
-  /**
-   * Validate complete.json structure
-   */
-  private validateCompleteData(data: unknown, errors: string[], _warnings: string[]): void {
-    if (!data || typeof data !== 'object') {
-      errors.push('complete.json must be an object');
-      return;
-    }
-
-    const obj = data as Record<string, unknown>;
-    const requiredFields = ['marketplaces', 'plugins', 'stats', 'categories', 'tags'];
-    for (const field of requiredFields) {
-      if (!obj[field]) {
-        errors.push(`Missing required field: ${field}`);
-      } else if (!Array.isArray(obj[field]) && field !== 'stats') {
-        errors.push(`${field} must be an array`);
-      }
-    }
-
-    // Validate stats object
-    if (obj.stats) {
-      this.validateStatsObject(obj.stats, errors, _warnings);
-    }
-
-    // Sanity check on array lengths
-    if (Array.isArray(obj.marketplaces) && obj.marketplaces.length === 0) {
-      _warnings.push('No marketplaces found in data');
-    }
-
-    if (Array.isArray(obj.plugins) && obj.plugins.length === 0) {
-      _warnings.push('No plugins found in data');
-    }
   }
 
   /**
@@ -470,24 +433,21 @@ class GeneratedDataValidator {
     const file = 'cross-file consistency';
 
     try {
-      const completePath = path.join(this.generatedDir, 'complete.json');
+      const marketplacesPath = path.join(this.generatedDir, 'marketplaces.json');
+      const pluginsPath = path.join(this.generatedDir, 'plugins.json');
       const statsPath = path.join(this.generatedDir, 'stats.json');
 
-      if (!fs.existsSync(completePath)) {
-        warnings.push('complete.json not found; skipping cross-file checks');
+      if (!fs.existsSync(marketplacesPath) || !fs.existsSync(pluginsPath)) {
+        warnings.push('marketplaces.json/plugins.json not found; skipping cross-file checks');
         return { isValid: true, errors, warnings, file };
       }
 
-      const complete = JSON.parse(fs.readFileSync(completePath, 'utf-8')) as Record<
-        string,
-        unknown
-      >;
-      const marketplaces = (
-        Array.isArray(complete.marketplaces) ? complete.marketplaces : []
-      ) as Array<Record<string, unknown>>;
-      const plugins = (Array.isArray(complete.plugins) ? complete.plugins : []) as Array<
-        Record<string, unknown>
-      >;
+      const readArray = (filePath: string): Array<Record<string, unknown>> => {
+        const parsed: unknown = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        return Array.isArray(parsed) ? (parsed as Array<Record<string, unknown>>) : [];
+      };
+      const marketplaces = readArray(marketplacesPath);
+      const plugins = readArray(pluginsPath);
 
       // 1. Referential integrity: plugin marketplaceId must resolve
       const marketplaceIds = new Set(marketplaces.map((m) => String(m.id)));
