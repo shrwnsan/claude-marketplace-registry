@@ -11,7 +11,7 @@ on:
       - 'LICENSE'
 
 env:
-  NODE_VERSION: '20'
+  NODE_VERSION: '24'
   CACHE_VERSION: 'v1'
 
 # Global permissions for security
@@ -131,7 +131,7 @@ jobs:
         if: github.event_name == 'push'
         uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5  # v7.1.1
         with:
-          file: ./coverage/lcov.info
+          files: ./coverage/lcov.info
           fail_ci_if_error: false
           token: ${{ secrets.CODECOV_TOKEN }}
 
