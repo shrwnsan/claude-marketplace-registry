@@ -2,9 +2,9 @@ import { useState, useEffect, useMemo } from 'react';
 import { useRealMarketplaceData } from './useRealMarketplaceData';
 
 /**
- * UI-facing plugin shape derived from public/data/plugins.json entries:
- * { id, name, description, version, author, repository, isValid,
- *   metadata: { marketplaceId, marketplaceName, skills[] } }
+ * UI-facing plugin shape. Index entries (public/data/plugins.json) carry
+ * skillsCount only; full records from a marketplace shard
+ * (public/data/plugins/<marketplaceId>.json) also carry the skill names.
  */
 export interface CatalogPlugin {
   id: string;
@@ -15,7 +15,10 @@ export interface CatalogPlugin {
   repositoryUrl: string;
   /** Best-known per-plugin URL (source dir when derivable, else repo root). */
   sourceUrl: string;
-  skills: string[];
+  /** Number of skills the plugin carries (from the compact index). */
+  skillsCount: number;
+  /** Full skill list — only present on shard-loaded records. */
+  skills?: string[];
   marketplaceId: string;
   marketplaceName: string;
   /** Parent marketplace stars (plugins have no independent star counts). */
@@ -23,6 +26,12 @@ export interface CatalogPlugin {
   updatedAt?: string;
 }
 
+/**
+ * Raw plugin entry. The generated index is the compact shape (top-level
+ * marketplaceId/marketplaceName + skillsCount); fields below that only exist
+ * on full shard records — and on the pre-shard plugins.json format, which the
+ * site keeps tolerating until the next data-update PR lands the index.
+ */
 interface RawPlugin {
   id?: string;
   name?: string;
@@ -32,8 +41,16 @@ interface RawPlugin {
   repository?: string | { url?: string };
   manifestPath?: string | { url?: string; path?: string; ref?: string };
   isValid?: boolean;
+  skillsCount?: number;
+  marketplaceId?: string;
+  marketplaceName?: string;
   updatedAt?: string;
-  metadata?: { marketplaceId?: string; marketplaceName?: string; skills?: string[] };
+  metadata?: {
+    marketplaceId?: string;
+    marketplaceName?: string;
+    skills?: string[];
+    hasSkillMd?: boolean;
+  };
 }
 
 const asUrl = (repo: RawPlugin['repository']): string => {
@@ -73,6 +90,36 @@ const toSourceUrl = (repoUrl: string, manifestPath: RawPlugin['manifestPath']): 
   return cleanRepo;
 };
 
+/** Derive skillsCount from either the index field or full-record metadata. */
+const toSkillsCount = (raw: RawPlugin): number => {
+  if (typeof raw.skillsCount === 'number') return raw.skillsCount;
+  if (Array.isArray(raw.metadata?.skills)) return raw.metadata!.skills!.length;
+  if (typeof raw.metadata?.hasSkillMd === 'boolean') return raw.metadata!.hasSkillMd ? 1 : 0;
+  return 0;
+};
+
+/** Map a raw index/shard record to the UI-facing shape (used by both hooks). */
+export function toCatalogPlugin(raw: RawPlugin, index: number): CatalogPlugin {
+  const repoUrl = asUrl(raw.repository);
+  return {
+    id: raw.id || `plugin-${index}`,
+    name: raw.name || `Plugin ${index + 1}`,
+    description: raw.description || 'No description available',
+    version: raw.version || '',
+    author: asAuthor(raw.author),
+    repositoryUrl: repoUrl,
+    sourceUrl: toSourceUrl(repoUrl, raw.manifestPath),
+    skillsCount: toSkillsCount(raw),
+    skills: Array.isArray(raw.metadata?.skills)
+      ? raw.metadata!.skills!.map((s) => s.replace(/^\.?\//, ''))
+      : undefined,
+    marketplaceId: raw.marketplaceId || raw.metadata?.marketplaceId || '',
+    marketplaceName: raw.marketplaceName || raw.metadata?.marketplaceName || '',
+    stars: 0,
+    updatedAt: raw.updatedAt,
+  };
+}
+
 interface UsePluginDataReturn {
   plugins: CatalogPlugin[];
   loading: boolean;
@@ -81,8 +128,9 @@ interface UsePluginDataReturn {
 }
 
 /**
- * Loads the pipeline-generated plugin catalog (public/data/plugins.json).
- * Parent-marketplace stars are joined in from public/data/marketplaces.json.
+ * Loads the pipeline-generated plugin index (public/data/plugins.json).
+ * Full per-plugin records live in per-marketplace shards (usePluginShard);
+ * parent-marketplace stars are joined in from public/data/marketplaces.json.
  */
 export function usePluginData(): UsePluginDataReturn {
   const {
@@ -109,24 +157,7 @@ export function usePluginData(): UsePluginDataReturn {
         const json = await response.json();
         const entries: RawPlugin[] = Array.isArray(json) ? json : json.plugins || [];
         if (cancelled) return;
-        setRawPlugins(
-          entries.map((p, index) => ({
-            id: p.id || `plugin-${index}`,
-            name: p.name || `Plugin ${index + 1}`,
-            description: p.description || 'No description available',
-            version: p.version || '',
-            author: asAuthor(p.author),
-            repositoryUrl: asUrl(p.repository),
-            sourceUrl: toSourceUrl(asUrl(p.repository), p.manifestPath),
-            skills: Array.isArray(p.metadata?.skills)
-              ? p.metadata!.skills.map((s) => s.replace(/^\.?\//, ''))
-              : [],
-            marketplaceId: p.metadata?.marketplaceId || '',
-            marketplaceName: p.metadata?.marketplaceName || '',
-            stars: 0,
-            updatedAt: p.updatedAt,
-          }))
-        );
+        setRawPlugins(entries.map(toCatalogPlugin));
       } catch (err) {
         if (!cancelled) {
           console.error('Error loading plugin data:', err);

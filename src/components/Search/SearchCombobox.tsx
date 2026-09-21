@@ -103,8 +103,7 @@ const SearchCombobox: React.FC<SearchComboboxProps> = ({
         (p) =>
           p.name.toLowerCase().includes(q) ||
           p.description.toLowerCase().includes(q) ||
-          p.author.toLowerCase().includes(q) ||
-          p.skills.some((s) => s.toLowerCase().includes(q))
+          p.author.toLowerCase().includes(q)
       )
       .slice(0, 5);
     return { marketplaceMatches: mMatches, pluginMatches: pMatches };
@@ -126,8 +125,7 @@ const SearchCombobox: React.FC<SearchComboboxProps> = ({
         (p) =>
           p.name.toLowerCase().includes(q) ||
           p.description.toLowerCase().includes(q) ||
-          p.author.toLowerCase().includes(q) ||
-          p.skills.some((s) => s.toLowerCase().includes(q))
+          p.author.toLowerCase().includes(q)
       ).length,
     };
   }, [debounced, marketplaceData, plugins]);

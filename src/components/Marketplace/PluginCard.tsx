@@ -31,25 +31,7 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
         </p>
       </div>
 
-      {/* Skills */}
-      {plugin.skills.length > 0 && (
-        <div className='flex flex-wrap gap-1.5 mb-3'>
-          {plugin.skills.slice(0, 3).map((skill) => (
-            <span key={skill} className='badge badge-secondary text-xs'>
-              {skill}
-            </span>
-          ))}
-          {plugin.skills.length > 3 && (
-            <span
-              className='badge badge-secondary text-xs'
-              title={`${plugin.skills.length - 3} more: ${plugin.skills.slice(3).join(', ')}`}
-            >
-              +{plugin.skills.length - 3}
-            </span>
-          )}
-        </div>
-      )}
-
+      {/* Skills — the index carries only the count; names live on the shard */}
       {/* Author and Marketplace */}
       <div className='flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-3'>
         <div className='flex items-center space-x-2 min-w-0 flex-1'>
@@ -70,11 +52,11 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
       {/* Stats */}
       <div className='flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4'>
         <div className='flex items-center space-x-4'>
-          {plugin.skills.length > 0 && (
+          {plugin.skillsCount > 0 && (
             <div className='flex items-center space-x-1'>
               <Package className='w-4 h-4' aria-hidden='true' />
               <span className='font-medium'>
-                {plugin.skills.length} skill{plugin.skills.length === 1 ? '' : 's'}
+                {plugin.skillsCount} skill{plugin.skillsCount === 1 ? '' : 's'}
               </span>
             </div>
           )}

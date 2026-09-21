@@ -5,6 +5,7 @@ import Link from 'next/link';
 import MainLayout from '@/components/layout/MainLayout';
 import PluginCard from '@/components/Marketplace/PluginCard';
 import { usePluginData, CatalogPlugin } from '@/hooks/usePluginData';
+import { usePluginShard } from '@/hooks/usePluginShard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
 import { Star, Github, Copy, Check, Package, ArrowLeft } from 'lucide-react';
@@ -50,10 +51,22 @@ const PluginDetailPage: React.FC = () => {
   const id = (Array.isArray(rawId) ? rawId[0] : rawId)?.replace(/\.html$/, '');
   const [copied, setCopied] = useState(false);
 
-  const { plugins, loading } = usePluginData();
+  // Summary from the compact index resolves the plugin's marketplace; the
+  // full record (skills, source URLs, untruncated description) comes from
+  // that marketplace's shard. The page renders from the summary if the
+  // shard is unavailable.
+  const { plugins, loading: indexLoading } = usePluginData();
   const { data: marketplaceData } = useRealMarketplaceData();
 
-  const plugin = useMemo(() => plugins.find((p) => p.id === id) || null, [id, plugins]);
+  const summary = useMemo(() => plugins.find((p) => p.id === id) || null, [id, plugins]);
+  const {
+    plugins: shardPlugins,
+    loading: shardLoading,
+    error: shardError,
+  } = usePluginShard(summary?.marketplaceId);
+
+  const full = useMemo(() => shardPlugins.find((p) => p.id === id) || null, [id, shardPlugins]);
+  const plugin: CatalogPlugin | null = full || summary;
 
   const marketplace = useMemo(() => {
     if (!plugin) return null;
@@ -64,13 +77,11 @@ const PluginDetailPage: React.FC = () => {
     );
   }, [plugin, marketplaceData]);
 
-  // Related = other plugins from the same marketplace
+  // Related = other plugins from the same marketplace (the shard's scope)
   const relatedPlugins = useMemo(() => {
     if (!plugin) return [];
-    return plugins
-      .filter((p) => p.id !== plugin.id && p.marketplaceId === plugin.marketplaceId)
-      .slice(0, 3);
-  }, [plugin, plugins]) as CatalogPlugin[];
+    return shardPlugins.filter((p) => p.id !== plugin.id).slice(0, 3);
+  }, [plugin, shardPlugins]);
 
   const copySource = async (text: string) => {
     try {
@@ -82,7 +93,7 @@ const PluginDetailPage: React.FC = () => {
     }
   };
 
-  if (loading) {
+  if (indexLoading || (summary && shardLoading && !shardError)) {
     return (
       <MainLayout>
         <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
@@ -197,13 +208,13 @@ const PluginDetailPage: React.FC = () => {
               </div>
 
               {/* Skills */}
-              {plugin.skills.length > 0 && (
+              {(plugin.skills?.length ?? 0) > 0 && (
                 <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700'>
                   <h2 className='text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2'>
-                    Skills ({plugin.skills.length})
+                    Skills ({plugin.skills!.length})
                   </h2>
                   <div className='flex flex-wrap gap-1.5'>
-                    {plugin.skills.map((skill) => (
+                    {plugin.skills!.map((skill) => (
                       <span key={skill} className='badge badge-secondary text-xs'>
                         {skill}
                       </span>
