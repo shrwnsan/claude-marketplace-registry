@@ -639,10 +639,6 @@ class DataGenerator {
   private async saveGeneratedData(data: GeneratedData): Promise<void> {
     console.log('💾 Saving generated data...');
 
-    // Save complete data
-    const completeDataPath = path.join(this.outputDir, 'complete.json');
-    fs.writeFileSync(completeDataPath, JSON.stringify(data, null, 2));
-
     // Save marketplaces only
     const marketplacesPath = path.join(this.outputDir, 'marketplaces.json');
     fs.writeFileSync(marketplacesPath, JSON.stringify(data.marketplaces, null, 2));
@@ -660,9 +656,20 @@ class DataGenerator {
     const statsPath = path.join(this.outputDir, 'stats.json');
     fs.writeFileSync(statsPath, JSON.stringify(ecosystemStats, null, 2));
 
-    // Save minified version for web
-    const minifiedPath = path.join(this.outputDir, 'data.min.json');
-    fs.writeFileSync(minifiedPath, JSON.stringify(data));
+    // NOTE: complete.json and data.min.json are intentionally no longer
+    // generated. No page fetches them (the site reads marketplaces.json,
+    // plugins.json and stats.json directly), and complete.json embedded full
+    // manifests — ~2MB at 250 marketplaces, on track to breach the validator's
+    // 10MB per-file gate around ~1,250 entries.
+
+    // Retire legacy payloads: without this they linger in the runner's
+    // working tree from checkout and ride the artifact round-trip forever.
+    for (const dir of [this.outputDir, this.websiteOutputDir]) {
+      for (const legacy of ['complete.json', 'data.min.json']) {
+        const legacyPath = path.join(dir, legacy);
+        if (fs.existsSync(legacyPath)) fs.unlinkSync(legacyPath);
+      }
+    }
 
     console.log(`✅ Data saved to ${this.outputDir}`);
   }
@@ -671,13 +678,7 @@ class DataGenerator {
     console.log('🌐 Generating website data...');
 
     // Copy data to public directory
-    const files = [
-      'complete.json',
-      'marketplaces.json',
-      'plugins.json',
-      'stats.json',
-      'data.min.json',
-    ];
+    const files = ['marketplaces.json', 'plugins.json', 'stats.json'];
 
     for (const file of files) {
       const src = path.join(this.outputDir, file);
@@ -910,7 +911,6 @@ class DataGenerator {
     <priority>0.6</priority>
   </url>
   ${data.marketplaces
-    .slice(0, 100)
     .map(
       (mp) => `
   <url>
