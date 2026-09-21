@@ -89,6 +89,24 @@ interface Marketplace {
 /** Registry entries deep-refreshed per run (rotating slice; rest carry over). */
 const REGISTRY_REFRESH_PER_DAY = 100;
 
+/**
+ * Ids from a Jev enrichment sidecar scored below the non-marketplace triage
+ * threshold (probability the repo is genuinely a marketplace). Pure so the
+ * policy stays unit-testable; the scanner consumes it via loadTriageSkip().
+ */
+export function triageSkipIds(
+  entries: Record<string, { isMarketplace?: number } | undefined>,
+  threshold = 0.3
+): Set<string> {
+  const ids = new Set<string>();
+  for (const [id, entry] of Object.entries(entries ?? {})) {
+    if (typeof entry?.isMarketplace === 'number' && entry.isMarketplace < threshold) {
+      ids.add(id);
+    }
+  }
+  return ids;
+}
+
 export interface RegistryRecord {
   id: string;
   fullName: string;
@@ -132,6 +150,36 @@ class MarketplaceScanner {
   private maxResults: number;
   private useMultiStrategy: boolean;
   private pluginDiscovery: ReturnType<typeof createPluginDiscovery>;
+  private triageSkip: Set<string> | null = null;
+  private triageSkippedCount = 0;
+
+  /**
+   * Ids the Jev enrichment sidecar scored below the non-marketplace triage
+   * threshold. Skipping these candidates saves their per-repo detail calls
+   * (repos.get, manifest fetch, skills walk) — quota this scanner historically
+   * burned on repos that only ever produced catalog noise. Known/verified
+   * entries are never skipped: they are already in repoMap before searches run.
+   * Absent sidecar (enrichment not active) means no skipping at all.
+   */
+  private loadTriageSkip(): Set<string> {
+    if (!this.triageSkip) {
+      this.triageSkip = new Set();
+      try {
+        const parsed = JSON.parse(
+          fs.readFileSync(path.join(this.outputDir, 'jev-enrichment.json'), 'utf-8')
+        );
+        this.triageSkip = triageSkipIds(parsed?.entries ?? {});
+        if (this.triageSkip.size > 0) {
+          console.log(
+            `🧯 Jev triage skip-list loaded: ${this.triageSkip.size} likely non-marketplaces`
+          );
+        }
+      } catch {
+        // Sidecar absent or unreadable — enrichment not active; no skipping.
+      }
+    }
+    return this.triageSkip;
+  }
 
   constructor() {
     // Initialize GitHub client
@@ -185,6 +233,11 @@ class MarketplaceScanner {
       // re-fetched. The catalog is self-healing and monotonically growing.
       const marketplaces = await this.mergeWithRegistry(repoMap);
       console.log(`\n🎉 Scan complete! Catalog size: ${marketplaces.length} marketplaces`);
+      if (this.triageSkippedCount > 0) {
+        console.log(
+          `🧯 Skipped ${this.triageSkippedCount} Jev-triaged candidate(s) — detail calls saved`
+        );
+      }
       return marketplaces;
     } catch (error) {
       console.error('❌ Scan failed:', error);
@@ -384,12 +437,20 @@ class MarketplaceScanner {
       console.log(`   Found ${searchResponse.data.total_count} code matches`);
 
       const processedRepos = new Set<string>();
+      const triageSkip = this.loadTriageSkip();
       for (const item of searchResponse.data.items) {
         const repoFullName = item.repository.full_name;
         if (processedRepos.has(repoFullName)) continue;
         processedRepos.add(repoFullName);
 
         if (repoMap.size >= this.maxResults) break;
+
+        const repoId = String(item.repository.id);
+        if (repoMap.has(repoId)) continue; // known entry — no detail calls needed
+        if (triageSkip.has(repoId)) {
+          this.triageSkippedCount++;
+          continue;
+        }
 
         try {
           const repoResponse = await this.octokit.repos.get({
@@ -425,6 +486,7 @@ class MarketplaceScanner {
     const startSize = repoMap.size;
     let page = 1;
     const perPage = 100;
+    const triageSkip = this.loadTriageSkip();
 
     while (repoMap.size < this.maxResults) {
       try {
@@ -446,6 +508,13 @@ class MarketplaceScanner {
 
         for (const repo of searchResponse.data.items) {
           if (repoMap.size >= this.maxResults) break;
+
+          const repoId = String(repo.id);
+          if (repoMap.has(repoId)) continue;
+          if (triageSkip.has(repoId)) {
+            this.triageSkippedCount++;
+            continue;
+          }
 
           try {
             const marketplace = await this.processRepository(repo, source);
