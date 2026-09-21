@@ -50,7 +50,7 @@
   "author": "Claude Marketplace Aggregator Contributors",
   "license": "MIT",
   "dependencies": {
-    "@octokit/rest": "20.1.2",
+    "@octokit/rest": "22.0.1",
     "@types/dompurify": "3.0.5",
     "axios": "^1.16.0",
     "clsx": "2.1.1",
