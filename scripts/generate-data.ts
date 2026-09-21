@@ -11,6 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import { format, parseISO } from 'date-fns';
 import { canonicalAuthor } from './validate-plugins';
+import { applyJevEnrichment, loadJevEnrichment } from './jev-categorize';
 
 interface Marketplace {
   id: string;
@@ -168,8 +169,10 @@ class DataGenerator {
       marketplaces = Array.isArray(data) ? data : [];
     }
 
-    // Normalize marketplace data to handle different formats (scanner vs UI format)
-    return marketplaces.map((mp: any) => ({
+    // Normalize marketplace data to handle different formats (scanner vs UI format),
+    // then re-attach Jev-inferred categories for marketplaces the topic aliases
+    // could not classify (see scripts/jev-categorize.ts).
+    const normalized = marketplaces.map((mp: any) => ({
       id: mp.id || '',
       name: mp.name || '',
       description: mp.description || '',
@@ -185,6 +188,7 @@ class DataGenerator {
       hasManifest: mp.hasManifest ?? !!mp.manifest,
       manifest: mp.manifest,
     }));
+    return applyJevEnrichment(normalized, loadJevEnrichment(this.inputDir));
   }
 
   private loadPluginData(): Plugin[] {

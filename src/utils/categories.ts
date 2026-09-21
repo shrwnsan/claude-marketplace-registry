@@ -65,14 +65,61 @@ export function matchesCategory(topics: string[] | undefined, categoryIdOrTopic:
 }
 
 /** Marketplace count per category id, from real data. */
-export function countByCategory<T extends { topics?: string[] }>(
+export function countByCategory<T extends { topics?: string[]; inferredCategory?: CategoryHint }>(
   items: T[]
 ): Record<string, number> {
   const counts: Record<string, number> = {};
   for (const category of MARKETPLACE_CATEGORIES) counts[category.id] = 0;
   for (const item of items) {
-    const match = categoryForTopics(item.topics);
+    const match = categoryForMarketplace(item);
     if (match) counts[match.id] += 1;
   }
   return counts;
+}
+
+/** The pipeline-attached Jev verdict for marketplaces no topic alias classifies. */
+export interface CategoryHint {
+  id?: string;
+  confidence?: number;
+}
+
+/**
+ * Below this confidence a Jev-inferred category is ignored entirely — the
+ * marketplace simply stays uncategorized. Topic aliases always win, so this
+ * only ever fills gaps, never overrides a deterministic match.
+ */
+export const MIN_INFERRED_CONFIDENCE = 0.6;
+
+/**
+ * Resolve a marketplace's curated category: topic aliases first (the
+ * deterministic path), then the pipeline's Jev-inferred category when it is
+ * confident enough and still names a known category id.
+ */
+export function categoryForMarketplace<
+  T extends { topics?: string[]; inferredCategory?: CategoryHint },
+>(marketplace: T): MarketplaceCategory | null {
+  const byTopic = categoryForTopics(marketplace.topics);
+  if (byTopic) return byTopic;
+  const hint = marketplace.inferredCategory;
+  if (!hint || typeof hint.id !== 'string') return null;
+  if (typeof hint.confidence === 'number' && hint.confidence < MIN_INFERRED_CONFIDENCE) {
+    return null;
+  }
+  return MARKETPLACE_CATEGORIES.find((c) => c.id === hint.id) ?? null;
+}
+
+/**
+ * Filter predicate for the marketplaces list: category ids (via aliases or
+ * inference) and raw GitHub topic deep links (?topic=) alike.
+ */
+export function marketplaceMatchesCategory<
+  T extends { topics?: string[]; inferredCategory?: CategoryHint },
+>(marketplace: T, categoryIdOrTopic: string): boolean {
+  if (categoryIdOrTopic === 'All') return true;
+  const category = MARKETPLACE_CATEGORIES.find((c) => c.id === categoryIdOrTopic);
+  if (category) return categoryForMarketplace(marketplace)?.id === category.id;
+  const topics = marketplace.topics;
+  return (
+    Array.isArray(topics) && topics.some((t) => t.toLowerCase() === categoryIdOrTopic.toLowerCase())
+  );
 }

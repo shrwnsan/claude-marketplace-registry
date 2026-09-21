@@ -158,6 +158,22 @@ jobs:
           name: plugin-validation-results
           path: data/plugins/
 
+      - name: Enrich categories with Jev
+        # Enhancement, not load-bearing: the sidecar merges additively and the
+        # script writes only after a full pass, so a partial or skipped run
+        # leaves the previously committed jev-enrichment.json in place.
+        continue-on-error: true
+        env:
+          NODE_ENV: production
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+        run: |
+          if [ -z "$TYPESAFE_API_KEY" ] && [ -z "$AI_GATEWAY_API_KEY" ]; then
+            echo "ℹ️ No Jev provider key configured (TYPESAFE_API_KEY / AI_GATEWAY_API_KEY) — skipping category enrichment"
+            exit 0
+          fi
+          npm run enrich:jev
+
       - name: Generate data files
         run: npm run generate:data
         env:

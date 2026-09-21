@@ -2,7 +2,10 @@ import {
   MARKETPLACE_CATEGORIES,
   categoryForTopics,
   matchesCategory,
+  marketplaceMatchesCategory,
+  categoryForMarketplace,
   countByCategory,
+  MIN_INFERRED_CONFIDENCE,
 } from '../categories';
 
 describe('categoryForTopics', () => {
@@ -61,5 +64,72 @@ describe('countByCategory', () => {
     const counts = countByCategory([]);
     expect(Object.keys(counts)).toHaveLength(MARKETPLACE_CATEGORIES.length);
     expect(Object.values(counts).every((c) => c === 0)).toBe(true);
+  });
+});
+
+describe('categoryForMarketplace', () => {
+  it('prefers topic aliases over the Jev-inferred hint', () => {
+    expect(
+      categoryForMarketplace({
+        topics: ['mcp'],
+        inferredCategory: { id: 'skills', confidence: 0.99 },
+      })?.id
+    ).toBe('mcp');
+  });
+
+  it('falls back to the inferred category when no alias matches', () => {
+    expect(
+      categoryForMarketplace({ topics: ['cursor'], inferredCategory: { id: 'devtools' } })?.id
+    ).toBe('devtools');
+  });
+
+  it('ignores low-confidence inferences', () => {
+    const below = MIN_INFERRED_CONFIDENCE - 0.01;
+    expect(
+      categoryForMarketplace({
+        topics: ['cursor'],
+        inferredCategory: { id: 'llm', confidence: below },
+      })
+    ).toBeNull();
+  });
+
+  it('ignores unknown category ids and missing hints', () => {
+    expect(categoryForMarketplace({ topics: [], inferredCategory: { id: 'crypto' } })).toBeNull();
+    expect(categoryForMarketplace({ topics: [] })).toBeNull();
+    expect(categoryForMarketplace({ topics: [], inferredCategory: {} })).toBeNull();
+  });
+});
+
+describe('marketplaceMatchesCategory', () => {
+  const marketplace = {
+    topics: ['cursor'],
+    inferredCategory: { id: 'automation', confidence: 0.8 },
+  };
+
+  it('matches a curated category through the inferred hint', () => {
+    expect(marketplaceMatchesCategory(marketplace, 'automation')).toBe(true);
+    expect(marketplaceMatchesCategory(marketplace, 'mcp')).toBe(false);
+  });
+
+  it('still supports raw topic deep links (?topic=)', () => {
+    expect(marketplaceMatchesCategory(marketplace, 'cursor')).toBe(true);
+    expect(marketplaceMatchesCategory(marketplace, 'Cursor')).toBe(true);
+    expect(marketplaceMatchesCategory(marketplace, 'docker')).toBe(false);
+  });
+
+  it('treats All as match-everything', () => {
+    expect(marketplaceMatchesCategory({ topics: [] }, 'All')).toBe(true);
+  });
+});
+
+describe('countByCategory with inferred categories', () => {
+  it('counts Jev-only marketplaces into their category', () => {
+    const counts = countByCategory([
+      { topics: ['mcp'] },
+      { topics: ['cursor'], inferredCategory: { id: 'skills', confidence: 0.9 } },
+      { topics: ['other'], inferredCategory: { id: 'llm', confidence: 0.2 } },
+    ]);
+    expect(counts['skills']).toBe(1);
+    expect(counts['llm']).toBe(0);
   });
 });
