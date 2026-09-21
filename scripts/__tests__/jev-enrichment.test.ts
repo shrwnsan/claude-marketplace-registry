@@ -4,6 +4,8 @@ import {
   buildCategoryCriteria,
   buildQuestions,
   buildState,
+  buildProviderChain,
+  parseGatewayResponse,
 } from '../jev-categorize';
 import { MARKETPLACE_CATEGORIES } from '../../src/utils/categories';
 
@@ -102,5 +104,47 @@ describe('applyJevEnrichment', () => {
   it('is a no-op without enrichment data', () => {
     const result = applyJevEnrichment(marketplaces, null);
     expect(result).toEqual(marketplaces);
+  });
+});
+
+describe('parseGatewayResponse', () => {
+  it('normalizes a gateway evaluate response into a verdict', () => {
+    const verdict = parseGatewayResponse({
+      model: 'typesafe-ai/jev',
+      answers: {
+        category: { choice: 'skills', confidence: 0.93 },
+        isMarketplace: { probability: 0.41 },
+      },
+      usage: { inputTokens: 334 },
+    });
+    expect(verdict).toEqual({
+      model: 'typesafe-ai/jev',
+      category: { choice: 'skills', confidence: 0.93 },
+      isMarketplace: 0.41,
+      inputTokens: 334,
+    });
+  });
+
+  it('throws on unusable responses', () => {
+    expect(() => parseGatewayResponse({ answers: {} })).toThrow(/unusable gateway response/);
+    expect(() =>
+      parseGatewayResponse({ answers: { category: { choice: 'mcp', confidence: 0.5 } } })
+    ).toThrow(/unusable gateway response/);
+  });
+});
+
+describe('buildProviderChain', () => {
+  it('puts the Vercel gateway first when both legs are configured', () => {
+    const chain = buildProviderChain({
+      AI_GATEWAY_API_KEY: 'gw-key',
+      TYPESAFE_API_KEY: 'direct-key',
+    });
+    expect(chain.map((p) => p.name)).toEqual(['vercel-gateway', 'typesafe-direct']);
+  });
+
+  it('degrades to direct-only and to empty', () => {
+    const directOnly = buildProviderChain({ TYPESAFE_API_KEY: 'k' });
+    expect(directOnly.map((p) => p.name)).toEqual(['typesafe-direct']);
+    expect(buildProviderChain({})).toEqual([]);
   });
 });
