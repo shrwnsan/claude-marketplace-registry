@@ -177,8 +177,8 @@ const GrowthTrends: React.FC<GrowthTrendsProps> = ({ className = '' }) => {
                       />
                       <Tooltip
                         cursor={{ stroke: 'var(--tooltip-muted)', strokeDasharray: '3 3' }}
-                        formatter={(value: number | string) => formatNumber(Number(value))}
-                        labelFormatter={(label: string) => `Snapshot ${label}`}
+                        formatter={(value: unknown) => formatNumber(Number(value))}
+                        labelFormatter={(label: unknown) => `Snapshot ${String(label)}`}
                         contentStyle={{
                           backgroundColor: 'var(--tooltip-bg)',
                           border: '1px solid var(--tooltip-border)',
