@@ -64,7 +64,10 @@ jobs:
       - name: Run marketplace scan
         run: npm run scan:marketplaces
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The scan issues thousands of API calls; the PAT's 5,000/hr user
+          # pool keeps it from exhausting the shared repo-token quota that
+          # auto-merge and other workflows depend on.
+          GITHUB_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
           NODE_ENV: production
           FORCE_UPDATE: ${{ github.event.inputs.force_update || 'false' }}
 
@@ -106,7 +109,8 @@ jobs:
       - name: Run plugin validation
         run: npm run validate:plugins
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Same rate-limit pool consideration as the scan job above.
+          GITHUB_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
           NODE_ENV: production
 
       - name: Upload validation results

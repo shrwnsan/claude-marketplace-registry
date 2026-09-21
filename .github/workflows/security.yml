@@ -18,13 +18,17 @@ permissions:
   contents: read
   security-events: write
   actions: read
-  pull-requests: write
   issues: write
 
 jobs:
   vulnerability-scan:
     name: Vulnerability Scan
     runs-on: ubuntu-latest
+    # ci.yml's security job already audits prod deps on every PR; this job's
+    # full audit (incl. dev deps) + issue creation only runs on schedule or
+    # manual dispatch, so PRs are not spammed with "Security Scan Results"
+    # comments about known dev-only vulnerabilities.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
 
     steps:
       - name: Checkout code
@@ -130,57 +134,6 @@ jobs:
           path: audit-results.json
           retention-days: 7
 
-      - name: Comment on PR with security results
-        if: github.event_name == 'pull_request'
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea  # v7.0.1
-        with:
-          script: |
-            const vulnerabilityCount = '${{ steps.parse.outputs.vulnerability_count }}';
-            const vulnerabilitiesFound = '${{ steps.audit.outputs.vulnerabilities_found }}';
-
-            const commentLines = [
-              '## 🔒 Security Scan Results',
-              '',
-              '### 📊 Summary',
-              '- **Vulnerabilities Found:** ' + (vulnerabilitiesFound === 'true' ? 'Yes' : 'No'),
-              '- **Total Count:** ' + vulnerabilityCount,
-              '- **Severity Level:** Moderate and above',
-              ''
-            ];
-
-            if (vulnerabilitiesFound === 'true') {
-              commentLines.push(
-                '### ⚠️ Action Required',
-                'Security vulnerabilities were detected. Please review and update the affected packages before merging.',
-                '',
-                '### 🛠️ Quick Fix',
-                '```bash',
-                'npm audit fix',
-                'npm update',
-                '```'
-              );
-            } else {
-              commentLines.push(
-                '### ✅ All Clear',
-                'No security vulnerabilities found at moderate or higher severity levels.'
-              );
-            }
-
-            commentLines.push(
-              '',
-              '### 📋 Details',
-              'Full audit results are available in the workflow artifacts.',
-              '',
-              '---',
-            );
-
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body: commentLines.join('\n')
-            });
-
   codeql-scan:
     name: CodeQL Analysis
     runs-on: ubuntu-latest
@@ -223,10 +176,8 @@ jobs:
           extra_args: --debug --only-verified
         continue-on-error: true
 
-      - name: Run Gitleaks
-        uses: gitleaks/gitleaks-action@ff98106e4c7b2bc287b24eaf42907196329070c7  # v2.3.9
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
-        with:
-          config-path: .gitleaks.toml
+      # Gitleaks step removed (2026-09): gitleaks-action's license check does a
+      # GitHub API lookup that flakes with rate limits during the daily bot-PR
+      # window and then hard-fails because GITLEAKS_LICENSE is not configured
+      # (its pinned version also rejected the `config-path` input).
+      # TruffleHog (--only-verified) is the single secret scanner.

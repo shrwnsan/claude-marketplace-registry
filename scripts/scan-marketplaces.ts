@@ -86,8 +86,26 @@ interface Marketplace {
   discoverySource?: string;
 }
 
-/** Per-day registry refresh budget (core-API calls; retries resume next run). */
-const REGISTRY_REFRESH_CAP = 2000;
+/** Registry entries deep-refreshed per run (rotating slice; rest carry over). */
+const REGISTRY_REFRESH_PER_DAY = 100;
+
+/**
+ * Ids from a Jev enrichment sidecar scored below the non-marketplace triage
+ * threshold (probability the repo is genuinely a marketplace). Pure so the
+ * policy stays unit-testable; the scanner consumes it via loadTriageSkip().
+ */
+export function triageSkipIds(
+  entries: Record<string, { isMarketplace?: number } | undefined>,
+  threshold = 0.3
+): Set<string> {
+  const ids = new Set<string>();
+  for (const [id, entry] of Object.entries(entries ?? {})) {
+    if (typeof entry?.isMarketplace === 'number' && entry.isMarketplace < threshold) {
+      ids.add(id);
+    }
+  }
+  return ids;
+}
 
 export interface RegistryRecord {
   id: string;
@@ -132,6 +150,36 @@ class MarketplaceScanner {
   private maxResults: number;
   private useMultiStrategy: boolean;
   private pluginDiscovery: ReturnType<typeof createPluginDiscovery>;
+  private triageSkip: Set<string> | null = null;
+  private triageSkippedCount = 0;
+
+  /**
+   * Ids the Jev enrichment sidecar scored below the non-marketplace triage
+   * threshold. Skipping these candidates saves their per-repo detail calls
+   * (repos.get, manifest fetch, skills walk) — quota this scanner historically
+   * burned on repos that only ever produced catalog noise. Known/verified
+   * entries are never skipped: they are already in repoMap before searches run.
+   * Absent sidecar (enrichment not active) means no skipping at all.
+   */
+  private loadTriageSkip(): Set<string> {
+    if (!this.triageSkip) {
+      this.triageSkip = new Set();
+      try {
+        const parsed = JSON.parse(
+          fs.readFileSync(path.join(this.outputDir, 'jev-enrichment.json'), 'utf-8')
+        );
+        this.triageSkip = triageSkipIds(parsed?.entries ?? {});
+        if (this.triageSkip.size > 0) {
+          console.log(
+            `🧯 Jev triage skip-list loaded: ${this.triageSkip.size} likely non-marketplaces`
+          );
+        }
+      } catch {
+        // Sidecar absent or unreadable — enrichment not active; no skipping.
+      }
+    }
+    return this.triageSkip;
+  }
 
   constructor() {
     // Initialize GitHub client
@@ -185,6 +233,11 @@ class MarketplaceScanner {
       // re-fetched. The catalog is self-healing and monotonically growing.
       const marketplaces = await this.mergeWithRegistry(repoMap);
       console.log(`\n🎉 Scan complete! Catalog size: ${marketplaces.length} marketplaces`);
+      if (this.triageSkippedCount > 0) {
+        console.log(
+          `🧯 Skipped ${this.triageSkippedCount} Jev-triaged candidate(s) — detail calls saved`
+        );
+      }
       return marketplaces;
     } catch (error) {
       console.error('❌ Scan failed:', error);
@@ -226,20 +279,27 @@ class MarketplaceScanner {
     }
 
     const removed: string[] = [];
-    let fetched = 0;
-    for (const record of missing) {
-      if (fetched >= REGISTRY_REFRESH_CAP) {
-        console.log(
-          `  ⏹️ Registry refresh cap (${REGISTRY_REFRESH_CAP}) reached — remaining entries retry tomorrow`
-        );
-        break;
-      }
+    // Refresh a small rotating slice each day. Deep-refreshing every entry the
+    // search window missed re-issued thousands of serial API calls, which
+    // exhausted the token quota and froze the daily pipeline (Sep 2026).
+    const dayIndex = Math.floor(Date.now() / 86_400_000);
+    const start = missing.length > 0 ? (dayIndex * REGISTRY_REFRESH_PER_DAY) % missing.length : 0;
+    const slice: RegistryRecord[] = [];
+    for (let i = 0; i < Math.min(REGISTRY_REFRESH_PER_DAY, missing.length); i++) {
+      slice.push(missing[(start + i) % missing.length]);
+    }
+    if (missing.length > slice.length) {
+      console.log(
+        `  ♻️ Refreshing ${slice.length}/${missing.length} stale entries today (rotating slice; rest retry on later runs)`
+      );
+    }
+
+    for (const record of slice) {
       const [owner, repo] = record.fullName.split('/');
       try {
         const response = await this.octokit.repos.get({ owner, repo });
         const marketplace = await this.processRepository(response.data, record.discoverySource);
         if (marketplace) repoMap.set(marketplace.id, marketplace);
-        fetched++;
       } catch (error: any) {
         if (error.status === 404) {
           removed.push(record.id);
@@ -269,7 +329,46 @@ class MarketplaceScanner {
       console.log(`📖 Registry now ${records.length} entries (was ${registry.length})`);
     }
 
+    // Catalog completeness: entries the search window missed and today's
+    // slice did not refresh still belong in the published catalog — carry
+    // their last-known record so the catalog never shrinks on a weak search
+    // day. These stay unverified until their rotating-slice turn.
+    const previousCatalog = this.loadPreviousCatalog();
+    let carried = 0;
+    for (const record of missing) {
+      if (removed.includes(record.id) || repoMap.has(record.id)) continue;
+      const previous = previousCatalog.get(record.id);
+      if (previous) {
+        repoMap.set(record.id, previous);
+        carried++;
+      }
+    }
+    if (carried > 0) {
+      console.log(
+        `  📎 Carried ${carried} unrefreshed entries into the catalog from the previous scan`
+      );
+    }
+
     return Array.from(repoMap.values());
+  }
+
+  /** Last-known marketplace records from the previous scan (full raw first, slim processed as fallback). */
+  private loadPreviousCatalog(): Map<string, Marketplace> {
+    for (const file of ['raw.json', 'processed.json']) {
+      try {
+        const parsed = JSON.parse(fs.readFileSync(path.join(this.outputDir, file), 'utf-8'));
+        if (Array.isArray(parsed)) {
+          return new Map(
+            parsed
+              .filter((m: any) => m && m.id && m.url)
+              .map((m: any) => [m.id as string, m as Marketplace])
+          );
+        }
+      } catch {
+        // Missing or corrupt file — fall through to the next candidate.
+      }
+    }
+    return new Map();
   }
 
   private async fetchKnownMarketplaces(repoMap: Map<string, Marketplace>): Promise<void> {
@@ -338,12 +437,20 @@ class MarketplaceScanner {
       console.log(`   Found ${searchResponse.data.total_count} code matches`);
 
       const processedRepos = new Set<string>();
+      const triageSkip = this.loadTriageSkip();
       for (const item of searchResponse.data.items) {
         const repoFullName = item.repository.full_name;
         if (processedRepos.has(repoFullName)) continue;
         processedRepos.add(repoFullName);
 
         if (repoMap.size >= this.maxResults) break;
+
+        const repoId = String(item.repository.id);
+        if (repoMap.has(repoId)) continue; // known entry — no detail calls needed
+        if (triageSkip.has(repoId)) {
+          this.triageSkippedCount++;
+          continue;
+        }
 
         try {
           const repoResponse = await this.octokit.repos.get({
@@ -379,6 +486,7 @@ class MarketplaceScanner {
     const startSize = repoMap.size;
     let page = 1;
     const perPage = 100;
+    const triageSkip = this.loadTriageSkip();
 
     while (repoMap.size < this.maxResults) {
       try {
@@ -400,6 +508,13 @@ class MarketplaceScanner {
 
         for (const repo of searchResponse.data.items) {
           if (repoMap.size >= this.maxResults) break;
+
+          const repoId = String(repo.id);
+          if (repoMap.has(repoId)) continue;
+          if (triageSkip.has(repoId)) {
+            this.triageSkippedCount++;
+            continue;
+          }
 
           try {
             const marketplace = await this.processRepository(repo, source);
