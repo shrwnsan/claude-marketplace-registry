@@ -86,8 +86,8 @@ interface Marketplace {
   discoverySource?: string;
 }
 
-/** Per-day registry refresh budget (core-API calls; retries resume next run). */
-const REGISTRY_REFRESH_CAP = 2000;
+/** Registry entries deep-refreshed per run (rotating slice; rest carry over). */
+const REGISTRY_REFRESH_PER_DAY = 100;
 
 export interface RegistryRecord {
   id: string;
@@ -226,20 +226,27 @@ class MarketplaceScanner {
     }
 
     const removed: string[] = [];
-    let fetched = 0;
-    for (const record of missing) {
-      if (fetched >= REGISTRY_REFRESH_CAP) {
-        console.log(
-          `  ⏹️ Registry refresh cap (${REGISTRY_REFRESH_CAP}) reached — remaining entries retry tomorrow`
-        );
-        break;
-      }
+    // Refresh a small rotating slice each day. Deep-refreshing every entry the
+    // search window missed re-issued thousands of serial API calls, which
+    // exhausted the token quota and froze the daily pipeline (Sep 2026).
+    const dayIndex = Math.floor(Date.now() / 86_400_000);
+    const start = missing.length > 0 ? (dayIndex * REGISTRY_REFRESH_PER_DAY) % missing.length : 0;
+    const slice: RegistryRecord[] = [];
+    for (let i = 0; i < Math.min(REGISTRY_REFRESH_PER_DAY, missing.length); i++) {
+      slice.push(missing[(start + i) % missing.length]);
+    }
+    if (missing.length > slice.length) {
+      console.log(
+        `  ♻️ Refreshing ${slice.length}/${missing.length} stale entries today (rotating slice; rest retry on later runs)`
+      );
+    }
+
+    for (const record of slice) {
       const [owner, repo] = record.fullName.split('/');
       try {
         const response = await this.octokit.repos.get({ owner, repo });
         const marketplace = await this.processRepository(response.data, record.discoverySource);
         if (marketplace) repoMap.set(marketplace.id, marketplace);
-        fetched++;
       } catch (error: any) {
         if (error.status === 404) {
           removed.push(record.id);
@@ -269,7 +276,46 @@ class MarketplaceScanner {
       console.log(`📖 Registry now ${records.length} entries (was ${registry.length})`);
     }
 
+    // Catalog completeness: entries the search window missed and today's
+    // slice did not refresh still belong in the published catalog — carry
+    // their last-known record so the catalog never shrinks on a weak search
+    // day. These stay unverified until their rotating-slice turn.
+    const previousCatalog = this.loadPreviousCatalog();
+    let carried = 0;
+    for (const record of missing) {
+      if (removed.includes(record.id) || repoMap.has(record.id)) continue;
+      const previous = previousCatalog.get(record.id);
+      if (previous) {
+        repoMap.set(record.id, previous);
+        carried++;
+      }
+    }
+    if (carried > 0) {
+      console.log(
+        `  📎 Carried ${carried} unrefreshed entries into the catalog from the previous scan`
+      );
+    }
+
     return Array.from(repoMap.values());
+  }
+
+  /** Last-known marketplace records from the previous scan (full raw first, slim processed as fallback). */
+  private loadPreviousCatalog(): Map<string, Marketplace> {
+    for (const file of ['raw.json', 'processed.json']) {
+      try {
+        const parsed = JSON.parse(fs.readFileSync(path.join(this.outputDir, file), 'utf-8'));
+        if (Array.isArray(parsed)) {
+          return new Map(
+            parsed
+              .filter((m: any) => m && m.id && m.url)
+              .map((m: any) => [m.id as string, m as Marketplace])
+          );
+        }
+      } catch {
+        // Missing or corrupt file — fall through to the next candidate.
+      }
+    }
+    return new Map();
   }
 
   private async fetchKnownMarketplaces(repoMap: Map<string, Marketplace>): Promise<void> {

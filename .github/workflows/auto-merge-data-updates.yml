@@ -24,8 +24,11 @@ jobs:
       - name: Verify only data files changed
         id: verify-data-only
         run: |
-          # Get list of changed files in the PR
-          CHANGED_FILES=$(gh pr diff ${{ github.event.pull_request.number }} --name-only)
+          # List changed files via git, not the GitHub API: this PR lands right
+          # after the daily scan, which can exhaust the shared repo token's
+          # rate limit — an API 403 here used to block auto-merge entirely.
+          BASE="$(git merge-base origin/main HEAD)"
+          CHANGED_FILES=$(git diff --name-only "$BASE" HEAD)
 
           # Check if any non-data files are modified
           NON_DATA_FILES=$(echo "$CHANGED_FILES" | grep -vE '^(data/|public/data/|out/)' || true)
@@ -38,8 +41,6 @@ jobs:
             echo "✅ Only data files modified, safe to auto-approve"
             echo "safe=true" >> $GITHUB_OUTPUT
           fi
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Approve PR
         if: steps.verify-data-only.outputs.safe == 'true'
