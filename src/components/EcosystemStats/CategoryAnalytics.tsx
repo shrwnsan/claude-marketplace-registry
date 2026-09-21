@@ -94,14 +94,14 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                 <YAxis type='category' dataKey='name' width={140} tick={{ fontSize: 12 }} />
                 <Tooltip
                   cursor={{ fill: 'rgba(217,119,87,0.08)' }}
-                  formatter={(value: number | string) => [
+                  formatter={(value: unknown) => [
                     `${formatNumber(Number(value))} plugins · ${topicShare(
                       Number(value),
                       totalPlugins
                     )}% of catalog`,
                     'Share',
                   ]}
-                  labelFormatter={(label: string) => `Topic "${label}"`}
+                  labelFormatter={(label: unknown) => `Topic "${String(label)}"`}
                   contentStyle={{
                     backgroundColor: 'var(--tooltip-bg)',
                     border: '1px solid var(--tooltip-border)',
