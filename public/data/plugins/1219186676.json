@@ -1,0 +1,261 @@
+[
+  {
+    "id": "1219186676-content-intelligence",
+    "name": "content-intelligence",
+    "description": "Competitive ad intelligence inside Claude and other AI agents — discover brands, build portfolios and project scopes, analyze content, and generate insights powered by Adology's data platform.",
+    "version": "0.3.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/adologyai/content-intelligence-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1219186676-audience-deep-dive",
+    "name": "audience-deep-dive",
+    "description": "name: audience-deep-dive",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/audience-deep-dive",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-brand-builder",
+    "name": "brand-builder",
+    "description": "name: brand-builder",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/brand-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-brand-marketing-mode",
+    "name": "brand-marketing-mode",
+    "description": "name: brand-marketing-mode",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/brand-marketing-mode",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-brand-partnership-vetting",
+    "name": "brand-partnership-vetting",
+    "description": "name: brand-partnership-vetting",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/brand-partnership-vetting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-content-strategist",
+    "name": "content-strategist",
+    "description": "name: content-strategist",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/content-strategist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-creative-toolkit",
+    "name": "creative-toolkit",
+    "description": "name: creative-toolkit",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/creative-toolkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-data-explorer",
+    "name": "data-explorer",
+    "description": "name: data-explorer",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/data-explorer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-getting-started",
+    "name": "getting-started",
+    "description": "name: getting-started",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/getting-started",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-influencer-coach",
+    "name": "influencer-coach",
+    "description": "name: influencer-coach",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/influencer-coach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-influencer-vetting",
+    "name": "influencer-vetting",
+    "description": "name: influencer-vetting",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/influencer-vetting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-research-analyst",
+    "name": "research-analyst",
+    "description": "name: research-analyst",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/research-analyst",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-thumbnails",
+    "name": "thumbnails",
+    "description": "name: thumbnails",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/thumbnails",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-tone-of-voice",
+    "name": "tone-of-voice",
+    "description": "name: tone-of-voice",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/tone-of-voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1219186676-weekly-brief",
+    "name": "weekly-brief",
+    "description": "name: weekly-brief",
+    "version": "1.0.0",
+    "author": "adologyai",
+    "repository": "https://github.com/adologyai/content-intelligence-plugin",
+    "manifestPath": "skills/weekly-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1219186676",
+      "marketplaceName": "content-intelligence-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

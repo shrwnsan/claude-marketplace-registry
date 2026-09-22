@@ -1,0 +1,20 @@
+[
+  {
+    "id": "958852531-biomcp",
+    "name": "biomcp",
+    "description": "Read-only biomedical search and evidence retrieval across BioMCP's CLI command grammar (genes, variants, trials, articles, drugs, diseases, pathways, proteins, and more). Wires the local BioMCP MCP server.",
+    "version": "1.0.0",
+    "author": "GenomOncology",
+    "repository": "https://github.com/genomoncology/biomcp",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "958852531",
+      "marketplaceName": "biomcp",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

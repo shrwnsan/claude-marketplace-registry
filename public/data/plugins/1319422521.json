@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1319422521-maddog",
+    "name": "maddog",
+    "description": "An advisor routes each task by the judgment it needs to executors holding only their role's authority, plus a planning-to-PR pipeline for building features.",
+    "version": "",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1319422521-advisor-mode",
+    "name": "advisor-mode",
+    "description": "name: advisor-mode",
+    "version": "1.0.0",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": "skills/advisor-mode",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319422521-efficient-md",
+    "name": "efficient-md",
+    "description": "name: efficient-md",
+    "version": "1.0.0",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": "skills/efficient-md",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319422521-mine-session",
+    "name": "mine-session",
+    "description": "name: mine-session",
+    "version": "1.0.0",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": "skills/mine-session",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319422521-plain-english",
+    "name": "plain-english",
+    "description": "name: plain-english",
+    "version": "1.0.0",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": "skills/plain-english",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319422521-product-engineering",
+    "name": "product-engineering",
+    "description": "name: product-engineering",
+    "version": "1.0.0",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": "skills/product-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319422521-section-by-section",
+    "name": "section-by-section",
+    "description": "name: section-by-section",
+    "version": "1.0.0",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": "skills/section-by-section",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319422521-author-agent",
+    "name": "author-agent",
+    "description": "name: author-agent",
+    "version": "1.0.0",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": ".claude/skills/author-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319422521-release",
+    "name": "release",
+    "description": "name: release",
+    "version": "1.0.0",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": ".claude/skills/release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319422521-review-agent",
+    "name": "review-agent",
+    "description": "name: review-agent",
+    "version": "1.0.0",
+    "author": "Harish-here",
+    "repository": "https://github.com/Harish-here/maddog",
+    "manifestPath": ".claude/skills/review-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319422521",
+      "marketplaceName": "maddog",
+      "hasSkillMd": true
+    }
+  }
+]

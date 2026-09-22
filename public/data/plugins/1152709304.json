@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1152709304-dataspoke",
+    "name": "dataspoke",
+    "description": "Skills for data engineers using a deployed DataSpoke: connect, manage ingestion (UC1), manage validation and author validation routines (UC2), with ontogen/metagen/governance stubs.",
+    "version": "",
+    "author": "selhorys",
+    "repository": "https://github.com/selhorys/dataspoke-baseline",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152709304",
+      "marketplaceName": "dataspoke-baseline",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

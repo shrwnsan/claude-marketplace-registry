@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1296570575-fluencyloop",
+    "name": "fluencyloop",
+    "description": "A per-feature loop that designs, teaches, journals decisions, and assembles PR reviews.",
+    "version": "0.3.18",
+    "author": "baokhang83",
+    "repository": "https://github.com/baokhang83/fluencyloop",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296570575",
+      "marketplaceName": "fluencyloop",
+      "skills": [
+        "./claude-skills/plan",
+        "./claude-skills/feature",
+        "./claude-skills/review",
+        "./claude-skills/backfill",
+        "./claude-skills/diagram-design"
+      ],
+      "strict": false
+    }
+  }
+]

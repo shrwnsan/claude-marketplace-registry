@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1371745775-decide",
+    "name": "decide",
+    "description": "Walk through every open decision one at a time, three options each with one recommended, so the person deciding stays fast and in control.",
+    "version": "0.1.0",
+    "author": "glisom",
+    "repository": "https://github.com/glisom/skills",
+    "manifestPath": "./plugins/decide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1371745775",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1371745775-skill-thief",
+    "name": "skill-thief",
+    "description": "Evaluate someone else's agent tooling, extract the mechanisms worth taking, and decide where each one lands in your own setup.",
+    "version": "0.1.1",
+    "author": "glisom",
+    "repository": "https://github.com/glisom/skills",
+    "manifestPath": "./plugins/skill-thief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1371745775",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1371745775-ux-deep-dive",
+    "name": "ux-deep-dive",
+    "description": "Drive every screen of a mobile or web app, capture all of it, and hand back a pre-annotated, markup-ready UX audit: a PDF, a motion page, the raw captures, the fixture used, and the build blockers hit on the way.",
+    "version": "0.1.1",
+    "author": "glisom",
+    "repository": "https://github.com/glisom/skills",
+    "manifestPath": "./plugins/ux-deep-dive",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1371745775",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1371745775-write-like-grant",
+    "name": "write-like-grant",
+    "description": "Write or rewrite a message in Grant Isom's personal voice: warm, upbeat, concise, and a little playful, with the formality dialed to match the reader.",
+    "version": "0.1.0",
+    "author": "glisom",
+    "repository": "https://github.com/glisom/skills",
+    "manifestPath": "./plugins/write-like-grant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1371745775",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

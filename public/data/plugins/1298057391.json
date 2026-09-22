@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1298057391-business-operations",
+    "name": "business-operations",
+    "description": "5 skills for SMB operations — revenue channel mapping, KPI frameworks, stakeholder briefs, bottleneck detection, and pricing strategy",
+    "version": "1.0.1",
+    "author": "web-lifter",
+    "repository": "https://github.com/web-lifter/official-business-plugins",
+    "manifestPath": "./business-operations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298057391",
+      "marketplaceName": "official-business-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298057391-data-science",
+    "name": "data-science",
+    "description": "9 data-science skills — dataset profiling & quality audit, data-dictionary generation, data-pipeline architecture, cohort analysis, anomaly-detection rule building, A/B test design, experiment readouts, forecasting model specs, and causal-impact analysis",
+    "version": "2.0.0",
+    "author": "web-lifter",
+    "repository": "https://github.com/web-lifter/official-business-plugins",
+    "manifestPath": "./data-science",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298057391",
+      "marketplaceName": "official-business-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298057391-economics",
+    "name": "economics",
+    "description": "9 skills — unit economics (CAC/LTV), market sizing (TAM/SAM/SOM), pricing architecture, cost-structure modelling, break-even scenario modelling, cost-benefit analysis, competitive-dynamics analysis, elasticity estimation, and moat-strength audit",
+    "version": "2.0.0",
+    "author": "web-lifter",
+    "repository": "https://github.com/web-lifter/official-business-plugins",
+    "manifestPath": "./economics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298057391",
+      "marketplaceName": "official-business-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298057391-marketing",
+    "name": "marketing",
+    "description": "28 marketing skills — end-to-end brand creation (identity, guidelines, audience, competitors, logo, colour, design tokens, disclaimers, copy) plus end-to-end SEO (keyword research + clustering, SERP & competitor analysis, on-page/technical/CWV audits, backlinks, content briefs, schema + entity modelling, local SEO)",
+    "version": "2.0.0",
+    "author": "web-lifter",
+    "repository": "https://github.com/web-lifter/official-business-plugins",
+    "manifestPath": "./marketing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298057391",
+      "marketplaceName": "official-business-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298057391-startups",
+    "name": "startups",
+    "description": "70 skills across the full venture-building workflow — venture chassis, customer discovery, Strategyzer value-proposition & business-model canvases, competitor analysis, relationships & channels, prototyping, MVP planning + engineering bridge, and Lean-Startup experimentation",
+    "version": "1.0.0",
+    "author": "web-lifter",
+    "repository": "https://github.com/web-lifter/official-business-plugins",
+    "manifestPath": "./startups",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298057391",
+      "marketplaceName": "official-business-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

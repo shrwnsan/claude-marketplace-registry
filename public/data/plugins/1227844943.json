@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1227844943-markifact",
+    "name": "markifact",
+    "description": "Production performance marketing automation for Claude. Audit accounts, launch campaigns, rotate creative, and diagnose underperformers across Google Ads, Meta Ads, GA4, Shopify, HubSpot, and 50+ more. Approval-gated writes.",
+    "version": "1.0.5",
+    "author": "Markifact",
+    "repository": "https://github.com/markifact/markifact-mcp",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1227844943",
+      "marketplaceName": "markifact-mcp",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1227844943-markifact-overview",
+    "name": "markifact-overview",
+    "description": "name: markifact-overview",
+    "version": "1.0.0",
+    "author": "Markifact",
+    "repository": "https://github.com/markifact/markifact-mcp",
+    "manifestPath": "skills/markifact-overview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1227844943",
+      "marketplaceName": "markifact-mcp",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1227844943-safe-write-operations",
+    "name": "safe-write-operations",
+    "description": "name: safe-write-operations",
+    "version": "1.0.0",
+    "author": "Markifact",
+    "repository": "https://github.com/markifact/markifact-mcp",
+    "manifestPath": "skills/safe-write-operations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1227844943",
+      "marketplaceName": "markifact-mcp",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1303763995-terse",
+    "name": "terse",
+    "description": "Durable, structured state for Claude Code sessions and agents — bundles the terse-mcp server and a discovery skill.",
+    "version": "",
+    "author": "terse-lang",
+    "repository": "https://github.com/terse-lang/terse",
+    "manifestPath": "./terse-integrations/claude-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1303763995",
+      "marketplaceName": "terse",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

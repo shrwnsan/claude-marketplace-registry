@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1200344086-trace-mcp",
+    "name": "trace-mcp",
+    "description": "Framework-aware code intelligence: semantic search, refactoring, change-impact, security scanning, and decision memory across 88 frameworks and 81 languages.",
+    "version": "3.31.2",
+    "author": "Nikolai Vysotskyi",
+    "repository": "https://github.com/nikolai-vysotskyi/trace-mcp",
+    "manifestPath": "./.claude-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200344086",
+      "marketplaceName": "trace-mcp",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1200344086-trace-mcp-codemod",
+    "name": "trace-mcp-codemod",
+    "description": "name: trace-mcp-codemod",
+    "version": "1.0.0",
+    "author": "Nikolai Vysotskyi",
+    "repository": "https://github.com/nikolai-vysotskyi/trace-mcp",
+    "manifestPath": "skills/trace-mcp-codemod",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200344086",
+      "marketplaceName": "trace-mcp",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200344086-trace-mcp-pre-commit",
+    "name": "trace-mcp-pre-commit",
+    "description": "name: trace-mcp-pre-commit",
+    "version": "1.0.0",
+    "author": "Nikolai Vysotskyi",
+    "repository": "https://github.com/nikolai-vysotskyi/trace-mcp",
+    "manifestPath": "skills/trace-mcp-pre-commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200344086",
+      "marketplaceName": "trace-mcp",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200344086-trace-mcp-refactoring",
+    "name": "trace-mcp-refactoring",
+    "description": "name: trace-mcp-refactoring",
+    "version": "1.0.0",
+    "author": "Nikolai Vysotskyi",
+    "repository": "https://github.com/nikolai-vysotskyi/trace-mcp",
+    "manifestPath": "skills/trace-mcp-refactoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200344086",
+      "marketplaceName": "trace-mcp",
+      "hasSkillMd": true
+    }
+  }
+]

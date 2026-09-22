@@ -1,0 +1,836 @@
+[
+  {
+    "id": "1186905400-citadel",
+    "name": "citadel",
+    "description": "Route requests, preserve run state, enforce hooks, and surface reviewable evidence in Claude Code",
+    "version": "1.4.3",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1186905400-architect",
+    "name": "architect",
+    "description": "name: architect",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-archon",
+    "name": "archon",
+    "description": "name: archon",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/archon",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-ascii-diagram",
+    "name": "ascii-diagram",
+    "description": "name: ascii-diagram",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/ascii-diagram",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-autopilot",
+    "name": "autopilot",
+    "description": "name: autopilot",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/autopilot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-cost",
+    "name": "cost",
+    "description": "name: cost",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/cost",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-create-app",
+    "name": "create-app",
+    "description": "name: create-app",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/create-app",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-create-skill",
+    "name": "create-skill",
+    "description": "name: create-skill",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/create-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-daemon",
+    "name": "daemon",
+    "description": "name: daemon",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/daemon",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-dashboard",
+    "name": "dashboard",
+    "description": "name: dashboard",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/dashboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-decision-map",
+    "name": "decision-map",
+    "description": "name: decision-map",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/decision-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-deploy-steward",
+    "name": "deploy-steward",
+    "description": "name: deploy-steward",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/deploy-steward",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-design",
+    "name": "design",
+    "description": "name: design",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-do",
+    "name": "do",
+    "description": "name: do",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/do",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-doc-gen",
+    "name": "doc-gen",
+    "description": "name: doc-gen",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/doc-gen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-evolve",
+    "name": "evolve",
+    "description": "name: evolve",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/evolve",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-experiment",
+    "name": "experiment",
+    "description": "name: experiment",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/experiment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-fleet",
+    "name": "fleet",
+    "description": "name: fleet",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/fleet",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-grill",
+    "name": "grill",
+    "description": "name: grill",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/grill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-houseclean",
+    "name": "houseclean",
+    "description": "name: houseclean",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/houseclean",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-improve",
+    "name": "improve",
+    "description": "name: improve",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/improve",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-infra-audit",
+    "name": "infra-audit",
+    "description": "name: infra-audit",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/infra-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-learn",
+    "name": "learn",
+    "description": "name: learn",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/learn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-live-preview",
+    "name": "live-preview",
+    "description": "name: live-preview",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/live-preview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-loop",
+    "name": "loop",
+    "description": "name: loop",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-map",
+    "name": "map",
+    "description": "name: map",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-marshal",
+    "name": "marshal",
+    "description": "name: marshal",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/marshal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-merge-review",
+    "name": "merge-review",
+    "description": "name: merge-review",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/merge-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-organize",
+    "name": "organize",
+    "description": "name: organize",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/organize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-postmortem",
+    "name": "postmortem",
+    "description": "name: postmortem",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/postmortem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-pr-watch",
+    "name": "pr-watch",
+    "description": "name: pr-watch",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/pr-watch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-prd",
+    "name": "prd",
+    "description": "name: prd",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/prd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-qa",
+    "name": "qa",
+    "description": "name: qa",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-refactor",
+    "name": "refactor",
+    "description": "name: refactor",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/refactor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-research",
+    "name": "research",
+    "description": "name: research",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-review",
+    "name": "review",
+    "description": "name: review",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-scaffold",
+    "name": "scaffold",
+    "description": "name: scaffold",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/scaffold",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-schedule",
+    "name": "schedule",
+    "description": "name: schedule",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/schedule",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-session-handoff",
+    "name": "session-handoff",
+    "description": "name: session-handoff",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/session-handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-systematic-debugging",
+    "name": "systematic-debugging",
+    "description": "name: systematic-debugging",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/systematic-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-telemetry",
+    "name": "telemetry",
+    "description": "name: telemetry",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/telemetry",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-test-gen",
+    "name": "test-gen",
+    "description": "name: test-gen",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/test-gen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-triage",
+    "name": "triage",
+    "description": "name: triage",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-unharness",
+    "name": "unharness",
+    "description": "name: unharness",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/unharness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-verify",
+    "name": "verify",
+    "description": "name: verify",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-watch",
+    "name": "watch",
+    "description": "name: watch",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/watch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-wiki",
+    "name": "wiki",
+    "description": "name: wiki",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/wiki",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186905400-workspace",
+    "name": "workspace",
+    "description": "name: workspace",
+    "version": "1.0.0",
+    "author": "SethGammon",
+    "repository": "https://github.com/SethGammon/Citadel",
+    "manifestPath": "skills/workspace",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186905400",
+      "marketplaceName": "Citadel",
+      "hasSkillMd": true
+    }
+  }
+]

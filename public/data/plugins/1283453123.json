@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1283453123-claude-bionify",
+    "name": "claude-bionify",
+    "description": "Bionic reading for Claude's responses that bolds the leading part of each word to guide your eyes and enable you to read faster.",
+    "version": "",
+    "author": "Samuel Ruairí Bullard",
+    "repository": "https://github.com/abullard1/claude-bionify",
+    "manifestPath": "./plugins/claude-bionify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283453123",
+      "marketplaceName": "claude-bionify",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

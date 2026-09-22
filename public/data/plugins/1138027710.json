@@ -1,0 +1,394 @@
+[
+  {
+    "id": "1138027710-rstack",
+    "name": "rstack",
+    "description": "Agent Skills for debugging, tracing, upgrading, and analyzing Rstack projects.",
+    "version": "0.1.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1138027710-migrate-to-rsbuild",
+    "name": "migrate-to-rsbuild",
+    "description": "name: migrate-to-rsbuild",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/migrate-to-rsbuild",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-migrate-to-rslib",
+    "name": "migrate-to-rslib",
+    "description": "name: migrate-to-rslib",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/migrate-to-rslib",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-migrate-to-rslint",
+    "name": "migrate-to-rslint",
+    "description": "name: migrate-to-rslint",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/migrate-to-rslint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-migrate-to-rstest",
+    "name": "migrate-to-rstest",
+    "description": "name: migrate-to-rstest",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/migrate-to-rstest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rsbuild-best-practices",
+    "name": "rsbuild-best-practices",
+    "description": "name: rsbuild-best-practices",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rsbuild-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rsbuild-v2-upgrade",
+    "name": "rsbuild-v2-upgrade",
+    "description": "name: rsbuild-v2-upgrade",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rsbuild-v2-upgrade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rsdoctor-analysis",
+    "name": "rsdoctor-analysis",
+    "description": "name: rsdoctor-analysis",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rsdoctor-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rslib-best-practices",
+    "name": "rslib-best-practices",
+    "description": "name: rslib-best-practices",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rslib-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rslib-modern-package",
+    "name": "rslib-modern-package",
+    "description": "name: rslib-modern-package",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rslib-modern-package",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspack-best-practices",
+    "name": "rspack-best-practices",
+    "description": "name: rspack-best-practices",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspack-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspack-debugging",
+    "name": "rspack-debugging",
+    "description": "name: rspack-debugging",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspack-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspack-split-chunks",
+    "name": "rspack-split-chunks",
+    "description": "name: rspack-split-chunks",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspack-split-chunks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspack-tracing",
+    "name": "rspack-tracing",
+    "description": "name: rspack-tracing",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspack-tracing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspack-v2-upgrade",
+    "name": "rspack-v2-upgrade",
+    "description": "name: rspack-v2-upgrade",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspack-v2-upgrade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspress-best-practices",
+    "name": "rspress-best-practices",
+    "description": "name: rspress-best-practices",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspress-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspress-custom-theme",
+    "name": "rspress-custom-theme",
+    "description": "name: rspress-custom-theme",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspress-custom-theme",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspress-description-generator",
+    "name": "rspress-description-generator",
+    "description": "name: rspress-description-generator",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspress-description-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspress-docs-generator",
+    "name": "rspress-docs-generator",
+    "description": "name: rspress-docs-generator",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspress-docs-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rspress-v2-upgrade",
+    "name": "rspress-v2-upgrade",
+    "description": "name: rspress-v2-upgrade",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rspress-v2-upgrade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rstest-best-practices",
+    "name": "rstest-best-practices",
+    "description": "name: rstest-best-practices",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rstest-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-rstest-debugging",
+    "name": "rstest-debugging",
+    "description": "name: rstest-debugging",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rstest-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1138027710-storybook-rsbuild",
+    "name": "storybook-rsbuild",
+    "description": "name: storybook-rsbuild",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/storybook-rsbuild",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]

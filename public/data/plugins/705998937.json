@@ -1,0 +1,20 @@
+[
+  {
+    "id": "705998937-aws-bento-deck",
+    "name": "aws-bento-deck",
+    "description": "Build AWS-branded BENTO presentations (self-contained .bento.html) from a plan file, with a three-phase PLAN -> BUILD -> QA workflow.",
+    "version": "",
+    "author": "aws-samples",
+    "repository": "https://github.com/aws-samples/sample-apj-sup-sa",
+    "manifestPath": "./ai-coding-assistants/skills/aws-bento-deck",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "705998937",
+      "marketplaceName": "sample-apj-sup-sa",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

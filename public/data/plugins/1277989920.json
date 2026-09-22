@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1277989920-dcode-agent-kit",
+    "name": "dcode-agent-kit",
+    "description": "The /new-dcode-agent skill: scaffold a Deep Agents agent or a dcode CLI agent from one command.",
+    "version": "",
+    "author": "EliaAlberti",
+    "repository": "https://github.com/EliaAlberti/dcode-agent-kit",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277989920",
+      "marketplaceName": "dcode-agent-kit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1277989920-new-dcode-agent",
+    "name": "new-dcode-agent",
+    "description": "name: new-dcode-agent",
+    "version": "1.0.0",
+    "author": "EliaAlberti",
+    "repository": "https://github.com/EliaAlberti/dcode-agent-kit",
+    "manifestPath": "skills/new-dcode-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277989920",
+      "marketplaceName": "dcode-agent-kit",
+      "hasSkillMd": true
+    }
+  }
+]

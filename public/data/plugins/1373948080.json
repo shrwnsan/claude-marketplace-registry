@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1373948080-mallette-immo",
+    "name": "mallette-immo",
+    "description": "Cinq outils pour agents immobiliers : installer son profil, creuser ses clients types et son parcours, écrire ses annonces, préparer ses réseaux sociaux et ses carrousels, trier ce qui est su de ce qui est supposé.",
+    "version": "2.5.1",
+    "author": "agencekoeki",
+    "repository": "https://github.com/agencekoeki/Claude-marketing-for-real-estate",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373948080",
+      "marketplaceName": "Claude-marketing-for-real-estate",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1373948080-immo-annonce",
+    "name": "immo-annonce",
+    "description": "name: immo-annonce",
+    "version": "1.0.0",
+    "author": "agencekoeki",
+    "repository": "https://github.com/agencekoeki/Claude-marketing-for-real-estate",
+    "manifestPath": "skills/immo-annonce",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373948080",
+      "marketplaceName": "Claude-marketing-for-real-estate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373948080-immo-init",
+    "name": "immo-init",
+    "description": "name: immo-init",
+    "version": "1.0.0",
+    "author": "agencekoeki",
+    "repository": "https://github.com/agencekoeki/Claude-marketing-for-real-estate",
+    "manifestPath": "skills/immo-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373948080",
+      "marketplaceName": "Claude-marketing-for-real-estate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373948080-immo-parcours",
+    "name": "immo-parcours",
+    "description": "name: immo-parcours",
+    "version": "1.0.0",
+    "author": "agencekoeki",
+    "repository": "https://github.com/agencekoeki/Claude-marketing-for-real-estate",
+    "manifestPath": "skills/immo-parcours",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373948080",
+      "marketplaceName": "Claude-marketing-for-real-estate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373948080-immo-penser-savoir",
+    "name": "immo-penser-savoir",
+    "description": "name: immo-penser-savoir",
+    "version": "1.0.0",
+    "author": "agencekoeki",
+    "repository": "https://github.com/agencekoeki/Claude-marketing-for-real-estate",
+    "manifestPath": "skills/immo-penser-savoir",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373948080",
+      "marketplaceName": "Claude-marketing-for-real-estate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373948080-immo-reseaux-sociaux",
+    "name": "immo-reseaux-sociaux",
+    "description": "name: immo-reseaux-sociaux",
+    "version": "1.0.0",
+    "author": "agencekoeki",
+    "repository": "https://github.com/agencekoeki/Claude-marketing-for-real-estate",
+    "manifestPath": "skills/immo-reseaux-sociaux",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373948080",
+      "marketplaceName": "Claude-marketing-for-real-estate",
+      "hasSkillMd": true
+    }
+  }
+]

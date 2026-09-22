@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1265222064-agent-bridge",
+    "name": "agent-bridge",
+    "description": "Join a per-project group chat shared by Claude Code instances (group channels + DMs) and watch for messages from other Claude instances.",
+    "version": "1.1.1",
+    "author": "Manuel Sanchez",
+    "repository": "https://github.com/msanchezdev/agent-bridge",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265222064",
+      "marketplaceName": "agent-bridge",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1265222064-bridge",
+    "name": "bridge",
+    "description": "name: bridge",
+    "version": "1.0.0",
+    "author": "Manuel Sanchez",
+    "repository": "https://github.com/msanchezdev/agent-bridge",
+    "manifestPath": "skills/bridge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265222064",
+      "marketplaceName": "agent-bridge",
+      "hasSkillMd": true
+    }
+  }
+]

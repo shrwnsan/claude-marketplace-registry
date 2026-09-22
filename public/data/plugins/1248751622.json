@@ -1,0 +1,291 @@
+[
+  {
+    "id": "1248751622-aer-skills",
+    "name": "aer-skills",
+    "description": "Fifteen-skill bundle covering the AER manuscript lifecycle: topic selection, literature positioning with citation verification, identification, experimental pre-registration with power/MDE sizing, robustness, body-section drafting, introduction, tables/figures, manuscript consistency audit, adversarial referee simulation, replication, submission, rebuttal, and the workflow router, plus the optional StatsPAI implementation engine. Ships with Stata, R, and Python templates plus replication-package skeleton and classic-paper exemplars.",
+    "version": "1.5.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "skills": [
+        "skills/aer-workflow",
+        "skills/aer-topic-selection",
+        "skills/aer-literature",
+        "skills/aer-identification",
+        "skills/aer-preregistration",
+        "skills/aer-robustness",
+        "skills/aer-paper-body",
+        "skills/aer-introduction",
+        "skills/aer-tables-figures",
+        "skills/aer-consistency",
+        "skills/aer-referee-sim",
+        "skills/aer-replication",
+        "skills/aer-submission",
+        "skills/aer-rebuttal",
+        "skills/aer-statspai"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1248751622-aer-consistency",
+    "name": "aer-consistency",
+    "description": "name: aer-consistency",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-consistency",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-identification",
+    "name": "aer-identification",
+    "description": "name: aer-identification",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-identification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-introduction",
+    "name": "aer-introduction",
+    "description": "name: aer-introduction",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-introduction",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-literature",
+    "name": "aer-literature",
+    "description": "name: aer-literature",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-literature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-paper-body",
+    "name": "aer-paper-body",
+    "description": "name: aer-paper-body",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-paper-body",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-preregistration",
+    "name": "aer-preregistration",
+    "description": "name: aer-preregistration",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-preregistration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-rebuttal",
+    "name": "aer-rebuttal",
+    "description": "name: aer-rebuttal",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-rebuttal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-referee-sim",
+    "name": "aer-referee-sim",
+    "description": "name: aer-referee-sim",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-referee-sim",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-replication",
+    "name": "aer-replication",
+    "description": "name: aer-replication",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-replication",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-robustness",
+    "name": "aer-robustness",
+    "description": "name: aer-robustness",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-robustness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-statspai",
+    "name": "aer-statspai",
+    "description": "name: aer-statspai",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-statspai",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-submission",
+    "name": "aer-submission",
+    "description": "name: aer-submission",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-submission",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-tables-figures",
+    "name": "aer-tables-figures",
+    "description": "name: aer-tables-figures",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-tables-figures",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-topic-selection",
+    "name": "aer-topic-selection",
+    "description": "name: aer-topic-selection",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-topic-selection",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248751622-aer-workflow",
+    "name": "aer-workflow",
+    "description": "name: aer-workflow",
+    "version": "1.0.0",
+    "author": "Bryce Wang",
+    "repository": "https://github.com/brycewang-stanford/AER-Skills",
+    "manifestPath": "skills/aer-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248751622",
+      "marketplaceName": "AER-Skills",
+      "hasSkillMd": true
+    }
+  }
+]

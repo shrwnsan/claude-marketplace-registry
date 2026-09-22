@@ -1,0 +1,870 @@
+[
+  {
+    "id": "1109103275-claude-craft",
+    "name": "claude-craft",
+    "description": "Multi-stack framework: 31 specialized agents (+39 infra on-demand), 125 commands across 15 namespaces, BMAD v6 sprint workflow, browser QA automation, and token optimization (RTK). 5 languages.",
+    "version": "8.22.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1109103275-aggregates",
+    "name": "aggregates",
+    "description": "name: aggregates",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/aggregates",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-api-gateway",
+    "name": "api-gateway",
+    "description": "name: api-gateway",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/api-gateway",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-architect",
+    "name": "architect",
+    "description": "name: architect",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-architecture-clean-ddd",
+    "name": "architecture-clean-ddd",
+    "description": "name: architecture-clean-ddd",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/architecture-clean-ddd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-architecture",
+    "name": "architecture",
+    "description": "name: architecture",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-async",
+    "name": "async",
+    "description": "name: async",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/async",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-atomic-tasks",
+    "name": "atomic-tasks",
+    "description": "name: atomic-tasks",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/atomic-tasks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-coding-standards",
+    "name": "coding-standards",
+    "description": "name: coding-standards",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/coding-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-cqrs",
+    "name": "cqrs",
+    "description": "name: cqrs",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/cqrs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-ddd-patterns",
+    "name": "ddd-patterns",
+    "description": "name: ddd-patterns",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/ddd-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-debug-methodical",
+    "name": "debug-methodical",
+    "description": "name: debug-methodical",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/debug-methodical",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-design-md-convention",
+    "name": "design-md-convention",
+    "description": "name: design-md-convention",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/design-md-convention",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-docker-hadolint",
+    "name": "docker-hadolint",
+    "description": "name: docker-hadolint",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/docker-hadolint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-doctrine-extensions",
+    "name": "doctrine-extensions",
+    "description": "name: doctrine-extensions",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/doctrine-extensions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-documentation",
+    "name": "documentation",
+    "description": "name: documentation",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/documentation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-domain-events",
+    "name": "domain-events",
+    "description": "name: domain-events",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/domain-events",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-dynamic-workflows",
+    "name": "dynamic-workflows",
+    "description": "name: dynamic-workflows",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/dynamic-workflows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-ecosystem-tools",
+    "name": "ecosystem-tools",
+    "description": "name: ecosystem-tools",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/ecosystem-tools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-edge-computing",
+    "name": "edge-computing",
+    "description": "name: edge-computing",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/edge-computing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-event-driven",
+    "name": "event-driven",
+    "description": "name: event-driven",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/event-driven",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-git-workflow",
+    "name": "git-workflow",
+    "description": "name: git-workflow",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/git-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-graphql",
+    "name": "graphql",
+    "description": "name: graphql",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/graphql",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-i18n",
+    "name": "i18n",
+    "description": "name: i18n",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/i18n",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-kiss-dry-yagni",
+    "name": "kiss-dry-yagni",
+    "description": "name: kiss-dry-yagni",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/kiss-dry-yagni",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-monorepo",
+    "name": "monorepo",
+    "description": "name: monorepo",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/monorepo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-multitenant",
+    "name": "multitenant",
+    "description": "name: multitenant",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/multitenant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-navigation",
+    "name": "navigation",
+    "description": "name: navigation",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/navigation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-observability",
+    "name": "observability",
+    "description": "name: observability",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/observability",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-parallel-worktrees",
+    "name": "parallel-worktrees",
+    "description": "name: parallel-worktrees",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/parallel-worktrees",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-performance",
+    "name": "performance",
+    "description": "name: performance",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-quality-tools",
+    "name": "quality-tools",
+    "description": "name: quality-tools",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/quality-tools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-remotion",
+    "name": "remotion",
+    "description": "name: remotion",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/remotion",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-security-flutter",
+    "name": "security-flutter",
+    "description": "name: security-flutter",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/security-flutter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-security-react",
+    "name": "security-react",
+    "description": "name: security-react",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/security-react",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-security-reactnative",
+    "name": "security-reactnative",
+    "description": "name: security-reactnative",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/security-reactnative",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-security-symfony",
+    "name": "security-symfony",
+    "description": "name: security-symfony",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/security-symfony",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-security",
+    "name": "security",
+    "description": "name: security",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-socratic-brainstorm",
+    "name": "socratic-brainstorm",
+    "description": "name: socratic-brainstorm",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/socratic-brainstorm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-solid-principles",
+    "name": "solid-principles",
+    "description": "name: solid-principles",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/solid-principles",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-state-management",
+    "name": "state-management",
+    "description": "name: state-management",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/state-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-testing-flutter",
+    "name": "testing-flutter",
+    "description": "name: testing-flutter",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/testing-flutter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-testing-python",
+    "name": "testing-python",
+    "description": "name: testing-python",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/testing-python",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-testing-react",
+    "name": "testing-react",
+    "description": "name: testing-react",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/testing-react",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-testing-reactnative",
+    "name": "testing-reactnative",
+    "description": "name: testing-reactnative",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/testing-reactnative",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-testing-symfony",
+    "name": "testing-symfony",
+    "description": "name: testing-symfony",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/testing-symfony",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-testing",
+    "name": "testing",
+    "description": "name: testing",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-tooling",
+    "name": "tooling",
+    "description": "name: tooling",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/tooling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-value-objects",
+    "name": "value-objects",
+    "description": "name: value-objects",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/value-objects",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-wasm",
+    "name": "wasm",
+    "description": "name: wasm",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/wasm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1109103275-workflow-analysis",
+    "name": "workflow-analysis",
+    "description": "name: workflow-analysis",
+    "version": "1.0.0",
+    "author": "TheBeardedBearSAS",
+    "repository": "https://github.com/TheBeardedBearSAS/claude-craft",
+    "manifestPath": ".claude/skills/workflow-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109103275",
+      "marketplaceName": "claude-craft",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "id": "1248496316-llm-orchestrator",
+    "name": "llm-orchestrator",
+    "description": "Agent orchestration toolkit. 19 skills, 15 commands, 7 native subagents, file-based memory, native Claude Code hooks, and an opt-in review cadence with a lock over the rules that state it.",
+    "version": "0.9.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1248496316-brainstorming",
+    "name": "brainstorming",
+    "description": "name: brainstorming",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/brainstorming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-cadence",
+    "name": "cadence",
+    "description": "name: cadence",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/cadence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-dispatching-parallel-agents",
+    "name": "dispatching-parallel-agents",
+    "description": "name: dispatching-parallel-agents",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/dispatching-parallel-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-dispatching-subagents",
+    "name": "dispatching-subagents",
+    "description": "name: dispatching-subagents",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/dispatching-subagents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-executing-plans",
+    "name": "executing-plans",
+    "description": "name: executing-plans",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/executing-plans",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-finishing-a-branch",
+    "name": "finishing-a-branch",
+    "description": "name: finishing-a-branch",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/finishing-a-branch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-handing-off-to-fresh-context",
+    "name": "handing-off-to-fresh-context",
+    "description": "name: handing-off-to-fresh-context",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/handing-off-to-fresh-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-managing-memory",
+    "name": "managing-memory",
+    "description": "name: managing-memory",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/managing-memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-receiving-code-review",
+    "name": "receiving-code-review",
+    "description": "name: receiving-code-review",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/receiving-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-requesting-code-review",
+    "name": "requesting-code-review",
+    "description": "name: requesting-code-review",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/requesting-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-research-classifier",
+    "name": "research-classifier",
+    "description": "name: research-classifier",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/research-classifier",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-systematic-debugging",
+    "name": "systematic-debugging",
+    "description": "name: systematic-debugging",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/systematic-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-test-driven-development",
+    "name": "test-driven-development",
+    "description": "name: test-driven-development",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/test-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-using-git-worktrees",
+    "name": "using-git-worktrees",
+    "description": "name: using-git-worktrees",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/using-git-worktrees",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-using-orchestrator",
+    "name": "using-orchestrator",
+    "description": "name: using-orchestrator",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/using-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-using-workflows",
+    "name": "using-workflows",
+    "description": "name: using-workflows",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/using-workflows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-verification-before-completion",
+    "name": "verification-before-completion",
+    "description": "name: verification-before-completion",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/verification-before-completion",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-writing-plans",
+    "name": "writing-plans",
+    "description": "name: writing-plans",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/writing-plans",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248496316-writing-skills",
+    "name": "writing-skills",
+    "description": "name: writing-skills",
+    "version": "1.0.0",
+    "author": "felipemelendez",
+    "repository": "https://github.com/felipemelendez/llm-orchestrator",
+    "manifestPath": "skills/writing-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248496316",
+      "marketplaceName": "llm-orchestrator",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1275673790-attest",
+    "name": "attest",
+    "description": "Verifies a subagent's Status: DONE against the real git delta and blocks DONEs whose files never landed. Zero-LLM, fail-open, off by default.",
+    "version": "",
+    "author": "ek33450505",
+    "repository": "https://github.com/ek33450505/attest",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1275673790",
+      "marketplaceName": "attest",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

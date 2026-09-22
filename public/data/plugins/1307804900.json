@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1307804900-morph",
+    "name": "morph",
+    "description": "Turn product flows into clear, audience-ready stories.",
+    "version": "0.1.0",
+    "author": "ychampion",
+    "repository": "https://github.com/ychampion/morph-public",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1307804900",
+      "marketplaceName": "morph-public",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1307804900-morph-install",
+    "name": "morph-install",
+    "description": "name: morph-install",
+    "version": "1.0.0",
+    "author": "ychampion",
+    "repository": "https://github.com/ychampion/morph-public",
+    "manifestPath": "skills/morph-install",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1307804900",
+      "marketplaceName": "morph-public",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1163064509-enhance",
+    "name": "enhance",
+    "description": "Master enhancement orchestrator: parallel analyzer execution for plugins, agents, docs, CLAUDE.md, and prompts with unified reporting",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1163064509-enhance-agent-prompts",
+    "name": "enhance-agent-prompts",
+    "description": "name: enhance-agent-prompts",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": "skills/enhance-agent-prompts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163064509-enhance-claude-memory",
+    "name": "enhance-claude-memory",
+    "description": "name: enhance-claude-memory",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": "skills/enhance-claude-memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163064509-enhance-cross-file",
+    "name": "enhance-cross-file",
+    "description": "name: enhance-cross-file",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": "skills/enhance-cross-file",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163064509-enhance-docs",
+    "name": "enhance-docs",
+    "description": "name: enhance-docs",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": "skills/enhance-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163064509-enhance-hooks",
+    "name": "enhance-hooks",
+    "description": "name: enhance-hooks",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": "skills/enhance-hooks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163064509-enhance-orchestrator",
+    "name": "enhance-orchestrator",
+    "description": "name: enhance-orchestrator",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": "skills/enhance-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163064509-enhance-plugins",
+    "name": "enhance-plugins",
+    "description": "name: enhance-plugins",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": "skills/enhance-plugins",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163064509-enhance-prompts",
+    "name": "enhance-prompts",
+    "description": "name: enhance-prompts",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": "skills/enhance-prompts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163064509-enhance-skills",
+    "name": "enhance-skills",
+    "description": "name: enhance-skills",
+    "version": "1.0.0",
+    "author": "agent-sh",
+    "repository": "https://github.com/agent-sh/enhance",
+    "manifestPath": "skills/enhance-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163064509",
+      "marketplaceName": "enhance",
+      "hasSkillMd": true
+    }
+  }
+]

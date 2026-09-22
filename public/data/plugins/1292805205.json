@@ -1,0 +1,428 @@
+[
+  {
+    "id": "1292805205-mastermind",
+    "name": "mastermind",
+    "description": "A markdown brain that gives your AI coding tools judgment and rigor. Skills: init, build, debug, performance, qa, interview, learn, signature, persona, route, lint, clarify, deepen, double-check, deprecate, roadmap, prototype, explain, prompt, quarantine, report, handoff, levelup, help + agents: architect, code-reviewer, refactorer, tech-scout. Experimental (v0.32.1).",
+    "version": "0.32.1",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1292805205-build",
+    "name": "build",
+    "description": "name: build",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-clarify",
+    "name": "clarify",
+    "description": "name: clarify",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/clarify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-debug",
+    "name": "debug",
+    "description": "name: debug",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-deepen",
+    "name": "deepen",
+    "description": "name: deepen",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/deepen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-deprecate",
+    "name": "deprecate",
+    "description": "name: deprecate",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/deprecate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-double-check",
+    "name": "double-check",
+    "description": "name: double-check",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/double-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-explain",
+    "name": "explain",
+    "description": "name: explain",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/explain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-handoff",
+    "name": "handoff",
+    "description": "name: handoff",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-help",
+    "name": "help",
+    "description": "name: help",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/help",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-init",
+    "name": "init",
+    "description": "name: init",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-interview",
+    "name": "interview",
+    "description": "name: interview",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/interview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-learn",
+    "name": "learn",
+    "description": "name: learn",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/learn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-levelup",
+    "name": "levelup",
+    "description": "name: levelup",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/levelup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-lint",
+    "name": "lint",
+    "description": "name: lint",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/lint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-performance",
+    "name": "performance",
+    "description": "name: performance",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-persona",
+    "name": "persona",
+    "description": "name: persona",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/persona",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-prompt",
+    "name": "prompt",
+    "description": "name: prompt",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/prompt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-prototype",
+    "name": "prototype",
+    "description": "name: prototype",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/prototype",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-qa",
+    "name": "qa",
+    "description": "name: qa",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-quarantine",
+    "name": "quarantine",
+    "description": "name: quarantine",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/quarantine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-report",
+    "name": "report",
+    "description": "name: report",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-roadmap",
+    "name": "roadmap",
+    "description": "name: roadmap",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/roadmap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-route",
+    "name": "route",
+    "description": "name: route",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/route",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1292805205-signature",
+    "name": "signature",
+    "description": "name: signature",
+    "version": "1.0.0",
+    "author": "mehrad-dm",
+    "repository": "https://github.com/mehrad-dm/mastermind",
+    "manifestPath": "skills/signature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1292805205",
+      "marketplaceName": "mastermind",
+      "hasSkillMd": true
+    }
+  }
+]

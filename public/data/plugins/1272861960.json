@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1272861960-meta-doctor",
+    "name": "meta-doctor",
+    "description": "Scaffold a scheduled 'doctor' agent that audits app health, opens PRs for code-fixable findings, and files deduped tickets for the rest",
+    "version": "1.0.0",
+    "author": "Pushnami",
+    "repository": "https://github.com/michellemayes/meta-doctor",
+    "manifestPath": "./plugins/meta-doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1272861960",
+      "marketplaceName": "meta-doctor",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

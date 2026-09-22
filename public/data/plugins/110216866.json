@@ -1,0 +1,38 @@
+[
+  {
+    "id": "110216866-daily-dev",
+    "name": "daily.dev",
+    "description": "Overcome LLM knowledge cutoffs with real-time developer content. daily.dev aggregates articles from thousands of sources, validated by community engagement, with structured taxonomy for precise discovery.",
+    "version": "0.5.0",
+    "author": "daily.dev",
+    "repository": "https://github.com/dailydotdev/daily",
+    "manifestPath": "./.claude-plugin/plugins/daily.dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "110216866",
+      "marketplaceName": "daily",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "110216866-daily-dev-ask",
+    "name": "daily-dev-ask",
+    "description": "Answer technical questions using daily.dev's knowledge base. Searches articles from the developer community and synthesizes answers with source links.",
+    "version": "0.5.0",
+    "author": "daily.dev",
+    "repository": "https://github.com/dailydotdev/daily",
+    "manifestPath": "./.claude-plugin/plugins/daily.dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "110216866",
+      "marketplaceName": "daily",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

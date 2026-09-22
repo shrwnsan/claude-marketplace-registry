@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1272111001-claude-brain-hand",
+    "name": "claude-brain-hand",
+    "description": "Fenced Brain/Hand coding loop with read-only planner, sandboxed executor, and destructive-command guard hooks.",
+    "version": "",
+    "author": "sunfmin",
+    "repository": "https://github.com/sunfmin/claude-brain-hand",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1272111001",
+      "marketplaceName": "claude-brain-hand",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

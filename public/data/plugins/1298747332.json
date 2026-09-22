@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1298747332-claude-code-recap",
+    "name": "claude-code-recap",
+    "description": "Lists recent Claude Code sessions across every project with summaries, git branch, model, turn count, and a ready-to-paste resume command, and can re-open a whole working set in terminal tabs.",
+    "version": "",
+    "author": "noluyorAbi",
+    "repository": "https://github.com/noluyorAbi/claude-code-recap",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298747332",
+      "marketplaceName": "claude-code-recap",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298747332-recap",
+    "name": "recap",
+    "description": "name: recap",
+    "version": "1.0.0",
+    "author": "noluyorAbi",
+    "repository": "https://github.com/noluyorAbi/claude-code-recap",
+    "manifestPath": "skills/recap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298747332",
+      "marketplaceName": "claude-code-recap",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1277549098-microcms",
+    "name": "microcms",
+    "description": "",
+    "version": "",
+    "author": "microcmsio",
+    "repository": "https://github.com/microcmsio/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277549098",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1277549098-microcms-docs",
+    "name": "microcms-docs",
+    "description": "name: microcms-docs",
+    "version": "1.0.0",
+    "author": "microcmsio",
+    "repository": "https://github.com/microcmsio/skills",
+    "manifestPath": "skills/microcms-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277549098",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1277549098-microcms-guide",
+    "name": "microcms-guide",
+    "description": "name: microcms-guide",
+    "version": "1.0.0",
+    "author": "microcmsio",
+    "repository": "https://github.com/microcmsio/skills",
+    "manifestPath": "skills/microcms-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277549098",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1277549098-microcms-nextjs",
+    "name": "microcms-nextjs",
+    "description": "name: microcms-nextjs",
+    "version": "1.0.0",
+    "author": "microcmsio",
+    "repository": "https://github.com/microcmsio/skills",
+    "manifestPath": "skills/microcms-nextjs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277549098",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

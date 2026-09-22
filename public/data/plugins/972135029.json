@@ -1,0 +1,58 @@
+[
+  {
+    "id": "972135029-hibayes-skills",
+    "name": "hibayes-skills",
+    "description": "Skills for analysing AI-evaluation data with HiBayES: installing and running the five-stage pipeline (load, process, model, check, communicate), the YAML config and component registries, and the Bayesian workflow — estimand, pooling choice, priors, diagnostics, model comparison, reporting — with a plain-language concepts reference for explaining results.",
+    "version": "",
+    "author": "UK AI Security Institute",
+    "repository": "https://github.com/UKGovernmentBEIS/hibayes",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/UKGovernmentBEIS/hibayes.git",
+      "path": ".claude"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "972135029",
+      "marketplaceName": "hibayes",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "972135029-hibayes-statistical-workflow",
+    "name": "hibayes-statistical-workflow",
+    "description": "name: hibayes-statistical-workflow",
+    "version": "1.0.0",
+    "author": "UK AI Security Institute",
+    "repository": "https://github.com/UKGovernmentBEIS/hibayes",
+    "manifestPath": ".claude/skills/hibayes-statistical-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "972135029",
+      "marketplaceName": "hibayes",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "972135029-running-hibayes",
+    "name": "running-hibayes",
+    "description": "name: running-hibayes",
+    "version": "1.0.0",
+    "author": "UK AI Security Institute",
+    "repository": "https://github.com/UKGovernmentBEIS/hibayes",
+    "manifestPath": ".claude/skills/running-hibayes",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "972135029",
+      "marketplaceName": "hibayes",
+      "hasSkillMd": true
+    }
+  }
+]

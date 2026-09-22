@@ -1,0 +1,87 @@
+[
+  {
+    "id": "1239825801-iam-deceptive-escalation-auditor",
+    "name": "iam-deceptive-escalation-auditor",
+    "description": "name: iam-deceptive-escalation-auditor",
+    "version": "1.0.0",
+    "author": "anyshift-io",
+    "repository": "https://github.com/anyshift-io/sre-skills",
+    "manifestPath": "skills/iam-deceptive-escalation-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1239825801",
+      "marketplaceName": "sre-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1239825801-kubectl-investigator",
+    "name": "kubectl-investigator",
+    "description": "name: kubectl-investigator",
+    "version": "1.0.0",
+    "author": "anyshift-io",
+    "repository": "https://github.com/anyshift-io/sre-skills",
+    "manifestPath": "skills/kubectl-investigator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1239825801",
+      "marketplaceName": "sre-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1239825801-s3-estate-calibration-auditor",
+    "name": "s3-estate-calibration-auditor",
+    "description": "name: s3-estate-calibration-auditor",
+    "version": "1.0.0",
+    "author": "anyshift-io",
+    "repository": "https://github.com/anyshift-io/sre-skills",
+    "manifestPath": "skills/s3-estate-calibration-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1239825801",
+      "marketplaceName": "sre-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1239825801-sg-deceptive-reachability-auditor",
+    "name": "sg-deceptive-reachability-auditor",
+    "description": "name: sg-deceptive-reachability-auditor",
+    "version": "1.0.0",
+    "author": "anyshift-io",
+    "repository": "https://github.com/anyshift-io/sre-skills",
+    "manifestPath": "skills/sg-deceptive-reachability-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1239825801",
+      "marketplaceName": "sre-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1239825801-sqs-queue-auditor",
+    "name": "sqs-queue-auditor",
+    "description": "name: sqs-queue-auditor",
+    "version": "1.0.0",
+    "author": "anyshift-io",
+    "repository": "https://github.com/anyshift-io/sre-skills",
+    "manifestPath": "skills/sqs-queue-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1239825801",
+      "marketplaceName": "sre-skills",
+      "hasSkillMd": true
+    }
+  }
+]

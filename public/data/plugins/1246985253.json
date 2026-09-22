@@ -1,0 +1,164 @@
+[
+  {
+    "id": "1246985253-review",
+    "name": "review",
+    "description": "Critical review — /review:scrutinise for deep forensic review of recent work, /review:plan-review for multi-agent grounded review of a plan file, /review:plan-verify to confirm a plan was fully and correctly implemented.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1246985253-session",
+    "name": "session",
+    "description": "Session bookends — resume the previous session, and capture end-of-session state so the next resumes cleanly.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./session",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1246985253-repo",
+    "name": "repo",
+    "description": "Repository lifecycle — fully deprecate and archive a repository.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./repo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1246985253-release",
+    "name": "release",
+    "description": "Releases — run the full changelog, git tag, and GitHub release workflow.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1246985253-requirements",
+    "name": "requirements",
+    "description": "Requirements gathering — exhaustively interrogate a project's requirements before any code is written.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./requirements",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1246985253-db",
+    "name": "db",
+    "description": "Database tooling — read-only audit of Eloquent and query-builder usage, flagging performance and memory wins.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./db",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1246985253-dead-code",
+    "name": "dead-code",
+    "description": "Codebase hygiene — find and safely remove dead code and unused dependencies, only after explicit approval.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./dead-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1246985253-worktree",
+    "name": "worktree",
+    "description": "Parallel workspaces — create isolated git worktrees (plain repositories and submodules) so multiple agents can work on different plans simultaneously without file collisions, and clean up a session's own redundant worktrees and branches afterwards.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./worktree",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1246985253-explain",
+    "name": "explain",
+    "description": "Plain-language explanations — turn the previous outcome or a named subject into an explanation a non-technical reader can follow: what changed, what it fixes, and what they will notice. Read-only.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./explain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

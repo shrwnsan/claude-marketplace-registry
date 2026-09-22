@@ -1,0 +1,88 @@
+[
+  {
+    "id": "1242848334-sipcode",
+    "name": "sipcode",
+    "description": "Token-economy observatory for Claude Code: forensic per-session audit, A/B savings verifier, reproducible benchmark, and cost prediction — directly in Claude chat. Auto-installs via npx on first use.",
+    "version": "",
+    "author": "Anuj Ojha",
+    "repository": "https://github.com/Anuj7411/sipcode",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242848334",
+      "marketplaceName": "sipcode",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1242848334-benchmark",
+    "name": "benchmark",
+    "description": "description: Run the published 20-task Sipcode benchmark on the user's machine and report measured median savings (target 62.6%). Reproducible, locked corpus. Use when the user asks \"what's the proof?",
+    "version": "1.0.0",
+    "author": "Anuj Ojha",
+    "repository": "https://github.com/Anuj7411/sipcode",
+    "manifestPath": "skills/benchmark",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242848334",
+      "marketplaceName": "sipcode",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242848334-estimate",
+    "name": "estimate",
+    "description": "description: Predict the dollar cost of a coding task across Opus 4.7, Sonnet 4.6, and Haiku 4.5 BEFORE the user runs it. Pure heuristic + historical-anchor math, zero LLM calls. Use when the user ask",
+    "version": "1.0.0",
+    "author": "Anuj Ojha",
+    "repository": "https://github.com/Anuj7411/sipcode",
+    "manifestPath": "skills/estimate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242848334",
+      "marketplaceName": "sipcode",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242848334-impact",
+    "name": "impact",
+    "description": "description: A/B compare the user's actual token spend before and after they installed Sipcode's optimizers — on their own session data. The honesty-first savings verifier. Use when the user asks \"is ",
+    "version": "1.0.0",
+    "author": "Anuj Ojha",
+    "repository": "https://github.com/Anuj7411/sipcode",
+    "manifestPath": "skills/impact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242848334",
+      "marketplaceName": "sipcode",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242848334-why",
+    "name": "why",
+    "description": "description: Forensic audit of the user's most recent Claude Code session. Returns total spend, output ratio, duplicate file reads, idle context after auto-compact, top expensive tool calls, and an es",
+    "version": "1.0.0",
+    "author": "Anuj Ojha",
+    "repository": "https://github.com/Anuj7411/sipcode",
+    "manifestPath": "skills/why",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242848334",
+      "marketplaceName": "sipcode",
+      "hasSkillMd": true
+    }
+  }
+]

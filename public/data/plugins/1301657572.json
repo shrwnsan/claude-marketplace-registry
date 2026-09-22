@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1301657572-treg",
+    "name": "treg",
+    "description": "",
+    "version": "",
+    "author": "superdesigndev",
+    "repository": "https://github.com/superdesigndev/treg",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1301657572",
+      "marketplaceName": "treg",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1301657572-vendor-listing",
+    "name": "vendor-listing",
+    "description": "name: vendor-listing",
+    "version": "1.0.0",
+    "author": "superdesigndev",
+    "repository": "https://github.com/superdesigndev/treg",
+    "manifestPath": ".claude/skills/vendor-listing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1301657572",
+      "marketplaceName": "treg",
+      "hasSkillMd": true
+    }
+  }
+]

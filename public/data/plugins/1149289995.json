@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1149289995-madeinoz-osint",
+    "name": "madeinoz-osint",
+    "description": "OSINT skill: person investigation, domain recon, company research, pivot-driven investigations",
+    "version": "",
+    "author": "madeinoz67",
+    "repository": "https://github.com/madeinoz67/madeinoz-osint-skill",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149289995",
+      "marketplaceName": "madeinoz-osint-skill",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1149289995-osint",
+    "name": "osint",
+    "description": "name: osint",
+    "version": "1.0.0",
+    "author": "madeinoz67",
+    "repository": "https://github.com/madeinoz67/madeinoz-osint-skill",
+    "manifestPath": "skills/osint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149289995",
+      "marketplaceName": "madeinoz-osint-skill",
+      "hasSkillMd": true
+    }
+  }
+]

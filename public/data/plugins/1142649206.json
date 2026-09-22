@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1142649206-claude-recall",
+    "name": "claude-recall",
+    "description": "Persistent memory system for Claude Code - context compression across sessions",
+    "version": "9.0.9",
+    "author": "nhevers",
+    "repository": "https://github.com/nhevers/MoltBrain",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1142649206",
+      "marketplaceName": "MoltBrain",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

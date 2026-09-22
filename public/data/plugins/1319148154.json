@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1319148154-kukuroo",
+    "name": "kukuroo",
+    "description": "Notify the user on their own phone, through their own Kukuroo Worker",
+    "version": "",
+    "author": "saiday",
+    "repository": "https://github.com/saiday/kukuroo",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319148154",
+      "marketplaceName": "kukuroo",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1319148154-kukuroo-notify",
+    "name": "kukuroo-notify",
+    "description": "name: kukuroo-notify",
+    "version": "1.0.0",
+    "author": "saiday",
+    "repository": "https://github.com/saiday/kukuroo",
+    "manifestPath": "skills/kukuroo-notify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319148154",
+      "marketplaceName": "kukuroo",
+      "hasSkillMd": true
+    }
+  }
+]

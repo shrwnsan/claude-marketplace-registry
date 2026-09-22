@@ -1,0 +1,309 @@
+[
+  {
+    "id": "1146875291-openrouter",
+    "name": "openrouter",
+    "description": "Skills for the OpenRouter platform",
+    "version": "",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1146875291-create-agent-tui",
+    "name": "create-agent-tui",
+    "description": "name: create-agent-tui",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/create-agent-tui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-create-headless-agent",
+    "name": "create-headless-agent",
+    "description": "name: create-headless-agent",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/create-headless-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-install-ori-harness",
+    "name": "install-ori-harness",
+    "description": "name: install-ori-harness",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/install-ori-harness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-agent-migration",
+    "name": "openrouter-agent-migration",
+    "description": "name: openrouter-agent-migration",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-agent-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-analytics-query",
+    "name": "openrouter-analytics-query",
+    "description": "name: openrouter-analytics-query",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-analytics-query",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-analytics-schema",
+    "name": "openrouter-analytics-schema",
+    "description": "name: openrouter-analytics-schema",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-analytics-schema",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-analytics",
+    "name": "openrouter-analytics",
+    "description": "name: openrouter-analytics",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-analytics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-benchmarks",
+    "name": "openrouter-benchmarks",
+    "description": "name: openrouter-benchmarks",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-benchmarks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-generations",
+    "name": "openrouter-generations",
+    "description": "name: openrouter-generations",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-generations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-images",
+    "name": "openrouter-images",
+    "description": "name: openrouter-images",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-images",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-models",
+    "name": "openrouter-models",
+    "description": "name: openrouter-models",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-models",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-oauth",
+    "name": "openrouter-oauth",
+    "description": "name: openrouter-oauth",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-oauth",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-stt",
+    "name": "openrouter-stt",
+    "description": "name: openrouter-stt",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-stt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-tts",
+    "name": "openrouter-tts",
+    "description": "name: openrouter-tts",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-tts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-typescript-sdk",
+    "name": "openrouter-typescript-sdk",
+    "description": "name: openrouter-typescript-sdk",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-typescript-sdk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-openrouter-video",
+    "name": "openrouter-video",
+    "description": "name: openrouter-video",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-video",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146875291-spawn-ori-eval",
+    "name": "spawn-ori-eval",
+    "description": "name: spawn-ori-eval",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/spawn-ori-eval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

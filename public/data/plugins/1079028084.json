@@ -1,0 +1,309 @@
+[
+  {
+    "id": "1079028084-finance-guru",
+    "name": "finance-guru",
+    "description": "Private, self-hosted family-office workflows for research, quantitative analysis, portfolio strategy, and financial operations.",
+    "version": "2.3.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1079028084-financereport",
+    "name": "FinanceReport",
+    "description": "name: finance-report",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/FinanceReport",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-montecarlo",
+    "name": "MonteCarlo",
+    "description": "name: monte-carlo",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/MonteCarlo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-portfoliosyncing",
+    "name": "PortfolioSyncing",
+    "description": "name: portfolio-syncing",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/PortfolioSyncing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-transactionsyncing",
+    "name": "TransactionSyncing",
+    "description": "name: transaction-syncing",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/TransactionSyncing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-compliance-scan",
+    "name": "compliance-scan",
+    "description": "name: compliance-scan",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/compliance-scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-dividend-tracking",
+    "name": "dividend-tracking",
+    "description": "name: dividend-tracking",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/dividend-tracking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-fin-core",
+    "name": "fin-core",
+    "description": "name: fin-core",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/fin-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-fin-guru-checklist",
+    "name": "fin-guru-checklist",
+    "description": "name: fin-guru-checklist",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/fin-guru-checklist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-fin-guru-compliance-review",
+    "name": "fin-guru-compliance-review",
+    "description": "name: fin-guru-compliance-review",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/fin-guru-compliance-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-fin-guru-create-doc",
+    "name": "fin-guru-create-doc",
+    "description": "name: fin-guru-create-doc",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/fin-guru-create-doc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-fin-guru-learner-profile",
+    "name": "fin-guru-learner-profile",
+    "description": "name: fin-guru-learner-profile",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/fin-guru-learner-profile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-fin-guru-quant-analysis",
+    "name": "fin-guru-quant-analysis",
+    "description": "name: fin-guru-quant-analysis",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/fin-guru-quant-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-fin-guru-research",
+    "name": "fin-guru-research",
+    "description": "name: fin-guru-research",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/fin-guru-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-fin-guru-strategize",
+    "name": "fin-guru-strategize",
+    "description": "name: fin-guru-strategize",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/fin-guru-strategize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-instance-onboarding",
+    "name": "instance-onboarding",
+    "description": "name: instance-onboarding",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/instance-onboarding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-margin-management",
+    "name": "margin-management",
+    "description": "name: margin-management",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/margin-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-retirement-syncing",
+    "name": "retirement-syncing",
+    "description": "name: retirement-syncing",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/retirement-syncing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  }
+]

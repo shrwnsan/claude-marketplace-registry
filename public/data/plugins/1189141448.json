@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1189141448-cc-skills",
+    "name": "cc-skills",
+    "description": "A collection of my custom agent skills.",
+    "version": "",
+    "author": "sorrycc",
+    "repository": "https://github.com/sorrycc/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1189141448",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1189141448-create-skill",
+    "name": "create-skill",
+    "description": "name: create-skill",
+    "version": "1.0.0",
+    "author": "sorrycc",
+    "repository": "https://github.com/sorrycc/skills",
+    "manifestPath": "skills/create-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1189141448",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1189141448-karpathy-3d-story",
+    "name": "karpathy-3d-story",
+    "description": "name: karpathy-3d-story",
+    "version": "1.0.0",
+    "author": "sorrycc",
+    "repository": "https://github.com/sorrycc/skills",
+    "manifestPath": "skills/karpathy-3d-story",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1189141448",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1189141448-rename-sessions",
+    "name": "rename-sessions",
+    "description": "name: rename-sessions",
+    "version": "1.0.0",
+    "author": "sorrycc",
+    "repository": "https://github.com/sorrycc/skills",
+    "manifestPath": "skills/rename-sessions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1189141448",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

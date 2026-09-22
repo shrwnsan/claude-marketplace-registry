@@ -1,0 +1,1856 @@
+[
+  {
+    "id": "1105022950-claude-mods",
+    "name": "claude-mods",
+    "description": "Expert agents, skills, commands, rules, hooks, and output styles for Claude Code - session continuity and modern CLI tooling",
+    "version": "",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1105022950-a11y-ops",
+    "name": "a11y-ops",
+    "description": "name: a11y-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/a11y-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-adr-ops",
+    "name": "adr-ops",
+    "description": "name: adr-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/adr-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-api-design-ops",
+    "name": "api-design-ops",
+    "description": "name: api-design-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/api-design-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-astro-ops",
+    "name": "astro-ops",
+    "description": "name: astro-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/astro-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-asus-router-ops",
+    "name": "asus-router-ops",
+    "description": "name: asus-router-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/asus-router-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-atomise",
+    "name": "atomise",
+    "description": "name: atomise",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/atomise",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-auth-ops",
+    "name": "auth-ops",
+    "description": "name: auth-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/auth-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-auto-skill",
+    "name": "auto-skill",
+    "description": "name: auto-skill",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/auto-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-bash-ops",
+    "name": "bash-ops",
+    "description": "name: bash-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/bash-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-ci-cd-ops",
+    "name": "ci-cd-ops",
+    "description": "name: ci-cd-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/ci-cd-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-claude-api-ops",
+    "name": "claude-api-ops",
+    "description": "name: claude-api-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/claude-api-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-claude-code-ops",
+    "name": "claude-code-ops",
+    "description": "name: claude-code-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/claude-code-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-cli-ops",
+    "name": "cli-ops",
+    "description": "name: cli-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/cli-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-cloudflare-ops",
+    "name": "cloudflare-ops",
+    "description": "name: cloudflare-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/cloudflare-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-code-stats",
+    "name": "code-stats",
+    "description": "name: code-stats",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/code-stats",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-color-ops",
+    "name": "color-ops",
+    "description": "name: color-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/color-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-container-orchestration",
+    "name": "container-orchestration",
+    "description": "name: container-orchestration",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/container-orchestration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-craftcms-ops",
+    "name": "craftcms-ops",
+    "description": "name: craftcms-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/craftcms-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-cypress-ops",
+    "name": "cypress-ops",
+    "description": "name: cypress-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/cypress-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-data-processing",
+    "name": "data-processing",
+    "description": "name: data-processing",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/data-processing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-debug-ops",
+    "name": "debug-ops",
+    "description": "name: debug-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/debug-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-doc-scanner",
+    "name": "doc-scanner",
+    "description": "name: doc-scanner",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/doc-scanner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-docker-ops",
+    "name": "docker-ops",
+    "description": "name: docker-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/docker-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-evals-ops",
+    "name": "evals-ops",
+    "description": "name: evals-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/evals-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-explain",
+    "name": "explain",
+    "description": "name: explain",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/explain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-ffmpeg-ops",
+    "name": "ffmpeg-ops",
+    "description": "name: ffmpeg-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/ffmpeg-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-figma-ops",
+    "name": "figma-ops",
+    "description": "name: figma-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/figma-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-file-search",
+    "name": "file-search",
+    "description": "name: file-search",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/file-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-find-replace",
+    "name": "find-replace",
+    "description": "name: find-replace",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/find-replace",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-fleet-ops",
+    "name": "fleet-ops",
+    "description": "name: fleet-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/fleet-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-fleet-worker",
+    "name": "fleet-worker",
+    "description": "name: fleet-worker",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/fleet-worker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-genart-ops",
+    "name": "genart-ops",
+    "description": "name: genart-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/genart-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-git-ops",
+    "name": "git-ops",
+    "description": "name: git-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/git-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-github-ops",
+    "name": "github-ops",
+    "description": "name: github-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/github-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-go-ops",
+    "name": "go-ops",
+    "description": "name: go-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/go-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-hono-ops",
+    "name": "hono-ops",
+    "description": "name: hono-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/hono-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-icon-ops",
+    "name": "icon-ops",
+    "description": "name: icon-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/icon-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-introspect",
+    "name": "introspect",
+    "description": "name: introspect",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/introspect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-isometric-ops",
+    "name": "isometric-ops",
+    "description": "name: isometric-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/isometric-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-iterate",
+    "name": "iterate",
+    "description": "name: iterate",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/iterate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-javascript-ops",
+    "name": "javascript-ops",
+    "description": "name: javascript-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/javascript-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-laravel-ops",
+    "name": "laravel-ops",
+    "description": "name: laravel-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/laravel-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-leveldb-ops",
+    "name": "leveldb-ops",
+    "description": "name: leveldb-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/leveldb-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-log-ops",
+    "name": "log-ops",
+    "description": "name: log-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/log-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-loop-ops",
+    "name": "loop-ops",
+    "description": "name: loop-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/loop-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-mac-ops",
+    "name": "mac-ops",
+    "description": "name: mac-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/mac-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-mapbox-ops",
+    "name": "mapbox-ops",
+    "description": "name: mapbox-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/mapbox-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-markitdown",
+    "name": "markitdown",
+    "description": "name: markitdown",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/markitdown",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-mcp-ops",
+    "name": "mcp-ops",
+    "description": "name: mcp-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/mcp-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-migrate-ops",
+    "name": "migrate-ops",
+    "description": "name: migrate-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/migrate-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-monitoring-ops",
+    "name": "monitoring-ops",
+    "description": "name: monitoring-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/monitoring-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-net-ops",
+    "name": "net-ops",
+    "description": "name: net-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/net-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-nextjs-ops",
+    "name": "nextjs-ops",
+    "description": "name: nextjs-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/nextjs-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-nginx-ops",
+    "name": "nginx-ops",
+    "description": "name: nginx-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/nginx-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-okf-ops",
+    "name": "okf-ops",
+    "description": "name: okf-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/okf-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-parallel-ops",
+    "name": "parallel-ops",
+    "description": "name: parallel-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/parallel-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-payloadcms-ops",
+    "name": "payloadcms-ops",
+    "description": "name: payloadcms-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/payloadcms-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-perf-ops",
+    "name": "perf-ops",
+    "description": "name: perf-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/perf-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-pigeon",
+    "name": "pigeon",
+    "description": "name: pigeon",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/pigeon",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-playwright-ops",
+    "name": "playwright-ops",
+    "description": "name: playwright-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/playwright-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-portless-ops",
+    "name": "portless-ops",
+    "description": "name: portless-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/portless-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-postgres-ops",
+    "name": "postgres-ops",
+    "description": "name: postgres-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/postgres-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-process-compose-ops",
+    "name": "process-compose-ops",
+    "description": "name: process-compose-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/process-compose-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-project-planner",
+    "name": "project-planner",
+    "description": "name: project-planner",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/project-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-prompt-injection-defense",
+    "name": "prompt-injection-defense",
+    "description": "name: prompt-injection-defense",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/prompt-injection-defense",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-push-gate",
+    "name": "push-gate",
+    "description": "name: push-gate",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/push-gate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-pypi-ops",
+    "name": "pypi-ops",
+    "description": "name: pypi-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/pypi-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-python-async-ops",
+    "name": "python-async-ops",
+    "description": "name: python-async-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/python-async-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-python-cli-ops",
+    "name": "python-cli-ops",
+    "description": "name: python-cli-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/python-cli-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-python-database-ops",
+    "name": "python-database-ops",
+    "description": "name: python-database-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/python-database-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-python-env",
+    "name": "python-env",
+    "description": "name: python-env",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/python-env",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-python-fastapi-ops",
+    "name": "python-fastapi-ops",
+    "description": "name: python-fastapi-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/python-fastapi-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-python-observability-ops",
+    "name": "python-observability-ops",
+    "description": "name: python-observability-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/python-observability-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-python-pytest-ops",
+    "name": "python-pytest-ops",
+    "description": "name: python-pytest-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/python-pytest-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-python-typing-ops",
+    "name": "python-typing-ops",
+    "description": "name: python-typing-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/python-typing-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-r-ops",
+    "name": "r-ops",
+    "description": "name: r-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/r-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-react-ops",
+    "name": "react-ops",
+    "description": "name: react-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/react-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-refactor-ops",
+    "name": "refactor-ops",
+    "description": "name: refactor-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/refactor-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-rembg-ops",
+    "name": "rembg-ops",
+    "description": "name: rembg-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/rembg-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-repo-doctor",
+    "name": "repo-doctor",
+    "description": "name: repo-doctor",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/repo-doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-rest-ops",
+    "name": "rest-ops",
+    "description": "name: rest-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/rest-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-review",
+    "name": "review",
+    "description": "name: review",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-rust-ops",
+    "name": "rust-ops",
+    "description": "name: rust-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/rust-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-scaffold",
+    "name": "scaffold",
+    "description": "name: scaffold",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/scaffold",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-screenshot",
+    "name": "screenshot",
+    "description": "name: screenshot",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/screenshot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-security-ops",
+    "name": "security-ops",
+    "description": "name: security-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/security-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-setperms",
+    "name": "setperms",
+    "description": "name: setperms",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/setperms",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-skill-creator",
+    "name": "skill-creator",
+    "description": "name: skill-creator",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-spawn",
+    "name": "spawn",
+    "description": "name: spawn",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/spawn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-sql-ops",
+    "name": "sql-ops",
+    "description": "name: sql-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/sql-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-sqlite-ops",
+    "name": "sqlite-ops",
+    "description": "name: sqlite-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/sqlite-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-structural-search",
+    "name": "structural-search",
+    "description": "name: structural-search",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/structural-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-summon",
+    "name": "summon",
+    "description": "name: summon",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/summon",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-supply-chain-defense",
+    "name": "supply-chain-defense",
+    "description": "name: supply-chain-defense",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/supply-chain-defense",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-svg-brand-tint-ops",
+    "name": "svg-brand-tint-ops",
+    "description": "name: svg-brand-tint-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/svg-brand-tint-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-tailwind-ops",
+    "name": "tailwind-ops",
+    "description": "name: tailwind-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/tailwind-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-task-runner",
+    "name": "task-runner",
+    "description": "name: task-runner",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/task-runner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-techdebt",
+    "name": "techdebt",
+    "description": "name: techdebt",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/techdebt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-terraform-ops",
+    "name": "terraform-ops",
+    "description": "name: terraform-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/terraform-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-testgen",
+    "name": "testgen",
+    "description": "name: testgen",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/testgen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-testing-ops",
+    "name": "testing-ops",
+    "description": "name: testing-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/testing-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-threejs-ops",
+    "name": "threejs-ops",
+    "description": "name: threejs-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/threejs-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-tool-discovery",
+    "name": "tool-discovery",
+    "description": "name: tool-discovery",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/tool-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-typescript-ops",
+    "name": "typescript-ops",
+    "description": "name: typescript-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/typescript-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-unfold-admin",
+    "name": "unfold-admin",
+    "description": "name: unfold-admin",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/unfold-admin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-vue-ops",
+    "name": "vue-ops",
+    "description": "name: vue-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/vue-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-windows-ops",
+    "name": "windows-ops",
+    "description": "name: windows-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/windows-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-ytdlp-ops",
+    "name": "ytdlp-ops",
+    "description": "name: ytdlp-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/ytdlp-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1117894769-databricks-python-sdk",
+    "name": "databricks-python-sdk",
+    "description": "name: databricks-python-sdk",
+    "version": "1.0.0",
+    "author": "databricks-solutions",
+    "repository": "https://github.com/databricks-solutions/ai-dev-kit",
+    "manifestPath": ".claude/skills/databricks-python-sdk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1117894769",
+      "marketplaceName": "ai-dev-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1117894769-python-dev",
+    "name": "python-dev",
+    "description": "name: python-dev",
+    "version": "1.0.0",
+    "author": "databricks-solutions",
+    "repository": "https://github.com/databricks-solutions/ai-dev-kit",
+    "manifestPath": ".claude/skills/python-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1117894769",
+      "marketplaceName": "ai-dev-kit",
+      "hasSkillMd": true
+    }
+  }
+]

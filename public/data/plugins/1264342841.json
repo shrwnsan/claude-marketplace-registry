@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1264342841-health-self-investigation",
+    "name": "health-self-investigation",
+    "description": "Investigate ambiguous, non-emergency health symptoms with lightweight intake, tracking, testing, analysis, and careful experiment planning.",
+    "version": "1.0.0",
+    "author": "amydeng2000",
+    "repository": "https://github.com/amydeng2000/health-self-investigation-skill",
+    "manifestPath": "./plugins/health-self-investigation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264342841",
+      "marketplaceName": "health-self-investigation-skill",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

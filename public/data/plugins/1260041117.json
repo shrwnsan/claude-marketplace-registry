@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1260041117-yaml-to-html",
+    "name": "yaml-to-html",
+    "description": "Two skills: generate-explainer-yaml captures meaning (core.yaml) + strategy (view.yaml) from a document/repo/PR/spec; generate-explainer-html builds an offline light/dark bundle with switchable, additive iframe views and copyable add-a-view prompts.",
+    "version": "0.3.0",
+    "author": "hirokita117",
+    "repository": "https://github.com/hirokita117/yaml-to-html-skill",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260041117",
+      "marketplaceName": "yaml-to-html-skill",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260041117-generate-explainer-html",
+    "name": "generate-explainer-html",
+    "description": "name: generate-explainer-html",
+    "version": "1.0.0",
+    "author": "hirokita117",
+    "repository": "https://github.com/hirokita117/yaml-to-html-skill",
+    "manifestPath": "skills/generate-explainer-html",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260041117",
+      "marketplaceName": "yaml-to-html-skill",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260041117-generate-explainer-yaml",
+    "name": "generate-explainer-yaml",
+    "description": "name: generate-explainer-yaml",
+    "version": "1.0.0",
+    "author": "hirokita117",
+    "repository": "https://github.com/hirokita117/yaml-to-html-skill",
+    "manifestPath": "skills/generate-explainer-yaml",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260041117",
+      "marketplaceName": "yaml-to-html-skill",
+      "hasSkillMd": true
+    }
+  }
+]

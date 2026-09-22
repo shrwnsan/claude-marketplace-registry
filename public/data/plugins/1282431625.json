@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1282431625-keystone",
+    "name": "keystone",
+    "description": "Keystone proactive multi-skill AI engineering workflows for planning, implementation, review, shipping, and maintenance.",
+    "version": "2.0.4",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1282431625-change-review",
+    "name": "change-review",
+    "description": "name: change-review",
+    "version": "1.0.0",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "skills/change-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1282431625-context-survey",
+    "name": "context-survey",
+    "description": "name: context-survey",
+    "version": "1.0.0",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "skills/context-survey",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1282431625-implementation",
+    "name": "implementation",
+    "description": "name: implementation",
+    "version": "1.0.0",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "skills/implementation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1282431625-product-planning",
+    "name": "product-planning",
+    "description": "name: product-planning",
+    "version": "1.0.0",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "skills/product-planning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1282431625-project-audit",
+    "name": "project-audit",
+    "description": "name: project-audit",
+    "version": "1.0.0",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "skills/project-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1282431625-refactoring",
+    "name": "refactoring",
+    "description": "name: refactoring",
+    "version": "1.0.0",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "skills/refactoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1282431625-root-cause-analysis",
+    "name": "root-cause-analysis",
+    "description": "name: root-cause-analysis",
+    "version": "1.0.0",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "skills/root-cause-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1282431625-shipping",
+    "name": "shipping",
+    "description": "name: shipping",
+    "version": "1.0.0",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "skills/shipping",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1282431625-task-creation",
+    "name": "task-creation",
+    "description": "name: task-creation",
+    "version": "1.0.0",
+    "author": "static-var",
+    "repository": "https://github.com/static-var/Keystone",
+    "manifestPath": "skills/task-creation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1282431625",
+      "marketplaceName": "Keystone",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1210840573-clooks",
+    "name": "clooks",
+    "description": "Hook runtime for AI coding agents. TypeScript hooks with fail-closed safety, parallel execution, first-class testing, and cross-agent portability.",
+    "version": "0.3.0",
+    "author": "Joe Degler",
+    "repository": "https://github.com/codestripes-dev/clooks-marketplace",
+    "manifestPath": "./clooks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1210840573",
+      "marketplaceName": "clooks-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1210840573-clooks-example-hooks",
+    "name": "clooks-example-hooks",
+    "description": "Educational hook pack: lifecycle, config, events, and debugging examples for clooks",
+    "version": "0.3.0",
+    "author": "Clooks",
+    "repository": "https://github.com/codestripes-dev/clooks-marketplace",
+    "manifestPath": "./clooks-example-hooks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1210840573",
+      "marketplaceName": "clooks-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1210840573-clooks-core-hooks",
+    "name": "clooks-core-hooks",
+    "description": "Curated zero-config production hooks: command safety, git protection, tool hygiene, and tmux notifications",
+    "version": "0.3.0",
+    "author": "Clooks",
+    "repository": "https://github.com/codestripes-dev/clooks-marketplace",
+    "manifestPath": "./clooks-core-hooks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1210840573",
+      "marketplaceName": "clooks-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1210840573-clooks-project-hooks",
+    "name": "clooks-project-hooks",
+    "description": "Project-configured hooks: enforce project scripts, protected paths, and JS/TS package manager choice",
+    "version": "0.3.0",
+    "author": "Clooks",
+    "repository": "https://github.com/codestripes-dev/clooks-marketplace",
+    "manifestPath": "./clooks-project-hooks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1210840573",
+      "marketplaceName": "clooks-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "1265531036-dos-kernel",
+    "name": "dos-kernel",
+    "description": "Bundles the DOS hooks + MCP server + the generic skill pack into one install. Requires the dos-kernel Python package (pip install 'dos-kernel[mcp]').",
+    "version": "0.30.0",
+    "author": "Anthony Chaudhary",
+    "repository": "https://github.com/anthony-chaudhary/dos-kernel",
+    "manifestPath": "./claude-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265531036",
+      "marketplaceName": "dos-kernel",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1265531036-issue-verify",
+    "name": "issue-verify",
+    "description": "name: issue-verify",
+    "version": "1.0.0",
+    "author": "Anthony Chaudhary",
+    "repository": "https://github.com/anthony-chaudhary/dos-kernel",
+    "manifestPath": ".claude/skills/issue-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265531036",
+      "marketplaceName": "dos-kernel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265531036-issue-work",
+    "name": "issue-work",
+    "description": "name: issue-work",
+    "version": "1.0.0",
+    "author": "Anthony Chaudhary",
+    "repository": "https://github.com/anthony-chaudhary/dos-kernel",
+    "manifestPath": ".claude/skills/issue-work",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265531036",
+      "marketplaceName": "dos-kernel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265531036-release",
+    "name": "release",
+    "description": "name: release",
+    "version": "1.0.0",
+    "author": "Anthony Chaudhary",
+    "repository": "https://github.com/anthony-chaudhary/dos-kernel",
+    "manifestPath": ".claude/skills/release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265531036",
+      "marketplaceName": "dos-kernel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265531036-stable-release",
+    "name": "stable-release",
+    "description": "name: stable-release",
+    "version": "1.0.0",
+    "author": "Anthony Chaudhary",
+    "repository": "https://github.com/anthony-chaudhary/dos-kernel",
+    "manifestPath": ".claude/skills/stable-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265531036",
+      "marketplaceName": "dos-kernel",
+      "hasSkillMd": true
+    }
+  }
+]

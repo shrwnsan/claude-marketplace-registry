@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1347341275-forta-risk",
+    "name": "forta-risk",
+    "description": "Skills for the Forta Risk Graph MCP — on-chain dependency concentration, control closure and blast radius for tokenized assets.",
+    "version": "",
+    "author": "forta-network",
+    "repository": "https://github.com/forta-network/forta-risk-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1347341275",
+      "marketplaceName": "forta-risk-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1347341275-forta-risk-analysis",
+    "name": "forta-risk-analysis",
+    "description": "name: forta-risk-analysis",
+    "version": "1.0.0",
+    "author": "forta-network",
+    "repository": "https://github.com/forta-network/forta-risk-skills",
+    "manifestPath": "skills/forta-risk-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1347341275",
+      "marketplaceName": "forta-risk-skills",
+      "hasSkillMd": true
+    }
+  }
+]

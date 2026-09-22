@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1143019303-ados",
+    "name": "ados",
+    "description": "Agentic Delivery OS - spec-driven software delivery",
+    "version": "1.0.0",
+    "author": "Juliusz Ćwiąkalski",
+    "repository": "https://github.com/juliusz-cwiakalski/agentic-delivery-os",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/juliusz-cwiakalski/agentic-delivery-os.git",
+      "path": ".ados-claude",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143019303",
+      "marketplaceName": "agentic-delivery-os",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

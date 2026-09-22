@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1289577353-trek-plugin-dev",
+    "name": "trek-plugin-dev",
+    "description": "Build, test, and publish TREK plugins: manifest, definePlugin server API, iframe bridge, permissions/egress, trek-plugin CLI, and the TREK-Plugins registry with all CI gates.",
+    "version": "",
+    "author": "liketrek",
+    "repository": "https://github.com/liketrek/Plugin-Skill",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1289577353",
+      "marketplaceName": "Plugin-Skill",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

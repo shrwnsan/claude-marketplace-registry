@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1163066801-crypto-trading-desk",
+    "name": "crypto-trading-desk",
+    "description": "7 AI agents, 9 MCP servers (95 tools), cognitive learning, self-evolving platform. Zero orchestration code.",
+    "version": "1.1.2",
+    "author": "hugoguerrap",
+    "repository": "https://github.com/hugoguerrap/crypto-claude-desk",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163066801",
+      "marketplaceName": "crypto-claude-desk",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1163066801-analyze",
+    "name": "analyze",
+    "description": "name: analyze",
+    "version": "1.0.0",
+    "author": "hugoguerrap",
+    "repository": "https://github.com/hugoguerrap/crypto-claude-desk",
+    "manifestPath": "skills/analyze",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163066801",
+      "marketplaceName": "crypto-claude-desk",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163066801-close-trade",
+    "name": "close-trade",
+    "description": "name: close-trade",
+    "version": "1.0.0",
+    "author": "hugoguerrap",
+    "repository": "https://github.com/hugoguerrap/crypto-claude-desk",
+    "manifestPath": "skills/close-trade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163066801",
+      "marketplaceName": "crypto-claude-desk",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163066801-create",
+    "name": "create",
+    "description": "name: create",
+    "version": "1.0.0",
+    "author": "hugoguerrap",
+    "repository": "https://github.com/hugoguerrap/crypto-claude-desk",
+    "manifestPath": "skills/create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163066801",
+      "marketplaceName": "crypto-claude-desk",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163066801-monitor",
+    "name": "monitor",
+    "description": "name: monitor",
+    "version": "1.0.0",
+    "author": "hugoguerrap",
+    "repository": "https://github.com/hugoguerrap/crypto-claude-desk",
+    "manifestPath": "skills/monitor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163066801",
+      "marketplaceName": "crypto-claude-desk",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163066801-portfolio",
+    "name": "portfolio",
+    "description": "name: portfolio",
+    "version": "1.0.0",
+    "author": "hugoguerrap",
+    "repository": "https://github.com/hugoguerrap/crypto-claude-desk",
+    "manifestPath": "skills/portfolio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163066801",
+      "marketplaceName": "crypto-claude-desk",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163066801-quick",
+    "name": "quick",
+    "description": "name: quick",
+    "version": "1.0.0",
+    "author": "hugoguerrap",
+    "repository": "https://github.com/hugoguerrap/crypto-claude-desk",
+    "manifestPath": "skills/quick",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163066801",
+      "marketplaceName": "crypto-claude-desk",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163066801-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "hugoguerrap",
+    "repository": "https://github.com/hugoguerrap/crypto-claude-desk",
+    "manifestPath": "skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163066801",
+      "marketplaceName": "crypto-claude-desk",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163066801-validate-predictions",
+    "name": "validate-predictions",
+    "description": "name: validate-predictions",
+    "version": "1.0.0",
+    "author": "hugoguerrap",
+    "repository": "https://github.com/hugoguerrap/crypto-claude-desk",
+    "manifestPath": "skills/validate-predictions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163066801",
+      "marketplaceName": "crypto-claude-desk",
+      "hasSkillMd": true
+    }
+  }
+]

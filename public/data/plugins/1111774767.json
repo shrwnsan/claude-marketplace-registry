@@ -1,0 +1,666 @@
+[
+  {
+    "id": "1111774767-devflow",
+    "name": "devflow",
+    "description": "A verification-first development pipeline for Claude Code: brainstorm to plan to phased implementation, with quality gates (verification-loop, code-review, security-review), adversarial review, and TaskTracker-native variants.",
+    "version": "",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1111774767-adr",
+    "name": "adr",
+    "description": "name: adr",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/adr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-adversarial-reviewer",
+    "name": "adversarial-reviewer",
+    "description": "name: adversarial-reviewer",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/adversarial-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-agent-creator",
+    "name": "agent-creator",
+    "description": "name: agent-creator",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/agent-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-brainstorm",
+    "name": "brainstorm",
+    "description": "name: brainstorm",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/brainstorm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-code-quality-audit",
+    "name": "code-quality-audit",
+    "description": "name: code-quality-audit",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/code-quality-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-code-review",
+    "name": "code-review",
+    "description": "name: code-review",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-codebase-audit",
+    "name": "codebase-audit",
+    "description": "name: codebase-audit",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/codebase-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-codebase-research",
+    "name": "codebase-research",
+    "description": "name: codebase-research",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/codebase-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-context-saver",
+    "name": "context-saver",
+    "description": "name: context-saver",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/context-saver",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-continuous-learning",
+    "name": "continuous-learning",
+    "description": "name: continuous-learning",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/continuous-learning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-create-plan",
+    "name": "create-plan",
+    "description": "name: create-plan",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/create-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-deep-brainstorm",
+    "name": "deep-brainstorm",
+    "description": "name: deep-brainstorm",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/deep-brainstorm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-design-language",
+    "name": "design-language",
+    "description": "name: design-language",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/design-language",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-e2e-testing",
+    "name": "e2e-testing",
+    "description": "name: e2e-testing",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/e2e-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-eval-harness",
+    "name": "eval-harness",
+    "description": "name: eval-harness",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/eval-harness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-grumpy-reviewer",
+    "name": "grumpy-reviewer",
+    "description": "name: grumpy-reviewer",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/grumpy-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-implement-phase",
+    "name": "implement-phase",
+    "description": "name: implement-phase",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/implement-phase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-implement-plan",
+    "name": "implement-plan",
+    "description": "name: implement-plan",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/implement-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-iterate-plan",
+    "name": "iterate-plan",
+    "description": "name: iterate-plan",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/iterate-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-prompt-generator",
+    "name": "prompt-generator",
+    "description": "name: prompt-generator",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/prompt-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-security-review",
+    "name": "security-review",
+    "description": "name: security-review",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/security-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-ship-issue",
+    "name": "ship-issue",
+    "description": "name: ship-issue",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/ship-issue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-skill-visualizer",
+    "name": "skill-visualizer",
+    "description": "name: skill-visualizer",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/skill-visualizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-strategic-compact",
+    "name": "strategic-compact",
+    "description": "name: strategic-compact",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/strategic-compact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-team-brainstorm",
+    "name": "team-brainstorm",
+    "description": "name: team-brainstorm",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/team-brainstorm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-team-create-plan",
+    "name": "team-create-plan",
+    "description": "name: team-create-plan",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/team-create-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-team-implement-plan-full",
+    "name": "team-implement-plan-full",
+    "description": "name: team-implement-plan-full",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/team-implement-plan-full",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-team-implement-plan",
+    "name": "team-implement-plan",
+    "description": "name: team-implement-plan",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/team-implement-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-tt-brainstorm",
+    "name": "tt-brainstorm",
+    "description": "name: tt-brainstorm",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/tt-brainstorm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-tt-create-plan",
+    "name": "tt-create-plan",
+    "description": "name: tt-create-plan",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/tt-create-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-tt-implement-phase",
+    "name": "tt-implement-phase",
+    "description": "name: tt-implement-phase",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/tt-implement-phase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-tt-implement-plan",
+    "name": "tt-implement-plan",
+    "description": "name: tt-implement-plan",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/tt-implement-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-tt-workflow-audit",
+    "name": "tt-workflow-audit",
+    "description": "name: tt-workflow-audit",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/tt-workflow-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-tt-workflow-build",
+    "name": "tt-workflow-build",
+    "description": "name: tt-workflow-build",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/tt-workflow-build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-tt-workflow-run",
+    "name": "tt-workflow-run",
+    "description": "name: tt-workflow-run",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/tt-workflow-run",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-user-story",
+    "name": "user-story",
+    "description": "name: user-story",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/user-story",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-verification-loop",
+    "name": "verification-loop",
+    "description": "name: verification-loop",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/verification-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111774767-workflow-guide",
+    "name": "workflow-guide",
+    "description": "name: workflow-guide",
+    "version": "1.0.0",
+    "author": "mhylle",
+    "repository": "https://github.com/mhylle/claude-skills-collection",
+    "manifestPath": "skills/workflow-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111774767",
+      "marketplaceName": "claude-skills-collection",
+      "hasSkillMd": true
+    }
+  }
+]

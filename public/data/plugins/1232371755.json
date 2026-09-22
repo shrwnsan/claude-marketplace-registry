@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1232371755-proton-bridge-mcp",
+    "name": "proton-bridge-mcp",
+    "description": "Hardened local MCP server for Proton Mail via Bridge — Keychain creds, TLS pinning, hash-pinned deps.",
+    "version": "",
+    "author": "miketigerblue",
+    "repository": "https://github.com/miketigerblue/proton-bridge-mcp",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1232371755",
+      "marketplaceName": "proton-bridge-mcp",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

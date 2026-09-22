@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1226415818-lockedin",
+    "name": "lockedin",
+    "description": "Knowledge graph of your work, lived inside Claude Code. Capture moments, then render writeups, summaries, and more from the same vault.",
+    "version": "",
+    "author": "daypunk",
+    "repository": "https://github.com/daypunk/LockedIn",
+    "manifestPath": "./plugins/lockedin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1226415818",
+      "marketplaceName": "LockedIn",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

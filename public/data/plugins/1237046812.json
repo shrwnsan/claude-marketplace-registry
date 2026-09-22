@@ -1,0 +1,377 @@
+[
+  {
+    "id": "1237046812-netbox-labs",
+    "name": "netbox-labs",
+    "description": "Skills for the NetBox ecosystem — data modeling, API integration, plugin development, change management, discovery, assurance, validation, asset lifecycle, data exchange, agent/MCP integration, automation, and migration.",
+    "version": "",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1237046812-netbox-administration",
+    "name": "netbox-administration",
+    "description": "name: netbox-administration",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-administration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-api-integration",
+    "name": "netbox-api-integration",
+    "description": "name: netbox-api-integration",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-api-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-asset-lifecycle",
+    "name": "netbox-asset-lifecycle",
+    "description": "name: netbox-asset-lifecycle",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-asset-lifecycle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-assurance",
+    "name": "netbox-assurance",
+    "description": "name: netbox-assurance",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-assurance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-automation-patterns",
+    "name": "netbox-automation-patterns",
+    "description": "name: netbox-automation-patterns",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-automation-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-branching",
+    "name": "netbox-branching",
+    "description": "name: netbox-branching",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-branching",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-changes",
+    "name": "netbox-changes",
+    "description": "name: netbox-changes",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-changes",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-config-templates",
+    "name": "netbox-config-templates",
+    "description": "name: netbox-config-templates",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-config-templates",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-custom-objects",
+    "name": "netbox-custom-objects",
+    "description": "name: netbox-custom-objects",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-custom-objects",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-custom-scripts",
+    "name": "netbox-custom-scripts",
+    "description": "name: netbox-custom-scripts",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-custom-scripts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-data-modeling",
+    "name": "netbox-data-modeling",
+    "description": "name: netbox-data-modeling",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-data-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-diode",
+    "name": "netbox-diode",
+    "description": "name: netbox-diode",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-diode",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-discovery",
+    "name": "netbox-discovery",
+    "description": "name: netbox-discovery",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-migration",
+    "name": "netbox-migration",
+    "description": "name: netbox-migration",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-ndx",
+    "name": "netbox-ndx",
+    "description": "name: netbox-ndx",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-ndx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-plugin-development",
+    "name": "netbox-plugin-development",
+    "description": "name: netbox-plugin-development",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-plugin-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-review-datamodel",
+    "name": "netbox-review-datamodel",
+    "description": "name: netbox-review-datamodel",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-review-datamodel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-review-integration",
+    "name": "netbox-review-integration",
+    "description": "name: netbox-review-integration",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-review-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-validation",
+    "name": "netbox-validation",
+    "description": "name: netbox-validation",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox",
+    "name": "netbox",
+    "description": "name: netbox",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netboxlabs-platform-mcp",
+    "name": "netboxlabs-platform-mcp",
+    "description": "name: netboxlabs-platform-mcp",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netboxlabs-platform-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

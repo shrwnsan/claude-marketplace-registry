@@ -1,0 +1,431 @@
+[
+  {
+    "id": "1242320277-maigo",
+    "name": "maigo",
+    "description": "MyGO!!!!! agent orchestration plugin",
+    "version": "",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Lee-W/maigo"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1242320277-airflow-aware",
+    "name": "airflow-aware",
+    "description": "name: airflow-aware",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/airflow-aware",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-change-site-enumeration",
+    "name": "change-site-enumeration",
+    "description": "name: change-site-enumeration",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/change-site-enumeration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-command-router",
+    "name": "command-router",
+    "description": "name: command-router",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/command-router",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-commit-message",
+    "name": "commit-message",
+    "description": "name: commit-message",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/commit-message",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-commitizen-aware",
+    "name": "commitizen-aware",
+    "description": "name: commitizen-aware",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/commitizen-aware",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-copyable-deliverable",
+    "name": "copyable-deliverable",
+    "description": "name: copyable-deliverable",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/copyable-deliverable",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-doc-link-convention",
+    "name": "doc-link-convention",
+    "description": "name: doc-link-convention",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/doc-link-convention",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-failure-handling",
+    "name": "failure-handling",
+    "description": "name: failure-handling",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/failure-handling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-git-workflow",
+    "name": "git-workflow",
+    "description": "name: git-workflow",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/git-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-github-reply-draft",
+    "name": "github-reply-draft",
+    "description": "name: github-reply-draft",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/github-reply-draft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-github-title-description",
+    "name": "github-title-description",
+    "description": "name: github-title-description",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/github-title-description",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-harness-discipline",
+    "name": "harness-discipline",
+    "description": "name: harness-discipline",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/harness-discipline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-maigo-self-check",
+    "name": "maigo-self-check",
+    "description": "name: maigo-self-check",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/maigo-self-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-memory-loading",
+    "name": "memory-loading",
+    "description": "name: memory-loading",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/memory-loading",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-memory-propose-confirm",
+    "name": "memory-propose-confirm",
+    "description": "name: memory-propose-confirm",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/memory-propose-confirm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-model-dispatch",
+    "name": "model-dispatch",
+    "description": "name: model-dispatch",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/model-dispatch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-narration",
+    "name": "narration",
+    "description": "name: narration",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/narration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-orchestrator-voice",
+    "name": "orchestrator-voice",
+    "description": "name: orchestrator-voice",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/orchestrator-voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-pr-context-cache",
+    "name": "pr-context-cache",
+    "description": "name: pr-context-cache",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/pr-context-cache",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-pr-sync-check",
+    "name": "pr-sync-check",
+    "description": "name: pr-sync-check",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/pr-sync-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-strict-review",
+    "name": "strict-review",
+    "description": "name: strict-review",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/strict-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-strict-triage",
+    "name": "strict-triage",
+    "description": "name: strict-triage",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/strict-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-teammate-flow",
+    "name": "teammate-flow",
+    "description": "name: teammate-flow",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/teammate-flow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-work-board",
+    "name": "work-board",
+    "description": "name: work-board",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/work-board",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1020628118-servicenow",
+    "name": "servicenow",
+    "description": "400+ snow_* MCP tools for ServiceNow, plus the 70 skill guides that teach an agent to use them.",
+    "version": "",
+    "author": "Serac Labs",
+    "repository": "https://github.com/serac-labs/serac",
+    "manifestPath": "./packages/skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1020628118",
+      "marketplaceName": "serac",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

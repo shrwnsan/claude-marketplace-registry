@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1247257077-ppt-master",
+    "name": "ppt-master",
+    "description": "Generate natively editable PPTX from PDF / DOCX / URL / Markdown — real DrawingML shapes, text boxes, charts, and animations. Note: this plugin ships only the skill files; you must also `pip install -r requirements.txt` from the project root for the Python post-processing scripts to run.",
+    "version": "2.7.0",
+    "author": "Hugo He",
+    "repository": "https://github.com/hongyi652/ppt-master-sci-fork",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247257077",
+      "marketplaceName": "ppt-master-sci-fork",
+      "skills": [
+        "./skills/ppt-master"
+      ],
+      "strict": false
+    }
+  }
+]

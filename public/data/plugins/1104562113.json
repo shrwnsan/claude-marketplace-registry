@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1104562113-omen-development",
+    "name": "omen-development",
+    "description": "Code analysis skills for active development: find bugs, assess impact, plan refactoring, audit architecture, and more",
+    "version": "8.0.0",
+    "author": "panbanda",
+    "repository": "https://github.com/panbanda/omen",
+    "manifestPath": "./plugins/development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1104562113",
+      "marketplaceName": "omen",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1104562113-omen-reporting",
+    "name": "omen-reporting",
+    "description": "Generate comprehensive HTML health reports with research-backed insights from specialized domain analysts",
+    "version": "8.0.0",
+    "author": "panbanda",
+    "repository": "https://github.com/panbanda/omen",
+    "manifestPath": "./plugins/reporting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1104562113",
+      "marketplaceName": "omen",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

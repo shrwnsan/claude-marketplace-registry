@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1289908656-ml-slop",
+    "name": "ml-slop",
+    "description": "Find and score AI-generation slop. text measures information density and semantic repetition in prose, and can rewrite to remove it; code scores a git diff or standalone files for duplication, dead code, redundant comments, verbosity, over-abstraction, error masking, convention violations, hallucinated dependencies, and performance waste. comments is the writing-side rule: a comment only for a non-obvious why, constraint, invariant, or workaround, and explicit invocation only.",
+    "version": "0.2.0",
+    "author": "Max Levitskiy",
+    "repository": "https://github.com/Max-Levitskiy/skills",
+    "manifestPath": "./plugins/ml-slop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1289908656",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1289908656-ml-workplace",
+    "name": "ml-workplace",
+    "description": "The tools a team works in, driven from Claude Code through bundled zero-dependency bun CLIs, no MCP server. atlassian: Jira and Confluence over REST — JQL search, create, comment, and transition issues, sprints and boards, read and write Confluence pages, Cloud and Data Center. fellow: read-only Fellow meeting notes, transcripts, AI summaries, and action items, with recaps filed into a repo.",
+    "version": "0.3.0",
+    "author": "Max Levitskiy",
+    "repository": "https://github.com/Max-Levitskiy/skills",
+    "manifestPath": "./plugins/ml-workplace",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1289908656",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1289908656-ml-subagents",
+    "name": "ml-subagents",
+    "description": "Run and coordinate AI subagents. orchestrate runs a multi-part task as small, tracked, parallel work packages with an async question protocol, so waiting on human decisions never blocks progress. herdr starts, messages, reads, and stops subagents in herdr panes from named presets, and drives the herdr terminal workspace manager: workspaces, worktrees, tabs, and panes.",
+    "version": "0.3.0",
+    "author": "Max Levitskiy",
+    "repository": "https://github.com/Max-Levitskiy/skills",
+    "manifestPath": "./plugins/ml-subagents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1289908656",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1289908656-ml-agent-config",
+    "name": "ml-agent-config",
+    "description": "The Agent Config Standard (ACS v1) as a reusable skill: layered global/repo/local settings, credential references that keep secrets out of git, and a re-runnable onboarding flow. Other skills and subagents invoke it instead of restating the rules, and vendor its zero-dependency loader instead of copying their own.",
+    "version": "0.3.0",
+    "author": "Max Levitskiy",
+    "repository": "https://github.com/Max-Levitskiy/skills",
+    "manifestPath": "./plugins/ml-agent-config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1289908656",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1289908656-ml-ship",
+    "name": "ml-ship",
+    "description": "Get a change landed. pr-gate validates a pull request end to end: what it actually changes and who it breaks, why the pipeline is red, what the agent reviewers found and whether each finding is real, whether it is genuinely ready, and the merge itself when you ask for it.",
+    "version": "0.1.0",
+    "author": "Max Levitskiy",
+    "repository": "https://github.com/Max-Levitskiy/skills",
+    "manifestPath": "./plugins/ml-ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1289908656",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

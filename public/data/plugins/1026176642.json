@@ -1,0 +1,139 @@
+[
+  {
+    "id": "1026176642-claude-code-template",
+    "name": "claude-code-template",
+    "description": "Comprehensive Claude Code starter template.",
+    "version": "",
+    "author": "scotthavird",
+    "repository": "https://github.com/scotthavird/claude-code-template",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1026176642",
+      "marketplaceName": "claude-code-template",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1026176642-accessibility",
+    "name": "accessibility",
+    "description": "name: accessibility",
+    "version": "1.0.0",
+    "author": "scotthavird",
+    "repository": "https://github.com/scotthavird/claude-code-template",
+    "manifestPath": ".claude/skills/accessibility",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1026176642",
+      "marketplaceName": "claude-code-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1026176642-api-design",
+    "name": "api-design",
+    "description": "name: api-design",
+    "version": "1.0.0",
+    "author": "scotthavird",
+    "repository": "https://github.com/scotthavird/claude-code-template",
+    "manifestPath": ".claude/skills/api-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1026176642",
+      "marketplaceName": "claude-code-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1026176642-code-review",
+    "name": "code-review",
+    "description": "name: code-review",
+    "version": "1.0.0",
+    "author": "scotthavird",
+    "repository": "https://github.com/scotthavird/claude-code-template",
+    "manifestPath": ".claude/skills/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1026176642",
+      "marketplaceName": "claude-code-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1026176642-db-migration",
+    "name": "db-migration",
+    "description": "name: db-migration",
+    "version": "1.0.0",
+    "author": "scotthavird",
+    "repository": "https://github.com/scotthavird/claude-code-template",
+    "manifestPath": ".claude/skills/db-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1026176642",
+      "marketplaceName": "claude-code-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1026176642-effort-aware",
+    "name": "effort-aware",
+    "description": "name: effort-aware",
+    "version": "1.0.0",
+    "author": "scotthavird",
+    "repository": "https://github.com/scotthavird/claude-code-template",
+    "manifestPath": ".claude/skills/effort-aware",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1026176642",
+      "marketplaceName": "claude-code-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1026176642-performance-audit",
+    "name": "performance-audit",
+    "description": "name: performance-audit",
+    "version": "1.0.0",
+    "author": "scotthavird",
+    "repository": "https://github.com/scotthavird/claude-code-template",
+    "manifestPath": ".claude/skills/performance-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1026176642",
+      "marketplaceName": "claude-code-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1026176642-test-writing",
+    "name": "test-writing",
+    "description": "name: test-writing",
+    "version": "1.0.0",
+    "author": "scotthavird",
+    "repository": "https://github.com/scotthavird/claude-code-template",
+    "manifestPath": ".claude/skills/test-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1026176642",
+      "marketplaceName": "claude-code-template",
+      "hasSkillMd": true
+    }
+  }
+]

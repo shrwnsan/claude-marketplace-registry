@@ -1,0 +1,139 @@
+[
+  {
+    "id": "1277000520-luxonis",
+    "name": "luxonis",
+    "description": "Skills for Luxonis questions, workspace and hardware setup, and OAK applications.",
+    "version": "",
+    "author": "luxonis",
+    "repository": "https://github.com/luxonis/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277000520",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1277000520-luxonis-app",
+    "name": "luxonis-app",
+    "description": "name: luxonis-app",
+    "version": "1.0.0",
+    "author": "luxonis",
+    "repository": "https://github.com/luxonis/skills",
+    "manifestPath": "skills/luxonis-app",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277000520",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1277000520-luxonis-device-setup",
+    "name": "luxonis-device-setup",
+    "description": "name: luxonis-device-setup",
+    "version": "1.0.0",
+    "author": "luxonis",
+    "repository": "https://github.com/luxonis/skills",
+    "manifestPath": "skills/luxonis-device-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277000520",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1277000520-luxonis-inspect",
+    "name": "luxonis-inspect",
+    "description": "name: luxonis-inspect",
+    "version": "1.0.0",
+    "author": "luxonis",
+    "repository": "https://github.com/luxonis/skills",
+    "manifestPath": "skills/luxonis-inspect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277000520",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1277000520-luxonis-model",
+    "name": "luxonis-model",
+    "description": "name: luxonis-model",
+    "version": "1.0.0",
+    "author": "luxonis",
+    "repository": "https://github.com/luxonis/skills",
+    "manifestPath": "skills/luxonis-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277000520",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1277000520-luxonis-record",
+    "name": "luxonis-record",
+    "description": "name: luxonis-record",
+    "version": "1.0.0",
+    "author": "luxonis",
+    "repository": "https://github.com/luxonis/skills",
+    "manifestPath": "skills/luxonis-record",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277000520",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1277000520-luxonis-troubleshoot",
+    "name": "luxonis-troubleshoot",
+    "description": "name: luxonis-troubleshoot",
+    "version": "1.0.0",
+    "author": "luxonis",
+    "repository": "https://github.com/luxonis/skills",
+    "manifestPath": "skills/luxonis-troubleshoot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277000520",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1277000520-luxonis-workspace",
+    "name": "luxonis-workspace",
+    "description": "name: luxonis-workspace",
+    "version": "1.0.0",
+    "author": "luxonis",
+    "repository": "https://github.com/luxonis/skills",
+    "manifestPath": "skills/luxonis-workspace",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1277000520",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,77 +1,81 @@
 {
-  "totalFound": 306,
-  "withManifest": 226,
-  "lastUpdated": "2026-09-21T03:42:29.481Z",
+  "totalFound": 325,
+  "withManifest": 237,
+  "lastUpdated": "2026-09-22T03:43:34.275Z",
   "searchQuery": "",
   "languages": {
-    "Python": 87,
-    "Shell": 45,
-    "TypeScript": 36,
-    "Rust": 10,
-    "PHP": 1,
-    "JavaScript": 51,
-    "Java": 2,
-    "Go": 12,
-    "Unknown": 37,
-    "HTML": 15,
-    "Typst": 1,
+    "Python": 100,
+    "Shell": 41,
+    "TypeScript": 35,
+    "Rust": 9,
+    "JavaScript": 58,
+    "Go": 11,
+    "Unknown": 38,
+    "HTML": 16,
     "AMPL": 1,
-    "Jupyter Notebook": 2,
     "TeX": 1,
-    "C#": 2,
-    "Makefile": 1,
     "C++": 1,
-    "Astro": 1
+    "Swift": 1,
+    "Go Template": 1,
+    "Svelte": 1,
+    "Kotlin": 1,
+    "Astro": 1,
+    "Jupyter Notebook": 2,
+    "C#": 2,
+    "Typst": 1,
+    "Makefile": 1,
+    "Java": 2,
+    "PHP": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 263887,
+      "stars": 264810,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 177348,
+      "stars": 177509,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75406,
+      "stars": 75454,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 36557,
+      "stars": 36599,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "daily",
-      "stars": 20070,
+      "stars": 20071,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12084,
+      "stars": 12085,
       "url": "https://github.com/kubeshark/kubeshark"
     },
     {
       "name": "web-access",
-      "stars": 8992,
+      "stars": 8999,
       "url": "https://github.com/eze-is/web-access"
     },
     {
       "name": "claude-octopus",
-      "stars": 4091,
+      "stars": 4092,
       "url": "https://github.com/nyldn/claude-octopus"
     },
     {
       "name": "awesome-ChatGPT-repositories",
-      "stars": 3260,
+      "stars": 3261,
       "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
     },
     {
       "name": "Claude-to-IM-skill",
-      "stars": 2881,
+      "stars": 2882,
       "url": "https://github.com/op7418/Claude-to-IM-skill"
     }
   ]

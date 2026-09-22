@@ -1,0 +1,88 @@
+[
+  {
+    "id": "1269893717-im-ai-copyeditor",
+    "name": "im-ai-copyeditor",
+    "description": "맞춤법·문장(번역투·군더더기)·AI 문체·문체를 한 문장씩 적용해, 진짜 교정·교열가처럼 뜻은 그대로 두고 다듬는 스킬(통합 + 세부 3종).",
+    "version": "0.3.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1269893717-im-ai-copyeditor-ai",
+    "name": "im-ai-copyeditor-ai",
+    "description": "name: im-ai-copyeditor-ai",
+    "version": "1.0.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "skills/im-ai-copyeditor-ai",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269893717-im-ai-copyeditor-grammar",
+    "name": "im-ai-copyeditor-grammar",
+    "description": "name: im-ai-copyeditor-grammar",
+    "version": "1.0.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "skills/im-ai-copyeditor-grammar",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269893717-im-ai-copyeditor-grill",
+    "name": "im-ai-copyeditor-grill",
+    "description": "name: im-ai-copyeditor-grill",
+    "version": "1.0.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "skills/im-ai-copyeditor-grill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269893717-im-ai-copyeditor-sentence",
+    "name": "im-ai-copyeditor-sentence",
+    "description": "name: im-ai-copyeditor-sentence",
+    "version": "1.0.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "skills/im-ai-copyeditor-sentence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "hasSkillMd": true
+    }
+  }
+]

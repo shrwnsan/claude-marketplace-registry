@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1145651786-everything-claude-code",
+    "name": "everything-claude-code",
+    "description": "Complete collection of agents, skills, hooks, commands, and rules evolved over 10+ months of intensive daily use",
+    "version": "",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145651786-backend-patterns",
+    "name": "backend-patterns",
+    "description": "name: backend-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "skills/backend-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1145651786-coding-standards",
+    "name": "coding-standards",
+    "description": "name: coding-standards",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "skills/coding-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1145651786-continuous-learning",
+    "name": "continuous-learning",
+    "description": "name: continuous-learning",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "skills/continuous-learning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1145651786-frontend-patterns",
+    "name": "frontend-patterns",
+    "description": "name: frontend-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "skills/frontend-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1145651786-golang-patterns",
+    "name": "golang-patterns",
+    "description": "name: golang-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "skills/golang-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1145651786-security-review",
+    "name": "security-review",
+    "description": "name: security-review",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "skills/security-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1145651786-strategic-compact",
+    "name": "strategic-compact",
+    "description": "name: strategic-compact",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "skills/strategic-compact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1145651786-tdd-workflow",
+    "name": "tdd-workflow",
+    "description": "name: tdd-workflow",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "skills/tdd-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1145651786-verification-loop",
+    "name": "verification-loop",
+    "description": "Claude Code 会话的综合验证系统。",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/a20070322/everything-claude-code-zh",
+    "manifestPath": "skills/verification-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145651786",
+      "marketplaceName": "everything-claude-code-zh",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1268462870-goals",
+    "name": "goals",
+    "description": "A no-nonsense goal workflow engine for Claude Code and Codex: turn a plain-English goal into tracked steps with plain-language decisions and evidence-based done.",
+    "version": "",
+    "author": "ShivamGupta42",
+    "repository": "https://github.com/ShivamGupta42/goals",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1268462870",
+      "marketplaceName": "goals",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1268462870-goals-architecture-diagram",
+    "name": "goals-architecture-diagram",
+    "description": "name: goals-architecture-diagram",
+    "version": "1.0.0",
+    "author": "ShivamGupta42",
+    "repository": "https://github.com/ShivamGupta42/goals",
+    "manifestPath": "skills/goals-architecture-diagram",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1268462870",
+      "marketplaceName": "goals",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1268462870-goals-architecture-map",
+    "name": "goals-architecture-map",
+    "description": "name: goals-architecture-map",
+    "version": "1.0.0",
+    "author": "ShivamGupta42",
+    "repository": "https://github.com/ShivamGupta42/goals",
+    "manifestPath": "skills/goals-architecture-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1268462870",
+      "marketplaceName": "goals",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1268462870-goals-critique",
+    "name": "goals-critique",
+    "description": "name: goals-critique",
+    "version": "1.0.0",
+    "author": "ShivamGupta42",
+    "repository": "https://github.com/ShivamGupta42/goals",
+    "manifestPath": "skills/goals-critique",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1268462870",
+      "marketplaceName": "goals",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1268462870-goals-decision-explainer",
+    "name": "goals-decision-explainer",
+    "description": "name: goals-decision-explainer",
+    "version": "1.0.0",
+    "author": "ShivamGupta42",
+    "repository": "https://github.com/ShivamGupta42/goals",
+    "manifestPath": "skills/goals-decision-explainer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1268462870",
+      "marketplaceName": "goals",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1268462870-goals-problem-solving",
+    "name": "goals-problem-solving",
+    "description": "name: goals-problem-solving",
+    "version": "1.0.0",
+    "author": "ShivamGupta42",
+    "repository": "https://github.com/ShivamGupta42/goals",
+    "manifestPath": "skills/goals-problem-solving",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1268462870",
+      "marketplaceName": "goals",
+      "hasSkillMd": true
+    }
+  }
+]

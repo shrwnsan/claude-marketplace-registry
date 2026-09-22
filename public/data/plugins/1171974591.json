@@ -1,0 +1,751 @@
+[
+  {
+    "id": "1171974591-wh",
+    "name": "wh",
+    "description": "Provenance-tracked research assistant over a Neo4j knowledge graph.",
+    "version": "0.16.1",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1171974591-add",
+    "name": "add",
+    "description": "name: add",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/add",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-ask",
+    "name": "ask",
+    "description": "name: ask",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/ask",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-asta-assistant",
+    "name": "asta-assistant",
+    "description": "name: asta-assistant",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/asta-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-asta-lit",
+    "name": "asta-lit",
+    "description": "name: asta-lit",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/asta-lit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-asta-report",
+    "name": "asta-report",
+    "description": "name: asta-report",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/asta-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-asta-scholar",
+    "name": "asta-scholar",
+    "description": "name: asta-scholar",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/asta-scholar",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-asta-theorize",
+    "name": "asta-theorize",
+    "description": "name: asta-theorize",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/asta-theorize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-asta",
+    "name": "asta",
+    "description": "name: asta",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/asta",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-backup",
+    "name": "backup",
+    "description": "name: backup",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/backup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-bump",
+    "name": "bump",
+    "description": "name: bump",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/bump",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-chat",
+    "name": "chat",
+    "description": "name: chat",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/chat",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-close",
+    "name": "close",
+    "description": "name: close",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/close",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-compile",
+    "name": "compile",
+    "description": "name: compile",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/compile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-dev-feedback",
+    "name": "dev-feedback",
+    "description": "name: dev-feedback",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/dev-feedback",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-discuss",
+    "name": "discuss",
+    "description": "name: discuss",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/discuss",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-dream",
+    "name": "dream",
+    "description": "name: dream",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/dream",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-execute",
+    "name": "execute",
+    "description": "name: execute",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/execute",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-graph-link",
+    "name": "graph-link",
+    "description": "name: graph-link",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/graph-link",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-graph-review",
+    "name": "graph-review",
+    "description": "name: graph-review",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/graph-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-handoff",
+    "name": "handoff",
+    "description": "name: handoff",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-ingest",
+    "name": "ingest",
+    "description": "name: ingest",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/ingest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-init",
+    "name": "init",
+    "description": "name: init",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-lesson",
+    "name": "lesson",
+    "description": "name: lesson",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/lesson",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-llmsr-discover",
+    "name": "llmsr-discover",
+    "description": "name: llmsr-discover",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/llmsr-discover",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-llmsr-transfer",
+    "name": "llmsr-transfer",
+    "description": "name: llmsr-transfer",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/llmsr-transfer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-note",
+    "name": "note",
+    "description": "name: note",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/note",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-pair",
+    "name": "pair",
+    "description": "name: pair",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/pair",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-pause",
+    "name": "pause",
+    "description": "name: pause",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/pause",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-plan",
+    "name": "plan",
+    "description": "name: plan",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-queue",
+    "name": "queue",
+    "description": "name: queue",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/queue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-reconvene",
+    "name": "reconvene",
+    "description": "name: reconvene",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/reconvene",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-report",
+    "name": "report",
+    "description": "name: report",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-restore",
+    "name": "restore",
+    "description": "name: restore",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/restore",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-resume",
+    "name": "resume",
+    "description": "name: resume",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/resume",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-service",
+    "name": "service",
+    "description": "name: service",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/service",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-start",
+    "name": "start",
+    "description": "name: start",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/start",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-status",
+    "name": "status",
+    "description": "name: status",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-triage",
+    "name": "triage",
+    "description": "name: triage",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-update",
+    "name": "update",
+    "description": "name: update",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-wheeler-voice",
+    "name": "wheeler-voice",
+    "description": "name: wheeler-voice",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/wheeler-voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-write",
+    "name": "write",
+    "description": "name: write",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/write",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-wheeler-brief",
+    "name": "wheeler-brief",
+    "description": "name: wheeler-brief",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": ".claude/skills/wheeler-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1171974591-wheeler-service-creator",
+    "name": "wheeler-service-creator",
+    "description": "name: wheeler-service-creator",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": ".claude/skills/wheeler-service-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  }
+]

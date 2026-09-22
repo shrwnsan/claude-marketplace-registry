@@ -1,0 +1,190 @@
+[
+  {
+    "id": "1233351502-erpaval",
+    "name": "erpaval",
+    "description": "Six-phase Explore/Research/Plan/Act/Validate/Compound workflow with classifier-driven routing and a compounding lessons store.",
+    "version": "1.2.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1233351502-agent-ux-patterns",
+    "name": "agent-ux-patterns",
+    "description": "name: agent-ux-patterns",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/agent-ux-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233351502-customer-research",
+    "name": "customer-research",
+    "description": "name: customer-research",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/customer-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233351502-meta-prompt-optimizer",
+    "name": "meta-prompt-optimizer",
+    "description": "name: meta-prompt-optimizer",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/meta-prompt-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233351502-product-design-shared",
+    "name": "product-design-shared",
+    "description": "name: product-design-shared",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/product-design-shared",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233351502-product-discovery",
+    "name": "product-discovery",
+    "description": "name: product-discovery",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/product-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233351502-product-strategy",
+    "name": "product-strategy",
+    "description": "name: product-strategy",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/product-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233351502-research",
+    "name": "research",
+    "description": "name: research",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233351502-tech-stack-builder",
+    "name": "tech-stack-builder",
+    "description": "name: tech-stack-builder",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/tech-stack-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233351502-ultraplan",
+    "name": "ultraplan",
+    "description": "name: ultraplan",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/ultraplan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233351502-working-backwards",
+    "name": "working-backwards",
+    "description": "name: working-backwards",
+    "version": "1.0.0",
+    "author": "Laith Al-Saadoon",
+    "repository": "https://github.com/laithalsaadoon/erpaval",
+    "manifestPath": "skills/working-backwards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233351502",
+      "marketplaceName": "erpaval",
+      "hasSkillMd": true
+    }
+  }
+]

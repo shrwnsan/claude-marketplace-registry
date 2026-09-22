@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1198172135-adacore",
+    "name": "adacore",
+    "description": "AdaCore agent skills for Ada and SPARK development: Alire (package management), GNATprove (SPARK formal verification), GNATfuzz (coverage-guided fuzzing), GNATtest (unit testing), and GNATdoc (documentation generation).",
+    "version": "",
+    "author": "AdaCore",
+    "repository": "https://github.com/AdaCore/skills",
+    "manifestPath": "./plugins/adacore",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1198172135",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1172184033-b2-cloud-storage",
+    "name": "b2-cloud-storage",
+    "description": "Manage Backblaze B2 cloud storage from the terminal: list, audit, cleanup, security review, lifecycle.",
+    "version": "1.2.0",
+    "author": "Backblaze Labs",
+    "repository": "https://github.com/backblaze-labs/claude-skill-b2-cloud-storage",
+    "manifestPath": "./skills/b2-cloud-storage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1172184033",
+      "marketplaceName": "claude-skill-b2-cloud-storage",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,388 @@
+[
+  {
+    "id": "1061953414-document-skills",
+    "name": "document-skills",
+    "description": "Collection of document processing suite including Excel, Word, PowerPoint, and PDF capabilities",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "skills": [
+        "./skills/xlsx",
+        "./skills/docx",
+        "./skills/pptx",
+        "./skills/pdf"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1061953414-example-skills",
+    "name": "example-skills",
+    "description": "Collection of example skills demonstrating various capabilities including skill creation, MCP building, visual design, algorithmic art, internal communications, web testing, artifact building, Slack GIFs, and theme styling",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "skills": [
+        "./skills/algorithmic-art",
+        "./skills/brand-guidelines",
+        "./skills/canvas-design",
+        "./skills/doc-coauthoring",
+        "./skills/frontend-design",
+        "./skills/internal-comms",
+        "./skills/mcp-builder",
+        "./skills/skill-creator",
+        "./skills/slack-gif-creator",
+        "./skills/theme-factory",
+        "./skills/web-artifacts-builder",
+        "./skills/webapp-testing"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1061953414-claude-api",
+    "name": "claude-api",
+    "description": "Claude API and SDK documentation skill for building LLM-powered applications",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "skills": [
+        "./skills/claude-api"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1061953414-academy-guide",
+    "name": "academy-guide",
+    "description": "Recommends relevant Claude Academy courses, tutorials, and use cases when users ask how to use Claude",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "skills": [
+        "./skills/academy-guide"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1061953414-discernment-nudge",
+    "name": "discernment-nudge",
+    "description": "Appends two or three short follow-up questions after a substantive answer to help users check key facts, probe the reasoning, and notice missing context",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "skills": [
+        "./skills/discernment-nudge"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1061953414-algorithmic-art",
+    "name": "algorithmic-art",
+    "description": "name: algorithmic-art",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/algorithmic-art",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-brand-guidelines",
+    "name": "brand-guidelines",
+    "description": "name: brand-guidelines",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/brand-guidelines",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-canvas-design",
+    "name": "canvas-design",
+    "description": "name: canvas-design",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/canvas-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-doc-coauthoring",
+    "name": "doc-coauthoring",
+    "description": "name: doc-coauthoring",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/doc-coauthoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-docx",
+    "name": "docx",
+    "description": "name: docx",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/docx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-frontend-design",
+    "name": "frontend-design",
+    "description": "name: frontend-design",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-internal-comms",
+    "name": "internal-comms",
+    "description": "name: internal-comms",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/internal-comms",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-mcp-builder",
+    "name": "mcp-builder",
+    "description": "name: mcp-builder",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/mcp-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-pdf",
+    "name": "pdf",
+    "description": "name: pdf",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/pdf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-pptx",
+    "name": "pptx",
+    "description": "name: pptx",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/pptx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-skill-creator",
+    "name": "skill-creator",
+    "description": "name: skill-creator",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-slack-gif-creator",
+    "name": "slack-gif-creator",
+    "description": "name: slack-gif-creator",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/slack-gif-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-theme-factory",
+    "name": "theme-factory",
+    "description": "name: theme-factory",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/theme-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-web-artifacts-builder",
+    "name": "web-artifacts-builder",
+    "description": "name: web-artifacts-builder",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/web-artifacts-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-webapp-testing",
+    "name": "webapp-testing",
+    "description": "name: webapp-testing",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/webapp-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1061953414-xlsx",
+    "name": "xlsx",
+    "description": "name: xlsx",
+    "version": "1.0.0",
+    "author": "anthropics",
+    "repository": "https://github.com/anthropics/skills",
+    "manifestPath": "skills/xlsx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1061953414",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

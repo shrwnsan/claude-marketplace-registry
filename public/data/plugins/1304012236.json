@@ -1,0 +1,139 @@
+[
+  {
+    "id": "1304012236-cowrite",
+    "name": "cowrite",
+    "description": "Local AI co-writing canvas with MCP, Codex built-in image generation, slides, WeChat layout, and writing optimization skills.",
+    "version": "0.13.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1304012236-ai-writing-assistant",
+    "name": "ai-writing-assistant",
+    "description": "name: ai-writing-assistant",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/ai-writing-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-article-batch-illustration",
+    "name": "article-batch-illustration",
+    "description": "name: article-batch-illustration",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/article-batch-illustration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-baoyu-xhs-images",
+    "name": "baoyu-xhs-images",
+    "description": "name: baoyu-xhs-images",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/baoyu-xhs-images",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-image-studio",
+    "name": "image-studio",
+    "description": "name: image-studio",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/image-studio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-space-multi-design-ppt",
+    "name": "space-multi-design-ppt",
+    "description": "name: space-multi-design-ppt",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/space-multi-design-ppt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-space-wechat-layout",
+    "name": "space-wechat-layout",
+    "description": "name: space-wechat-layout",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/space-wechat-layout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-text-logic-diagram",
+    "name": "text-logic-diagram",
+    "description": "name: text-logic-diagram",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/text-logic-diagram",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  }
+]

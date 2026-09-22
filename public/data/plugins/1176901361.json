@@ -1,0 +1,159 @@
+[
+  {
+    "id": "1176901361-paperfit",
+    "name": "paperfit",
+    "description": "Natural-language paper layout analysis, repair, migration, and visual acceptance for Claude Code",
+    "version": "1.0.5",
+    "author": "OpenRaiser",
+    "repository": "https://github.com/OpenRaiser/PaperFit",
+    "manifestPath": {
+      "source": "github",
+      "repo": "OpenRaiser/PaperFit"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176901361",
+      "marketplaceName": "PaperFit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1176901361-consistency-polisher",
+    "name": "consistency-polisher",
+    "description": "本技能专门处理 **Category C：排版一致性缺陷**，包括：",
+    "version": "1.0.0",
+    "author": "OpenRaiser",
+    "repository": "https://github.com/OpenRaiser/PaperFit",
+    "manifestPath": "skills/consistency-polisher",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176901361",
+      "marketplaceName": "PaperFit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176901361-float-optimizer",
+    "name": "float-optimizer",
+    "description": "本技能专门处理 **Category B：浮动体缺陷**，包括：",
+    "version": "1.0.0",
+    "author": "OpenRaiser",
+    "repository": "https://github.com/OpenRaiser/PaperFit",
+    "manifestPath": "skills/float-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176901361",
+      "marketplaceName": "PaperFit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176901361-overflow-repair",
+    "name": "overflow-repair",
+    "description": "本技能专门处理 **Category D：溢出与对齐缺陷**，包括：",
+    "version": "1.0.0",
+    "author": "OpenRaiser",
+    "repository": "https://github.com/OpenRaiser/PaperFit",
+    "manifestPath": "skills/overflow-repair",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176901361",
+      "marketplaceName": "PaperFit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176901361-space-util-fixer",
+    "name": "space-util-fixer",
+    "description": "本技能专门处理 **Category A：空间利用缺陷**，包括：",
+    "version": "1.0.0",
+    "author": "OpenRaiser",
+    "repository": "https://github.com/OpenRaiser/PaperFit",
+    "manifestPath": "skills/space-util-fixer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176901361",
+      "marketplaceName": "PaperFit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176901361-taxonomy-vto",
+    "name": "taxonomy-vto",
+    "description": "本技能为 **Visual Typesetting Optimization (VTO)** 任务提供完整的视觉排版缺陷分类知识库。它是 `layout-detective-agent` 进行逐页视觉诊断的核心参考手册，定义了每一类缺陷的**视觉特征、诊断方法、严重等级判定**以及与编译日志信号的对应关系。",
+    "version": "1.0.0",
+    "author": "OpenRaiser",
+    "repository": "https://github.com/OpenRaiser/PaperFit",
+    "manifestPath": "skills/taxonomy-vto",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176901361",
+      "marketplaceName": "PaperFit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176901361-template-migrator",
+    "name": "template-migrator",
+    "description": "本技能专门处理 **Category E：跨模板迁移缺陷**，包括：",
+    "version": "1.0.0",
+    "author": "OpenRaiser",
+    "repository": "https://github.com/OpenRaiser/PaperFit",
+    "manifestPath": "skills/template-migrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176901361",
+      "marketplaceName": "PaperFit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176901361-visual-inspector",
+    "name": "visual-inspector",
+    "description": "本技能是 PaperFit 视觉排版优化闭环中的关键环节，专门负责 **PDF 页图渲染与视觉验收指导**。它封装了将 PDF 转换为逐页高分辨率图片的标准化流程，并为 `layout-detective-agent` 和 `quality-gatekeeper-agent` 提供详细的逐页视觉检查清单。",
+    "version": "1.0.0",
+    "author": "OpenRaiser",
+    "repository": "https://github.com/OpenRaiser/PaperFit",
+    "manifestPath": "skills/visual-inspector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176901361",
+      "marketplaceName": "PaperFit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176901361-writing-polish",
+    "name": "writing-polish",
+    "description": "本技能为 **Semantic Polish Agent** 提供具体、可执行的语义微调策略与禁区规则。它定义了在排版手段用尽后，如何通过最小化文字增删来消除孤行寡行、控制页数预算或优化末页留白，同时严格保持学术内容的原意、数据和结论不变。",
+    "version": "1.0.0",
+    "author": "OpenRaiser",
+    "repository": "https://github.com/OpenRaiser/PaperFit",
+    "manifestPath": "skills/writing-polish",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176901361",
+      "marketplaceName": "PaperFit",
+      "hasSkillMd": true
+    }
+  }
+]

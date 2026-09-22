@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1158924919-find-models",
+    "name": "find-models",
+    "description": "Find AI models on Replicate using search and curated collections.",
+    "version": "",
+    "author": "replicate",
+    "repository": "https://github.com/replicate/skills",
+    "manifestPath": "skills/find-models",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1158924919",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1158924919-compare-models",
+    "name": "compare-models",
+    "description": "Compare Replicate models by cost, speed, quality, and capabilities.",
+    "version": "",
+    "author": "replicate",
+    "repository": "https://github.com/replicate/skills",
+    "manifestPath": "skills/compare-models",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1158924919",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1158924919-run-models",
+    "name": "run-models",
+    "description": "Run AI models on Replicate via predictions, webhooks, and streaming.",
+    "version": "",
+    "author": "replicate",
+    "repository": "https://github.com/replicate/skills",
+    "manifestPath": "skills/run-models",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1158924919",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1158924919-build-models",
+    "name": "build-models",
+    "description": "Package and build custom AI models with Cog for deployment on Replicate.",
+    "version": "",
+    "author": "replicate",
+    "repository": "https://github.com/replicate/skills",
+    "manifestPath": "skills/build-models",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1158924919",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1158924919-publish-models",
+    "name": "publish-models",
+    "description": "Push and publish custom AI models to Replicate, and set up CI/CD for releasing new model versions safely.",
+    "version": "",
+    "author": "replicate",
+    "repository": "https://github.com/replicate/skills",
+    "manifestPath": "skills/publish-models",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1158924919",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1158924919-prompt-images",
+    "name": "prompt-images",
+    "description": "Prompting techniques for AI image generation and editing models on Replicate.",
+    "version": "",
+    "author": "replicate",
+    "repository": "https://github.com/replicate/skills",
+    "manifestPath": "skills/prompt-images",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1158924919",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1158924919-prompt-videos",
+    "name": "prompt-videos",
+    "description": "Prompting techniques for AI video generation models on Replicate.",
+    "version": "",
+    "author": "replicate",
+    "repository": "https://github.com/replicate/skills",
+    "manifestPath": "skills/prompt-videos",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1158924919",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

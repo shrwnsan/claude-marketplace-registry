@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1197289595-agent-starter",
+    "name": "agent-starter",
+    "description": "Skills, hooks, templates, and engineering guides for bootstrapping AI-agent-friendly projects, with a per-project self-improvement loop. Bundles the /new-project and /adopt-project scaffolding skills plus commit, simplify, reflect, remember, and dream.",
+    "version": "0.4.10",
+    "author": "Nick Sawinyh",
+    "repository": "https://github.com/sneg55/agent-starter",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197289595",
+      "marketplaceName": "agent-starter",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1197289595-adopt-project",
+    "name": "adopt-project",
+    "description": "name: adopt-project",
+    "version": "1.0.0",
+    "author": "Nick Sawinyh",
+    "repository": "https://github.com/sneg55/agent-starter",
+    "manifestPath": "skills/adopt-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197289595",
+      "marketplaceName": "agent-starter",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1197289595-commit-push-pr",
+    "name": "commit-push-pr",
+    "description": "name: commit-push-pr",
+    "version": "1.0.0",
+    "author": "Nick Sawinyh",
+    "repository": "https://github.com/sneg55/agent-starter",
+    "manifestPath": "skills/commit-push-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197289595",
+      "marketplaceName": "agent-starter",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1197289595-commit",
+    "name": "commit",
+    "description": "name: commit",
+    "version": "1.0.0",
+    "author": "Nick Sawinyh",
+    "repository": "https://github.com/sneg55/agent-starter",
+    "manifestPath": "skills/commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197289595",
+      "marketplaceName": "agent-starter",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1197289595-dream",
+    "name": "dream",
+    "description": "name: dream",
+    "version": "1.0.0",
+    "author": "Nick Sawinyh",
+    "repository": "https://github.com/sneg55/agent-starter",
+    "manifestPath": "skills/dream",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197289595",
+      "marketplaceName": "agent-starter",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1197289595-new-project",
+    "name": "new-project",
+    "description": "name: new-project",
+    "version": "1.0.0",
+    "author": "Nick Sawinyh",
+    "repository": "https://github.com/sneg55/agent-starter",
+    "manifestPath": "skills/new-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197289595",
+      "marketplaceName": "agent-starter",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1197289595-reflect",
+    "name": "reflect",
+    "description": "name: reflect",
+    "version": "1.0.0",
+    "author": "Nick Sawinyh",
+    "repository": "https://github.com/sneg55/agent-starter",
+    "manifestPath": "skills/reflect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197289595",
+      "marketplaceName": "agent-starter",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1197289595-remember",
+    "name": "remember",
+    "description": "name: remember",
+    "version": "1.0.0",
+    "author": "Nick Sawinyh",
+    "repository": "https://github.com/sneg55/agent-starter",
+    "manifestPath": "skills/remember",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197289595",
+      "marketplaceName": "agent-starter",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1197289595-simplify",
+    "name": "simplify",
+    "description": "name: simplify",
+    "version": "1.0.0",
+    "author": "Nick Sawinyh",
+    "repository": "https://github.com/sneg55/agent-starter",
+    "manifestPath": "skills/simplify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197289595",
+      "marketplaceName": "agent-starter",
+      "hasSkillMd": true
+    }
+  }
+]

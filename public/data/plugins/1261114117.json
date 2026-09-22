@@ -1,0 +1,290 @@
+[
+  {
+    "id": "1261114117-engineering",
+    "name": "engineering",
+    "description": "Engineering workflow skills, review agents, and a /feature pipeline: orientation, planning, test-driven development, systematic debugging, refactoring, error handling, observability, containers, CI pipelines, dependency upgrades, migration planning, incident postmortems, code review, completion verification, and performance work.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-docs",
+    "name": "docs",
+    "description": "Documentation that stays true to the code: architecture decision records with an /adr command, READMEs verified against the repository, developer guides in the four documentation types, and OpenAPI specifications kept in sync in CI.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-pr-toolkit",
+    "name": "pr-toolkit",
+    "description": "Pull-request review as a set of specialists: a read-only code explorer, a behaviour-preserving simplifier, hunters for silent failures and test gaps, a type-design reviewer, and a /review-pr command that runs them in parallel and merges one ranked review.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/pr-toolkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-security",
+    "name": "security",
+    "description": "Security review toolkit: OWASP-aligned code review, dependency and secret auditing skills, a security-auditor agent, and a full-codebase /security-audit command.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-security-hooks",
+    "name": "security-hooks",
+    "description": "Deterministic guardrails, active immediately after install: a compound-command deny list, sensitive-file protection, and prompt-injection screening.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/security-hooks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-git",
+    "name": "git",
+    "description": "Version-control skills for the whole branch lifecycle: committing, worktrees, merge conflicts, undo/recovery, PR descriptions, changelogs, releases, and branch cleanup.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/git",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-productivity",
+    "name": "productivity",
+    "description": "Session and personal productivity: collaborative brainstorming, plan stress-testing, session handoffs, meeting notes, a decision log, learning plans, a /prime command that loads project context, and a /weekly-review that assembles the week from evidence.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/productivity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-testing",
+    "name": "testing",
+    "description": "Testing toolkit: browser-based end-to-end verification with Playwright and a /write-tests command that generates a suite matching project conventions.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-research",
+    "name": "research",
+    "description": "Investigation toolkit: a deep-research subagent for multi-source work with citations, plus name-clearing skills for software projects (registries, app stores) and for businesses (social handles, storefronts, company registers).",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-thesis",
+    "name": "thesis",
+    "description": "The research lifecycle for a master's thesis or paper: research question and proposal, multi-source literature search, structured paper notes, a verified BibTeX bibliography, citation verification with a hook that catches invented keys as they are written, argument-first literature synthesis, research design and design science, statistics planning and reporting, PRISMA systematic reviews, citation-graph expansion, reproducible experiments and benchmark reporting, section-by-section academic writing, LaTeX and Word toolchains, publication figures, an examiner-style reviewer and a paper critic, proofreading, supervisor updates, a research log, and progress tracking.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/thesis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-writing",
+    "name": "writing",
+    "description": "Prose for a human reader: strip machine-writing tells from any text, draft emails that get answered, and outline talks and defences slide by slide.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-workflow-hooks",
+    "name": "workflow-hooks",
+    "description": "Session workflow guardrails, active on install: a session-start situation report, a stop gate that runs the tests before Claude finishes, type errors fed back after each edit, git footgun protection, a branch-first nudge, and a subagent audit log.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/workflow-hooks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-format-on-edit",
+    "name": "format-on-edit",
+    "description": "Automation hook that runs the project's own formatter (Biome, Prettier, gofmt, rustfmt, or ruff) on every file Claude edits, so changes land already formatted.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/format-on-edit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-notify",
+    "name": "notify",
+    "description": "Desktop notifications for Claude Code: surfaces permission requests and attention prompts as native macOS/Linux notifications so long sessions can run in the background.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/notify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-precompact-saver",
+    "name": "precompact-saver",
+    "description": "Context-preservation hook that snapshots the full session transcript before every compaction, keeping the newest ten snapshots per project.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/precompact-saver",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261114117-tool-call-logger",
+    "name": "tool-call-logger",
+    "description": "Observability hook that appends one sanitized JSON line per tool call to a local log, with secret redaction and payload truncation.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/tool-call-logger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

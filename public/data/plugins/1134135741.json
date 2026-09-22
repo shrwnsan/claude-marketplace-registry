@@ -1,0 +1,552 @@
+[
+  {
+    "id": "1134135741-databricks",
+    "name": "databricks",
+    "description": "Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration.",
+    "version": "",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "databricks/databricks-agent-skills",
+      "path": "plugins/databricks/claude",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1134135741-databricks-agent-bricks",
+    "name": "databricks-agent-bricks",
+    "description": "name: databricks-agent-bricks",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-agent-bricks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-ai-functions",
+    "name": "databricks-ai-functions",
+    "description": "name: databricks-ai-functions",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-ai-functions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-aibi-dashboards",
+    "name": "databricks-aibi-dashboards",
+    "description": "name: databricks-aibi-dashboards",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-aibi-dashboards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-app-design",
+    "name": "databricks-app-design",
+    "description": "name: databricks-app-design",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-app-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-apps-python",
+    "name": "databricks-apps-python",
+    "description": "name: databricks-apps-python",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-apps-python",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-apps",
+    "name": "databricks-apps",
+    "description": "name: databricks-apps",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-apps",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-core",
+    "name": "databricks-core",
+    "description": "name: \"databricks-core\"",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-dabs",
+    "name": "databricks-dabs",
+    "description": "name: databricks-dabs",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-dabs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-data-discovery",
+    "name": "databricks-data-discovery",
+    "description": "name: databricks-data-discovery",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-data-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-dbsql",
+    "name": "databricks-dbsql",
+    "description": "name: databricks-dbsql",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-dbsql",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-docs",
+    "name": "databricks-docs",
+    "description": "name: databricks-docs",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-execution-compute",
+    "name": "databricks-execution-compute",
+    "description": "name: databricks-execution-compute",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-execution-compute",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-genie-agents",
+    "name": "databricks-genie-agents",
+    "description": "name: databricks-genie-agents",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-genie-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-iceberg",
+    "name": "databricks-iceberg",
+    "description": "name: databricks-iceberg",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-iceberg",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-jobs",
+    "name": "databricks-jobs",
+    "description": "name: databricks-jobs",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-jobs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-lakebase",
+    "name": "databricks-lakebase",
+    "description": "name: databricks-lakebase",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-lakebase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-lakeflow-connect",
+    "name": "databricks-lakeflow-connect",
+    "description": "name: databricks-lakeflow-connect",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-lakeflow-connect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-metric-views",
+    "name": "databricks-metric-views",
+    "description": "name: databricks-metric-views",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-metric-views",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-ml-training",
+    "name": "databricks-ml-training",
+    "description": "name: databricks-ml-training",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-ml-training",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-mlflow-evaluation",
+    "name": "databricks-mlflow-evaluation",
+    "description": "name: databricks-mlflow-evaluation",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-mlflow-evaluation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-model-serving",
+    "name": "databricks-model-serving",
+    "description": "name: databricks-model-serving",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-model-serving",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-pipelines",
+    "name": "databricks-pipelines",
+    "description": "name: databricks-pipelines",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-pipelines",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-python-sdk",
+    "name": "databricks-python-sdk",
+    "description": "name: databricks-python-sdk",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-python-sdk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-serverless-migration",
+    "name": "databricks-serverless-migration",
+    "description": "name: databricks-serverless-migration",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-serverless-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-setup-local",
+    "name": "databricks-setup-local",
+    "description": "name: databricks-setup-local",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-setup-local",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-spark-structured-streaming",
+    "name": "databricks-spark-structured-streaming",
+    "description": "name: databricks-spark-structured-streaming",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-spark-structured-streaming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-synthetic-data-gen",
+    "name": "databricks-synthetic-data-gen",
+    "description": "name: databricks-synthetic-data-gen",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-synthetic-data-gen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-unity-catalog",
+    "name": "databricks-unity-catalog",
+    "description": "name: databricks-unity-catalog",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-unity-catalog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-unstructured-pdf-generation",
+    "name": "databricks-unstructured-pdf-generation",
+    "description": "name: databricks-unstructured-pdf-generation",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-unstructured-pdf-generation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-vector-search",
+    "name": "databricks-vector-search",
+    "description": "name: databricks-vector-search",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-vector-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-zerobus-ingest",
+    "name": "databricks-zerobus-ingest",
+    "description": "name: databricks-zerobus-ingest",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-zerobus-ingest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]

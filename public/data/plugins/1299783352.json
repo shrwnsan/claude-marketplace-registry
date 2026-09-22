@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1299783352-coherent-gameface",
+    "name": "coherent-gameface",
+    "description": "Drive a running Coherent Gameface UI from your coding agent over a direct Chrome DevTools Protocol connection.",
+    "version": "",
+    "author": "CitiesSkylinesModding",
+    "repository": "https://github.com/CitiesSkylinesModding/agents-plugins",
+    "manifestPath": "./plugins/coherent-gameface",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299783352",
+      "marketplaceName": "agents-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1299783352-unity-devtools",
+    "name": "unity-devtools",
+    "description": "Drive a running Unity Mono development build from your coding agent over the Mono Soft Debugger protocol: live reflection, method invokes, ECS read-write, and screen capture, no code injection.",
+    "version": "",
+    "author": "CitiesSkylinesModding",
+    "repository": "https://github.com/CitiesSkylinesModding/agents-plugins",
+    "manifestPath": "./plugins/unity-devtools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299783352",
+      "marketplaceName": "agents-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1299783352-cs2-modding",
+    "name": "cs2-modding",
+    "description": "Teach your coding agent to write Cities: Skylines II code mods: the game's architecture, the modding techniques and the game mechanics behind them, every claim verified against the decompiled game.",
+    "version": "",
+    "author": "CitiesSkylinesModding",
+    "repository": "https://github.com/CitiesSkylinesModding/agents-plugins",
+    "manifestPath": "./plugins/cs2-modding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299783352",
+      "marketplaceName": "agents-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

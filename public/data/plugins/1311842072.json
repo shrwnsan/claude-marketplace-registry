@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1311842072-atelier",
+    "name": "atelier",
+    "description": "Design → build → review pipeline plus writing-craft skills. Stack-agnostic.",
+    "version": "0.6.4",
+    "author": "muzalee",
+    "repository": "https://github.com/muzalee/claude-atelier",
+    "manifestPath": "./plugins/atelier",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311842072",
+      "marketplaceName": "claude-atelier",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1311842072-atelier-typescript",
+    "name": "atelier-typescript",
+    "description": "TypeScript skills: house conventions for React + Fastify, and route scaffolding. Install alongside atelier in a TypeScript codebase.",
+    "version": "0.3.1",
+    "author": "muzalee",
+    "repository": "https://github.com/muzalee/claude-atelier",
+    "manifestPath": "./plugins/atelier-typescript",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311842072",
+      "marketplaceName": "claude-atelier",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1311842072-atelier-flutter",
+    "name": "atelier-flutter",
+    "description": "Flutter skills: feature-first project structure and house conventions. Install alongside atelier in a Flutter codebase.",
+    "version": "0.2.1",
+    "author": "muzalee",
+    "repository": "https://github.com/muzalee/claude-atelier",
+    "manifestPath": "./plugins/atelier-flutter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311842072",
+      "marketplaceName": "claude-atelier",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

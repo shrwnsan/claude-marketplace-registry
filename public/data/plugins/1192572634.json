@@ -1,0 +1,279 @@
+[
+  {
+    "id": "1192572634-seldonframe",
+    "name": "seldonframe",
+    "description": "The SeldonFrame MCP, one install: build a real hosted workspace (website, booking, CRM, AI agent) from a sentence. First workspace free, no API key.",
+    "version": "",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": "./integrations/claude-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1192572634-reflect",
+    "name": "reflect",
+    "description": "Your AI argues before it answers — five-step decision loop built from Bezos's letters, Musk's algorithm, and Farnam Street's mental models.",
+    "version": "",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": {
+      "source": "github",
+      "repo": "seldonframe/reflect"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1192572634-block-creation",
+    "name": "block-creation",
+    "description": "name: block-creation",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": "skills/block-creation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-landing-page-creation",
+    "name": "landing-page-creation",
+    "description": "name: landing-page-creation",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": "skills/landing-page-creation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-seldonframe-agent-business",
+    "name": "seldonframe-agent-business",
+    "description": "name: seldonframe-agent-business",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": "skills/seldonframe-agent-business",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-deploy-prod",
+    "name": "deploy-prod",
+    "description": "name: deploy-prod",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/deploy-prod",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-dream",
+    "name": "dream",
+    "description": "name: dream",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/dream",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-extract-approach",
+    "name": "extract-approach",
+    "description": "name: extract-approach",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/extract-approach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-generate-and-grade",
+    "name": "generate-and-grade",
+    "description": "name: generate-and-grade",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/generate-and-grade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-handoff",
+    "name": "handoff",
+    "description": "name: handoff",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-information-gain",
+    "name": "information-gain",
+    "description": "name: information-gain",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/information-gain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-ship-feature",
+    "name": "ship-feature",
+    "description": "name: ship-feature",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/ship-feature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-verify-build",
+    "name": "verify-build",
+    "description": "name: verify-build",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/verify-build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-vision-verify",
+    "name": "vision-verify",
+    "description": "name: vision-verify",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/vision-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-x-post-engine",
+    "name": "x-post-engine",
+    "description": "name: x-post-engine",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/x-post-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192572634-youtube-video-kit",
+    "name": "youtube-video-kit",
+    "description": "name: youtube-video-kit",
+    "version": "1.0.0",
+    "author": "seldonframe",
+    "repository": "https://github.com/seldonframe/seldonframe",
+    "manifestPath": ".claude/skills/youtube-video-kit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192572634",
+      "marketplaceName": "seldonframe",
+      "hasSkillMd": true
+    }
+  }
+]

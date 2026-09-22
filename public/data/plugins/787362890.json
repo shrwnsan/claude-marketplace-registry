@@ -1,0 +1,22 @@
+[
+  {
+    "id": "787362890-logtape",
+    "name": "logtape",
+    "description": "Guidance for using LogTape in JavaScript and TypeScript projects.",
+    "version": "",
+    "author": "dahlia",
+    "repository": "https://github.com/dahlia/logtape",
+    "manifestPath": "./packages/logtape",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "787362890",
+      "marketplaceName": "logtape",
+      "skills": [
+        "./skills/logtape"
+      ],
+      "strict": false
+    }
+  }
+]

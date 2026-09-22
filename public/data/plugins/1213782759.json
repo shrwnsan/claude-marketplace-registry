@@ -1,0 +1,377 @@
+[
+  {
+    "id": "1213782759-leyline",
+    "name": "leyline",
+    "description": "Opinionated developer-session workflow. Encodes one coherent session from first message to merged branch as a deterministic pipeline of skills that hand off to each other in a fixed order. 21 skills, 2 subagents, session-start hook, iron-law enforcement for TDD / systematic-debugging / verification / design-driven-development / accessibility-verification.",
+    "version": "",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1213782759-accessibility-verification",
+    "name": "accessibility-verification",
+    "description": "name: accessibility-verification",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/accessibility-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-brainstorming",
+    "name": "brainstorming",
+    "description": "name: brainstorming",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/brainstorming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-deep-discovery",
+    "name": "deep-discovery",
+    "description": "name: deep-discovery",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/deep-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-design-brainstorming",
+    "name": "design-brainstorming",
+    "description": "name: design-brainstorming",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/design-brainstorming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-design-driven-development",
+    "name": "design-driven-development",
+    "description": "name: design-driven-development",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/design-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-design-interrogation",
+    "name": "design-interrogation",
+    "description": "name: design-interrogation",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/design-interrogation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-dispatching-parallel-agents",
+    "name": "dispatching-parallel-agents",
+    "description": "name: dispatching-parallel-agents",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/dispatching-parallel-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-executing-plans",
+    "name": "executing-plans",
+    "description": "name: executing-plans",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/executing-plans",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-finishing-a-development-branch",
+    "name": "finishing-a-development-branch",
+    "description": "name: finishing-a-development-branch",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/finishing-a-development-branch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-receiving-code-review",
+    "name": "receiving-code-review",
+    "description": "name: receiving-code-review",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/receiving-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-receiving-design-review",
+    "name": "receiving-design-review",
+    "description": "name: receiving-design-review",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/receiving-design-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-requesting-code-review",
+    "name": "requesting-code-review",
+    "description": "name: requesting-code-review",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/requesting-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-requesting-design-review",
+    "name": "requesting-design-review",
+    "description": "name: requesting-design-review",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/requesting-design-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-subagent-driven-development",
+    "name": "subagent-driven-development",
+    "description": "name: subagent-driven-development",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/subagent-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-systematic-debugging",
+    "name": "systematic-debugging",
+    "description": "name: systematic-debugging",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/systematic-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-test-driven-development",
+    "name": "test-driven-development",
+    "description": "name: test-driven-development",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/test-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-using-git-worktrees",
+    "name": "using-git-worktrees",
+    "description": "name: using-git-worktrees",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/using-git-worktrees",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-using-leyline",
+    "name": "using-leyline",
+    "description": "name: using-leyline",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/using-leyline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-verification-before-completion",
+    "name": "verification-before-completion",
+    "description": "name: verification-before-completion",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/verification-before-completion",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-writing-plans",
+    "name": "writing-plans",
+    "description": "name: writing-plans",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/writing-plans",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1213782759-writing-skills",
+    "name": "writing-skills",
+    "description": "name: writing-skills",
+    "version": "1.0.0",
+    "author": "forsonny",
+    "repository": "https://github.com/forsonny/leyline",
+    "manifestPath": "skills/writing-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213782759",
+      "marketplaceName": "leyline",
+      "hasSkillMd": true
+    }
+  }
+]

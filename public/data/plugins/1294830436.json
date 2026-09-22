@@ -1,0 +1,292 @@
+[
+  {
+    "id": "1294830436-media",
+    "name": "media",
+    "description": "System-wide now-playing control for macOS from Claude Code — zero dependencies",
+    "version": "",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1294830436-artwork",
+    "name": "artwork",
+    "description": "name: artwork",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/artwork",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-config",
+    "name": "config",
+    "description": "name: config",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-doctor",
+    "name": "doctor",
+    "description": "name: doctor",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-history",
+    "name": "history",
+    "description": "name: history",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/history",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-menu",
+    "name": "menu",
+    "description": "name: menu",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/menu",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-next",
+    "name": "next",
+    "description": "name: next",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/next",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-now",
+    "name": "now",
+    "description": "name: now",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/now",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-output",
+    "name": "output",
+    "description": "name: output",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/output",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-pause",
+    "name": "pause",
+    "description": "name: pause",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/pause",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-play",
+    "name": "play",
+    "description": "name: play",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/play",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-prev",
+    "name": "prev",
+    "description": "name: prev",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/prev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-seek",
+    "name": "seek",
+    "description": "name: seek",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/seek",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-statusline",
+    "name": "statusline",
+    "description": "name: statusline",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/statusline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-toggle",
+    "name": "toggle",
+    "description": "name: toggle",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/toggle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-volume",
+    "name": "volume",
+    "description": "name: volume",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/volume",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-verify",
+    "name": "verify",
+    "description": "name: verify",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": ".claude/skills/verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  }
+]

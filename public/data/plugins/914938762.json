@@ -1,0 +1,24 @@
+[
+  {
+    "id": "914938762-camunda-migration",
+    "name": "camunda-migration",
+    "description": "Migrate Camunda 7 projects to Camunda 8 — Java code (AI, OpenRewrite, or both) and BPMN/DMN models (Diagram Converter CLI or agentic).",
+    "version": "0.1.0",
+    "author": "camunda",
+    "repository": "https://github.com/camunda/camunda-7-to-8-migration-tooling",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/camunda/camunda-7-to-8-migration-tooling.git",
+      "path": "agentic-migration-skills"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "914938762",
+      "marketplaceName": "camunda-7-to-8-migration-tooling",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

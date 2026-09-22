@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1354760955-sagemaker-marketplace-onboarding",
+    "name": "sagemaker-marketplace-onboarding",
+    "description": "",
+    "version": "",
+    "author": "aws-samples",
+    "repository": "https://github.com/aws-samples/sample-sagemaker-marketplace-onboarding-skill",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1354760955",
+      "marketplaceName": "sample-sagemaker-marketplace-onboarding-skill",
+      "skills": [
+        "./sagemaker-marketplace-onboarding"
+      ],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,241 @@
+[
+  {
+    "id": "1199582283-ai-tools",
+    "name": "ai-tools",
+    "description": "All ai_tools skills (audit-writing-architecture, author-style-guide, cold-start-audit, code-map, code-scorecard, content-voice-audit, content-voice-revision, feature-writer, root-cause, security-audit, story-prefinement, story-splitter, story-writer) plus commands.",
+    "version": "",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1199582283-audit-writing-architecture",
+    "name": "audit-writing-architecture",
+    "description": "name: audit-writing-architecture",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/audit-writing-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-author-style-guide",
+    "name": "author-style-guide",
+    "description": "name: author-style-guide",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/author-style-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-code-map",
+    "name": "code-map",
+    "description": "name: code-map",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/code-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-code-scorecard",
+    "name": "code-scorecard",
+    "description": "name: code-scorecard",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/code-scorecard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-cold-start-audit",
+    "name": "cold-start-audit",
+    "description": "name: cold-start-audit",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/cold-start-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-content-voice-audit",
+    "name": "content-voice-audit",
+    "description": "name: content-voice-audit",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/content-voice-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-content-voice-revision",
+    "name": "content-voice-revision",
+    "description": "name: content-voice-revision",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/content-voice-revision",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-feature-writer",
+    "name": "feature-writer",
+    "description": "name: feature-writer",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/feature-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-root-cause",
+    "name": "root-cause",
+    "description": "name: root-cause",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/root-cause",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-security-audit",
+    "name": "security-audit",
+    "description": "name: security-audit",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/security-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-story-prefinement",
+    "name": "story-prefinement",
+    "description": "name: story-prefinement",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/story-prefinement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-story-splitter",
+    "name": "story-splitter",
+    "description": "name: story-splitter",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/story-splitter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199582283-story-writer",
+    "name": "story-writer",
+    "description": "name: story-writer",
+    "version": "1.0.0",
+    "author": "sean-m-cooper",
+    "repository": "https://github.com/sean-m-cooper/ai_tools",
+    "manifestPath": "skills/story-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199582283",
+      "marketplaceName": "ai_tools",
+      "hasSkillMd": true
+    }
+  }
+]
