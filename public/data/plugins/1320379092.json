@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1320379092-seaslides-typst-slides-skill",
+    "name": "seaslides-typst-slides-skill",
+    "description": "Generate Typst/Touying presentations from PDF / DOCX / URL / Markdown — 150+ themes, AI image generation, audio narration, and export to PDF/PNG/PPTX.",
+    "version": "1.0.0",
+    "author": "touying-typ",
+    "repository": "https://github.com/touying-typ/seaslides",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/touying-typ/tempos-slides.git",
+      "path": "skills/seaslides-typst-slides-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320379092",
+      "marketplaceName": "seaslides",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1320379092-seaslides-html-slides-skill",
+    "name": "seaslides-html-slides-skill",
+    "description": "Generate HTML/SVG presentations with Satori rendering — 9 editorial templates, MathJax math, Prism.js code highlighting, and export to SVG/PNG/PPTX.",
+    "version": "1.0.0",
+    "author": "touying-typ",
+    "repository": "https://github.com/touying-typ/seaslides",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/touying-typ/tempos-slides.git",
+      "path": "skills/seaslides-html-slides-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320379092",
+      "marketplaceName": "seaslides",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

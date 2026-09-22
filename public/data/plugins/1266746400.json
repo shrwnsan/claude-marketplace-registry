@@ -1,0 +1,499 @@
+[
+  {
+    "id": "1266746400-skillengine",
+    "name": "skillengine",
+    "description": "Production-grade engineering skills covering every phase of software development: spec, plan, build, verify, review, and ship.",
+    "version": "",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": {
+      "source": "github",
+      "repo": "borhen68/skillengine"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1266746400-ai-ops",
+    "name": "ai-ops",
+    "description": "name: ai-ops",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/ai-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-api-and-interface-design",
+    "name": "api-and-interface-design",
+    "description": "name: api-and-interface-design",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/api-and-interface-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-browser-testing-with-devtools",
+    "name": "browser-testing-with-devtools",
+    "description": "name: browser-testing-with-devtools",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/browser-testing-with-devtools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-chaos-engineering",
+    "name": "chaos-engineering",
+    "description": "name: chaos-engineering",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/chaos-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-ci-cd-and-automation",
+    "name": "ci-cd-and-automation",
+    "description": "name: ci-cd-and-automation",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/ci-cd-and-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-code-review-and-quality",
+    "name": "code-review-and-quality",
+    "description": "name: code-review-and-quality",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/code-review-and-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-code-simplification",
+    "name": "code-simplification",
+    "description": "name: code-simplification",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/code-simplification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-context-engineering",
+    "name": "context-engineering",
+    "description": "name: context-engineering",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/context-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-cost-optimization",
+    "name": "cost-optimization",
+    "description": "name: cost-optimization",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/cost-optimization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-data-engineering",
+    "name": "data-engineering",
+    "description": "name: data-engineering",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/data-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-debugging-and-error-recovery",
+    "name": "debugging-and-error-recovery",
+    "description": "name: debugging-and-error-recovery",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/debugging-and-error-recovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-deprecation-and-migration",
+    "name": "deprecation-and-migration",
+    "description": "name: deprecation-and-migration",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/deprecation-and-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-documentation-and-adrs",
+    "name": "documentation-and-adrs",
+    "description": "name: documentation-and-adrs",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/documentation-and-adrs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-doubt-driven-development",
+    "name": "doubt-driven-development",
+    "description": "name: doubt-driven-development",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/doubt-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-frontend-ui-engineering",
+    "name": "frontend-ui-engineering",
+    "description": "name: frontend-ui-engineering",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/frontend-ui-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-git-workflow-and-versioning",
+    "name": "git-workflow-and-versioning",
+    "description": "name: git-workflow-and-versioning",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/git-workflow-and-versioning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-idea-refine",
+    "name": "idea-refine",
+    "description": "name: idea-refine",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/idea-refine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-incremental-implementation",
+    "name": "incremental-implementation",
+    "description": "name: incremental-implementation",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/incremental-implementation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-interview-me",
+    "name": "interview-me",
+    "description": "name: interview-me",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/interview-me",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-observability-and-instrumentation",
+    "name": "observability-and-instrumentation",
+    "description": "name: observability-and-instrumentation",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/observability-and-instrumentation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-performance-optimization",
+    "name": "performance-optimization",
+    "description": "name: performance-optimization",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/performance-optimization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-planning-and-task-breakdown",
+    "name": "planning-and-task-breakdown",
+    "description": "name: planning-and-task-breakdown",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/planning-and-task-breakdown",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-security-and-hardening",
+    "name": "security-and-hardening",
+    "description": "name: security-and-hardening",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/security-and-hardening",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-shipping-and-launch",
+    "name": "shipping-and-launch",
+    "description": "name: shipping-and-launch",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/shipping-and-launch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-source-driven-development",
+    "name": "source-driven-development",
+    "description": "name: source-driven-development",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/source-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-spec-driven-development",
+    "name": "spec-driven-development",
+    "description": "name: spec-driven-development",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/spec-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-test-driven-development",
+    "name": "test-driven-development",
+    "description": "name: test-driven-development",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/test-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266746400-using-agent-skills",
+    "name": "using-agent-skills",
+    "description": "name: using-agent-skills",
+    "version": "1.0.0",
+    "author": "borhen68",
+    "repository": "https://github.com/borhen68/SkillEngine",
+    "manifestPath": "skills/using-agent-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266746400",
+      "marketplaceName": "SkillEngine",
+      "hasSkillMd": true
+    }
+  }
+]

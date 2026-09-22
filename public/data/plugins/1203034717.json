@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1203034717-sverklo-skill",
+    "name": "sverklo-skill",
+    "description": "Claude Skill — teaches Claude when to use sverklo's semantic search, blast-radius, diff review, and persistent memory tools",
+    "version": "1.0.0",
+    "author": "sverklo",
+    "repository": "https://github.com/sverklo/sverklo",
+    "manifestPath": "sverklo-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1203034717",
+      "marketplaceName": "sverklo",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

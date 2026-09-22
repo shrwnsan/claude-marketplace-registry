@@ -1,0 +1,774 @@
+[
+  {
+    "id": "1184078081-enablement-core",
+    "name": "enablement-core",
+    "description": "",
+    "version": "",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "./plugins/enablement-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1184078081-enablement-messaging",
+    "name": "enablement-messaging",
+    "description": "",
+    "version": "",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "./plugins/enablement-messaging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1184078081-enablement-programs",
+    "name": "enablement-programs",
+    "description": "",
+    "version": "",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "./plugins/enablement-programs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1184078081-enablement-measurement",
+    "name": "enablement-measurement",
+    "description": "",
+    "version": "",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "./plugins/enablement-measurement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1184078081-enablement-launches",
+    "name": "enablement-launches",
+    "description": "",
+    "version": "",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "./plugins/enablement-launches",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1184078081-enablement-crm-pack",
+    "name": "enablement-crm-pack",
+    "description": "",
+    "version": "",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "./plugins/enablement-crm-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1184078081-enablement-ci-pack",
+    "name": "enablement-ci-pack",
+    "description": "",
+    "version": "",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "./plugins/enablement-ci-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1184078081-account-brief-builder",
+    "name": "account-brief-builder",
+    "description": "name: account-brief-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/account-brief-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-battlecard-builder",
+    "name": "battlecard-builder",
+    "description": "name: battlecard-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/battlecard-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-call-insights-to-objections",
+    "name": "call-insights-to-objections",
+    "description": "name: call-insights-to-objections",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/call-insights-to-objections",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-call-review-coach",
+    "name": "call-review-coach",
+    "description": "name: call-review-coach",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/call-review-coach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-case-study-extractor",
+    "name": "case-study-extractor",
+    "description": "name: case-study-extractor",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/case-study-extractor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-certification-program-builder",
+    "name": "certification-program-builder",
+    "description": "name: certification-program-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/certification-program-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-content-gap-analysis",
+    "name": "content-gap-analysis",
+    "description": "name: content-gap-analysis",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/content-gap-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-content-governance-system",
+    "name": "content-governance-system",
+    "description": "name: content-governance-system",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/content-governance-system",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-deal-inspection-coach",
+    "name": "deal-inspection-coach",
+    "description": "name: deal-inspection-coach",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/deal-inspection-coach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-discovery-and-demo-structure",
+    "name": "discovery-and-demo-structure",
+    "description": "name: discovery-and-demo-structure",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/discovery-and-demo-structure",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-discovery-rubric-auditor",
+    "name": "discovery-rubric-auditor",
+    "description": "name: discovery-rubric-auditor",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/discovery-rubric-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-enablement-house-style",
+    "name": "enablement-house-style",
+    "description": "name: enablement-house-style",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/enablement-house-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-enablement-impact-story",
+    "name": "enablement-impact-story",
+    "description": "name: enablement-impact-story",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/enablement-impact-story",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-enablement-metrics-and-instrumentation",
+    "name": "enablement-metrics-and-instrumentation",
+    "description": "name: enablement-metrics-and-instrumentation",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/enablement-metrics-and-instrumentation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-enablement-program-design",
+    "name": "enablement-program-design",
+    "description": "name: enablement-program-design",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/enablement-program-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-enablement-router",
+    "name": "enablement-router",
+    "description": "name: enablement-router",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/enablement-router",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-executive-briefing-builder",
+    "name": "executive-briefing-builder",
+    "description": "name: executive-briefing-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/executive-briefing-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-field-feedback-synthesizer",
+    "name": "field-feedback-synthesizer",
+    "description": "name: field-feedback-synthesizer",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/field-feedback-synthesizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-forecast-risk-brief",
+    "name": "forecast-risk-brief",
+    "description": "name: forecast-risk-brief",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/forecast-risk-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-manager-coaching-cadence",
+    "name": "manager-coaching-cadence",
+    "description": "name: manager-coaching-cadence",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/manager-coaching-cadence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-mutual-action-plan-builder",
+    "name": "mutual-action-plan-builder",
+    "description": "name: mutual-action-plan-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/mutual-action-plan-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-objection-library-builder",
+    "name": "objection-library-builder",
+    "description": "name: objection-library-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/objection-library-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-onboarding-program-builder",
+    "name": "onboarding-program-builder",
+    "description": "name: onboarding-program-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/onboarding-program-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-onboarding-to-value-playbook",
+    "name": "onboarding-to-value-playbook",
+    "description": "name: onboarding-to-value-playbook",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/onboarding-to-value-playbook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-one-pager-and-slide-outline",
+    "name": "one-pager-and-slide-outline",
+    "description": "name: one-pager-and-slide-outline",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/one-pager-and-slide-outline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-partner-enablement-package",
+    "name": "partner-enablement-package",
+    "description": "name: partner-enablement-package",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/partner-enablement-package",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-pipeline-stage-definition-and-exit-criteria",
+    "name": "pipeline-stage-definition-and-exit-criteria",
+    "description": "name: pipeline-stage-definition-and-exit-criteria",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/pipeline-stage-definition-and-exit-criteria",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-product-launch-enablement",
+    "name": "product-launch-enablement",
+    "description": "name: product-launch-enablement",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/product-launch-enablement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-proposal-rfp-orchestrator",
+    "name": "proposal-rfp-orchestrator",
+    "description": "name: proposal-rfp-orchestrator",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/proposal-rfp-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-qbr-ebr-builder",
+    "name": "qbr-ebr-builder",
+    "description": "name: qbr-ebr-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/qbr-ebr-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-quarterly-enablement-planner",
+    "name": "quarterly-enablement-planner",
+    "description": "name: quarterly-enablement-planner",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/quarterly-enablement-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-release-notes-to-seller-updates",
+    "name": "release-notes-to-seller-updates",
+    "description": "name: release-notes-to-seller-updates",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/release-notes-to-seller-updates",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-renewal-and-expansion-enablement",
+    "name": "renewal-and-expansion-enablement",
+    "description": "name: renewal-and-expansion-enablement",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/renewal-and-expansion-enablement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-revenue-enablement-context",
+    "name": "revenue-enablement-context",
+    "description": "name: revenue-enablement-context",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/revenue-enablement-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-roleplay-scenario-builder",
+    "name": "roleplay-scenario-builder",
+    "description": "name: roleplay-scenario-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/roleplay-scenario-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-talk-track-builder",
+    "name": "talk-track-builder",
+    "description": "name: talk-track-builder",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/talk-track-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-value-prop-and-positioning",
+    "name": "value-prop-and-positioning",
+    "description": "name: value-prop-and-positioning",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/value-prop-and-positioning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1184078081-win-loss-synthesis",
+    "name": "win-loss-synthesis",
+    "description": "name: win-loss-synthesis",
+    "version": "1.0.0",
+    "author": "nthnclrk",
+    "repository": "https://github.com/nthnclrk/enablement-skills",
+    "manifestPath": "skills/win-loss-synthesis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184078081",
+      "marketplaceName": "enablement-skills",
+      "hasSkillMd": true
+    }
+  }
+]

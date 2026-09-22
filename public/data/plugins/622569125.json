@@ -1,0 +1,24 @@
+[
+  {
+    "id": "622569125-awesome-chatgpt-search",
+    "name": "awesome-chatgpt-search",
+    "description": "Search 2500+ curated ChatGPT and LLM repositories from Claude Code. Covers CLIs, Chatbots, NLP, Langchain, Prompts, Browser-extensions, and more.",
+    "version": "",
+    "author": "taishi-i",
+    "repository": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+      "path": "plugins/awesome-chatgpt-search"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "622569125",
+      "marketplaceName": "awesome-ChatGPT-repositories",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

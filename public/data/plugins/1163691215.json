@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1163691215-amazon-catalog-cli",
+    "name": "amazon-catalog-cli",
+    "description": "Catalog CLI audits Amazon Category Listing Reports (CLR files, `.xlsx`/`.xlsm`) for listing quality issues. It runs 14 query plugins covering missing attributes, title validation, bullet point optimiz",
+    "version": "1.0.0",
+    "author": "BWB03",
+    "repository": "https://github.com/BWB03/amazon-catalog-cli",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163691215",
+      "marketplaceName": "amazon-catalog-cli",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "id": "1217927485-holocron",
+    "name": "holocron",
+    "description": "A Jedi council for your codebase: role-specialist agents, domain commands, and a SQLite-backed learning crystal that compounds corrections across sessions.",
+    "version": "",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1217927485-a11y-checklist",
+    "name": "a11y-checklist",
+    "description": "name: a11y-checklist",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/a11y-checklist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-api-design",
+    "name": "api-design",
+    "description": "name: api-design",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/api-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-context-engineering",
+    "name": "context-engineering",
+    "description": "name: context-engineering",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/context-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-debug-playbook",
+    "name": "debug-playbook",
+    "description": "name: debug-playbook",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/debug-playbook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-migration-patterns",
+    "name": "migration-patterns",
+    "description": "name: migration-patterns",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/migration-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-observability-checklist",
+    "name": "observability-checklist",
+    "description": "name: observability-checklist",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/observability-checklist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-perf-checklist",
+    "name": "perf-checklist",
+    "description": "name: perf-checklist",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/perf-checklist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-pr-review-rubric",
+    "name": "pr-review-rubric",
+    "description": "name: pr-review-rubric",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/pr-review-rubric",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-security-checklist",
+    "name": "security-checklist",
+    "description": "name: security-checklist",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/security-checklist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-test-patterns",
+    "name": "test-patterns",
+    "description": "name: test-patterns",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/test-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1217927485-token-economy",
+    "name": "token-economy",
+    "description": "name: token-economy",
+    "version": "1.0.0",
+    "author": "Atul Kumar Jha",
+    "repository": "https://github.com/atuljha23/holocron",
+    "manifestPath": "skills/token-economy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217927485",
+      "marketplaceName": "holocron",
+      "hasSkillMd": true
+    }
+  }
+]

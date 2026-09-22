@@ -1,0 +1,700 @@
+[
+  {
+    "id": "1201775350-great-cto",
+    "name": "great_cto",
+    "description": "You already have the agent. This is everything around it. great_cto runs Claude Code as a pipeline of 70 specialist agents — an independent model checks each stage before the next builds on it, spending caps refuse rather than warn, and three decisions stay yours: what gets built, how, and whether it ships.",
+    "version": "3.31.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1201775350-aesthetic-instrument",
+    "name": "aesthetic-instrument",
+    "description": "name: aesthetic-instrument",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/aesthetic-instrument",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-anti-patterns",
+    "name": "anti-patterns",
+    "description": "name: anti-patterns",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/anti-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-anydesign",
+    "name": "anydesign",
+    "description": "name: anydesign",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/anydesign",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-archetype-review-base",
+    "name": "archetype-review-base",
+    "description": "name: archetype-review-base",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/archetype-review-base",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-brainstorming",
+    "name": "brainstorming",
+    "description": "name: brainstorming",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/brainstorming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-codex-host",
+    "name": "codex-host",
+    "description": "name: codex-host",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/codex-host",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-committed-aesthetic",
+    "name": "committed-aesthetic",
+    "description": "name: committed-aesthetic",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/committed-aesthetic",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-cost-model",
+    "name": "cost-model",
+    "description": "name: cost-model",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/cost-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-crystallize",
+    "name": "crystallize",
+    "description": "name: crystallize",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/crystallize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-decision-eval",
+    "name": "decision-eval",
+    "description": "name: decision-eval",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/decision-eval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-discovery",
+    "name": "discovery",
+    "description": "name: discovery",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-done-blocked",
+    "name": "done-blocked",
+    "description": "name: done-blocked",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/done-blocked",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-lifecycle-messaging",
+    "name": "lifecycle-messaging",
+    "description": "name: lifecycle-messaging",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/lifecycle-messaging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-local-seo",
+    "name": "local-seo",
+    "description": "name: local-seo",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/local-seo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-migration-ready-schema",
+    "name": "migration-ready-schema",
+    "description": "name: migration-ready-schema",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/migration-ready-schema",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-observability-baseline",
+    "name": "observability-baseline",
+    "description": "name: observability-baseline",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/observability-baseline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-opportunity-solution-tree",
+    "name": "opportunity-solution-tree",
+    "description": "name: opportunity-solution-tree",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/opportunity-solution-tree",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-outcome-roadmap",
+    "name": "outcome-roadmap",
+    "description": "name: outcome-roadmap",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/outcome-roadmap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-pm-planning",
+    "name": "pm-planning",
+    "description": "name: pm-planning",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/pm-planning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-pre-mortem",
+    "name": "pre-mortem",
+    "description": "name: pre-mortem",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/pre-mortem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-product-economics",
+    "name": "product-economics",
+    "description": "name: product-economics",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/product-economics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-prose-style",
+    "name": "prose-style",
+    "description": "name: prose-style",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/prose-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-quant-validation",
+    "name": "quant-validation",
+    "description": "name: quant-validation",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/quant-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-skeptical-triage",
+    "name": "skeptical-triage",
+    "description": "name: skeptical-triage",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/skeptical-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-stack-baseline",
+    "name": "stack-baseline",
+    "description": "name: stack-baseline",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/stack-baseline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-test-strategy",
+    "name": "test-strategy",
+    "description": "name: test-strategy",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/test-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-ui-ux-pro-max",
+    "name": "ui-ux-pro-max",
+    "description": "name: ui-ux-pro-max",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/ui-ux-pro-max",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-construction",
+    "name": "vertical-construction",
+    "description": "name: vertical-construction",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-construction",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-creator",
+    "name": "vertical-creator",
+    "description": "name: vertical-creator",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-fintech-mobile",
+    "name": "vertical-fintech-mobile",
+    "description": "name: vertical-fintech-mobile",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-fintech-mobile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-fitness",
+    "name": "vertical-fitness",
+    "description": "name: vertical-fitness",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-fitness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-home-services",
+    "name": "vertical-home-services",
+    "description": "name: vertical-home-services",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-home-services",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-hr-recruiting",
+    "name": "vertical-hr-recruiting",
+    "description": "name: vertical-hr-recruiting",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-hr-recruiting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-logistics",
+    "name": "vertical-logistics",
+    "description": "name: vertical-logistics",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-logistics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-onboarding",
+    "name": "vertical-onboarding",
+    "description": "name: vertical-onboarding",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-onboarding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-professional-services",
+    "name": "vertical-professional-services",
+    "description": "name: vertical-professional-services",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-professional-services",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-real-estate",
+    "name": "vertical-real-estate",
+    "description": "name: vertical-real-estate",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-real-estate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-restaurants",
+    "name": "vertical-restaurants",
+    "description": "name: vertical-restaurants",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-restaurants",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-vertical-retail",
+    "name": "vertical-retail",
+    "description": "name: vertical-retail",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/vertical-retail",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-well-architected",
+    "name": "well-architected",
+    "description": "name: well-architected",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/well-architected",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  }
+]

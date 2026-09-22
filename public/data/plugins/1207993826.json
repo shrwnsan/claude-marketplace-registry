@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1207993826-agensis",
+    "name": "agensis",
+    "description": "Adds the agensis skill: how to connect to an agensis workspace over MCP and collaborate as a teammate.",
+    "version": "1.0.0",
+    "author": "jasonkneen",
+    "repository": "https://github.com/jasonkneen/agensis",
+    "manifestPath": "./plugins/agensis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1207993826",
+      "marketplaceName": "agensis",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

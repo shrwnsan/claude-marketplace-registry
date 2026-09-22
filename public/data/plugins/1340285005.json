@@ -1,0 +1,224 @@
+[
+  {
+    "id": "1340285005-cachewraith-skills",
+    "name": "cachewraith-skills",
+    "description": "Twelve engineering skills for Claude Code: an OWASP Top Ten security audit that names the category ID for every finding, a performance audit that reports evidence rather than vibes, a test skill that finds and uses the project's own runner, a branch-and-commit helper with a fixed naming convention, an API documentation generator that investigates real endpoints and publishes frontend-ready docs as an Artifact, and a release helper that bumps the version everywhere it lives in any ecosystem, then tags and pushes it, and a Spring Boot structure skill that scaffolds a versioned module-per-feature package tree and records the layout in CLAUDE.md, and an OWASP skill that installs the Top Ten as a standing instruction in a project, and a design-pattern skill that makes pattern choice a deliberate, stated step. It also carries two low-cost conversational skills: an ask skill that answers a question after checking the real source of truth for it, in as few tool calls as possible, and a discuss skill that scopes a scan to the decision at hand, looks outward only when the answer lives outside the repo, and comes back with a recommendation and what would change its mind. And a design-ui skill that loads ui-ux-pro-max, then designs a UI mockup the way a human product designer does — brief, real content, hierarchy, a token system, every state — critiques it, and publishes it as an Artifact.",
+    "version": "",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1340285005-add-designpattern",
+    "name": "add-designpattern",
+    "description": "name: add-designpattern",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/add-designpattern",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-add-owasptopten",
+    "name": "add-owasptopten",
+    "description": "name: add-owasptopten",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/add-owasptopten",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-add-spring-structure",
+    "name": "add-spring-structure",
+    "description": "name: add-spring-structure",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/add-spring-structure",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-ask",
+    "name": "ask",
+    "description": "name: ask",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/ask",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-check-performance",
+    "name": "check-performance",
+    "description": "name: check-performance",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/check-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-check-security",
+    "name": "check-security",
+    "description": "name: check-security",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/check-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-checkout-commit",
+    "name": "checkout-commit",
+    "description": "name: checkout-commit",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/checkout-commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-design-ui",
+    "name": "design-ui",
+    "description": "name: design-ui",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/design-ui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-discuss",
+    "name": "discuss",
+    "description": "name: discuss",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/discuss",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-generate-api-docs",
+    "name": "generate-api-docs",
+    "description": "name: generate-api-docs",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/generate-api-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-release-version",
+    "name": "release-version",
+    "description": "name: release-version",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/release-version",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1340285005-testing",
+    "name": "testing",
+    "description": "name: testing",
+    "version": "1.0.0",
+    "author": "cachewraith",
+    "repository": "https://github.com/cachewraith/cachewraith-skills",
+    "manifestPath": "skills/testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1340285005",
+      "marketplaceName": "cachewraith-skills",
+      "hasSkillMd": true
+    }
+  }
+]

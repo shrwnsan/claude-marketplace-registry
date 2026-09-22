@@ -1,0 +1,1514 @@
+[
+  {
+    "id": "1150055983-3cx",
+    "name": "3cx",
+    "description": "3CX - native PBX MCP server: directory/contacts, calls, queues, profiles, and PBX admin/diagnostics (V20 Update 10, Alpha)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/3cx/3cx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-abnormal-security",
+    "name": "abnormal-security",
+    "description": "Abnormal Security - AI-powered email security, phishing detection, account takeover prevention",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/abnormal/abnormal-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-atera",
+    "name": "atera",
+    "description": "Atera - tickets, agents, customers, alerts, SNMP/HTTP monitors",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/atera/atera",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-auvik",
+    "name": "auvik",
+    "description": "Auvik - network monitoring, device inventory, alerts, configurations, capacity planning across tenants",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/auvik/auvik",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-autotask",
+    "name": "autotask",
+    "description": "Kaseya Autotask PSA - tickets, CRM, projects, contracts, billing",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/autotask",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-kaseya-quote-manager",
+    "name": "kaseya-quote-manager",
+    "description": "Kaseya Quote Manager (Datto Commerce) - read-only quotes, sales orders, purchasing, catalog, CRM, org",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya-quote-manager/kaseya-quote-manager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-betterstack",
+    "name": "betterstack",
+    "description": "Better Stack - uptime monitoring, logging, incident management",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/betterstack/betterstack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-blumira",
+    "name": "blumira",
+    "description": "Blumira - SIEM findings management, device inventory, MSP multi-tenant operations, and security posture analysis",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/blumira/blumira",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-avanan",
+    "name": "avanan",
+    "description": "Checkpoint Harmony Email & Collaboration (Avanan) - quarantine and restore, threat event search, and allow/block-list exceptions",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/email-security/checkpoint-avanan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-cipp",
+    "name": "cipp",
+    "description": "CIPP (CyberDrain Improved Partner Portal) - Microsoft 365 multi-tenant management for MSPs: tenants, users, mailboxes, conditional access, standards, BPA, licensing, GDAP, and alerts",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/cipp/cipp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-freshdesk",
+    "name": "freshdesk",
+    "description": "Freshdesk - cloud helpdesk/PSA ticketing for MSPs: tickets, conversations, contacts, companies, knowledge base, SLA policies, and business hours",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/freshdesk/freshdesk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-inforcer",
+    "name": "inforcer",
+    "description": "Inforcer - Microsoft 365 security baseline governance for MSPs: managed tenants, baseline templates, alignment/drift, secure scores, identity inventory, audit events, and assessment runs (read-only, plus one assessment-run action)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/inforcer/inforcer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-connectwise-automate",
+    "name": "connectwise-automate",
+    "description": "ConnectWise Automate - computers, clients, scripts, monitors, alerts",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/connectwise/automate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-connectwise-cpq",
+    "name": "connectwise-cpq",
+    "description": "ConnectWise CPQ (Sell/Quosal) - quotes, line items, templates, quote customers, payment terms",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/connectwise/cpq",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-connectwise-psa",
+    "name": "connectwise-psa",
+    "description": "ConnectWise PSA - tickets, companies, contacts, projects, time",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/connectwise/manage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-datto-rmm",
+    "name": "datto-rmm",
+    "description": "Datto RMM - devices, alerts, jobs, patches, monitoring",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/datto-rmm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-domotz",
+    "name": "domotz",
+    "description": "Domotz - network monitoring, SNMP discovery, device management",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/domotz/domotz",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-halopsa",
+    "name": "halopsa",
+    "description": "HaloPSA - tickets, clients, assets, contracts (OAuth 2.0)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/halopsa/halopsa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-hudu",
+    "name": "hudu",
+    "description": "Hudu IT documentation - companies, assets, articles, passwords, websites",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/hudu/hudu",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-huntress",
+    "name": "huntress",
+    "description": "Huntress - managed threat detection, incident response, endpoint agent management, escalations, and billing reports",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/huntress/huntress",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-itglue",
+    "name": "itglue",
+    "description": "IT Glue - organizations, assets, passwords, flexible assets",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/it-glue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-keeper",
+    "name": "keeper",
+    "description": "Keeper Secrets Manager - read-only secret retrieval: KSM notation field queries, secret and folder discovery, masking semantics, TOTP, and least-privilege KSM application scoping",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/keeper/keeper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-knowbe4",
+    "name": "knowbe4",
+    "description": "KnowBe4 - phishing simulation, security awareness training, user risk management",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/email-security/knowbe4",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-liongard",
+    "name": "liongard",
+    "description": "Liongard - environments, inspections, systems, detections, alerts, configuration monitoring",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/liongard/liongard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-m365",
+    "name": "m365",
+    "description": "Microsoft 365 - users, mailboxes, Teams, OneDrive, licensing, and security posture",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/m365/m365",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-ninjaone",
+    "name": "ninjaone",
+    "description": "NinjaOne (NinjaRMM) - devices, organizations, alerts, tickets",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/ninjaone/ninjaone-rmm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-pagerduty",
+    "name": "pagerduty",
+    "description": "PagerDuty - incident management, on-call scheduling, alerting",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/pagerduty/pagerduty",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-pandadoc",
+    "name": "pandadoc",
+    "description": "PandaDoc - documents, templates, e-signatures, and proposal management",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/pandadoc/pandadoc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-warmly",
+    "name": "warmly",
+    "description": "Warmly visitor intelligence - identified website visitors, account-level engagement, and credit balance",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/warmly/warmly",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-pax8",
+    "name": "pax8",
+    "description": "Pax8 cloud marketplace - companies, products, subscriptions, orders, invoices",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/pax8/pax8",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-posthog",
+    "name": "posthog",
+    "description": "PostHog product analytics - insights, dashboards, feature flags, cohorts, events (read-only)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/posthog/posthog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-proofpoint",
+    "name": "proofpoint",
+    "description": "Proofpoint Email Protection - TAP, quarantine, threat intel, forensics, URL defense, VAP reports",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/email-security/proofpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-proofpoint-essentials",
+    "name": "proofpoint-essentials",
+    "description": "Proofpoint Essentials - MSP org, domain, user, licensing, and reporting management",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/email-security/proofpoint-essentials",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-netsuite",
+    "name": "netsuite",
+    "description": "Oracle NetSuite ERP - records, reports, saved searches, and SuiteQL queries (read-only)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/netsuite/netsuite",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-qbo",
+    "name": "qbo",
+    "description": "QuickBooks Online - customers, invoices, expenses, payments, reports",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/quickbooks/quickbooks-online",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-rocketcyber",
+    "name": "rocketcyber",
+    "description": "RocketCyber managed SOC - incidents, agents, events, threat detection",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/rocketcyber",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-rootly",
+    "name": "rootly",
+    "description": "Rootly - incident management, postmortems, SRE automation",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/rootly/rootly",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-runzero",
+    "name": "runzero",
+    "description": "runZero - asset discovery, network scanning, inventory management",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/runzero/runzero",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-salesbuildr",
+    "name": "salesbuildr",
+    "description": "SalesBuildr CRM - contacts, companies, opportunities, quotes",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/salesbuildr/salesbuildr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-sentinelone",
+    "name": "sentinelone",
+    "description": "SentinelOne XDR - threat detection, incident response, and endpoint agent management via the Purple AI MCP server",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/sentinelone/sentinelone",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-shared-skills",
+    "name": "shared-skills",
+    "description": "Vendor-agnostic MSP skills - terminology and ticket triage",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/shared",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-sherweb",
+    "name": "sherweb",
+    "description": "Sherweb Partner API - distributor billing, service provider management, customer subscriptions",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/sherweb/sherweb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-superops",
+    "name": "superops",
+    "description": "SuperOps.ai - tickets, assets, clients, runbooks (GraphQL)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/superops/superops-ai",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-syncro",
+    "name": "syncro",
+    "description": "Syncro MSP - tickets, customers, assets, invoicing",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/syncro/syncro-msp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-blackpoint",
+    "name": "blackpoint",
+    "description": "Blackpoint Cyber / CompassOne MDR - tenants, assets, detections, vulnerabilities (dark web, external, scans)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/blackpoint/blackpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-saas-alerts",
+    "name": "saas-alerts",
+    "description": "SaaS Alerts - SaaS security monitoring and alerting for M365 / Google Workspace: alerts, events, anomaly detection, multi-tenant response",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/saas-alerts/saas-alerts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-crewhu",
+    "name": "crewhu",
+    "description": "Crewhu - CSAT/NPS surveys, employee recognition, badges, prize redemptions for MSPs",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/crewhu/crewhu",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-immybot",
+    "name": "immybot",
+    "description": "ImmyBot - desired-state Windows software deployment, maintenance sessions, scripts (Entra ID OAuth)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/immybot/immybot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-timezest",
+    "name": "timezest",
+    "description": "TimeZest - tech scheduling against ConnectWise / Autotask / Halo PSA tickets",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/timezest/timezest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-threatlocker",
+    "name": "threatlocker",
+    "description": "ThreatLocker - zero-trust application allowlisting, approval triage, audit log investigation, computer inventory",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/threatlocker/threatlocker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-kaseya-vsa",
+    "name": "kaseya-vsa",
+    "description": "Kaseya VSA - endpoint monitoring, patch management, agent procedures, remote control (scaffolding)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/kaseya-vsa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-datto-bcdr",
+    "name": "datto-bcdr",
+    "description": "Datto BCDR (SIRIS / Alto) - backup status, screenshot verification, recovery points (scaffolding)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/datto-bcdr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-kaseya-bms",
+    "name": "kaseya-bms",
+    "description": "Kaseya BMS PSA - tickets, accounts, contracts, time entries, billing (scaffolding)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/kaseya-bms",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-datto-saas-protection",
+    "name": "datto-saas-protection",
+    "description": "Datto SaaS Protection (Backupify) - M365 / Google Workspace cloud-to-cloud backup (scaffolding)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/datto-saas-protection",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-unitrends",
+    "name": "unitrends",
+    "description": "Unitrends - appliances, backup jobs, recovery points, replication, alerts (scaffolding)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/unitrends",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-spanning",
+    "name": "spanning",
+    "description": "Spanning Cloud Backup - SaaS backup for M365 / Google Workspace / Salesforce (scaffolding)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kaseya/spanning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-hubspot",
+    "name": "hubspot",
+    "description": "HubSpot CRM - contacts, companies, deals, tickets, activities, and pipeline reporting (uses HubSpot's first-party MCP server)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/hubspot/hubspot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-spamtitan",
+    "name": "spamtitan",
+    "description": "SpamTitan by TitanHQ - quarantine queue management, email flow stats, sender allowlist/blocklist for MSPs",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/spamtitan/spamtitan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-xero",
+    "name": "xero",
+    "description": "Xero accounting - contacts, invoices, payments, accounts, and financial reports",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/xero/xero",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-alternative-payments",
+    "name": "alternative-payments",
+    "description": "Alternative Payments - customers, invoices, hosted payment requests, transactions, payouts, and webhooks (read + safe writes)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/alternative-payments/alternative-payments",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-ironscales",
+    "name": "ironscales",
+    "description": "Claude plugins for IRONSCALES - AI-powered anti-phishing, incident triage, email classification, and crowdsourced threat intelligence",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/ironscales/ironscales",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-mimecast",
+    "name": "mimecast",
+    "description": "Claude plugins for Mimecast Email Security - message tracking, threat intelligence, queue management, and email security operations",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/mimecast/mimecast",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-mailprotector",
+    "name": "mailprotector",
+    "description": "Claude plugins for Mailprotector email security - CloudFilter quarantine triage, allow/block rules, customer and domain onboarding, user syncs, and mail-flow auditing for MSPs",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/mailprotector/mailprotector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-wyre-gateway",
+    "name": "wyre-gateway",
+    "description": "WYRE MSP Gateway client - cross-vendor orchestration agents (client-360, QBR prep, renewal-risk analysis, security-posture scoring, technician-performance coaching, incident war-room coordination, compliance evidence packaging, onboarding QA, gateway ops). Connects to conduit.wyre.ai.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/wyre-gateway",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-microsoft-graph",
+    "name": "microsoft-graph",
+    "description": "Microsoft Graph Enterprise MCP - read-only natural-language queries over Microsoft Entra identity and directory data: users, groups, applications, devices, and admin reporting (public preview)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/microsoft-graph/microsoft-graph",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-azure-mcp",
+    "name": "azure-mcp",
+    "description": "Azure MCP Server - read-only Azure observability, cost, and resource-health analysis in natural language: monitoring, pricing, quota, advisor, resource health, diagnostics",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/azure-mcp/azure-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-stripe",
+    "name": "stripe",
+    "description": "Stripe - payments, subscriptions, invoices, customer management via Stripe's first-party hosted MCP (mcp.stripe.com)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/stripe/stripe",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-slack",
+    "name": "slack",
+    "description": "Slack - messages, channels, canvases, files, reactions via Slack's first-party hosted MCP (mcp.slack.com)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/slack/slack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-meraki",
+    "name": "meraki",
+    "description": "Meraki - Dashboard API network management, device monitoring, firewall & VPN, wireless",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/meraki/meraki",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-ncentral",
+    "name": "ncentral",
+    "description": "N-able N-central RMM - devices, org units, active issues, scheduled tasks, custom properties for on-prem and hosted servers",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/ncentral/ncentral",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-nutanix",
+    "name": "nutanix",
+    "description": "Nutanix - Prism Central v4 API: VM management, cluster operations, storage, networking via official Nutanix MCP server",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/nutanix/nutanix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-ops-pack",
+    "name": "ops-pack",
+    "description": "MSP Operations — cross-vendor service-desk board health, dispatch prioritization, SLA monitoring, and shift handoffs across whatever PSA/RMM you have connected.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/ops-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-secops-pack",
+    "name": "secops-pack",
+    "description": "Security Operations — cross-vendor alert triage, containment playbooks, and incident timelines across your EDR/MDR/SIEM stack.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/secops-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-finance-pack",
+    "name": "finance-pack",
+    "description": "Finance & Billing — agreement reconciliation, license true-up, and margin analysis across PSA, accounting, and distribution tools.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/finance-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-compliance-pack",
+    "name": "compliance-pack",
+    "description": "Compliance — evidence collection and control drift against CIS/SOC 2/HIPAA and cyber-insurance questionnaires.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/compliance-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-sales-pack",
+    "name": "sales-pack",
+    "description": "Sales & Deal Desk — cross-vendor pipeline health, quote-to-close tracking, proposal follow-up, and warm-lead routing across whatever CRM, proposal, distribution, and scheduling tools you have connected.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/sales-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-devops-pack",
+    "name": "devops-pack",
+    "description": "DevOps & Reliability — cross-vendor on-call handoffs, incident postmortems, deploy health, and error-budget tracking across whatever incident-management and observability tools you have connected.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/devops-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-cloudops-pack",
+    "name": "cloudops-pack",
+    "description": "Cloud & Network Infrastructure — cross-vendor network and cloud infrastructure operations: device/network health, capacity planning, and cost management across whatever network monitoring and cloud platforms you have connected.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/cloudops-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-awareness-pack",
+    "name": "awareness-pack",
+    "description": "Security Awareness & Training — cross-vendor training completion tracking, phishing simulation results, and per-user risk scoring across whatever security-awareness training tools you have connected.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/awareness-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-backup-pack",
+    "name": "backup-pack",
+    "description": "Backup & DR Assurance — cross-vendor backup job health monitoring, restore-test verification, retention/RPO compliance, and DR readiness across whatever backup and BCDR tools you have connected.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/backup-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-assets-pack",
+    "name": "assets-pack",
+    "description": "IT Asset Lifecycle — cross-vendor warranty tracking, end-of-life/end-of-support flagging, and hardware refresh-cycle planning across whatever RMM platforms and documentation tools you have connected.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/assets-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-clio",
+    "name": "clio",
+    "description": "Clio Manage — legal practice management: matters, contacts, time/expense activities, tasks, documents (metadata), calendar, and billing",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/clio/clio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-scalepad",
+    "name": "scalepad",
+    "description": "ScalePad - asset lifecycle management, warranty services, client engagement roadmaps (Lifecycle Manager), compliance (ControlMap), backup monitoring (Backup Radar), and quoting (Quoter)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/scalepad/scalepad",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1150055983-axcient",
+    "name": "axcient",
+    "description": "Axcient x360Recover - BCDR clients, devices, backup jobs, vaults, and appliances",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/axcient/axcient",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,244 @@
+[
+  {
+    "id": "1125088805-maestro",
+    "name": "maestro",
+    "description": "Elite AI Development Orchestrator for Claude Code",
+    "version": "0.6.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/xenitV1/claude-code-maestro.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1125088805-backend-design",
+    "name": "backend-design",
+    "description": "name: backend-design",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/backend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-brainstorming",
+    "name": "brainstorming",
+    "description": "name: brainstorming",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/brainstorming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-browser-extension",
+    "name": "browser-extension",
+    "description": "name: browser-extension",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/browser-extension",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-clean-code",
+    "name": "clean-code",
+    "description": "name: clean-code",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/clean-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-debug-mastery",
+    "name": "debug-mastery",
+    "description": "name: debug-mastery",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/debug-mastery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-frontend-design",
+    "name": "frontend-design",
+    "description": "name: frontend-design",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-git-worktrees",
+    "name": "git-worktrees",
+    "description": "name: git-worktrees",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/git-worktrees",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-optimization-mastery",
+    "name": "optimization-mastery",
+    "description": "name: optimization-mastery",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/optimization-mastery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-planning-mastery",
+    "name": "planning-mastery",
+    "description": "name: planning-mastery",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/planning-mastery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-ralph-wiggum",
+    "name": "ralph-wiggum",
+    "description": "name: ralph-wiggum",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/ralph-wiggum",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-tdd-mastery",
+    "name": "tdd-mastery",
+    "description": "name: tdd-mastery",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/tdd-mastery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-verification-mastery",
+    "name": "verification-mastery",
+    "description": "name: verification-mastery",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": "skills/verification-mastery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1125088805-claude-code-maestro",
+    "name": "claude-code-maestro",
+    "description": "name: maestro",
+    "version": "1.0.0",
+    "author": "xenitV1",
+    "repository": "https://github.com/xenitV1/claude-code-maestro",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125088805",
+      "marketplaceName": "claude-code-maestro",
+      "hasSkillMd": true
+    }
+  }
+]

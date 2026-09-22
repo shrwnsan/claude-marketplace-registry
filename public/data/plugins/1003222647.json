@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1003222647-fenic",
+    "name": "fenic",
+    "description": "Skills that make coding agents write correct fenic: fenic-mechanics + update-fenic-skill.",
+    "version": "",
+    "author": "typedef-ai",
+    "repository": "https://github.com/typedef-ai/fenic",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1003222647",
+      "marketplaceName": "fenic",
+      "skills": [
+        "./.claude/skills/fenic-mechanics",
+        "./.claude/skills/update-fenic-skill"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1003222647-fenic-mechanics",
+    "name": "fenic-mechanics",
+    "description": "name: fenic-mechanics",
+    "version": "1.0.0",
+    "author": "typedef-ai",
+    "repository": "https://github.com/typedef-ai/fenic",
+    "manifestPath": ".claude/skills/fenic-mechanics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1003222647",
+      "marketplaceName": "fenic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1003222647-update-fenic-skill",
+    "name": "update-fenic-skill",
+    "description": "name: update-fenic-skill",
+    "version": "1.0.0",
+    "author": "typedef-ai",
+    "repository": "https://github.com/typedef-ai/fenic",
+    "manifestPath": ".claude/skills/update-fenic-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1003222647",
+      "marketplaceName": "fenic",
+      "hasSkillMd": true
+    }
+  }
+]

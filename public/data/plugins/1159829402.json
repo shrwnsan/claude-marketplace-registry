@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1159829402-oxylabs",
+    "name": "oxylabs",
+    "description": "Bundle of Oxylabs skills: residential/mobile/datacenter/ISP proxies, Web Scraper API, Web Unblocker, headless browsers, and YouTube video data extraction.",
+    "version": "",
+    "author": "Oxylabs",
+    "repository": "https://github.com/oxylabs/agent-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1159829402",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1159829402-headless-browser",
+    "name": "headless-browser",
+    "description": "name: headless-browser",
+    "version": "1.0.0",
+    "author": "Oxylabs",
+    "repository": "https://github.com/oxylabs/agent-skills",
+    "manifestPath": "skills/headless-browser",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1159829402",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1159829402-proxies",
+    "name": "proxies",
+    "description": "name: proxies",
+    "version": "1.0.0",
+    "author": "Oxylabs",
+    "repository": "https://github.com/oxylabs/agent-skills",
+    "manifestPath": "skills/proxies",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1159829402",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1159829402-video-data",
+    "name": "video-data",
+    "description": "name: video-data",
+    "version": "1.0.0",
+    "author": "Oxylabs",
+    "repository": "https://github.com/oxylabs/agent-skills",
+    "manifestPath": "skills/video-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1159829402",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1159829402-web-scraper-api",
+    "name": "web-scraper-api",
+    "description": "name: web-scraper-api",
+    "version": "1.0.0",
+    "author": "Oxylabs",
+    "repository": "https://github.com/oxylabs/agent-skills",
+    "manifestPath": "skills/web-scraper-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1159829402",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1159829402-web-unblocker",
+    "name": "web-unblocker",
+    "description": "name: web-unblocker",
+    "version": "1.0.0",
+    "author": "Oxylabs",
+    "repository": "https://github.com/oxylabs/agent-skills",
+    "manifestPath": "skills/web-unblocker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1159829402",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]

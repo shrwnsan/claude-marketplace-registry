@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1279171235-knowl",
+    "name": "knowl",
+    "description": "Persistent memory for Claude Code. Facts are typed, sourced, and retired when they change, so a query returns the current answer rather than every answer it has ever held. Local SQLite in your repository — no API key, no vector database, nothing uploaded.",
+    "version": "",
+    "author": "Knowl",
+    "repository": "https://github.com/dat999zx/knowl",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279171235",
+      "marketplaceName": "knowl",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1240495324-anamnesis",
+    "name": "anamnesis",
+    "description": "Use Anamnesis as a local-first cross-agent memory bridge inside Claude Code.",
+    "version": "0.1.0",
+    "author": "Trapezohe",
+    "repository": "https://github.com/Trapezohe/Anamnesis",
+    "manifestPath": "./anamnesis-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1240495324",
+      "marketplaceName": "Anamnesis",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

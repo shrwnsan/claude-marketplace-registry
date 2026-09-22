@@ -1,0 +1,479 @@
+[
+  {
+    "id": "1192096446-planr",
+    "name": "planr",
+    "description": "Host-native OpenPlanr planning, delivery, review, design, and operating skills.",
+    "version": "2.5.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "./dist/plugins/claude/openplanr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1192096446-planr-artifact",
+    "name": "planr-artifact",
+    "description": "name: planr-artifact",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-artifact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-browser-qa",
+    "name": "planr-browser-qa",
+    "description": "name: planr-browser-qa",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-browser-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-ceo-review",
+    "name": "planr-ceo-review",
+    "description": "name: planr-ceo-review",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-ceo-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-chair-review",
+    "name": "planr-chair-review",
+    "description": "name: planr-chair-review",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-chair-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-challenger-review",
+    "name": "planr-challenger-review",
+    "description": "name: planr-challenger-review",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-challenger-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-cmo-review",
+    "name": "planr-cmo-review",
+    "description": "name: planr-cmo-review",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-cmo-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-coo-review",
+    "name": "planr-coo-review",
+    "description": "name: planr-coo-review",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-coo-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-cpo-review",
+    "name": "planr-cpo-review",
+    "description": "name: planr-cpo-review",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-cpo-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-cto-review",
+    "name": "planr-cto-review",
+    "description": "name: planr-cto-review",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-cto-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-dashboard",
+    "name": "planr-dashboard",
+    "description": "name: planr-dashboard",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-dashboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-design-loop",
+    "name": "planr-design-loop",
+    "description": "name: planr-design-loop",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-design-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-design-review",
+    "name": "planr-design-review",
+    "description": "name: planr-design-review",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-design-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-design",
+    "name": "planr-design",
+    "description": "name: planr-design",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-diagram",
+    "name": "planr-diagram",
+    "description": "name: planr-diagram",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-diagram",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-doctor",
+    "name": "planr-doctor",
+    "description": "name: planr-doctor",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-investigate",
+    "name": "planr-investigate",
+    "description": "name: planr-investigate",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-investigate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-land",
+    "name": "planr-land",
+    "description": "name: planr-land",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-land",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-openplanr",
+    "name": "planr-openplanr",
+    "description": "name: planr-openplanr",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-openplanr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-operate",
+    "name": "planr-operate",
+    "description": "name: planr-operate",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-operate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-plan-review",
+    "name": "planr-plan-review",
+    "description": "name: planr-plan-review",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-plan-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-plan",
+    "name": "planr-plan",
+    "description": "name: planr-plan",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-release",
+    "name": "planr-release",
+    "description": "name: planr-release",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-ship",
+    "name": "planr-ship",
+    "description": "name: planr-ship",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-spec",
+    "name": "planr-spec",
+    "description": "name: planr-spec",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-sprint",
+    "name": "planr-sprint",
+    "description": "name: planr-sprint",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-sprint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-status",
+    "name": "planr-status",
+    "description": "name: planr-status",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-sync",
+    "name": "planr-sync",
+    "description": "name: planr-sync",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  }
+]

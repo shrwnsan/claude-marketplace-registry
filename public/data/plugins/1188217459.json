@@ -1,0 +1,578 @@
+[
+  {
+    "id": "1188217459-google-drive-upload",
+    "name": "google-drive-upload",
+    "description": "Upload files from Claude directly to Google Drive — unlimited uploads, completely free",
+    "version": "1.2.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/google-drive-upload",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-toggl-time-tracker",
+    "name": "toggl-time-tracker",
+    "description": "Track time and pull reports from Toggl Track — start/stop timers, log hours, weekly summaries",
+    "version": "1.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/toggl-time-tracker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-session-backup",
+    "name": "session-backup",
+    "description": "Automated daily backups of Claude session data, skills, and configs to Google Drive",
+    "version": "0.4.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/session-backup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-youtube-transcriber",
+    "name": "youtube-transcriber",
+    "description": "Transcribe any YouTube video or entire playlists — no API key required, supports any language",
+    "version": "1.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/youtube-transcriber",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-notion-memory",
+    "name": "notion-memory",
+    "description": "Long-term memory for Claude across sessions via Notion — plus the 4 official Anthropic Notion skills (knowledge-capture, meeting-intelligence, research-documentation, spec-to-implementation) bundled in",
+    "version": "2.0.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/notion-memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-mac-disk-cleaner",
+    "name": "mac-disk-cleaner",
+    "description": "Free up disk space on Mac by clearing caches, finding large files, and getting smart storage recommendations",
+    "version": "0.2.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/mac-disk-cleaner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-vm-disk-cleanup",
+    "name": "vm-disk-cleanup",
+    "description": "Prevent and recover from disk-full (ENOSPC) errors in Cowork session VMs and Claude Code sandboxes. 3-phase cleanup: caches, temp files, build artifacts, node_modules.",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/vm-disk-cleanup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-apify-scraper",
+    "name": "apify-scraper",
+    "description": "Full Apify web scraping platform integration — run Actors, manage datasets, key-value stores, schedules, webhooks, and tasks from within Claude",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/apify-scraper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-apollo",
+    "name": "apollo",
+    "description": "Prospect, enrich leads, and load outreach sequences with Apollo.io — one-click MCP server integration with skills for enrichment, prospecting, and sequence loading",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/apollo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-fix-chrome-connection",
+    "name": "fix-chrome-connection",
+    "description": "Diagnoses and repairs broken Claude in Chrome MCP connections in seconds — auto-detects stale extension service workers and fixes them without manual steps",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/fix-chrome-connection",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-linkedin-scraper",
+    "name": "linkedin-scraper",
+    "description": "Token-efficient LinkedIn data access — scrape profiles, companies, and jobs via structured MCP, 5-10x cheaper than browser-based approaches",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/linkedin-scraper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-rtl-chat-fixer",
+    "name": "rtl-chat-fixer",
+    "description": "Fixes jumbled text when mixing RTL languages (Hebrew, Arabic, Persian, Urdu) with English in Cowork and Claude Desktop chat",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/rtl-chat-fixer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-whatsapp-mcp",
+    "name": "whatsapp-mcp",
+    "description": "Connect Claude to WhatsApp — search messages, read conversations, send texts and media, manage business outreach with persistent conversation memory",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/whatsapp-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-wordpress-mcp",
+    "name": "wordpress-mcp",
+    "description": "Manage WordPress sites directly from Claude — content, users, settings, and WooCommerce via the official WordPress MCP Adapter",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/wordpress-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-x-content-intelligence",
+    "name": "x-content-intelligence",
+    "description": "Scrape X (Twitter) for community insights and generate matched content — analyze trends, engagement patterns, and create posts via Apify",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/x-content-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-cowork-session-fixer",
+    "name": "cowork-session-fixer",
+    "description": "Addresses the 'RPC error: process with name already running' issue in Claude Cowork by identifying and removing orphaned session processes",
+    "version": "1.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/cowork-session-fixer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-digital-presence",
+    "name": "digital-presence",
+    "description": "Manage and optimize online presence across all major social platforms — unified dashboard for content, analytics, and engagement",
+    "version": "1.0.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/digital-presence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-gcloud-cli-health-check",
+    "name": "gcloud-cli-health-check",
+    "description": "Comprehensive Google Cloud CLI validation — checks installation, authentication, project config, enabled APIs, billing, and Cloud Run availability",
+    "version": "1.0.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/gcloud-cli-health-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-github-cli-health-check",
+    "name": "github-cli-health-check",
+    "description": "Dual-path manual GitHub CLI health check. Ships as a Claude Code cloud Routine (cloud gh, native api.github.com access) + a Cowork manual task via Desktop Commander (Mac host gh) — redundant by design so a failure on either side is still caught by the other. Works around the Cowork sandbox api.github.com block tracked in claude-code#37970.",
+    "version": "0.10.1",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/github-cli-health-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-rtl-chat",
+    "name": "rtl-chat",
+    "description": "Right-to-left text formatting with inline processing — ensures proper display of Hebrew, Arabic, and other RTL scripts in Claude conversations",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/rtl-chat",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-skill-campfire",
+    "name": "skill-campfire",
+    "description": "Turn installed Cowork skills into living characters who hang out, joke, argue, and bond around a virtual campfire — SOSA-compliant orchestration layer for creative skill interaction",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/skill-campfire",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-sosa-compliance-checker",
+    "name": "sosa-compliance-checker",
+    "description": "Compliance auditor for Claude plugins, skills, and coding agents — evaluates against SOSA principles (Supervised, Orchestrated, Secured, Agents) with governance features",
+    "version": "0.2.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/sosa-compliance-checker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-sosa-governor",
+    "name": "sosa-governor",
+    "description": "SOSA governance for Claude Code — classifies MCP tool calls by impact level, enforces approval gates, tracks token budgets, and maintains audit logs",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/sosa-governor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-sosa-orchestrator",
+    "name": "sosa-orchestrator",
+    "description": "Token-aware task prioritization and budget management for Claude sessions — ranks tasks by importance vs. cost and tracks consumption in real time",
+    "version": "1.0.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/sosa-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-token-efficiency-audit",
+    "name": "token-efficiency-audit",
+    "description": "Audits and optimizes token usage across skills, scheduled tasks, plugins, and MCP connectors — SOSA Supervised pillar enforcement for efficiency requirements",
+    "version": "1.0.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/token-efficiency-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-zoho-mail-health",
+    "name": "zoho-mail-health",
+    "description": "Daily Zoho Mail health check — verifies accounts are reachable, reads recent inbox messages, sends test emails, and produces a status report",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/zoho-mail-health",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-cowork-mem",
+    "name": "cowork-mem",
+    "description": "Persistent memory across Cowork sessions — automatically recalls past decisions, file changes, insights, and errors so you never lose context between sessions. SQLite + FTS5, token-efficient 3-layer retrieval.",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/cowork-mem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-swift-lsp",
+    "name": "swift-lsp",
+    "description": "Real-time Swift code intelligence for Claude — instant diagnostics, go-to-definition, find references, and type info via SourceKit-LSP",
+    "version": "1.0.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/swift-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-kotlin-lsp",
+    "name": "kotlin-lsp",
+    "description": "Real-time Kotlin code intelligence for Claude — instant diagnostics, go-to-definition, find references, and type info via kotlin-language-server",
+    "version": "1.0.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/kotlin-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-claude-md-composer",
+    "name": "claude-md-composer",
+    "description": "Audit, compose, and refactor CLAUDE.md files — keep memory files under 200 lines, flip negative rules, split across the 4-level hierarchy. Inspired by Kjramsy's 'CLAUDE.md eating your token budget' post.",
+    "version": "1.0.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/claude-md-composer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-opsagent-shopify",
+    "name": "opsagent-shopify",
+    "description": "MSApps OpsAgents Shopify plugin — full Admin API + Storefront MCP tools (products CRUD, files, orders, customers, themes, metafields), go-to-market guidance, and @opsagents/shopify-sdk typed contracts.",
+    "version": "0.3.7",
+    "author": "Michal Shatz / MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/opsagent-shopify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188217459-agents-md-optimizer",
+    "name": "agents-md-optimizer",
+    "description": "Audit bloated agent-instruction files (CLAUDE.md, AGENTS.md, and their variants) and rewrite them lean, or author a new one from scratch following the 200-line recipe-book principle. Detects antipatterns like embedded API docs, negative rules, tutorials, and preemptive file preloads.",
+    "version": "1.0.1",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/agents-md-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1252346445-clifton-mcp",
+    "name": "clifton-mcp",
+    "description": "Source-linked financial research: SEC filings, transcripts, expectations, and market reactions, callable from your agent.",
+    "version": "",
+    "author": "cliftonai",
+    "repository": "https://github.com/cliftonai/clifton-mcp",
+    "manifestPath": "./plugins/clifton-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252346445",
+      "marketplaceName": "clifton-mcp",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

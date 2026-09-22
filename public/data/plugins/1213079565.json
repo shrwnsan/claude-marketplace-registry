@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1213079565-edgeone",
+    "name": "edgeone",
+    "description": "A comprehensive skill for Tencent Cloud EdgeOne (Edge Security & Acceleration Platform), covering edge acceleration (DNS, certificates, caching, rule engine, L4 proxy, load balancing), edge security (DDoS protection, Web protection, Bot management), edge media (real-time video / image processing), edge development (Edge Functions, EdgeOne Pages), and more.",
+    "version": "",
+    "author": "Tencent",
+    "repository": "https://github.com/Tencent/tencent-edgeone-agent-plugins",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213079565",
+      "marketplaceName": "tencent-edgeone-agent-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1213079565-tencent-edgeone-skill",
+    "name": "tencent-edgeone-skill",
+    "description": "name: tencent-edgeone-skill",
+    "version": "1.0.0",
+    "author": "Tencent",
+    "repository": "https://github.com/Tencent/tencent-edgeone-agent-plugins",
+    "manifestPath": "skills/tencent-edgeone-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1213079565",
+      "marketplaceName": "tencent-edgeone-agent-plugins",
+      "hasSkillMd": true
+    }
+  }
+]

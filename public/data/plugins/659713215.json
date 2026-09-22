@@ -1,0 +1,20 @@
+[
+  {
+    "id": "659713215-pg",
+    "name": "pg",
+    "description": "Development guide for the pg PostgreSQL library for Go: struct-tag schemas, Repository[T] and *DB, WHERE and pagination builders, transactions, COPY, migrations, typed errors and testing.",
+    "version": "",
+    "author": "kataras",
+    "repository": "https://github.com/kataras/pg",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "659713215",
+      "marketplaceName": "pg",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

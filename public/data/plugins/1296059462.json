@@ -1,0 +1,445 @@
+[
+  {
+    "id": "1296059462-cantrips",
+    "name": "cantrips",
+    "description": "The core engineering loop for coding agents (Claude Code, Codex CLI): grill, spec, tickets, implement with TDD at agreed seams, review, commit, plus a user-gated compound step that turns session learnings into durable project memory. Basic spells a caster always has prepared.",
+    "version": "",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1296059462-afk",
+    "name": "afk",
+    "description": "name: afk",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/afk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-codebase-design",
+    "name": "codebase-design",
+    "description": "name: codebase-design",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/codebase-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-commit",
+    "name": "commit",
+    "description": "name: commit",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-compound-refresh",
+    "name": "compound-refresh",
+    "description": "name: compound-refresh",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/compound-refresh",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-compound",
+    "name": "compound",
+    "description": "name: compound",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/compound",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-diagnosing-bugs",
+    "name": "diagnosing-bugs",
+    "description": "name: diagnosing-bugs",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/diagnosing-bugs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-grilling",
+    "name": "grilling",
+    "description": "name: grilling",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/grilling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-handoff",
+    "name": "handoff",
+    "description": "name: handoff",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-implement",
+    "name": "implement",
+    "description": "name: implement",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-improve-codebase-architecture",
+    "name": "improve-codebase-architecture",
+    "description": "name: improve-codebase-architecture",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/improve-codebase-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-prototype",
+    "name": "prototype",
+    "description": "name: prototype",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/prototype",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-questionnaire",
+    "name": "questionnaire",
+    "description": "name: questionnaire",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/questionnaire",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-research",
+    "name": "research",
+    "description": "name: research",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-resolving-merge-conflicts",
+    "name": "resolving-merge-conflicts",
+    "description": "name: resolving-merge-conflicts",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/resolving-merge-conflicts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-review-gate",
+    "name": "review-gate",
+    "description": "name: review-gate",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/review-gate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-setup-cantrips-loop",
+    "name": "setup-cantrips-loop",
+    "description": "name: setup-cantrips-loop",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/setup-cantrips-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-setup-git-guardrails",
+    "name": "setup-git-guardrails",
+    "description": "name: setup-git-guardrails",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/setup-git-guardrails",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-simplify",
+    "name": "simplify",
+    "description": "name: simplify",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/simplify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-spec",
+    "name": "spec",
+    "description": "name: spec",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-tdd",
+    "name": "tdd",
+    "description": "name: tdd",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-teach",
+    "name": "teach",
+    "description": "name: teach",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/teach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-tickets",
+    "name": "tickets",
+    "description": "name: tickets",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/tickets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-wait-what",
+    "name": "wait-what",
+    "description": "name: wait-what",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/wait-what",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-writing-for-agents",
+    "name": "writing-for-agents",
+    "description": "name: writing-for-agents",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/writing-for-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296059462-sync-upstream",
+    "name": "sync-upstream",
+    "description": "name: sync-upstream",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": ".claude/skills/sync-upstream",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "id": "1064514521-ailang-go-lsp",
+    "name": "ailang-go-lsp",
+    "description": "gopls language server for the AILANG Go implementation — instant diagnostics, go-to-def, find references, hover types. Requires gopls on PATH.",
+    "version": "",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": "./.claude/plugins/ailang-go-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1064514521-ailang-lsp",
+    "name": "ailang-lsp",
+    "description": "AILANG language server (`ailang lsp --stdio`) for .ail files — diagnostics on save, hover types, go-to-definition, references, document symbols. Requires the `ailang` binary on PATH.",
+    "version": "",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": "./.claude/plugins/ailang-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1064514521-agent-inbox",
+    "name": "agent-inbox",
+    "description": "name: agent-inbox",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/agent-inbox",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-ailang-core-triage",
+    "name": "ailang-core-triage",
+    "description": "name: ailang-core-triage",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/ailang-core-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-ailang-packages",
+    "name": "ailang-packages",
+    "description": "name: ailang-packages",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/ailang-packages",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-benchmark-manager",
+    "name": "benchmark-manager",
+    "description": "name: benchmark-manager",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/benchmark-manager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-benchmark-runner",
+    "name": "benchmark-runner",
+    "description": "name: benchmark-runner",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/benchmark-runner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-builtin-developer",
+    "name": "builtin-developer",
+    "description": "name: builtin-developer",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/builtin-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-cli-doc-maintainer",
+    "name": "cli-doc-maintainer",
+    "description": "name: cli-doc-maintainer",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/cli-doc-maintainer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-cloud-cascade-debug",
+    "name": "cloud-cascade-debug",
+    "description": "name: cloud-cascade-debug",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/cloud-cascade-debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-cloud-setup",
+    "name": "cloud-setup",
+    "description": "name: cloud-setup",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/cloud-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-codebase-organizer",
+    "name": "codebase-organizer",
+    "description": "name: codebase-organizer",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/codebase-organizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-collaboration-hub",
+    "name": "collaboration-hub",
+    "description": "name: collaboration-hub",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/collaboration-hub",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-coordinator-helper",
+    "name": "coordinator-helper",
+    "description": "name: coordinator-helper",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/coordinator-helper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-design-doc-creator",
+    "name": "design-doc-creator",
+    "description": "name: design-doc-creator",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/design-doc-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-design-spec-auditor",
+    "name": "design-spec-auditor",
+    "description": "name: design-spec-auditor",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/design-spec-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-docs-sync",
+    "name": "docs-sync",
+    "description": "name: docs-sync",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/docs-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-eval-analyzer",
+    "name": "eval-analyzer",
+    "description": "name: eval-analyzer",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/eval-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-eval-gap-finder",
+    "name": "eval-gap-finder",
+    "description": "name: eval-gap-finder",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/eval-gap-finder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-gemini-cli-helper",
+    "name": "gemini-cli-helper",
+    "description": "name: gemini-cli-helper",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/gemini-cli-helper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-github-issue-triage",
+    "name": "github-issue-triage",
+    "description": "name: github-issue-triage",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/github-issue-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-headless-runner",
+    "name": "headless-runner",
+    "description": "name: headless-runner",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/headless-runner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-local-model-onboarding",
+    "name": "local-model-onboarding",
+    "description": "name: local-model-onboarding",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/local-model-onboarding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-local-ollama-eval",
+    "name": "local-ollama-eval",
+    "description": "name: local-ollama-eval",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/local-ollama-eval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-mission-brief",
+    "name": "mission-brief",
+    "description": "name: mission-brief",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/mission-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-mission-control",
+    "name": "mission-control",
+    "description": "name: mission-control",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/mission-control",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-mission-loop-change",
+    "name": "mission-loop-change",
+    "description": "name: mission-loop-change",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/mission-loop-change",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-model-manager",
+    "name": "model-manager",
+    "description": "name: model-manager",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/model-manager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-motoko-analyzer",
+    "name": "motoko-analyzer",
+    "description": "name: motoko-analyzer",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/motoko-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-parser-developer",
+    "name": "parser-developer",
+    "description": "name: parser-developer",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/parser-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-perf-sweep",
+    "name": "perf-sweep",
+    "description": "name: perf-sweep",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/perf-sweep",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-post-release",
+    "name": "post-release",
+    "description": "name: post-release",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/post-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-pr-monitor",
+    "name": "pr-monitor",
+    "description": "name: pr-monitor",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/pr-monitor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-prompt-manager",
+    "name": "prompt-manager",
+    "description": "name: prompt-manager",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/prompt-manager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-release-manager",
+    "name": "release-manager",
+    "description": "name: release-manager",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/release-manager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-simplicity-audit",
+    "name": "simplicity-audit",
+    "description": "name: simplicity-audit",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/simplicity-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-sonarcloud-triage",
+    "name": "sonarcloud-triage",
+    "description": "name: sonarcloud-triage",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/sonarcloud-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-sprint-evaluator",
+    "name": "sprint-evaluator",
+    "description": "name: sprint-evaluator",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/sprint-evaluator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-sprint-executor",
+    "name": "sprint-executor",
+    "description": "name: sprint-executor",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/sprint-executor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-sprint-planner",
+    "name": "sprint-planner",
+    "description": "name: sprint-planner",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/sprint-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-test-coverage-guardian",
+    "name": "test-coverage-guardian",
+    "description": "name: test-coverage-guardian",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/test-coverage-guardian",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-trace-debugger",
+    "name": "trace-debugger",
+    "description": "name: trace-debugger",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/trace-debugger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-use-ailang",
+    "name": "use-ailang",
+    "description": "name: use-ailang",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/use-ailang",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1064514521-wasm-debugger",
+    "name": "wasm-debugger",
+    "description": "name: wasm-debugger",
+    "version": "1.0.0",
+    "author": "sunholo-data",
+    "repository": "https://github.com/sunholo-data/ailang",
+    "manifestPath": ".claude/skills/wasm-debugger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1064514521",
+      "marketplaceName": "ailang",
+      "hasSkillMd": true
+    }
+  }
+]

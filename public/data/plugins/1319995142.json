@@ -1,0 +1,496 @@
+[
+  {
+    "id": "1319995142-useosint",
+    "name": "useosint",
+    "description": "29 investigation workflows for people, companies, domains, images, phones, emails, usernames, crypto and vessels — scope-gated, source-graded, and built for due diligence, KYB, fraud and attack-surface work.",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1319995142-dig-through-data-brokers",
+    "name": "dig-through-data-brokers",
+    "description": "name: dig-through-data-brokers",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/dig-through-data-brokers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-find-anyone",
+    "name": "find-anyone",
+    "description": "name: find-anyone",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/find-anyone",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-find-exposed-servers",
+    "name": "find-exposed-servers",
+    "description": "name: find-exposed-servers",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/find-exposed-servers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-find-hidden-subdomains",
+    "name": "find-hidden-subdomains",
+    "description": "name: find-hidden-subdomains",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/find-hidden-subdomains",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-find-leaks-in-the-wild",
+    "name": "find-leaks-in-the-wild",
+    "description": "name: find-leaks-in-the-wild",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/find-leaks-in-the-wild",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-find-the-original-image",
+    "name": "find-the-original-image",
+    "description": "name: find-the-original-image",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/find-the-original-image",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-follow-the-crypto",
+    "name": "follow-the-crypto",
+    "description": "name: follow-the-crypto",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/follow-the-crypto",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-geolocate-from-pixels",
+    "name": "geolocate-from-pixels",
+    "description": "name: geolocate-from-pixels",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/geolocate-from-pixels",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-google-like-a-spy",
+    "name": "google-like-a-spy",
+    "description": "name: google-like-a-spy",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/google-like-a-spy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-graph-the-network",
+    "name": "graph-the-network",
+    "description": "name: graph-the-network",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/graph-the-network",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-hunt-a-handle",
+    "name": "hunt-a-handle",
+    "description": "name: hunt-a-handle",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/hunt-a-handle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-investigate-anything",
+    "name": "investigate-anything",
+    "description": "name: investigate-anything",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/investigate-anything",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-investigate-without-getting-made",
+    "name": "investigate-without-getting-made",
+    "description": "name: investigate-without-getting-made",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/investigate-without-getting-made",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-is-this-photo-real",
+    "name": "is-this-photo-real",
+    "description": "name: is-this-photo-real",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/is-this-photo-real",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-pattern-of-life-from-socials",
+    "name": "pattern-of-life-from-socials",
+    "description": "name: pattern-of-life-from-socials",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/pattern-of-life-from-socials",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-read-deleted-pages",
+    "name": "read-deleted-pages",
+    "description": "name: read-deleted-pages",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/read-deleted-pages",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-recon-a-domain-passively",
+    "name": "recon-a-domain-passively",
+    "description": "name: recon-a-domain-passively",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/recon-a-domain-passively",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-secrets-in-file-metadata",
+    "name": "secrets-in-file-metadata",
+    "description": "name: secrets-in-file-metadata",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/secrets-in-file-metadata",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-secrets-in-git-history",
+    "name": "secrets-in-git-history",
+    "description": "name: secrets-in-git-history",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/secrets-in-git-history",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-track-planes-and-ships",
+    "name": "track-planes-and-ships",
+    "description": "name: track-planes-and-ships",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/track-planes-and-ships",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-what-an-email-reveals",
+    "name": "what-an-email-reveals",
+    "description": "name: what-an-email-reveals",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/what-an-email-reveals",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-what-leaked-about-you",
+    "name": "what-leaked-about-you",
+    "description": "name: what-leaked-about-you",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/what-leaked-about-you",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-where-was-this-taken",
+    "name": "where-was-this-taken",
+    "description": "name: where-was-this-taken",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/where-was-this-taken",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-who-owns-this-domain",
+    "name": "who-owns-this-domain",
+    "description": "name: who-owns-this-domain",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/who-owns-this-domain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-who-really-owns-it",
+    "name": "who-really-owns-it",
+    "description": "name: who-really-owns-it",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/who-really-owns-it",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-whose-number-is-this",
+    "name": "whose-number-is-this",
+    "description": "name: whose-number-is-this",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/whose-number-is-this",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-write-the-intel-brief",
+    "name": "write-the-intel-brief",
+    "description": "name: write-the-intel-brief",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/write-the-intel-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1319995142-x-ray-a-company",
+    "name": "x-ray-a-company",
+    "description": "name: x-ray-a-company",
+    "version": "1.0.0",
+    "author": "useOSINT",
+    "repository": "https://github.com/UseOSINT/Skills",
+    "manifestPath": "skills/x-ray-a-company",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319995142",
+      "marketplaceName": "Skills",
+      "hasSkillMd": true
+    }
+  }
+]

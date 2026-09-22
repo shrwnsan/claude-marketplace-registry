@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1245108765-claude-rpc",
+    "name": "claude-rpc",
+    "description": "Discord Rich Presence for Claude Code. Auto-installs the claude-rpc npm package and runs its setup on first session.",
+    "version": "",
+    "author": "rar-file",
+    "repository": "https://github.com/rar-file/claude-rpc",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1245108765",
+      "marketplaceName": "claude-rpc",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

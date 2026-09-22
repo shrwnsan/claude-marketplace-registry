@@ -1,0 +1,74 @@
+[
+  {
+    "id": "589619867-otter",
+    "name": "otter",
+    "description": "",
+    "version": "",
+    "author": "AmadeusITGroup",
+    "repository": "https://github.com/AmadeusITGroup/otter",
+    "manifestPath": "./tools/llm/plugins/otter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "589619867",
+      "marketplaceName": "otter",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "589619867-ama-openapi",
+    "name": "ama-openapi",
+    "description": "",
+    "version": "",
+    "author": "AmadeusITGroup",
+    "repository": "https://github.com/AmadeusITGroup/otter",
+    "manifestPath": "./tools/llm/plugins/ama-openapi",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "589619867",
+      "marketplaceName": "otter",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "589619867-ama-sdk",
+    "name": "ama-sdk",
+    "description": "",
+    "version": "",
+    "author": "AmadeusITGroup",
+    "repository": "https://github.com/AmadeusITGroup/otter",
+    "manifestPath": "./tools/llm/plugins/ama-sdk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "589619867",
+      "marketplaceName": "otter",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "589619867-ama-styling",
+    "name": "ama-styling",
+    "description": "",
+    "version": "",
+    "author": "AmadeusITGroup",
+    "repository": "https://github.com/AmadeusITGroup/otter",
+    "manifestPath": "./tools/llm/plugins/ama-styling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "589619867",
+      "marketplaceName": "otter",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

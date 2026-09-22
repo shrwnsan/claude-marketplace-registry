@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1247037691-antigravity",
+    "name": "antigravity",
+    "description": "Use Google Antigravity (agy) from Claude Code to review code or delegate tasks.",
+    "version": "0.1.0",
+    "author": "Sakib Sadman Shajib",
+    "repository": "https://github.com/sakibsadmanshajib/antigravity-plugin",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247037691",
+      "marketplaceName": "antigravity-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247037691-antigravity-plugin",
+    "name": "antigravity-plugin",
+    "description": "name: antigravity",
+    "version": "1.0.0",
+    "author": "Sakib Sadman Shajib",
+    "repository": "https://github.com/sakibsadmanshajib/antigravity-plugin",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247037691",
+      "marketplaceName": "antigravity-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "605682921-hamilton",
+    "name": "hamilton",
+    "description": "Expert AI assistant for Apache Hamilton framework development - create DAGs, apply decorators, debug dataflows, and optimize pipelines",
+    "version": "2.0.0",
+    "author": "Hamilton Team",
+    "repository": "https://github.com/apache/hamilton",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/apache/hamilton.git",
+      "path": ".claude-plugin"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "605682921",
+      "marketplaceName": "hamilton",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

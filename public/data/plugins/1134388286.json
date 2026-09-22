@@ -1,0 +1,226 @@
+[
+  {
+    "id": "1134388286-building-react-native-apps",
+    "name": "building-react-native-apps",
+    "description": "React Native skills for performance, navigation, TV, library development, and upgrades.",
+    "version": "",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "./plugins/building-react-native-apps",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1134388286-testing-react-native-apps",
+    "name": "testing-react-native-apps",
+    "description": "React Native testing support spanning CI artifacts, test authoring, device automation, and QA workflows.",
+    "version": "",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "./plugins/testing-react-native-apps",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1134388286-migrating-to-react-native",
+    "name": "migrating-to-react-native",
+    "description": "Skills for assessing and incrementally migrating native iOS and Android apps to React Native.",
+    "version": "",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "./plugins/migrating-to-react-native",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1134388286-assess-react-native-migration",
+    "name": "assess-react-native-migration",
+    "description": "name: assess-react-native-migration",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "skills/assess-react-native-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134388286-create-react-native-library",
+    "name": "create-react-native-library",
+    "description": "name: create-react-native-library",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "skills/create-react-native-library",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134388286-github-actions",
+    "name": "github-actions",
+    "description": "name: github-actions",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "skills/github-actions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134388286-react-native-best-practices",
+    "name": "react-native-best-practices",
+    "description": "name: react-native-best-practices",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "skills/react-native-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134388286-react-native-brownfield-migration",
+    "name": "react-native-brownfield-migration",
+    "description": "name: react-native-brownfield-migration",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "skills/react-native-brownfield-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134388286-react-native-tv-best-practices",
+    "name": "react-native-tv-best-practices",
+    "description": "name: react-native-tv-best-practices",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "skills/react-native-tv-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134388286-react-navigation",
+    "name": "react-navigation",
+    "description": "name: react-navigation",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "skills/react-navigation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134388286-upgrading-react-native",
+    "name": "upgrading-react-native",
+    "description": "name: upgrading-react-native",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "skills/upgrading-react-native",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134388286-writing-user-docs",
+    "name": "writing-user-docs",
+    "description": "name: writing-user-docs",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": "skills/writing-user-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134388286-validate-skills",
+    "name": "validate-skills",
+    "description": "name: validate-skills",
+    "version": "1.0.0",
+    "author": "callstackincubator",
+    "repository": "https://github.com/callstackincubator/agent-skills",
+    "manifestPath": ".claude/skills/validate-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134388286",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]

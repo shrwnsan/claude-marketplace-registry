@@ -1,0 +1,513 @@
+[
+  {
+    "id": "1190834387-speckit-pro",
+    "name": "speckit-pro",
+    "description": "Autonomous Spec-Driven Development powered by GitHub SpecKit. Includes SDD coaching, multi-spec project management, and a fully autonomous workflow executor with multi-agent clarification consensus.",
+    "version": "",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": "./dist/claude/speckit-pro",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1190834387-plugin-publish",
+    "name": "plugin-publish",
+    "description": "name: plugin-publish",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/plugin-publish",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-scaffold-skill",
+    "name": "scaffold-skill",
+    "description": "name: scaffold-skill",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/scaffold-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-analyze",
+    "name": "speckit-analyze",
+    "description": "name: \"speckit-analyze\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-analyze",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-archive-run",
+    "name": "speckit-archive-run",
+    "description": "name: speckit-archive-run",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-archive-run",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-checklist",
+    "name": "speckit-checklist",
+    "description": "name: \"speckit-checklist\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-checklist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-checkpoint-commit",
+    "name": "speckit-checkpoint-commit",
+    "description": "name: speckit-checkpoint-commit",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-checkpoint-commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-clarify",
+    "name": "speckit-clarify",
+    "description": "name: \"speckit-clarify\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-clarify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-constitution",
+    "name": "speckit-constitution",
+    "description": "name: \"speckit-constitution\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-constitution",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-converge",
+    "name": "speckit-converge",
+    "description": "name: \"speckit-converge\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-converge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-doctor",
+    "name": "speckit-doctor",
+    "description": "name: speckit-doctor",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-git-commit",
+    "name": "speckit-git-commit",
+    "description": "name: speckit-git-commit",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-git-commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-git-feature",
+    "name": "speckit-git-feature",
+    "description": "name: speckit-git-feature",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-git-feature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-git-initialize",
+    "name": "speckit-git-initialize",
+    "description": "name: speckit-git-initialize",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-git-initialize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-git-remote",
+    "name": "speckit-git-remote",
+    "description": "name: speckit-git-remote",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-git-remote",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-git-validate",
+    "name": "speckit-git-validate",
+    "description": "name: speckit-git-validate",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-git-validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-implement",
+    "name": "speckit-implement",
+    "description": "name: \"speckit-implement\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-plan",
+    "name": "speckit-plan",
+    "description": "name: \"speckit-plan\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-resume",
+    "name": "speckit-resume",
+    "description": "name: speckit-resume",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-resume",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-retrospective-analyze",
+    "name": "speckit-retrospective-analyze",
+    "description": "name: speckit-retrospective-analyze",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-retrospective-analyze",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-specify",
+    "name": "speckit-specify",
+    "description": "name: \"speckit-specify\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-specify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-speckit-utils-doctor",
+    "name": "speckit-speckit-utils-doctor",
+    "description": "name: speckit-speckit-utils-doctor",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-speckit-utils-doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-speckit-utils-resume",
+    "name": "speckit-speckit-utils-resume",
+    "description": "name: speckit-speckit-utils-resume",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-speckit-utils-resume",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-speckit-utils-validate",
+    "name": "speckit-speckit-utils-validate",
+    "description": "name: speckit-speckit-utils-validate",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-speckit-utils-validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-tasks",
+    "name": "speckit-tasks",
+    "description": "name: \"speckit-tasks\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-tasks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-taskstoissues",
+    "name": "speckit-taskstoissues",
+    "description": "name: \"speckit-taskstoissues\"",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-taskstoissues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-validate",
+    "name": "speckit-validate",
+    "description": "name: speckit-validate",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-verify-run",
+    "name": "speckit-verify-run",
+    "description": "name: speckit-verify-run",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-verify-run",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-verify-tasks-run",
+    "name": "speckit-verify-tasks-run",
+    "description": "name: speckit-verify-tasks-run",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-verify-tasks-run",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190834387-speckit-verify-tasks",
+    "name": "speckit-verify-tasks",
+    "description": "name: speckit-verify-tasks",
+    "version": "1.0.0",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": ".claude/skills/speckit-verify-tasks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  }
+]

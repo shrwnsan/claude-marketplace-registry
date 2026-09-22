@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1103429229-klag",
+    "name": "klag",
+    "description": "Install, connect and diagnose Klag — the Kafka consumer lag exporter.",
+    "version": "",
+    "author": "themoah",
+    "repository": "https://github.com/themoah/klag",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1103429229",
+      "marketplaceName": "klag",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1134982411-youtube-ai-digest",
+    "name": "youtube-ai-digest",
+    "description": "Browses AI-related YouTube videos from subscribed channels, fetches transcripts, generates summaries, and creates Markdown reports. Use when the user mentions YouTube AI videos, video summaries, channel subscriptions, or asks about recent AI content from YouTube creators.",
+    "version": "1.0.0",
+    "author": "yizhiyanhua-ai",
+    "repository": "https://github.com/yizhiyanhua-ai/youtube-ai-digest",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134982411",
+      "marketplaceName": "youtube-ai-digest",
+      "skills": [
+        "./"
+      ],
+      "strict": false
+    }
+  }
+]

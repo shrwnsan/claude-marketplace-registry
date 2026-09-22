@@ -1,0 +1,343 @@
+[
+  {
+    "id": "1134239413-claude-code-config",
+    "name": "claude-code-config",
+    "description": "Ed Chapman's personal Claude Code configuration: specialist agents, workflow skills, settings & MCP templates, hooks, and code-style rules.",
+    "version": "",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1134239413-adr",
+    "name": "adr",
+    "description": "name: adr",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/adr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-api-design",
+    "name": "api-design",
+    "description": "name: api-design",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/api-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-commit",
+    "name": "commit",
+    "description": "name: commit",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-django-patterns",
+    "name": "django-patterns",
+    "description": "name: django-patterns",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/django-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-docker-patterns",
+    "name": "docker-patterns",
+    "description": "name: docker-patterns",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/docker-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-eow-review",
+    "name": "eow-review",
+    "description": "name: eow-review",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/eow-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-git-workflow",
+    "name": "git-workflow",
+    "description": "name: git-workflow",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/git-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-hotfix",
+    "name": "hotfix",
+    "description": "name: hotfix",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/hotfix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-infrastructure",
+    "name": "infrastructure",
+    "description": "name: infrastructure",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/infrastructure",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-later",
+    "name": "later",
+    "description": "name: later",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/later",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-mkdocs-style",
+    "name": "mkdocs-style",
+    "description": "name: mkdocs-style",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/mkdocs-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-pr",
+    "name": "pr",
+    "description": "name: pr",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-project-setup",
+    "name": "project-setup",
+    "description": "name: project-setup",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/project-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-refinement",
+    "name": "refinement",
+    "description": "name: refinement",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/refinement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-security-patterns",
+    "name": "security-patterns",
+    "description": "name: security-patterns",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/security-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-standup",
+    "name": "standup",
+    "description": "name: standup",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/standup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-status",
+    "name": "status",
+    "description": "name: status",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-testing-patterns",
+    "name": "testing-patterns",
+    "description": "name: testing-patterns",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": "skills/testing-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134239413-run-claude-code-config",
+    "name": "run-claude-code-config",
+    "description": "name: run-claude-code-config",
+    "version": "1.0.0",
+    "author": "edjchapman",
+    "repository": "https://github.com/edjchapman/claude-code-config",
+    "manifestPath": ".claude/skills/run-claude-code-config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134239413",
+      "marketplaceName": "claude-code-config",
+      "hasSkillMd": true
+    }
+  }
+]

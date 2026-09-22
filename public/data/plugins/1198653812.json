@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1198653812-orze",
+    "name": "orze",
+    "description": "Orze is a filesystem-coordinated GPU experiment orchestrator. It runs the loop: **generate ideas → train → evaluate → learn → repeat**.",
+    "version": "1.0.0",
+    "author": "orze-ai",
+    "repository": "https://github.com/orze-ai/orze",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1198653812",
+      "marketplaceName": "orze",
+      "hasSkillMd": true
+    }
+  }
+]

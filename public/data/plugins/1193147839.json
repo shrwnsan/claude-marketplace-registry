@@ -1,0 +1,398 @@
+[
+  {
+    "id": "1193147839-code-reviewer",
+    "name": "code-reviewer",
+    "description": "Reviews code for real bugs: off-by-ones, null derefs, race conditions, swallowed errors. Skips style nitpicks.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/code-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-security-reviewer",
+    "name": "security-reviewer",
+    "description": "OWASP-style review: injection, auth, data exposure, weak crypto. Severity-ranked with file:line + fix.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/security-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-performance-reviewer",
+    "name": "performance-reviewer",
+    "description": "Finds real bottlenecks. DB N+1, memory leaks, blocking calls, re-renders.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/performance-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-doc-reviewer",
+    "name": "doc-reviewer",
+    "description": "Cross-references docs against actual source. Flags drift, missing params, dead references.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/doc-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-frontend-designer",
+    "name": "frontend-designer",
+    "description": "Builds production-grade UI. Tokens-first, anti-AI-slop aesthetics, design tokens enforced.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/frontend-designer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-silent-failure-hunter",
+    "name": "silent-failure-hunter",
+    "description": "Finds code that fails silently: swallowed errors, failures masked as success, fallbacks that hide breakage. Runs on every PR review.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/silent-failure-hunter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-pr-test-analyzer",
+    "name": "pr-test-analyzer",
+    "description": "Judges whether a diff's tests actually verify the change: assertion-free tests, mock theater, tests that cannot fail, weakened tests.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/pr-test-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-safety-hooks",
+    "name": "safety-hooks",
+    "description": "Deterministic guardrails as PreToolUse hooks: blocks dangerous commands (force push, rm -rf, DROP TABLE), secret leaks, edits to protected files, and writes to build artifacts.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/safety-hooks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-setupdotclaude",
+    "name": "setupdotclaude",
+    "description": "Set up dotclaude in any project. Deep-scans the codebase, interviews you, then installs and customizes only the components the project actually needs.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/setupdotclaude",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-debug-fix",
+    "name": "debug-fix",
+    "description": "Find and fix a bug. Default is the careful path (reproduce, investigate, test). Add `--fast` for emergency hotfix mode.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/debug-fix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-ship",
+    "name": "ship",
+    "description": "Commit, push, create PR with confirmation at every step, then optional cleanup of branches whose remotes are gone. Blocks secrets and force-push.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-pr-review",
+    "name": "pr-review",
+    "description": "Review PR or staged changes via six specialist agents in parallel. Confidence-bucketed, severity-ranked synthesis.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/pr-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-tdd",
+    "name": "tdd",
+    "description": "Strict red-green-refactor TDD loop. Failing test, then minimum code, then refactor. Commits after each cycle.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-explain",
+    "name": "explain",
+    "description": "Explain code with one-sentence summary, mental model, ASCII diagram, and modification guide.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/explain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-refactor",
+    "name": "refactor",
+    "description": "Safely refactor with tests as a safety net. Writes tests first if none exist. Use --diff to simplify just the working diff before committing.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/refactor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-test-writer",
+    "name": "test-writer",
+    "description": "Write comprehensive tests covering happy/edge/error/concurrency paths. Verifies tests actually catch bugs.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/test-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-context-budget",
+    "name": "context-budget",
+    "description": "Estimate per-turn token cost of your .claude/ configuration and CLAUDE.md. Always-loaded vs path-scoped vs invoked-only, with top contributors. Use --api for exact counts.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/context-budget",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-catchup",
+    "name": "catchup",
+    "description": "Rebuild context fast after /clear: reads the handoff note and branch changes, summarizes where work stands. Add handoff to write the note before stopping.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/catchup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-claude-md",
+    "name": "claude-md",
+    "description": "Keep CLAUDE.md current and lean: capture session learnings into it (default) or audit it for stale commands, drift, and bloat.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/claude-md",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-fix-issue",
+    "name": "fix-issue",
+    "description": "Take a GitHub issue from number to tested fix: read the thread, reproduce, fix with a regression test, prep a PR that closes it.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/fix-issue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-onboard",
+    "name": "onboard",
+    "description": "Get oriented in an unfamiliar codebase fast: an Explore-subagent tour from overview down to architecture, data models, auth, conventions, and a glossary, without flooding your main context.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/onboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193147839-spec",
+    "name": "spec",
+    "description": "Turn a fuzzy feature idea into a self-contained SPEC.md by interviewing you first, then writing a spec a fresh implementation session can execute.",
+    "version": "",
+    "author": "poshan0126",
+    "repository": "https://github.com/poshan0126/dotclaude",
+    "manifestPath": "./plugins/spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193147839",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

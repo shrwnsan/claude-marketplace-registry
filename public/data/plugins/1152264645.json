@@ -1,0 +1,88 @@
+[
+  {
+    "id": "1152264645-k8s",
+    "name": "k8s",
+    "description": "",
+    "version": "",
+    "author": "Sagart-cactus",
+    "repository": "https://github.com/Sagart-cactus/claude-k8s-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152264645",
+      "marketplaceName": "claude-k8s-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1152264645-k8s-crd-design",
+    "name": "k8s-crd-design",
+    "description": "name: k8s-crd-design",
+    "version": "1.0.0",
+    "author": "Sagart-cactus",
+    "repository": "https://github.com/Sagart-cactus/claude-k8s-plugin",
+    "manifestPath": "skills/k8s-crd-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152264645",
+      "marketplaceName": "claude-k8s-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152264645-k8s-operator-workflow",
+    "name": "k8s-operator-workflow",
+    "description": "name: k8s-workflow",
+    "version": "1.0.0",
+    "author": "Sagart-cactus",
+    "repository": "https://github.com/Sagart-cactus/claude-k8s-plugin",
+    "manifestPath": "skills/k8s-operator-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152264645",
+      "marketplaceName": "claude-k8s-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152264645-k8s-quality-checklist",
+    "name": "k8s-quality-checklist",
+    "description": "name: k8s-quality-checklist",
+    "version": "1.0.0",
+    "author": "Sagart-cactus",
+    "repository": "https://github.com/Sagart-cactus/claude-k8s-plugin",
+    "manifestPath": "skills/k8s-quality-checklist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152264645",
+      "marketplaceName": "claude-k8s-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152264645-k8s-templates",
+    "name": "k8s-templates",
+    "description": "name: k8s-templates",
+    "version": "1.0.0",
+    "author": "Sagart-cactus",
+    "repository": "https://github.com/Sagart-cactus/claude-k8s-plugin",
+    "manifestPath": "skills/k8s-templates",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152264645",
+      "marketplaceName": "claude-k8s-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

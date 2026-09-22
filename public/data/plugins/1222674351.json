@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1222674351-superteam",
+    "name": "superteam",
+    "description": "General-purpose agent superteam for Claude code - contract-gated verification loops with 7 outer-loop roles, 5-phase orchestration, task form-driven inner-loop cooperation, and structural prevention of premature exits.",
+    "version": "0.0.1",
+    "author": "Superteam",
+    "repository": "https://github.com/Crysple/superteam",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1222674351",
+      "marketplaceName": "superteam",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

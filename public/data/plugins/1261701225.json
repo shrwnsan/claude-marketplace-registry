@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1261701225-tia-harness",
+    "name": "tia-harness",
+    "description": "Industrial-automation + Siemens TIA Portal V21 specialist harness: skills (spec.validate, cpu.select, spec.plan, tia.review, tia.scaffold, tia.verify, tia.handoff) + 4 subagents + the `tia` MCP server (compliant-by-construction authoring, gated deploy).",
+    "version": "0.1.0",
+    "author": "Renan Oliveira",
+    "repository": "https://github.com/renanlido/tia-harness",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261701225",
+      "marketplaceName": "tia-harness",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1261701225-cpu-select",
+    "name": "cpu.select",
+    "description": "name: cpu.select",
+    "version": "1.0.0",
+    "author": "Renan Oliveira",
+    "repository": "https://github.com/renanlido/tia-harness",
+    "manifestPath": "skills/cpu.select",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261701225",
+      "marketplaceName": "tia-harness",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1261701225-spec-plan",
+    "name": "spec.plan",
+    "description": "name: spec.plan",
+    "version": "1.0.0",
+    "author": "Renan Oliveira",
+    "repository": "https://github.com/renanlido/tia-harness",
+    "manifestPath": "skills/spec.plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261701225",
+      "marketplaceName": "tia-harness",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1261701225-spec-validate",
+    "name": "spec.validate",
+    "description": "name: spec.validate",
+    "version": "1.0.0",
+    "author": "Renan Oliveira",
+    "repository": "https://github.com/renanlido/tia-harness",
+    "manifestPath": "skills/spec.validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261701225",
+      "marketplaceName": "tia-harness",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1261701225-tia-handoff",
+    "name": "tia.handoff",
+    "description": "name: tia.handoff",
+    "version": "1.0.0",
+    "author": "Renan Oliveira",
+    "repository": "https://github.com/renanlido/tia-harness",
+    "manifestPath": "skills/tia.handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261701225",
+      "marketplaceName": "tia-harness",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1261701225-tia-init",
+    "name": "tia.init",
+    "description": "name: tia.init",
+    "version": "1.0.0",
+    "author": "Renan Oliveira",
+    "repository": "https://github.com/renanlido/tia-harness",
+    "manifestPath": "skills/tia.init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261701225",
+      "marketplaceName": "tia-harness",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1261701225-tia-review",
+    "name": "tia.review",
+    "description": "name: tia.review",
+    "version": "1.0.0",
+    "author": "Renan Oliveira",
+    "repository": "https://github.com/renanlido/tia-harness",
+    "manifestPath": "skills/tia.review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261701225",
+      "marketplaceName": "tia-harness",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1261701225-tia-scaffold",
+    "name": "tia.scaffold",
+    "description": "name: tia.scaffold",
+    "version": "1.0.0",
+    "author": "Renan Oliveira",
+    "repository": "https://github.com/renanlido/tia-harness",
+    "manifestPath": "skills/tia.scaffold",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261701225",
+      "marketplaceName": "tia-harness",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1261701225-tia-verify",
+    "name": "tia.verify",
+    "description": "name: tia.verify",
+    "version": "1.0.0",
+    "author": "Renan Oliveira",
+    "repository": "https://github.com/renanlido/tia-harness",
+    "manifestPath": "skills/tia.verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261701225",
+      "marketplaceName": "tia-harness",
+      "hasSkillMd": true
+    }
+  }
+]

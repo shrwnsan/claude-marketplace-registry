@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1248813600-panel-review",
+    "name": "panel-review",
+    "description": "Multi-model second-opinion deliberation for high-stakes coding and finance decisions",
+    "version": "0.19.47",
+    "author": "TruVerifAI",
+    "repository": "https://github.com/TruVerifAI/claude-plugins",
+    "manifestPath": "./plugins/panel-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248813600",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1224526710-starrykit-plugin",
+    "name": "starrykit-plugin",
+    "description": "Create editable presentations, posters, social graphics, art, and visual design documents from prompts and references.",
+    "version": "0.4.0",
+    "author": "StarryKit",
+    "repository": "https://github.com/StarryKit/starrykit-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224526710",
+      "marketplaceName": "starrykit-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1224526710-starrykit",
+    "name": "starrykit",
+    "description": "name: starrykit",
+    "version": "1.0.0",
+    "author": "StarryKit",
+    "repository": "https://github.com/StarryKit/starrykit-plugin",
+    "manifestPath": "skills/starrykit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224526710",
+      "marketplaceName": "starrykit-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

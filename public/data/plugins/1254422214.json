@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1254422214-test-quality-tools",
+    "name": "test-quality-tools",
+    "description": "Two skills: test-quality (audit/harden/generate mutation-resistant tests against a quality scorecard) and results-dashboard (render a scorecard JSON into an interactive HTML readout).",
+    "version": "1.0.0",
+    "author": "rollinsio",
+    "repository": "https://github.com/rollinsio/beyond-test-coverage",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1254422214",
+      "marketplaceName": "beyond-test-coverage",
+      "skills": [
+        "./.claude/skills/test-quality",
+        "./.claude/skills/results-dashboard"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1254422214-results-dashboard",
+    "name": "results-dashboard",
+    "description": "name: results-dashboard",
+    "version": "1.0.0",
+    "author": "rollinsio",
+    "repository": "https://github.com/rollinsio/beyond-test-coverage",
+    "manifestPath": ".claude/skills/results-dashboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1254422214",
+      "marketplaceName": "beyond-test-coverage",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1254422214-test-quality",
+    "name": "test-quality",
+    "description": "name: test-quality",
+    "version": "1.0.0",
+    "author": "rollinsio",
+    "repository": "https://github.com/rollinsio/beyond-test-coverage",
+    "manifestPath": ".claude/skills/test-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1254422214",
+      "marketplaceName": "beyond-test-coverage",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1231458473-alamops-skills",
+    "name": "alamops-skills",
+    "description": "Bundle of all Alamo's agent skills (auto-discovered from ./skills/)",
+    "version": "0.1.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1231458473-appstore-review",
+    "name": "appstore-review",
+    "description": "name: appstore-review",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/appstore-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-appstore-seo",
+    "name": "appstore-seo",
+    "description": "name: appstore-seo",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/appstore-seo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-break-fix",
+    "name": "break-fix",
+    "description": "name: break-fix",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/break-fix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-business-review",
+    "name": "business-review",
+    "description": "name: business-review",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/business-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-code-review",
+    "name": "code-review",
+    "description": "name: code-review",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-create-tasks",
+    "name": "create-tasks",
+    "description": "name: create-tasks",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/create-tasks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-implement",
+    "name": "implement",
+    "description": "name: implement",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-rpg-persona",
+    "name": "rpg-persona",
+    "description": "name: rpg-persona",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/rpg-persona",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-to-prd",
+    "name": "to-prd",
+    "description": "name: to-prd",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/to-prd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

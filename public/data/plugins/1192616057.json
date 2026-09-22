@@ -1,0 +1,227 @@
+[
+  {
+    "id": "1192616057-nova",
+    "name": "nova",
+    "description": "AI 개발 품질 게이트 — 적대적 코드 리뷰, 멀티 AI 교차검증, 설계-구현 정합성 검증으로 재작업을 제거한다.",
+    "version": "",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/TeamSPWK/nova.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1192616057-claude-md",
+    "name": "claude-md",
+    "description": "name: claude-md",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/claude-md",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-context-chain",
+    "name": "context-chain",
+    "description": "name: context-chain",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/context-chain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-deepplan",
+    "name": "deepplan",
+    "description": "name: deepplan",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/deepplan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-evaluator",
+    "name": "evaluator",
+    "description": "name: evaluator",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/evaluator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-jury",
+    "name": "jury",
+    "description": "name: jury",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/jury",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-orchestrator",
+    "name": "orchestrator",
+    "description": "name: orchestrator",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-repo-preflight",
+    "name": "repo-preflight",
+    "description": "name: repo-preflight",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/repo-preflight",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-status-dashboard",
+    "name": "status-dashboard",
+    "description": "name: status-dashboard",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/status-dashboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-strategic-compact",
+    "name": "strategic-compact",
+    "description": "name: strategic-compact",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/strategic-compact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-ux-audit",
+    "name": "ux-audit",
+    "description": "name: ux-audit",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/ux-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-worktree-setup",
+    "name": "worktree-setup",
+    "description": "name: worktree-setup",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/worktree-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192616057-writing-nova-skill",
+    "name": "writing-nova-skill",
+    "description": "name: writing-nova-skill",
+    "version": "1.0.0",
+    "author": "Spacewalk Engineering",
+    "repository": "https://github.com/TeamSPWK/nova",
+    "manifestPath": ".claude/skills/writing-nova-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192616057",
+      "marketplaceName": "nova",
+      "hasSkillMd": true
+    }
+  }
+]

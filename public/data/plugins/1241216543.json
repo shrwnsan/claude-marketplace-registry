@@ -1,0 +1,649 @@
+[
+  {
+    "id": "1241216543-cline",
+    "name": "cline",
+    "description": "Skills used at Cline for building AI coding agents",
+    "version": "",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1241216543-amazon-location-service",
+    "name": "amazon-location-service",
+    "description": "name: amazon-location-service",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/amazon-location-service",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-amplify-workflow",
+    "name": "amplify-workflow",
+    "description": "name: amplify-workflow",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/amplify-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-attorney-assist",
+    "name": "attorney-assist",
+    "description": "name: attorney-assist",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/attorney-assist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-building-pydantic-ai-agents",
+    "name": "building-pydantic-ai-agents",
+    "description": "name: building-pydantic-ai-agents",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/building-pydantic-ai-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-cline-session-search",
+    "name": "cline-session-search",
+    "description": "name: cline-session-history",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/cline-session-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-convex-design",
+    "name": "convex-design",
+    "description": "name: convex-design",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/convex-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-cosmosdb-best-practices",
+    "name": "cosmosdb-best-practices",
+    "description": "name: cosmosdb-best-practices",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/cosmosdb-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-data-analyst",
+    "name": "data-analyst",
+    "description": "name: data-analyst",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/data-analyst",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-dataproc-skills",
+    "name": "dataproc-skills",
+    "description": "name: dataproc-skills",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/dataproc-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-desktop-commander-overview",
+    "name": "desktop-commander-overview",
+    "description": "name: desktop-commander-overview",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/desktop-commander-overview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-dr-bedrock",
+    "name": "dr-bedrock",
+    "description": "name: dr-bedrock",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/dr-bedrock",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-dsql",
+    "name": "dsql",
+    "description": "name: dsql",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/dsql",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-endor-setup",
+    "name": "endor-setup",
+    "description": "name: endor-setup",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/endor-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-exa-search",
+    "name": "exa-search",
+    "description": "name: exa-search",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/exa-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-firestore-data",
+    "name": "firestore-data",
+    "description": "name: firestore-data",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/firestore-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-frontend-design",
+    "name": "frontend-design",
+    "description": "name: frontend-design",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-gcp-to-aws",
+    "name": "gcp-to-aws",
+    "description": "name: gcp-to-aws",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/gcp-to-aws",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-knowledge-catalog-discovery",
+    "name": "knowledge-catalog-discovery",
+    "description": "name: knowledge-catalog-discovery",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/knowledge-catalog-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-linear-sdk-scripting",
+    "name": "linear-sdk-scripting",
+    "description": "name: linear-sdk-scripting",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/linear-sdk-scripting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-math-olympiad",
+    "name": "math-olympiad",
+    "description": "name: math-olympiad",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/math-olympiad",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-mintlify",
+    "name": "mintlify",
+    "description": "name: mintlify",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/mintlify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-oracledb",
+    "name": "oracledb",
+    "description": "name: oracledb",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/oracledb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-playground",
+    "name": "playground",
+    "description": "name: playground",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/playground",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-review-team",
+    "name": "review-team",
+    "description": "name: review-team",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/review-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-sap-fiori-add-visual-filter",
+    "name": "sap-fiori-add-visual-filter",
+    "description": "name: sap-fiori-add-visual-filter",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/sap-fiori-add-visual-filter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-save-to-spotify",
+    "name": "save-to-spotify",
+    "description": "id: save-to-spotify",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/save-to-spotify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-searching-sourcegraph",
+    "name": "searching-sourcegraph",
+    "description": "name: searching-sourcegraph",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/searching-sourcegraph",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-sentry-cli",
+    "name": "sentry-cli",
+    "description": "name: sentry-cli",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/sentry-cli",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-session-report",
+    "name": "session-report",
+    "description": "name: session-report",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/session-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-site-specification",
+    "name": "site-specification",
+    "description": "name: site-specification",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/site-specification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-skill-creator",
+    "name": "skill-creator",
+    "description": "name: skill-creator",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-spanner-data",
+    "name": "spanner-data",
+    "description": "name: spanner-data",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/spanner-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-teamcity-cli",
+    "name": "teamcity-cli",
+    "description": "name: teamcity-cli",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/teamcity-cli",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-ui5-typescript-conversion",
+    "name": "ui5-typescript-conversion",
+    "description": "name: ui5-typescript-conversion",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/ui5-typescript-conversion",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-use-railway",
+    "name": "use-railway",
+    "description": "name: use-railway",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/use-railway",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-vibe-prospecting",
+    "name": "vibe-prospecting",
+    "description": "name: \"vibe-prospecting\"",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/vibe-prospecting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241216543-windsor-ai-business-data",
+    "name": "windsor-ai-business-data",
+    "description": "name: windsor-ai-business-data",
+    "version": "1.0.0",
+    "author": "cline",
+    "repository": "https://github.com/cline/skills",
+    "manifestPath": "skills/windsor-ai-business-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241216543",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

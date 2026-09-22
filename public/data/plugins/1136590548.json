@@ -1,0 +1,4984 @@
+[
+  {
+    "id": "1136590548-ecc",
+    "name": "ecc",
+    "description": "Harness-native ECC operator layer - 68 agents, 292 skills, 94 legacy command shims, reusable hooks, rules, selective install profiles, and production-ready workflows for Claude Code, Codex, OpenCode, Cursor, and related agent harnesses",
+    "version": "2.2.2",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1136590548-accessibility",
+    "name": "accessibility",
+    "description": "name: accessibility",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/accessibility",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agent-architecture-audit",
+    "name": "agent-architecture-audit",
+    "description": "name: agent-architecture-audit",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agent-architecture-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agent-eval",
+    "name": "agent-eval",
+    "description": "name: agent-eval",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agent-eval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agent-harness-construction",
+    "name": "agent-harness-construction",
+    "description": "name: agent-harness-construction",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agent-harness-construction",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agent-introspection-debugging",
+    "name": "agent-introspection-debugging",
+    "description": "name: agent-introspection-debugging",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agent-introspection-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agent-payment-x402",
+    "name": "agent-payment-x402",
+    "description": "name: agent-payment-x402",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agent-payment-x402",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agent-self-evaluation",
+    "name": "agent-self-evaluation",
+    "description": "name: agent-self-evaluation",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agent-self-evaluation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agent-sort",
+    "name": "agent-sort",
+    "description": "name: agent-sort",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agent-sort",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agentic-engineering",
+    "name": "agentic-engineering",
+    "description": "name: agentic-engineering",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agentic-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agentic-os",
+    "name": "agentic-os",
+    "description": "name: agentic-os",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agentic-os",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ai-first-engineering",
+    "name": "ai-first-engineering",
+    "description": "name: ai-first-engineering",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ai-first-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ai-regression-testing",
+    "name": "ai-regression-testing",
+    "description": "name: ai-regression-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ai-regression-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-android-clean-architecture",
+    "name": "android-clean-architecture",
+    "description": "name: android-clean-architecture",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/android-clean-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-angular-developer",
+    "name": "angular-developer",
+    "description": "name: angular-developer",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/angular-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-api-connector-builder",
+    "name": "api-connector-builder",
+    "description": "name: api-connector-builder",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/api-connector-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-api-design",
+    "name": "api-design",
+    "description": "name: api-design",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/api-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-architecture-decision-records",
+    "name": "architecture-decision-records",
+    "description": "name: architecture-decision-records",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/architecture-decision-records",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-article-writing",
+    "name": "article-writing",
+    "description": "name: article-writing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/article-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-automation-audit-ops",
+    "name": "automation-audit-ops",
+    "description": "name: automation-audit-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/automation-audit-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-autonomous-agent-harness",
+    "name": "autonomous-agent-harness",
+    "description": "name: autonomous-agent-harness",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/autonomous-agent-harness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-autonomous-loops",
+    "name": "autonomous-loops",
+    "description": "name: autonomous-loops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/autonomous-loops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-backend-patterns",
+    "name": "backend-patterns",
+    "description": "name: backend-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/backend-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-benchmark-methodology",
+    "name": "benchmark-methodology",
+    "description": "name: benchmark-methodology",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/benchmark-methodology",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-benchmark-optimization-loop",
+    "name": "benchmark-optimization-loop",
+    "description": "name: benchmark-optimization-loop",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/benchmark-optimization-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-benchmark",
+    "name": "benchmark",
+    "description": "name: benchmark",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/benchmark",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-blender-motion-state-inspection",
+    "name": "blender-motion-state-inspection",
+    "description": "name: blender-motion-state-inspection",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/blender-motion-state-inspection",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-blueprint",
+    "name": "blueprint",
+    "description": "name: blueprint",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/blueprint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-brand-discovery",
+    "name": "brand-discovery",
+    "description": "name: brand-discovery",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/brand-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-brand-voice",
+    "name": "brand-voice",
+    "description": "name: brand-voice",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/brand-voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-browser-qa",
+    "name": "browser-qa",
+    "description": "name: browser-qa",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/browser-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-bun-runtime",
+    "name": "bun-runtime",
+    "description": "name: bun-runtime",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/bun-runtime",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-canary-watch",
+    "name": "canary-watch",
+    "description": "name: canary-watch",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/canary-watch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-carrier-relationship-management",
+    "name": "carrier-relationship-management",
+    "description": "name: carrier-relationship-management",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/carrier-relationship-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-cisco-ios-patterns",
+    "name": "cisco-ios-patterns",
+    "description": "name: cisco-ios-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/cisco-ios-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ck",
+    "name": "ck",
+    "description": "name: ck",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ck",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-claude-devfleet",
+    "name": "claude-devfleet",
+    "description": "name: claude-devfleet",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/claude-devfleet",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-click-path-audit",
+    "name": "click-path-audit",
+    "description": "name: click-path-audit",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/click-path-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-clickhouse-io",
+    "name": "clickhouse-io",
+    "description": "name: clickhouse-io",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/clickhouse-io",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-code-tour",
+    "name": "code-tour",
+    "description": "name: code-tour",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/code-tour",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-codebase-onboarding",
+    "name": "codebase-onboarding",
+    "description": "name: codebase-onboarding",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/codebase-onboarding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-codehealth-mcp",
+    "name": "codehealth-mcp",
+    "description": "name: codehealth-mcp",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/codehealth-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-coding-standards",
+    "name": "coding-standards",
+    "description": "name: coding-standards",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/coding-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-competitive-platform-analysis",
+    "name": "competitive-platform-analysis",
+    "description": "name: competitive-platform-analysis",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/competitive-platform-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-competitive-report-structure",
+    "name": "competitive-report-structure",
+    "description": "name: competitive-report-structure",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/competitive-report-structure",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-compose-multiplatform-patterns",
+    "name": "compose-multiplatform-patterns",
+    "description": "name: compose-multiplatform-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/compose-multiplatform-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-config-gc",
+    "name": "config-gc",
+    "description": "name: config-gc",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/config-gc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-configure-ecc",
+    "name": "configure-ecc",
+    "description": "name: configure-ecc",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/configure-ecc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-connections-optimizer",
+    "name": "connections-optimizer",
+    "description": "name: connections-optimizer",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/connections-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-content-engine",
+    "name": "content-engine",
+    "description": "name: content-engine",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/content-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-content-hash-cache-pattern",
+    "name": "content-hash-cache-pattern",
+    "description": "name: content-hash-cache-pattern",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/content-hash-cache-pattern",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-context-budget",
+    "name": "context-budget",
+    "description": "name: context-budget",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/context-budget",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-continuous-agent-loop",
+    "name": "continuous-agent-loop",
+    "description": "name: continuous-agent-loop",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/continuous-agent-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-continuous-learning-v2",
+    "name": "continuous-learning-v2",
+    "description": "name: continuous-learning-v2",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/continuous-learning-v2",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-continuous-learning",
+    "name": "continuous-learning",
+    "description": "name: continuous-learning",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/continuous-learning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-contract-first",
+    "name": "contract-first",
+    "description": "name: contract-first",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/contract-first",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-cost-aware-llm-pipeline",
+    "name": "cost-aware-llm-pipeline",
+    "description": "name: cost-aware-llm-pipeline",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/cost-aware-llm-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-cost-tracking",
+    "name": "cost-tracking",
+    "description": "name: cost-tracking",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/cost-tracking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-council-multi-model",
+    "name": "council-multi-model",
+    "description": "name: council-multi-model",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/council-multi-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-council",
+    "name": "council",
+    "description": "name: council",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/council",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-counterparty-channel-discipline",
+    "name": "counterparty-channel-discipline",
+    "description": "name: counterparty-channel-discipline",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/counterparty-channel-discipline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-cpp-coding-standards",
+    "name": "cpp-coding-standards",
+    "description": "name: cpp-coding-standards",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/cpp-coding-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-cpp-testing",
+    "name": "cpp-testing",
+    "description": "name: cpp-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/cpp-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-crosspost",
+    "name": "crosspost",
+    "description": "name: crosspost",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/crosspost",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-csharp-testing",
+    "name": "csharp-testing",
+    "description": "name: csharp-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/csharp-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-customer-billing-ops",
+    "name": "customer-billing-ops",
+    "description": "name: customer-billing-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/customer-billing-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-customs-trade-compliance",
+    "name": "customs-trade-compliance",
+    "description": "name: customs-trade-compliance",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/customs-trade-compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-dart-flutter-patterns",
+    "name": "dart-flutter-patterns",
+    "description": "name: dart-flutter-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/dart-flutter-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-dashboard-builder",
+    "name": "dashboard-builder",
+    "description": "name: dashboard-builder",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/dashboard-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-data-scraper-agent",
+    "name": "data-scraper-agent",
+    "description": "name: data-scraper-agent",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/data-scraper-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-data-throughput-accelerator",
+    "name": "data-throughput-accelerator",
+    "description": "name: data-throughput-accelerator",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/data-throughput-accelerator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-database-migrations",
+    "name": "database-migrations",
+    "description": "name: database-migrations",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/database-migrations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-deep-research",
+    "name": "deep-research",
+    "description": "name: deep-research",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/deep-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-defi-amm-security",
+    "name": "defi-amm-security",
+    "description": "name: defi-amm-security",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/defi-amm-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-delivery-gate",
+    "name": "delivery-gate",
+    "description": "name: delivery-gate",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/delivery-gate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-deployment-patterns",
+    "name": "deployment-patterns",
+    "description": "name: deployment-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/deployment-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-design-system",
+    "name": "design-system",
+    "description": "name: design-system",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/design-system",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-dev-team",
+    "name": "dev-team",
+    "description": "name: dev-team",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/dev-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-django-celery",
+    "name": "django-celery",
+    "description": "name: django-celery",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/django-celery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-django-patterns",
+    "name": "django-patterns",
+    "description": "name: django-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/django-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-django-security",
+    "name": "django-security",
+    "description": "name: django-security",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/django-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-django-tdd",
+    "name": "django-tdd",
+    "description": "name: django-tdd",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/django-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-django-verification",
+    "name": "django-verification",
+    "description": "name: django-verification",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/django-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-dmux-workflows",
+    "name": "dmux-workflows",
+    "description": "name: dmux-workflows",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/dmux-workflows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-docker-patterns",
+    "name": "docker-patterns",
+    "description": "name: docker-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/docker-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-documentation-lookup",
+    "name": "documentation-lookup",
+    "description": "name: documentation-lookup",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/documentation-lookup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-dotnet-patterns",
+    "name": "dotnet-patterns",
+    "description": "name: dotnet-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/dotnet-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-dynamic-workflow-mode",
+    "name": "dynamic-workflow-mode",
+    "description": "name: dynamic-workflow-mode",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/dynamic-workflow-mode",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-e2e-testing",
+    "name": "e2e-testing",
+    "description": "name: e2e-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/e2e-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ecc-guide",
+    "name": "ecc-guide",
+    "description": "name: ecc-guide",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ecc-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ecc-recipes",
+    "name": "ecc-recipes",
+    "description": "name: ecc-recipes",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ecc-recipes",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ecc-tools-cost-audit",
+    "name": "ecc-tools-cost-audit",
+    "description": "name: ecc-tools-cost-audit",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ecc-tools-cost-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-email-ops",
+    "name": "email-ops",
+    "description": "name: email-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/email-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-energy-procurement",
+    "name": "energy-procurement",
+    "description": "name: energy-procurement",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/energy-procurement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-enterprise-agent-ops",
+    "name": "enterprise-agent-ops",
+    "description": "name: enterprise-agent-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/enterprise-agent-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-error-handling",
+    "name": "error-handling",
+    "description": "name: error-handling",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/error-handling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-esign-field-placement",
+    "name": "esign-field-placement",
+    "description": "name: esign-field-placement",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/esign-field-placement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-eval-harness",
+    "name": "eval-harness",
+    "description": "name: eval-harness",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/eval-harness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-evm-token-decimals",
+    "name": "evm-token-decimals",
+    "description": "name: evm-token-decimals",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/evm-token-decimals",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-exa-search",
+    "name": "exa-search",
+    "description": "name: exa-search",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/exa-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-fal-ai-media",
+    "name": "fal-ai-media",
+    "description": "name: fal-ai-media",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/fal-ai-media",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-fastapi-patterns",
+    "name": "fastapi-patterns",
+    "description": "name: fastapi-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/fastapi-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-finance-billing-ops",
+    "name": "finance-billing-ops",
+    "description": "name: finance-billing-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/finance-billing-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-flox-environments",
+    "name": "flox-environments",
+    "description": "name: flox-environments",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/flox-environments",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-flutter-dart-code-review",
+    "name": "flutter-dart-code-review",
+    "description": "name: flutter-dart-code-review",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/flutter-dart-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-foundation-models-on-device",
+    "name": "foundation-models-on-device",
+    "description": "name: foundation-models-on-device",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/foundation-models-on-device",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-frontend-a11y",
+    "name": "frontend-a11y",
+    "description": "name: frontend-a11y",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/frontend-a11y",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-frontend-design-direction",
+    "name": "frontend-design-direction",
+    "description": "name: frontend-design-direction",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/frontend-design-direction",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-frontend-patterns",
+    "name": "frontend-patterns",
+    "description": "name: frontend-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/frontend-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-frontend-slides",
+    "name": "frontend-slides",
+    "description": "name: frontend-slides",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/frontend-slides",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-fsharp-testing",
+    "name": "fsharp-testing",
+    "description": "name: fsharp-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/fsharp-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-gan-style-harness",
+    "name": "gan-style-harness",
+    "description": "name: gan-style-harness",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/gan-style-harness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-gateguard",
+    "name": "gateguard",
+    "description": "name: gateguard",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/gateguard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-generating-python-installer",
+    "name": "generating-python-installer",
+    "description": "name: generating-python-installer",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/generating-python-installer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-git-workflow",
+    "name": "git-workflow",
+    "description": "name: git-workflow",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/git-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-github-ops",
+    "name": "github-ops",
+    "description": "name: github-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/github-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-golang-patterns",
+    "name": "golang-patterns",
+    "description": "name: golang-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/golang-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-golang-testing",
+    "name": "golang-testing",
+    "description": "name: golang-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/golang-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-google-workspace-ops",
+    "name": "google-workspace-ops",
+    "description": "name: google-workspace-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/google-workspace-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-growth-log",
+    "name": "growth-log",
+    "description": "name: growth-log",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/growth-log",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-healthcare-cdss-patterns",
+    "name": "healthcare-cdss-patterns",
+    "description": "name: healthcare-cdss-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/healthcare-cdss-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-healthcare-emr-patterns",
+    "name": "healthcare-emr-patterns",
+    "description": "name: healthcare-emr-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/healthcare-emr-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-healthcare-eval-harness",
+    "name": "healthcare-eval-harness",
+    "description": "name: healthcare-eval-harness",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/healthcare-eval-harness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-healthcare-phi-compliance",
+    "name": "healthcare-phi-compliance",
+    "description": "name: healthcare-phi-compliance",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/healthcare-phi-compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-hermes-imports",
+    "name": "hermes-imports",
+    "description": "name: hermes-imports",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/hermes-imports",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-hexagonal-architecture",
+    "name": "hexagonal-architecture",
+    "description": "name: hexagonal-architecture",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/hexagonal-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-hipaa-compliance",
+    "name": "hipaa-compliance",
+    "description": "name: hipaa-compliance",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/hipaa-compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-homelab-network-readiness",
+    "name": "homelab-network-readiness",
+    "description": "name: homelab-network-readiness",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/homelab-network-readiness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-homelab-network-setup",
+    "name": "homelab-network-setup",
+    "description": "name: homelab-network-setup",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/homelab-network-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-homelab-pihole-dns",
+    "name": "homelab-pihole-dns",
+    "description": "name: homelab-pihole-dns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/homelab-pihole-dns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-homelab-vlan-segmentation",
+    "name": "homelab-vlan-segmentation",
+    "description": "name: homelab-vlan-segmentation",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/homelab-vlan-segmentation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-homelab-wireguard-vpn",
+    "name": "homelab-wireguard-vpn",
+    "description": "name: homelab-wireguard-vpn",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/homelab-wireguard-vpn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-hookify-rules",
+    "name": "hookify-rules",
+    "description": "name: hookify-rules",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/hookify-rules",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-inherit-legacy-style",
+    "name": "inherit-legacy-style",
+    "description": "name: inherit-legacy-style",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/inherit-legacy-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-intent-driven-development",
+    "name": "intent-driven-development",
+    "description": "name: intent-driven-development",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/intent-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-inventory-demand-planning",
+    "name": "inventory-demand-planning",
+    "description": "name: inventory-demand-planning",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/inventory-demand-planning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-investor-materials",
+    "name": "investor-materials",
+    "description": "name: investor-materials",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/investor-materials",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-investor-outreach",
+    "name": "investor-outreach",
+    "description": "name: investor-outreach",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/investor-outreach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ios-icon-gen",
+    "name": "ios-icon-gen",
+    "description": "name: ios-icon-gen",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ios-icon-gen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-iterative-retrieval",
+    "name": "iterative-retrieval",
+    "description": "name: iterative-retrieval",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/iterative-retrieval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ito-baskets",
+    "name": "ito-baskets",
+    "description": "name: ito-baskets",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ito-baskets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ito-compute",
+    "name": "ito-compute",
+    "description": "name: ito-compute",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ito-compute",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ito-inference",
+    "name": "ito-inference",
+    "description": "name: ito-inference",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ito-inference",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ito-training",
+    "name": "ito-training",
+    "description": "name: ito-training",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ito-training",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-java-coding-standards",
+    "name": "java-coding-standards",
+    "description": "name: java-coding-standards",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/java-coding-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-jira-integration",
+    "name": "jira-integration",
+    "description": "name: jira-integration",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/jira-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-jpa-patterns",
+    "name": "jpa-patterns",
+    "description": "name: jpa-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/jpa-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-knowledge-ops",
+    "name": "knowledge-ops",
+    "description": "name: knowledge-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/knowledge-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-kotlin-coroutines-flows",
+    "name": "kotlin-coroutines-flows",
+    "description": "name: kotlin-coroutines-flows",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/kotlin-coroutines-flows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-kotlin-exposed-patterns",
+    "name": "kotlin-exposed-patterns",
+    "description": "name: kotlin-exposed-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/kotlin-exposed-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-kotlin-ktor-patterns",
+    "name": "kotlin-ktor-patterns",
+    "description": "name: kotlin-ktor-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/kotlin-ktor-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-kotlin-patterns",
+    "name": "kotlin-patterns",
+    "description": "name: kotlin-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/kotlin-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-kotlin-testing",
+    "name": "kotlin-testing",
+    "description": "name: kotlin-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/kotlin-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-kubernetes-patterns",
+    "name": "kubernetes-patterns",
+    "description": "name: kubernetes-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/kubernetes-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-laravel-patterns",
+    "name": "laravel-patterns",
+    "description": "name: laravel-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/laravel-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-laravel-plugin-discovery",
+    "name": "laravel-plugin-discovery",
+    "description": "name: laravel-plugin-discovery",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/laravel-plugin-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-laravel-security",
+    "name": "laravel-security",
+    "description": "name: laravel-security",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/laravel-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-laravel-tdd",
+    "name": "laravel-tdd",
+    "description": "name: laravel-tdd",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/laravel-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-laravel-verification",
+    "name": "laravel-verification",
+    "description": "name: laravel-verification",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/laravel-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-latency-critical-systems",
+    "name": "latency-critical-systems",
+    "description": "name: latency-critical-systems",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/latency-critical-systems",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-lead-intelligence",
+    "name": "lead-intelligence",
+    "description": "name: lead-intelligence",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/lead-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-liquid-glass-design",
+    "name": "liquid-glass-design",
+    "description": "name: liquid-glass-design",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/liquid-glass-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-living-docs-governance",
+    "name": "living-docs-governance",
+    "description": "name: living-docs-governance",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/living-docs-governance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-llm-trading-agent-security",
+    "name": "llm-trading-agent-security",
+    "description": "name: llm-trading-agent-security",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/llm-trading-agent-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-logistics-exception-management",
+    "name": "logistics-exception-management",
+    "description": "name: logistics-exception-management",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/logistics-exception-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-loop-design-check",
+    "name": "loop-design-check",
+    "description": "name: loop-design-check",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/loop-design-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-mailtrap-email-integration",
+    "name": "mailtrap-email-integration",
+    "description": "name: mailtrap-email-integration",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/mailtrap-email-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-make-interfaces-feel-better",
+    "name": "make-interfaces-feel-better",
+    "description": "name: make-interfaces-feel-better",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/make-interfaces-feel-better",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-manim-video",
+    "name": "manim-video",
+    "description": "name: manim-video",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/manim-video",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-market-research",
+    "name": "market-research",
+    "description": "name: market-research",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/market-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-marketing-campaign",
+    "name": "marketing-campaign",
+    "description": "name: marketing-campaign",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/marketing-campaign",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-master-agreement-generator",
+    "name": "master-agreement-generator",
+    "description": "name: master-agreement-generator",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/master-agreement-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-mcp-server-patterns",
+    "name": "mcp-server-patterns",
+    "description": "name: mcp-server-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/mcp-server-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-messages-ops",
+    "name": "messages-ops",
+    "description": "name: messages-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/messages-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ml-adoption-playbook",
+    "name": "ml-adoption-playbook",
+    "description": "name: ml-adoption-playbook",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ml-adoption-playbook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-mle-workflow",
+    "name": "mle-workflow",
+    "description": "name: mle-workflow",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/mle-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-motion-advanced",
+    "name": "motion-advanced",
+    "description": "name: motion-advanced",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/motion-advanced",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-motion-foundations",
+    "name": "motion-foundations",
+    "description": "name: motion-foundations",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/motion-foundations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-motion-patterns",
+    "name": "motion-patterns",
+    "description": "name: motion-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/motion-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-mysql-patterns",
+    "name": "mysql-patterns",
+    "description": "name: mysql-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/mysql-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-nanoclaw-repl",
+    "name": "nanoclaw-repl",
+    "description": "name: nanoclaw-repl",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/nanoclaw-repl",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-nasiko-control-plane",
+    "name": "nasiko-control-plane",
+    "description": "name: nasiko-control-plane",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/nasiko-control-plane",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-nestjs-patterns",
+    "name": "nestjs-patterns",
+    "description": "name: nestjs-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/nestjs-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-netmiko-ssh-automation",
+    "name": "netmiko-ssh-automation",
+    "description": "name: netmiko-ssh-automation",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/netmiko-ssh-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-network-bgp-diagnostics",
+    "name": "network-bgp-diagnostics",
+    "description": "name: network-bgp-diagnostics",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/network-bgp-diagnostics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-network-config-validation",
+    "name": "network-config-validation",
+    "description": "name: network-config-validation",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/network-config-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-network-interface-health",
+    "name": "network-interface-health",
+    "description": "name: network-interface-health",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/network-interface-health",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-nextjs-turbopack",
+    "name": "nextjs-turbopack",
+    "description": "name: nextjs-turbopack",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/nextjs-turbopack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-nodejs-keccak256",
+    "name": "nodejs-keccak256",
+    "description": "name: nodejs-keccak256",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/nodejs-keccak256",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-nutrient-document-processing",
+    "name": "nutrient-document-processing",
+    "description": "name: nutrient-document-processing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/nutrient-document-processing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-nuxt4-patterns",
+    "name": "nuxt4-patterns",
+    "description": "name: nuxt4-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/nuxt4-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-openclaw-persona-forge",
+    "name": "openclaw-persona-forge",
+    "description": "name: openclaw-persona-forge",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/openclaw-persona-forge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-opensource-pipeline",
+    "name": "opensource-pipeline",
+    "description": "name: opensource-pipeline",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/opensource-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-operator-approval-loop",
+    "name": "operator-approval-loop",
+    "description": "name: operator-approval-loop",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/operator-approval-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-orch-add-feature",
+    "name": "orch-add-feature",
+    "description": "name: orch-add-feature",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/orch-add-feature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-orch-build-mvp",
+    "name": "orch-build-mvp",
+    "description": "name: orch-build-mvp",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/orch-build-mvp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-orch-change-feature",
+    "name": "orch-change-feature",
+    "description": "name: orch-change-feature",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/orch-change-feature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-orch-fix-defect",
+    "name": "orch-fix-defect",
+    "description": "name: orch-fix-defect",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/orch-fix-defect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-orch-pipeline",
+    "name": "orch-pipeline",
+    "description": "name: orch-pipeline",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/orch-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-orch-refine-code",
+    "name": "orch-refine-code",
+    "description": "name: orch-refine-code",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/orch-refine-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-parallel-execution-optimizer",
+    "name": "parallel-execution-optimizer",
+    "description": "name: parallel-execution-optimizer",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/parallel-execution-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-perl-patterns",
+    "name": "perl-patterns",
+    "description": "name: perl-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/perl-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-perl-security",
+    "name": "perl-security",
+    "description": "name: perl-security",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/perl-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-perl-testing",
+    "name": "perl-testing",
+    "description": "name: perl-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/perl-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-plan-canvas",
+    "name": "plan-canvas",
+    "description": "name: plan-canvas",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/plan-canvas",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-plan-orchestrate",
+    "name": "plan-orchestrate",
+    "description": "name: plan-orchestrate",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/plan-orchestrate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-plankton-code-quality",
+    "name": "plankton-code-quality",
+    "description": "name: plankton-code-quality",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/plankton-code-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-postgres-patterns",
+    "name": "postgres-patterns",
+    "description": "name: postgres-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/postgres-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-prediction-market-oracle-research",
+    "name": "prediction-market-oracle-research",
+    "description": "name: prediction-market-oracle-research",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/prediction-market-oracle-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-prediction-market-risk-review",
+    "name": "prediction-market-risk-review",
+    "description": "name: prediction-market-risk-review",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/prediction-market-risk-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-prisma-patterns",
+    "name": "prisma-patterns",
+    "description": "name: prisma-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/prisma-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-product-capability",
+    "name": "product-capability",
+    "description": "name: product-capability",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/product-capability",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-product-lens",
+    "name": "product-lens",
+    "description": "name: product-lens",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/product-lens",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-production-audit",
+    "name": "production-audit",
+    "description": "name: production-audit",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/production-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-production-scheduling",
+    "name": "production-scheduling",
+    "description": "name: production-scheduling",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/production-scheduling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-project-flow-ops",
+    "name": "project-flow-ops",
+    "description": "name: project-flow-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/project-flow-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-prompt-optimizer",
+    "name": "prompt-optimizer",
+    "description": "name: prompt-optimizer",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/prompt-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-python-patterns",
+    "name": "python-patterns",
+    "description": "name: python-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/python-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-python-testing",
+    "name": "python-testing",
+    "description": "name: python-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/python-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-pytorch-patterns",
+    "name": "pytorch-patterns",
+    "description": "name: pytorch-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/pytorch-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-quality-nonconformance",
+    "name": "quality-nonconformance",
+    "description": "name: quality-nonconformance",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/quality-nonconformance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-quarkus-patterns",
+    "name": "quarkus-patterns",
+    "description": "name: quarkus-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/quarkus-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-quarkus-security",
+    "name": "quarkus-security",
+    "description": "name: quarkus-security",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/quarkus-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-quarkus-tdd",
+    "name": "quarkus-tdd",
+    "description": "name: quarkus-tdd",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/quarkus-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-quarkus-verification",
+    "name": "quarkus-verification",
+    "description": "name: quarkus-verification",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/quarkus-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-rails-patterns",
+    "name": "rails-patterns",
+    "description": "name: rails-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/rails-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ralphinho-rfc-pipeline",
+    "name": "ralphinho-rfc-pipeline",
+    "description": "name: ralphinho-rfc-pipeline",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ralphinho-rfc-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-react-native-patterns",
+    "name": "react-native-patterns",
+    "description": "name: react-native-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/react-native-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-react-patterns",
+    "name": "react-patterns",
+    "description": "name: react-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/react-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-react-performance",
+    "name": "react-performance",
+    "description": "name: react-performance",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/react-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-react-testing",
+    "name": "react-testing",
+    "description": "name: react-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/react-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-recsys-pipeline-architect",
+    "name": "recsys-pipeline-architect",
+    "description": "name: recsys-pipeline-architect",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/recsys-pipeline-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-recursive-decision-ledger",
+    "name": "recursive-decision-ledger",
+    "description": "name: recursive-decision-ledger",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/recursive-decision-ledger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-redis-patterns",
+    "name": "redis-patterns",
+    "description": "name: redis-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/redis-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-regex-vs-llm-structured-text",
+    "name": "regex-vs-llm-structured-text",
+    "description": "name: regex-vs-llm-structured-text",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/regex-vs-llm-structured-text",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-remotion-video-creation",
+    "name": "remotion-video-creation",
+    "description": "name: remotion-video-creation",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/remotion-video-creation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-repo-scan",
+    "name": "repo-scan",
+    "description": "name: repo-scan",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/repo-scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-research-ops",
+    "name": "research-ops",
+    "description": "name: research-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/research-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-returns-reverse-logistics",
+    "name": "returns-reverse-logistics",
+    "description": "name: returns-reverse-logistics",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/returns-reverse-logistics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-rules-distill",
+    "name": "rules-distill",
+    "description": "name: rules-distill",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/rules-distill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-rust-patterns",
+    "name": "rust-patterns",
+    "description": "name: rust-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/rust-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-rust-testing",
+    "name": "rust-testing",
+    "description": "name: rust-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/rust-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-safety-guard",
+    "name": "safety-guard",
+    "description": "name: safety-guard",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/safety-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-santa-method",
+    "name": "santa-method",
+    "description": "name: santa-method",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/santa-method",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-scientific-db-pubmed-database",
+    "name": "scientific-db-pubmed-database",
+    "description": "name: pubmed-database",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/scientific-db-pubmed-database",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-scientific-db-uspto-database",
+    "name": "scientific-db-uspto-database",
+    "description": "name: uspto-database",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/scientific-db-uspto-database",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-scientific-pkg-gget",
+    "name": "scientific-pkg-gget",
+    "description": "name: gget",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/scientific-pkg-gget",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-scientific-thinking-literature-review",
+    "name": "scientific-thinking-literature-review",
+    "description": "name: literature-review",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/scientific-thinking-literature-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-scientific-thinking-scholar-evaluation",
+    "name": "scientific-thinking-scholar-evaluation",
+    "description": "name: scholar-evaluation",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/scientific-thinking-scholar-evaluation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-search-first",
+    "name": "search-first",
+    "description": "name: search-first",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/search-first",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-security-bounty-hunter",
+    "name": "security-bounty-hunter",
+    "description": "name: security-bounty-hunter",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/security-bounty-hunter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-security-review",
+    "name": "security-review",
+    "description": "name: security-review",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/security-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-security-scan",
+    "name": "security-scan",
+    "description": "name: security-scan",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/security-scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-seo",
+    "name": "seo",
+    "description": "name: seo",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/seo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-skill-comply",
+    "name": "skill-comply",
+    "description": "name: skill-comply",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/skill-comply",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-skill-scout",
+    "name": "skill-scout",
+    "description": "name: skill-scout",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/skill-scout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-skill-stocktake",
+    "name": "skill-stocktake",
+    "description": "name: skill-stocktake",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/skill-stocktake",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-social-graph-ranker",
+    "name": "social-graph-ranker",
+    "description": "name: social-graph-ranker",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/social-graph-ranker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-social-publisher",
+    "name": "social-publisher",
+    "description": "name: social-publisher",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/social-publisher",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-springboot-patterns",
+    "name": "springboot-patterns",
+    "description": "name: springboot-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/springboot-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-springboot-security",
+    "name": "springboot-security",
+    "description": "name: springboot-security",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/springboot-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-springboot-tdd",
+    "name": "springboot-tdd",
+    "description": "name: springboot-tdd",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/springboot-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-springboot-verification",
+    "name": "springboot-verification",
+    "description": "name: springboot-verification",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/springboot-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-strategic-compact",
+    "name": "strategic-compact",
+    "description": "name: strategic-compact",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/strategic-compact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-swift-actor-persistence",
+    "name": "swift-actor-persistence",
+    "description": "name: swift-actor-persistence",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/swift-actor-persistence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-swift-concurrency-6-2",
+    "name": "swift-concurrency-6-2",
+    "description": "name: swift-concurrency-6-2",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/swift-concurrency-6-2",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-swift-protocol-di-testing",
+    "name": "swift-protocol-di-testing",
+    "description": "name: swift-protocol-di-testing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/swift-protocol-di-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-swiftui-patterns",
+    "name": "swiftui-patterns",
+    "description": "name: swiftui-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/swiftui-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-taste-application",
+    "name": "taste-application",
+    "description": "name: taste-application",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/taste-application",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-taste-distillation",
+    "name": "taste-distillation",
+    "description": "name: taste-distillation",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/taste-distillation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-taste",
+    "name": "taste",
+    "description": "name: taste",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/taste",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-tasteforge-video",
+    "name": "tasteforge-video",
+    "description": "name: tasteforge-video",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/tasteforge-video",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-tdd-workflow",
+    "name": "tdd-workflow",
+    "description": "name: tdd-workflow",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/tdd-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-team-agent-orchestration",
+    "name": "team-agent-orchestration",
+    "description": "name: team-agent-orchestration",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/team-agent-orchestration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-team-builder",
+    "name": "team-builder",
+    "description": "name: team-builder",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/team-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-terminal-opener",
+    "name": "terminal-opener",
+    "description": "name: terminal-opener",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/terminal-opener",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-terminal-ops",
+    "name": "terminal-ops",
+    "description": "name: terminal-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/terminal-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-tinystruct-patterns",
+    "name": "tinystruct-patterns",
+    "description": "name: tinystruct-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/tinystruct-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-token-budget-advisor",
+    "name": "token-budget-advisor",
+    "description": "name: token-budget-advisor",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/token-budget-advisor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ui-demo",
+    "name": "ui-demo",
+    "description": "name: ui-demo",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ui-demo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-ui-to-vue",
+    "name": "ui-to-vue",
+    "description": "name: ui-to-vue",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/ui-to-vue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-uncloud",
+    "name": "uncloud",
+    "description": "name: uncloud",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/uncloud",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-unified-memory",
+    "name": "unified-memory",
+    "description": "name: unified-memory",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/unified-memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-unified-notifications-ops",
+    "name": "unified-notifications-ops",
+    "description": "name: unified-notifications-ops",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/unified-notifications-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-verification-loop",
+    "name": "verification-loop",
+    "description": "name: verification-loop",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/verification-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-video-editing",
+    "name": "video-editing",
+    "description": "name: video-editing",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/video-editing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-videodb",
+    "name": "videodb",
+    "description": "name: videodb",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/videodb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-visa-doc-translate",
+    "name": "visa-doc-translate",
+    "description": "name: visa-doc-translate",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/visa-doc-translate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-vite-patterns",
+    "name": "vite-patterns",
+    "description": "name: vite-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/vite-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-vue-patterns",
+    "name": "vue-patterns",
+    "description": "name: vue-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/vue-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-windows-desktop-e2e",
+    "name": "windows-desktop-e2e",
+    "description": "name: windows-desktop-e2e",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/windows-desktop-e2e",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-workspace-surface-audit",
+    "name": "workspace-surface-audit",
+    "description": "name: workspace-surface-audit",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/workspace-surface-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-x-api",
+    "name": "x-api",
+    "description": "name: x-api",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/x-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  }
+]

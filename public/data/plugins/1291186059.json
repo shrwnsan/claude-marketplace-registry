@@ -1,0 +1,338 @@
+[
+  {
+    "id": "1291186059-outlook",
+    "name": "outlook",
+    "description": "Microsoft 365 mail and calendar, run from your agent - read, search, send, manage drafts and attachments, and check availability. Also turns a PST archive into searchable markdown with a SHA256 chain of custody over every message.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/outlook-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-trello",
+    "name": "trello",
+    "description": "Trello end to end from your agent - boards, lists and cards, plus an instant board digest, a due-date radar for what is slipping, and smart card sorting. One install, the whole pack.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/trello-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-legwork",
+    "name": "legwork",
+    "description": "Research that settles a decision, and says when it cannot. A source is judged by the claim it backs, sources only corroborate when they could have disagreed, and every finding states how well it is supported.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/legwork-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-dovetail",
+    "name": "dovetail",
+    "description": "Checks whether a repository still agrees with itself - dead links, moved anchors, orphaned files, documentation describing behaviour the code no longer has. The exact checks need no model and no network, so they are safe to gate a build on.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/dovetail-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-verve",
+    "name": "verve",
+    "description": "Strips AI tells from prose and puts a human voice back, in British or American English, pitched at the reader you name. A two-way politeness check catches both talking down to them and going cold. Meaning is a veto: every figure, name and claim survives. Prose only - no packages, no network, no paid tier.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/verve-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-vela",
+    "name": "vela",
+    "description": "Compiler-exact code search over a SCIP index - where a symbol is defined, every reference, who calls it, what a change breaks. .NET is indexed natively through Roslyn, so Razor views and Blazor components are included rather than skipped; any other language reaches the same database through its own SCIP indexer.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/vela-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-garmin",
+    "name": "garmin",
+    "description": "Garmin Connect health and fitness data from your agent - Body Battery, HRV, resting heart rate, stress, sleep stages and score, activities, VO2 max, training load, status and readiness. Answers a question live, or writes a day as a markdown snapshot and a week as a rollup you keep. Credentials stay on your machine.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/garmin-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-imager",
+    "name": "imager",
+    "description": "Generate and edit images with OpenAI's GPT Image 2 - 27 style presets, platform sizing for the places images actually go, carousels with seed-locked composition, and photo edits. Drafts cost around $0.006 against $0.21 for a final, so the workflow iterates on drafts and only pays for the one you approved, and it prints the cost before it spends anything.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/imager-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-heliograph",
+    "name": "heliograph",
+    "description": "Debug and change a machine you cannot log into, through an operator who cannot debug it. The skill drives the heliograph CLI: plant a station into a private transport repo, publish a step, and the log comes back timestamped in UTC - whether the run passed or failed. Requires the heliograph binary; the skill prints the install command when it is missing.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "heliograph-io/heliograph"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-gitview",
+    "name": "gitview",
+    "description": "Surveys every branch and worktree in a repository and says which branches are finished, computing it by test-merging rather than trusting a commit count that a squash-merge makes meaningless, then offers to clear them away - re-verifying each branch immediately before it goes.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/gitview-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-atlassian",
+    "name": "atlassian",
+    "description": "Jira and Confluence from your agent, over the REST API with an API token and no MCP server. Creates and reads Jira issues - one or a batch, checking the project key, the issue type and the required fields before it writes, and reading back with JQL - and searches, reads, creates and updates Confluence pages. Create and read only: no delete.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/atlassian-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-pennyblack",
+    "name": "pennyblack",
+    "description": "Put a PDF in the post. Physical letters from your agent - printed in the UK and delivered by Royal Mail, with Signed For, Tracked and Special Delivery, and the real tracking number handed back. Every letter is priced and previewed before you commit to it, and nothing is posted without an explicit send.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/pennyblack-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-buildwork",
+    "name": "buildwork",
+    "description": "Run a repository's open issues as parallel agents - one per issue, each in its own git worktree and pull request - then gate them and get a merge order with reasons. Refuses to fan out when one agent would do. Never merges.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/buildwork-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-deskwork",
+    "name": "deskwork",
+    "description": "File what an agent notices as a tracked GitHub issue, reconcile the dependency graph, and keep a roadmap in git. Never closes an issue.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/deskwork-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-groupwork",
+    "name": "groupwork",
+    "description": "Put a second agent on the work - as an adversary or as a partner - and get back a result you can cite. Five patterns: red-team attacks an idea without being shown your evidence, second-opinion judges your material without being shown your conclusion, verify rules on finished work against its constraints, collaborate is a peer conversation, and debate runs blind proposals into adversarial rounds. Codex, opencode or Copilot behind one provider layer, and every run records what it was told and what it was not.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/groupwork-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291186059-headwork",
+    "name": "headwork",
+    "description": "Think a decision through, one question at a time, with a recommendation you can argue with - it names one option, gives the reason, and says what would overturn it.",
+    "version": "",
+    "author": "DBHQ",
+    "repository": "https://github.com/dbhq-uk/marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "dbhq-uk/headwork-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291186059",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

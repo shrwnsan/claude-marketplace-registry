@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1375702823-stepwarden",
+    "name": "stepwarden",
+    "description": "Verifies every agent tool call before it executes. Five parallel Jev questions, three outcomes — allow, ask, block — with tunable thresholds, a per-tool skip list and a full audit trail. Installs in audit mode: it logs every decision and blocks nothing until you run /stepwarden enforce. Proof of concept on Claude Code function hooks + Jev early access.",
+    "version": "0.1.0",
+    "author": "Stefan Trockel",
+    "repository": "https://github.com/getexcited/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/getexcited/stepwarden.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375702823",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

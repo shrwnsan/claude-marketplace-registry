@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1377460272-cc-toolkit",
+    "name": "cc-toolkit",
+    "description": "实时监控 Claude Code 的输出速度 (tok/s)，并把纯解码速度与整轮速度分开报 —— 合成一个数字时 prompt 变长会被误读成模型变慢。每轮回复结束后显示本轮步数 / 每秒输出 / 缓存命中三个读数 —— 装好即生效，无斜杠命令、无 CLI。零 npm 依赖，全部数据在本地计算。",
+    "version": "",
+    "author": "kywrl",
+    "repository": "https://github.com/kywrl/cc-plugins",
+    "manifestPath": "./plugins/cc-toolkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1377460272",
+      "marketplaceName": "cc-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

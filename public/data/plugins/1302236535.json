@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1302236535-ux-agent-skills",
+    "name": "ux-agent-skills",
+    "description": "Audit, spec, and verify production-grade experiences for humans and agents alike.",
+    "version": "",
+    "author": "carlsz",
+    "repository": "https://github.com/carlsz/ux-agent-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302236535",
+      "marketplaceName": "ux-agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1302236535-audit-cuj",
+    "name": "audit-cuj",
+    "description": "name: audit-cuj",
+    "version": "1.0.0",
+    "author": "carlsz",
+    "repository": "https://github.com/carlsz/ux-agent-skills",
+    "manifestPath": "skills/audit-cuj",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302236535",
+      "marketplaceName": "ux-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302236535-render-report",
+    "name": "render-report",
+    "description": "name: render-report",
+    "version": "1.0.0",
+    "author": "carlsz",
+    "repository": "https://github.com/carlsz/ux-agent-skills",
+    "manifestPath": "skills/render-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302236535",
+      "marketplaceName": "ux-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302236535-spec-cuj",
+    "name": "spec-cuj",
+    "description": "name: spec-cuj",
+    "version": "1.0.0",
+    "author": "carlsz",
+    "repository": "https://github.com/carlsz/ux-agent-skills",
+    "manifestPath": "skills/spec-cuj",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302236535",
+      "marketplaceName": "ux-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302236535-usability-audit",
+    "name": "usability-audit",
+    "description": "name: usability-audit",
+    "version": "1.0.0",
+    "author": "carlsz",
+    "repository": "https://github.com/carlsz/ux-agent-skills",
+    "manifestPath": "skills/usability-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302236535",
+      "marketplaceName": "ux-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302236535-ux-audit",
+    "name": "ux-audit",
+    "description": "name: ux-audit",
+    "version": "1.0.0",
+    "author": "carlsz",
+    "repository": "https://github.com/carlsz/ux-agent-skills",
+    "manifestPath": "skills/ux-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302236535",
+      "marketplaceName": "ux-agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]

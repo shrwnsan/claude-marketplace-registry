@@ -1,0 +1,264 @@
+[
+  {
+    "id": "1153065898-mdsmith-lsp",
+    "name": "mdsmith-lsp",
+    "description": "Inline mdsmith diagnostics and Markdown navigation",
+    "version": "",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": "./editors/claude-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1153065898-mdsmith-dev-lsp",
+    "name": "mdsmith-dev-lsp",
+    "description": "Go and TypeScript LSP servers for mdsmith contributors",
+    "version": "",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": "./editors/claude-code-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1153065898-mdsmith-audit",
+    "name": "mdsmith-audit",
+    "description": "Audit and fix Markdown file organization in an mdsmith repository",
+    "version": "",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": "./editors/claude-code-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1153065898-mdsmith-skills",
+    "name": "mdsmith-skills",
+    "description": "Slash-command skills for mdsmith fix, kinds, and check",
+    "version": "",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": "./editors/claude-code-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1153065898-mdsmith-reviewer",
+    "name": "mdsmith-reviewer",
+    "description": "Subagent that reviews Markdown PRs and drafts",
+    "version": "",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": "./editors/claude-code-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1153065898-mdsmith-autofix",
+    "name": "mdsmith-autofix",
+    "description": "Post-edit hook that runs mdsmith fix on .md files",
+    "version": "",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": "./editors/claude-code-autofix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1153065898-mdsmith-site",
+    "name": "mdsmith-site",
+    "description": "Playwright e2e suite and browser MCP for the mdsmith.dev website",
+    "version": "",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": "./editors/claude-code-site",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1153065898-docs-author",
+    "name": "docs-author",
+    "description": "name: docs-author",
+    "version": "1.0.0",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": ".claude/skills/docs-author",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1153065898-gh-pr-fixup",
+    "name": "gh-pr-fixup",
+    "description": "name: gh-pr-fixup",
+    "version": "1.0.0",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": ".claude/skills/gh-pr-fixup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1153065898-gh-resolve-threads",
+    "name": "gh-resolve-threads",
+    "description": "name: gh-resolve-threads",
+    "version": "1.0.0",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": ".claude/skills/gh-resolve-threads",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1153065898-markdown-audit",
+    "name": "markdown-audit",
+    "description": "name: markdown-audit",
+    "version": "1.0.0",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": ".claude/skills/markdown-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1153065898-mdsmith-security-review",
+    "name": "mdsmith-security-review",
+    "description": "name: mdsmith-security-review",
+    "version": "1.0.0",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": ".claude/skills/mdsmith-security-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1153065898-merge-queue",
+    "name": "merge-queue",
+    "description": "name: merge-queue",
+    "version": "1.0.0",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": ".claude/skills/merge-queue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1153065898-pick-plan",
+    "name": "pick-plan",
+    "description": "name: pick-plan",
+    "version": "1.0.0",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": ".claude/skills/pick-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1153065898-solid-architecture",
+    "name": "solid-architecture",
+    "description": "name: solid-architecture",
+    "version": "1.0.0",
+    "author": "jeduden",
+    "repository": "https://github.com/jeduden/mdsmith",
+    "manifestPath": ".claude/skills/solid-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153065898",
+      "marketplaceName": "mdsmith",
+      "hasSkillMd": true
+    }
+  }
+]

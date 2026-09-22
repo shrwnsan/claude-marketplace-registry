@@ -1,0 +1,547 @@
+[
+  {
+    "id": "1218000121-hermes-by-everythings",
+    "name": "hermes-by-everythings",
+    "description": "多平台多语言编码增强套件。39 Agent + 33 Skill + 22 Command + 83 Rules + Ralph 自主循环。",
+    "version": "3.3.1",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1218000121-api-design",
+    "name": "api-design",
+    "description": "name: api-design",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/api-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-backend-patterns",
+    "name": "backend-patterns",
+    "description": "name: backend-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/backend-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-code-review",
+    "name": "code-review",
+    "description": "name: code-review",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-data-scraper-agent",
+    "name": "data-scraper-agent",
+    "description": "name: data-scraper-agent",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/data-scraper-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-deployment-patterns",
+    "name": "deployment-patterns",
+    "description": "name: deployment-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/deployment-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-diagram-generator",
+    "name": "diagram-generator",
+    "description": "name: diagram-generator",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/diagram-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-diagram",
+    "name": "diagram",
+    "description": "name: Diagram",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/diagram",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-django-patterns",
+    "name": "django-patterns",
+    "description": "name: django-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/django-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-django-security",
+    "name": "django-security",
+    "description": "name: django-security",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/django-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-docker-patterns",
+    "name": "docker-patterns",
+    "description": "name: docker-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/docker-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-frontend-design-ultimate",
+    "name": "frontend-design-ultimate",
+    "description": "name: frontend-design-ultimate",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/frontend-design-ultimate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-frontend-patterns",
+    "name": "frontend-patterns",
+    "description": "name: frontend-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/frontend-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-frontend-slides",
+    "name": "frontend-slides",
+    "description": "name: frontend-slides",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/frontend-slides",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-golang-patterns",
+    "name": "golang-patterns",
+    "description": "name: golang-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/golang-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-golang-testing",
+    "name": "golang-testing",
+    "description": "name: golang-testing",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/golang-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-kotlin-patterns",
+    "name": "kotlin-patterns",
+    "description": "name: kotlin-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/kotlin-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-laravel-patterns",
+    "name": "laravel-patterns",
+    "description": "name: laravel-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/laravel-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-laravel-security",
+    "name": "laravel-security",
+    "description": "name: laravel-security",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/laravel-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-laravel-verification",
+    "name": "laravel-verification",
+    "description": "name: laravel-verification",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/laravel-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-nestjs-patterns",
+    "name": "nestjs-patterns",
+    "description": "name: nestjs-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/nestjs-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-nextjs-turbopack",
+    "name": "nextjs-turbopack",
+    "description": "name: nextjs-turbopack",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/nextjs-turbopack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-nodejs-keccak256",
+    "name": "nodejs-keccak256",
+    "description": "name: nodejs-keccak256",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/nodejs-keccak256",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-perl-patterns",
+    "name": "perl-patterns",
+    "description": "name: perl-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/perl-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-python-patterns",
+    "name": "python-patterns",
+    "description": "name: python-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/python-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-python-testing",
+    "name": "python-testing",
+    "description": "name: python-testing",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/python-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-rust-patterns",
+    "name": "rust-patterns",
+    "description": "name: rust-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/rust-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-rust-testing",
+    "name": "rust-testing",
+    "description": "name: rust-testing",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/rust-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-security-auditor",
+    "name": "security-auditor",
+    "description": "name: security-auditor",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/security-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-springboot-patterns",
+    "name": "springboot-patterns",
+    "description": "name: springboot-patterns",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/springboot-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-springboot-verification",
+    "name": "springboot-verification",
+    "description": "name: springboot-verification",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/springboot-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1218000121-ui-ux-pro-max",
+    "name": "ui-ux-pro-max",
+    "description": "name: ui-ux-pro-max",
+    "version": "1.0.0",
+    "author": "ViewWay",
+    "repository": "https://github.com/ViewWay/hermes-by-everythings",
+    "manifestPath": "skills/ui-ux-pro-max",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1218000121",
+      "marketplaceName": "hermes-by-everythings",
+      "hasSkillMd": true
+    }
+  }
+]

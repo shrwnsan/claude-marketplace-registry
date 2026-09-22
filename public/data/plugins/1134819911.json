@@ -1,0 +1,1166 @@
+[
+  {
+    "id": "1134819911-octo",
+    "name": "octo",
+    "description": "v11.8.1 - Windows setup now handles CRLF manifests, and web projects can use server-root asset URLs without false quality-gate failures. 31 personas, 54 commands, 63 skills. Run /octo:setup.",
+    "version": "11.8.1",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/nyldn/claude-octopus.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1134819911-img",
+    "name": "img",
+    "description": "Generate and edit images with OpenAI GPT Image 2 and Gemini 3.1 Flash Image Preview.",
+    "version": "0.1.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/nyldn/img.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1134819911-flow-define",
+    "name": "flow-define",
+    "description": "name: flow-define",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/flow-define",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-flow-deliver",
+    "name": "flow-deliver",
+    "description": "name: flow-deliver",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/flow-deliver",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-flow-develop",
+    "name": "flow-develop",
+    "description": "name: flow-develop",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/flow-develop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-flow-discover",
+    "name": "flow-discover",
+    "description": "name: flow-discover",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/flow-discover",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-flow-parallel",
+    "name": "flow-parallel",
+    "description": "name: flow-parallel",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/flow-parallel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-flow-spec",
+    "name": "flow-spec",
+    "description": "name: flow-spec",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/flow-spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-octopus-architecture",
+    "name": "octopus-architecture",
+    "description": "name: octopus-architecture",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/octopus-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-octopus-quick",
+    "name": "octopus-quick",
+    "description": "name: octopus-quick",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/octopus-quick",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-octopus-research",
+    "name": "octopus-research",
+    "description": "name: octopus-research",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/octopus-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-octopus-security-audit",
+    "name": "octopus-security-audit",
+    "description": "name: octopus-security-audit",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/octopus-security-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-octopus-ui-ux-design",
+    "name": "octopus-ui-ux-design",
+    "description": "name: octopus-ui-ux-design",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/octopus-ui-ux-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-agent-topology",
+    "name": "skill-agent-topology",
+    "description": "name: skill-agent-topology",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-agent-topology",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-audit",
+    "name": "skill-audit",
+    "description": "name: skill-audit",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-authoring",
+    "name": "skill-authoring",
+    "description": "name: skill-authoring",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-authoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-code-review",
+    "name": "skill-code-review",
+    "description": "name: skill-code-review",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-content-pipeline",
+    "name": "skill-content-pipeline",
+    "description": "name: skill-content-pipeline",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-content-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-context-detection",
+    "name": "skill-context-detection",
+    "description": "name: skill-context-detection",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-context-detection",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-copilot-provider",
+    "name": "skill-copilot-provider",
+    "description": "name: skill-copilot-provider",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-copilot-provider",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-cost-projections",
+    "name": "skill-cost-projections",
+    "description": "name: skill-cost-projections",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-cost-projections",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-council",
+    "name": "skill-council",
+    "description": "name: skill-council",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-council",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-coverage-audit",
+    "name": "skill-coverage-audit",
+    "description": "name: skill-coverage-audit",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-coverage-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-debate",
+    "name": "skill-debate",
+    "description": "name: skill-debate",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-debate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-debug",
+    "name": "skill-debug",
+    "description": "name: skill-debug",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-decision-support",
+    "name": "skill-decision-support",
+    "description": "name: skill-decision-support",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-decision-support",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-deck",
+    "name": "skill-deck",
+    "description": "name: skill-deck",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-deck",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-design-lineage",
+    "name": "skill-design-lineage",
+    "description": "name: skill-design-lineage",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-design-lineage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-doc-delivery",
+    "name": "skill-doc-delivery",
+    "description": "name: skill-doc-delivery",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-doc-delivery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-doc-sync",
+    "name": "skill-doc-sync",
+    "description": "name: skill-doc-sync",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-doc-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-doctor",
+    "name": "skill-doctor",
+    "description": "name: skill-doctor",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-extract",
+    "name": "skill-extract",
+    "description": "name: skill-extract",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-extract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-factory",
+    "name": "skill-factory",
+    "description": "name: skill-factory",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-finish-branch",
+    "name": "skill-finish-branch",
+    "description": "name: skill-finish-branch",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-finish-branch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-intake",
+    "name": "skill-intake",
+    "description": "name: skill-intake",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-intake",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-intent-contract",
+    "name": "skill-intent-contract",
+    "description": "name: skill-intent-contract",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-intent-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-issues",
+    "name": "skill-issues",
+    "description": "name: skill-issues",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-iterative-loop",
+    "name": "skill-iterative-loop",
+    "description": "name: skill-iterative-loop",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-iterative-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-knowledge-work",
+    "name": "skill-knowledge-work",
+    "description": "name: skill-knowledge-work",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-knowledge-work",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-meta-prompt",
+    "name": "skill-meta-prompt",
+    "description": "name: skill-meta-prompt",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-meta-prompt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-native-escalation-routing",
+    "name": "skill-native-escalation-routing",
+    "description": "name: skill-native-escalation-routing",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-native-escalation-routing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-parallel-agents",
+    "name": "skill-parallel-agents",
+    "description": "name: skill-parallel-agents",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-parallel-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-prd",
+    "name": "skill-prd",
+    "description": "name: skill-prd",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-prd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-pressure-test",
+    "name": "skill-pressure-test",
+    "description": "name: skill-pressure-test",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-pressure-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-prototype",
+    "name": "skill-prototype",
+    "description": "name: skill-prototype",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-prototype",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-resume",
+    "name": "skill-resume",
+    "description": "name: skill-resume",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-resume",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-review-response",
+    "name": "skill-review-response",
+    "description": "name: skill-review-response",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-review-response",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-rollback",
+    "name": "skill-rollback",
+    "description": "name: skill-rollback",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-rollback",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-security-framing",
+    "name": "skill-security-framing",
+    "description": "name: skill-security-framing",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-security-framing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-ship",
+    "name": "skill-ship",
+    "description": "name: skill-ship",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-staged-review",
+    "name": "skill-staged-review",
+    "description": "name: skill-staged-review",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-staged-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-status",
+    "name": "skill-status",
+    "description": "name: skill-status",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-task-management",
+    "name": "skill-task-management",
+    "description": "name: skill-task-management",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-task-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-tdd",
+    "name": "skill-tdd",
+    "description": "name: skill-tdd",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-thought-partner",
+    "name": "skill-thought-partner",
+    "description": "name: skill-thought-partner",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-thought-partner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-verification-gate",
+    "name": "skill-verification-gate",
+    "description": "name: skill-verification-gate",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-verification-gate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-verify",
+    "name": "skill-verify",
+    "description": "name: skill-verify",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-visual-feedback",
+    "name": "skill-visual-feedback",
+    "description": "name: skill-visual-feedback",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-visual-feedback",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-work-slicing",
+    "name": "skill-work-slicing",
+    "description": "name: skill-work-slicing",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-work-slicing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-writing-plans",
+    "name": "skill-writing-plans",
+    "description": "name: skill-writing-plans",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/skill-writing-plans",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-sys-configure",
+    "name": "sys-configure",
+    "description": "name: sys-configure",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": "skills/sys-configure",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-extract-skill",
+    "name": "extract-skill",
+    "description": "name: skill-extract",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": ".claude/skills/extract-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-architecture",
+    "name": "skill-architecture",
+    "description": "name: octopus-architecture",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": ".claude/skills/skill-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-deep-research",
+    "name": "skill-deep-research",
+    "description": "name: octopus-research",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": ".claude/skills/skill-deep-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-quick",
+    "name": "skill-quick",
+    "description": "name: octopus-quick",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": ".claude/skills/skill-quick",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-security-audit",
+    "name": "skill-security-audit",
+    "description": "name: octopus-security-audit",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": ".claude/skills/skill-security-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-task-management-v2",
+    "name": "skill-task-management-v2",
+    "description": "name: skill-task-management",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": ".claude/skills/skill-task-management-v2",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134819911-skill-ui-ux-design",
+    "name": "skill-ui-ux-design",
+    "description": "name: octopus-ui-ux-design",
+    "version": "1.0.0",
+    "author": "nyldn",
+    "repository": "https://github.com/nyldn/claude-octopus",
+    "manifestPath": ".claude/skills/skill-ui-ux-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134819911",
+      "marketplaceName": "claude-octopus",
+      "hasSkillMd": true
+    }
+  }
+]

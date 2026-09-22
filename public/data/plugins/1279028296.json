@@ -1,0 +1,241 @@
+[
+  {
+    "id": "1279028296-ropensci-skills",
+    "name": "ropensci-skills",
+    "description": "Twelve composing skills for rOpenSci-compliant R package development: the context skills package-standards, peer-review-author, package-review, stats-standards, package-release, package-maintenance, and blog-post, plus the action skills run-package-review, run-test-audit, run-complexity, run-dependency-review, and run-performance-review that carry out review passes and emit transparent reports.",
+    "version": "",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1279028296-blog-post",
+    "name": "blog-post",
+    "description": "name: blog-post",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/blog-post",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-package-maintenance",
+    "name": "package-maintenance",
+    "description": "name: package-maintenance",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/package-maintenance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-package-release",
+    "name": "package-release",
+    "description": "name: package-release",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/package-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-package-review",
+    "name": "package-review",
+    "description": "name: package-review",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/package-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-package-standards",
+    "name": "package-standards",
+    "description": "name: package-standards",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/package-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-peer-review-author",
+    "name": "peer-review-author",
+    "description": "name: peer-review-author",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/peer-review-author",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-run-complexity",
+    "name": "run-complexity",
+    "description": "name: run-complexity",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/run-complexity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-run-dependency-review",
+    "name": "run-dependency-review",
+    "description": "name: run-dependency-review",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/run-dependency-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-run-package-review",
+    "name": "run-package-review",
+    "description": "name: run-package-review",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/run-package-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-run-performance-review",
+    "name": "run-performance-review",
+    "description": "name: run-performance-review",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/run-performance-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-run-srr-compliance",
+    "name": "run-srr-compliance",
+    "description": "name: stats-standards-compliance",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/run-srr-compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-run-test-audit",
+    "name": "run-test-audit",
+    "description": "name: run-test-audit",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/run-test-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279028296-stats-standards",
+    "name": "stats-standards",
+    "description": "name: stats-standards",
+    "version": "1.0.0",
+    "author": "ropensci-review-tools",
+    "repository": "https://github.com/ropensci-review-tools/ropensci-skills",
+    "manifestPath": "skills/stats-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279028296",
+      "marketplaceName": "ropensci-skills",
+      "hasSkillMd": true
+    }
+  }
+]

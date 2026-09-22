@@ -1,0 +1,37 @@
+[
+  {
+    "id": "917509785-solana-finance",
+    "name": "solana-finance",
+    "description": "Solana finance rules for Claude Code: Anchor, Quasar, Rust and TypeScript, with onchain math, custody, oracle freshness and slippage checks.",
+    "version": "",
+    "author": "quicknode",
+    "repository": "https://github.com/quicknode/solana-finance-claude-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "917509785",
+      "marketplaceName": "solana-finance-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "917509785-solana",
+    "name": "solana",
+    "description": "name: solana",
+    "version": "1.0.0",
+    "author": "quicknode",
+    "repository": "https://github.com/quicknode/solana-finance-claude-plugin",
+    "manifestPath": "skills/solana",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "917509785",
+      "marketplaceName": "solana-finance-claude-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

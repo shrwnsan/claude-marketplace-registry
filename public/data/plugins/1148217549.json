@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1148217549-revenuecat",
+    "name": "revenuecat",
+    "description": "Set up RevenueCat, integrate it, and access data.",
+    "version": "2.3.0",
+    "author": "RevenueCat",
+    "repository": "https://github.com/RevenueCat/ai-toolkit",
+    "manifestPath": "./revenuecat",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148217549",
+      "marketplaceName": "ai-toolkit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1148217549-revenuecat-play-billing",
+    "name": "revenuecat-play-billing",
+    "description": "Deep Google Play subscription lifecycle skills for the RevenueCat Android SDK — purchases, plan and price changes, payment recovery, webhooks, security.",
+    "version": "1.0.0",
+    "author": "RevenueCat",
+    "repository": "https://github.com/RevenueCat/ai-toolkit",
+    "manifestPath": "./revenuecat-play-billing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148217549",
+      "marketplaceName": "ai-toolkit",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

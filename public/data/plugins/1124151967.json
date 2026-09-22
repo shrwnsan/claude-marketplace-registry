@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1124151967-setup-fastlane",
+    "name": "setup-fastlane",
+    "description": "Set up Fastlane for iOS/macOS app automation with Homebrew",
+    "version": "1.1.5",
+    "author": "greenstevester",
+    "repository": "https://github.com/greenstevester/fastlane-skill",
+    "manifestPath": "./skills/setup-fastlane",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1124151967",
+      "marketplaceName": "fastlane-skill",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1124151967-beta",
+    "name": "beta",
+    "description": "Upload builds to TestFlight for beta testing",
+    "version": "1.1.5",
+    "author": "greenstevester",
+    "repository": "https://github.com/greenstevester/fastlane-skill",
+    "manifestPath": "./skills/beta",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1124151967",
+      "marketplaceName": "fastlane-skill",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1124151967-release",
+    "name": "release",
+    "description": "Submit app to the App Store with metadata and screenshots",
+    "version": "1.1.5",
+    "author": "greenstevester",
+    "repository": "https://github.com/greenstevester/fastlane-skill",
+    "manifestPath": "./skills/release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1124151967",
+      "marketplaceName": "fastlane-skill",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1124151967-match",
+    "name": "match",
+    "description": "Set up Match for iOS code signing certificate management",
+    "version": "1.1.5",
+    "author": "greenstevester",
+    "repository": "https://github.com/greenstevester/fastlane-skill",
+    "manifestPath": "./skills/match",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1124151967",
+      "marketplaceName": "fastlane-skill",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1124151967-snapshot",
+    "name": "snapshot",
+    "description": "Automate App Store screenshot capture across devices and languages",
+    "version": "1.1.5",
+    "author": "greenstevester",
+    "repository": "https://github.com/greenstevester/fastlane-skill",
+    "manifestPath": "./skills/snapshot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1124151967",
+      "marketplaceName": "fastlane-skill",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

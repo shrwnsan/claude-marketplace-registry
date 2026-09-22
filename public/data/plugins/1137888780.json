@@ -1,0 +1,73 @@
+[
+  {
+    "id": "1137888780-marko-skills",
+    "name": "marko-skills",
+    "description": "Marko-specific skills (create-module, create-plugin) for Claude Code.",
+    "version": "",
+    "author": "Mark Shust",
+    "repository": "https://github.com/marko-php/marko",
+    "manifestPath": "./packages/claude-plugins/plugins/marko-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137888780",
+      "marketplaceName": "marko",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1137888780-marko-lsp",
+    "name": "marko-lsp",
+    "description": "Marko LSP bundle (PHP intelephense) for Claude Code.",
+    "version": "",
+    "author": "Mark Shust",
+    "repository": "https://github.com/marko-php/marko",
+    "manifestPath": "./packages/claude-plugins/plugins/marko-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137888780",
+      "marketplaceName": "marko",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1137888780-marko-mcp",
+    "name": "marko-mcp",
+    "description": "Marko MCP server (codeindexer, docs-fts) for Claude Code.",
+    "version": "",
+    "author": "Mark Shust",
+    "repository": "https://github.com/marko-php/marko",
+    "manifestPath": "./packages/claude-plugins/plugins/marko-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137888780",
+      "marketplaceName": "marko",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1137888780-release",
+    "name": "release",
+    "description": "name: release",
+    "version": "1.0.0",
+    "author": "Mark Shust",
+    "repository": "https://github.com/marko-php/marko",
+    "manifestPath": ".claude/skills/release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137888780",
+      "marketplaceName": "marko",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "id": "1135387321-agent-skills",
+    "name": "agent-skills",
+    "description": "Odoo 16-19 skill packs, the odoo-workflow pre-code gate, Odoo commit style, code review, flow diagrams, slide decks, and the Odoo review/tracer agents",
+    "version": "1.0.19",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1135387321-code-review",
+    "name": "code-review",
+    "description": "name: code-review",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1135387321-dtg-base",
+    "name": "dtg-base",
+    "description": "name: dtg-base",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/dtg-base",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1135387321-flow-diagram",
+    "name": "flow-diagram",
+    "description": "name: flow-diagram",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/flow-diagram",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1135387321-odoo-16-0",
+    "name": "odoo-16.0",
+    "description": "name: odoo-16",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/odoo-16.0",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1135387321-odoo-17-0",
+    "name": "odoo-17.0",
+    "description": "name: odoo-17",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/odoo-17.0",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1135387321-odoo-18-0",
+    "name": "odoo-18.0",
+    "description": "name: odoo-18",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/odoo-18.0",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1135387321-odoo-19-0",
+    "name": "odoo-19.0",
+    "description": "name: odoo-19",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/odoo-19.0",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1135387321-odoo-commit",
+    "name": "odoo-commit",
+    "description": "name: odoo-commit",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/odoo-commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1135387321-odoo-workflow",
+    "name": "odoo-workflow",
+    "description": "name: odoo-workflow",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/odoo-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1135387321-slide",
+    "name": "slide",
+    "description": "name: ai-vibe-slides",
+    "version": "1.0.0",
+    "author": "unclecatvn",
+    "repository": "https://github.com/unclecatvn/agent-skills",
+    "manifestPath": "skills/slide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1135387321",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1243505851-oculpm",
+    "name": "oculpm",
+    "description": "ocul-pm 훅 브리지(세션 신호) + oculpm-mcp(journal/plan 구조화 도구) + 스킬 5종(기록 규격·인셉션·self-audit·run-evals·tdd). .oculpm 추적 프로젝트에서만 동작하며, v1 은 macOS 전용입니다.",
+    "version": "3.4.0",
+    "author": "ocul-pm",
+    "repository": "https://github.com/bunhine0452/Ocul-PM",
+    "manifestPath": "./plugin/oculpm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243505851",
+      "marketplaceName": "Ocul-PM",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

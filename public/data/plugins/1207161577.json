@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1207161577-bunwv",
+    "name": "bunwv",
+    "description": "Headless browser automation CLI skill for Bun.WebView testing and UI interaction",
+    "version": "",
+    "author": "NatiCha",
+    "repository": "https://github.com/NatiCha/bunwv",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1207161577",
+      "marketplaceName": "bunwv",
+      "skills": [
+        "./skills/bunwv"
+      ],
+      "strict": false
+    }
+  }
+]

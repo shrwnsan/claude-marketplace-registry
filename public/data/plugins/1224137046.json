@@ -1,0 +1,241 @@
+[
+  {
+    "id": "1224137046-dev-skills",
+    "name": "dev-skills",
+    "description": "覆盖 git 工作流 + bug 修复 + 执行闭环 + 设计上下文 + 需求拷问 + 看图写页面 + Swagger/OpenAPI 查询导出的 13 个 skill(dev-auto / dev-grill-docs / dev-spec(alias) / dev-plan / dev-tdd / dev-fix / dev-image-to-code / swagger-doc-skill / dev-verify / dev-code-review / dev-commit-writer / dev-finish / dev-design-context),共享 Karpathy 行为基线。",
+    "version": "0.8.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "skills": "./skills",
+      "strict": false
+    }
+  },
+  {
+    "id": "1224137046-dev-auto",
+    "name": "dev-auto",
+    "description": "name: dev-auto",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-auto",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-code-review",
+    "name": "dev-code-review",
+    "description": "name: dev-code-review",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-commit-writer",
+    "name": "dev-commit-writer",
+    "description": "name: dev-commit-writer",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-commit-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-design-context",
+    "name": "dev-design-context",
+    "description": "name: dev-design-context",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-design-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-finish",
+    "name": "dev-finish",
+    "description": "name: dev-finish",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-finish",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-fix",
+    "name": "dev-fix",
+    "description": "name: dev-fix",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-fix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-grill-docs",
+    "name": "dev-grill-docs",
+    "description": "name: dev-grill-docs",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-grill-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-image-to-code",
+    "name": "dev-image-to-code",
+    "description": "name: dev-image-to-code",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-image-to-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-plan",
+    "name": "dev-plan",
+    "description": "name: dev-plan",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-spec",
+    "name": "dev-spec",
+    "description": "name: dev-spec",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-tdd",
+    "name": "dev-tdd",
+    "description": "name: dev-tdd",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-dev-verify",
+    "name": "dev-verify",
+    "description": "name: dev-verify",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/dev-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1224137046-swagger-doc-skill",
+    "name": "swagger-doc-skill",
+    "description": "name: swagger-doc-skill",
+    "version": "1.0.0",
+    "author": "Jason-chen-coder",
+    "repository": "https://github.com/Jason-chen-coder/dev-skills",
+    "manifestPath": "skills/swagger-doc-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224137046",
+      "marketplaceName": "dev-skills",
+      "hasSkillMd": true
+    }
+  }
+]

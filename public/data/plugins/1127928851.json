@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1127928851-hive",
+    "name": "hive",
+    "description": "Plan-first AI development with batched parallelism. Native Claude Code implementation of the Agent Hive workflow.",
+    "version": "1.4.8",
+    "author": "tctinh",
+    "repository": "https://github.com/tctinh/agent-hive",
+    "manifestPath": "./packages/claude-code-hive",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127928851",
+      "marketplaceName": "agent-hive",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

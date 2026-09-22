@@ -1,0 +1,362 @@
+[
+  {
+    "id": "1126089957-ai-delegation",
+    "name": "ai-delegation",
+    "description": "Delegate tasks to AI models, orchestrate premium-model work, and run autonomous maintenance loops",
+    "version": "6.3.2",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./ai-delegation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-code-standards",
+    "name": "code-standards",
+    "description": "Code quality standards, documentation formatting, testing philosophy, and review guidelines",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./code-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-codeql-resolver",
+    "name": "codeql-resolver",
+    "description": "Systematic CodeQL alert analysis and resolution for GitHub Actions workflows",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./codeql-resolver",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-content-guards",
+    "name": "content-guards",
+    "description": "Combined content validation and guard plugin that merges token-validator, markdown-validator, webfetch-guard, and issue-limiter functionality",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./content-guards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-git-guards",
+    "name": "git-guards",
+    "description": "Combined git security and workflow protection via PreToolUse hooks - merges git-permission-guard and main-branch-guard functionality",
+    "version": "6.2.2",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./git-guards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-git-standards",
+    "name": "git-standards",
+    "description": "Git workflow standards, branch hygiene, PR creation guards, and issue linking",
+    "version": "6.3.0",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./git-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-ai-cli-harness-better-practices",
+    "name": "ai-cli-harness-better-practices",
+    "description": "Harness-agnostic session continuity: goal statements, status snapshots, handoffs, cold resume, replanning, and wrap-up. No git or GitHub required.",
+    "version": "4.25.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./ai-cli-harness-better-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-git-workflows",
+    "name": "git-workflows",
+    "description": "Git worktree initialization, main branch sync, and troubleshooting workflows",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./git-workflows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-github-workflows",
+    "name": "github-workflows",
+    "description": "PR management, multi-repo PR finalization, and issue shaping with Shape Up methodology",
+    "version": "6.3.0",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./github-workflows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-homelab-ops",
+    "name": "homelab-ops",
+    "description": "High-level operational runbooks for homelab management: DR-node power management, DNS ingress convergence, and secrets-engine identity bring-up",
+    "version": "1.0.0",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./homelab-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-infra-orchestration",
+    "name": "infra-orchestration",
+    "description": "Cross-repo infrastructure orchestration for Terraform and Ansible workflows",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./infra-orchestration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-infra-standards",
+    "name": "infra-standards",
+    "description": "Infrastructure standards for Proxmox, Terraform, Ansible including deployment pipeline, IP addressing, and secrets management",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./infra-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-openbao",
+    "name": "openbao",
+    "description": "OpenBao-backed secrets access model: mint ephemeral credentials from secrets engines instead of storing static ones; reads pre-authorized, writes human-gated",
+    "version": "4.22.0",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./openbao",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-pal-health",
+    "name": "pal-health",
+    "description": "Session-start hook to warn about recent PAL MCP Doppler failures",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./pal-health",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-pr-lifecycle",
+    "name": "pr-lifecycle",
+    "description": "Automatically triggers PR finalization after PR creation",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./pr-lifecycle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-process-cleanup",
+    "name": "process-cleanup",
+    "description": "Cleanup orphaned MCP server processes on session exit — workaround for upstream bug #1935",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./process-cleanup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-project-standards",
+    "name": "project-standards",
+    "description": "AgentsMD authoring standards, workspace management, and skills/tools registry lookup",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./project-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-script-guards",
+    "name": "script-guards",
+    "description": "Prevents unnecessary script generation - enforces research-first, native-tool-first patterns via PreToolUse and UserPromptSubmit hooks",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./script-guards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-session-analytics",
+    "name": "session-analytics",
+    "description": "Claude Code session token analytics via Splunk OTEL telemetry",
+    "version": "6.2.1",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./session-analytics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126089957-estate-lsp",
+    "name": "estate-lsp",
+    "description": "Language servers for Nix, Terraform/OpenTofu, and YAML: post-edit diagnostics and code navigation. Expects nixd, terraform-ls, and yaml-language-server binaries on PATH",
+    "version": "1.0.0",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./estate-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

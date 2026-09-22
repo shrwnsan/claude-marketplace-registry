@@ -1,0 +1,479 @@
+[
+  {
+    "id": "1170693138-lattice",
+    "name": "lattice",
+    "description": "Composable AI skills covering the full software delivery lifecycle — for backend engineers, frontend engineers, QA, BAs, and more. Install once, invoke the skills you need.",
+    "version": "2.1.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1170693138-architecture-compass",
+    "name": "architecture-compass",
+    "description": "name: architecture-compass",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/architecture-compass",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-architecture-refiner",
+    "name": "architecture-refiner",
+    "description": "name: architecture-refiner",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/architecture-refiner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-architecture",
+    "name": "architecture",
+    "description": "name: architecture",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-bug-fix",
+    "name": "bug-fix",
+    "description": "name: bug-fix",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/bug-fix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-clean-code-refiner",
+    "name": "clean-code-refiner",
+    "description": "name: clean-code-refiner",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/clean-code-refiner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-clean-code",
+    "name": "clean-code",
+    "description": "name: clean-code",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/clean-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-code-forge",
+    "name": "code-forge",
+    "description": "name: code-forge",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/code-forge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-collaborative-judgment",
+    "name": "collaborative-judgment",
+    "description": "name: collaborative-judgment",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/collaborative-judgment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-context-anchoring",
+    "name": "context-anchoring",
+    "description": "name: context-anchoring",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/context-anchoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-ddd-refiner",
+    "name": "ddd-refiner",
+    "description": "name: ddd-refiner",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/ddd-refiner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-design-blueprint",
+    "name": "design-blueprint",
+    "description": "name: design-blueprint",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/design-blueprint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-design-first",
+    "name": "design-first",
+    "description": "name: design-first",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/design-first",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-domain-driven-design",
+    "name": "domain-driven-design",
+    "description": "name: domain-driven-design",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/domain-driven-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-knowledge-priming-refiner",
+    "name": "knowledge-priming-refiner",
+    "description": "name: knowledge-priming-refiner",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/knowledge-priming-refiner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-knowledge-priming",
+    "name": "knowledge-priming",
+    "description": "name: knowledge-priming",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/knowledge-priming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-language-idioms-refiner",
+    "name": "language-idioms-refiner",
+    "description": "name: language-idioms-refiner",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/language-idioms-refiner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-lattice-init",
+    "name": "lattice-init",
+    "description": "name: lattice-init",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/lattice-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-learning-harvest",
+    "name": "learning-harvest",
+    "description": "name: learning-harvest",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/learning-harvest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-refactor-safely",
+    "name": "refactor-safely",
+    "description": "name: refactor-safely",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/refactor-safely",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-refiners-update",
+    "name": "refiners-update",
+    "description": "name: refiners-update",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/refiners-update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-requirement-forge-refiner",
+    "name": "requirement-forge-refiner",
+    "description": "name: requirement-forge-refiner",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/requirement-forge-refiner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-requirement-forge",
+    "name": "requirement-forge",
+    "description": "name: requirement-forge",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/requirement-forge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-requirement-quality",
+    "name": "requirement-quality",
+    "description": "name: requirement-quality",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/requirement-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-review-refiner",
+    "name": "review-refiner",
+    "description": "name: review-refiner",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/review-refiner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-review",
+    "name": "review",
+    "description": "name: review",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-secure-coding",
+    "name": "secure-coding",
+    "description": "name: secure-coding",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/secure-coding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170693138-test-quality",
+    "name": "test-quality",
+    "description": "name: test-quality",
+    "version": "1.0.0",
+    "author": "techygarg",
+    "repository": "https://github.com/techygarg/lattice",
+    "manifestPath": "skills/test-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170693138",
+      "marketplaceName": "lattice",
+      "hasSkillMd": true
+    }
+  }
+]

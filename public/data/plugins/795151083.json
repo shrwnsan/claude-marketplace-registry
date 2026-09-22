@@ -1,0 +1,20 @@
+[
+  {
+    "id": "795151083-respan",
+    "name": "respan",
+    "description": "Respan for Claude Code: tracing, evals, prompts, datasets, and gateway routing.",
+    "version": "",
+    "author": "respanai",
+    "repository": "https://github.com/respanai/respan",
+    "manifestPath": "./claude-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "795151083",
+      "marketplaceName": "respan",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

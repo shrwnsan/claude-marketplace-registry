@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1138111648-oh-my-claude",
+    "name": "oh-my-claude",
+    "description": "Cross-sessions Save/Load, and Ultrawork inspired by oh-my-opencode with Ralph Loops",
+    "version": "1.0.25",
+    "author": "replica0909xx",
+    "repository": "https://github.com/replica0909xx/oh-my-claude",
+    "manifestPath": "./plugins/oh-my-claude",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138111648",
+      "marketplaceName": "oh-my-claude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1138111648-powertoy",
+    "name": "powertoy",
+    "description": "Power utilities: auto-titling sessions and sound notifications on session end",
+    "version": "1.0.25",
+    "author": "replica0909xx",
+    "repository": "https://github.com/replica0909xx/oh-my-claude",
+    "manifestPath": "./plugins/powertoy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138111648",
+      "marketplaceName": "oh-my-claude",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

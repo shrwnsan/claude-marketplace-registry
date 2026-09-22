@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1339312390-loanword",
+    "name": "loanword",
+    "description": "Your own Quizlet and Duolingo, built from your working Claude Code sessions: the words you actually reached for become flashcards. Study them whenever it suits you — at the airport, on the train, at home, or in the status-line ticker while you keep coding. FSRS scheduling, and nothing ever leaves your machine.",
+    "version": "",
+    "author": "MarcSky",
+    "repository": "https://github.com/MarcSky/loanword",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339312390",
+      "marketplaceName": "loanword",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1339312390-start",
+    "name": "start",
+    "description": "name: start",
+    "version": "1.0.0",
+    "author": "MarcSky",
+    "repository": "https://github.com/MarcSky/loanword",
+    "manifestPath": "skills/start",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339312390",
+      "marketplaceName": "loanword",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339312390-stats",
+    "name": "stats",
+    "description": "name: stats",
+    "version": "1.0.0",
+    "author": "MarcSky",
+    "repository": "https://github.com/MarcSky/loanword",
+    "manifestPath": "skills/stats",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339312390",
+      "marketplaceName": "loanword",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339312390-ticker",
+    "name": "ticker",
+    "description": "name: ticker",
+    "version": "1.0.0",
+    "author": "MarcSky",
+    "repository": "https://github.com/MarcSky/loanword",
+    "manifestPath": "skills/ticker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339312390",
+      "marketplaceName": "loanword",
+      "hasSkillMd": true
+    }
+  }
+]

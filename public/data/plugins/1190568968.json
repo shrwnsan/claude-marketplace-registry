@@ -1,0 +1,241 @@
+[
+  {
+    "id": "1190568968-upstash",
+    "name": "upstash",
+    "description": "The Upstash MCP server plus agent skills for every Upstash SDK and CLI — Redis, QStash, Workflow, Box, Blob, Ratelimit, Vector, and Search.",
+    "version": "1.2.5",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1190568968-upstash-blob-js",
+    "name": "upstash-blob-js",
+    "description": "name: upstash-blob-js",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-blob-js",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-box-cli",
+    "name": "upstash-box-cli",
+    "description": "name: upstash-box-cli",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-box-cli",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-box-js",
+    "name": "upstash-box-js",
+    "description": "name: upstash-box-js",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-box-js",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-box-py",
+    "name": "upstash-box-py",
+    "description": "name: upstash-box-py",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-box-py",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-box-remote-work",
+    "name": "upstash-box-remote-work",
+    "description": "name: upstash-box-remote-work",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-box-remote-work",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-cli",
+    "name": "upstash-cli",
+    "description": "name: upstash-cli",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-cli",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-qstash-js",
+    "name": "upstash-qstash-js",
+    "description": "name: upstash-qstash-js",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-qstash-js",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-ratelimit-js",
+    "name": "upstash-ratelimit-js",
+    "description": "name: upstash-ratelimit-js",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-ratelimit-js",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-redis-js",
+    "name": "upstash-redis-js",
+    "description": "name: upstash-redis-js",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-redis-js",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-redis-start",
+    "name": "upstash-redis-start",
+    "description": "name: upstash-redis-start",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-redis-start",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-search-js",
+    "name": "upstash-search-js",
+    "description": "name: upstash-search-js",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-search-js",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-vector-js",
+    "name": "upstash-vector-js",
+    "description": "name: upstash-vector-js",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-vector-js",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190568968-upstash-workflow-js",
+    "name": "upstash-workflow-js",
+    "description": "name: upstash-workflow-js",
+    "version": "1.0.0",
+    "author": "Upstash",
+    "repository": "https://github.com/upstash/skills",
+    "manifestPath": "skills/upstash-workflow-js",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190568968",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

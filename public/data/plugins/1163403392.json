@@ -1,0 +1,428 @@
+[
+  {
+    "id": "1163403392-eksenos",
+    "name": "eksenos",
+    "description": "Skills, conventions and helpers for building ASP.NET Core applications on the EksenOS framework.",
+    "version": "",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1163403392-api-key-authentication",
+    "name": "api-key-authentication",
+    "description": "name: api-key-authentication",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/api-key-authentication",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-auditing",
+    "name": "auditing",
+    "description": "name: auditing",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/auditing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-code-conventions",
+    "name": "code-conventions",
+    "description": "name: code-conventions",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/code-conventions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-core",
+    "name": "core",
+    "description": "name: core",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-data-seeding",
+    "name": "data-seeding",
+    "description": "name: data-seeding",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/data-seeding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-distributed-locks",
+    "name": "distributed-locks",
+    "description": "name: distributed-locks",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/distributed-locks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-distributed-transactions",
+    "name": "distributed-transactions",
+    "description": "name: distributed-transactions",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/distributed-transactions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-emailing",
+    "name": "emailing",
+    "description": "name: emailing",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/emailing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-entities",
+    "name": "entities",
+    "description": "name: entities",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/entities",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-entity-framework-core",
+    "name": "entity-framework-core",
+    "description": "name: entity-framework-core",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/entity-framework-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-error-handling",
+    "name": "error-handling",
+    "description": "name: error-handling",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/error-handling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-event-bus",
+    "name": "event-bus",
+    "description": "name: event-bus",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/event-bus",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-identity",
+    "name": "identity",
+    "description": "name: identity",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/identity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-localization",
+    "name": "localization",
+    "description": "name: localization",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/localization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-open-api",
+    "name": "open-api",
+    "description": "name: open-api",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/open-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-permissions",
+    "name": "permissions",
+    "description": "name: permissions",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/permissions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-repositories",
+    "name": "repositories",
+    "description": "name: repositories",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/repositories",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-scalar",
+    "name": "scalar",
+    "description": "name: scalar",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/scalar",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-smart-enumerations",
+    "name": "smart-enumerations",
+    "description": "name: smart-enumerations",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/smart-enumerations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-templating",
+    "name": "templating",
+    "description": "name: templating",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/templating",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-test-base",
+    "name": "test-base",
+    "description": "name: test-base",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/test-base",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-ulid",
+    "name": "ulid",
+    "description": "name: ulid",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/ulid",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-unit-of-work",
+    "name": "unit-of-work",
+    "description": "name: unit-of-work",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/unit-of-work",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1163403392-value-objects",
+    "name": "value-objects",
+    "description": "name: value-objects",
+    "version": "1.0.0",
+    "author": "eksenova",
+    "repository": "https://github.com/eksenova/EksenOS",
+    "manifestPath": "skills/value-objects",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1163403392",
+      "marketplaceName": "EksenOS",
+      "hasSkillMd": true
+    }
+  }
+]

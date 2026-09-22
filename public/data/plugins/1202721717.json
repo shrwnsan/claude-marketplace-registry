@@ -1,0 +1,1295 @@
+[
+  {
+    "id": "1202721717-cti-skills",
+    "name": "cti-skills",
+    "description": "Cyber Threat Intelligence skills pack — threat actor profiling, IOC investigation, detection engineering, intelligence writing, and self-updating knowledge cells.",
+    "version": "1.14.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "skills": "./skills",
+      "strict": false
+    }
+  },
+  {
+    "id": "1202721717-abuseipdb-api",
+    "name": "abuseipdb-api",
+    "description": "name: abuseipdb-api",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/abuseipdb-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-ach",
+    "name": "ach",
+    "description": "name: ach",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/ach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-campaign-tracking",
+    "name": "campaign-tracking",
+    "description": "name: campaign-tracking",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/campaign-tracking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-carding-financial-fraud",
+    "name": "carding-financial-fraud",
+    "description": "name: carding-financial-fraud",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/carding-financial-fraud",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-censys-api",
+    "name": "censys-api",
+    "description": "name: censys-api",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/censys-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-china-cyber-espionage",
+    "name": "china-cyber-espionage",
+    "description": "name: china-cyber-espionage",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/china-cyber-espionage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-confidence-levels",
+    "name": "confidence-levels",
+    "description": "name: confidence-levels",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/confidence-levels",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-control-coverage-mapping",
+    "name": "control-coverage-mapping",
+    "description": "name: control-coverage-mapping",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/control-coverage-mapping",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-crowdstrike-api",
+    "name": "crowdstrike-api",
+    "description": "name: crowdstrike-api",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/crowdstrike-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-cti-hyperloop",
+    "name": "cti-hyperloop",
+    "description": "name: cti-hyperloop",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/cti-hyperloop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-cti-orchestrator",
+    "name": "cti-orchestrator",
+    "description": "name: cti-orchestrator",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/cti-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-cti-setup",
+    "name": "cti-setup",
+    "description": "name: cti-setup",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/cti-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-darkweb-collection",
+    "name": "darkweb-collection",
+    "description": "name: darkweb-collection",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/darkweb-collection",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-domain-investigation",
+    "name": "domain-investigation",
+    "description": "name: domain-investigation",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/domain-investigation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-dprk-cyber-espionage",
+    "name": "dprk-cyber-espionage",
+    "description": "name: dprk-cyber-espionage",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/dprk-cyber-espionage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-feedback-loops",
+    "name": "feedback-loops",
+    "description": "name: feedback-loops",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/feedback-loops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-greynoise-api",
+    "name": "greynoise-api",
+    "description": "name: greynoise-api",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/greynoise-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-hacktivism",
+    "name": "hacktivism",
+    "description": "name: hacktivism",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/hacktivism",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-hash-investigation",
+    "name": "hash-investigation",
+    "description": "name: hash-investigation",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/hash-investigation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-horizon-scanning",
+    "name": "horizon-scanning",
+    "description": "name: horizon-scanning",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/horizon-scanning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-indicator-pivoting",
+    "name": "indicator-pivoting",
+    "description": "name: indicator-pivoting",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/indicator-pivoting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-infostealers",
+    "name": "infostealers",
+    "description": "name: infostealers",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/infostealers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-initial-access-brokers",
+    "name": "initial-access-brokers",
+    "description": "name: initial-access-brokers",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/initial-access-brokers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-intelligence-sharing",
+    "name": "intelligence-sharing",
+    "description": "name: intelligence-sharing",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/intelligence-sharing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-intelligence-writing",
+    "name": "intelligence-writing",
+    "description": "name: intelligence-writing",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/intelligence-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-ioc-enrichment-workflow",
+    "name": "ioc-enrichment-workflow",
+    "description": "name: ioc-enrichment-workflow",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/ioc-enrichment-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-ioc-export",
+    "name": "ioc-export",
+    "description": "name: ioc-export",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/ioc-export",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-ip-investigation",
+    "name": "ip-investigation",
+    "description": "name: ip-investigation",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/ip-investigation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-iran-cyber-espionage",
+    "name": "iran-cyber-espionage",
+    "description": "name: iran-cyber-espionage",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/iran-cyber-espionage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-key-assumptions-check",
+    "name": "key-assumptions-check",
+    "description": "name: key-assumptions-check",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/key-assumptions-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-kql-writing",
+    "name": "kql-writing",
+    "description": "name: kql-writing",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/kql-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-likelihood-language",
+    "name": "likelihood-language",
+    "description": "name: likelihood-language",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/likelihood-language",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-abuseipdb",
+    "name": "lookup-abuseipdb",
+    "description": "name: lookup-abuseipdb",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-abuseipdb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-censys",
+    "name": "lookup-censys",
+    "description": "name: lookup-censys",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-censys",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-crowdstrike",
+    "name": "lookup-crowdstrike",
+    "description": "name: lookup-crowdstrike",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-crowdstrike",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-greynoise",
+    "name": "lookup-greynoise",
+    "description": "name: lookup-greynoise",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-greynoise",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-liberty91",
+    "name": "lookup-liberty91",
+    "description": "name: lookup-liberty91",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-liberty91",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-misp",
+    "name": "lookup-misp",
+    "description": "name: lookup-misp",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-misp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-opencti",
+    "name": "lookup-opencti",
+    "description": "name: lookup-opencti",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-opencti",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-otx",
+    "name": "lookup-otx",
+    "description": "name: lookup-otx",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-otx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-ransomwarelive",
+    "name": "lookup-ransomwarelive",
+    "description": "name: lookup-ransomwarelive",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-ransomwarelive",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-reversinglabs",
+    "name": "lookup-reversinglabs",
+    "description": "name: lookup-reversinglabs",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-reversinglabs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-sentinel",
+    "name": "lookup-sentinel",
+    "description": "name: lookup-sentinel",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-sentinel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-shodan",
+    "name": "lookup-shodan",
+    "description": "name: lookup-shodan",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-shodan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-urlscan",
+    "name": "lookup-urlscan",
+    "description": "name: lookup-urlscan",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-urlscan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-lookup-virustotal",
+    "name": "lookup-virustotal",
+    "description": "name: lookup-virustotal",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/lookup-virustotal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-malware-analysis",
+    "name": "malware-analysis",
+    "description": "name: malware-analysis",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/malware-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-maturity-assessment",
+    "name": "maturity-assessment",
+    "description": "name: maturity-assessment",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/maturity-assessment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-mitre-attack",
+    "name": "mitre-attack",
+    "description": "name: mitre-attack",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/mitre-attack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-osint-methodology",
+    "name": "osint-methodology",
+    "description": "name: osint-methodology",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/osint-methodology",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-otx-api",
+    "name": "otx-api",
+    "description": "name: otx-api",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/otx-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-phishing-social-engineering",
+    "name": "phishing-social-engineering",
+    "description": "name: phishing-social-engineering",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/phishing-social-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-pir-management",
+    "name": "pir-management",
+    "description": "name: pir-management",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/pir-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-quality-control",
+    "name": "quality-control",
+    "description": "name: quality-control",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/quality-control",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-ransomware-ecosystem",
+    "name": "ransomware-ecosystem",
+    "description": "name: ransomware-ecosystem",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/ransomware-ecosystem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-red-team-analysis",
+    "name": "red-team-analysis",
+    "description": "name: red-team-analysis",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/red-team-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-reversinglabs-api",
+    "name": "reversinglabs-api",
+    "description": "name: reversinglabs-api",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/reversinglabs-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-russia-cyber-espionage",
+    "name": "russia-cyber-espionage",
+    "description": "name: russia-cyber-espionage",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/russia-cyber-espionage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-shodan-api",
+    "name": "shodan-api",
+    "description": "name: shodan-api",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/shodan-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-sigma-writing",
+    "name": "sigma-writing",
+    "description": "name: sigma-writing",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/sigma-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-sops",
+    "name": "sops",
+    "description": "name: sops",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/sops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-source-assessment",
+    "name": "source-assessment",
+    "description": "name: source-assessment",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/source-assessment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-stakeholder-management",
+    "name": "stakeholder-management",
+    "description": "name: stakeholder-management",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/stakeholder-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-stix-bundle",
+    "name": "stix-bundle",
+    "description": "name: stix-bundle",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/stix-bundle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-structured-analytic-techniques",
+    "name": "structured-analytic-techniques",
+    "description": "name: structured-analytic-techniques",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/structured-analytic-techniques",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-supply-chain-threats",
+    "name": "supply-chain-threats",
+    "description": "name: supply-chain-threats",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/supply-chain-threats",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-threat-actor-profiling",
+    "name": "threat-actor-profiling",
+    "description": "name: threat-actor-profiling",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/threat-actor-profiling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-threat-assessment",
+    "name": "threat-assessment",
+    "description": "name: threat-assessment",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/threat-assessment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-tlp-guide",
+    "name": "tlp-guide",
+    "description": "name: tlp-guide",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/tlp-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-url-investigation",
+    "name": "url-investigation",
+    "description": "name: url-investigation",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/url-investigation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-urlscan-api",
+    "name": "urlscan-api",
+    "description": "name: urlscan-api",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/urlscan-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-virustotal-api",
+    "name": "virustotal-api",
+    "description": "name: virustotal-api",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/virustotal-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-vulnerability-intelligence",
+    "name": "vulnerability-intelligence",
+    "description": "name: vulnerability-intelligence",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/vulnerability-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-writing-assessments",
+    "name": "writing-assessments",
+    "description": "name: writing-assessments",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/writing-assessments",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202721717-yara-writing",
+    "name": "yara-writing",
+    "description": "name: yara-writing",
+    "version": "1.0.0",
+    "author": "Liberty91 Ltd",
+    "repository": "https://github.com/Liberty91LTD/cti-skills",
+    "manifestPath": "skills/yara-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202721717",
+      "marketplaceName": "cti-skills",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,360 @@
+[
+  {
+    "id": "1260929589-prhythm",
+    "name": "prhythm",
+    "description": "Prhythm — 提案のリズムを生み出すエージェントスキル集",
+    "version": "0.1.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260929589-assumption-breaker",
+    "name": "assumption-breaker",
+    "description": "name: assumption-breaker",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/assumption-breaker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-create-html-deck",
+    "name": "create-html-deck",
+    "description": "name: create-html-deck",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/create-html-deck",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-create-journey-map",
+    "name": "create-journey-map",
+    "description": "name: create-journey-map",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/create-journey-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-defining-personas-and-segments",
+    "name": "defining-personas-and-segments",
+    "description": "name: defining-personas-and-segments",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/defining-personas-and-segments",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-delivery-phase-plan",
+    "name": "delivery-phase-plan",
+    "description": "name: delivery-phase-plan",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/delivery-phase-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-delivery-team-plan",
+    "name": "delivery-team-plan",
+    "description": "name: delivery-team-plan",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/delivery-team-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-feature-backlog-map",
+    "name": "feature-backlog-map",
+    "description": "name: feature-backlog-map",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/feature-backlog-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-function-usecase-map",
+    "name": "function-usecase-map",
+    "description": "name: function-usecase-map",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/function-usecase-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-hearing",
+    "name": "hearing",
+    "description": "name: hearing",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/hearing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-market-landscape",
+    "name": "market-landscape",
+    "description": "name: market-landscape",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/market-landscape",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-ooui-architect",
+    "name": "ooui-architect",
+    "description": "name: ooui-architect",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/ooui-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-ooui-graphql-modeling",
+    "name": "ooui-graphql-modeling",
+    "description": "name: ooui-graphql-modeling",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/ooui-graphql-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-prhythm-docs",
+    "name": "prhythm-docs",
+    "description": "name: prhythm-docs",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/prhythm-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-prhythm-skill-pr",
+    "name": "prhythm-skill-pr",
+    "description": "name: prhythm-skill-pr",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/prhythm-skill-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-prhythm-skill-review",
+    "name": "prhythm-skill-review",
+    "description": "name: prhythm-skill-review",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/prhythm-skill-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-product-vision-and-concept",
+    "name": "product-vision-and-concept",
+    "description": "name: product-vision-and-concept",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/product-vision-and-concept",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-proto-storyboard",
+    "name": "proto-storyboard",
+    "description": "name: proto-storyboard",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/proto-storyboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-prototype-design-md",
+    "name": "prototype-design-md",
+    "description": "name: prototype-design-md",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/prototype-design-md",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-shadcn-explorer",
+    "name": "shadcn-explorer",
+    "description": "name: shadcn-explorer",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/shadcn-explorer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-uncertainty-map",
+    "name": "uncertainty-map",
+    "description": "name: uncertainty-map",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/uncertainty-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  }
+]

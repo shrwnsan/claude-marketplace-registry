@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1276222609-looptrip",
+    "name": "looptrip",
+    "description": "Trips at iteration 2 on duplicate-work, ping-pong/livelock, deadlock, and non-termination across cast.db and OpenTelemetry GenAI handoff spans. Read-only observer, never a gate; off by default.",
+    "version": "",
+    "author": "ek33450505",
+    "repository": "https://github.com/ek33450505/looptrip",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1276222609",
+      "marketplaceName": "looptrip",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

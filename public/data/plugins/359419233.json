@@ -1,0 +1,92 @@
+[
+  {
+    "id": "359419233-kubeshark",
+    "name": "kubeshark",
+    "description": "Network observability skills powered by Kubeshark MCP — root cause analysis, KFL traffic filtering, snapshot forensics, PCAP extraction.",
+    "version": "",
+    "author": "kubeshark",
+    "repository": "https://github.com/kubeshark/kubeshark",
+    "manifestPath": {
+      "source": "github",
+      "owner": "kubeshark",
+      "repo": "kubeshark"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "359419233",
+      "marketplaceName": "kubeshark",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "359419233-install",
+    "name": "install",
+    "description": "name: install",
+    "version": "1.0.0",
+    "author": "kubeshark",
+    "repository": "https://github.com/kubeshark/kubeshark",
+    "manifestPath": "skills/install",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "359419233",
+      "marketplaceName": "kubeshark",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "359419233-kfl",
+    "name": "kfl",
+    "description": "name: kfl",
+    "version": "1.0.0",
+    "author": "kubeshark",
+    "repository": "https://github.com/kubeshark/kubeshark",
+    "manifestPath": "skills/kfl",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "359419233",
+      "marketplaceName": "kubeshark",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "359419233-network-rca",
+    "name": "network-rca",
+    "description": "name: network-rca",
+    "version": "1.0.0",
+    "author": "kubeshark",
+    "repository": "https://github.com/kubeshark/kubeshark",
+    "manifestPath": "skills/network-rca",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "359419233",
+      "marketplaceName": "kubeshark",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "359419233-security-audit",
+    "name": "security-audit",
+    "description": "name: security-audit",
+    "version": "1.0.0",
+    "author": "kubeshark",
+    "repository": "https://github.com/kubeshark/kubeshark",
+    "manifestPath": "skills/security-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "359419233",
+      "marketplaceName": "kubeshark",
+      "hasSkillMd": true
+    }
+  }
+]

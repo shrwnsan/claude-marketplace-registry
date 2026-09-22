@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1200595744-arn-code",
+    "name": "arn-code",
+    "description": "Artifact-driven pipeline — spec, plan, implement, review, ship, plus batch CVE scan & fix. Three ceremony tiers scale process to scope, from a one-file fix to a large refactor. 37 skills, 18 agents.",
+    "version": "3.8.0",
+    "author": "Fryderyk Benigni",
+    "repository": "https://github.com/AppsVortex/arness",
+    "manifestPath": "./plugins/arn-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200595744",
+      "marketplaceName": "arness",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1200595744-arn-spark",
+    "name": "arn-spark",
+    "description": "From raw idea to validated, feature-ready codebase — product discovery, adversarial spec review, brand naming, architecture vision, and interactive prototyping. 28 skills, 20 agents.",
+    "version": "2.4.0",
+    "author": "Fryderyk Benigni",
+    "repository": "https://github.com/AppsVortex/arness",
+    "manifestPath": "./plugins/arn-spark",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200595744",
+      "marketplaceName": "arness",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1200595744-arn-infra",
+    "name": "arn-infra",
+    "description": "Infrastructure and deployment for Claude Code — containerization, IaC generation (OpenTofu, Pulumi, CDK), CI/CD pipelines, environments, secrets, and monitoring. Operates standalone or completes the arn-code pipeline. 25 skills, 10 agents. Experimental.",
+    "version": "2.4.0",
+    "author": "Fryderyk Benigni",
+    "repository": "https://github.com/AppsVortex/arness",
+    "manifestPath": "./plugins/arn-infra",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200595744",
+      "marketplaceName": "arness",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

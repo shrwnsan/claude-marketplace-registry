@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1269151566-okf",
+    "name": "okf",
+    "description": "Author, maintain, backfill, validate, visualize and serve (MCP) Open Knowledge Format (OKF) bundles.",
+    "version": "",
+    "author": "scaccogatto",
+    "repository": "https://github.com/scaccogatto/okf-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269151566",
+      "marketplaceName": "okf-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1269151566-backfill",
+    "name": "backfill",
+    "description": "name: backfill",
+    "version": "1.0.0",
+    "author": "scaccogatto",
+    "repository": "https://github.com/scaccogatto/okf-skills",
+    "manifestPath": "skills/backfill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269151566",
+      "marketplaceName": "okf-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269151566-validate",
+    "name": "validate",
+    "description": "name: validate",
+    "version": "1.0.0",
+    "author": "scaccogatto",
+    "repository": "https://github.com/scaccogatto/okf-skills",
+    "manifestPath": "skills/validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269151566",
+      "marketplaceName": "okf-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269151566-visualize",
+    "name": "visualize",
+    "description": "name: visualize",
+    "version": "1.0.0",
+    "author": "scaccogatto",
+    "repository": "https://github.com/scaccogatto/okf-skills",
+    "manifestPath": "skills/visualize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269151566",
+      "marketplaceName": "okf-skills",
+      "hasSkillMd": true
+    }
+  }
+]

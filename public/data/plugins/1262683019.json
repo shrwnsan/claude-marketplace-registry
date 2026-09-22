@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1262683019-kmp-cocoapods-to-swiftpm",
+    "name": "kmp-cocoapods-to-swiftpm",
+    "description": "Refactor Kotlin Multiplatform and Compose Multiplatform projects from CocoaPods to SwiftPM, preserving versions, updating Kotlin to 2.4.0, and handling Xcode direct integration.",
+    "version": "1.0.1",
+    "author": "Paolo Montalto",
+    "repository": "https://github.com/xabaras/kmp-cocoapods-to-swiftpm",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/xabaras/kmp-cocoapods-to-swiftpm",
+      "path": "skills/kmp-cocoapods-to-swiftpm",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262683019",
+      "marketplaceName": "kmp-cocoapods-to-swiftpm",
+      "skills": [
+        "./"
+      ],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,1235 @@
+[
+  {
+    "id": "1202576122-medsci-literature",
+    "name": "medsci-literature",
+    "description": "Literature search with anti-hallucination citation verification, full-text retrieval, Zotero/Obsidian sync, and reference-integrity audits.",
+    "version": "",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "skills": [
+        "./skills/fulltext-retrieval",
+        "./skills/lit-sync",
+        "./skills/manage-refs",
+        "./skills/obsidian-paper-vault",
+        "./skills/search-lit",
+        "./skills/verify-refs"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1202576122-medsci-data",
+    "name": "medsci-data",
+    "description": "Study design and validity review, literature-grounded variable operationalization, sample-size planning, data cleaning, de-identification, codebook generation, and dataset versioning.",
+    "version": "",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "skills": [
+        "./skills/calc-sample-size",
+        "./skills/clean-data",
+        "./skills/define-variables",
+        "./skills/deidentify",
+        "./skills/design-ai-benchmarking",
+        "./skills/design-study",
+        "./skills/generate-codebook",
+        "./skills/version-dataset"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1202576122-medsci-modeling",
+    "name": "medsci-modeling",
+    "description": "Clinical AI model research engineering: choose a paper-grounded architecture, scaffold a reproducible PyTorch training repo, validate the model's split and validation design, document it (Model Card / Datasheet), and evaluate models or LLMs/MLLMs on clinical tasks. Integrates MONAI / nnU-Net, never replaces them.",
+    "version": "",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "skills": [
+        "./skills/architecture-zoo",
+        "./skills/explainability",
+        "./skills/mllm-eval",
+        "./skills/model-card",
+        "./skills/model-evaluation",
+        "./skills/model-scaffold",
+        "./skills/model-sourcing",
+        "./skills/model-validation",
+        "./skills/preprocess-imaging",
+        "./skills/profile-imaging",
+        "./skills/radiomics-ml",
+        "./skills/uncertainty-imaging"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1202576122-medsci-analysis",
+    "name": "medsci-analysis",
+    "description": "Reproducible statistical analysis, publication-ready figures, batch/cross-national/replication analysis, and meta-analysis synthesis.",
+    "version": "",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "skills": [
+        "./skills/analyze-stats",
+        "./skills/batch-cohort",
+        "./skills/cross-national",
+        "./skills/make-figures",
+        "./skills/meta-analysis",
+        "./skills/replicate-study"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1202576122-medsci-writing",
+    "name": "medsci-writing",
+    "description": "IMRAD manuscript and IRB-protocol drafting, AI-pattern removal, AI-search optimization, and reviewer-response letters.",
+    "version": "",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "skills": [
+        "./skills/academic-aio",
+        "./skills/humanize",
+        "./skills/polish-language",
+        "./skills/review-paper",
+        "./skills/revise",
+        "./skills/write-paper",
+        "./skills/write-protocol"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1202576122-medsci-review",
+    "name": "medsci-review",
+    "description": "Pre-submission self-review, peer-review drafting, and reporting-guideline compliance audits against EQUATOR checklists.",
+    "version": "",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "skills": [
+        "./skills/check-reporting",
+        "./skills/peer-review",
+        "./skills/self-review"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1202576122-medsci-submission",
+    "name": "medsci-submission",
+    "description": "Submission packaging, journal recommendation and profiling, institutional form filling (ICMJE COI, IRB), and grant proposals.",
+    "version": "",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "skills": [
+        "./skills/add-journal",
+        "./skills/fill-icmje-coi",
+        "./skills/fill-protocol",
+        "./skills/find-journal",
+        "./skills/grant-builder",
+        "./skills/sync-submission"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1202576122-medsci-project",
+    "name": "medsci-project",
+    "description": "Research orchestration, project intake and management, research-gap and meta-analysis topic discovery, and author-strategy analysis.",
+    "version": "",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "skills": [
+        "./skills/author-strategy",
+        "./skills/find-cohort-gap",
+        "./skills/intake-project",
+        "./skills/ma-scout",
+        "./skills/manage-project",
+        "./skills/orchestrate"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1202576122-medsci-presentation",
+    "name": "medsci-presentation",
+    "description": "Academic presentation and PPTX building, PDF/document rendering, environment setup, and skill publishing.",
+    "version": "",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "skills": [
+        "./skills/contribute",
+        "./skills/present-paper",
+        "./skills/publish-skill",
+        "./skills/render-pdf-doc",
+        "./skills/setup-medsci"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1202576122-academic-aio",
+    "name": "academic-aio",
+    "description": "name: academic-aio",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/academic-aio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-add-journal",
+    "name": "add-journal",
+    "description": "name: add-journal",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/add-journal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-analyze-stats",
+    "name": "analyze-stats",
+    "description": "name: analyze-stats",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/analyze-stats",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-architecture-zoo",
+    "name": "architecture-zoo",
+    "description": "name: architecture-zoo",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/architecture-zoo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-author-strategy",
+    "name": "author-strategy",
+    "description": "name: author-strategy",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/author-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-batch-cohort",
+    "name": "batch-cohort",
+    "description": "name: batch-cohort",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/batch-cohort",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-calc-sample-size",
+    "name": "calc-sample-size",
+    "description": "name: calc-sample-size",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/calc-sample-size",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-check-reporting",
+    "name": "check-reporting",
+    "description": "name: check-reporting",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/check-reporting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-clean-data",
+    "name": "clean-data",
+    "description": "name: clean-data",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/clean-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-contribute",
+    "name": "contribute",
+    "description": "name: contribute",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/contribute",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-cross-national",
+    "name": "cross-national",
+    "description": "name: cross-national",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/cross-national",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-define-variables",
+    "name": "define-variables",
+    "description": "name: define-variables",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/define-variables",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-deidentify",
+    "name": "deidentify",
+    "description": "name: deidentify",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/deidentify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-design-ai-benchmarking",
+    "name": "design-ai-benchmarking",
+    "description": "name: design-ai-benchmarking",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/design-ai-benchmarking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-design-study",
+    "name": "design-study",
+    "description": "name: design-study",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/design-study",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-explainability",
+    "name": "explainability",
+    "description": "name: explainability",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/explainability",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-fill-icmje-coi",
+    "name": "fill-icmje-coi",
+    "description": "name: fill-icmje-coi",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/fill-icmje-coi",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-fill-protocol",
+    "name": "fill-protocol",
+    "description": "name: fill-protocol",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/fill-protocol",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-find-cohort-gap",
+    "name": "find-cohort-gap",
+    "description": "name: find-cohort-gap",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/find-cohort-gap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-find-journal",
+    "name": "find-journal",
+    "description": "name: find-journal",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/find-journal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-fulltext-retrieval",
+    "name": "fulltext-retrieval",
+    "description": "name: fulltext-retrieval",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/fulltext-retrieval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-generate-codebook",
+    "name": "generate-codebook",
+    "description": "name: generate-codebook",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/generate-codebook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-grant-builder",
+    "name": "grant-builder",
+    "description": "name: grant-builder",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/grant-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-humanize",
+    "name": "humanize",
+    "description": "name: humanize",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/humanize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-intake-project",
+    "name": "intake-project",
+    "description": "name: intake-project",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/intake-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-lit-sync",
+    "name": "lit-sync",
+    "description": "name: lit-sync",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/lit-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-ma-scout",
+    "name": "ma-scout",
+    "description": "name: ma-scout",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/ma-scout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-make-figures",
+    "name": "make-figures",
+    "description": "name: make-figures",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/make-figures",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-manage-project",
+    "name": "manage-project",
+    "description": "name: manage-project",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/manage-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-manage-refs",
+    "name": "manage-refs",
+    "description": "name: manage-refs",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/manage-refs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-meta-analysis",
+    "name": "meta-analysis",
+    "description": "name: meta-analysis",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/meta-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-mllm-eval",
+    "name": "mllm-eval",
+    "description": "name: mllm-eval",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/mllm-eval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-model-card",
+    "name": "model-card",
+    "description": "name: model-card",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/model-card",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-model-evaluation",
+    "name": "model-evaluation",
+    "description": "name: model-evaluation",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/model-evaluation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-model-scaffold",
+    "name": "model-scaffold",
+    "description": "name: model-scaffold",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/model-scaffold",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-model-sourcing",
+    "name": "model-sourcing",
+    "description": "name: model-sourcing",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/model-sourcing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-model-validation",
+    "name": "model-validation",
+    "description": "name: model-validation",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/model-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-obsidian-paper-vault",
+    "name": "obsidian-paper-vault",
+    "description": "name: obsidian-paper-vault",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/obsidian-paper-vault",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-orchestrate",
+    "name": "orchestrate",
+    "description": "name: orchestrate",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/orchestrate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-peer-review",
+    "name": "peer-review",
+    "description": "name: peer-review",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/peer-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-polish-language",
+    "name": "polish-language",
+    "description": "name: polish-language",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/polish-language",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-preprocess-imaging",
+    "name": "preprocess-imaging",
+    "description": "name: preprocess-imaging",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/preprocess-imaging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-present-paper",
+    "name": "present-paper",
+    "description": "name: present-paper",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/present-paper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-profile-imaging",
+    "name": "profile-imaging",
+    "description": "name: profile-imaging",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/profile-imaging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-publish-skill",
+    "name": "publish-skill",
+    "description": "name: publish-skill",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/publish-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-radiomics-ml",
+    "name": "radiomics-ml",
+    "description": "name: radiomics-ml",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/radiomics-ml",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-render-pdf-doc",
+    "name": "render-pdf-doc",
+    "description": "name: render-pdf-doc",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/render-pdf-doc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-replicate-study",
+    "name": "replicate-study",
+    "description": "name: replicate-study",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/replicate-study",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-review-paper",
+    "name": "review-paper",
+    "description": "name: review-paper",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/review-paper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-revise",
+    "name": "revise",
+    "description": "name: revise",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/revise",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-search-lit",
+    "name": "search-lit",
+    "description": "name: search-lit",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/search-lit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-self-review",
+    "name": "self-review",
+    "description": "name: self-review",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/self-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-setup-medsci",
+    "name": "setup-medsci",
+    "description": "name: setup-medsci",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/setup-medsci",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-sync-submission",
+    "name": "sync-submission",
+    "description": "name: sync-submission",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/sync-submission",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-uncertainty-imaging",
+    "name": "uncertainty-imaging",
+    "description": "name: uncertainty-imaging",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/uncertainty-imaging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-verify-refs",
+    "name": "verify-refs",
+    "description": "name: verify-refs",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/verify-refs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-version-dataset",
+    "name": "version-dataset",
+    "description": "name: version-dataset",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/version-dataset",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-write-paper",
+    "name": "write-paper",
+    "description": "name: write-paper",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/write-paper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-write-protocol",
+    "name": "write-protocol",
+    "description": "name: write-protocol",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/write-protocol",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  }
+]

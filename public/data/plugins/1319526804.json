@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1319526804-foundation",
+    "name": "foundation",
+    "description": "Eleven standalone wrights: skillwright (skills & packs), promptwright (prompts), commwright (messages), agentwright (agent specs), rigwright (standing Claude config), lorewright (research verdicts & playbooks), evalwright (eval suites), brandwright (brand & voice), tokenwright (token footprint), dispatchwright (fan-out dispatch), resumewright (committed session handoffs). Each routes on its own description and works alone; together they cover the full build-audit-ship loop.",
+    "version": "2.10.0",
+    "author": "revenantworks",
+    "repository": "https://github.com/revenantworks/claude-skills",
+    "manifestPath": "./packs/foundation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319526804",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1319526804-gamedev",
+    "name": "gamedev",
+    "description": "Game-development skills on the -smith motif. First member: pixelsmith — art direction for pixel art that must read at several zoom scales at once (per-band rules, terrain-versus-unit contrast, a one-scene look test, artist and generator briefs). Each routes on its own description and works alone.",
+    "version": "1.1.0",
+    "author": "revenantworks",
+    "repository": "https://github.com/revenantworks/claude-skills",
+    "manifestPath": "./packs/gamedev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319526804",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1319526804-localops",
+    "name": "localops",
+    "description": "Skills for running work on local models, on the -runner motif. First member: lmstudiorunner — hands work to an LM Studio model and verifies what comes back, scoring the task's shape first, auditing installed models from live metadata rather than a hardcoded list, and requiring a machine check for anything nobody will read.",
+    "version": "1.1.2",
+    "author": "revenantworks",
+    "repository": "https://github.com/revenantworks/claude-skills",
+    "manifestPath": "./packs/localops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1319526804",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

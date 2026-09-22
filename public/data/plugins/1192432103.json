@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1192432103-wit",
+    "name": "wit",
+    "description": "Coordinate multiple AI agents on the same codebase. Declares intents, locks symbols, detects conflicts — before code is written.",
+    "version": "0.1.0",
+    "author": "Amaar Chughtai",
+    "repository": "https://github.com/amaar-mc/wit",
+    "manifestPath": {
+      "source": "github",
+      "repo": "amaar-mc/wit"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192432103",
+      "marketplaceName": "wit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1192432103-coordinate",
+    "name": "coordinate",
+    "description": "name: coordinate",
+    "version": "1.0.0",
+    "author": "Amaar Chughtai",
+    "repository": "https://github.com/amaar-mc/wit",
+    "manifestPath": "skills/coordinate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192432103",
+      "marketplaceName": "wit",
+      "hasSkillMd": true
+    }
+  }
+]

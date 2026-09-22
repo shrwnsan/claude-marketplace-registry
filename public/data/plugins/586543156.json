@@ -1,0 +1,20 @@
+[
+  {
+    "id": "586543156-kubb",
+    "name": "kubb",
+    "description": "Meta framework for code generation. Turn an OpenAPI spec into TypeScript types, Zod schemas, Axios clients, React Query hooks and more, with the Kubb MCP server wired in.",
+    "version": "",
+    "author": "kubb-labs",
+    "repository": "https://github.com/kubb-labs/kubb",
+    "manifestPath": "./tools/claude",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "586543156",
+      "marketplaceName": "kubb",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

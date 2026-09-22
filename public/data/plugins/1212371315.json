@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1212371315-wiresmith",
+    "name": "wiresmith",
+    "description": "Ships the wiresmith-migrator agent: guidance for migrating Go repos from gogoproto to wiresmith, kept in sync with the compiler.",
+    "version": "",
+    "author": "grafana",
+    "repository": "https://github.com/grafana/wiresmith",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1212371315",
+      "marketplaceName": "wiresmith",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1212371315-compete",
+    "name": "compete",
+    "description": "name: compete",
+    "version": "1.0.0",
+    "author": "grafana",
+    "repository": "https://github.com/grafana/wiresmith",
+    "manifestPath": ".claude/skills/compete",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1212371315",
+      "marketplaceName": "wiresmith",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1212371315-validate",
+    "name": "validate",
+    "description": "name: validate",
+    "version": "1.0.0",
+    "author": "grafana",
+    "repository": "https://github.com/grafana/wiresmith",
+    "manifestPath": ".claude/skills/validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1212371315",
+      "marketplaceName": "wiresmith",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,153 +1,153 @@
 {
   "stats": {
-    "totalMarketplaces": 306,
-    "totalPlugins": 3769,
-    "validPlugins": 3769,
-    "lastUpdated": "2026-09-21T03:46:24.629Z",
+    "totalMarketplaces": 325,
+    "totalPlugins": 4095,
+    "validPlugins": 4095,
+    "lastUpdated": "2026-09-22T03:49:43.032Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 87
+        "count": 100
       },
       {
         "language": "JavaScript",
-        "count": 51
+        "count": 58
       },
       {
         "language": "Shell",
-        "count": 45
+        "count": 41
       },
       {
         "language": "Unknown",
-        "count": 37
+        "count": 38
       },
       {
         "language": "TypeScript",
-        "count": 36
+        "count": 35
       },
       {
         "language": "HTML",
-        "count": 15
+        "count": 16
       },
       {
         "language": "Go",
-        "count": 12
+        "count": 11
       },
       {
         "language": "Rust",
-        "count": 10
-      },
-      {
-        "language": "Java",
-        "count": 2
+        "count": 9
       },
       {
         "language": "Jupyter Notebook",
+        "count": 2
+      },
+      {
+        "language": "C#",
         "count": 2
       }
     ],
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 263887,
+        "stars": 264810,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 177348,
+        "stars": 177509,
         "url": "https://github.com/anthropics/skills"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 75406,
+        "stars": 75454,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "claude-plugins-official",
-        "stars": 36557,
+        "stars": 36599,
         "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
         "name": "daily",
-        "stars": 20070,
+        "stars": 20071,
         "url": "https://github.com/dailydotdev/daily"
       },
       {
         "name": "kubeshark",
-        "stars": 12084,
+        "stars": 12085,
         "url": "https://github.com/kubeshark/kubeshark"
       },
       {
         "name": "web-access",
-        "stars": 8992,
+        "stars": 8999,
         "url": "https://github.com/eze-is/web-access"
       },
       {
         "name": "claude-octopus",
-        "stars": 4091,
+        "stars": 4092,
         "url": "https://github.com/nyldn/claude-octopus"
       },
       {
         "name": "awesome-ChatGPT-repositories",
-        "stars": 3260,
+        "stars": 3261,
         "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
       },
       {
         "name": "Claude-to-IM-skill",
-        "stars": 2881,
+        "stars": 2882,
         "url": "https://github.com/op7418/Claude-to-IM-skill"
       }
     ],
     "recentActivity": [
       {
-        "name": "oh-story-claudecode",
-        "updatedAt": "2026-09-21T03:41:24Z",
-        "url": "https://github.com/thanhn3977/oh-story-claudecode"
-      },
-      {
         "name": "ECC",
-        "updatedAt": "2026-09-21T03:33:59Z",
+        "updatedAt": "2026-09-22T03:33:54Z",
         "url": "https://github.com/affaan-m/ECC"
       },
       {
+        "name": "claude-plugins-community",
+        "updatedAt": "2026-09-22T03:32:59Z",
+        "url": "https://github.com/savaliya951/claude-plugins-community"
+      },
+      {
+        "name": "orze",
+        "updatedAt": "2026-09-22T03:32:10Z",
+        "url": "https://github.com/orze-ai/orze"
+      },
+      {
         "name": "RAD-Claude-Agent-Toolkit",
-        "updatedAt": "2026-09-21T03:31:13Z",
+        "updatedAt": "2026-09-22T03:30:05Z",
         "url": "https://github.com/nirmal77-nir/RAD-Claude-Agent-Toolkit"
       },
       {
-        "name": "creator-buddy",
-        "updatedAt": "2026-09-21T03:28:53Z",
-        "url": "https://github.com/SpaceZephyr/creator-buddy"
-      },
-      {
-        "name": "cc-plugins",
-        "updatedAt": "2026-09-21T03:28:52Z",
-        "url": "https://github.com/kywrl/cc-plugins"
-      },
-      {
-        "name": "software-design-philosophy-skill",
-        "updatedAt": "2026-09-21T03:26:10Z",
-        "url": "https://github.com/hotopla5976/software-design-philosophy-skill"
-      },
-      {
         "name": "skills",
-        "updatedAt": "2026-09-21T03:20:59Z",
+        "updatedAt": "2026-09-22T03:30:03Z",
         "url": "https://github.com/anthropics/skills"
       },
       {
+        "name": "CITADEL",
+        "updatedAt": "2026-09-22T03:29:24Z",
+        "url": "https://github.com/akuntin9278/CITADEL"
+      },
+      {
         "name": "awesome-claude-skills",
-        "updatedAt": "2026-09-21T03:17:40Z",
+        "updatedAt": "2026-09-22T03:25:27Z",
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
-        "name": "kubeshark",
-        "updatedAt": "2026-09-21T03:13:30Z",
-        "url": "https://github.com/kubeshark/kubeshark"
+        "name": "treg",
+        "updatedAt": "2026-09-22T03:19:08Z",
+        "url": "https://github.com/superdesigndev/treg"
       },
       {
-        "name": "biomcp",
-        "updatedAt": "2026-09-21T03:04:13Z",
-        "url": "https://github.com/genomoncology/biomcp"
+        "name": "claude-code-docs",
+        "updatedAt": "2026-09-22T03:17:55Z",
+        "url": "https://github.com/costiash/claude-code-docs"
+      },
+      {
+        "name": "camunda-7-to-8-migration-tooling",
+        "updatedAt": "2026-09-22T03:16:54Z",
+        "url": "https://github.com/camunda/camunda-7-to-8-migration-tooling"
       }
     ]
   },
@@ -155,33 +155,33 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 140
+      "count": 142
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 39
+      "count": 40
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 88
+      "count": 96
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 8
+      "count": 7
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 10
+      "count": 13
     },
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 3
+      "count": 4
     }
   ],
-  "lastUpdated": "2026-09-21T03:46:24.629Z"
+  "lastUpdated": "2026-09-22T03:49:43.032Z"
 }

@@ -1,0 +1,1040 @@
+[
+  {
+    "id": "1255508156-build-swift-apps",
+    "name": "build-swift-apps",
+    "description": "Build, debug, profile, test, refactor, and release Swift apps across iOS, macOS, Xcode, SwiftUI, SwiftPM, Tuist, and App Store Connect.",
+    "version": "0.3.15",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1255508156-app-icon-studio",
+    "name": "app-icon-studio",
+    "description": "name: app-icon-studio",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/app-icon-studio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-apple-dev-research",
+    "name": "apple-dev-research",
+    "description": "name: apple-dev-research",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/apple-dev-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-apple-firmware-inspector",
+    "name": "apple-firmware-inspector",
+    "description": "name: apple-firmware-inspector",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/apple-firmware-inspector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-ads-operator",
+    "name": "appstore-ads-operator",
+    "description": "name: appstore-ads-operator",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-ads-operator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-archive-uploader",
+    "name": "appstore-archive-uploader",
+    "description": "name: appstore-archive-uploader",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-archive-uploader",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-aso-auditor",
+    "name": "appstore-aso-auditor",
+    "description": "name: appstore-aso-auditor",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-aso-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-build-monitor",
+    "name": "appstore-build-monitor",
+    "description": "name: appstore-build-monitor",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-build-monitor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-connect-cli",
+    "name": "appstore-connect-cli",
+    "description": "name: appstore-connect-cli",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-connect-cli",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-crash-insights",
+    "name": "appstore-crash-insights",
+    "description": "name: appstore-crash-insights",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-crash-insights",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-id-resolver",
+    "name": "appstore-id-resolver",
+    "description": "name: appstore-id-resolver",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-id-resolver",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-metadata-localizer",
+    "name": "appstore-metadata-localizer",
+    "description": "name: appstore-metadata-localizer",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-metadata-localizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-metadata-sync",
+    "name": "appstore-metadata-sync",
+    "description": "name: appstore-metadata-sync",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-metadata-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-notary-runner",
+    "name": "appstore-notary-runner",
+    "description": "name: appstore-notary-runner",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-notary-runner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-pricing-planner",
+    "name": "appstore-pricing-planner",
+    "description": "name: appstore-pricing-planner",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-pricing-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-record-creator",
+    "name": "appstore-record-creator",
+    "description": "name: appstore-record-creator",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-record-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-release-director",
+    "name": "appstore-release-director",
+    "description": "name: appstore-release-director",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-release-director",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-release-notes-writer",
+    "name": "appstore-release-notes-writer",
+    "description": "name: appstore-release-notes-writer",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-release-notes-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-release-planner",
+    "name": "appstore-release-planner",
+    "description": "name: appstore-release-planner",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-release-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-revenuecat-sync",
+    "name": "appstore-revenuecat-sync",
+    "description": "name: appstore-revenuecat-sync",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-revenuecat-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-review-readiness",
+    "name": "appstore-review-readiness",
+    "description": "name: appstore-review-readiness",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-review-readiness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-screenshot-pipeline",
+    "name": "appstore-screenshot-pipeline",
+    "description": "name: appstore-screenshot-pipeline",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-screenshot-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-screenshot-studio",
+    "name": "appstore-screenshot-studio",
+    "description": "name: appstore-screenshot-studio",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-screenshot-studio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-screenshot-validator",
+    "name": "appstore-screenshot-validator",
+    "description": "name: appstore-screenshot-validator",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-screenshot-validator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-signing-setup",
+    "name": "appstore-signing-setup",
+    "description": "name: appstore-signing-setup",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-signing-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-subscription-localizer",
+    "name": "appstore-subscription-localizer",
+    "description": "name: appstore-subscription-localizer",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-subscription-localizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-testflight-coordinator",
+    "name": "appstore-testflight-coordinator",
+    "description": "name: appstore-testflight-coordinator",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-testflight-coordinator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-wall-publisher",
+    "name": "appstore-wall-publisher",
+    "description": "name: appstore-wall-publisher",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-wall-publisher",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-appstore-workflow-runner",
+    "name": "appstore-workflow-runner",
+    "description": "name: appstore-workflow-runner",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/appstore-workflow-runner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-ios-ettrace-profiler",
+    "name": "ios-ettrace-profiler",
+    "description": "name: ios-ettrace-profiler",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/ios-ettrace-profiler",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-ios-intents-architect",
+    "name": "ios-intents-architect",
+    "description": "name: ios-intents-architect",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/ios-intents-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-ios-liquid-glass-designer",
+    "name": "ios-liquid-glass-designer",
+    "description": "name: ios-liquid-glass-designer",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/ios-liquid-glass-designer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-ios-memgraph-inspector",
+    "name": "ios-memgraph-inspector",
+    "description": "name: ios-memgraph-inspector",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/ios-memgraph-inspector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-ios-rocketsim-operator",
+    "name": "ios-rocketsim-operator",
+    "description": "name: ios-rocketsim-operator",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/ios-rocketsim-operator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-ios-simulator-browser",
+    "name": "ios-simulator-browser",
+    "description": "name: ios-simulator-browser",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/ios-simulator-browser",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-ios-simulator-debugger",
+    "name": "ios-simulator-debugger",
+    "description": "name: ios-simulator-debugger",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/ios-simulator-debugger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-ios-swiftui-architect",
+    "name": "ios-swiftui-architect",
+    "description": "name: ios-swiftui-architect",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/ios-swiftui-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-appkit-bridge",
+    "name": "macos-appkit-bridge",
+    "description": "name: macos-appkit-bridge",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-appkit-bridge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-liquid-glass-designer",
+    "name": "macos-liquid-glass-designer",
+    "description": "name: macos-liquid-glass-designer",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-liquid-glass-designer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-notarization-packager",
+    "name": "macos-notarization-packager",
+    "description": "name: macos-notarization-packager",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-notarization-packager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-runtime-debugger",
+    "name": "macos-runtime-debugger",
+    "description": "name: macos-runtime-debugger",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-runtime-debugger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-signing-inspector",
+    "name": "macos-signing-inspector",
+    "description": "name: macos-signing-inspector",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-signing-inspector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-swiftpm-runner",
+    "name": "macos-swiftpm-runner",
+    "description": "name: macos-swiftpm-runner",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-swiftpm-runner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-swiftui-architect",
+    "name": "macos-swiftui-architect",
+    "description": "name: macos-swiftui-architect",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-swiftui-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-telemetry-probe",
+    "name": "macos-telemetry-probe",
+    "description": "name: macos-telemetry-probe",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-telemetry-probe",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-test-diagnoser",
+    "name": "macos-test-diagnoser",
+    "description": "name: macos-test-diagnoser",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-test-diagnoser",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-view-architect",
+    "name": "macos-view-architect",
+    "description": "name: macos-view-architect",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-view-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-macos-window-architect",
+    "name": "macos-window-architect",
+    "description": "name: macos-window-architect",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/macos-window-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-swiftpm-build-inspector",
+    "name": "swiftpm-build-inspector",
+    "description": "name: swiftpm-build-inspector",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/swiftpm-build-inspector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-swiftui-performance-inspector",
+    "name": "swiftui-performance-inspector",
+    "description": "name: swiftui-performance-inspector",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/swiftui-performance-inspector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-swiftui-view-architect",
+    "name": "swiftui-view-architect",
+    "description": "name: swiftui-view-architect",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/swiftui-view-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-tuist-flaky-test-stabilizer",
+    "name": "tuist-flaky-test-stabilizer",
+    "description": "name: tuist-flaky-test-stabilizer",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/tuist-flaky-test-stabilizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-tuist-generation-doctor",
+    "name": "tuist-generation-doctor",
+    "description": "name: tuist-generation-doctor",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/tuist-generation-doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-tuist-migration-planner",
+    "name": "tuist-migration-planner",
+    "description": "name: tuist-migration-planner",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/tuist-migration-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-tuist-workspace-navigator",
+    "name": "tuist-workspace-navigator",
+    "description": "name: tuist-workspace-navigator",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/tuist-workspace-navigator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-xcode-build-baseline",
+    "name": "xcode-build-baseline",
+    "description": "name: xcode-build-baseline",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/xcode-build-baseline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-xcode-build-strategist",
+    "name": "xcode-build-strategist",
+    "description": "name: xcode-build-strategist",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/xcode-build-strategist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-xcode-build-tuner",
+    "name": "xcode-build-tuner",
+    "description": "name: xcode-build-tuner",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/xcode-build-tuner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-xcode-compile-profiler",
+    "name": "xcode-compile-profiler",
+    "description": "name: xcode-compile-profiler",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/xcode-compile-profiler",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-xcode-project-auditor",
+    "name": "xcode-project-auditor",
+    "description": "name: xcode-project-auditor",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/xcode-project-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1255508156-xcode-ui-test-stabilizer",
+    "name": "xcode-ui-test-stabilizer",
+    "description": "name: xcode-ui-test-stabilizer",
+    "version": "1.0.0",
+    "author": "Build Swift Apps Maintainers",
+    "repository": "https://github.com/Xopoko/build-swift-apps",
+    "manifestPath": "skills/xcode-ui-test-stabilizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1255508156",
+      "marketplaceName": "build-swift-apps",
+      "hasSkillMd": true
+    }
+  }
+]

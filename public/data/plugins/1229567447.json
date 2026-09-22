@@ -1,0 +1,258 @@
+[
+  {
+    "id": "1229567447-probabl-skills",
+    "name": "probabl-skills",
+    "description": "Workflow skills for ML experimentation with skrub, scikit-learn, and skore: pipeline build / evaluate / test / audit, iteration loop, workspace + tooling.",
+    "version": "0.7.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1229567447-audit-ml-pipeline",
+    "name": "audit-ml-pipeline",
+    "description": "name: audit-ml-pipeline",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/audit-ml-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-build-ml-pipeline",
+    "name": "build-ml-pipeline",
+    "description": "name: build-ml-pipeline",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/build-ml-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-data-science-python-stack",
+    "name": "data-science-python-stack",
+    "description": "name: data-science-python-stack",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/data-science-python-stack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-evaluate-ml-pipeline",
+    "name": "evaluate-ml-pipeline",
+    "description": "name: evaluate-ml-pipeline",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/evaluate-ml-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-explore-ml-data",
+    "name": "explore-ml-data",
+    "description": "name: explore-ml-data",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/explore-ml-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-iterate-from-skore",
+    "name": "iterate-from-skore",
+    "description": "name: iterate-from-skore",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/iterate-from-skore",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-iterate-from-user",
+    "name": "iterate-from-user",
+    "description": "name: iterate-from-user",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/iterate-from-user",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-iterate-ml-experiment",
+    "name": "iterate-ml-experiment",
+    "description": "name: iterate-ml-experiment",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/iterate-ml-experiment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-organize-ml-workspace",
+    "name": "organize-ml-workspace",
+    "description": "name: organize-ml-workspace",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/organize-ml-workspace",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-python-api",
+    "name": "python-api",
+    "description": "name: python-api",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/python-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-python-code-style",
+    "name": "python-code-style",
+    "description": "name: python-code-style",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/python-code-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-python-env-manager",
+    "name": "python-env-manager",
+    "description": "name: python-env-manager",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/python-env-manager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-smoke-test-ml-pipeline",
+    "name": "smoke-test-ml-pipeline",
+    "description": "name: smoke-test-ml-pipeline",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/smoke-test-ml-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-test-ml-pipeline",
+    "name": "test-ml-pipeline",
+    "description": "name: test-ml-pipeline",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/test-ml-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]
