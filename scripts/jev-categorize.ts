@@ -170,6 +170,9 @@ export function parseGatewayResponse(data: GatewayEvaluateResponse): JevVerdict 
   };
 }
 
+/** Gateway auth/billing failures (401/402/403) — retrying the same key cannot succeed. */
+class GatewayAuthError extends Error {}
+
 function vercelGatewayProvider(env: Record<string, string | undefined>): JevProvider {
   const baseURL = env.AI_GATEWAY_BASE_URL || 'https://ai-gateway.vercel.sh';
   const model = env.AI_GATEWAY_JEV_MODEL || 'typesafe-ai/jev';
@@ -203,11 +206,16 @@ function vercelGatewayProvider(env: Record<string, string | undefined>): JevProv
             }),
           });
           if (!response.ok) {
-            throw new Error(`gateway ${response.status}: ${(await response.text()).slice(0, 160)}`);
+            const detail = `gateway ${response.status}: ${(await response.text()).slice(0, 160)}`;
+            // Key/billing problems can't be fixed by retrying — break out and
+            // let the provider chain fail over to the next leg immediately.
+            if ([401, 402, 403].includes(response.status)) throw new GatewayAuthError(detail);
+            throw new Error(detail);
           }
           return parseGatewayResponse(await response.json());
         } catch (error) {
           lastError = error as Error;
+          if (error instanceof GatewayAuthError) break;
         }
       }
       throw lastError ?? new Error('gateway request failed');
