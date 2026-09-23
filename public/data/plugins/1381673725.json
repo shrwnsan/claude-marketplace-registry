@@ -1,0 +1,359 @@
+[
+  {
+    "id": "1381673725-3x-ui-admin",
+    "name": "3x-ui-admin",
+    "description": "Administer a 3x-ui panel over its HTTP API — inbounds, clients, hosts, master and node links, routing, Xray and panel settings, and subscriptions",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/3x-ui-admin-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-ai-commit-trailers",
+    "name": "ai-commit-trailers",
+    "description": "Which AI-disclosure trailer a commit carries — Generated-by, Assisted-by (mostly or partly), or none — and why never Co-authored-by or Signed-off-by for an agent",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/ai-commit-trailers-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-bash-best-practices",
+    "name": "bash-best-practices",
+    "description": "A standard for sh and bash utilities: one script shape, help as the single source of truth, portability to the bash 3.2 macOS ships, and a checker that holds the help to the code",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/bash-best-practices-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-ci",
+    "name": "ci",
+    "description": "CI that stays green for the right reasons: GitHub Actions conventions, pinned toolchains instead of registry lookups, and weekly cascades that land dependency bumps only on green",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/ci-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-close-session",
+    "name": "close-session",
+    "description": "Close a working session: save what it taught where the next session will read it, retire what went stale, and leave nothing hanging",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/close-session-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-code-comments",
+    "name": "code-comments",
+    "description": "What a comment in code says and what it must not: the reader it is written for, the register, the moment it must not be anchored to, and a checker that reads comments out of the syntax tree",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/code-comments-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-companion",
+    "name": "companion",
+    "description": "A template for an assistant persona and the two dossiers behind it, kept out of the always-loaded instructions and rewritten for whoever adopts it",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/companion-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-contributing",
+    "name": "contributing",
+    "description": "Everything published under your GitHub identity, and the homework before it: pushes, issues, pull requests, reviews and comments, each shown and approved one at a time",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/contributing-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-create-readme",
+    "name": "create-readme",
+    "description": "The house rules for a README: structure and tone, one paragraph per line with no hard wrapping, no trailing full stop, and no section that has its own file",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/create-readme-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-huix-standard",
+    "name": "huix-standard",
+    "description": "Making Nix-flake-first Linux repositories installable on any distribution without Nix: a canonical install.sh, uninstall by manifest, and a dependency preflight that never installs",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/huix-standard-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-maintainer-docs",
+    "name": "maintainer-docs",
+    "description": "Repository-wide maintainer rationale in WORKAROUNDS.md, DEVIATIONS.md and PITFALLS.md: which file owns a non-obvious fact, and when the explanation belongs beside the code instead",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/maintainer-docs-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-obsidian-cli",
+    "name": "obsidian-cli",
+    "description": "Drive a running Obsidian vault from the terminal through the official Obsidian CLI — read and write notes, find one by name, alias, tag or property, and query the link graph",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/obsidian-cli-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-papers",
+    "name": "papers",
+    "description": "Find, read and compare scientific papers without spending the conversation's context on them: a shortlist for a topic, a bounded digest of one paper, and a comparison of several",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/papers-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-skill-authoring",
+    "name": "skill-authoring",
+    "description": "The house rules for text an agent loads whole into a conversation, and check-skill.sh, the gate that proves a skill loadable, its references reachable and its links resolvable",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/skill-authoring-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-super-productivity",
+    "name": "super-productivity",
+    "description": "Manage Super Productivity tasks through its Local REST API — list, create, edit, schedule, complete and delete them, run the timer, and report tracked time",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/super-productivity-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-tests",
+    "name": "tests",
+    "description": "Tests that mean something when they are green: a verdict no pipe can swallow, logs read even at exit 0, and every check watched failing before it is trusted",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/tests-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-versioning",
+    "name": "versioning",
+    "description": "What a repository says about itself over time: whether it has a version at all, where that version lives, what its changelog looks like, and the ritual that cuts a release",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/versioning-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

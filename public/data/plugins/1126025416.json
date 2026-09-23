@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1126025416-media-pipeline",
+    "name": "media-pipeline",
+    "description": "Media asset processing plugin with skills for visual content creation.",
+    "version": "1.2.2",
+    "author": "Claude Image Gen",
+    "repository": "https://github.com/guinacio/claude-image-gen",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126025416",
+      "marketplaceName": "claude-image-gen",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126025416-image-generation",
+    "name": "image-generation",
+    "description": "name: image-generation",
+    "version": "1.0.0",
+    "author": "Claude Image Gen",
+    "repository": "https://github.com/guinacio/claude-image-gen",
+    "manifestPath": "skills/image-generation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126025416",
+      "marketplaceName": "claude-image-gen",
+      "hasSkillMd": true
+    }
+  }
+]

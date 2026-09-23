@@ -613,6 +613,23 @@
     }
   },
   {
+    "id": "1171974591-skill-creator",
+    "name": "skill-creator",
+    "description": "name: skill-creator",
+    "version": "1.0.0",
+    "author": "Arthur Hong",
+    "repository": "https://github.com/maxwellsdm1867/wheeler",
+    "manifestPath": "skills/skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1171974591",
+      "marketplaceName": "wheeler",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1171974591-start",
     "name": "start",
     "description": "name: start",

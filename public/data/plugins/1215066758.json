@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1215066758-event-outbound",
+    "name": "event-outbound",
+    "description": "Create buyer-first email and LinkedIn outreach for B2B events. Give it event context, ICP, target personas, sender context, real proof points, available assets, event logistics, and cadence preferences. It drafts validated pre-event, day-of, and post-event touches. Built from 20K+ outbound touches reviewed across 50+ fintech, cybersecurity, and B2B SaaS events that sourced $6M+ in pipeline. Runs inside Claude Code, Claude Cowork, Codex CLI, and Codex in the ChatGPT desktop app with no extra API key. The bundled local validator checks subject length, inbox-preview opener, channel length, illumination question, pronoun ratio, clear CTA questions, permission-to-send gating, event asks only when logistics are real, 4-day cadence feasibility, distinct pain angles, no sequence-mechanics openers, unsourced asset promises, unsourced proof claims, Apollo merge fields, and a 10-category cliche blocklist. Includes fully rendered Black Hat USA 2026 and Money20/20 Europe 2026 worked examples, Singapore Fintech Festival 2026 input fixtures, and Claude showcase guardrail runs.",
+    "version": "0.3.0",
+    "author": "Luminik",
+    "repository": "https://github.com/luminik-io/claude-plugins",
+    "manifestPath": "./plugins/event-outbound",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215066758",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

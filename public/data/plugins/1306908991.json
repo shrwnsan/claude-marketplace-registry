@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1306908991-prompt-coach",
+    "name": "prompt-coach",
+    "description": "問對問題教練 — turns a vague, underspecified request into a Goal / Constraints / Obstacle breakdown, then produces a ready-to-use structured prompt.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/prompt-coach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1306908991-multi-perspective-panel",
+    "name": "multi-perspective-panel",
+    "description": "多角度組隊思考 — reviews any decision, plan, or open question from four independent thinking angles (critical/creative/communication/interaction), as a parallel panel or an adversarial red/blue team debate.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/multi-perspective-panel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1306908991-ai-roleplay-practice",
+    "name": "ai-roleplay-practice",
+    "description": "AI 角色扮演練習夥伴 — sets up an interactive roleplay to rehearse difficult conversations with AI playing any persona you define, with structured feedback at the end.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/ai-roleplay-practice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1306908991-futures-studies-analyst",
+    "name": "futures-studies-analyst",
+    "description": "未來學研究方法分析器 — turns qualitative and trend data into rigorous futures-studies analysis organized by Inayatullah's Six Pillars: Delphi, CLA, scenario planning, environmental scanning, futures triangle/wheel, backcasting, Three Horizons, cross-impact analysis.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/futures-studies-analyst",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1306908991-visual-prompt-builder",
+    "name": "visual-prompt-builder",
+    "description": "視覺提示詞產生器 — coaches a vague idea into a ready-to-paste AI image/video prompt: one-question-at-a-time intake, an 8-field framework, character-lock prefixes for identity consistency, style recipes, and categorized negative-prompt lists.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/visual-prompt-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1306908991-pdca-process-review",
+    "name": "pdca-process-review",
+    "description": "PDCA 流程檢視 — apply the Deming cycle (Plan-Do-Check-Act) to systematically review and improve any recurring process or way of working, with evidence-based Check and standardize-or-adjust Act.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/pdca-process-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1306908991-agentic-dev-loop",
+    "name": "agentic-dev-loop",
+    "description": "系統化開發工作流 — research → plan.md → implement → dual verify gates (security + UI/UX) → deploy. Orchestrates project-guardrails, web-security-reviewer, and ui-ux-deploy-reviewer into one repeatable, resumable, auditable loop.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/agentic-dev-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1306908991-project-guardrails",
+    "name": "project-guardrails",
+    "description": "連動禁區防護 — analyzes a codebase for 'change A, break B' high-risk zones (high fan-in modules, data contracts, deploy configs, external contracts, algorithmic cores) and writes guardrails into the project's CLAUDE.md.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/project-guardrails",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1306908991-ui-ux-deploy-reviewer",
+    "name": "ui-ux-deploy-reviewer",
+    "description": "部署前 UI/UX 總體檢 — pre-deploy UI/UX review against 20 principles (Nielsen's 10 heuristics + interaction-psychology laws + accessibility), outputting severity-ranked issues, fixes, and a go/no-go checklist.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/ui-ux-deploy-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1306908991-web-security-reviewer",
+    "name": "web-security-reviewer",
+    "description": "防禦性安全審查 — defensive security review of your own code (Apps Script, frontend, backend): vulnerabilities, data leakage, stress/performance risks, with a severity-ranked report plus corrected code.",
+    "version": "",
+    "author": "Muzi Going Li",
+    "repository": "https://github.com/goingli0324/muzi-going-skills",
+    "manifestPath": "./plugins/web-security-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1306908991",
+      "marketplaceName": "muzi-going-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

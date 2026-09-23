@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1361519280-ultrapolish",
+    "name": "ultrapolish",
+    "description": "ultrapolish-ios (Swift/SwiftUI) and ultrapolish-web (React/TypeScript/CSS): motion, colour, typography, layout, sheets, haptics, sound, buttons, icons, copy, states, onboarding, paywalls, widgets, accessibility. Style-agnostic: reads your tokens first, never introduces a palette or a typeface.",
+    "version": "",
+    "author": "heyimjames",
+    "repository": "https://github.com/heyimjames/ultrapolish",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1361519280",
+      "marketplaceName": "ultrapolish",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1361519280-ultrapolish-ios",
+    "name": "ultrapolish-ios",
+    "description": "name: ultrapolish-ios",
+    "version": "1.0.0",
+    "author": "heyimjames",
+    "repository": "https://github.com/heyimjames/ultrapolish",
+    "manifestPath": "skills/ultrapolish-ios",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1361519280",
+      "marketplaceName": "ultrapolish",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1361519280-ultrapolish-web",
+    "name": "ultrapolish-web",
+    "description": "name: ultrapolish-web",
+    "version": "1.0.0",
+    "author": "heyimjames",
+    "repository": "https://github.com/heyimjames/ultrapolish",
+    "manifestPath": "skills/ultrapolish-web",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1361519280",
+      "marketplaceName": "ultrapolish",
+      "hasSkillMd": true
+    }
+  }
+]

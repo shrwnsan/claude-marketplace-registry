@@ -1,0 +1,200 @@
+[
+  {
+    "id": "1131684837-krci-help",
+    "name": "krci-help",
+    "description": "KubeRocketCI ecosystem guide - dry, caveman-style map of all KRCI plugins, agents, and skills plus the SDLC AI framework (which agent runs which pipeline stage)",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-help",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-godev",
+    "name": "krci-godev",
+    "description": "KubeRocketCI Go Developer agent - Expert Go and Kubernetes operator development assistance",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-godev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-general",
+    "name": "krci-general",
+    "description": "General-purpose KubeRocketCI development utilities including commit message generation and code review",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-general",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-fullstack",
+    "name": "krci-fullstack",
+    "description": "KubeRocketCI Fullstack Developer agent - Expert React, TypeScript, Radix UI, Tailwind CSS, and tRPC development assistance for portal applications",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-fullstack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-devops",
+    "name": "krci-devops",
+    "description": "KubeRocketCI DevOps agent - Expert automation for EDP-Tekton repository (github.com/epam/edp-tekton) pipeline and task onboarding",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-devops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-architect",
+    "name": "krci-architect",
+    "description": "KubeRocketCI Architect agent - Technical architecture planning, design validation, and cross-component coordination for the KRCI ecosystem",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-docs",
+    "name": "krci-docs",
+    "description": "KubeRocketCI Technical Writer agent - documentation/presentation review, narrated overview video production (scenario + React presentation app), and the full platform release documentation cycle (component release audit, RELEASES.md authoring, upgrade guide and docs versioning), applying the Microsoft Writing Style Guide and project documentation standards",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-ba",
+    "name": "krci-ba",
+    "description": "KubeRocketCI Business Analyst agent - requirements gathering, process analysis, business rules, and user journey mapping with BR/NFR traceability",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-ba",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-product",
+    "name": "krci-product",
+    "description": "KubeRocketCI Product team agents - Product Manager, Product Owner, Product Marketing Manager, and Project Manager for the full product lifecycle",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-product",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-qa",
+    "name": "krci-qa",
+    "description": "KubeRocketCI QA agents - manual and automation quality assurance: test planning, test cases, execution, defect reporting, and Gherkin test automation",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1131684837-krci-triage",
+    "name": "krci-triage",
+    "description": "KubeRocketCI testbed and workspace toolkit - provision the source workspace and a try-kuberocketci testbed, then diagnose, reproduce, fix, and verify code changes on the cluster, including end-to-end Jira-tracked issue triage",
+    "version": "",
+    "author": "KubeRocketCI Team",
+    "repository": "https://github.com/KubeRocketCI/claude-plugins",
+    "manifestPath": "./plugins/krci-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1131684837",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

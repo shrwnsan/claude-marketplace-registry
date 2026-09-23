@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1251118117-skills-github",
+    "name": "skills-github",
+    "description": "Skills for managing public GitHub repos: pre-commit checklist, release procedure, and repo scaffolding.",
+    "version": "",
+    "author": "qiaeru",
+    "repository": "https://github.com/qiaeru/skills-github",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1251118117",
+      "marketplaceName": "skills-github",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1251118117-committing",
+    "name": "committing",
+    "description": "name: committing",
+    "version": "1.0.0",
+    "author": "qiaeru",
+    "repository": "https://github.com/qiaeru/skills-github",
+    "manifestPath": "skills/committing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1251118117",
+      "marketplaceName": "skills-github",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1251118117-releasing",
+    "name": "releasing",
+    "description": "name: releasing",
+    "version": "1.0.0",
+    "author": "qiaeru",
+    "repository": "https://github.com/qiaeru/skills-github",
+    "manifestPath": "skills/releasing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1251118117",
+      "marketplaceName": "skills-github",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1251118117-scaffolding-repos",
+    "name": "scaffolding-repos",
+    "description": "name: scaffolding-repos",
+    "version": "1.0.0",
+    "author": "qiaeru",
+    "repository": "https://github.com/qiaeru/skills-github",
+    "manifestPath": "skills/scaffolding-repos",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1251118117",
+      "marketplaceName": "skills-github",
+      "hasSkillMd": true
+    }
+  }
+]

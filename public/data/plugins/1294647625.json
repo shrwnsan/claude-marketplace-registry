@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1294647625-goalforge",
+    "name": "goalforge",
+    "description": "Goal-and-verification-driven development chain for Claude Code — goal-object work packages with a harden/execute/verify lifecycle.",
+    "version": "",
+    "author": "Truncuso",
+    "repository": "https://github.com/Truncuso/cogwright",
+    "manifestPath": "./plugins/goalforge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294647625",
+      "marketplaceName": "cogwright",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1294647625-interview",
+    "name": "interview",
+    "description": "Harness-agnostic interview engine (socratic, adversarial, divergent, teachback, rapid presets) for grilling plans, specs, and ideas before they're acted on.",
+    "version": "",
+    "author": "Truncuso",
+    "repository": "https://github.com/Truncuso/cogwright",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/Truncuso/elicitforge.git",
+      "path": "adapters/claude-code",
+      "ref": "v1.2.0",
+      "sha": "5673955567aec7ed35d9d4faab6dffcaefc5701c"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294647625",
+      "marketplaceName": "cogwright",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

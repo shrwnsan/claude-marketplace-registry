@@ -20,8 +20,8 @@
   {
     "id": "1126089957-code-standards",
     "name": "code-standards",
-    "description": "Code quality standards, documentation formatting, testing philosophy, and review guidelines",
-    "version": "6.2.1",
+    "description": "Estate-specific code conventions not covered by generic review skills: logging format, monitoring-vs-test philosophy, doc format",
+    "version": "6.2.2",
     "author": "JacobPEvans",
     "repository": "https://github.com/dryvist/claude-code-plugins",
     "manifestPath": "./code-standards",
@@ -57,7 +57,7 @@
     "id": "1126089957-content-guards",
     "name": "content-guards",
     "description": "Combined content validation and guard plugin that merges token-validator, markdown-validator, webfetch-guard, and issue-limiter functionality",
-    "version": "6.2.1",
+    "version": "6.2.2",
     "author": "JacobPEvans",
     "repository": "https://github.com/dryvist/claude-code-plugins",
     "manifestPath": "./content-guards",
@@ -75,28 +75,10 @@
     "id": "1126089957-git-guards",
     "name": "git-guards",
     "description": "Combined git security and workflow protection via PreToolUse hooks - merges git-permission-guard and main-branch-guard functionality",
-    "version": "6.2.2",
+    "version": "6.2.3",
     "author": "JacobPEvans",
     "repository": "https://github.com/dryvist/claude-code-plugins",
     "manifestPath": "./git-guards",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1126089957",
-      "marketplaceName": "claude-code-plugins",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1126089957-git-standards",
-    "name": "git-standards",
-    "description": "Git workflow standards, branch hygiene, PR creation guards, and issue linking",
-    "version": "6.3.0",
-    "author": "JacobPEvans",
-    "repository": "https://github.com/dryvist/claude-code-plugins",
-    "manifestPath": "./git-standards",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -234,42 +216,6 @@
     }
   },
   {
-    "id": "1126089957-pal-health",
-    "name": "pal-health",
-    "description": "Session-start hook to warn about recent PAL MCP Doppler failures",
-    "version": "6.2.1",
-    "author": "JacobPEvans",
-    "repository": "https://github.com/dryvist/claude-code-plugins",
-    "manifestPath": "./pal-health",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1126089957",
-      "marketplaceName": "claude-code-plugins",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1126089957-pr-lifecycle",
-    "name": "pr-lifecycle",
-    "description": "Automatically triggers PR finalization after PR creation",
-    "version": "6.2.1",
-    "author": "JacobPEvans",
-    "repository": "https://github.com/dryvist/claude-code-plugins",
-    "manifestPath": "./pr-lifecycle",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1126089957",
-      "marketplaceName": "claude-code-plugins",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
     "id": "1126089957-process-cleanup",
     "name": "process-cleanup",
     "description": "Cleanup orphaned MCP server processes on session exit — workaround for upstream bug #1935",
@@ -295,42 +241,6 @@
     "author": "JacobPEvans",
     "repository": "https://github.com/dryvist/claude-code-plugins",
     "manifestPath": "./project-standards",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1126089957",
-      "marketplaceName": "claude-code-plugins",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1126089957-script-guards",
-    "name": "script-guards",
-    "description": "Prevents unnecessary script generation - enforces research-first, native-tool-first patterns via PreToolUse and UserPromptSubmit hooks",
-    "version": "6.2.1",
-    "author": "JacobPEvans",
-    "repository": "https://github.com/dryvist/claude-code-plugins",
-    "manifestPath": "./script-guards",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1126089957",
-      "marketplaceName": "claude-code-plugins",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1126089957-session-analytics",
-    "name": "session-analytics",
-    "description": "Claude Code session token analytics via Splunk OTEL telemetry",
-    "version": "6.2.1",
-    "author": "JacobPEvans",
-    "repository": "https://github.com/dryvist/claude-code-plugins",
-    "manifestPath": "./session-analytics",
     "isValid": true,
     "errors": [],
     "warnings": [],

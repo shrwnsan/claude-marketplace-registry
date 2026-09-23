@@ -3,7 +3,7 @@
     "id": "1201775350-great-cto",
     "name": "great_cto",
     "description": "You already have the agent. This is everything around it. great_cto runs Claude Code as a pipeline of 70 specialist agents — an independent model checks each stage before the next builds on it, spending caps refuse rather than warn, and three decisions stay yours: what gets built, how, and whether it ships.",
-    "version": "3.31.0",
+    "version": "3.32.0",
     "author": "Alexander Velikiy",
     "repository": "https://github.com/avelikiy/great_cto",
     "manifestPath": "./",
@@ -178,6 +178,23 @@
     "author": "Alexander Velikiy",
     "repository": "https://github.com/avelikiy/great_cto",
     "manifestPath": "skills/decision-eval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-deploy-landed",
+    "name": "deploy-landed",
+    "description": "name: deploy-landed",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/deploy-landed",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -399,6 +416,40 @@
     "author": "Alexander Velikiy",
     "repository": "https://github.com/avelikiy/great_cto",
     "manifestPath": "skills/quant-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-secrets-rotation",
+    "name": "secrets-rotation",
+    "description": "name: secrets-rotation",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/secrets-rotation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201775350",
+      "marketplaceName": "great_cto",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201775350-signing-preflight",
+    "name": "signing-preflight",
+    "description": "name: signing-preflight",
+    "version": "1.0.0",
+    "author": "Alexander Velikiy",
+    "repository": "https://github.com/avelikiy/great_cto",
+    "manifestPath": "skills/signing-preflight",
     "isValid": true,
     "errors": [],
     "warnings": [],

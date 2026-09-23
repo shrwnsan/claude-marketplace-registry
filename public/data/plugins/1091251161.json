@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1091251161-xclaude-plugin",
+    "name": "xclaude-plugin",
+    "description": "Modular iOS development automation suite. 8 workflow-specific MCP servers (400-3500 tokens) with 24 tools across Xcode, Simulator, and IDB. Enable only what you need!",
+    "version": "0.4.0",
+    "author": "Conor Luddy",
+    "repository": "https://github.com/conorluddy/xclaude-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1091251161",
+      "marketplaceName": "xclaude-plugin",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1091251161-accessibility-testing",
+    "name": "accessibility-testing",
+    "description": "name: accessibility-testing",
+    "version": "1.0.0",
+    "author": "Conor Luddy",
+    "repository": "https://github.com/conorluddy/xclaude-plugin",
+    "manifestPath": "skills/accessibility-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1091251161",
+      "marketplaceName": "xclaude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1091251161-crash-debugging",
+    "name": "crash-debugging",
+    "description": "name: crash-debugging",
+    "version": "1.0.0",
+    "author": "Conor Luddy",
+    "repository": "https://github.com/conorluddy/xclaude-plugin",
+    "manifestPath": "skills/crash-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1091251161",
+      "marketplaceName": "xclaude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1091251161-ios-testing-patterns",
+    "name": "ios-testing-patterns",
+    "description": "name: ios-testing-patterns",
+    "version": "1.0.0",
+    "author": "Conor Luddy",
+    "repository": "https://github.com/conorluddy/xclaude-plugin",
+    "manifestPath": "skills/ios-testing-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1091251161",
+      "marketplaceName": "xclaude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1091251161-performance-profiling",
+    "name": "performance-profiling",
+    "description": "name: performance-profiling",
+    "version": "1.0.0",
+    "author": "Conor Luddy",
+    "repository": "https://github.com/conorluddy/xclaude-plugin",
+    "manifestPath": "skills/performance-profiling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1091251161",
+      "marketplaceName": "xclaude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1091251161-simulator-workflows",
+    "name": "simulator-workflows",
+    "description": "name: simulator-workflows",
+    "version": "1.0.0",
+    "author": "Conor Luddy",
+    "repository": "https://github.com/conorluddy/xclaude-plugin",
+    "manifestPath": "skills/simulator-workflows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1091251161",
+      "marketplaceName": "xclaude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1091251161-state-management",
+    "name": "state-management",
+    "description": "name: state-management",
+    "version": "1.0.0",
+    "author": "Conor Luddy",
+    "repository": "https://github.com/conorluddy/xclaude-plugin",
+    "manifestPath": "skills/state-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1091251161",
+      "marketplaceName": "xclaude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1091251161-ui-automation-workflows",
+    "name": "ui-automation-workflows",
+    "description": "name: ui-automation-workflows",
+    "version": "1.0.0",
+    "author": "Conor Luddy",
+    "repository": "https://github.com/conorluddy/xclaude-plugin",
+    "manifestPath": "skills/ui-automation-workflows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1091251161",
+      "marketplaceName": "xclaude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1091251161-xcode-workflows",
+    "name": "xcode-workflows",
+    "description": "name: xcode-workflows",
+    "version": "1.0.0",
+    "author": "Conor Luddy",
+    "repository": "https://github.com/conorluddy/xclaude-plugin",
+    "manifestPath": "skills/xcode-workflows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1091251161",
+      "marketplaceName": "xclaude-plugin",
+      "hasSkillMd": true
+    }
+  }
+]
