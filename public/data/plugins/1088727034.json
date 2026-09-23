@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1088727034-claudit",
+    "name": "claudit",
+    "description": "Audit and optimize your Claude Code configuration. Caches current Claude Code ecosystem knowledge so any subsequent agent task — building a skill, configuring an MCP, authoring CLAUDE.md — can read it instead of re-fetching docs.",
+    "version": "3.0.0",
+    "author": "acoz-labs",
+    "repository": "https://github.com/acoz-labs/quickstop",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/acoz-labs/quickstop.git",
+      "path": "plugins/claudit",
+      "sha": "b7370388e26ccac0ebf2c48a6b86942eb7259a9d"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1088727034",
+      "marketplaceName": "quickstop",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

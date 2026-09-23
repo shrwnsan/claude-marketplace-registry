@@ -1,0 +1,142 @@
+[
+  {
+    "id": "1242094128-stripe",
+    "name": "stripe",
+    "description": "Full programmatic access to every Stripe API endpoint across many accounts (standalone keys and Connect), with a binary-enforced safety tier and the bundled Stripe CLI.",
+    "version": "",
+    "author": "Julian Dickie",
+    "repository": "https://github.com/juliandickie/stripe-plugin",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/juliandickie/stripe-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242094128",
+      "marketplaceName": "stripe-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1242094128-stripe-accounts",
+    "name": "stripe-accounts",
+    "description": "name: stripe-accounts",
+    "version": "1.0.0",
+    "author": "Julian Dickie",
+    "repository": "https://github.com/juliandickie/stripe-plugin",
+    "manifestPath": "skills/stripe-accounts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242094128",
+      "marketplaceName": "stripe-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242094128-stripe-api",
+    "name": "stripe-api",
+    "description": "name: stripe-api",
+    "version": "1.0.0",
+    "author": "Julian Dickie",
+    "repository": "https://github.com/juliandickie/stripe-plugin",
+    "manifestPath": "skills/stripe-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242094128",
+      "marketplaceName": "stripe-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242094128-stripe-money-ops",
+    "name": "stripe-money-ops",
+    "description": "name: stripe-money-ops",
+    "version": "1.0.0",
+    "author": "Julian Dickie",
+    "repository": "https://github.com/juliandickie/stripe-plugin",
+    "manifestPath": "skills/stripe-money-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242094128",
+      "marketplaceName": "stripe-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242094128-stripe-multi-account",
+    "name": "stripe-multi-account",
+    "description": "name: stripe-multi-account",
+    "version": "1.0.0",
+    "author": "Julian Dickie",
+    "repository": "https://github.com/juliandickie/stripe-plugin",
+    "manifestPath": "skills/stripe-multi-account",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242094128",
+      "marketplaceName": "stripe-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242094128-stripe-reports",
+    "name": "stripe-reports",
+    "description": "name: stripe-reports",
+    "version": "1.0.0",
+    "author": "Julian Dickie",
+    "repository": "https://github.com/juliandickie/stripe-plugin",
+    "manifestPath": "skills/stripe-reports",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242094128",
+      "marketplaceName": "stripe-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242094128-stripe-setup",
+    "name": "stripe-setup",
+    "description": "name: stripe-setup",
+    "version": "1.0.0",
+    "author": "Julian Dickie",
+    "repository": "https://github.com/juliandickie/stripe-plugin",
+    "manifestPath": "skills/stripe-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242094128",
+      "marketplaceName": "stripe-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242094128-stripe-webhooks",
+    "name": "stripe-webhooks",
+    "description": "name: stripe-webhooks",
+    "version": "1.0.0",
+    "author": "Julian Dickie",
+    "repository": "https://github.com/juliandickie/stripe-plugin",
+    "manifestPath": "skills/stripe-webhooks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242094128",
+      "marketplaceName": "stripe-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1182214313-claude-code-kit",
+    "name": "claude-code-kit",
+    "description": "Turn any task into production-ready code. Rules and skills work on any coding harness; specialized agents and automatic hook enforcement are a Claude Code deepening feature.",
+    "version": "",
+    "author": "This-HW",
+    "repository": "https://github.com/This-HW/claude-code-kit",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/This-HW/claude-code-kit",
+      "path": "plugins/common"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1182214313",
+      "marketplaceName": "claude-code-kit",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

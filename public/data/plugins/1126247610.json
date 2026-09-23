@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1126247610-ruby-lsp",
+    "name": "ruby-lsp",
+    "description": "Ruby language server (Shopify's ruby-lsp) for code intelligence",
+    "version": "1.0.0",
+    "author": "hoblin",
+    "repository": "https://github.com/hoblin/claude-ruby-marketplace",
+    "manifestPath": "./plugins/ruby-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126247610",
+      "marketplaceName": "claude-ruby-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126247610-rspec",
+    "name": "rspec",
+    "description": "RSpec and FactoryBot testing patterns for Rails",
+    "version": "1.1.2",
+    "author": "hoblin",
+    "repository": "https://github.com/hoblin/claude-ruby-marketplace",
+    "manifestPath": "./plugins/rspec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126247610",
+      "marketplaceName": "claude-ruby-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126247610-draper",
+    "name": "draper",
+    "description": "Draper decorator patterns for Rails view logic",
+    "version": "1.1.2",
+    "author": "hoblin",
+    "repository": "https://github.com/hoblin/claude-ruby-marketplace",
+    "manifestPath": "./plugins/draper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126247610",
+      "marketplaceName": "claude-ruby-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126247610-activerecord",
+    "name": "activerecord",
+    "description": "ActiveRecord patterns for Rails models and queries",
+    "version": "1.0.2",
+    "author": "hoblin",
+    "repository": "https://github.com/hoblin/claude-ruby-marketplace",
+    "manifestPath": "./plugins/activerecord",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126247610",
+      "marketplaceName": "claude-ruby-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126247610-mcp",
+    "name": "mcp",
+    "description": "MCP server development with Ruby SDK",
+    "version": "1.0.2",
+    "author": "hoblin",
+    "repository": "https://github.com/hoblin/claude-ruby-marketplace",
+    "manifestPath": "./plugins/mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126247610",
+      "marketplaceName": "claude-ruby-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126247610-dragonruby",
+    "name": "dragonruby",
+    "description": "DragonRuby Game Toolkit patterns for 2D game development",
+    "version": "1.0.5",
+    "author": "hoblin",
+    "repository": "https://github.com/hoblin/claude-ruby-marketplace",
+    "manifestPath": "./plugins/dragonruby",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126247610",
+      "marketplaceName": "claude-ruby-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126247610-ratatui-ruby",
+    "name": "ratatui-ruby",
+    "description": "RatatuiRuby TUI development for terminal user interfaces",
+    "version": "1.2.2",
+    "author": "hoblin",
+    "repository": "https://github.com/hoblin/claude-ruby-marketplace",
+    "manifestPath": "./plugins/ratatui-ruby",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126247610",
+      "marketplaceName": "claude-ruby-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1126247610-rpi",
+    "name": "rpi",
+    "description": "RPI workflow: Research, Planning, Implementation with context engineering",
+    "version": "2.1.0",
+    "author": "hoblin",
+    "repository": "https://github.com/hoblin/claude-ruby-marketplace",
+    "manifestPath": "./plugins/rpi",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126247610",
+      "marketplaceName": "claude-ruby-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1287827104-jen",
+    "name": "jen",
+    "description": "PMO型AI開発オーケストレーター。指揮をClaude Fable 5.1、実行をhaiku/sonnet/opus層に分離。18 agents / 5 skills / 5 commands / safety hooks / quality gates.",
+    "version": "3.8.2",
+    "author": "Yuukinosh",
+    "repository": "https://github.com/youki0p0/jen-marketplace",
+    "manifestPath": "./plugins/jen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1287827104",
+      "marketplaceName": "jen-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1287827104-jen-classic",
+    "name": "jen-classic",
+    "description": "Jen v3 Classic — Fable不要版。指揮をOpus 5に載せ、再アンカリング・セッションローテーション・opus合議制でFable版相当の品質を狙う。jen(Fable版)とは同時に有効化しないこと。",
+    "version": "3.8.2",
+    "author": "Yuukinosh",
+    "repository": "https://github.com/youki0p0/jen-marketplace",
+    "manifestPath": "./plugins/jen-classic",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1287827104",
+      "marketplaceName": "jen-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

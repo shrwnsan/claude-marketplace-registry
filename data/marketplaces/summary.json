@@ -1,27 +1,26 @@
 {
   "totalFound": 325,
-  "withManifest": 237,
-  "lastUpdated": "2026-09-22T03:43:34.275Z",
+  "withManifest": 261,
+  "lastUpdated": "2026-09-23T03:41:56.504Z",
   "searchQuery": "",
   "languages": {
-    "Python": 100,
-    "Shell": 41,
+    "Python": 99,
+    "Shell": 46,
     "TypeScript": 35,
-    "Rust": 9,
-    "JavaScript": 58,
-    "Go": 11,
-    "Unknown": 38,
+    "Rust": 8,
+    "JavaScript": 56,
+    "Go": 12,
+    "Unknown": 36,
     "HTML": 16,
     "AMPL": 1,
     "TeX": 1,
     "C++": 1,
-    "Swift": 1,
-    "Go Template": 1,
+    "Swift": 2,
     "Svelte": 1,
-    "Kotlin": 1,
-    "Astro": 1,
     "Jupyter Notebook": 2,
+    "Astro": 1,
     "C#": 2,
+    "Ruby": 1,
     "Typst": 1,
     "Makefile": 1,
     "Java": 2,
@@ -30,22 +29,22 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 264810,
+      "stars": 265532,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 177509,
+      "stars": 177671,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75454,
+      "stars": 75504,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 36599,
+      "stars": 36637,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -60,17 +59,17 @@
     },
     {
       "name": "web-access",
-      "stars": 8999,
+      "stars": 9007,
       "url": "https://github.com/eze-is/web-access"
     },
     {
       "name": "claude-octopus",
-      "stars": 4092,
+      "stars": 4094,
       "url": "https://github.com/nyldn/claude-octopus"
     },
     {
       "name": "awesome-ChatGPT-repositories",
-      "stars": 3261,
+      "stars": 3262,
       "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
     },
     {

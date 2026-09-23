@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1125341424-context7-agent",
+    "name": "context7-agent",
+    "description": "Context7 integration with a subagent-first workflow for fetching OSS library documentation",
+    "version": "1.0.0",
+    "author": "vardior",
+    "repository": "https://github.com/vardior/claude-marketplace",
+    "manifestPath": "./context7-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125341424",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1125341424-ux-docs-generator",
+    "name": "ux-docs-generator",
+    "description": "Extract comprehensive UX documentation from code using AI agents. Discovers UI pages, APIs, and features to power an AI product expert via RAG.",
+    "version": "2.0.0",
+    "author": "vardior",
+    "repository": "https://github.com/vardior/claude-marketplace",
+    "manifestPath": "./ux-docs-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125341424",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

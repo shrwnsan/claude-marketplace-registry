@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1321567766-context-kit",
+    "name": "context-kit",
+    "description": "Session ledger, checkpoint pass and compaction guardrail for long Claude Code sessions. Silent by construction.",
+    "version": "1.7.1",
+    "author": "kaposty",
+    "repository": "https://github.com/kaposty/context-kit",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1321567766",
+      "marketplaceName": "context-kit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1321567766-brief",
+    "name": "brief",
+    "description": "name: brief",
+    "version": "1.0.0",
+    "author": "kaposty",
+    "repository": "https://github.com/kaposty/context-kit",
+    "manifestPath": "skills/brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1321567766",
+      "marketplaceName": "context-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1321567766-checkpoint",
+    "name": "checkpoint",
+    "description": "name: checkpoint",
+    "version": "1.0.0",
+    "author": "kaposty",
+    "repository": "https://github.com/kaposty/context-kit",
+    "manifestPath": "skills/checkpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1321567766",
+      "marketplaceName": "context-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1321567766-session-ledger",
+    "name": "session-ledger",
+    "description": "name: session-ledger",
+    "version": "1.0.0",
+    "author": "kaposty",
+    "repository": "https://github.com/kaposty/context-kit",
+    "manifestPath": "skills/session-ledger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1321567766",
+      "marketplaceName": "context-kit",
+      "hasSkillMd": true
+    }
+  }
+]

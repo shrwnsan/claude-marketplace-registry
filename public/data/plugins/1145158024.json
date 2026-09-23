@@ -1,0 +1,258 @@
+[
+  {
+    "id": "1145158024-product-strategy",
+    "name": "product-strategy",
+    "description": "Product strategy and innovation frameworks including Jobs to Be Done (Clayton Christensen) for customer discovery and product design, tactical negotiation skills (Chris Voss), willingness-to-pay pricing (Monetizing Innovation), and startup metrics (Lean Analytics)",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./jobs-to-be-done",
+        "./negotiation",
+        "./mom-test",
+        "./monetizing-innovation",
+        "./lean-analytics"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145158024-ux-design",
+    "name": "ux-design",
+    "description": "UX and UI design skills including Refactoring UI, iOS HIG design, usability heuristics, habit-forming product design, behavior design for retention, web typography, award-winning top-design, Steve Jobs-style design reviews, and Don Norman's foundational design principles",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./refactoring-ui",
+        "./ios-hig-design",
+        "./ux-heuristics",
+        "./hooked-ux",
+        "./improve-retention",
+        "./web-typography",
+        "./top-design",
+        "./design-everyday-things",
+        "./lean-ux",
+        "./microinteractions",
+        "./steve-jobs-design-review"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145158024-marketing-cro",
+    "name": "marketing-cro",
+    "description": "Marketing and conversion optimization skills including CRO methodology, StoryBrand messaging, Scorecard Marketing lead generation, viral marketing (Contagious), and 1-Page Marketing Plan",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./cro-methodology",
+        "./storybrand-messaging",
+        "./scorecard-marketing",
+        "./contagious",
+        "./one-page-marketing"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145158024-sales-influence",
+    "name": "sales-influence",
+    "description": "Sales, persuasion, and messaging skills including Cialdini's influence psychology, Aaron Ross's outbound sales methodology, Heath Brothers' sticky messaging, and Alex Hormozi's offer creation",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./influence-psychology",
+        "./predictable-revenue",
+        "./made-to-stick",
+        "./hundred-million-offers"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145158024-product-innovation",
+    "name": "product-innovation",
+    "description": "Product innovation and validation frameworks including Lean Startup methodology, Google Ventures Design Sprint, and Don Norman's design principles",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./lean-startup",
+        "./design-sprint",
+        "./design-everyday-things",
+        "./inspired-product",
+        "./continuous-discovery",
+        "./37signals-way"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145158024-strategy-growth",
+    "name": "strategy-growth",
+    "description": "Business strategy and growth frameworks including Crossing the Chasm tech adoption, Blue Ocean Strategy value innovation, EOS business operating system, Obviously Awesome positioning, Good Strategy Bad Strategy kernels, and Cold Start Problem network effects",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./crossing-the-chasm",
+        "./blue-ocean-strategy",
+        "./traction-eos",
+        "./obviously-awesome",
+        "./good-strategy-bad-strategy",
+        "./cold-start-problem"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145158024-team-motivation",
+    "name": "team-motivation",
+    "description": "Team motivation and management skills including Daniel Pink's Autonomy, Mastery, Purpose (AMP) principles and Andy Grove's High Output Management (leverage, one-on-ones, OKRs, task-relevant maturity)",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./drive-motivation",
+        "./high-output-management"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145158024-code-craftsmanship",
+    "name": "code-craftsmanship",
+    "description": "Code quality and software design skills including Clean Code (Robert C. Martin), Refactoring patterns (Martin Fowler), A Philosophy of Software Design (John Ousterhout), The Pragmatic Programmer (Hunt & Thomas), Domain-Driven Design (Eric Evans), Working Effectively with Legacy Code (Michael Feathers), and Google's Developer Documentation Style Guide (technical-documentation)",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./clean-code",
+        "./refactoring-patterns",
+        "./software-design-philosophy",
+        "./pragmatic-programmer",
+        "./domain-driven-design",
+        "./working-with-legacy-code",
+        "./technical-documentation"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145158024-systems-architecture",
+    "name": "systems-architecture",
+    "description": "Systems architecture and distributed systems skills including Designing Data-Intensive Applications (Martin Kleppmann), System Design Interview (Alex Xu), Clean Architecture (Robert C. Martin), Release It! (Michael Nygard), High Performance Browser Networking (Ilya Grigorik), and Team Topologies (Skelton & Pais)",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./ddia-systems",
+        "./system-design",
+        "./clean-architecture",
+        "./release-it",
+        "./high-perf-browser",
+        "./team-topologies"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1145158024-metaskills",
+    "name": "metaskills",
+    "description": "Fourteen guided journeys that orchestrate the whole skill library step by step — create, improve, and grow a business, website, or app, plus improve code quality, remove technical debt, design code architecture, optimize a conversion flow, and optimize an existing codebase for speed and structure. Each metaskill invokes the right skills phase by phase, asks the user questions at every decision point, and records results as living documents in the project docs/ folder",
+    "version": "1.8.0",
+    "author": "Wondel.ai",
+    "repository": "https://github.com/wondelai/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145158024",
+      "marketplaceName": "skills",
+      "skills": [
+        "./create-business",
+        "./create-website",
+        "./create-app",
+        "./improve-business",
+        "./improve-website",
+        "./improve-app",
+        "./grow-business",
+        "./grow-website",
+        "./grow-app",
+        "./improve-code-quality",
+        "./remove-technical-debt",
+        "./design-code-architecture",
+        "./conversion-optimization",
+        "./architecture-optimization"
+      ],
+      "strict": false
+    }
+  }
+]

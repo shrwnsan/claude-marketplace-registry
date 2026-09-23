@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1256119552-claude-memory",
+    "name": "claude-memory",
+    "description": "Three-tier cross-session memory for Claude Code: per-session captures consolidate weekly into durable abstractions, auto-injected at session start. Per-project, opt-in, local-only.",
+    "version": "0.3.6",
+    "author": "Eduardo Souza",
+    "repository": "https://github.com/edusouza/edusouza-plugins",
+    "manifestPath": "./plugins/claude-memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256119552",
+      "marketplaceName": "edusouza-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1256119552-delivery-workflow",
+    "name": "delivery-workflow",
+    "description": "Feature delivery suite for GitHub: a TDD dev-workflow (with a coverage Stop-gate hook), epic orchestration across an issue hierarchy, PR review-comment resolution, PR-bound CI autoheal, and branch/main CI autoheal for deployment pipelines. Drives code from issue to green.",
+    "version": "0.4.0",
+    "author": "Eduardo Souza",
+    "repository": "https://github.com/edusouza/edusouza-plugins",
+    "manifestPath": "./plugins/delivery-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256119552",
+      "marketplaceName": "edusouza-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1256119552-issue-ops",
+    "name": "issue-ops",
+    "description": "Turn inputs into structured GitHub issues: bug-rca enriches a bug issue with code + observability root-cause analysis (diagnosis only); spec-to-issues converts a spec/PRD folder into an Epic→Spec→Task hierarchy.",
+    "version": "0.1.0",
+    "author": "Eduardo Souza",
+    "repository": "https://github.com/edusouza/edusouza-plugins",
+    "manifestPath": "./plugins/issue-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256119552",
+      "marketplaceName": "edusouza-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1256119552-context-docs",
+    "name": "context-docs",
+    "description": "Generate a modular set of context-engineering docs under docs/context/ that AI agents lazy-load on demand. Analyzes config, source, tests, CI/CD, and git history to capture architecture, standards, patterns, and decisions for any software project.",
+    "version": "0.2.0",
+    "author": "Eduardo Souza",
+    "repository": "https://github.com/edusouza/edusouza-plugins",
+    "manifestPath": "./plugins/context-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256119552",
+      "marketplaceName": "edusouza-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1256119552-design-to-ui",
+    "name": "design-to-ui",
+    "description": "Turn a design into UI components using atomic design. Source-agnostic (Stitch, Claude Design handoff/HTML, or an image) and framework-agnostic (React, Vue, Svelte, Angular, Solid).",
+    "version": "0.1.0",
+    "author": "Eduardo Souza",
+    "repository": "https://github.com/edusouza/edusouza-plugins",
+    "manifestPath": "./plugins/design-to-ui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256119552",
+      "marketplaceName": "edusouza-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1256119552-llm-wiki",
+    "name": "llm-wiki",
+    "description": "Karpathy's LLM-Wiki pattern: bootstrap scaffolds sources/, inbox/, and wiki/ with a schema CLAUDE.md; ingest turns curated sources into cross-linked wiki pages; process-inbox triages the fleeting-capture backlog into the same wiki; query answers questions from the wiki and files good answers back; lint audits the wiki for structural drift and suggests what to research next.",
+    "version": "0.1.0",
+    "author": "Eduardo Souza",
+    "repository": "https://github.com/edusouza/edusouza-plugins",
+    "manifestPath": "./plugins/llm-wiki",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256119552",
+      "marketplaceName": "edusouza-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1256119552-memory-wiki",
+    "name": "memory-wiki",
+    "description": "Turns claude-memory's weekly rollups and flat Tier-3 concepts into a cross-linked, searchable wiki. ingest distils the un-ingested rollups and inbox captures into typed pages; a SessionStart hook puts the resulting symptom index and component map in front of the model; lint reports broken wikilinks, orphans and schema errors without fixing them. Reads what claude-memory writes and never modifies it.",
+    "version": "0.4.0",
+    "author": "Eduardo Souza",
+    "repository": "https://github.com/edusouza/edusouza-plugins",
+    "manifestPath": "./plugins/memory-wiki",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256119552",
+      "marketplaceName": "edusouza-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

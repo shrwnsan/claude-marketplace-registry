@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1381871648-brief-interview",
+    "name": "brief-interview",
+    "description": "Interviews the client before writing a project brief for development: problem, goals, priority, non-goals, user stories, requirements, acceptance criteria and open questions — containing only what the client confirmed.",
+    "version": "1.0.0",
+    "author": "time2map",
+    "repository": "https://github.com/time2map/skills",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/time2map/claude-brief-interview.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381871648",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]
