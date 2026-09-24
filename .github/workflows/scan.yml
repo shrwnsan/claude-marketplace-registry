@@ -211,6 +211,17 @@ jobs:
           name: generated-data
           path: ./
 
+      - name: Remove retired legacy payloads
+        # complete.json/data.min.json stopped being generated in #360, but
+        # download-artifact only OVERLAYS files onto the checkout — the
+        # committed copies from main would survive every artifact download
+        # and the data-update PR would never record their deletion. Delete
+        # them explicitly so the removal lands exactly once, after which
+        # this step is a harmless no-op.
+        run: |
+          rm -f data/generated/complete.json data/generated/data.min.json \
+                public/data/complete.json public/data/data.min.json
+
       - name: Create data update PR
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1  # v8.1.1
         id: create-pr
