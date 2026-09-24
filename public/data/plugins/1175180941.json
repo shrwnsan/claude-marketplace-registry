@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1175180941-almide",
+    "name": "almide",
+    "description": "MCP tools for the Almide compiler (check / test / API outline / explain / fmt-check) plus the .almd language server.",
+    "version": "",
+    "author": "almide",
+    "repository": "https://github.com/almide/almide",
+    "manifestPath": "./tools/claude-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1175180941",
+      "marketplaceName": "almide",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

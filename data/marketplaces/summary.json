@@ -1,14 +1,14 @@
 {
-  "totalFound": 325,
-  "withManifest": 261,
-  "lastUpdated": "2026-09-23T03:41:56.504Z",
+  "totalFound": 331,
+  "withManifest": 264,
+  "lastUpdated": "2026-09-24T03:33:38.769Z",
   "searchQuery": "",
   "languages": {
-    "Python": 99,
+    "Python": 103,
     "Shell": 46,
     "TypeScript": 35,
-    "Rust": 8,
-    "JavaScript": 56,
+    "Rust": 9,
+    "JavaScript": 57,
     "Go": 12,
     "Unknown": 36,
     "HTML": 16,
@@ -20,36 +20,36 @@
     "Jupyter Notebook": 2,
     "Astro": 1,
     "C#": 2,
-    "Ruby": 1,
     "Typst": 1,
     "Makefile": 1,
+    "Ruby": 1,
     "Java": 2,
     "PHP": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 265532,
+      "stars": 266240,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 177671,
+      "stars": 177842,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75504,
+      "stars": 75559,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 36637,
+      "stars": 36667,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "daily",
-      "stars": 20071,
+      "stars": 20074,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
@@ -59,22 +59,22 @@
     },
     {
       "name": "web-access",
-      "stars": 9007,
+      "stars": 9015,
       "url": "https://github.com/eze-is/web-access"
     },
     {
       "name": "claude-octopus",
-      "stars": 4094,
+      "stars": 4096,
       "url": "https://github.com/nyldn/claude-octopus"
     },
     {
       "name": "awesome-ChatGPT-repositories",
-      "stars": 3262,
+      "stars": 3261,
       "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
     },
     {
       "name": "Claude-to-IM-skill",
-      "stars": 2882,
+      "stars": 2880,
       "url": "https://github.com/op7418/Claude-to-IM-skill"
     }
   ]

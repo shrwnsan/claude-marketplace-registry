@@ -3,7 +3,7 @@
     "id": "1200304299-cometchat-skills",
     "name": "cometchat-skills",
     "description": "UI Kit skills for integrating CometChat across React v7, Angular v5, React Native v5, Android v6 (Kotlin/Compose), iOS v5 (Swift/UIKit, SPM) and Flutter v6. The /cometchat dispatcher detects your project — web (React on Vite/Next/CRA, or Angular) or mobile (React Native/Expo, Android, iOS, Flutter) — and routes to task-shaped skills (core, components, placement, customization, features, calls, push, migration; plus platform patterns). Headless Calls SDK skills cover calling without a UI Kit. Run `/cometchat add chat to my app` to start. Thin entry with progressive disclosure. Backed by a deterministic CLI and a CI-gated verification pipeline: every skill is checked against its pinned kit (symbol catalog + compile fence), and several families also pass a live simulator/emulator smoke (per-family status in peers.yaml).",
-    "version": "5.0.0",
+    "version": "5.0.1",
     "author": "CometChat",
     "repository": "https://github.com/cometchat/cometchat-skills",
     "manifestPath": ".",
@@ -15,6 +15,40 @@
       "marketplaceName": "cometchat-skills",
       "skills": "./skills",
       "strict": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-a11y",
+    "name": "cometchat-a11y",
+    "description": "name: cometchat-a11y",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-a11y",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-analytics",
+    "name": "cometchat-analytics",
+    "description": "name: cometchat-analytics",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-analytics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
     }
   },
   {
@@ -545,6 +579,40 @@
     }
   },
   {
+    "id": "1200304299-cometchat-audit",
+    "name": "cometchat-audit",
+    "description": "name: cometchat-audit",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-compliance",
+    "name": "cometchat-compliance",
+    "description": "name: cometchat-compliance",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1200304299-cometchat-flutter-v5-sdk",
     "name": "cometchat-flutter-v5-sdk",
     "description": "name: cometchat-flutter-v5-sdk",
@@ -783,6 +851,23 @@
     }
   },
   {
+    "id": "1200304299-cometchat-i18n",
+    "name": "cometchat-i18n",
+    "description": "name: cometchat-i18n",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-i18n",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1200304299-cometchat-ios-calls",
     "name": "cometchat-ios-calls",
     "description": "name: cometchat-ios-calls",
@@ -902,6 +987,23 @@
     }
   },
   {
+    "id": "1200304299-cometchat-ios-production",
+    "name": "cometchat-ios-production",
+    "description": "name: cometchat-ios-production",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-ios-production",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1200304299-cometchat-ios-push",
     "name": "cometchat-ios-push",
     "description": "name: cometchat-ios-push",
@@ -909,6 +1011,40 @@
     "author": "CometChat",
     "repository": "https://github.com/cometchat/cometchat-skills",
     "manifestPath": "skills/cometchat-ios-push",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-ios-testing",
+    "name": "cometchat-ios-testing",
+    "description": "name: cometchat-ios-testing",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-ios-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-ios-troubleshooting",
+    "name": "cometchat-ios-troubleshooting",
+    "description": "name: cometchat-ios-troubleshooting",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-ios-troubleshooting",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -943,6 +1079,74 @@
     "author": "CometChat",
     "repository": "https://github.com/cometchat/cometchat-skills",
     "manifestPath": "skills/cometchat-js-v5-sdk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-migrate-from-getstream",
+    "name": "cometchat-migrate-from-getstream",
+    "description": "name: cometchat-migrate-from-getstream",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-migrate-from-getstream",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-migrate-from-sendbird",
+    "name": "cometchat-migrate-from-sendbird",
+    "description": "name: cometchat-migrate-from-sendbird",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-migrate-from-sendbird",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-migrate-from-twilio",
+    "name": "cometchat-migrate-from-twilio",
+    "description": "name: cometchat-migrate-from-twilio",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-migrate-from-twilio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-moderation",
+    "name": "cometchat-moderation",
+    "description": "name: cometchat-moderation",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-moderation",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -1361,6 +1565,23 @@
     }
   },
   {
+    "id": "1200304299-cometchat-react-v7-production",
+    "name": "cometchat-react-v7-production",
+    "description": "name: cometchat-react-v7-production",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-react-v7-production",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1200304299-cometchat-react-v7-push",
     "name": "cometchat-react-v7-push",
     "description": "name: cometchat-react-v7-push",
@@ -1368,6 +1589,74 @@
     "author": "CometChat",
     "repository": "https://github.com/cometchat/cometchat-skills",
     "manifestPath": "skills/cometchat-react-v7-push",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-react-v7-testing",
+    "name": "cometchat-react-v7-testing",
+    "description": "name: cometchat-react-v7-testing",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-react-v7-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-react-v7-troubleshooting",
+    "name": "cometchat-react-v7-troubleshooting",
+    "description": "name: cometchat-react-v7-troubleshooting",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-react-v7-troubleshooting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-security",
+    "name": "cometchat-security",
+    "description": "name: cometchat-security",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200304299",
+      "marketplaceName": "cometchat-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200304299-cometchat-self-host",
+    "name": "cometchat-self-host",
+    "description": "name: cometchat-self-host",
+    "version": "1.0.0",
+    "author": "CometChat",
+    "repository": "https://github.com/cometchat/cometchat-skills",
+    "manifestPath": "skills/cometchat-self-host",
     "isValid": true,
     "errors": [],
     "warnings": [],

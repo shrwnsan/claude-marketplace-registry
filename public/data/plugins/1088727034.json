@@ -21,5 +21,28 @@
       "skills": [],
       "strict": false
     }
+  },
+  {
+    "id": "1088727034-writing-for-humans",
+    "name": "writing-for-humans",
+    "description": "The original Writing for Humans kit, packaged as a selectable Claude Code output style and two skills.",
+    "version": "0.2.0",
+    "author": "acoz-labs",
+    "repository": "https://github.com/acoz-labs/quickstop",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/acoz-labs/quickstop.git",
+      "path": "plugins/claude-code/writing-for-humans",
+      "sha": "288b7a6fdda9b96c6e86b8267acce1f81fe871fd"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1088727034",
+      "marketplaceName": "quickstop",
+      "skills": [],
+      "strict": false
+    }
   }
 ]
