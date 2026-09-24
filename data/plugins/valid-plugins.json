@@ -10650,8 +10650,8 @@
   {
     "id": "1134819911-octo",
     "name": "octo",
-    "description": "v11.9.0 - Add Opus 5.5 and Deja memory, with safer long-running workflows and session handoffs. 31 personas, 54 commands, 63 skills. Run /octo:setup.",
-    "version": "11.9.0",
+    "description": "v11.9.1 - Make Define honor --timeout, finish when a provider seat fails, and skip an out-of-quota Antigravity seat. 31 personas, 54 commands, 63 skills. Run /octo:setup.",
+    "version": "11.9.1",
     "author": "nyldn",
     "repository": "https://github.com/nyldn/claude-octopus",
     "manifestPath": {
@@ -40735,7 +40735,7 @@
     "id": "1200344086-trace-mcp",
     "name": "trace-mcp",
     "description": "Framework-aware code intelligence: semantic search, refactoring, change-impact, security scanning, and decision memory across 88 frameworks and 81 languages.",
-    "version": "3.31.4",
+    "version": "3.31.5",
     "author": "Nikolai Vysotskyi",
     "repository": "https://github.com/nikolai-vysotskyi/trace-mcp",
     "manifestPath": "./.claude-plugin",
@@ -41561,24 +41561,6 @@
     }
   },
   {
-    "id": "1377290715-euthyna",
-    "name": "euthyna",
-    "description": "",
-    "version": "0.5.0",
-    "author": "slow-stack",
-    "repository": "https://github.com/slow-stack/euthyna",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1377290715",
-      "marketplaceName": "euthyna",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
     "id": "1173427820-claude-to-im-skill",
     "name": "Claude-to-IM-skill",
     "description": "name: claude-to-im",
@@ -41711,23 +41693,6 @@
     "metadata": {
       "marketplaceId": "1223082716",
       "marketplaceName": "ai-api-test-skill",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1189407131-bpmn-generator",
-    "name": "bpmn-generator",
-    "description": "name: bpmn-generator",
-    "version": "1.0.0",
-    "author": "Stieges",
-    "repository": "https://github.com/Stieges/bpmn-generator",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1189407131",
-      "marketplaceName": "bpmn-generator",
       "hasSkillMd": true
     }
   },
@@ -42039,23 +42004,6 @@
     "metadata": {
       "marketplaceId": "1223827138",
       "marketplaceName": "r02-alirezarezvani-claude-skills-seo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1243143776-easy-anysearch-skill",
-    "name": "easy_anysearch_skill",
-    "description": "name: easy_anysearch_skill",
-    "version": "1.0.0",
-    "author": "luoqianyi",
-    "repository": "https://github.com/luoqianyi/easy_anysearch_skill",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1243143776",
-      "marketplaceName": "easy_anysearch_skill",
       "hasSkillMd": true
     }
   },
@@ -42383,6 +42331,527 @@
     }
   },
   {
+    "id": "1233649082-html-anything",
+    "name": "html-anything",
+    "description": "name: html-anything",
+    "version": "1.0.0",
+    "author": "clockless-org",
+    "repository": "https://github.com/clockless-org/html-anything",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233649082",
+      "marketplaceName": "html-anything",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1098178824-odin-core",
+    "name": "odin-core",
+    "description": "Core ODIN gates every session runs: intent, scope, verification, and hand-off checks.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-planning",
+    "name": "odin-planning",
+    "description": "ODIN workflows for shaping intent into approved plans, specs, and task lists.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-planning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-critique",
+    "name": "odin-critique",
+    "description": "ODIN workflows for pressure-testing a decision from independent seats and lenses.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-critique",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-product",
+    "name": "odin-product",
+    "description": "ODIN workflows for product strategy, market signals, and developer adoption.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-product",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-code",
+    "name": "odin-code",
+    "description": "ODIN workflows for writing, changing, and simplifying code.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-review",
+    "name": "odin-review",
+    "description": "ODIN workflows for reviewing diffs, branches, and implementations against their specs.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-testing",
+    "name": "odin-testing",
+    "description": "ODIN workflows for tests, properties, mutation, and behavioral verification.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-git",
+    "name": "odin-git",
+    "description": "ODIN workflows for commits, branches, pull requests, review feedback, and issue tracking.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-git",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-release",
+    "name": "odin-release",
+    "description": "ODIN workflows for cutting, gating, publishing, and announcing releases.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-run",
+    "name": "odin-run",
+    "description": "ODIN workflows for executing plans, orchestrating subagents, and bounded autonomous loops.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-run",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-infra",
+    "name": "odin-infra",
+    "description": "ODIN workflows for CI, deployment, observability, cost, and infrastructure tooling.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-infra",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-security",
+    "name": "odin-security",
+    "description": "ODIN workflows for security review, vulnerability triage, and defensive implementation.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-fuzzing",
+    "name": "odin-fuzzing",
+    "description": "ODIN workflows for fuzz harnesses, fuzzer setup, sanitizers, and coverage analysis.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-fuzzing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-research",
+    "name": "odin-research",
+    "description": "ODIN workflows for source-backed investigation, verification, and design rationale.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-knowledge",
+    "name": "odin-knowledge",
+    "description": "ODIN workflows for memory, session continuity, decision records, and retrospectives.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-knowledge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-learn",
+    "name": "odin-learn",
+    "description": "ODIN workflows for teaching, explaining, drilling, and onboarding.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-learn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-people",
+    "name": "odin-people",
+    "description": "ODIN workflows for team dynamics, culture profiles, and negotiation.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-people",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-agent",
+    "name": "odin-agent",
+    "description": "ODIN workflows for configuring agent harnesses, MCP servers, and repository agent surfaces.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-skills",
+    "name": "odin-skills",
+    "description": "ODIN workflows for authoring, auditing, benchmarking, and publishing agent skills.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-writing",
+    "name": "odin-writing",
+    "description": "ODIN workflows for documentation, editorial prose, and copy.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-visual",
+    "name": "odin-visual",
+    "description": "ODIN workflows for diagrams, decks, canvases, and visual explainers.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-visual",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-design",
+    "name": "odin-design",
+    "description": "ODIN workflows for interface design, prototypes, and visual fidelity.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-web",
+    "name": "odin-web",
+    "description": "ODIN workflows for browser testing, web performance, SEO, and extensions.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-web",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-typescript",
+    "name": "odin-typescript",
+    "description": "ODIN workflows for modern TypeScript development.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-typescript",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-python",
+    "name": "odin-python",
+    "description": "ODIN workflows for modern Python development.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-python",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-native",
+    "name": "odin-native",
+    "description": "ODIN workflows for native systems, toolchains, and performance.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-native",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-apple",
+    "name": "odin-apple",
+    "description": "ODIN workflows for software on Apple platforms.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-apple",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1098178824-odin-formal",
+    "name": "odin-formal",
+    "description": "ODIN workflows for formal methods: model checking, SMT solving, deductive verification, and proof assistants.",
+    "version": "2.1.4",
+    "author": "OutlineDriven",
+    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
+    "manifestPath": "./plugins/odin-formal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1098178824",
+      "marketplaceName": "odin-claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
     "id": "1189739705-software-design-philosophy-skill",
     "name": "software-design-philosophy-skill",
     "description": "name: software-design-philosophy",
@@ -42397,6 +42866,52 @@
       "marketplaceId": "1189739705",
       "marketplaceName": "software-design-philosophy-skill",
       "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1355631011-design-rag",
+    "name": "design-rag",
+    "description": "DRAG 本地游戏策划案与配置表检索、分析和索引管理工具",
+    "version": "0.4.0",
+    "author": "tadazly",
+    "repository": "https://github.com/tadazly/s-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/tadazly/design-rag.git",
+      "path": "plugins/design-rag",
+      "ref": "v0.4.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1355631011",
+      "marketplaceName": "s-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1355631011-egret-agent-inspector",
+    "name": "egret-agent-inspector",
+    "description": "读取和操作浏览器中 Egret 游戏的显示对象，支持 agent 驱动的 E2E 测试",
+    "version": "5.0.2",
+    "author": "tadazly",
+    "repository": "https://github.com/tadazly/s-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/tadazly/egret-agent-inspector.git",
+      "path": "plugins/egret-agent-inspector",
+      "ref": "v5.0.2"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1355631011",
+      "marketplaceName": "s-plugins",
+      "skills": [],
+      "strict": false
     }
   },
   {
@@ -60727,510 +61242,6 @@
     }
   },
   {
-    "id": "1098178824-odin-core",
-    "name": "odin-core",
-    "description": "Core ODIN gates every session runs: intent, scope, verification, and hand-off checks.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-core",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-planning",
-    "name": "odin-planning",
-    "description": "ODIN workflows for shaping intent into approved plans, specs, and task lists.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-planning",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-critique",
-    "name": "odin-critique",
-    "description": "ODIN workflows for pressure-testing a decision from independent seats and lenses.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-critique",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-product",
-    "name": "odin-product",
-    "description": "ODIN workflows for product strategy, market signals, and developer adoption.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-product",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-code",
-    "name": "odin-code",
-    "description": "ODIN workflows for writing, changing, and simplifying code.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-code",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-review",
-    "name": "odin-review",
-    "description": "ODIN workflows for reviewing diffs, branches, and implementations against their specs.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-review",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-testing",
-    "name": "odin-testing",
-    "description": "ODIN workflows for tests, properties, mutation, and behavioral verification.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-testing",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-git",
-    "name": "odin-git",
-    "description": "ODIN workflows for commits, branches, pull requests, review feedback, and issue tracking.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-git",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-release",
-    "name": "odin-release",
-    "description": "ODIN workflows for cutting, gating, publishing, and announcing releases.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-release",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-run",
-    "name": "odin-run",
-    "description": "ODIN workflows for executing plans, orchestrating subagents, and bounded autonomous loops.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-run",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-infra",
-    "name": "odin-infra",
-    "description": "ODIN workflows for CI, deployment, observability, cost, and infrastructure tooling.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-infra",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-security",
-    "name": "odin-security",
-    "description": "ODIN workflows for security review, vulnerability triage, and defensive implementation.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-security",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-fuzzing",
-    "name": "odin-fuzzing",
-    "description": "ODIN workflows for fuzz harnesses, fuzzer setup, sanitizers, and coverage analysis.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-fuzzing",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-research",
-    "name": "odin-research",
-    "description": "ODIN workflows for source-backed investigation, verification, and design rationale.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-research",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-knowledge",
-    "name": "odin-knowledge",
-    "description": "ODIN workflows for memory, session continuity, decision records, and retrospectives.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-knowledge",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-learn",
-    "name": "odin-learn",
-    "description": "ODIN workflows for teaching, explaining, drilling, and onboarding.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-learn",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-people",
-    "name": "odin-people",
-    "description": "ODIN workflows for team dynamics, culture profiles, and negotiation.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-people",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-agent",
-    "name": "odin-agent",
-    "description": "ODIN workflows for configuring agent harnesses, MCP servers, and repository agent surfaces.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-agent",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-skills",
-    "name": "odin-skills",
-    "description": "ODIN workflows for authoring, auditing, benchmarking, and publishing agent skills.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-skills",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-writing",
-    "name": "odin-writing",
-    "description": "ODIN workflows for documentation, editorial prose, and copy.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-writing",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-visual",
-    "name": "odin-visual",
-    "description": "ODIN workflows for diagrams, decks, canvases, and visual explainers.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-visual",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-design",
-    "name": "odin-design",
-    "description": "ODIN workflows for interface design, prototypes, and visual fidelity.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-design",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-web",
-    "name": "odin-web",
-    "description": "ODIN workflows for browser testing, web performance, SEO, and extensions.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-web",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-typescript",
-    "name": "odin-typescript",
-    "description": "ODIN workflows for modern TypeScript development.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-typescript",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-python",
-    "name": "odin-python",
-    "description": "ODIN workflows for modern Python development.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-python",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-native",
-    "name": "odin-native",
-    "description": "ODIN workflows for native systems, toolchains, and performance.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-native",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-apple",
-    "name": "odin-apple",
-    "description": "ODIN workflows for software on Apple platforms.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-apple",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1098178824-odin-formal",
-    "name": "odin-formal",
-    "description": "ODIN workflows for formal methods: model checking, SMT solving, deductive verification, and proof assistants.",
-    "version": "2.1.4",
-    "author": "OutlineDriven",
-    "repository": "https://github.com/OutlineDriven/odin-claude-plugin",
-    "manifestPath": "./plugins/odin-formal",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1098178824",
-      "marketplaceName": "odin-claude-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
     "id": "1091251161-xclaude-plugin",
     "name": "xclaude-plugin",
     "description": "Modular iOS development automation suite. 8 workflow-specific MCP servers (400-3500 tokens) with 24 tools across Xcode, Simulator, and IDB. Enable only what you need!",
@@ -62033,2031 +62044,418 @@
     }
   },
   {
-    "id": "1226415818-lockedin",
-    "name": "lockedin",
-    "description": "Knowledge graph of your work, lived inside Claude Code. Capture moments, then render writeups, summaries, and more from the same vault.",
+    "id": "1294647625-goalforge",
+    "name": "goalforge",
+    "description": "Goal-and-verification-driven development chain for Claude Code — goal-object work packages with a harden/execute/verify lifecycle.",
     "version": "",
-    "author": "daypunk",
-    "repository": "https://github.com/daypunk/LockedIn",
-    "manifestPath": "./plugins/lockedin",
+    "author": "Truncuso",
+    "repository": "https://github.com/Truncuso/cogwright",
+    "manifestPath": "./plugins/goalforge",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1226415818",
-      "marketplaceName": "LockedIn",
+      "marketplaceId": "1294647625",
+      "marketplaceName": "cogwright",
       "skills": [],
       "strict": false
     }
   },
   {
-    "id": "1227844943-markifact",
-    "name": "markifact",
-    "description": "Production performance marketing automation for Claude. Audit accounts, launch campaigns, rotate creative, and diagnose underperformers across Google Ads, Meta Ads, GA4, Shopify, HubSpot, and 50+ more. Approval-gated writes.",
-    "version": "1.0.5",
-    "author": "Markifact",
-    "repository": "https://github.com/markifact/markifact-mcp",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1227844943",
-      "marketplaceName": "markifact-mcp",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1227844943-markifact-overview",
-    "name": "markifact-overview",
-    "description": "name: markifact-overview",
-    "version": "1.0.0",
-    "author": "Markifact",
-    "repository": "https://github.com/markifact/markifact-mcp",
-    "manifestPath": "skills/markifact-overview",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1227844943",
-      "marketplaceName": "markifact-mcp",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1227844943-safe-write-operations",
-    "name": "safe-write-operations",
-    "description": "name: safe-write-operations",
-    "version": "1.0.0",
-    "author": "Markifact",
-    "repository": "https://github.com/markifact/markifact-mcp",
-    "manifestPath": "skills/safe-write-operations",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1227844943",
-      "marketplaceName": "markifact-mcp",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1232371755-proton-bridge-mcp",
-    "name": "proton-bridge-mcp",
-    "description": "Hardened local MCP server for Proton Mail via Bridge — Keychain creds, TLS pinning, hash-pinned deps.",
+    "id": "1294647625-interview",
+    "name": "interview",
+    "description": "Harness-agnostic interview engine (socratic, adversarial, divergent, teachback, rapid presets) for grilling plans, specs, and ideas before they're acted on.",
     "version": "",
-    "author": "miketigerblue",
-    "repository": "https://github.com/miketigerblue/proton-bridge-mcp",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1232371755",
-      "marketplaceName": "proton-bridge-mcp",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1234177275-kampus-pipeline",
-    "name": "kampus-pipeline",
-    "description": "The kamp.us agent pipeline: report → triage → plan-epic → write-code → review → ship-it, with artifact-class review gates (code/doc/skill/plan) plus adr, heal-ci, and deslop-comments. Repo-agnostic — operates on the working git repo's issue queue (CLAUDE_PIPELINE_REPO override).",
-    "version": "0.1.0",
-    "author": "kamp-us",
-    "repository": "https://github.com/kamp-us/phoenix",
+    "author": "Truncuso",
+    "repository": "https://github.com/Truncuso/cogwright",
     "manifestPath": {
       "source": "git-subdir",
-      "url": "https://github.com/kamp-us/phoenix",
-      "path": "claude-plugins/kampus-pipeline",
-      "sha": "633d61e5913f7666178e0bb4a7fe1a89b5c206fd"
+      "url": "https://github.com/Truncuso/elicitforge.git",
+      "path": "adapters/claude-code",
+      "ref": "v1.2.0",
+      "sha": "5673955567aec7ed35d9d4faab6dffcaefc5701c"
     },
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1234177275",
-      "marketplaceName": "phoenix",
+      "marketplaceId": "1294647625",
+      "marketplaceName": "cogwright",
       "skills": [],
       "strict": false
     }
   },
   {
-    "id": "1234177275-fabrika",
-    "name": "fabrika",
-    "description": "The kamp.us agent pipeline rebuilt from first principles. Authoritative description: claude-plugins/fabrika/.claude-plugin/plugin.json.",
-    "version": "0.1.0",
-    "author": "kamp-us",
-    "repository": "https://github.com/kamp-us/phoenix",
-    "manifestPath": "./claude-plugins/fabrika",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1234177275",
-      "marketplaceName": "phoenix",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1240495324-anamnesis",
-    "name": "anamnesis",
-    "description": "Use Anamnesis as a local-first cross-agent memory bridge inside Claude Code.",
-    "version": "0.1.0",
-    "author": "Trapezohe",
-    "repository": "https://github.com/Trapezohe/Anamnesis",
-    "manifestPath": "./anamnesis-plugin",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1240495324",
-      "marketplaceName": "Anamnesis",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1242320277-maigo",
-    "name": "maigo",
-    "description": "MyGO!!!!! agent orchestration plugin",
-    "version": "",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": {
-      "source": "github",
-      "repo": "Lee-W/maigo"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1242320277-airflow-aware",
-    "name": "airflow-aware",
-    "description": "name: airflow-aware",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/airflow-aware",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-change-site-enumeration",
-    "name": "change-site-enumeration",
-    "description": "name: change-site-enumeration",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/change-site-enumeration",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-command-router",
-    "name": "command-router",
-    "description": "name: command-router",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/command-router",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-commit-message",
-    "name": "commit-message",
-    "description": "name: commit-message",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/commit-message",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-commitizen-aware",
-    "name": "commitizen-aware",
-    "description": "name: commitizen-aware",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/commitizen-aware",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-copyable-deliverable",
-    "name": "copyable-deliverable",
-    "description": "name: copyable-deliverable",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/copyable-deliverable",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-doc-link-convention",
-    "name": "doc-link-convention",
-    "description": "name: doc-link-convention",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/doc-link-convention",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-failure-handling",
-    "name": "failure-handling",
-    "description": "name: failure-handling",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/failure-handling",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-git-workflow",
-    "name": "git-workflow",
-    "description": "name: git-workflow",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/git-workflow",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-github-reply-draft",
-    "name": "github-reply-draft",
-    "description": "name: github-reply-draft",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/github-reply-draft",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-github-title-description",
-    "name": "github-title-description",
-    "description": "name: github-title-description",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/github-title-description",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-harness-discipline",
-    "name": "harness-discipline",
-    "description": "name: harness-discipline",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/harness-discipline",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-maigo-self-check",
-    "name": "maigo-self-check",
-    "description": "name: maigo-self-check",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/maigo-self-check",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-memory-loading",
-    "name": "memory-loading",
-    "description": "name: memory-loading",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/memory-loading",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-memory-propose-confirm",
-    "name": "memory-propose-confirm",
-    "description": "name: memory-propose-confirm",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/memory-propose-confirm",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-model-dispatch",
-    "name": "model-dispatch",
-    "description": "name: model-dispatch",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/model-dispatch",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-narration",
-    "name": "narration",
-    "description": "name: narration",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/narration",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-orchestrator-voice",
-    "name": "orchestrator-voice",
-    "description": "name: orchestrator-voice",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/orchestrator-voice",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-pr-context-cache",
-    "name": "pr-context-cache",
-    "description": "name: pr-context-cache",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/pr-context-cache",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-pr-sync-check",
-    "name": "pr-sync-check",
-    "description": "name: pr-sync-check",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/pr-sync-check",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-strict-review",
-    "name": "strict-review",
-    "description": "name: strict-review",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/strict-review",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-strict-triage",
-    "name": "strict-triage",
-    "description": "name: strict-triage",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/strict-triage",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-teammate-flow",
-    "name": "teammate-flow",
-    "description": "name: teammate-flow",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/teammate-flow",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1242320277-work-board",
-    "name": "work-board",
-    "description": "name: work-board",
-    "version": "1.0.0",
-    "author": "Lee-W",
-    "repository": "https://github.com/Lee-W/maigo",
-    "manifestPath": "skills/work-board",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1242320277",
-      "marketplaceName": "maigo",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1243640031-unknown",
-    "name": "unknown",
-    "description": "",
-    "version": "0.6.0",
-    "author": "peterctwang",
-    "repository": "https://github.com/peterctwang/codegraph-rust",
-    "manifestPath": "",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1243640031",
-      "marketplaceName": "codegraph-rust",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1247030866-yayamlls",
-    "name": "yayamlls",
-    "description": "Schema-driven YAML diagnostics, completion, hover, and Flux rendering, powered by the yayamlls language server.",
-    "version": "",
-    "author": "home-operations",
-    "repository": "https://github.com/home-operations/yayamlls",
-    "manifestPath": "./editors/claude",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1247030866",
-      "marketplaceName": "yayamlls",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1247037691-antigravity",
-    "name": "antigravity",
-    "description": "Use Google Antigravity (agy) from Claude Code to review code or delegate tasks.",
-    "version": "0.1.0",
-    "author": "Sakib Sadman Shajib",
-    "repository": "https://github.com/sakibsadmanshajib/antigravity-plugin",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1247037691",
-      "marketplaceName": "antigravity-plugin",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1247037691-antigravity-plugin",
-    "name": "antigravity-plugin",
-    "description": "name: antigravity",
-    "version": "1.0.0",
-    "author": "Sakib Sadman Shajib",
-    "repository": "https://github.com/sakibsadmanshajib/antigravity-plugin",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1247037691",
-      "marketplaceName": "antigravity-plugin",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1247257077-ppt-master",
-    "name": "ppt-master",
-    "description": "Generate natively editable PPTX from PDF / DOCX / URL / Markdown — real DrawingML shapes, text boxes, charts, and animations. Note: this plugin ships only the skill files; you must also `pip install -r requirements.txt` from the project root for the Python post-processing scripts to run.",
-    "version": "2.7.0",
-    "author": "Hugo He",
-    "repository": "https://github.com/hongyi652/ppt-master-sci-fork",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1247257077",
-      "marketplaceName": "ppt-master-sci-fork",
-      "skills": [
-        "./skills/ppt-master"
-      ],
-      "strict": false
-    }
-  },
-  {
-    "id": "1249923101-newt-mcp",
-    "name": "newt-mcp",
-    "description": "newt.net のツアー・ホテル・目的地・空港検索を Claude から利用できる MCP サーバー",
-    "version": "1.0.0",
-    "author": "Reiwa Travel",
-    "repository": "https://github.com/reiwa-travel/newt-mcp-server",
-    "manifestPath": "./plugins/newt-mcp",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1249923101",
-      "marketplaceName": "newt-mcp-server",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1252346445-clifton-mcp",
-    "name": "clifton-mcp",
-    "description": "Source-linked financial research: SEC filings, transcripts, expectations, and market reactions, callable from your agent.",
-    "version": "",
-    "author": "cliftonai",
-    "repository": "https://github.com/cliftonai/clifton-mcp",
-    "manifestPath": "./plugins/clifton-mcp",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1252346445",
-      "marketplaceName": "clifton-mcp",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1260041117-yaml-to-html",
-    "name": "yaml-to-html",
-    "description": "Two skills: generate-explainer-yaml captures meaning (core.yaml) + strategy (view.yaml) from a document/repo/PR/spec; generate-explainer-html builds an offline light/dark bundle with switchable, additive iframe views and copyable add-a-view prompts.",
-    "version": "0.3.0",
-    "author": "hirokita117",
-    "repository": "https://github.com/hirokita117/yaml-to-html-skill",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260041117",
-      "marketplaceName": "yaml-to-html-skill",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1260041117-generate-explainer-html",
-    "name": "generate-explainer-html",
-    "description": "name: generate-explainer-html",
-    "version": "1.0.0",
-    "author": "hirokita117",
-    "repository": "https://github.com/hirokita117/yaml-to-html-skill",
-    "manifestPath": "skills/generate-explainer-html",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260041117",
-      "marketplaceName": "yaml-to-html-skill",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260041117-generate-explainer-yaml",
-    "name": "generate-explainer-yaml",
-    "description": "name: generate-explainer-yaml",
-    "version": "1.0.0",
-    "author": "hirokita117",
-    "repository": "https://github.com/hirokita117/yaml-to-html-skill",
-    "manifestPath": "skills/generate-explainer-yaml",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260041117",
-      "marketplaceName": "yaml-to-html-skill",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260418709-ktlsp-lsp",
-    "name": "ktlsp-lsp",
-    "description": "Fast Kotlin and Java code intelligence in Claude Code, powered by ktlsp",
-    "version": "",
-    "author": "pepegar",
-    "repository": "https://github.com/pepegar/ktlsp",
-    "manifestPath": "./plugins/ktlsp-lsp",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260418709",
-      "marketplaceName": "ktlsp",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1260929589-prhythm",
-    "name": "prhythm",
-    "description": "Prhythm — 提案のリズムを生み出すエージェントスキル集",
-    "version": "0.1.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1260929589-assumption-breaker",
-    "name": "assumption-breaker",
-    "description": "name: assumption-breaker",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/assumption-breaker",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-create-html-deck",
-    "name": "create-html-deck",
-    "description": "name: create-html-deck",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/create-html-deck",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-create-journey-map",
-    "name": "create-journey-map",
-    "description": "name: create-journey-map",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/create-journey-map",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-defining-personas-and-segments",
-    "name": "defining-personas-and-segments",
-    "description": "name: defining-personas-and-segments",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/defining-personas-and-segments",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-delivery-phase-plan",
-    "name": "delivery-phase-plan",
-    "description": "name: delivery-phase-plan",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/delivery-phase-plan",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-delivery-team-plan",
-    "name": "delivery-team-plan",
-    "description": "name: delivery-team-plan",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/delivery-team-plan",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-feature-backlog-map",
-    "name": "feature-backlog-map",
-    "description": "name: feature-backlog-map",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/feature-backlog-map",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-function-usecase-map",
-    "name": "function-usecase-map",
-    "description": "name: function-usecase-map",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/function-usecase-map",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-hearing",
-    "name": "hearing",
-    "description": "name: hearing",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/hearing",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-market-landscape",
-    "name": "market-landscape",
-    "description": "name: market-landscape",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/market-landscape",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-ooui-architect",
-    "name": "ooui-architect",
-    "description": "name: ooui-architect",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/ooui-architect",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-ooui-graphql-modeling",
-    "name": "ooui-graphql-modeling",
-    "description": "name: ooui-graphql-modeling",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/ooui-graphql-modeling",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-prhythm-docs",
-    "name": "prhythm-docs",
-    "description": "name: prhythm-docs",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/prhythm-docs",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-prhythm-skill-pr",
-    "name": "prhythm-skill-pr",
-    "description": "name: prhythm-skill-pr",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/prhythm-skill-pr",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-prhythm-skill-review",
-    "name": "prhythm-skill-review",
-    "description": "name: prhythm-skill-review",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/prhythm-skill-review",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-product-vision-and-concept",
-    "name": "product-vision-and-concept",
-    "description": "name: product-vision-and-concept",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/product-vision-and-concept",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-proto-storyboard",
-    "name": "proto-storyboard",
-    "description": "name: proto-storyboard",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/proto-storyboard",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-prototype-design-md",
-    "name": "prototype-design-md",
-    "description": "name: prototype-design-md",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/prototype-design-md",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-shadcn-explorer",
-    "name": "shadcn-explorer",
-    "description": "name: shadcn-explorer",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/shadcn-explorer",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1260929589-uncertainty-map",
-    "name": "uncertainty-map",
-    "description": "name: uncertainty-map",
-    "version": "1.0.0",
-    "author": "shunsaku-studio",
-    "repository": "https://github.com/shunsaku-studio/Prhythm",
-    "manifestPath": "skills/uncertainty-map",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1260929589",
-      "marketplaceName": "Prhythm",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1262683019-kmp-cocoapods-to-swiftpm",
-    "name": "kmp-cocoapods-to-swiftpm",
-    "description": "Refactor Kotlin Multiplatform and Compose Multiplatform projects from CocoaPods to SwiftPM, preserving versions, updating Kotlin to 2.4.0, and handling Xcode direct integration.",
-    "version": "1.0.1",
-    "author": "Paolo Montalto",
-    "repository": "https://github.com/xabaras/kmp-cocoapods-to-swiftpm",
-    "manifestPath": {
-      "source": "git-subdir",
-      "url": "https://github.com/xabaras/kmp-cocoapods-to-swiftpm",
-      "path": "skills/kmp-cocoapods-to-swiftpm",
-      "ref": "main"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1262683019",
-      "marketplaceName": "kmp-cocoapods-to-swiftpm",
-      "skills": [
-        "./"
-      ],
-      "strict": false
-    }
-  },
-  {
-    "id": "1262894625-blindspot",
-    "name": "blindspot",
-    "description": "Surfaces patterns in your own thinking, decisions, and work across sessions — friction, progress, and mental-health signals — backed by your own words.",
-    "version": "",
-    "author": "isas1",
-    "repository": "https://github.com/isas1/blindspot",
-    "manifestPath": {
-      "source": "github",
-      "repo": "isas1/blindspot"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1262894625",
-      "marketplaceName": "blindspot",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1264342841-health-self-investigation",
-    "name": "health-self-investigation",
-    "description": "Investigate ambiguous, non-emergency health symptoms with lightweight intake, tracking, testing, analysis, and careful experiment planning.",
-    "version": "1.0.0",
-    "author": "amydeng2000",
-    "repository": "https://github.com/amydeng2000/health-self-investigation-skill",
-    "manifestPath": "./plugins/health-self-investigation",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1264342841",
-      "marketplaceName": "health-self-investigation-skill",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1269151566-okf",
-    "name": "okf",
-    "description": "Author, maintain, backfill, validate, visualize and serve (MCP) Open Knowledge Format (OKF) bundles.",
-    "version": "",
-    "author": "scaccogatto",
-    "repository": "https://github.com/scaccogatto/okf-skills",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1269151566",
-      "marketplaceName": "okf-skills",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1269151566-backfill",
-    "name": "backfill",
-    "description": "name: backfill",
-    "version": "1.0.0",
-    "author": "scaccogatto",
-    "repository": "https://github.com/scaccogatto/okf-skills",
-    "manifestPath": "skills/backfill",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1269151566",
-      "marketplaceName": "okf-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1269151566-validate",
-    "name": "validate",
-    "description": "name: validate",
-    "version": "1.0.0",
-    "author": "scaccogatto",
-    "repository": "https://github.com/scaccogatto/okf-skills",
-    "manifestPath": "skills/validate",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1269151566",
-      "marketplaceName": "okf-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1269151566-visualize",
-    "name": "visualize",
-    "description": "name: visualize",
-    "version": "1.0.0",
-    "author": "scaccogatto",
-    "repository": "https://github.com/scaccogatto/okf-skills",
-    "manifestPath": "skills/visualize",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1269151566",
-      "marketplaceName": "okf-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1269893717-im-ai-copyeditor",
-    "name": "im-ai-copyeditor",
-    "description": "맞춤법·문장(번역투·군더더기)·AI 문체·문체를 한 문장씩 적용해, 진짜 교정·교열가처럼 뜻은 그대로 두고 다듬는 스킬(통합 + 세부 3종).",
-    "version": "0.3.0",
-    "author": "Turtle-Hwan",
-    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1269893717",
-      "marketplaceName": "im-ai-copyeditor",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1269893717-im-ai-copyeditor-ai",
-    "name": "im-ai-copyeditor-ai",
-    "description": "name: im-ai-copyeditor-ai",
-    "version": "1.0.0",
-    "author": "Turtle-Hwan",
-    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
-    "manifestPath": "skills/im-ai-copyeditor-ai",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1269893717",
-      "marketplaceName": "im-ai-copyeditor",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1269893717-im-ai-copyeditor-grammar",
-    "name": "im-ai-copyeditor-grammar",
-    "description": "name: im-ai-copyeditor-grammar",
-    "version": "1.0.0",
-    "author": "Turtle-Hwan",
-    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
-    "manifestPath": "skills/im-ai-copyeditor-grammar",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1269893717",
-      "marketplaceName": "im-ai-copyeditor",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1269893717-im-ai-copyeditor-grill",
-    "name": "im-ai-copyeditor-grill",
-    "description": "name: im-ai-copyeditor-grill",
-    "version": "1.0.0",
-    "author": "Turtle-Hwan",
-    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
-    "manifestPath": "skills/im-ai-copyeditor-grill",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1269893717",
-      "marketplaceName": "im-ai-copyeditor",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1269893717-im-ai-copyeditor-sentence",
-    "name": "im-ai-copyeditor-sentence",
-    "description": "name: im-ai-copyeditor-sentence",
-    "version": "1.0.0",
-    "author": "Turtle-Hwan",
-    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
-    "manifestPath": "skills/im-ai-copyeditor-sentence",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1269893717",
-      "marketplaceName": "im-ai-copyeditor",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1272111001-claude-brain-hand",
-    "name": "claude-brain-hand",
-    "description": "Fenced Brain/Hand coding loop with read-only planner, sandboxed executor, and destructive-command guard hooks.",
-    "version": "",
-    "author": "sunfmin",
-    "repository": "https://github.com/sunfmin/claude-brain-hand",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1272111001",
-      "marketplaceName": "claude-brain-hand",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1272139132-remotion-director",
-    "name": "remotion-director",
-    "description": "Design and build a finished motion piece (vertical 1080×1920 by default; landscape/square supported) from a brief through the 甲乙环 (critic-loop) pipeline: a unified design+build agent (乙) drafts the design and writes the Remotion code in one continuous context; N independent draws are blind-selected for the most promising base; a design-blind aesthetic critic (甲) judges only the rendered frames, round after round until it converges; a fresh-context tempo pass then re-times the result; the user's own eyes are the final gate.",
-    "version": "0.3.1",
-    "author": "Zane",
-    "repository": "https://github.com/Zane-0x5a/remotion-director",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1272139132",
-      "marketplaceName": "remotion-director",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1272139132-create",
-    "name": "create",
-    "description": "name: create",
-    "version": "1.0.0",
-    "author": "Zane",
-    "repository": "https://github.com/Zane-0x5a/remotion-director",
-    "manifestPath": "skills/create",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1272139132",
-      "marketplaceName": "remotion-director",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1272139132-critic-loop",
-    "name": "critic-loop",
-    "description": "name: critic-loop",
-    "version": "1.0.0",
-    "author": "Zane",
-    "repository": "https://github.com/Zane-0x5a/remotion-director",
-    "manifestPath": "skills/critic-loop",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1272139132",
-      "marketplaceName": "remotion-director",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1272139132-design-brain",
-    "name": "design-brain",
-    "description": "name: design-brain",
-    "version": "1.0.0",
-    "author": "Zane",
-    "repository": "https://github.com/Zane-0x5a/remotion-director",
-    "manifestPath": "skills/design-brain",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1272139132",
-      "marketplaceName": "remotion-director",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1275012434-pent3st",
-    "name": "PenT3st",
-    "description": "",
-    "version": "0.1.0",
-    "author": "Yuk1you",
-    "repository": "https://github.com/Yuk1you/PenT3st",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1275012434",
-      "marketplaceName": "PenT3st",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1278265633-palpatine",
-    "name": "palpatine",
-    "description": "Diagnose power dynamics, model opponents, and turn difficult situations into concrete moves.",
-    "version": "",
-    "author": "NovusEdge",
-    "repository": "https://github.com/NovusEdge/palpatine",
-    "manifestPath": "./plugins/palpatine",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1278265633",
-      "marketplaceName": "palpatine",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1289577353-trek-plugin-dev",
-    "name": "trek-plugin-dev",
-    "description": "Build, test, and publish TREK plugins: manifest, definePlugin server API, iframe bridge, permissions/egress, trek-plugin CLI, and the TREK-Plugins registry with all CI gates.",
-    "version": "",
-    "author": "liketrek",
-    "repository": "https://github.com/liketrek/Plugin-Skill",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1289577353",
-      "marketplaceName": "Plugin-Skill",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1291766087-phobos",
-    "name": "phobos",
-    "description": "Always-on efficiency discipline — triage token spend to task size, write minimal correct code, take fewer round-trips, keep context lean, use memory, route to the right tool. Three skills (phobos, phobos-code, phobos-plan) plus guard/state/status hooks.",
-    "version": "1.3.0",
-    "author": "broisnischal",
-    "repository": "https://github.com/broisnischal/phobos",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1291766087",
-      "marketplaceName": "phobos",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1291766087-phobos-code",
-    "name": "phobos-code",
-    "description": "name: phobos-code",
-    "version": "1.0.0",
-    "author": "broisnischal",
-    "repository": "https://github.com/broisnischal/phobos",
-    "manifestPath": "skills/phobos-code",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1291766087",
-      "marketplaceName": "phobos",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1291766087-phobos-plan",
-    "name": "phobos-plan",
-    "description": "name: phobos-plan",
-    "version": "1.0.0",
-    "author": "broisnischal",
-    "repository": "https://github.com/broisnischal/phobos",
-    "manifestPath": "skills/phobos-plan",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1291766087",
-      "marketplaceName": "phobos",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1294830436-media",
-    "name": "media",
-    "description": "System-wide now-playing control for macOS from Claude Code — zero dependencies",
-    "version": "",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1294830436-artwork",
-    "name": "artwork",
-    "description": "name: artwork",
-    "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/artwork",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1294830436-config",
-    "name": "config",
-    "description": "name: config",
-    "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/config",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1294830436-doctor",
-    "name": "doctor",
-    "description": "name: doctor",
+    "id": "1156702885-agent-switchboard-ops",
+    "name": "agent-switchboard-ops",
+    "description": "name: agent-switchboard-ops",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/doctor",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/agent-switchboard-ops",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-history",
-    "name": "history",
-    "description": "name: history",
+    "id": "1156702885-chatgpt-web-bridge",
+    "name": "chatgpt-web-bridge",
+    "description": "name: chatgpt-web-bridge",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/history",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/chatgpt-web-bridge",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-menu",
-    "name": "menu",
-    "description": "name: menu",
+    "id": "1156702885-clarify-before-change",
+    "name": "clarify-before-change",
+    "description": "name: clarify-before-change",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/menu",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/clarify-before-change",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-next",
-    "name": "next",
-    "description": "name: next",
+    "id": "1156702885-decision-gates",
+    "name": "decision-gates",
+    "description": "name: decision-gates",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/next",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/decision-gates",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-now",
-    "name": "now",
-    "description": "name: now",
+    "id": "1156702885-dsh-config-sync",
+    "name": "dsh-config-sync",
+    "description": "name: dsh-config-sync",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/now",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/dsh-config-sync",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-output",
-    "name": "output",
-    "description": "name: output",
+    "id": "1156702885-environment-bootstrap",
+    "name": "environment-bootstrap",
+    "description": "name: environment-bootstrap",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/output",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/environment-bootstrap",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-pause",
-    "name": "pause",
-    "description": "name: pause",
+    "id": "1156702885-evolution-proposal",
+    "name": "evolution-proposal",
+    "description": "name: evolution-proposal",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/pause",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/evolution-proposal",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-play",
-    "name": "play",
-    "description": "name: play",
+    "id": "1156702885-execution-discipline",
+    "name": "execution-discipline",
+    "description": "name: execution-discipline",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/play",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/execution-discipline",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-prev",
-    "name": "prev",
-    "description": "name: prev",
+    "id": "1156702885-find-session",
+    "name": "find-session",
+    "description": "name: find-session",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/prev",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/find-session",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-seek",
-    "name": "seek",
-    "description": "name: seek",
+    "id": "1156702885-minimal-implementation",
+    "name": "minimal-implementation",
+    "description": "name: minimal-implementation",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/seek",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/minimal-implementation",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-statusline",
-    "name": "statusline",
-    "description": "name: statusline",
+    "id": "1156702885-natural-rewrite",
+    "name": "natural-rewrite",
+    "description": "name: natural-rewrite",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/statusline",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/natural-rewrite",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-toggle",
-    "name": "toggle",
-    "description": "name: toggle",
+    "id": "1156702885-personal-ai-operations-review",
+    "name": "personal-ai-operations-review",
+    "description": "name: personal-ai-operations-review",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/toggle",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/personal-ai-operations-review",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-volume",
-    "name": "volume",
-    "description": "name: volume",
+    "id": "1156702885-publish-and-reuse",
+    "name": "publish-and-reuse",
+    "description": "name: publish-and-reuse",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": "skills/volume",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/publish-and-reuse",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1294830436-verify",
-    "name": "verify",
-    "description": "name: verify",
+    "id": "1156702885-research-lab",
+    "name": "research-lab",
+    "description": "name: research-lab",
     "version": "1.0.0",
-    "author": "Bangs00",
-    "repository": "https://github.com/Bangs00/claude-media-control",
-    "manifestPath": ".claude/skills/verify",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/research-lab",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294830436",
-      "marketplaceName": "claude-media-control",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1296570575-fluencyloop",
-    "name": "fluencyloop",
-    "description": "A per-feature loop that designs, teaches, journals decisions, and assembles PR reviews.",
-    "version": "0.3.18",
-    "author": "baokhang83",
-    "repository": "https://github.com/baokhang83/fluencyloop",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1296570575",
-      "marketplaceName": "fluencyloop",
-      "skills": [
-        "./claude-skills/plan",
-        "./claude-skills/feature",
-        "./claude-skills/review",
-        "./claude-skills/backfill",
-        "./claude-skills/diagram-design"
-      ],
-      "strict": false
-    }
-  },
-  {
-    "id": "1304012236-cowrite",
-    "name": "cowrite",
-    "description": "Local AI co-writing canvas with MCP, Codex built-in image generation, slides, WeChat layout, and writing optimization skills.",
-    "version": "0.13.0",
-    "author": "Space",
-    "repository": "https://github.com/SpaceZephyr/cowrite",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1304012236",
-      "marketplaceName": "cowrite",
-      "skills": [],
-      "strict": false
     }
   },
   {
-    "id": "1304012236-ai-writing-assistant",
-    "name": "ai-writing-assistant",
-    "description": "name: ai-writing-assistant",
+    "id": "1156702885-simulate-elite-experts",
+    "name": "simulate-elite-experts",
+    "description": "name: simulate-elite-experts",
     "version": "1.0.0",
-    "author": "Space",
-    "repository": "https://github.com/SpaceZephyr/cowrite",
-    "manifestPath": "skills/ai-writing-assistant",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/simulate-elite-experts",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1304012236",
-      "marketplaceName": "cowrite",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1304012236-article-batch-illustration",
-    "name": "article-batch-illustration",
-    "description": "name: article-batch-illustration",
+    "id": "1156702885-skill-quality-gate",
+    "name": "skill-quality-gate",
+    "description": "name: skill-quality-gate",
     "version": "1.0.0",
-    "author": "Space",
-    "repository": "https://github.com/SpaceZephyr/cowrite",
-    "manifestPath": "skills/article-batch-illustration",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/skill-quality-gate",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1304012236",
-      "marketplaceName": "cowrite",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1304012236-baoyu-xhs-images",
-    "name": "baoyu-xhs-images",
-    "description": "name: baoyu-xhs-images",
+    "id": "1156702885-skill-repository-maintainer",
+    "name": "skill-repository-maintainer",
+    "description": "name: skill-repository-maintainer",
     "version": "1.0.0",
-    "author": "Space",
-    "repository": "https://github.com/SpaceZephyr/cowrite",
-    "manifestPath": "skills/baoyu-xhs-images",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/skill-repository-maintainer",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1304012236",
-      "marketplaceName": "cowrite",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1304012236-image-studio",
-    "name": "image-studio",
-    "description": "name: image-studio",
+    "id": "1156702885-subagent-execution-governance",
+    "name": "subagent-execution-governance",
+    "description": "name: subagent-execution-governance",
     "version": "1.0.0",
-    "author": "Space",
-    "repository": "https://github.com/SpaceZephyr/cowrite",
-    "manifestPath": "skills/image-studio",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/subagent-execution-governance",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1304012236",
-      "marketplaceName": "cowrite",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1304012236-space-multi-design-ppt",
-    "name": "space-multi-design-ppt",
-    "description": "name: space-multi-design-ppt",
+    "id": "1156702885-systematic-optimization",
+    "name": "systematic-optimization",
+    "description": "name: systematic-optimization",
     "version": "1.0.0",
-    "author": "Space",
-    "repository": "https://github.com/SpaceZephyr/cowrite",
-    "manifestPath": "skills/space-multi-design-ppt",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/systematic-optimization",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1304012236",
-      "marketplaceName": "cowrite",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1304012236-space-wechat-layout",
-    "name": "space-wechat-layout",
-    "description": "name: space-wechat-layout",
+    "id": "1156702885-task-mode-router",
+    "name": "task-mode-router",
+    "description": "name: task-mode-router",
     "version": "1.0.0",
-    "author": "Space",
-    "repository": "https://github.com/SpaceZephyr/cowrite",
-    "manifestPath": "skills/space-wechat-layout",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/task-mode-router",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1304012236",
-      "marketplaceName": "cowrite",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
   {
-    "id": "1304012236-text-logic-diagram",
-    "name": "text-logic-diagram",
-    "description": "name: text-logic-diagram",
+    "id": "1156702885-unified-taskflow",
+    "name": "unified-taskflow",
+    "description": "name: unified-taskflow",
     "version": "1.0.0",
-    "author": "Space",
-    "repository": "https://github.com/SpaceZephyr/cowrite",
-    "manifestPath": "skills/text-logic-diagram",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/unified-taskflow",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1304012236",
-      "marketplaceName": "cowrite",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1312438278-focus-friendly",
-    "name": "focus-friendly",
-    "description": "Make dense information and complex work easier to understand, navigate, and act on.",
-    "version": "",
-    "author": "yappologistic",
-    "repository": "https://github.com/yappologistic/focus-friendly",
-    "manifestPath": "./plugins/focus-friendly",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1312438278",
-      "marketplaceName": "focus-friendly",
-      "skills": [],
-      "strict": false
     }
   },
   {
-    "id": "1317066429-nativeprompt",
-    "name": "nativeprompt",
-    "description": "name: nativeprompt",
+    "id": "1156702885-world-model-runtime",
+    "name": "world-model-runtime",
+    "description": "name: world-model-runtime",
     "version": "1.0.0",
-    "author": "edvardgrishin27",
-    "repository": "https://github.com/edvardgrishin27/nativeprompt",
-    "manifestPath": ".",
+    "author": "ooooooooooooooooooop",
+    "repository": "https://github.com/ooooooooooooooooooop/personal-ai",
+    "manifestPath": "skills/world-model-runtime",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1317066429",
-      "marketplaceName": "nativeprompt",
+      "marketplaceId": "1156702885",
+      "marketplaceName": "personal-ai",
       "hasSkillMd": true
     }
   },
@@ -65019,43 +63417,19 @@
     }
   },
   {
-    "id": "1294647625-goalforge",
-    "name": "goalforge",
-    "description": "Goal-and-verification-driven development chain for Claude Code — goal-object work packages with a harden/execute/verify lifecycle.",
-    "version": "",
-    "author": "Truncuso",
-    "repository": "https://github.com/Truncuso/cogwright",
-    "manifestPath": "./plugins/goalforge",
+    "id": "1377290715-euthyna",
+    "name": "euthyna",
+    "description": "",
+    "version": "0.5.0",
+    "author": "slow-stack",
+    "repository": "https://github.com/slow-stack/euthyna",
+    "manifestPath": ".",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
-      "marketplaceId": "1294647625",
-      "marketplaceName": "cogwright",
-      "skills": [],
-      "strict": false
-    }
-  },
-  {
-    "id": "1294647625-interview",
-    "name": "interview",
-    "description": "Harness-agnostic interview engine (socratic, adversarial, divergent, teachback, rapid presets) for grilling plans, specs, and ideas before they're acted on.",
-    "version": "",
-    "author": "Truncuso",
-    "repository": "https://github.com/Truncuso/cogwright",
-    "manifestPath": {
-      "source": "git-subdir",
-      "url": "https://github.com/Truncuso/elicitforge.git",
-      "path": "adapters/claude-code",
-      "ref": "v1.2.0",
-      "sha": "5673955567aec7ed35d9d4faab6dffcaefc5701c"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1294647625",
-      "marketplaceName": "cogwright",
+      "marketplaceId": "1377290715",
+      "marketplaceName": "euthyna",
       "skills": [],
       "strict": false
     }
@@ -75515,6 +73889,23 @@
     }
   },
   {
+    "id": "1189407131-bpmn-generator",
+    "name": "bpmn-generator",
+    "description": "name: bpmn-generator",
+    "version": "1.0.0",
+    "author": "Stieges",
+    "repository": "https://github.com/Stieges/bpmn-generator",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1189407131",
+      "marketplaceName": "bpmn-generator",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1193147839-code-reviewer",
     "name": "code-reviewer",
     "description": "Reviews code for real bugs: off-by-ones, null derefs, race conditions, swallowed errors. Skips style nitpicks.",
@@ -77656,6 +76047,2035 @@
       "marketplaceName": "SwiftClip",
       "skills": [],
       "strict": false
+    }
+  },
+  {
+    "id": "1226415818-lockedin",
+    "name": "lockedin",
+    "description": "Knowledge graph of your work, lived inside Claude Code. Capture moments, then render writeups, summaries, and more from the same vault.",
+    "version": "",
+    "author": "daypunk",
+    "repository": "https://github.com/daypunk/LockedIn",
+    "manifestPath": "./plugins/lockedin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1226415818",
+      "marketplaceName": "LockedIn",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1227844943-markifact",
+    "name": "markifact",
+    "description": "Production performance marketing automation for Claude. Audit accounts, launch campaigns, rotate creative, and diagnose underperformers across Google Ads, Meta Ads, GA4, Shopify, HubSpot, and 50+ more. Approval-gated writes.",
+    "version": "1.0.5",
+    "author": "Markifact",
+    "repository": "https://github.com/markifact/markifact-mcp",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1227844943",
+      "marketplaceName": "markifact-mcp",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1227844943-markifact-overview",
+    "name": "markifact-overview",
+    "description": "name: markifact-overview",
+    "version": "1.0.0",
+    "author": "Markifact",
+    "repository": "https://github.com/markifact/markifact-mcp",
+    "manifestPath": "skills/markifact-overview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1227844943",
+      "marketplaceName": "markifact-mcp",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1227844943-safe-write-operations",
+    "name": "safe-write-operations",
+    "description": "name: safe-write-operations",
+    "version": "1.0.0",
+    "author": "Markifact",
+    "repository": "https://github.com/markifact/markifact-mcp",
+    "manifestPath": "skills/safe-write-operations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1227844943",
+      "marketplaceName": "markifact-mcp",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1232371755-proton-bridge-mcp",
+    "name": "proton-bridge-mcp",
+    "description": "Hardened local MCP server for Proton Mail via Bridge — Keychain creds, TLS pinning, hash-pinned deps.",
+    "version": "",
+    "author": "miketigerblue",
+    "repository": "https://github.com/miketigerblue/proton-bridge-mcp",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1232371755",
+      "marketplaceName": "proton-bridge-mcp",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1234177275-kampus-pipeline",
+    "name": "kampus-pipeline",
+    "description": "The kamp.us agent pipeline: report → triage → plan-epic → write-code → review → ship-it, with artifact-class review gates (code/doc/skill/plan) plus adr, heal-ci, and deslop-comments. Repo-agnostic — operates on the working git repo's issue queue (CLAUDE_PIPELINE_REPO override).",
+    "version": "0.1.0",
+    "author": "kamp-us",
+    "repository": "https://github.com/kamp-us/phoenix",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/kamp-us/phoenix",
+      "path": "claude-plugins/kampus-pipeline",
+      "sha": "633d61e5913f7666178e0bb4a7fe1a89b5c206fd"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1234177275",
+      "marketplaceName": "phoenix",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1234177275-fabrika",
+    "name": "fabrika",
+    "description": "The kamp.us agent pipeline rebuilt from first principles. Authoritative description: claude-plugins/fabrika/.claude-plugin/plugin.json.",
+    "version": "0.1.0",
+    "author": "kamp-us",
+    "repository": "https://github.com/kamp-us/phoenix",
+    "manifestPath": "./claude-plugins/fabrika",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1234177275",
+      "marketplaceName": "phoenix",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1240495324-anamnesis",
+    "name": "anamnesis",
+    "description": "Use Anamnesis as a local-first cross-agent memory bridge inside Claude Code.",
+    "version": "0.1.0",
+    "author": "Trapezohe",
+    "repository": "https://github.com/Trapezohe/Anamnesis",
+    "manifestPath": "./anamnesis-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1240495324",
+      "marketplaceName": "Anamnesis",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1242320277-maigo",
+    "name": "maigo",
+    "description": "MyGO!!!!! agent orchestration plugin",
+    "version": "",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Lee-W/maigo"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1242320277-airflow-aware",
+    "name": "airflow-aware",
+    "description": "name: airflow-aware",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/airflow-aware",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-change-site-enumeration",
+    "name": "change-site-enumeration",
+    "description": "name: change-site-enumeration",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/change-site-enumeration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-command-router",
+    "name": "command-router",
+    "description": "name: command-router",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/command-router",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-commit-message",
+    "name": "commit-message",
+    "description": "name: commit-message",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/commit-message",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-commitizen-aware",
+    "name": "commitizen-aware",
+    "description": "name: commitizen-aware",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/commitizen-aware",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-copyable-deliverable",
+    "name": "copyable-deliverable",
+    "description": "name: copyable-deliverable",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/copyable-deliverable",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-doc-link-convention",
+    "name": "doc-link-convention",
+    "description": "name: doc-link-convention",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/doc-link-convention",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-failure-handling",
+    "name": "failure-handling",
+    "description": "name: failure-handling",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/failure-handling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-git-workflow",
+    "name": "git-workflow",
+    "description": "name: git-workflow",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/git-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-github-reply-draft",
+    "name": "github-reply-draft",
+    "description": "name: github-reply-draft",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/github-reply-draft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-github-title-description",
+    "name": "github-title-description",
+    "description": "name: github-title-description",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/github-title-description",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-harness-discipline",
+    "name": "harness-discipline",
+    "description": "name: harness-discipline",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/harness-discipline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-maigo-self-check",
+    "name": "maigo-self-check",
+    "description": "name: maigo-self-check",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/maigo-self-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-memory-loading",
+    "name": "memory-loading",
+    "description": "name: memory-loading",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/memory-loading",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-memory-propose-confirm",
+    "name": "memory-propose-confirm",
+    "description": "name: memory-propose-confirm",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/memory-propose-confirm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-model-dispatch",
+    "name": "model-dispatch",
+    "description": "name: model-dispatch",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/model-dispatch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-narration",
+    "name": "narration",
+    "description": "name: narration",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/narration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-orchestrator-voice",
+    "name": "orchestrator-voice",
+    "description": "name: orchestrator-voice",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/orchestrator-voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-pr-context-cache",
+    "name": "pr-context-cache",
+    "description": "name: pr-context-cache",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/pr-context-cache",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-pr-sync-check",
+    "name": "pr-sync-check",
+    "description": "name: pr-sync-check",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/pr-sync-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-strict-review",
+    "name": "strict-review",
+    "description": "name: strict-review",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/strict-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-strict-triage",
+    "name": "strict-triage",
+    "description": "name: strict-triage",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/strict-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-teammate-flow",
+    "name": "teammate-flow",
+    "description": "name: teammate-flow",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/teammate-flow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1242320277-work-board",
+    "name": "work-board",
+    "description": "name: work-board",
+    "version": "1.0.0",
+    "author": "Lee-W",
+    "repository": "https://github.com/Lee-W/maigo",
+    "manifestPath": "skills/work-board",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1242320277",
+      "marketplaceName": "maigo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1243640031-unknown",
+    "name": "unknown",
+    "description": "",
+    "version": "0.6.0",
+    "author": "peterctwang",
+    "repository": "https://github.com/peterctwang/codegraph-rust",
+    "manifestPath": "",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243640031",
+      "marketplaceName": "codegraph-rust",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247030866-yayamlls",
+    "name": "yayamlls",
+    "description": "Schema-driven YAML diagnostics, completion, hover, and Flux rendering, powered by the yayamlls language server.",
+    "version": "",
+    "author": "home-operations",
+    "repository": "https://github.com/home-operations/yayamlls",
+    "manifestPath": "./editors/claude",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247030866",
+      "marketplaceName": "yayamlls",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247037691-antigravity",
+    "name": "antigravity",
+    "description": "Use Google Antigravity (agy) from Claude Code to review code or delegate tasks.",
+    "version": "0.1.0",
+    "author": "Sakib Sadman Shajib",
+    "repository": "https://github.com/sakibsadmanshajib/antigravity-plugin",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247037691",
+      "marketplaceName": "antigravity-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247037691-antigravity-plugin",
+    "name": "antigravity-plugin",
+    "description": "name: antigravity",
+    "version": "1.0.0",
+    "author": "Sakib Sadman Shajib",
+    "repository": "https://github.com/sakibsadmanshajib/antigravity-plugin",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247037691",
+      "marketplaceName": "antigravity-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247257077-ppt-master",
+    "name": "ppt-master",
+    "description": "Generate natively editable PPTX from PDF / DOCX / URL / Markdown — real DrawingML shapes, text boxes, charts, and animations. Note: this plugin ships only the skill files; you must also `pip install -r requirements.txt` from the project root for the Python post-processing scripts to run.",
+    "version": "2.7.0",
+    "author": "Hugo He",
+    "repository": "https://github.com/hongyi652/ppt-master-sci-fork",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247257077",
+      "marketplaceName": "ppt-master-sci-fork",
+      "skills": [
+        "./skills/ppt-master"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1249923101-newt-mcp",
+    "name": "newt-mcp",
+    "description": "newt.net のツアー・ホテル・目的地・空港検索を Claude から利用できる MCP サーバー",
+    "version": "1.0.0",
+    "author": "Reiwa Travel",
+    "repository": "https://github.com/reiwa-travel/newt-mcp-server",
+    "manifestPath": "./plugins/newt-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1249923101",
+      "marketplaceName": "newt-mcp-server",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252346445-clifton-mcp",
+    "name": "clifton-mcp",
+    "description": "Source-linked financial research: SEC filings, transcripts, expectations, and market reactions, callable from your agent.",
+    "version": "",
+    "author": "cliftonai",
+    "repository": "https://github.com/cliftonai/clifton-mcp",
+    "manifestPath": "./plugins/clifton-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252346445",
+      "marketplaceName": "clifton-mcp",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260041117-yaml-to-html",
+    "name": "yaml-to-html",
+    "description": "Two skills: generate-explainer-yaml captures meaning (core.yaml) + strategy (view.yaml) from a document/repo/PR/spec; generate-explainer-html builds an offline light/dark bundle with switchable, additive iframe views and copyable add-a-view prompts.",
+    "version": "0.3.0",
+    "author": "hirokita117",
+    "repository": "https://github.com/hirokita117/yaml-to-html-skill",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260041117",
+      "marketplaceName": "yaml-to-html-skill",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260041117-generate-explainer-html",
+    "name": "generate-explainer-html",
+    "description": "name: generate-explainer-html",
+    "version": "1.0.0",
+    "author": "hirokita117",
+    "repository": "https://github.com/hirokita117/yaml-to-html-skill",
+    "manifestPath": "skills/generate-explainer-html",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260041117",
+      "marketplaceName": "yaml-to-html-skill",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260041117-generate-explainer-yaml",
+    "name": "generate-explainer-yaml",
+    "description": "name: generate-explainer-yaml",
+    "version": "1.0.0",
+    "author": "hirokita117",
+    "repository": "https://github.com/hirokita117/yaml-to-html-skill",
+    "manifestPath": "skills/generate-explainer-yaml",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260041117",
+      "marketplaceName": "yaml-to-html-skill",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260418709-ktlsp-lsp",
+    "name": "ktlsp-lsp",
+    "description": "Fast Kotlin and Java code intelligence in Claude Code, powered by ktlsp",
+    "version": "",
+    "author": "pepegar",
+    "repository": "https://github.com/pepegar/ktlsp",
+    "manifestPath": "./plugins/ktlsp-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260418709",
+      "marketplaceName": "ktlsp",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260929589-prhythm",
+    "name": "prhythm",
+    "description": "Prhythm — 提案のリズムを生み出すエージェントスキル集",
+    "version": "0.1.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260929589-assumption-breaker",
+    "name": "assumption-breaker",
+    "description": "name: assumption-breaker",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/assumption-breaker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-create-html-deck",
+    "name": "create-html-deck",
+    "description": "name: create-html-deck",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/create-html-deck",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-create-journey-map",
+    "name": "create-journey-map",
+    "description": "name: create-journey-map",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/create-journey-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-defining-personas-and-segments",
+    "name": "defining-personas-and-segments",
+    "description": "name: defining-personas-and-segments",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/defining-personas-and-segments",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-delivery-phase-plan",
+    "name": "delivery-phase-plan",
+    "description": "name: delivery-phase-plan",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/delivery-phase-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-delivery-team-plan",
+    "name": "delivery-team-plan",
+    "description": "name: delivery-team-plan",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/delivery-team-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-feature-backlog-map",
+    "name": "feature-backlog-map",
+    "description": "name: feature-backlog-map",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/feature-backlog-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-function-usecase-map",
+    "name": "function-usecase-map",
+    "description": "name: function-usecase-map",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/function-usecase-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-hearing",
+    "name": "hearing",
+    "description": "name: hearing",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/hearing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-market-landscape",
+    "name": "market-landscape",
+    "description": "name: market-landscape",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/market-landscape",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-ooui-architect",
+    "name": "ooui-architect",
+    "description": "name: ooui-architect",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/ooui-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-ooui-graphql-modeling",
+    "name": "ooui-graphql-modeling",
+    "description": "name: ooui-graphql-modeling",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/ooui-graphql-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-prhythm-docs",
+    "name": "prhythm-docs",
+    "description": "name: prhythm-docs",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/prhythm-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-prhythm-skill-pr",
+    "name": "prhythm-skill-pr",
+    "description": "name: prhythm-skill-pr",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/prhythm-skill-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-prhythm-skill-review",
+    "name": "prhythm-skill-review",
+    "description": "name: prhythm-skill-review",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/prhythm-skill-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-product-vision-and-concept",
+    "name": "product-vision-and-concept",
+    "description": "name: product-vision-and-concept",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/product-vision-and-concept",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-proto-storyboard",
+    "name": "proto-storyboard",
+    "description": "name: proto-storyboard",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/proto-storyboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-prototype-design-md",
+    "name": "prototype-design-md",
+    "description": "name: prototype-design-md",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/prototype-design-md",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-shadcn-explorer",
+    "name": "shadcn-explorer",
+    "description": "name: shadcn-explorer",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/shadcn-explorer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1260929589-uncertainty-map",
+    "name": "uncertainty-map",
+    "description": "name: uncertainty-map",
+    "version": "1.0.0",
+    "author": "shunsaku-studio",
+    "repository": "https://github.com/shunsaku-studio/Prhythm",
+    "manifestPath": "skills/uncertainty-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260929589",
+      "marketplaceName": "Prhythm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262683019-kmp-cocoapods-to-swiftpm",
+    "name": "kmp-cocoapods-to-swiftpm",
+    "description": "Refactor Kotlin Multiplatform and Compose Multiplatform projects from CocoaPods to SwiftPM, preserving versions, updating Kotlin to 2.4.0, and handling Xcode direct integration.",
+    "version": "1.0.4",
+    "author": "Paolo Montalto",
+    "repository": "https://github.com/xabaras/kmp-cocoapods-to-swiftpm",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/xabaras/kmp-cocoapods-to-swiftpm",
+      "path": "skills/kmp-cocoapods-to-swiftpm",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262683019",
+      "marketplaceName": "kmp-cocoapods-to-swiftpm",
+      "skills": [
+        "./"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1262894625-blindspot",
+    "name": "blindspot",
+    "description": "Surfaces patterns in your own thinking, decisions, and work across sessions — friction, progress, and mental-health signals — backed by your own words.",
+    "version": "",
+    "author": "isas1",
+    "repository": "https://github.com/isas1/blindspot",
+    "manifestPath": {
+      "source": "github",
+      "repo": "isas1/blindspot"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262894625",
+      "marketplaceName": "blindspot",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264342841-health-self-investigation",
+    "name": "health-self-investigation",
+    "description": "Investigate ambiguous, non-emergency health symptoms with lightweight intake, tracking, testing, analysis, and careful experiment planning.",
+    "version": "1.0.0",
+    "author": "amydeng2000",
+    "repository": "https://github.com/amydeng2000/health-self-investigation-skill",
+    "manifestPath": "./plugins/health-self-investigation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264342841",
+      "marketplaceName": "health-self-investigation-skill",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1269151566-okf",
+    "name": "okf",
+    "description": "Author, maintain, backfill, validate, visualize and serve (MCP) Open Knowledge Format (OKF) bundles.",
+    "version": "",
+    "author": "scaccogatto",
+    "repository": "https://github.com/scaccogatto/okf-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269151566",
+      "marketplaceName": "okf-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1269151566-backfill",
+    "name": "backfill",
+    "description": "name: backfill",
+    "version": "1.0.0",
+    "author": "scaccogatto",
+    "repository": "https://github.com/scaccogatto/okf-skills",
+    "manifestPath": "skills/backfill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269151566",
+      "marketplaceName": "okf-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269151566-validate",
+    "name": "validate",
+    "description": "name: validate",
+    "version": "1.0.0",
+    "author": "scaccogatto",
+    "repository": "https://github.com/scaccogatto/okf-skills",
+    "manifestPath": "skills/validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269151566",
+      "marketplaceName": "okf-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269151566-visualize",
+    "name": "visualize",
+    "description": "name: visualize",
+    "version": "1.0.0",
+    "author": "scaccogatto",
+    "repository": "https://github.com/scaccogatto/okf-skills",
+    "manifestPath": "skills/visualize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269151566",
+      "marketplaceName": "okf-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269893717-im-ai-copyeditor",
+    "name": "im-ai-copyeditor",
+    "description": "맞춤법·문장(번역투·군더더기)·AI 문체·문체를 한 문장씩 적용해, 진짜 교정·교열가처럼 뜻은 그대로 두고 다듬는 스킬(통합 + 세부 3종).",
+    "version": "0.3.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1269893717-im-ai-copyeditor-ai",
+    "name": "im-ai-copyeditor-ai",
+    "description": "name: im-ai-copyeditor-ai",
+    "version": "1.0.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "skills/im-ai-copyeditor-ai",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269893717-im-ai-copyeditor-grammar",
+    "name": "im-ai-copyeditor-grammar",
+    "description": "name: im-ai-copyeditor-grammar",
+    "version": "1.0.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "skills/im-ai-copyeditor-grammar",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269893717-im-ai-copyeditor-grill",
+    "name": "im-ai-copyeditor-grill",
+    "description": "name: im-ai-copyeditor-grill",
+    "version": "1.0.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "skills/im-ai-copyeditor-grill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1269893717-im-ai-copyeditor-sentence",
+    "name": "im-ai-copyeditor-sentence",
+    "description": "name: im-ai-copyeditor-sentence",
+    "version": "1.0.0",
+    "author": "Turtle-Hwan",
+    "repository": "https://github.com/Turtle-Hwan/im-ai-copyeditor",
+    "manifestPath": "skills/im-ai-copyeditor-sentence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1269893717",
+      "marketplaceName": "im-ai-copyeditor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1272111001-claude-brain-hand",
+    "name": "claude-brain-hand",
+    "description": "Fenced Brain/Hand coding loop with read-only planner, sandboxed executor, and destructive-command guard hooks.",
+    "version": "",
+    "author": "sunfmin",
+    "repository": "https://github.com/sunfmin/claude-brain-hand",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1272111001",
+      "marketplaceName": "claude-brain-hand",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1272139132-remotion-director",
+    "name": "remotion-director",
+    "description": "Design and build a finished motion piece (vertical 1080×1920 by default; landscape/square supported) from a brief through the 甲乙环 (critic-loop) pipeline: a unified design+build agent (乙) drafts the design and writes the Remotion code in one continuous context; N independent draws are blind-selected for the most promising base; a design-blind aesthetic critic (甲) judges only the rendered frames, round after round until it converges; a fresh-context tempo pass then re-times the result; the user's own eyes are the final gate.",
+    "version": "0.3.1",
+    "author": "Zane",
+    "repository": "https://github.com/Zane-0x5a/remotion-director",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1272139132",
+      "marketplaceName": "remotion-director",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1272139132-create",
+    "name": "create",
+    "description": "name: create",
+    "version": "1.0.0",
+    "author": "Zane",
+    "repository": "https://github.com/Zane-0x5a/remotion-director",
+    "manifestPath": "skills/create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1272139132",
+      "marketplaceName": "remotion-director",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1272139132-critic-loop",
+    "name": "critic-loop",
+    "description": "name: critic-loop",
+    "version": "1.0.0",
+    "author": "Zane",
+    "repository": "https://github.com/Zane-0x5a/remotion-director",
+    "manifestPath": "skills/critic-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1272139132",
+      "marketplaceName": "remotion-director",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1272139132-design-brain",
+    "name": "design-brain",
+    "description": "name: design-brain",
+    "version": "1.0.0",
+    "author": "Zane",
+    "repository": "https://github.com/Zane-0x5a/remotion-director",
+    "manifestPath": "skills/design-brain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1272139132",
+      "marketplaceName": "remotion-director",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1275012434-pent3st",
+    "name": "PenT3st",
+    "description": "",
+    "version": "0.1.0",
+    "author": "Yuk1you",
+    "repository": "https://github.com/Yuk1you/PenT3st",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1275012434",
+      "marketplaceName": "PenT3st",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1278265633-palpatine",
+    "name": "palpatine",
+    "description": "Diagnose power dynamics, model opponents, and turn difficult situations into concrete moves.",
+    "version": "",
+    "author": "NovusEdge",
+    "repository": "https://github.com/NovusEdge/palpatine",
+    "manifestPath": "./plugins/palpatine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1278265633",
+      "marketplaceName": "palpatine",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1289577353-trek-plugin-dev",
+    "name": "trek-plugin-dev",
+    "description": "Build, test, and publish TREK plugins: manifest, definePlugin server API, iframe bridge, permissions/egress, trek-plugin CLI, and the TREK-Plugins registry with all CI gates.",
+    "version": "",
+    "author": "liketrek",
+    "repository": "https://github.com/liketrek/Plugin-Skill",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1289577353",
+      "marketplaceName": "Plugin-Skill",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291766087-phobos",
+    "name": "phobos",
+    "description": "Always-on efficiency discipline — triage token spend to task size, write minimal correct code, take fewer round-trips, keep context lean, use memory, route to the right tool. Three skills (phobos, phobos-code, phobos-plan) plus guard/state/status hooks.",
+    "version": "1.3.0",
+    "author": "broisnischal",
+    "repository": "https://github.com/broisnischal/phobos",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291766087",
+      "marketplaceName": "phobos",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291766087-phobos-code",
+    "name": "phobos-code",
+    "description": "name: phobos-code",
+    "version": "1.0.0",
+    "author": "broisnischal",
+    "repository": "https://github.com/broisnischal/phobos",
+    "manifestPath": "skills/phobos-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291766087",
+      "marketplaceName": "phobos",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1291766087-phobos-plan",
+    "name": "phobos-plan",
+    "description": "name: phobos-plan",
+    "version": "1.0.0",
+    "author": "broisnischal",
+    "repository": "https://github.com/broisnischal/phobos",
+    "manifestPath": "skills/phobos-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291766087",
+      "marketplaceName": "phobos",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-media",
+    "name": "media",
+    "description": "System-wide now-playing control for macOS from Claude Code — zero dependencies",
+    "version": "",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1294830436-artwork",
+    "name": "artwork",
+    "description": "name: artwork",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/artwork",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-config",
+    "name": "config",
+    "description": "name: config",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-doctor",
+    "name": "doctor",
+    "description": "name: doctor",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-history",
+    "name": "history",
+    "description": "name: history",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/history",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-menu",
+    "name": "menu",
+    "description": "name: menu",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/menu",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-next",
+    "name": "next",
+    "description": "name: next",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/next",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-now",
+    "name": "now",
+    "description": "name: now",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/now",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-output",
+    "name": "output",
+    "description": "name: output",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/output",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-pause",
+    "name": "pause",
+    "description": "name: pause",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/pause",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-play",
+    "name": "play",
+    "description": "name: play",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/play",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-prev",
+    "name": "prev",
+    "description": "name: prev",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/prev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-seek",
+    "name": "seek",
+    "description": "name: seek",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/seek",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-statusline",
+    "name": "statusline",
+    "description": "name: statusline",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/statusline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-toggle",
+    "name": "toggle",
+    "description": "name: toggle",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/toggle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-volume",
+    "name": "volume",
+    "description": "name: volume",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": "skills/volume",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1294830436-verify",
+    "name": "verify",
+    "description": "name: verify",
+    "version": "1.0.0",
+    "author": "Bangs00",
+    "repository": "https://github.com/Bangs00/claude-media-control",
+    "manifestPath": ".claude/skills/verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1294830436",
+      "marketplaceName": "claude-media-control",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296570575-fluencyloop",
+    "name": "fluencyloop",
+    "description": "A per-feature loop that designs, teaches, journals decisions, and assembles PR reviews.",
+    "version": "0.3.18",
+    "author": "baokhang83",
+    "repository": "https://github.com/baokhang83/fluencyloop",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296570575",
+      "marketplaceName": "fluencyloop",
+      "skills": [
+        "./claude-skills/plan",
+        "./claude-skills/feature",
+        "./claude-skills/review",
+        "./claude-skills/backfill",
+        "./claude-skills/diagram-design"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1304012236-cowrite",
+    "name": "cowrite",
+    "description": "Local AI co-writing canvas with MCP, Codex built-in image generation, slides, WeChat layout, and writing optimization skills.",
+    "version": "0.13.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1304012236-ai-writing-assistant",
+    "name": "ai-writing-assistant",
+    "description": "name: ai-writing-assistant",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/ai-writing-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-article-batch-illustration",
+    "name": "article-batch-illustration",
+    "description": "name: article-batch-illustration",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/article-batch-illustration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-baoyu-xhs-images",
+    "name": "baoyu-xhs-images",
+    "description": "name: baoyu-xhs-images",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/baoyu-xhs-images",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-image-studio",
+    "name": "image-studio",
+    "description": "name: image-studio",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/image-studio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-space-multi-design-ppt",
+    "name": "space-multi-design-ppt",
+    "description": "name: space-multi-design-ppt",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/space-multi-design-ppt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-space-wechat-layout",
+    "name": "space-wechat-layout",
+    "description": "name: space-wechat-layout",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/space-wechat-layout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-text-logic-diagram",
+    "name": "text-logic-diagram",
+    "description": "name: text-logic-diagram",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/text-logic-diagram",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312438278-focus-friendly",
+    "name": "focus-friendly",
+    "description": "Make dense information and complex work easier to understand, navigate, and act on.",
+    "version": "",
+    "author": "yappologistic",
+    "repository": "https://github.com/yappologistic/focus-friendly",
+    "manifestPath": "./plugins/focus-friendly",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312438278",
+      "marketplaceName": "focus-friendly",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1317066429-nativeprompt",
+    "name": "nativeprompt",
+    "description": "name: nativeprompt",
+    "version": "1.0.0",
+    "author": "edvardgrishin27",
+    "repository": "https://github.com/edvardgrishin27/nativeprompt",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1317066429",
+      "marketplaceName": "nativeprompt",
+      "hasSkillMd": true
     }
   }
 ]
