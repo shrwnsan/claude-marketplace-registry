@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1355631011-design-rag",
+    "name": "design-rag",
+    "description": "DRAG 本地游戏策划案与配置表检索、分析和索引管理工具",
+    "version": "0.4.0",
+    "author": "tadazly",
+    "repository": "https://github.com/tadazly/s-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/tadazly/design-rag.git",
+      "path": "plugins/design-rag",
+      "ref": "v0.4.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1355631011",
+      "marketplaceName": "s-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1355631011-egret-agent-inspector",
+    "name": "egret-agent-inspector",
+    "description": "读取和操作浏览器中 Egret 游戏的显示对象，支持 agent 驱动的 E2E 测试",
+    "version": "5.0.2",
+    "author": "tadazly",
+    "repository": "https://github.com/tadazly/s-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/tadazly/egret-agent-inspector.git",
+      "path": "plugins/egret-agent-inspector",
+      "ref": "v5.0.2"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1355631011",
+      "marketplaceName": "s-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]
