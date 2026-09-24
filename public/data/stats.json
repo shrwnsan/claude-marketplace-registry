@@ -2,16 +2,16 @@
   "success": true,
   "data": {
     "overview": {
-      "totalPlugins": 4259,
-      "totalMarketplaces": 325,
-      "totalDevelopers": 440,
-      "totalStars": 647249,
-      "lastUpdated": "2026-09-23T03:47:27.852Z",
+      "totalPlugins": 4297,
+      "totalMarketplaces": 331,
+      "totalDevelopers": 445,
+      "totalStars": 648887,
+      "lastUpdated": "2026-09-24T03:38:56.460Z",
       "growthRate": {
-        "plugins": 234.3,
-        "marketplaces": 225,
-        "developers": 11.1,
-        "stars": 107.8
+        "plugins": 237.3,
+        "marketplaces": 231,
+        "developers": 12.4,
+        "stars": 108.3
       }
     },
     "plugins": [
@@ -43,6 +43,11 @@
         "date": "2026-09-23",
         "value": 4259,
         "change": 164
+      },
+      {
+        "date": "2026-09-24",
+        "value": 4297,
+        "change": 38
       }
     ],
     "marketplaces": [
@@ -74,6 +79,11 @@
         "date": "2026-09-23",
         "value": 325,
         "change": 0
+      },
+      {
+        "date": "2026-09-24",
+        "value": 331,
+        "change": 6
       }
     ],
     "developers": [
@@ -104,6 +114,11 @@
         "date": "2026-09-23",
         "value": 440,
         "change": -3
+      },
+      {
+        "date": "2026-09-24",
+        "value": 445,
+        "change": 5
       }
     ],
     "stars": [
@@ -135,6 +150,11 @@
         "date": "2026-09-23",
         "value": 647249,
         "change": 1991
+      },
+      {
+        "date": "2026-09-24",
+        "value": 648887,
+        "change": 1638
       }
     ],
     "period": "all",
@@ -143,13 +163,13 @@
       {
         "id": "claude-code",
         "name": "claude-code",
-        "count": 2669,
+        "count": 2692,
         "description": "Plugins from marketplaces tagged \"claude-code\" (topics overlap)"
       },
       {
         "id": "mcp",
         "name": "mcp",
-        "count": 1462,
+        "count": 1463,
         "description": "Plugins from marketplaces tagged \"mcp\" (topics overlap)"
       },
       {
@@ -161,66 +181,66 @@
       {
         "id": "claude-plugins",
         "name": "claude-plugins",
-        "count": 1088,
+        "count": 1102,
         "description": "Plugins from marketplaces tagged \"claude-plugins\" (topics overlap)"
       },
       {
         "id": "developer-tools",
         "name": "developer-tools",
-        "count": 1015,
+        "count": 1018,
         "description": "Plugins from marketplaces tagged \"developer-tools\" (topics overlap)"
       },
       {
         "id": "claude",
         "name": "claude",
-        "count": 979,
+        "count": 982,
         "description": "Plugins from marketplaces tagged \"claude\" (topics overlap)"
       },
       {
         "id": "anthropic",
         "name": "anthropic",
-        "count": 889,
+        "count": 891,
         "description": "Plugins from marketplaces tagged \"anthropic\" (topics overlap)"
       },
       {
         "id": "agent-skills",
         "name": "agent-skills",
-        "count": 834,
+        "count": 853,
         "description": "Plugins from marketplaces tagged \"agent-skills\" (topics overlap)"
       },
       {
         "id": "claude-skills",
         "name": "claude-skills",
-        "count": 615,
+        "count": 617,
         "description": "Plugins from marketplaces tagged \"claude-skills\" (topics overlap)"
       },
       {
         "id": "llm",
         "name": "llm",
-        "count": 574,
+        "count": 592,
         "description": "Plugins from marketplaces tagged \"llm\" (topics overlap)"
       }
     ],
     "insights": [
-      "4259 plugins discovered across 325 marketplaces",
-      "Most starred: ECC (265,532 stars)",
-      "Most common topic: claude-code (2669 plugins)",
-      "284 marketplaces updated in the last 30 days"
+      "4297 plugins discovered across 331 marketplaces",
+      "Most starred: ECC (266,240 stars)",
+      "Most common topic: claude-code (2692 plugins)",
+      "289 marketplaces updated in the last 30 days"
     ],
     "manifestCoverage": {
-      "withManifest": 261,
-      "total": 325,
-      "rate": 80.3
+      "withManifest": 264,
+      "total": 331,
+      "rate": 79.8
     },
     "maintenance": {
-      "recentlyUpdated": 284,
-      "recentlyUpdatedRate": 87.4,
+      "recentlyUpdated": 289,
+      "recentlyUpdatedRate": 87.3,
       "staleOver180Days": 0
     },
-    "avgStarsPerMarketplace": 1992
+    "avgStarsPerMarketplace": 1960
   },
   "meta": {
-    "timestamp": "2026-09-23T03:47:27.852Z",
+    "timestamp": "2026-09-24T03:38:56.460Z",
     "requestId": "static-build",
     "responseTime": 0
   }

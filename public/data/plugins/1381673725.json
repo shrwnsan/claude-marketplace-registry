@@ -231,6 +231,27 @@
     }
   },
   {
+    "id": "1381673725-nix-best-practices",
+    "name": "nix-best-practices",
+    "description": "A standard for Nix: the scope a with opens, the shape of a module header, what a derivation's meta has to say and what a flake.lock must not hold — everything nixfmt, statix and deadnix cannot see — plus a checker that holds a tree to it",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/nix-best-practices-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
     "id": "1381673725-obsidian-cli",
     "name": "obsidian-cli",
     "description": "Drive a running Obsidian vault from the terminal through the official Obsidian CLI — read and write notes, find one by name, alias, tag or property, and query the link graph",
@@ -303,6 +324,27 @@
     "manifestPath": {
       "source": "github",
       "repo": "rokokol/super-productivity-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1381673725-telegram",
+    "name": "telegram",
+    "description": "Reach a Telegram account over MTProto through a service that holds the session and decides by per-chat permissions the agent cannot grant itself",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/telegram-skill"
     },
     "isValid": true,
     "errors": [],

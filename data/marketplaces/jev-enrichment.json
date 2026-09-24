@@ -1,6 +1,6 @@
 {
   "model": "typesafe-ai/jev",
-  "generatedAt": "2026-09-23T03:47:24.647Z",
+  "generatedAt": "2026-09-24T03:38:53.115Z",
   "entries": {
     "305321080": {
       "category": "none",
@@ -627,6 +627,11 @@
       "categoryConfidence": 0.79,
       "isMarketplace": 0.21
     },
+    "1243143776": {
+      "category": "skills",
+      "categoryConfidence": 0.99,
+      "isMarketplace": 0.16
+    },
     "1243640031": {
       "category": "mcp",
       "categoryConfidence": 0.97,
@@ -901,6 +906,11 @@
       "category": "automation",
       "categoryConfidence": 0.45,
       "isMarketplace": 0.77
+    },
+    "1377290715": {
+      "category": "agents",
+      "categoryConfidence": 0.36,
+      "isMarketplace": 0.23
     },
     "1377460272": {
       "category": "devtools",

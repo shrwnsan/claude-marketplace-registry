@@ -2,8 +2,8 @@
   {
     "id": "1134819911-octo",
     "name": "octo",
-    "description": "v11.8.1 - Windows setup now handles CRLF manifests, and web projects can use server-root asset URLs without false quality-gate failures. 31 personas, 54 commands, 63 skills. Run /octo:setup.",
-    "version": "11.8.1",
+    "description": "v11.9.0 - Add Opus 5.5 and Deja memory, with safer long-running workflows and session handoffs. 31 personas, 54 commands, 63 skills. Run /octo:setup.",
+    "version": "11.9.0",
     "author": "nyldn",
     "repository": "https://github.com/nyldn/claude-octopus",
     "manifestPath": {
