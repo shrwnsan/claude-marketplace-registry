@@ -18,6 +18,23 @@
     }
   },
   {
+    "id": "1229567447-add-python-package",
+    "name": "add-python-package",
+    "description": "name: add-python-package",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/add-python-package",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1229567447-audit-ml-pipeline",
     "name": "audit-ml-pipeline",
     "description": "name: audit-ml-pipeline",
@@ -42,6 +59,23 @@
     "author": "Probabl",
     "repository": "https://github.com/probabl-ai/skills",
     "manifestPath": "skills/build-ml-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-choose-python-library",
+    "name": "choose-python-library",
+    "description": "name: choose-python-library",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/choose-python-library",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -103,13 +137,13 @@
     }
   },
   {
-    "id": "1229567447-iterate-from-skore",
-    "name": "iterate-from-skore",
-    "description": "name: iterate-from-skore",
+    "id": "1229567447-export-ml-notebook",
+    "name": "export-ml-notebook",
+    "description": "name: export-ml-notebook",
     "version": "1.0.0",
     "author": "Probabl",
     "repository": "https://github.com/probabl-ai/skills",
-    "manifestPath": "skills/iterate-from-skore",
+    "manifestPath": "skills/export-ml-notebook",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -120,13 +154,13 @@
     }
   },
   {
-    "id": "1229567447-iterate-from-user",
-    "name": "iterate-from-user",
-    "description": "name: iterate-from-user",
+    "id": "1229567447-export-ml-project",
+    "name": "export-ml-project",
+    "description": "name: export-ml-project",
     "version": "1.0.0",
     "author": "Probabl",
     "repository": "https://github.com/probabl-ai/skills",
-    "manifestPath": "skills/iterate-from-user",
+    "manifestPath": "skills/export-ml-project",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -137,13 +171,64 @@
     }
   },
   {
-    "id": "1229567447-iterate-ml-experiment",
-    "name": "iterate-ml-experiment",
-    "description": "name: iterate-ml-experiment",
+    "id": "1229567447-export-ml-site",
+    "name": "export-ml-site",
+    "description": "name: export-ml-site",
     "version": "1.0.0",
     "author": "Probabl",
     "repository": "https://github.com/probabl-ai/skills",
-    "manifestPath": "skills/iterate-ml-experiment",
+    "manifestPath": "skills/export-ml-site",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-frame-ml-problem",
+    "name": "frame-ml-problem",
+    "description": "name: frame-ml-problem",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/frame-ml-problem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-manage-ml-backlog",
+    "name": "manage-ml-backlog",
+    "description": "name: manage-ml-backlog",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/manage-ml-backlog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-model-ml-pipeline",
+    "name": "model-ml-pipeline",
+    "description": "name: model-ml-pipeline",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/model-ml-pipeline",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -171,13 +256,13 @@
     }
   },
   {
-    "id": "1229567447-python-api",
-    "name": "python-api",
-    "description": "name: python-api",
+    "id": "1229567447-persist-ml-git",
+    "name": "persist-ml-git",
+    "description": "name: persist-ml-git",
     "version": "1.0.0",
     "author": "Probabl",
     "repository": "https://github.com/probabl-ai/skills",
-    "manifestPath": "skills/python-api",
+    "manifestPath": "skills/persist-ml-git",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -188,13 +273,13 @@
     }
   },
   {
-    "id": "1229567447-python-code-style",
-    "name": "python-code-style",
-    "description": "name: python-code-style",
+    "id": "1229567447-plot-ml-figure",
+    "name": "plot-ml-figure",
+    "description": "name: plot-ml-figure",
     "version": "1.0.0",
     "author": "Probabl",
     "repository": "https://github.com/probabl-ai/skills",
-    "manifestPath": "skills/python-code-style",
+    "manifestPath": "skills/plot-ml-figure",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -205,13 +290,132 @@
     }
   },
   {
-    "id": "1229567447-python-env-manager",
-    "name": "python-env-manager",
-    "description": "name: python-env-manager",
+    "id": "1229567447-research-ml-practice",
+    "name": "research-ml-practice",
+    "description": "name: research-ml-practice",
     "version": "1.0.0",
     "author": "Probabl",
     "repository": "https://github.com/probabl-ai/skills",
-    "manifestPath": "skills/python-env-manager",
+    "manifestPath": "skills/research-ml-practice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-review-ml-experiment",
+    "name": "review-ml-experiment",
+    "description": "name: review-ml-experiment",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/review-ml-experiment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-search-ml-literature",
+    "name": "search-ml-literature",
+    "description": "name: search-ml-literature",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/search-ml-literature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-setup-git",
+    "name": "setup-git",
+    "description": "name: setup-git",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/setup-git",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-setup-ml-project",
+    "name": "setup-ml-project",
+    "description": "name: setup-ml-project",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/setup-ml-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-setup-python-env",
+    "name": "setup-python-env",
+    "description": "name: setup-python-env",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/setup-python-env",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-setup-workspace",
+    "name": "setup-workspace",
+    "description": "name: setup-workspace",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/setup-workspace",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-shape-user-idea",
+    "name": "shape-user-idea",
+    "description": "name: shape-user-idea",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/shape-user-idea",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -239,13 +443,30 @@
     }
   },
   {
-    "id": "1229567447-test-ml-pipeline",
-    "name": "test-ml-pipeline",
-    "description": "name: test-ml-pipeline",
+    "id": "1229567447-sync-ml-reports",
+    "name": "sync-ml-reports",
+    "description": "name: sync-ml-reports",
     "version": "1.0.0",
     "author": "Probabl",
     "repository": "https://github.com/probabl-ai/skills",
-    "manifestPath": "skills/test-ml-pipeline",
+    "manifestPath": "skills/sync-ml-reports",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1229567447-triage-ml-task",
+    "name": "triage-ml-task",
+    "description": "name: triage-ml-task",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/triage-ml-task",
     "isValid": true,
     "errors": [],
     "warnings": [],

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1140723164-osado-ai-assistant",
+    "name": "osado-ai-assistant",
+    "description": "Developer productivity skills for openQA/openSUSE work",
+    "version": "",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1140723164-git-commit",
+    "name": "git-commit",
+    "description": "name: git-commit",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/git-commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-github-pr-create",
+    "name": "github-pr-create",
+    "description": "name: github-pr-create",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/github-pr-create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-local-lint-test",
+    "name": "local-lint-test",
+    "description": "name: local-lint-test",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/local-lint-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-openqa-log-analyzer",
+    "name": "openqa-log-analyzer",
+    "description": "name: openqa-log-analyzer",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/openqa-log-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-openqa-log-fetcher",
+    "name": "openqa-log-fetcher",
+    "description": "name: openqa-log-fetcher",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/openqa-log-fetcher",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-test-catalog",
+    "name": "test-catalog",
+    "description": "name: test-catalog",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/test-catalog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-unit-test-wizard",
+    "name": "unit-test-wizard",
+    "description": "name: unit-test-wizard",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/unit-test-wizard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-vr-planner",
+    "name": "vr-planner",
+    "description": "name: vr-planner",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/vr-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1169648406-polymarket-paper-trader",
+    "name": "polymarket-paper-trader",
+    "description": "Paper trading simulator for Polymarket: $10k paper money, real order books, zero risk. Ships the trading skill and pm-trader-mcp together.",
+    "version": "",
+    "author": "agent-next",
+    "repository": "https://github.com/agent-next/polymarket-paper-trader",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1169648406",
+      "marketplaceName": "polymarket-paper-trader",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

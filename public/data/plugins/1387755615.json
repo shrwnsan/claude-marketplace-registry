@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1387755615-nanogpt",
+    "name": "nanogpt",
+    "description": "Plan, cost-estimate and run work on your NanoGPT account (chat, image, video, audio, 3D, embeddings, web tools), with a cost pre-flight before any paid call.",
+    "version": "",
+    "author": "Arpan Mukherjee",
+    "repository": "https://github.com/arpanmukherjee1/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1387755615",
+      "marketplaceName": "skills",
+      "skills": [
+        "./skills/nanogpt"
+      ],
+      "strict": false
+    }
+  }
+]

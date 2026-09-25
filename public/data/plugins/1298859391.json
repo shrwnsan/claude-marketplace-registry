@@ -1,0 +1,241 @@
+[
+  {
+    "id": "1298859391-vobiz",
+    "name": "vobiz",
+    "description": "Official Vobiz skills and live documentation tools for Claude Code",
+    "version": "",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298859391-vobiz-ai-voice-agents",
+    "name": "vobiz-ai-voice-agents",
+    "description": "name: vobiz-ai-voice-agents",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-ai-voice-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-api",
+    "name": "vobiz-api",
+    "description": "name: vobiz-api",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-applications-endpoints",
+    "name": "vobiz-applications-endpoints",
+    "description": "name: vobiz-applications-endpoints",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-applications-endpoints",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-audio-streams",
+    "name": "vobiz-audio-streams",
+    "description": "name: vobiz-audio-streams",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-audio-streams",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-cdr",
+    "name": "vobiz-cdr",
+    "description": "name: vobiz-cdr",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-cdr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-partner-api",
+    "name": "vobiz-partner-api",
+    "description": "name: vobiz-partner-api",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-partner-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-phone-numbers",
+    "name": "vobiz-phone-numbers",
+    "description": "name: vobiz-phone-numbers",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-phone-numbers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-plivo-migration",
+    "name": "vobiz-plivo-migration",
+    "description": "name: vobiz-plivo-migration",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-plivo-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-sip-trunking",
+    "name": "vobiz-sip-trunking",
+    "description": "name: vobiz-sip-trunking",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-sip-trunking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-sub-accounts",
+    "name": "vobiz-sub-accounts",
+    "description": "name: vobiz-sub-accounts",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-sub-accounts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-voice-calls",
+    "name": "vobiz-voice-calls",
+    "description": "name: vobiz-voice-calls",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-voice-calls",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-voice-xml",
+    "name": "vobiz-voice-xml",
+    "description": "name: vobiz-voice-xml",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-voice-xml",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-whatsapp",
+    "name": "vobiz-whatsapp",
+    "description": "name: vobiz-whatsapp",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-whatsapp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  }
+]
