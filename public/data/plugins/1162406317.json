@@ -3,7 +3,7 @@
     "id": "1162406317-kwin-mcp",
     "name": "kwin-mcp",
     "description": "Bundles the kwin-mcp MCP server (uvx kwin-mcp) plus the kwin-desktop-automation skill that teaches session-mode selection, the observe-act-verify loop, US-QWERTY vs Unicode typing, and platform pitfalls (surface-local coordinates, QMenu invisibility, EIS edge limits, clipboard opt-in).",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "author": "Byeonghoon Yoo",
     "repository": "https://github.com/isac322/kwin-mcp",
     "manifestPath": "./integrations/claude-code",

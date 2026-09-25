@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1283118523-cursor-delegate",
+    "name": "cursor-delegate",
+    "description": "MCP server bridging AI coding hosts to cursor-agent over ACP.",
+    "version": "",
+    "author": "andreilungeanu",
+    "repository": "https://github.com/andreilungeanu/cursor-delegate-mcp",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283118523",
+      "marketplaceName": "cursor-delegate-mcp",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1283118523-delegate",
+    "name": "delegate",
+    "description": "name: delegate",
+    "version": "1.0.0",
+    "author": "andreilungeanu",
+    "repository": "https://github.com/andreilungeanu/cursor-delegate-mcp",
+    "manifestPath": "skills/delegate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283118523",
+      "marketplaceName": "cursor-delegate-mcp",
+      "hasSkillMd": true
+    }
+  }
+]

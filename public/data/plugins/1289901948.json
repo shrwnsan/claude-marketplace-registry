@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1289901948-nki-kernel",
+    "name": "nki-kernel",
+    "description": "name: nki-kernel",
+    "version": "1.0.0",
+    "author": "aws-samples",
+    "repository": "https://github.com/aws-samples/sample-ATX-custom-NKI-Agent",
+    "manifestPath": "skills/nki-kernel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1289901948",
+      "marketplaceName": "sample-ATX-custom-NKI-Agent",
+      "hasSkillMd": true
+    }
+  }
+]

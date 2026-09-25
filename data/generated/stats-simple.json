@@ -1,28 +1,28 @@
 {
-  "totalMarketplaces": 333,
-  "totalPlugins": 4321,
-  "validPlugins": 4321,
-  "lastUpdated": "2026-09-24T08:29:22.225Z",
+  "totalMarketplaces": 340,
+  "totalPlugins": 4354,
+  "validPlugins": 4354,
+  "lastUpdated": "2026-09-25T03:54:08.016Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 104
+      "count": 107
     },
     {
       "language": "JavaScript",
-      "count": 58
+      "count": 59
     },
     {
       "language": "Shell",
-      "count": 46
+      "count": 47
     },
     {
       "language": "Unknown",
-      "count": 36
+      "count": 37
     },
     {
       "language": "TypeScript",
-      "count": 35
+      "count": 36
     },
     {
       "language": "HTML",
@@ -48,22 +48,22 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 266372,
+      "stars": 266994,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 177868,
+      "stars": 178005,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75572,
+      "stars": 75605,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 36676,
+      "stars": 36725,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "name": "claude-octopus",
-      "stars": 4096,
+      "stars": 4097,
       "url": "https://github.com/nyldn/claude-octopus"
     },
     {
@@ -92,61 +92,61 @@
       "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
     },
     {
-      "name": "Claude-to-IM-skill",
-      "stars": 2880,
-      "url": "https://github.com/op7418/Claude-to-IM-skill"
+      "name": "treg",
+      "stars": 3191,
+      "url": "https://github.com/superdesigndev/treg"
     }
   ],
   "recentActivity": [
     {
-      "name": "personal-ai",
-      "updatedAt": "2026-09-24T08:19:56Z",
-      "url": "https://github.com/ooooooooooooooooooop/personal-ai"
-    },
-    {
       "name": "trending-claude-skills",
-      "updatedAt": "2026-09-24T08:15:54Z",
+      "updatedAt": "2026-09-25T03:45:27Z",
       "url": "https://github.com/linny006/trending-claude-skills"
     },
     {
       "name": "ECC",
-      "updatedAt": "2026-09-24T08:12:26Z",
+      "updatedAt": "2026-09-25T03:39:53Z",
       "url": "https://github.com/affaan-m/ECC"
     },
     {
-      "name": "claude-octopus",
-      "updatedAt": "2026-09-24T08:07:47Z",
-      "url": "https://github.com/nyldn/claude-octopus"
-    },
-    {
       "name": "treg",
-      "updatedAt": "2026-09-24T08:04:40Z",
+      "updatedAt": "2026-09-25T03:37:45Z",
       "url": "https://github.com/superdesigndev/treg"
     },
     {
-      "name": "kmp-cocoapods-to-swiftpm",
-      "updatedAt": "2026-09-24T08:03:36Z",
-      "url": "https://github.com/xabaras/kmp-cocoapods-to-swiftpm"
+      "name": "racecraft-plugins-public",
+      "updatedAt": "2026-09-25T03:37:38Z",
+      "url": "https://github.com/racecraft-lab/racecraft-plugins-public"
+    },
+    {
+      "name": "Ocul-PM",
+      "updatedAt": "2026-09-25T03:31:04Z",
+      "url": "https://github.com/bunhine0452/Ocul-PM"
     },
     {
       "name": "skills",
-      "updatedAt": "2026-09-24T08:02:25Z",
+      "updatedAt": "2026-09-25T03:30:42Z",
       "url": "https://github.com/anthropics/skills"
     },
     {
-      "name": "im-ai-copyeditor",
-      "updatedAt": "2026-09-24T07:57:51Z",
-      "url": "https://github.com/Turtle-Hwan/im-ai-copyeditor"
+      "name": "claude-code-docs",
+      "updatedAt": "2026-09-25T03:14:36Z",
+      "url": "https://github.com/costiash/claude-code-docs"
+    },
+    {
+      "name": "claude-plugins-community",
+      "updatedAt": "2026-09-25T03:14:16Z",
+      "url": "https://github.com/savaliya951/claude-plugins-community"
+    },
+    {
+      "name": "context-hoarder",
+      "updatedAt": "2026-09-25T03:13:44Z",
+      "url": "https://github.com/skd4747/context-hoarder"
     },
     {
       "name": "awesome-claude-skills",
-      "updatedAt": "2026-09-24T07:57:28Z",
+      "updatedAt": "2026-09-25T03:10:01Z",
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
-    },
-    {
-      "name": "otter",
-      "updatedAt": "2026-09-24T07:56:31Z",
-      "url": "https://github.com/AmadeusITGroup/otter"
     }
   ]
 }

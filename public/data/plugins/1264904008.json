@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1264904008-drill",
+    "name": "drill",
+    "description": "The inverse of /grill-me: an adaptive tutor that teaches you anything — spaced repetition, retrieval practice, and a memory that persists between sessions.",
+    "version": "",
+    "author": "timini",
+    "repository": "https://github.com/timini/drill-me",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264904008",
+      "marketplaceName": "drill-me",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264904008-me",
+    "name": "me",
+    "description": "name: drill-me",
+    "version": "1.0.0",
+    "author": "timini",
+    "repository": "https://github.com/timini/drill-me",
+    "manifestPath": "skills/me",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264904008",
+      "marketplaceName": "drill-me",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1264904008-status",
+    "name": "status",
+    "description": "name: drill-status",
+    "version": "1.0.0",
+    "author": "timini",
+    "repository": "https://github.com/timini/drill-me",
+    "manifestPath": "skills/status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264904008",
+      "marketplaceName": "drill-me",
+      "hasSkillMd": true
+    }
+  }
+]
