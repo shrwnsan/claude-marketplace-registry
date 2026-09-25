@@ -1,0 +1,164 @@
+[
+  {
+    "id": "1151742228-aidd-context",
+    "name": "aidd-context",
+    "description": "Knowledge production: project bootstrap, project init, generation of context artifacts (skills, agents, rules, commands, hooks), mermaid diagrams, learn, discovery",
+    "version": "",
+    "author": "ai-driven-dev",
+    "repository": "https://github.com/ai-driven-dev/framework",
+    "manifestPath": "./plugins/aidd-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1151742228",
+      "marketplaceName": "framework",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1151742228-aidd-dev",
+    "name": "aidd-dev",
+    "description": "Code transformation: plan, implement, assert, audit, review, test, refactor, debug, for-sure. Hosts engineering agents.",
+    "version": "",
+    "author": "ai-driven-dev",
+    "repository": "https://github.com/ai-driven-dev/framework",
+    "manifestPath": "./plugins/aidd-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1151742228",
+      "marketplaceName": "framework",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1151742228-aidd-vcs",
+    "name": "aidd-vcs",
+    "description": "External artifacts: commit, pull-request, release-tag, issue-create",
+    "version": "",
+    "author": "ai-driven-dev",
+    "repository": "https://github.com/ai-driven-dev/framework",
+    "manifestPath": "./plugins/aidd-vcs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1151742228",
+      "marketplaceName": "framework",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1151742228-aidd-pm",
+    "name": "aidd-pm",
+    "description": "Product backlog artifacts, refinement, Product Briefs, Epics, User Stories, Tasks, Spikes, Defects, requirements, and specs.",
+    "version": "",
+    "author": "ai-driven-dev",
+    "repository": "https://github.com/ai-driven-dev/framework",
+    "manifestPath": "./plugins/aidd-pm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1151742228",
+      "marketplaceName": "framework",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1151742228-aidd-orchestrator",
+    "name": "aidd-orchestrator",
+    "description": "Orchestration: synchronous SDLC pipeline, async issue-to-PR automation, and product backlog.",
+    "version": "",
+    "author": "ai-driven-dev",
+    "repository": "https://github.com/ai-driven-dev/framework",
+    "manifestPath": "./plugins/aidd-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1151742228",
+      "marketplaceName": "framework",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1151742228-aidd-refine",
+    "name": "aidd-refine",
+    "description": "Meta-cognition: refine input through brainstorming, refine output through challenge, blind-spot scanning, and fact-checking.",
+    "version": "",
+    "author": "ai-driven-dev",
+    "repository": "https://github.com/ai-driven-dev/framework",
+    "manifestPath": "./plugins/aidd-refine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1151742228",
+      "marketplaceName": "framework",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1151742228-aidd-ui",
+    "name": "aidd-ui",
+    "description": "ALPHA, not ready for use. UI and UX concern: design, review, and improve frontend interfaces.",
+    "version": "",
+    "author": "ai-driven-dev",
+    "repository": "https://github.com/ai-driven-dev/framework",
+    "manifestPath": "./plugins/aidd-ui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1151742228",
+      "marketplaceName": "framework",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1151742228-aidd-telemetry",
+    "name": "aidd-telemetry",
+    "description": "Measurement: journals every session so a unit of work can be tied to what it cost. The hooks record on plain node; its three skills reach the `aidd` CLI to turn it on, answer and check.",
+    "version": "",
+    "author": "ai-driven-dev",
+    "repository": "https://github.com/ai-driven-dev/framework",
+    "manifestPath": "./plugins/aidd-telemetry",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1151742228",
+      "marketplaceName": "framework",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1151742228-aidd-qa",
+    "name": "aidd-qa",
+    "description": "Acceptance QA: validates observable behavior against acceptance criteria and records reviewer evidence. Browser is the only supported interface today.",
+    "version": "",
+    "author": "ai-driven-dev",
+    "repository": "https://github.com/ai-driven-dev/framework",
+    "manifestPath": "./plugins/aidd-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1151742228",
+      "marketplaceName": "framework",
+      "skills": [],
+      "strict": true
+    }
+  }
+]

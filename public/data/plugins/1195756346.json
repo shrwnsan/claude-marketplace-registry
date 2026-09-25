@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1195756346-quality-playbook",
+    "name": "quality-playbook",
+    "description": "",
+    "version": "",
+    "author": "andrewstellman",
+    "repository": "https://github.com/andrewstellman/quality-playbook",
+    "manifestPath": "./plugins/quality-playbook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1195756346",
+      "marketplaceName": "quality-playbook",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1195756346-quality-playbook-harness",
+    "name": "quality-playbook-harness",
+    "description": "",
+    "version": "",
+    "author": "andrewstellman",
+    "repository": "https://github.com/andrewstellman/quality-playbook",
+    "manifestPath": "./plugins/quality-playbook-harness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1195756346",
+      "marketplaceName": "quality-playbook",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -18,6 +18,24 @@
     }
   },
   {
+    "id": "1190834387-typesafe-jev",
+    "name": "typesafe-jev",
+    "description": "Ask Jev for typed judgments with calibrated probabilities instead of parsing prose, through TypeSafe directly or OpenRouter's Decisions API. Adds one MCP tool, evaluate, and two skills. The evaluate binary installs separately, and a TypeSafe or OpenRouter key is optional.",
+    "version": "0.9.2",
+    "author": "Racecraft Lab",
+    "repository": "https://github.com/racecraft-lab/racecraft-plugins-public",
+    "manifestPath": "./typesafe-jev/plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190834387",
+      "marketplaceName": "racecraft-plugins-public",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
     "id": "1190834387-plugin-publish",
     "name": "plugin-publish",
     "description": "name: plugin-publish",

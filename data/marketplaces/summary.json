@@ -1,16 +1,16 @@
 {
-  "totalFound": 333,
-  "withManifest": 265,
-  "lastUpdated": "2026-09-24T08:24:15.160Z",
+  "totalFound": 340,
+  "withManifest": 271,
+  "lastUpdated": "2026-09-25T03:49:27.914Z",
   "searchQuery": "",
   "languages": {
-    "Python": 104,
-    "Shell": 46,
-    "TypeScript": 35,
+    "Python": 107,
+    "Shell": 47,
+    "TypeScript": 36,
     "Rust": 9,
-    "JavaScript": 58,
+    "JavaScript": 59,
     "Go": 12,
-    "Unknown": 36,
+    "Unknown": 37,
     "HTML": 16,
     "AMPL": 1,
     "TeX": 1,
@@ -29,22 +29,22 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 266372,
+      "stars": 266994,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 177868,
+      "stars": 178005,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75572,
+      "stars": 75605,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 36676,
+      "stars": 36725,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -64,7 +64,7 @@
     },
     {
       "name": "claude-octopus",
-      "stars": 4096,
+      "stars": 4097,
       "url": "https://github.com/nyldn/claude-octopus"
     },
     {
@@ -73,9 +73,9 @@
       "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
     },
     {
-      "name": "Claude-to-IM-skill",
-      "stars": 2880,
-      "url": "https://github.com/op7418/Claude-to-IM-skill"
+      "name": "treg",
+      "stars": 3191,
+      "url": "https://github.com/superdesigndev/treg"
     }
   ]
 }
