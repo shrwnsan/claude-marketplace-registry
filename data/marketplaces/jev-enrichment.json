@@ -1,6 +1,6 @@
 {
-  "model": "jev-1.13.0",
-  "generatedAt": "2026-09-25T03:54:04.871Z",
+  "model": "typesafe-ai/jev",
+  "generatedAt": "2026-09-25T18:54:41.693Z",
   "entries": {
     "305321080": {
       "category": "none",
@@ -362,6 +362,11 @@
       "categoryConfidence": 1,
       "isMarketplace": 0.34
     },
+    "1184861803": {
+      "category": "skills",
+      "categoryConfidence": 0.98,
+      "isMarketplace": 0.15
+    },
     "1184985738": {
       "category": "skills",
       "categoryConfidence": 0.99,
@@ -401,6 +406,11 @@
       "category": "devtools",
       "categoryConfidence": 0.78,
       "isMarketplace": 0.07
+    },
+    "1193553329": {
+      "category": "agents",
+      "categoryConfidence": 0.61,
+      "isMarketplace": 0.09
     },
     "1195335359": {
       "category": "skills",

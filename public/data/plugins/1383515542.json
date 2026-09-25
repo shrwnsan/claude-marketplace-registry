@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1383515542-avoid-ai-writing-russian",
+    "name": "avoid-ai-writing-russian",
+    "description": "Аудит и правка русских текстов от ИИ-стиля; под-скилл antiplagiat.",
+    "version": "2.0.0",
+    "author": "Ilya Lubenets",
+    "repository": "https://github.com/ormeilu/avoid-ai-writing-russian",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1383515542",
+      "marketplaceName": "avoid-ai-writing-russian",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1383515542-antiplagiat",
+    "name": "antiplagiat",
+    "description": "name: antiplagiat",
+    "version": "1.0.0",
+    "author": "Ilya Lubenets",
+    "repository": "https://github.com/ormeilu/avoid-ai-writing-russian",
+    "manifestPath": "skills/antiplagiat",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1383515542",
+      "marketplaceName": "avoid-ai-writing-russian",
+      "hasSkillMd": true
+    }
+  }
+]

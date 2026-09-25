@@ -23,7 +23,7 @@
   {
     "id": "1291186059-trello",
     "name": "trello",
-    "description": "Trello end to end from your agent - boards, lists and cards, plus an instant board digest, a due-date radar for what is slipping, and smart card sorting. One install, the whole pack.",
+    "description": "Trello skill pack for Claude Code and Codex over the Trello REST API - boards, lists and cards end to end, a status digest for a board, and a radar for what is due across every board.",
     "version": "",
     "author": "DBHQ",
     "repository": "https://github.com/dbhq-uk/marketplace",
@@ -65,7 +65,7 @@
   {
     "id": "1291186059-dovetail",
     "name": "dovetail",
-    "description": "Checks whether a repository still agrees with itself - dead links, moved anchors, orphaned files, documentation describing behaviour the code no longer has. The exact checks need no model and no network, so they are safe to gate a build on.",
+    "description": "Checks whether a repository still agrees with itself - dead links, moved anchors, orphaned files and duplicated content from seventeen deterministic checks, and contradictions and stale documentation from model reviewers. The checks need no model and no network, and by default only proven findings gate a build.",
     "version": "",
     "author": "DBHQ",
     "repository": "https://github.com/dbhq-uk/marketplace",
@@ -107,7 +107,7 @@
   {
     "id": "1291186059-vela",
     "name": "vela",
-    "description": "Compiler-exact code search over a SCIP index - where a symbol is defined, every reference, who calls it, what a change breaks. .NET is indexed natively through Roslyn, so Razor views and Blazor components are included rather than skipped; any other language reaches the same database through its own SCIP indexer.",
+    "description": "Compiler-exact code search over a SCIP index - where a symbol is defined, every reference, its direct callers and what implements it. .NET is indexed natively through Roslyn, with Razor and Blazor references resolved by the compiler into a saved index; any other language reaches the same database through its own SCIP indexer. The plugin installs the skill; the vela command comes from the repository's installer.",
     "version": "",
     "author": "DBHQ",
     "repository": "https://github.com/dbhq-uk/marketplace",
@@ -128,7 +128,7 @@
   {
     "id": "1291186059-garmin",
     "name": "garmin",
-    "description": "Garmin Connect health and fitness data from your agent - Body Battery, HRV, resting heart rate, stress, sleep stages and score, activities, VO2 max, training load, status and readiness. Answers a question live, or writes a day as a markdown snapshot and a week as a rollup you keep. Credentials stay on your machine.",
+    "description": "Garmin Connect health and fitness data from your agent - Body Battery, HRV, resting heart rate, stress, sleep stages and score, activities, VO2 max, training load, status and readiness. Answers a question live, or writes a day as a markdown snapshot and a week as a rollup you keep. Your password is never stored, and it talks to Garmin and nothing else.",
     "version": "",
     "author": "DBHQ",
     "repository": "https://github.com/dbhq-uk/marketplace",
@@ -149,7 +149,7 @@
   {
     "id": "1291186059-imager",
     "name": "imager",
-    "description": "Generate and edit images with OpenAI's GPT Image 2 - 27 style presets, platform sizing for the places images actually go, carousels with seed-locked composition, and photo edits. Drafts cost around $0.006 against $0.21 for a final, so the workflow iterates on drafts and only pays for the one you approved, and it prints the cost before it spends anything.",
+    "description": "Generate and edit images with OpenAI's GPT Image models, gpt-image-2.5-flare by default - 27 style presets, platform sizing for the places images actually go, transparent backgrounds, masked edits and carousels held together by a reference image. Drafts cost around $0.006 against $0.053 for a high-quality final, so the workflow iterates on drafts and only pays for the one you approved, and it prices every run before sending it.",
     "version": "",
     "author": "DBHQ",
     "repository": "https://github.com/dbhq-uk/marketplace",
@@ -212,7 +212,7 @@
   {
     "id": "1291186059-atlassian",
     "name": "atlassian",
-    "description": "Jira and Confluence from your agent, over the REST API with an API token and no MCP server. Creates and reads Jira issues - one or a batch, checking the project key, the issue type and the required fields before it writes, and reading back with JQL - and searches, reads, creates and updates Confluence pages. Create and read only: no delete.",
+    "description": "Jira and Confluence from your agent, over the REST API with an API token and no MCP server. Creates, reads and comments on Jira issues - one or a batch, checking the project key, the issue type and the required fields before it writes - and moves one at a time through its workflow. Searches, reads, creates and updates Confluence pages, changing one block without converting the rest, and publishes a markdown file to a page. Never deletes.",
     "version": "",
     "author": "DBHQ",
     "repository": "https://github.com/dbhq-uk/marketplace",
@@ -233,7 +233,7 @@
   {
     "id": "1291186059-pennyblack",
     "name": "pennyblack",
-    "description": "Put a PDF in the post. Physical letters from your agent - printed in the UK and delivered by Royal Mail, with Signed For, Tracked and Special Delivery, and the real tracking number handed back. Every letter is priced and previewed before you commit to it, and nothing is posted without an explicit send.",
+    "description": "Put a PDF in the post. Physical letters from your agent - printed in the UK and delivered by Royal Mail, with Signed For, Tracked and Special Delivery, and the tracking number recorded once Royal Mail issues it. Every letter is priced and previewed before you commit to it, and nothing is posted without an explicit send.",
     "version": "",
     "author": "DBHQ",
     "repository": "https://github.com/dbhq-uk/marketplace",
@@ -296,7 +296,7 @@
   {
     "id": "1291186059-groupwork",
     "name": "groupwork",
-    "description": "Put a second agent on the work - as an adversary or as a partner - and get back a result you can cite. Five patterns: red-team attacks an idea without being shown your evidence, second-opinion judges your material without being shown your conclusion, verify rules on finished work against its constraints, collaborate is a peer conversation, and debate runs blind proposals into adversarial rounds. Codex, opencode or Copilot behind one provider layer, and every run records what it was told and what it was not.",
+    "description": "Blind, independent review by a second model, before something ships, with a citation of what it was not shown. Four patterns: red-team attacks an idea without being shown your evidence, second-opinion judges your material without being shown your conclusion, verify rules on finished work against stated constraints, and panel puts one hard question to two or more agents at once, each answering alone. Runs on Codex or opencode behind one provider layer, and records what each run was told and what it was not.",
     "version": "",
     "author": "DBHQ",
     "repository": "https://github.com/dbhq-uk/marketplace",
