@@ -67,5 +67,73 @@
       "marketplaceName": "cowrite",
       "hasSkillMd": true
     }
+  },
+  {
+    "id": "1304012236-image-studio",
+    "name": "image-studio",
+    "description": "name: image-studio",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/image-studio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-space-multi-design-ppt",
+    "name": "space-multi-design-ppt",
+    "description": "name: space-multi-design-ppt",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/space-multi-design-ppt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-space-wechat-layout",
+    "name": "space-wechat-layout",
+    "description": "name: space-wechat-layout",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/space-wechat-layout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1304012236-text-logic-diagram",
+    "name": "text-logic-diagram",
+    "description": "name: text-logic-diagram",
+    "version": "1.0.0",
+    "author": "Space",
+    "repository": "https://github.com/SpaceZephyr/cowrite",
+    "manifestPath": "skills/text-logic-diagram",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1304012236",
+      "marketplaceName": "cowrite",
+      "hasSkillMd": true
+    }
   }
 ]

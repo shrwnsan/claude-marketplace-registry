@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1168228320-premiere-pro",
+    "name": "premiere-pro",
+    "description": "Inspect, edit, verify, and export local Premiere Pro projects through MCP.",
+    "version": "1.18.1",
+    "author": "leancoderkavy",
+    "repository": "https://github.com/leancoderkavy/premiere-pro-mcp",
+    "manifestPath": "./claude-plugins/premiere-pro",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168228320",
+      "marketplaceName": "premiere-pro-mcp",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

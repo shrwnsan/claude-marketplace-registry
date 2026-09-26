@@ -154,6 +154,23 @@
     }
   },
   {
+    "id": "1146875291-openrouter-decisions",
+    "name": "openrouter-decisions",
+    "description": "name: openrouter-decisions",
+    "version": "1.0.0",
+    "author": "OpenRouterTeam",
+    "repository": "https://github.com/OpenRouterTeam/skills",
+    "manifestPath": "skills/openrouter-decisions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146875291",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1146875291-openrouter-generations",
     "name": "openrouter-generations",
     "description": "name: openrouter-generations",
