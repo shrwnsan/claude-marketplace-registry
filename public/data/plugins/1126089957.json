@@ -1,5 +1,23 @@
 [
   {
+    "id": "1126089957-testing",
+    "name": "testing",
+    "description": "Dispatch browser and UI test work to specialized testing agents",
+    "version": "1.1.0",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
     "id": "1126089957-ai-delegation",
     "name": "ai-delegation",
     "description": "Delegate tasks to AI models, orchestrate premium-model work, and run autonomous maintenance loops",

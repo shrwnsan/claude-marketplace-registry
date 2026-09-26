@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1288556845-genesis",
+    "name": "genesis",
+    "description": "Genesis: three modes — create a project from an empty folder, transition an existing repository to a stated standard, or check the ~/.claude layer that loads in every session.",
+    "version": "",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1288556845-axiomatic-induction",
+    "name": "axiomatic-induction",
+    "description": "name: axiomatic-induction",
+    "version": "1.0.0",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "skills/axiomatic-induction",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1288556845-generate-pr",
+    "name": "generate-pr",
+    "description": "name: generate-pr",
+    "version": "1.0.0",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "skills/generate-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1288556845-git-commit",
+    "name": "git-commit",
+    "description": "name: git-commit",
+    "version": "1.0.0",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "skills/git-commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1288556845-parallel-work",
+    "name": "parallel-work",
+    "description": "name: parallel-work",
+    "version": "1.0.0",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "skills/parallel-work",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1288556845-repo-hardening",
+    "name": "repo-hardening",
+    "description": "name: repo-hardening",
+    "version": "1.0.0",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "skills/repo-hardening",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1288556845-security-audit",
+    "name": "security-audit",
+    "description": "name: security-audit",
+    "version": "1.0.0",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "skills/security-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1288556845-sources",
+    "name": "sources",
+    "description": "name: sources",
+    "version": "1.0.0",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "skills/sources",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1288556845-test-gate",
+    "name": "test-gate",
+    "description": "name: test-gate",
+    "version": "1.0.0",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "skills/test-gate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1288556845-todo",
+    "name": "todo",
+    "description": "name: todo",
+    "version": "1.0.0",
+    "author": "gabrieldabbah",
+    "repository": "https://github.com/gabrieldabbah/genesis",
+    "manifestPath": "skills/todo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288556845",
+      "marketplaceName": "genesis",
+      "hasSkillMd": true
+    }
+  }
+]

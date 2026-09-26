@@ -2,16 +2,16 @@
   "success": true,
   "data": {
     "overview": {
-      "totalPlugins": 4404,
-      "totalMarketplaces": 351,
-      "totalDevelopers": 466,
-      "totalStars": 652775,
-      "lastUpdated": "2026-09-25T18:54:44.891Z",
+      "totalPlugins": 4442,
+      "totalMarketplaces": 357,
+      "totalDevelopers": 471,
+      "totalStars": 654466,
+      "lastUpdated": "2026-09-26T04:05:18.479Z",
       "growthRate": {
-        "plugins": 245.7,
-        "marketplaces": 251,
-        "developers": 17.7,
-        "stars": 109.5
+        "plugins": 248.7,
+        "marketplaces": 257,
+        "developers": 18.9,
+        "stars": 110.1
       }
     },
     "plugins": [
@@ -53,6 +53,11 @@
         "date": "2026-09-25",
         "value": 4404,
         "change": 83
+      },
+      {
+        "date": "2026-09-26",
+        "value": 4442,
+        "change": 38
       }
     ],
     "marketplaces": [
@@ -94,6 +99,11 @@
         "date": "2026-09-25",
         "value": 351,
         "change": 18
+      },
+      {
+        "date": "2026-09-26",
+        "value": 357,
+        "change": 6
       }
     ],
     "developers": [
@@ -134,6 +144,11 @@
         "date": "2026-09-25",
         "value": 466,
         "change": 19
+      },
+      {
+        "date": "2026-09-26",
+        "value": 471,
+        "change": 5
       }
     ],
     "stars": [
@@ -175,6 +190,11 @@
         "date": "2026-09-25",
         "value": 652775,
         "change": 3484
+      },
+      {
+        "date": "2026-09-26",
+        "value": 654466,
+        "change": 1691
       }
     ],
     "period": "all",
@@ -183,84 +203,84 @@
       {
         "id": "claude-code",
         "name": "claude-code",
-        "count": 2747,
+        "count": 3321,
         "description": "Plugins from marketplaces tagged \"claude-code\" (topics overlap)"
-      },
-      {
-        "id": "mcp",
-        "name": "mcp",
-        "count": 1490,
-        "description": "Plugins from marketplaces tagged \"mcp\" (topics overlap)"
       },
       {
         "id": "ai-agents",
         "name": "ai-agents",
-        "count": 1299,
+        "count": 1851,
         "description": "Plugins from marketplaces tagged \"ai-agents\" (topics overlap)"
-      },
-      {
-        "id": "claude-plugins",
-        "name": "claude-plugins",
-        "count": 1141,
-        "description": "Plugins from marketplaces tagged \"claude-plugins\" (topics overlap)"
-      },
-      {
-        "id": "developer-tools",
-        "name": "developer-tools",
-        "count": 1020,
-        "description": "Plugins from marketplaces tagged \"developer-tools\" (topics overlap)"
       },
       {
         "id": "claude",
         "name": "claude",
-        "count": 1016,
+        "count": 1570,
         "description": "Plugins from marketplaces tagged \"claude\" (topics overlap)"
+      },
+      {
+        "id": "developer-tools",
+        "name": "developer-tools",
+        "count": 1561,
+        "description": "Plugins from marketplaces tagged \"developer-tools\" (topics overlap)"
+      },
+      {
+        "id": "mcp",
+        "name": "mcp",
+        "count": 1492,
+        "description": "Plugins from marketplaces tagged \"mcp\" (topics overlap)"
       },
       {
         "id": "anthropic",
         "name": "anthropic",
-        "count": 910,
+        "count": 1452,
         "description": "Plugins from marketplaces tagged \"anthropic\" (topics overlap)"
+      },
+      {
+        "id": "claude-plugins",
+        "name": "claude-plugins",
+        "count": 1170,
+        "description": "Plugins from marketplaces tagged \"claude-plugins\" (topics overlap)"
+      },
+      {
+        "id": "llm",
+        "name": "llm",
+        "count": 1134,
+        "description": "Plugins from marketplaces tagged \"llm\" (topics overlap)"
+      },
+      {
+        "id": "claude-code-plugin",
+        "name": "claude-code-plugin",
+        "count": 1016,
+        "description": "Plugins from marketplaces tagged \"claude-code-plugin\" (topics overlap)"
       },
       {
         "id": "agent-skills",
         "name": "agent-skills",
-        "count": 905,
+        "count": 933,
         "description": "Plugins from marketplaces tagged \"agent-skills\" (topics overlap)"
-      },
-      {
-        "id": "claude-skills",
-        "name": "claude-skills",
-        "count": 656,
-        "description": "Plugins from marketplaces tagged \"claude-skills\" (topics overlap)"
-      },
-      {
-        "id": "skills",
-        "name": "skills",
-        "count": 620,
-        "description": "Plugins from marketplaces tagged \"skills\" (topics overlap)"
       }
     ],
     "insights": [
-      "4404 plugins discovered across 351 marketplaces",
-      "Most starred: ECC (267,362 stars)",
-      "Most common topic: claude-code (2747 plugins)",
-      "307 marketplaces updated in the last 30 days"
+      "4442 plugins discovered across 357 marketplaces",
+      "Most starred: ECC (267,562 stars)",
+      "Most common topic: claude-code (3321 plugins)",
+      "313 marketplaces updated in the last 30 days"
     ],
     "manifestCoverage": {
-      "withManifest": 280,
-      "total": 351,
+      "withManifest": 285,
+      "total": 357,
       "rate": 79.8
     },
     "maintenance": {
-      "recentlyUpdated": 307,
-      "recentlyUpdatedRate": 87.5,
+      "recentlyUpdated": 313,
+      "recentlyUpdatedRate": 87.7,
       "staleOver180Days": 0
     },
-    "avgStarsPerMarketplace": 1860
+    "avgStarsPerMarketplace": 1833
   },
   "meta": {
-    "timestamp": "2026-09-25T18:54:44.891Z",
+    "timestamp": "2026-09-26T04:05:18.479Z",
     "requestId": "static-build",
     "responseTime": 0
   }
