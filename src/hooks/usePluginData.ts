@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useRealMarketplaceData } from './useRealMarketplaceData';
+import { selectRotated } from '@/utils/stats';
 
 /**
  * UI-facing plugin shape. Index entries (public/data/plugins.json) carry
@@ -217,4 +218,22 @@ export function topPluginsByStars(plugins: CatalogPlugin[], count: number): Cata
     }
   }
   return [...perMarketplace, ...rest].slice(0, count);
+}
+
+/** Rotation pool for the homepage's Popular Plugins section. */
+export const POPULAR_PLUGINS_POOL = 18;
+
+/**
+ * Popular plugins for the homepage, rotated daily: the diversified
+ * star-ranked pool (topPluginsByStars) anchors its top 2, and the remaining
+ * slots rotate through the rest of the top 18 day by day — same mechanism
+ * as Featured Marketplaces, so no single set of cards sits forever.
+ */
+export function selectPopularPlugins(
+  plugins: CatalogPlugin[],
+  count = 9,
+  now: number = Date.now()
+): CatalogPlugin[] {
+  const ranked = topPluginsByStars(plugins, POPULAR_PLUGINS_POOL);
+  return selectRotated(ranked, count, { poolSize: POPULAR_PLUGINS_POOL, anchorCount: 2, now });
 }

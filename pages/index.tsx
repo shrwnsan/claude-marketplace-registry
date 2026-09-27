@@ -4,7 +4,7 @@ import MainLayout from '@/components/layout/MainLayout';
 import SearchCombobox from '@/components/Search/SearchCombobox';
 import PluginCard from '@/components/Marketplace/PluginCard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
-import { usePluginData, topPluginsByStars } from '@/hooks/usePluginData';
+import { usePluginData, selectPopularPlugins } from '@/hooks/usePluginData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
 import { StatCard } from '@/components/ui/StatCard';
@@ -28,7 +28,8 @@ const HomePage: React.FC = () => {
   const topics = useMemo(() => (stats?.categories || []).slice(0, 8).map((c) => c.name), [stats]);
 
   // Popular = top plugins by parent-marketplace stars (search lives in the combobox)
-  const displayPlugins = useMemo(() => topPluginsByStars(allPlugins, 9), [allPlugins]);
+  // Popular picks, rotated daily over the diversified star-ranked pool
+  const displayPlugins = useMemo(() => selectPopularPlugins(allPlugins, 9), [allPlugins]);
 
   // Deterministic daily rotation over the highest-signal marketplaces
   const featured = useMemo(() => selectFeaturedMarketplaces(marketplaces, 6), [marketplaces]);
@@ -252,7 +253,7 @@ const HomePage: React.FC = () => {
                   Popular Plugins
                 </h2>
                 <p className='text-gray-600 dark:text-gray-400 text-sm sm:text-base mt-1'>
-                  Popular picks from the most-starred marketplaces
+                  Popular picks from the most-starred marketplaces — rotated daily
                 </p>
               </div>
               <Link
