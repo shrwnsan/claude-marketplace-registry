@@ -1,0 +1,1005 @@
+[
+  {
+    "id": "1115758005-agent-browser",
+    "name": "agent-browser",
+    "description": "name: agent-browser",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/agent-browser",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-agent-engineering",
+    "name": "agent-engineering",
+    "description": "name: agent-engineering",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/agent-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-app-marketing-copy",
+    "name": "app-marketing-copy",
+    "description": "name: app-marketing-copy",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/app-marketing-copy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-ascii-pixel-art",
+    "name": "ascii-pixel-art",
+    "description": "name: ascii-pixel-art",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/ascii-pixel-art",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-autopredict",
+    "name": "autopredict",
+    "description": "name: autopredict",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/autopredict",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-autoresearch",
+    "name": "autoresearch",
+    "description": "name: autoresearch",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/autoresearch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-babysit-pr",
+    "name": "babysit-pr",
+    "description": "name: babysit-pr",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/babysit-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-bird-fast",
+    "name": "bird-fast",
+    "description": "name: bird-fast",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/bird-fast",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-blockchain-auditor",
+    "name": "blockchain-auditor",
+    "description": "name: blockchain-auditor",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/blockchain-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-brainstorming",
+    "name": "brainstorming",
+    "description": "name: brainstorming",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/brainstorming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-ceo-review",
+    "name": "ceo-review",
+    "description": "name: ceo-review",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/ceo-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-ck-review",
+    "name": "ck-review",
+    "description": "name: ck-review",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/ck-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-cloudflare-manager",
+    "name": "cloudflare-manager",
+    "description": "name: cloudflare-manager",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/cloudflare-manager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-codex-advisor",
+    "name": "codex-advisor",
+    "description": "name: codex-advisor",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/codex-advisor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-content-trend-researcher",
+    "name": "content-trend-researcher",
+    "description": "name: content-trend-researcher",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/content-trend-researcher",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-continuous-learning",
+    "name": "continuous-learning",
+    "description": "name: continuous-learning",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/continuous-learning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-coreml-optimizer",
+    "name": "coreml-optimizer",
+    "description": "name: coreml-optimizer",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/coreml-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-cto-review",
+    "name": "cto-review",
+    "description": "name: cto-review",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/cto-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-direct-mail-strategist",
+    "name": "direct-mail-strategist",
+    "description": "name: direct-mail-strategist",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/direct-mail-strategist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-evangelion-design",
+    "name": "evangelion-design",
+    "description": "name: evangelion-design",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/evangelion-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-executing-plans",
+    "name": "executing-plans",
+    "description": "name: executing-plans",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/executing-plans",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-freshdesk-api",
+    "name": "freshdesk-api",
+    "description": "name: freshdesk-api",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/freshdesk-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-gemini-image-generator",
+    "name": "gemini-image-generator",
+    "description": "name: gemini-image-generator",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/gemini-image-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-gemini-visual",
+    "name": "gemini-visual",
+    "description": "name: gemini-visual",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/gemini-visual",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-github-actions-templates",
+    "name": "github-actions-templates",
+    "description": "name: github-actions-templates",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/github-actions-templates",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-google",
+    "name": "google",
+    "description": "name: google",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/google",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-gsplat-optimizer",
+    "name": "gsplat-optimizer",
+    "description": "name: gsplat-optimizer",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/gsplat-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-hyperagent",
+    "name": "hyperagent",
+    "description": "name: hyperagent",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/hyperagent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-idea-md",
+    "name": "idea-md",
+    "description": "name: idea-md",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/idea-md",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-imagegen",
+    "name": "imagegen",
+    "description": "name: imagegen",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/imagegen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-ios-app-tester",
+    "name": "ios-app-tester",
+    "description": "name: ios-app-tester",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/ios-app-tester",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-llm-advisor",
+    "name": "llm-advisor",
+    "description": "name: llm-advisor",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/llm-advisor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-llm-evaluation",
+    "name": "llm-evaluation",
+    "description": "name: llm-evaluation",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/llm-evaluation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-macos-apps",
+    "name": "macos-apps",
+    "description": "name: macos-apps",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/macos-apps",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-markdown-fetch",
+    "name": "markdown-fetch",
+    "description": "name: markdown-fetch",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/markdown-fetch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-mcp-builder",
+    "name": "mcp-builder",
+    "description": "name: mcp-builder",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/mcp-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-mcp-tester",
+    "name": "mcp-tester",
+    "description": "name: mcp-tester",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/mcp-tester",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-nano-banana",
+    "name": "nano-banana",
+    "description": "name: nano-banana",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/nano-banana",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-opensea-api",
+    "name": "opensea-api",
+    "description": "name: opensea-api",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/opensea-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-paperclip",
+    "name": "paperclip",
+    "description": "name: paperclip",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/paperclip",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-playdate-dev",
+    "name": "playdate-dev",
+    "description": "name: playdate-dev",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/playdate-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-poke-assistant",
+    "name": "poke-assistant",
+    "description": "name: poke-assistant",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/poke-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-poplar-direct-mail",
+    "name": "poplar-direct-mail",
+    "description": "name: poplar-direct-mail",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/poplar-direct-mail",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-practical-typography",
+    "name": "practical-typography",
+    "description": "name: practical-typography",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/practical-typography",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-prompt-factory",
+    "name": "prompt-factory",
+    "description": "name: prompt-factory",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/prompt-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-qmd",
+    "name": "qmd",
+    "description": "name: qmd",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/qmd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-scientific-critical-thinking",
+    "name": "scientific-critical-thinking",
+    "description": "name: scientific-critical-thinking",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/scientific-critical-thinking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-security-best-practices",
+    "name": "security-best-practices",
+    "description": "name: security-best-practices",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/security-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-security-threat-model",
+    "name": "security-threat-model",
+    "description": "name: security-threat-model",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/security-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-seo-optimizer",
+    "name": "seo-optimizer",
+    "description": "name: seo-optimizer",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/seo-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-shadertoy",
+    "name": "shadertoy",
+    "description": "name: shadertoy",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/shadertoy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-skill-finder",
+    "name": "skill-finder",
+    "description": "name: skill-finder",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/skill-finder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-skimmable",
+    "name": "skimmable",
+    "description": "name: skimmable",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/skimmable",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-subway-info",
+    "name": "subway-info",
+    "description": "name: subway-info",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/subway-info",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-systematic-debugging",
+    "name": "systematic-debugging",
+    "description": "name: systematic-debugging",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/systematic-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-tui-designer",
+    "name": "tui-designer",
+    "description": "name: tui-designer",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/tui-designer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-ui-design",
+    "name": "ui-design",
+    "description": "name: ui-design",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/ui-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-video-editor",
+    "name": "video-editor",
+    "description": "name: video-editor",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/video-editor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-writing-plans",
+    "name": "writing-plans",
+    "description": "name: writing-plans",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/writing-plans",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1389819535-aldogor-core",
+    "name": "aldogor-core",
+    "description": "Skills for Claude Code and claude.ai: research and citation verification, structure and prose review, session handoff, grilling and questionnaires",
+    "version": "",
+    "author": "aldogor",
+    "repository": "https://github.com/aldogor/aldogor-claude-plugins",
+    "manifestPath": "./plugins/aldogor-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1389819535",
+      "marketplaceName": "aldogor-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1389819535-aldogor-code",
+    "name": "aldogor-code",
+    "description": "Claude Code only: project setup and tidying, preparing a repository for collaborators, a counsel agent on Fable",
+    "version": "",
+    "author": "aldogor",
+    "repository": "https://github.com/aldogor/aldogor-claude-plugins",
+    "manifestPath": "./plugins/aldogor-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1389819535",
+      "marketplaceName": "aldogor-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

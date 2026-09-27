@@ -1510,5 +1510,23 @@
       "skills": [],
       "strict": false
     }
+  },
+  {
+    "id": "1150055983-kpn",
+    "name": "kpn",
+    "description": "KPN (Dutch telco) - outage and speed checks by address, SIM-swap fraud checks, and business-mobile fleet management: subscribers, contracts, orders, invoices, SIM block/replace (alpha - no verified KPN developer-portal credentials yet)",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/kpn/kpn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
   }
 ]

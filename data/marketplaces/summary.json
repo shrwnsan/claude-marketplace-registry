@@ -1,61 +1,60 @@
 {
-  "totalFound": 357,
-  "withManifest": 285,
-  "lastUpdated": "2026-09-26T03:58:51.465Z",
+  "totalFound": 370,
+  "withManifest": 292,
+  "lastUpdated": "2026-09-27T04:10:09.102Z",
   "searchQuery": "",
   "languages": {
-    "Python": 112,
+    "Python": 119,
     "Shell": 46,
-    "TypeScript": 39,
-    "Rust": 10,
+    "TypeScript": 40,
+    "Rust": 11,
     "JavaScript": 63,
     "Go": 12,
-    "Unknown": 40,
-    "HTML": 17,
+    "Unknown": 43,
+    "HTML": 19,
     "AMPL": 1,
-    "TeX": 1,
     "C++": 1,
     "Swift": 2,
     "Svelte": 1,
+    "Astro": 1,
     "Jupyter Notebook": 2,
     "Perl": 1,
-    "Astro": 1,
     "C#": 2,
-    "Java": 2,
-    "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
-    "Ruby": 1
+    "Ruby": 1,
+    "Java": 2,
+    "PHP": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 267562,
+      "stars": 267993,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 178368,
+      "stars": 178570,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75647,
+      "stars": 75682,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 36961,
+      "stars": 37059,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "daily",
-      "stars": 20076,
+      "stars": 20077,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12085,
+      "stars": 12086,
       "url": "https://github.com/kubeshark/kubeshark"
     },
     {
@@ -65,17 +64,17 @@
     },
     {
       "name": "claude-octopus",
-      "stars": 4101,
+      "stars": 4102,
       "url": "https://github.com/nyldn/claude-octopus"
     },
     {
       "name": "treg",
-      "stars": 3401,
+      "stars": 3512,
       "url": "https://github.com/superdesigndev/treg"
     },
     {
       "name": "awesome-ChatGPT-repositories",
-      "stars": 3263,
+      "stars": 3262,
       "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
     }
   ]
