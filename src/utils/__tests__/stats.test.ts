@@ -112,3 +112,48 @@ describe('topicShare', () => {
     expect(topicShare(5, 0)).toBe(0);
   });
 });
+
+import { selectRotated } from '../stats';
+
+describe('selectRotated', () => {
+  const ranked = Array.from({ length: 20 }, (_, i) => ({ id: String(i) }));
+  const day = (n: number) => new Date(`2026-02-${String(n).padStart(2, '0')}T00:00:00Z`).getTime();
+
+  it('is deterministic for a given instant', () => {
+    const a = selectRotated(ranked, 6, { poolSize: 12, anchorCount: 3, now: day(10) });
+    const b = selectRotated(ranked, 6, { poolSize: 12, anchorCount: 3, now: day(10) });
+    expect(a).toEqual(b);
+  });
+
+  it('anchors the top entries regardless of the day', () => {
+    for (let d = 1; d <= 20; d++) {
+      expect(
+        selectRotated(ranked, 6, { poolSize: 12, anchorCount: 3, now: day(d) }).slice(0, 3)
+      ).toEqual([{ id: '0' }, { id: '1' }, { id: '2' }]);
+    }
+  });
+
+  it('advances the rotating window day over day', () => {
+    const windows = [1, 2, 3, 4].map((d) =>
+      selectRotated(ranked, 6, { poolSize: 12, anchorCount: 3, now: day(d) })
+        .slice(3)
+        .map((x) => x.id)
+    );
+    expect(new Set(windows.map((w) => w.join(','))).size).toBeGreaterThan(1);
+  });
+
+  it('stays inside the pool and never repeats within a day', () => {
+    for (let d = 1; d <= 14; d++) {
+      const out = selectRotated(ranked, 6, { poolSize: 12, anchorCount: 3, now: day(d) });
+      const ids = out.map((x) => x.id);
+      expect(ids).toHaveLength(new Set(ids).size);
+      for (const id of ids) expect(Number(id)).toBeLessThan(12);
+    }
+  });
+
+  it('returns the whole pool when count covers it', () => {
+    expect(selectRotated(ranked, 20, { poolSize: 12, anchorCount: 3, now: day(5) })).toHaveLength(
+      12
+    );
+  });
+});

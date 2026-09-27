@@ -31,6 +31,36 @@ export function featuredScore(m: FeaturedMarketplace): number {
 }
 
 /**
+ * Deterministic daily rotation core: anchor the top entries (flagships don't
+ * rotate away), rotate the remaining slots through the rest of the pool day
+ * by day. Shared by the homepage's Featured Marketplaces and Popular Plugins
+ * sections so both rotate on the same tested code path.
+ */
+export function selectRotated<T>(
+  ranked: T[],
+  count: number,
+  options: { poolSize?: number; anchorCount?: number; now?: number } = {}
+): T[] {
+  const { poolSize = ranked.length, anchorCount = 3, now = Date.now() } = options;
+  const pool = ranked.slice(0, Math.min(poolSize, ranked.length));
+  if (pool.length <= count) return pool;
+
+  const anchors = pool.slice(0, Math.min(anchorCount, count));
+  const rotators = pool.slice(anchors.length);
+  const slots = count - anchors.length;
+  if (slots <= 0 || rotators.length === 0) return anchors;
+
+  const dayOfYear = Math.floor(
+    (now - new Date(new Date(now).getFullYear(), 0, 0).getTime()) / (1000 * 60 * 60 * 24)
+  );
+  const offset = dayOfYear % rotators.length;
+  return [
+    ...anchors,
+    ...Array.from({ length: slots }, (_, i) => rotators[(offset + i) % rotators.length]),
+  ];
+}
+
+/**
  * Deterministic daily rotation: the top-3 highest-scoring marketplaces are
  * anchored (flagships should not rotate away below mid-tier repos), and the
  * remaining slots rotate through the rest of the top `poolSize` day by day.
@@ -44,22 +74,7 @@ export function selectFeaturedMarketplaces<T extends FeaturedMarketplace>(
   const ranked = [...marketplaces].sort(
     (a, b) => featuredScore(b) - featuredScore(a) || String(a.id).localeCompare(String(b.id))
   );
-  const pool = ranked.slice(0, Math.min(poolSize, ranked.length));
-  if (pool.length <= count) return pool;
-
-  const anchors = pool.slice(0, Math.min(3, count));
-  const rotators = pool.slice(anchors.length);
-  const slots = count - anchors.length;
-  if (slots <= 0 || rotators.length === 0) return anchors;
-
-  const dayOfYear = Math.floor(
-    (now - new Date(new Date(now).getFullYear(), 0, 0).getTime()) / (1000 * 60 * 60 * 24)
-  );
-  const offset = dayOfYear % rotators.length;
-  return [
-    ...anchors,
-    ...Array.from({ length: slots }, (_, i) => rotators[(offset + i) % rotators.length]),
-  ];
+  return selectRotated(ranked, count, { poolSize, anchorCount: 3, now });
 }
 
 /**
