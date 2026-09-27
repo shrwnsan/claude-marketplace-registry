@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1217098957-goofish-overview",
+    "name": "goofish-overview",
+    "description": "闲鱼自动化总入口：介绍工具定位、账号模型、15 个 MCP 工具速查、风控底线，并指向其它专项 skill。",
+    "version": "",
+    "author": "fancyboi999",
+    "repository": "https://github.com/fancyboi999/goofish-cli",
+    "manifestPath": "./skills/goofish-overview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217098957",
+      "marketplaceName": "goofish-cli",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1217098957-goofish-risk-guard",
+    "name": "goofish-risk-guard",
+    "description": "发布 / 发消息 / 风控恢复三道闸门。内置违禁词表、外联词表、x5sec 恢复指引。被其它 skill 频繁引用。",
+    "version": "",
+    "author": "fancyboi999",
+    "repository": "https://github.com/fancyboi999/goofish-cli",
+    "manifestPath": "./skills/goofish-risk-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217098957",
+      "marketplaceName": "goofish-cli",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1217098957-goofish-publish-item",
+    "name": "goofish-publish-item",
+    "description": "从描述 / 图片到商品发布的闭环：类目识别 → 标题 5 段式生成 → 风控扫描 → 批量传图 → 用户确认 → 调 item_publish。",
+    "version": "",
+    "author": "fancyboi999",
+    "repository": "https://github.com/fancyboi999/goofish-cli",
+    "manifestPath": "./skills/goofish-publish-item",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217098957",
+      "marketplaceName": "goofish-cli",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1217098957-goofish-reply-buyer",
+    "name": "goofish-reply-buyer",
+    "description": "买家消息闭环：拉未读 → 意图分类 → 议价阶梯策略 → 风控扫描 → 用户确认发送。不托管发送权。",
+    "version": "",
+    "author": "fancyboi999",
+    "repository": "https://github.com/fancyboi999/goofish-cli",
+    "manifestPath": "./skills/goofish-reply-buyer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217098957",
+      "marketplaceName": "goofish-cli",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1217098957-goofish-shop-diagnosis",
+    "name": "goofish-shop-diagnosis",
+    "description": "限流 / 降权 / 曝光掉的归因诊断。search_items 买家视角搜 + item_view 历史对比 → 给嫌疑排序和修复清单。",
+    "version": "",
+    "author": "fancyboi999",
+    "repository": "https://github.com/fancyboi999/goofish-cli",
+    "manifestPath": "./skills/goofish-shop-diagnosis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1217098957",
+      "marketplaceName": "goofish-cli",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1204361785-llmwiki",
+    "name": "llmwiki",
+    "description": "Core llmwiki plugin — commands, skills, hooks, and MCP server for building a wiki from your agent sessions.",
+    "version": "",
+    "author": "Pratiyush",
+    "repository": "https://github.com/Pratiyush/llm-wiki",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204361785",
+      "marketplaceName": "llm-wiki",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1204361785-llmwiki-ingest",
+    "name": "llmwiki-ingest",
+    "description": "name: llmwiki-ingest",
+    "version": "1.0.0",
+    "author": "Pratiyush",
+    "repository": "https://github.com/Pratiyush/llm-wiki",
+    "manifestPath": ".claude/skills/llmwiki-ingest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204361785",
+      "marketplaceName": "llm-wiki",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1204361785-llmwiki-query",
+    "name": "llmwiki-query",
+    "description": "name: llmwiki-query",
+    "version": "1.0.0",
+    "author": "Pratiyush",
+    "repository": "https://github.com/Pratiyush/llm-wiki",
+    "manifestPath": ".claude/skills/llmwiki-query",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204361785",
+      "marketplaceName": "llm-wiki",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1204361785-llmwiki-sync",
+    "name": "llmwiki-sync",
+    "description": "name: llmwiki-sync",
+    "version": "1.0.0",
+    "author": "Pratiyush",
+    "repository": "https://github.com/Pratiyush/llm-wiki",
+    "manifestPath": ".claude/skills/llmwiki-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204361785",
+      "marketplaceName": "llm-wiki",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1204361785-project-maintainer",
+    "name": "project-maintainer",
+    "description": "name: project-maintainer",
+    "version": "1.0.0",
+    "author": "Pratiyush",
+    "repository": "https://github.com/Pratiyush/llm-wiki",
+    "manifestPath": ".claude/skills/project-maintainer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204361785",
+      "marketplaceName": "llm-wiki",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1204361785-self-learn",
+    "name": "self-learn",
+    "description": "name: self-learn",
+    "version": "1.0.0",
+    "author": "Pratiyush",
+    "repository": "https://github.com/Pratiyush/llm-wiki",
+    "manifestPath": ".claude/skills/self-learn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204361785",
+      "marketplaceName": "llm-wiki",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1204361785-wiki-all",
+    "name": "wiki-all",
+    "description": "name: wiki-all",
+    "version": "1.0.0",
+    "author": "Pratiyush",
+    "repository": "https://github.com/Pratiyush/llm-wiki",
+    "manifestPath": ".claude/skills/wiki-all",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204361785",
+      "marketplaceName": "llm-wiki",
+      "hasSkillMd": true
+    }
+  }
+]

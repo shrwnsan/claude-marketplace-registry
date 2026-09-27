@@ -3,7 +3,7 @@
     "id": "1248496316-llm-orchestrator",
     "name": "llm-orchestrator",
     "description": "Agent orchestration toolkit. 19 skills, 15 commands, 7 native subagents, file-based memory, native Claude Code hooks, and an opt-in review cadence with a lock over the rules that state it.",
-    "version": "0.11.0",
+    "version": "0.12.0",
     "author": "felipemelendez",
     "repository": "https://github.com/felipemelendez/llm-orchestrator",
     "manifestPath": "./",
@@ -263,23 +263,6 @@
     "author": "felipemelendez",
     "repository": "https://github.com/felipemelendez/llm-orchestrator",
     "manifestPath": "skills/using-orchestrator",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1248496316",
-      "marketplaceName": "llm-orchestrator",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1248496316-using-workflows",
-    "name": "using-workflows",
-    "description": "name: using-workflows",
-    "version": "1.0.0",
-    "author": "felipemelendez",
-    "repository": "https://github.com/felipemelendez/llm-orchestrator",
-    "manifestPath": "skills/using-workflows",
     "isValid": true,
     "errors": [],
     "warnings": [],
