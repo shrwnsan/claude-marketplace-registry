@@ -70,6 +70,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
           NODE_ENV: production
           FORCE_UPDATE: ${{ github.event.inputs.force_update || 'false' }}
+          # Catalog cap. 500 = first scale step (was 250); the payload,
+          # sharding, discovery-depth and triage-retirement prerequisites are
+          # all landed. Watch scan duration and bot-pool quota for a few
+          # cycles before considering 1,000.
+          SEARCH_RESULTS_LIMIT: '500'
 
       - name: Upload scan results
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
