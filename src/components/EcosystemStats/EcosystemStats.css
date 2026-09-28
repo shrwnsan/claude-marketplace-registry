@@ -181,13 +181,22 @@
 }
 
 /* Chart tooltip theming — recharts reads these CSS variables so the
-   tooltip follows light/dark mode (defaults were white-on-white in dark). */
+   tooltip follows light/dark mode (defaults were white-on-white in dark).
+   Series colors are validated categorical steps (dataviz six checks) with
+   dark-mode steps picked from the same hue ramps, not flipped. Axis text
+   stays a muted ink token — text never wears a series color. */
 :root {
   --tooltip-bg: #ffffff;
   --tooltip-border: #e4e0d8;
   --tooltip-text: #26221c;
   --tooltip-muted: #7f776a;
   --chart-grid: #e8e5de;
+  --chart-axis-text: #7f776a;
+  --chart-surface: #ffffff;
+  --series-plugins: #c76747;
+  --series-marketplaces: #00650a;
+  --series-developers: #d09f31;
+  --series-stars: #0099a3;
 }
 
 .dark {
@@ -196,4 +205,10 @@
   --tooltip-text: #f3f1ec;
   --tooltip-muted: #a49c8f;
   --chart-grid: #3b362e;
+  --chart-axis-text: #a49c8f;
+  --chart-surface: #161310;
+  --series-plugins: #b35536;
+  --series-marketplaces: #38ac56;
+  --series-developers: #855600;
+  --series-stars: #0099a3;
 }
