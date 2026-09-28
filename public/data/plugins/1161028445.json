@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1161028445-ai-instruct",
+    "name": "ai-instruct",
+    "description": "Drop-in skills for Claude Code covering AWS deployment, Google Analytics 4, SEO/LLMO, web accessibility, and Core Web Vitals.",
+    "version": "2.0.6",
+    "author": "ziniman",
+    "repository": "https://github.com/ziniman/ai-instruct",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1161028445",
+      "marketplaceName": "ai-instruct",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1161028445-aws-spa-deploy",
+    "name": "aws-spa-deploy",
+    "description": "name: aws-spa-deploy",
+    "version": "1.0.0",
+    "author": "ziniman",
+    "repository": "https://github.com/ziniman/ai-instruct",
+    "manifestPath": "skills/aws-spa-deploy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1161028445",
+      "marketplaceName": "ai-instruct",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1161028445-google-analytics-4",
+    "name": "google-analytics-4",
+    "description": "name: google-analytics-4",
+    "version": "1.0.0",
+    "author": "ziniman",
+    "repository": "https://github.com/ziniman/ai-instruct",
+    "manifestPath": "skills/google-analytics-4",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1161028445",
+      "marketplaceName": "ai-instruct",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1161028445-seo-llmo",
+    "name": "seo-llmo",
+    "description": "name: seo-llmo",
+    "version": "1.0.0",
+    "author": "ziniman",
+    "repository": "https://github.com/ziniman/ai-instruct",
+    "manifestPath": "skills/seo-llmo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1161028445",
+      "marketplaceName": "ai-instruct",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1161028445-web-accessibility",
+    "name": "web-accessibility",
+    "description": "name: web-accessibility",
+    "version": "1.0.0",
+    "author": "ziniman",
+    "repository": "https://github.com/ziniman/ai-instruct",
+    "manifestPath": "skills/web-accessibility",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1161028445",
+      "marketplaceName": "ai-instruct",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1161028445-web-performance",
+    "name": "web-performance",
+    "description": "name: web-performance",
+    "version": "1.0.0",
+    "author": "ziniman",
+    "repository": "https://github.com/ziniman/ai-instruct",
+    "manifestPath": "skills/web-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1161028445",
+      "marketplaceName": "ai-instruct",
+      "hasSkillMd": true
+    }
+  }
+]

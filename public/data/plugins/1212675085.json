@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1212675085-yt-extract",
+    "name": "yt-extract",
+    "description": "Extract transcripts, metadata, screenshots, and comments from YouTube videos — all in one Claude Code command",
+    "version": "1.10.1",
+    "author": "Mucky / buzzwoo",
+    "repository": "https://github.com/muckybuzzwoo/claude-code-youtube-extract",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1212675085",
+      "marketplaceName": "claude-code-youtube-extract",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1324384538-us-code",
+    "name": "us-code",
+    "description": "Look up, search, quote, and compare the United States Code using a verified local corpus downloaded on first use",
+    "version": "0.2.0",
+    "author": "DocketDrafter",
+    "repository": "https://github.com/DocketDrafter/docketdrafter-plugins",
+    "manifestPath": "./plugins/us-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324384538",
+      "marketplaceName": "docketdrafter-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324384538-ny-laws",
+    "name": "ny-laws",
+    "description": "Look up and search New York statutes, the state constitution, NYC Administrative Code, and selected court rules using a verified local corpus downloaded on first use",
+    "version": "0.2.0",
+    "author": "DocketDrafter",
+    "repository": "https://github.com/DocketDrafter/docketdrafter-plugins",
+    "manifestPath": "./plugins/ny-laws",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324384538",
+      "marketplaceName": "docketdrafter-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324384538-fl-laws",
+    "name": "fl-laws",
+    "description": "Look up and search Florida Statutes, the state constitution, and statewide court rules using a verified local corpus downloaded on first use",
+    "version": "0.2.0",
+    "author": "DocketDrafter",
+    "repository": "https://github.com/DocketDrafter/docketdrafter-plugins",
+    "manifestPath": "./plugins/fl-laws",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324384538",
+      "marketplaceName": "docketdrafter-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324384538-in-laws",
+    "name": "in-laws",
+    "description": "Look up and search the Indiana Code and Indiana Constitution using a verified local corpus downloaded on first use",
+    "version": "0.2.0",
+    "author": "DocketDrafter",
+    "repository": "https://github.com/DocketDrafter/docketdrafter-plugins",
+    "manifestPath": "./plugins/in-laws",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324384538",
+      "marketplaceName": "docketdrafter-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324384538-il-laws",
+    "name": "il-laws",
+    "description": "Look up and search Illinois Compiled Statutes and Illinois Supreme Court Rules using a verified local corpus downloaded on first use",
+    "version": "0.2.0",
+    "author": "DocketDrafter",
+    "repository": "https://github.com/DocketDrafter/docketdrafter-plugins",
+    "manifestPath": "./plugins/il-laws",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324384538",
+      "marketplaceName": "docketdrafter-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324384538-oh-laws",
+    "name": "oh-laws",
+    "description": "Look up and search the Ohio Revised Code and Ohio Constitution using a verified local corpus downloaded on first use",
+    "version": "0.2.0",
+    "author": "DocketDrafter",
+    "repository": "https://github.com/DocketDrafter/docketdrafter-plugins",
+    "manifestPath": "./plugins/oh-laws",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324384538",
+      "marketplaceName": "docketdrafter-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324384538-ma-laws",
+    "name": "ma-laws",
+    "description": "Look up and search the Massachusetts Constitution, General Laws, and Rules of Civil Procedure using a verified local corpus downloaded on first use",
+    "version": "0.4.0",
+    "author": "DocketDrafter",
+    "repository": "https://github.com/DocketDrafter/docketdrafter-plugins",
+    "manifestPath": "./plugins/ma-laws",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324384538",
+      "marketplaceName": "docketdrafter-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324384538-federal-court-rules",
+    "name": "federal-court-rules",
+    "description": "Look up and search federal procedural and evidence rules plus selected district local and ECF rules using a verified local corpus downloaded on first use",
+    "version": "0.2.0",
+    "author": "DocketDrafter",
+    "repository": "https://github.com/DocketDrafter/docketdrafter-plugins",
+    "manifestPath": "./plugins/federal-court-rules",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324384538",
+      "marketplaceName": "docketdrafter-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

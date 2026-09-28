@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1130883021-oh-my-claude-code",
+    "name": "oh-my-claude-code",
+    "description": "Multi-agent orchestration with Ultrawork mode for Claude Code",
+    "version": "1.1.0",
+    "author": "oh-my-claude-code contributors",
+    "repository": "https://github.com/zephyrpersonal/oh-my-claude-code",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1130883021",
+      "marketplaceName": "oh-my-claude-code",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1130883021-ultrawork",
+    "name": "ultrawork",
+    "description": "name: ultrawork",
+    "version": "1.0.0",
+    "author": "oh-my-claude-code contributors",
+    "repository": "https://github.com/zephyrpersonal/oh-my-claude-code",
+    "manifestPath": "skills/ultrawork",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1130883021",
+      "marketplaceName": "oh-my-claude-code",
+      "hasSkillMd": true
+    }
+  }
+]

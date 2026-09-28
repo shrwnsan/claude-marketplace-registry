@@ -1,0 +1,434 @@
+[
+  {
+    "id": "1080989149-connect-apps",
+    "name": "connect-apps",
+    "description": "Connect Claude to 500+ apps - Gmail, Slack, GitHub, Notion, and more",
+    "version": "1.0.0",
+    "author": "Composio",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./connect-apps",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-frontend-design",
+    "name": "frontend-design",
+    "description": "Create distinctive, production-grade interfaces avoiding generic AI aesthetics",
+    "version": "1.0.0",
+    "author": "Anthropic",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-artifacts-builder",
+    "name": "artifacts-builder",
+    "description": "Build complex HTML artifacts with React, Tailwind CSS, and shadcn/ui",
+    "version": "1.0.0",
+    "author": "Composio",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./artifacts-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-theme-factory",
+    "name": "theme-factory",
+    "description": "10 professional themes for slides, docs, reports, and landing pages",
+    "version": "1.0.0",
+    "author": "Composio",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./theme-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-canvas-design",
+    "name": "canvas-design",
+    "description": "Create museum-quality visual art in PNG and PDF formats",
+    "version": "1.0.0",
+    "author": "Composio",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./canvas-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-senior-frontend",
+    "name": "senior-frontend",
+    "description": "React/Next.js/TypeScript patterns with bundle analysis and optimization",
+    "version": "1.0.0",
+    "author": "alirezarezvani",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./senior-frontend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-frontend-developer",
+    "name": "frontend-developer",
+    "description": "Frontend development specialist agent",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./frontend-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-commit",
+    "name": "commit",
+    "description": "Smart git commits using conventional commit format",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-create-pr",
+    "name": "create-pr",
+    "description": "Automates pull request creation with proper templates",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./create-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-pr-review",
+    "name": "pr-review",
+    "description": "Comprehensive PR reviews with detailed feedback",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./pr-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-changelog-generator",
+    "name": "changelog-generator",
+    "description": "Transform git commits into user-friendly changelogs",
+    "version": "1.0.0",
+    "author": "Composio",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./changelog-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-ship",
+    "name": "ship",
+    "description": "Complete PR workflow from commit to production",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-code-review",
+    "name": "code-review",
+    "description": "Comprehensive code review with best practices",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-test-writer-fixer",
+    "name": "test-writer-fixer",
+    "description": "Automatically write and fix unit tests",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./test-writer-fixer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-debugger",
+    "name": "debugger",
+    "description": "Advanced debugging assistant",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./debugger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-bug-fix",
+    "name": "bug-fix",
+    "description": "Analyzes and fixes bugs in your codebase",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./bug-fix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-backend-architect",
+    "name": "backend-architect",
+    "description": "Backend architecture patterns and system design",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./backend-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-mcp-builder",
+    "name": "mcp-builder",
+    "description": "Build high-quality MCP servers for LLM integrations",
+    "version": "1.0.0",
+    "author": "Composio",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./mcp-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-agent-sdk-dev",
+    "name": "agent-sdk-dev",
+    "description": "Claude Agent SDK development helper",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./agent-sdk-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-perf",
+    "name": "perf",
+    "description": "Performance analysis and optimization",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./perf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-audit-project",
+    "name": "audit-project",
+    "description": "Full project audit for quality and issues",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./audit-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-documentation-generator",
+    "name": "documentation-generator",
+    "description": "Generate comprehensive documentation from code",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./documentation-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-security-guidance",
+    "name": "security-guidance",
+    "description": "Security best practices and vulnerability detection",
+    "version": "1.0.0",
+    "author": "Community",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./security-guidance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1080989149-developer-growth-analysis",
+    "name": "developer-growth-analysis",
+    "description": "Analyze coding patterns and get personalized learning resources",
+    "version": "1.0.0",
+    "author": "Composio",
+    "repository": "https://github.com/composio-community/awesome-claude-plugins",
+    "manifestPath": "./developer-growth-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1080989149",
+      "marketplaceName": "awesome-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

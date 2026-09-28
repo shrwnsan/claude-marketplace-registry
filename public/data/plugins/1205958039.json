@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1205958039-devil-review",
+    "name": "devil-review",
+    "description": "The devil is in the details — adversarial code review that finds the subtle bugs, race conditions, and violated invariants hiding in your diff.",
+    "version": "2.0.0",
+    "author": "mralabs",
+    "repository": "https://github.com/mralabs/claude-plugins",
+    "manifestPath": "./plugins/devil-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1205958039",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1205958039-radar",
+    "name": "radar",
+    "description": "Track competitors, upstream tools and dependencies — release radar for your repo",
+    "version": "0.7.4",
+    "author": "mralabs",
+    "repository": "https://github.com/mralabs/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "mralabs/radar"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1205958039",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1205958039-commit",
+    "name": "commit",
+    "description": "Conventional commit plugin — delegates message generation to a Haiku subagent for cost-efficient, format-enforced git commits.",
+    "version": "0.4.2",
+    "author": "mralabs",
+    "repository": "https://github.com/mralabs/claude-plugins",
+    "manifestPath": "./plugins/commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1205958039",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1205958039-human-voice",
+    "name": "human-voice",
+    "description": "Ghostwriting style guard — loaded before drafting any text a human will read as the user's own words, so it doesn't read as AI-written.",
+    "version": "0.2.0",
+    "author": "mralabs",
+    "repository": "https://github.com/mralabs/claude-plugins",
+    "manifestPath": "./plugins/human-voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1205958039",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -307,6 +307,23 @@
     }
   },
   {
+    "id": "1229567447-review-ml-choices",
+    "name": "review-ml-choices",
+    "description": "name: review-ml-choices",
+    "version": "1.0.0",
+    "author": "Probabl",
+    "repository": "https://github.com/probabl-ai/skills",
+    "manifestPath": "skills/review-ml-choices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1229567447",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1229567447-review-ml-experiment",
     "name": "review-ml-experiment",
     "description": "name: review-ml-experiment",

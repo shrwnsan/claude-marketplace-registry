@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1235517297-hostinger-cli",
+    "name": "hostinger-cli",
+    "description": "Model-invoked skills for managing Hostinger VPS, DNS, and domains via the hostinger-cli binary",
+    "version": "",
+    "author": "rizaleow",
+    "repository": "https://github.com/rizaleow/claude-plugins",
+    "manifestPath": "./plugins/hostinger-cli",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1235517297",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1235517297-filament-boost",
+    "name": "filament-boost",
+    "description": "Filament v5 expert mode for Claude Code, extending Laravel Boost with MCP tools, skills, commands, and agents",
+    "version": "",
+    "author": "rizaleow",
+    "repository": "https://github.com/rizaleow/claude-plugins",
+    "manifestPath": "./plugins/filament-boost",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1235517297",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1225644405-gemini",
+    "name": "gemini",
+    "description": "Use Gemini from Claude Code to review code or delegate tasks.",
+    "version": "0.1.0",
+    "author": "Kieran Boyle",
+    "repository": "https://github.com/dysfunc/ai-plugins-cc",
+    "manifestPath": "./dist/plugins/gemini",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1225644405",
+      "marketplaceName": "ai-plugins-cc",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1225644405-grok",
+    "name": "grok",
+    "description": "Use Grok from Claude Code to review code or delegate tasks.",
+    "version": "0.1.0",
+    "author": "Kieran Boyle",
+    "repository": "https://github.com/dysfunc/ai-plugins-cc",
+    "manifestPath": "./dist/plugins/grok",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1225644405",
+      "marketplaceName": "ai-plugins-cc",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1225644405-ai",
+    "name": "ai",
+    "description": "Umbrella plugin: dispatch /ai:review|rescue|gater across providers, plus /ai:compare for fan-out.",
+    "version": "0.1.0",
+    "author": "Kieran Boyle",
+    "repository": "https://github.com/dysfunc/ai-plugins-cc",
+    "manifestPath": "./dist/plugins/ai",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1225644405",
+      "marketplaceName": "ai-plugins-cc",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1241384621-observo-qa-toolkit",
+    "name": "observo-qa-toolkit",
+    "description": "QA + product spec toolkit for Observo. 8 Claude Code skills covering the cycle from raw meeting notes to Playwright results pushed back to Observo, plus a one-time plugin_install telemetry bootstrap. Repo-agnostic, MIT.",
+    "version": "1.1.2",
+    "author": "observo-ai",
+    "repository": "https://github.com/observo-ai/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "observo-ai/observo-qa-toolkit",
+      "branch": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241384621",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

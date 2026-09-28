@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1109446156-dev",
+    "name": "dev",
+    "description": "Automatic file formatting hook for edited files",
+    "version": "1.0.0",
+    "author": "tenzir",
+    "repository": "https://github.com/tenzir/claude-plugins",
+    "manifestPath": "./plugins/dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109446156",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1109446156-excalidraw",
+    "name": "excalidraw",
+    "description": "Create Excalidraw diagrams with proper JSON structure",
+    "version": "1.0.0",
+    "author": "tenzir",
+    "repository": "https://github.com/tenzir/claude-plugins",
+    "manifestPath": "./plugins/excalidraw",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1109446156",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

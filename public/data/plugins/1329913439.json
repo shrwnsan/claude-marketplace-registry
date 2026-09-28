@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1329913439-venture",
+    "name": "venture",
+    "description": "Business copilot suite: market research, competitor analysis, customer discovery, PMF assessment, GTM strategy, unit economics, and board-style review — chained through a shared per-venture workspace.",
+    "version": "",
+    "author": "heyparsadev",
+    "repository": "https://github.com/heyparsadev/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/heyparsadev/claude-venture-plugin.git",
+      "path": "venture"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1329913439",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1329913439-founder-playbook",
+    "name": "founder-playbook",
+    "description": "Idea-stage validation: turns a raw startup idea into a testable hypothesis, red-teams it, researches market and competition, designs and synthesizes customer discovery, and gates the build decision on graded evidence. Coach and auto modes.",
+    "version": "",
+    "author": "heyparsadev",
+    "repository": "https://github.com/heyparsadev/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/heyparsadev/claude-idea-validator.git",
+      "path": "founder-playbook"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1329913439",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1329913439-liquid-glass",
+    "name": "liquid-glass",
+    "description": "iOS 26 Liquid Glass design system for SwiftUI: API reference, HIG principles, design tokens, motion patterns, accessibility and performance rules, anti-patterns, a pattern library, and nine full-screen examples that compile in Xcode 26.",
+    "version": "",
+    "author": "heyparsadev",
+    "repository": "https://github.com/heyparsadev/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/heyparsadev/liquid-glass-skill.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1329913439",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

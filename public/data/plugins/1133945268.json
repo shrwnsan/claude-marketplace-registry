@@ -1,0 +1,212 @@
+[
+  {
+    "id": "1133945268-tauri-dev",
+    "name": "tauri-dev",
+    "description": "Tauri v2 desktop app development with debugging specialist agent",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "./plugins/tauri-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1133945268-textual-tui",
+    "name": "textual-tui",
+    "description": "Build terminal UIs with Textual framework and code review agent",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "./plugins/textual-tui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1133945268-excalidraw-diagrams",
+    "name": "excalidraw-diagrams",
+    "description": "Generate Excalidraw diagrams with diagram planning specialist agent",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "./plugins/excalidraw-diagrams",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1133945268-manim-animations",
+    "name": "manim-animations",
+    "description": "Create mathematical animations with Manim and animation planning specialist agent",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "./plugins/manim-animations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1133945268-diagram-code",
+    "name": "diagram-code",
+    "description": "Generate diagrams using Mermaid, GraphViz DOT, and Excalidraw",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "./plugins/diagram-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1133945268-app-icon-generator",
+    "name": "app-icon-generator",
+    "description": "Generate app icon assets for iOS, macOS, Android, and web from a source image",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "./plugins/app-icon-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1133945268-excalidraw",
+    "name": "excalidraw",
+    "description": "name: excalidraw",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "skills/excalidraw",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1133945268-ics-generator",
+    "name": "ics-generator",
+    "description": "name: ics-generator",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "skills/ics-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1133945268-manim",
+    "name": "manim",
+    "description": "name: manim",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "skills/manim",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1133945268-simple-english",
+    "name": "simple-english",
+    "description": "name: simple-english",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "skills/simple-english",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1133945268-tauri",
+    "name": "tauri",
+    "description": "name: tauri",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "skills/tauri",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1133945268-textual",
+    "name": "textual",
+    "description": "name: textual",
+    "version": "1.0.0",
+    "author": "johnlarkin1",
+    "repository": "https://github.com/johnlarkin1/claude-code-extensions",
+    "manifestPath": "skills/textual",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133945268",
+      "marketplaceName": "claude-code-extensions",
+      "hasSkillMd": true
+    }
+  }
+]

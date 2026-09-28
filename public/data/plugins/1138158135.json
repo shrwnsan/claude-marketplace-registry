@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1138158135-session-workflow",
+    "name": "session-workflow",
+    "description": "Session management: doomsday shutdown protocol and session resurrection",
+    "version": "1.0.0",
+    "author": "Sivan Grünberg",
+    "repository": "https://github.com/sivang/sivan-claude-plugins",
+    "manifestPath": "./session-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138158135",
+      "marketplaceName": "sivan-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1138158135-site-audit",
+    "name": "site-audit",
+    "description": "Crawl a website and produce a comprehensive quality audit covering broken links, spelling errors, console errors, and visual issues",
+    "version": "1.0.0",
+    "author": "Sivan Grünberg",
+    "repository": "https://github.com/sivang/sivan-claude-plugins",
+    "manifestPath": "./site-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138158135",
+      "marketplaceName": "sivan-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1138158135-vertex-ai-provider",
+    "name": "vertex-ai-provider",
+    "description": "Use Claude models via Google Vertex AI with real-time token tracking and cost analytics",
+    "version": "1.0.0",
+    "author": "Sivan Grünberg",
+    "repository": "https://github.com/sivang/sivan-claude-plugins",
+    "manifestPath": "./vertex-ai-provider",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138158135",
+      "marketplaceName": "sivan-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

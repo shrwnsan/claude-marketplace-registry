@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1145229447-ralph-ryan",
+    "name": "ralph-ryan",
+    "description": "Ralph autonomous agent for iterative development with multi-PRD parallel support. Commands: '/ralph-ryan:prd' (create PRD), '/ralph-ryan:prep' (prepare), '/ralph-ryan:run' (execute), '/ralph-ryan:status' (overview).",
+    "version": "1.0.0",
+    "author": "wquguru",
+    "repository": "https://github.com/wquguru/exoshell",
+    "manifestPath": "./plugins/ralph-ryan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1145229447",
+      "marketplaceName": "exoshell",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

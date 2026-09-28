@@ -1,0 +1,190 @@
+[
+  {
+    "id": "1062143023-vibeflow",
+    "name": "vibeflow",
+    "description": "Docs-first, TDD-driven development workflow for Claude Code",
+    "version": "",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1062143023-analyze-codebase",
+    "name": "analyze-codebase",
+    "description": "name: analyze-codebase",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/analyze-codebase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1062143023-clarify-demand",
+    "name": "clarify-demand",
+    "description": "name: clarify-demand",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/clarify-demand",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1062143023-create-feature-spec",
+    "name": "create-feature-spec",
+    "description": "name: create-feature-spec",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/create-feature-spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1062143023-define-prd",
+    "name": "define-prd",
+    "description": "name: define-prd",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/define-prd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1062143023-define-tech-spec",
+    "name": "define-tech-spec",
+    "description": "name: define-tech-spec",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/define-tech-spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1062143023-manage-work",
+    "name": "manage-work",
+    "description": "name: manage-work",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/manage-work",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1062143023-prepare-release",
+    "name": "prepare-release",
+    "description": "name: prepare-release",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/prepare-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1062143023-record-decision",
+    "name": "record-decision",
+    "description": "name: record-decision",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/record-decision",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1062143023-run-tdd",
+    "name": "run-tdd",
+    "description": "name: run-tdd",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/run-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1062143023-validate-checkpoint",
+    "name": "validate-checkpoint",
+    "description": "name: validate-checkpoint",
+    "version": "1.0.0",
+    "author": "hardness1020",
+    "repository": "https://github.com/hardness1020/VibeFlow",
+    "manifestPath": ".claude/skills/validate-checkpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1062143023",
+      "marketplaceName": "VibeFlow",
+      "hasSkillMd": true
+    }
+  }
+]

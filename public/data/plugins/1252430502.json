@@ -1,0 +1,289 @@
+[
+  {
+    "id": "1252430502-claude-legal-federal-laws",
+    "name": "claude-legal-federal-laws",
+    "description": "Shared federal reference plugin: canonical FDCPA / FCRA / TILA / ECOA / Reg B-Z + RESPA / SCRA / FHA / FTC Telemarketing Sales Rule, the Title 11 Bankruptcy Code, the model UCC, and the Americans with Disabilities Act with its DOJ/EEOC implementing regulations (42 U.S.C. ch. 126; 29 CFR 1630; 28 CFR 35/36 incl. the 2010 ADA Standards) — a dependency of every state plugin, dereferenced from in-tree symlinks at install time; plus a nationwide FCRA consumer credit-report-rights skills layer and an ADA self-help skill (ada-rights), two bundled free MCP servers (CourtListener + Legal Data Hunter), and a case-law-research skill that routes the agent to them for on-demand case-law lookup. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/claude-legal-federal-laws",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-claude-legal-immigration-laws",
+    "name": "claude-legal-immigration-laws",
+    "description": "Shared U.S. immigration-law plugin: INA (8 U.S.C. ch. 12), 8 CFR + 22 CFR, and the Foreign Affairs Manual mirrored verbatim, plus an EOIR court-rules corpus; an on-demand case-law index for the federal circuits, the Board of Immigration Appeals, and the USCIS AAO, backed by two bundled free MCP servers (CourtListener + Legal Data Hunter) and an immigration-case-law skill that routes the agent to them; and a 12-skill, venue-independent, document-producing self-help layer. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/claude-legal-immigration-laws",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-wa-court-docs",
+    "name": "wa-court-docs",
+    "description": "Washington court documents: GR 14 formatting; King / Pierce / Snohomish / Spokane venues + family-law department + county roll-up; six subject bundles (consumer-debt, family-law, landlord-tenant, personal-injury, employment, commercial-disputes) plus a matter-neutral CPA/UDAP skill (Consumer Protection Act, RCW 19.86 — Hangman Ridge), a CEMA (RCW 19.190 anti-spam; Brown v. Old Navy) skill, and a federal-court venue skill for the U.S. District Court for the Western District of Washington (wa-wawd-pro-se: FRCP + LCR, noting dates, IFP, CM/ECF, Ninth Circuit appeals). Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/wa-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-or-court-docs",
+    "name": "or-court-docs",
+    "description": "Oregon court documents: UTCR 2.010 formatting; Multnomah + Washington County Circuit Court + county roll-up; ORS 697 / Oregon UTPA consumer-debt bundle. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/or-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-ca-court-docs",
+    "name": "ca-court-docs",
+    "description": "California court documents: CRC 2.100-2.119 formatting; LASC + SFSC + county roll-up; Rosenthal Act / FDBPA / CDCLA / UCL consumer-debt bundle. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/ca-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-co-court-docs",
+    "name": "co-court-docs",
+    "description": "Colorado court documents: C.R.C.P. 10 + Chief Justice Directive 11-01 formatting; Denver + Arapahoe + county roll-up; consumer-debt and UDMA family-law bundles. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/co-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-in-court-docs",
+    "name": "in-court-docs",
+    "description": "Indiana court documents: Ind. Trial R. 5(E) formatting; Marion + Lake + county roll-up; consumer-debt and family-law bundles (Jarboe summary-judgment standard, T.R. 59 motion-to-correct-error quirk). Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/in-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-ny-court-docs",
+    "name": "ny-court-docs",
+    "description": "New York court documents: 22 NYCRR § 202.5 / § 202.5-b NYSCEF formatting; five flagship Supreme Court venues plus District / City / Justice / Family / Housing courts; five subject bundles (consumer-debt, landlord-tenant, personal-injury, employment, commercial-disputes). Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/ny-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-oh-court-docs",
+    "name": "oh-court-docs",
+    "description": "Ohio court documents: Ohio Civ. R. 10 + per-court local rules (verbatim Cuyahoga + Delaware Common Pleas); eight Court of Common Pleas venues + municipal-courts + family-court; five subject bundles — consumer-debt, family-law, personal-injury, employment, commercial-disputes. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/oh-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-tn-court-docs",
+    "name": "tn-court-docs",
+    "description": "Tennessee court documents: Tenn. R. Civ. P. 10/11 + local-rule formatting; Circuit / Chancery / General Sessions; Davidson / Shelby / Knox / Hamilton venues + General Sessions + split family/juvenile; four subject bundles. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/tn-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-mi-court-docs",
+    "name": "mi-court-docs",
+    "description": "Michigan court documents: MCR 1.109 / 2.113 formatting; Wayne + Oakland Circuit + 36th District + family division; six subject bundles. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/mi-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-az-court-docs",
+    "name": "az-court-docs",
+    "description": "Arizona court documents: Ariz. R. Civ. P. 10 / 7.1 formatting; Maricopa + Pima Superior + Justice Courts + family department; six subject bundles. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/az-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-id-court-docs",
+    "name": "id-court-docs",
+    "description": "Idaho court documents: I.R.C.P. 2 / 10 formatting; Ada (Fourth Judicial District / Boise) + Bonneville (Seventh Judicial District / Idaho Falls) District Courts + Magistrate Division + county roll-up; consumer-debt and family-law bundles. Idaho quirks: time computation lives in I.R.C.P. 2.2 (Rule 6 reserved), a separate Idaho Rules of Family Law Procedure set, and community property. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/id-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-tx-court-docs",
+    "name": "tx-court-docs",
+    "description": "Texas court documents: Texas Rules of Civil Procedure form requirements (TRCP 45/47/57, the Rule 47(c) relief statement, eFileTexas under TRCP 21(f)); Harris + Dallas District Courts, a District / County-Court-at-Law roll-up, the Justice of the Peace layer (TRCP Part V, Rules 500–510) including Smith County (Tyler) Justice Court, and a family-court venue; consumer-debt (Texas Debt Collection Act / DTPA / chain-of-title) and family-law (community property / SAPCR / Ch. 154 child support) bundles. Texas quirks: the Rule 99 'Monday rule' answer deadline, no-evidence summary judgment (166a(i)), sworn-account (185) / verified-denial (93), and discovery-control-plan Levels 1/2/3. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/tx-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-ga-court-docs",
+    "name": "ga-court-docs",
+    "description": "Georgia court documents: no single statewide pleading-paper rule (form flows from O.C.G.A. § 9-11-10 + the Uniform Superior/State Court Rules + statewide e-filing standards); Fulton + Cobb + Gwinnett County Superior Courts, a State Court venue (civil/misdemeanor — where most debt suits land), a Magistrate small-claims venue, a county roll-up, and a Superior Court family-division venue; consumer-debt (federal-FDCPA-forward / FBPA treble damages / post-2016 garnishment / chain-of-title) and family-law (equitable distribution / income-shares child support) bundles. Georgia quirks: the 30-day answer with an open-default-as-of-right cure window (O.C.G.A. § 9-11-55), the Superior/State court jurisdictional split, no state licensing of most debt collectors, and credit-card debt under the 6-year written-contract SOL. Full detail in the plugin README.",
+    "version": "0.37.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": "./plugins/ga-court-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1252430502-scaffold-state-plugin",
+    "name": "scaffold-state-plugin",
+    "description": "name: scaffold-state-plugin",
+    "version": "1.0.0",
+    "author": "codearranger",
+    "repository": "https://github.com/codearranger/claude-legal",
+    "manifestPath": ".claude/skills/scaffold-state-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1252430502",
+      "marketplaceName": "claude-legal",
+      "hasSkillMd": true
+    }
+  }
+]

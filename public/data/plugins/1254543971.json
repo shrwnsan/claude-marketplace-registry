@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1254543971-agent-critter",
+    "name": "agent-critter",
+    "description": "一只桌宠小精灵，实时展示 Claude Code 工作状态。支持 Petdex 社区 2700+ 精灵。",
+    "version": "",
+    "author": "Jedeiah",
+    "repository": "https://github.com/Jedeiah/agent-critter",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/Jedeiah/agent-critter.git",
+      "sha": "8d3c02707ac29016deb1361e488b47ef1dac9f84"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1254543971",
+      "marketplaceName": "agent-critter",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

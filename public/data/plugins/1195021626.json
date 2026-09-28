@@ -1,0 +1,87 @@
+[
+  {
+    "id": "1195021626-config",
+    "name": "config",
+    "description": "name: config",
+    "version": "1.0.0",
+    "author": "softwaresoftware-dev",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware",
+    "manifestPath": "skills/config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1195021626",
+      "marketplaceName": "softwaresoftware",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1195021626-info",
+    "name": "info",
+    "description": "name: info",
+    "version": "1.0.0",
+    "author": "softwaresoftware-dev",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware",
+    "manifestPath": "skills/info",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1195021626",
+      "marketplaceName": "softwaresoftware",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1195021626-install",
+    "name": "install",
+    "description": "name: install",
+    "version": "1.0.0",
+    "author": "softwaresoftware-dev",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware",
+    "manifestPath": "skills/install",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1195021626",
+      "marketplaceName": "softwaresoftware",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1195021626-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "softwaresoftware-dev",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware",
+    "manifestPath": "skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1195021626",
+      "marketplaceName": "softwaresoftware",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1195021626-uninstall",
+    "name": "uninstall",
+    "description": "name: uninstall",
+    "version": "1.0.0",
+    "author": "softwaresoftware-dev",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware",
+    "manifestPath": "skills/uninstall",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1195021626",
+      "marketplaceName": "softwaresoftware",
+      "hasSkillMd": true
+    }
+  }
+]

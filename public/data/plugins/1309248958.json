@@ -1,0 +1,233 @@
+[
+  {
+    "id": "1309248958-whatsapp-mcp",
+    "name": "whatsapp-mcp",
+    "description": "WhatsApp for Claude — messages, media, groups, transcription",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/whatsapp-mcp.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-prime-context",
+    "name": "prime-context",
+    "description": "On-demand project context loading — thin AGENTS.md router, area context files loaded only when needed",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/claude-skill-prime-context.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-github-branch-protection",
+    "name": "github-branch-protection",
+    "description": "Protect GitHub branches against direct pushes — native protection or Actions workaround per plan",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/claude-skill-github-branch-protection.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-easypanel",
+    "name": "easypanel",
+    "description": "Manage and diagnose EasyPanel services via Playwright — deploys, failures, build logs",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/claude-easypanel-skill.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-keepass",
+    "name": "keepass",
+    "description": "KeePass database management via keepassxc-cli — search, add, edit, merge duplicates, OS secret store auth",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/keepass-claude-skill.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-discli",
+    "name": "discli",
+    "description": "Discord server management CLI for AI agents — channels, roles, messages, embeds, emojis, one command per API call",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/discli.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-proxmox",
+    "name": "proxmox",
+    "description": "Proxmox VE hypervisor primitives via pve CLI — VMs, snapshots, clones, VNC console automation (private repo)",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/proxmox-skill.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-protheus-smartview",
+    "name": "protheus-smartview",
+    "description": "Talk to Protheus through SmartView reports — ask in natural language, get real data back (private repo)",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/tbc-servicos/claude-smartview-mcp.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-dokploy-manager",
+    "name": "dokploy-manager",
+    "description": "Manage Dokploy via its REST API — deploy apps, manage databases/domains, check status. Includes an Easypanel migration skill (private repo)",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/dokploy-manager.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-shipspec",
+    "name": "shipspec",
+    "description": "Ship fast, keep the spec (W1) — Reversa scoping, measured blast radius, parallel agent-team delivery, spec writeback for drift detection (requires Reversa: npx reversa install)",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/claude-skill-shipspec.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1309248958-mcp-brazil-marketplaces",
+    "name": "mcp-brazil-marketplaces",
+    "description": "Search public listings on OLX Brasil and Mercado Livre — MCP server with automatic anti-bot bypass, runs via uvx from PyPI",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/mcp-brazil-marketplaces.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

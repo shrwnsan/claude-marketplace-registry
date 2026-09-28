@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1215568083-llm-wiki",
+    "name": "llm-wiki",
+    "description": "Compound knowledge base via git-versioned, LLM-maintained markdown.",
+    "version": "0.1.4",
+    "author": "justvinhhere",
+    "repository": "https://github.com/justvinhhere/llm-wiki-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215568083",
+      "marketplaceName": "llm-wiki-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1215568083-wiki-bootstrap",
+    "name": "wiki-bootstrap",
+    "description": "name: wiki-bootstrap",
+    "version": "1.0.0",
+    "author": "justvinhhere",
+    "repository": "https://github.com/justvinhhere/llm-wiki-plugin",
+    "manifestPath": "skills/wiki-bootstrap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215568083",
+      "marketplaceName": "llm-wiki-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215568083-wiki-history",
+    "name": "wiki-history",
+    "description": "name: wiki-history",
+    "version": "1.0.0",
+    "author": "justvinhhere",
+    "repository": "https://github.com/justvinhhere/llm-wiki-plugin",
+    "manifestPath": "skills/wiki-history",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215568083",
+      "marketplaceName": "llm-wiki-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215568083-wiki-ingest",
+    "name": "wiki-ingest",
+    "description": "name: wiki-ingest",
+    "version": "1.0.0",
+    "author": "justvinhhere",
+    "repository": "https://github.com/justvinhhere/llm-wiki-plugin",
+    "manifestPath": "skills/wiki-ingest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215568083",
+      "marketplaceName": "llm-wiki-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215568083-wiki-lint",
+    "name": "wiki-lint",
+    "description": "name: wiki-lint",
+    "version": "1.0.0",
+    "author": "justvinhhere",
+    "repository": "https://github.com/justvinhhere/llm-wiki-plugin",
+    "manifestPath": "skills/wiki-lint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215568083",
+      "marketplaceName": "llm-wiki-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215568083-wiki-query",
+    "name": "wiki-query",
+    "description": "name: wiki-query",
+    "version": "1.0.0",
+    "author": "justvinhhere",
+    "repository": "https://github.com/justvinhhere/llm-wiki-plugin",
+    "manifestPath": "skills/wiki-query",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215568083",
+      "marketplaceName": "llm-wiki-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215568083-wiki-review",
+    "name": "wiki-review",
+    "description": "name: wiki-review",
+    "version": "1.0.0",
+    "author": "justvinhhere",
+    "repository": "https://github.com/justvinhhere/llm-wiki-plugin",
+    "manifestPath": "skills/wiki-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215568083",
+      "marketplaceName": "llm-wiki-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

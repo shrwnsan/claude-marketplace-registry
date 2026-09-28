@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1299530993-shuwarida-skills",
+    "name": "shuwarida-skills",
+    "description": "Agent skills: pirate-mode (fast, no-bureaucracy dev workflow), design-thinking (pre-brief design interview) and design-ux (behavioral-psychology interview for screens and flows).",
+    "version": "",
+    "author": "shuwarida",
+    "repository": "https://github.com/shuwarida/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299530993",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1299530993-design-thinking",
+    "name": "design-thinking",
+    "description": "name: design-thinking",
+    "version": "1.0.0",
+    "author": "shuwarida",
+    "repository": "https://github.com/shuwarida/skills",
+    "manifestPath": "skills/design-thinking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299530993",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299530993-design-ux",
+    "name": "design-ux",
+    "description": "name: design-ux",
+    "version": "1.0.0",
+    "author": "shuwarida",
+    "repository": "https://github.com/shuwarida/skills",
+    "manifestPath": "skills/design-ux",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299530993",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299530993-pirate-mode",
+    "name": "pirate-mode",
+    "description": "name: pirate-mode",
+    "version": "1.0.0",
+    "author": "shuwarida",
+    "repository": "https://github.com/shuwarida/skills",
+    "manifestPath": "skills/pirate-mode",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299530993",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

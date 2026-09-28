@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1204295849-evidence-dev",
+    "name": "evidence-dev",
+    "description": "Claude Code skills for Evidence.dev — 9 skills covering SQL queries, charts, data components, maps, UI, data sources, CLI and custom Svelte components",
+    "version": "1.0.3",
+    "author": "Ali Kazim",
+    "repository": "https://github.com/devkindhq/studio-marketplace",
+    "manifestPath": "./plugins/evidence-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204295849",
+      "marketplaceName": "studio-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1204295849-seo",
+    "name": "seo",
+    "description": "Claude Code SEO skills — evaluate content against Google Search Quality Evaluator Guidelines (QRG), E-E-A-T, and Needs Met ratings",
+    "version": "1.0.1",
+    "author": "Ali Kazim",
+    "repository": "https://github.com/devkindhq/studio-marketplace",
+    "manifestPath": "./plugins/seo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204295849",
+      "marketplaceName": "studio-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1204295849-security",
+    "name": "security",
+    "description": "Claude Code security skills with MCP servers — web technology fingerprinting via WhatWeb and OSINT domain intelligence via theHarvester (Model Context Protocol)",
+    "version": "1.2.1",
+    "author": "Ali Kazim",
+    "repository": "https://github.com/devkindhq/studio-marketplace",
+    "manifestPath": "./plugins/security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1204295849",
+      "marketplaceName": "studio-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

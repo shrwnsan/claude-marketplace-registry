@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1291855720-btw-wiki",
+    "name": "btw-wiki",
+    "description": "Record Claude's answers into an interlinked, Karpathy-style personal wiki. /btw-wiki:ask answers your question — first from the .wiki/ folder you've built (grounded and cited), then supplemented when the wiki falls short — and files the new part back into the wiki on your confirmation (topic subfolders, index.md, log.md, [[wiki-links]]); /btw-wiki:ingest distills raw source docs you drop in .wiki/raw/ into pages the same way; /btw-wiki:notebook opens a local browser reader for it.",
+    "version": "0.24.0",
+    "author": "Punpun1643",
+    "repository": "https://github.com/Punpun1643/btw-wiki",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291855720",
+      "marketplaceName": "btw-wiki",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291855720-wiki-ask",
+    "name": "wiki-ask",
+    "description": "name: wiki-ask",
+    "version": "1.0.0",
+    "author": "Punpun1643",
+    "repository": "https://github.com/Punpun1643/btw-wiki",
+    "manifestPath": "skills/wiki-ask",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291855720",
+      "marketplaceName": "btw-wiki",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1291855720-wiki-ingest",
+    "name": "wiki-ingest",
+    "description": "name: wiki-ingest",
+    "version": "1.0.0",
+    "author": "Punpun1643",
+    "repository": "https://github.com/Punpun1643/btw-wiki",
+    "manifestPath": "skills/wiki-ingest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291855720",
+      "marketplaceName": "btw-wiki",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1291855720-wiki-notebook",
+    "name": "wiki-notebook",
+    "description": "name: wiki-notebook",
+    "version": "1.0.0",
+    "author": "Punpun1643",
+    "repository": "https://github.com/Punpun1643/btw-wiki",
+    "manifestPath": "skills/wiki-notebook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291855720",
+      "marketplaceName": "btw-wiki",
+      "hasSkillMd": true
+    }
+  }
+]

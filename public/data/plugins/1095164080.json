@@ -1,0 +1,104 @@
+[
+  {
+    "id": "1095164080-code-review",
+    "name": "code-review",
+    "description": "name: code-review",
+    "version": "1.0.0",
+    "author": "arpitnath",
+    "repository": "https://github.com/arpitnath/claude-capsule-kit",
+    "manifestPath": "skills/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1095164080",
+      "marketplaceName": "claude-capsule-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1095164080-crew",
+    "name": "crew",
+    "description": "name: crew",
+    "version": "1.0.0",
+    "author": "arpitnath",
+    "repository": "https://github.com/arpitnath/claude-capsule-kit",
+    "manifestPath": "skills/crew",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1095164080",
+      "marketplaceName": "claude-capsule-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1095164080-debug",
+    "name": "debug",
+    "description": "name: debug",
+    "version": "1.0.0",
+    "author": "arpitnath",
+    "repository": "https://github.com/arpitnath/claude-capsule-kit",
+    "manifestPath": "skills/debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1095164080",
+      "marketplaceName": "claude-capsule-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1095164080-deep-context",
+    "name": "deep-context",
+    "description": "name: deep-context",
+    "version": "1.0.0",
+    "author": "arpitnath",
+    "repository": "https://github.com/arpitnath/claude-capsule-kit",
+    "manifestPath": "skills/deep-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1095164080",
+      "marketplaceName": "claude-capsule-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1095164080-task-router",
+    "name": "task-router",
+    "description": "name: task-router",
+    "version": "1.0.0",
+    "author": "arpitnath",
+    "repository": "https://github.com/arpitnath/claude-capsule-kit",
+    "manifestPath": "skills/task-router",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1095164080",
+      "marketplaceName": "claude-capsule-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1095164080-workflow",
+    "name": "workflow",
+    "description": "name: workflow",
+    "version": "1.0.0",
+    "author": "arpitnath",
+    "repository": "https://github.com/arpitnath/claude-capsule-kit",
+    "manifestPath": "skills/workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1095164080",
+      "marketplaceName": "claude-capsule-kit",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1198934284-micro-skill-pipeline",
+    "name": "micro-skill-pipeline",
+    "description": "Converts monolithic skills into gated micro-skill pipelines with YES/NO quality gates and compounding failure logs.",
+    "version": "1.0.0",
+    "author": "stevesolun",
+    "repository": "https://github.com/stevesolun/micro-skills",
+    "manifestPath": "./micro-skill-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1198934284",
+      "marketplaceName": "micro-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

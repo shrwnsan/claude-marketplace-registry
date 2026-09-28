@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1296086119-add-skill",
+    "name": "add-skill",
+    "description": "name: add-skill",
+    "version": "1.0.0",
+    "author": "kpab",
+    "repository": "https://github.com/kpab/awesome-fun-claude-skills",
+    "manifestPath": ".claude/skills/add-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296086119",
+      "marketplaceName": "awesome-fun-claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296086119-collect",
+    "name": "collect",
+    "description": "name: collect",
+    "version": "1.0.0",
+    "author": "kpab",
+    "repository": "https://github.com/kpab/awesome-fun-claude-skills",
+    "manifestPath": ".claude/skills/collect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296086119",
+      "marketplaceName": "awesome-fun-claude-skills",
+      "hasSkillMd": true
+    }
+  }
+]

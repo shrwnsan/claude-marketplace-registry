@@ -1,0 +1,164 @@
+[
+  {
+    "id": "1264071779-hongzhi-core",
+    "name": "hongzhi-core",
+    "description": "全所统一的底座原子能力，被各业务插件反复调用：法律术语规范、法律后果推导、证据三性评估、证据链映射、风险优先级排序、结构化法律分析、法律文书摘要、严谨作答四步法。地基层，先装它再装业务插件。",
+    "version": "",
+    "author": "宏志律师事务所",
+    "repository": "https://github.com/FAYANHUIYING/claude-for-legal-HoriZon",
+    "manifestPath": "./hongzhi-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264071779",
+      "marketplaceName": "claude-for-legal-HoriZon",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264071779-commercial-contract",
+    "name": "commercial-contract",
+    "description": "合同全生命周期：六步法从零起草各类合同（买卖/服务/技术/许可/合作/建设工程，含谈判立场三级分档与多维风险扫描），五阶段法逐条审查（四列速查表、多路径修改方案A/B/C、谈判优先级矩阵），以及口径自学习闭环（签约复盘→偏离日志→监控提案→审批落地）。适配《民法典》合同编及其司法解释（2023）。所有输出为律师审查草稿，非法律意见。",
+    "version": "",
+    "author": "宏志律师事务所",
+    "repository": "https://github.com/FAYANHUIYING/claude-for-legal-HoriZon",
+    "manifestPath": "./commercial-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264071779",
+      "marketplaceName": "claude-for-legal-HoriZon",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264071779-dispute-resolution",
+    "name": "dispute-resolution",
+    "description": "诉讼/仲裁全流程：案件材料拆解与时间线、案情分析与风险评估、案件大事记、起诉状/答辩状/上诉状/再审申请书/代理词起草、判决书拆解与上诉策略、再审可行性分析、诉讼可视化（时间轴/法律关系/资金流向/流程图）、律师函、和解调解协议，以及要件分析表（请求权基础逐要件映射证据）、组合视图（全部在办案件总览）、期限台账与期限监控代理（开庭/举证/上诉/再审/执行/保全/仲裁时效预警）。适配《民事诉讼法》及司法解释。所有输出为律师审查草稿，非法律意见。",
+    "version": "",
+    "author": "宏志律师事务所",
+    "repository": "https://github.com/FAYANHUIYING/claude-for-legal-HoriZon",
+    "manifestPath": "./dispute-resolution",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264071779",
+      "marketplaceName": "claude-for-legal-HoriZon",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264071779-corporate-investment",
+    "name": "corporate-investment",
+    "description": "公司治理与投融资文件：股东会/董事会决议、公司章程、股东协议、出资/增资协议起草（表决比例、治理结构、僵局打破、退出安排），以及尽调/合规/交易/专项法律意见书出具。适配《公司法》《民法典》。所有输出为律师审查草稿，非法律意见。",
+    "version": "",
+    "author": "宏志律师事务所",
+    "repository": "https://github.com/FAYANHUIYING/claude-for-legal-HoriZon",
+    "manifestPath": "./corporate-investment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264071779",
+      "marketplaceName": "claude-for-legal-HoriZon",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264071779-due-diligence",
+    "name": "due-diligence",
+    "description": "按标的行业、发展阶段与交易类型定制尽调清单，覆盖商业/财务/法律/技术/运营/人力六大维度，配套信息请求清单（IRL）、尽调排期与 Red Flag 检查点。不替代实地访谈、外部审计或专项法律意见。所有输出为律师审查草稿，非法律意见。",
+    "version": "",
+    "author": "宏志律师事务所",
+    "repository": "https://github.com/FAYANHUIYING/claude-for-legal-HoriZon",
+    "manifestPath": "./due-diligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264071779",
+      "marketplaceName": "claude-for-legal-HoriZon",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264071779-compliance",
+    "name": "compliance",
+    "description": "AI与算法合规（算法备案、生成式AI、数据合规、AI著作权与侵权、科技伦理）与隐私政策最小合规版生成（配套个人信息清单、第三方/SDK清单、复查报告）。基于《个人信息保护法》《数据安全法》《网络安全法》及AI相关法规。所有输出为律师审查草稿，非法律意见。",
+    "version": "",
+    "author": "宏志律师事务所",
+    "repository": "https://github.com/FAYANHUIYING/claude-for-legal-HoriZon",
+    "manifestPath": "./compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264071779",
+      "marketplaceName": "claude-for-legal-HoriZon",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264071779-ip-legal",
+    "name": "ip-legal",
+    "description": "知产综合法务：著作权/商标/专利/商业秘密咨询与体检，专利权利要求分析、技术特征比对与FTO，商标尼斯分类规划与可注册性初筛，商标相同/近似与混淆可能性侵权判断。不替代正式侵权鉴定或注册成功率承诺。所有输出为律师审查草稿，非法律意见。",
+    "version": "",
+    "author": "宏志律师事务所",
+    "repository": "https://github.com/FAYANHUIYING/claude-for-legal-HoriZon",
+    "manifestPath": "./ip-legal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264071779",
+      "marketplaceName": "claude-for-legal-HoriZon",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264071779-employment-legal",
+    "name": "employment-legal",
+    "description": "劳动仲裁应对（案情分析、答辩状、举证质证、胜负评估），劳动合同定制（按岗位类型确定最优条款组合），经济补偿N/违法解除2N/代通知金N+1/未签二倍工资/加班费/年假折算逐项测算。适配《劳动合同法》《劳动争议调解仲裁法》。规则随省/直辖市差异调整。所有输出为律师审查草稿，非法律意见。",
+    "version": "",
+    "author": "宏志律师事务所",
+    "repository": "https://github.com/FAYANHUIYING/claude-for-legal-HoriZon",
+    "manifestPath": "./employment-legal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264071779",
+      "marketplaceName": "claude-for-legal-HoriZon",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1264071779-criminal-legal",
+    "name": "criminal-legal",
+    "description": "刑事辩护全流程工作产品（辩护意见、质证/发问/会见提纲、取保候审、阅卷梳理、非法证据排除、认罪认罚、刑事和解、上诉申诉）与五步法量刑测算（起点刑/基准刑/宣告刑、各情节调节幅度）。适配《刑法》《刑事诉讼法》及量刑指导意见。所有输出为律师审查草稿，非法律意见。",
+    "version": "",
+    "author": "宏志律师事务所",
+    "repository": "https://github.com/FAYANHUIYING/claude-for-legal-HoriZon",
+    "manifestPath": "./criminal-legal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264071779",
+      "marketplaceName": "claude-for-legal-HoriZon",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

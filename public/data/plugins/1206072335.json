@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1206072335-lexoffice",
+    "name": "lexoffice",
+    "description": "Lexware Office Workflows: Angebote anlegen mit §13b-Steuerlogik und Deeplink-Ausgabe",
+    "version": "0.3.0",
+    "author": "Miragon",
+    "repository": "https://github.com/Miragon/miranum-skills",
+    "manifestPath": "./lexoffice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1206072335",
+      "marketplaceName": "miranum-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1206072335-dimacon",
+    "name": "dimacon",
+    "description": "Dimacon-Workflows: Aufträge planen vom Kundenabgleich bis zur Job- und Working-Erstellung",
+    "version": "0.3.0",
+    "author": "Miragon",
+    "repository": "https://github.com/Miragon/miranum-skills",
+    "manifestPath": "./dimacon",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1206072335",
+      "marketplaceName": "miranum-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1206072335-clockin",
+    "name": "clockin",
+    "description": "Clockin-Workflows: Synchronisiert Aufträge aus Dimacon nach Clockin als Projekte",
+    "version": "0.3.0",
+    "author": "Miragon",
+    "repository": "https://github.com/Miragon/miranum-skills",
+    "manifestPath": "./clockin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1206072335",
+      "marketplaceName": "miranum-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

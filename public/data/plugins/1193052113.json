@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1193052113-config",
+    "name": "config",
+    "description": "name: config",
+    "version": "1.0.0",
+    "author": "softwaresoftware-dev",
+    "repository": "https://github.com/softwaresoftware-dev/claude-browser-bridge",
+    "manifestPath": "skills/config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193052113",
+      "marketplaceName": "claude-browser-bridge",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193052113-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "softwaresoftware-dev",
+    "repository": "https://github.com/softwaresoftware-dev/claude-browser-bridge",
+    "manifestPath": "skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193052113",
+      "marketplaceName": "claude-browser-bridge",
+      "hasSkillMd": true
+    }
+  }
+]

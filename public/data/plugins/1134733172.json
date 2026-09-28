@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1134733172-save-plan",
+    "name": "save-plan",
+    "description": "Save plan mode documents to repository for future reference",
+    "version": "1.1.3",
+    "author": "esimkowitz",
+    "repository": "https://github.com/esimkowitz/claude-plugins",
+    "manifestPath": "./plugins/save-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134733172",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1134733172-task-discovery",
+    "name": "task-discovery",
+    "description": "Auto-discover Taskfile.yml tasks at session start",
+    "version": "1.0.4",
+    "author": "esimkowitz",
+    "repository": "https://github.com/esimkowitz/claude-plugins",
+    "manifestPath": "./plugins/task-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134733172",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

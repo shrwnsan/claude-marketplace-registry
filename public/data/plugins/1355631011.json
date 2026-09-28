@@ -3,14 +3,14 @@
     "id": "1355631011-design-rag",
     "name": "design-rag",
     "description": "DRAG 本地游戏策划案与配置表检索、分析和索引管理工具",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "author": "tadazly",
     "repository": "https://github.com/tadazly/s-plugins",
     "manifestPath": {
       "source": "git-subdir",
       "url": "https://github.com/tadazly/design-rag.git",
       "path": "plugins/design-rag",
-      "ref": "v0.4.0"
+      "ref": "v0.5.0"
     },
     "isValid": true,
     "errors": [],

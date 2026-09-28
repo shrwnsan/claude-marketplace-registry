@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1266225774-rem-dev-core",
+    "name": "rem-dev-core",
+    "description": "Verification-first development pipeline (plan, review-plan, execute, verify, test, refactor, root-cause, branch).",
+    "version": "0.1.0",
+    "author": "darbin",
+    "repository": "https://github.com/darbin/claudecraft",
+    "manifestPath": "./plugins/rem-dev-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266225774",
+      "marketplaceName": "claudecraft",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1266225774-rem-review",
+    "name": "rem-review",
+    "description": "Independent fan-out review (repo audit, code review, UX/a11y review, browser QA).",
+    "version": "0.1.0",
+    "author": "darbin",
+    "repository": "https://github.com/darbin/claudecraft",
+    "manifestPath": "./plugins/rem-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266225774",
+      "marketplaceName": "claudecraft",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1266225774-rem-meta",
+    "name": "rem-meta",
+    "description": "Skill engineering and workflow meta layer (build/evaluate skills, feedback, lessons, handoff, council, loop, solve).",
+    "version": "0.1.0",
+    "author": "darbin",
+    "repository": "https://github.com/darbin/claudecraft",
+    "manifestPath": "./plugins/rem-meta",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266225774",
+      "marketplaceName": "claudecraft",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

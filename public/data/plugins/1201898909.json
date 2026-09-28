@@ -1,0 +1,87 @@
+[
+  {
+    "id": "1201898909-detect-github-url",
+    "name": "detect-github-url",
+    "description": "name: detect-github-url",
+    "version": "1.0.0",
+    "author": "idan-yaron",
+    "repository": "https://github.com/idan-yaron/claude-cowork-skills-toolkit",
+    "manifestPath": "skills/detect-github-url",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201898909",
+      "marketplaceName": "claude-cowork-skills-toolkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201898909-skills-load",
+    "name": "skills-load",
+    "description": "name: skills-load",
+    "version": "1.0.0",
+    "author": "idan-yaron",
+    "repository": "https://github.com/idan-yaron/claude-cowork-skills-toolkit",
+    "manifestPath": "skills/skills-load",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201898909",
+      "marketplaceName": "claude-cowork-skills-toolkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201898909-skills-save",
+    "name": "skills-save",
+    "description": "name: skills-save",
+    "version": "1.0.0",
+    "author": "idan-yaron",
+    "repository": "https://github.com/idan-yaron/claude-cowork-skills-toolkit",
+    "manifestPath": "skills/skills-save",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201898909",
+      "marketplaceName": "claude-cowork-skills-toolkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201898909-skills-share",
+    "name": "skills-share",
+    "description": "name: skills-share",
+    "version": "1.0.0",
+    "author": "idan-yaron",
+    "repository": "https://github.com/idan-yaron/claude-cowork-skills-toolkit",
+    "manifestPath": "skills/skills-share",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201898909",
+      "marketplaceName": "claude-cowork-skills-toolkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1201898909-skills-update",
+    "name": "skills-update",
+    "description": "name: skills-update",
+    "version": "1.0.0",
+    "author": "idan-yaron",
+    "repository": "https://github.com/idan-yaron/claude-cowork-skills-toolkit",
+    "manifestPath": "skills/skills-update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201898909",
+      "marketplaceName": "claude-cowork-skills-toolkit",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -188,6 +188,23 @@
     }
   },
   {
+    "id": "1153848836-demo",
+    "name": "demo",
+    "description": "name: wicked-garden-demo",
+    "version": "1.0.0",
+    "author": "mikeparcewski",
+    "repository": "https://github.com/mikeparcewski/wicked-garden",
+    "manifestPath": "skills/demo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153848836",
+      "marketplaceName": "wicked-garden",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1153848836-domain-coverage",
     "name": "domain-coverage",
     "description": "name: wicked-garden-domain-coverage",

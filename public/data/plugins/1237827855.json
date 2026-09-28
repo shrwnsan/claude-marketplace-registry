@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1237827855-bunjang-assistant",
+    "name": "bunjang-assistant",
+    "description": "Run Bunjang tasks from Claude on macOS — market price lookup, listing search and ranking, chat and favorites management, sales drafting, and explicit bypass registration.",
+    "version": "0.4.0",
+    "author": "kimchanhyung98",
+    "repository": "https://github.com/kimchanhyung98/bunjang-ai-toolkit",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237827855",
+      "marketplaceName": "bunjang-ai-toolkit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1237827855-bunjang",
+    "name": "bunjang",
+    "description": "name: bunjang",
+    "version": "1.0.0",
+    "author": "kimchanhyung98",
+    "repository": "https://github.com/kimchanhyung98/bunjang-ai-toolkit",
+    "manifestPath": "skills/bunjang",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237827855",
+      "marketplaceName": "bunjang-ai-toolkit",
+      "hasSkillMd": true
+    }
+  }
+]

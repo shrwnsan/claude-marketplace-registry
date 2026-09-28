@@ -1,0 +1,750 @@
+[
+  {
+    "id": "1190553149-a11y-audit",
+    "name": "a11y-audit",
+    "description": "name: a11y-audit",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/a11y-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-api-design",
+    "name": "api-design",
+    "description": "name: api-design",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/api-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-architecture-review",
+    "name": "architecture-review",
+    "description": "name: architecture-review",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/architecture-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-business-blueprint",
+    "name": "business-blueprint",
+    "description": "name: business-blueprint",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/business-blueprint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-business-logic-audit",
+    "name": "business-logic-audit",
+    "description": "name: business-logic-audit",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/business-logic-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-changelog",
+    "name": "changelog",
+    "description": "name: changelog",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/changelog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-ci-pipeline",
+    "name": "ci-pipeline",
+    "description": "name: ci-pipeline",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/ci-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-code-coverage",
+    "name": "code-coverage",
+    "description": "name: code-coverage",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/code-coverage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-competitive-analysis",
+    "name": "competitive-analysis",
+    "description": "name: competitive-analysis",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/competitive-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-convert-code",
+    "name": "convert-code",
+    "description": "name: convert-code",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/convert-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-create-component",
+    "name": "create-component",
+    "description": "name: create-component",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/create-component",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-db-migration",
+    "name": "db-migration",
+    "description": "name: db-migration",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/db-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-debug",
+    "name": "debug",
+    "description": "name: debug",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-dependency-audit",
+    "name": "dependency-audit",
+    "description": "name: dependency-audit",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/dependency-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-deploy-checklist",
+    "name": "deploy-checklist",
+    "description": "name: deploy-checklist",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/deploy-checklist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-design-flow",
+    "name": "design-flow",
+    "description": "name: design-flow",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/design-flow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-docker-setup",
+    "name": "docker-setup",
+    "description": "name: docker-setup",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/docker-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-env-setup",
+    "name": "env-setup",
+    "description": "name: env-setup",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/env-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-error-monitor",
+    "name": "error-monitor",
+    "description": "name: error-monitor",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/error-monitor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-estimate",
+    "name": "estimate",
+    "description": "name: estimate",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/estimate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-explain-code",
+    "name": "explain-code",
+    "description": "name: explain-code",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/explain-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-fix-issue",
+    "name": "fix-issue",
+    "description": "name: fix-issue",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/fix-issue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-generate-docs",
+    "name": "generate-docs",
+    "description": "name: generate-docs",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/generate-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-git-cleanup",
+    "name": "git-cleanup",
+    "description": "name: git-cleanup",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/git-cleanup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-grill-me",
+    "name": "grill-me",
+    "description": "name: grill-me",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/grill-me",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-handoff",
+    "name": "handoff",
+    "description": "name: handoff",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-legal-pages",
+    "name": "legal-pages",
+    "description": "name: legal-pages",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/legal-pages",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-memory-import",
+    "name": "memory-import",
+    "description": "name: memory-import",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/memory-import",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-memory",
+    "name": "memory",
+    "description": "name: memory",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-microcopy",
+    "name": "microcopy",
+    "description": "name: microcopy",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/microcopy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-migrate-framework",
+    "name": "migrate-framework",
+    "description": "name: migrate-framework",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/migrate-framework",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-onboard",
+    "name": "onboard",
+    "description": "name: onboard",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/onboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-optimize",
+    "name": "optimize",
+    "description": "name: optimize",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/optimize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-pr-summary",
+    "name": "pr-summary",
+    "description": "name: pr-summary",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/pr-summary",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-refactor",
+    "name": "refactor",
+    "description": "name: refactor",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/refactor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-reference-app",
+    "name": "reference-app",
+    "description": "name: reference-app",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/reference-app",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-review-pr",
+    "name": "review-pr",
+    "description": "name: review-pr",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/review-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-security-scan",
+    "name": "security-scan",
+    "description": "name: security-scan",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/security-scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-seo-scaffold",
+    "name": "seo-scaffold",
+    "description": "name: seo-scaffold",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/seo-scaffold",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-tdd",
+    "name": "tdd",
+    "description": "name: tdd",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-web-launch-check",
+    "name": "web-launch-check",
+    "description": "name: web-launch-check",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/web-launch-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-wireframe",
+    "name": "wireframe",
+    "description": "name: wireframe",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/wireframe",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-write-skill",
+    "name": "write-skill",
+    "description": "name: write-skill",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/write-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190553149-write-tests",
+    "name": "write-tests",
+    "description": "name: write-tests",
+    "version": "1.0.0",
+    "author": "viknesh20-20",
+    "repository": "https://github.com/viknesh20-20/claude-code-tool-kit",
+    "manifestPath": ".claude/skills/write-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190553149",
+      "marketplaceName": "claude-code-tool-kit",
+      "hasSkillMd": true
+    }
+  }
+]

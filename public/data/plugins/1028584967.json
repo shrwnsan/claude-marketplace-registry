@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1028584967-nextjs-code-expert",
+    "name": "nextjs-code-expert",
+    "description": "Next.js code generation and optimization expert",
+    "version": "",
+    "author": "raisiqueira",
+    "repository": "https://github.com/raisiqueira/claude-code-plugins",
+    "manifestPath": "./plugins/next-js-expert",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1028584967",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1028584967-react-router-expert",
+    "name": "react-router-expert",
+    "description": "React Router V7 code generation and optimization expert",
+    "version": "",
+    "author": "raisiqueira",
+    "repository": "https://github.com/raisiqueira/claude-code-plugins",
+    "manifestPath": "./plugins/react-router-expert",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1028584967",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1028584967-vue-js-expert",
+    "name": "vue-js-expert",
+    "description": "Vue.js code generation and optimization expert",
+    "version": "",
+    "author": "raisiqueira",
+    "repository": "https://github.com/raisiqueira/claude-code-plugins",
+    "manifestPath": "./plugins/vue-js-expert",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1028584967",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1028584967-frontend-design",
+    "name": "frontend-design",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality",
+    "version": "",
+    "author": "raisiqueira",
+    "repository": "https://github.com/raisiqueira/claude-code-plugins",
+    "manifestPath": "./plugins/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1028584967",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

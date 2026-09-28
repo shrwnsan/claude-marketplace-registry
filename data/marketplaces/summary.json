@@ -1,60 +1,67 @@
 {
-  "totalFound": 370,
-  "withManifest": 292,
-  "lastUpdated": "2026-09-27T04:10:09.102Z",
+  "totalFound": 604,
+  "withManifest": 404,
+  "lastUpdated": "2026-09-28T04:07:00.610Z",
   "searchQuery": "",
   "languages": {
-    "Python": 119,
-    "Shell": 46,
-    "TypeScript": 40,
-    "Rust": 11,
-    "JavaScript": 63,
-    "Go": 12,
-    "Unknown": 43,
-    "HTML": 19,
+    "Python": 189,
+    "Shell": 74,
+    "TypeScript": 62,
+    "Rust": 14,
+    "JavaScript": 83,
+    "Go": 19,
+    "Unknown": 114,
+    "HTML": 29,
     "AMPL": 1,
-    "C++": 1,
+    "C++": 2,
     "Swift": 2,
     "Svelte": 1,
-    "Astro": 1,
     "Jupyter Notebook": 2,
+    "Astro": 1,
     "Perl": 1,
     "C#": 2,
-    "Typst": 1,
-    "Makefile": 1,
     "Ruby": 1,
+    "SCSS": 1,
+    "Markdown": 1,
     "Java": 2,
-    "PHP": 1
+    "PHP": 1,
+    "Typst": 1,
+    "Makefile": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 267993,
+      "stars": 268487,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 178570,
+      "stars": 178690,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75682,
+      "stars": 75748,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
+      "name": "oh-my-openagent",
+      "stars": 69605,
+      "url": "https://github.com/code-yeongyu/oh-my-openagent"
+    },
+    {
       "name": "claude-plugins-official",
-      "stars": 37059,
+      "stars": 37108,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "daily",
-      "stars": 20077,
+      "stars": 20078,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12086,
+      "stars": 12085,
       "url": "https://github.com/kubeshark/kubeshark"
     },
     {
@@ -64,18 +71,13 @@
     },
     {
       "name": "claude-octopus",
-      "stars": 4102,
+      "stars": 4106,
       "url": "https://github.com/nyldn/claude-octopus"
     },
     {
       "name": "treg",
-      "stars": 3512,
+      "stars": 3597,
       "url": "https://github.com/superdesigndev/treg"
-    },
-    {
-      "name": "awesome-ChatGPT-repositories",
-      "stars": 3262,
-      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
     }
   ]
 }

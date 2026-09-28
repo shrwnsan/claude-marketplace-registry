@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1298057603-health-wellness",
+    "name": "health-wellness",
+    "description": "5 lifestyle skills for meal planning, training programs, sleep optimisation, supplement stacks, and daily wellness habits — evidence-rated and AU-context aware",
+    "version": "1.0.2",
+    "author": "web-lifter",
+    "repository": "https://github.com/web-lifter/official-lifestyle-plugins",
+    "manifestPath": "./health-wellness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298057603",
+      "marketplaceName": "official-lifestyle-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298057603-home-life-logistics",
+    "name": "home-life-logistics",
+    "description": "4 lifestyle skills for trip planning, household maintenance, life-admin, and thoughtful gifting — AU-context checklists that turn logistics into routine",
+    "version": "1.0.2",
+    "author": "web-lifter",
+    "repository": "https://github.com/web-lifter/official-lifestyle-plugins",
+    "manifestPath": "./home-life-logistics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298057603",
+      "marketplaceName": "official-lifestyle-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298057603-personal-finance",
+    "name": "personal-finance",
+    "description": "5 lifestyle skills for AU personal budgeting, debt payoff, savings rate, retirement projection, and emergency runbooks — AU tax/super defaults, scenario-driven",
+    "version": "1.0.2",
+    "author": "web-lifter",
+    "repository": "https://github.com/web-lifter/official-lifestyle-plugins",
+    "manifestPath": "./personal-finance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298057603",
+      "marketplaceName": "official-lifestyle-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298057603-personal-productivity",
+    "name": "personal-productivity",
+    "description": "4 lifestyle skills for habits, weekly resets, deep-focus days, and energy mapping — design daily and weekly systems that compound",
+    "version": "1.0.2",
+    "author": "web-lifter",
+    "repository": "https://github.com/web-lifter/official-lifestyle-plugins",
+    "manifestPath": "./personal-productivity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298057603",
+      "marketplaceName": "official-lifestyle-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

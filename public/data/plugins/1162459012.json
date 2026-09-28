@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1162459012-file-indexer",
+    "name": "file-indexer",
+    "description": "Indexes files by generating AI summaries and maintaining a lightweight catalog alongside your files. Supports Inbox-based filing workflows.",
+    "version": "1.0.0",
+    "author": "zjor",
+    "repository": "https://github.com/zjor/effective-claude",
+    "manifestPath": "./file-indexer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1162459012",
+      "marketplaceName": "effective-claude",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

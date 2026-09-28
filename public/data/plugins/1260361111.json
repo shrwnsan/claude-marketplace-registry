@@ -1,0 +1,200 @@
+[
+  {
+    "id": "1260361111-visual-quality",
+    "name": "visual-quality",
+    "description": "A hard quality gate for any work with pixels. Forces transcribe-before-you-judge review of the ACTUAL rendered UI (Xcode/SwiftUI, web, Electron, mockups), a Stop hook that blocks 'done' when UI was edited/screenshotted but never reviewed, an automated QC command, and an independent adversarial reviewer subagent. Stops 'compiles → screenshot → looks good → done' from shipping obvious defects.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/visual-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-verify-before-done",
+    "name": "verify-before-done",
+    "description": "Blocks 'done' when code changed but nothing was run to verify it. Skill + Stop hook: require test/build/lint/smoke evidence or VERIFY-BEFORE-DONE: PASS. Stops 'edited the handler → should work → done' without proof.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/verify-before-done",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-scope-guard",
+    "name": "scope-guard",
+    "description": "Keeps an agent in its lane. Declare the files a task may touch (a .scope-guard file, an env var, or a SCOPE-GUARD: sentinel) and a PreToolUse hook blocks any Edit/Write outside that set — stopping drive-by edits, 'while I'm here' refactors, and one agent clobbering another's files on a shared tree.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/scope-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-no-stub",
+    "name": "no-stub",
+    "description": "Blocks 'done' when the code you just wrote is half-written. Skill + Stop hook: detect stub/placeholder markers — TODO/FIXME, NotImplementedError, empty `...` bodies, 'your code here' — in code edited this turn, and refuse the turn until it's real or marked NO-STUB: INTENTIONAL. Stops 'scaffold the function → leave a TODO → done' from shipping.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/no-stub",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-accessibility-gate",
+    "name": "accessibility-gate",
+    "description": "Stops UI work being called done before a real accessibility pass. The Stop hook requires evidence for keyboard flow, visible focus, accessible names, contrast, reduced motion, and error/loading states.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/accessibility-gate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-secret-guard",
+    "name": "secret-guard",
+    "description": "Stops a live secret from ever landing in source. A PreToolUse hook scans the new content of every Edit/Write for real-looking credentials — AWS keys, GitHub/OpenAI/Stripe/Slack tokens, Google keys, private keys, hardcoded api_key literals — and blocks the write before it hits a tracked file. Allows .env files, placeholders, and env reads (process.env / os.environ); fails open.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/secret-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-no-slop",
+    "name": "no-slop",
+    "description": "Blocks 'done' when the prose you just wrote reads like AI slop. Skill + Stop hook: detect high-precision AI tells — 'delve into', 'it's worth noting that', 'a testament to', 'navigate the complexities', 'rich tapestry', em-dash pile-ups — in prose edited this turn (.md/.mdx/.txt/.rst), and refuse the turn until it's plain or marked NO-SLOP: INTENTIONAL. The prose complement to no-stub. Stops 'write the README → pad it with clichés → done' from shipping.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/no-slop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-no-debug",
+    "name": "no-debug",
+    "description": "Blocks 'done' when the code you just wrote still has leftover debug noise. Skill + Stop hook: detect high-signal debug markers — console.log/debugger, pdb.set_trace/breakpoint, binding.pry/byebug, dd()/var_dump, dbg!(), debug-ish prints — in code edited this turn, and refuse the turn until it's stripped or marked NO-DEBUG: INTENTIONAL. Lets console.error/warn and real loggers through. Stops 'add a console.log to check → forget it → done' from shipping.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/no-debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-no-swallow",
+    "name": "no-swallow",
+    "description": "Blocks 'done' when the code you just wrote silently swallows an error. Skill + Stop hook: detect caught exceptions that are neither handled, logged, re-raised, nor returned — `except: pass`, empty `catch (e) {}`, `.catch(() => {})`, empty `if err != nil {}` — in code edited this turn, and refuse the turn until the error is dealt with or marked NO-SWALLOW: INTENTIONAL. Heuristic and fail-open: a handler that logs, re-raises, returns, or sets error state is never flagged; Swift try? and fallback imports pass. Stops 'wrap it in a try so it stops crashing → leave the catch empty → done' from shipping.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/no-swallow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-no-silent-assumptions",
+    "name": "no-silent-assumptions",
+    "description": "Blocks 'done' when the turn rests on unsurfaced guesses. Skill + Stop hook: track material assumptions while working — environment, data shape, API behavior, edge cases — and surface them in a short 'Assumptions:' block before claiming done; the hook detects guess-shaped language ('assuming the…', 'not sure if…', 'probably works', 'TODO: verify') in code added this turn and refuses the turn until they're surfaced or marked NO-SILENT-ASSUMPTIONS: INTENTIONAL. Conservative and fail-open: only multi-word guess phrases fire, never bare words. Stops 'infer the schema → assume it holds → done' from shipping a silent risk.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/no-silent-assumptions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260361111-migration-safety",
+    "name": "migration-safety",
+    "description": "Stops destructive DB work from running before the plan exists. A PreToolUse hook blocks destructive SQL — DROP TABLE/COLUMN, TRUNCATE, DELETE/UPDATE without WHERE, irreversible ALTERs — in Bash commands or migration-file writes unless a migration plan is declared (.migration-plan file, or MIGRATION-SAFETY: ALLOW sentinel stating target, dry-run, rollback). The skill teaches the method: state target → dry-run → rollback plan → then execute. WHERE-scoped deletes, additive migrations, and SQL in docs pass; fails open. Stops 'clean up the old rows → forget the WHERE → gone' from ever running.",
+    "version": "",
+    "author": "logicleap-labs",
+    "repository": "https://github.com/logicleap-labs/claude-plugins",
+    "manifestPath": "./plugins/migration-safety",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260361111",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]
