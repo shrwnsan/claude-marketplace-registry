@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1176655149-remembrall",
+    "name": "remembrall",
+    "description": "Never lose work to context limits — auto-handoff, smart replay, git patches, team sharing",
+    "version": "3.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/claude-plugins",
+    "manifestPath": "./plugins/remembrall",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176655149",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1176655149-patrol",
+    "name": "patrol",
+    "description": "ESLint for Claude Code — adaptive rule engine, investigation gate, workflow skills",
+    "version": "3.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/claude-plugins",
+    "manifestPath": "./plugins/patrol",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176655149",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1176655149-claudes-ai-buddies",
+    "name": "claudes-ai-buddies",
+    "description": "Dynamic multi-AI buddy system — forge, tribunal, ELO leaderboard, any CLI",
+    "version": "4.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/claude-plugins",
+    "manifestPath": "./plugins/claudes-ai-buddies",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176655149",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1176655149-evil-twin",
+    "name": "evil-twin",
+    "description": "Your shadow self — adversarial challenge + independent blind verification. Claude-only.",
+    "version": "1.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/claude-plugins",
+    "manifestPath": "./plugins/evil-twin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176655149",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1176655149-hello-claude",
+    "name": "hello-claude",
+    "description": "Inter-session communication — let multiple Claude instances know about each other and exchange messages",
+    "version": "1.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/claude-plugins",
+    "manifestPath": "./plugins/hello-claude",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176655149",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

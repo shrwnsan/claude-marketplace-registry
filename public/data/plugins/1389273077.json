@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1389273077-email-format-guard",
+    "name": "email-format-guard",
+    "description": "Deterministic pre-send gate for customer-facing email: no long dashes, no formatting in the body, no unresolved placeholders, no team salutations, no double sign-offs. Also scans pipeline code for hard-wired violations.",
+    "version": "0.1.0",
+    "author": "exasyncai",
+    "repository": "https://github.com/exasyncai/claude-plugins",
+    "manifestPath": "./plugins/email-format-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1389273077",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1389273077-decision-precedent",
+    "name": "decision-precedent",
+    "description": "Never ask the same question twice: search stored decisions before asking a human, store the answer with rationale, and log whether a precedent was applied. Local JSON store, no cloud required.",
+    "version": "0.1.0",
+    "author": "exasyncai",
+    "repository": "https://github.com/exasyncai/claude-plugins",
+    "manifestPath": "./plugins/decision-precedent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1389273077",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1389273077-usage-guard",
+    "name": "usage-guard",
+    "description": "Hook that shows your subscription usage in every turn and blocks expensive commands once a threshold is reached, so a long-running session hands over cleanly instead of hitting the wall.",
+    "version": "0.1.0",
+    "author": "exasyncai",
+    "repository": "https://github.com/exasyncai/claude-plugins",
+    "manifestPath": "./plugins/usage-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1389273077",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

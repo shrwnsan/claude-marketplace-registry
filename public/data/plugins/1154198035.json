@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1154198035-pair-programmer",
+    "name": "pair-programmer",
+    "description": "AI pair programmer with real-time screen and audio context, powered by VideoDB Capture SDK",
+    "version": "0.2.3",
+    "author": "VideoDB",
+    "repository": "https://github.com/video-db/pair-programmer",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1154198035",
+      "marketplaceName": "pair-programmer",
+      "skills": [
+        "./skills/pair-programmer"
+      ],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1237533957-liquid-org",
+    "name": "liquid-org",
+    "description": "Run a task as an evolved multi-agent ORG. The compose-org skill makes the running Claude embody a proven team — one subagent per specialist talent — then grades and records the result so good teams get reused on similar future tasks. Backed by the liquid-org CLI (plan / compose / record).",
+    "version": "0.8.1-alpha.0",
+    "author": "U0001F3A2",
+    "repository": "https://github.com/U0001F3A2/liquid-org",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237533957",
+      "marketplaceName": "liquid-org",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1237533957-compose-org",
+    "name": "compose-org",
+    "description": "name: compose-org",
+    "version": "1.0.0",
+    "author": "U0001F3A2",
+    "repository": "https://github.com/U0001F3A2/liquid-org",
+    "manifestPath": "skills/compose-org",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237533957",
+      "marketplaceName": "liquid-org",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237533957-liquid-rank",
+    "name": "liquid-rank",
+    "description": "name: liquid-rank",
+    "version": "1.0.0",
+    "author": "U0001F3A2",
+    "repository": "https://github.com/U0001F3A2/liquid-org",
+    "manifestPath": "skills/liquid-rank",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237533957",
+      "marketplaceName": "liquid-org",
+      "hasSkillMd": true
+    }
+  }
+]

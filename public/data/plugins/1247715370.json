@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1247715370-plainly",
+    "name": "plainly",
+    "description": "Catch and fix LLM 'style smells' in non-fiction prose — quality signals, not an AI-detection verdict.",
+    "version": "1.1.0",
+    "author": "Mapika",
+    "repository": "https://github.com/Mapika/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/Mapika/plainly.git",
+      "path": "plainly"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247715370",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247715370-paper-reader",
+    "name": "paper-reader",
+    "description": "Read research papers with strict per-claim citations. Fetches PDF + tex source + real BibTeX from open sources (OpenAlex, Crossref, DBLP, ACL, Semantic Scholar, arXiv). Never fabricates citations.",
+    "version": "1.1.0",
+    "author": "Mapika",
+    "repository": "https://github.com/Mapika/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/Mapika/paper-reader.git",
+      "path": "plugins/paper-reader"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247715370",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247715370-nice-figures",
+    "name": "nice-figures",
+    "description": "Generate matplotlib figures in a soft-pastel, warm-earth, research-blog visual register — bold display titles, smoothed trends with shaded bands, rounded bars, minimal axes. Conference-ready white background by default.",
+    "version": "1.1.0",
+    "author": "Mapika",
+    "repository": "https://github.com/Mapika/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/Mapika/nice-figures.git",
+      "path": "plugins/nice-figures"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247715370",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247715370-good-code",
+    "name": "good-code",
+    "description": "Teach appropriately-expressive backend code (Python/TS/Go): when to comment, abstract, validate, and handle errors. Every rule has a when-NOT guard, so it curbs LLM over-commenting/over-abstraction without overcorrecting into cryptic code. Bundles real before/after examples and a tripwire scanner.",
+    "version": "1.1.0",
+    "author": "Mapika",
+    "repository": "https://github.com/Mapika/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/Mapika/good-code.git",
+      "path": "plugins/good-code"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247715370",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

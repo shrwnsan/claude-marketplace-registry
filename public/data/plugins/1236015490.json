@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1236015490-cleo",
+    "name": "cleo",
+    "description": "Dependency manager for Claude Code — install rules, skills, agents, commands, hooks, and MCP servers via cleo.json + lockfile",
+    "version": "",
+    "author": "Surt",
+    "repository": "https://github.com/Surt/cleo",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1236015490",
+      "marketplaceName": "cleo",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

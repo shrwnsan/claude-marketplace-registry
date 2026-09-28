@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1125948662-pagent",
+    "name": "pagent",
+    "description": "",
+    "version": "",
+    "author": "tuannvm",
+    "repository": "https://github.com/tuannvm/plugins",
+    "manifestPath": "./plugins/pagent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125948662",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1125948662-pagent-ts",
+    "name": "pagent-ts",
+    "description": "",
+    "version": "",
+    "author": "tuannvm",
+    "repository": "https://github.com/tuannvm/plugins",
+    "manifestPath": "./plugins/pagent-ts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125948662",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1125948662-ralph-wiggum",
+    "name": "ralph-wiggum",
+    "description": "",
+    "version": "",
+    "author": "tuannvm",
+    "repository": "https://github.com/tuannvm/plugins",
+    "manifestPath": "./plugins/ralph-wiggum",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125948662",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1125948662-google-workspace",
+    "name": "google-workspace",
+    "description": "Comprehensive Google Workspace meta-skill covering all 47+ services (Calendar, Gmail, Drive, Docs, Sheets, Slides, Chat, Meet, Tasks, Forms, People, Workflows, and more)",
+    "version": "",
+    "author": "tuannvm",
+    "repository": "https://github.com/tuannvm/plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "googleworkspace/cli",
+      "branch": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1125948662",
+      "marketplaceName": "plugins",
+      "skills": [
+        "./skills/"
+      ],
+      "strict": false
+    }
+  }
+]

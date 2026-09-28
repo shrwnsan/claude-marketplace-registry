@@ -1,0 +1,362 @@
+[
+  {
+    "id": "1099868418-agent-sdk-dev",
+    "name": "agent-sdk-dev",
+    "description": "Claude Agent SDK 開發工具包，用於建立和驗證 Python 和 TypeScript 應用程式",
+    "version": "1.0.0",
+    "author": "Ashwin Bhat (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/agent-sdk-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-feature-dev",
+    "name": "feature-dev",
+    "description": "提供七階段功能開發流程，配備專門的代理進行程式碼庫探索、架構設計和品質審查",
+    "version": "1.0.0",
+    "author": "Siddharth Bidasaria (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/feature-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-frontend-design",
+    "name": "frontend-design",
+    "description": "建立獨特的生產級前端介面，具備高設計品質。產生富有創意、精緻的程式碼，避免通用的 AI 美學",
+    "version": "1.0.0",
+    "author": "Prithvi Rajasekaran & Alexander Bricken (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-plugin-dev",
+    "name": "plugin-dev",
+    "description": "Claude Code 插件開發工具包，提供七個專業技能、三個代理和完整的工作流程命令，用於構建高品質插件",
+    "version": "1.1.0",
+    "author": "Daisy Hollman (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/plugin-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-ralph-loop",
+    "name": "ralph-loop",
+    "description": "連續自引用 AI 循環，用於互動式迭代開發。實現 Ralph Wiggum 技術，讓 Claude 在 while-true 循環中執行相同提示直到任務完成",
+    "version": "1.0.0",
+    "author": "Anthropic (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/ralph-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-pr-review-toolkit",
+    "name": "pr-review-toolkit",
+    "description": "綜合 PR 審查代理，專精於程式碼註解、測試、錯誤處理、類型設計、程式碼品質和程式碼簡化",
+    "version": "1.0.0",
+    "author": "Daisy (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/pr-review-toolkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-commit-commands",
+    "name": "commit-commands",
+    "description": "使用簡單命令簡化 Git 工作流程，包括提交、推送和建立 Pull Request",
+    "version": "1.0.0",
+    "author": "Anthropic (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/commit-commands",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-code-review",
+    "name": "code-review",
+    "description": "使用多個專門代理進行自動化程式碼審查，配備基於置信度的評分系統以過濾誤報",
+    "version": "1.0.0",
+    "author": "Boris Cherny (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-hookify",
+    "name": "hookify",
+    "description": "透過分析對話模式或明確指令，輕鬆建立自訂鉤子以防止不想要的行為。透過簡單的 markdown 檔案定義規則",
+    "version": "0.1.0",
+    "author": "Daisy Hollman (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/hookify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-security-guidance",
+    "name": "security-guidance",
+    "description": "安全提醒鉤子，在編輯檔案時警告潛在的安全問題，包括命令注入、XSS 和不安全的程式碼模式",
+    "version": "1.0.0",
+    "author": "David Dworken (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/security-guidance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-explanatory-output-style",
+    "name": "explanatory-output-style",
+    "description": "添加關於實作選擇和程式碼庫模式的教育性見解（模仿已棄用的解釋性輸出風格）",
+    "version": "1.0.0",
+    "author": "Dickson Tsai (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/explanatory-output-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-learning-output-style",
+    "name": "learning-output-style",
+    "description": "互動式學習模式，在決策點請求有意義的程式碼貢獻（模仿未發布的學習輸出風格）",
+    "version": "1.0.0",
+    "author": "Boris Cherny (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/learning-output-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-issue-review",
+    "name": "issue-review",
+    "description": "專業的問題分析專家系統，能夠深入分析各類問題、調查程式碼庫、定位根本原因並提供解決方案",
+    "version": "1.0.0",
+    "author": "Dennis Liu",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/issue-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-legacy-analyzer",
+    "name": "legacy-analyzer",
+    "description": "使用多個專門代理配合基於置信度的評分系統，分析 Legacy Java Spring Boot 專案並產生高品質教學文件",
+    "version": "1.4.0",
+    "author": "Dennis Liu (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/legacy-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-claude-opus-4-5-migration",
+    "name": "claude-opus-4-5-migration",
+    "description": "將程式碼和提示詞從 Sonnet 4.x 和 Opus 4.1 遷移至 Opus 4.5，處理模型字串更新和行為差異調整",
+    "version": "1.0.0",
+    "author": "William Hu",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/claude-opus-4-5-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-sql-to-osc",
+    "name": "sql-to-osc",
+    "description": "將 Flyway SQL 遷移腳本轉換為 OSC (Online Schema Change) 格式，支援 ALTER TABLE 和 CREATE INDEX 語句的自動轉換",
+    "version": "1.0.0",
+    "author": "Dennis Liu",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/sql-to-osc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-community-code-review",
+    "name": "community-code-review",
+    "description": "社群版本的 Git 提交程式碼審查工具，使用多個專門代理進行自動化審查，配備驗證機制以過濾誤報",
+    "version": "1.0.0",
+    "author": "Dennis Liu",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/community-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-code-simplifier",
+    "name": "code-simplifier",
+    "description": "簡化和優化程式碼以提升清晰度、一致性和可維護性，同時保持原有功能不變",
+    "version": "1.0.0",
+    "author": "Anthropic (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/code-simplifier",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-java-code-simplifier",
+    "name": "java-code-simplifier",
+    "description": "專為 Java/Spring Boot 專案設計的程式碼簡化專家，運用企業級最佳實踐提升程式碼品質",
+    "version": "1.0.0",
+    "author": "DennisLiuCk",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/java-code-simplifier",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1099868418-skill-creator",
+    "name": "skill-creator",
+    "description": "建立新技能、修改和改進現有技能、衡量技能效能。包含完整的技能開發工作流程、評估系統與描述優化工具",
+    "version": "1.0.0",
+    "author": "Anthropic (繁體中文版)",
+    "repository": "https://github.com/DennisLiuCk/claude-plugin-marketplace",
+    "manifestPath": "./plugins/skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1099868418",
+      "marketplaceName": "claude-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

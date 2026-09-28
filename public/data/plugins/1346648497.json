@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1346648497-clauc",
+    "name": "clauc",
+    "description": "Branch-level time tracking — estimate from your own history instead of vibes.",
+    "version": "0.1.0",
+    "author": "c³d",
+    "repository": "https://github.com/c3d-gg/claude-plugin",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/c3d-gg/clauc.git",
+      "ref": "v0.1.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1346648497",
+      "marketplaceName": "claude-plugin",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1153132552-bug-hunter",
+    "name": "bug-hunter",
+    "description": "Multi-agent bug hunting with 8 parallel specialist agents, deduplication, regression guard, and prioritized reporting",
+    "version": "1.0.0",
+    "author": "su1ph3r",
+    "repository": "https://github.com/Su1ph3r/claude-plugins",
+    "manifestPath": "./plugins/bug-hunter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153132552",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1153132552-bounty-pipeline",
+    "name": "bounty-pipeline",
+    "description": "End-to-end bug bounty hunting pipeline that orchestrates 8 security tools through agent-driven phases from recon to attack path synthesis",
+    "version": "1.0.0",
+    "author": "su1ph3r",
+    "repository": "https://github.com/Su1ph3r/claude-plugins",
+    "manifestPath": "./plugins/bounty-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153132552",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

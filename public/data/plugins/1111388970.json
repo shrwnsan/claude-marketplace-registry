@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1111388970-dev-workflow",
+    "name": "dev-workflow",
+    "description": "Development workflow with TDD, debugging, and collaboration skills",
+    "version": "2.5.0",
+    "author": "Pedro Proenca",
+    "repository": "https://github.com/pproenca/dev-workflow",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111388970",
+      "marketplaceName": "dev-workflow",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1111388970-condition-based-waiting",
+    "name": "condition-based-waiting",
+    "description": "name: condition-based-waiting",
+    "version": "1.0.0",
+    "author": "Pedro Proenca",
+    "repository": "https://github.com/pproenca/dev-workflow",
+    "manifestPath": "skills/condition-based-waiting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111388970",
+      "marketplaceName": "dev-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111388970-defense-in-depth",
+    "name": "defense-in-depth",
+    "description": "name: defense-in-depth",
+    "version": "1.0.0",
+    "author": "Pedro Proenca",
+    "repository": "https://github.com/pproenca/dev-workflow",
+    "manifestPath": "skills/defense-in-depth",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111388970",
+      "marketplaceName": "dev-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1111388970-finishing-a-development-branch",
+    "name": "finishing-a-development-branch",
+    "description": "name: finishing-a-development-branch",
+    "version": "1.0.0",
+    "author": "Pedro Proenca",
+    "repository": "https://github.com/pproenca/dev-workflow",
+    "manifestPath": "skills/finishing-a-development-branch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111388970",
+      "marketplaceName": "dev-workflow",
+      "hasSkillMd": true
+    }
+  }
+]

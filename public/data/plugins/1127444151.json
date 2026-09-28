@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1127444151-agentstore",
+    "name": "agentstore",
+    "description": "AgentStore marketplace CLI — browse, install, and manage Claude Code agents with USDC payments",
+    "version": "1.0.0",
+    "author": "AgentStore",
+    "repository": "https://github.com/techgangboss/agentstore",
+    "manifestPath": "../packages/plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127444151",
+      "marketplaceName": "agentstore",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1127444151-wallet-assistant",
+    "name": "wallet-assistant",
+    "description": "Check AgentStore wallet balances, view transaction history, and analyze spending patterns",
+    "version": "1.0.0",
+    "author": "TechGang Boss",
+    "repository": "https://github.com/techgangboss/agentstore",
+    "manifestPath": "../plugins/wallet-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127444151",
+      "marketplaceName": "agentstore",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1127444151-code-reviewer",
+    "name": "code-reviewer",
+    "description": "AI-powered code review that analyzes your code for bugs, security issues, and best practices",
+    "version": "1.0.0",
+    "author": "TechGang Boss",
+    "repository": "https://github.com/techgangboss/agentstore",
+    "manifestPath": "../plugins/code-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127444151",
+      "marketplaceName": "agentstore",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1127444151-sql-expert",
+    "name": "sql-expert",
+    "description": "Write optimized SQL queries and explain execution plans for PostgreSQL, MySQL, and SQLite",
+    "version": "1.0.0",
+    "author": "TechGang Boss",
+    "repository": "https://github.com/techgangboss/agentstore",
+    "manifestPath": "../plugins/sql-expert",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127444151",
+      "marketplaceName": "agentstore",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

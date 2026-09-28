@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1296241288-testkit",
+    "name": "testkit",
+    "description": "Generate per-project test plans (TESTS_E2E.md, TESTS_MANUAL.md), execute them autonomously, or run them guided by hand — with a written protocol for every run.",
+    "version": "0.1.0",
+    "author": "Dmytro Pishchukhin (KnowHowLab)",
+    "repository": "https://github.com/knowhowlab/agent-testkit",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296241288",
+      "marketplaceName": "agent-testkit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1296241288-test-e2e",
+    "name": "test-e2e",
+    "description": "name: test-e2e",
+    "version": "1.0.0",
+    "author": "Dmytro Pishchukhin (KnowHowLab)",
+    "repository": "https://github.com/knowhowlab/agent-testkit",
+    "manifestPath": "skills/test-e2e",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296241288",
+      "marketplaceName": "agent-testkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296241288-test-init",
+    "name": "test-init",
+    "description": "name: test-init",
+    "version": "1.0.0",
+    "author": "Dmytro Pishchukhin (KnowHowLab)",
+    "repository": "https://github.com/knowhowlab/agent-testkit",
+    "manifestPath": "skills/test-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296241288",
+      "marketplaceName": "agent-testkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1296241288-test-manual",
+    "name": "test-manual",
+    "description": "name: test-manual",
+    "version": "1.0.0",
+    "author": "Dmytro Pishchukhin (KnowHowLab)",
+    "repository": "https://github.com/knowhowlab/agent-testkit",
+    "manifestPath": "skills/test-manual",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296241288",
+      "marketplaceName": "agent-testkit",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1188237598-hyperloop",
+    "name": "hyperloop",
+    "description": "",
+    "version": "",
+    "author": "samrom3",
+    "repository": "https://github.com/samrom3/claude-hyper-plugs",
+    "manifestPath": "./hyperloop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188237598",
+      "marketplaceName": "claude-hyper-plugs",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188237598-adr-wizard",
+    "name": "adr-wizard",
+    "description": "",
+    "version": "",
+    "author": "samrom3",
+    "repository": "https://github.com/samrom3/claude-hyper-plugs",
+    "manifestPath": "./adr-wizard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188237598",
+      "marketplaceName": "claude-hyper-plugs",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

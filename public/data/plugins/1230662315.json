@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1230662315-cli-with-claude-skill",
+    "name": "cli-with-claude-skill",
+    "description": "Discipline rules and Go/Rust/Node/Python reference templates for CLI tools that embed and install their own Claude Code skill",
+    "version": "",
+    "author": "hoveychen",
+    "repository": "https://github.com/hoveychen/claude-skills",
+    "manifestPath": "./cli-with-claude-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230662315",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1230662315-anthropic-launch-video",
+    "name": "anthropic-launch-video",
+    "description": "Playbook for producing Anthropic-style product launch / intro videos in Remotion (cream + coral + Fraunces serif + JetBrains Mono terminal aesthetic), with iron-rule discipline for Player vs mp4, layer validation, reference-first frame extraction, and ffmpeg self-check",
+    "version": "",
+    "author": "hoveychen",
+    "repository": "https://github.com/hoveychen/claude-skills",
+    "manifestPath": "./anthropic-launch-video",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230662315",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

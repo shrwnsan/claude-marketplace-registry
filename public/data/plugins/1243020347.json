@@ -1,0 +1,164 @@
+[
+  {
+    "id": "1243020347-conventional-commits",
+    "name": "conventional-commits",
+    "description": "Enforces Conventional Commits message format and branch naming conventions when creating branches or committing.",
+    "version": "",
+    "author": "Joshua Zillwood",
+    "repository": "https://github.com/jzills/claude-marketplace",
+    "manifestPath": "./plugins/conventional-commits",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243020347",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1243020347-dotnet-unit-tests",
+    "name": "dotnet-unit-tests",
+    "description": "Writes production-quality NUnit + Moq unit tests for C# / .NET code.",
+    "version": "",
+    "author": "Joshua Zillwood",
+    "repository": "https://github.com/jzills/claude-marketplace",
+    "manifestPath": "./plugins/dotnet-unit-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243020347",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1243020347-github-pr",
+    "name": "github-pr",
+    "description": "Creates GitHub pull requests using the gh CLI with auto-generated titles and descriptions.",
+    "version": "",
+    "author": "Joshua Zillwood",
+    "repository": "https://github.com/jzills/claude-marketplace",
+    "manifestPath": "./plugins/github-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243020347",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1243020347-skill-changelog",
+    "name": "skill-changelog",
+    "description": "Maintains a versioned CHANGELOG.md inside any skill directory being created or modified.",
+    "version": "",
+    "author": "Joshua Zillwood",
+    "repository": "https://github.com/jzills/claude-marketplace",
+    "manifestPath": "./plugins/skill-changelog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243020347",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1243020347-auto-rewind",
+    "name": "auto-rewind",
+    "description": "Detects test failures and guides a /rewind to a clean checkpoint instead of fixing forward.",
+    "version": "",
+    "author": "Joshua Zillwood",
+    "repository": "https://github.com/jzills/claude-marketplace",
+    "manifestPath": "./plugins/auto-rewind",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243020347",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1243020347-shimmering-forest",
+    "name": "shimmering-forest",
+    "description": "CVSS v3.1-inspired risk auditor that scores every tool call and blocks or warns based on configurable severity thresholds.",
+    "version": "",
+    "author": "Joshua Zillwood",
+    "repository": "https://github.com/jzills/claude-marketplace",
+    "manifestPath": "./plugins/shimmering-forest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243020347",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1243020347-semantic-versioning",
+    "name": "semantic-versioning",
+    "description": "Determines the next semantic version number by inspecting git tags, release branches, and commit history.",
+    "version": "",
+    "author": "Joshua Zillwood",
+    "repository": "https://github.com/jzills/claude-marketplace",
+    "manifestPath": "./plugins/semantic-versioning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243020347",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1243020347-release-workflow",
+    "name": "release-workflow",
+    "description": "Orchestrates a full release workflow: version detection, release branch creation, CI monitoring, and PR creation.",
+    "version": "",
+    "author": "Joshua Zillwood",
+    "repository": "https://github.com/jzills/claude-marketplace",
+    "manifestPath": "./plugins/release-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243020347",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1243020347-dotnet-xml-docs",
+    "name": "dotnet-xml-docs",
+    "description": "Writes and reviews XML documentation comments (///) for C# / .NET public APIs.",
+    "version": "",
+    "author": "Joshua Zillwood",
+    "repository": "https://github.com/jzills/claude-marketplace",
+    "manifestPath": "./plugins/dotnet-xml-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243020347",
+      "marketplaceName": "claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "id": "1241438648-scriptorium",
+    "name": "scriptorium",
+    "description": "Coordinated AI capabilities for manuscripts, grants, and reviews. Reads and writes a shared MANUSCRIPT_STATE.yaml so skills compose rather than each starting from scratch.",
+    "version": "",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1241438648-argumentative-flow",
+    "name": "argumentative-flow",
+    "description": "name: argumentative-flow",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/argumentative-flow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-author-contribution-audit",
+    "name": "author-contribution-audit",
+    "description": "name: author-contribution-audit",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/author-contribution-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-citation-audit",
+    "name": "citation-audit",
+    "description": "name: citation-audit",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/citation-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-compression",
+    "name": "compression",
+    "description": "name: compression",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/compression",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-desk-rejection-risk",
+    "name": "desk-rejection-risk",
+    "description": "name: desk-rejection-risk",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/desk-rejection-risk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-explain",
+    "name": "explain",
+    "description": "name: explain",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/explain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-figure-text-alignment",
+    "name": "figure-text-alignment",
+    "description": "name: figure-text-alignment",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/figure-text-alignment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-gap-finder",
+    "name": "gap-finder",
+    "description": "name: gap-finder",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/gap-finder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-init",
+    "name": "init",
+    "description": "name: init",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-outlier-sentence-detector",
+    "name": "outlier-sentence-detector",
+    "description": "name: outlier-sentence-detector",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/outlier-sentence-detector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-reporting-guideline-compliance",
+    "name": "reporting-guideline-compliance",
+    "description": "name: reporting-guideline-compliance",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/reporting-guideline-compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-reporting-guideline-fit",
+    "name": "reporting-guideline-fit",
+    "description": "name: reporting-guideline-fit",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/reporting-guideline-fit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-reviewer-simulation",
+    "name": "reviewer-simulation",
+    "description": "name: reviewer-simulation",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/reviewer-simulation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-terminology-normalization",
+    "name": "terminology-normalization",
+    "description": "name: terminology-normalization",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/terminology-normalization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-tour",
+    "name": "tour",
+    "description": "name: tour",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/tour",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1241438648-venue-fit",
+    "name": "venue-fit",
+    "description": "name: venue-fit",
+    "version": "1.0.0",
+    "author": "Sean Davis",
+    "repository": "https://github.com/seandavi/scriptorium",
+    "manifestPath": "skills/venue-fit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1241438648",
+      "marketplaceName": "scriptorium",
+      "hasSkillMd": true
+    }
+  }
+]

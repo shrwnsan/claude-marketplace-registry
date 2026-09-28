@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1264150306-regressionledger",
+    "name": "regressionledger",
+    "description": "Stop your coding agent from re-applying fixes that already failed. Blocks repeat failed fixes across sessions.",
+    "version": "0.10.2",
+    "author": "anlor1002-alt",
+    "repository": "https://github.com/anlor1002-alt/regressionledger",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1264150306",
+      "marketplaceName": "regressionledger",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

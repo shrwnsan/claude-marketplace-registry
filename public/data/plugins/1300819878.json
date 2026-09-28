@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1300819878-anki",
+    "name": "anki",
+    "description": "Create and edit Anki flashcards as version-controlled YAML — pushed into live Anki via AnkiConnect, synced to your devices through AnkiWeb, with git history as the audit trail.",
+    "version": "",
+    "author": "Bailey Wickham",
+    "repository": "https://github.com/baileywickham/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "baileywickham/anki-decks"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1300819878",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1300819878-geo",
+    "name": "geo",
+    "description": "Answer geospatial questions from OpenStreetMap data — routing with quietest/flattest preferences, geocoding, elevation profiles, isochrones, and Overpass queries — via the geo CLI.",
+    "version": "",
+    "author": "Bailey Wickham",
+    "repository": "https://github.com/baileywickham/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "baileywickham/geo"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1300819878",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1300819878-unifi-cli",
+    "name": "unifi-cli",
+    "description": "Answer questions about your UniFi network (gateway, APs, connected clients) by driving the unifi CLI against the local gateway's Integrations API.",
+    "version": "",
+    "author": "Bailey Wickham",
+    "repository": "https://github.com/baileywickham/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "baileywickham/unifi-cli"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1300819878",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1300819878-ibkr",
+    "name": "ibkr",
+    "description": "Research and trade options and stocks on Interactive Brokers via a local CLI — chains, quotes, Greeks, and limit orders with a preview/confirm/execute safety protocol. Requires IB Gateway.",
+    "version": "",
+    "author": "Bailey Wickham",
+    "repository": "https://github.com/baileywickham/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "baileywickham/ibkr"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1300819878",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1325941970-outstanding-items",
+    "name": "outstanding-items",
+    "description": "Keep a user-owned ledger out of the chat and suggest one next item without starting it.",
+    "version": "",
+    "author": "EthanSK",
+    "repository": "https://github.com/EthanSK/outstanding-items",
+    "manifestPath": "./plugins/outstanding-items",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1325941970",
+      "marketplaceName": "outstanding-items",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

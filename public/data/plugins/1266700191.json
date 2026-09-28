@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1266700191-explain-my-app",
+    "name": "explain-my-app",
+    "description": "Explain your vibe-coded app back to you as a linked doc-set in your repo, re-explain what changed since last time, and quiz you on it",
+    "version": "",
+    "author": "AvyanshKatiyar",
+    "repository": "https://github.com/AvyanshKatiyar/mined-skills",
+    "manifestPath": "./plugins/explain-my-app",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266700191",
+      "marketplaceName": "mined-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1266700191-interview-dossier",
+    "name": "interview-dossier",
+    "description": "Adversarially-verified interview dossier for one high-stakes interview: verified facts, the interviewer's mental models, trap-aware answers, and an honest decision read",
+    "version": "",
+    "author": "AvyanshKatiyar",
+    "repository": "https://github.com/AvyanshKatiyar/mined-skills",
+    "manifestPath": "./plugins/interview-dossier",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266700191",
+      "marketplaceName": "mined-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1266700191-claim-scorecard",
+    "name": "claim-scorecard",
+    "description": "Track advisors' checkable predictions to their outcomes: extract falsifiable claims into a ledger, auto-expire windows, resolve via web search, score hit rates",
+    "version": "",
+    "author": "AvyanshKatiyar",
+    "repository": "https://github.com/AvyanshKatiyar/mined-skills",
+    "manifestPath": "./plugins/claim-scorecard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266700191",
+      "marketplaceName": "mined-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1266700191-workflow-distiller",
+    "name": "workflow-distiller",
+    "description": "Mine your own Claude Code transcripts (locally, aggregates only, with consent) for repeated workflows and draft the skills you should already have",
+    "version": "",
+    "author": "AvyanshKatiyar",
+    "repository": "https://github.com/AvyanshKatiyar/mined-skills",
+    "manifestPath": "./plugins/workflow-distiller",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266700191",
+      "marketplaceName": "mined-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

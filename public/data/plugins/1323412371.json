@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1323412371-brevity",
+    "name": "brevity",
+    "description": "Claude Code says less, and says it straight. Short replies, no jargon, no preamble. Applies ASD-STE100 Simplified Technical English to long replies.",
+    "version": "",
+    "author": "pehcastro",
+    "repository": "https://github.com/pehcastro/harness",
+    "manifestPath": "./plugins/brevity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323412371",
+      "marketplaceName": "harness",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1323412371-nkz-taste",
+    "name": "nkz-taste",
+    "description": "Design and build product UI with taste, for native mobile (Expo / React Native) and web. Product decision first, then the craft floor, then the feel.",
+    "version": "0.1.0",
+    "author": "pehcastro",
+    "repository": "https://github.com/pehcastro/harness",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323412371",
+      "marketplaceName": "harness",
+      "skills": [
+        "./skills/nkz-taste"
+      ],
+      "strict": false
+    }
+  }
+]

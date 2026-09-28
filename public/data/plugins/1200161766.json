@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1200161766-java-core",
+    "name": "java-core",
+    "description": "General Java skills (review, refactor, explain, fix, docs, health, concurrency, API, migration, commit, SOLID, design patterns, ADR) and architect + build-resolver agents",
+    "version": "2.2.2",
+    "author": "ducpm2303",
+    "repository": "https://github.com/ducpm2303/claude-java-plugins",
+    "manifestPath": "./plugins/java-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200161766",
+      "marketplaceName": "claude-java-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1200161766-java-spring",
+    "name": "java-spring",
+    "description": "Spring Boot skills (scaffold new projects, JPA review, logging review, CRUD generator) and Spring expert agent. Supports Spring Boot 2.7.x through 4.0.x.",
+    "version": "2.2.2",
+    "author": "ducpm2303",
+    "repository": "https://github.com/ducpm2303/claude-java-plugins",
+    "manifestPath": "./plugins/java-spring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200161766",
+      "marketplaceName": "claude-java-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1200161766-java-quality",
+    "name": "java-quality",
+    "description": "Java quality toolkit — security scan (/java-security-check), performance scan (/java-perf-check), test generation (/java-test), and specialist agents for OWASP, performance, and testing strategy",
+    "version": "2.2.2",
+    "author": "ducpm2303",
+    "repository": "https://github.com/ducpm2303/claude-java-plugins",
+    "manifestPath": "./plugins/java-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200161766",
+      "marketplaceName": "claude-java-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

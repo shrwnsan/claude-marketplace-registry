@@ -1,0 +1,542 @@
+[
+  {
+    "id": "1291647318-prompt-master",
+    "name": "prompt-master",
+    "description": "레퍼런스 사이트를 실측 분석해, 약한 모델이 실행해도 상위 모델급 결과가 나오는 완성 구현 프롬프트를 생성합니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/prompt-master",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-korea-public-data",
+    "name": "korea-public-data",
+    "description": "한국 공공데이터 API(공공데이터포털·온비드·법원경매·HIRA·청약홈·실거래가) 연동의 인증키·응답·페이징·좌표계·캐싱 함정을 정리한 실전 패턴입니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/korea-public-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-repo-shipper",
+    "name": "repo-shipper",
+    "description": "GitHub repo를 공개 기준(description·LICENSE·README·CI·.env.example·.gitignore)으로 감사하고 빠진 부분만 채웁니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/repo-shipper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-pg-payments",
+    "name": "pg-payments",
+    "description": "PG·카드결제 연동의 멱등성·웹훅 서명검증·정산 대사·PCI-DSS 범위를 다루는 결제 대행 실전 패턴입니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/pg-payments",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-three-3d-web",
+    "name": "three-3d-web",
+    "description": "Three.js·React Three Fiber로 3D/WebGL 웹을 만들 때의 프레임·바이트 예산, 모바일 폴백, reduced-motion을 정리한 성능 우선 패턴입니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/three-3d-web",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-publisher-ad-revenue",
+    "name": "publisher-ad-revenue",
+    "description": "애드센스·네이버 애드포스트 등 퍼블리셔 광고 수익을 RPM·뷰어빌리티·배치·정책 준수 관점에서 최적화하는 패턴입니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/publisher-ad-revenue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-naver-blog-marketing",
+    "name": "naver-blog-marketing",
+    "description": "네이버 생태계(블로그·스마트스토어·플레이스) SEO를 C-Rank·D.I.A+ 기준으로 다루는, 구글 SEO와 다른 마케팅 패턴입니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/naver-blog-marketing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-stock-research",
+    "name": "stock-research",
+    "description": "주식 데이터 수집·스크리너·백테스트를 다루는 리서치 패턴입니다. 룩어헤드·생존편향·과최적화 편향과 국내(KRX·DART)·미국 데이터 소스를 정리합니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/stock-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-crypto-stablecoin-card",
+    "name": "crypto-stablecoin-card",
+    "description": "USDT·USDC 스테이블코인 카드(Visa·Master), 온·오프램프, 카드 발급 스택, 커스터디, KYC/AML/특금법(VASP)을 컴플라이언스 우선으로 다루는 패턴입니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/crypto-stablecoin-card",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-meta-ads-mcp",
+    "name": "meta-ads-mcp",
+    "description": "메타(페이스북·인스타) 광고를 Marketing API/MCP로 자동화하는 패턴입니다. Meta MCP 또는 Marketing API 연결이 선행되어야 합니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/meta-ads-mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-token-diet",
+    "name": "token-diet",
+    "description": "토큰 절감 지휘 스킬 — 상황에 맞는 절감 레버(입력·툴콜·출력·코드·예산)를 골라줍니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/token-diet",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-lean-context",
+    "name": "lean-context",
+    "description": "입력·컨텍스트 토큰 절감 — 통째로 읽지 말고 위치를 찾아 필요한 줄만, 큰 건 서브에이전트 요약에 위임합니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/lean-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-quiet-tools",
+    "name": "quiet-tools",
+    "description": "툴콜 낭비 제거 — 재읽기·재확인 금지, 독립작업 병렬 배치, 나레이션 제거로 툴콜 오버헤드를 줄입니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/quiet-tools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-no-restate",
+    "name": "no-restate",
+    "description": "반복 출력 제거 — 서두·맺음말·기확립 사실 재유도를 없앱니다(caveman보다 가벼운 출력 다이어트).",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/no-restate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-token-budget",
+    "name": "token-budget",
+    "description": "작업에 토큰 목표를 걸고 그 안에서 깊이를 조절하며 소비를 보고합니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/token-budget",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-skill-sync",
+    "name": "skill-sync",
+    "description": "설치된 스킬을 원 출처에서 최신으로 업데이트(ff-only·diff 확인)하고 추가할 만한 신규 스킬을 발견합니다.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/skill-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-vibesec",
+    "name": "vibesec",
+    "description": "This skill helps Claude write secure web applications. Use this when working on any web application or when a user requests a scan or audit to ensure security best practices are followed.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/vibesec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-first-setup",
+    "name": "first-setup",
+    "description": "Claude Code를 처음 설치하는 사람을 설치부터 첫 실행 성공까지 대화로 완주시킵니다. \"클로드 코드 설치하고 싶어\", \"설치가 안 돼요\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/first-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-ko-writer",
+    "name": "ko-writer",
+    "description": "블로그·업무 보고서·이메일 등 자연스러운 한국어 글을 번역투 없이 작성합니다. \"블로그 글 써줘\", \"보고서 초안 잡아줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/ko-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-excel-helper",
+    "name": "excel-helper",
+    "description": "엑셀·CSV 표 정리, 수식, 요약, 차트를 원본 파일을 보존하며 비개발자 언어로 돕습니다. \"이 엑셀 정리해줘\", \"월별로 집계해줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/excel-helper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-did-it-work",
+    "name": "did-it-work",
+    "description": "스킬·플러그인·MCP 설치 후 \"됐는지 모르겠다\"를 증거 기반으로 검증해 판정합니다. \"설치 됐는지 확인해줘\", \"이거 작동하는 거야?\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/did-it-work",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-ppt-draft",
+    "name": "ppt-draft",
+    "description": "주제만 주면 발표자료(PPT) 초안을 목차→슬라이드 구성→발표 노트까지 만듭니다. \"발표자료 만들어줘\", \"PPT 초안 잡아줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/ppt-draft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-meeting-actions",
+    "name": "meeting-actions",
+    "description": "회의록·녹취 텍스트를 붙여넣으면 결정사항·액션아이템(담당·기한)·미결 이슈로 정리합니다. \"회의록 정리해줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/meeting-actions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-naver-seo-check",
+    "name": "naver-seo-check",
+    "description": "네이버 검색 기준으로 블로그 글·웹페이지를 진단하고 개선 우선순위를 처방합니다. \"네이버 상위노출 진단해줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/naver-seo-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-youtube-script",
+    "name": "youtube-script",
+    "description": "유튜브 영상 대본을 도입 훅부터 마무리 CTA까지 구조로 만들어 줍니다. \"유튜브 대본 써줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/youtube-script",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-no-git-backup",
+    "name": "no-git-backup",
+    "description": "git을 몰라도 작업물을 안전하게 지키는 백업 습관을 잡아 줍니다. \"백업 어떻게 해요\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/no-git-backup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-resume-coach",
+    "name": "resume-coach",
+    "description": "이력서·자기소개서를 지어내지 않고 사용자가 준 사실만으로 개선하는 코치입니다. \"이력서 봐줘\", \"자소서 다듬어줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/resume-coach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-image-batch",
+    "name": "image-batch",
+    "description": "폴더 안 이미지 수십·수백 장을 원본을 보존하며 한 번에 리사이즈·형식 변환·이름 변경·용량 압축합니다. \"사진 전부 줄여줘\", \"이미지 일괄 변환해줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/image-batch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-contract-check",
+    "name": "contract-check",
+    "description": "임대차·용역·근로계약서 같은 일상 계약서를 함께 읽고 확인할 질문 목록을 만들어줍니다. 법률 자문이 아닌 검토 보조. \"계약서 좀 봐줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/contract-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1291647318-budget-log",
+    "name": "budget-log",
+    "description": "지출·수입을 파일에 기록하고 월간 합계를 검산해 정리하는 가계부 도우미입니다. \"오늘 쓴 돈 기록해줘\" 같은 요청에 사용.",
+    "version": "",
+    "author": "x77xdavid-prog",
+    "repository": "https://github.com/x77xdavid-prog/checkup-skills",
+    "manifestPath": "./plugins/budget-log",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1291647318",
+      "marketplaceName": "checkup-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

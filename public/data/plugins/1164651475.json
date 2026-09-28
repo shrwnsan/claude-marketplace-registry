@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1164651475-ux-expert",
+    "name": "ux-expert",
+    "description": "Expert UI/UX plugin: design, validate, and audit interfaces for SaaS, landing pages, and admin portals",
+    "version": "1.0.0",
+    "author": "WillDev.IT",
+    "repository": "https://github.com/WilliamFontaine/claude-plugins-marketplace",
+    "manifestPath": "./plugins/ux-expert",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1164651475",
+      "marketplaceName": "claude-plugins-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1164651475-qa-hunter",
+    "name": "qa-hunter",
+    "description": "Automated exploratory bug hunting on web applications — explore, detect, and report bugs via browser automation",
+    "version": "1.0.0",
+    "author": "WillDev.IT",
+    "repository": "https://github.com/WilliamFontaine/claude-plugins-marketplace",
+    "manifestPath": "./plugins/qa-hunter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1164651475",
+      "marketplaceName": "claude-plugins-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1197779016-humanizer",
+    "name": "humanizer",
+    "description": "Remove AI phrasing from any content. Zero config — works on any text.",
+    "version": "1.0.0",
+    "author": "Build-to-Launch",
+    "repository": "https://github.com/Build-to-Launch/build-to-launch-plugins",
+    "manifestPath": "./plugins/humanizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197779016",
+      "marketplaceName": "build-to-launch-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1197779016-brand-voice",
+    "name": "brand-voice",
+    "description": "Define and enforce your own brand voice rules. Catches banned phrases, weak openers, and off-brand patterns.",
+    "version": "1.0.0",
+    "author": "Build-to-Launch",
+    "repository": "https://github.com/Build-to-Launch/build-to-launch-plugins",
+    "manifestPath": "./plugins/brand-voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197779016",
+      "marketplaceName": "build-to-launch-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1197779016-research-digest",
+    "name": "research-digest",
+    "description": "Weekly content research engine. Searches Reddit, HN, and the web for your topics and scores what to write next.",
+    "version": "1.0.0",
+    "author": "Build-to-Launch",
+    "repository": "https://github.com/Build-to-Launch/build-to-launch-plugins",
+    "manifestPath": "./plugins/research-digest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197779016",
+      "marketplaceName": "build-to-launch-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1197779016-notes-generator",
+    "name": "notes-generator",
+    "description": "Turn any article into 3–5 ready-to-post Substack notes using a content-type formula system.",
+    "version": "1.0.0",
+    "author": "Build-to-Launch",
+    "repository": "https://github.com/Build-to-Launch/build-to-launch-plugins",
+    "manifestPath": "./plugins/notes-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197779016",
+      "marketplaceName": "build-to-launch-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1197779016-build-in-public",
+    "name": "build-in-public",
+    "description": "Turn a build update, lesson, or shipping moment into a ready-to-post piece.",
+    "version": "1.0.0",
+    "author": "Build-to-Launch",
+    "repository": "https://github.com/Build-to-Launch/build-to-launch-plugins",
+    "manifestPath": "./plugins/build-in-public",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197779016",
+      "marketplaceName": "build-to-launch-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1197779016-newsletter-engine",
+    "name": "newsletter-engine",
+    "description": "Full newsletter production system — research, draft, humanize, SEO, publish to Substack. Premium.",
+    "version": "1.0.0",
+    "author": "Build-to-Launch",
+    "repository": "https://github.com/Build-to-Launch/build-to-launch-plugins",
+    "manifestPath": "./plugins/newsletter-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197779016",
+      "marketplaceName": "build-to-launch-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1197779016-ai-builder-toolkit",
+    "name": "ai-builder-toolkit",
+    "description": "Complete content system for AI builders publishing in public. Weekly cadence, content pillars, distribution. Premium.",
+    "version": "1.0.0",
+    "author": "Build-to-Launch",
+    "repository": "https://github.com/Build-to-Launch/build-to-launch-plugins",
+    "manifestPath": "./plugins/ai-builder-toolkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1197779016",
+      "marketplaceName": "build-to-launch-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

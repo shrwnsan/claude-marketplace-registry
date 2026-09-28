@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1221133993-magi",
+    "name": "magi",
+    "description": "Multi-model engineering workflow with MAGI weighted voting and cross-CLI orchestration",
+    "version": "",
+    "author": "howar31",
+    "repository": "https://github.com/howar31/howar31-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "howar31/magi-workflow"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1221133993",
+      "marketplaceName": "howar31-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1221133993-mem",
+    "name": "mem",
+    "description": "Cross-cwd memory recall + write skills for Claude Code's prompt-based auto-memory",
+    "version": "",
+    "author": "howar31",
+    "repository": "https://github.com/howar31/howar31-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "howar31/claude-memory"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1221133993",
+      "marketplaceName": "howar31-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1221133993-browser",
+    "name": "browser",
+    "description": "Drive a real headless browser (Puppeteer + Playwright) — clicks, screenshots, PDFs, network intercept, CDP debugging, cross-browser E2E",
+    "version": "",
+    "author": "howar31",
+    "repository": "https://github.com/howar31/howar31-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "howar31/browser-automation"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1221133993",
+      "marketplaceName": "howar31-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1221133993-handoff",
+    "name": "handoff",
+    "description": "Save and load LLM-facing session handoff documents so a fresh agent can resume work cold — decisions, state, dead ends, constraints, next steps",
+    "version": "",
+    "author": "howar31",
+    "repository": "https://github.com/howar31/howar31-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "howar31/handoff"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1221133993",
+      "marketplaceName": "howar31-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

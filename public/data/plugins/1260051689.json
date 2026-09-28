@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1260051689-ai-news-hq",
+    "name": "ai-news-hq",
+    "description": "An AI-news team and HQ that tracks the field with web search and ships daily briefings.",
+    "version": "0.1.0",
+    "author": "OneWave-AI",
+    "repository": "https://github.com/OneWave-AI/open-agent-stack",
+    "manifestPath": "./plugins/ai-news-hq",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260051689",
+      "marketplaceName": "open-agent-stack",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260051689-release-radar",
+    "name": "release-radar",
+    "description": "Track new AI model and tool releases, changelogs, and deprecations.",
+    "version": "0.1.0",
+    "author": "OneWave-AI",
+    "repository": "https://github.com/OneWave-AI/open-agent-stack",
+    "manifestPath": "./plugins/release-radar",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260051689",
+      "marketplaceName": "open-agent-stack",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260051689-competitor-watch",
+    "name": "competitor-watch",
+    "description": "Monitor competitor sites, pricing, and content via web search.",
+    "version": "0.1.0",
+    "author": "OneWave-AI",
+    "repository": "https://github.com/OneWave-AI/open-agent-stack",
+    "manifestPath": "./plugins/competitor-watch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260051689",
+      "marketplaceName": "open-agent-stack",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260051689-content-engine",
+    "name": "content-engine",
+    "description": "Repurpose one piece of content across every channel.",
+    "version": "0.1.0",
+    "author": "OneWave-AI",
+    "repository": "https://github.com/OneWave-AI/open-agent-stack",
+    "manifestPath": "./plugins/content-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260051689",
+      "marketplaceName": "open-agent-stack",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260051689-brand-kit",
+    "name": "brand-kit",
+    "description": "Apply a OneWave design style — tokens, theme, and brand commands.",
+    "version": "0.1.0",
+    "author": "OneWave-AI",
+    "repository": "https://github.com/OneWave-AI/open-agent-stack",
+    "manifestPath": "./plugins/brand-kit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260051689",
+      "marketplaceName": "open-agent-stack",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260051689-sales-desk",
+    "name": "sales-desk",
+    "description": "The rep's daily loop: pre-call briefs, pipeline hygiene, account snapshots, post-call follow-ups.",
+    "version": "0.1.0",
+    "author": "OneWave-AI",
+    "repository": "https://github.com/OneWave-AI/open-agent-stack",
+    "manifestPath": "./plugins/sales-desk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260051689",
+      "marketplaceName": "open-agent-stack",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260051689-vibe-stack",
+    "name": "vibe-stack",
+    "description": "The full vibe-coding loop: scaffold an app or marketing site, animate it (GSAP, scroll, micro-interactions), make the fake data real, unstick it, de-AI it, ship it, demo it.",
+    "version": "0.1.0",
+    "author": "OneWave-AI",
+    "repository": "https://github.com/OneWave-AI/open-agent-stack",
+    "manifestPath": "./plugins/vibe-stack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260051689",
+      "marketplaceName": "open-agent-stack",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1260051689-market-desk",
+    "name": "market-desk",
+    "description": "Personal equity-research desk: ticker briefs, portfolio risk reviews, earnings prep. Research, not advice.",
+    "version": "0.1.0",
+    "author": "OneWave-AI",
+    "repository": "https://github.com/OneWave-AI/open-agent-stack",
+    "manifestPath": "./plugins/market-desk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1260051689",
+      "marketplaceName": "open-agent-stack",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

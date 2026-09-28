@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1258699997-video-bug-analyzer",
+    "name": "video-bug-analyzer",
+    "description": "Extract and reason over frames from a screen recording to diagnose UI/rendering bugs — stutter, hangs (--stall), whiteouts, content flicker (--content-revert), black screens, motion character — or read any clip's look, palette, and pacing. Requires ffmpeg + ffprobe; it never installs them for you (explicit opt-in only).",
+    "version": "",
+    "author": "cportka",
+    "repository": "https://github.com/cportka/claude-plugins",
+    "manifestPath": "./plugins/video-bug-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1258699997",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1258699997-repo-bootstrap",
+    "name": "repo-bootstrap",
+    "description": "Onboard a repo to the portka-tools marketplace (committed .claude/settings.json + optional CI), and optionally install the Portka standard contract: a version-stamped workflow CLAUDE.md, a committed commit identity applied to git config at bootstrap and each session, a git/gh permissions allowlist, an enforced SemVer sync with tests, and the corrected hosted git stop-hook.",
+    "version": "",
+    "author": "cportka",
+    "repository": "https://github.com/cportka/claude-plugins",
+    "manifestPath": "./plugins/repo-bootstrap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1258699997",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1258699997-app-website-evaluator",
+    "name": "app-website-evaluator",
+    "description": "Audit an app or website into a standardized, coverage-honest scorecard (per-dimension 0-100 + letter grade, weighted overall, --json) from a live --url, a local --dir build, or pre-fetched --html — SEO, crawlability, AI-readiness, social, security, performance, growth.",
+    "version": "",
+    "author": "cportka",
+    "repository": "https://github.com/cportka/claude-plugins",
+    "manifestPath": "./plugins/app-website-evaluator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1258699997",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1258699997-tab-chord-formatter",
+    "name": "tab-chord-formatter",
+    "description": "Format a messy guitar tab or chord sheet into a clean, aligned layout, or render a consistent monospace PDF songbook — a deterministic cleanup script plus model judgment for chord-over-lyric alignment and section structure.",
+    "version": "",
+    "author": "cportka",
+    "repository": "https://github.com/cportka/claude-plugins",
+    "manifestPath": "./plugins/tab-chord-formatter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1258699997",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

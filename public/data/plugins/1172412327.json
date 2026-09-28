@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1172412327-edgespark",
+    "name": "edgespark",
+    "description": "Build full-stack apps on EdgeSpark with database, auth, and file storage. Covers backend (Hono + Drizzle ORM), frontend client SDK (@edgespark/web), authentication, storage, and deployment workflows.",
+    "version": "",
+    "author": "edgespark dev team",
+    "repository": "https://github.com/edgesparkhq/claude-plugins",
+    "manifestPath": "./plugins/edgespark",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1172412327",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

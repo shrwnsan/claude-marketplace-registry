@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1169958392-auto-approve-compound-bash",
+    "name": "auto-approve-compound-bash",
+    "description": "Auto-approve compound Bash commands (pipes, chains, subshells) by parsing each segment via shfmt AST and checking against allow/deny lists.",
+    "version": "1.0.0",
+    "author": "oryband",
+    "repository": "https://github.com/oryband/claude-code-auto-approve",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1169958392",
+      "marketplaceName": "claude-code-auto-approve",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "id": "1137354153-ceo",
+    "name": "ceo",
+    "description": "Full-stack development team: 8 specialized agents with Superpowers framework integration for automated workflow from requirements to deployment. 🆕 v6.6.0: Complete workflow automation with auto/interactive modes, Git worktree for seamless project creation, and Callstack React Native best practices integration.",
+    "version": "6.6.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1137354153-brainstorming",
+    "name": "brainstorming",
+    "description": "name: brainstorming",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/brainstorming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-frontend-design",
+    "name": "frontend-design",
+    "description": "name: frontend-design",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-parallel-dispatch",
+    "name": "parallel-dispatch",
+    "description": "name: dispatching-parallel-agents",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/parallel-dispatch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-planning-with-files",
+    "name": "planning-with-files",
+    "description": "name: planning-with-files",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/planning-with-files",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-react-native-best-practices",
+    "name": "react-native-best-practices",
+    "description": "name: react-native-best-practices",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/react-native-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-subagent-driven-dev",
+    "name": "subagent-driven-dev",
+    "description": "name: subagent-driven-development",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/subagent-driven-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-tdd",
+    "name": "tdd",
+    "description": "name: test-driven-development",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-two-stage-review",
+    "name": "two-stage-review",
+    "description": "name: two-stage-review",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/two-stage-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-ui-ux-pro-max",
+    "name": "ui-ux-pro-max",
+    "description": "name: ui-ux-pro-max",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/ui-ux-pro-max",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-using-git-worktrees",
+    "name": "using-git-worktrees",
+    "description": "name: using-git-worktrees",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/using-git-worktrees",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1137354153-webapp-testing",
+    "name": "webapp-testing",
+    "description": "name: webapp-testing",
+    "version": "1.0.0",
+    "author": "pyinx",
+    "repository": "https://github.com/pyinx/ceo-skills-plugin",
+    "manifestPath": "skills/webapp-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1137354153",
+      "marketplaceName": "ceo-skills-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

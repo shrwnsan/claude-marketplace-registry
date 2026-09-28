@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1270800799-callsign",
+    "name": "callsign",
+    "description": "Unique per-session agent names + iMessage routing for Claude Code and Hermes. Every session picks its own callsign at start so you can address specific parallel sessions by name from your phone.",
+    "version": "",
+    "author": "heyfinal",
+    "repository": "https://github.com/heyfinal/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/heyfinal/callsign.git",
+      "ref": "v0.2.1",
+      "sha": "800f6e71542db3a369f7210aa7d930f275d06e49"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1270800799",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1270800799-chronicle",
+    "name": "chronicle",
+    "description": "Cold-storage warehouse + searchable recall for Claude Code session transcripts. Sweeps old ~/.claude/projects/*.jsonl into an SMB/SSD vault, indexes via SQLite FTS5, and lets you search and rehydrate any past session for /resume. First-class AI-agent tool with MCP server.",
+    "version": "",
+    "author": "heyfinal",
+    "repository": "https://github.com/heyfinal/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/heyfinal/chronicle.git",
+      "ref": "v0.2.0",
+      "sha": "c9dd16acb82b0275184e1705e9c09417946a3aa0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1270800799",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

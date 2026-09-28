@@ -1,0 +1,326 @@
+[
+  {
+    "id": "1312924647-plsbuild-os",
+    "name": "plsbuild-os",
+    "description": "A Claude setup kit for solo founders. 18 skills, one profile, and the instructions I wish someone had handed me on day one.",
+    "version": "",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1312924647-agents",
+    "name": "agents",
+    "description": "name: Agents",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-audit",
+    "name": "audit",
+    "description": "name: Audit",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-build",
+    "name": "build",
+    "description": "name: Build",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-design",
+    "name": "design",
+    "description": "name: Design",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-go-live",
+    "name": "go-live",
+    "description": "name: Go-Live",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/go-live",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-growth",
+    "name": "growth",
+    "description": "name: Growth",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/growth",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-launch",
+    "name": "launch",
+    "description": "name: Launch",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/launch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-learn-codebase",
+    "name": "learn-codebase",
+    "description": "name: Learn-codebase",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/learn-codebase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-learning-log",
+    "name": "learning-log",
+    "description": "name: Learning Log",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/learning-log",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-pitch",
+    "name": "pitch",
+    "description": "name: Pitch",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/pitch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-pull-in",
+    "name": "pull-in",
+    "description": "name: Pull-in",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/pull-in",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-research",
+    "name": "research",
+    "description": "name: Research",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-retro",
+    "name": "retro",
+    "description": "name: Retro",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/retro",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-ship",
+    "name": "ship",
+    "description": "name: Ship",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-spec",
+    "name": "spec",
+    "description": "name: Spec",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-support",
+    "name": "support",
+    "description": "name: Support",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/support",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-unblock",
+    "name": "unblock",
+    "description": "name: Unblock",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/unblock",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312924647-voice",
+    "name": "voice",
+    "description": "name: Voice",
+    "version": "1.0.0",
+    "author": "madeehahassan",
+    "repository": "https://github.com/madeehahassan/plsbuild-os",
+    "manifestPath": "skills/voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312924647",
+      "marketplaceName": "plsbuild-os",
+      "hasSkillMd": true
+    }
+  }
+]

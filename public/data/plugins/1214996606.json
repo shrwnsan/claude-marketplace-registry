@@ -1,0 +1,236 @@
+[
+  {
+    "id": "1214996606-igpt-sales",
+    "name": "igpt-sales",
+    "description": "Sales intelligence — deal tracking, friction detection, follow-up radar, meeting prep, competitor mentions, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-sales",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-finance",
+    "name": "igpt-finance",
+    "description": "Finance intelligence — invoice reconciliation, expense reports, subscription tracking, vendor spend, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-finance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-projects",
+    "name": "igpt-projects",
+    "description": "Project intelligence — blocker detection, decision logs, risk radar, stakeholder tracking, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-projects",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-cs",
+    "name": "igpt-cs",
+    "description": "Customer success intelligence — churn signals, renewal readiness, escalation tracking, success stories, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-cs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-hr",
+    "name": "igpt-hr",
+    "description": "HR intelligence — candidate pipelines, offer tracking, onboarding action items, team friction detection, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-hr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-executive",
+    "name": "igpt-executive",
+    "description": "Executive intelligence — board updates, investor relationships, strategic commitments, crisis signals, fundraising, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-executive",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-marketing",
+    "name": "igpt-marketing",
+    "description": "Marketing intelligence — partnership pipelines, campaign feedback, press coverage, agency deliverables, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-marketing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-realestate",
+    "name": "igpt-realestate",
+    "description": "Real estate intelligence — deal pipelines, offer history, listing expiry, client preferences, commissions, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-realestate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-consulting",
+    "name": "igpt-consulting",
+    "description": "Consulting intelligence — deliverable tracking, scope creep detection, retainer usage, proposal follow-ups, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-consulting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-procurement",
+    "name": "igpt-procurement",
+    "description": "Procurement intelligence — vendor commitments, contract renewals, purchase orders, pricing negotiations, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-procurement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-it",
+    "name": "igpt-it",
+    "description": "IT intelligence — access request tracking, incident timelines, license management, security commitments, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-it",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-recruiting",
+    "name": "igpt-recruiting",
+    "description": "Recruiting agency intelligence — candidate status, client intake, placement fees, time-to-fill, counter-offers, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-recruiting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1214996606-igpt-research",
+    "name": "igpt-research",
+    "description": "Research and academia intelligence — collaboration commitments, grant deadlines, reviewer feedback, publication pipelines, and more.",
+    "version": "1.0.0",
+    "author": "igptai",
+    "repository": "https://github.com/igptai/skills",
+    "manifestPath": "./plugins/igpt-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1214996606",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

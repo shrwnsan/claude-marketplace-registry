@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1359040207-game-engagement-retention",
+    "name": "game-engagement-retention",
+    "description": "Three routed skills for designing in-session reward moments and lifecycle retention for games and consumer interactive apps — the scene, the cohort, and the link between them.",
+    "version": "",
+    "author": "ajitta",
+    "repository": "https://github.com/ajitta/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/ajitta/Game-Engagement-Retention-Skills.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1359040207",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1359040207-unknowns",
+    "name": "unknowns",
+    "description": "Know your unknowns — an operational loop for finding and managing the gaps between the map (plan) and the territory (reality). 11 skills, 2 agents, 2 hooks across pre-implementation, implementation and post-implementation.",
+    "version": "",
+    "author": "ajitta",
+    "repository": "https://github.com/ajitta/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/ajitta/know-your-unknowns.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1359040207",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

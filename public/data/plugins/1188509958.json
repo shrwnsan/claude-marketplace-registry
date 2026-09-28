@@ -1,0 +1,218 @@
+[
+  {
+    "id": "1188509958-opsx-ext",
+    "name": "opsx-ext",
+    "description": "Extensions for OpenSpec — autonomous task workflows with self-correction and verification loops",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/opsx-ext",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-commit",
+    "name": "commit",
+    "description": "Clean, minimal git commits — conventional-style summary, optional bullet body, no co-author trailers",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-tdd",
+    "name": "tdd",
+    "description": "Test-Driven Development workflow — Red/Green/Refactor discipline with test-first design",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-cli-anything-go",
+    "name": "cli-anything-go",
+    "description": "Build powerful, stateful CLI interfaces for any GUI application as compiled Go binaries using Cobra + bubbletea.",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/cli-anything-go",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-engineering-principles",
+    "name": "engineering-principles",
+    "description": "Meta-skills that shape how Claude approaches code — DRY thinking on every edit, and evidence-based investigation for every bug and code change.",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/engineering-principles",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-architectural-analysis",
+    "name": "architectural-analysis",
+    "description": "Static-analysis skills that surface architectural problems in a codebase — hotspot detection, coupling and cohesion signals, refactor-target ranking, and catalog-grounded code-smell review.",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/architectural-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-skill-builder",
+    "name": "skill-builder",
+    "description": "Drop-in replacement for skill-creator with blind eval authoring — evaluation prompts and assertions are written by a subagent that has never seen the skill's body or scripts, fixing the implementation-bias flaw in the upstream workflow.",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/skill-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-quality-assurance",
+    "name": "quality-assurance",
+    "description": "Quality-engineering skills — smoke testing, build-verification gates, regression discipline, and visual screenshot diffing. Includes the smoke-test skill that scaffolds a focused 5-10 check suite in the right framework (FastAPI/pytest, Express/Vitest, Go httptest, axum/tower), and compare-screenshots, which diffs two UI screenshots (any size/zoom) into a similarity score, a confidence-coloured annotated overlay, and a written rundown.",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/quality-assurance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-futurism-design",
+    "name": "futurism-design",
+    "description": "Futurism web design system — bold italic display, single red accent, square corners, solid offset shadows, fast directional motion, paired light/dark themes. A drop-in stylesheet + full component kit with an explicit skill that keeps generated UI on-brand.",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/futurism-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-adversarial-testing",
+    "name": "adversarial-testing",
+    "description": "Adversarial testing — inputs chosen to break a system rather than confirm it works. Routes by test-oracle class across three layers: classical software (metamorphic relations, differential testing, coverage-guided and stateful fuzzing, mutation testing), AI and language-model systems (prompt injection, multi-turn escalation, agentic tool abuse, attack-success-rate measurement), and the tools that automate both (PyRIT, garak, promptfoo, DeepEval, DeepTeam). Slash-command only — never auto-invoked.",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/adversarial-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-divergence",
+    "name": "divergence",
+    "description": "Injects externally-generated entropy into creative work so output lands somewhere other than the model's default. Asking for something unconventional cannot escape the distribution — every framing has its own mode, and sampling parameters are removed on current models — so novelty has to be supplied from outside. Ships an OS-entropy seed drawer, hand-authored constraint decks across six domains, an accreting ledger of what past runs produced, and a falsifiable check that measures whether repeated runs on one brief actually landed apart.",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/divergence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1188509958-reverse-engineering",
+    "name": "reverse-engineering",
+    "description": "Reverse-engineer a game or software backend from its compiled client and reconstruct an authoritative server emulator. Walks a seven-phase pipeline — client memory/netcode audit, engine decompilation (Unity IL2CPP/Mono, Unreal GObjects/GNames, Godot), crypto-handshake analysis (DH/DHE/ECDHE/RSA), protocol and serialization RE (TLV framing, Protobuf/FlatBuffers/gRPC/MessagePack), and high-concurrency emulator architecture — pairing every offensive finding with the server-side hardening that closes it. Bundles pure-stdlib triage scripts (payload identifier, raw-Protobuf decoder, TLV parser, IL2CPP metadata probe). Authorized-use scope: game preservation, security research on owned or in-scope software, interoperability, and CTF.",
+    "version": "",
+    "author": "Stoica-Mihai",
+    "repository": "https://github.com/Stoica-Mihai/claude-skills",
+    "manifestPath": "./plugins/reverse-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188509958",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

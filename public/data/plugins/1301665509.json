@@ -1,0 +1,88 @@
+[
+  {
+    "id": "1301665509-theedoran",
+    "name": "theedoran",
+    "description": "Personal skills: explain (read-only implementation review reported to markdown), explain-fix (review + TDD hardening), explain-implementation (decision-oriented walkthroughs), and gcp (logical commits + push).",
+    "version": "",
+    "author": "TheEdoRan",
+    "repository": "https://github.com/TheEdoRan/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1301665509",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1301665509-explain-fix",
+    "name": "explain-fix",
+    "description": "name: explain-fix",
+    "version": "1.0.0",
+    "author": "TheEdoRan",
+    "repository": "https://github.com/TheEdoRan/skills",
+    "manifestPath": "skills/explain-fix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1301665509",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1301665509-explain-implementation",
+    "name": "explain-implementation",
+    "description": "name: explain-implementation",
+    "version": "1.0.0",
+    "author": "TheEdoRan",
+    "repository": "https://github.com/TheEdoRan/skills",
+    "manifestPath": "skills/explain-implementation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1301665509",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1301665509-explain",
+    "name": "explain",
+    "description": "name: explain",
+    "version": "1.0.0",
+    "author": "TheEdoRan",
+    "repository": "https://github.com/TheEdoRan/skills",
+    "manifestPath": "skills/explain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1301665509",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1301665509-gcp",
+    "name": "gcp",
+    "description": "name: gcp",
+    "version": "1.0.0",
+    "author": "TheEdoRan",
+    "repository": "https://github.com/TheEdoRan/skills",
+    "manifestPath": "skills/gcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1301665509",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

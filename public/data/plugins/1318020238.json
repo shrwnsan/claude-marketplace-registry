@@ -1,0 +1,224 @@
+[
+  {
+    "id": "1318020238-civilista-italia",
+    "name": "civilista-italia",
+    "description": "Kit operativo per avvocati civilisti italiani: 12 skill con verticali dedicate a decreto ingiuntivo e opposizione, diritto del lavoro e diritto di famiglia; 12 schede di materia; Knowledge Base della giurisprudenza civile con citazioni verificabili (10.080 massime) e aggiornamento settimanale automatico di pronunce segnalate, rinvii pregiudiziali e rassegne del Massimario. Protocollo anti-allucinazione quote-then-claim. Di Synthos Logic.",
+    "version": "0.8.5",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1318020238-civilista-adr",
+    "name": "civilista-adr",
+    "description": "name: civilista-adr",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-adr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-archivio",
+    "name": "civilista-archivio",
+    "description": "name: civilista-archivio",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-archivio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-atti",
+    "name": "civilista-atti",
+    "description": "name: civilista-atti",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-atti",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-caso",
+    "name": "civilista-caso",
+    "description": "name: civilista-caso",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-caso",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-famiglia",
+    "name": "civilista-famiglia",
+    "description": "name: civilista-famiglia",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-famiglia",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-giurisprudenza",
+    "name": "civilista-giurisprudenza",
+    "description": "name: civilista-giurisprudenza",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-giurisprudenza",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-inizia",
+    "name": "civilista-inizia",
+    "description": "name: civilista-inizia",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-inizia",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-lavoro",
+    "name": "civilista-lavoro",
+    "description": "name: civilista-lavoro",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-lavoro",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-monitorio",
+    "name": "civilista-monitorio",
+    "description": "name: civilista-monitorio",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-monitorio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-quantificazione",
+    "name": "civilista-quantificazione",
+    "description": "name: civilista-quantificazione",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-quantificazione",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-scadenze",
+    "name": "civilista-scadenze",
+    "description": "name: civilista-scadenze",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-scadenze",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1318020238-civilista-verifica",
+    "name": "civilista-verifica",
+    "description": "name: civilista-verifica",
+    "version": "1.0.0",
+    "author": "Synthos Logic",
+    "repository": "https://github.com/Synthos-Logic/civilista-italia",
+    "manifestPath": "skills/civilista-verifica",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1318020238",
+      "marketplaceName": "civilista-italia",
+      "hasSkillMd": true
+    }
+  }
+]

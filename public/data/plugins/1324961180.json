@@ -1,0 +1,531 @@
+[
+  {
+    "id": "1324961180-agent-workflow",
+    "name": "agent-workflow",
+    "description": "Delegation commands (/team /design /review /ship /audit /incident /cost /threat-model /runbook) plus the shared skills.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/agent-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-architecture-team",
+    "name": "architecture-team",
+    "description": "Architecture Team: Enterprise Architect, Domain Architect, Backend Architect, Frontend Architect and 10 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/architecture-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-backend-team",
+    "name": "backend-team",
+    "description": "Backend Engineering Team: Backend Developer, Database Engineer, Migration Engineer, Event Streaming Engineer and 4 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/backend-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-frontend-team",
+    "name": "frontend-team",
+    "description": "Frontend Engineering Team: Frontend Engineer, Product Designer, Web UX Quality Engineer, Design System Engineer and 4 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/frontend-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-mobile-team",
+    "name": "mobile-team",
+    "description": "Mobile Engineering Team: Mobile Engineer, Mobile UX Quality Engineer, iOS Engineer, Android Engineer and 2 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/mobile-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-data-ai-team",
+    "name": "data-ai-team",
+    "description": "Data & AI Engineering Team: Data Engineer, AI Engineer, AI Evaluation Engineer, Analytics Engineer and 3 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/data-ai-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-platform-team",
+    "name": "platform-team",
+    "description": "Platform Engineering Team: Platform Engineer, Developer Experience (DevEx) Engineer, Open Source Engineer, Kubernetes Engineer and 3 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/platform-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-quality-team",
+    "name": "quality-team",
+    "description": "Quality Engineering Team: QA, Automation QA Engineer, AI Test Automation Engineer, API Quality Engineer and 13 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/quality-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-security-team",
+    "name": "security-team",
+    "description": "Security Engineering Team: Application Security Engineer, DevSecOps Engineer, Compliance Engineer, Cryptography & Secrets Engineer and 5 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/security-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-release-team",
+    "name": "release-team",
+    "description": "Release & Reliability Team: Release Manager, Site Reliability Engineer (SRE), Incident Response Engineer, Chaos Engineering Engineer and 2 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/release-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-product-team",
+    "name": "product-team",
+    "description": "Product Strategy Team: Product Manager, Product Owner, Business Analyst, Product Innovation Engineer and 2 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/product-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-excellence-team",
+    "name": "excellence-team",
+    "description": "Engineering Excellence Team: Technical Writer, Engineering Intelligence & Reporting Engineer, Modernization Engineer, Engineering Standards Engineer and 1 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/excellence-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-itops-team",
+    "name": "itops-team",
+    "description": "IT Operations & Infrastructure Team: Systems Administrator, Network Engineer, Cloud Operations Engineer, Endpoint & Device Management Engineer and 5 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/itops-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-mlops-team",
+    "name": "mlops-team",
+    "description": "MLOps & Model Operations Team: MLOps Engineer, ML Platform Engineer, Feature Store Engineer, Model Monitoring Engineer and 3 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/mlops-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-finops-team",
+    "name": "finops-team",
+    "description": "FinOps & Cost Engineering Team: FinOps Engineer, Cloud Cost Architect, Capacity Planning Engineer, Licensing & Vendor Manager and 1 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/finops-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-entapps-team",
+    "name": "entapps-team",
+    "description": "Enterprise Applications Team: ERP Engineer, CRM Engineer, Workflow Automation Engineer, Low-Code Platform Engineer and 2 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/entapps-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-grc-team",
+    "name": "grc-team",
+    "description": "Governance, Risk & Privacy Team: Privacy Engineer, Data Governance Engineer, Risk Analyst, Audit Engineer and 2 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/grc-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-design-team",
+    "name": "design-team",
+    "description": "Design Team: UI Designer, UX Researcher, Interaction Designer, Content Designer and 3 more.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/design-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-leadership-team",
+    "name": "leadership-team",
+    "description": "Leadership Team: IT Director, Delivery Manager.",
+    "version": "",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": "./plugins/leadership-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1324961180-adr",
+    "name": "adr",
+    "description": "name: adr",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/adr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-agent-registry",
+    "name": "agent-registry",
+    "description": "name: agent-registry",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/agent-registry",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-cost-review",
+    "name": "cost-review",
+    "description": "name: cost-review",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/cost-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-data-contract",
+    "name": "data-contract",
+    "description": "name: data-contract",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/data-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-delegation-protocol",
+    "name": "delegation-protocol",
+    "description": "name: delegation-protocol",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/delegation-protocol",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-marketplace",
+    "name": "marketplace",
+    "description": "name: marketplace",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/marketplace",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-onboarding",
+    "name": "onboarding",
+    "description": "name: onboarding",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/onboarding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-orchestration",
+    "name": "orchestration",
+    "description": "name: orchestration",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/orchestration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-postmortem",
+    "name": "postmortem",
+    "description": "name: postmortem",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/postmortem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-runbook",
+    "name": "runbook",
+    "description": "name: runbook",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/runbook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1324961180-threat-model",
+    "name": "threat-model",
+    "description": "name: threat-model",
+    "version": "1.0.0",
+    "author": "bakhod1r",
+    "repository": "https://github.com/bakhod1r/awesome-agents",
+    "manifestPath": ".claude/skills/threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1324961180",
+      "marketplaceName": "awesome-agents",
+      "hasSkillMd": true
+    }
+  }
+]

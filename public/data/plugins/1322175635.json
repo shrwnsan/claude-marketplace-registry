@@ -1,0 +1,137 @@
+[
+  {
+    "id": "1322175635-recruiting-stack",
+    "name": "recruiting-stack",
+    "description": "AI recruiting skills by AI Enablement Academy: a complete talent-acquisition pipeline for Claude, from JD clarification and ideal candidate profiles through Boolean sourcing strings, talent-intelligence briefs, screen design, candidate outreach, and hiring-manager packets. 7 skills with 50 reference files (rubrics, question banks, templates), EEOC-aware throughout.",
+    "version": "",
+    "author": "AI Enablement Academy",
+    "repository": "https://github.com/AI-Enablement-Academy/agentic-marketplace",
+    "manifestPath": "./plugins/recruiting-stack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1322175635",
+      "marketplaceName": "agentic-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1322175635-ai-agent-builders",
+    "name": "ai-agent-builders",
+    "description": "AI agent builders by AI Enablement Academy: create production-ready Microsoft 365 Copilot agents, Copilot Studio agents, OpenAI Custom GPTs, and Google Gemini Gems, each with instruction writing, knowledge specs, guardrails, test scripts, and a business-user setup guide.",
+    "version": "",
+    "author": "AI Enablement Academy",
+    "repository": "https://github.com/AI-Enablement-Academy/agentic-marketplace",
+    "manifestPath": "./plugins/ai-agent-builders",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1322175635",
+      "marketplaceName": "agentic-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1322175635-ai-opportunity-finder",
+    "name": "ai-opportunity-finder",
+    "description": "AI opportunity assessment coaching by AI Enablement Academy: uncover where AI creates the most impact in your team's processes using Design Thinking, 5 Whys, First Principles, and Second Order Thinking. Teams end the session with a prioritized AI opportunity register they built themselves.",
+    "version": "",
+    "author": "AI Enablement Academy",
+    "repository": "https://github.com/AI-Enablement-Academy/agentic-marketplace",
+    "manifestPath": "./plugins/ai-opportunity-finder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1322175635",
+      "marketplaceName": "agentic-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1322175635-adm-risk-auditor",
+    "name": "adm-risk-auditor",
+    "description": "ADM risk auditing by AI Enablement Academy: audit the processes, automations, and agentic systems you already run for exposure to automated decision-making regulation, across the EU AI Act and GDPR, the UK, the US state patchwork, Canada, Brazil, China, and the Asia-Pacific. Sessions end with an ADM exposure register, a gap assessment against eight recurring obligations, and a counsel handoff brief. Risk orientation and AI governance readiness, not legal advice.",
+    "version": "",
+    "author": "AI Enablement Academy",
+    "repository": "https://github.com/AI-Enablement-Academy/agentic-marketplace",
+    "manifestPath": "./plugins/adm-risk-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1322175635",
+      "marketplaceName": "agentic-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1322175635-seine",
+    "name": "seine",
+    "description": "Seine by AI Enablement Academy contributors: multi-domain agentic search orchestration for Claude, combining deliberative council consensus, phased deep research, and humanized output. 21 agents, 4 skills, 4 public search domains.",
+    "version": "",
+    "author": "Seine Contributors",
+    "repository": "https://github.com/AI-Enablement-Academy/agentic-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "adambkovacs/seine-agentic-search-orchestrator-plugin"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1322175635",
+      "marketplaceName": "agentic-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1322175635-ai-competency-compass",
+    "name": "ai-competency-compass",
+    "description": "AI competency assessment coaching by Klara Hermesz, AI Enablement Academy: a coaching-first diagnostic that helps a person or team locate themselves on the AI Competency Framework (Augmentation / Automation / Agentic across Foundations / Essentials / Fluency / Native), reflects their placement back with evidence, and helps them choose one concrete upskilling step next.",
+    "version": "",
+    "author": "Klara Hermesz",
+    "repository": "https://github.com/AI-Enablement-Academy/agentic-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "klarahermesz/ai-competency-compass"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1322175635",
+      "marketplaceName": "agentic-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1322175635-gathering-architect",
+    "name": "gathering-architect",
+    "description": "Gathering and facilitation design coaching by Klara Hermesz, AI Enablement Academy: a coaching-first partner for designing meetups, workshops, hackathons, and learning communities, using purpose-first diagnosis, non-obvious facilitation methods, introvert-friendly defaults, and evidence you can actually defend when you present the plan.",
+    "version": "",
+    "author": "Klara Hermesz",
+    "repository": "https://github.com/AI-Enablement-Academy/agentic-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "klarahermesz/gathering-architect"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1322175635",
+      "marketplaceName": "agentic-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

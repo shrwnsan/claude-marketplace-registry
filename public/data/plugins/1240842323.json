@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1240842323-llm-dark-patterns",
+    "name": "llm-dark-patterns",
+    "description": "30-hook out-of-band suite that blocks LLM dark-pattern closeouts at Claude Code Stop / SubagentStop. Deterministic verdicts, no network calls, no model in the verdict path. Apache-2.0 with a public claim ledger and a companion academic benchmark (agent-closeout-bench).",
+    "version": "",
+    "author": "waitdeadai",
+    "repository": "https://github.com/waitdeadai/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/waitdeadai/llm-dark-patterns.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1240842323",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1240842323-searchoclock",
+    "name": "searchoclock",
+    "description": "Date-aware, inter-agent error-troubleshooting hook. On a Bash failure it injects a date-anchored deep-research protocol, dispatches a researcher subagent to recommend the most durable fix from live dated sources, and requires an independent second model (Haiku 4.5) to agree from the raw evidence before the fix is trusted. Opt-in proactive pre-flight; concurrency-safe for Opus 4.8 dynamic workflows. Apache-2.0.",
+    "version": "",
+    "author": "waitdeadai",
+    "repository": "https://github.com/waitdeadai/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/waitdeadai/searchoclock.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1240842323",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1240842323-cleanmax",
+    "name": "cleanmax",
+    "description": "A lean Claude Code harness: SOTA-2026 build discipline that evolves your workflow code WITHOUT bloating the codebase. Minimal-change framing, prefer-edit-over-create, a /simplify pass, and a deterministic bloat-budget gate (net-LOC + new-file budget + reinvented-symbol detection, no LLM). Namespaced (/cleanmax:lean) so it coexists with any other plugin. Apache-2.0.",
+    "version": "",
+    "author": "waitdeadai",
+    "repository": "https://github.com/waitdeadai/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/waitdeadai/cleanmax.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1240842323",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

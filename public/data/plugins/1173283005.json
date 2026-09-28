@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1173283005-remembrall",
+    "name": "remembrall",
+    "description": "Never lose work to context limits — Pensieve memory, Time-Turner parallel agents, auto-handoff, smart replay, git patches",
+    "version": "3.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/remembrall",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1173283005",
+      "marketplaceName": "remembrall",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1173283005-avadakedavra",
+    "name": "avadakedavra",
+    "description": "name: avadakedavra",
+    "version": "1.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/remembrall",
+    "manifestPath": "skills/avadakedavra",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1173283005",
+      "marketplaceName": "remembrall",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1173283005-handoff",
+    "name": "handoff",
+    "description": "name: handoff",
+    "version": "1.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/remembrall",
+    "manifestPath": "skills/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1173283005",
+      "marketplaceName": "remembrall",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1173283005-obliviate",
+    "name": "obliviate",
+    "description": "name: obliviate",
+    "version": "1.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/remembrall",
+    "manifestPath": "skills/obliviate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1173283005",
+      "marketplaceName": "remembrall",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1173283005-pensieve",
+    "name": "pensieve",
+    "description": "name: pensieve",
+    "version": "1.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/remembrall",
+    "manifestPath": "skills/pensieve",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1173283005",
+      "marketplaceName": "remembrall",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1173283005-replay",
+    "name": "replay",
+    "description": "name: replay",
+    "version": "1.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/remembrall",
+    "manifestPath": "skills/replay",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1173283005",
+      "marketplaceName": "remembrall",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1173283005-timeturner",
+    "name": "timeturner",
+    "description": "name: timeturner",
+    "version": "1.0.0",
+    "author": "cukas",
+    "repository": "https://github.com/cukas/remembrall",
+    "manifestPath": "skills/timeturner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1173283005",
+      "marketplaceName": "remembrall",
+      "hasSkillMd": true
+    }
+  }
+]

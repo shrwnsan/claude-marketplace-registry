@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1167401895-domainkits",
+    "name": "domainkits",
+    "description": "Domain data search, retrieval, and correlation for domain investors, brand protection, and security teams: new/expired/aged gTLD domain discovery, reverse-nameserver mapping, keyword registration trends, and WHOIS/DNS. Bundles eight workflow skills: brand protection, domain due diligence, CMA valuation, name generation, keyword intelligence, and market briefings.",
+    "version": "1.1.0",
+    "author": "DomainKits",
+    "repository": "https://github.com/ABTdomain/domainkits-plugins",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167401895",
+      "marketplaceName": "domainkits-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1167401895-brand-protection",
+    "name": "brand-protection",
+    "description": "name: brand-protection",
+    "version": "1.0.0",
+    "author": "DomainKits",
+    "repository": "https://github.com/ABTdomain/domainkits-plugins",
+    "manifestPath": "skills/brand-protection",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167401895",
+      "marketplaceName": "domainkits-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167401895-domain-analyze",
+    "name": "domain-analyze",
+    "description": "name: domain-analyze",
+    "version": "1.0.0",
+    "author": "DomainKits",
+    "repository": "https://github.com/ABTdomain/domainkits-plugins",
+    "manifestPath": "skills/domain-analyze",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167401895",
+      "marketplaceName": "domainkits-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167401895-domain-cma-valuation",
+    "name": "domain-cma-valuation",
+    "description": "name: domain-cma-valuation",
+    "version": "1.0.0",
+    "author": "DomainKits",
+    "repository": "https://github.com/ABTdomain/domainkits-plugins",
+    "manifestPath": "skills/domain-cma-valuation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167401895",
+      "marketplaceName": "domainkits-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167401895-domain-generator",
+    "name": "domain-generator",
+    "description": "name: domain-generator",
+    "version": "1.0.0",
+    "author": "DomainKits",
+    "repository": "https://github.com/ABTdomain/domainkits-plugins",
+    "manifestPath": "skills/domain-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167401895",
+      "marketplaceName": "domainkits-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167401895-domain-market-beat",
+    "name": "domain-market-beat",
+    "description": "name: domain-market-beat",
+    "version": "1.0.0",
+    "author": "DomainKits",
+    "repository": "https://github.com/ABTdomain/domainkits-plugins",
+    "manifestPath": "skills/domain-market-beat",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167401895",
+      "marketplaceName": "domainkits-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167401895-domain-name-advisor",
+    "name": "domain-name-advisor",
+    "description": "name: domain-name-advisor",
+    "version": "1.0.0",
+    "author": "DomainKits",
+    "repository": "https://github.com/ABTdomain/domainkits-plugins",
+    "manifestPath": "skills/domain-name-advisor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167401895",
+      "marketplaceName": "domainkits-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167401895-keyword-intel",
+    "name": "keyword-intel",
+    "description": "name: keyword-intel",
+    "version": "1.0.0",
+    "author": "DomainKits",
+    "repository": "https://github.com/ABTdomain/domainkits-plugins",
+    "manifestPath": "skills/keyword-intel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167401895",
+      "marketplaceName": "domainkits-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167401895-keyword-trend-hunter",
+    "name": "keyword-trend-hunter",
+    "description": "name: keyword-trend-hunter",
+    "version": "1.0.0",
+    "author": "DomainKits",
+    "repository": "https://github.com/ABTdomain/domainkits-plugins",
+    "manifestPath": "skills/keyword-trend-hunter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167401895",
+      "marketplaceName": "domainkits-plugins",
+      "hasSkillMd": true
+    }
+  }
+]

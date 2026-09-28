@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "1194149202-softwaresoftware",
+    "name": "softwaresoftware",
+    "description": "Plugin dependency resolver — detects environment, resolves capabilities, auto-selects providers, generates install plans.",
+    "version": "1.6.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/softwaresoftware.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-zapframe",
+    "name": "zapframe",
+    "description": "SaaS project creation and feature development agent. Django + Next.js, auth, billing, email, monitoring. Create new apps or develop features on existing ones with regression playbooks.",
+    "version": "1.2.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/zapframe.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-ironframe",
+    "name": "ironframe",
+    "description": "Enterprise project creation agent. Django + Next.js with SSO, RBAC, audit logging, multi-tenancy, API key management, and GDPR compliance. Everything in zapframe plus enterprise-grade features.",
+    "version": "1.0.1",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/ironframe.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-softwaresoftware-design-system",
+    "name": "softwaresoftware-design-system",
+    "description": "Design system for softwaresoftware.dev — v2 light monochrome: Archivo, sharp corners, green status accent.",
+    "version": "2.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/softwaresoftware-design-system.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-liteframe",
+    "name": "liteframe",
+    "description": "Static page publisher. HTML + CSS at any subdomain, deployed to Nginx via Cloudflare Tunnel.",
+    "version": "1.4.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/liteframe.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-mindframe",
+    "name": "mindframe",
+    "description": "AI agents that learn your org and act on it. /mindframe:setup is UI-based: a terminal bootstrap births your first mindframe, which onboards you in a web surface — watch your knowledge base take shape as it interviews you and connects your tools. A graph home hosts every mindframe; a dock switches between them.",
+    "version": "1.4.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/mindframe.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-gummymine",
+    "name": "gummymine",
+    "description": "Reddit audience research — mine subreddits for demand signals via gummymine.softwaresoftware.dev",
+    "version": "3.0.1",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/gummymine-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-cardwatch",
+    "name": "cardwatch",
+    "description": "Pokemon card stock monitor. Tracks inventory at 7 major retailers, auto-enters virtual queues, sends phone + desktop notifications.",
+    "version": "2.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/cardwatch.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-termux-remote",
+    "name": "termux-remote",
+    "description": "Remote phone capabilities via Termux HTTP bridge. Notifications and SMS through a single connection.",
+    "version": "1.1.1",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/termux-remote.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-approval-channel",
+    "name": "approval-channel",
+    "description": "Human approval state machine. Gates actions behind human confirmation, delivered over any two-way communication channel. MFA is an approval flowed through a channel provider.",
+    "version": "3.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/approval-channel.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-memory-file",
+    "name": "memory-file",
+    "description": "File-based persistent memory for autonomous agents. Implements the memory capability contract.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/memory-file.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-taskpilot",
+    "name": "taskpilot",
+    "description": "A local service exposing an HTTP API to spawn and manage long-running autonomous Claude Code agents. A boot-persistent supervisor daemon owns the spawn/kill/message lifecycle; each agent runs in its own tmux session, addressable by task id over session-bridge. Channel-based communication and operating briefs. The MCP server is a thin client over the daemon. The boot service is installed and version-drift-healed by the daemon capability. Linux + macOS natively; Windows via WSL2 (Claude Code runs inside the WSL distro).",
+    "version": "0.15.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/taskpilot.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-session-bridge",
+    "name": "session-bridge",
+    "description": "Channel MCP that lets Claude Code sessions message each other. Provides the session-mesh capability — bidirectional inbound/outbound communication between live sessions, used by taskpilot and dispatcher for agent-to-agent and external-event routing. Bundles the FastAPI bridge daemon and installs it via the daemon capability.",
+    "version": "0.4.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/session-bridge-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-termux-channel",
+    "name": "termux-channel",
+    "description": "SMS channel provider via Termux. Delivers messages as phone notifications with correlation IDs for reply tracking.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/termux-channel.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-daemon-manager",
+    "name": "daemon-manager",
+    "description": "Generic daemon lifecycle manager. Start, stop, and monitor persistent background processes with cross-platform IPC. Includes daemon_install_autostart for one-call launchd / systemd / Task Scheduler registration. Restarts daemons automatically when their owning plugin is updated, via a session-start drift check. Managed daemons inherit a sane PATH and PYTHONUNBUFFERED by default so logs reach journald.",
+    "version": "1.5.1",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/daemon-manager.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-dispatcher",
+    "name": "dispatcher",
+    "description": "Event-routing provider. Installs dispatcher-ingress as a managed daemon that routes events from external systems (Sentry, GitHub, Slack, etc.) to live sessions or spawns ephemeral agents per event. v0.4 spawns via taskpilot's daemon HTTP API; reads bearer from DISPATCHER_INGEST_TOKEN_FILE for chmod-600 file-handoff workflows.",
+    "version": "0.5.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/dispatcher.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-claude-browser-bridge",
+    "name": "claude-browser-bridge",
+    "description": "MCP bridge between Claude Code and your browser via WebSocket extension.",
+    "version": "3.13.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/claude-browser-bridge.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-nginx-cloudflare-deploy",
+    "name": "nginx-cloudflare-deploy",
+    "description": "Deploy local services and static sites to public HTTPS URLs via Nginx reverse proxy and Cloudflare Tunnel. Guided setup with persistent config.",
+    "version": "1.1.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/nginx-cloudflare-deploy.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-dockside",
+    "name": "dockside",
+    "description": "Dynamic Docker dev environments with port allocation. Reads docker-compose.yml, runs containers with random host ports, manages lifecycle.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/dockside.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-wallet",
+    "name": "wallet",
+    "description": "Read-only MCP wrapper around the wallet CLI. Provides password-vault and totp-generator capabilities for plugins that need to authenticate to third-party services.",
+    "version": "0.1.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/wallet-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-alexa-mcp",
+    "name": "alexa-mcp",
+    "description": "Control Amazon Alexa from Claude Code — speak, control smart-home devices and groups, run routines.",
+    "version": "0.1.2",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/alexa-mcp.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-reddit-poster",
+    "name": "reddit-poster",
+    "description": "Reddit social-posting provider. Posts, replies, deletes, and tracks performance on Reddit via browser automation.",
+    "version": "1.1.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/reddit-poster.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-tmux-session",
+    "name": "tmux-session",
+    "description": "Terminal session management via tmux. Create, monitor, and control detached terminal sessions.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/tmux-session.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-plugin-tester",
+    "name": "plugin-tester",
+    "description": "[DEPRECATED — use plugin-dev:test-live] Automated end-to-end testing of plugin install workflows.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/plugin-tester.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-prompt-guard",
+    "name": "prompt-guard",
+    "description": "Detects prompt injection attempts — privilege escalation, fake system prompts, instruction override, social engineering. Delegates logging to a compatible security-logging provider.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/prompt-guard.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-plugin-dev",
+    "name": "plugin-dev",
+    "description": "Plugin development toolkit — local dev iteration loop and marketplace install smoke testing.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/plugin-dev.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-harness-audit",
+    "name": "harness-audit",
+    "description": "Audit your Claude Code deployment for context clutter — enumerate MCP servers, plugins, skills, and exposed tools; detect overlap, dead servers, and vague triggers; produce a scored report with trim recommendations. Read-only.",
+    "version": "0.1.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "softwaresoftware-dev/harness-audit"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-payment-vault",
+    "name": "payment-vault",
+    "description": "Secure payment data provider. Stores credit/debit card info and fills payment forms without exposing raw values to conversation context.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/payment-vault.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-address-vault",
+    "name": "address-vault",
+    "description": "Secure address data provider. Stores complete address info and fills forms without exposing raw values to conversation context.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/address-vault.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-contacts-vault",
+    "name": "contacts-vault",
+    "description": "Secure contacts data provider. Stores contact info and fills forms without exposing raw values to conversation context.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/contacts-vault.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-vehicle-vault",
+    "name": "vehicle-vault",
+    "description": "Secure vehicle data provider. Stores VIN, plate, insurance info and fills forms without exposing raw values to conversation context.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/vehicle-vault.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-identity-vault",
+    "name": "identity-vault",
+    "description": "Secure identity document provider. Stores SSN, driver's license, passport info and fills forms without exposing raw values to conversation context.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/identity-vault.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-banking-vault",
+    "name": "banking-vault",
+    "description": "Secure banking data provider. Stores routing/account numbers and fills forms without exposing raw values to conversation context.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/banking-vault.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-playwright",
+    "name": "playwright",
+    "description": "Browser automation and E2E testing via Microsoft Playwright MCP server.",
+    "version": "0.0.0",
+    "author": "Microsoft",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/anthropics/claude-plugins-official.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-stagehand",
+    "name": "stagehand",
+    "description": "AI-native browser automation skill using Stagehand. Natural language web interaction.",
+    "version": "0.0.0",
+    "author": "Browserbase",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/anthropics/claude-plugins-official.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-vercel",
+    "name": "vercel",
+    "description": "Deploy to Vercel — manage deployments, check build status, configure domains.",
+    "version": "0.0.0",
+    "author": "Vercel",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/anthropics/claude-plugins-official.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-netlify-skills",
+    "name": "netlify-skills",
+    "description": "Deploy to Netlify — functions, edge functions, blobs, and site management.",
+    "version": "0.0.0",
+    "author": "Netlify",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/anthropics/claude-plugins-official.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-deploy-on-aws",
+    "name": "deploy-on-aws",
+    "description": "Deploy to AWS with architecture recommendations, cost estimates, and IaC.",
+    "version": "0.0.0",
+    "author": "AWS",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/awslabs/agent-plugins.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-railway",
+    "name": "railway",
+    "description": "Deploy to Railway — manage apps, databases, and infrastructure.",
+    "version": "0.0.0",
+    "author": "Railway",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/anthropics/claude-plugins-official.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-tokenboard",
+    "name": "tokenboard",
+    "description": "Token usage leaderboard — calculates Claude Code API cost equivalent and uploads to the public leaderboard at tokenboard.softwaresoftware.dev.",
+    "version": "1.0.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/tokenboard.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-gmail-mcp",
+    "name": "gmail-mcp",
+    "description": "MCP server for Gmail — read, search, label, filter, send, and archive emails. Includes email manager mode with auto-triage and Slack approval. No delete capability by design.",
+    "version": "1.3.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/gmail-mcp.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-browser-qa",
+    "name": "browser-qa",
+    "description": "Visual QA for web apps — screenshot, verify consistency, test interactivity, catch regressions",
+    "version": "0.1.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/browser-qa.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-hive-mind",
+    "name": "hive-mind",
+    "description": "Obsidian-based shared knowledge vault for teams. qmd-powered BM25 + vector search over meetings, people, glossary, and per-repo notes. Satisfies the knowledge-base capability when explicitly installed.",
+    "version": "0.1.6",
+    "author": "Arctype Ventures",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/arctype-ventures/arctype-plugins.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-meeting-transcribe",
+    "name": "meeting-transcribe",
+    "description": "Record meeting audio output and transcribe it — live rolling transcript, high-quality final transcript, and knowledge-base distillation (decisions, people, terms) into the mindframe vault when present. Linux native (PipeWire); Windows via WASAPI loopback; macOS with a BlackHole loopback device.",
+    "version": "0.2.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/meeting-transcribe.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-reboot",
+    "name": "reboot",
+    "description": "/reboot — restart the current Claude Code session in place (kill + relaunch --resume in the same terminal), so new plugins, skills, MCP servers, and settings load without manually starting a new session",
+    "version": "0.1.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "softwaresoftware-dev/reboot"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-sentinel",
+    "name": "sentinel",
+    "description": "Background watchers that page you when something needs you (calendar conflicts across accounts, Claude-triaged urgent mail, GitHub mentions, Slack DMs, or any source you scaffold), one combined morning brief, and a reply-to-act agent: message it back and Claude does the work with your tools.",
+    "version": "1.1.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/sentinel.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-claude-inbox",
+    "name": "claude-inbox",
+    "description": "An inbox for Claude Code and Claude Desktop: drop named, ready-to-resume conversations into the local session list — briefs, reports, handoffs — for near-zero tokens.",
+    "version": "0.1.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/softwaresoftware-dev/claude-inbox.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194149202-idle-compact",
+    "name": "idle-compact",
+    "description": "Compacts Claude Code sessions that have sat idle too long. The built-in auto-compact fires on how full the context is; this fires on how long a session has been untouched — past a threshold (45m by default) it types a real /compact into the session, so you come back to one that has already tidied itself instead of one that stalls the moment you type. Drives background sessions via `claude attach` and terminal sessions via tmux, yakuake, or Konsole, reading each session's screen first and refusing on an unsent draft, an open dialog, or work in flight. Runs as a managed daemon via the daemon capability, with a standalone systemd timer as a fallback.",
+    "version": "0.1.0",
+    "author": "NOV LLC",
+    "repository": "https://github.com/softwaresoftware-dev/softwaresoftware-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "softwaresoftware-dev/idle-compact"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194149202",
+      "marketplaceName": "softwaresoftware-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

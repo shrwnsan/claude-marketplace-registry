@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1298537325-internet-historian",
+    "name": "internet-historian",
+    "description": "Quietly preserve the web things you love, forever — queue any URL, page, or subject into the Internet Archive and never lose it.",
+    "version": "",
+    "author": "ssskay",
+    "repository": "https://github.com/ssskay/claude-skills",
+    "manifestPath": "./internet-historian",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298537325",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298537325-inbox-catalog",
+    "name": "inbox-catalog",
+    "description": "Turn purchase, shipment, and receipt emails into a structured catalog of what you own — plus an Amazon returns clock and a reusable purchase-item extractor.",
+    "version": "",
+    "author": "ssskay",
+    "repository": "https://github.com/ssskay/claude-skills",
+    "manifestPath": "./inbox-catalog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298537325",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1298537325-wiki-gap-finder",
+    "name": "wiki-gap-finder",
+    "description": "Vet Wikipedia sources — classify reliability, chase breadcrumbs, and emit VERIFIED / LEAD / DEAD_END verdicts before building a dossier.",
+    "version": "",
+    "author": "ssskay",
+    "repository": "https://github.com/ssskay/claude-skills",
+    "manifestPath": "./wiki-gap-finder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298537325",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

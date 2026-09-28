@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1224813487-visual-sentinel",
+    "name": "visual-sentinel",
+    "description": "Manage Visual Sentinel monitors, incidents, and alerts directly from Claude. Bundles the @visualsentinel/mcp-server tools, three skills (monitor-status check, incident triage, monitor onboarding), and matching slash commands.",
+    "version": "0.1.0",
+    "author": "VisualSentinel",
+    "repository": "https://github.com/VisualSentinel/claude-plugins",
+    "manifestPath": "./visual-sentinel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1224813487",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

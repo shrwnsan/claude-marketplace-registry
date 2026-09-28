@@ -1,0 +1,380 @@
+[
+  {
+    "id": "1115901290-quickbooks-api-integration",
+    "name": "quickbooks-api-integration",
+    "description": "",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/quickbooks-api-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-golang-orchestrator",
+    "name": "golang-orchestrator",
+    "description": "",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/golang-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-svelte-flow",
+    "name": "svelte-flow",
+    "description": "",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/svelte-flow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-layerchart",
+    "name": "layerchart",
+    "description": "",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/layerchart",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-layercake",
+    "name": "layercake",
+    "description": "",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/layercake",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-sequential-thinking",
+    "name": "sequential-thinking",
+    "description": "",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/sequential-thinking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-supabase",
+    "name": "supabase",
+    "description": "",
+    "version": "1.2.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/supabase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-svelte5-runes",
+    "name": "svelte5-runes",
+    "description": "",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/svelte5-runes",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-slack-go-sdk",
+    "name": "slack-go-sdk",
+    "description": "Comprehensive guidance for building Slack applications with the official Go SDK, covering Web API, Canvas/Calls/Assistant, Socket Mode, Events API, OAuth, and Enterprise Grid admin",
+    "version": "1.1.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/slack-go-sdk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-slack-block-kit-builder",
+    "name": "slack-block-kit-builder",
+    "description": "Build Slack Block Kit UIs for messages, modals, and Home tabs",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/slack-block-kit-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-goth-oauth",
+    "name": "goth-oauth",
+    "description": "",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/goth-oauth",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-mycarrierpackets-api",
+    "name": "mycarrierpackets-api",
+    "description": "MyCarrierPackets API integration for TMS systems. 23 endpoints with per-endpoint reference files: Intellivite invitations, Assure Advantage monitoring, document retrieval, fraud detection, VIN verification, block/unblock, factoring, OAuth2, and webhook event handling (packet completion, incident reports, VIN/user verification).",
+    "version": "1.2.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/mycarrierpackets-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-roadmap",
+    "name": "roadmap",
+    "description": "Project roadmap management with GitHub Projects integration",
+    "version": "0.2.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/roadmap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-laneweaver-tms-agents",
+    "name": "laneweaver-tms-agents",
+    "description": "Development agents and freight domain skills for laneweaverTMS. Context-isolated agents for database schema and frontend work, plus freight industry knowledge, RBAC patterns, geospatial/PostGIS patterns, and API integration patterns.",
+    "version": "1.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/laneweaver-tms-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-handoff",
+    "name": "handoff",
+    "description": "Context preservation for long-running conversations. Create structured handoff documents and resume work across sessions.",
+    "version": "0.1.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-gh-issue",
+    "name": "gh-issue",
+    "description": "Create structured GitHub issues from conversation context with hierarchical sub-tasks and proper formatting.",
+    "version": "0.1.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/gh-issue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-jutsu-go",
+    "name": "jutsu-go",
+    "description": "Advanced Go skills for concurrency, error handling, and interfaces. Includes hooks for go fmt, go vet, and go test on Stop events.",
+    "version": "2.0.0",
+    "author": "linehaul.ai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/jutsu-go",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-go-tdd",
+    "name": "go-tdd",
+    "description": "TDD workflow for Go using stretchr/testify and testcontainers-go. Orchestrates parallel subagents to write unit tests, integration tests, and execute the red-green-refactor cycle.",
+    "version": "1.0.0",
+    "author": "linehaulai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/go-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-testcontainers-go",
+    "name": "testcontainers-go",
+    "description": "Guide for using Testcontainers for Go with 62+ pre-configured modules for integration testing",
+    "version": "1.0.0",
+    "author": "linehaulai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/testcontainers-go",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-mass-refactor",
+    "name": "mass-refactor",
+    "description": "Loop-driven mass refactor: an implementer/2-adversarial-reviewer/fixer cycle, isolated in git worktrees, run to convergence against a build or test command.",
+    "version": "1.0.0",
+    "author": "linehaulai",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/mass-refactor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1115901290-deep-wiki",
+    "name": "deep-wiki",
+    "description": "AI-powered wiki generator for code repositories. Generates Mermaid-rich documentation with dark-mode VitePress sites, onboarding guides, deep research, and source citations.",
+    "version": "2.0.0",
+    "author": "thegovind",
+    "repository": "https://github.com/freightCognition/linehaulai-claude-marketplace",
+    "manifestPath": "./plugins/deep-wiki",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115901290",
+      "marketplaceName": "linehaulai-claude-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

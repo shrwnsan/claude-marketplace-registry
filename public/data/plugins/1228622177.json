@@ -1,0 +1,309 @@
+[
+  {
+    "id": "1228622177-servicegraph",
+    "name": "servicegraph",
+    "description": "Drive the ServiceGraph API — metrics-enriched business datasets for founders (agencies, directories, newsletters, and more). Ships a branded `servicegraph` skill that works against any dataset, plus 14 specific skills for the US professional-services catalog (law, marketing, consulting, accounting, IT services, engineering, HR, PR, design, and more) and 3 product-directory skills for where to launch a software product and earn backlinks (general product/SaaS directories, MCP-server registries, and AI-tool/agent directories).",
+    "version": "",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1228622177-find-ai-consultancy",
+    "name": "find-ai-consultancy",
+    "description": "name: find-ai-consultancy",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-ai-consultancy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-ai-directories",
+    "name": "find-ai-directories",
+    "description": "name: find-ai-directories",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-ai-directories",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-cpa-firm",
+    "name": "find-cpa-firm",
+    "description": "name: find-cpa-firm",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-cpa-firm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-cybersecurity-firm",
+    "name": "find-cybersecurity-firm",
+    "description": "name: find-cybersecurity-firm",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-cybersecurity-firm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-design-agency",
+    "name": "find-design-agency",
+    "description": "name: find-design-agency",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-design-agency",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-engineering-firm",
+    "name": "find-engineering-firm",
+    "description": "name: find-engineering-firm",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-engineering-firm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-law-firm",
+    "name": "find-law-firm",
+    "description": "name: find-law-firm",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-law-firm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-management-consultant",
+    "name": "find-management-consultant",
+    "description": "name: find-management-consultant",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-management-consultant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-marketing-agency",
+    "name": "find-marketing-agency",
+    "description": "name: find-marketing-agency",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-marketing-agency",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-mcp-directories",
+    "name": "find-mcp-directories",
+    "description": "name: find-mcp-directories",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-mcp-directories",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-pr-agency",
+    "name": "find-pr-agency",
+    "description": "name: find-pr-agency",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-pr-agency",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-product-directories",
+    "name": "find-product-directories",
+    "description": "name: find-product-directories",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-product-directories",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-recruiting-firm",
+    "name": "find-recruiting-firm",
+    "description": "name: find-recruiting-firm",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-recruiting-firm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-seo-agency",
+    "name": "find-seo-agency",
+    "description": "name: find-seo-agency",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-seo-agency",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-service-providers",
+    "name": "find-service-providers",
+    "description": "name: find-service-providers",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-service-providers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-software-developer",
+    "name": "find-software-developer",
+    "description": "name: find-software-developer",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-software-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228622177-find-web-developer",
+    "name": "find-web-developer",
+    "description": "name: find-web-developer",
+    "version": "1.0.0",
+    "author": "nostrband",
+    "repository": "https://github.com/nostrband/ServiceGraph",
+    "manifestPath": "skills/find-web-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228622177",
+      "marketplaceName": "ServiceGraph",
+      "hasSkillMd": true
+    }
+  }
+]

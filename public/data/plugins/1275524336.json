@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1275524336-devtools-pack",
+    "name": "devtools-pack",
+    "description": "Full DevTools pack: engineering agents, skills, and slash commands for 13 AI coding tools",
+    "version": "1.0.0",
+    "author": "Mattakushi432",
+    "repository": "https://github.com/Mattakushi432/Claude-Code-Skills-Custom-DevTools-Pack",
+    "manifestPath": "./plugins/devtools-pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1275524336",
+      "marketplaceName": "Claude-Code-Skills-Custom-DevTools-Pack",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1275524336-claude-code-skills-custom-devtools-pack",
+    "name": "Claude-Code-Skills-Custom-DevTools-Pack",
+    "description": "```markdown",
+    "version": "1.0.0",
+    "author": "Mattakushi432",
+    "repository": "https://github.com/Mattakushi432/Claude-Code-Skills-Custom-DevTools-Pack",
+    "manifestPath": ".claude/skills/Claude-Code-Skills-Custom-DevTools-Pack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1275524336",
+      "marketplaceName": "Claude-Code-Skills-Custom-DevTools-Pack",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1314117137-bag-submission",
+    "name": "bag-submission",
+    "description": "Package a prompt, skill, or workflow into a finished Bag Submission post for The AI Clinicians' Medical Bag, with the community's three rules enforced and a patient-data-free check. Also saves the entry as a markdown file",
+    "version": "1.1.2",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/bag-submission",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-em-code-advisor",
+    "name": "em-code-advisor",
+    "description": "Assign the correct E/M code from a clinical note and justify it element by element against the 2021/2023 CPT MDM grid and time thresholds, across office, inpatient, observation, ED, nursing facility, and home settings. Codes only what the documentation supports and returns gaps as provider queries",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/em-code-advisor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-phi-redactor",
+    "name": "phi-redactor",
+    "description": "De-identify PHI in clinical text and documents entirely on the local machine, with no network call at redaction time. Reads .txt, .md, .pdf, .docx, .xlsx, and .pptx, and offers a reversible mode so text can be de-identified, processed elsewhere, then restored. Requires a one-time model download",
+    "version": "1.0.1",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/phi-redactor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-scribe-note-audit",
+    "name": "scribe-note-audit",
+    "description": "Audit an AI scribe's draft note before signing it, hunting for invented specifics, normals nobody examined, misattributed statements, and flattened medical decision-making. Returns a line-level correction list, never a rewritten note",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/scribe-note-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-interval-note-builder",
+    "name": "interval-note-builder",
+    "description": "Build the carry-forward scaffold for a progress, rounding, or follow-up note so active problems do not vanish when nobody mentions them out loud today. Returns a problem scaffold and status questions, never a finished note",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/interval-note-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-inbox-reply-drafter",
+    "name": "inbox-reply-drafter",
+    "description": "Triage a stack of patient portal messages and draft replies at the right reading level, separating what can be answered in a message from what needs a call, a visit, or the emergency department today",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/inbox-reply-drafter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-prior-auth-packet",
+    "name": "prior-auth-packet",
+    "description": "Build a prior authorization request or letter of medical necessity around the payer's own coverage criteria, mapping each criterion to the documentation that meets it and naming the ones that are not, plus a peer-to-peer prep sheet",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/prior-auth-packet",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-forms-and-letters",
+    "name": "forms-and-letters",
+    "description": "Draft the non-clinical paperwork pile no scribe touches. FMLA and disability forms, work and school notes, accommodation letters, DME and home health justification, camp and sports forms, and referral letters",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/forms-and-letters",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-discharge-summary-builder",
+    "name": "discharge-summary-builder",
+    "description": "Assemble a discharge summary, transfer note, or service handoff from fragmented source documents, with a dedicated pass for what is still unresolved and who owns it after the patient leaves",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/discharge-summary-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-evidence-brief",
+    "name": "evidence-brief",
+    "description": "Answer a clinical question with the evidence separated by how well it is established and every citation either retrieved and checkable or explicitly marked absent. Refuses to invent a reference under any circumstance",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/evidence-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-pubmed-search",
+    "name": "pubmed-search",
+    "description": "Run a PubMed search from a plain-English description and rate every result 1-5 on evidence strength. Returns full citations with clickable links and a trust weight per article. Builds a field-tagged MeSH query instead of a keyword string, shows the query PubMed actually ran, flags results whose population or setting does not match the question, and publishes a web page that separates fielding dates from publication dates and keeps sample size and response rate with every figure",
+    "version": "1.1.2",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/pubmed-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-differential-challenger",
+    "name": "differential-challenger",
+    "description": "Argue against a clinician's working diagnosis or plan instead of answering for them, testing for anchoring, premature closure, and the demographic gaps where evidence stops transferring. Never produces a diagnosis",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/differential-challenger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-ai-consent-and-policy",
+    "name": "ai-consent-and-policy",
+    "description": "Build the patient-facing script for disclosing an AI scribe, handle the opt-out gracefully, and assemble the questions a practice must answer before recording encounters. Produces scripts and a question list for counsel, never a legal determination",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/ai-consent-and-policy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1314117137-ai-tool-evaluator",
+    "name": "ai-tool-evaluator",
+    "description": "Design a real trial of a clinical AI tool before buying it, with a baseline measured first, a decision rule written in advance, and the questions that separate a demo from a workflow. Never recommends a specific product",
+    "version": "1.0.0",
+    "author": "digitaljavelina",
+    "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
+    "manifestPath": "./plugins/ai-tool-evaluator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1314117137",
+      "marketplaceName": "the-ai-clinicians-claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

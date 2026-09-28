@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1136634982-sync-agent-config",
+    "name": "sync-agent-config",
+    "description": "Synchronize Agent configurations (MCP servers, skills) across different Agent tools like Claude Code, VSCode, Claude Desktop, Codex, and Gemini CLI.",
+    "version": "",
+    "author": "zv-louis",
+    "repository": "https://github.com/zv-louis/zv-plugin-marketplace",
+    "manifestPath": "./plugins/sync-agent-config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136634982",
+      "marketplaceName": "zv-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1136634982-jp-cover-letter-creator",
+    "name": "jp-cover-letter-creator",
+    "description": "Interactive Japanese business cover letter creator with markdown preview and Word document (docx) export.",
+    "version": "",
+    "author": "zv-louis",
+    "repository": "https://github.com/zv-louis/zv-plugin-marketplace",
+    "manifestPath": "./plugins/jp-cover-letter-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136634982",
+      "marketplaceName": "zv-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1136634982-madr-manager",
+    "name": "madr-manager",
+    "description": "Interactive MADR (Markdown Architectural Decision Records) manager. Helps create, list, and manage ADR files following the Structured MADR v4.0.0 format.",
+    "version": "",
+    "author": "zv-louis",
+    "repository": "https://github.com/zv-louis/zv-plugin-marketplace",
+    "manifestPath": "./plugins/madr-manager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136634982",
+      "marketplaceName": "zv-plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

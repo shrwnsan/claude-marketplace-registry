@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1143205550-btl",
+    "name": "btl",
+    "description": "",
+    "version": "1.0.0",
+    "author": "lukeocodes",
+    "repository": "https://github.com/lukeocodes/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "lukeocodes/btl"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143205550",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1143205550-repo-man",
+    "name": "repo-man",
+    "description": "",
+    "version": "1.0.0",
+    "author": "lukeocodes",
+    "repository": "https://github.com/lukeocodes/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "lukeocodes/repo-man"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143205550",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1339807213-governor",
+    "name": "governor",
+    "description": "A token budget on every tool call. Warns when a session runs hot, stops it when the budget is gone, and holds a ceiling only you can lift.",
+    "version": "",
+    "author": "tanvoid0",
+    "repository": "https://github.com/tanvoid0/claude-code-plugins",
+    "manifestPath": "./governor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339807213",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1339807213-crew",
+    "name": "crew",
+    "description": "Six subagents, each pinned to the cheapest model that holds for its job.",
+    "version": "",
+    "author": "tanvoid0",
+    "repository": "https://github.com/tanvoid0/claude-code-plugins",
+    "manifestPath": "./crew",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339807213",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1339807213-hands",
+    "name": "hands",
+    "description": "Start, stop and look at the app in front of you. Detects the stack once and caches it.",
+    "version": "",
+    "author": "tanvoid0",
+    "repository": "https://github.com/tanvoid0/claude-code-plugins",
+    "manifestPath": "./hands",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339807213",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]
