@@ -43,16 +43,19 @@ const AnimatedBar: React.FC<{ value: number; label: string }> = ({ value, label 
 const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' }) => {
   const { data, metaTimestamp, loading, error, refresh } = useEcosystemStats();
 
-  // Real derived history: average stars per marketplace for every recorded day.
-  const avgStarsTrend = React.useMemo(() => {
-    const stars = data?.stars || [];
+  // Real derived history: share of marketplaces with traction stars, per day.
+  // Backfilled from the starred/marketplaces history series; days before the
+  // starred field existed drop out (value null), so the trend starts when
+  // traction snapshots begin.
+  const tractionTrend = React.useMemo(() => {
+    const starred = data?.starred || [];
     const markets = data?.marketplaces || [];
-    const starsByDate = new Map(stars.map((p) => [p.date, p.value]));
+    const starredByDate = new Map(starred.map((p) => [p.date, p.value]));
     const out: number[] = [];
     markets.forEach((m) => {
-      const s = starsByDate.get(m.date);
+      const s = starredByDate.get(m.date);
       if (s !== null && s !== undefined && m.value && m.value > 0) {
-        out.push(Math.round(s / m.value));
+        out.push(Number(((s / m.value) * 100).toFixed(1)));
       }
     });
     return out;
@@ -111,12 +114,12 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' })
           icon: Clock,
         },
         {
-          label: 'Avg Stars / Marketplace',
-          value: formatNumber(data.avgStarsPerMarketplace),
-          hint: `${formatNumber(data.overview.totalStars)} stars across ${data.overview.totalMarketplaces} marketplaces`,
-          progress: null,
+          label: `Traction — ≥${data.traction.threshold}★ marketplaces`,
+          value: `${data.traction.share}%`,
+          hint: `${data.traction.count} of ${data.traction.total} marketplaces have at least ${data.traction.threshold} stars`,
+          progress: data.traction.share,
           icon: Star,
-          trendPoints: avgStarsTrend.length >= 2 ? avgStarsTrend : undefined,
+          trendPoints: tractionTrend.length >= 2 ? tractionTrend : undefined,
         },
       ]
     : [];

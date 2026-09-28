@@ -35,6 +35,8 @@ export interface EcosystemQuality {
   manifestCoverage: { withManifest: number; total: number; rate: number };
   maintenance: { recentlyUpdated: number; recentlyUpdatedRate: number; staleOver180Days: number };
   avgStarsPerMarketplace: number;
+  /** Share of marketplaces with at least `threshold` stars (see generate-data.ts). */
+  traction: { count: number; total: number; share: number; threshold: number };
 }
 
 export interface EcosystemStatsData extends EcosystemQuality {
@@ -43,6 +45,7 @@ export interface EcosystemStatsData extends EcosystemQuality {
   marketplaces: TrendPoint[];
   developers: TrendPoint[];
   stars: TrendPoint[];
+  starred: TrendPoint[];
   period: string;
   aggregation: string;
   categories: CategoryCount[];
