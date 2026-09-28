@@ -81,6 +81,22 @@ function normalizeAuthor(author: unknown): string {
   return '';
 }
 
+/** Marketplaces with at least this many stars count as having traction. */
+export const TRACTION_STAR_THRESHOLD = 10;
+
+/**
+ * Count marketplaces with at least `threshold` stars — the population behind
+ * the QualityIndicators "Traction" card. Robust to the power-law star
+ * distribution where the mean is hostage to a single top repo. Pure for
+ * unit testing.
+ */
+export function countStarredMarketplaces(
+  marketplaces: Array<{ stars?: number }>,
+  threshold: number = TRACTION_STAR_THRESHOLD
+): number {
+  return marketplaces.filter((m) => (m.stars || 0) >= threshold).length;
+}
+
 /** GitHub user/org that publishes the marketplace repo. */
 function ownerFromUrl(url: string): string {
   const match = url?.match(/github\.com\/([^/]+)/);
@@ -423,6 +439,7 @@ class DataGenerator {
       plugins: number;
       stars: number;
       developers?: number;
+      starred?: number;
     }> = [];
     try {
       history = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
@@ -437,6 +454,7 @@ class DataGenerator {
       plugins: data.stats.totalPlugins,
       stars: totalStars,
       developers: uniqueAuthors,
+      starred: countStarredMarketplaces(data.marketplaces),
     });
     if (history.length > 365) history = history.slice(-365);
     fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
@@ -469,7 +487,7 @@ class DataGenerator {
 
     // ── Trend series built ONLY from real history snapshots ──
     const toTrend = (
-      key: 'plugins' | 'marketplaces' | 'developers' | 'stars'
+      key: 'plugins' | 'marketplaces' | 'developers' | 'stars' | 'starred'
     ): Array<{ date: string; value: number | null; change?: number }> =>
       history.map((h, i) => {
         const value = (h as Record<string, unknown>)[key];
@@ -506,6 +524,7 @@ class DataGenerator {
       (m) => new Date(m.updatedAt) >= daysAgo(30)
     ).length;
     const stale = data.marketplaces.filter((m) => new Date(m.updatedAt) < daysAgo(180)).length;
+    const starredCount = countStarredMarketplaces(data.marketplaces);
 
     const quality = {
       manifestCoverage: {
@@ -526,6 +545,15 @@ class DataGenerator {
       },
       avgStarsPerMarketplace:
         data.marketplaces.length > 0 ? Math.round(totalStars / data.marketplaces.length) : 0,
+      traction: {
+        count: starredCount,
+        total: data.marketplaces.length,
+        share:
+          data.marketplaces.length > 0
+            ? Number(((starredCount / data.marketplaces.length) * 100).toFixed(1))
+            : 0,
+        threshold: TRACTION_STAR_THRESHOLD,
+      },
     };
 
     const topMarketplace = [...data.marketplaces].sort((a, b) => b.stars - a.stars)[0];
@@ -549,6 +577,7 @@ class DataGenerator {
         marketplaces: toTrend('marketplaces'),
         developers: toTrend('developers'),
         stars: toTrend('stars'),
+        starred: toTrend('starred'),
         period: 'all' as const,
         aggregation: 'daily' as const,
         // CategoryAnalytics
