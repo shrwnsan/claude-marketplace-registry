@@ -68,7 +68,7 @@ jobs:
 
       - name: Run Code Review
         id: review
-        uses: anthropics/claude-code-action@4036a180cf690f49529f5d8c79c998855287f590  # v1.0.230
+        uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790  # v1.0.235
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
@@ -90,7 +90,7 @@ jobs:
       # Same runner as the review step above, so /tmp/claude-output/review-results.json
       # persists here — no artifact download step needed.
       - name: Triage and Act
-        uses: anthropics/claude-code-action@4036a180cf690f49529f5d8c79c998855287f590  # v1.0.230
+        uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790  # v1.0.235
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
