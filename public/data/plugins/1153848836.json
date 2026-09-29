@@ -443,6 +443,40 @@
     }
   },
   {
+    "id": "1153848836-mcp-scaffold",
+    "name": "mcp-scaffold",
+    "description": "name: wicked-garden-mcp-scaffold",
+    "version": "1.0.0",
+    "author": "mikeparcewski",
+    "repository": "https://github.com/mikeparcewski/wicked-garden",
+    "manifestPath": "skills/mcp-scaffold",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153848836",
+      "marketplaceName": "wicked-garden",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1153848836-mcp",
+    "name": "mcp",
+    "description": "name: wicked-garden-mcp",
+    "version": "1.0.0",
+    "author": "mikeparcewski",
+    "repository": "https://github.com/mikeparcewski/wicked-garden",
+    "manifestPath": "skills/mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153848836",
+      "marketplaceName": "wicked-garden",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1153848836-mem-capture",
     "name": "mem-capture",
     "description": "name: wicked-garden-mem-capture",

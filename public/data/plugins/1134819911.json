@@ -2,8 +2,8 @@
   {
     "id": "1134819911-octo",
     "name": "octo",
-    "description": "v11.9.3 - Stop Octopus hooks from opening Git Bash windows under Codex on native Windows. 31 personas, 54 commands, 63 skills. Run /octo:setup.",
-    "version": "11.9.3",
+    "description": "v11.9.4 - Keep an exported CODEX_HOME from making Claude Code sessions look like Codex. 31 personas, 54 commands, 63 skills. Run /octo:setup.",
+    "version": "11.9.4",
     "author": "nyldn",
     "repository": "https://github.com/nyldn/claude-octopus",
     "manifestPath": {

@@ -1,0 +1,326 @@
+[
+  {
+    "id": "1391220621-marketing-ad-researcher",
+    "name": "marketing-ad-researcher",
+    "description": "Ranks competitor ads by how long they survived, and says what it could not reach.",
+    "version": "0.2.6+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/marketing-ad-researcher",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-marketing-ad-scripter",
+    "name": "marketing-ad-scripter",
+    "description": "Turns a creative bank into modules, continuity kits and prompts you can produce from.",
+    "version": "0.2.4+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/marketing-ad-scripter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-marketing-ad-tester",
+    "name": "marketing-ad-tester",
+    "description": "Scores only what was measured, and refuses to read a test that cannot be read.",
+    "version": "0.2.6+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/marketing-ad-tester",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-marketing-angle-strategist",
+    "name": "marketing-angle-strategist",
+    "description": "Scores ad angles with arithmetic you can audit, not a ranking you have to trust.",
+    "version": "0.2.4+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/marketing-angle-strategist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-marketing-brief-scoper",
+    "name": "marketing-brief-scoper",
+    "description": "Locks the campaign brief before anyone writes a word of creative.",
+    "version": "0.2.6+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/marketing-brief-scoper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-marketing-hook-writer",
+    "name": "marketing-hook-writer",
+    "description": "Writes hooks in the customer's own words, checked against what the page can promise.",
+    "version": "0.2.3+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/marketing-hook-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-marketing-introgen-briefer",
+    "name": "marketing-introgen-briefer",
+    "description": "Turns approved ad creative into an IntroGen brief, a fact-checked avoid list and an auditable briefing record.",
+    "version": "0.3.1+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/marketing-introgen-briefer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-marketing-production-planner",
+    "name": "marketing-production-planner",
+    "description": "Plans the shoot and the spend, with an approval gate on every unit.",
+    "version": "0.2.5+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/marketing-production-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-app-planner",
+    "name": "mobile-app-planner",
+    "description": "Turns a vague mobile feature request into a spec with a real scope boundary.",
+    "version": "0.3.2+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-app-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-bug-investigator",
+    "name": "mobile-bug-investigator",
+    "description": "Turns a fuzzy bug report into a scoped investigation and a planner brief.",
+    "version": "0.3.2+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-bug-investigator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-campaign-video-creator",
+    "name": "mobile-campaign-video-creator",
+    "description": "Plans an install ad that only claims what the product actually did.",
+    "version": "0.3.2+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-campaign-video-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-code-reviewer",
+    "name": "mobile-code-reviewer",
+    "description": "Reviews a mobile change with severities that still mean something.",
+    "version": "0.4.2+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-code-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-feature-developer",
+    "name": "mobile-feature-developer",
+    "description": "The file-level plan you approve before anyone opens an editor.",
+    "version": "0.4.2+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-feature-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-intake-interviewer",
+    "name": "mobile-intake-interviewer",
+    "description": "Runs the intake interview one question at a time and freezes the brief.",
+    "version": "0.3.2+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-intake-interviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-knowledge-librarian",
+    "name": "mobile-knowledge-librarian",
+    "description": "Keeps a team's written knowledge findable instead of merely large.",
+    "version": "0.3.2+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-knowledge-librarian",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-qa-tester",
+    "name": "mobile-qa-tester",
+    "description": "Finds what your change left untested, and the device cases nobody runs.",
+    "version": "0.3.2+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-qa-tester",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-security-checker",
+    "name": "mobile-security-checker",
+    "description": "Finds the security defects that pass a code review and a green build.",
+    "version": "0.4.3+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-security-checker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-mobile-ux-designer",
+    "name": "mobile-ux-designer",
+    "description": "The design spec before the screen gets built: states, copy, accessibility.",
+    "version": "0.3.2+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/mobile-ux-designer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

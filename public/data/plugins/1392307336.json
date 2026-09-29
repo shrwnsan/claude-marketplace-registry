@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1392307336-typescript7-lsp",
+    "name": "typescript7-lsp",
+    "description": "TypeScript 7 language server (tsc --lsp) with post-edit diagnostics via a pull-to-push bridge",
+    "version": "",
+    "author": "seanforge",
+    "repository": "https://github.com/seanforge/claude-code-lsp-bridge",
+    "manifestPath": "./plugins/typescript7-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1392307336",
+      "marketplaceName": "claude-code-lsp-bridge",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

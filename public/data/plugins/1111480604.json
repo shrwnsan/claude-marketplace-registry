@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1111480604-migrating-to-swift-concurrency-skill",
+    "name": "migrating-to-swift-concurrency-skill",
+    "description": "The complete content of the Swift Concurrency Migration Guide.",
+    "version": "20251207",
+    "author": "Kyle Hughes",
+    "repository": "https://github.com/kylehughes/the-unofficial-swift-concurrency-migration-skill",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1111480604",
+      "marketplaceName": "the-unofficial-swift-concurrency-migration-skill",
+      "skills": [
+        "./migrating-to-swift-concurrency"
+      ],
+      "strict": false
+    }
+  }
+]
