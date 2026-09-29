@@ -1,5 +1,14 @@
 import React from 'react';
-import { Activity, Calendar, ShieldCheck, RefreshCw, Clock, Star, FileCheck } from 'lucide-react';
+import {
+  Activity,
+  Calendar,
+  ShieldCheck,
+  RefreshCw,
+  Clock,
+  Star,
+  FileCheck,
+  Puzzle,
+} from 'lucide-react';
 import { formatDateTimeWithOffset, formatNumber } from '../../utils/format';
 import { useEcosystemStats } from '../../hooks/useEcosystemStats';
 import ErrorDisplay from '../ui/ErrorDisplay';
@@ -26,9 +35,9 @@ const AnimatedBar: React.FC<{ value: number; label: string }> = ({ value, label 
     return () => clearTimeout(t);
   }, [value]);
   return (
-    <div className='w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-3'>
+    <div className='w-full bg-primary-100 dark:bg-primary-900/40 rounded-full h-2 mb-3'>
       <div
-        className='bg-gradient-to-r from-primary-500 to-primary-400 h-2 rounded-full transition-all duration-700 ease-out'
+        className='bg-primary-500 h-2 rounded-full transition-all duration-700 ease-out'
         style={{ width: `${width}%` }}
         role='progressbar'
         aria-valuenow={value}
@@ -90,6 +99,12 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' })
     );
   }
 
+  const totalMarketplaces = data?.overview.totalMarketplaces ?? 0;
+  const staleShare =
+    data && totalMarketplaces > 0
+      ? Number(((data.maintenance.staleOver180Days / totalMarketplaces) * 100).toFixed(1))
+      : null;
+
   const cards: IndicatorCard[] = data
     ? [
         {
@@ -102,25 +117,50 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' })
         {
           label: 'Recently Updated',
           value: `${data.maintenance.recentlyUpdatedRate}%`,
-          hint: `${data.maintenance.recentlyUpdated} marketplaces updated in the last 30 days`,
+          hint:
+            data.maintenance.medianDaysSinceUpdate != null
+              ? `${data.maintenance.recentlyUpdated} marketplaces updated in the last 30 days · median ${data.maintenance.medianDaysSinceUpdate}d since an update`
+              : `${data.maintenance.recentlyUpdated} marketplaces updated in the last 30 days`,
           progress: data.maintenance.recentlyUpdatedRate,
           icon: RefreshCw,
         },
         {
           label: 'Stale Marketplaces',
           value: formatNumber(data.maintenance.staleOver180Days),
-          hint: 'No update in the last 180 days',
+          hint:
+            staleShare !== null
+              ? `${staleShare}% of ${totalMarketplaces} marketplaces — no update in 180+ days`
+              : 'No update in the last 180 days',
           progress: null,
           icon: Clock,
         },
-        {
-          label: `Traction — ≥${data.traction.threshold}★ marketplaces`,
-          value: `${data.traction.share}%`,
-          hint: `${data.traction.count} of ${data.traction.total} marketplaces have at least ${data.traction.threshold} stars`,
-          progress: data.traction.share,
-          icon: Star,
-          trendPoints: tractionTrend.length >= 2 ? tractionTrend : undefined,
-        },
+        // stats.json gains pluginSkills when the daily pipeline regenerates —
+        // show the card only once its data exists.
+        ...(data.pluginSkills
+          ? [
+              {
+                label: 'Skills Included',
+                value: `${data.pluginSkills.rate}%`,
+                hint: `${data.pluginSkills.withSkills} of ${data.pluginSkills.total} plugins ship at least one skill`,
+                progress: data.pluginSkills.rate,
+                icon: Puzzle,
+              } satisfies IndicatorCard,
+            ]
+          : []),
+        // stats.json regenerated before the traction field existed in the
+        // daily pipeline output — show three honest cards rather than crash.
+        ...(data.traction
+          ? [
+              {
+                label: `Traction — ≥${data.traction.threshold}★ marketplaces`,
+                value: `${data.traction.share}%`,
+                hint: `${data.traction.count} of ${data.traction.total} marketplaces have at least ${data.traction.threshold} stars`,
+                progress: data.traction.share,
+                icon: Star,
+                trendPoints: tractionTrend.length >= 2 ? tractionTrend : undefined,
+              } satisfies IndicatorCard,
+            ]
+          : []),
       ]
     : [];
 

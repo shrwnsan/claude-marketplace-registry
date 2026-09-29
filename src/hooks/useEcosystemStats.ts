@@ -33,7 +33,16 @@ export interface CategoryCount {
 
 export interface EcosystemQuality {
   manifestCoverage: { withManifest: number; total: number; rate: number };
-  maintenance: { recentlyUpdated: number; recentlyUpdatedRate: number; staleOver180Days: number };
+  maintenance: {
+    recentlyUpdated: number;
+    recentlyUpdatedRate: number;
+    staleOver180Days: number;
+    /** Days until half the catalog has been touched — robust against growth skew. */
+    medianDaysSinceUpdate?: number | null;
+  };
+  /** Share of plugins shipping at least one skill. Added after the initial
+   * daily snapshots — absent in stats.json until the pipeline regenerates. */
+  pluginSkills?: { withSkills: number; total: number; rate: number };
   avgStarsPerMarketplace: number;
   /** Share of marketplaces with at least `threshold` stars (see generate-data.ts). */
   traction: { count: number; total: number; share: number; threshold: number };

@@ -313,69 +313,70 @@
       {
         "id": "claude-code",
         "name": "claude-code",
-        "count": 4225,
-        "description": "Plugins from marketplaces tagged \"claude-code\" (topics overlap)"
+        "count": 447,
+        "description": "Marketplaces tagged \"claude-code\" (topics overlap)"
       },
       {
-        "id": "ai-agents",
-        "name": "ai-agents",
-        "count": 2186,
-        "description": "Plugins from marketplaces tagged \"ai-agents\" (topics overlap)"
+        "id": "claude-skills",
+        "name": "claude-skills",
+        "count": 258,
+        "description": "Marketplaces tagged \"claude-skills\" (topics overlap)"
       },
       {
         "id": "claude-plugins",
         "name": "claude-plugins",
-        "count": 2109,
-        "description": "Plugins from marketplaces tagged \"claude-plugins\" (topics overlap)"
+        "count": 257,
+        "description": "Marketplaces tagged \"claude-plugins\" (topics overlap)"
       },
       {
         "id": "claude",
         "name": "claude",
-        "count": 1936,
-        "description": "Plugins from marketplaces tagged \"claude\" (topics overlap)"
+        "count": 202,
+        "description": "Marketplaces tagged \"claude\" (topics overlap)"
       },
       {
-        "id": "anthropic",
-        "name": "anthropic",
-        "count": 1738,
-        "description": "Plugins from marketplaces tagged \"anthropic\" (topics overlap)"
-      },
-      {
-        "id": "developer-tools",
-        "name": "developer-tools",
-        "count": 1734,
-        "description": "Plugins from marketplaces tagged \"developer-tools\" (topics overlap)"
-      },
-      {
-        "id": "mcp",
-        "name": "mcp",
-        "count": 1683,
-        "description": "Plugins from marketplaces tagged \"mcp\" (topics overlap)"
+        "id": "ai-agents",
+        "name": "ai-agents",
+        "count": 180,
+        "description": "Marketplaces tagged \"ai-agents\" (topics overlap)"
       },
       {
         "id": "agent-skills",
         "name": "agent-skills",
-        "count": 1225,
-        "description": "Plugins from marketplaces tagged \"agent-skills\" (topics overlap)"
-      },
-      {
-        "id": "llm",
-        "name": "llm",
-        "count": 1218,
-        "description": "Plugins from marketplaces tagged \"llm\" (topics overlap)"
+        "count": 146,
+        "description": "Marketplaces tagged \"agent-skills\" (topics overlap)"
       },
       {
         "id": "claude-code-plugin",
         "name": "claude-code-plugin",
-        "count": 1143,
-        "description": "Plugins from marketplaces tagged \"claude-code-plugin\" (topics overlap)"
+        "count": 135,
+        "description": "Marketplaces tagged \"claude-code-plugin\" (topics overlap)"
+      },
+      {
+        "id": "developer-tools",
+        "name": "developer-tools",
+        "count": 134,
+        "description": "Marketplaces tagged \"developer-tools\" (topics overlap)"
+      },
+      {
+        "id": "anthropic",
+        "name": "anthropic",
+        "count": 128,
+        "description": "Marketplaces tagged \"anthropic\" (topics overlap)"
+      },
+      {
+        "id": "mcp",
+        "name": "mcp",
+        "count": 123,
+        "description": "Marketplaces tagged \"mcp\" (topics overlap)"
       }
     ],
     "insights": [
       "5428 plugins discovered across 682 marketplaces",
       "Most starred: ECC (269,108 stars)",
-      "Most common topic: claude-code (4225 plugins)",
-      "539 marketplaces updated in the last 30 days"
+      "Most common topic: claude-code (447 marketplaces)",
+      "539 marketplaces updated in the last 30 days",
+      "625 independent publishers run a single marketplace each"
     ],
     "manifestCoverage": {
       "withManifest": 411,
@@ -385,7 +386,8 @@
     "maintenance": {
       "recentlyUpdated": 539,
       "recentlyUpdatedRate": 79,
-      "staleOver180Days": 21
+      "staleOver180Days": 21,
+      "medianDaysSinceUpdate": 4
     },
     "avgStarsPerMarketplace": 1096,
     "traction": {
@@ -393,6 +395,11 @@
       "total": 682,
       "share": 40.3,
       "threshold": 10
+    },
+    "pluginSkills": {
+      "withSkills": 3298,
+      "total": 5428,
+      "rate": 60.8
     }
   },
   "meta": {

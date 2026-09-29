@@ -1,7 +1,16 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  LabelList,
+} from 'recharts';
 import { Package } from 'lucide-react';
 import { formatNumber } from '../../utils/format';
 import { topicShare } from '../../utils/stats';
@@ -42,8 +51,8 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
     );
   }
 
-  const categories = data?.categories || [];
-  const totalPlugins = data?.overview.totalPlugins ?? 0;
+  const categories = [...(data?.categories || [])].sort((a, b) => b.count - a.count);
+  const totalMarketplaces = data?.overview.totalMarketplaces ?? 0;
 
   const browseTopic = (topic: string) => {
     router.push(`/marketplaces?topic=${encodeURIComponent(topic)}`);
@@ -60,8 +69,8 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
           ls --by-topic
         </p>
         <p className='text-gray-600 dark:text-gray-400'>
-          How many plugins come from marketplaces tagged with each topic. Topics overlap — a
-          marketplace can carry several — so these are counts, not a partition.
+          How many marketplaces carry each topic. A marketplace can carry several topics, so topics
+          overlap — these are counts, not a partition.
         </p>
       </div>
 
@@ -79,13 +88,9 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
               <BarChart
                 data={categories}
                 layout='vertical'
-                margin={{ top: 8, right: 24, bottom: 8, left: 8 }}
+                margin={{ top: 8, right: 44, bottom: 8, left: 8 }}
               >
-                <CartesianGrid
-                  strokeDasharray='3 3'
-                  stroke='var(--chart-grid)'
-                  horizontal={false}
-                />
+                <CartesianGrid stroke='var(--chart-grid)' horizontal={false} />
                 <XAxis
                   type='number'
                   tick={{ fontSize: 12 }}
@@ -95,9 +100,9 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                 <Tooltip
                   cursor={{ fill: 'rgba(217,119,87,0.08)' }}
                   formatter={(value: unknown) => [
-                    `${formatNumber(Number(value))} plugins · ${topicShare(
+                    `${formatNumber(Number(value))} marketplaces · ${topicShare(
                       Number(value),
-                      totalPlugins
+                      totalMarketplaces
                     )}% of catalog`,
                     'Share',
                   ]}
@@ -114,7 +119,7 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                 />
                 <Bar
                   dataKey='count'
-                  fill='#d97757'
+                  fill='var(--series-plugins)'
                   radius={[0, 4, 4, 0]}
                   maxBarSize={22}
                   style={{ cursor: 'pointer' }}
@@ -122,14 +127,21 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                     const topic = (bar as { payload?: { name?: string } })?.payload?.name;
                     if (topic) browseTopic(topic);
                   }}
-                />
+                >
+                  <LabelList
+                    dataKey='count'
+                    position='right'
+                    formatter={(value: unknown) => formatNumber(Number(value))}
+                    style={{ fill: 'var(--tooltip-text)', fontSize: 11, fontWeight: 600 }}
+                  />
+                </Bar>
               </BarChart>
             </ResponsiveContainer>
           </div>
 
           <p className='text-xs text-gray-400 dark:text-gray-500 mt-2 text-center'>
-            Counts refer to plugins whose parent marketplace carries the topic; one plugin can
-            appear under several topics. Click a bar to browse those marketplaces.
+            Bars and pills count marketplaces carrying each topic — topics overlap, so counts
+            aren&apos;t a partition. Click a bar to browse those marketplaces.
           </p>
 
           {/* Keyboard/screen-reader path to the same deep links the bars provide */}
@@ -140,7 +152,7 @@ const CategoryAnalytics: React.FC<CategoryAnalyticsProps> = ({ className = '' })
                   key={c.id}
                   href={`/marketplaces?topic=${encodeURIComponent(c.name)}`}
                   className='badge badge-secondary hover:border-primary-300 dark:hover:border-primary-600 hover:text-primary-700 dark:hover:text-primary-300 transition-all'
-                  aria-label={`Browse ${c.name} marketplaces (${formatNumber(c.count)} plugins)`}
+                  aria-label={`Browse ${c.name} marketplaces (${formatNumber(c.count)})`}
                 >
                   {c.name} · {formatNumber(c.count)}
                 </Link>

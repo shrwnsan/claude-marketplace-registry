@@ -16,14 +16,9 @@ const MiniSparkline: React.FC<MiniSparklineProps> = ({ points, label }) => {
   if (!points || points.length < 2) {
     return (
       <div className='mt-3 pt-3 border-t border-gray-100 dark:border-gray-700'>
-        <div className='flex items-end gap-[3px] h-6' aria-hidden='true'>
-          {Array.from({ length: 14 }, (_, i) => (
-            <span
-              key={i}
-              className='flex-1 bg-gray-200 dark:bg-gray-750 rounded-sm'
-              style={{ height: `${30 + ((i * 37) % 50)}%`, opacity: 0.5 }}
-            />
-          ))}
+        {/* Honest empty state — a flat baseline, never decorative fake data */}
+        <div className='flex items-end h-6' aria-hidden='true'>
+          <div className='w-full h-0.5 bg-gray-200 dark:bg-gray-750 rounded-full' />
         </div>
         <p className='text-[11px] font-mono text-gray-400 dark:text-gray-500 mt-1.5'>
           {label} trend appears as daily history accumulates

@@ -499,11 +499,13 @@ class DataGenerator {
         };
       });
 
-    // ── Categories: real topic counts (topics overlap — never render as pie %) ──
+    // ── Categories: marketplaces per topic (topics overlap — never render as
+    //    pie %). Marketplace counts (not plugin counts) so the number a pill
+    //    shows always matches the /marketplaces?topic=<name> filter it links
+    //    to. ──
     const catCount: Record<string, number> = {};
-    for (const p of data.plugins) {
-      const mp = data.marketplaces.find((m) => m.id === p.metadata?.marketplaceId);
-      for (const t of mp?.topics || []) {
+    for (const mp of data.marketplaces) {
+      for (const t of mp.topics || []) {
         catCount[t] = (catCount[t] || 0) + 1;
       }
     }
@@ -512,7 +514,7 @@ class DataGenerator {
         id: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
         name,
         count,
-        description: `Plugins from marketplaces tagged "${name}" (topics overlap)`,
+        description: `Marketplaces tagged "${name}" (topics overlap)`,
       }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 10);
@@ -520,11 +522,19 @@ class DataGenerator {
     // ── Quality signals (all computed from real fields) ──
     const daysAgo = (days: number) => new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
     const withManifest = data.marketplaces.filter((m) => m.hasManifest).length;
+    const updateAges = data.marketplaces
+      .filter((m) => m.updatedAt)
+      .map((m) => (now.getTime() - new Date(m.updatedAt).getTime()) / (24 * 60 * 60 * 1000))
+      .sort((a, b) => a - b);
+    const medianDaysSinceUpdate = updateAges.length
+      ? Math.round(updateAges[Math.floor(updateAges.length / 2)])
+      : null;
     const recentlyUpdated = data.marketplaces.filter(
       (m) => new Date(m.updatedAt) >= daysAgo(30)
     ).length;
     const stale = data.marketplaces.filter((m) => new Date(m.updatedAt) < daysAgo(180)).length;
     const starredCount = countStarredMarketplaces(data.marketplaces);
+    const pluginsWithSkills = data.plugins.filter((p) => deriveSkillsCount(p.metadata) > 0).length;
 
     const quality = {
       manifestCoverage: {
@@ -542,6 +552,15 @@ class DataGenerator {
             ? Number(((recentlyUpdated / data.marketplaces.length) * 100).toFixed(1))
             : 0,
         staleOver180Days: stale,
+        medianDaysSinceUpdate,
+      },
+      pluginSkills: {
+        withSkills: pluginsWithSkills,
+        total: data.plugins.length,
+        rate:
+          data.plugins.length > 0
+            ? Number(((pluginsWithSkills / data.plugins.length) * 100).toFixed(1))
+            : 0,
       },
       avgStarsPerMarketplace:
         data.marketplaces.length > 0 ? Math.round(totalStars / data.marketplaces.length) : 0,
@@ -557,15 +576,22 @@ class DataGenerator {
     };
 
     const topMarketplace = [...data.marketplaces].sort((a, b) => b.stars - a.stars)[0];
+    const ownerCounts = new Map<string, number>();
+    for (const mp of data.marketplaces) {
+      const owner = (mp.url || '').replace(/^https?:\/\/github\.com\//, '').split('/')[0];
+      if (owner) ownerCounts.set(owner, (ownerCounts.get(owner) || 0) + 1);
+    }
+    const soloOwners = [...ownerCounts.values()].filter((c) => c === 1).length;
     const insights = [
       `${data.stats.totalPlugins} plugins discovered across ${data.stats.totalMarketplaces} marketplaces`,
       topMarketplace
         ? `Most starred: ${topMarketplace.name} (${topMarketplace.stars.toLocaleString()} stars)`
         : '',
       categories[0]
-        ? `Most common topic: ${categories[0].name} (${categories[0].count} plugins)`
+        ? `Most common topic: ${categories[0].name} (${categories[0].count} marketplaces)`
         : '',
       `${recentlyUpdated} marketplaces updated in the last 30 days`,
+      soloOwners > 0 ? `${soloOwners} independent publishers run a single marketplace each` : '',
     ].filter(Boolean);
 
     return {

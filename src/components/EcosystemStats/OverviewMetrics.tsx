@@ -25,12 +25,12 @@ const MetricCard: React.FC<{ metric: MetricData; isLoading?: boolean }> = ({
     return (
       <div className='card p-6 animate-pulse'>
         <div className='flex items-center justify-between mb-4'>
-          <div className='h-8 w-8 bg-gray-200 dark:bg-gray-700 rounded-lg'></div>
-          <div className='h-6 w-16 bg-gray-200 dark:bg-gray-700 rounded'></div>
+          <div className='h-3 w-24 bg-gray-200 dark:bg-gray-700 rounded'></div>
+          <div className='h-10 w-10 bg-gray-200 dark:bg-gray-700 rounded-lg'></div>
         </div>
-        <div className='space-y-2'>
-          <div className='h-8 w-24 bg-gray-200 dark:bg-gray-700 rounded'></div>
-          <div className='h-4 w-32 bg-gray-200 dark:bg-gray-700 rounded'></div>
+        <div className='h-9 w-28 bg-gray-200 dark:bg-gray-700 rounded'></div>
+        <div className='mt-4 pt-3 border-t border-gray-100 dark:border-gray-700'>
+          <div className='h-3 w-44 bg-gray-200 dark:bg-gray-700 rounded'></div>
         </div>
       </div>
     );
@@ -70,19 +70,19 @@ const MetricCard: React.FC<{ metric: MetricData; isLoading?: boolean }> = ({
       aria-label={ariaLabel}
       tabIndex={0}
     >
-      <div className='flex items-center justify-between mb-4'>
+      <div className='flex items-center justify-between mb-3'>
+        <h3 className='text-xs font-mono uppercase tracking-wider text-gray-500 dark:text-gray-400'>
+          {label}
+        </h3>
         <div
-          className={`p-3 rounded-lg ${currentColor.bg} group-hover:scale-105 transition-transform duration-200`}
+          className={`p-2.5 rounded-lg ${currentColor.bg} group-hover:scale-105 transition-transform duration-200`}
         >
-          <Icon className={`w-6 h-6 ${currentColor.icon}`} aria-hidden='true' />
+          <Icon className={`w-5 h-5 ${currentColor.icon}`} aria-hidden='true' />
         </div>
       </div>
 
-      <div className='space-y-1'>
-        <h3 className='text-2xl font-bold font-mono tracking-tight text-gray-900 dark:text-gray-50 tabular-nums'>
-          {value}
-        </h3>
-        <p className='text-sm font-medium text-gray-600 dark:text-gray-400'>{label}</p>
+      <div className='text-3xl font-bold font-mono tracking-tight text-gray-900 dark:text-gray-50 tabular-nums'>
+        {value}
       </div>
 
       {/* Delta/context line — shows the honest pending state until ~30 days of
@@ -228,9 +228,9 @@ const OverviewMetrics: React.FC<OverviewMetricsProps> = ({ className = '' }) => 
               </span>
             </div>
             <div className='flex items-center'>
-              <div className='w-32 bg-gray-200 dark:bg-gray-700 rounded-full h-2 mr-3'>
+              <div className='w-32 bg-primary-100 dark:bg-primary-900/40 rounded-full h-2 mr-3'>
                 <div
-                  className='bg-gradient-to-r from-primary-500 to-primary-600 h-2 rounded-full transition-all duration-500'
+                  className='bg-primary-500 h-2 rounded-full transition-all duration-500'
                   style={{ width: `${data.manifestCoverage.rate}%` }}
                   role='progressbar'
                   aria-valuenow={data.manifestCoverage.rate}

@@ -130,7 +130,7 @@ const TrendPanel: React.FC<TrendPanelProps> = ({ config, rows, maxValue }) => {
               width={44}
             />
             <Tooltip
-              cursor={{ stroke: 'var(--tooltip-muted)', strokeDasharray: '3 3' }}
+              cursor={{ stroke: 'var(--tooltip-muted)' }}
               formatter={(value: unknown) => formatNumber(Number(value))}
               labelFormatter={(label: unknown) => `Snapshot ${String(label)}`}
               contentStyle={{
