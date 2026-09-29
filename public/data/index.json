@@ -1,86 +1,91 @@
 {
   "stats": {
-    "totalMarketplaces": 604,
-    "totalPlugins": 5381,
-    "validPlugins": 5381,
-    "lastUpdated": "2026-09-28T04:14:19.548Z",
+    "totalMarketplaces": 682,
+    "totalPlugins": 5428,
+    "validPlugins": 5428,
+    "lastUpdated": "2026-09-29T04:45:37.257Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 189
+        "count": 205
       },
       {
         "language": "Unknown",
-        "count": 114
+        "count": 145
       },
       {
         "language": "JavaScript",
-        "count": 83
+        "count": 90
       },
       {
         "language": "Shell",
-        "count": 74
+        "count": 82
       },
       {
         "language": "TypeScript",
-        "count": 62
+        "count": 73
       },
       {
         "language": "HTML",
-        "count": 29
+        "count": 32
       },
       {
         "language": "Go",
-        "count": 19
+        "count": 20
       },
       {
         "language": "Rust",
         "count": 14
       },
       {
-        "language": "C++",
-        "count": 2
+        "language": "Swift",
+        "count": 3
       },
       {
-        "language": "Swift",
+        "language": "C++",
         "count": 2
       }
     ],
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 268487,
+        "stars": 269108,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 178690,
+        "stars": 178856,
         "url": "https://github.com/anthropics/skills"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 75748,
+        "stars": 75802,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 69605,
+        "stars": 69635,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
         "name": "claude-plugins-official",
-        "stars": 37108,
+        "stars": 37166,
         "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
         "name": "daily",
-        "stars": 20078,
+        "stars": 20083,
         "url": "https://github.com/dailydotdev/daily"
       },
       {
         "name": "kubeshark",
-        "stars": 12085,
+        "stars": 12087,
         "url": "https://github.com/kubeshark/kubeshark"
+      },
+      {
+        "name": "awesome-claude-skills",
+        "stars": 10190,
+        "url": "https://github.com/BehiSecc/awesome-claude-skills"
       },
       {
         "name": "web-access",
@@ -89,65 +94,60 @@
       },
       {
         "name": "claude-octopus",
-        "stars": 4106,
+        "stars": 4108,
         "url": "https://github.com/nyldn/claude-octopus"
-      },
-      {
-        "name": "treg",
-        "stars": 3597,
-        "url": "https://github.com/superdesigndev/treg"
       }
     ],
     "recentActivity": [
       {
-        "name": "tycana-claude-hivemind",
-        "updatedAt": "2026-09-28T04:05:45Z",
-        "url": "https://github.com/samuel85194-ux/tycana-claude-hivemind"
+        "name": "blahblahblah-skill",
+        "updatedAt": "2026-09-29T04:38:06Z",
+        "url": "https://github.com/Loriabient5377/blahblahblah-skill"
       },
       {
-        "name": "emperor-time",
-        "updatedAt": "2026-09-28T04:05:35Z",
-        "url": "https://github.com/arbi-elezi/emperor-time"
+        "name": "deadeye",
+        "updatedAt": "2026-09-29T04:37:56Z",
+        "url": "https://github.com/aaamaxito-prog/deadeye"
       },
       {
-        "name": "zhuangxiu-skills",
-        "updatedAt": "2026-09-28T04:04:57Z",
-        "url": "https://github.com/zx029w/zhuangxiu-skills"
+        "name": "oh-my-openagent",
+        "updatedAt": "2026-09-29T04:37:28Z",
+        "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
-        "name": "claude-code-control-room",
-        "updatedAt": "2026-09-28T04:03:35Z",
-        "url": "https://github.com/Ramillax/claude-code-control-room"
+        "name": "claude-code-common",
+        "updatedAt": "2026-09-29T04:37:23Z",
+        "url": "https://github.com/AnotherSava/claude-code-common"
       },
       {
-        "name": "Makoto",
-        "updatedAt": "2026-09-28T04:02:39Z",
-        "url": "https://github.com/Clear-Sights/Makoto"
+        "name": "claude-api-free-2026",
+        "updatedAt": "2026-09-29T04:37:17Z",
+        "url": "https://github.com/Anatasyaa569/claude-api-free-2026"
       },
       {
-        "name": "claude",
-        "updatedAt": "2026-09-28T04:01:57Z",
-        "url": "https://github.com/bendrucker/claude"
+        "name": "ux-ui-skills",
+        "updatedAt": "2026-09-29T04:36:29Z",
+        "url": "https://github.com/Gonadotrophic-tangent41/ux-ui-skills"
       },
       {
-        "name": "jus-skills",
-        "updatedAt": "2026-09-28T04:00:55Z",
-        "url": "https://github.com/juscribe/jus-skills"
+        "name": "model-citizen",
+        "updatedAt": "2026-09-29T04:36:20Z",
+        "url": "https://github.com/JakeSelby/model-citizen"
       },
       {
-        "name": "trending-claude-skills",
-        "updatedAt": "2026-09-28T04:00:19Z",
-        "url": "https://github.com/linny006/trending-claude-skills"
+        "name": "geo-mcp-servers",
+        "updatedAt": "2026-09-29T04:35:58Z",
+        "url": "https://github.com/a1964378/geo-mcp-servers"
       },
       {
-        "name": "easel-js-cpu-render-kit",
-        "updatedAt": "2026-09-28T04:00:05Z",
-        "url": "https://github.com/AllyJuma1/easel-js-cpu-render-kit"
+        "name": "biks-claude-loader-update",
+        "updatedAt": "2026-09-29T04:35:44Z",
+        "url": "https://github.com/triune-contemplation240/biks-claude-loader-update"
       },
       {
-        "name": "awesome-claude-video-skills",
-        "updatedAt": "2026-09-28T03:59:54Z",
-        "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
+        "name": "LLM-Agent-Factory",
+        "updatedAt": "2026-09-29T04:34:43Z",
+        "url": "https://github.com/houseofprayerzinzendorf150/LLM-Agent-Factory"
       }
     ]
   },
@@ -155,33 +155,33 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 297
+      "count": 338
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 88
+      "count": 112
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 171
+      "count": 213
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 25
+      "count": 27
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 16
+      "count": 20
     },
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 11
+      "count": 13
     }
   ],
-  "lastUpdated": "2026-09-28T04:14:19.548Z"
+  "lastUpdated": "2026-09-29T04:45:37.257Z"
 }

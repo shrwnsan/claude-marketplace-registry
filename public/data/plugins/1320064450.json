@@ -1,0 +1,224 @@
+[
+  {
+    "id": "1320064450-deadeye",
+    "name": "deadeye",
+    "description": "Fits model, effort, and context to each task via a deterministic policy kernel behind Claude Code hooks.",
+    "version": "",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1320064450-deadeye-coder",
+    "name": "deadeye-coder",
+    "description": "name: deadeye-coder",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-coder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-config",
+    "name": "deadeye-config",
+    "description": "name: deadeye-config",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-debt",
+    "name": "deadeye-debt",
+    "description": "name: deadeye-debt",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-debt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-guard",
+    "name": "deadeye-guard",
+    "description": "name: deadeye-guard",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-help",
+    "name": "deadeye-help",
+    "description": "name: deadeye-help",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-help",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-laya",
+    "name": "deadeye-laya",
+    "description": "name: deadeye-laya",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-laya",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-pr",
+    "name": "deadeye-pr",
+    "description": "name: deadeye-pr",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-review",
+    "name": "deadeye-review",
+    "description": "name: deadeye-review",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-stats",
+    "name": "deadeye-stats",
+    "description": "name: deadeye-stats",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-stats",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-sweep",
+    "name": "deadeye-sweep",
+    "description": "name: deadeye-sweep",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-sweep",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-deadeye-vapt",
+    "name": "deadeye-vapt",
+    "description": "name: deadeye-vapt",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/deadeye-vapt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1320064450-explore",
+    "name": "explore",
+    "description": "name: explore",
+    "version": "1.0.0",
+    "author": "deepaksinghcs14",
+    "repository": "https://github.com/deepaksinghcs14/deadeye-cc",
+    "manifestPath": "skills/explore",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1320064450",
+      "marketplaceName": "deadeye-cc",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,68 +1,73 @@
 {
-  "totalFound": 604,
-  "withManifest": 404,
-  "lastUpdated": "2026-09-28T04:07:00.610Z",
+  "totalFound": 682,
+  "withManifest": 411,
+  "lastUpdated": "2026-09-29T04:39:37.335Z",
   "searchQuery": "",
   "languages": {
-    "Python": 189,
-    "Shell": 74,
-    "TypeScript": 62,
+    "Python": 205,
+    "Shell": 82,
+    "TypeScript": 73,
     "Rust": 14,
-    "JavaScript": 83,
-    "Go": 19,
-    "Unknown": 114,
-    "HTML": 29,
+    "JavaScript": 90,
+    "Go": 20,
+    "Unknown": 145,
+    "HTML": 32,
     "AMPL": 1,
     "C++": 2,
-    "Swift": 2,
+    "Swift": 3,
     "Svelte": 1,
     "Jupyter Notebook": 2,
     "Astro": 1,
     "Perl": 1,
     "C#": 2,
     "Ruby": 1,
-    "SCSS": 1,
-    "Markdown": 1,
     "Java": 2,
     "PHP": 1,
     "Typst": 1,
-    "Makefile": 1
+    "Makefile": 1,
+    "Markdown": 1,
+    "SCSS": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 268487,
+      "stars": 269108,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 178690,
+      "stars": 178856,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75748,
+      "stars": 75802,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69605,
+      "stars": 69635,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37108,
+      "stars": 37166,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "daily",
-      "stars": 20078,
+      "stars": 20083,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12085,
+      "stars": 12087,
       "url": "https://github.com/kubeshark/kubeshark"
+    },
+    {
+      "name": "awesome-claude-skills",
+      "stars": 10190,
+      "url": "https://github.com/BehiSecc/awesome-claude-skills"
     },
     {
       "name": "web-access",
@@ -71,13 +76,8 @@
     },
     {
       "name": "claude-octopus",
-      "stars": 4106,
+      "stars": 4108,
       "url": "https://github.com/nyldn/claude-octopus"
-    },
-    {
-      "name": "treg",
-      "stars": 3597,
-      "url": "https://github.com/superdesigndev/treg"
     }
   ]
 }

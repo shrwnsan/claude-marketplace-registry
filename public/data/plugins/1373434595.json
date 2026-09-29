@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1373434595-model-citizen",
+    "name": "model-citizen",
+    "description": "Skills, subagent roles, slash commands and an output style from the Model Citizen checkout, installable on their own. Rules, stances, hooks and the Codex projection need `bin/harness install`; see docs/runtime-installation.md.",
+    "version": "0.14.2",
+    "author": "JakeSelby",
+    "repository": "https://github.com/JakeSelby/model-citizen",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373434595",
+      "marketplaceName": "model-citizen",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

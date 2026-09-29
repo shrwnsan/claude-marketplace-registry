@@ -1,0 +1,175 @@
+[
+  {
+    "id": "1152689029-cursor-kenji",
+    "name": "cursor-kenji",
+    "description": "157 agent skills, 63 slash commands, 6 subagents, effort-routed for Claude Opus 5.5. Install: /plugin install cursor-kenji@cursor-kenji",
+    "version": "1.40.1",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "skills": [
+        "./skills"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1152689029-audit-accessibility",
+    "name": "audit-accessibility",
+    "description": "name: audit-accessibility",
+    "version": "1.0.0",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": "skills/audit-accessibility",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152689029-audit-analytics",
+    "name": "audit-analytics",
+    "description": "name: audit-analytics",
+    "version": "1.0.0",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": "skills/audit-analytics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152689029-audit-auth-flows",
+    "name": "audit-auth-flows",
+    "description": "name: audit-auth-flows",
+    "version": "1.0.0",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": "skills/audit-auth-flows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152689029-audit-backend-architecture",
+    "name": "audit-backend-architecture",
+    "description": "name: audit-backend-architecture",
+    "version": "1.0.0",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": "skills/audit-backend-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152689029-audit-bundle-size",
+    "name": "audit-bundle-size",
+    "description": "name: audit-bundle-size",
+    "version": "1.0.0",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": "skills/audit-bundle-size",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152689029-audit-cicd",
+    "name": "audit-cicd",
+    "description": "name: audit-cicd",
+    "version": "1.0.0",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": "skills/audit-cicd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152689029-audit-code-quality",
+    "name": "audit-code-quality",
+    "description": "name: audit-code-quality",
+    "version": "1.0.0",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": "skills/audit-code-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152689029-audit-code-review",
+    "name": "audit-code-review",
+    "description": "name: audit-code-review",
+    "version": "1.0.0",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": "skills/audit-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152689029-audit-codemod-safety",
+    "name": "audit-codemod-safety",
+    "description": "name: audit-codemod-safety",
+    "version": "1.0.0",
+    "author": "kensaurus",
+    "repository": "https://github.com/kensaurus/cursor-kenji",
+    "manifestPath": "skills/audit-codemod-safety",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152689029",
+      "marketplaceName": "cursor-kenji",
+      "hasSkillMd": true
+    }
+  }
+]
