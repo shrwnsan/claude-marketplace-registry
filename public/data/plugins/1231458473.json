@@ -120,6 +120,40 @@
     }
   },
   {
+    "id": "1231458473-execute-plan",
+    "name": "execute-plan",
+    "description": "name: execute-plan",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/execute-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-grill",
+    "name": "grill",
+    "description": "name: grill",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/grill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1231458473-implement",
     "name": "implement",
     "description": "name: implement",
@@ -127,6 +161,23 @@
     "author": "alamops",
     "repository": "https://github.com/alamops/skills",
     "manifestPath": "skills/implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-investigate",
+    "name": "investigate",
+    "description": "name: investigate",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/investigate",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -154,6 +205,23 @@
     }
   },
   {
+    "id": "1231458473-test-loop",
+    "name": "test-loop",
+    "description": "name: test-loop",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/test-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1231458473-to-prd",
     "name": "to-prd",
     "description": "name: to-prd",
@@ -161,6 +229,40 @@
     "author": "alamops",
     "repository": "https://github.com/alamops/skills",
     "manifestPath": "skills/to-prd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-write-plan",
+    "name": "write-plan",
+    "description": "name: write-plan",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/write-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1231458473",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1231458473-write-tests",
+    "name": "write-tests",
+    "description": "name: write-tests",
+    "version": "1.0.0",
+    "author": "alamops",
+    "repository": "https://github.com/alamops/skills",
+    "manifestPath": "skills/write-tests",
     "isValid": true,
     "errors": [],
     "warnings": [],

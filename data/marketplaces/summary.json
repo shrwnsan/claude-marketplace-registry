@@ -1,72 +1,72 @@
 {
-  "totalFound": 682,
-  "withManifest": 411,
-  "lastUpdated": "2026-09-29T04:39:37.335Z",
+  "totalFound": 758,
+  "withManifest": 415,
+  "lastUpdated": "2026-09-30T04:23:39.078Z",
   "searchQuery": "",
   "languages": {
-    "Python": 205,
-    "Shell": 82,
-    "TypeScript": 73,
+    "Python": 228,
+    "Shell": 88,
+    "TypeScript": 86,
     "Rust": 14,
-    "JavaScript": 90,
-    "Go": 20,
-    "Unknown": 145,
-    "HTML": 32,
+    "JavaScript": 104,
+    "Go": 21,
+    "Unknown": 161,
+    "HTML": 35,
     "AMPL": 1,
     "C++": 2,
     "Swift": 3,
-    "Svelte": 1,
     "Jupyter Notebook": 2,
+    "C#": 2,
     "Astro": 1,
     "Perl": 1,
-    "C#": 2,
     "Ruby": 1,
     "Java": 2,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
+    "Svelte": 1,
     "Markdown": 1,
     "SCSS": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 269108,
+      "stars": 269712,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 178856,
+      "stars": 179036,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 75802,
+      "stars": 75907,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69635,
+      "stars": 69663,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37166,
+      "stars": 37207,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "daily",
-      "stars": 20083,
+      "stars": 20084,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12087,
+      "stars": 12090,
       "url": "https://github.com/kubeshark/kubeshark"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 10190,
+      "stars": 10193,
       "url": "https://github.com/BehiSecc/awesome-claude-skills"
     },
     {
@@ -75,9 +75,9 @@
       "url": "https://github.com/eze-is/web-access"
     },
     {
-      "name": "claude-octopus",
-      "stars": 4108,
-      "url": "https://github.com/nyldn/claude-octopus"
+      "name": "Awesome-AITools",
+      "stars": 6202,
+      "url": "https://github.com/ikaijua/Awesome-AITools"
     }
   ]
 }

@@ -1,0 +1,163 @@
+[
+  {
+    "id": "1190824514-durable-learning",
+    "name": "durable-learning",
+    "description": "Long-term memory your agents actually use: scored, namespaced learnings (one file each, safe for parallel agents), loaded at every session start, and hooks that keep the store script-owned.",
+    "version": "",
+    "author": "bwfnx",
+    "repository": "https://github.com/bwfnx/agent-skills",
+    "manifestPath": "./plugins/durable-learning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190824514",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1190824514-guardrails",
+    "name": "guardrails",
+    "description": "Hooks: destructive git asks first, CRLF-churn commits are refused, session start/end protocol, protected paths, big-file read guard. Configure per project with .claude/guardrails.json.",
+    "version": "",
+    "author": "bwfnx",
+    "repository": "https://github.com/bwfnx/agent-skills",
+    "manifestPath": "./plugins/guardrails",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190824514",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1190824514-advisor-skills",
+    "name": "advisor-skills",
+    "description": "Nine advisory and workflow skills: SBIR/STTR proposal review, funding-match packet, wiki interview, teardown, build verification audit, AI analyst, transcript-to-wiki pipeline, chief of staff, email follow-ups.",
+    "version": "",
+    "author": "bwfnx",
+    "repository": "https://github.com/bwfnx/agent-skills",
+    "manifestPath": "./plugins/advisor-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190824514",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1190824514-loops",
+    "name": "loops",
+    "description": "23 scheduled-task templates for a daily and weekly operating rhythm (daily brief, post-meeting sweep, weekly reports, wiki audits). Placeholders for your email, CRM, and workspace.",
+    "version": "",
+    "author": "bwfnx",
+    "repository": "https://github.com/bwfnx/agent-skills",
+    "manifestPath": "./plugins/loops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190824514",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1190824514-sbdc-toolkit",
+    "name": "sbdc-toolkit",
+    "description": "Maryland SBDC advisor toolkit: 14 skills for client follow-up emails, meeting notes, SOPs, underwriting, grants, business model canvas, TAM-SAM-SOM, marketing plans, proposals, success stories, referrals, and newsletters.",
+    "version": "",
+    "author": "bwfnx",
+    "repository": "https://github.com/bwfnx/agent-skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "bwfnx/sbdc-toolkit"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190824514",
+      "marketplaceName": "agent-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1190824514-competitive-research-analyst",
+    "name": "competitive-research-analyst",
+    "description": "name: competitive research analyst",
+    "version": "1.0.0",
+    "author": "bwfnx",
+    "repository": "https://github.com/bwfnx/agent-skills",
+    "manifestPath": "skills/competitive-research-analyst",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190824514",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190824514-episode-guide",
+    "name": "episode-guide",
+    "description": "name: episode-guide",
+    "version": "1.0.0",
+    "author": "bwfnx",
+    "repository": "https://github.com/bwfnx/agent-skills",
+    "manifestPath": "skills/episode-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190824514",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190824514-sbdc-workshops",
+    "name": "sbdc-workshops",
+    "description": "name: sbdc-workshops",
+    "version": "1.0.0",
+    "author": "bwfnx",
+    "repository": "https://github.com/bwfnx/agent-skills",
+    "manifestPath": "skills/sbdc-workshops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190824514",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1190824514-transcript-to-action-plan-email",
+    "name": "transcript-to-action-plan-email",
+    "description": "name: transcript-to-action-plan-email",
+    "version": "1.0.0",
+    "author": "bwfnx",
+    "repository": "https://github.com/bwfnx/agent-skills",
+    "manifestPath": "skills/transcript-to-action-plan-email",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1190824514",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]
