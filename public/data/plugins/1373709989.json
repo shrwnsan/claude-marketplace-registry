@@ -1,0 +1,189 @@
+[
+  {
+    "id": "1373709989-backend-patterns",
+    "name": "backend-patterns",
+    "description": "name: backend-patterns",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/backend-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-clickhouse-io",
+    "name": "clickhouse-io",
+    "description": "name: clickhouse-io",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/clickhouse-io",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-coding-standards",
+    "name": "coding-standards",
+    "description": "name: coding-standards",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/coding-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-continuous-learning",
+    "name": "continuous-learning",
+    "description": "name: continuous-learning",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/continuous-learning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-eval-harness",
+    "name": "eval-harness",
+    "description": "A formal evaluation framework for Claude Code sessions, implementing eval-driven development (EDD) principles.",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/eval-harness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-frontend-patterns",
+    "name": "frontend-patterns",
+    "description": "name: frontend-patterns",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/frontend-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-project-guidelines-example",
+    "name": "project-guidelines-example",
+    "description": "This is an example of a project-specific skill. Use this as a template for your own projects.",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/project-guidelines-example",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-security-review",
+    "name": "security-review",
+    "description": "name: security-review",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/security-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-strategic-compact",
+    "name": "strategic-compact",
+    "description": "name: strategic-compact",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/strategic-compact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-tdd-workflow",
+    "name": "tdd-workflow",
+    "description": "name: tdd-workflow",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/tdd-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1373709989-verification-loop",
+    "name": "verification-loop",
+    "description": "A comprehensive verification system for Claude Code sessions.",
+    "version": "1.0.0",
+    "author": "HABUBUSS",
+    "repository": "https://github.com/HABUBUSS/everything-claude-code",
+    "manifestPath": "skills/verification-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1373709989",
+      "marketplaceName": "everything-claude-code",
+      "hasSkillMd": true
+    }
+  }
+]

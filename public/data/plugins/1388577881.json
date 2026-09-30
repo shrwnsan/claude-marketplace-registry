@@ -1,0 +1,88 @@
+[
+  {
+    "id": "1388577881-open-voice-shield",
+    "name": "open-voice-shield",
+    "description": "Fraud verdicts, route checks and caller-ID verification for every SIP call, operated by Claude.",
+    "version": "",
+    "author": "ajamous",
+    "repository": "https://github.com/ajamous/open-voice-shield-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388577881",
+      "marketplaceName": "open-voice-shield-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1388577881-cli-verification",
+    "name": "cli-verification",
+    "description": "name: cli-verification",
+    "version": "1.0.0",
+    "author": "ajamous",
+    "repository": "https://github.com/ajamous/open-voice-shield-plugin",
+    "manifestPath": "skills/cli-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388577881",
+      "marketplaceName": "open-voice-shield-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388577881-fraud-review",
+    "name": "fraud-review",
+    "description": "name: fraud-review",
+    "version": "1.0.0",
+    "author": "ajamous",
+    "repository": "https://github.com/ajamous/open-voice-shield-plugin",
+    "manifestPath": "skills/fraud-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388577881",
+      "marketplaceName": "open-voice-shield-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388577881-onboard",
+    "name": "onboard",
+    "description": "name: onboard",
+    "version": "1.0.0",
+    "author": "ajamous",
+    "repository": "https://github.com/ajamous/open-voice-shield-plugin",
+    "manifestPath": "skills/onboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388577881",
+      "marketplaceName": "open-voice-shield-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388577881-route-test",
+    "name": "route-test",
+    "description": "name: route-test",
+    "version": "1.0.0",
+    "author": "ajamous",
+    "repository": "https://github.com/ajamous/open-voice-shield-plugin",
+    "manifestPath": "skills/route-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388577881",
+      "marketplaceName": "open-voice-shield-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

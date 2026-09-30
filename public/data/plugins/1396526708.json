@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1396526708-context-translator",
+    "name": "context-translator",
+    "description": "Translates text between any languages while keeping tone, formatting and meaning, with notes on tricky phrases.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/context-translator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396526708-cover-letter-writer",
+    "name": "cover-letter-writer",
+    "description": "Writes a tailored, concise cover letter from your resume and the job posting, in a natural voice.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/cover-letter-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396526708-email-writer-by-tone",
+    "name": "email-writer-by-tone",
+    "description": "Writes and replies to emails in the tone you choose, professional, polite, friendly or firm, clear and concise.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/email-writer-by-tone",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396526708-english-speaking-practice",
+    "name": "english-speaking-practice",
+    "description": "Practice English conversation at your level with gentle corrections after each reply and useful phrases.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/english-speaking-practice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396526708-flirty-reply-coach",
+    "name": "flirty-reply-coach",
+    "description": "Helps you write witty, respectful replies and openers for dating apps and chats, in your own voice.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/flirty-reply-coach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396526708-grammar-clarity-checker",
+    "name": "grammar-clarity-checker",
+    "description": "Fixes grammar, spelling and punctuation, explains each change and suggests clearer wording.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/grammar-clarity-checker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396526708-long-form-story-writer",
+    "name": "long-form-story-writer",
+    "description": "Writes long, coherent stories chapter by chapter from your premise, keeping characters and plot consistent.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/long-form-story-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396526708-prompt-improver",
+    "name": "prompt-improver",
+    "description": "Turns a rough request into a clear, structured prompt with role, context, constraints and output format.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/prompt-improver",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396526708-resume-tailor-job-match",
+    "name": "resume-tailor-job-match",
+    "description": "Tailors your resume to a specific job, scores the match and rewrites bullets with the right keywords for ATS.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/resume-tailor-job-match",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396526708-seo-article-writer-with-faq",
+    "name": "seo-article-writer-with-faq",
+    "description": "Writes search-optimized articles for a keyword with an outline, meta title, meta description and FAQ section.",
+    "version": "1.0.0",
+    "author": "SvyatoSllav",
+    "repository": "https://github.com/SvyatoSllav/claude-plugins",
+    "manifestPath": "./plugins/seo-article-writer-with-faq",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396526708",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

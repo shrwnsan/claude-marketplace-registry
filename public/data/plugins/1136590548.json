@@ -2,7 +2,7 @@
   {
     "id": "1136590548-ecc",
     "name": "ecc",
-    "description": "Harness-native ECC operator layer - 68 agents, 292 skills, 94 legacy command shims, reusable hooks, rules, selective install profiles, and production-ready workflows for Claude Code, Codex, OpenCode, Cursor, and related agent harnesses",
+    "description": "Harness-native ECC operator layer - 68 agents, 293 skills, 94 legacy command shims, reusable hooks, rules, selective install profiles, and production-ready workflows for Claude Code, Codex, OpenCode, Cursor, and related agent harnesses",
     "version": "2.2.2",
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
@@ -2262,6 +2262,23 @@
     }
   },
   {
+    "id": "1136590548-i18n-sync",
+    "name": "i18n-sync",
+    "description": "name: i18n-sync",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/i18n-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1136590548-inherit-legacy-style",
     "name": "inherit-legacy-style",
     "description": "name: inherit-legacy-style",
@@ -4151,7 +4168,7 @@
   {
     "id": "1136590548-scientific-db-pubmed-database",
     "name": "scientific-db-pubmed-database",
-    "description": "name: pubmed-database",
+    "description": "name: scientific-db-pubmed-database",
     "version": "1.0.0",
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
@@ -4168,7 +4185,7 @@
   {
     "id": "1136590548-scientific-db-uspto-database",
     "name": "scientific-db-uspto-database",
-    "description": "name: uspto-database",
+    "description": "name: scientific-db-uspto-database",
     "version": "1.0.0",
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
@@ -4185,7 +4202,7 @@
   {
     "id": "1136590548-scientific-pkg-gget",
     "name": "scientific-pkg-gget",
-    "description": "name: gget",
+    "description": "name: scientific-pkg-gget",
     "version": "1.0.0",
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
@@ -4202,7 +4219,7 @@
   {
     "id": "1136590548-scientific-thinking-literature-review",
     "name": "scientific-thinking-literature-review",
-    "description": "name: literature-review",
+    "description": "name: scientific-thinking-literature-review",
     "version": "1.0.0",
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
@@ -4219,7 +4236,7 @@
   {
     "id": "1136590548-scientific-thinking-scholar-evaluation",
     "name": "scientific-thinking-scholar-evaluation",
-    "description": "name: scholar-evaluation",
+    "description": "name: scientific-thinking-scholar-evaluation",
     "version": "1.0.0",
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
