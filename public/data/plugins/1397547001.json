@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1397547001-federal-law",
+    "name": "federal-law",
+    "description": "Find, read, and verify U.S. federal statutes and regulations from official sources: U.S. Code, CFR, Federal Register, public laws, and legislative history, with currency checks, as-of-date pulls, and pinpoint cites.",
+    "version": "1.0.3",
+    "author": "attorneynate",
+    "repository": "https://github.com/attorneynate/legal-skills",
+    "manifestPath": "./plugins/federal-law",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397547001",
+      "marketplaceName": "legal-skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

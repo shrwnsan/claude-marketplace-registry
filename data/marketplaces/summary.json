@@ -1,17 +1,17 @@
 {
-  "totalFound": 758,
-  "withManifest": 415,
-  "lastUpdated": "2026-09-30T04:23:39.078Z",
+  "totalFound": 809,
+  "withManifest": 429,
+  "lastUpdated": "2026-10-01T04:37:28.979Z",
   "searchQuery": "",
   "languages": {
-    "Python": 228,
-    "Shell": 88,
-    "TypeScript": 86,
+    "Python": 243,
+    "Shell": 94,
+    "TypeScript": 93,
     "Rust": 14,
-    "JavaScript": 104,
-    "Go": 21,
-    "Unknown": 161,
-    "HTML": 35,
+    "JavaScript": 119,
+    "Go": 22,
+    "Unknown": 163,
+    "HTML": 40,
     "AMPL": 1,
     "C++": 2,
     "Swift": 3,
@@ -31,27 +31,32 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 269712,
+      "stars": 270275,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179036,
+      "stars": 179208,
       "url": "https://github.com/anthropics/skills"
     },
     {
+      "name": "claude-mem",
+      "stars": 95036,
+      "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
       "name": "awesome-claude-skills",
-      "stars": 75907,
+      "stars": 76185,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69663,
+      "stars": 69696,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37207,
+      "stars": 37254,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -61,23 +66,18 @@
     },
     {
       "name": "kubeshark",
-      "stars": 12090,
+      "stars": 12093,
       "url": "https://github.com/kubeshark/kubeshark"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 10193,
+      "stars": 10195,
       "url": "https://github.com/BehiSecc/awesome-claude-skills"
     },
     {
       "name": "web-access",
       "stars": 9021,
       "url": "https://github.com/eze-is/web-access"
-    },
-    {
-      "name": "Awesome-AITools",
-      "stars": 6202,
-      "url": "https://github.com/ikaijua/Awesome-AITools"
     }
   ]
 }

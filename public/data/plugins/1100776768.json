@@ -3641,6 +3641,24 @@
     }
   },
   {
+    "id": "1100776768-math-proof",
+    "name": "math-proof",
+    "description": "Two skills for hard mathematics problems, each ending in a self-contained proof.md: /math-proof:solo has the session work the problem itself in stages with a notes file; /math-proof:siege works on it for hours in rounds of judge and worker sub-agents and says plainly what is and is not proved.",
+    "version": "",
+    "author": "Anthropic",
+    "repository": "https://github.com/anthropics/claude-plugins-official",
+    "manifestPath": "./plugins/math-proof",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1100776768",
+      "marketplaceName": "claude-plugins-official",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
     "id": "1100776768-mattpocock-skills",
     "name": "mattpocock-skills",
     "description": "Matt Pocock's agent skills for real engineering — grilling, spec/ticket flows, TDD, code review, domain modelling and more. Plug-and-play, not vibe coding.",

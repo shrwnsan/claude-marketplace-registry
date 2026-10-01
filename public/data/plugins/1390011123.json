@@ -32,5 +32,56 @@
       "marketplaceName": "styled-markdown",
       "hasSkillMd": true
     }
+  },
+  {
+    "id": "1390011123-smd-release",
+    "name": "smd-release",
+    "description": "name: smd-release",
+    "version": "1.0.0",
+    "author": "bislink360",
+    "repository": "https://github.com/bislink360/styled-markdown",
+    "manifestPath": ".claude/skills/smd-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1390011123",
+      "marketplaceName": "styled-markdown",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1390011123-sonarqube-scan",
+    "name": "sonarqube-scan",
+    "description": "name: sonarqube-scan",
+    "version": "1.0.0",
+    "author": "bislink360",
+    "repository": "https://github.com/bislink360/styled-markdown",
+    "manifestPath": ".claude/skills/sonarqube-scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1390011123",
+      "marketplaceName": "styled-markdown",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1390011123-version-control",
+    "name": "version-control",
+    "description": "name: version-control",
+    "version": "1.0.0",
+    "author": "bislink360",
+    "repository": "https://github.com/bislink360/styled-markdown",
+    "manifestPath": ".claude/skills/version-control",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1390011123",
+      "marketplaceName": "styled-markdown",
+      "hasSkillMd": true
+    }
   }
 ]

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1393402867-rez",
+    "name": "rez",
+    "description": "Rez package and environment management skills: core concepts, package.py authoring, commands(), the CLI, configuration and plugins, resolve internals, resolve-failure triage, and package authoring rules.",
+    "version": "",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1393402867-rez-cli",
+    "name": "rez-cli",
+    "description": "name: rez-cli",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-cli",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-config-plugins",
+    "name": "rez-config-plugins",
+    "description": "name: rez-config-plugins",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-config-plugins",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-core-concepts",
+    "name": "rez-core-concepts",
+    "description": "name: rez-core-concepts",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-core-concepts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-package-authoring",
+    "name": "rez-package-authoring",
+    "description": "name: rez-package-authoring",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-package-authoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-package-commands",
+    "name": "rez-package-commands",
+    "description": "name: rez-package-commands",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-package-commands",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-package-definition",
+    "name": "rez-package-definition",
+    "description": "name: rez-package-definition",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-package-definition",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-resolve-troubleshooting",
+    "name": "rez-resolve-troubleshooting",
+    "description": "name: rez-resolve-troubleshooting",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-resolve-troubleshooting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-resolve",
+    "name": "rez-resolve",
+    "description": "name: rez-resolve",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-resolve",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  }
+]

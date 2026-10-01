@@ -1,36 +1,36 @@
 {
-  "totalMarketplaces": 758,
-  "totalPlugins": 5486,
-  "validPlugins": 5486,
-  "lastUpdated": "2026-09-30T04:30:02.125Z",
+  "totalMarketplaces": 809,
+  "totalPlugins": 5597,
+  "validPlugins": 5597,
+  "lastUpdated": "2026-10-01T04:45:02.867Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 228
+      "count": 243
     },
     {
       "language": "Unknown",
-      "count": 161
+      "count": 163
     },
     {
       "language": "JavaScript",
-      "count": 104
+      "count": 119
     },
     {
       "language": "Shell",
-      "count": 88
+      "count": 94
     },
     {
       "language": "TypeScript",
-      "count": 86
+      "count": 93
     },
     {
       "language": "HTML",
-      "count": 35
+      "count": 40
     },
     {
       "language": "Go",
-      "count": 21
+      "count": 22
     },
     {
       "language": "Rust",
@@ -48,27 +48,32 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 269712,
+      "stars": 270275,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179036,
+      "stars": 179208,
       "url": "https://github.com/anthropics/skills"
     },
     {
+      "name": "claude-mem",
+      "stars": 95036,
+      "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
       "name": "awesome-claude-skills",
-      "stars": 75907,
+      "stars": 76185,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69663,
+      "stars": 69696,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37207,
+      "stars": 37254,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -78,75 +83,70 @@
     },
     {
       "name": "kubeshark",
-      "stars": 12090,
+      "stars": 12093,
       "url": "https://github.com/kubeshark/kubeshark"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 10193,
+      "stars": 10195,
       "url": "https://github.com/BehiSecc/awesome-claude-skills"
     },
     {
       "name": "web-access",
       "stars": 9021,
       "url": "https://github.com/eze-is/web-access"
-    },
-    {
-      "name": "Awesome-AITools",
-      "stars": 6202,
-      "url": "https://github.com/ikaijua/Awesome-AITools"
     }
   ],
   "recentActivity": [
     {
-      "name": "skill-audit-mcp",
-      "updatedAt": "2026-09-30T04:21:59Z",
-      "url": "https://github.com/eltociear/skill-audit-mcp"
-    },
-    {
       "name": "claude-code-plugins",
-      "updatedAt": "2026-09-30T04:21:23Z",
-      "url": "https://github.com/melodic-software/claude-code-plugins"
+      "updatedAt": "2026-10-01T04:36:35Z",
+      "url": "https://github.com/tomevault-io/claude-code-plugins"
     },
     {
-      "name": "how-i-make-videos-with-ai",
-      "updatedAt": "2026-09-30T04:19:15Z",
-      "url": "https://github.com/hubeiqiao/how-i-make-videos-with-ai"
+      "name": "kc-claude-plugins",
+      "updatedAt": "2026-10-01T04:35:43Z",
+      "url": "https://github.com/iamcxa/kc-claude-plugins"
+    },
+    {
+      "name": "pactflow-agent-skills",
+      "updatedAt": "2026-10-01T04:35:06Z",
+      "url": "https://github.com/pactflow/pactflow-agent-skills"
+    },
+    {
+      "name": "wu-hui-hua-xia-style",
+      "updatedAt": "2026-10-01T04:34:20Z",
+      "url": "https://github.com/cloudxys/wu-hui-hua-xia-style"
+    },
+    {
+      "name": "guided-meditation-skill",
+      "updatedAt": "2026-10-01T04:33:44Z",
+      "url": "https://github.com/donth77/guided-meditation-skill"
+    },
+    {
+      "name": "skinflint",
+      "updatedAt": "2026-10-01T04:32:18Z",
+      "url": "https://github.com/SkYn3t-Lab/skinflint"
     },
     {
       "name": "oh-my-openagent",
-      "updatedAt": "2026-09-30T04:18:45Z",
+      "updatedAt": "2026-10-01T04:32:14Z",
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
-      "name": "iPhone-Duo-Agent-Skill",
-      "updatedAt": "2026-09-30T04:17:38Z",
-      "url": "https://github.com/Urbanrenewalroridula3044/iPhone-Duo-Agent-Skill"
+      "name": "simple-host",
+      "updatedAt": "2026-10-01T04:32:10Z",
+      "url": "https://github.com/vineetu/simple-host"
     },
     {
-      "name": "swe-workflow-skills",
-      "updatedAt": "2026-09-30T04:17:24Z",
-      "url": "https://github.com/SWEStash/swe-workflow-skills"
+      "name": "styled-markdown",
+      "updatedAt": "2026-10-01T04:31:17Z",
+      "url": "https://github.com/bislink360/styled-markdown"
     },
     {
-      "name": "session-handoff",
-      "updatedAt": "2026-09-30T04:17:15Z",
-      "url": "https://github.com/draysen-yau/session-handoff"
-    },
-    {
-      "name": "everything-claude-code",
-      "updatedAt": "2026-09-30T04:17:01Z",
-      "url": "https://github.com/HABUBUSS/everything-claude-code"
-    },
-    {
-      "name": "claude-code-hooks-daemon",
-      "updatedAt": "2026-09-30T04:16:17Z",
-      "url": "https://github.com/Edmonds-Commerce-Limited/claude-code-hooks-daemon"
-    },
-    {
-      "name": "spam-filter-advisor-skill",
-      "updatedAt": "2026-09-30T04:16:09Z",
-      "url": "https://github.com/Samuellalight8026/spam-filter-advisor-skill"
+      "name": "oh",
+      "updatedAt": "2026-10-01T04:31:10Z",
+      "url": "https://github.com/hraness/oh"
     }
   ]
 }

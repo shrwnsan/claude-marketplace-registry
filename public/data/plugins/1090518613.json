@@ -1,0 +1,496 @@
+[
+  {
+    "id": "1090518613-agentops",
+    "name": "agentops",
+    "description": "Engineering guidance for coding agents: behavior-driven planning, shared domain language, independent validation, and reusable improvements.",
+    "version": "3.8.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1090518613-agent-native",
+    "name": "agent-native",
+    "description": "name: agent-native",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/agent-native",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-agy-native",
+    "name": "agy-native",
+    "description": "name: agy-native",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/agy-native",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-codex-exec",
+    "name": "codex-exec",
+    "description": "name: codex-exec",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/codex-exec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-council",
+    "name": "council",
+    "description": "name: council",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/council",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-craft-goal",
+    "name": "craft-goal",
+    "description": "name: craft-goal",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/craft-goal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-doc",
+    "name": "doc",
+    "description": "name: doc",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/doc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-domain",
+    "name": "domain",
+    "description": "name: domain",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/domain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-idea-genie",
+    "name": "idea-genie",
+    "description": "name: idea-genie",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/idea-genie",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-implement",
+    "name": "implement",
+    "description": "name: implement",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-interview",
+    "name": "interview",
+    "description": "name: interview",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/interview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-memory",
+    "name": "memory",
+    "description": "name: memory",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-navigate",
+    "name": "navigate",
+    "description": "name: navigate",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/navigate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-orchestrate",
+    "name": "orchestrate",
+    "description": "name: orchestrate",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/orchestrate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-plan",
+    "name": "plan",
+    "description": "name: plan",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-postmortem",
+    "name": "postmortem",
+    "description": "name: postmortem",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/postmortem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-premortem",
+    "name": "premortem",
+    "description": "name: premortem",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/premortem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-reality-check",
+    "name": "reality-check",
+    "description": "name: reality-check",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/reality-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-refactor",
+    "name": "refactor",
+    "description": "name: refactor",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/refactor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-research",
+    "name": "research",
+    "description": "name: research",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-reverse-engineer",
+    "name": "reverse-engineer",
+    "description": "name: reverse-engineer",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/reverse-engineer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-review",
+    "name": "review",
+    "description": "name: review",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-rpi",
+    "name": "rpi",
+    "description": "name: rpi",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/rpi",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-security",
+    "name": "security",
+    "description": "name: security",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-skill-builder",
+    "name": "skill-builder",
+    "description": "name: skill-builder",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/skill-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-skill-eval",
+    "name": "skill-eval",
+    "description": "name: skill-eval",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/skill-eval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-test",
+    "name": "test",
+    "description": "name: test",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-using-gc",
+    "name": "using-gc",
+    "description": "name: using-gc",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/using-gc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1090518613-validate",
+    "name": "validate",
+    "description": "name: validate",
+    "version": "1.0.0",
+    "author": "Boden Fuller",
+    "repository": "https://github.com/boshu2/agentops",
+    "manifestPath": "skills/validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090518613",
+      "marketplaceName": "agentops",
+      "hasSkillMd": true
+    }
+  }
+]

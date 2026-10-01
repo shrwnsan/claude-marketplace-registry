@@ -127,23 +127,6 @@
     }
   },
   {
-    "id": "1190824514-sbdc-workshops",
-    "name": "sbdc-workshops",
-    "description": "name: sbdc-workshops",
-    "version": "1.0.0",
-    "author": "bwfnx",
-    "repository": "https://github.com/bwfnx/agent-skills",
-    "manifestPath": "skills/sbdc-workshops",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1190824514",
-      "marketplaceName": "agent-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
     "id": "1190824514-transcript-to-action-plan-email",
     "name": "transcript-to-action-plan-email",
     "description": "name: transcript-to-action-plan-email",

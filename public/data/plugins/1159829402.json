@@ -18,13 +18,13 @@
     }
   },
   {
-    "id": "1159829402-headless-browser",
-    "name": "headless-browser",
-    "description": "name: headless-browser",
+    "id": "1159829402-agent-browser",
+    "name": "agent-browser",
+    "description": "name: agent-browser",
     "version": "1.0.0",
     "author": "Oxylabs",
     "repository": "https://github.com/oxylabs/agent-skills",
-    "manifestPath": "skills/headless-browser",
+    "manifestPath": "skills/agent-browser",
     "isValid": true,
     "errors": [],
     "warnings": [],
