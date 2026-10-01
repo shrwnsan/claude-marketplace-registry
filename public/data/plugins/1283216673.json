@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1283216673-plumb-line",
+    "name": "plumb-line",
+    "description": "plumb-line provenance — epistemic honesty enforced by tooling. Five skills (adopt, method, bootstrap, audit, remediate) plus the run-time provenance primitive for JavaScript and Python. Get oriented: run plumb-line-adopt first — it tells you which parts fit your repo.",
+    "version": "",
+    "author": "slopstopper",
+    "repository": "https://github.com/slopstopper/plumb-line",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283216673",
+      "marketplaceName": "plumb-line",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1283216673-plumb-line-adopt",
+    "name": "plumb-line-adopt",
+    "description": "name: plumb-line-adopt",
+    "version": "1.0.0",
+    "author": "slopstopper",
+    "repository": "https://github.com/slopstopper/plumb-line",
+    "manifestPath": "skills/plumb-line-adopt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283216673",
+      "marketplaceName": "plumb-line",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1283216673-plumb-line-audit",
+    "name": "plumb-line-audit",
+    "description": "name: plumb-line-audit",
+    "version": "1.0.0",
+    "author": "slopstopper",
+    "repository": "https://github.com/slopstopper/plumb-line",
+    "manifestPath": "skills/plumb-line-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283216673",
+      "marketplaceName": "plumb-line",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1283216673-plumb-line-bootstrap",
+    "name": "plumb-line-bootstrap",
+    "description": "name: plumb-line-bootstrap",
+    "version": "1.0.0",
+    "author": "slopstopper",
+    "repository": "https://github.com/slopstopper/plumb-line",
+    "manifestPath": "skills/plumb-line-bootstrap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283216673",
+      "marketplaceName": "plumb-line",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1283216673-plumb-line-method",
+    "name": "plumb-line-method",
+    "description": "name: plumb-line-method",
+    "version": "1.0.0",
+    "author": "slopstopper",
+    "repository": "https://github.com/slopstopper/plumb-line",
+    "manifestPath": "skills/plumb-line-method",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283216673",
+      "marketplaceName": "plumb-line",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1283216673-plumb-line-remediate",
+    "name": "plumb-line-remediate",
+    "description": "name: plumb-line-remediate",
+    "version": "1.0.0",
+    "author": "slopstopper",
+    "repository": "https://github.com/slopstopper/plumb-line",
+    "manifestPath": "skills/plumb-line-remediate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283216673",
+      "marketplaceName": "plumb-line",
+      "hasSkillMd": true
+    }
+  }
+]

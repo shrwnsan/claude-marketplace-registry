@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1215269686-deep-adr",
+    "name": "deep-adr",
+    "description": "Four co-thinking skills for ADRs: adr-discovery, draft-adr, adr-critique, c4-model.",
+    "version": "",
+    "author": "janmohammadi",
+    "repository": "https://github.com/janmohammadi/deep-adr",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215269686",
+      "marketplaceName": "deep-adr",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1215269686-adr-critique",
+    "name": "adr-critique",
+    "description": "name: adr-critique",
+    "version": "1.0.0",
+    "author": "janmohammadi",
+    "repository": "https://github.com/janmohammadi/deep-adr",
+    "manifestPath": "skills/adr-critique",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215269686",
+      "marketplaceName": "deep-adr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215269686-adr-discovery",
+    "name": "adr-discovery",
+    "description": "name: adr-discovery",
+    "version": "1.0.0",
+    "author": "janmohammadi",
+    "repository": "https://github.com/janmohammadi/deep-adr",
+    "manifestPath": "skills/adr-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215269686",
+      "marketplaceName": "deep-adr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215269686-c4-model",
+    "name": "c4-model",
+    "description": "name: c4-model",
+    "version": "1.0.0",
+    "author": "janmohammadi",
+    "repository": "https://github.com/janmohammadi/deep-adr",
+    "manifestPath": "skills/c4-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215269686",
+      "marketplaceName": "deep-adr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215269686-draft-adr",
+    "name": "draft-adr",
+    "description": "name: draft-adr",
+    "version": "1.0.0",
+    "author": "janmohammadi",
+    "repository": "https://github.com/janmohammadi/deep-adr",
+    "manifestPath": "skills/draft-adr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215269686",
+      "marketplaceName": "deep-adr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215269686-grill-me",
+    "name": "grill-me",
+    "description": "name: grill-me",
+    "version": "1.0.0",
+    "author": "janmohammadi",
+    "repository": "https://github.com/janmohammadi/deep-adr",
+    "manifestPath": ".claude/skills/grill-me",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215269686",
+      "marketplaceName": "deep-adr",
+      "hasSkillMd": true
+    }
+  }
+]

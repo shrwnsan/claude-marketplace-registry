@@ -1,0 +1,190 @@
+[
+  {
+    "id": "1348643808-squad-skills",
+    "name": "squad-skills",
+    "description": "Engineering roles as skills, each also installed as a subagent in the same step.",
+    "version": "",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1348643808-squad-backend",
+    "name": "squad-backend",
+    "description": "name: squad-backend",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squad-backend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1348643808-squad-code-review",
+    "name": "squad-code-review",
+    "description": "name: squad-code-review",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squad-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1348643808-squad-designer",
+    "name": "squad-designer",
+    "description": "name: squad-designer",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squad-designer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1348643808-squad-devops",
+    "name": "squad-devops",
+    "description": "name: squad-devops",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squad-devops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1348643808-squad-fix",
+    "name": "squad-fix",
+    "description": "name: squad-fix",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squad-fix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1348643808-squad-frontend",
+    "name": "squad-frontend",
+    "description": "name: squad-frontend",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squad-frontend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1348643808-squad-mobile",
+    "name": "squad-mobile",
+    "description": "name: squad-mobile",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squad-mobile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1348643808-squad-product",
+    "name": "squad-product",
+    "description": "name: squad-product",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squad-product",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1348643808-squad-qa",
+    "name": "squad-qa",
+    "description": "name: squad-qa",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squad-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1348643808-squads-team",
+    "name": "squads-team",
+    "description": "name: squads-team",
+    "version": "1.0.0",
+    "author": "danh121097",
+    "repository": "https://github.com/danh121097/squad-skills",
+    "manifestPath": "skills/squads-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1348643808",
+      "marketplaceName": "squad-skills",
+      "hasSkillMd": true
+    }
+  }
+]

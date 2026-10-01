@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1048065319-claude-mem",
+    "name": "claude-mem",
+    "description": "Persistent memory system for Claude Code - context compression across sessions",
+    "version": "13.28.0",
+    "author": "thedotmack",
+    "repository": "https://github.com/thedotmack/claude-mem",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1048065319",
+      "marketplaceName": "claude-mem",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1048065319-claude-mem-cowork",
+    "name": "claude-mem-cowork",
+    "description": "Claude-Mem for Cowork (Claude app cloud sessions) - hooks stream tool use to cmem.ai and inject observations into new sessions and agents",
+    "version": "0.1.3",
+    "author": "thedotmack",
+    "repository": "https://github.com/thedotmack/claude-mem",
+    "manifestPath": "./cowork",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1048065319",
+      "marketplaceName": "claude-mem",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

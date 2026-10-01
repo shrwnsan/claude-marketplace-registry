@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1184519687-google-drive-upload",
+    "name": "google-drive-upload",
+    "description": "Upload files directly from Claude to Google Drive. No OAuth, no complex API - just a simple Google Apps Script.",
+    "version": "1.0.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/google-drive-upload-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1184519687",
+      "marketplaceName": "google-drive-upload-plugin",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

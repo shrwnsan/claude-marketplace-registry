@@ -1,0 +1,329 @@
+[
+  {
+    "id": "1185078698-atlassian",
+    "name": "atlassian",
+    "description": "Use Jira and Confluence from agent workflows.",
+    "version": "2.0.1",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/atlassian",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-google-workspace",
+    "name": "google-workspace",
+    "description": "Use Gmail and Calendar through gws.",
+    "version": "1.0.1",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/google-workspace",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-research",
+    "name": "research",
+    "description": "Research complex topics and produce sourced reports.",
+    "version": "2.1.2",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-writing",
+    "name": "writing",
+    "description": "Ghostwrite pieces from the owner's own facts, or get coached to write them yourself.",
+    "version": "3.0.0",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-runtime-bridge",
+    "name": "runtime-bridge",
+    "description": "Align Claude Code and Codex project configuration.",
+    "version": "0.1.1",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/runtime-bridge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-agent-system-management",
+    "name": "agent-system-management",
+    "description": "Audit AGENTS.md / CLAUDE.md, capture session learnings, and create Claude Code / Codex skills.",
+    "version": "0.5.2",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/agent-system-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-workbench",
+    "name": "workbench",
+    "description": "Personal Workbench skills for design and autonomous feature work.",
+    "version": "1.1.0",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/workbench",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-terminal",
+    "name": "terminal",
+    "description": "Control interactive terminal programs through tmux.",
+    "version": "0.1.0",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/terminal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-frontend-design",
+    "name": "frontend-design",
+    "description": "Create distinctive, production-grade frontend interfaces with deep UI craft and animation discipline.",
+    "version": "0.2.2",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-playground",
+    "name": "playground",
+    "description": "Generate interactive single-file HTML playgrounds with controls, live preview, and copy-out prompt for two-way feedback with the model.",
+    "version": "0.1.1",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/playground",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-databricks",
+    "name": "databricks",
+    "description": "Databricks skills: databricks-core (CLI, auth, profiles, ported from databricks/databricks-agent-skills) and databricks-docs (live docs.databricks.com lookups via WebFetch).",
+    "version": "0.3.1",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/databricks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-learning",
+    "name": "learning",
+    "description": "Socratic teach-and-quiz skills plus a pre-work blind-spot survey, so you deeply understand a session, a topic, or an unfamiliar area.",
+    "version": "0.2.1",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/learning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-critique",
+    "name": "critique",
+    "description": "Critique ideas, plans, and decisions through independent thinking frames, one fresh subagent each, with verdicts shown word for word and one decision.",
+    "version": "0.1.0",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/critique",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-presentations",
+    "name": "presentations",
+    "description": "Presentation lifecycle skills: content design, HTML deck building with brand presets and a perfecting loop, native PPTX export, and preset extraction.",
+    "version": "0.3.2",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/presentations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-diagrams",
+    "name": "diagrams",
+    "description": "Draw validated, themeable architecture and flow diagrams as interactive HTML.",
+    "version": "0.1.0",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/diagrams",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-prose-styles",
+    "name": "prose-styles",
+    "description": "Claude Code output styles that govern prose: Orwell's six rules, extreme concision, Simplified Technical English, and a combined house style.",
+    "version": "0.1.0",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/prose-styles",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-ponytail",
+    "name": "ponytail",
+    "description": "Lazy senior dev mode. Forces the simplest, shortest solution that actually works: YAGNI, stdlib first, no unrequested abstractions. Tracked upstream, not vendored.",
+    "version": "",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/DietrichGebert/ponytail.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1185078698-deprecated",
+    "name": "deprecated",
+    "description": "Archive of superseded skills kept installable for old workflows; every skill points at its replacement.",
+    "version": "0.3.0",
+    "author": "pgoell",
+    "repository": "https://github.com/pgoell/pgoell-claude-tools",
+    "manifestPath": "./plugins/deprecated",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1185078698",
+      "marketplaceName": "pgoell-claude-tools",
+      "skills": [],
+      "strict": false
+    }
+  }
+]
