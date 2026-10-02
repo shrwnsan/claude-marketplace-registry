@@ -188,6 +188,23 @@
     }
   },
   {
+    "id": "1192096446-planr-delegate",
+    "name": "planr-delegate",
+    "description": "name: planr-delegate",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-delegate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1192096446-planr-design-loop",
     "name": "planr-design-loop",
     "description": "name: planr-design-loop",

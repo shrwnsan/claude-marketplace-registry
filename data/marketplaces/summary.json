@@ -1,17 +1,17 @@
 {
-  "totalFound": 809,
-  "withManifest": 429,
-  "lastUpdated": "2026-10-01T04:37:28.979Z",
+  "totalFound": 843,
+  "withManifest": 433,
+  "lastUpdated": "2026-10-02T04:31:23.367Z",
   "searchQuery": "",
   "languages": {
-    "Python": 243,
-    "Shell": 94,
-    "TypeScript": 93,
-    "Rust": 14,
-    "JavaScript": 119,
+    "Python": 252,
+    "Shell": 97,
+    "Rust": 16,
+    "TypeScript": 98,
+    "JavaScript": 123,
     "Go": 22,
-    "Unknown": 163,
-    "HTML": 40,
+    "Unknown": 170,
+    "HTML": 41,
     "AMPL": 1,
     "C++": 2,
     "Swift": 3,
@@ -20,7 +20,9 @@
     "Astro": 1,
     "Perl": 1,
     "Ruby": 1,
-    "Java": 2,
+    "CSS": 1,
+    "Java": 3,
+    "PowerShell": 1,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
@@ -31,12 +33,12 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 270275,
+      "stars": 270767,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179208,
+      "stars": 179341,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -46,7 +48,7 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76185,
+      "stars": 76326,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
@@ -56,22 +58,22 @@
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37254,
+      "stars": 37301,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
       "name": "daily",
-      "stars": 20084,
+      "stars": 20087,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12093,
+      "stars": 12094,
       "url": "https://github.com/kubeshark/kubeshark"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 10195,
+      "stars": 10198,
       "url": "https://github.com/BehiSecc/awesome-claude-skills"
     },
     {
