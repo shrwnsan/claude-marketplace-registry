@@ -1,18 +1,36 @@
 [
   {
-    "id": "1399094424-claude-music",
-    "name": "claude-music",
+    "id": "1399094424-cmusic",
+    "name": "cmusic",
     "description": "Background music for Claude Code: play YouTube audio with /music, or let Claude pick songs for your mood.",
     "version": "",
     "author": "tungnt1203",
-    "repository": "https://github.com/tungnt1203/claude-music",
+    "repository": "https://github.com/tungnt1203/cmusic",
     "manifestPath": "./",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1399094424",
-      "marketplaceName": "claude-music",
+      "marketplaceName": "cmusic",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1399094424-cmusic-lyrics",
+    "name": "cmusic-lyrics",
+    "description": "Shows cmusic's track, a progress bar and the lyric being sung under the prompt; /lyrics opens a karaoke pane. Needs the cmusic plugin.",
+    "version": "",
+    "author": "tungnt1203",
+    "repository": "https://github.com/tungnt1203/cmusic",
+    "manifestPath": "./plugins/cmusic-lyrics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1399094424",
+      "marketplaceName": "cmusic",
       "skills": [],
       "strict": false
     }
@@ -23,14 +41,14 @@
     "description": "name: music",
     "version": "1.0.0",
     "author": "tungnt1203",
-    "repository": "https://github.com/tungnt1203/claude-music",
+    "repository": "https://github.com/tungnt1203/cmusic",
     "manifestPath": "skills/music",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1399094424",
-      "marketplaceName": "claude-music",
+      "marketplaceName": "cmusic",
       "hasSkillMd": true
     }
   }

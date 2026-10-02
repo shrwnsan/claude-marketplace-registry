@@ -1,0 +1,227 @@
+[
+  {
+    "id": "1302754015-remotion",
+    "name": "remotion",
+    "description": "Create programmatic videos with Remotion and React",
+    "version": "",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": {
+      "source": "github",
+      "repo": "remotion-dev/claude-code-plugin"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1302754015-remotion-best-practices",
+    "name": "remotion-best-practices",
+    "description": "name: remotion-best-practices",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-captions",
+    "name": "remotion-captions",
+    "description": "name: remotion-captions",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-captions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-create",
+    "name": "remotion-create",
+    "description": "name: remotion-create",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-docs",
+    "name": "remotion-docs",
+    "description": "name: remotion-docs",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-interactivity",
+    "name": "remotion-interactivity",
+    "description": "name: remotion-interactivity",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-interactivity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-maps",
+    "name": "remotion-maps",
+    "description": "name: remotion-maps",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-maps",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-markup",
+    "name": "remotion-markup",
+    "description": "name: remotion-markup",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-markup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-multimedia",
+    "name": "remotion-multimedia",
+    "description": "name: remotion-multimedia",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-multimedia",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-render",
+    "name": "remotion-render",
+    "description": "name: remotion-render",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-render",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-saas",
+    "name": "remotion-saas",
+    "description": "name: remotion-saas",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-saas",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-studio",
+    "name": "remotion-studio",
+    "description": "name: remotion-studio",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-studio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1302754015-remotion-upgrade",
+    "name": "remotion-upgrade",
+    "description": "name: remotion-upgrade",
+    "version": "1.0.0",
+    "author": "Remotion",
+    "repository": "https://github.com/remotion-dev/claude-code-plugin",
+    "manifestPath": "skills/remotion-upgrade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1302754015",
+      "marketplaceName": "claude-code-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

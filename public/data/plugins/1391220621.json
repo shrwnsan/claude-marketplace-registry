@@ -322,5 +322,41 @@
       "skills": [],
       "strict": false
     }
+  },
+  {
+    "id": "1391220621-repo-health-check",
+    "name": "repo-health-check",
+    "description": "A transparent 0-100 health score for any public GitHub, GitLab or Bitbucket repo, with the formula behind every finding.",
+    "version": "0.2.1+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/repo-health-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1391220621-webpage-xray",
+    "name": "webpage-xray",
+    "description": "X-ray any page: SEO, accessibility, security, speed, UX, AI-search readiness and the hidden issues nobody checks",
+    "version": "0.1.0+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/webpage-xray",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
   }
 ]

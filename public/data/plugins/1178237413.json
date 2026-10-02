@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1178237413-openehr-assistant",
+    "name": "openehr-assistant",
+    "description": "openEHR clinical modeling for AI assistants — archetypes, templates, compositions, AQL, CKM reuse search, and specification lookup.",
+    "version": "0.9.2",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/openehr-assistant-plugin",
+      "ref": "v0.9.2"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1178237413-openehr-assistant-dev",
+    "name": "openehr-assistant-dev",
+    "description": "Maintainer plugin for developing the openEHR Assistant MCP server and plugin — authoring guides, prompts, MCP tools, examples, and managing releases",
+    "version": "0.3.0",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/openehr-assistant-dev-plugin",
+      "ref": "v0.3.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1178237413-go-coding",
+    "name": "go-coding",
+    "description": "Idiomatic Go coding standards for AI assistants — formatting, errors, concurrency, testing, layout.",
+    "version": "0.6.1",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/go-coding-plugin",
+      "ref": "v0.6.1"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1178237413-php-coding",
+    "name": "php-coding",
+    "description": "Idiomatic PHP coding standards for AI assistants — PHP 8.4+, PER Coding Style, PHPStan level 8.",
+    "version": "0.1.0",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/php-coding-plugin",
+      "ref": "v0.1.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1178237413-sdd",
+    "name": "sdd",
+    "description": "Spec-Driven Development for AI assistants — requirements, RFC-2119 specs, and ADRs with stable identifiers, machine-checked traceability, and the delivery pipeline that runs on them: workers, review into a findings file, close-out; two profiles.",
+    "version": "0.9.0",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/sdd-plugin",
+      "ref": "v0.9.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1178237413-docs-editing",
+    "name": "docs-editing",
+    "description": "Human-facing documentation and content standards for AI assistants: technical writing, copy editing, AI-tell cleanup, marketing copy, SEO and AI citability, with claims grounded in cited evidence.",
+    "version": "0.4.1",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/docs-editing-plugin",
+      "ref": "v0.4.1"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1399637883-weise",
+    "name": "weise",
+    "description": "A tutor that teaches while you work: learn a tool or field on your real project, with explanations from scratch, a growing learning path and recall cards. Files stay local.",
+    "version": "",
+    "author": "JasonDavid77",
+    "repository": "https://github.com/JasonDavid77/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/JasonDavid77/der-weise.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1399637883",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

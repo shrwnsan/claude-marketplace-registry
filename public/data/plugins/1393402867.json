@@ -120,6 +120,57 @@
     }
   },
   {
+    "id": "1393402867-rez-package-pitfalls",
+    "name": "rez-package-pitfalls",
+    "description": "name: rez-package-pitfalls",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-package-pitfalls",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-pip-integration",
+    "name": "rez-pip-integration",
+    "description": "name: rez-pip-integration",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-pip-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-python-api",
+    "name": "rez-python-api",
+    "description": "name: rez-python-api",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-python-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1393402867-rez-resolve-troubleshooting",
     "name": "rez-resolve-troubleshooting",
     "description": "name: rez-resolve-troubleshooting",
@@ -144,6 +195,23 @@
     "author": "loonghao",
     "repository": "https://github.com/loonghao/rez-skills",
     "manifestPath": "skills/rez-resolve",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-suites-bundles",
+    "name": "rez-suites-bundles",
+    "description": "name: rez-suites-bundles",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-suites-bundles",
     "isValid": true,
     "errors": [],
     "warnings": [],

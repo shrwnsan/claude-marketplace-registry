@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1395446094-video-kit",
+    "name": "video-kit",
+    "description": "Make launch videos, feature teasers, social clips and what's-new videos for your product, from its code or just its website, scene by scene or cinematic with 3D, silent or narrated, then watch and tweak them live in your browser: /video-kit:make, /video-kit:website, /video-kit:voiceover and /video-kit:changelog. Built for anyone, no video skills needed.",
+    "version": "",
+    "author": "Dodera Software",
+    "repository": "https://github.com/Dodera-Software/claude-plugins",
+    "manifestPath": "./plugins/video-kit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395446094",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1395446094-pr-podcast",
+    "name": "pr-podcast",
+    "description": "Turn a pull request, today's commits, a release or a date range into a 3–5 minute two-voice audio episode: what changed, why, and what's risky. Listen before opening the diff, play it at standup, or catch up after time off. Recorded on your computer with free, open voices: /pr-podcast:make, /pr-podcast:standup, /pr-podcast:release and /pr-podcast:catchup.",
+    "version": "",
+    "author": "Dodera Software",
+    "repository": "https://github.com/Dodera-Software/claude-plugins",
+    "manifestPath": "./plugins/pr-podcast",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395446094",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

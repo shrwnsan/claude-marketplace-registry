@@ -1,33 +1,33 @@
 {
   "stats": {
-    "totalMarketplaces": 809,
-    "totalPlugins": 5597,
-    "validPlugins": 5597,
-    "lastUpdated": "2026-10-01T04:45:02.867Z",
+    "totalMarketplaces": 843,
+    "totalPlugins": 5641,
+    "validPlugins": 5641,
+    "lastUpdated": "2026-10-02T04:39:42.587Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 243
+        "count": 252
       },
       {
         "language": "Unknown",
-        "count": 163
+        "count": 170
       },
       {
         "language": "JavaScript",
-        "count": 119
-      },
-      {
-        "language": "Shell",
-        "count": 94
+        "count": 123
       },
       {
         "language": "TypeScript",
-        "count": 93
+        "count": 98
+      },
+      {
+        "language": "Shell",
+        "count": 97
       },
       {
         "language": "HTML",
-        "count": 40
+        "count": 41
       },
       {
         "language": "Go",
@@ -35,26 +35,26 @@
       },
       {
         "language": "Rust",
-        "count": 14
+        "count": 16
       },
       {
         "language": "Swift",
         "count": 3
       },
       {
-        "language": "C++",
-        "count": 2
+        "language": "Java",
+        "count": 3
       }
     ],
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 270275,
+        "stars": 270767,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 179208,
+        "stars": 179341,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,7 +64,7 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 76185,
+        "stars": 76326,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
@@ -74,22 +74,22 @@
       },
       {
         "name": "claude-plugins-official",
-        "stars": 37254,
+        "stars": 37301,
         "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
         "name": "daily",
-        "stars": 20084,
+        "stars": 20087,
         "url": "https://github.com/dailydotdev/daily"
       },
       {
         "name": "kubeshark",
-        "stars": 12093,
+        "stars": 12094,
         "url": "https://github.com/kubeshark/kubeshark"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 10195,
+        "stars": 10198,
         "url": "https://github.com/BehiSecc/awesome-claude-skills"
       },
       {
@@ -101,53 +101,53 @@
     "recentActivity": [
       {
         "name": "claude-code-plugins",
-        "updatedAt": "2026-10-01T04:36:35Z",
+        "updatedAt": "2026-10-02T04:30:21Z",
         "url": "https://github.com/tomevault-io/claude-code-plugins"
       },
       {
-        "name": "kc-claude-plugins",
-        "updatedAt": "2026-10-01T04:35:43Z",
-        "url": "https://github.com/iamcxa/kc-claude-plugins"
+        "name": "trump-skill",
+        "updatedAt": "2026-10-02T04:29:22Z",
+        "url": "https://github.com/Hankfirm386/trump-skill"
       },
       {
-        "name": "pactflow-agent-skills",
-        "updatedAt": "2026-10-01T04:35:06Z",
-        "url": "https://github.com/pactflow/pactflow-agent-skills"
+        "name": "research-skills-guide",
+        "updatedAt": "2026-10-02T04:29:14Z",
+        "url": "https://github.com/khoman9874/research-skills-guide"
       },
       {
-        "name": "wu-hui-hua-xia-style",
-        "updatedAt": "2026-10-01T04:34:20Z",
-        "url": "https://github.com/cloudxys/wu-hui-hua-xia-style"
+        "name": "caveman",
+        "updatedAt": "2026-10-02T04:28:56Z",
+        "url": "https://github.com/noman3271/caveman"
       },
       {
-        "name": "guided-meditation-skill",
-        "updatedAt": "2026-10-01T04:33:44Z",
-        "url": "https://github.com/donth77/guided-meditation-skill"
+        "name": "cmusic",
+        "updatedAt": "2026-10-02T04:28:46Z",
+        "url": "https://github.com/tungnt1203/cmusic"
       },
       {
-        "name": "skinflint",
-        "updatedAt": "2026-10-01T04:32:18Z",
-        "url": "https://github.com/SkYn3t-Lab/skinflint"
+        "name": "claude-java-plugins",
+        "updatedAt": "2026-10-02T04:28:42Z",
+        "url": "https://github.com/limited-grisaille833/claude-java-plugins"
       },
       {
-        "name": "oh-my-openagent",
-        "updatedAt": "2026-10-01T04:32:14Z",
-        "url": "https://github.com/code-yeongyu/oh-my-openagent"
+        "name": "learn-from-claudecode",
+        "updatedAt": "2026-10-02T04:28:35Z",
+        "url": "https://github.com/seductive-bercy787/learn-from-claudecode"
       },
       {
-        "name": "simple-host",
-        "updatedAt": "2026-10-01T04:32:10Z",
-        "url": "https://github.com/vineetu/simple-host"
+        "name": "claude-code-pet-system-analysis",
+        "updatedAt": "2026-10-02T04:28:18Z",
+        "url": "https://github.com/Previous-shunt800/claude-code-pet-system-analysis"
       },
       {
-        "name": "styled-markdown",
-        "updatedAt": "2026-10-01T04:31:17Z",
-        "url": "https://github.com/bislink360/styled-markdown"
+        "name": "openalex-skill",
+        "updatedAt": "2026-10-02T04:28:10Z",
+        "url": "https://github.com/Out-bloodspavin173/openalex-skill"
       },
       {
-        "name": "oh",
-        "updatedAt": "2026-10-01T04:31:10Z",
-        "url": "https://github.com/hraness/oh"
+        "name": "mcpx",
+        "updatedAt": "2026-10-02T04:28:08Z",
+        "url": "https://github.com/afiabatool067-png/mcpx"
       }
     ]
   },
@@ -155,33 +155,33 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 395
+      "count": 415
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 131
+      "count": 137
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 259
+      "count": 267
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 35
+      "count": 37
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 24
+      "count": 26
     },
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 17
+      "count": 21
     }
   ],
-  "lastUpdated": "2026-10-01T04:45:02.867Z"
+  "lastUpdated": "2026-10-02T04:39:42.587Z"
 }
