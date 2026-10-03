@@ -7,8 +7,9 @@
     "author": "ajitta",
     "repository": "https://github.com/ajitta/claude-plugins",
     "manifestPath": {
-      "source": "url",
-      "url": "https://github.com/ajitta/Game-Engagement-Retention-Skills.git"
+      "source": "git-subdir",
+      "url": "https://github.com/ajitta/Game-Engagement-Retention-Skills.git",
+      "path": "plugin"
     },
     "isValid": true,
     "errors": [],

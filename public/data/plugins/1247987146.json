@@ -1,0 +1,1251 @@
+[
+  {
+    "id": "1247987146-suede-skills",
+    "name": "suede-skills",
+    "description": "Open-source AI skills for SEO, marketing, and business operations in Claude Code and Codex. Installs the complete pack, including code review, app delivery, and creator workflows.",
+    "version": "",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "skills": [],
+      "strict": true
+    }
+  },
+  {
+    "id": "1247987146-suede-agent-workflows",
+    "name": "suede-agent-workflows",
+    "description": "Multi-agent orchestration subset: search competing plans and ship one selected repo change through the Suede Thought Graph DAG (suede-graph-flo-xr), coordinate build lanes with quality gates and a signed handoff (suede-agent-teams), route cross-surface work end to end (suede-workflow-skills), and turn AI features into eval specs and acceptance gates (suede-ai-eval).",
+    "version": "",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "./skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "skills": [
+        "./suede-graph-flo-xr",
+        "./suede-ship-copy",
+        "./suede-agent-teams",
+        "./suede-workflow-skills",
+        "./suede-ai-eval"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247987146-suede-code",
+    "name": "suede-code",
+    "description": "Code quality subset: one-pass review plus an A-F ship verdict (suede-code), deep findings with TypeScript, React, Next.js, OWASP, and database checklists (suede-code-review), a grade-only verdict with instant-F triggers and grade caps (suede-code-grader), and CI branch protection that gates the merge (suede-ci-gate).",
+    "version": "",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "./skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "skills": [
+        "./suede-code",
+        "./suede-code-review",
+        "./suede-code-grader",
+        "./suede-ci-gate"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247987146-suede-marketing",
+    "name": "suede-marketing",
+    "description": "Suede marketing and growth subset: paid acquisition and outbound, monetisation (pricing, offers, paywalls), lifecycle and retention, and the measurement and operations layer. Licensed source acknowledgements remain at repository level.",
+    "version": "",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "./skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "skills": [
+        "./suede-ab-testing",
+        "./suede-ad-creative",
+        "./suede-ads",
+        "./suede-ai-seo",
+        "./suede-analytics",
+        "./suede-aso",
+        "./suede-attribution",
+        "./suede-churn-prevention",
+        "./suede-co-marketing",
+        "./suede-cold-email",
+        "./suede-community-marketing",
+        "./suede-competitor-profiling",
+        "./suede-competitors",
+        "./suede-clip-to-guide",
+        "./suede-content-strategy",
+        "./suede-customer-research",
+        "./suede-directory-submissions",
+        "./suede-emails",
+        "./suede-free-tools",
+        "./suede-image",
+        "./suede-instagram-growth",
+        "./suede-lead-magnets",
+        "./suede-marketing-council",
+        "./suede-marketing-ideas",
+        "./suede-marketing-loops",
+        "./suede-marketing-plan",
+        "./suede-marketing-psychology",
+        "./suede-newsroom",
+        "./suede-offers",
+        "./suede-onboarding",
+        "./suede-paywalls",
+        "./suede-pricing",
+        "./suede-product-marketing",
+        "./suede-programmatic-seo",
+        "./suede-prospecting",
+        "./suede-public-relations",
+        "./suede-referrals",
+        "./suede-revops",
+        "./suede-sales-enablement",
+        "./suede-signup",
+        "./suede-sms",
+        "./suede-social",
+        "./suede-video"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1247987146-amazon-returns-recovery",
+    "name": "amazon-returns-recovery",
+    "description": "name: amazon-returns-recovery",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/amazon-returns-recovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-android-app-factory",
+    "name": "android-app-factory",
+    "description": "name: android-app-factory",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/android-app-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-johnny-suede-design",
+    "name": "johnny-suede-design",
+    "description": "name: johnny-suede-design",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/johnny-suede-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-johnny-suede-write",
+    "name": "johnny-suede-write",
+    "description": "name: johnny-suede-write",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/johnny-suede-write",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-site-to-ios-app",
+    "name": "site-to-ios-app",
+    "description": "name: site-to-ios-app",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/site-to-ios-app",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-subscription-recovery",
+    "name": "subscription-recovery",
+    "description": "name: subscription-recovery",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/subscription-recovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-ab-testing",
+    "name": "suede-ab-testing",
+    "description": "name: suede-ab-testing",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-ab-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-ad-creative",
+    "name": "suede-ad-creative",
+    "description": "name: suede-ad-creative",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-ad-creative",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-ads",
+    "name": "suede-ads",
+    "description": "name: suede-ads",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-ads",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-agent-teams",
+    "name": "suede-agent-teams",
+    "description": "name: suede-agent-teams",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-agent-teams",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-ai-eval",
+    "name": "suede-ai-eval",
+    "description": "name: suede-ai-eval",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-ai-eval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-ai-seo",
+    "name": "suede-ai-seo",
+    "description": "name: suede-ai-seo",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-ai-seo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-analytics",
+    "name": "suede-analytics",
+    "description": "name: suede-analytics",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-analytics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-aso",
+    "name": "suede-aso",
+    "description": "name: suede-aso",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-aso",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-attribution",
+    "name": "suede-attribution",
+    "description": "name: suede-attribution",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-attribution",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-campaign-in-a-box",
+    "name": "suede-campaign-in-a-box",
+    "description": "name: suede-campaign-in-a-box",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-campaign-in-a-box",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-churn-prevention",
+    "name": "suede-churn-prevention",
+    "description": "name: suede-churn-prevention",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-churn-prevention",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-ci-gate",
+    "name": "suede-ci-gate",
+    "description": "name: suede-ci-gate",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-ci-gate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-clip-to-guide",
+    "name": "suede-clip-to-guide",
+    "description": "name: suede-clip-to-guide",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-clip-to-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-co-marketing",
+    "name": "suede-co-marketing",
+    "description": "name: suede-co-marketing",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-co-marketing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-code-grader",
+    "name": "suede-code-grader",
+    "description": "name: suede-code-grader",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-code-grader",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-code-review",
+    "name": "suede-code-review",
+    "description": "name: suede-code-review",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-cold-email",
+    "name": "suede-cold-email",
+    "description": "name: suede-cold-email",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-cold-email",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-community-marketing",
+    "name": "suede-community-marketing",
+    "description": "name: suede-community-marketing",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-community-marketing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-competitor-profiling",
+    "name": "suede-competitor-profiling",
+    "description": "name: suede-competitor-profiling",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-competitor-profiling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-competitors",
+    "name": "suede-competitors",
+    "description": "name: suede-competitors",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-competitors",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-content-strategy",
+    "name": "suede-content-strategy",
+    "description": "name: suede-content-strategy",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-content-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-copy",
+    "name": "suede-copy",
+    "description": "name: suede-copy",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-copy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-customer-research",
+    "name": "suede-customer-research",
+    "description": "name: suede-customer-research",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-customer-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-design",
+    "name": "suede-design",
+    "description": "name: suede-design",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-deslop",
+    "name": "suede-deslop",
+    "description": "name: suede-deslop",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-deslop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-directory-submissions",
+    "name": "suede-directory-submissions",
+    "description": "name: suede-directory-submissions",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-directory-submissions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-emails",
+    "name": "suede-emails",
+    "description": "name: suede-emails",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-emails",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-free-tools",
+    "name": "suede-free-tools",
+    "description": "name: suede-free-tools",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-free-tools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-graph-flo-xr",
+    "name": "suede-graph-flo-xr",
+    "description": "name: suede-graph-flo-xr",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-graph-flo-xr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-image",
+    "name": "suede-image",
+    "description": "name: suede-image",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-image",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-instagram-growth",
+    "name": "suede-instagram-growth",
+    "description": "name: suede-instagram-growth",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-instagram-growth",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-launch-packaging",
+    "name": "suede-launch-packaging",
+    "description": "name: suede-launch-packaging",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-launch-packaging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-lead-magnets",
+    "name": "suede-lead-magnets",
+    "description": "name: suede-lead-magnets",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-lead-magnets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-marketing-council",
+    "name": "suede-marketing-council",
+    "description": "name: suede-marketing-council",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-marketing-council",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-marketing-ideas",
+    "name": "suede-marketing-ideas",
+    "description": "name: suede-marketing-ideas",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-marketing-ideas",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-marketing-loops",
+    "name": "suede-marketing-loops",
+    "description": "name: suede-marketing-loops",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-marketing-loops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-marketing-plan",
+    "name": "suede-marketing-plan",
+    "description": "name: suede-marketing-plan",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-marketing-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-marketing-psychology",
+    "name": "suede-marketing-psychology",
+    "description": "name: suede-marketing-psychology",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-marketing-psychology",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-mcp-qa",
+    "name": "suede-mcp-qa",
+    "description": "name: suede-mcp-qa",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-mcp-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-newsroom",
+    "name": "suede-newsroom",
+    "description": "name: suede-newsroom",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-newsroom",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-offers",
+    "name": "suede-offers",
+    "description": "name: suede-offers",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-offers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-onboarding",
+    "name": "suede-onboarding",
+    "description": "name: suede-onboarding",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-onboarding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-ops-architecture",
+    "name": "suede-ops-architecture",
+    "description": "name: suede-ops-architecture",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-ops-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-ops-assessment",
+    "name": "suede-ops-assessment",
+    "description": "name: suede-ops-assessment",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-ops-assessment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-parity-contract",
+    "name": "suede-parity-contract",
+    "description": "name: suede-parity-contract",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-parity-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-paywalls",
+    "name": "suede-paywalls",
+    "description": "name: suede-paywalls",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-paywalls",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-play-release",
+    "name": "suede-play-release",
+    "description": "name: suede-play-release",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-play-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-pricing",
+    "name": "suede-pricing",
+    "description": "name: suede-pricing",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-pricing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-product-marketing",
+    "name": "suede-product-marketing",
+    "description": "name: suede-product-marketing",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-product-marketing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-programmatic-seo",
+    "name": "suede-programmatic-seo",
+    "description": "name: suede-programmatic-seo",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-programmatic-seo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-prospecting",
+    "name": "suede-prospecting",
+    "description": "name: suede-prospecting",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-prospecting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-public-relations",
+    "name": "suede-public-relations",
+    "description": "name: suede-public-relations",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-public-relations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-recommend-next-action",
+    "name": "suede-recommend-next-action",
+    "description": "name: suede-recommend-next-action",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-recommend-next-action",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-referrals",
+    "name": "suede-referrals",
+    "description": "name: suede-referrals",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-referrals",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-release-linter",
+    "name": "suede-release-linter",
+    "description": "name: suede-release-linter",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-release-linter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-revops",
+    "name": "suede-revops",
+    "description": "name: suede-revops",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-revops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-rights-audit",
+    "name": "suede-rights-audit",
+    "description": "name: suede-rights-audit",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-rights-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-rights-passport",
+    "name": "suede-rights-passport",
+    "description": "name: suede-rights-passport",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-rights-passport",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-sales-enablement",
+    "name": "suede-sales-enablement",
+    "description": "name: suede-sales-enablement",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-sales-enablement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1247987146-suede-seo-audit",
+    "name": "suede-seo-audit",
+    "description": "name: suede-seo-audit",
+    "version": "1.0.0",
+    "author": "JasonColapietro",
+    "repository": "https://github.com/JasonColapietro/suede-creator-skills",
+    "manifestPath": "skills/suede-seo-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1247987146",
+      "marketplaceName": "suede-creator-skills",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1397746817-sage300-assistant",
+    "name": "sage300-assistant",
+    "description": "Sage 300 (Accpac) ERP assistant: verified T-SQL from AOM data dictionaries, version/upgrade guidance and release notes, and C# against the ACCPAC.Advantage .NET library.",
+    "version": "",
+    "author": "fdtaljaard",
+    "repository": "https://github.com/fdtaljaard/claude-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397746817",
+      "marketplaceName": "claude-skills",
+      "skills": [
+        "./skills/sage300-assistant"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1397746817-sage200-assistant",
+    "name": "sage200-assistant",
+    "description": "Sage 200 Evolution (Pastel Evolution) ERP assistant: C# development against the Pastel.Evolution .NET SDK — connecting via DatabaseContext, the record load/set/Save() pattern, posting transactions, and generating correct code from a bundled class and enum reference extracted from the shipped SDK CHM. More capabilities to follow.",
+    "version": "",
+    "author": "fdtaljaard",
+    "repository": "https://github.com/fdtaljaard/claude-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397746817",
+      "marketplaceName": "claude-skills",
+      "skills": [
+        "./skills/sage200-assistant"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1397746817-sapb1-assistant",
+    "name": "sapb1-assistant",
+    "description": "SAP Business One (B1) ERP assistant: object type number, table and primary key lookup from a bundled list of all B1 object types, verified SQL views/queries from bundled B1 10.0 and 9.3 data dictionaries, C# development against the DI API from a bundled DI API 10.0 class and enum reference, and Service Layer (REST / OData v4) integration guidance including SQLQueries and FP 2602 webhooks. More capabilities to follow.",
+    "version": "",
+    "author": "fdtaljaard",
+    "repository": "https://github.com/fdtaljaard/claude-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397746817",
+      "marketplaceName": "claude-skills",
+      "skills": [
+        "./skills/sapb1-assistant"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1397746817-sagex3-assistant",
+    "name": "sagex3-assistant",
+    "description": "Sage X3 ERP assistant: verified SQL views/queries and table/field lookup from a bundled Sage X3 V11 table dictionary (tables, abbreviations, keys, columns, data types, local-menu enum values and foreign-key link expressions) compiled from Sage's online help; versions and upgrades (V12 release/patch naming and lifecycle, platform prerequisites per release, upgrade paths and procedures, per-release notes 2023 R2 to 2026 R1 with tables touched). More capabilities to follow.",
+    "version": "",
+    "author": "fdtaljaard",
+    "repository": "https://github.com/fdtaljaard/claude-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397746817",
+      "marketplaceName": "claude-skills",
+      "skills": [
+        "./skills/sagex3-assistant"
+      ],
+      "strict": false
+    }
+  }
+]
