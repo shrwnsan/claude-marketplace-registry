@@ -68,9 +68,11 @@ jobs:
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3  # v9.0.0
         with:
           script: |
+            const nowIso = new Date().toISOString();
             const vulnerabilityCount = '${{ steps.parse.outputs.vulnerability_count }}';
+            const auditResults = '${{ steps.parse.outputs.audit_results }}';
 
-            // Check if similar issue already exists
+            // Check if a tracking issue already exists
             const existingIssues = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -86,7 +88,7 @@ jobs:
                 '**Vulnerabilities Found:** ' + vulnerabilityCount,
                 '',
                 '### 📊 Scan Details',
-                '- **Timestamp:** $(date \'+%Y-%m-%d %H:%M:%S UTC\')',
+                '- **Timestamp:** ' + nowIso,
                 '- **Trigger:** Scheduled security scan',
                 '- **Scanner:** npm audit',
                 '- **Severity Level:** Moderate and above',
@@ -111,7 +113,7 @@ jobs:
                 '',
                 '### 📋 Audit Summary',
                 '```json',
-                '${{ steps.parse.outputs.audit_results }}',
+                auditResults,
                 '```',
                 '',
                 '---',
@@ -124,6 +126,70 @@ jobs:
                 body: bodyLines.join('\n'),
                 labels: ['security', 'vulnerability', 'automated'],
                 assignees: ['${{ github.repository_owner }}']
+              });
+            } else {
+              // An alert issue is already open — report the delta as a comment
+              // so new advisories surface while the older issue stays open.
+              const issue = existingIssues.data[0];
+              const comments = await github.rest.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                per_page: 100
+              });
+              const lastBotComment = comments.data
+                .filter(c => c.user.login === 'github-actions[bot]')
+                .pop();
+              const lastReport = (lastBotComment ? lastBotComment.body : '') + '\n' + (issue.body || '');
+              if (!lastReport.includes(auditResults)) {
+                const bodyLines = [
+                  '## 🔁 Weekly Audit Update',
+                  '',
+                  '**Vulnerabilities Found:** ' + vulnerabilityCount,
+                  '**Timestamp:** ' + nowIso,
+                  '',
+                  '### 📋 Audit Summary',
+                  '```json',
+                  auditResults,
+                  '```',
+                  '',
+                  '---',
+                ];
+
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  body: bodyLines.join('\n')
+                });
+              }
+            }
+
+      - name: Close security issues if audit is clean
+        if: steps.audit.outputs.vulnerabilities_found == 'false' && github.event_name == 'schedule'
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3  # v9.0.0
+        with:
+          script: |
+            const nowIso = new Date().toISOString();
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['security', 'vulnerability'],
+              state: 'open'
+            });
+            for (const issue of existingIssues.data) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: '✅ Scheduled full audit found **0 vulnerabilities** at ' + nowIso + '. Closing this alert as resolved.'
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed',
+                state_reason: 'completed'
               });
             }
 
