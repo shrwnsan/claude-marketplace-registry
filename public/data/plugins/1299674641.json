@@ -1,9 +1,9 @@
 [
   {
-    "id": "1299674641-claude-tetris",
-    "name": "claude-tetris",
+    "id": "1299674641-idle-tetris",
+    "name": "idle-tetris",
     "description": "Play Tetris in a split pane while Claude Code works. The game auto-pauses when Claude is done and resumes on your next prompt.",
-    "version": "0.4.0",
+    "version": "0.4.2",
     "author": "Philipp Paulik",
     "repository": "https://github.com/philppplik/claude-tetris",
     "manifestPath": "./",

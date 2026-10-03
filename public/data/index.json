@@ -1,25 +1,25 @@
 {
   "stats": {
-    "totalMarketplaces": 843,
-    "totalPlugins": 5641,
-    "validPlugins": 5641,
-    "lastUpdated": "2026-10-02T04:39:42.587Z",
+    "totalMarketplaces": 882,
+    "totalPlugins": 5773,
+    "validPlugins": 5773,
+    "lastUpdated": "2026-10-03T04:17:02.674Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 252
+        "count": 270
       },
       {
         "language": "Unknown",
-        "count": 170
+        "count": 174
       },
       {
         "language": "JavaScript",
-        "count": 123
+        "count": 129
       },
       {
         "language": "TypeScript",
-        "count": 98
+        "count": 104
       },
       {
         "language": "Shell",
@@ -27,7 +27,7 @@
       },
       {
         "language": "HTML",
-        "count": 41
+        "count": 44
       },
       {
         "language": "Go",
@@ -35,119 +35,119 @@
       },
       {
         "language": "Rust",
-        "count": 16
-      },
-      {
-        "language": "Swift",
-        "count": 3
+        "count": 17
       },
       {
         "language": "Java",
-        "count": 3
+        "count": 4
+      },
+      {
+        "language": "Swift",
+        "count": 4
       }
     ],
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 270767,
+        "stars": 271437,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 179341,
+        "stars": 179423,
         "url": "https://github.com/anthropics/skills"
       },
       {
+        "name": "ponytail",
+        "stars": 151954,
+        "url": "https://github.com/DietrichGebert/ponytail"
+      },
+      {
         "name": "claude-mem",
-        "stars": 95036,
+        "stars": 95206,
         "url": "https://github.com/thedotmack/claude-mem"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 76326,
+        "stars": 76377,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 69696,
+        "stars": 69760,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
         "name": "claude-plugins-official",
-        "stars": 37301,
+        "stars": 37321,
         "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
+        "name": "invisible_playwright_mcp",
+        "stars": 31754,
+        "url": "https://github.com/feder-cr/invisible_playwright_mcp"
+      },
+      {
         "name": "daily",
-        "stars": 20087,
+        "stars": 20088,
         "url": "https://github.com/dailydotdev/daily"
       },
       {
         "name": "kubeshark",
-        "stars": 12094,
+        "stars": 12095,
         "url": "https://github.com/kubeshark/kubeshark"
-      },
-      {
-        "name": "awesome-claude-skills",
-        "stars": 10198,
-        "url": "https://github.com/BehiSecc/awesome-claude-skills"
-      },
-      {
-        "name": "web-access",
-        "stars": 9021,
-        "url": "https://github.com/eze-is/web-access"
       }
     ],
     "recentActivity": [
       {
+        "name": "codemem",
+        "updatedAt": "2026-10-03T04:08:42Z",
+        "url": "https://github.com/kunickiaj/codemem"
+      },
+      {
+        "name": "invisible_playwright_mcp",
+        "updatedAt": "2026-10-03T04:08:13Z",
+        "url": "https://github.com/feder-cr/invisible_playwright_mcp"
+      },
+      {
+        "name": "reticle",
+        "updatedAt": "2026-10-03T04:06:45Z",
+        "url": "https://github.com/reticlehq/reticle"
+      },
+      {
+        "name": "evolvable-software",
+        "updatedAt": "2026-10-03T04:06:43Z",
+        "url": "https://github.com/harsh51191/evolvable-software"
+      },
+      {
+        "name": "ponytail",
+        "updatedAt": "2026-10-03T04:04:21Z",
+        "url": "https://github.com/DietrichGebert/ponytail"
+      },
+      {
+        "name": "easel-js-cpu-render-kit",
+        "updatedAt": "2026-10-03T04:03:48Z",
+        "url": "https://github.com/AllyJuma1/easel-js-cpu-render-kit"
+      },
+      {
         "name": "claude-code-plugins",
-        "updatedAt": "2026-10-02T04:30:21Z",
-        "url": "https://github.com/tomevault-io/claude-code-plugins"
+        "updatedAt": "2026-10-03T04:02:36Z",
+        "url": "https://github.com/melodic-software/claude-code-plugins"
       },
       {
-        "name": "trump-skill",
-        "updatedAt": "2026-10-02T04:29:22Z",
-        "url": "https://github.com/Hankfirm386/trump-skill"
+        "name": "parallel-lanes",
+        "updatedAt": "2026-10-03T04:02:35Z",
+        "url": "https://github.com/noderaven/parallel-lanes"
       },
       {
-        "name": "research-skills-guide",
-        "updatedAt": "2026-10-02T04:29:14Z",
-        "url": "https://github.com/khoman9874/research-skills-guide"
+        "name": "10000x-engineer",
+        "updatedAt": "2026-10-03T04:01:09Z",
+        "url": "https://github.com/Jsnnmsc/10000x-engineer"
       },
       {
-        "name": "caveman",
-        "updatedAt": "2026-10-02T04:28:56Z",
-        "url": "https://github.com/noman3271/caveman"
-      },
-      {
-        "name": "cmusic",
-        "updatedAt": "2026-10-02T04:28:46Z",
-        "url": "https://github.com/tungnt1203/cmusic"
-      },
-      {
-        "name": "claude-java-plugins",
-        "updatedAt": "2026-10-02T04:28:42Z",
-        "url": "https://github.com/limited-grisaille833/claude-java-plugins"
-      },
-      {
-        "name": "learn-from-claudecode",
-        "updatedAt": "2026-10-02T04:28:35Z",
-        "url": "https://github.com/seductive-bercy787/learn-from-claudecode"
-      },
-      {
-        "name": "claude-code-pet-system-analysis",
-        "updatedAt": "2026-10-02T04:28:18Z",
-        "url": "https://github.com/Previous-shunt800/claude-code-pet-system-analysis"
-      },
-      {
-        "name": "openalex-skill",
-        "updatedAt": "2026-10-02T04:28:10Z",
-        "url": "https://github.com/Out-bloodspavin173/openalex-skill"
-      },
-      {
-        "name": "mcpx",
-        "updatedAt": "2026-10-02T04:28:08Z",
-        "url": "https://github.com/afiabatool067-png/mcpx"
+        "name": "grandpa",
+        "updatedAt": "2026-10-03T04:00:45Z",
+        "url": "https://github.com/bytewhisker/grandpa"
       }
     ]
   },
@@ -155,22 +155,22 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 415
+      "count": 436
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 137
+      "count": 142
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 267
+      "count": 285
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 37
+      "count": 41
     },
     {
       "id": "data",
@@ -183,5 +183,5 @@
       "count": 21
     }
   ],
-  "lastUpdated": "2026-10-02T04:39:42.587Z"
+  "lastUpdated": "2026-10-03T04:17:02.674Z"
 }

@@ -1,0 +1,326 @@
+[
+  {
+    "id": "1265947881-reticle",
+    "name": "reticle",
+    "description": "Verify a running web app from the inside. Installs the Reticle skill and registers the Reticle MCP server.",
+    "version": "3.5.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1265947881-agentic-tdd",
+    "name": "agentic-tdd",
+    "description": "name: agentic-tdd",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/agentic-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-audit-my-app",
+    "name": "audit-my-app",
+    "description": "name: audit-my-app",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/audit-my-app",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-debug-broken-ui",
+    "name": "debug-broken-ui",
+    "description": "name: debug-broken-ui",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/debug-broken-ui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-design-system-compliance",
+    "name": "design-system-compliance",
+    "description": "name: design-system-compliance",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/design-system-compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-drive-desktop-app",
+    "name": "drive-desktop-app",
+    "description": "name: drive-desktop-app",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/drive-desktop-app",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-false-green-tests",
+    "name": "false-green-tests",
+    "description": "name: false-green-tests",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/false-green-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-fix-what-i-pointed-at",
+    "name": "fix-what-i-pointed-at",
+    "description": "name: fix-what-i-pointed-at",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/fix-what-i-pointed-at",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-install-and-verify",
+    "name": "install-and-verify",
+    "description": "name: install-and-verify",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/install-and-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-replay-user-flows",
+    "name": "replay-user-flows",
+    "description": "name: replay-user-flows",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/replay-user-flows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-test-error-states",
+    "name": "test-error-states",
+    "description": "name: test-error-states",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/test-error-states",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-verify-cli-run",
+    "name": "verify-cli-run",
+    "description": "name: verify-cli-run",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/verify-cli-run",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-verify-form-validation",
+    "name": "verify-form-validation",
+    "description": "name: verify-form-validation",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/verify-form-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-verify-keyboard-access",
+    "name": "verify-keyboard-access",
+    "description": "name: verify-keyboard-access",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/verify-keyboard-access",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-verify-login-logout",
+    "name": "verify-login-logout",
+    "description": "name: verify-login-logout",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/verify-login-logout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-verify-optimistic-update",
+    "name": "verify-optimistic-update",
+    "description": "name: verify-optimistic-update",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/verify-optimistic-update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-verify-pagination",
+    "name": "verify-pagination",
+    "description": "name: verify-pagination",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/verify-pagination",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-verify-ui-change",
+    "name": "verify-ui-change",
+    "description": "name: verify-ui-change",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/verify-ui-change",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265947881-verify-unattended",
+    "name": "verify-unattended",
+    "description": "name: verify-unattended",
+    "version": "1.0.0",
+    "author": "reticlehq",
+    "repository": "https://github.com/reticlehq/reticle",
+    "manifestPath": "skills/verify-unattended",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265947881",
+      "marketplaceName": "reticle",
+      "hasSkillMd": true
+    }
+  }
+]

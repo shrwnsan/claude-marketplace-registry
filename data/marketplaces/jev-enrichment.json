@@ -1,10 +1,15 @@
 {
   "model": "jev-1.13.0",
-  "generatedAt": "2026-10-02T04:39:39.752Z",
+  "generatedAt": "2026-10-03T04:17:00.334Z",
   "entries": {
     "305321080": {
       "category": "none",
       "categoryConfidence": 0.7,
+      "isMarketplace": 0.02
+    },
+    "397878430": {
+      "category": "devtools",
+      "categoryConfidence": 0.77,
       "isMarketplace": 0.02
     },
     "443121611": {
@@ -617,6 +622,11 @@
       "categoryConfidence": 0.99,
       "isMarketplace": 0.12
     },
+    "1203947456": {
+      "category": "skills",
+      "categoryConfidence": 0.98,
+      "isMarketplace": 0.15
+    },
     "1207161577": {
       "category": "none",
       "categoryConfidence": 0.92,
@@ -1176,6 +1186,11 @@
       "category": "none",
       "categoryConfidence": 0.32,
       "isMarketplace": 0.73
+    },
+    "1315207022": {
+      "category": "devtools",
+      "categoryConfidence": 0.32,
+      "isMarketplace": 0.1
     },
     "1316181365": {
       "category": "devtools",

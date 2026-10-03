@@ -1,0 +1,20 @@
+[
+  {
+    "id": "397878430-fixture-monkey",
+    "name": "fixture-monkey",
+    "description": "Write Java and Kotlin test fixtures that pin only what the scenario depends on and leave the rest random.",
+    "version": "",
+    "author": "Naver",
+    "repository": "https://github.com/naver/fixture-monkey",
+    "manifestPath": "./claude-plugins/fixture-monkey",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "397878430",
+      "marketplaceName": "fixture-monkey",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

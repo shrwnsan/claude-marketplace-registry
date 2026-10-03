@@ -1,0 +1,139 @@
+[
+  {
+    "id": "1315207022-conductor",
+    "name": "conductor",
+    "description": "Mixed-model orchestration at `high` effort: Claude for design, judgment and high-stakes writing, Codex CLI for mechanical execution, volume writing and cross-family verification.",
+    "version": "",
+    "author": "IvanOboth",
+    "repository": "https://github.com/IvanOboth/conductor-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1315207022",
+      "marketplaceName": "conductor-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1315207022-agent-browser",
+    "name": "agent-browser",
+    "description": "name: agent-browser",
+    "version": "1.0.0",
+    "author": "IvanOboth",
+    "repository": "https://github.com/IvanOboth/conductor-plugin",
+    "manifestPath": "skills/agent-browser",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1315207022",
+      "marketplaceName": "conductor-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1315207022-codex-computer-use",
+    "name": "codex-computer-use",
+    "description": "name: codex-computer-use",
+    "version": "1.0.0",
+    "author": "IvanOboth",
+    "repository": "https://github.com/IvanOboth/conductor-plugin",
+    "manifestPath": "skills/codex-computer-use",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1315207022",
+      "marketplaceName": "conductor-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1315207022-codex-review",
+    "name": "codex-review",
+    "description": "name: codex-review",
+    "version": "1.0.0",
+    "author": "IvanOboth",
+    "repository": "https://github.com/IvanOboth/conductor-plugin",
+    "manifestPath": "skills/codex-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1315207022",
+      "marketplaceName": "conductor-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1315207022-conductor-claude",
+    "name": "conductor-claude",
+    "description": "name: conductor-claude",
+    "version": "1.0.0",
+    "author": "IvanOboth",
+    "repository": "https://github.com/IvanOboth/conductor-plugin",
+    "manifestPath": "skills/conductor-claude",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1315207022",
+      "marketplaceName": "conductor-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1315207022-conductor-core",
+    "name": "conductor-core",
+    "description": "name: conductor-core",
+    "version": "1.0.0",
+    "author": "IvanOboth",
+    "repository": "https://github.com/IvanOboth/conductor-plugin",
+    "manifestPath": "skills/conductor-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1315207022",
+      "marketplaceName": "conductor-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1315207022-mobile-app-testing",
+    "name": "mobile-app-testing",
+    "description": "name: mobile-app-testing",
+    "version": "1.0.0",
+    "author": "IvanOboth",
+    "repository": "https://github.com/IvanOboth/conductor-plugin",
+    "manifestPath": "skills/mobile-app-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1315207022",
+      "marketplaceName": "conductor-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1315207022-run-report",
+    "name": "run-report",
+    "description": "name: run-report",
+    "version": "1.0.0",
+    "author": "IvanOboth",
+    "repository": "https://github.com/IvanOboth/conductor-plugin",
+    "manifestPath": "skills/run-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1315207022",
+      "marketplaceName": "conductor-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

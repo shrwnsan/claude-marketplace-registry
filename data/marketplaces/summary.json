@@ -1,85 +1,84 @@
 {
-  "totalFound": 843,
-  "withManifest": 433,
-  "lastUpdated": "2026-10-02T04:31:23.367Z",
+  "totalFound": 882,
+  "withManifest": 439,
+  "lastUpdated": "2026-10-03T04:10:49.827Z",
   "searchQuery": "",
   "languages": {
-    "Python": 252,
+    "Python": 270,
     "Shell": 97,
-    "Rust": 16,
-    "TypeScript": 98,
-    "JavaScript": 123,
+    "Java": 4,
+    "Rust": 17,
+    "JavaScript": 129,
+    "TypeScript": 104,
     "Go": 22,
-    "Unknown": 170,
-    "HTML": 41,
+    "Unknown": 174,
+    "HTML": 44,
     "AMPL": 1,
     "C++": 2,
-    "Swift": 3,
+    "Swift": 4,
+    "Astro": 1,
     "Jupyter Notebook": 2,
     "C#": 2,
-    "Astro": 1,
     "Perl": 1,
     "Ruby": 1,
-    "CSS": 1,
-    "Java": 3,
-    "PowerShell": 1,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
     "Svelte": 1,
     "Markdown": 1,
-    "SCSS": 1
+    "SCSS": 1,
+    "CSS": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 270767,
+      "stars": 271437,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179341,
+      "stars": 179423,
       "url": "https://github.com/anthropics/skills"
     },
     {
+      "name": "ponytail",
+      "stars": 151954,
+      "url": "https://github.com/DietrichGebert/ponytail"
+    },
+    {
       "name": "claude-mem",
-      "stars": 95036,
+      "stars": 95206,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76326,
+      "stars": 76377,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69696,
+      "stars": 69760,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37301,
+      "stars": 37321,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
+      "name": "invisible_playwright_mcp",
+      "stars": 31754,
+      "url": "https://github.com/feder-cr/invisible_playwright_mcp"
+    },
+    {
       "name": "daily",
-      "stars": 20087,
+      "stars": 20088,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12094,
+      "stars": 12095,
       "url": "https://github.com/kubeshark/kubeshark"
-    },
-    {
-      "name": "awesome-claude-skills",
-      "stars": 10198,
-      "url": "https://github.com/BehiSecc/awesome-claude-skills"
-    },
-    {
-      "name": "web-access",
-      "stars": 9021,
-      "url": "https://github.com/eze-is/web-access"
     }
   ]
 }
