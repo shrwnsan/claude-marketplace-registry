@@ -4,6 +4,8 @@ import {
   hasEnoughHistory,
   GROWTH_LINE_MIN_POINTS,
   topicShare,
+  FEATURED_ROTATION_STEP,
+  shuffleSample,
 } from '../stats';
 
 // Freeze time-sensitive bonuses at a fixed date
@@ -73,6 +75,24 @@ describe('selectFeaturedMarketplaces', () => {
       new Date('2026-02-01T00:00:00Z').getTime()
     ).slice(3);
     expect(jan1.map((m) => m.id)).not.toEqual(feb1.map((m) => m.id));
+  });
+
+  it('turns over FEATURED_ROTATION_STEP cards per day', () => {
+    const jan1 = selectFeaturedMarketplaces(
+      marketplaces,
+      6,
+      12,
+      new Date('2026-01-01T00:00:00Z').getTime()
+    );
+    const jan2 = selectFeaturedMarketplaces(
+      marketplaces,
+      6,
+      12,
+      new Date('2026-01-02T00:00:00Z').getTime()
+    );
+    const jan1Ids = new Set(jan1.map((m) => m.id));
+    const fresh = jan2.filter((m) => !jan1Ids.has(m.id)).length;
+    expect(fresh).toBe(FEATURED_ROTATION_STEP);
   });
 
   it('rotates deterministically day over day (stable within a day)', () => {
@@ -155,5 +175,35 @@ describe('selectRotated', () => {
     expect(selectRotated(ranked, 20, { poolSize: 12, anchorCount: 3, now: day(5) })).toHaveLength(
       12
     );
+  });
+
+  it('steps multiple rotating cards per day when step > 1', () => {
+    const day1 = selectRotated(ranked, 6, { poolSize: 12, anchorCount: 3, step: 2, now: day(1) });
+    const day2 = selectRotated(ranked, 6, { poolSize: 12, anchorCount: 3, step: 2, now: day(2) });
+    const day1Ids = new Set(day1.map((x) => x.id));
+    expect(day2.filter((x) => !day1Ids.has(x.id))).toHaveLength(2);
+  });
+});
+
+describe('shuffleSample', () => {
+  const items = Array.from({ length: 12 }, (_, i) => i);
+
+  it('returns distinct items drawn from the source', () => {
+    for (let trial = 0; trial < 20; trial++) {
+      const out = shuffleSample(items, 6);
+      expect(out).toHaveLength(6);
+      expect(new Set(out).size).toBe(6);
+      for (const x of out) expect(items).toContain(x);
+    }
+  });
+
+  it('covers the whole list when count reaches it', () => {
+    const out = shuffleSample(items, 12);
+    expect([...out].sort((a, b) => a - b)).toEqual(items);
+  });
+
+  it('degrades on short or empty input', () => {
+    expect(shuffleSample([1, 2], 5)).toHaveLength(2);
+    expect(shuffleSample([], 3)).toEqual([]);
   });
 });

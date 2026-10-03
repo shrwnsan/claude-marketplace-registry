@@ -1,7 +1,10 @@
 import {
   selectPopularPlugins,
   topPluginsByStars,
+  shufflePopularPlugins,
   POPULAR_PLUGINS_POOL,
+  POPULAR_PLUGINS_SHUFFLE_POOL,
+  POPULAR_PLUGINS_STEP,
   CatalogPlugin,
 } from '../usePluginData';
 
@@ -27,6 +30,12 @@ const plugins = Array.from({ length: 24 }, (_, i) =>
 );
 
 describe('selectPopularPlugins', () => {
+  it('turns over POPULAR_PLUGINS_STEP picks per day', () => {
+    const d1 = selectPopularPlugins(plugins, 9, day(1));
+    const d2 = selectPopularPlugins(plugins, 9, day(2));
+    const d1Ids = new Set(d1.map((p) => p.id));
+    expect(d2.filter((p) => !d1Ids.has(p.id))).toHaveLength(POPULAR_PLUGINS_STEP);
+  });
   it('shows the requested count', () => {
     expect(selectPopularPlugins(plugins, 9, day(5))).toHaveLength(9);
   });
@@ -72,5 +81,26 @@ describe('selectPopularPlugins', () => {
 
   it('degrades to the whole (diversified) pool when count covers it', () => {
     expect(selectPopularPlugins(plugins, 24, day(5))).toHaveLength(POPULAR_PLUGINS_POOL);
+  });
+});
+
+describe('shufflePopularPlugins', () => {
+  const pool = topPluginsByStars(plugins, POPULAR_PLUGINS_SHUFFLE_POOL);
+
+  it('samples the requested count from the pool', () => {
+    const poolIds = new Set(pool.map((p) => p.id));
+    for (let trial = 0; trial < 20; trial++) {
+      const picked = shufflePopularPlugins(pool, 9);
+      expect(picked).toHaveLength(9);
+      for (const p of picked) expect(poolIds.has(p.id)).toBe(true);
+    }
+  });
+
+  it('keeps the per-marketplace diversity floor', () => {
+    for (let trial = 0; trial < 20; trial++) {
+      const picked = shufflePopularPlugins(pool, 9);
+      const marketplaces = new Set(picked.map((p) => p.marketplaceId));
+      expect(marketplaces.size).toBeGreaterThanOrEqual(6);
+    }
   });
 });

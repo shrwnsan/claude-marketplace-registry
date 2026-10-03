@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useRealMarketplaceData } from './useRealMarketplaceData';
-import { selectRotated } from '@/utils/stats';
+import { selectRotated, shuffleSample } from '@/utils/stats';
 
 /**
  * UI-facing plugin shape. Index entries (public/data/plugins.json) carry
@@ -224,10 +224,23 @@ export function topPluginsByStars(plugins: CatalogPlugin[], count: number): Cata
 export const POPULAR_PLUGINS_POOL = 18;
 
 /**
+ * Rotating cards that turn over per day (of the 7 non-anchored slots). The
+ * homepage subtitle reads this, so the copy stays in sync with the mechanism.
+ */
+export const POPULAR_PLUGINS_STEP = 3;
+
+/**
+ * Shuffle pool for the homepage's Popular Plugins section: twice the rotation
+ * pool, so a shuffle mostly shows cards the daily rotation isn't showing.
+ */
+export const POPULAR_PLUGINS_SHUFFLE_POOL = 36;
+
+/**
  * Popular plugins for the homepage, rotated daily: the diversified
- * star-ranked pool (topPluginsByStars) anchors its top 2, and the remaining
- * slots rotate through the rest of the top 18 day by day — same mechanism
- * as Featured Marketplaces, so no single set of cards sits forever.
+ * star-ranked pool (topPluginsByStars) anchors its top 2, and
+ * POPULAR_PLUGINS_STEP of the remaining slots rotate through the rest of the
+ * top 18 day by day — same mechanism as Featured Marketplaces, so no single
+ * set of cards sits forever.
  */
 export function selectPopularPlugins(
   plugins: CatalogPlugin[],
@@ -235,5 +248,31 @@ export function selectPopularPlugins(
   now: number = Date.now()
 ): CatalogPlugin[] {
   const ranked = topPluginsByStars(plugins, POPULAR_PLUGINS_POOL);
-  return selectRotated(ranked, count, { poolSize: POPULAR_PLUGINS_POOL, anchorCount: 2, now });
+  return selectRotated(ranked, count, {
+    poolSize: POPULAR_PLUGINS_POOL,
+    anchorCount: 2,
+    step: POPULAR_PLUGINS_STEP,
+    now,
+  });
+}
+
+/**
+ * Random slice of the deep plugin pool for the homepage's shuffle affordance.
+ * Shuffles the pool, then re-runs the per-marketplace diversity pass so a
+ * shuffle can't stack several plugins from one source into the grid.
+ */
+export function shufflePopularPlugins(plugins: CatalogPlugin[], count: number): CatalogPlugin[] {
+  const shuffled = shuffleSample(plugins, plugins.length);
+  const seenMarketplaces = new Set<string>();
+  const diversified: CatalogPlugin[] = [];
+  const overflow: CatalogPlugin[] = [];
+  for (const p of shuffled) {
+    if (p.marketplaceId && !seenMarketplaces.has(p.marketplaceId)) {
+      seenMarketplaces.add(p.marketplaceId);
+      diversified.push(p);
+    } else {
+      overflow.push(p);
+    }
+  }
+  return [...diversified, ...overflow].slice(0, Math.max(count, 0));
 }
