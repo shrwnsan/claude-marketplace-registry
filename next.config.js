@@ -55,6 +55,10 @@ const nextConfig = {
 
   // Performance and monitoring headers
   async headers() {
+    // Immutable caching on build chunks is production-only: in dev the browser
+    // would serve stale Turbopack chunks after recompiles and hydration dies
+    // silently (Next warns about exactly this at startup).
+    if (!isProd) return [];
     return [
       {
         source: '/api/:path*',
