@@ -1,17 +1,43 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import Head from 'next/head';
 import MainLayout from '@/components/layout/MainLayout';
 import SearchCombobox from '@/components/Search/SearchCombobox';
 import PluginCard from '@/components/Marketplace/PluginCard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
-import { usePluginData, selectPopularPlugins } from '@/hooks/usePluginData';
+import {
+  POPULAR_PLUGINS_SHUFFLE_POOL,
+  POPULAR_PLUGINS_STEP,
+  selectPopularPlugins,
+  shufflePopularPlugins,
+  topPluginsByStars,
+  usePluginData,
+} from '@/hooks/usePluginData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
 import { StatCard } from '@/components/ui/StatCard';
 import FriendlyTimestamp from '@/components/ui/FriendlyTimestamp';
-import { ChevronRight, Github, Package, ShieldCheck, Star, Store, Users } from 'lucide-react';
+import {
+  ChevronRight,
+  Github,
+  Package,
+  RotateCcw,
+  ShieldCheck,
+  Shuffle,
+  Star,
+  Store,
+  Users,
+} from 'lucide-react';
 import Link from 'next/link';
-import { selectFeaturedMarketplaces } from '@/utils/stats';
+import {
+  FEATURED_ROTATION_STEP,
+  FEATURED_SHUFFLE_POOL,
+  rankFeaturedMarketplaces,
+  selectFeaturedMarketplaces,
+  shuffleSample,
+} from '@/utils/stats';
+
+const shuffleButtonClass =
+  'inline-flex items-center gap-1.5 px-3 py-2 font-mono text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded';
 
 const HomePage: React.FC = () => {
   const {
@@ -27,12 +53,22 @@ const HomePage: React.FC = () => {
   // Real topic chips from generated stats (replaces the hardcoded mock taxonomy)
   const topics = useMemo(() => (stats?.categories || []).slice(0, 8).map((c) => c.name), [stats]);
 
-  // Popular = top plugins by parent-marketplace stars (search lives in the combobox)
-  // Popular picks, rotated daily over the diversified star-ranked pool
-  const displayPlugins = useMemo(() => selectPopularPlugins(allPlugins, 9), [allPlugins]);
+  const [pluginsSeed, setPluginsSeed] = useState<number | null>(null);
+  const [featuredSeed, setFeaturedSeed] = useState<number | null>(null);
 
-  // Deterministic daily rotation over the highest-signal marketplaces
-  const featured = useMemo(() => selectFeaturedMarketplaces(marketplaces, 6), [marketplaces]);
+  // Popular picks: deterministic daily rotation over the diversified
+  // star-ranked pool, or a shuffled slice of the deeper pool on demand
+  const displayPlugins = useMemo(() => {
+    if (pluginsSeed === null) return selectPopularPlugins(allPlugins, 9);
+    return shufflePopularPlugins(topPluginsByStars(allPlugins, POPULAR_PLUGINS_SHUFFLE_POOL), 9);
+  }, [allPlugins, pluginsSeed]);
+
+  // Deterministic daily rotation over the highest-signal marketplaces, or a
+  // shuffled slice of the deeper pool on demand
+  const featured = useMemo(() => {
+    if (featuredSeed === null) return selectFeaturedMarketplaces(marketplaces, 6);
+    return shuffleSample(rankFeaturedMarketplaces(marketplaces).slice(0, FEATURED_SHUFFLE_POOL), 6);
+  }, [marketplaces, featuredSeed]);
 
   return (
     <>
@@ -163,18 +199,42 @@ const HomePage: React.FC = () => {
                   Featured Marketplaces
                 </h2>
                 <p className='text-gray-600 dark:text-gray-400 text-sm sm:text-base mt-1'>
-                  Top marketplaces by stars and activity — rotated daily
+                  Top marketplaces by stars and activity — {FEATURED_ROTATION_STEP} fresh picks
+                  daily
                 </p>
               </div>
-              <Link
-                href='/marketplaces'
-                className='inline-flex items-center justify-center px-4 py-2 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors self-center sm:self-auto'
-              >
-                view all
-                <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
-                  →
-                </span>
-              </Link>
+              <div className='flex items-center gap-2 sm:gap-3 self-center sm:self-auto'>
+                {featuredSeed !== null && (
+                  <button
+                    type='button'
+                    onClick={() => setFeaturedSeed(null)}
+                    className={shuffleButtonClass}
+                    aria-label='Show the daily featured marketplaces'
+                  >
+                    <RotateCcw className='w-4 h-4' aria-hidden='true' />
+                    today&apos;s picks
+                  </button>
+                )}
+                <button
+                  type='button'
+                  onClick={() => setFeaturedSeed((s) => (s ?? 0) + 1)}
+                  disabled={marketplaceLoading || marketplaces.length === 0}
+                  className={shuffleButtonClass}
+                  aria-label='Shuffle featured marketplaces'
+                >
+                  <Shuffle className='w-4 h-4' aria-hidden='true' />
+                  shuffle
+                </button>
+                <Link
+                  href='/marketplaces'
+                  className='inline-flex items-center justify-center px-4 py-2 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors'
+                >
+                  view all
+                  <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
+                    →
+                  </span>
+                </Link>
+              </div>
             </div>
 
             {marketplaceLoading ? (
@@ -253,18 +313,42 @@ const HomePage: React.FC = () => {
                   Popular Plugins
                 </h2>
                 <p className='text-gray-600 dark:text-gray-400 text-sm sm:text-base mt-1'>
-                  Popular picks from the most-starred marketplaces — rotated daily
+                  Top plugins from the most-starred marketplaces — {POPULAR_PLUGINS_STEP} fresh
+                  picks daily
                 </p>
               </div>
-              <Link
-                href='/plugins'
-                className='inline-flex items-center justify-center px-4 py-2 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors self-center sm:self-auto'
-              >
-                view all
-                <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
-                  →
-                </span>
-              </Link>
+              <div className='flex items-center gap-2 sm:gap-3 self-center sm:self-auto'>
+                {pluginsSeed !== null && (
+                  <button
+                    type='button'
+                    onClick={() => setPluginsSeed(null)}
+                    className={shuffleButtonClass}
+                    aria-label='Show the daily popular plugins'
+                  >
+                    <RotateCcw className='w-4 h-4' aria-hidden='true' />
+                    today&apos;s picks
+                  </button>
+                )}
+                <button
+                  type='button'
+                  onClick={() => setPluginsSeed((s) => (s ?? 0) + 1)}
+                  disabled={pluginsLoading || allPlugins.length === 0}
+                  className={shuffleButtonClass}
+                  aria-label='Shuffle popular plugins'
+                >
+                  <Shuffle className='w-4 h-4' aria-hidden='true' />
+                  shuffle
+                </button>
+                <Link
+                  href='/plugins'
+                  className='inline-flex items-center justify-center px-4 py-2 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors'
+                >
+                  view all
+                  <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
+                    →
+                  </span>
+                </Link>
+              </div>
             </div>
 
             {marketplaceLoading || pluginsLoading ? (
