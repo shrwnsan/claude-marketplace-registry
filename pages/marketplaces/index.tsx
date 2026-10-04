@@ -311,8 +311,8 @@ const MarketplacesPage: React.FC = () => {
                     key={marketplace.id}
                     className={
                       viewMode === 'grid'
-                        ? 'card-interactive group h-full flex flex-col'
-                        : 'card flex items-center gap-4'
+                        ? 'card-interactive group relative h-full flex flex-col'
+                        : 'card relative flex items-center gap-4'
                     }
                   >
                     {viewMode === 'grid' ? (
@@ -321,7 +321,11 @@ const MarketplacesPage: React.FC = () => {
                         <div className='flex items-start justify-between mb-4'>
                           <div className='flex-1 min-w-0'>
                             <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
-                              <Link href={`/marketplaces/${marketplace.id}`}>
+                              <Link
+                                href={`/marketplaces/${marketplace.id}`}
+                                className='card-link-stretch hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 rounded'
+                                aria-label={`View details for ${marketplace.name}`}
+                              >
                                 {marketplace.name}
                               </Link>
                             </h3>
@@ -359,7 +363,7 @@ const MarketplacesPage: React.FC = () => {
                         <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-end'>
                           <Link
                             href={`/marketplaces/${marketplace.id}`}
-                            className='cta group/cta'
+                            className='cta group/cta relative'
                             aria-label={`View details for ${marketplace.name}`}
                           >
                             view details
@@ -373,7 +377,11 @@ const MarketplacesPage: React.FC = () => {
                         <div className='flex-1'>
                           <div className='flex items-center gap-3 mb-2'>
                             <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100'>
-                              <Link href={`/marketplaces/${marketplace.id}`}>
+                              <Link
+                                href={`/marketplaces/${marketplace.id}`}
+                                className='card-link-stretch hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 rounded'
+                                aria-label={`View details for ${marketplace.name}`}
+                              >
                                 {marketplace.name}
                               </Link>
                             </h3>
@@ -402,7 +410,7 @@ const MarketplacesPage: React.FC = () => {
                         </div>
                         <Link
                           href={`/marketplaces/${marketplace.id}`}
-                          className='cta group/cta flex-shrink-0'
+                          className='cta group/cta relative flex-shrink-0'
                           aria-label={`View details for ${marketplace.name}`}
                         >
                           view details
