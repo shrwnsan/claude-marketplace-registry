@@ -160,5 +160,23 @@
       "skills": [],
       "strict": false
     }
+  },
+  {
+    "id": "1246985253-gitgraph",
+    "name": "gitgraph",
+    "description": "Git history as a page — /gitgraph opens the whole commit graph of the repository or a submodule in your browser (or the Claude desktop app's built-in browser with -i): refs tree, find by commit or by changed file, commit details with per-hunk diffs, copy and add-to-prompt.",
+    "version": "",
+    "author": "sebastiansulinski",
+    "repository": "https://github.com/sebastiansulinski/claude-plugins",
+    "manifestPath": "./gitgraph",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246985253",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
   }
 ]

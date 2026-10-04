@@ -68,10 +68,13 @@
       "skills": [
         "./skills/architecture-zoo",
         "./skills/explainability",
+        "./skills/imaging-data",
         "./skills/mllm-eval",
+        "./skills/model-assessment",
         "./skills/model-card",
         "./skills/model-evaluation",
         "./skills/model-scaffold",
+        "./skills/model-selection",
         "./skills/model-sourcing",
         "./skills/model-validation",
         "./skills/preprocess-imaging",
@@ -208,7 +211,7 @@
   {
     "id": "1202576122-medsci-presentation",
     "name": "medsci-presentation",
-    "description": "Academic presentation and PPTX building, PDF/document rendering, environment setup, and skill publishing.",
+    "description": "Academic presentation and PPTX building, PDF/document rendering, environment setup, skill publishing, and offering your changes back to the project.",
     "version": "",
     "author": "Aperivue",
     "repository": "https://github.com/Aperivue/medsci-skills",
@@ -638,6 +641,23 @@
     }
   },
   {
+    "id": "1202576122-imaging-data",
+    "name": "imaging-data",
+    "description": "name: imaging-data",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/imaging-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1202576122-intake-project",
     "name": "intake-project",
     "description": "name: intake-project",
@@ -774,6 +794,23 @@
     }
   },
   {
+    "id": "1202576122-model-assessment",
+    "name": "model-assessment",
+    "description": "name: model-assessment",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/model-assessment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1202576122-model-card",
     "name": "model-card",
     "description": "name: model-card",
@@ -815,6 +852,23 @@
     "author": "Aperivue",
     "repository": "https://github.com/Aperivue/medsci-skills",
     "manifestPath": "skills/model-scaffold",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202576122",
+      "marketplaceName": "medsci-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202576122-model-selection",
+    "name": "model-selection",
+    "description": "name: model-selection",
+    "version": "1.0.0",
+    "author": "Aperivue",
+    "repository": "https://github.com/Aperivue/medsci-skills",
+    "manifestPath": "skills/model-selection",
     "isValid": true,
     "errors": [],
     "warnings": [],

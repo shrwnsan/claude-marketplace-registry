@@ -1,8 +1,26 @@
 [
   {
+    "id": "1391220621-listing-asset-studio",
+    "name": "listing-asset-studio",
+    "description": "Turns your listing copy into a logo and marketing screenshots whose look fits what your agent does. Every word and number comes from you.",
+    "version": "0.5.0+e4",
+    "author": "FindAgent",
+    "repository": "https://github.com/FindAgent/plugins",
+    "manifestPath": "./plugins/listing-asset-studio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1391220621",
+      "marketplaceName": "plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
     "id": "1391220621-marketing-ad-researcher",
     "name": "marketing-ad-researcher",
-    "description": "Ranks competitor ads by how long they survived, and says what it could not reach.",
+    "description": "Ranks competitor ads by how long they stayed live and mines reviews for customer language. Gaps are reported, never guessed.",
     "version": "0.2.8+e4",
     "author": "FindAgent",
     "repository": "https://github.com/FindAgent/plugins",
@@ -20,7 +38,7 @@
   {
     "id": "1391220621-marketing-ad-scripter",
     "name": "marketing-ad-scripter",
-    "description": "Turns a creative bank into modules, continuity kits and prompts you can produce from.",
+    "description": "Shot beats, continuity kits and generation prompts for every scene. Real proof gets filmed, never faked.",
     "version": "0.2.6+e4",
     "author": "FindAgent",
     "repository": "https://github.com/FindAgent/plugins",
@@ -38,7 +56,7 @@
   {
     "id": "1391220621-marketing-ad-tester",
     "name": "marketing-ad-tester",
-    "description": "Scores only what was measured, and refuses to read a test that cannot be read.",
+    "description": "QA-checks your finished clips and sets up tests that change one thing at a time. No score without a measurement.",
     "version": "0.2.8+e4",
     "author": "FindAgent",
     "repository": "https://github.com/FindAgent/plugins",
@@ -56,7 +74,7 @@
   {
     "id": "1391220621-marketing-angle-strategist",
     "name": "marketing-angle-strategist",
-    "description": "Scores ad angles with arithmetic you can audit, not a ranking you have to trust.",
+    "description": "Turns your research into a ranked list of ad angles, each scored out of 100 with the math shown and weak claims removed.",
     "version": "0.2.6+e4",
     "author": "FindAgent",
     "repository": "https://github.com/FindAgent/plugins",
@@ -74,7 +92,7 @@
   {
     "id": "1391220621-marketing-brief-scoper",
     "name": "marketing-brief-scoper",
-    "description": "Locks the campaign brief before anyone writes a word of creative.",
+    "description": "Turns your landing page into a locked video ad brief, one question at a time. No invented prices, claims or audiences.",
     "version": "0.2.8+e4",
     "author": "FindAgent",
     "repository": "https://github.com/FindAgent/plugins",
@@ -92,7 +110,7 @@
   {
     "id": "1391220621-marketing-hook-writer",
     "name": "marketing-hook-writer",
-    "description": "Writes hooks in the customer's own words, checked against what the page can promise.",
+    "description": "Hooks, proof and CTAs built from real customer quotes as mix-and-match pieces, so one shoot becomes many ad variants.",
     "version": "0.2.6+e4",
     "author": "FindAgent",
     "repository": "https://github.com/FindAgent/plugins",
@@ -110,7 +128,7 @@
   {
     "id": "1391220621-marketing-introgen-briefer",
     "name": "marketing-introgen-briefer",
-    "description": "Turns approved ad creative into an IntroGen brief, a fact-checked avoid list and an auditable briefing record.",
+    "description": "Turns approved ad creative into an IntroGen motion-graphics brief. Every claim checked, one production per approval.",
     "version": "0.3.3+e4",
     "author": "FindAgent",
     "repository": "https://github.com/FindAgent/plugins",
@@ -128,7 +146,7 @@
   {
     "id": "1391220621-marketing-production-planner",
     "name": "marketing-production-planner",
-    "description": "Plans the shoot and the spend, with an approval gate on every unit.",
+    "description": "Turns your script pack into a costed production plan with work tracks and shoot briefs. Nothing gets spent without your approval.",
     "version": "0.2.7+e4",
     "author": "FindAgent",
     "repository": "https://github.com/FindAgent/plugins",

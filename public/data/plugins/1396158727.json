@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1396158727-eval-conductor",
+    "name": "eval-conductor",
+    "description": "Fail-closed eval release gates + evidence-gated build ledger. /eval-init installs gates into any repo.",
+    "version": "",
+    "author": "Rmasood1122",
+    "repository": "https://github.com/Rmasood1122/eval-conductor",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396158727",
+      "marketplaceName": "eval-conductor",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396158727-eval-gates",
+    "name": "eval-gates",
+    "description": "name: eval-gates",
+    "version": "1.0.0",
+    "author": "Rmasood1122",
+    "repository": "https://github.com/Rmasood1122/eval-conductor",
+    "manifestPath": "skills/eval-gates",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396158727",
+      "marketplaceName": "eval-conductor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1396158727-evidence-discipline",
+    "name": "evidence-discipline",
+    "description": "name: evidence-discipline",
+    "version": "1.0.0",
+    "author": "Rmasood1122",
+    "repository": "https://github.com/Rmasood1122/eval-conductor",
+    "manifestPath": "skills/evidence-discipline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396158727",
+      "marketplaceName": "eval-conductor",
+      "hasSkillMd": true
+    }
+  }
+]
