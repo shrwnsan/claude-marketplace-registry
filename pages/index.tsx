@@ -130,7 +130,7 @@ const HomePage: React.FC = () => {
               ) : (
                 <>
                   <h2 className='sr-only'>Ecosystem at a Glance</h2>
-                  <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto'>
+                  <div className='grid grid-cols-1 min-[400px]:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto'>
                     <StatCard
                       icon={Package}
                       value={stats?.overview.totalPlugins ?? 0}
@@ -192,7 +192,7 @@ const HomePage: React.FC = () => {
         {/* Featured Marketplaces Section */}
         <section className='py-12 sm:py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-850'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-3'>
+            <div className='mb-8'>
               <div className='text-center sm:text-left'>
                 <p className='eyebrow eyebrow-prompt mb-1'>ls ./featured</p>
                 <h2 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-50'>
@@ -203,18 +203,17 @@ const HomePage: React.FC = () => {
                   daily
                 </p>
               </div>
-              <div className='flex items-center gap-2 sm:gap-3 self-center sm:self-auto'>
-                {featuredSeed !== null && (
-                  <button
-                    type='button'
-                    onClick={() => setFeaturedSeed(null)}
-                    className={shuffleButtonClass}
-                    aria-label='Show the daily featured marketplaces'
-                  >
-                    <RotateCcw className='w-4 h-4' aria-hidden='true' />
-                    today&apos;s picks
-                  </button>
-                )}
+              <div className='mt-3 flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3'>
+                <button
+                  type='button'
+                  onClick={() => setFeaturedSeed(null)}
+                  disabled={featuredSeed === null}
+                  className={shuffleButtonClass}
+                  aria-label="Back to today's picks (featured marketplaces)"
+                >
+                  <RotateCcw className='w-4 h-4' aria-hidden='true' />
+                  today&apos;s picks
+                </button>
                 <button
                   type='button'
                   onClick={() => setFeaturedSeed((s) => (s ?? 0) + 1)}
@@ -306,7 +305,7 @@ const HomePage: React.FC = () => {
         {/* Plugins Grid Section */}
         <section className='py-12 sm:py-16 bg-gray-50 dark:bg-gray-850 border-t border-gray-200 dark:border-gray-800'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-3'>
+            <div className='mb-8'>
               <div className='text-center sm:text-left'>
                 <p className='eyebrow eyebrow-prompt mb-1'>cat popular.json</p>
                 <h2 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-50'>
@@ -317,18 +316,17 @@ const HomePage: React.FC = () => {
                   picks daily
                 </p>
               </div>
-              <div className='flex items-center gap-2 sm:gap-3 self-center sm:self-auto'>
-                {pluginsSeed !== null && (
-                  <button
-                    type='button'
-                    onClick={() => setPluginsSeed(null)}
-                    className={shuffleButtonClass}
-                    aria-label='Show the daily popular plugins'
-                  >
-                    <RotateCcw className='w-4 h-4' aria-hidden='true' />
-                    today&apos;s picks
-                  </button>
-                )}
+              <div className='mt-3 flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3'>
+                <button
+                  type='button'
+                  onClick={() => setPluginsSeed(null)}
+                  disabled={pluginsSeed === null}
+                  className={shuffleButtonClass}
+                  aria-label="Back to today's picks (popular plugins)"
+                >
+                  <RotateCcw className='w-4 h-4' aria-hidden='true' />
+                  today&apos;s picks
+                </button>
                 <button
                   type='button'
                   onClick={() => setPluginsSeed((s) => (s ?? 0) + 1)}
