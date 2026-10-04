@@ -18,6 +18,7 @@ import { StatCard } from '@/components/ui/StatCard';
 import FriendlyTimestamp from '@/components/ui/FriendlyTimestamp';
 import {
   ChevronRight,
+  Clock,
   Github,
   Package,
   RotateCcw,
@@ -28,6 +29,7 @@ import {
   Users,
 } from 'lucide-react';
 import Link from 'next/link';
+import { formatRelativeAge } from '@/utils/format';
 import {
   FEATURED_ROTATION_STEP,
   FEATURED_SHUFFLE_POOL,
@@ -150,9 +152,13 @@ const HomePage: React.FC = () => {
                       iconColor='text-warning-500 dark:text-warning-400'
                     />
                     <StatCard
-                      icon={Star}
-                      value={stats?.overview.totalStars ?? 0}
-                      label='GitHub Stars'
+                      icon={Clock}
+                      value={
+                        stats?.overview.lastUpdated
+                          ? formatRelativeAge(stats.overview.lastUpdated)
+                          : '—'
+                      }
+                      label='Last Scan'
                       iconColor='text-cyan-500 dark:text-cyan-400'
                     />
                   </div>
