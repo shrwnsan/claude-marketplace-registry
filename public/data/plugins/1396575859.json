@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1396575859-titan-receipts",
+    "name": "titan-receipts",
+    "description": "Hash-chained, HMAC-signed receipts for every AI-assisted commit; offline verification; fail-closed chain rules.",
+    "version": "",
+    "author": "Rmasood1122",
+    "repository": "https://github.com/Rmasood1122/titan-gate-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396575859",
+      "marketplaceName": "titan-gate-plugin",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396575859-receipt-integrity",
+    "name": "receipt-integrity",
+    "description": "name: receipt-integrity",
+    "version": "1.0.0",
+    "author": "Rmasood1122",
+    "repository": "https://github.com/Rmasood1122/titan-gate-plugin",
+    "manifestPath": "skills/receipt-integrity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396575859",
+      "marketplaceName": "titan-gate-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -2,11 +2,53 @@
   {
     "id": "1227844943-markifact",
     "name": "markifact",
-    "description": "Production performance marketing automation for Claude. Audit accounts, launch campaigns, rotate creative, and diagnose underperformers across Google Ads, Meta Ads, GA4, Shopify, HubSpot, and 50+ more. Approval-gated writes.",
-    "version": "1.0.6",
+    "description": "Run Google Ads, Meta Ads, GA4, TikTok Ads, LinkedIn Ads, Shopify and 50+ more from Claude. Audit accounts, launch campaigns and pull reports, with your approval on every change.",
+    "version": "1.0.7",
     "author": "Markifact",
     "repository": "https://github.com/markifact/markifact-mcp",
     "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1227844943",
+      "marketplaceName": "markifact-mcp",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1227844943-google-ads",
+    "name": "google-ads",
+    "description": "Google Ads MCP server: reports, search terms, negatives, budgets, bids, campaign creation and Performance Max, with approval on every write.",
+    "version": "1.0.7",
+    "author": "Markifact",
+    "repository": "https://github.com/markifact/markifact-mcp",
+    "manifestPath": {
+      "source": "github",
+      "repo": "markifact/google-ads-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1227844943",
+      "marketplaceName": "markifact-mcp",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1227844943-meta-ads",
+    "name": "meta-ads",
+    "description": "Meta Ads MCP server for Facebook and Instagram ads: reports with breakdowns, campaigns, ad sets, ads, creatives and audiences, with approval on every write.",
+    "version": "1.0.7",
+    "author": "Markifact",
+    "repository": "https://github.com/markifact/markifact-mcp",
+    "manifestPath": {
+      "source": "github",
+      "repo": "markifact/meta-ads-mcp"
+    },
     "isValid": true,
     "errors": [],
     "warnings": [],

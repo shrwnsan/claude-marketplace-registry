@@ -1,32 +1,32 @@
 {
-  "totalMarketplaces": 882,
-  "totalPlugins": 5773,
-  "validPlugins": 5773,
-  "lastUpdated": "2026-10-03T04:17:02.674Z",
+  "totalMarketplaces": 910,
+  "totalPlugins": 5881,
+  "validPlugins": 5881,
+  "lastUpdated": "2026-10-04T04:52:50.835Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 270
+      "count": 283
     },
     {
       "language": "Unknown",
-      "count": 174
+      "count": 175
     },
     {
       "language": "JavaScript",
-      "count": 129
+      "count": 134
     },
     {
       "language": "TypeScript",
-      "count": 104
+      "count": 109
     },
     {
       "language": "Shell",
-      "count": 97
+      "count": 96
     },
     {
       "language": "HTML",
-      "count": 44
+      "count": 47
     },
     {
       "language": "Go",
@@ -34,26 +34,26 @@
     },
     {
       "language": "Rust",
-      "count": 17
-    },
-    {
-      "language": "Java",
-      "count": 4
+      "count": 18
     },
     {
       "language": "Swift",
+      "count": 4
+    },
+    {
+      "language": "Java",
       "count": 4
     }
   ],
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 271437,
+      "stars": 272348,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179423,
+      "stars": 179545,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -63,22 +63,22 @@
     },
     {
       "name": "claude-mem",
-      "stars": 95206,
+      "stars": 95666,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76377,
+      "stars": 76435,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69760,
+      "stars": 69779,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37321,
+      "stars": 37359,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -88,65 +88,65 @@
     },
     {
       "name": "daily",
-      "stars": 20088,
+      "stars": 20089,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12095,
+      "stars": 12094,
       "url": "https://github.com/kubeshark/kubeshark"
     }
   ],
   "recentActivity": [
     {
-      "name": "codemem",
-      "updatedAt": "2026-10-03T04:08:42Z",
-      "url": "https://github.com/kunickiaj/codemem"
+      "name": "skills",
+      "updatedAt": "2026-10-04T04:43:13Z",
+      "url": "https://github.com/fabricioctelles/skills"
     },
     {
-      "name": "invisible_playwright_mcp",
-      "updatedAt": "2026-10-03T04:08:13Z",
-      "url": "https://github.com/feder-cr/invisible_playwright_mcp"
+      "name": "model-citizen",
+      "updatedAt": "2026-10-04T04:42:51Z",
+      "url": "https://github.com/JakeSelby/model-citizen"
     },
     {
-      "name": "reticle",
-      "updatedAt": "2026-10-03T04:06:45Z",
-      "url": "https://github.com/reticlehq/reticle"
+      "name": "article-sweeper",
+      "updatedAt": "2026-10-04T04:42:44Z",
+      "url": "https://github.com/sebin-gg/article-sweeper"
     },
     {
-      "name": "evolvable-software",
-      "updatedAt": "2026-10-03T04:06:43Z",
-      "url": "https://github.com/harsh51191/evolvable-software"
+      "name": "oh-my-openagent",
+      "updatedAt": "2026-10-04T04:41:14Z",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
-      "name": "ponytail",
-      "updatedAt": "2026-10-03T04:04:21Z",
-      "url": "https://github.com/DietrichGebert/ponytail"
+      "name": "tycana-claude-hivemind",
+      "updatedAt": "2026-10-04T04:41:03Z",
+      "url": "https://github.com/samuel85194-ux/tycana-claude-hivemind"
     },
     {
-      "name": "easel-js-cpu-render-kit",
-      "updatedAt": "2026-10-03T04:03:48Z",
-      "url": "https://github.com/AllyJuma1/easel-js-cpu-render-kit"
+      "name": "harness-maker",
+      "updatedAt": "2026-10-04T04:39:52Z",
+      "url": "https://github.com/Ecro/harness-maker"
     },
     {
-      "name": "claude-code-plugins",
-      "updatedAt": "2026-10-03T04:02:36Z",
-      "url": "https://github.com/melodic-software/claude-code-plugins"
+      "name": "claude-mem",
+      "updatedAt": "2026-10-04T04:39:18Z",
+      "url": "https://github.com/thedotmack/claude-mem"
     },
     {
-      "name": "parallel-lanes",
-      "updatedAt": "2026-10-03T04:02:35Z",
-      "url": "https://github.com/noderaven/parallel-lanes"
+      "name": "skills",
+      "updatedAt": "2026-10-04T04:38:46Z",
+      "url": "https://github.com/zicula/skills"
     },
     {
-      "name": "10000x-engineer",
-      "updatedAt": "2026-10-03T04:01:09Z",
-      "url": "https://github.com/Jsnnmsc/10000x-engineer"
+      "name": "clima-condor",
+      "updatedAt": "2026-10-04T04:37:08Z",
+      "url": "https://github.com/condor090/clima-condor"
     },
     {
-      "name": "grandpa",
-      "updatedAt": "2026-10-03T04:00:45Z",
-      "url": "https://github.com/bytewhisker/grandpa"
+      "name": "awesome-claude-plugins",
+      "updatedAt": "2026-10-04T04:37:03Z",
+      "url": "https://github.com/quemsah/awesome-claude-plugins"
     }
   ]
 }
