@@ -1,15 +1,6 @@
 import React from 'react';
-import {
-  Activity,
-  Calendar,
-  ShieldCheck,
-  RefreshCw,
-  Clock,
-  Star,
-  FileCheck,
-  Puzzle,
-} from 'lucide-react';
-import { formatDateTimeWithOffset, formatNumber } from '../../utils/format';
+import { ShieldCheck, RefreshCw, Clock, Star, FileCheck, Puzzle } from 'lucide-react';
+import { formatNumber } from '../../utils/format';
 import { useEcosystemStats } from '../../hooks/useEcosystemStats';
 import ErrorDisplay from '../ui/ErrorDisplay';
 import MiniSparkline from '../ui/MiniSparkline';
@@ -50,7 +41,9 @@ const AnimatedBar: React.FC<{ value: number; label: string }> = ({ value, label 
 };
 
 const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' }) => {
-  const { data, metaTimestamp, loading, error, refresh } = useEcosystemStats();
+  // Freshness timestamp and the refresh control live in the EcosystemStats
+  // page header — sections render only their data.
+  const { data, loading, error, refresh } = useEcosystemStats();
 
   // Real derived history: share of marketplaces with traction stars, per day.
   // Backfilled from the starred/marketplaces history series; days before the
@@ -166,32 +159,6 @@ const QualityIndicators: React.FC<QualityIndicatorsProps> = ({ className = '' })
 
   return (
     <section className={`space-y-4 ${className}`} aria-label='Quality Indicators'>
-      <header className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
-        <div>
-          <p className='eyebrow eyebrow-prompt mb-1'>check --quality</p>
-          <p className='text-sm text-gray-600 dark:text-gray-400'>
-            Trust signals computed directly from the scan data
-          </p>
-        </div>
-        <div className='flex items-center gap-4'>
-          {metaTimestamp && (
-            <div className='flex items-center text-sm text-gray-500 dark:text-gray-400'>
-              <Calendar className='w-4 h-4 mr-1' />
-              <span>Updated {formatDateTimeWithOffset(metaTimestamp)}</span>
-            </div>
-          )}
-          <button
-            onClick={refresh}
-            disabled={loading}
-            className='btn-ghost p-2 disabled:opacity-50'
-            aria-label='Refresh quality indicators'
-            title='Refresh quality indicators'
-          >
-            <Activity className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
-          </button>
-        </div>
-      </header>
-
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         {cards.map((card) => (
           <article key={card.label} className='card p-6' role='region' aria-label={card.label}>

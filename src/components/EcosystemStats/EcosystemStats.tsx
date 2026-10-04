@@ -6,12 +6,12 @@
  */
 
 import React from 'react';
+import { Activity } from 'lucide-react';
 import OverviewMetrics from './OverviewMetrics';
 import GrowthTrends from './GrowthTrends';
 import CategoryAnalytics from './CategoryAnalytics';
 import QualityIndicators from './QualityIndicators';
 import ErrorBoundary from '../ui/ErrorBoundary';
-import LoadingSpinner from '../ui/LoadingSpinner';
 import ErrorDisplay from '../ui/ErrorDisplay';
 import { useEcosystemStats } from '../../hooks/useEcosystemStats';
 import { formatDateTimeWithOffset } from '../../utils/format';
@@ -75,59 +75,44 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
     >
       <div className={`space-y-12 ${className}`}>
         {showHeaders && (
-          <header className='text-center mb-8 sm:mb-12'>
-            <div className='flex items-center justify-between mb-4'>
-              <div className='flex-1' />
-              <div className='flex-1'>
+          <header className='mb-8 sm:mb-12'>
+            {/* Results-header pattern (same as listing pages): identity left,
+                freshness + refresh right — one owner of both, so the section
+                components no longer repeat them. */}
+            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
+              <div className='text-center sm:text-left'>
+                <p className='eyebrow eyebrow-prompt mb-2'>status --live</p>
                 {/* /stats is this component's only consumer, so the title is the page h1 */}
-                <h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4'>
+                <h1 className='text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100'>
                   {title}
                 </h1>
-                <p className='text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto'>
+                <p className='text-gray-600 dark:text-gray-400 text-base sm:text-lg mt-2 max-w-2xl'>
                   {subtitle}
                 </p>
               </div>
-              <div className='flex-1 flex justify-end'>
+
+              <div className='flex items-center gap-2 sm:gap-3 self-center sm:self-auto'>
+                {showLastUpdated && metaTimestamp && (
+                  <span className='font-mono text-xs text-gray-500 dark:text-gray-400'>
+                    updated {formatDateTimeWithOffset(metaTimestamp)}
+                  </span>
+                )}
                 {showRefreshButton && (
                   <button
                     onClick={refresh}
                     disabled={loading}
-                    className='inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200'
+                    className='inline-flex items-center gap-1.5 px-3 py-2 font-mono text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded'
                     aria-label='Refresh all data'
                   >
-                    {loading ? (
-                      <>
-                        <LoadingSpinner size='sm' className='mr-2' />
-                        Refreshing...
-                      </>
-                    ) : (
-                      <>
-                        <svg
-                          className='w-4 h-4 mr-2'
-                          fill='none'
-                          stroke='currentColor'
-                          viewBox='0 0 24 24'
-                        >
-                          <path
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth={2}
-                            d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15'
-                          />
-                        </svg>
-                        Refresh
-                      </>
-                    )}
+                    <Activity
+                      className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`}
+                      aria-hidden='true'
+                    />
+                    {loading ? 'refreshing…' : 'refresh'}
                   </button>
                 )}
               </div>
             </div>
-
-            {showLastUpdated && metaTimestamp && (
-              <div className='text-sm text-gray-500 dark:text-gray-400 mt-2'>
-                Last updated: {formatDateTimeWithOffset(metaTimestamp)}
-              </div>
-            )}
           </header>
         )}
 
