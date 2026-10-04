@@ -73,7 +73,7 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
         <CopyRepoButton url={plugin.sourceUrl || plugin.repositoryUrl} name={plugin.name} />
         <Link
           href={`/plugins/${plugin.id}`}
-          className='cta group/cta relative'
+          className='cta group/cta relative ml-auto'
           aria-label={`View details for ${plugin.name}`}
         >
           view details
