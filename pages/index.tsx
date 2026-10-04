@@ -39,7 +39,7 @@ import {
 } from '@/utils/stats';
 
 const shuffleButtonClass =
-  'inline-flex items-center gap-1.5 px-3 py-2 font-mono text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded';
+  'inline-flex items-center gap-1.5 px-3 py-2 lg:pb-0.5 font-mono text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 rounded';
 
 const HomePage: React.FC = () => {
   const {
@@ -198,7 +198,7 @@ const HomePage: React.FC = () => {
         {/* Featured Marketplaces Section */}
         <section className='py-12 sm:py-16 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-850'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='mb-8'>
+            <div className='mb-8 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8'>
               <div className='text-center sm:text-left'>
                 <p className='eyebrow eyebrow-prompt mb-1'>ls ./featured</p>
                 <h2 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-50'>
@@ -209,7 +209,7 @@ const HomePage: React.FC = () => {
                   daily
                 </p>
               </div>
-              <div className='mt-3 flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3'>
+              <div className='flex flex-shrink-0 flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3'>
                 <button
                   type='button'
                   onClick={() => setFeaturedSeed(null)}
@@ -232,7 +232,7 @@ const HomePage: React.FC = () => {
                 </button>
                 <Link
                   href='/marketplaces'
-                  className='inline-flex items-center justify-center px-4 py-2 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors'
+                  className='inline-flex items-center justify-center px-4 py-2 lg:pb-0.5 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900'
                 >
                   view all
                   <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
@@ -253,13 +253,16 @@ const HomePage: React.FC = () => {
             ) : (
               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5'>
                 {featured.map((marketplace) => (
-                  <div key={marketplace.id} className='card-interactive group h-full flex flex-col'>
+                  <div
+                    key={marketplace.id}
+                    className='card-interactive group relative h-full flex flex-col'
+                  >
                     <div className='flex items-start justify-between mb-3'>
                       <div className='flex-1 min-w-0'>
                         <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
                           <Link
                             href={`/marketplaces/${marketplace.id}`}
-                            className='hover:underline focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded'
+                            className='card-link-stretch hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 rounded'
                             aria-label={`View details for ${marketplace.name}`}
                           >
                             {marketplace.name}
@@ -294,7 +297,7 @@ const HomePage: React.FC = () => {
                     <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-end'>
                       <Link
                         href={`/marketplaces/${marketplace.id}`}
-                        className='cta group/cta'
+                        className='cta group/cta relative'
                         aria-label={`Open ${marketplace.name} marketplace page`}
                       >
                         view details
@@ -311,7 +314,7 @@ const HomePage: React.FC = () => {
         {/* Plugins Grid Section */}
         <section className='py-12 sm:py-16 bg-gray-50 dark:bg-gray-850 border-t border-gray-200 dark:border-gray-800'>
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='mb-8'>
+            <div className='mb-8 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-8'>
               <div className='text-center sm:text-left'>
                 <p className='eyebrow eyebrow-prompt mb-1'>cat popular.json</p>
                 <h2 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-50'>
@@ -322,7 +325,7 @@ const HomePage: React.FC = () => {
                   picks daily
                 </p>
               </div>
-              <div className='mt-3 flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3'>
+              <div className='flex flex-shrink-0 flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-3'>
                 <button
                   type='button'
                   onClick={() => setPluginsSeed(null)}
@@ -345,7 +348,7 @@ const HomePage: React.FC = () => {
                 </button>
                 <Link
                   href='/plugins'
-                  className='inline-flex items-center justify-center px-4 py-2 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors'
+                  className='inline-flex items-center justify-center px-4 py-2 lg:pb-0.5 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900'
                 >
                   view all
                   <span className='ml-1 transform transition-transform group-hover:translate-x-1'>

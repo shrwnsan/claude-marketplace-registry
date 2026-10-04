@@ -199,25 +199,25 @@ const MarketplaceDetailPage: React.FC = () => {
                 )}
               </div>
 
-              {/* Plugin count stats */}
-              <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700 grid grid-cols-2 sm:grid-cols-3 gap-4'>
-                <div>
-                  <div className='text-2xl font-bold font-mono text-gray-900 dark:text-gray-100'>
+              {/* Plugin count stats — one tight, left-aligned line */}
+              <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700 flex flex-wrap items-baseline gap-x-6 gap-y-2'>
+                <div className='flex items-baseline gap-1.5'>
+                  <span className='text-2xl font-bold font-mono tabular-nums text-gray-900 dark:text-gray-100'>
                     {marketplacePlugins.length}
-                  </div>
-                  <div className='text-xs text-gray-500 dark:text-gray-400'>Plugins indexed</div>
+                  </span>
+                  <span className='text-xs text-gray-500 dark:text-gray-400'>Plugins indexed</span>
                 </div>
-                <div>
-                  <div className='text-2xl font-bold font-mono text-gray-900 dark:text-gray-100'>
+                <div className='flex items-baseline gap-1.5'>
+                  <span className='text-2xl font-bold font-mono tabular-nums text-gray-900 dark:text-gray-100'>
                     {new Set(marketplacePlugins.map((p) => p.author)).size}
-                  </div>
-                  <div className='text-xs text-gray-500 dark:text-gray-400'>Authors</div>
+                  </span>
+                  <span className='text-xs text-gray-500 dark:text-gray-400'>Authors</span>
                 </div>
-                <div>
-                  <div className='text-2xl font-bold font-mono text-gray-900 dark:text-gray-100'>
+                <div className='flex items-baseline gap-1.5'>
+                  <span className='text-2xl font-bold font-mono tabular-nums text-gray-900 dark:text-gray-100'>
                     {new Set(marketplacePlugins.flatMap((p) => p.skills || [])).size}
-                  </div>
-                  <div className='text-xs text-gray-500 dark:text-gray-400'>Skills</div>
+                  </span>
+                  <span className='text-xs text-gray-500 dark:text-gray-400'>Skills</span>
                 </div>
               </div>
 

@@ -13,13 +13,13 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
   const { handleClick } = useClickTracking(plugin.id, 'plugin', plugin.name);
 
   return (
-    <div className={`card-interactive group h-full flex flex-col ${className}`}>
+    <div className={`card-interactive group relative h-full flex flex-col ${className}`}>
       {/* Header */}
       <div className='mb-3'>
         <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
           <Link
             href={`/plugins/${plugin.id}`}
-            className='hover:underline focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded'
+            className='card-link-stretch hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 rounded'
             aria-label={`View details for ${plugin.name}`}
             onClick={() => handleClick('plugin-card')}
           >
@@ -41,7 +41,7 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
         {plugin.marketplaceId && (
           <Link
             href={`/marketplaces/${plugin.marketplaceId}`}
-            className='badge badge-secondary text-xs hover:border-primary-300 dark:hover:border-primary-600 transition-colors flex-shrink-0 ml-2'
+            className='badge badge-secondary text-xs hover:border-primary-300 dark:hover:border-primary-600 transition-colors relative flex-shrink-0 ml-2'
             aria-label={`View ${plugin.marketplaceName} marketplace`}
           >
             {plugin.marketplaceName}
@@ -73,7 +73,7 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
         <CopyRepoButton url={plugin.sourceUrl || plugin.repositoryUrl} name={plugin.name} />
         <Link
           href={`/plugins/${plugin.id}`}
-          className='cta group/cta'
+          className='cta group/cta relative'
           aria-label={`View details for ${plugin.name}`}
         >
           view details
@@ -99,7 +99,7 @@ const CopyRepoButton: React.FC<{ url: string; name?: string }> = ({ url, name })
           /* clipboard unavailable */
         }
       }}
-      className='btn-ghost p-2 group'
+      className='btn-ghost p-2 group relative'
       aria-label='Copy repository URL'
     >
       {copied ? (
