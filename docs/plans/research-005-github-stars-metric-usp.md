@@ -111,6 +111,9 @@ Fixes, following the site's own established patterns:
   `check --quality` eyebrow the sibling sections don't have) removed for the same reason —
   its refresh hit the identical shared cache; all four sections now render uniformly
   (section `h3` from EcosystemStats + data).
+- Fineprint cluster (timestamp + refresh) bottom-aligned to the description's text-bottom
+  (`sm:items-end`) — user-requested; deliberate deviation from the listing pages'
+  `sm:items-center`.
 - Files touched: `src/components/EcosystemStats/EcosystemStats.tsx` (header rebuilt),
   `src/components/EcosystemStats/OverviewMetrics.tsx` and
   `src/components/EcosystemStats/QualityIndicators.tsx` (duplicated headers removed,

@@ -78,8 +78,10 @@ export const EcosystemStats: React.FC<EcosystemStatsProps> = ({
           <header className='mb-8 sm:mb-12'>
             {/* Results-header pattern (same as listing pages): identity left,
                 freshness + refresh right — one owner of both, so the section
-                components no longer repeat them. */}
-            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4'>
+                components no longer repeat them. items-end hangs the fineprint
+                on the description's text-bottom (deliberate deviation from the
+                listing pages' items-center). */}
+            <div className='flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4'>
               <div className='text-center sm:text-left'>
                 <p className='eyebrow eyebrow-prompt mb-2'>status --live</p>
                 {/* /stats is this component's only consumer, so the title is the page h1 */}
