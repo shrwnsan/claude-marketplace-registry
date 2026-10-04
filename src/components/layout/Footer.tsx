@@ -31,7 +31,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16'>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12'>
           {/* Brand section */}
-          <div className='lg:col-span-2'>
+          <div className='sm:col-span-2'>
             <div className='flex items-center space-x-2.5 mb-6'>
               <div className='w-9 h-9 bg-gray-100 rounded-md flex items-center justify-center'>
                 <span className='font-mono font-bold text-lg leading-none text-primary-400'>
@@ -76,7 +76,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className='text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded'
+                    className='inline-block py-1 text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded'
                   >
                     {link.name}
                   </Link>
@@ -92,7 +92,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className='text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded'
+                    className='inline-block py-1 text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded'
                   >
                     {link.name}
                   </Link>
@@ -103,7 +103,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                   href={REPO_URL}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded inline-flex items-center'
+                  className='inline-flex items-center py-1 text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded'
                 >
                   GitHub
                   <ExternalLink className='w-3 h-3 ml-1' />
@@ -112,7 +112,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
               <li>
                 <a
                   href={API_DOCS_URL}
-                  className='text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded inline-flex items-center'
+                  className='inline-flex items-center py-1 text-gray-300 dark:text-gray-400 hover:text-primary-400 dark:hover:text-primary-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded'
                 >
                   JSON Data API
                   <ExternalLink className='w-3 h-3 ml-1' />
@@ -123,11 +123,11 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
         </div>
 
         {/* Bottom section */}
-        <div className='border-t border-gray-800 dark:border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4'>
-          <p className='text-gray-400 dark:text-gray-500 text-sm text-center sm:text-left'>
+        <div className='border-t border-gray-800 dark:border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4'>
+          <p className='text-gray-400 text-sm text-center md:text-left'>
             © {currentYear} Claude Marketplace Registry. Released under the MIT License.
           </p>
-          <div className='flex items-center text-sm text-gray-400 dark:text-gray-500'>
+          <div className='flex items-center text-sm text-gray-400 whitespace-nowrap'>
             <span>Made with</span>
             <Heart className='w-4 h-4 mx-1 text-red-500 animate-pulse' aria-hidden='true' />
             <span>by the community</span>
@@ -136,7 +136,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
 
         {/* Accessibility statement */}
         <div className='mt-8 pt-8 border-t border-gray-800 dark:border-gray-700 text-center'>
-          <p className='text-xs text-gray-500 dark:text-gray-600'>
+          <p className='text-xs text-gray-400'>
             This website is committed to digital accessibility and WCAG 2.1 AA compliance.
           </p>
         </div>
