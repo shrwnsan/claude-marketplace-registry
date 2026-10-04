@@ -220,11 +220,17 @@ const PluginsPage: React.FC = () => {
                     {viewMode === 'grid' ? (
                       <PluginCard plugin={plugin} />
                     ) : (
-                      <div className='card flex items-center gap-4'>
+                      <div className='card relative flex items-center gap-4'>
                         <div className='flex-1'>
                           <div className='flex items-center gap-3 mb-2'>
                             <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100'>
-                              <Link href={`/plugins/${plugin.id}`}>{plugin.name}</Link>
+                              <Link
+                                href={`/plugins/${plugin.id}`}
+                                className='card-link-stretch hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 rounded'
+                                aria-label={`View details for ${plugin.name}`}
+                              >
+                                {plugin.name}
+                              </Link>
                             </h3>
                             <span className='badge badge-secondary text-xs'>
                               {plugin.marketplaceName}
@@ -242,7 +248,7 @@ const PluginsPage: React.FC = () => {
                         </div>
                         <Link
                           href={`/plugins/${plugin.id}`}
-                          className='cta group/cta flex-shrink-0'
+                          className='cta group/cta relative flex-shrink-0'
                           aria-label={`View details for ${plugin.name}`}
                         >
                           view details
