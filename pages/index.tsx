@@ -253,13 +253,16 @@ const HomePage: React.FC = () => {
             ) : (
               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5'>
                 {featured.map((marketplace) => (
-                  <div key={marketplace.id} className='card-interactive group h-full flex flex-col'>
+                  <div
+                    key={marketplace.id}
+                    className='card-interactive group relative h-full flex flex-col'
+                  >
                     <div className='flex items-start justify-between mb-3'>
                       <div className='flex-1 min-w-0'>
                         <h3 className='text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors truncate'>
                           <Link
                             href={`/marketplaces/${marketplace.id}`}
-                            className='hover:underline focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded'
+                            className='card-link-stretch hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 rounded'
                             aria-label={`View details for ${marketplace.name}`}
                           >
                             {marketplace.name}
@@ -294,7 +297,7 @@ const HomePage: React.FC = () => {
                     <div className='mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-end'>
                       <Link
                         href={`/marketplaces/${marketplace.id}`}
-                        className='cta group/cta'
+                        className='cta group/cta relative'
                         aria-label={`Open ${marketplace.name} marketplace page`}
                       >
                         view details
