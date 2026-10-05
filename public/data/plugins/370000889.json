@@ -1,0 +1,20 @@
+[
+  {
+    "id": "370000889-pendo-mobile-sdk-tools",
+    "name": "pendo-mobile-sdk-tools",
+    "description": "Install, check and fix the Pendo Mobile SDK in your app using Claude Code (Beta)",
+    "version": "",
+    "author": "pendo-io",
+    "repository": "https://github.com/pendo-io/pendo-mobile-sdk",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "370000889",
+      "marketplaceName": "pendo-mobile-sdk",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

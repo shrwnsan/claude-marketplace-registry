@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1405094477-limelit-audit",
+    "name": "limelit-audit",
+    "description": "Free AI search audits with no account: which AI crawlers your robots.txt lets in, and whether your llms.txt is present and well formed.",
+    "version": "0.1.0",
+    "author": "limelit-co",
+    "repository": "https://github.com/limelit-co/claude-plugins",
+    "manifestPath": "./plugins/limelit-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1405094477",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1405094477-limelit",
+    "name": "limelit",
+    "description": "Connect Limelit Cloud: see how ChatGPT, Claude, Perplexity, Gemini and Google AI answers rank and cite your brand against competitors, and what to fix next.",
+    "version": "0.1.0",
+    "author": "limelit-co",
+    "repository": "https://github.com/limelit-co/claude-plugins",
+    "manifestPath": "./plugins/limelit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1405094477",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1405094477-limelit-open",
+    "name": "limelit-open",
+    "description": "Connect a self-hosted Limelit Open install: your own AI visibility tracking, read from Claude over the local limelit binary.",
+    "version": "0.1.0",
+    "author": "limelit-co",
+    "repository": "https://github.com/limelit-co/claude-plugins",
+    "manifestPath": "./plugins/limelit-open",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1405094477",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1396823614-project-workflow",
+    "name": "project-workflow",
+    "description": "Start a project the same way every time (create-project) and save what a session decided before you close it (save-context).",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/project-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-subtask-icons",
+    "name": "subtask-icons",
+    "description": "Small ⑂ icons under Claude's last answer, one per item; a press puts /subtask with that item's text in the prompt box",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/subtask-icons",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-context-alarm",
+    "name": "context-alarm",
+    "description": "Warns when the context window passes a threshold (80% by default) and suggests /save-context before compaction",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/context-alarm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-answer-buttons",
+    "name": "answer-buttons",
+    "description": "Three small buttons under Claude's last answer: Plain English, Shorter, and Plain & short",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/answer-buttons",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-skill-stats",
+    "name": "skill-stats",
+    "description": "Counts how often each skill runs, lists the ones that never trigger, and hands a weak description to skill-creator",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/skill-stats",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-dash-guard",
+    "name": "dash-guard",
+    "description": "Refuses prose that Claude writes with an em dash, an en dash or a double hyphen, and tells Claude which lines to rewrite",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/dash-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-shared-file-guard",
+    "name": "shared-file-guard",
+    "description": "Refuses a shell write to a shared file (STATUS.md, CLAUDE.md, MEMORY.md, or the files you name) that this session has not read, or that another session changed since",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/shared-file-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-dragon-lair",
+    "name": "dragon-lair",
+    "description": "A small pixel dragon above the prompt that acts out what Claude is doing and breathes fire at the moments worth celebrating: a commit, a merge, a finished task list, a PDF made.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/dragon-lair",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-jackpot",
+    "name": "jackpot",
+    "description": "A pixel slot machine above the prompt: every finished turn pulls the lever, and the moments worth celebrating (a commit, a skill run, a deploy, a finished task list) earn golden spins.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/jackpot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-outlaw",
+    "name": "outlaw",
+    "description": "An Atari Outlaw duel above the prompt: your gunslinger fires at the moments worth celebrating, the bug fires when a tool fails, and the cactus between them gets shot to pieces.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/outlaw",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-tama",
+    "name": "tama",
+    "description": "A classic Tamagotchi above the prompt: it gets hungry, bored and messy in real time, finished turns feed it, the moments worth celebrating cheer it up, and failed tools leave a mess.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/tama",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-tetris",
+    "name": "tetris",
+    "description": "A classic Tetris in a small handheld screen above the prompt, played by Claude's work: every tool drops a piece, failed tools push up garbage, and the moments worth celebrating clear rows.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/tetris",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-arcade",
+    "name": "arcade",
+    "description": "The Claude Code Arcade in one install: dragon-lair, jackpot, outlaw, tama and tetris, five games above the prompt that your work plays.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/arcade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1396823614-toolkit",
+    "name": "toolkit",
+    "description": "The Claude Code Toolkit in one install: subtask-icons, context-alarm, answer-buttons, skill-stats, dash-guard and shared-file-guard.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/toolkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

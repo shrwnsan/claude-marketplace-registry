@@ -1,0 +1,258 @@
+[
+  {
+    "id": "1193206083-construction",
+    "name": "construction",
+    "description": "Skills that give Claude Code the working knowledge of a Project Engineer for construction documents.",
+    "version": "",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1193206083-bid-evaluator",
+    "name": "bid-evaluator",
+    "description": "name: bid-evaluator",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/bid-evaluator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-bid-tabulator",
+    "name": "bid-tabulator",
+    "description": "name: bid-tabulator",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/bid-tabulator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-code-researcher",
+    "name": "code-researcher",
+    "description": "name: code-researcher",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/code-researcher",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-construction-guide",
+    "name": "construction-guide",
+    "description": "name: construction-guide",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/construction-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-pe-review",
+    "name": "pe-review",
+    "description": "name: pe-review",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/pe-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-project-setup",
+    "name": "project-setup",
+    "description": "name: project-setup",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/project-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-rfi-drafter",
+    "name": "rfi-drafter",
+    "description": "name: rfi-drafter",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/rfi-drafter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-schedule-extractor",
+    "name": "schedule-extractor",
+    "description": "name: schedule-extractor",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/schedule-extractor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-sheet-splitter",
+    "name": "sheet-splitter",
+    "description": "name: sheet-splitter",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/sheet-splitter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-spec-splitter",
+    "name": "spec-splitter",
+    "description": "name: spec-splitter",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/spec-splitter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-subcontract-writer",
+    "name": "subcontract-writer",
+    "description": "name: subcontract-writer",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/subcontract-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-submittal-log-generator",
+    "name": "submittal-log-generator",
+    "description": "name: submittal-log-generator",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/submittal-log-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-submittal-review",
+    "name": "submittal-review",
+    "description": "name: submittal-review",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/submittal-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193206083-tag-audit-and-takeoff",
+    "name": "tag-audit-and-takeoff",
+    "description": "name: tag-audit-and-takeoff",
+    "version": "1.0.0",
+    "author": "dleerdefi",
+    "repository": "https://github.com/dleerdefi/claude-code-construction",
+    "manifestPath": "skills/tag-audit-and-takeoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193206083",
+      "marketplaceName": "claude-code-construction",
+      "hasSkillMd": true
+    }
+  }
+]

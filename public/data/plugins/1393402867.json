@@ -18,6 +18,23 @@
     }
   },
   {
+    "id": "1393402867-rez-caching",
+    "name": "rez-caching",
+    "description": "name: rez-caching",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-caching",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1393402867-rez-cli",
     "name": "rez-cli",
     "description": "name: rez-cli",
@@ -120,6 +137,23 @@
     }
   },
   {
+    "id": "1393402867-rez-package-orderers",
+    "name": "rez-package-orderers",
+    "description": "name: rez-package-orderers",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-package-orderers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1393402867-rez-package-pitfalls",
     "name": "rez-package-pitfalls",
     "description": "name: rez-package-pitfalls",
@@ -212,6 +246,40 @@
     "author": "loonghao",
     "repository": "https://github.com/loonghao/rez-skills",
     "manifestPath": "skills/rez-suites-bundles",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-test-ci",
+    "name": "rez-test-ci",
+    "description": "name: rez-test-ci",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-test-ci",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393402867",
+      "marketplaceName": "rez-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393402867-rez-windows-platform",
+    "name": "rez-windows-platform",
+    "description": "name: rez-windows-platform",
+    "version": "1.0.0",
+    "author": "loonghao",
+    "repository": "https://github.com/loonghao/rez-skills",
+    "manifestPath": "skills/rez-windows-platform",
     "isValid": true,
     "errors": [],
     "warnings": [],

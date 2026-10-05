@@ -72,6 +72,24 @@
     }
   },
   {
+    "id": "1330327169-elevenlabs-studio",
+    "name": "elevenlabs-studio",
+    "description": "Make voice-over, sound effects and music with ElevenLabs from the agent, and spend the credits on purpose. Every paid call is priced first, never paid for twice, measured after and written to a ledger, and a reserve stops a runaway loop. The key is never typed into the chat.",
+    "version": "1.0.0",
+    "author": "Itqan Lab",
+    "repository": "https://github.com/itqanlab/agent-toolkit",
+    "manifestPath": "./plugins/elevenlabs-studio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330327169",
+      "marketplaceName": "agent-toolkit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
     "id": "1330327169-watch-video",
     "name": "watch-video",
     "description": "Let the agent watch a video — any of 1750+ sites or a local file. Pulls captions or transcribes locally, extracts frames the agent can Read. Includes a setup wizard. No API key.",
