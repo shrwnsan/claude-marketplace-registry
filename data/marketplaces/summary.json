@@ -1,44 +1,44 @@
 {
-  "totalFound": 910,
-  "withManifest": 444,
-  "lastUpdated": "2026-10-04T04:45:04.366Z",
+  "totalFound": 938,
+  "withManifest": 454,
+  "lastUpdated": "2026-10-05T04:33:06.294Z",
   "searchQuery": "",
   "languages": {
-    "Python": 283,
-    "Shell": 96,
-    "Rust": 18,
-    "JavaScript": 134,
-    "TypeScript": 109,
-    "Go": 22,
-    "Unknown": 175,
+    "Python": 291,
+    "JavaScript": 139,
+    "Shell": 98,
+    "TypeScript": 113,
+    "C#": 3,
+    "Go": 24,
+    "Unknown": 179,
+    "Rust": 19,
     "HTML": 47,
     "AMPL": 1,
     "C++": 2,
     "Swift": 4,
     "Jupyter Notebook": 2,
     "Astro": 1,
-    "C#": 2,
     "Perl": 1,
     "Ruby": 1,
-    "Gleam": 1,
-    "SCSS": 1,
-    "Java": 4,
+    "Java": 5,
+    "CSS": 1,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
     "Svelte": 1,
     "Markdown": 1,
-    "CSS": 1
+    "SCSS": 1,
+    "Gleam": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 272348,
+      "stars": 273055,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179545,
+      "stars": 179668,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76435,
+      "stars": 76511,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37359,
+      "stars": 37397,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "name": "daily",
-      "stars": 20089,
+      "stars": 20092,
       "url": "https://github.com/dailydotdev/daily"
     },
     {

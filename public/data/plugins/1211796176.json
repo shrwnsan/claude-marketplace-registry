@@ -1,0 +1,125 @@
+[
+  {
+    "id": "1211796176-tendril-skills",
+    "name": "tendril-skills",
+    "description": "Engineering and debugging skills for Ivy Tendril plans, jobs, reviews, and extension development.",
+    "version": "1.0.0",
+    "author": "Ivy-Interactive",
+    "repository": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "manifestPath": {
+      "source": "github",
+      "repo": "ivy-interactive/ivy-tendril"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211796176",
+      "marketplaceName": "Ivy-Tendril",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1211796176-tendril-debug-job",
+    "name": "tendril-debug-job",
+    "description": "name: tendril-debug-job",
+    "version": "1.0.0",
+    "author": "Ivy-Interactive",
+    "repository": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "manifestPath": "skills/tendril-debug-job",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211796176",
+      "marketplaceName": "Ivy-Tendril",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211796176-tendril-debug-plan",
+    "name": "tendril-debug-plan",
+    "description": "name: tendril-debug-plan",
+    "version": "1.0.0",
+    "author": "Ivy-Interactive",
+    "repository": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "manifestPath": "skills/tendril-debug-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211796176",
+      "marketplaceName": "Ivy-Tendril",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211796176-tendril-extension",
+    "name": "tendril-extension",
+    "description": "name: tendril-extension",
+    "version": "1.0.0",
+    "author": "Ivy-Interactive",
+    "repository": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "manifestPath": "skills/tendril-extension",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211796176",
+      "marketplaceName": "Ivy-Tendril",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211796176-tendril-release",
+    "name": "tendril-release",
+    "description": "name: tendril-release",
+    "version": "1.0.0",
+    "author": "Ivy-Interactive",
+    "repository": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "manifestPath": "skills/tendril-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211796176",
+      "marketplaceName": "Ivy-Tendril",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211796176-tendril-review",
+    "name": "tendril-review",
+    "description": "name: tendril-review",
+    "version": "1.0.0",
+    "author": "Ivy-Interactive",
+    "repository": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "manifestPath": "skills/tendril-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211796176",
+      "marketplaceName": "Ivy-Tendril",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211796176-tendrillable",
+    "name": "tendrillable",
+    "description": "name: tendrillable",
+    "version": "1.0.0",
+    "author": "Ivy-Interactive",
+    "repository": "https://github.com/Ivy-Interactive/Ivy-Tendril",
+    "manifestPath": "skills/tendrillable",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211796176",
+      "marketplaceName": "Ivy-Tendril",
+      "hasSkillMd": true
+    }
+  }
+]

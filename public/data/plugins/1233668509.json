@@ -3,7 +3,7 @@
     "id": "1233668509-houki-research",
     "name": "houki-research",
     "description": "日本の全法規 (法律・政令・通達・判例・裁決・行政解釈) を houki-hub MCP family で横断調査するための Claude Skill。実装する前に仕様が法令のどこに触れるかを条文で確かめる、通達・Q&A から根拠条文へ戻る、改正がいつからかを見る、の各手順を問いの形で選び、「法律で決まっている」と「通達でそうなっている」を混ぜずに答える。業法独占規定 (税理士法 52 条 / 弁護士法 72 条 / 司法書士法 3 条 / 社労士法 27 条) への注意喚起・citation 標準化・横断オーケストレーション・各 MCP のエラーの code の一覧と、受け取ったときの解釈を持つ。 v0.7.0 から 2 つの MCP を dependencies に宣言しており、この plugin を入れれば条文と通達の両方が揃う。",
-    "version": "0.18.0",
+    "version": "0.19.0",
     "author": "shuji-bonji",
     "repository": "https://github.com/shuji-bonji/claude-plugins",
     "manifestPath": {
@@ -24,7 +24,7 @@
     "id": "1233668509-houki-egov-mcp",
     "name": "houki-egov-mcp",
     "description": "日本の法令 (憲法・法律・政令・省令・規則) を e-Gov 法令API v2 から、条・項・号の単位で、法令番号と URL を添えて返す MCP サーバー。税法・労働法・会社法・民法など全分野の条文を引ける。ローカル DB を作れば条文本文の全文検索もできる。houki-hub family の一員。",
-    "version": "0.19.1",
+    "version": "0.20.0",
     "author": "shuji-bonji",
     "repository": "https://github.com/shuji-bonji/claude-plugins",
     "manifestPath": {
@@ -45,7 +45,7 @@
     "id": "1233668509-houki-nta-mcp",
     "name": "houki-nta-mcp",
     "description": "国税庁サイトの基本通達・改正通達・事務運営指針・文書回答事例・タックスアンサー・質疑応答事例を取り込んで全文検索する、税務の下調べ向けの MCP サーバー。「法律で決まっている」と「通達でそうなっている」を混ぜずに、legal_status と根拠条文への案内と鮮度を添えて返す。--quickstart で通達 1 本を約 3〜5 分で試せる。添付 PDF は本文を読まず、種別ごとの読み方と save: true で保存したパスを返す（読み手は固定しない、v0.19.0）。houki-hub family の一員。",
-    "version": "0.24.0",
+    "version": "0.25.0",
     "author": "shuji-bonji",
     "repository": "https://github.com/shuji-bonji/claude-plugins",
     "manifestPath": {

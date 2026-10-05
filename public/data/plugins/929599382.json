@@ -1,0 +1,1542 @@
+[
+  {
+    "id": "929599382-012-agile-epic",
+    "name": "012-agile-epic",
+    "description": "Guides the creation of agile epics with comprehensive definition including business value, success criteria, and breakdown into user stories. Use when the user wants to create an agile epic, define large bodies of work, break down features into user stories, or document strategic initiatives.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/012-agile-epic",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-013-agile-feature",
+    "name": "013-agile-feature",
+    "description": "Guides the creation of detailed agile feature documentation from an existing epic. Use when the user wants to split an epic into feature files, derive features with scope and acceptance criteria, or plan feature documentation for stakeholders or engineering.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/013-agile-feature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-014-agile-user-story",
+    "name": "014-agile-user-story",
+    "description": "Guides the creation of agile user stories and Gherkin feature files. Use when the user wants to create a user story, write acceptance criteria, define Gherkin scenarios, or author BDD feature files.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/014-agile-user-story",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-021-tooling-github",
+    "name": "021-tooling-github",
+    "description": "Use when you need the GitHub CLI (`gh`) to verify installation, list issues (all or by milestone) as markdown tables, fetch issue bodies and comments for analysis, or hand off to @014-agile-user-story when creating user stories from GitHub threads. Uses an interactive install gate — if `gh` is missing, ask whether to show installation guidance before any issue commands.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/021-tooling-github",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-030-architecture-adr-general",
+    "name": "030-architecture-adr-general",
+    "description": "Use when you need to generate Architecture Decision Records (ADRs) for a Java project through an interactive, conversational process that systematically gathers context, stakeholders, options, and outcomes to produce well-structured ADR documents.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/030-architecture-adr-general",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-033-architecture-diagrams",
+    "name": "033-architecture-diagrams",
+    "description": "Use when you need to generate Java project diagrams — including UML sequence diagrams, UML class diagrams, C4 model diagrams, UML state machine diagrams, and ER (Entity Relationship) diagrams — through a modular, step-based interactive process that adapts to your specific visualization needs.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/033-architecture-diagrams",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-041-planning-plan-mode",
+    "name": "041-planning-plan-mode",
+    "description": "Use when creating a plan using Plan model and enhancing structured design plans in Cursor Plan mode for Java implementations. Use when the user wants to create a plan, design an implementation, structure a development plan, or use plan mode for outside-in TDD, feature implementation, or refactoring work.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/041-planning-plan-mode",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-042-planning-openspec",
+    "name": "042-planning-openspec",
+    "description": "Use when you need to take a `*.plan.md` file and turn it into OpenSpec change artifacts by validating OpenSpec installation, initializing or reusing an OpenSpec project, and creating or updating a change proposal/spec/tasks flow. Includes a concrete workflow based on `examples/requirements-examples/problem1/requirements/openspec`.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/042-planning-openspec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-110-java-maven-best-practices",
+    "name": "110-java-maven-best-practices",
+    "description": "Use when you need to review, improve, or troubleshoot a Maven pom.xml file — including dependency management with BOMs, plugin configuration, version centralization, multi-module project structure, build profiles, or any situation where you want to align your Maven setup with industry best practices.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/110-java-maven-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-111-java-maven-dependencies",
+    "name": "111-java-maven-dependencies",
+    "description": "Use when you need to add or evaluate Maven dependencies that improve code quality — including nullness annotations (JSpecify), static analysis (Error Prone + NullAway), functional programming (VAVR), or architecture testing (ArchUnit) — and want a consultative, question-driven approach that adds only what you actually need.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/111-java-maven-dependencies",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-112-java-maven-plugins",
+    "name": "112-java-maven-plugins",
+    "description": "Use when you need to add or configure Maven plugins in your pom.xml — including quality tools (enforcer, surefire, failsafe, jacoco, pitest, spotbugs, pmd), security scanning (OWASP), code formatting (Spotless), version management, container image build (Jib), build information tracking, and benchmarking (JMH) — through a consultative, modular step-by-step approach that only adds what you actually need.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/112-java-maven-plugins",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-113-java-maven-documentation",
+    "name": "113-java-maven-documentation",
+    "description": "Use when you need to create a DEVELOPER.md file for a Maven project — combining a fixed base template with dynamic sections derived from the project pom.xml, including a Plugin Goals Reference, Maven Profiles table, and Submodules table for multi-module projects.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/113-java-maven-documentation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-114-java-maven-search",
+    "name": "114-java-maven-search",
+    "description": "Covers Maven Central search (Search API, maven-metadata.xml, artifact URLs) and project-local update reports via versions-maven-plugin (display-property-updates, display-dependency-updates, display-plugin-updates). Use when finding or verifying coordinates, browsing Central, or checking what newer versions apply to the user’s pom.xml.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/114-java-maven-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-121-java-object-oriented-design",
+    "name": "121-java-object-oriented-design",
+    "description": "Use when you need to review, improve, or refactor Java code for object-oriented design quality — including applying SOLID, DRY, and YAGNI principles, improving class and interface design, fixing OOP concept misuse (encapsulation, inheritance, polymorphism), identifying and resolving code smells (God Class, Feature Envy, Data Clumps), or improving object creation patterns, method design, and exception handling.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/121-java-object-oriented-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-122-java-type-design",
+    "name": "122-java-type-design",
+    "description": "Use when you need to review, improve, or refactor Java code for type design quality — including establishing clear type hierarchies, applying consistent naming conventions, eliminating primitive obsession with domain-specific value objects, leveraging generic type parameters, creating type-safe wrappers, designing fluent interfaces, ensuring precision-appropriate numeric types (BigDecimal for financial calculations), and improving type contrast through interfaces and method signature alignment.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/122-java-type-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-124-java-secure-coding",
+    "name": "124-java-secure-coding",
+    "description": "Use when you need to apply Java secure coding best practices — including validating untrusted inputs, defending against injection attacks with parameterized queries, minimizing attack surface via least privilege, applying strong cryptographic algorithms, handling exceptions securely without exposing sensitive data, managing secrets at runtime, avoiding unsafe deserialization, and encoding output to prevent XSS.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/124-java-secure-coding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-125-java-concurrency",
+    "name": "125-java-concurrency",
+    "description": "Use when you need to apply Java concurrency best practices — including thread safety fundamentals, ExecutorService thread pool management, concurrent design patterns like Producer-Consumer, asynchronous programming with CompletableFuture, immutability and safe publication, deadlock avoidance, virtual threads, scoped values, backpressure, cancellation discipline, and observability for concurrent systems.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/125-java-concurrency",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-126-java-exception-handling",
+    "name": "126-java-exception-handling",
+    "description": "Use when you need to apply Java exception handling best practices — including using specific exception types, managing resources with try-with-resources, securing exception messages, preserving error context via exception chaining, validating inputs early with fail-fast principles, handling thread interruption correctly, documenting exceptions with @throws, enforcing logging policy, translating exceptions at API boundaries, managing retries and idempotency, enforcing timeouts, attaching suppressed exceptions, and propagating failures in async/reactive code.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/126-java-exception-handling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-181-java-observability-logging",
+    "name": "181-java-observability-logging",
+    "description": "Use when you need to implement or improve Java logging and observability — including selecting SLF4J with Logback/Log4j2, applying proper log levels (ERROR, WARN, INFO, DEBUG, TRACE), parameterized logging, secure logging without sensitive data exposure, environment-specific configuration, log aggregation and monitoring, or validating logging through tests.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/181-java-observability-logging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-182-java-observability-metrics-micrometer",
+    "name": "182-java-observability-metrics-micrometer",
+    "description": "Use when you need to implement or improve Java metrics observability with Micrometer — including meter design, naming/tag conventions, cardinality control, timers/counters/gauges/distribution summaries, percentiles/histograms, Actuator/Prometheus integration, and metrics validation through tests.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/182-java-observability-metrics-micrometer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-183-java-observability-tracing-opentelemetry",
+    "name": "183-java-observability-tracing-opentelemetry",
+    "description": "Use when you need to implement or improve distributed tracing with OpenTelemetry in Java — including trace/span modeling, context propagation, semantic conventions, span attributes/events/status, sampling strategy, baggage usage, privacy safeguards, and backend integration with OTLP collectors.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/183-java-observability-tracing-opentelemetry",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-128-java-generics",
+    "name": "128-java-generics",
+    "description": "Use when you need to review, improve, or refactor Java code for generics quality — including avoiding raw types, applying the PECS (Producer Extends Consumer Super) principle for wildcards, using bounded type parameters, designing effective generic methods, leveraging the diamond operator, understanding type erasure implications, handling generic inheritance correctly, preventing heap pollution with @SafeVarargs, and integrating generics with modern Java features like Records, sealed types, and pattern matching.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/128-java-generics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-130-java-testing-strategies",
+    "name": "130-java-testing-strategies",
+    "description": "Use when you need to apply testing strategies for Java code — RIGHT-BICEP to guide test creation, A-TRIP for test quality characteristics, or CORRECT for verifying boundary conditions.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/130-java-testing-strategies",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-131-java-testing-unit-testing",
+    "name": "131-java-testing-unit-testing",
+    "description": "Use when you need to review, improve, or write Java unit tests — including migrating from JUnit 4 to JUnit 5, adopting AssertJ for fluent assertions, structuring tests with Given-When-Then, ensuring test independence, applying parameterized tests, mocking dependencies with Mockito, verifying boundary conditions (RIGHT-BICEP, CORRECT, A-TRIP), leveraging JSpecify null-safety annotations, or eliminating testing anti-patterns such as reflection-based tests or shared mutable state.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/131-java-testing-unit-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-132-java-testing-integration-testing",
+    "name": "132-java-testing-integration-testing",
+    "description": "Use when you need to set up, review, or improve Java integration tests — including generating a BaseIntegrationTest.java with WireMock for HTTP stubs, detecting HTTP client infrastructure from import signals, injecting service coordinates dynamically via System.setProperty(), creating WireMock JSON mapping files with bodyFileName, isolating stubs per test method, verifying HTTP interactions, or eliminating anti-patterns such as Mockito-mocked HTTP clients or globally registered WireMock stubs.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/132-java-testing-integration-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-133-java-testing-acceptance-tests",
+    "name": "133-java-testing-acceptance-tests",
+    "description": "Use when you need to implement acceptance tests from a Gherkin .feature file for framework-agnostic Java (no Spring Boot, Quarkus, Micronaut) — finding @acceptance scenarios, happy path with RestAssured, Testcontainers for DB/Kafka, WireMock for external REST. Requires .feature file in context.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/133-java-testing-acceptance-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-141-java-refactoring-with-modern-features",
+    "name": "141-java-refactoring-with-modern-features",
+    "description": "Use when you need to refactor Java code to adopt modern Java features (Java 8+) — including migrating anonymous classes to lambdas, replacing Iterator loops with Stream API, adopting Optional for null safety, switching from legacy Date/Calendar to java.time, using collection factory methods, applying text blocks, var inference, or leveraging Java 25 features like flexible constructor bodies and module import declarations.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/141-java-refactoring-with-modern-features",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-142-java-functional-programming",
+    "name": "142-java-functional-programming",
+    "description": "Use when you need to apply functional programming principles in Java — including writing immutable objects and Records, pure functions, functional interfaces, lambda expressions, Stream API pipelines, Optional for null safety, function composition, higher-order functions, pattern matching for instanceof and switch, sealed classes/interfaces for controlled hierarchies, Stream Gatherers for custom operations, currying/partial application, effect boundary separation, and concurrent-safe functional patterns.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/142-java-functional-programming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-143-java-functional-exception-handling",
+    "name": "143-java-functional-exception-handling",
+    "description": "Use when you need to apply functional exception handling best practices in Java — including replacing exception overuse with Optional and VAVR Either types, designing error type hierarchies using sealed classes and enums, implementing monadic error composition pipelines, establishing functional control flow patterns, and reserving exceptions only for truly exceptional system-level failures.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/143-java-functional-exception-handling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-144-java-data-oriented-programming",
+    "name": "144-java-data-oriented-programming",
+    "description": "Use when you need to apply data-oriented programming best practices in Java — including separating code (behavior) from data structures using records, designing immutable data with pure transformation functions, keeping data flat and denormalized with ID-based references, starting with generic data structures converting to specific types when needed, ensuring data integrity through pure validation functions, and creating flexible generic data access layers.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/144-java-data-oriented-programming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-151-java-performance-jmeter",
+    "name": "151-java-performance-jmeter",
+    "description": "Use when you need to set up JMeter performance testing for a Java project — including creating the run-jmeter.sh script from the exact template, configuring load tests with loops, threads, and ramp-up, or running performance tests from the project root with custom or default settings.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/151-java-performance-jmeter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-161-java-profiling-detect",
+    "name": "161-java-profiling-detect",
+    "description": "Use when you need to set up Java application profiling to detect and measure performance issues — including automated async-profiler v4.0 setup, problem-driven profiling (CPU, memory, threading, GC, I/O), interactive profiling scripts, JFR integration with Java 25 (JEP 518, JEP 520), or collecting profiling data with flamegraphs and JFR recordings.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/161-java-profiling-detect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-162-java-profiling-analyze",
+    "name": "162-java-profiling-analyze",
+    "description": "Use when you need to analyze Java profiling data collected during the detection phase — including interpreting flamegraphs, memory allocation patterns, CPU hotspots, threading issues, systematic problem categorization, evidence documentation with profiling-problem-analysis and profiling-solutions markdown files, or prioritizing fixes using Impact/Effort scoring.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/162-java-profiling-analyze",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-163-java-profiling-refactor",
+    "name": "163-java-profiling-refactor",
+    "description": "Use when you need to refactor Java code based on profiling analysis findings — including reviewing docs/profiling-problem-analysis and docs/profiling-solutions, identifying specific performance bottlenecks, and implementing targeted code changes to address CPU, memory, or threading issues.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/163-java-profiling-refactor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-164-java-profiling-verify",
+    "name": "164-java-profiling-verify",
+    "description": "Use when you need to verify Java performance optimizations by comparing profiling results before and after refactoring — including baseline validation, post-refactoring report generation, quantitative before/after metrics comparison, side-by-side flamegraph analysis, regression detection, or creating profiling-comparison-analysis and profiling-final-results documentation.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/164-java-profiling-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-170-java-documentation",
+    "name": "170-java-documentation",
+    "description": "Use when you need to generate or improve Java project documentation — including README.md files, package-info.java files, and Javadoc enhancements — through a modular, step-based interactive process that adapts to your specific documentation needs.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/170-java-documentation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-200-agents-md",
+    "name": "200-agents-md",
+    "description": "Use when you need to generate an AGENTS.md file for a Java repository — covering project conventions, tech stack, file structure, commands, Git workflow, and contributor boundaries — through a modular, step-based interactive process that adapts to your specific project needs.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/200-agents-md",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-301-frameworks-spring-boot-core",
+    "name": "301-frameworks-spring-boot-core",
+    "description": "Use when you need to review, improve, or build Spring Boot 4.0.x applications — including proper usage of @SpringBootApplication, component annotations (@Controller, @Service, @Repository), bean definition and scoping, configuration classes and @ConfigurationProperties (with @Validated), component scanning, conditional configuration and profiles, constructor injection, @Primary and @Qualifier for multiple beans of the same type, bean minimization, graceful shutdown, virtual threads, Jakarta EE namespace consistency, and scheduled tasks.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/301-frameworks-spring-boot-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-302-frameworks-spring-boot-rest",
+    "name": "302-frameworks-spring-boot-rest",
+    "description": "Use when you need to design, review, or improve REST APIs with Spring Boot — including HTTP methods, resource URIs, status codes, DTOs, versioning, deprecation and sunset headers, content negotiation (JSON and vendor media types), ISO-8601 instants in DTOs, pagination/sorting/filtering, Bean Validation at the boundary, idempotency, ETag concurrency, HTTP caching, error handling, security, contract-first OpenAPI (OpenAPI Generator), controller advice, and problem details for errors.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/302-frameworks-spring-boot-rest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-311-frameworks-spring-jdbc",
+    "name": "311-frameworks-spring-jdbc",
+    "description": "Use when you need to write or review programmatic JDBC with Spring — including JdbcClient (Spring Framework 6.1+) as the default API, JdbcTemplate only where batch/streaming APIs require JdbcOperations, NamedParameterJdbcTemplate for legacy named-param code, parameterized SQL, RowMapper mapping to records, batch operations, transactions, safe handling of generated keys, DataAccessException handling, read-only transactions, streaming large result sets, and @JdbcTest slice testing.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/311-frameworks-spring-jdbc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-312-frameworks-spring-data-jdbc",
+    "name": "312-frameworks-spring-data-jdbc",
+    "description": "Use when you need to use Spring Data JDBC with Java records — including entity design with records, repository pattern, immutable updates, aggregate relationships, custom queries, transaction management, and avoiding N+1 problems.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/312-frameworks-spring-data-jdbc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-313-frameworks-spring-db-migrations-flyway",
+    "name": "313-frameworks-spring-db-migrations-flyway",
+    "description": "Use when you need to add or review Flyway database migrations in a Spring Boot application — Maven dependencies, db/migration scripts, spring.flyway.* configuration, baseline and validation, and alignment with JDBC or Spring Data JDBC.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/313-frameworks-spring-db-migrations-flyway",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-321-frameworks-spring-boot-testing-unit-tests",
+    "name": "321-frameworks-spring-boot-testing-unit-tests",
+    "description": "Use when you need to write unit tests for Spring Boot applications — including pure unit tests with @ExtendWith(MockitoExtension.class) for @Service/@Component, slice tests with @WebMvcTest and @MockitoBean for controllers, @JsonTest for JSON serialization, parameterized tests with @CsvSource/@MethodSource, test profiles, and @TestConfiguration. For framework-agnostic Java use @131-java-testing-unit-testing. For integration tests use @322-frameworks-spring-boot-testing-integration-tests.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/321-frameworks-spring-boot-testing-unit-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-322-frameworks-spring-boot-testing-integration-tests",
+    "name": "322-frameworks-spring-boot-testing-integration-tests",
+    "description": "Use when you need to write or improve integration tests — including Testcontainers with @ServiceConnection, @DataJdbcTest persistence slices, TestRestTemplate or MockMvcTester for HTTP, data isolation, and container lifecycle management for Spring Boot 4.0.x.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/322-frameworks-spring-boot-testing-integration-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-323-frameworks-spring-boot-testing-acceptance-tests",
+    "name": "323-frameworks-spring-boot-testing-acceptance-tests",
+    "description": "Use when you need to implement acceptance tests from a Gherkin .feature file for Spring Boot applications — including finding scenarios tagged @acceptance, implementing happy path tests with TestRestTemplate, @SpringBootTest, Testcontainers with @ServiceConnection for DB/Kafka, and WireMock for external REST stubs. Requires .feature file in context.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/323-frameworks-spring-boot-testing-acceptance-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-401-frameworks-quarkus-core",
+    "name": "401-frameworks-quarkus-core",
+    "description": "Use when building or reviewing core Quarkus applications with CDI beans and scopes, SmallRye Config and profiles, lifecycle, interceptors and events, virtual threads, and test-friendly design.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/401-frameworks-quarkus-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-402-frameworks-quarkus-rest",
+    "name": "402-frameworks-quarkus-rest",
+    "description": "Use when you need to design, review, or improve REST APIs with Quarkus REST (Jakarta REST) — including resource classes, HTTP methods, status codes, request/response DTOs, Bean Validation, exception mappers, optional runtime OpenAPI exposure (SmallRye), contract-first generation from OpenAPI, content negotiation, pagination, sorting and filtering, API versioning, idempotency (Idempotency-Key), optimistic concurrency (ETag / If-Match), HTTP caching (Cache-Control), API deprecation (Sunset / Deprecation headers), RFC 7807 Problem Details, ISO-8601 for time in contracts, and security-aware boundaries.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/402-frameworks-quarkus-rest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-411-frameworks-quarkus-jdbc",
+    "name": "411-frameworks-quarkus-jdbc",
+    "description": "Use when you need programmatic JDBC in Quarkus — Agroal DataSource, parameterized SQL, transactions, batching, and Dev Services.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/411-frameworks-quarkus-jdbc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-412-frameworks-quarkus-panache",
+    "name": "412-frameworks-quarkus-panache",
+    "description": "Use when you need data access with Quarkus Hibernate ORM Panache — including PanacheEntity / PanacheEntityBase, PanacheRepository, named queries, JPQL, native SQL, DTO projections (project(Class)), pagination (Page.of()), N+1 avoidance (JOIN FETCH), optimistic locking (@Version / OptimisticLockException), @NamedQuery for validated reusable queries, transactions, @TestTransaction for test isolation, and immutable-friendly patterns. This is the Quarkus analogue to Spring Data for relational persistence.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/412-frameworks-quarkus-panache",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-413-frameworks-quarkus-db-migrations-flyway",
+    "name": "413-frameworks-quarkus-db-migrations-flyway",
+    "description": "Use when you need to add or review Flyway database migrations in a Quarkus application — quarkus-flyway extension, db/migration scripts, quarkus.flyway.* configuration, migrate-at-start, and alignment with JDBC or Panache.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/413-frameworks-quarkus-db-migrations-flyway",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-421-frameworks-quarkus-testing-unit-tests",
+    "name": "421-frameworks-quarkus-testing-unit-tests",
+    "description": "Use when you need to write fast unit tests for Quarkus applications — including pure tests with @ExtendWith(MockitoExtension.class), @QuarkusTest with @InjectMock for full CDI mock replacement, @InjectSpy for partial CDI bean mocking, REST Assured for resource-focused tests, @ParameterizedTest with @CsvSource / @MethodSource, QuarkusTestProfile for test-specific configuration overrides, and naming conventions (*Test → Surefire, *IT → Failsafe). For framework-agnostic Java use @131-java-testing-unit-testing.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/421-frameworks-quarkus-testing-unit-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-422-frameworks-quarkus-testing-integration-tests",
+    "name": "422-frameworks-quarkus-testing-integration-tests",
+    "description": "Use when you need to write or improve integration tests for Quarkus — including @QuarkusTest, Dev Services for automatic container provisioning, Testcontainers via QuarkusTestResourceLifecycleManager, WireMock for external HTTP stubs, @QuarkusIntegrationTest for black-box testing against packaged artifacts, REST Assured, data isolation strategies (@TestTransaction vs @BeforeEach cleanup), and Maven Surefire/Failsafe three-tier split (*Test, *IT, *AT).",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/422-frameworks-quarkus-testing-integration-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-423-frameworks-quarkus-testing-acceptance-tests",
+    "name": "423-frameworks-quarkus-testing-acceptance-tests",
+    "description": "Use when you need to implement acceptance tests from a Gherkin .feature file for Quarkus applications — including @acceptance scenarios, @QuarkusTest, BaseAcceptanceTest with QuarkusTestResourceLifecycleManager for Testcontainers and WireMock, REST Assured for full HTTP pipeline testing, WireMock JSON mapping files (classpath:wiremock/mappings/), *AT suffix naming, and Maven Surefire/Failsafe three-tier split. Requires the .feature file in context.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/423-frameworks-quarkus-testing-acceptance-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-501-frameworks-micronaut-core",
+    "name": "501-frameworks-micronaut-core",
+    "description": "Use when building or reviewing Micronaut applications — Micronaut.run bootstrap, @Singleton/@Prototype, @Factory beans, @ConfigurationProperties, environments, @Requires, @Controller vs services, @Scheduled, graceful shutdown, @ExecuteOn for blocking work, and Jakarta-consistent APIs.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/501-frameworks-micronaut-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-502-frameworks-micronaut-rest",
+    "name": "502-frameworks-micronaut-rest",
+    "description": "Use when you need to design, review, or improve REST APIs with Micronaut — including @Controller routes, HTTP status codes, DTOs, Bean Validation, exception handlers, pagination, idempotency, ETag/If-Match, caching headers, versioning, contract-first OpenAPI (OpenAPI Generator), optional runtime OpenAPI via micronaut-openapi, and security annotations.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/502-frameworks-micronaut-rest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-511-frameworks-micronaut-jdbc",
+    "name": "511-frameworks-micronaut-jdbc",
+    "description": "Use when you need programmatic JDBC in Micronaut — pooled DataSource, parameterized SQL, io.micronaut.transaction.annotation.Transactional, batching, and domain exception translation.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/511-frameworks-micronaut-jdbc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-512-frameworks-micronaut-data",
+    "name": "512-frameworks-micronaut-data",
+    "description": "Use when you need data access with Micronaut Data — @MappedEntity, CrudRepository/PageableRepository, @Query with parameters, @Transactional services, projections, @Version, and @MicronautTest with TestPropertyProvider and Testcontainers. For raw java.sql access without generated repositories, use @511-frameworks-micronaut-jdbc.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/512-frameworks-micronaut-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-513-frameworks-micronaut-db-migrations-flyway",
+    "name": "513-frameworks-micronaut-db-migrations-flyway",
+    "description": "Use when you need to add or review Flyway database migrations in a Micronaut application — micronaut-flyway, db/migration scripts, flyway.datasources.* configuration, and alignment with JDBC or Micronaut Data.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/513-frameworks-micronaut-db-migrations-flyway",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-521-frameworks-micronaut-testing-unit-tests",
+    "name": "521-frameworks-micronaut-testing-unit-tests",
+    "description": "Use when you need to write unit tests for Micronaut applications — Mockito-first with @ExtendWith(MockitoExtension.class), @MicronautTest with @MockBean, HttpClient @Client(\"/\") assertions, @Property overrides, @ParameterizedTest, and *Test vs *IT naming. For framework-agnostic Java use @131-java-testing-unit-testing.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/521-frameworks-micronaut-testing-unit-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-522-frameworks-micronaut-testing-integration-tests",
+    "name": "522-frameworks-micronaut-testing-integration-tests",
+    "description": "Use when you need to write or improve integration tests for Micronaut — @MicronautTest, HttpClient, TestPropertyProvider with Testcontainers, transactional test mode where appropriate, and Maven Surefire/Failsafe splits for *Test, *Tests, *IT, and *AT.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/522-frameworks-micronaut-testing-integration-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-523-frameworks-micronaut-testing-acceptance-tests",
+    "name": "523-frameworks-micronaut-testing-acceptance-tests",
+    "description": "Use when you need to implement acceptance tests from a Gherkin .feature file for Micronaut applications — @acceptance scenarios, @MicronautTest, HttpClient, BaseAcceptanceTest with TestPropertyProvider for Testcontainers and WireMock, *AT suffix, Failsafe. Requires the .feature file in context.",
+    "version": "0.14.0-SNAPSHOT",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "./skills/523-frameworks-micronaut-testing-acceptance-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "929599382-001-commands-inventory",
+    "name": "001-commands-inventory",
+    "description": "name: 001-commands-inventory",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/001-commands-inventory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-002-agents-inventory",
+    "name": "002-agents-inventory",
+    "description": "name: 002-agents-inventory",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/002-agents-inventory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-003-skills-inventory",
+    "name": "003-skills-inventory",
+    "description": "name: 003-skills-inventory",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/003-skills-inventory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-004-commands-installation",
+    "name": "004-commands-installation",
+    "description": "name: 004-commands-installation",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/004-commands-installation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-005-agents-installation",
+    "name": "005-agents-installation",
+    "description": "name: 005-agents-installation",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/005-agents-installation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-021-problem-framing",
+    "name": "021-problem-framing",
+    "description": "name: 021-problem-framing",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/021-problem-framing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-022-root-cause-analysis",
+    "name": "022-root-cause-analysis",
+    "description": "name: 022-root-cause-analysis",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/022-root-cause-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-023-assumption-analysis",
+    "name": "023-assumption-analysis",
+    "description": "name: 023-assumption-analysis",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/023-assumption-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-024-context-mapping",
+    "name": "024-context-mapping",
+    "description": "name: 024-context-mapping",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/024-context-mapping",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-025-quality-attribute-discovery",
+    "name": "025-quality-attribute-discovery",
+    "description": "name: 025-quality-attribute-discovery",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/025-quality-attribute-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-043-planning-github-issues",
+    "name": "043-planning-github-issues",
+    "description": "name: 043-planning-github-issues",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/043-planning-github-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-044-planning-jira",
+    "name": "044-planning-jira",
+    "description": "name: 044-planning-jira",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/044-planning-jira",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-045-planning-azure-devops",
+    "name": "045-planning-azure-devops",
+    "description": "name: 045-planning-azure-devops",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/045-planning-azure-devops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-051-design-two-steps-methods",
+    "name": "051-design-two-steps-methods",
+    "description": "name: 051-design-two-steps-methods",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/051-design-two-steps-methods",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-052-design-hamburger-method",
+    "name": "052-design-hamburger-method",
+    "description": "name: 052-design-hamburger-method",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/052-design-hamburger-method",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-053-design-simple-rules",
+    "name": "053-design-simple-rules",
+    "description": "name: 053-design-simple-rules",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/053-design-simple-rules",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-054-design-tdd",
+    "name": "054-design-tdd",
+    "description": "name: 054-design-tdd",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/054-design-tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-055-design-parallel-change",
+    "name": "055-design-parallel-change",
+    "description": "name: 055-design-parallel-change",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/055-design-parallel-change",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-056-design-avoid-breaking-changes",
+    "name": "056-design-avoid-breaking-changes",
+    "description": "name: 056-design-avoid-breaking-changes",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/056-design-avoid-breaking-changes",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-057-design-feature-toggles",
+    "name": "057-design-feature-toggles",
+    "description": "name: 057-design-feature-toggles",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/057-design-feature-toggles",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-058-design-bdd",
+    "name": "058-design-bdd",
+    "description": "name: 058-design-bdd",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/058-design-bdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-059-design-atdd",
+    "name": "059-design-atdd",
+    "description": "name: 059-design-atdd",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/059-design-atdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-123-java-design-patterns",
+    "name": "123-java-design-patterns",
+    "description": "name: 123-java-design-patterns",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/123-java-design-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-145-java-refactoring-high-performance",
+    "name": "145-java-refactoring-high-performance",
+    "description": "name: 145-java-refactoring-high-performance",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/145-java-refactoring-high-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-152-java-performance-gatling",
+    "name": "152-java-performance-gatling",
+    "description": "name: 152-java-performance-gatling",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/152-java-performance-gatling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-300-frameworks-spring-boot-create-project",
+    "name": "300-frameworks-spring-boot-create-project",
+    "description": "name: 300-frameworks-spring-boot-create-project",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/300-frameworks-spring-boot-create-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  }
+]

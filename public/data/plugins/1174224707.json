@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1174224707-avoid-ai-writing",
+    "name": "avoid-ai-writing",
+    "description": "Audit & rewrite content to remove AI writing patterns (\"AI-isms\"). Supports detect-only and edit-in-place modes, voice profiles, and iterate-to-convergence.",
+    "version": "",
+    "author": "conorbronsdon",
+    "repository": "https://github.com/conorbronsdon/avoid-ai-writing",
+    "manifestPath": "./plugins/avoid-ai-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174224707",
+      "marketplaceName": "avoid-ai-writing",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1174224707-ai-writing-detector",
+    "name": "ai-writing-detector",
+    "description": "name: ai-writing-detector",
+    "version": "1.0.0",
+    "author": "conorbronsdon",
+    "repository": "https://github.com/conorbronsdon/avoid-ai-writing",
+    "manifestPath": "skills/ai-writing-detector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174224707",
+      "marketplaceName": "avoid-ai-writing",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174224707-avoid-ai-writing-router",
+    "name": "avoid-ai-writing-router",
+    "description": "name: avoid-ai-writing-router",
+    "version": "1.0.0",
+    "author": "conorbronsdon",
+    "repository": "https://github.com/conorbronsdon/avoid-ai-writing",
+    "manifestPath": "skills/avoid-ai-writing-router",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174224707",
+      "marketplaceName": "avoid-ai-writing",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174224707-false-positive-reviewer",
+    "name": "false-positive-reviewer",
+    "description": "name: false-positive-reviewer",
+    "version": "1.0.0",
+    "author": "conorbronsdon",
+    "repository": "https://github.com/conorbronsdon/avoid-ai-writing",
+    "manifestPath": "skills/false-positive-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174224707",
+      "marketplaceName": "avoid-ai-writing",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174224707-file-edit-in-place",
+    "name": "file-edit-in-place",
+    "description": "name: file-edit-in-place",
+    "version": "1.0.0",
+    "author": "conorbronsdon",
+    "repository": "https://github.com/conorbronsdon/avoid-ai-writing",
+    "manifestPath": "skills/file-edit-in-place",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174224707",
+      "marketplaceName": "avoid-ai-writing",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174224707-preservation-verifier",
+    "name": "preservation-verifier",
+    "description": "name: preservation-verifier",
+    "version": "1.0.0",
+    "author": "conorbronsdon",
+    "repository": "https://github.com/conorbronsdon/avoid-ai-writing",
+    "manifestPath": "skills/preservation-verifier",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174224707",
+      "marketplaceName": "avoid-ai-writing",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174224707-voice-preserving-rewriter",
+    "name": "voice-preserving-rewriter",
+    "description": "name: voice-preserving-rewriter",
+    "version": "1.0.0",
+    "author": "conorbronsdon",
+    "repository": "https://github.com/conorbronsdon/avoid-ai-writing",
+    "manifestPath": "skills/voice-preserving-rewriter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174224707",
+      "marketplaceName": "avoid-ai-writing",
+      "hasSkillMd": true
+    }
+  }
+]
