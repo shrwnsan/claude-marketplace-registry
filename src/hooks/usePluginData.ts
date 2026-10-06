@@ -18,6 +18,8 @@ export interface CatalogPlugin {
   sourceUrl: string;
   /** Number of skills the plugin carries (from the compact index). */
   skillsCount: number;
+  /** Number of Claude Code mods (hook modules) the plugin ships (from the compact index). */
+  modsCount: number;
   /** Full skill list — only present on shard-loaded records. */
   skills?: string[];
   marketplaceId: string;
@@ -43,6 +45,7 @@ interface RawPlugin {
   manifestPath?: string | { url?: string; path?: string; ref?: string };
   isValid?: boolean;
   skillsCount?: number;
+  modsCount?: number;
   marketplaceId?: string;
   marketplaceName?: string;
   updatedAt?: string;
@@ -51,6 +54,7 @@ interface RawPlugin {
     marketplaceName?: string;
     skills?: string[];
     hasSkillMd?: boolean;
+    modsCount?: number;
   };
 }
 
@@ -99,6 +103,13 @@ const toSkillsCount = (raw: RawPlugin): number => {
   return 0;
 };
 
+/** Derive modsCount from either the index field or full-record metadata. */
+const toModsCount = (raw: RawPlugin): number => {
+  if (typeof raw.modsCount === 'number') return raw.modsCount;
+  if (typeof raw.metadata?.modsCount === 'number') return raw.metadata.modsCount;
+  return 0;
+};
+
 /** Map a raw index/shard record to the UI-facing shape (used by both hooks). */
 export function toCatalogPlugin(raw: RawPlugin, index: number): CatalogPlugin {
   const repoUrl = asUrl(raw.repository);
@@ -111,6 +122,7 @@ export function toCatalogPlugin(raw: RawPlugin, index: number): CatalogPlugin {
     repositoryUrl: repoUrl,
     sourceUrl: toSourceUrl(repoUrl, raw.manifestPath),
     skillsCount: toSkillsCount(raw),
+    modsCount: toModsCount(raw),
     skills: Array.isArray(raw.metadata?.skills)
       ? raw.metadata!.skills!.map((s) => s.replace(/^\.?\//, ''))
       : undefined,

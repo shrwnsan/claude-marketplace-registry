@@ -35,6 +35,14 @@ export const SEARCH_STRATEGIES = [
     type: 'code' as const,
   },
   { name: 'plugin-manifest', query: 'path:.claude-plugin plugin.json', type: 'code' as const },
+  // Claude Code "mods": hook modules ship as plugins whose hooks/hooks.json
+  // declares a `modules` array — this surface finds mod-carrying repos that
+  // no other strategy reaches.
+  {
+    name: 'mod-hooks-modules',
+    query: '"modules" filename:hooks.json path:hooks',
+    type: 'code' as const,
+  },
   // Skill definitions
   { name: 'skill-files', query: 'filename:SKILL.md claude', type: 'code' as const },
   // Repository topics
@@ -985,6 +993,7 @@ class MarketplaceScanner {
         repository: p.repository,
         marketplaceId: p.marketplaceId,
         marketplaceName: p.marketplaceName,
+        modsCount: p.modsCount ?? 0,
       })),
       lastUpdated: new Date().toISOString(),
       totalCount: valid.length,
@@ -1043,13 +1052,19 @@ async function main() {
     }
 
     const marketplaces = await scanner.scanMarketplaces();
+
+    // Discovery must run BEFORE saveResults: processPluginEntry stamps each
+    // manifest plugin entry with its modsCount, and raw.json serializes those
+    // same objects — data/marketplaces/ is the only output the generate job
+    // receives (see scan.yml artifacts), so anything persisted only under
+    // data/plugins/ never reaches the site.
+    const plugins = await scanner.discoverPluginsFromMarketplaces(marketplaces);
+
     await scanner.saveResults(marketplaces);
 
     // Generate UI-compatible marketplace data
     await scanner.generateMarketplaceDataFile(marketplaces);
 
-    // Discover plugins from marketplaces with manifests
-    const plugins = await scanner.discoverPluginsFromMarketplaces(marketplaces);
     await scanner.savePluginResults(plugins);
 
     console.log('');

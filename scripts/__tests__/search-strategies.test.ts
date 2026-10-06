@@ -78,3 +78,13 @@ describe('STAR_BAND_STRATEGIES', () => {
     }
   });
 });
+
+describe('SEARCH_STRATEGIES', () => {
+  it('discovers mod-carrying repos via the hooks.json modules marker', () => {
+    const modStrategy = SEARCH_STRATEGIES.find((s) => s.name === 'mod-hooks-modules');
+    expect(modStrategy).toBeDefined();
+    expect(modStrategy!.type).toBe('code');
+    expect(modStrategy!.query).toContain('"modules"');
+    expect(modStrategy!.query).toContain('filename:hooks.json');
+  });
+});
