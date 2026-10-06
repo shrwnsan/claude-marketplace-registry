@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { Search, Menu, X, Github } from 'lucide-react';
+import { Search, Menu, X, Github, Zap } from 'lucide-react';
 import ThemeToggle from '../ui/ThemeToggle';
+import { useEcosystemStats, shouldShowModsNav } from '@/hooks/useEcosystemStats';
 
 interface HeaderProps {
   className?: string;
@@ -13,11 +14,15 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const { data: stats } = useEcosystemStats();
 
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Marketplaces', href: '/marketplaces' },
     { name: 'Plugins', href: '/plugins' },
+    // Mods surface only once the corpus actually holds them (nightly scan
+    // stamps real counts) — an empty top-level item reads as a dead section.
+    ...(shouldShowModsNav(stats?.overview.totalMods) ? [{ name: 'Mods', href: '/mods' }] : []),
   ];
 
   const isActive = (href: string) =>
@@ -126,6 +131,12 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                 aria-label={`Navigate to ${item.name}`}
                 aria-current={isActive(item.href) ? 'page' : undefined}
               >
+                {item.name === 'Mods' && (
+                  <Zap
+                    className='w-3.5 h-3.5 inline-block -mt-0.5 mr-1 text-primary-500 dark:text-primary-400'
+                    aria-hidden='true'
+                  />
+                )}
                 {item.name}
               </Link>
             ))}
@@ -209,6 +220,12 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                     animationDelay: `${index * 50}ms`,
                   }}
                 >
+                  {item.name === 'Mods' && (
+                    <Zap
+                      className='w-4 h-4 inline-block -mt-1 mr-2 text-primary-500 dark:text-primary-400'
+                      aria-hidden='true'
+                    />
+                  )}
                   {item.name}
                 </Link>
               ))}

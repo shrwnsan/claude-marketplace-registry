@@ -140,6 +140,28 @@ export function deriveModsCount(metadata: any): number {
   return typeof metadata?.modsCount === 'number' ? metadata.modsCount : 0;
 }
 
+/**
+ * Mods ecosystem totals: hook modules shipped by indexed plugins and how many
+ * marketplaces carry at least one — drives the /mods nav gate and homepage
+ * tidbit. Pure for unit testing.
+ */
+export function deriveModsStats(plugins: Plugin[]): {
+  totalMods: number;
+  marketplacesWithMods: number;
+} {
+  let totalMods = 0;
+  const marketplaces = new Set<string>();
+  for (const plugin of plugins) {
+    const count = deriveModsCount(plugin.metadata);
+    if (count > 0) {
+      totalMods += count;
+      const marketplaceId = plugin.metadata?.marketplaceId;
+      if (marketplaceId) marketplaces.add(marketplaceId);
+    }
+  }
+  return { totalMods, marketplacesWithMods: marketplaces.size };
+}
+
 /** Build the compact index record for one plugin (full record → 10 fields). */
 export function toPluginIndexRecord(plugin: Plugin): PluginIndexRecord {
   return {
@@ -487,6 +509,7 @@ class DataGenerator {
       totalMarketplaces: data.stats.totalMarketplaces,
       totalDevelopers: uniqueAuthors,
       totalStars,
+      ...deriveModsStats(data.plugins),
       lastUpdated: now.toISOString(),
       growthRate: {
         plugins: growthRate(data.stats.totalPlugins, baseline?.plugins),

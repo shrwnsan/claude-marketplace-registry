@@ -13,6 +13,7 @@ import {
   toPluginIndexRecord,
   deriveSkillsCount,
   deriveModsCount,
+  deriveModsStats,
   groupPluginsByMarketplace,
   computeStaleShardFiles,
 } from '../generate-data';
@@ -112,6 +113,30 @@ describe('deriveModsCount', () => {
     expect(deriveModsCount({ modsCount: '2' })).toBe(0);
     expect(deriveModsCount(undefined)).toBe(0);
     expect(deriveModsCount(null)).toBe(0);
+  });
+});
+
+describe('deriveModsStats', () => {
+  it('sums modsCount across plugins and counts distinct marketplaces', () => {
+    const stats = deriveModsStats([
+      buildPlugin({ id: 'mp-1-a', metadata: { marketplaceId: 'mp-1', modsCount: 2 } }),
+      buildPlugin({ id: 'mp-1-b', metadata: { marketplaceId: 'mp-1', modsCount: 1 } }),
+      buildPlugin({ id: 'mp-2-a', metadata: { marketplaceId: 'mp-2', modsCount: 3 } }),
+    ]);
+    expect(stats).toEqual({ totalMods: 6, marketplacesWithMods: 2 });
+  });
+
+  it('ignores plugin-less marketplaces and zero counts', () => {
+    const stats = deriveModsStats([
+      buildPlugin({ id: 'mp-1-a', metadata: { marketplaceId: 'mp-1', modsCount: 0 } }),
+      buildPlugin({ id: 'mp-2-a', metadata: { marketplaceId: 'mp-2', modsCount: 1 } }),
+      buildPlugin({ id: 'orphan', metadata: { modsCount: 4 } }),
+    ]);
+    expect(stats).toEqual({ totalMods: 5, marketplacesWithMods: 1 });
+  });
+
+  it('returns zeros for an empty corpus', () => {
+    expect(deriveModsStats([])).toEqual({ totalMods: 0, marketplacesWithMods: 0 });
   });
 });
 

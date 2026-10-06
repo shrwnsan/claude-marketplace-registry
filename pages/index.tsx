@@ -27,6 +27,7 @@ import {
   Star,
   Store,
   Users,
+  Zap,
 } from 'lucide-react';
 import Link from 'next/link';
 import { formatRelativeAge } from '@/utils/format';
@@ -188,6 +189,20 @@ const HomePage: React.FC = () => {
                         </>
                       )}
                     </p>
+                    {/* Mods tidbit — only once the corpus actually ships mods */}
+                    {(stats?.overview.totalMods ?? 0) > 0 && (
+                      <p className='text-xs font-mono text-gray-500 dark:text-gray-400 mt-1.5'>
+                        <Link
+                          href='/mods'
+                          className='inline-flex items-center gap-1 text-primary-500 dark:text-primary-400 hover:underline'
+                        >
+                          <Zap className='w-3.5 h-3.5' aria-hidden='true' />
+                          {(stats!.overview.totalMods ?? 0).toLocaleString()} mods across{' '}
+                          {(stats!.overview.marketplacesWithMods ?? 0).toLocaleString()}{' '}
+                          marketplaces — browse mods →
+                        </Link>
+                      </p>
+                    )}
                   </div>
                 </>
               )}
