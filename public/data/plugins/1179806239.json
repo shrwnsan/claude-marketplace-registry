@@ -602,7 +602,7 @@
       "url": "https://github.com/aws/agent-toolkit-for-aws.git",
       "path": "plugins/aws-agents",
       "ref": "main",
-      "sha": "7bde20faede49dd5764c02b54f5e306849f7e3ca"
+      "sha": "0d6167ad2e6dfb858098c4162fe74d04c975532f"
     },
     "isValid": true,
     "errors": [],
@@ -674,7 +674,7 @@
       "url": "https://github.com/aws/agent-toolkit-for-aws.git",
       "path": "plugins/aws-core",
       "ref": "main",
-      "sha": "7bde20faede49dd5764c02b54f5e306849f7e3ca"
+      "sha": "0d6167ad2e6dfb858098c4162fe74d04c975532f"
     },
     "isValid": true,
     "errors": [],
@@ -698,7 +698,7 @@
       "url": "https://github.com/aws/agent-toolkit-for-aws.git",
       "path": "plugins/aws-data-analytics",
       "ref": "main",
-      "sha": "7bde20faede49dd5764c02b54f5e306849f7e3ca"
+      "sha": "0d6167ad2e6dfb858098c4162fe74d04c975532f"
     },
     "isValid": true,
     "errors": [],
@@ -737,16 +737,16 @@
   {
     "id": "1179806239-aws-startup-advisor",
     "name": "aws-startup-advisor",
-    "description": "Personalized architecture, cost, security, and migration guidance for startups. From day-one account setup and security baselines to production-ready infrastructure, cost optimization, and beyond. Includes AWS Activate Credits eligibility, 60+ exclusive startup offers, and multi-account multi-region support. Built on expertise from AWS Startup Solutions Architects and patterns from 350,000+ startups.",
+    "description": "Personalized AWS guidance built on patterns from 350,000+ startups. Get architecture, cost, and security recommendations matched to your stage, from day-one account setup to production-ready infrastructure. Migrate to AWS from Azure, GCP, or Heroku with resource discovery, cost estimates, and generated Terraform. Move OpenAI, Azure OpenAI, and Gemini code to Amazon Bedrock, and plan and prototype AI agents on AgentCore and other AWS runtimes. Includes AWS Activate credits eligibility, 60+ exclusive startup offers, and multi-account, multi-region support. Built by AWS Startup Solutions Architects.",
     "version": "",
     "author": "Amazon Web Services",
     "repository": "https://github.com/mrkhachaturov/ccode-personal-plugins",
     "manifestPath": {
       "source": "git-subdir",
-      "url": "https://github.com/awslabs/startups.git",
-      "path": "advisor/plugins/aws-startup-advisor",
+      "url": "https://github.com/aws/agent-toolkit-for-aws.git",
+      "path": "plugins/aws-startup-advisor",
       "ref": "main",
-      "sha": "ec681ba5d49b039dbf1ef9d87d3304205b824f3d"
+      "sha": "613dc216a1cf0836b81a28d7f3a81f2b72034394"
     },
     "isValid": true,
     "errors": [],
@@ -3641,6 +3641,24 @@
     }
   },
   {
+    "id": "1179806239-math-proof",
+    "name": "math-proof",
+    "description": "Two skills for hard mathematics problems, each ending in a self-contained proof.md: /math-proof:solo has the session work the problem itself in stages with a notes file; /math-proof:siege works on it for hours in rounds of judge and worker sub-agents and says plainly what is and is not proved.",
+    "version": "",
+    "author": "Anthropic",
+    "repository": "https://github.com/mrkhachaturov/ccode-personal-plugins",
+    "manifestPath": "./plugins/math-proof",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1179806239",
+      "marketplaceName": "ccode-personal-plugins",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
     "id": "1179806239-mattpocock-skills",
     "name": "mattpocock-skills",
     "description": "Matt Pocock's agent skills for real engineering — grilling, spec/ticket flows, TDD, code review, domain modelling and more. Plug-and-play, not vibe coding.",
@@ -4671,14 +4689,14 @@
   {
     "id": "1179806239-postman",
     "name": "postman",
-    "description": "Full API lifecycle management for Claude Code. Sync collections, generate client code, discover APIs, run tests, create mocks, publish docs, and audit security. Powered by the Postman MCP Server.",
+    "description": "Work with Postman from your agent: bootstrap a repo's Postman setup, mock an API before it's implemented, run collection and governance checks in CI, monitor a live endpoint, deploy and debug Postman Flows, and publish generated API documentation.",
     "version": "",
     "author": "mrkhachaturov",
     "repository": "https://github.com/mrkhachaturov/ccode-personal-plugins",
     "manifestPath": {
       "source": "url",
-      "url": "https://github.com/Postman-Devrel/postman-claude-code-plugin.git",
-      "sha": "1e5f49ee91c3604bc3590c5602f664e0e4bfc1fd"
+      "url": "https://github.com/postmanlabs/postman-plugin.git",
+      "sha": "67cff8f385d88608f427af01e152969065ddb1d8"
     },
     "isValid": true,
     "errors": [],
@@ -5436,7 +5454,7 @@
     "id": "1179806239-security-guidance",
     "name": "security-guidance",
     "description": "Security review for Claude-generated code. Pattern-based warnings on edits, LLM-powered diff review on Stop, and an agentic commit reviewer that catches injection, XSS, SSRF, hardcoded secrets, and 25+ other vulnerability classes.",
-    "version": "2.0.7",
+    "version": "2.0.9",
     "author": "Anthropic",
     "repository": "https://github.com/mrkhachaturov/ccode-personal-plugins",
     "manifestPath": "./plugins/security-guidance",

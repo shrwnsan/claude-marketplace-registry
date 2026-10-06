@@ -82,7 +82,7 @@
   {
     "id": "1397746817-acumatica-assistant",
     "name": "acumatica-assistant",
-    "description": "Acumatica ERP assistant: REST integration development against the contract-based REST API from a bundled extraction of Acumatica's Integration Development Guide (2026 R2) — sign-in and OAuth 2.0/OIDC, endpoint and contract versions, JSON record shape, query parameters per contract version, CRUD, actions and long-running operations, custom fields, files, license limits, push notifications and webhooks, with a catalogue of 187 documented example requests. More capabilities to follow.",
+    "description": "Acumatica ERP assistant: REST integration development against the contract-based REST API from a bundled extraction of Acumatica's Integration Development Guide (2026 R2) — sign-in and OAuth 2.0/OIDC, endpoint and contract versions, JSON record shape, query parameters per contract version, CRUD, actions and long-running operations, custom fields, files, license limits, push notifications and webhooks, with a catalogue of 187 documented example requests, and exact entity, field and action names from a snapshot of the Default/25.200.001 contract (2025 R2). More capabilities to follow.",
     "version": "",
     "author": "fdtaljaard",
     "repository": "https://github.com/fdtaljaard/claude-skills",
@@ -97,6 +97,40 @@
         "./skills/acumatica-assistant"
       ],
       "strict": false
+    }
+  },
+  {
+    "id": "1397746817-cin7-assistant",
+    "name": "cin7-assistant",
+    "description": "name: cin7-assistant",
+    "version": "1.0.0",
+    "author": "fdtaljaard",
+    "repository": "https://github.com/fdtaljaard/claude-skills",
+    "manifestPath": "skills/cin7-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397746817",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1397746817-sageintacct-assistant",
+    "name": "sageintacct-assistant",
+    "description": "name: sageintacct-assistant",
+    "version": "1.0.0",
+    "author": "fdtaljaard",
+    "repository": "https://github.com/fdtaljaard/claude-skills",
+    "manifestPath": "skills/sageintacct-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397746817",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
     }
   }
 ]

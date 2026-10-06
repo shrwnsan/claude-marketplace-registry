@@ -1,44 +1,45 @@
 {
-  "totalFound": 938,
-  "withManifest": 454,
-  "lastUpdated": "2026-10-05T04:33:06.294Z",
+  "totalFound": 977,
+  "withManifest": 460,
+  "lastUpdated": "2026-10-06T05:18:17.864Z",
   "searchQuery": "",
   "languages": {
-    "Python": 291,
-    "JavaScript": 139,
-    "Shell": 98,
-    "TypeScript": 113,
-    "C#": 3,
+    "Python": 306,
+    "JavaScript": 146,
+    "Shell": 101,
+    "TypeScript": 117,
     "Go": 24,
-    "Unknown": 179,
+    "Unknown": 184,
     "Rust": 19,
-    "HTML": 47,
+    "HTML": 51,
     "AMPL": 1,
     "C++": 2,
     "Swift": 4,
     "Jupyter Notebook": 2,
+    "C#": 3,
     "Astro": 1,
     "Perl": 1,
     "Ruby": 1,
+    "C": 1,
     "Java": 5,
-    "CSS": 1,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
     "Svelte": 1,
     "Markdown": 1,
     "SCSS": 1,
+    "CSS": 1,
     "Gleam": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 273055,
+      "stars": 273741,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179668,
+      "stars": 179818,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -48,22 +49,22 @@
     },
     {
       "name": "claude-mem",
-      "stars": 95666,
+      "stars": 96708,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76511,
+      "stars": 76563,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69779,
+      "stars": 69836,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37397,
+      "stars": 37438,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -73,12 +74,12 @@
     },
     {
       "name": "daily",
-      "stars": 20092,
+      "stars": 20090,
       "url": "https://github.com/dailydotdev/daily"
     },
     {
       "name": "kubeshark",
-      "stars": 12094,
+      "stars": 12093,
       "url": "https://github.com/kubeshark/kubeshark"
     }
   ]

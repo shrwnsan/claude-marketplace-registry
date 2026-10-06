@@ -1,0 +1,617 @@
+[
+  {
+    "id": "1323419190-skills",
+    "name": "skills",
+    "description": "The PIV loop (plan, implement, validate, review, commit, PR) plus priming, planning, worktrees, and the meta-skills for building your own AI Layer.",
+    "version": "1.3.1",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "skills": [
+        "./.claude/skills"
+      ],
+      "strict": false
+    }
+  },
+  {
+    "id": "1323419190-ablate-ai-layer",
+    "name": "ablate-ai-layer",
+    "description": "name: ablate-ai-layer",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/ablate-ai-layer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-agent-browser",
+    "name": "agent-browser",
+    "description": "name: agent-browser",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/agent-browser",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-ast-grep",
+    "name": "ast-grep",
+    "description": "name: ast-grep",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/ast-grep",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-build-dark-factory",
+    "name": "build-dark-factory",
+    "description": "name: build-dark-factory",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/build-dark-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-drive-screen",
+    "name": "drive-screen",
+    "description": "name: drive-screen",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/drive-screen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-hooks-create",
+    "name": "hooks-create",
+    "description": "name: hooks-create",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/hooks-create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-opportunity-scan",
+    "name": "opportunity-scan",
+    "description": "name: opportunity-scan",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/opportunity-scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-commit",
+    "name": "piv-commit",
+    "description": "name: piv-commit",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-create-pr",
+    "name": "piv-create-pr",
+    "description": "name: piv-create-pr",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-create-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-fix-review-findings",
+    "name": "piv-fix-review-findings",
+    "description": "name: piv-fix-review-findings",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-fix-review-findings",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-implement-issue",
+    "name": "piv-implement-issue",
+    "description": "name: piv-implement-issue",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-implement-issue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-implement",
+    "name": "piv-implement",
+    "description": "name: piv-implement",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-investigate-issue",
+    "name": "piv-investigate-issue",
+    "description": "name: piv-investigate-issue",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-investigate-issue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-plan-implementation",
+    "name": "piv-plan-implementation",
+    "description": "name: piv-plan-implementation",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-plan-implementation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-review-changes",
+    "name": "piv-review-changes",
+    "description": "name: piv-review-changes",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-review-changes",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-review-pr",
+    "name": "piv-review-pr",
+    "description": "name: piv-review-pr",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-review-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-run-full-loop",
+    "name": "piv-run-full-loop",
+    "description": "name: piv-run-full-loop",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-run-full-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-slice-epic",
+    "name": "piv-slice-epic",
+    "description": "name: piv-slice-epic",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-slice-epic",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-piv-validate",
+    "name": "piv-validate",
+    "description": "name: piv-validate",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/piv-validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-plan-architecture",
+    "name": "plan-architecture",
+    "description": "name: plan-architecture",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/plan-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-plan-create-prd",
+    "name": "plan-create-prd",
+    "description": "name: plan-create-prd",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/plan-create-prd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-plan-create-stories",
+    "name": "plan-create-stories",
+    "description": "name: plan-create-stories",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/plan-create-stories",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-prime-backend",
+    "name": "prime-backend",
+    "description": "name: prime-backend",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/prime-backend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-prime-codebase",
+    "name": "prime-codebase",
+    "description": "name: prime-codebase",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/prime-codebase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-prime-frontend",
+    "name": "prime-frontend",
+    "description": "name: prime-frontend",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/prime-frontend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-rules-check-drift",
+    "name": "rules-check-drift",
+    "description": "name: rules-check-drift",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/rules-check-drift",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-rules-create-global",
+    "name": "rules-create-global",
+    "description": "name: rules-create-global",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/rules-create-global",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-second-brain-audit",
+    "name": "second-brain-audit",
+    "description": "name: second-brain-audit",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/second-brain-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-second-brain-fix",
+    "name": "second-brain-fix",
+    "description": "name: second-brain-fix",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/second-brain-fix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-setup-ai-tutor",
+    "name": "setup-ai-tutor",
+    "description": "name: setup-ai-tutor",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/setup-ai-tutor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-skills-create",
+    "name": "skills-create",
+    "description": "name: skills-create",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/skills-create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-system-evolution-review",
+    "name": "system-evolution-review",
+    "description": "name: system-evolution-review",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/system-evolution-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-system-execution-report",
+    "name": "system-execution-report",
+    "description": "name: system-execution-report",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/system-execution-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-worktree-create",
+    "name": "worktree-create",
+    "description": "name: worktree-create",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/worktree-create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-worktree-merge",
+    "name": "worktree-merge",
+    "description": "name: worktree-merge",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/worktree-merge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

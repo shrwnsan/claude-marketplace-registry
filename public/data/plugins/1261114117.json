@@ -18,6 +18,24 @@
     }
   },
   {
+    "id": "1261114117-deploy",
+    "name": "deploy",
+    "description": "Ship a Next.js app or an Express and Prisma API to a VPS under Coolify, end to end: runtime-only images with health probes and fast shutdown, one GitHub Actions pipeline from pull request to production through GHCR, the Coolify application and API token, a host ops toolkit with alerting health checks and verified backups, server-side deploy verification, a zero-downtime domain cutover, and a read-only deployment reviewer.",
+    "version": "1.0.0",
+    "author": "Khaled Saeed",
+    "repository": "https://github.com/KhaledSaeed18/dotclaude",
+    "manifestPath": "./.claude-plugin/plugins/deploy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1261114117",
+      "marketplaceName": "dotclaude",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
     "id": "1261114117-docs",
     "name": "docs",
     "description": "Documentation that stays true to the code: architecture decision records with an /adr command, READMEs verified against the repository, developer guides in the four documentation types, and OpenAPI specifications kept in sync in CI.",
