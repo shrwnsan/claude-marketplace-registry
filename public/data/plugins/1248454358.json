@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1248454358-mrbinnacle-engineering",
+    "name": "mrbinnacle-engineering",
+    "description": "Workflow disciplines for shipping software: mistakes that report success, guards and gates that stop your work, and the rituals at phase and session boundaries.",
+    "version": "",
+    "author": "MrBinnacle",
+    "repository": "https://github.com/MrBinnacle/skills",
+    "manifestPath": "./skills/engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248454358",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1248454358-mrbinnacle-orchestration",
+    "name": "mrbinnacle-orchestration",
+    "description": "Disciplines for multi-agent work - dispatch, joinability, and synthesis across parallel agents.",
+    "version": "",
+    "author": "MrBinnacle",
+    "repository": "https://github.com/MrBinnacle/skills",
+    "manifestPath": "./skills/orchestration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248454358",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1248454358-mrbinnacle-meta",
+    "name": "mrbinnacle-meta",
+    "description": "Skills about the skill system itself: whether a skill can be reached.",
+    "version": "",
+    "author": "MrBinnacle",
+    "repository": "https://github.com/MrBinnacle/skills",
+    "manifestPath": "./skills/meta",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248454358",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

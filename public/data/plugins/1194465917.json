@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1194465917-review-loop",
+    "name": "review-loop",
+    "description": "AI-driven code review with independent adversarial review, automated quality polish, and multi-language static analysis. 12 agents, 5 skills, full Plan-Execute-Review-Polish pipeline.",
+    "version": "2.12.3",
+    "author": "NYTC69",
+    "repository": "https://github.com/NYTC69/review-loop",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194465917",
+      "marketplaceName": "review-loop",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1194465917-code-quality-loop",
+    "name": "code-quality-loop",
+    "description": "name: code-quality-loop",
+    "version": "1.0.0",
+    "author": "NYTC69",
+    "repository": "https://github.com/NYTC69/review-loop",
+    "manifestPath": "skills/code-quality-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194465917",
+      "marketplaceName": "review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1194465917-execute",
+    "name": "execute",
+    "description": "name: execute",
+    "version": "1.0.0",
+    "author": "NYTC69",
+    "repository": "https://github.com/NYTC69/review-loop",
+    "manifestPath": "skills/execute",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194465917",
+      "marketplaceName": "review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1194465917-guide",
+    "name": "guide",
+    "description": "name: guide",
+    "version": "1.0.0",
+    "author": "NYTC69",
+    "repository": "https://github.com/NYTC69/review-loop",
+    "manifestPath": "skills/guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194465917",
+      "marketplaceName": "review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1194465917-legacy",
+    "name": "legacy",
+    "description": "name: legacy",
+    "version": "1.0.0",
+    "author": "NYTC69",
+    "repository": "https://github.com/NYTC69/review-loop",
+    "manifestPath": "skills/legacy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194465917",
+      "marketplaceName": "review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1194465917-paired-session",
+    "name": "paired-session",
+    "description": "name: paired-session",
+    "version": "1.0.0",
+    "author": "NYTC69",
+    "repository": "https://github.com/NYTC69/review-loop",
+    "manifestPath": "skills/paired-session",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194465917",
+      "marketplaceName": "review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1194465917-plan",
+    "name": "plan",
+    "description": "name: plan",
+    "version": "1.0.0",
+    "author": "NYTC69",
+    "repository": "https://github.com/NYTC69/review-loop",
+    "manifestPath": "skills/plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194465917",
+      "marketplaceName": "review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1194465917-reorganize",
+    "name": "reorganize",
+    "description": "name: reorganize",
+    "version": "1.0.0",
+    "author": "NYTC69",
+    "repository": "https://github.com/NYTC69/review-loop",
+    "manifestPath": "skills/reorganize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194465917",
+      "marketplaceName": "review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1194465917-review-pr",
+    "name": "review-pr",
+    "description": "name: review-pr",
+    "version": "1.0.0",
+    "author": "NYTC69",
+    "repository": "https://github.com/NYTC69/review-loop",
+    "manifestPath": "skills/review-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1194465917",
+      "marketplaceName": "review-loop",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1274067474-web-latex-mcp",
+    "name": "web-latex-mcp",
+    "description": "Read, edit, compile, and commit LaTeX in any git-hosted project, plus the bundled skills for project cleanup, citation audits, bibliography normalization and peer review, and the paper commands and agents that run them.",
+    "version": "0.9.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1274067474-arxiv-clean-project",
+    "name": "arxiv-clean-project",
+    "description": "name: arxiv-clean-project",
+    "version": "1.0.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".claude/skills/arxiv-clean-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1274067474-format-bibliography",
+    "name": "format-bibliography",
+    "description": "name: format-bibliography",
+    "version": "1.0.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".claude/skills/format-bibliography",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1274067474-format-latex-project",
+    "name": "format-latex-project",
+    "description": "name: format-latex-project",
+    "version": "1.0.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".claude/skills/format-latex-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1274067474-peer-review",
+    "name": "peer-review",
+    "description": "name: peer-review",
+    "version": "1.0.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".claude/skills/peer-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1274067474-proofread-document",
+    "name": "proofread-document",
+    "description": "name: proofread-document",
+    "version": "1.0.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".claude/skills/proofread-document",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1274067474-review-writing-guide",
+    "name": "review-writing-guide",
+    "description": "name: review-writing-guide",
+    "version": "1.0.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".claude/skills/review-writing-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1274067474-session-feedback",
+    "name": "session-feedback",
+    "description": "name: session-feedback",
+    "version": "1.0.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".claude/skills/session-feedback",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1274067474-summarize-paper",
+    "name": "summarize-paper",
+    "description": "name: summarize-paper",
+    "version": "1.0.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".claude/skills/summarize-paper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1274067474-verify-citations",
+    "name": "verify-citations",
+    "description": "name: verify-citations",
+    "version": "1.0.0",
+    "author": "Elias Ramzi",
+    "repository": "https://github.com/elias-ramzi/WebLatexMCP",
+    "manifestPath": ".claude/skills/verify-citations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1274067474",
+      "marketplaceName": "WebLatexMCP",
+      "hasSkillMd": true
+    }
+  }
+]

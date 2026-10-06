@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1250276806-pstack",
+    "name": "pstack",
+    "description": "If you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence. Original pstack by Lauren Tan (poteto).",
+    "version": "0.9.73",
+    "author": "michael-denyer",
+    "repository": "https://github.com/michael-denyer/pstack-claude",
+    "manifestPath": "./plugins/pstack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1250276806",
+      "marketplaceName": "pstack-claude",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

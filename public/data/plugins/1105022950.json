@@ -358,6 +358,23 @@
     }
   },
   {
+    "id": "1105022950-ddev-ops",
+    "name": "ddev-ops",
+    "description": "name: ddev-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/ddev-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1105022950-debug-ops",
     "name": "debug-ops",
     "description": "name: debug-ops",
@@ -535,6 +552,23 @@
     "author": "0xDarkMatter",
     "repository": "https://github.com/0xDarkMatter/claude-mods",
     "manifestPath": "skills/fleet-worker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-frontend-upgrade-ops",
+    "name": "frontend-upgrade-ops",
+    "description": "name: frontend-upgrade-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/frontend-upgrade-ops",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -943,6 +977,23 @@
     "author": "0xDarkMatter",
     "repository": "https://github.com/0xDarkMatter/claude-mods",
     "manifestPath": "skills/okf-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-package-manager-ops",
+    "name": "package-manager-ops",
+    "description": "name: package-manager-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/package-manager-ops",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -1810,6 +1861,23 @@
     "author": "0xDarkMatter",
     "repository": "https://github.com/0xDarkMatter/claude-mods",
     "manifestPath": "skills/vue-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1105022950",
+      "marketplaceName": "claude-mods",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1105022950-web-perf-ops",
+    "name": "web-perf-ops",
+    "description": "name: web-perf-ops",
+    "version": "1.0.0",
+    "author": "0xDarkMatter",
+    "repository": "https://github.com/0xDarkMatter/claude-mods",
+    "manifestPath": "skills/web-perf-ops",
     "isValid": true,
     "errors": [],
     "warnings": [],

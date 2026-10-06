@@ -1,0 +1,290 @@
+[
+  {
+    "id": "1157727506-remotion-video-master",
+    "name": "remotion-video-master",
+    "description": "The master Remotion video skill, every format in one: a guided brief (what the video is for, where it runs, a recommended length), the story and script, then one engine for promos, demos, tutorials, explainers and more, with the brand motif in every transition, platform safe zones and measured verification.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-master",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-promo",
+    "name": "remotion-video-promo",
+    "description": "Promo videos with Remotion: bumpers, 15 and 30 s ads, teasers, launch films and landing page loops. Beat-locked, the brand's motif carrying the turn and the close, four aspects and RTL locales from one manifest. Single-purpose specialist of remotion-video-master, which covers every format.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-promo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-product-demo",
+    "name": "remotion-video-product-demo",
+    "description": "Product demo and product tour videos with Remotion: the real product, feature by feature, driven by a cursor with smooth zooms, voiced or caption-led, with cuts only inside screen recordings. Single-purpose specialist of remotion-video-master, which covers every format.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-product-demo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-tutorial",
+    "name": "remotion-video-tutorial",
+    "description": "Tutorial and how-to videos with Remotion: step by step, chaptered by the brand's motif, a voiceover or word-synced subtitles, cursor zooms, checked so a stranger can repeat every step. Single-purpose specialist of remotion-video-master, which covers every format.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-tutorial",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-explainer",
+    "name": "remotion-video-explainer",
+    "description": "Explainer videos with Remotion: one idea made clear with diagrams and the brand's motif, voiced or caption-led, checked for one-sentence recall. Single-purpose specialist of remotion-video-master, which covers every format.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-explainer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-feature-announcement",
+    "name": "remotion-video-feature-announcement",
+    "description": "Feature announcement videos with Remotion: one new feature or release, before and after on the same screen, in a short film. Early single-purpose specialist of remotion-video-master, built on its promo module.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-feature-announcement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-social-organic",
+    "name": "remotion-video-social-organic",
+    "description": "Organic social clips with Remotion for Reels, TikTok, Shorts and LinkedIn: the hook in the first second, captions inside every platform's safe zone, made to loop and be shared. Early single-purpose specialist of remotion-video-master, built on its promo module.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-social-organic",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-event-recap",
+    "name": "remotion-video-event-recap",
+    "description": "Event recap and conference highlight videos with Remotion, cut from real footage and photos on the beat. Early single-purpose specialist of remotion-video-master, built on its promo module.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-event-recap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-app-store-preview",
+    "name": "remotion-video-app-store-preview",
+    "description": "App Store previews and Google Play videos with Remotion: in-app footage only, 15 to 30 s, caption-led for muted autoplay, at the store's exact size. Early single-purpose specialist of remotion-video-master, built on its product-demo module.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-app-store-preview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-onboarding",
+    "name": "remotion-video-onboarding",
+    "description": "Onboarding and first-run videos with Remotion: a series of short tutorials, one task each, caption-led for in-product playback. Early single-purpose specialist of remotion-video-master, built on its tutorial module.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-onboarding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-remotion-video-testimonial",
+    "name": "remotion-video-testimonial",
+    "description": "Customer testimonial and case study videos with Remotion, built from a real customer's quote, interview or numbers. Early single-purpose specialist of remotion-video-master, built on its explainer module.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/remotion-video-testimonial",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-deploy-production-level",
+    "name": "deploy-production-level",
+    "description": "Production deploy pipeline on GitHub Actions and Cloudflare Workers: a required quality gate, PR preview environments, staging on every merge, human-promoted production releases tagged with their Worker version, instant rollback, and a hook that stops AI agents from deploying. Invoke it explicitly.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/deploy-production-level",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-publish-skill",
+    "name": "publish-skill",
+    "description": "Publish a skill or plugin to your Claude Code marketplace repos: routes public vs private, scaffolds the entry and README row, scans for secrets and private content, validates, test-installs in a throwaway config, and keeps a local copy. Includes a history-purge recipe for leaks.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/publish-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-visual-verification",
+    "name": "visual-verification",
+    "description": "Makes the agent prove an output works before calling it done: scope the check from the user's words, verify on the real surface and environment (never tests, CI, health checks or localhost alone), screenshot it, use it (click, submit, run, open every page), read the evidence critically, and report each item as ✓/✗/?, in a strict tool order (real Chrome, in-app browser, headless Playwright, computer use), with a tool-traps guide, a rationalization table and red flags.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/visual-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-seo-geo-master",
+    "name": "seo-geo-master",
+    "description": "One master skill for search visibility: classic SEO and GEO (being found, cited and recommended in Google AI Overviews and AI Mode, ChatGPT, Claude, Perplexity and Copilot). Reads the site first, asks once, never invents numbers, proposes one measured change at a time, and ships tested zero-dependency scripts for crawling, robots.txt and AI crawlers, structured data, Search Console exports and Core Web Vitals.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/seo-geo-master",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1157727506-brand-identity-master",
+    "name": "brand-identity-master",
+    "description": "Turns a logo into a visual identity: it reads the logo's real colours and shape and the brand's own words, picks one of six design directions, and writes a validated brand file (palette, fonts, logo rules, voice) plus a premium brand identity board rendered from HTML. The logo is never redrawn, no fact is invented, and no image model or API key is needed.",
+    "version": "",
+    "author": "Tomer Hayun",
+    "repository": "https://github.com/tomerhayundev/skills",
+    "manifestPath": "./plugins/brand-identity-master",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1157727506",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false
+    }
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1133771838-solana-ai-kit",
+    "name": "solana-ai-kit",
+    "description": "Core Solana dev kit: specialized agents, workflow commands, skills, MCP servers, and dev hooks. Installs the safe-ai-skill security firewall as a dependency. (Full install via install.sh adds the project CLAUDE.md, the permissions/sandbox policy, and the ext/ skill packs: core by default, extensions on demand.)",
+    "version": "2.3.0",
+    "author": "solanabr",
+    "repository": "https://github.com/solanabr/ai-kit",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133771838",
+      "marketplaceName": "ai-kit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1133771838-safe-ai-skill",
+    "name": "safe-ai-skill",
+    "description": "Security firewall and supply-chain verifier (hooks): gates mainnet, value-moving and authority actions and secret reads, and pins installed skills and MCPs at session start. Core part of the kit: solana-ai-kit depends on it.",
+    "version": "2.3.0",
+    "author": "solanabr",
+    "repository": "https://github.com/solanabr/ai-kit",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/solanabr/safe-ai-skill.git",
+      "path": "plugins/safe-ai-skill",
+      "ref": "main",
+      "sha": "2997280e2deaf074e9bf34a79797a0b71123b18a"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133771838",
+      "marketplaceName": "ai-kit",
+      "skills": [],
+      "strict": false
+    }
+  },
+  {
+    "id": "1133771838-skill-packs",
+    "name": "skill-packs",
+    "description": "name: skill-packs",
+    "version": "1.0.0",
+    "author": "solanabr",
+    "repository": "https://github.com/solanabr/ai-kit",
+    "manifestPath": ".claude/skills/skill-packs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133771838",
+      "marketplaceName": "ai-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1133771838-token-extensions",
+    "name": "token-extensions",
+    "description": "name: token-extensions",
+    "version": "1.0.0",
+    "author": "solanabr",
+    "repository": "https://github.com/solanabr/ai-kit",
+    "manifestPath": ".claude/skills/token-extensions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1133771838",
+      "marketplaceName": "ai-kit",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -5454,7 +5454,7 @@
     "id": "1100776768-security-guidance",
     "name": "security-guidance",
     "description": "Security review for Claude-generated code. Pattern-based warnings on edits, LLM-powered diff review on Stop, and an agentic commit reviewer that catches injection, XSS, SSRF, hardcoded secrets, and 25+ other vulnerability classes.",
-    "version": "2.0.9",
+    "version": "2.0.10",
     "author": "Anthropic",
     "repository": "https://github.com/anthropics/claude-plugins-official",
     "manifestPath": "./plugins/security-guidance",

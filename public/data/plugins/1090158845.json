@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1090158845-dossier-mcp-server",
+    "name": "dossier-mcp-server",
+    "description": "MCP server for dossier automation — enables LLMs to discover, verify, and execute dossiers (structured automation recipes)",
+    "version": "1.0.4",
+    "author": "Yuval Dimnik",
+    "repository": "https://github.com/imboard-ai/ai-dossier",
+    "manifestPath": {
+      "source": "npm",
+      "package": "@ai-dossier/mcp-server"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1090158845",
+      "marketplaceName": "ai-dossier",
+      "skills": [],
+      "strict": false
+    }
+  }
+]
