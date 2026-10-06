@@ -12,6 +12,14 @@ import SortSelect from '@/components/ui/SortSelect';
 import { Zap, Package, Terminal, ShieldAlert, ArrowUp } from 'lucide-react';
 
 /**
+ * The mods surface is days old — the "new" pill self-expires instead of
+ * lingering as a stale badge on a mature section (deploys are daily, so the
+ * static HTML drops it on the first build past this date).
+ */
+const MODS_NEW_UNTIL = '2026-11-15';
+const isModsSectionNew = () => Date.now() < new Date(`${MODS_NEW_UNTIL}T23:59:59Z`).getTime();
+
+/**
  * Mods landing — a pre-filtered view over the plugin index (modsCount > 0).
  * Mods are a pattern, not a category: the listing shares the plugins plumbing
  * and this page adds only the explainer + install flow around it.
@@ -108,6 +116,15 @@ const ModsPage: React.FC = () => {
                 <p className='eyebrow eyebrow-prompt mb-2'>mods --hook-modules</p>
                 <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4'>
                   Claude Code Mods
+                  {isModsSectionNew() && (
+                    <span
+                      className='ml-3 inline-flex translate-y-[-0.15em] items-center gap-1 rounded-full border border-primary-500/40 bg-primary-500/10 px-2.5 py-1 align-middle text-[11px] sm:text-xs font-mono font-semibold uppercase tracking-[0.2em] text-primary-600 dark:text-primary-400'
+                      title='Mods shipped via Claude Code plugins — surfaced here as of October 2026'
+                    >
+                      <Zap className='w-3 h-3' aria-hidden='true' />
+                      new
+                    </span>
+                  )}
                 </h1>
                 <p className='text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto'>
                   Small TypeScript hook modules that ride inside Claude Code plugins — they watch
