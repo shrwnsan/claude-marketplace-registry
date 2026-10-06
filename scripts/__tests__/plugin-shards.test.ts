@@ -12,6 +12,7 @@ import {
   Plugin,
   toPluginIndexRecord,
   deriveSkillsCount,
+  deriveModsCount,
   groupPluginsByMarketplace,
   computeStaleShardFiles,
 } from '../generate-data';
@@ -45,9 +46,17 @@ describe('toPluginIndexRecord', () => {
       marketplaceId: 'mp-1',
       marketplaceName: 'mp',
       skillsCount: 1,
+      modsCount: 0,
     });
     expect(Object.keys(record)).not.toContain('metadata');
     expect(Object.keys(record)).not.toContain('repository');
+  });
+
+  it('passes a recorded modsCount through to the index record', () => {
+    const record = toPluginIndexRecord(
+      buildPlugin({ metadata: { marketplaceId: 'mp-1', modsCount: 3 } })
+    );
+    expect(record.modsCount).toBe(3);
   });
 
   it('truncates descriptions longer than 160 characters', () => {
@@ -89,6 +98,20 @@ describe('deriveSkillsCount', () => {
     expect(deriveSkillsCount({ marketplaceId: 'mp-1' })).toBe(0);
     expect(deriveSkillsCount(undefined)).toBe(0);
     expect(deriveSkillsCount(null)).toBe(0);
+  });
+});
+
+describe('deriveModsCount', () => {
+  it('returns the recorded modsCount', () => {
+    expect(deriveModsCount({ modsCount: 2 })).toBe(2);
+    expect(deriveModsCount({ modsCount: 0 })).toBe(0);
+  });
+
+  it('returns 0 for missing, non-numeric, or absent signals', () => {
+    expect(deriveModsCount({})).toBe(0);
+    expect(deriveModsCount({ modsCount: '2' })).toBe(0);
+    expect(deriveModsCount(undefined)).toBe(0);
+    expect(deriveModsCount(null)).toBe(0);
   });
 });
 

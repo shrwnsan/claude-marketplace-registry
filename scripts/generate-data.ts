@@ -118,6 +118,7 @@ export interface PluginIndexRecord {
   marketplaceId: string;
   marketplaceName: string;
   skillsCount: number;
+  modsCount: number;
 }
 
 /**
@@ -131,7 +132,15 @@ export function deriveSkillsCount(metadata: any): number {
   return 0;
 }
 
-/** Build the compact index record for one plugin (full record → 9 fields). */
+/**
+ * Number of Claude Code mods (hook modules from hooks.json) the pipeline
+ * recorded for a plugin, else 0.
+ */
+export function deriveModsCount(metadata: any): number {
+  return typeof metadata?.modsCount === 'number' ? metadata.modsCount : 0;
+}
+
+/** Build the compact index record for one plugin (full record → 10 fields). */
 export function toPluginIndexRecord(plugin: Plugin): PluginIndexRecord {
   return {
     id: plugin.id,
@@ -143,6 +152,7 @@ export function toPluginIndexRecord(plugin: Plugin): PluginIndexRecord {
     marketplaceId: plugin.metadata?.marketplaceId ?? '',
     marketplaceName: plugin.metadata?.marketplaceName ?? '',
     skillsCount: deriveSkillsCount(plugin.metadata),
+    modsCount: deriveModsCount(plugin.metadata),
   };
 }
 
@@ -339,6 +349,7 @@ class DataGenerator {
             marketplaceName: mp.name,
             skills: entry.skills || [],
             strict: entry.strict ?? false,
+            modsCount: typeof entry.modsCount === 'number' ? entry.modsCount : 0,
           },
         });
       }

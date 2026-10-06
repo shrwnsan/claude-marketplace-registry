@@ -31,6 +31,8 @@ export interface Plugin {
   agents?: string[];
   /** Plugin hooks configuration */
   hooks?: Record<string, unknown>;
+  /** Number of Claude Code mods (hook modules) this plugin ships */
+  modsCount?: number;
   /** MCP servers configuration */
   mcpServers?: Record<string, unknown>;
   /** Source information */
@@ -62,6 +64,8 @@ export interface PluginListItem {
   tags?: string[];
   commands?: string[];
   agents?: string[];
+  /** Number of Claude Code mods (hook modules) this plugin ships */
+  modsCount?: number;
   source: {
     type: 'github' | 'url';
     url: string;

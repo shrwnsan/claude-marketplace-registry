@@ -17,6 +17,7 @@ const plugin = (id: string, stars: number, marketplaceId: string): CatalogPlugin
   repositoryUrl: 'https://github.com/a/b',
   sourceUrl: 'https://github.com/a/b',
   skillsCount: 1,
+  modsCount: 0,
   marketplaceId,
   marketplaceName: marketplaceId,
   stars,

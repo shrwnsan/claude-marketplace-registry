@@ -24,7 +24,25 @@ export interface DiscoveredPlugin {
   manifestPath: string;
   isValid: boolean;
   errors: string[];
+  /** Number of Claude Code mods (hook modules) this plugin ships, 0 when none. */
+  modsCount?: number;
   manifest?: any;
+}
+
+/**
+ * Number of mods a hooks.json declares: the length of its `modules` array,
+ * else 0. Accepts raw file text; malformed JSON or a non-array `modules`
+ * (legacy per-event hook configs never carry the key, though a file may mix
+ * `modules` with legacy keys) counts as 0.
+ */
+export function modsCountFromHooksJson(raw: string | null | undefined): number {
+  if (!raw) return 0;
+  try {
+    const hooks = JSON.parse(raw);
+    return Array.isArray(hooks?.modules) ? hooks.modules.length : 0;
+  } catch {
+    return 0;
+  }
 }
 
 export interface MarketplaceInfo {
@@ -92,21 +110,22 @@ export class PluginDiscovery {
             .replace(/^-|-$/g, '')}`;
 
     try {
-      let manifest: any = null;
+      const [owner, repo] = pluginRepo
+        ? pluginRepo.split('/')
+        : [marketplace.owner, marketplace.repo];
+      // External-repo plugins live at that repo's root; internal ones at their path.
+      const pluginDir = pluginRepo ? '' : pluginPath;
 
-      if (pluginRepo) {
-        // External repository - fetch from that repo
-        const [owner, repo] = pluginRepo.split('/');
-        manifest = await this.fetchPluginManifest(owner, repo, '');
-      } else if (pluginPath) {
-        // Internal path within marketplace repo
-        manifest = await this.fetchPluginManifest(marketplace.owner, marketplace.repo, pluginPath);
-      } else {
-        // Plugin is the marketplace itself (single-plugin repo)
-        manifest = await this.fetchPluginManifest(marketplace.owner, marketplace.repo, '');
-      }
+      const manifest = await this.fetchPluginManifest(owner, repo, pluginDir);
 
       if (manifest) {
+        // Stamp the source manifest entry: scan-marketplaces persists these
+        // objects in data/marketplaces/raw.json — the only scan output the
+        // generate job receives (see scan.yml artifacts) — so the count must
+        // ride the entry, not just the DiscoveredPlugin record.
+        const modsCount = await this.fetchModsCount(owner, repo, pluginDir);
+        pluginEntry.modsCount = modsCount;
+
         return {
           id: pluginId,
           name: manifest.name || pluginName,
@@ -119,6 +138,7 @@ export class PluginDiscovery {
           manifestPath: pluginPath ? `${pluginPath}/${PLUGIN_MANIFEST_PATH}` : PLUGIN_MANIFEST_PATH,
           isValid: true,
           errors: [],
+          modsCount,
           manifest,
         };
       } else {
@@ -173,6 +193,28 @@ export class PluginDiscovery {
     }
 
     return null;
+  }
+
+  /**
+   * Count the Claude Code mods (hook modules) a plugin ships: a plugin is
+   * mod-carrying when its hooks/hooks.json declares a non-empty `modules`
+   * array. Absence or any fetch/parse failure counts as 0 — detection must
+   * never invalidate an otherwise valid plugin.
+   */
+  private async fetchModsCount(owner: string, repo: string, pluginPath: string): Promise<number> {
+    const hooksPath = pluginPath ? `${pluginPath}/hooks/hooks.json` : 'hooks/hooks.json';
+
+    try {
+      const response = await this.octokit.repos.getContent({ owner, repo, path: hooksPath });
+      if ('content' in response.data) {
+        const content = Buffer.from(response.data.content, 'base64').toString('utf-8');
+        return modsCountFromHooksJson(content);
+      }
+    } catch {
+      // No hooks.json (or fetch failed) — not a mod carrier.
+    }
+
+    return 0;
   }
 
   /**
