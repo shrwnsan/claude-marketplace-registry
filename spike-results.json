@@ -1,0 +1,80 @@
+{
+  "controls": [
+    {
+      "name": "diff (built-in)",
+      "owner": "anthropics",
+      "repo": "claude-code",
+      "dir": "mods/diff",
+      "modules": ["./register.ts"],
+      "legacyKeys": ["description"],
+      "kind": "control"
+    },
+    {
+      "name": "agents-md (built-in)",
+      "owner": "anthropics",
+      "repo": "claude-code",
+      "dir": "mods/agents-md",
+      "modules": ["./register.ts"],
+      "legacyKeys": ["description"],
+      "kind": "control"
+    },
+    {
+      "name": "sec-default (built-in)",
+      "owner": "anthropics",
+      "repo": "claude-code",
+      "dir": "mods/sec-default",
+      "modules": ["./register.ts"],
+      "legacyKeys": ["description"],
+      "kind": "control"
+    },
+    {
+      "name": "telemetry (built-in)",
+      "owner": "anthropics",
+      "repo": "claude-code",
+      "dir": "mods/telemetry",
+      "modules": ["./register.ts"],
+      "legacyKeys": ["description"],
+      "kind": "control"
+    },
+    {
+      "name": "token-weather (sample)",
+      "owner": "anthropics",
+      "repo": "claude-code-playground",
+      "dir": "claude-code/mods/token-weather",
+      "modules": ["./token-weather.mjs"],
+      "legacyKeys": [],
+      "kind": "control"
+    },
+    {
+      "name": "blast-radius (sample)",
+      "owner": "anthropics",
+      "repo": "claude-code-playground",
+      "dir": "claude-code/mods/blast-radius",
+      "modules": ["./blast-radius.mjs"],
+      "legacyKeys": ["description"],
+      "kind": "control"
+    },
+    {
+      "name": "replay-theater (sample)",
+      "owner": "anthropics",
+      "repo": "claude-code-playground",
+      "dir": "claude-code/mods/replay-theater",
+      "modules": ["./replay-theater.mjs"],
+      "legacyKeys": [],
+      "kind": "control"
+    }
+  ],
+  "candidateHits": [],
+  "baselineHits": [],
+  "stats": {
+    "probed": 86,
+    "mods": 7,
+    "noHooksJson": 53,
+    "httpErrors": 0,
+    "skippedNoRepo": 1,
+    "rateLimitRemaining": 4855,
+    "candidatePool": 50,
+    "baselinePool": 29,
+    "totalPluginsInDataset": 5881
+  }
+}
