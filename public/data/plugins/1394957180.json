@@ -1,0 +1,157 @@
+[
+  {
+    "id": "1394957180-code-kit",
+    "name": "code-kit",
+    "description": "Keeps AI coding agents inside your project's rules, from idea to merged code: spec design, lanes, layer rules, protected paths with an approval log, spec-check and design gates, proof-before-finish checks, dispatch, review, build status and CI verification, configured per project from its docs",
+    "version": "0.4.0",
+    "author": "warrendeanlangeveldt",
+    "repository": "https://github.com/warrendeanlangeveldt/code-kit",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394957180",
+      "marketplaceName": "code-kit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1394957180-check",
+    "name": "check",
+    "description": "name: check",
+    "version": "1.0.0",
+    "author": "warrendeanlangeveldt",
+    "repository": "https://github.com/warrendeanlangeveldt/code-kit",
+    "manifestPath": "skills/check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394957180",
+      "marketplaceName": "code-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1394957180-dispatch",
+    "name": "dispatch",
+    "description": "name: dispatch",
+    "version": "1.0.0",
+    "author": "warrendeanlangeveldt",
+    "repository": "https://github.com/warrendeanlangeveldt/code-kit",
+    "manifestPath": "skills/dispatch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394957180",
+      "marketplaceName": "code-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1394957180-init",
+    "name": "init",
+    "description": "name: init",
+    "version": "1.0.0",
+    "author": "warrendeanlangeveldt",
+    "repository": "https://github.com/warrendeanlangeveldt/code-kit",
+    "manifestPath": "skills/init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394957180",
+      "marketplaceName": "code-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1394957180-next",
+    "name": "next",
+    "description": "name: next",
+    "version": "1.0.0",
+    "author": "warrendeanlangeveldt",
+    "repository": "https://github.com/warrendeanlangeveldt/code-kit",
+    "manifestPath": "skills/next",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394957180",
+      "marketplaceName": "code-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1394957180-review",
+    "name": "review",
+    "description": "name: review",
+    "version": "1.0.0",
+    "author": "warrendeanlangeveldt",
+    "repository": "https://github.com/warrendeanlangeveldt/code-kit",
+    "manifestPath": "skills/review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394957180",
+      "marketplaceName": "code-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1394957180-spec-check",
+    "name": "spec-check",
+    "description": "name: spec-check",
+    "version": "1.0.0",
+    "author": "warrendeanlangeveldt",
+    "repository": "https://github.com/warrendeanlangeveldt/code-kit",
+    "manifestPath": "skills/spec-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394957180",
+      "marketplaceName": "code-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1394957180-spec-design",
+    "name": "spec-design",
+    "description": "name: spec-design",
+    "version": "1.0.0",
+    "author": "warrendeanlangeveldt",
+    "repository": "https://github.com/warrendeanlangeveldt/code-kit",
+    "manifestPath": "skills/spec-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394957180",
+      "marketplaceName": "code-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1394957180-status",
+    "name": "status",
+    "description": "name: status",
+    "version": "1.0.0",
+    "author": "warrendeanlangeveldt",
+    "repository": "https://github.com/warrendeanlangeveldt/code-kit",
+    "manifestPath": "skills/status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394957180",
+      "marketplaceName": "code-kit",
+      "hasSkillMd": true
+    }
+  }
+]

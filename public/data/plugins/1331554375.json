@@ -1,0 +1,297 @@
+[
+  {
+    "id": "1331554375-interlock",
+    "name": "interlock",
+    "description": "Autonomous spec-driven development orchestration for Claude Code, layered on OpenSpec.",
+    "version": "1.2.1",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": {
+      "source": "github",
+      "repo": "renzrollon/interlock",
+      "ref": "release"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1331554375-bootstrap",
+    "name": "bootstrap",
+    "description": "name: bootstrap",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/bootstrap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-commit",
+    "name": "commit",
+    "description": "name: commit",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-dispatch",
+    "name": "dispatch",
+    "description": "name: dispatch",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/dispatch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-docs-digest",
+    "name": "docs-digest",
+    "description": "name: docs-digest",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/docs-digest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-evals",
+    "name": "evals",
+    "description": "name: evals",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/evals",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-explain-code",
+    "name": "explain-code",
+    "description": "name: explain-code",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/explain-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-explore",
+    "name": "explore",
+    "description": "name: explore",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/explore",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-fix-tests",
+    "name": "fix-tests",
+    "description": "name: fix-tests",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/fix-tests",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-graph",
+    "name": "graph",
+    "description": "name: graph",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/graph",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-manual-test-plan",
+    "name": "manual-test-plan",
+    "description": "name: manual-test-plan",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/manual-test-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-mr",
+    "name": "mr",
+    "description": "name: mr",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/mr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-report",
+    "name": "report",
+    "description": "name: report",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-review-artifacts",
+    "name": "review-artifacts",
+    "description": "name: review-artifacts",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/review-artifacts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-review-code",
+    "name": "review-code",
+    "description": "name: review-code",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/review-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-ship",
+    "name": "ship",
+    "description": "name: ship",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1331554375-spec",
+    "name": "spec",
+    "description": "name: spec",
+    "version": "1.0.0",
+    "author": "Carl Rollon",
+    "repository": "https://github.com/renzrollon/interlock",
+    "manifestPath": "skills/spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1331554375",
+      "marketplaceName": "interlock",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,548 @@
+[
+  {
+    "id": "1073657969-navigator",
+    "name": "navigator",
+    "description": "",
+    "version": "8.3.2",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1073657969-backend-endpoint",
+    "name": "backend-endpoint",
+    "description": "name: backend-endpoint",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/backend-endpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-backend-test",
+    "name": "backend-test",
+    "description": "name: backend-test",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/backend-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-database-migration",
+    "name": "database-migration",
+    "description": "name: database-migration",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/database-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-frontend-component",
+    "name": "frontend-component",
+    "description": "name: frontend-component",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/frontend-component",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-frontend-test",
+    "name": "frontend-test",
+    "description": "name: frontend-test",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/frontend-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-brief",
+    "name": "nav-brief",
+    "description": "name: nav-brief",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-compact",
+    "name": "nav-compact",
+    "description": "name: nav-compact",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-compact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-deep-research",
+    "name": "nav-deep-research",
+    "description": "name: nav-deep-research",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-deep-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-diagnose",
+    "name": "nav-diagnose",
+    "description": "name: nav-diagnose",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-diagnose",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-features",
+    "name": "nav-features",
+    "description": "name: nav-features",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-features",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-graph",
+    "name": "nav-graph",
+    "description": "name: nav-graph",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-graph",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-init",
+    "name": "nav-init",
+    "description": "name: nav-init",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-loop",
+    "name": "nav-loop",
+    "description": "name: nav-loop",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-marker",
+    "name": "nav-marker",
+    "description": "name: nav-marker",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-marker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-onboard",
+    "name": "nav-onboard",
+    "description": "name: nav-onboard",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-onboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-pilot",
+    "name": "nav-pilot",
+    "description": "name: nav-pilot",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-pilot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-profile",
+    "name": "nav-profile",
+    "description": "name: nav-profile",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-profile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-release",
+    "name": "nav-release",
+    "description": "name: nav-release",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-simplify",
+    "name": "nav-simplify",
+    "description": "name: nav-simplify",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-simplify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-skill-creator",
+    "name": "nav-skill-creator",
+    "description": "name: nav-skill-creator",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-sop",
+    "name": "nav-sop",
+    "description": "name: nav-sop",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-sop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-start",
+    "name": "nav-start",
+    "description": "name: nav-start",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-start",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-stats",
+    "name": "nav-stats",
+    "description": "name: nav-stats",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-stats",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-sync-claude",
+    "name": "nav-sync-claude",
+    "description": "name: nav-sync-claude",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-sync-claude",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-task",
+    "name": "nav-task",
+    "description": "name: nav-task",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-task",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-triz",
+    "name": "nav-triz",
+    "description": "name: nav-triz",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-triz",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-upgrade",
+    "name": "nav-upgrade",
+    "description": "name: nav-upgrade",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-upgrade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-nav-workflow",
+    "name": "nav-workflow",
+    "description": "name: nav-workflow",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/nav-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-plugin-slash-command",
+    "name": "plugin-slash-command",
+    "description": "name: plugin-slash-command",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/plugin-slash-command",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-product-design",
+    "name": "product-design",
+    "description": "name: product-design",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/product-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1073657969-visual-regression",
+    "name": "visual-regression",
+    "description": "name: visual-regression",
+    "version": "1.0.0",
+    "author": "qf-studio",
+    "repository": "https://github.com/qf-studio/navigator",
+    "manifestPath": "skills/visual-regression",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1073657969",
+      "marketplaceName": "navigator",
+      "hasSkillMd": true
+    }
+  }
+]

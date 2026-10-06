@@ -1,0 +1,344 @@
+[
+  {
+    "id": "1168611471-drupal-workflow",
+    "name": "drupal-workflow",
+    "description": "Drupal development workflow with live autopilot: 19 skills, 4 agents, 10 commands, behavioral evals, session analysis, and Magic Loop Autopilot.",
+    "version": "2.0.1",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1168611471-autopilot-tuner",
+    "name": "autopilot-tuner",
+    "description": "name: autopilot-tuner",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/autopilot-tuner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-discover",
+    "name": "discover",
+    "description": "name: discover",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/discover",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-brainstorming",
+    "name": "drupal-brainstorming",
+    "description": "name: drupal-brainstorming",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-brainstorming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-caching",
+    "name": "drupal-caching",
+    "description": "name: drupal-caching",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-caching",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-coding-standards",
+    "name": "drupal-coding-standards",
+    "description": "name: drupal-coding-standards",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-coding-standards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-config-management",
+    "name": "drupal-config-management",
+    "description": "name: drupal-config-management",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-config-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-conventions",
+    "name": "drupal-conventions",
+    "description": "name: drupal-conventions",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-conventions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-delegation",
+    "name": "drupal-delegation",
+    "description": "name: drupal-delegation",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-delegation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-entity-api",
+    "name": "drupal-entity-api",
+    "description": "name: drupal-entity-api",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-entity-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-hook-patterns",
+    "name": "drupal-hook-patterns",
+    "description": "name: drupal-hook-patterns",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-hook-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-rules",
+    "name": "drupal-rules",
+    "description": "name: drupal-rules",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-rules",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-security-patterns",
+    "name": "drupal-security-patterns",
+    "description": "name: drupal-security-patterns",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-security-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-service-di",
+    "name": "drupal-service-di",
+    "description": "name: drupal-service-di",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-service-di",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-drupal-testing",
+    "name": "drupal-testing",
+    "description": "name: drupal-testing",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/drupal-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-semantic-docs",
+    "name": "semantic-docs",
+    "description": "name: semantic-docs",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/semantic-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-structural-index",
+    "name": "structural-index",
+    "description": "name: structural-index",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/structural-index",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-twig-templating",
+    "name": "twig-templating",
+    "description": "name: twig-templating",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/twig-templating",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-verification-before-completion",
+    "name": "verification-before-completion",
+    "description": "name: verification-before-completion",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/verification-before-completion",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1168611471-writing-plans",
+    "name": "writing-plans",
+    "description": "name: writing-plans",
+    "version": "1.0.0",
+    "author": "Zorz",
+    "repository": "https://github.com/gkastanis/drupal-workflow",
+    "manifestPath": "skills/writing-plans",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1168611471",
+      "marketplaceName": "drupal-workflow",
+      "hasSkillMd": true
+    }
+  }
+]

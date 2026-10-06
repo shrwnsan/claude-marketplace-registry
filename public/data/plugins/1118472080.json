@@ -1,0 +1,70 @@
+[
+  {
+    "id": "1118472080-council-execution",
+    "name": "council-execution",
+    "description": "name: council-execution",
+    "version": "1.0.0",
+    "author": "hex",
+    "repository": "https://github.com/hex/claude-council",
+    "manifestPath": "skills/council-execution",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1118472080",
+      "marketplaceName": "claude-council",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1118472080-deep-execution",
+    "name": "deep-execution",
+    "description": "name: deep-execution",
+    "version": "1.0.0",
+    "author": "hex",
+    "repository": "https://github.com/hex/claude-council",
+    "manifestPath": "skills/deep-execution",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1118472080",
+      "marketplaceName": "claude-council",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1118472080-local-council-execution",
+    "name": "local-council-execution",
+    "description": "name: local-council-execution",
+    "version": "1.0.0",
+    "author": "hex",
+    "repository": "https://github.com/hex/claude-council",
+    "manifestPath": "skills/local-council-execution",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1118472080",
+      "marketplaceName": "claude-council",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1118472080-provider-integration",
+    "name": "provider-integration",
+    "description": "name: provider-integration",
+    "version": "1.0.0",
+    "author": "hex",
+    "repository": "https://github.com/hex/claude-council",
+    "manifestPath": "skills/provider-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1118472080",
+      "marketplaceName": "claude-council",
+      "hasSkillMd": true
+    }
+  }
+]

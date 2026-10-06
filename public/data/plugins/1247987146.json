@@ -14,7 +14,8 @@
       "marketplaceId": "1247987146",
       "marketplaceName": "suede-creator-skills",
       "skills": [],
-      "strict": true
+      "strict": true,
+      "modsCount": 0
     }
   },
   {
@@ -38,7 +39,8 @@
         "./suede-workflow-skills",
         "./suede-ai-eval"
       ],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -61,7 +63,8 @@
         "./suede-code-grader",
         "./suede-ci-gate"
       ],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -123,7 +126,8 @@
         "./suede-social",
         "./suede-video"
       ],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {

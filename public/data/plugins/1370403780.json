@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1370403780-agent-flow",
+    "name": "agent-flow",
+    "description": "/flow opens a live, read-only tree of the session's subagents and teammates beside the transcript: status, current tool call, waits for approval, elapsed time, tokens; prints the same tree as text where no pane can be drawn",
+    "version": "0.1.0",
+    "author": "Charles Tao",
+    "repository": "https://github.com/Charlie0113-T/claude-agent-flow",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1370403780",
+      "marketplaceName": "claude-agent-flow",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -1,0 +1,174 @@
+[
+  {
+    "id": "1339902527-adversarial-review-loop",
+    "name": "adversarial-review-loop",
+    "description": "Enforced adversarial review loop for phased plan implementation.",
+    "version": "",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1339902527-accept",
+    "name": "accept",
+    "description": "name: accept",
+    "version": "1.0.0",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "skills/accept",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339902527-config",
+    "name": "config",
+    "description": "name: config",
+    "version": "1.0.0",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "skills/config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339902527-finish",
+    "name": "finish",
+    "description": "name: finish",
+    "version": "1.0.0",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "skills/finish",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339902527-implement",
+    "name": "implement",
+    "description": "name: implement",
+    "version": "1.0.0",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "skills/implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339902527-pause",
+    "name": "pause",
+    "description": "name: pause",
+    "version": "1.0.0",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "skills/pause",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339902527-report",
+    "name": "report",
+    "description": "name: report",
+    "version": "1.0.0",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "skills/report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339902527-resume",
+    "name": "resume",
+    "description": "name: resume",
+    "version": "1.0.0",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "skills/resume",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339902527-status",
+    "name": "status",
+    "description": "name: status",
+    "version": "1.0.0",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "skills/status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1339902527-stop",
+    "name": "stop",
+    "description": "name: stop",
+    "version": "1.0.0",
+    "author": "leinardi",
+    "repository": "https://github.com/leinardi/adversarial-review-loop",
+    "manifestPath": "skills/stop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1339902527",
+      "marketplaceName": "adversarial-review-loop",
+      "hasSkillMd": true
+    }
+  }
+]

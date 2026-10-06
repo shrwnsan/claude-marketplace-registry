@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1377093359-jev-context",
+    "name": "jev-context",
+    "description": "Jev-scored context pruning for Claude Code through OpenRouter: verbatim compaction plus an optional gate on oversized tool outputs.",
+    "version": "0.1.2",
+    "author": "JayDoubleu",
+    "repository": "https://github.com/JayDoubleu/cc-mod-jev",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1377093359",
+      "marketplaceName": "cc-mod-jev",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

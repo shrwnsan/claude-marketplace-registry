@@ -1,0 +1,127 @@
+[
+  {
+    "id": "1167791343-token-optimizer",
+    "name": "token-optimizer",
+    "description": "Audit, fix, and monitor Claude Code context window usage. Find the ghost tokens.",
+    "version": "5.13.35",
+    "author": "Alex Greenshpun",
+    "repository": "https://github.com/alexgreensh/token-optimizer",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167791343",
+      "marketplaceName": "token-optimizer",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1167791343-to-hook-probe",
+    "name": "to-hook-probe",
+    "description": "[BETA] Token Optimizer Cowork hook-firing diagnostic. Install this FIRST in Claude Cowork to see which hooks actually fire on your build. Writes a marker + env dump you can read in-session. Part of the beta Cowork adapter.",
+    "version": "0.1.0",
+    "author": "Alex Greenshpun",
+    "repository": "https://github.com/alexgreensh/token-optimizer",
+    "manifestPath": "./cowork/to-hook-probe",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167791343",
+      "marketplaceName": "token-optimizer",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1167791343-token-optimizer-cowork",
+    "name": "token-optimizer-cowork",
+    "description": "Token Optimizer for Claude Cowork — full skills + Cowork-native hooks (beta). Install THIS in Cowork; the standard token-optimizer entry is for desktop Claude Code.",
+    "version": "5.13.35",
+    "author": "Alex Greenshpun",
+    "repository": "https://github.com/alexgreensh/token-optimizer",
+    "manifestPath": "./cowork/token-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167791343",
+      "marketplaceName": "token-optimizer",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1167791343-fleet-auditor",
+    "name": "fleet-auditor",
+    "description": "name: fleet-auditor",
+    "version": "1.0.0",
+    "author": "Alex Greenshpun",
+    "repository": "https://github.com/alexgreensh/token-optimizer",
+    "manifestPath": "skills/fleet-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167791343",
+      "marketplaceName": "token-optimizer",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167791343-resume-checkpoint",
+    "name": "resume-checkpoint",
+    "description": "name: resume-checkpoint",
+    "version": "1.0.0",
+    "author": "Alex Greenshpun",
+    "repository": "https://github.com/alexgreensh/token-optimizer",
+    "manifestPath": "skills/resume-checkpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167791343",
+      "marketplaceName": "token-optimizer",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167791343-token-coach",
+    "name": "token-coach",
+    "description": "name: token-coach",
+    "version": "1.0.0",
+    "author": "Alex Greenshpun",
+    "repository": "https://github.com/alexgreensh/token-optimizer",
+    "manifestPath": "skills/token-coach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167791343",
+      "marketplaceName": "token-optimizer",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1167791343-token-dashboard",
+    "name": "token-dashboard",
+    "description": "name: token-dashboard",
+    "version": "1.0.0",
+    "author": "Alex Greenshpun",
+    "repository": "https://github.com/alexgreensh/token-optimizer",
+    "manifestPath": "skills/token-dashboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1167791343",
+      "marketplaceName": "token-optimizer",
+      "hasSkillMd": true
+    }
+  }
+]

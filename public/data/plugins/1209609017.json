@@ -1,0 +1,5106 @@
+[
+  {
+    "id": "1209609017-agent-config",
+    "name": "agent-config",
+    "description": "Bootstrap shim — hooks + install pointer only. Install the full suite with `npx -y @event4u/agent-config init`; this plugin intentionally contains no content skills.",
+    "version": "16.3.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "skills": [
+        "./.claude-plugin/skills/install-agent-config"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1209609017-accessibility-auditor",
+    "name": "accessibility-auditor",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/accessibility-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-activation-design",
+    "name": "activation-design",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/activation-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-adr-create",
+    "name": "adr-create",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/adr-create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-adversarial-review",
+    "name": "adversarial-review",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/adversarial-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-agent-docs-writing",
+    "name": "agent-docs-writing",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/agent-docs-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-agent-security-review",
+    "name": "agent-security-review",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/agent-security-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-agents-md-thin-root",
+    "name": "agents-md-thin-root",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/agents-md-thin-root",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-ai-code-blindspots",
+    "name": "ai-code-blindspots",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/ai-code-blindspots",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-ai-council",
+    "name": "ai-council",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/ai-council",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-alerting-doctrine",
+    "name": "alerting-doctrine",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/alerting-doctrine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-analysis-autonomous-mode",
+    "name": "analysis-autonomous-mode",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/analysis-autonomous-mode",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-analysis-skill-router",
+    "name": "analysis-skill-router",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/analysis-skill-router",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-api-design",
+    "name": "api-design",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/api-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-api-endpoint",
+    "name": "api-endpoint",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/api-endpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-api-testing",
+    "name": "api-testing",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/api-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-architecture-review-lens",
+    "name": "architecture-review-lens",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/architecture-review-lens",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-artisan-commands",
+    "name": "artisan-commands",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/artisan-commands",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-async-python-patterns",
+    "name": "async-python-patterns",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/async-python-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-authz-review",
+    "name": "authz-review",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/authz-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-aws-infrastructure",
+    "name": "aws-infrastructure",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/aws-infrastructure",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-blade-ui",
+    "name": "blade-ui",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/blade-ui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-blameless-post-mortem",
+    "name": "blameless-post-mortem",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/blameless-post-mortem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-blast-radius-analyzer",
+    "name": "blast-radius-analyzer",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/blast-radius-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-brand-asset-generation",
+    "name": "brand-asset-generation",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/brand-asset-generation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-brand-audit",
+    "name": "brand-audit",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/brand-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-brand-identity",
+    "name": "brand-identity",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/brand-identity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-brand-strategy",
+    "name": "brand-strategy",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/brand-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-brand-to-tokens",
+    "name": "brand-to-tokens",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/brand-to-tokens",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-brand",
+    "name": "brand",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/brand",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-bug-analyzer",
+    "name": "bug-analyzer",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/bug-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-build-buy-partner",
+    "name": "build-buy-partner",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/build-buy-partner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-canvas-design",
+    "name": "canvas-design",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/canvas-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-character-consistency",
+    "name": "character-consistency",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/character-consistency",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-check-refs",
+    "name": "check-refs",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/check-refs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-churn-prevention",
+    "name": "churn-prevention",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/churn-prevention",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-code-intelligence",
+    "name": "code-intelligence",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/code-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-code-refactoring",
+    "name": "code-refactoring",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/code-refactoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-code-review",
+    "name": "code-review",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-command-routing",
+    "name": "command-routing",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/command-routing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-command-writing",
+    "name": "command-writing",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/command-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-comp-banding",
+    "name": "comp-banding",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/comp-banding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-competitive-moat-analysis",
+    "name": "competitive-moat-analysis",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/competitive-moat-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-competitive-positioning",
+    "name": "competitive-positioning",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/competitive-positioning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-complexity-first-planning",
+    "name": "complexity-first-planning",
+    "description": "name: complexity-first-planning",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/complexity-first-planning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-composer-packages",
+    "name": "composer-packages",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/composer-packages",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-condense-memory",
+    "name": "condense-memory",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/condense-memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-content-funnel-design",
+    "name": "content-funnel-design",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/content-funnel-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-context-authoring",
+    "name": "context-authoring",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/context-authoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-context-document",
+    "name": "context-document",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/context-document",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-contract-review",
+    "name": "contract-review",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/contract-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-contracts-cognition",
+    "name": "contracts-cognition",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/contracts-cognition",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-conventional-commits-writing",
+    "name": "conventional-commits-writing",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/conventional-commits-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-copilot-agents-optimization",
+    "name": "copilot-agents-optimization",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/copilot-agents-optimization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-copilot-config",
+    "name": "copilot-config",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/copilot-config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-corpus-grounding",
+    "name": "corpus-grounding",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/corpus-grounding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-customer-research",
+    "name": "customer-research",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/customer-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-dashboard-design",
+    "name": "dashboard-design",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/dashboard-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-data-flow-mapper",
+    "name": "data-flow-mapper",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/data-flow-mapper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-data-handling-judgment",
+    "name": "data-handling-judgment",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/data-handling-judgment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-database",
+    "name": "database",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/database",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-dcf-modeling",
+    "name": "dcf-modeling",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/dcf-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-deal-qualification-meddic",
+    "name": "deal-qualification-meddic",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/deal-qualification-meddic",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-decision-record",
+    "name": "decision-record",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/decision-record",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-decision-review",
+    "name": "decision-review",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/decision-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-deep-reading-analyst",
+    "name": "deep-reading-analyst",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/deep-reading-analyst",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-defense-in-depth",
+    "name": "defense-in-depth",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/defense-in-depth",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-dependency-upgrade",
+    "name": "dependency-upgrade",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/dependency-upgrade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-description-assist",
+    "name": "description-assist",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/description-assist",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-design-intelligence",
+    "name": "design-intelligence",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/design-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-design-review",
+    "name": "design-review",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/design-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-design-system-capture",
+    "name": "design-system-capture",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/design-system-capture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-design-tokens",
+    "name": "design-tokens",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/design-tokens",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-design-variations",
+    "name": "design-variations",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/design-variations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-devcontainer",
+    "name": "devcontainer",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/devcontainer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-developer-like-execution",
+    "name": "developer-like-execution",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/developer-like-execution",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-discovery-interview",
+    "name": "discovery-interview",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/discovery-interview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-doc-coauthoring",
+    "name": "doc-coauthoring",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/doc-coauthoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-docker",
+    "name": "docker",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/docker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-docx-authoring",
+    "name": "docx-authoring",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/docx-authoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-dpa-review",
+    "name": "dpa-review",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/dpa-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-editorial-calendar",
+    "name": "editorial-calendar",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/editorial-calendar",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-eloquent",
+    "name": "eloquent",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/eloquent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-emit-tickets",
+    "name": "emit-tickets",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/emit-tickets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-error-handling-patterns",
+    "name": "error-handling-patterns",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/error-handling-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-estimate-ticket",
+    "name": "estimate-ticket",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/estimate-ticket",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-evaluate-llm-feature",
+    "name": "evaluate-llm-feature",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/evaluate-llm-feature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-existing-ui-audit",
+    "name": "existing-ui-audit",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/existing-ui-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-expansion-playbook",
+    "name": "expansion-playbook",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/expansion-playbook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-experiment-loop",
+    "name": "experiment-loop",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/experiment-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-fe-design",
+    "name": "fe-design",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/fe-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-feature-planning",
+    "name": "feature-planning",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/feature-planning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-file-editor",
+    "name": "file-editor",
+    "description": "model_tier: lite",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/file-editor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-finishing-a-development-branch",
+    "name": "finishing-a-development-branch",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/finishing-a-development-branch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-flux",
+    "name": "flux",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/flux",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-forecast-accuracy",
+    "name": "forecast-accuracy",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/forecast-accuracy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-forecasting",
+    "name": "forecasting",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/forecasting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-forensics-report",
+    "name": "forensics-report",
+    "description": "name: forensics-report",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/forensics-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-form-handler",
+    "name": "form-handler",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/form-handler",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-frontend-render-security",
+    "name": "frontend-render-security",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/frontend-render-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-fundraising-narrative",
+    "name": "fundraising-narrative",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/fundraising-narrative",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-funnel-analysis",
+    "name": "funnel-analysis",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/funnel-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-gated-reach",
+    "name": "gated-reach",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/gated-reach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-git-workflow",
+    "name": "git-workflow",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/git-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-github-ci",
+    "name": "github-ci",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/github-ci",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-grafana",
+    "name": "grafana",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/grafana",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-gtm-launch",
+    "name": "gtm-launch",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/gtm-launch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-guideline-writing",
+    "name": "guideline-writing",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/guideline-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-hiring-loop-design",
+    "name": "hiring-loop-design",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/hiring-loop-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-history-design",
+    "name": "history-design",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/history-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-html-deck",
+    "name": "html-deck",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/html-deck",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-humanizer",
+    "name": "humanizer",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/humanizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-iconography",
+    "name": "iconography",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/iconography",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-image-analyser",
+    "name": "image-analyser",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/image-analyser",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-image-creator",
+    "name": "image-creator",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/image-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-image-editing",
+    "name": "image-editing",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/image-editing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-image-generation",
+    "name": "image-generation",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/image-generation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-image-provider-routing",
+    "name": "image-provider-routing",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/image-provider-routing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-incident-commander",
+    "name": "incident-commander",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/incident-commander",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-jira-integration",
+    "name": "jira-integration",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/jira-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-jobs-events",
+    "name": "jobs-events",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/jobs-events",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-js-library-packaging",
+    "name": "js-library-packaging",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/js-library-packaging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-judge-artifact-completeness",
+    "name": "judge-artifact-completeness",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/judge-artifact-completeness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-judge-bug-hunter",
+    "name": "judge-bug-hunter",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/judge-bug-hunter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-judge-code-quality",
+    "name": "judge-code-quality",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/judge-code-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-judge-injection-defense",
+    "name": "judge-injection-defense",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/judge-injection-defense",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-judge-security-auditor",
+    "name": "judge-security-auditor",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/judge-security-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-judge-spec-compliance",
+    "name": "judge-spec-compliance",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/judge-spec-compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-judge-synthesis",
+    "name": "judge-synthesis",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/judge-synthesis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-judge-test-coverage",
+    "name": "judge-test-coverage",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/judge-test-coverage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-api-endpoint",
+    "name": "laravel-api-endpoint",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-api-endpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-dto",
+    "name": "laravel-dto",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-dto",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-horizon",
+    "name": "laravel-horizon",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-horizon",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-mail",
+    "name": "laravel-mail",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-mail",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-middleware",
+    "name": "laravel-middleware",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-middleware",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-migration",
+    "name": "laravel-migration",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-notifications",
+    "name": "laravel-notifications",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-notifications",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-pennant",
+    "name": "laravel-pennant",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-pennant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-pulse",
+    "name": "laravel-pulse",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-pulse",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-reverb",
+    "name": "laravel-reverb",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-reverb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-scheduling",
+    "name": "laravel-scheduling",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-scheduling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-validation",
+    "name": "laravel-validation",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel-websocket",
+    "name": "laravel-websocket",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel-websocket",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-laravel",
+    "name": "laravel",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/laravel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-launch-readiness",
+    "name": "launch-readiness",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/launch-readiness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-learning-to-rule-or-skill",
+    "name": "learning-to-rule-or-skill",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/learning-to-rule-or-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-learning-tutor",
+    "name": "learning-tutor",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/learning-tutor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-legal-intake-triage",
+    "name": "legal-intake-triage",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/legal-intake-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-legal-practice-profile",
+    "name": "legal-practice-profile",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/legal-practice-profile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-license-compliance-audit",
+    "name": "license-compliance-audit",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/license-compliance-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-license-compliance-borrow-check",
+    "name": "license-compliance-borrow-check",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/license-compliance-borrow-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-license-compliance-credits",
+    "name": "license-compliance-credits",
+    "description": "model_tier: lite",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/license-compliance-credits",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-lint-skills",
+    "name": "lint-skills",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/lint-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-livewire-architect",
+    "name": "livewire-architect",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/livewire-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-livewire",
+    "name": "livewire",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/livewire",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-llm-provider-knowledge",
+    "name": "llm-provider-knowledge",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/llm-provider-knowledge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-logging-monitoring",
+    "name": "logging-monitoring",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/logging-monitoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-logo-generation",
+    "name": "logo-generation",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/logo-generation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-market-entry-analysis",
+    "name": "market-entry-analysis",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/market-entry-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-markitdown",
+    "name": "markitdown",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/markitdown",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-mcp-builder",
+    "name": "mcp-builder",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/mcp-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-mcp",
+    "name": "mcp",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/mcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-md-language-check",
+    "name": "md-language-check",
+    "description": "model_tier: lite",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/md-language-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-memory-consolidation",
+    "name": "memory-consolidation",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/memory-consolidation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-merge-conflicts",
+    "name": "merge-conflicts",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/merge-conflicts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-messaging-architecture",
+    "name": "messaging-architecture",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/messaging-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-migration-architect",
+    "name": "migration-architect",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/migration-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-mobile-e2e-strategy",
+    "name": "mobile-e2e-strategy",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/mobile-e2e-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-module-detect-on-the-fly",
+    "name": "module-detect-on-the-fly",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/module-detect-on-the-fly",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-module-management",
+    "name": "module-management",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/module-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-monorepo-workspace",
+    "name": "monorepo-workspace",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/monorepo-workspace",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-motion-choreographer",
+    "name": "motion-choreographer",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/motion-choreographer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-multi-tenancy",
+    "name": "multi-tenancy",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/multi-tenancy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-nda-triage",
+    "name": "nda-triage",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/nda-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-nextjs-patterns",
+    "name": "nextjs-patterns",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/nextjs-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-okr-tree-modeling",
+    "name": "okr-tree-modeling",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/okr-tree-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-onboarding-design",
+    "name": "onboarding-design",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/onboarding-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-onboarding-program",
+    "name": "onboarding-program",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/onboarding-program",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-one-on-one-cadence",
+    "name": "one-on-one-cadence",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/one-on-one-cadence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-openapi",
+    "name": "openapi",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/openapi",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-operational-readiness",
+    "name": "operational-readiness",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/operational-readiness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-org-design",
+    "name": "org-design",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/org-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-overbuild-review-lens",
+    "name": "overbuild-review-lens",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/overbuild-review-lens",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-override-management",
+    "name": "override-management",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/override-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-pdf-tools",
+    "name": "pdf-tools",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/pdf-tools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-perf-feedback-craft",
+    "name": "perf-feedback-craft",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/perf-feedback-craft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-performance-analysis",
+    "name": "performance-analysis",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/performance-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-performance",
+    "name": "performance",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-persona-improvement",
+    "name": "persona-improvement",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/persona-improvement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-persona-writing",
+    "name": "persona-writing",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/persona-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-pest-testing",
+    "name": "pest-testing",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/pest-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-php-coder",
+    "name": "php-coder",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/php-coder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-php-debugging",
+    "name": "php-debugging",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/php-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-php-service",
+    "name": "php-service",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/php-service",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-pipeline-strategy",
+    "name": "pipeline-strategy",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/pipeline-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-pixar-storyteller",
+    "name": "pixar-storyteller",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/pixar-storyteller",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-playbook-authoring",
+    "name": "playbook-authoring",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/playbook-authoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-playwright-architect",
+    "name": "playwright-architect",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/playwright-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-playwright-testing",
+    "name": "playwright-testing",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/playwright-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-po-discovery",
+    "name": "po-discovery",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/po-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-positioning-strategy",
+    "name": "positioning-strategy",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/positioning-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-prediction-pool-optimizer",
+    "name": "prediction-pool-optimizer",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/prediction-pool-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-premortem",
+    "name": "premortem",
+    "description": "name: premortem",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/premortem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-privacy-review",
+    "name": "privacy-review",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/privacy-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-analysis-core",
+    "name": "project-analysis-core",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-analysis-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-analysis-hypothesis-driven",
+    "name": "project-analysis-hypothesis-driven",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-analysis-hypothesis-driven",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-analysis-laravel",
+    "name": "project-analysis-laravel",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-analysis-laravel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-analysis-nextjs",
+    "name": "project-analysis-nextjs",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-analysis-nextjs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-analysis-node-express",
+    "name": "project-analysis-node-express",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-analysis-node-express",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-analysis-react",
+    "name": "project-analysis-react",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-analysis-react",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-analysis-symfony",
+    "name": "project-analysis-symfony",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-analysis-symfony",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-analysis-zend-laminas",
+    "name": "project-analysis-zend-laminas",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-analysis-zend-laminas",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-analyzer",
+    "name": "project-analyzer",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-project-docs",
+    "name": "project-docs",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/project-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-prompt-engineering-image",
+    "name": "prompt-engineering-image",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/prompt-engineering-image",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-prompt-engineering-patterns",
+    "name": "prompt-engineering-patterns",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/prompt-engineering-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-prompt-optimizer",
+    "name": "prompt-optimizer",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/prompt-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-prompt-validator",
+    "name": "prompt-validator",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/prompt-validator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-quality-tools",
+    "name": "quality-tools",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/quality-tools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-react-native-setup",
+    "name": "react-native-setup",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/react-native-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-react-shadcn-ui",
+    "name": "react-shadcn-ui",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/react-shadcn-ui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-readme-reviewer",
+    "name": "readme-reviewer",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/readme-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-readme-writing-package",
+    "name": "readme-writing-package",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/readme-writing-package",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-readme-writing",
+    "name": "readme-writing",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/readme-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-reasoning-orchestrator",
+    "name": "reasoning-orchestrator",
+    "description": "name: reasoning-orchestrator",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/reasoning-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-receiving-code-review",
+    "name": "receiving-code-review",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/receiving-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-recursive-verification",
+    "name": "recursive-verification",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/recursive-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-refine-prompt",
+    "name": "refine-prompt",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/refine-prompt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-refine-ticket",
+    "name": "refine-ticket",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/refine-ticket",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-release-comms",
+    "name": "release-comms",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/release-comms",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-repomix-packer",
+    "name": "repomix-packer",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/repomix-packer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-requesting-code-review",
+    "name": "requesting-code-review",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/requesting-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-retention-loops",
+    "name": "retention-loops",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/retention-loops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-review-routing",
+    "name": "review-routing",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/review-routing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-rice-prioritization",
+    "name": "rice-prioritization",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/rice-prioritization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-risk-officer",
+    "name": "risk-officer",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/risk-officer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-roadmap-management",
+    "name": "roadmap-management",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/roadmap-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-roadmap-writing",
+    "name": "roadmap-writing",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/roadmap-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-root-cause-frameworks",
+    "name": "root-cause-frameworks",
+    "description": "name: root-cause-frameworks",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/root-cause-frameworks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-rtk-output-filtering",
+    "name": "rtk-output-filtering",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/rtk-output-filtering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-rule-refactor",
+    "name": "rule-refactor",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/rule-refactor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-rule-writing",
+    "name": "rule-writing",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/rule-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-runway-cognition",
+    "name": "runway-cognition",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/runway-cognition",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-scenario-modeling",
+    "name": "scenario-modeling",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/scenario-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-scene-expander",
+    "name": "scene-expander",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/scene-expander",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-schema-review",
+    "name": "schema-review",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/schema-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-screenshot-hygiene",
+    "name": "screenshot-hygiene",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/screenshot-hygiene",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-script-writing",
+    "name": "script-writing",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/script-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-secrets-management",
+    "name": "secrets-management",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/secrets-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-security-audit",
+    "name": "security-audit",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/security-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-security-maturity-assessment",
+    "name": "security-maturity-assessment",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/security-maturity-assessment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-security",
+    "name": "security",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-sentry-integration",
+    "name": "sentry-integration",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/sentry-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-sequential-thinking",
+    "name": "sequential-thinking",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/sequential-thinking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-server-hardening",
+    "name": "server-hardening",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/server-hardening",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-skill-improvement-pipeline",
+    "name": "skill-improvement-pipeline",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/skill-improvement-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-skill-management",
+    "name": "skill-management",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/skill-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-skill-reviewer",
+    "name": "skill-reviewer",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/skill-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-skill-writing",
+    "name": "skill-writing",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/skill-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-song-to-script",
+    "name": "song-to-script",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/song-to-script",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-source-discovery",
+    "name": "source-discovery",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/source-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-spreadsheet-authoring",
+    "name": "spreadsheet-authoring",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/spreadsheet-authoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-sql-writing",
+    "name": "sql-writing",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/sql-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-stakeholder-tradeoff",
+    "name": "stakeholder-tradeoff",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/stakeholder-tradeoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-standards-from-config",
+    "name": "standards-from-config",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/standards-from-config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-storybook-workshop",
+    "name": "storybook-workshop",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/storybook-workshop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-subagent-orchestration",
+    "name": "subagent-orchestration",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/subagent-orchestration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-supply-chain-intake",
+    "name": "supply-chain-intake",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/supply-chain-intake",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-symfony-workflow",
+    "name": "symfony-workflow",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/symfony-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-systematic-debugging",
+    "name": "systematic-debugging",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/systematic-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-tailwind-engineer",
+    "name": "tailwind-engineer",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/tailwind-engineer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-tech-debt-tracker",
+    "name": "tech-debt-tracker",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/tech-debt-tracker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-technical-specification",
+    "name": "technical-specification",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/technical-specification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-terraform",
+    "name": "terraform",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/terraform",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-terragrunt",
+    "name": "terragrunt",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/terragrunt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-test-case-discovery",
+    "name": "test-case-discovery",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/test-case-discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-test-driven-development",
+    "name": "test-driven-development",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/test-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-test-performance",
+    "name": "test-performance",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/test-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-testing-anti-patterns",
+    "name": "testing-anti-patterns",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/testing-anti-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-threat-modeling",
+    "name": "threat-modeling",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/threat-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-throughput-vs-morale-tradeoff",
+    "name": "throughput-vs-morale-tradeoff",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/throughput-vs-morale-tradeoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-token-optimizer",
+    "name": "token-optimizer",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/token-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-traefik",
+    "name": "traefik",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/traefik",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-typography-system",
+    "name": "typography-system",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/typography-system",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-ui-apply-generic",
+    "name": "ui-apply-generic",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/ui-apply-generic",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-ui-component-architect",
+    "name": "ui-component-architect",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/ui-component-architect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-unit-economics-modeling",
+    "name": "unit-economics-modeling",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/unit-economics-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-universal-project-analysis",
+    "name": "universal-project-analysis",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/universal-project-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-upstream-contribute",
+    "name": "upstream-contribute",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/upstream-contribute",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-using-git-worktrees",
+    "name": "using-git-worktrees",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/using-git-worktrees",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-validate-feature-fit",
+    "name": "validate-feature-fit",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/validate-feature-fit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-verify-completion-evidence",
+    "name": "verify-completion-evidence",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/verify-completion-evidence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-verify-repair-loop",
+    "name": "verify-repair-loop",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/verify-repair-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-video-director",
+    "name": "video-director",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/video-director",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-vision-articulation",
+    "name": "vision-articulation",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/vision-articulation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-voc-extract",
+    "name": "voc-extract",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/voc-extract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-voice-and-tone-design",
+    "name": "voice-and-tone-design",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/voice-and-tone-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-wireframe",
+    "name": "wireframe",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/wireframe",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-workspace-link",
+    "name": "workspace-link",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/workspace-link",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209609017-worktree-lifecycle",
+    "name": "worktree-lifecycle",
+    "description": "model_tier: medium",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/worktree-lifecycle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  }
+]

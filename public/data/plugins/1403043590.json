@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1403043590-human-in-the-loop",
+    "name": "human-in-the-loop",
+    "description": "Claude assigns you the tasks only you can do. They wait in a My tasks pane, counted under the prompt, until you answer or reject them, so nothing Claude needs from you gets lost in the chat.",
+    "version": "",
+    "author": "tzafrir",
+    "repository": "https://github.com/tzafrir/human-in-the-loop",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403043590",
+      "marketplaceName": "human-in-the-loop",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

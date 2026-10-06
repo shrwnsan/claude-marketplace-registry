@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1310072757-spindle",
+    "name": "spindle",
+    "description": "Turns Claude Code's thinking spinner into a live developer-news ticker.",
+    "version": "",
+    "author": "IzhanAli",
+    "repository": "https://github.com/IzhanAli/Spindle-for-CC",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1310072757",
+      "marketplaceName": "Spindle-for-CC",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1310072757-configure",
+    "name": "configure",
+    "description": "name: configure",
+    "version": "1.0.0",
+    "author": "IzhanAli",
+    "repository": "https://github.com/IzhanAli/Spindle-for-CC",
+    "manifestPath": "skills/configure",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1310072757",
+      "marketplaceName": "Spindle-for-CC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1310072757-refresh",
+    "name": "refresh",
+    "description": "name: refresh",
+    "version": "1.0.0",
+    "author": "IzhanAli",
+    "repository": "https://github.com/IzhanAli/Spindle-for-CC",
+    "manifestPath": "skills/refresh",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1310072757",
+      "marketplaceName": "Spindle-for-CC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1310072757-reset",
+    "name": "reset",
+    "description": "name: reset",
+    "version": "1.0.0",
+    "author": "IzhanAli",
+    "repository": "https://github.com/IzhanAli/Spindle-for-CC",
+    "manifestPath": "skills/reset",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1310072757",
+      "marketplaceName": "Spindle-for-CC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1310072757-status",
+    "name": "status",
+    "description": "name: status",
+    "version": "1.0.0",
+    "author": "IzhanAli",
+    "repository": "https://github.com/IzhanAli/Spindle-for-CC",
+    "manifestPath": "skills/status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1310072757",
+      "marketplaceName": "Spindle-for-CC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1310072757-uninstall",
+    "name": "uninstall",
+    "description": "name: uninstall",
+    "version": "1.0.0",
+    "author": "IzhanAli",
+    "repository": "https://github.com/IzhanAli/Spindle-for-CC",
+    "manifestPath": "skills/uninstall",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1310072757",
+      "marketplaceName": "Spindle-for-CC",
+      "hasSkillMd": true
+    }
+  }
+]

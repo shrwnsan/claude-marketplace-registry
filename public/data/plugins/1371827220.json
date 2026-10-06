@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1371827220-flowpane",
+    "name": "flowpane",
+    "description": "A live workflow pane: replaces the default Workflow progress list with a phase-by-phase graph or a timeline beside the transcript, showing each agent's state, timing, live token spend, tool calls, what it is saying, and prompt.",
+    "version": "",
+    "author": "mpolatcan",
+    "repository": "https://github.com/mpolatcan/flowpane",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1371827220",
+      "marketplaceName": "flowpane",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

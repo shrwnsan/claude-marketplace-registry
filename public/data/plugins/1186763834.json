@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1186763834-safety-essentials",
+    "name": "safety-essentials",
+    "description": "5 essential safety hooks: block rm -rf, force-push, hard-reset, env overwrites, and package publish. The minimum viable safety net.",
+    "version": "1.2.0",
+    "author": "yurukusa",
+    "repository": "https://github.com/yurukusa/cc-safe-setup",
+    "manifestPath": "./plugins/safety-essentials",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186763834",
+      "marketplaceName": "cc-safe-setup",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1186763834-git-protection",
+    "name": "git-protection",
+    "description": "Git safety hooks: block force-push, protect main/master, prevent hard reset, guard interactive rebase, and block git clean -fd.",
+    "version": "1.2.0",
+    "author": "yurukusa",
+    "repository": "https://github.com/yurukusa/cc-safe-setup",
+    "manifestPath": "./plugins/git-protection",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186763834",
+      "marketplaceName": "cc-safe-setup",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1186763834-credential-guard",
+    "name": "credential-guard",
+    "description": "Protect secrets and credentials: block writes to .env files, detect API keys in commands, prevent hardcoded tokens, guard service account files.",
+    "version": "1.2.0",
+    "author": "yurukusa",
+    "repository": "https://github.com/yurukusa/cc-safe-setup",
+    "manifestPath": "./plugins/credential-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186763834",
+      "marketplaceName": "cc-safe-setup",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1186763834-token-guard",
+    "name": "token-guard",
+    "description": "Token consumption guards: large-read warning (100KB+), per-session read budget, subagent cap, and a token budget that asks for /compact.",
+    "version": "1.1.0",
+    "author": "yurukusa",
+    "repository": "https://github.com/yurukusa/cc-safe-setup",
+    "manifestPath": "./plugins/token-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186763834",
+      "marketplaceName": "cc-safe-setup",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1186763834-safety-setup",
+    "name": "safety-setup",
+    "description": "name: cc-safe-setup",
+    "version": "1.0.0",
+    "author": "yurukusa",
+    "repository": "https://github.com/yurukusa/cc-safe-setup",
+    "manifestPath": "skills/safety-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186763834",
+      "marketplaceName": "cc-safe-setup",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1186763834-cc-safe-setup",
+    "name": "cc-safe-setup",
+    "description": "name: cc-safe-setup",
+    "version": "1.0.0",
+    "author": "yurukusa",
+    "repository": "https://github.com/yurukusa/cc-safe-setup",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1186763834",
+      "marketplaceName": "cc-safe-setup",
+      "hasSkillMd": true
+    }
+  }
+]

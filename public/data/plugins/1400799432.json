@@ -1,0 +1,43 @@
+[
+  {
+    "id": "1400799432-tps-report",
+    "name": "tps-report",
+    "description": "Bill from management drops by above the prompt while Claude works. A parody.",
+    "version": "",
+    "author": "vgnshiyer",
+    "repository": "https://github.com/vgnshiyer/tps-report",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1400799432",
+      "marketplaceName": "tps-report",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1400799432-nowloading",
+    "name": "nowloading",
+    "description": "The line that animates while Claude works, redrawn as something from before: a VCR's on-screen display, a split-flap departure board, an hourglass.",
+    "version": "",
+    "author": "vgnshiyer",
+    "repository": "https://github.com/vgnshiyer/tps-report",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/vgnshiyer/nowloading.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1400799432",
+      "marketplaceName": "tps-report",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

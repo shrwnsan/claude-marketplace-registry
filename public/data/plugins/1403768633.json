@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1403768633-mempalace-sharedbrain",
+    "name": "mempalace-sharedbrain",
+    "description": "Claude Code client for a MemPalace shared-brain hub: canonical rules block in CLAUDE.md, identity, inbox cursor, session-start hub check, wake on coordination events, machine capabilities and task routing, checkpoint and compaction saves.",
+    "version": "0.5.1",
+    "author": "shanelord01",
+    "repository": "https://github.com/shanelord01/claude-mempalace-sharedbrain",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403768633",
+      "marketplaceName": "claude-mempalace-sharedbrain",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

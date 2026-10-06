@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1382435265-cc-side",
+    "name": "cc-side",
+    "description": "A separate agent conversation in Claude Code's right-hand pane, forked from the current context.",
+    "version": "",
+    "author": "Ahmad8864",
+    "repository": "https://github.com/Ahmad8864/cc-side",
+    "manifestPath": {
+      "source": "archive",
+      "url": "https://github.com/Ahmad8864/cc-side/releases/download/cc-side--v0.4.0/cc-side-0.4.0.zip",
+      "sha256": "5ad280906e56613ac5094431affa41a6d172184de0753a37e622339d7ba8f1bd"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1382435265",
+      "marketplaceName": "cc-side",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

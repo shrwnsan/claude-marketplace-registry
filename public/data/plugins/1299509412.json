@@ -1,0 +1,599 @@
+[
+  {
+    "id": "1299509412-cadence",
+    "name": "cadence",
+    "description": "A plan/execute/verify loop for a single developer in Claude Code, with adversarial review at every gate: plans and diffs get refuted by a fresh Claude subagent or a panel of outside models (OpenAI, Gemini, DeepSeek), not just approved. State lives in files, not the conversation, so you clear aggressively and keep both your context and your token bill lean.",
+    "version": "",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1299509412-cad-adopt",
+    "name": "cad-adopt",
+    "description": "name: cad-adopt",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-adopt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-assumptions-analyzer-contract",
+    "name": "cad-assumptions-analyzer-contract",
+    "description": "name: cad-assumptions-analyzer-contract",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-assumptions-analyzer-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-audit",
+    "name": "cad-audit",
+    "description": "name: cad-audit",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-capture",
+    "name": "cad-capture",
+    "description": "name: cad-capture",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-capture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-config",
+    "name": "cad-config",
+    "description": "name: cad-config",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-context",
+    "name": "cad-context",
+    "description": "name: cad-context",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-coverage",
+    "name": "cad-coverage",
+    "description": "name: cad-coverage",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-coverage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-debug",
+    "name": "cad-debug",
+    "description": "name: cad-debug",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-decision-review",
+    "name": "cad-decision-review",
+    "description": "name: cad-decision-review",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-decision-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-docs-verify",
+    "name": "cad-docs-verify",
+    "description": "name: cad-docs-verify",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-docs-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-execute",
+    "name": "cad-execute",
+    "description": "name: cad-execute",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-execute",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-executor-contract",
+    "name": "cad-executor-contract",
+    "description": "name: cad-executor-contract",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-executor-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-health",
+    "name": "cad-health",
+    "description": "name: cad-health",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-health",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-help",
+    "name": "cad-help",
+    "description": "name: cad-help",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-help",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-land",
+    "name": "cad-land",
+    "description": "name: cad-land",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-land",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-milestone",
+    "name": "cad-milestone",
+    "description": "name: cad-milestone",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-milestone",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-minimalism-review",
+    "name": "cad-minimalism-review",
+    "description": "name: cad-minimalism-review",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-minimalism-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-new-project",
+    "name": "cad-new-project",
+    "description": "name: cad-new-project",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-new-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-pause",
+    "name": "cad-pause",
+    "description": "name: cad-pause",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-pause",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-phase",
+    "name": "cad-phase",
+    "description": "name: cad-phase",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-phase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-plan-checker-contract",
+    "name": "cad-plan-checker-contract",
+    "description": "name: cad-plan-checker-contract",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-plan-checker-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-plan-review",
+    "name": "cad-plan-review",
+    "description": "name: cad-plan-review",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-plan-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-plan",
+    "name": "cad-plan",
+    "description": "name: cad-plan",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-planner-contract",
+    "name": "cad-planner-contract",
+    "description": "name: cad-planner-contract",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-planner-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-progress",
+    "name": "cad-progress",
+    "description": "name: cad-progress",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-progress",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-report",
+    "name": "cad-report",
+    "description": "name: cad-report",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-reviewer-contract",
+    "name": "cad-reviewer-contract",
+    "description": "name: cad-reviewer-contract",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-reviewer-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-spike",
+    "name": "cad-spike",
+    "description": "name: cad-spike",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-spike",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-suggest",
+    "name": "cad-suggest",
+    "description": "name: cad-suggest",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-suggest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-task",
+    "name": "cad-task",
+    "description": "name: cad-task",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-task",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-undo",
+    "name": "cad-undo",
+    "description": "name: cad-undo",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-undo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-verifier-contract",
+    "name": "cad-verifier-contract",
+    "description": "name: cad-verifier-contract",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-verifier-contract",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-verify",
+    "name": "cad-verify",
+    "description": "name: cad-verify",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1299509412-cad-why",
+    "name": "cad-why",
+    "description": "name: cad-why",
+    "version": "1.0.0",
+    "author": "crenshawdev",
+    "repository": "https://github.com/crenshawdev/cadence",
+    "manifestPath": "skills/cad-why",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1299509412",
+      "marketplaceName": "cadence",
+      "hasSkillMd": true
+    }
+  }
+]

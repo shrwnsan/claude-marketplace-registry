@@ -1,0 +1,769 @@
+[
+  {
+    "id": "1143930808-superclaude-plusplus",
+    "name": "superclaude-plusplus",
+    "description": "Harness-aware slim development framework: 44 skills, 9 agents, hooks and a function-hooks module. Korean-first.",
+    "version": "3.4.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1143930808-adapt",
+    "name": "adapt",
+    "description": "name: adapt",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/adapt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-animate",
+    "name": "animate",
+    "description": "name: animate",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/animate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-audit",
+    "name": "audit",
+    "description": "name: audit",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-bolder",
+    "name": "bolder",
+    "description": "name: bolder",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/bolder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-brainstorm",
+    "name": "brainstorm",
+    "description": "name: brainstorm",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/brainstorm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-build-fix",
+    "name": "build-fix",
+    "description": "name: build-fix",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/build-fix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-business-panel",
+    "name": "business-panel",
+    "description": "name: business-panel",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/business-panel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-checkpoint",
+    "name": "checkpoint",
+    "description": "name: checkpoint",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/checkpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-clarify",
+    "name": "clarify",
+    "description": "name: clarify",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/clarify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-colorize",
+    "name": "colorize",
+    "description": "name: colorize",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/colorize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-composition-patterns",
+    "name": "composition-patterns",
+    "description": "name: composition-patterns",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/composition-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-confidence-check",
+    "name": "confidence-check",
+    "description": "name: confidence-check",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/confidence-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-config-doctor",
+    "name": "config-doctor",
+    "description": "name: config-doctor",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/config-doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-critique",
+    "name": "critique",
+    "description": "name: critique",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/critique",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-delight",
+    "name": "delight",
+    "description": "name: delight",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/delight",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-design-audit",
+    "name": "design-audit",
+    "description": "name: design-audit",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/design-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-devils-advocate",
+    "name": "devils-advocate",
+    "description": "name: \"devils-advocate\"",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/devils-advocate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-distill",
+    "name": "distill",
+    "description": "name: distill",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/distill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-eval-harness",
+    "name": "eval-harness",
+    "description": "name: eval-harness",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/eval-harness",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-feature-planner",
+    "name": "feature-planner",
+    "description": "name: feature-planner",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/feature-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-fix-pr",
+    "name": "fix-pr",
+    "description": "name: fix-pr",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/fix-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-frontend-design",
+    "name": "frontend-design",
+    "description": "name: frontend-design",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-gap-analysis",
+    "name": "gap-analysis",
+    "description": "name: gap-analysis",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/gap-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-grill-with-docs",
+    "name": "grill-with-docs",
+    "description": "name: grill-with-docs",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/grill-with-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-harden",
+    "name": "harden",
+    "description": "name: harden",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/harden",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-impeccable",
+    "name": "impeccable",
+    "description": "name: impeccable",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/impeccable",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-layout",
+    "name": "layout",
+    "description": "name: layout",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/layout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-learn",
+    "name": "learn",
+    "description": "name: learn",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/learn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-optimize",
+    "name": "optimize",
+    "description": "name: optimize",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/optimize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-overdrive",
+    "name": "overdrive",
+    "description": "name: overdrive",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/overdrive",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-polish",
+    "name": "polish",
+    "description": "name: polish",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/polish",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-pytest-runner",
+    "name": "pytest-runner",
+    "description": "name: pytest-runner",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/pytest-runner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-python-best-practices",
+    "name": "python-best-practices",
+    "description": "name: python-best-practices",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/python-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-quieter",
+    "name": "quieter",
+    "description": "name: quieter",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/quieter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-react-best-practices",
+    "name": "react-best-practices",
+    "description": "name: react-best-practices",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/react-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-sc-help",
+    "name": "sc-help",
+    "description": "name: sc-help",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/sc-help",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-security-audit",
+    "name": "security-audit",
+    "description": "name: security-audit",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/security-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-shape",
+    "name": "shape",
+    "description": "name: shape",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/shape",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-tdd",
+    "name": "tdd",
+    "description": "name: tdd",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-typeset",
+    "name": "typeset",
+    "description": "name: typeset",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/typeset",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-ui-ux-pro-max",
+    "name": "ui-ux-pro-max",
+    "description": "name: ui-ux-pro-max",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/ui-ux-pro-max",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-uv-package",
+    "name": "uv-package",
+    "description": "name: uv-package",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/uv-package",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-verify",
+    "name": "verify",
+    "description": "name: verify",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1143930808-web-design-guidelines",
+    "name": "web-design-guidelines",
+    "description": "name: web-design-guidelines",
+    "version": "1.0.0",
+    "author": "excatt",
+    "repository": "https://github.com/excatt/superclaude-plusplus",
+    "manifestPath": "skills/web-design-guidelines",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1143930808",
+      "marketplaceName": "superclaude-plusplus",
+      "hasSkillMd": true
+    }
+  }
+]

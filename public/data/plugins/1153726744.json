@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1153726744-image-generation",
+    "name": "image-generation",
+    "description": "name: image-generation",
+    "version": "1.0.0",
+    "author": "hex",
+    "repository": "https://github.com/hex/claude-image-generation",
+    "manifestPath": "skills/image-generation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153726744",
+      "marketplaceName": "claude-image-generation",
+      "hasSkillMd": true
+    }
+  }
+]

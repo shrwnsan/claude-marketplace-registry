@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1257675225-ultrapowers",
+    "name": "ultrapowers",
+    "description": "ultrapowers client — owns plan authoring (ultrawrite) and runs on an exe.dev fleet you provision (a sandbox runs the plan as a pool of tasks, a pool of builders, the plan's probes and checks as the proof, and opens its own PR); no local engine",
+    "version": "",
+    "author": "popmechanic",
+    "repository": "https://github.com/popmechanic/ultrapowers",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1257675225",
+      "marketplaceName": "ultrapowers",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1257675225-ultrawrite",
+    "name": "ultrawrite",
+    "description": "name: ultrawrite",
+    "version": "1.0.0",
+    "author": "popmechanic",
+    "repository": "https://github.com/popmechanic/ultrapowers",
+    "manifestPath": "skills/ultrawrite",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1257675225",
+      "marketplaceName": "ultrapowers",
+      "hasSkillMd": true
+    }
+  }
+]

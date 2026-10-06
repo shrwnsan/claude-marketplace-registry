@@ -1,0 +1,177 @@
+[
+  {
+    "id": "1312673047-cueloop",
+    "name": "cueloop",
+    "description": "Claude Mod with native Thread gating, Message delivery, and cueloop workflow skills",
+    "version": "0.1.0-alpha.101",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": {
+      "source": "github",
+      "repo": "mmurakaru/cueloop"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1312673047-annotate",
+    "name": "annotate",
+    "description": "name: annotate",
+    "version": "1.0.0",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": "skills/annotate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312673047-code-review",
+    "name": "code-review",
+    "description": "name: code-review",
+    "version": "1.0.0",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": "skills/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312673047-diff",
+    "name": "diff",
+    "description": "name: diff",
+    "version": "1.0.0",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": "skills/diff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312673047-pair",
+    "name": "pair",
+    "description": "name: pair",
+    "version": "1.0.0",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": "skills/pair",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312673047-plan",
+    "name": "plan",
+    "description": "name: plan",
+    "version": "1.0.0",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": "skills/plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312673047-prototype",
+    "name": "prototype",
+    "description": "name: prototype",
+    "version": "1.0.0",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": "skills/prototype",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312673047-refine",
+    "name": "refine",
+    "description": "name: refine",
+    "version": "1.0.0",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": "skills/refine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312673047-reply",
+    "name": "reply",
+    "description": "name: reply",
+    "version": "1.0.0",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": "skills/reply",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1312673047-review",
+    "name": "review",
+    "description": "name: review",
+    "version": "1.0.0",
+    "author": "mmurakaru",
+    "repository": "https://github.com/mmurakaru/cueloop",
+    "manifestPath": "skills/review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1312673047",
+      "marketplaceName": "cueloop",
+      "hasSkillMd": true
+    }
+  }
+]

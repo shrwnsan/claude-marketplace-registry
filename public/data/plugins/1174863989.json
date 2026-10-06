@@ -1,0 +1,512 @@
+[
+  {
+    "id": "1174863989-format-chart",
+    "name": "format-chart",
+    "description": "name: format-chart",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-chart",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-diagram",
+    "name": "format-diagram",
+    "description": "name: format-diagram",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-diagram",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-docx-hd",
+    "name": "format-docx-hd",
+    "description": "name: format-docx-hd",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-docx-hd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-docx",
+    "name": "format-docx",
+    "description": "name: format-docx",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-docx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-guide",
+    "name": "format-guide",
+    "description": "name: format-guide",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-html-hd",
+    "name": "format-html-hd",
+    "description": "name: format-html-hd",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-html-hd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-html-reveal",
+    "name": "format-html-reveal",
+    "description": "name: format-html-reveal",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-html-reveal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-i18n",
+    "name": "format-i18n",
+    "description": "name: format-i18n",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-i18n",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-mermaid",
+    "name": "format-mermaid",
+    "description": "name: format-mermaid",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-mermaid",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-motion",
+    "name": "format-motion",
+    "description": "name: format-motion",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-motion",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-pdf-hd",
+    "name": "format-pdf-hd",
+    "description": "name: format-pdf-hd",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-pdf-hd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-pdf",
+    "name": "format-pdf",
+    "description": "name: format-pdf",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-pdf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-pptx-hd",
+    "name": "format-pptx-hd",
+    "description": "name: format-pptx-hd",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-pptx-hd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-pptx",
+    "name": "format-pptx",
+    "description": "name: format-pptx",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-pptx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-prepare-document",
+    "name": "format-prepare-document",
+    "description": "name: format-prepare-document",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-prepare-document",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-video-hd",
+    "name": "format-video-hd",
+    "description": "name: format-video-hd",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-video-hd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-format-xlsx",
+    "name": "format-xlsx",
+    "description": "name: format-xlsx",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/format-xlsx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-getting-started",
+    "name": "getting-started",
+    "description": "name: getting-started",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/getting-started",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-accountability",
+    "name": "nl-accountability",
+    "description": "name: nl-accountability",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-accountability",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-dossier-tracker",
+    "name": "nl-dossier-tracker",
+    "description": "name: nl-dossier-tracker",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-dossier-tracker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-eu-transposition",
+    "name": "nl-eu-transposition",
+    "description": "name: nl-eu-transposition",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-eu-transposition",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-evidence-grounding",
+    "name": "nl-evidence-grounding",
+    "description": "name: nl-evidence-grounding",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-evidence-grounding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-gov-data",
+    "name": "nl-gov-data",
+    "description": "name: nl-gov-data",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-gov-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-guide",
+    "name": "nl-guide",
+    "description": "name: nl-guide",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-horizon-scan",
+    "name": "nl-horizon-scan",
+    "description": "name: nl-horizon-scan",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-horizon-scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-issue-framing",
+    "name": "nl-issue-framing",
+    "description": "name: nl-issue-framing",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-issue-framing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-monitor",
+    "name": "nl-monitor",
+    "description": "name: nl-monitor",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-monitor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-parliamentary-positioning",
+    "name": "nl-parliamentary-positioning",
+    "description": "name: nl-parliamentary-positioning",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-parliamentary-positioning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-policy-legislative-landscape",
+    "name": "nl-policy-legislative-landscape",
+    "description": "name: nl-policy-legislative-landscape",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-policy-legislative-landscape",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1174863989-nl-tensions",
+    "name": "nl-tensions",
+    "description": "name: nl-tensions",
+    "version": "1.0.0",
+    "author": "stromy-org",
+    "repository": "https://github.com/stromy-org/duke-strategies-plugin",
+    "manifestPath": "skills/nl-tensions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1174863989",
+      "marketplaceName": "duke-strategies-plugin",
+      "hasSkillMd": true
+    }
+  }
+]
