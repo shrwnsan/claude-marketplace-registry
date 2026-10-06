@@ -1,0 +1,636 @@
+[
+  {
+    "id": "1149015505-ai-skills",
+    "name": "ai-skills",
+    "description": "Daily workflow, code quality, dev tools, and specialist agents.",
+    "version": "",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "BenjaminG/ai-skills"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1149015505-babysit-prs",
+    "name": "babysit-prs",
+    "description": "name: babysit-prs",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/babysit-prs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-backend-developer",
+    "name": "backend-developer",
+    "description": "name: backend-developer",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/backend-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-chrome-cdp",
+    "name": "chrome-cdp",
+    "description": "name: chrome-cdp",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/chrome-cdp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-code-slop",
+    "name": "code-slop",
+    "description": "name: code-slop",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/code-slop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-codex-cli",
+    "name": "codex-cli",
+    "description": "name: codex-cli",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/codex-cli",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-commit",
+    "name": "commit",
+    "description": "name: commit",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-daily-update",
+    "name": "daily-update",
+    "description": "name: daily-update",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/daily-update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-dream",
+    "name": "dream",
+    "description": "name: dream",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/dream",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-elevate",
+    "name": "elevate",
+    "description": "name: elevate",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/elevate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-explain-plainly",
+    "name": "explain-plainly",
+    "description": "name: explain-plainly",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/explain-plainly",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-fixup",
+    "name": "fixup",
+    "description": "name: fixup",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/fixup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-frontend-developer",
+    "name": "frontend-developer",
+    "description": "name: frontend-developer",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/frontend-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-gate-wf",
+    "name": "gate-wf",
+    "description": "name: gate-wf",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/gate-wf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-gate",
+    "name": "gate",
+    "description": "name: gate",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/gate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-harness-review",
+    "name": "harness-review",
+    "description": "name: harness-review",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/harness-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-humanizer",
+    "name": "humanizer",
+    "description": "name: humanizer",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/humanizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-innovate",
+    "name": "innovate",
+    "description": "name: innovate",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/innovate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-interview",
+    "name": "interview",
+    "description": "name: interview",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/interview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-investigate",
+    "name": "investigate",
+    "description": "name: investigate",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/investigate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-jev-verify",
+    "name": "jev-verify",
+    "description": "name: jev-verify",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/jev-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-orchestrate",
+    "name": "orchestrate",
+    "description": "name: orchestrate",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/orchestrate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-pr-challenge",
+    "name": "pr-challenge",
+    "description": "name: pr-challenge",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-challenge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-pr-comment",
+    "name": "pr-comment",
+    "description": "name: pr-comment",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-comment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-pr-create",
+    "name": "pr-create",
+    "description": "name: pr-create",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-pr-dash",
+    "name": "pr-dash",
+    "description": "name: pr-dash",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-dash",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-pr-demo",
+    "name": "pr-demo",
+    "description": "name: pr-demo",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-demo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-pr-explain",
+    "name": "pr-explain",
+    "description": "name: pr-explain",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-explain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-pr-feedback",
+    "name": "pr-feedback",
+    "description": "name: pr-feedback",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-feedback",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-pr-respond",
+    "name": "pr-respond",
+    "description": "name: pr-respond",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-respond",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-pr-risk-score",
+    "name": "pr-risk-score",
+    "description": "name: pr-risk-score",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-risk-score",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-product-qa",
+    "name": "product-qa",
+    "description": "name: product-qa",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/product-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-qa-plan",
+    "name": "qa-plan",
+    "description": "name: qa-plan",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/qa-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-qa-run",
+    "name": "qa-run",
+    "description": "name: qa-run",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/qa-run",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-retrospective",
+    "name": "retrospective",
+    "description": "name: retrospective",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/retrospective",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-review-mining",
+    "name": "review-mining",
+    "description": "name: review-mining",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/review-mining",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-triage-findings",
+    "name": "triage-findings",
+    "description": "name: triage-findings",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/triage-findings",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  }
+]

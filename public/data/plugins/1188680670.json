@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1188680670-lcm",
+    "name": "lcm",
+    "description": "Lossless context management — DAG-based summarization that preserves every message",
+    "version": "0.16.0",
+    "author": "lossless-claude",
+    "repository": "https://github.com/lossless-claude/lcm",
+    "manifestPath": {
+      "source": "github",
+      "repo": "lossless-claude/lcm",
+      "ref": "v0.16.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188680670",
+      "marketplaceName": "lcm",
+      "skills": [],
+      "strict": true,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1188680670-memory",
+    "name": "memory",
+    "description": "name: memory",
+    "version": "1.0.0",
+    "author": "lossless-claude",
+    "repository": "https://github.com/lossless-claude/lcm",
+    "manifestPath": "skills/memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188680670",
+      "marketplaceName": "lcm",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1188680670-lcm-dogfood",
+    "name": "lcm-dogfood",
+    "description": "name: lcm-dogfood",
+    "version": "1.0.0",
+    "author": "lossless-claude",
+    "repository": "https://github.com/lossless-claude/lcm",
+    "manifestPath": ".claude/skills/lcm-dogfood",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188680670",
+      "marketplaceName": "lcm",
+      "hasSkillMd": true
+    }
+  }
+]

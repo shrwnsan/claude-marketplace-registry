@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1403300870-dkod",
+    "name": "dkod",
+    "description": "Build and deploy apps through your company's DKOD: policy, templates, Deploy questions and Deliver, with a DKOD band above the prompt and the DKOD rules on every command and file write.",
+    "version": "0.3.0",
+    "author": "dkod-ai",
+    "repository": "https://github.com/dkod-ai/dkod-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403300870",
+      "marketplaceName": "dkod-plugin",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

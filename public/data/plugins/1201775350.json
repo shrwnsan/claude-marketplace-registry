@@ -2,8 +2,8 @@
   {
     "id": "1201775350-great-cto",
     "name": "great_cto",
-    "description": "You already have the agent. This is everything around it. great_cto runs Claude Code as a pipeline of 71 specialist agents — an independent model checks each stage before the next builds on it, spending caps refuse rather than warn, and three decisions stay yours: what gets built, how, and whether it ships.",
-    "version": "3.39.0",
+    "description": "You already have the agent. This is everything around it. great_cto runs Claude Code as a pipeline of 72 specialist agents — an independent model checks each stage before the next builds on it, spending caps refuse rather than warn, and three decisions stay yours: what gets built, how, and whether it ships.",
+    "version": "3.52.1",
     "author": "Alexander Velikiy",
     "repository": "https://github.com/avelikiy/great_cto",
     "manifestPath": "./",
@@ -14,7 +14,8 @@
       "marketplaceId": "1201775350",
       "marketplaceName": "great_cto",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -246,23 +247,6 @@
     "author": "Alexander Velikiy",
     "repository": "https://github.com/avelikiy/great_cto",
     "manifestPath": "skills/lifecycle-messaging",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-local-seo",
-    "name": "local-seo",
-    "description": "name: local-seo",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/local-seo",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -528,125 +512,6 @@
     }
   },
   {
-    "id": "1201775350-vertical-construction",
-    "name": "vertical-construction",
-    "description": "name: vertical-construction",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-construction",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-vertical-creator",
-    "name": "vertical-creator",
-    "description": "name: vertical-creator",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-creator",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-vertical-fintech-mobile",
-    "name": "vertical-fintech-mobile",
-    "description": "name: vertical-fintech-mobile",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-fintech-mobile",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-vertical-fitness",
-    "name": "vertical-fitness",
-    "description": "name: vertical-fitness",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-fitness",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-vertical-home-services",
-    "name": "vertical-home-services",
-    "description": "name: vertical-home-services",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-home-services",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-vertical-hr-recruiting",
-    "name": "vertical-hr-recruiting",
-    "description": "name: vertical-hr-recruiting",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-hr-recruiting",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-vertical-logistics",
-    "name": "vertical-logistics",
-    "description": "name: vertical-logistics",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-logistics",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
     "id": "1201775350-vertical-onboarding",
     "name": "vertical-onboarding",
     "description": "name: vertical-onboarding",
@@ -664,64 +529,13 @@
     }
   },
   {
-    "id": "1201775350-vertical-professional-services",
-    "name": "vertical-professional-services",
-    "description": "name: vertical-professional-services",
+    "id": "1201775350-verticals",
+    "name": "verticals",
+    "description": "name: verticals",
     "version": "1.0.0",
     "author": "Alexander Velikiy",
     "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-professional-services",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-vertical-real-estate",
-    "name": "vertical-real-estate",
-    "description": "name: vertical-real-estate",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-real-estate",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-vertical-restaurants",
-    "name": "vertical-restaurants",
-    "description": "name: vertical-restaurants",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-restaurants",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1201775350",
-      "marketplaceName": "great_cto",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1201775350-vertical-retail",
-    "name": "vertical-retail",
-    "description": "name: vertical-retail",
-    "version": "1.0.0",
-    "author": "Alexander Velikiy",
-    "repository": "https://github.com/avelikiy/great_cto",
-    "manifestPath": "skills/vertical-retail",
+    "manifestPath": "skills/verticals",
     "isValid": true,
     "errors": [],
     "warnings": [],

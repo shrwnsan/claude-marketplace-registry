@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1288431722-lightning",
+    "name": "lightning",
+    "description": "Drive Lightning AI from your agent: cloud GPU Studios, batch and multi-machine jobs, autoscaled deployments, ephemeral sandboxes, the LLM gateway, durable artifact links, and live cost estimates.",
+    "version": "",
+    "author": "Lightning-AI",
+    "repository": "https://github.com/Lightning-AI/skills",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/Lightning-AI/skills.git",
+      "ref": "stable"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1288431722",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

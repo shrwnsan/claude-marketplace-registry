@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1375299700-fast-jev-output",
+    "name": "fast-jev-output",
+    "description": "Trim long Bash output with Jev before the model sees it (Claude Code plugin)",
+    "version": "0.1.0",
+    "author": "tamaratran",
+    "repository": "https://github.com/tamaratran/jev-pruner",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375299700",
+      "marketplaceName": "jev-pruner",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

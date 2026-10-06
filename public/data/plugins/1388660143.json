@@ -1,0 +1,395 @@
+[
+  {
+    "id": "1388660143-wt-pack",
+    "name": "wt-pack",
+    "description": "Every wt-* skill, wt-memory's hooks and MCP server, and the mods (/wt, model routing, AskUserQuestion capture, wt-message delivery) in one plugin. Plugin-only install; a full ./setup loads the same plugin from the checkout.",
+    "version": "",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1388660143-wt-agents",
+    "name": "wt-agents",
+    "description": "name: wt-agents",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-ask",
+    "name": "wt-ask",
+    "description": "name: wt-ask",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-ask",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-audit",
+    "name": "wt-audit",
+    "description": "name: wt-audit",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-babysit",
+    "name": "wt-babysit",
+    "description": "name: wt-babysit",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-babysit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-compound",
+    "name": "wt-compound",
+    "description": "name: wt-compound",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-compound",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-dashboard",
+    "name": "wt-dashboard",
+    "description": "name: wt-dashboard",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-dashboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-finish",
+    "name": "wt-finish",
+    "description": "name: wt-finish",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-finish",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-handoff",
+    "name": "wt-handoff",
+    "description": "name: wt-handoff",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-memory",
+    "name": "wt-memory",
+    "description": "name: wt-memory",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-memory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-mods",
+    "name": "wt-mods",
+    "description": "name: wt-mods",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-mods",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-plan",
+    "name": "wt-plan",
+    "description": "name: wt-plan",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-pr",
+    "name": "wt-pr",
+    "description": "name: wt-pr",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-research",
+    "name": "wt-research",
+    "description": "name: wt-research",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-review",
+    "name": "wt-review",
+    "description": "name: wt-review",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-roles",
+    "name": "wt-roles",
+    "description": "name: wt-roles",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-roles",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-room",
+    "name": "wt-room",
+    "description": "name: wt-room",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-room",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-setup",
+    "name": "wt-setup",
+    "description": "name: wt-setup",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-ship",
+    "name": "wt-ship",
+    "description": "name: wt-ship",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-simplify",
+    "name": "wt-simplify",
+    "description": "name: wt-simplify",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-simplify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-ticket",
+    "name": "wt-ticket",
+    "description": "name: wt-ticket",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-ticket",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-watch-prs",
+    "name": "wt-watch-prs",
+    "description": "name: wt-watch-prs",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-watch-prs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1388660143-wt-work",
+    "name": "wt-work",
+    "description": "name: wt-work",
+    "version": "1.0.0",
+    "author": "rephol",
+    "repository": "https://github.com/rephol/wt-pack",
+    "manifestPath": "skills/wt-work",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1388660143",
+      "marketplaceName": "wt-pack",
+      "hasSkillMd": true
+    }
+  }
+]

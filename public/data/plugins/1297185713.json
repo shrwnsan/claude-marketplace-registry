@@ -1,0 +1,191 @@
+[
+  {
+    "id": "1297185713-cairn",
+    "name": "cairn",
+    "description": "Milestone-driven development workflow and tracking system for Claude Code projects: a language-agnostic core with per-repo toolchain profiles (R, Python, Claude Code plugin, Docker image, or generic), plan/implement/review skills, hotfix and release paths, Fable review briefs, and a self-auditing cairn/ file system.",
+    "version": "1.12.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1297185713-cairn-init",
+    "name": "cairn-init",
+    "description": "name: cairn-init",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/cairn-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1297185713-cairn-release",
+    "name": "cairn-release",
+    "description": "name: cairn-release",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/cairn-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1297185713-cairn-triage",
+    "name": "cairn-triage",
+    "description": "name: cairn-triage",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/cairn-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1297185713-design-interview",
+    "name": "design-interview",
+    "description": "name: design-interview",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/design-interview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1297185713-hotfix",
+    "name": "hotfix",
+    "description": "name: hotfix",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/hotfix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1297185713-milestone-brief",
+    "name": "milestone-brief",
+    "description": "name: milestone-brief",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/milestone-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1297185713-milestone-implement",
+    "name": "milestone-implement",
+    "description": "name: milestone-implement",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/milestone-implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1297185713-milestone-plan",
+    "name": "milestone-plan",
+    "description": "name: milestone-plan",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/milestone-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1297185713-milestone-review",
+    "name": "milestone-review",
+    "description": "name: milestone-review",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/milestone-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1297185713-milestone",
+    "name": "milestone",
+    "description": "name: milestone",
+    "version": "1.0.0",
+    "author": "Jeffrey Girard",
+    "repository": "https://github.com/jmgirard/cairn",
+    "manifestPath": "skills/milestone",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1297185713",
+      "marketplaceName": "cairn",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1209475618-jfrog-ai-catalog",
+    "name": "jfrog-ai-catalog",
+    "description": "name: jfrog-ai-catalog",
+    "version": "1.0.0",
+    "author": "jfrog",
+    "repository": "https://github.com/jfrog/claude-plugin",
+    "manifestPath": "skills/jfrog-ai-catalog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209475618",
+      "marketplaceName": "claude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209475618-jfrog-init",
+    "name": "jfrog-init",
+    "description": "name: jfrog-init",
+    "version": "1.0.0",
+    "author": "jfrog",
+    "repository": "https://github.com/jfrog/claude-plugin",
+    "manifestPath": "skills/jfrog-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209475618",
+      "marketplaceName": "claude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209475618-jfrog-mcp-management",
+    "name": "jfrog-mcp-management",
+    "description": "name: jfrog-mcp-management",
+    "version": "1.0.0",
+    "author": "jfrog",
+    "repository": "https://github.com/jfrog/claude-plugin",
+    "manifestPath": "skills/jfrog-mcp-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209475618",
+      "marketplaceName": "claude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209475618-jfrog-package-curation",
+    "name": "jfrog-package-curation",
+    "description": "name: jfrog-package-curation",
+    "version": "1.0.0",
+    "author": "jfrog",
+    "repository": "https://github.com/jfrog/claude-plugin",
+    "manifestPath": "skills/jfrog-package-curation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209475618",
+      "marketplaceName": "claude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209475618-jfrog-reference-architecture",
+    "name": "jfrog-reference-architecture",
+    "description": "name: jfrog-reference-architecture",
+    "version": "1.0.0",
+    "author": "jfrog",
+    "repository": "https://github.com/jfrog/claude-plugin",
+    "manifestPath": "skills/jfrog-reference-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209475618",
+      "marketplaceName": "claude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209475618-jfrog-setup-package-managers",
+    "name": "jfrog-setup-package-managers",
+    "description": "name: jfrog-setup-package-managers",
+    "version": "1.0.0",
+    "author": "jfrog",
+    "repository": "https://github.com/jfrog/claude-plugin",
+    "manifestPath": "skills/jfrog-setup-package-managers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209475618",
+      "marketplaceName": "claude-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1209475618-jfrog",
+    "name": "jfrog",
+    "description": "name: jfrog",
+    "version": "1.0.0",
+    "author": "jfrog",
+    "repository": "https://github.com/jfrog/claude-plugin",
+    "manifestPath": "skills/jfrog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209475618",
+      "marketplaceName": "claude-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

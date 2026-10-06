@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1177090500-temper",
+    "name": "temper",
+    "description": "Claude cannot write code before you approve the intent. Gated plan, TDD, review and check for AI written code.",
+    "version": "",
+    "author": "galando",
+    "repository": "https://github.com/galando/temper",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1177090500",
+      "marketplaceName": "temper",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1177090500-context-engineering",
+    "name": "context-engineering",
+    "description": "name: context-engineering",
+    "version": "1.0.0",
+    "author": "galando",
+    "repository": "https://github.com/galando/temper",
+    "manifestPath": "skills/context-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1177090500",
+      "marketplaceName": "temper",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1177090500-grill-me",
+    "name": "grill-me",
+    "description": "name: grill-me",
+    "version": "1.0.0",
+    "author": "galando",
+    "repository": "https://github.com/galando/temper",
+    "manifestPath": "skills/grill-me",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1177090500",
+      "marketplaceName": "temper",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1177090500-source-driven-development",
+    "name": "source-driven-development",
+    "description": "name: source-driven-development",
+    "version": "1.0.0",
+    "author": "galando",
+    "repository": "https://github.com/galando/temper",
+    "manifestPath": "skills/source-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1177090500",
+      "marketplaceName": "temper",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1177090500-teach-me",
+    "name": "teach-me",
+    "description": "name: teach-me",
+    "version": "1.0.0",
+    "author": "galando",
+    "repository": "https://github.com/galando/temper",
+    "manifestPath": "skills/teach-me",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1177090500",
+      "marketplaceName": "temper",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1177090500-temper-core",
+    "name": "temper-core",
+    "description": "name: temper-core",
+    "version": "1.0.0",
+    "author": "galando",
+    "repository": "https://github.com/galando/temper",
+    "manifestPath": "skills/temper-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1177090500",
+      "marketplaceName": "temper",
+      "hasSkillMd": true
+    }
+  }
+]

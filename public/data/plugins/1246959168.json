@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1246959168-agentille",
+    "name": "agentille",
+    "description": "One command for Claude Code: /agt plans, builds and reviews with the right model per step, steps aside on small tasks, and ends on one short card. Zero setup.",
+    "version": "",
+    "author": "Systown AI Lab",
+    "repository": "https://github.com/hasuwini77/agentille",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246959168",
+      "marketplaceName": "agentille",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1246959168-agentille-claude-md",
+    "name": "agentille-claude-md",
+    "description": "name: agentille-claude-md",
+    "version": "1.0.0",
+    "author": "Systown AI Lab",
+    "repository": "https://github.com/hasuwini77/agentille",
+    "manifestPath": "skills/agentille-claude-md",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246959168",
+      "marketplaceName": "agentille",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1246959168-agentille-init",
+    "name": "agentille-init",
+    "description": "name: agentille-init",
+    "version": "1.0.0",
+    "author": "Systown AI Lab",
+    "repository": "https://github.com/hasuwini77/agentille",
+    "manifestPath": "skills/agentille-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246959168",
+      "marketplaceName": "agentille",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1246959168-agentille-project",
+    "name": "agentille-project",
+    "description": "name: agentille-project",
+    "version": "1.0.0",
+    "author": "Systown AI Lab",
+    "repository": "https://github.com/hasuwini77/agentille",
+    "manifestPath": "skills/agentille-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246959168",
+      "marketplaceName": "agentille",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1246959168-agt",
+    "name": "agt",
+    "description": "name: agt",
+    "version": "1.0.0",
+    "author": "Systown AI Lab",
+    "repository": "https://github.com/hasuwini77/agentille",
+    "manifestPath": "skills/agt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1246959168",
+      "marketplaceName": "agentille",
+      "hasSkillMd": true
+    }
+  }
+]

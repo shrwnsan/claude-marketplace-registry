@@ -1,0 +1,276 @@
+[
+  {
+    "id": "1216111329-dotnet-pilot",
+    "name": "dotnet-pilot",
+    "description": ".NET development plugin for Claude Code — Roslyn semantic analysis, DI/architecture/EF Core guards, convention-aware scaffolding, TDD agents, security and performance review, and project lifecycle commands.",
+    "version": "3.5.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216111329-aspnet-api-patterns",
+    "name": "aspnet-api-patterns",
+    "description": "name: aspnet-api-patterns",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/aspnet-api-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-authentication",
+    "name": "authentication",
+    "description": "name: authentication",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/authentication",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-caching",
+    "name": "caching",
+    "description": "name: caching",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/caching",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-clean-architecture",
+    "name": "clean-architecture",
+    "description": "name: clean-architecture",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/clean-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-convention-learner",
+    "name": "convention-learner",
+    "description": "name: convention-learner",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/convention-learner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-ddd",
+    "name": "ddd",
+    "description": "name: ddd",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/ddd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-dotnet-project-init",
+    "name": "dotnet-project-init",
+    "description": "name: dotnet-project-init",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/dotnet-project-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-ef-core-patterns",
+    "name": "ef-core-patterns",
+    "description": "name: ef-core-patterns",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/ef-core-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-error-handling",
+    "name": "error-handling",
+    "description": "name: error-handling",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/error-handling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-logging",
+    "name": "logging",
+    "description": "name: logging",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/logging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-modern-csharp",
+    "name": "modern-csharp",
+    "description": "name: modern-csharp",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/modern-csharp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-opentelemetry",
+    "name": "opentelemetry",
+    "description": "name: opentelemetry",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/opentelemetry",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-resilience",
+    "name": "resilience",
+    "description": "name: resilience",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/resilience",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-testing-dotnet",
+    "name": "testing-dotnet",
+    "description": "name: testing-dotnet",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/testing-dotnet",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216111329-vertical-slice",
+    "name": "vertical-slice",
+    "description": "name: vertical-slice",
+    "version": "1.0.0",
+    "author": "zdanovichnick",
+    "repository": "https://github.com/zdanovichnick/dotnet-pilot",
+    "manifestPath": "skills/vertical-slice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216111329",
+      "marketplaceName": "dotnet-pilot",
+      "hasSkillMd": true
+    }
+  }
+]

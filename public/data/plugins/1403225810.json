@@ -1,0 +1,531 @@
+[
+  {
+    "id": "1403225810-stratum",
+    "name": "stratum",
+    "description": "Agent harness for Claude Code: spec-driven lanes, an orchestrator with st-* subagents, commit guard, and handoff.",
+    "version": "",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1403225810-st-build",
+    "name": "st-build",
+    "description": "name: st-build",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-check",
+    "name": "st-check",
+    "description": "name: st-check",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-close",
+    "name": "st-close",
+    "description": "name: st-close",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-close",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-constitution",
+    "name": "st-constitution",
+    "description": "name: st-constitution",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-constitution",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-define",
+    "name": "st-define",
+    "description": "name: st-define",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-define",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-fast",
+    "name": "st-fast",
+    "description": "name: st-fast",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-fast",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-frontend-design",
+    "name": "st-frontend-design",
+    "description": "name: st-frontend-design",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-full",
+    "name": "st-full",
+    "description": "name: st-full",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-full",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-graphify",
+    "name": "st-graphify",
+    "description": "name: st-graphify",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-graphify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-grill",
+    "name": "st-grill",
+    "description": "name: st-grill",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-grill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-handoff",
+    "name": "st-handoff",
+    "description": "name: st-handoff",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-impeccable",
+    "name": "st-impeccable",
+    "description": "name: st-impeccable",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-impeccable",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-init",
+    "name": "st-init",
+    "description": "name: st-init",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-issues",
+    "name": "st-issues",
+    "description": "name: st-issues",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-plan",
+    "name": "st-plan",
+    "description": "name: st-plan",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-ponytail-audit",
+    "name": "st-ponytail-audit",
+    "description": "name: st-ponytail-audit",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-ponytail-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-ponytail-debt",
+    "name": "st-ponytail-debt",
+    "description": "name: st-ponytail-debt",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-ponytail-debt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-ponytail-gain",
+    "name": "st-ponytail-gain",
+    "description": "name: st-ponytail-gain",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-ponytail-gain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-ponytail-help",
+    "name": "st-ponytail-help",
+    "description": "name: st-ponytail-help",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-ponytail-help",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-ponytail-review",
+    "name": "st-ponytail-review",
+    "description": "name: st-ponytail-review",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-ponytail-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-ponytail",
+    "name": "st-ponytail",
+    "description": "name: st-ponytail",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-ponytail",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-pr",
+    "name": "st-pr",
+    "description": "name: st-pr",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-quick",
+    "name": "st-quick",
+    "description": "name: st-quick",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-quick",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-shape",
+    "name": "st-shape",
+    "description": "name: st-shape",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-shape",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-status",
+    "name": "st-status",
+    "description": "name: st-status",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-sync",
+    "name": "st-sync",
+    "description": "name: st-sync",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-template",
+    "name": "st-template",
+    "description": "name: st-template",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-template",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-theme",
+    "name": "st-theme",
+    "description": "name: st-theme",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-theme",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st-ui-ux",
+    "name": "st-ui-ux",
+    "description": "name: st-ui-ux",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st-ui-ux",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1403225810-st",
+    "name": "st",
+    "description": "name: st",
+    "version": "1.0.0",
+    "author": "HyuseCS",
+    "repository": "https://github.com/HyuseCS/stratum",
+    "manifestPath": "skills/st",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403225810",
+      "marketplaceName": "stratum",
+      "hasSkillMd": true
+    }
+  }
+]

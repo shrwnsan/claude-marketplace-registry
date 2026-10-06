@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1401965622-sidebar",
+    "name": "sidebar",
+    "description": "Shows the model's actual TPS, TTFT and token/cache stats in a docked sidebar. Requires function hooks (early access) and an interactive terminal.",
+    "version": "0.1.20",
+    "author": "FayequeP",
+    "repository": "https://github.com/FayequeP/sidebar",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1401965622",
+      "marketplaceName": "sidebar",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

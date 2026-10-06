@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1389028611-effort-router",
+    "name": "effort-router",
+    "description": "Picks the reasoning effort for each turn with a System One classifier (hosted Jev or a compatible service) and shows it on the spinner.",
+    "version": "",
+    "author": "totally-tim",
+    "repository": "https://github.com/totally-tim/effort-router",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1389028611",
+      "marketplaceName": "effort-router",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

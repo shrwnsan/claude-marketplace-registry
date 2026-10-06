@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1372467327-winnow",
+    "name": "winnow",
+    "description": "Every large Read, Bash, or Grep result is judged by a System One model before it enters context. Irrelevant blocks are replaced with a summary and a recall key.",
+    "version": "0.5.2",
+    "author": "Ghaleb Dweikat",
+    "repository": "https://github.com/GhalebDweikat/winnow",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1372467327",
+      "marketplaceName": "winnow",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -1,45 +1,45 @@
 {
   "stats": {
-    "totalMarketplaces": 977,
-    "totalPlugins": 6078,
-    "validPlugins": 6078,
-    "lastUpdated": "2026-10-06T05:25:20.415Z",
+    "totalMarketplaces": 1110,
+    "totalPlugins": 6338,
+    "validPlugins": 6338,
+    "lastUpdated": "2026-10-06T17:13:11.255Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 306
+        "count": 337
       },
       {
         "language": "Unknown",
-        "count": 184
+        "count": 188
       },
       {
         "language": "JavaScript",
-        "count": 146
+        "count": 174
       },
       {
         "language": "TypeScript",
-        "count": 117
+        "count": 168
       },
       {
         "language": "Shell",
-        "count": 101
+        "count": 108
       },
       {
         "language": "HTML",
-        "count": 51
+        "count": 57
       },
       {
         "language": "Go",
-        "count": 24
+        "count": 26
       },
       {
         "language": "Rust",
-        "count": 19
+        "count": 20
       },
       {
         "language": "Java",
-        "count": 5
+        "count": 6
       },
       {
         "language": "Swift",
@@ -49,12 +49,12 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 273741,
+        "stars": 274114,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 179818,
+        "stars": 179879,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,22 +64,22 @@
       },
       {
         "name": "claude-mem",
-        "stars": 96708,
+        "stars": 97003,
         "url": "https://github.com/thedotmack/claude-mem"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 76563,
+        "stars": 76596,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 69836,
+        "stars": 69852,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
         "name": "claude-plugins-official",
-        "stars": 37438,
+        "stars": 37462,
         "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
@@ -88,66 +88,66 @@
         "url": "https://github.com/feder-cr/invisible_playwright_mcp"
       },
       {
-        "name": "daily",
-        "stars": 20090,
-        "url": "https://github.com/dailydotdev/daily"
+        "name": "planning-with-files",
+        "stars": 27308,
+        "url": "https://github.com/OthmanAdi/planning-with-files"
       },
       {
-        "name": "kubeshark",
-        "stars": 12093,
-        "url": "https://github.com/kubeshark/kubeshark"
+        "name": "daily",
+        "stars": 20092,
+        "url": "https://github.com/dailydotdev/daily"
       }
     ],
     "recentActivity": [
       {
-        "name": "agent-cockpit",
-        "updatedAt": "2026-10-06T05:17:52Z",
-        "url": "https://github.com/tktk7l9/agent-cockpit"
+        "name": "evolve-loop",
+        "updatedAt": "2026-10-06T17:05:18Z",
+        "url": "https://github.com/mickeyyaya/evolve-loop"
       },
       {
-        "name": "HExoskeleton",
-        "updatedAt": "2026-10-06T05:17:32Z",
-        "url": "https://github.com/SukbeomH/HExoskeleton"
+        "name": "awesome-claude-plugins",
+        "updatedAt": "2026-10-06T17:05:16Z",
+        "url": "https://github.com/quemsah/awesome-claude-plugins"
       },
       {
-        "name": "crew",
-        "updatedAt": "2026-10-06T05:16:17Z",
-        "url": "https://github.com/johantor/crew"
+        "name": "claude-code-plugins",
+        "updatedAt": "2026-10-06T17:05:15Z",
+        "url": "https://github.com/tomevault-io/claude-code-plugins"
       },
       {
-        "name": "claude-skills-seo",
-        "updatedAt": "2026-10-06T05:15:55Z",
-        "url": "https://github.com/rampstackco/claude-skills-seo"
+        "name": "Slicelytics-public",
+        "updatedAt": "2026-10-06T17:05:15Z",
+        "url": "https://github.com/duryno/Slicelytics-public"
       },
       {
-        "name": "trending-claude-skills",
-        "updatedAt": "2026-10-06T05:15:21Z",
-        "url": "https://github.com/linny006/trending-claude-skills"
+        "name": "documentation-plugin",
+        "updatedAt": "2026-10-06T17:05:06Z",
+        "url": "https://github.com/christiangalsterer/documentation-plugin"
       },
       {
-        "name": "pstack-claude",
-        "updatedAt": "2026-10-06T05:15:06Z",
-        "url": "https://github.com/michael-denyer/pstack-claude"
+        "name": "super-fr",
+        "updatedAt": "2026-10-06T17:04:49Z",
+        "url": "https://github.com/derio-net/super-fr"
       },
       {
-        "name": "humanize-ai-text",
-        "updatedAt": "2026-10-06T05:15:03Z",
-        "url": "https://github.com/docsor1212/humanize-ai-text"
+        "name": "review-loop",
+        "updatedAt": "2026-10-06T17:04:39Z",
+        "url": "https://github.com/NYTC69/review-loop"
       },
       {
-        "name": "paper-rewriter",
-        "updatedAt": "2026-10-06T05:14:49Z",
-        "url": "https://github.com/docsor1212/paper-rewriter"
+        "name": "pptwise",
+        "updatedAt": "2026-10-06T17:04:35Z",
+        "url": "https://github.com/liustack/pptwise"
       },
       {
-        "name": "skills",
-        "updatedAt": "2026-10-06T05:14:32Z",
-        "url": "https://github.com/tomerhayundev/skills"
+        "name": "goblin-mode",
+        "updatedAt": "2026-10-06T17:04:11Z",
+        "url": "https://github.com/JasonWarrenUK/goblin-mode"
       },
       {
-        "name": "Awesome-AITools",
-        "updatedAt": "2026-10-06T05:14:28Z",
-        "url": "https://github.com/ikaijua/Awesome-AITools"
+        "name": "squidbrake",
+        "updatedAt": "2026-10-06T17:04:04Z",
+        "url": "https://github.com/batrapulkit/squidbrake"
       }
     ]
   },
@@ -155,33 +155,33 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 490
+      "count": 567
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 151
+      "count": 166
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 320
+      "count": 347
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 44
+      "count": 47
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 31
+      "count": 35
     },
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 22
+      "count": 28
     }
   ],
-  "lastUpdated": "2026-10-06T05:25:20.415Z"
+  "lastUpdated": "2026-10-06T17:13:11.255Z"
 }

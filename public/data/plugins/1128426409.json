@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1128426409-claude-dashboard",
+    "name": "claude-dashboard",
+    "description": "Real-time status line showing model, context, color-coded progress bar, cost, API rate limits (5h/7d), and unified usage tracking for Claude, Codex, Gemini, Antigravity, and z.ai CLIs. Supports Max/Pro plans with i18n (English/Korean).",
+    "version": "1.35.0",
+    "author": "uppinote20",
+    "repository": "https://github.com/uppinote20/claude-dashboard",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1128426409",
+      "marketplaceName": "claude-dashboard",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

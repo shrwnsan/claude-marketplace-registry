@@ -1,0 +1,904 @@
+[
+  {
+    "id": "1230639327-leek-skills",
+    "name": "leek-skills",
+    "description": "Personal skills collection",
+    "version": "0.57.1",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "skills": [
+        "./skills/architecture-satisfaction",
+        "./skills/autopilot",
+        "./skills/browser-test",
+        "./skills/chatter-scout",
+        "./skills/code-review",
+        "./skills/code-smells-audit",
+        "./skills/codebase-design",
+        "./skills/commit",
+        "./skills/dependency-audit",
+        "./skills/diagnosing-bugs",
+        "./skills/domain-modeling",
+        "./skills/fix-ci-failures",
+        "./skills/fix-github-issues",
+        "./skills/fix-nightwatch-issues",
+        "./skills/fix-posthog-issues",
+        "./skills/grill-me",
+        "./skills/grill-with-docs",
+        "./skills/grilling",
+        "./skills/handoff",
+        "./skills/housekeeper",
+        "./skills/implement",
+        "./skills/implement-spec",
+        "./skills/improve-codebase-architecture",
+        "./skills/laravel-herd-worktrees",
+        "./skills/panel",
+        "./skills/pr",
+        "./skills/prototype",
+        "./skills/release",
+        "./skills/repository-cleanup",
+        "./skills/research",
+        "./skills/retro",
+        "./skills/resolve-review-comments",
+        "./skills/resolving-merge-conflicts",
+        "./skills/scratch-cleanup",
+        "./skills/scratch-status",
+        "./skills/setup",
+        "./skills/tdd",
+        "./skills/teach",
+        "./skills/to-questionnaire",
+        "./skills/to-spec",
+        "./skills/to-tickets",
+        "./skills/triage",
+        "./skills/triage-github-pr",
+        "./skills/verify",
+        "./skills/wait-what",
+        "./skills/wayfinder",
+        "./skills/which-skill",
+        "./skills/wizard",
+        "./skills/writing-for-agents"
+      ],
+      "strict": true,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1230639327-architecture-satisfaction",
+    "name": "architecture-satisfaction",
+    "description": "name: architecture-satisfaction",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/architecture-satisfaction",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-autopilot",
+    "name": "autopilot",
+    "description": "name: autopilot",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/autopilot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-browser-test",
+    "name": "browser-test",
+    "description": "name: browser-test",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/browser-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-chatter-scout",
+    "name": "chatter-scout",
+    "description": "name: chatter-scout",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/chatter-scout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-code-review",
+    "name": "code-review",
+    "description": "name: code-review",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-code-smells-audit",
+    "name": "code-smells-audit",
+    "description": "name: code-smells-audit",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/code-smells-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-codebase-design",
+    "name": "codebase-design",
+    "description": "name: codebase-design",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/codebase-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-commit",
+    "name": "commit",
+    "description": "name: commit",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-dependency-audit",
+    "name": "dependency-audit",
+    "description": "name: dependency-audit",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/dependency-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-diagnosing-bugs",
+    "name": "diagnosing-bugs",
+    "description": "name: diagnosing-bugs",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/diagnosing-bugs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-domain-modeling",
+    "name": "domain-modeling",
+    "description": "name: domain-modeling",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/domain-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-fix-ci-failures",
+    "name": "fix-ci-failures",
+    "description": "name: fix-ci-failures",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/fix-ci-failures",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-fix-github-issues",
+    "name": "fix-github-issues",
+    "description": "name: fix-github-issues",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/fix-github-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-fix-nightwatch-issues",
+    "name": "fix-nightwatch-issues",
+    "description": "name: fix-nightwatch-issues",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/fix-nightwatch-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-fix-posthog-issues",
+    "name": "fix-posthog-issues",
+    "description": "name: fix-posthog-issues",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/fix-posthog-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-grill-me",
+    "name": "grill-me",
+    "description": "name: grill-me",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/grill-me",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-grill-with-docs",
+    "name": "grill-with-docs",
+    "description": "name: grill-with-docs",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/grill-with-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-grilling",
+    "name": "grilling",
+    "description": "name: grilling",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/grilling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-handoff",
+    "name": "handoff",
+    "description": "name: handoff",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-housekeeper",
+    "name": "housekeeper",
+    "description": "name: housekeeper",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/housekeeper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-implement-spec",
+    "name": "implement-spec",
+    "description": "name: implement-spec",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/implement-spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-implement",
+    "name": "implement",
+    "description": "name: implement",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-improve-codebase-architecture",
+    "name": "improve-codebase-architecture",
+    "description": "name: improve-codebase-architecture",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/improve-codebase-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-laravel-herd-worktrees",
+    "name": "laravel-herd-worktrees",
+    "description": "name: laravel-herd-worktrees",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/laravel-herd-worktrees",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-panel",
+    "name": "panel",
+    "description": "name: panel",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/panel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-pr",
+    "name": "pr",
+    "description": "name: pr",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-prototype",
+    "name": "prototype",
+    "description": "name: prototype",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/prototype",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-release",
+    "name": "release",
+    "description": "name: release",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-repository-cleanup",
+    "name": "repository-cleanup",
+    "description": "name: repository-cleanup",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/repository-cleanup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-research",
+    "name": "research",
+    "description": "name: research",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-resolve-review-comments",
+    "name": "resolve-review-comments",
+    "description": "name: resolve-review-comments",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/resolve-review-comments",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-resolving-merge-conflicts",
+    "name": "resolving-merge-conflicts",
+    "description": "name: resolving-merge-conflicts",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/resolving-merge-conflicts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-retro",
+    "name": "retro",
+    "description": "name: retro",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/retro",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-scratch-cleanup",
+    "name": "scratch-cleanup",
+    "description": "name: scratch-cleanup",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/scratch-cleanup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-scratch-status",
+    "name": "scratch-status",
+    "description": "name: scratch-status",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/scratch-status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-tdd",
+    "name": "tdd",
+    "description": "name: tdd",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/tdd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-teach",
+    "name": "teach",
+    "description": "name: teach",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/teach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-to-questionnaire",
+    "name": "to-questionnaire",
+    "description": "name: to-questionnaire",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/to-questionnaire",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-to-spec",
+    "name": "to-spec",
+    "description": "name: to-spec",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/to-spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-to-tickets",
+    "name": "to-tickets",
+    "description": "name: to-tickets",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/to-tickets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-triage-github-pr",
+    "name": "triage-github-pr",
+    "description": "name: triage-github-pr",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/triage-github-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-triage",
+    "name": "triage",
+    "description": "name: triage",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-verify",
+    "name": "verify",
+    "description": "name: verify",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-wait-what",
+    "name": "wait-what",
+    "description": "name: wait-what",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/wait-what",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-wayfinder",
+    "name": "wayfinder",
+    "description": "name: wayfinder",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/wayfinder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-which-skill",
+    "name": "which-skill",
+    "description": "name: which-skill",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/which-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-wizard",
+    "name": "wizard",
+    "description": "name: wizard",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/wizard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1230639327-writing-for-agents",
+    "name": "writing-for-agents",
+    "description": "name: writing-for-agents",
+    "version": "1.0.0",
+    "author": "leek",
+    "repository": "https://github.com/leek/agent-skills",
+    "manifestPath": "skills/writing-for-agents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1230639327",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]

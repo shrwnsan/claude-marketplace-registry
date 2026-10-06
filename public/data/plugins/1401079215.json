@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1401079215-block-creds",
+    "name": "block-creds",
+    "description": "Redacts or blocks credentials (detected by betterleaks) before they are sent to the LLM",
+    "version": "",
+    "author": "skpersonal",
+    "repository": "https://github.com/skpersonal/claude-code-block-creds-mod",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1401079215",
+      "marketplaceName": "claude-code-block-creds-mod",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

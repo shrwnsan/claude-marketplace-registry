@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1266065308-mex-call",
+    "name": "mex-call",
+    "description": "Notetaker bot for Google Meet → structured, agent-readable memory in your repo. Joins, transcribes, compacts a bounded rolling memory, and acts on the \"Mex, …\" wake phrase.",
+    "version": "",
+    "author": "theDakshJaitly",
+    "repository": "https://github.com/theDakshJaitly/mex-call",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266065308",
+      "marketplaceName": "mex-call",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1266065308-call",
+    "name": "call",
+    "description": "description: Launch the mex-call notetaker bot into a Google Meet and stream a live dashboard in this session.",
+    "version": "1.0.0",
+    "author": "theDakshJaitly",
+    "repository": "https://github.com/theDakshJaitly/mex-call",
+    "manifestPath": "skills/call",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266065308",
+      "marketplaceName": "mex-call",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1266065308-meeting-notetaker",
+    "name": "meeting-notetaker",
+    "description": "description: How and when to use mex-call — a bot that joins a Google Meet, captures the conversation as structured agent-readable memory in the repo, and acts on the \"Mex, …\" wake phrase. Load this w",
+    "version": "1.0.0",
+    "author": "theDakshJaitly",
+    "repository": "https://github.com/theDakshJaitly/mex-call",
+    "manifestPath": "skills/meeting-notetaker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266065308",
+      "marketplaceName": "mex-call",
+      "hasSkillMd": true
+    }
+  }
+]

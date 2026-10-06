@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1208301600-adam",
+    "name": "adam",
+    "description": "Spec-driven dev ecosystem for Claude Code. Turns CLAUDE.md into a curated index of spec/*.md files; meta-agent scaffolds per-project specs, agents, and hooks tailored to the detected stack. Bundles offline token-counting (gpt-tokenizer cl100k_base) and a spec-lint MCP.",
+    "version": "",
+    "author": "lkzppm",
+    "repository": "https://github.com/lkzppm/adam",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1208301600",
+      "marketplaceName": "adam",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1208301600-claude-add",
+    "name": "claude-add",
+    "description": "name: claude-add",
+    "version": "1.0.0",
+    "author": "lkzppm",
+    "repository": "https://github.com/lkzppm/adam",
+    "manifestPath": "skills/claude-add",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1208301600",
+      "marketplaceName": "adam",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1208301600-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "lkzppm",
+    "repository": "https://github.com/lkzppm/adam",
+    "manifestPath": "skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1208301600",
+      "marketplaceName": "adam",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1208301600-spec-audit",
+    "name": "spec-audit",
+    "description": "name: spec-audit",
+    "version": "1.0.0",
+    "author": "lkzppm",
+    "repository": "https://github.com/lkzppm/adam",
+    "manifestPath": "skills/spec-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1208301600",
+      "marketplaceName": "adam",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1208301600-spec-create",
+    "name": "spec-create",
+    "description": "name: spec-create",
+    "version": "1.0.0",
+    "author": "lkzppm",
+    "repository": "https://github.com/lkzppm/adam",
+    "manifestPath": "skills/spec-create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1208301600",
+      "marketplaceName": "adam",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1208301600-spec-update",
+    "name": "spec-update",
+    "description": "name: spec-update",
+    "version": "1.0.0",
+    "author": "lkzppm",
+    "repository": "https://github.com/lkzppm/adam",
+    "manifestPath": "skills/spec-update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1208301600",
+      "marketplaceName": "adam",
+      "hasSkillMd": true
+    }
+  }
+]

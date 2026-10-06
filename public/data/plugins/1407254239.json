@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1407254239-shabash-skill-check",
+    "name": "shabash-skill-check",
+    "description": "Security scanner for Claude Code and Codex skills, plugins, hooks and MCP servers: finds hidden HTML instructions, invisible characters, commands that run by themselves, data sent out with curl, .env and keys read, prompt injection and unpinned npx packages. Reads only; nothing goes to Shabash.",
+    "version": "",
+    "author": "shabash-dev",
+    "repository": "https://github.com/shabash-dev/skill-check",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1407254239",
+      "marketplaceName": "skill-check",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1407254239-scan",
+    "name": "scan",
+    "description": "name: scan",
+    "version": "1.0.0",
+    "author": "shabash-dev",
+    "repository": "https://github.com/shabash-dev/skill-check",
+    "manifestPath": "skills/scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1407254239",
+      "marketplaceName": "skill-check",
+      "hasSkillMd": true
+    }
+  }
+]

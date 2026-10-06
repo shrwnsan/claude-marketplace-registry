@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1122830354-constellation",
+    "name": "constellation",
+    "description": "Upgrade Claude from text search to code understanding.",
+    "version": "",
+    "author": "ShiftinBits Inc.",
+    "repository": "https://github.com/ShiftinBits/constellation-claude",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1122830354",
+      "marketplaceName": "constellation-claude",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1122830354-constellation-troubleshooting",
+    "name": "constellation-troubleshooting",
+    "description": "name: constellation-troubleshooting",
+    "version": "1.0.0",
+    "author": "ShiftinBits Inc.",
+    "repository": "https://github.com/ShiftinBits/constellation-claude",
+    "manifestPath": "skills/constellation-troubleshooting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1122830354",
+      "marketplaceName": "constellation-claude",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1122830354-impact-analysis",
+    "name": "impact-analysis",
+    "description": "name: impact-analysis",
+    "version": "1.0.0",
+    "author": "ShiftinBits Inc.",
+    "repository": "https://github.com/ShiftinBits/constellation-claude",
+    "manifestPath": "skills/impact-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1122830354",
+      "marketplaceName": "constellation-claude",
+      "hasSkillMd": true
+    }
+  }
+]

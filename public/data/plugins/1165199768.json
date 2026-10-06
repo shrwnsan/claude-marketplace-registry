@@ -1,0 +1,1228 @@
+[
+  {
+    "id": "1165199768-wire",
+    "name": "wire",
+    "description": "",
+    "version": "",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1165199768-add-analytics-instrumentation",
+    "name": "add-analytics-instrumentation",
+    "description": "name: add-analytics-instrumentation",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/add-analytics-instrumentation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-agents-schema",
+    "name": "agents-schema",
+    "description": "name: agents-schema",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/agents-schema",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-airbyte",
+    "name": "airbyte",
+    "description": "name: airbyte",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/airbyte",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-analyze-account-health",
+    "name": "analyze-account-health",
+    "description": "name: analyze-account-health",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/analyze-account-health",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-analyze-ai-topics",
+    "name": "analyze-ai-topics",
+    "description": "name: analyze-ai-topics",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/analyze-ai-topics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-analyze-chart",
+    "name": "analyze-chart",
+    "description": "name: analyze-chart",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/analyze-chart",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-analyze-dashboard",
+    "name": "analyze-dashboard",
+    "description": "name: analyze-dashboard",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/analyze-dashboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-analyze-experiment",
+    "name": "analyze-experiment",
+    "description": "name: analyze-experiments",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/analyze-experiment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-analyze-feedback",
+    "name": "analyze-feedback",
+    "description": "name: analyze-feedback",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/analyze-feedback",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-bigquery-basics",
+    "name": "bigquery-basics",
+    "description": "name: bigquery-basics",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/bigquery-basics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-cloud-run-basics",
+    "name": "cloud-run-basics",
+    "description": "name: cloud-run-basics",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/cloud-run-basics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-compare-user-journeys",
+    "name": "compare-user-journeys",
+    "description": "name: compare-user-journeys",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/compare-user-journeys",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-coupler-io",
+    "name": "coupler-io",
+    "description": "name: coupler-io",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/coupler-io",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-create-chart",
+    "name": "create-chart",
+    "description": "name: create-chart",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/create-chart",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-create-dashboard",
+    "name": "create-dashboard",
+    "description": "name: create-dashboard",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/create-dashboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-cube",
+    "name": "cube",
+    "description": "name: cube",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/cube",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dagster",
+    "name": "dagster",
+    "description": "name: dagster",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dagster",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-daily-brief",
+    "name": "daily-brief",
+    "description": "name: daily-brief",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/daily-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-analytics-qa",
+    "name": "dbt-analytics-qa",
+    "description": "name: dbt-analytics-qa",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-analytics-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-dag",
+    "name": "dbt-dag",
+    "description": "name: dbt-dag",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-dag",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-development",
+    "name": "dbt-development",
+    "description": "name: dbt-development",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-fusion",
+    "name": "dbt-fusion",
+    "description": "name: dbt-fusion",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-fusion",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-mcp-server",
+    "name": "dbt-mcp-server",
+    "description": "name: dbt-mcp-server",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-mcp-server",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-migration",
+    "name": "dbt-migration",
+    "description": "name: dbt-migration",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-semantic-layer",
+    "name": "dbt-semantic-layer",
+    "description": "name: dbt-semantic-layer",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-semantic-layer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-to-smml",
+    "name": "dbt-to-smml",
+    "description": "name: dbt-to-smml",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-to-smml",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-troubleshooting",
+    "name": "dbt-troubleshooting",
+    "description": "name: dbt-troubleshooting",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-troubleshooting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbt-unit-testing",
+    "name": "dbt-unit-testing",
+    "description": "name: dbt-unit-testing",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbt-unit-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dbtcharts",
+    "name": "dbtcharts",
+    "description": "name: dbtcharts",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dbtcharts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-debug-replay",
+    "name": "debug-replay",
+    "description": "name: debug-replay",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/debug-replay",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-diagnose-errors",
+    "name": "diagnose-errors",
+    "description": "name: diagnose-errors",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/diagnose-errors",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-diff-intake",
+    "name": "diff-intake",
+    "description": "name: diff-intake",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/diff-intake",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-dignified-python",
+    "name": "dignified-python",
+    "description": "name: dignified-python",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/dignified-python",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-discover-analytics-patterns",
+    "name": "discover-analytics-patterns",
+    "description": "name: discover-analytics-patterns",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/discover-analytics-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-discover-event-surfaces",
+    "name": "discover-event-surfaces",
+    "description": "name: discover-event-surfaces",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/discover-event-surfaces",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-discover-opportunities",
+    "name": "discover-opportunities",
+    "description": "name: discover-opportunities",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/discover-opportunities",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-droughty",
+    "name": "droughty",
+    "description": "name: droughty",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/droughty",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-engagement-context",
+    "name": "engagement-context",
+    "description": "name: Engagement Context",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/engagement-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-engagement-status-report",
+    "name": "engagement-status-report",
+    "description": "name: engagement-status-report",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/engagement-status-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-fathom-sync",
+    "name": "fathom-sync",
+    "description": "name: Fathom Sync",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/fathom-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-fivetran",
+    "name": "fivetran",
+    "description": "name: fivetran",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/fivetran",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-gcloud",
+    "name": "gcloud",
+    "description": "name: gcloud",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/gcloud",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-google-cloud-recipe-auth",
+    "name": "google-cloud-recipe-auth",
+    "description": "name: google-cloud-recipe-auth",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/google-cloud-recipe-auth",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-google-cloud-waf-cost-optimization",
+    "name": "google-cloud-waf-cost-optimization",
+    "description": "name: google-cloud-waf-cost-optimization",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/google-cloud-waf-cost-optimization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-google-cloud-waf-security",
+    "name": "google-cloud-waf-security",
+    "description": "name: google-cloud-waf-security",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/google-cloud-waf-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-hightouch",
+    "name": "hightouch",
+    "description": "name: hightouch",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/hightouch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-instrument-events",
+    "name": "instrument-events",
+    "description": "name: instrument-events",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/instrument-events",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-investigate-ai-session",
+    "name": "investigate-ai-session",
+    "description": "name: investigate-ai-session",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/investigate-ai-session",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-looker-dashboard-mockup",
+    "name": "looker-dashboard-mockup",
+    "description": "name: looker-dashboard-mockup",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/looker-dashboard-mockup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-lookml-content-authoring-local-and-mcp-server-",
+    "name": "lookml-content-authoring (local and mcp-server)",
+    "description": "name: lookml-content-authoring",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/lookml-content-authoring (local and mcp-server)",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-lookml-content-authoring",
+    "name": "lookml-content-authoring",
+    "description": "name: lookml-content-authoring",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/lookml-content-authoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-metabase",
+    "name": "metabase",
+    "description": "name: metabase",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/metabase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-monitor-ai-quality",
+    "name": "monitor-ai-quality",
+    "description": "name: monitor-ai-quality",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/monitor-ai-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-monitor-experiments",
+    "name": "monitor-experiments",
+    "description": "name: monitor-experiments",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/monitor-experiments",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-monitor-reliability",
+    "name": "monitor-reliability",
+    "description": "name: monitor-reliability",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/monitor-reliability",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-omni",
+    "name": "omni",
+    "description": "name: omni",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/omni",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-project-review",
+    "name": "project-review",
+    "description": "name: project-review",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/project-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-release-director",
+    "name": "release-director",
+    "description": "name: Release Director",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/release-director",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-replay-ux-audit",
+    "name": "replay-ux-audit",
+    "description": "name: replay-ux-audit",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/replay-ux-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-research",
+    "name": "research",
+    "description": "name: Research Persistence",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-review-agent-insights",
+    "name": "review-agent-insights",
+    "description": "name: review-agent-insights",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/review-agent-insights",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-rudderstack",
+    "name": "rudderstack",
+    "description": "name: rudderstack",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/rudderstack",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-segment",
+    "name": "segment",
+    "description": "name: segment",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/segment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-smml-semantic-modeling",
+    "name": "smml-semantic-modeling",
+    "description": "name: smml-semantic-modeling",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/smml-semantic-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-snowflake-development",
+    "name": "snowflake-development",
+    "description": "name: snowflake-development",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/snowflake-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-snowflake-semantic-views",
+    "name": "snowflake-semantic-views",
+    "description": "name: snowflake-semantic-views",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/snowflake-semantic-views",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-taxonomy",
+    "name": "taxonomy",
+    "description": "name: taxonomy",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/taxonomy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-technical-writing",
+    "name": "technical-writing",
+    "description": "name: technical-writing",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/technical-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-weekly-brief",
+    "name": "weekly-brief",
+    "description": "name: weekly-brief",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/weekly-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-wire-release",
+    "name": "wire-release",
+    "description": "name: wire-release",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/wire-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1165199768-wire-usage-analysis",
+    "name": "wire-usage-analysis",
+    "description": "name: wire-usage-analysis",
+    "version": "1.0.0",
+    "author": "rittmananalytics",
+    "repository": "https://github.com/rittmananalytics/wire-plugin",
+    "manifestPath": "skills/wire-usage-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1165199768",
+      "marketplaceName": "wire-plugin",
+      "hasSkillMd": true
+    }
+  }
+]

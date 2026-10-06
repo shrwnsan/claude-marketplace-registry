@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1401350708-podside",
+    "name": "podside",
+    "description": "Browse pods, read logs and describe output, and hand a pod to Claude without leaving the session",
+    "version": "",
+    "author": "ohosgor",
+    "repository": "https://github.com/ohosgor/podside",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1401350708",
+      "marketplaceName": "podside",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

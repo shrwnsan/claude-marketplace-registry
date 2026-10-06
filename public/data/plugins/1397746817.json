@@ -16,7 +16,8 @@
       "skills": [
         "./skills/sage300-assistant"
       ],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -36,7 +37,8 @@
       "skills": [
         "./skills/sage200-assistant"
       ],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -56,7 +58,8 @@
       "skills": [
         "./skills/sapb1-assistant"
       ],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -76,13 +79,14 @@
       "skills": [
         "./skills/sagex3-assistant"
       ],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
     "id": "1397746817-acumatica-assistant",
     "name": "acumatica-assistant",
-    "description": "Acumatica ERP assistant: REST integration development against the contract-based REST API from a bundled extraction of Acumatica's Integration Development Guide (2026 R2) — sign-in and OAuth 2.0/OIDC, endpoint and contract versions, JSON record shape, query parameters per contract version, CRUD, actions and long-running operations, custom fields, files, license limits, push notifications and webhooks, with a catalogue of 187 documented example requests, and exact entity, field and action names from a snapshot of the Default/25.200.001 contract (2025 R2). More capabilities to follow.",
+    "description": "Acumatica ERP assistant: REST integration development against the contract-based REST API from a bundled extraction of Acumatica's Integration Development Guide (2026 R2) — sign-in and OAuth 2.0/OIDC, endpoint and contract versions, JSON record shape, query parameters per contract version, CRUD, actions and long-running operations, custom fields, files, license limits, push notifications and webhooks, with a catalogue of 187 documented example requests, and exact entity, field and action names from a snapshot of the Default/25.200.001 contract (2025 R2); OData data access — DAC-based and generic-inquiry-based OData v4 reads (URLs, auth and licence, $filter/$expand, deleted-record tracking, CORS, Excel and Power BI) from the Reporting Tools Guide (2026 R2), with a DAC $metadata snapshot of a clean 2026 R2 instance for exact DAC, field and navigation names. More capabilities to follow.",
     "version": "",
     "author": "fdtaljaard",
     "repository": "https://github.com/fdtaljaard/claude-skills",
@@ -96,7 +100,29 @@
       "skills": [
         "./skills/acumatica-assistant"
       ],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1397746817-quickbooksdesktop-assistant",
+    "name": "quickbooksdesktop-assistant",
+    "description": "QuickBooks Desktop SDK assistant for developers and integrators: qbXML / QBFC C# development (QBSessionManager session lifecycle, message sets, Add/Mod/Query requests, OR aggregates, LinkToTxn, response and StatusCode handling), object and field reference (the ListID / TxnID / EditSequence model, request verbs, OR choice fields, spec versions, and a catalogue of the common lists and transactions), and setup and connectivity (QBFC vs QBXMLRP2 vs the Web Connector, open modes, app authorization, the 32-bit / STA constraints and common connection errors). Targets QuickBooks Desktop (qbXML), not QuickBooks Online. More capabilities to follow.",
+    "version": "",
+    "author": "fdtaljaard",
+    "repository": "https://github.com/fdtaljaard/claude-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397746817",
+      "marketplaceName": "claude-skills",
+      "skills": [
+        "./skills/quickbooksdesktop-assistant"
+      ],
+      "strict": false,
+      "modsCount": 0
     }
   },
   {

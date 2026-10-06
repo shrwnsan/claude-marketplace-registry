@@ -14,7 +14,8 @@
       "marketplaceId": "1289908656",
       "marketplaceName": "skills",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -32,7 +33,8 @@
       "marketplaceId": "1289908656",
       "marketplaceName": "skills",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -50,7 +52,8 @@
       "marketplaceId": "1289908656",
       "marketplaceName": "skills",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -68,14 +71,15 @@
       "marketplaceId": "1289908656",
       "marketplaceName": "skills",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
     "id": "1289908656-ml-ship",
     "name": "ml-ship",
-    "description": "Get a change landed. pr-gate validates a pull request end to end: what it actually changes and who it breaks, why the pipeline is red, what the agent reviewers found and whether each finding is real, whether it is genuinely ready, and the merge itself when you ask for it.",
-    "version": "0.1.0",
+    "description": "Get a change landed. pr-gate validates a GitHub pull request or GitLab merge request end to end: what it actually changes and who it breaks, whether CI has settled and why it is red, what the agent reviewers found and whether each finding is real, whether it is genuinely ready, and the merge itself when you ask for it.",
+    "version": "0.2.0",
     "author": "Max Levitskiy",
     "repository": "https://github.com/Max-Levitskiy/skills",
     "manifestPath": "./plugins/ml-ship",
@@ -86,7 +90,8 @@
       "marketplaceId": "1289908656",
       "marketplaceName": "skills",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   }
 ]

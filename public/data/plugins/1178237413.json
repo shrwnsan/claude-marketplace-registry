@@ -18,7 +18,8 @@
       "marketplaceId": "1178237413",
       "marketplaceName": "plugin-marketplace",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -40,20 +41,21 @@
       "marketplaceId": "1178237413",
       "marketplaceName": "plugin-marketplace",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
     "id": "1178237413-go-coding",
     "name": "go-coding",
     "description": "Idiomatic Go coding standards for AI assistants — formatting, errors, concurrency, testing, layout.",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "author": "Cadasto B.V.",
     "repository": "https://github.com/Cadasto/plugin-marketplace",
     "manifestPath": {
       "source": "github",
       "repo": "Cadasto/go-coding-plugin",
-      "ref": "v0.6.1"
+      "ref": "v0.6.2"
     },
     "isValid": true,
     "errors": [],
@@ -62,7 +64,8 @@
       "marketplaceId": "1178237413",
       "marketplaceName": "plugin-marketplace",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -84,7 +87,8 @@
       "marketplaceId": "1178237413",
       "marketplaceName": "plugin-marketplace",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -106,7 +110,8 @@
       "marketplaceId": "1178237413",
       "marketplaceName": "plugin-marketplace",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -128,7 +133,8 @@
       "marketplaceId": "1178237413",
       "marketplaceName": "plugin-marketplace",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   }
 ]

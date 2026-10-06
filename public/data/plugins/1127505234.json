@@ -1,0 +1,1245 @@
+[
+  {
+    "id": "1127505234-workflows",
+    "name": "workflows",
+    "description": "One loop — work — for code, data, writing and workshop presentations: an approved plan as the run's only authority, delegated implementation, independent verification against computed gates, and human review",
+    "version": "6.38.1",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1127505234-ai-anti-patterns",
+    "name": "ai-anti-patterns",
+    "description": "name: ai-anti-patterns",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/ai-anti-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-bib-manage",
+    "name": "bib-manage",
+    "description": "name: bib-manage",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/bib-manage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-blaw-edgar-search",
+    "name": "blaw-edgar-search",
+    "description": "name: blaw-edgar-search",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/blaw-edgar-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-bluebook-audit",
+    "name": "bluebook-audit",
+    "description": "name: bluebook-audit",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/bluebook-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-bluebook",
+    "name": "bluebook",
+    "description": "name: bluebook",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/bluebook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-cite-check",
+    "name": "cite-check",
+    "description": "name: cite-check",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/cite-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-consensus",
+    "name": "consensus",
+    "description": "name: consensus",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/consensus",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-continuous-learning",
+    "name": "continuous-learning",
+    "description": "name: continuous-learning",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/continuous-learning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-court-dockets",
+    "name": "court-dockets",
+    "description": "name: court-dockets",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/court-dockets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-courtlistener",
+    "name": "courtlistener",
+    "description": "name: courtlistener",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/courtlistener",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-crsp-lseg-splice",
+    "name": "crsp-lseg-splice",
+    "description": "name: crsp-lseg-splice",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/crsp-lseg-splice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-crsp-v2",
+    "name": "crsp-v2",
+    "description": "name: crsp-v2",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/crsp-v2",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-data-context",
+    "name": "data-context",
+    "description": "name: data-context",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/data-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-de-ai-revise",
+    "name": "de-ai-revise",
+    "description": "name: de-ai-revise",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/de-ai-revise",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-deep-research",
+    "name": "deep-research",
+    "description": "name: deep-research",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/deep-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-dev",
+    "name": "dev",
+    "description": "name: dev",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-dewey",
+    "name": "dewey",
+    "description": "name: dewey",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/dewey",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-docx-render",
+    "name": "docx-render",
+    "description": "name: docx-render",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/docx-render",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-docx-repair",
+    "name": "docx-repair",
+    "description": "name: docx-repair",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/docx-repair",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-docx-typst",
+    "name": "docx-typst",
+    "description": "name: docx-typst",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/docx-typst",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-ds",
+    "name": "ds",
+    "description": "name: ds",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/ds",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-elide-case",
+    "name": "elide-case",
+    "description": "name: elide-case",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/elide-case",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-farm-out",
+    "name": "farm-out",
+    "description": "name: farm-out",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/farm-out",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-fuzzy-name-matching",
+    "name": "fuzzy-name-matching",
+    "description": "name: fuzzy-name-matching",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/fuzzy-name-matching",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-gemini-vertex",
+    "name": "gemini-vertex",
+    "description": "name: gemini-vertex",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/gemini-vertex",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-google-scholar",
+    "name": "google-scholar",
+    "description": "name: google-scholar",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/google-scholar",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-grind",
+    "name": "grind",
+    "description": "name: grind",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/grind",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-headline-card",
+    "name": "headline-card",
+    "description": "name: headline-card",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/headline-card",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-hpc",
+    "name": "hpc",
+    "description": "name: hpc",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/hpc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-jev-rules",
+    "name": "jev-rules",
+    "description": "name: jev-rules",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/jev-rules",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-jupytext",
+    "name": "jupytext",
+    "description": "name: jupytext",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/jupytext",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-law-econ-docx",
+    "name": "law-econ-docx",
+    "description": "name: law-econ-docx",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/law-econ-docx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-law-review-docx",
+    "name": "law-review-docx",
+    "description": "name: law-review-docx",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/law-review-docx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-lexis",
+    "name": "lexis",
+    "description": "name: lexis",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/lexis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-look-at",
+    "name": "look-at",
+    "description": "name: look-at",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/look-at",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-lseg-data",
+    "name": "lseg-data",
+    "description": "name: lseg-data",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/lseg-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-marimo",
+    "name": "marimo",
+    "description": "name: marimo",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/marimo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-nlm",
+    "name": "nlm",
+    "description": "name: nlm",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/nlm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-notebook-debug",
+    "name": "notebook-debug",
+    "description": "name: notebook-debug",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/notebook-debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-npx-ownership-panel",
+    "name": "npx-ownership-panel",
+    "description": "name: npx-ownership-panel",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/npx-ownership-panel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-obsidian-organize",
+    "name": "obsidian-organize",
+    "description": "name: obsidian-organize",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/obsidian-organize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-paperpile",
+    "name": "paperpile",
+    "description": "name: paperpile",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/paperpile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-pattern-capture",
+    "name": "pattern-capture",
+    "description": "name: pattern-capture",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/pattern-capture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-permacc",
+    "name": "permacc",
+    "description": "name: permacc",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/permacc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-pincite",
+    "name": "pincite",
+    "description": "name: pincite",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/pincite",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-plugin-creator",
+    "name": "plugin-creator",
+    "description": "name: plugin-creator",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/plugin-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-pptx-render",
+    "name": "pptx-render",
+    "description": "name: pptx-render",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/pptx-render",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-readwise-chat",
+    "name": "readwise-chat",
+    "description": "name: readwise-chat",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/readwise-chat",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-readwise-docs",
+    "name": "readwise-docs",
+    "description": "name: readwise-docs",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/readwise-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-readwise-prune",
+    "name": "readwise-prune",
+    "description": "name: readwise-prune",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/readwise-prune",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-readwise-search",
+    "name": "readwise-search",
+    "description": "name: readwise-search",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/readwise-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-readwise",
+    "name": "readwise",
+    "description": "name: readwise",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/readwise",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-replication-package",
+    "name": "replication-package",
+    "description": "name: replication-package",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/replication-package",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-research",
+    "name": "research",
+    "description": "name: research",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-skill-creator",
+    "name": "skill-creator",
+    "description": "name: skill-creator",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-source-verify",
+    "name": "source-verify",
+    "description": "name: source-verify",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/source-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-tuicr",
+    "name": "tuicr",
+    "description": "name: tuicr",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/tuicr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-ui-json-capture",
+    "name": "ui-json-capture",
+    "description": "name: ui-json-capture",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/ui-json-capture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-using-skills",
+    "name": "using-skills",
+    "description": "name: using-skills",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/using-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-visual-mockup",
+    "name": "visual-mockup",
+    "description": "name: visual-mockup",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/visual-mockup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-visual-verify",
+    "name": "visual-verify",
+    "description": "name: visual-verify",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/visual-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-web-scraping",
+    "name": "web-scraping",
+    "description": "name: web-scraping",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/web-scraping",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-westlaw",
+    "name": "westlaw",
+    "description": "name: westlaw",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/westlaw",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-work",
+    "name": "work",
+    "description": "name: work",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/work",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-workflow-creator",
+    "name": "workflow-creator",
+    "description": "name: workflow-creator",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/workflow-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-workshop",
+    "name": "workshop",
+    "description": "name: workshop",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/workshop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-wrds",
+    "name": "wrds",
+    "description": "name: wrds",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/wrds",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-writing-econ",
+    "name": "writing-econ",
+    "description": "name: writing-econ",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/writing-econ",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-writing-general",
+    "name": "writing-general",
+    "description": "name: writing-general",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/writing-general",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-writing-legal",
+    "name": "writing-legal",
+    "description": "name: writing-legal",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/writing-legal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-writing",
+    "name": "writing",
+    "description": "name: writing",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  }
+]
