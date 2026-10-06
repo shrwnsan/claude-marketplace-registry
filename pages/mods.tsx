@@ -174,16 +174,9 @@ const ModsPage: React.FC = () => {
                     </span>
                   )}
                 </h1>
-                <p className='text-lg text-gray-600 dark:text-gray-400 mb-2'>
+                <p className='text-lg text-gray-600 dark:text-gray-400 mb-8'>
                   {mods.length.toLocaleString()} mods across {marketplacesWithMods.toLocaleString()}{' '}
-                  marketplaces — shipped inside Claude Code plugins and installed the same way:{' '}
-                  <span className='font-mono text-sm text-gray-700 dark:text-gray-300'>
-                    /plugin install name@marketplace
-                  </span>
-                </p>
-                <p className='text-sm text-gray-500 dark:text-gray-400 mb-8'>
-                  Mods run with the same access as Claude Code — vet the publisher before
-                  installing. Requires Claude Code v2.1.287+.
+                  marketplaces
                 </p>
 
                 <div className='max-w-2xl mx-auto mb-8'>
