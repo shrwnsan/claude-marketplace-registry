@@ -1,46 +1,47 @@
 {
-  "totalFound": 1110,
-  "withManifest": 468,
-  "lastUpdated": "2026-10-06T17:11:50.362Z",
+  "totalFound": 1122,
+  "withManifest": 497,
+  "lastUpdated": "2026-10-06T23:51:00.384Z",
   "searchQuery": "",
   "languages": {
-    "Python": 337,
+    "Python": 342,
     "JavaScript": 174,
     "Shell": 108,
-    "TypeScript": 168,
-    "Go": 26,
-    "Unknown": 188,
+    "TypeScript": 169,
+    "Go": 27,
+    "Unknown": 189,
     "Rust": 20,
-    "HTML": 57,
+    "HTML": 58,
     "AMPL": 1,
     "C++": 3,
-    "Swift": 4,
+    "Swift": 5,
+    "Perl": 1,
     "Jupyter Notebook": 2,
     "C#": 3,
     "Astro": 1,
-    "Perl": 1,
     "Ruby": 1,
+    "CSS": 2,
     "Java": 6,
-    "TeX": 1,
+    "SCSS": 1,
+    "PowerShell": 1,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
     "Svelte": 1,
     "Markdown": 1,
-    "SCSS": 1,
-    "CSS": 1,
     "Gleam": 1,
-    "C": 1
+    "C": 1,
+    "TeX": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 274114,
+      "stars": 274274,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179879,
+      "stars": 179907,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -50,12 +51,12 @@
     },
     {
       "name": "claude-mem",
-      "stars": 97003,
+      "stars": 97149,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76596,
+      "stars": 76601,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
@@ -64,8 +65,13 @@
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
+      "name": "i-have-adhd",
+      "stars": 54382,
+      "url": "https://github.com/ayghri/i-have-adhd"
+    },
+    {
       "name": "claude-plugins-official",
-      "stars": 37462,
+      "stars": 37469,
       "url": "https://github.com/anthropics/claude-plugins-official"
     },
     {
@@ -77,11 +83,6 @@
       "name": "planning-with-files",
       "stars": 27308,
       "url": "https://github.com/OthmanAdi/planning-with-files"
-    },
-    {
-      "name": "daily",
-      "stars": 20092,
-      "url": "https://github.com/dailydotdev/daily"
     }
   ]
 }

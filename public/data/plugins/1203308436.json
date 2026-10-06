@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1203308436-cache-ttl-statusline",
+    "name": "cache-ttl-statusline",
+    "description": "Native Claude Code status-line mod showing cache TTL, model, cost, context usage, API rate limits, git, and Headroom stats with an interactive TUI configurator",
+    "version": "1.5.4",
+    "author": "Jerrett Davis",
+    "repository": "https://github.com/JerrettDavis/ClaudeStatusLineWidgets",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1203308436",
+      "marketplaceName": "ClaudeStatusLineWidgets",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]
