@@ -1,17 +1,17 @@
 {
   "stats": {
-    "totalMarketplaces": 1110,
-    "totalPlugins": 6338,
-    "validPlugins": 6338,
-    "lastUpdated": "2026-10-06T17:13:11.255Z",
+    "totalMarketplaces": 1122,
+    "totalPlugins": 6507,
+    "validPlugins": 6507,
+    "lastUpdated": "2026-10-06T23:52:24.337Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 337
+        "count": 342
       },
       {
         "language": "Unknown",
-        "count": 188
+        "count": 189
       },
       {
         "language": "JavaScript",
@@ -19,7 +19,7 @@
       },
       {
         "language": "TypeScript",
-        "count": 168
+        "count": 169
       },
       {
         "language": "Shell",
@@ -27,11 +27,11 @@
       },
       {
         "language": "HTML",
-        "count": 57
+        "count": 58
       },
       {
         "language": "Go",
-        "count": 26
+        "count": 27
       },
       {
         "language": "Rust",
@@ -43,18 +43,18 @@
       },
       {
         "language": "Swift",
-        "count": 4
+        "count": 5
       }
     ],
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 274114,
+        "stars": 274274,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 179879,
+        "stars": 179907,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,12 +64,12 @@
       },
       {
         "name": "claude-mem",
-        "stars": 97003,
+        "stars": 97149,
         "url": "https://github.com/thedotmack/claude-mem"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 76596,
+        "stars": 76601,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
@@ -78,8 +78,13 @@
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
+        "name": "i-have-adhd",
+        "stars": 54382,
+        "url": "https://github.com/ayghri/i-have-adhd"
+      },
+      {
         "name": "claude-plugins-official",
-        "stars": 37462,
+        "stars": 37469,
         "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
@@ -91,63 +96,58 @@
         "name": "planning-with-files",
         "stars": 27308,
         "url": "https://github.com/OthmanAdi/planning-with-files"
-      },
-      {
-        "name": "daily",
-        "stars": 20092,
-        "url": "https://github.com/dailydotdev/daily"
       }
     ],
     "recentActivity": [
       {
-        "name": "evolve-loop",
-        "updatedAt": "2026-10-06T17:05:18Z",
-        "url": "https://github.com/mickeyyaya/evolve-loop"
+        "name": "mnema",
+        "updatedAt": "2026-10-06T23:41:45Z",
+        "url": "https://github.com/felipesauer/mnema"
       },
       {
-        "name": "awesome-claude-plugins",
-        "updatedAt": "2026-10-06T17:05:16Z",
-        "url": "https://github.com/quemsah/awesome-claude-plugins"
+        "name": "cairn-2.0",
+        "updatedAt": "2026-10-06T23:40:42Z",
+        "url": "https://github.com/jisundr/cairn-2.0"
       },
       {
-        "name": "claude-code-plugins",
-        "updatedAt": "2026-10-06T17:05:15Z",
-        "url": "https://github.com/tomevault-io/claude-code-plugins"
+        "name": "optionsahoy-claude-plugin",
+        "updatedAt": "2026-10-06T23:40:38Z",
+        "url": "https://github.com/AlvisoOculus/optionsahoy-claude-plugin"
       },
       {
-        "name": "Slicelytics-public",
-        "updatedAt": "2026-10-06T17:05:15Z",
-        "url": "https://github.com/duryno/Slicelytics-public"
+        "name": "i-have-adhd",
+        "updatedAt": "2026-10-06T23:40:27Z",
+        "url": "https://github.com/ayghri/i-have-adhd"
       },
       {
-        "name": "documentation-plugin",
-        "updatedAt": "2026-10-06T17:05:06Z",
-        "url": "https://github.com/christiangalsterer/documentation-plugin"
+        "name": "wenlan",
+        "updatedAt": "2026-10-06T23:40:06Z",
+        "url": "https://github.com/7xuanlu/wenlan"
       },
       {
-        "name": "super-fr",
-        "updatedAt": "2026-10-06T17:04:49Z",
-        "url": "https://github.com/derio-net/super-fr"
+        "name": "Makoto",
+        "updatedAt": "2026-10-06T23:39:48Z",
+        "url": "https://github.com/Clear-Sights/Makoto"
       },
       {
-        "name": "review-loop",
-        "updatedAt": "2026-10-06T17:04:39Z",
-        "url": "https://github.com/NYTC69/review-loop"
+        "name": "tycana-claude-hivemind",
+        "updatedAt": "2026-10-06T23:37:11Z",
+        "url": "https://github.com/samuel85194-ux/tycana-claude-hivemind"
       },
       {
-        "name": "pptwise",
-        "updatedAt": "2026-10-06T17:04:35Z",
-        "url": "https://github.com/liustack/pptwise"
+        "name": "superloopy",
+        "updatedAt": "2026-10-06T23:36:37Z",
+        "url": "https://github.com/beefiker/superloopy"
       },
       {
-        "name": "goblin-mode",
-        "updatedAt": "2026-10-06T17:04:11Z",
-        "url": "https://github.com/JasonWarrenUK/goblin-mode"
+        "name": "easel-js-cpu-render-kit",
+        "updatedAt": "2026-10-06T23:36:03Z",
+        "url": "https://github.com/AllyJuma1/easel-js-cpu-render-kit"
       },
       {
-        "name": "squidbrake",
-        "updatedAt": "2026-10-06T17:04:04Z",
-        "url": "https://github.com/batrapulkit/squidbrake"
+        "name": "fynn-mods",
+        "updatedAt": "2026-10-06T23:33:51Z",
+        "url": "https://github.com/FynnXland/fynn-mods"
       }
     ]
   },
@@ -155,22 +155,22 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 567
+      "count": 571
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 166
+      "count": 175
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 347
+      "count": 349
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 47
+      "count": 49
     },
     {
       "id": "data",
@@ -180,8 +180,8 @@
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 28
+      "count": 27
     }
   ],
-  "lastUpdated": "2026-10-06T17:13:11.255Z"
+  "lastUpdated": "2026-10-06T23:52:24.337Z"
 }
