@@ -1175,13 +1175,13 @@
     }
   },
   {
-    "id": "1105022950-push-gate",
-    "name": "push-gate",
-    "description": "name: push-gate",
+    "id": "1105022950-push-preflight",
+    "name": "push-preflight",
+    "description": "name: push-preflight",
     "version": "1.0.0",
     "author": "0xDarkMatter",
     "repository": "https://github.com/0xDarkMatter/claude-mods",
-    "manifestPath": "skills/push-gate",
+    "manifestPath": "skills/push-preflight",
     "isValid": true,
     "errors": [],
     "warnings": [],

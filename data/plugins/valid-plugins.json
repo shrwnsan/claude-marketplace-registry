@@ -13192,25 +13192,6 @@
     }
   },
   {
-    "id": "1251182451-abp-sensei",
-    "name": "abp-sensei",
-    "description": "Expert ABP Framework v10.x (10.4–10.6, .NET 10) companion: 26 version-aware skills, an ABP architect subagent, and slash commands for scaffolding, review, CRUD, and upgrade audits.",
-    "version": "1.2.0",
-    "author": "Burak Demir",
-    "repository": "https://github.com/burakdmir/abp-skills",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1251182451",
-      "marketplaceName": "abp-skills",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
     "id": "1105022950-claude-mods",
     "name": "claude-mods",
     "description": "Expert agents, skills, commands, rules, hooks, and output styles for Claude Code - session continuity and modern CLI tooling",
@@ -14386,13 +14367,13 @@
     }
   },
   {
-    "id": "1105022950-push-gate",
-    "name": "push-gate",
-    "description": "name: push-gate",
+    "id": "1105022950-push-preflight",
+    "name": "push-preflight",
+    "description": "name: push-preflight",
     "version": "1.0.0",
     "author": "0xDarkMatter",
     "repository": "https://github.com/0xDarkMatter/claude-mods",
-    "manifestPath": "skills/push-gate",
+    "manifestPath": "skills/push-preflight",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -15131,6 +15112,25 @@
       "marketplaceId": "1105022950",
       "marketplaceName": "claude-mods",
       "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1251182451-abp-sensei",
+    "name": "abp-sensei",
+    "description": "Expert ABP Framework v10.x (10.4–10.6, .NET 10) companion: 26 version-aware skills, an ABP architect subagent, and slash commands for scaffolding, review, CRUD, and upgrade audits.",
+    "version": "1.2.0",
+    "author": "Burak Demir",
+    "repository": "https://github.com/burakdmir/abp-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1251182451",
+      "marketplaceName": "abp-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -39702,6 +39702,41 @@
     }
   },
   {
+    "id": "287005473-pure-dev",
+    "name": "pure-dev",
+    "description": "Fast AI dev loop for Legend Pure: warm LSP daemon over HTTP + skills to compile-check, run functions/tests (single or parallel), toggle runtime options, route execution through a backend engine Server, and auto-sync edits - no full Maven rebuild.",
+    "version": "1.0.0",
+    "author": "FINOS Legend",
+    "repository": "https://github.com/finos/legend-engine",
+    "manifestPath": "./plugins/pure-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "287005473",
+      "marketplaceName": "legend-engine",
+      "skills": [
+        "./plugins/pure-dev/skills/pure-lsp-connect",
+        "./plugins/pure-dev/skills/pure-lsp-status",
+        "./plugins/pure-dev/skills/pure-lsp-check",
+        "./plugins/pure-dev/skills/pure-lsp-go",
+        "./plugins/pure-dev/skills/pure-lsp-execute",
+        "./plugins/pure-dev/skills/pure-lsp-set-option",
+        "./plugins/pure-dev/skills/pure-lsp-classpath",
+        "./plugins/pure-dev/skills/pure-lsp-execute-parallel",
+        "./plugins/pure-dev/skills/pure-lsp-sync-hook",
+        "./plugins/pure-dev/skills/pure-backend-start",
+        "./plugins/pure-dev/skills/pure-lsp-launch-engine",
+        "./plugins/pure-dev/skills/pure-chain-update",
+        "./plugins/pure-dev/skills/pure-lsp-sql-e2e",
+        "./plugins/pure-dev/skills/trim-comments",
+        "./plugins/pure-dev/skills/pure-code-style"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1241544212-specnote",
     "name": "specnote",
     "description": "Specnote MCP — Claude Code 에서 프로젝트 spec/정책을 자동 누적 관리",
@@ -39772,42 +39807,6 @@
     "metadata": {
       "marketplaceId": "1307804900",
       "marketplaceName": "morph-public",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1347341275-forta-risk",
-    "name": "forta-risk",
-    "description": "Skills for the Forta Risk Graph MCP — on-chain dependency concentration, control closure and blast radius for tokenized assets.",
-    "version": "",
-    "author": "forta-network",
-    "repository": "https://github.com/forta-network/forta-risk-skills",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1347341275",
-      "marketplaceName": "forta-risk-skills",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1347341275-forta-risk-analysis",
-    "name": "forta-risk-analysis",
-    "description": "name: forta-risk-analysis",
-    "version": "1.0.0",
-    "author": "forta-network",
-    "repository": "https://github.com/forta-network/forta-risk-skills",
-    "manifestPath": "skills/forta-risk-analysis",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1347341275",
-      "marketplaceName": "forta-risk-skills",
       "hasSkillMd": true
     }
   },
@@ -46690,6 +46689,76 @@
     }
   },
   {
+    "id": "1311250602-leaf",
+    "name": "leaf",
+    "description": "Generative UI: the agent builds the page your task needs, writes new widgets when the project calls for them, and answers your comments and edits over a messaging and collaboration bus.",
+    "version": "",
+    "author": "max-sixty",
+    "repository": "https://github.com/max-sixty/leaf",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311250602",
+      "marketplaceName": "leaf",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1311250602-developing-leaf",
+    "name": "developing-leaf",
+    "description": "name: developing-leaf",
+    "version": "1.0.0",
+    "author": "max-sixty",
+    "repository": "https://github.com/max-sixty/leaf",
+    "manifestPath": ".claude/skills/developing-leaf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311250602",
+      "marketplaceName": "leaf",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1311250602-running-tend",
+    "name": "running-tend",
+    "description": "name: running-tend",
+    "version": "1.0.0",
+    "author": "max-sixty",
+    "repository": "https://github.com/max-sixty/leaf",
+    "manifestPath": ".claude/skills/running-tend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311250602",
+      "marketplaceName": "leaf",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1311250602-ui-sweep",
+    "name": "ui-sweep",
+    "description": "name: ui-sweep",
+    "version": "1.0.0",
+    "author": "max-sixty",
+    "repository": "https://github.com/max-sixty/leaf",
+    "manifestPath": ".claude/skills/ui-sweep",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311250602",
+      "marketplaceName": "leaf",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1368469045-cc-arcade",
     "name": "cc-arcade",
     "description": "Games above the Claude Code prompt (snake, Tetris, Doom, 2048, Minesweeper, Flappy, Pong, typing test, Space Invaders) that pause when Claude finishes a turn, and a pet that grows as Claude tests, commits and edits. Clones of the genre, not affiliated with or endorsed by Tetris Holding, Taito, Atari or id Software",
@@ -47782,25 +47851,6 @@
     "metadata": {
       "marketplaceId": "1380801705",
       "marketplaceName": "taskcut",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1203308436-cache-ttl-statusline",
-    "name": "cache-ttl-statusline",
-    "description": "Native Claude Code status-line mod showing cache TTL, model, cost, context usage, API rate limits, git, and Headroom stats with an interactive TUI configurator",
-    "version": "1.5.4",
-    "author": "Jerrett Davis",
-    "repository": "https://github.com/JerrettDavis/ClaudeStatusLineWidgets",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1203308436",
-      "marketplaceName": "ClaudeStatusLineWidgets",
       "skills": [],
       "strict": false,
       "modsCount": 0
@@ -51868,25 +51918,6 @@
     }
   },
   {
-    "id": "1403521706-status-band",
-    "name": "status-band",
-    "description": "A designed status band under the prompt: model and effort, directory, git, a context gauge, the quota you have left, and cost.",
-    "version": "",
-    "author": "dukechain2333",
-    "repository": "https://github.com/dukechain2333/cc-status-band",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1403521706",
-      "marketplaceName": "cc-status-band",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
     "id": "1173427820-claude-to-im-skill",
     "name": "Claude-to-IM-skill",
     "description": "name: claude-to-im",
@@ -52608,234 +52639,6 @@
     }
   },
   {
-    "id": "1138111648-oh-my-claude",
-    "name": "oh-my-claude",
-    "description": "Cross-sessions Save/Load, and Ultrawork inspired by oh-my-opencode with Ralph Loops",
-    "version": "1.0.25",
-    "author": "replica0909xx",
-    "repository": "https://github.com/replica0909xx/oh-my-claude",
-    "manifestPath": "./plugins/oh-my-claude",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1138111648",
-      "marketplaceName": "oh-my-claude",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1138111648-powertoy",
-    "name": "powertoy",
-    "description": "Power utilities: auto-titling sessions and sound notifications on session end",
-    "version": "1.0.25",
-    "author": "replica0909xx",
-    "repository": "https://github.com/replica0909xx/oh-my-claude",
-    "manifestPath": "./plugins/powertoy",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1138111648",
-      "marketplaceName": "oh-my-claude",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-project-workflow",
-    "name": "project-workflow",
-    "description": "Start a project the same way every time (create-project) and save what a session decided before you close it (save-context).",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/project-workflow",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-subtask-icons",
-    "name": "subtask-icons",
-    "description": "Small ⑂ icons under Claude's last answer, one per item; a press puts /subtask with that item's text in the prompt box",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/subtask-icons",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-context-alarm",
-    "name": "context-alarm",
-    "description": "Warns when the context window passes a threshold (80% by default) and suggests /save-context before compaction",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/context-alarm",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-answer-buttons",
-    "name": "answer-buttons",
-    "description": "Three small buttons under Claude's last answer: Plain English, Shorter, and Plain & short",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/answer-buttons",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-skill-stats",
-    "name": "skill-stats",
-    "description": "Counts how often each skill runs, lists the ones that never trigger, and hands a weak description to skill-creator",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/skill-stats",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-dash-guard",
-    "name": "dash-guard",
-    "description": "Refuses prose that Claude writes with an em dash, an en dash or a double hyphen, and tells Claude which lines to rewrite",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/dash-guard",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-shared-file-guard",
-    "name": "shared-file-guard",
-    "description": "Refuses a shell write to a shared file (STATUS.md, CLAUDE.md, MEMORY.md, or the files you name) that this session has not read, or that another session changed since",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/shared-file-guard",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-arcade",
-    "name": "arcade",
-    "description": "The Claude Code Arcade: pixel games above the prompt, played by your work (a dragon, a slot machine, an Outlaw duel, a Tamagotchi, Tetris, an invading octopus, a duck hunt, Dario, a block town your agents build, and Bug Command, which you can play along with). Pin one, rotate them, or get a random one in every terminal.",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/arcade",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-fork-lineage",
-    "name": "fork-lineage",
-    "description": "Remembers which session a fork came from (renames never break it), shows it above the prompt, and sends a fork's report to its parent only when you approve it",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/fork-lineage",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1396823614-toolkit",
-    "name": "toolkit",
-    "description": "The Claude Code Toolkit in one install: small mods for long sessions, each also installable on its own.",
-    "version": "",
-    "author": "mutlumehmet",
-    "repository": "https://github.com/mutlumehmet/claude-plugins",
-    "manifestPath": "./plugins/toolkit",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1396823614",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
     "id": "1116480903-programming-swift-skill",
     "name": "programming-swift-skill",
     "description": "The complete content of The Swift Programming Language book.",
@@ -52854,340 +52657,6 @@
       ],
       "strict": false,
       "modsCount": 0
-    }
-  },
-  {
-    "id": "1088856497-claude-docs",
-    "name": "claude-docs",
-    "description": "",
-    "version": "",
-    "author": "costiash",
-    "repository": "https://github.com/costiash/claude-code-docs",
-    "manifestPath": "./plugin",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1088856497",
-      "marketplaceName": "claude-code-docs",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1178237413-openehr-assistant",
-    "name": "openehr-assistant",
-    "description": "openEHR clinical modeling for AI assistants — archetypes, templates, compositions, AQL, CKM reuse search, and specification lookup.",
-    "version": "0.9.2",
-    "author": "Cadasto B.V.",
-    "repository": "https://github.com/Cadasto/plugin-marketplace",
-    "manifestPath": {
-      "source": "github",
-      "repo": "Cadasto/openehr-assistant-plugin",
-      "ref": "v0.9.2"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1178237413",
-      "marketplaceName": "plugin-marketplace",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1178237413-openehr-assistant-dev",
-    "name": "openehr-assistant-dev",
-    "description": "Maintainer plugin for developing the openEHR Assistant MCP server and plugin — authoring guides, prompts, MCP tools, examples, and managing releases",
-    "version": "0.3.0",
-    "author": "Cadasto B.V.",
-    "repository": "https://github.com/Cadasto/plugin-marketplace",
-    "manifestPath": {
-      "source": "github",
-      "repo": "Cadasto/openehr-assistant-dev-plugin",
-      "ref": "v0.3.0"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1178237413",
-      "marketplaceName": "plugin-marketplace",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1178237413-go-coding",
-    "name": "go-coding",
-    "description": "Idiomatic Go coding standards for AI assistants — formatting, errors, concurrency, testing, layout.",
-    "version": "0.6.2",
-    "author": "Cadasto B.V.",
-    "repository": "https://github.com/Cadasto/plugin-marketplace",
-    "manifestPath": {
-      "source": "github",
-      "repo": "Cadasto/go-coding-plugin",
-      "ref": "v0.6.2"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1178237413",
-      "marketplaceName": "plugin-marketplace",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1178237413-php-coding",
-    "name": "php-coding",
-    "description": "Idiomatic PHP coding standards for AI assistants — PHP 8.4+, PER Coding Style, PHPStan level 8.",
-    "version": "0.1.0",
-    "author": "Cadasto B.V.",
-    "repository": "https://github.com/Cadasto/plugin-marketplace",
-    "manifestPath": {
-      "source": "github",
-      "repo": "Cadasto/php-coding-plugin",
-      "ref": "v0.1.0"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1178237413",
-      "marketplaceName": "plugin-marketplace",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1178237413-sdd",
-    "name": "sdd",
-    "description": "Spec-Driven Development for AI assistants — requirements, RFC-2119 specs, and ADRs with stable identifiers, machine-checked traceability, and the delivery pipeline that runs on them: workers, review into a findings file, close-out; two profiles.",
-    "version": "0.11.1",
-    "author": "Cadasto B.V.",
-    "repository": "https://github.com/Cadasto/plugin-marketplace",
-    "manifestPath": {
-      "source": "github",
-      "repo": "Cadasto/sdd-plugin",
-      "ref": "v0.11.1"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1178237413",
-      "marketplaceName": "plugin-marketplace",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1178237413-docs-editing",
-    "name": "docs-editing",
-    "description": "Human-facing documentation and content standards for AI assistants: technical writing, copy editing, AI-tell cleanup, marketing copy, SEO and AI citability, with claims grounded in cited evidence.",
-    "version": "0.4.1",
-    "author": "Cadasto B.V.",
-    "repository": "https://github.com/Cadasto/plugin-marketplace",
-    "manifestPath": {
-      "source": "github",
-      "repo": "Cadasto/docs-editing-plugin",
-      "ref": "v0.4.1"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1178237413",
-      "marketplaceName": "plugin-marketplace",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1402644069-signal-brief",
-    "name": "signal-brief",
-    "description": "Turn one news signal into a three-page executive brief.",
-    "version": "1.5.6",
-    "author": "nodej-ai",
-    "repository": "https://github.com/nodej-ai/nodej",
-    "manifestPath": {
-      "source": "github",
-      "repo": "nodej-ai/signal-brief"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1402644069",
-      "marketplaceName": "nodej",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1140723164-osado-ai-assistant",
-    "name": "osado-ai-assistant",
-    "description": "Developer productivity skills for openQA/openSUSE work",
-    "version": "",
-    "author": "mpagot",
-    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
-    "manifestPath": "./",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1140723164",
-      "marketplaceName": "os-autoinst-distri-opensuse-skills",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1140723164-git-commit",
-    "name": "git-commit",
-    "description": "name: git-commit",
-    "version": "1.0.0",
-    "author": "mpagot",
-    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
-    "manifestPath": "skills/git-commit",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1140723164",
-      "marketplaceName": "os-autoinst-distri-opensuse-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1140723164-github-pr-create",
-    "name": "github-pr-create",
-    "description": "name: github-pr-create",
-    "version": "1.0.0",
-    "author": "mpagot",
-    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
-    "manifestPath": "skills/github-pr-create",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1140723164",
-      "marketplaceName": "os-autoinst-distri-opensuse-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1140723164-local-lint-test",
-    "name": "local-lint-test",
-    "description": "name: local-lint-test",
-    "version": "1.0.0",
-    "author": "mpagot",
-    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
-    "manifestPath": "skills/local-lint-test",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1140723164",
-      "marketplaceName": "os-autoinst-distri-opensuse-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1140723164-openqa-log-analyzer",
-    "name": "openqa-log-analyzer",
-    "description": "name: openqa-log-analyzer",
-    "version": "1.0.0",
-    "author": "mpagot",
-    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
-    "manifestPath": "skills/openqa-log-analyzer",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1140723164",
-      "marketplaceName": "os-autoinst-distri-opensuse-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1140723164-openqa-log-fetcher",
-    "name": "openqa-log-fetcher",
-    "description": "name: openqa-log-fetcher",
-    "version": "1.0.0",
-    "author": "mpagot",
-    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
-    "manifestPath": "skills/openqa-log-fetcher",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1140723164",
-      "marketplaceName": "os-autoinst-distri-opensuse-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1140723164-test-catalog",
-    "name": "test-catalog",
-    "description": "name: test-catalog",
-    "version": "1.0.0",
-    "author": "mpagot",
-    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
-    "manifestPath": "skills/test-catalog",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1140723164",
-      "marketplaceName": "os-autoinst-distri-opensuse-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1140723164-unit-test-wizard",
-    "name": "unit-test-wizard",
-    "description": "name: unit-test-wizard",
-    "version": "1.0.0",
-    "author": "mpagot",
-    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
-    "manifestPath": "skills/unit-test-wizard",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1140723164",
-      "marketplaceName": "os-autoinst-distri-opensuse-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1140723164-vr-planner",
-    "name": "vr-planner",
-    "description": "name: vr-planner",
-    "version": "1.0.0",
-    "author": "mpagot",
-    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
-    "manifestPath": "skills/vr-planner",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1140723164",
-      "marketplaceName": "os-autoinst-distri-opensuse-skills",
-      "hasSkillMd": true
     }
   },
   {
@@ -53718,6 +53187,1359 @@
     "metadata": {
       "marketplaceId": "1190834387",
       "marketplaceName": "racecraft-plugins-public",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1088856497-claude-docs",
+    "name": "claude-docs",
+    "description": "",
+    "version": "",
+    "author": "costiash",
+    "repository": "https://github.com/costiash/claude-code-docs",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1088856497",
+      "marketplaceName": "claude-code-docs",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1138111648-oh-my-claude",
+    "name": "oh-my-claude",
+    "description": "Cross-sessions Save/Load, and Ultrawork inspired by oh-my-opencode with Ralph Loops",
+    "version": "1.0.25",
+    "author": "replica0909xx",
+    "repository": "https://github.com/replica0909xx/oh-my-claude",
+    "manifestPath": "./plugins/oh-my-claude",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138111648",
+      "marketplaceName": "oh-my-claude",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1138111648-powertoy",
+    "name": "powertoy",
+    "description": "Power utilities: auto-titling sessions and sound notifications on session end",
+    "version": "1.0.25",
+    "author": "replica0909xx",
+    "repository": "https://github.com/replica0909xx/oh-my-claude",
+    "manifestPath": "./plugins/powertoy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138111648",
+      "marketplaceName": "oh-my-claude",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1243505851-oculpm",
+    "name": "oculpm",
+    "description": "ocul-pm 훅 브리지(세션 신호) + oculpm-mcp(journal/plan 구조화 도구) + 스킬 5종(기록 규격·인셉션·self-audit·run-evals·tdd). .oculpm 추적 프로젝트에서만 동작합니다. macOS · Linux · Windows(베타 — Windows 훅은 Git Bash 필요, Windows 의 MCP 는 앱의 MCP 등록으로).",
+    "version": "3.8.0",
+    "author": "ocul-pm",
+    "repository": "https://github.com/bunhine0452/Ocul-PM",
+    "manifestPath": "./plugin/oculpm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1243505851",
+      "marketplaceName": "Ocul-PM",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-houki-research",
+    "name": "houki-research",
+    "description": "日本の全法規 (法律・政令・通達・判例・裁決・行政解釈) を houki-hub MCP family で横断調査するための Claude Skill。実装する前に仕様が法令のどこに触れるかを条文で確かめる、通達・Q&A から根拠条文へ戻る、改正がいつからかを見る、の各手順を問いの形で選び、「法律で決まっている」と「通達でそうなっている」を混ぜずに答える。業法独占規定 (税理士法 52 条 / 弁護士法 72 条 / 司法書士法 3 条 / 社労士法 27 条) への注意喚起・citation 標準化・横断オーケストレーション・各 MCP のエラーの code の一覧と、受け取ったときの解釈を持つ。 v0.7.0 から 2 つの MCP を dependencies に宣言しており、この plugin を入れれば条文と通達の両方が揃う。",
+    "version": "0.19.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/houki-research-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-houki-egov-mcp",
+    "name": "houki-egov-mcp",
+    "description": "日本の法令 (憲法・法律・政令・省令・規則) を e-Gov 法令API v2 から、条・項・号の単位で、法令番号と URL を添えて返す MCP サーバー。税法・労働法・会社法・民法など全分野の条文を引ける。ローカル DB を作れば条文本文の全文検索もできる。houki-hub family の一員。",
+    "version": "0.20.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/houki-egov-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-houki-nta-mcp",
+    "name": "houki-nta-mcp",
+    "description": "国税庁サイトの基本通達・改正通達・事務運営指針・文書回答事例・タックスアンサー・質疑応答事例を取り込んで全文検索する、税務の下調べ向けの MCP サーバー。「法律で決まっている」と「通達でそうなっている」を混ぜずに、legal_status と根拠条文への案内と鮮度を添えて返す。--quickstart で通達 1 本を約 3〜5 分で試せる。添付 PDF は本文を読まず、種別ごとの読み方と save: true で保存したパスを返す（読み手は固定しない、v0.19.0）。houki-hub family の一員。",
+    "version": "0.26.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/houki-nta-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-pdf-publish",
+    "name": "pdf-publish",
+    "description": "PDF の生成・編集から納品までを品質ゲート付きで編成する出力パイプライン Skill。pdf-writer-mcp で書き、pdf-reader-mcp で読み戻し、pdf-verify-mcp (veraPDF) で機械採点する write → read-back → verify ループを回し、根拠付きの Publish Report を添えて納品する。PDF/UA-1 (アクセシブル PDF)・PDF/A-3 添付 (電帳法)・タグ付きフォーム修復に対応。pdf-trust (受入監査) の対になる送り出し側。pdf-writer-mcp が必須。",
+    "version": "0.7.1",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/pdf-publish-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-pdf-trust",
+    "name": "pdf-trust",
+    "description": "PDF の信頼性監査オーケストレーション Skill。契約書・請求書・診療文書・行政文書などの PDF の真正性 (署名・改ざん・PAdES/PDF-A) を pdf-verify-mcp を軸に PDF family MCP を編成して判定し、ドメイン別プロファイルに基づく推奨判定付き Trust Report を返す。4 値判定は pdf-verify-mcp v0.7.0+ の evaluate_policy (決定論的ルールエンジン) に委譲し、Skill は解説・推奨アクション・法令根拠を担う。pdf-verify-mcp v0.10.0+ のリビジョン間オブジェクト単位差分と pdf-reader-mcp v0.10.0+ の locate_objects を組み合わせ、署名後に変わったオブジェクトをページ・矩形まで特定する。pdf-verify-mcp v0.21.0+ 推奨 (verify_signatures / detect_pades_level の最上位が配列から { scope, ... } になった版)。pdf-verify-mcp v0.27.0〜v0.28.0 で変わった失効と検証時刻の判定 (POL-CAUTION-REVOKED-AFTER-SIGNING・revocation_freshness) は pdf-trust v0.8.1 から、v0.29.0 の件数上限 (xxxTruncated) は v0.8.2 から読み分ける。pdf-verify-mcp plugin が必須。",
+    "version": "0.8.2",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/pdf-trust-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-pdf-read",
+    "name": "pdf-read",
+    "description": "大きな PDF・読めない PDF から必要な箇所を取り出す読み取りオーケストレーション Skill。summarize で文書の性質 (ページ数・タグ・暗号化・ページごとのテキスト抽出可能性) を測ってから、構造経路 (extract_structured_text / extract_tables)・絞り込み経路 (search_text → pages 指定の read_text)・画像経路 (render_page = スキャン・図面・手書きを画像として読む) のいずれかで読み、読んだ範囲と読めなかった箇所を Read Report で申告する。空の抽出結果を「テキストが無い」と結論しないのが中核原則。pdf-trust (受入監査)・pdf-publish (納品) に対する 3 本目。pdf-reader-mcp v0.15.1+ 推奨（v0.14.0 の scope で「行われなかった読み」を読み分ける。v0.15.0 で暗号化文書の扱いが変わり、鍵が導ければ復号して読む。v0.15.1 で next の助言が観測と一致する）。",
+    "version": "0.2.2",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/pdf-read-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-pdf-writer-mcp",
+    "name": "pdf-writer-mcp",
+    "description": "PDF 生成・編集 MCP server。テキスト/Markdown/表からの PDF 生成、タグ付き PDF/UA-1 出力、PDF 2.0 出力、ページ操作・しおり・注釈・添付・透かし・フォーム、署名を保持する増分更新、PDF/A-3b / PDF/A-4 / PDF/A-4f の器付け (ensure_pdfa) を提供。**書けるのは「宣言」であって「適合」ではない** — 測ると落ちると分かっている宣言は declarationRisks として構造化して返す (v0.17.0)。ensure_pdfa と ensure_tagged は成功時にも、宣言を書いただけで適合は測っていないことを warnings で返す (ensure_tagged は v0.21.1 から)。npm @shuji-bonji/pdf-writer-mcp を npx で起動する。pdf-publish Skill の必須基盤。",
+    "version": "0.21.2",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/pdf-writer-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-pdf-verify-mcp",
+    "name": "pdf-verify-mcp",
+    "description": "PDF 真正性検証 MCP server (7 tools)。電子署名の暗号学的検証 (CMS/PKCS#7)・改ざん検知 (リビジョン間のオブジェクト単位差分・リビジョン一覧が全履歴かの revisionChain・リビジョン数の食い違いに説明が付いているかの revisionCountAgreement を含む)・DocMDP 証明署名の権限判定 (ISO 32000-2 Table 257 に沿って P=1/2/3 ごとに変更の種類を照合。判定できない場合は indeterminate = pass ではない)・PAdES レベル判定 (B-B/B-T/B-LT/B-LTA)・PDF/A (PDF/A-1〜4) と PDF/UA (PDF/UA-1/2) の適合性検証・ISO 32000 本体条文の制約検査 (validate_clauses = フォント埋め込み / メタデータ / 注釈の 3 ドメイン・26 制約。veraPDF が見ない領域)・決定論的ルールエンジンによる 4 値判定 (evaluate_policy) を提供。v0.27.0 から、証明書の有効期間と失効の判定に使う時刻を署名タイムスタンプ → 文書タイムスタンプ → 現在時刻の順で選び (ISO 32000-2 §12.8.3.4.5・§12.8.3.4.6)、失効した署名者証明書はタイムスタンプが失効より前を示すときだけ revoked_after_validation_time、それ以外は verdict: indeterminate になる。v0.28.0 から、失効情報は既定 24 時間より古ければ good の根拠にしない (revocation_freshness)。v0.29.0 から、JSON の応答を文字数で切らず、配列ごとの件数上限を超えたときは xxxTruncated: { returned, total } を添える。npm @shuji-bonji/pdf-verify-mcp を npx で起動する。pdf-trust Skill の必須基盤。",
+    "version": "0.29.1",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/pdf-verify-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-pdf-reader-mcp",
+    "name": "pdf-reader-mcp",
+    "description": "PDF 構造解析 MCP server (19 tools)。テキスト・画像・表の抽出、署名フィールド・フォント・注釈・タグ構造の inspect、描画座標への変換 (オブジェクト番号は locate_objects、構造要素は extract_structured_text の include_bbox。いずれも pdf-writer-mcp add_annotation がそのまま取る形)、PDF/UA タグ検証を提供。v0.12.0: テキストを返す全ツールがページごとの**テキスト抽出可能性** (extracted / no_text_layer / not_extractable / not_observed, ISO 32000-2 §9.10.1) を申告し、空の抽出結果が「テキストが無い」と取り違えられない。read_images は本物の PNG/JPEG を MCP image content block で返し (視覚モデルがそのまま読める)、render_page がページを画像として描画する (PDFium-WASM = optionalDependencies @hyzyla/pdfium。未導入でも他 18 ツールは動作)。summarize は観測から決まる次の一手 (next) を返す。 v0.14.0: テキストを返す全ツールが **scope**（その答えの背後にある 2 つの読み——ページから文字を取り出すこと・その文字が Unicode に変換できるかの観測——のどちらが行われたか）を申告し、行われなかった読みの項目は `0` や `false` や空文字ではなく **null** になる。「読んでいない」が「読んで無かった」の顔をしない。read_url は取得したバイト列を 2 人の読み手に配るようになり（v0.13.0 までは全件が失敗していた）、render_page は 1 ページ 20 秒の予算を別スレッドで置くので、ラスタライズが終わらないページがあってもサーバは応答を返し続ける。 v0.15.0: pdf-lib を外し、読み取りは @normativepdf/recover を通る。空のユーザーパスワードで鍵が導ける暗号化文書は復号して読み、inspect_structure の objectStats.byType / catalog[].type は pdf-lib のクラス名ではなく COS 型名 (ISO 32000-2 §7.3) を返す。",
+    "version": "0.15.5",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/pdf-reader-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-pdf-spec-mcp",
+    "name": "pdf-spec-mcp",
+    "description": "ISO 32000 (PDF 仕様) の構造化参照 MCP server。条項検索・要求事項 (MUST/SHOULD) 抽出・定義取得・版間比較を提供。ISO 仕様 PDF は利用者が用意し PDF_SPEC_DIR で指定する。収録対象は ISO 32000-1/-2 を中心とする PDF 関連 17 文書で、PDF/A (ISO 19005) と PAdES (ETSI EN 319 142) は対象外 (list_specs の coverage.gaps)。検索が当たらないことは「要件が無い」ではなく「ここでは答えられない」を意味する。v0.5.0: 検索索引と要件の全走査を初回構築後にディスクへキャッシュし (既定 ~/.cache/pdf-spec-mcp、PDF_SPEC_CACHE_DIR で変更・PDF_SPEC_CACHE=off で無効)、以後のプロセスは 1 秒未満で応答する。`--build-cache` CLI で全仕様を事前構築できる。**本サーバは条文の参照であって適合判定器ではありません** — PDF ファイルの検査や適合判定は行わず、それは pdf-verify-mcp の役割です。",
+    "version": "0.6.1",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/pdf-spec-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-pdf-specialist",
+    "name": "pdf-specialist",
+    "description": "PDF 専門家サブエージェント統合プラグイン。pdf-specialist エージェント（監査・検証・生成・読み取り・仕様照会）を提供し、PDF Family 4 MCP サーバ（pdf-reader / pdf-spec / pdf-verify / pdf-writer）と pdf-trust / pdf-publish / pdf-read Skill は dependencies で自動導入する（同梱物なし）。判定は evaluate_policy（決定論的ルールエンジン）と veraPDF が下し、エージェントは編成とナラティブのみを担う。1 プラグインで PDF 専門家が完成する。",
+    "version": "0.7.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/pdf-specialist-plugin"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-rfcxml-mcp",
+    "name": "rfcxml-mcp",
+    "description": "RFC 文書の構造化理解 MCP server。RFCXML 経由でセクション・規範的要求事項 (MUST/SHOULD/MAY)・依存 RFC・準拠チェックリストを取得。",
+    "version": "0.6.53",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/rfcxml-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-w3c-mcp",
+    "name": "w3c-mcp",
+    "description": "W3C Web 仕様参照 MCP server。仕様検索・WebIDL・CSS プロパティ・HTML 要素・PWA 関連仕様の取得を提供。仕様間依存を返す get_spec_dependencies は v0.2.0 で削除 (上流 web-specs に依存データが無い)。",
+    "version": "0.3.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/w3c-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-web-compat-mcp",
+    "name": "web-compat-mcp",
+    "description": "ブラウザ互換性 MCP server。MDN BCD と W3C WebDX web-features (Baseline) に基づき、機能サポート状況の確認・比較・検索を提供。",
+    "version": "0.3.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/web-compat-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-xcomet-mcp",
+    "name": "xcomet-mcp",
+    "description": "xCOMET による翻訳品質評価 MCP server。参照訳なしで翻訳をスコアリングし、エラースパンを検出。xCOMET を導入したローカル Python 環境が必要 (venv 等を使う場合は XCOMET_PYTHON_PATH で指定、未設定なら自動検出)。",
+    "version": "0.7.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/xcomet-mcp-server"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-deepl-glossary-translation",
+    "name": "deepl-glossary-translation",
+    "description": "pdf-spec-mcp と DeepL MCP Server を連携させ、PDF 仕様書 (ISO 32000-2) などを用語統一された日本語に翻訳する Skill。グロッサリー (用語集) の作成・登録・適用までの一連のワークフローをガイドする。",
+    "version": "0.1.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/deepl-glossary-translation"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-factcheck",
+    "name": "factcheck",
+    "description": "情報の信頼性を科学的・体系的に評価するファクトチェック Skill。20項目×4カテゴリの評価フレームワークで記事・URL・主張・LLM 回答をスコアリングし、独立 sub-agent による自己評価バイアス排除を行う。",
+    "version": "0.1.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/factcheck-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-media-literacy-check",
+    "name": "media-literacy-check",
+    "description": "オンライン情報の信頼性をメディアリテラシーの観点から体系的に評価する Skill。ニュース記事・SNS 投稿・ブログ・動画・口コミを 30項目×6カテゴリで分析する。",
+    "version": "0.1.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/media-literacycheck-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-spec-compliance-skills",
+    "name": "spec-compliance-skills",
+    "description": "W3C/IETF仕様準拠チェック用スキル集。EPUB 3.3品質レビュー、PDF/A検証、RFC準拠チェックなど、仕様の規範的要件（MUST/SHOULD/MAY）に基づいた構造化検証とレポート生成を行います。",
+    "version": "0.1.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/spec-compliance-skills"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-ai-design-advisor",
+    "name": "ai-design-advisor",
+    "description": "生成AIシステムの設計判断を支援する Skill。決まっていないことを名指し、canonical の範囲だけ返す。入力が足りないときに発明しない。",
+    "version": "0.1.3",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/ai-design-advisor"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-epsg-mcp",
+    "name": "epsg-mcp",
+    "description": "測地系・座標参照系 (CRS) の専門知識 MCP server。EPSG コード検索・用途別推奨・座標変換提案・Country Pack (日本/US/UK)・トラブルシュートを提供。",
+    "version": "0.10.1",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/epsg-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-ifc-core-mcp",
+    "name": "ifc-core-mcp",
+    "description": "IFC4.3 (BIM) 仕様参照 MCP server。IFC エンティティ定義・属性・継承階層・PropertySet の検索取得を提供。",
+    "version": "0.3.0",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/ifc-core-mcp"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233668509-rxjs-mcp",
+    "name": "rxjs-mcp",
+    "description": "RxJS ストリームの実行・可視化・検査を行う MCP server (6 tools)。execute_stream は RxJS しか持たない worker thread でスニペットを評価し、発行値・タイムライン・所要時間を返す (プロジェクトのコードは動かない)。generate_marble は ASCII マーブルダイアグラムを描く。analyze_operators / suggest_pattern は RxJS 7.8.2 に固定した同梱データを引き、rxjs.dev・GitHub ソース・バイリンガルガイドの 3 階層リンクを付ける。lint_rxjs は eslint-plugin-rxjs-x の recommended/strict ルールを正規表現で再実装したもので、ESLint を導入せずスニペット単体を検査できる。detect_memory_leak は takeUntilDestroyed / async pipe / useEffect cleanup 等の自動クリーンアップを認識する。**lint_rxjs と detect_memory_leak は型情報を持たない照合であり、プロジェクトでの ESLint 実行を置き換えるものではない**。npm @shuji-bonji/rxjs-mcp を npx で起動する。",
+    "version": "0.5.3",
+    "author": "shuji-bonji",
+    "repository": "https://github.com/shuji-bonji/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "shuji-bonji/rxjs-mcp-server"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233668509",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-bundle-landis",
+    "name": "r-bundle-landis",
+    "description": "The r-bundle-research set plus r-landis-ii, for a project that writes LANDIS-II inputs and reads its outputs. Add r-bundle-targets alongside when the runs are driven from a {targets} pipeline.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-bundle-landis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-bundle-research",
+    "name": "r-bundle-research",
+    "description": "One entry that enables the plugins every R research project uses on every session: r-project-core, r-geospatial, r-reporting, r-code-review and r-package-dev. Enabling it enables those; r-package-dev in turn pulls the r-lib skills it defers to. It carries no framework: add r-bundle-targets for a {targets} pipeline, and r-bundle-spades or r-bundle-landis for a simulation project.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-bundle-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-bundle-spades",
+    "name": "r-bundle-spades",
+    "description": "The r-bundle-research set plus r-spades, for a project that develops or runs SpaDES modules. Add r-bundle-targets alongside when the modules run from a {targets} pipeline.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-bundle-spades",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-bundle-targets",
+    "name": "r-bundle-targets",
+    "description": "The r-bundle-research set plus r-targets, for a project built as a {targets} pipeline.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-bundle-targets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-code-review",
+    "name": "r-code-review",
+    "description": "Read-only review subagents for the failure classes that research R code produces instead of errors: spatial correctness, dependency declaration, and failed or suspiciously clean runs. Plus the measure-against-an-independent-reference method these projects use to catch bugs that no test would have caught.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-geospatial",
+    "name": "r-geospatial",
+    "description": "Spatial data work in R that survives serialisation, parallel workers and large rasters: the terra external-pointer trap and how to avoid needing wrap(), one declared project CRS, the sf geometry-repair sequence distilled from repeated corrective commits, out-of-core raster and vector strategies, and the silent-wrong-answer failures that spatial code produces instead of errors.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-geospatial",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-landis-ii",
+    "name": "r-landis-ii",
+    "description": "Driving LANDIS-II from R: input validation before a run (because LANDIS fails on bad input in the worst possible way -- non-zero exit, empty stderr, the real message buried in a log inside a scratch dir), the raster and text-format conventions it silently depends on, container execution on shared storage, and the output-reading rules including the geotransform y-flip that invalidated a full calibration with no error at all.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-landis-ii",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-package-dev",
+    "name": "r-package-dev",
+    "description": "Deltas on top of the r-lib package-development skills, not a replacement for them: the development-to-main change workflow for co-developed packages (branch and submodule checks, local tests, CI, merge, install into the project from remote main), per-package overrides the r-lib skills cannot know, the dependency-declaration failures that dominate this corpus, and hooks that catch roxygen/NAMESPACE drift and the recurring .claude R CMD check NOTE.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-package-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-project-core",
+    "name": "r-project-core",
+    "description": "Baseline conventions and deterministic guardrails for R-based research projects: fixing defects at their root cause, air formatting, ASCII-only code and reports, citation integrity, the .Rprofile/_local.R/_hosts.R config split, hermetic tests and CI for projects that are not packages, long runs on shared machines, commit discipline, and PreToolUse guards against destructive commands, hand-editing generated files, and mutating the library while a long run is live.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-project-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-reporting",
+    "name": "r-reporting",
+    "description": "Reports and provenance for research deliverables: writing for a stated audience (the user is always asked who the reader is; plain-language summary first, technical detail later or in appendices, no jargon or machine-written phrasing), Quarto project-mode path behaviour and the stale-PDF trap, rendering from a pipeline, deriving report numbers from the pipeline so prose cannot drift, draft marking for AI-assisted content, and input manifests and reproducibility receipts. Chart design is left to the dataviz and r-lib:alt-text skills.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-reporting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-spades",
+    "name": "r-spades",
+    "description": "Developing and wiring SpaDES modules: the defineModule metadata contract and why it must be read rather than inferred, the .inputObjects timing trap that silently mutates data, reqdPkgs remote specs and nested-module package loading, module renaming, and eight years of accumulated Cache() lessons ending in targets-owns-the-cache.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-spades",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1376677547-r-targets",
+    "name": "r-targets",
+    "description": "Building, testing, debugging and running {targets} pipelines: a tested static validator on top of the general test suite and CI, multi-project stores and the definition-time vs run-time contract, spatial objects and geotargets in the store, launching and stopping runs on shared machines with crew controllers sized to fit, a pipeline-invalidation review agent, and the silent-staleness traps that make pipelines report clean runs while producing wrong answers.",
+    "version": "0.1.0",
+    "author": "FOR-CAST",
+    "repository": "https://github.com/FOR-CAST/ai_workflows",
+    "manifestPath": "./plugins/r-targets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1376677547",
+      "marketplaceName": "ai_workflows",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1397547001-federal-law",
+    "name": "federal-law",
+    "description": "Find, read, and verify U.S. federal statutes and regulations from official sources: U.S. Code, CFR, Federal Register, public laws, and legislative history, with currency checks, as-of-date pulls, and pinpoint cites.",
+    "version": "1.0.5",
+    "author": "attorneynate",
+    "repository": "https://github.com/attorneynate/legal-skills",
+    "manifestPath": "./plugins/federal-law",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397547001",
+      "marketplaceName": "legal-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1397547001-florida-citation",
+    "name": "florida-citation",
+    "description": "Format and check legal citations under Florida's Rule 9.800, with the Bluebook system through the public-domain Indigo Book for what the rule doesn't cover: the rule's text, Florida forms, case-number conversion, citations built from their parts, every citation in a brief or motion checked with its page, authority, and fix, and the other side's filing reviewed with facts and pinpoints ahead of form.",
+    "version": "1.2.0",
+    "author": "attorneynate",
+    "repository": "https://github.com/attorneynate/legal-skills",
+    "manifestPath": "./plugins/florida-citation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397547001",
+      "marketplaceName": "legal-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-project-workflow",
+    "name": "project-workflow",
+    "description": "Start a project the same way every time (create-project) and save what a session decided before you close it (save-context).",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/project-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-subtask-icons",
+    "name": "subtask-icons",
+    "description": "Small ⑂ icons under Claude's last answer, one per item; a press puts /subtask with that item's text in the prompt box",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/subtask-icons",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-context-alarm",
+    "name": "context-alarm",
+    "description": "Warns when the context window passes a threshold (80% by default) and suggests /save-context before compaction",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/context-alarm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-answer-buttons",
+    "name": "answer-buttons",
+    "description": "Three small buttons under Claude's last answer: Plain English, Shorter, and Plain & short",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/answer-buttons",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-skill-stats",
+    "name": "skill-stats",
+    "description": "Counts how often each skill runs, lists the ones that never trigger, and hands a weak description to skill-creator",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/skill-stats",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-dash-guard",
+    "name": "dash-guard",
+    "description": "Refuses prose that Claude writes with an em dash, an en dash or a double hyphen, and tells Claude which lines to rewrite",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/dash-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-shared-file-guard",
+    "name": "shared-file-guard",
+    "description": "Refuses a shell write to a shared file (STATUS.md, CLAUDE.md, MEMORY.md, or the files you name) that this session has not read, or that another session changed since",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/shared-file-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-arcade",
+    "name": "arcade",
+    "description": "The Claude Code Arcade: pixel games above the prompt, played by your work (a dragon, a slot machine, an Outlaw duel, a Tamagotchi, Tetris, an invading octopus, a duck hunt, Dario, a block town your agents build, and Bug Command, which you can play along with). Pin one, rotate them, or get a random one in every terminal.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/arcade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-fork-lineage",
+    "name": "fork-lineage",
+    "description": "Remembers which session a fork came from (renames never break it), shows it above the prompt, and sends a fork's report to its parent only when you approve it",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/fork-lineage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396823614-toolkit",
+    "name": "toolkit",
+    "description": "The Claude Code Toolkit in one install: small mods for long sessions, each also installable on its own.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/toolkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1178237413-openehr-assistant",
+    "name": "openehr-assistant",
+    "description": "openEHR clinical modeling for AI assistants — archetypes, templates, compositions, AQL, CKM reuse search, and specification lookup.",
+    "version": "0.9.2",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/openehr-assistant-plugin",
+      "ref": "v0.9.2"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1178237413-openehr-assistant-dev",
+    "name": "openehr-assistant-dev",
+    "description": "Maintainer plugin for developing the openEHR Assistant MCP server and plugin — authoring guides, prompts, MCP tools, examples, and managing releases",
+    "version": "0.3.0",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/openehr-assistant-dev-plugin",
+      "ref": "v0.3.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1178237413-go-coding",
+    "name": "go-coding",
+    "description": "Idiomatic Go coding standards for AI assistants — formatting, errors, concurrency, testing, layout.",
+    "version": "0.6.2",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/go-coding-plugin",
+      "ref": "v0.6.2"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1178237413-php-coding",
+    "name": "php-coding",
+    "description": "Idiomatic PHP coding standards for AI assistants — PHP 8.4+, PER Coding Style, PHPStan level 8.",
+    "version": "0.1.0",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/php-coding-plugin",
+      "ref": "v0.1.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1178237413-sdd",
+    "name": "sdd",
+    "description": "Spec-Driven Development for AI assistants — requirements, RFC-2119 specs, and ADRs with stable identifiers, machine-checked traceability, and the delivery pipeline that runs on them: workers, review into a findings file, close-out; two profiles.",
+    "version": "0.11.1",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/sdd-plugin",
+      "ref": "v0.11.1"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1178237413-docs-editing",
+    "name": "docs-editing",
+    "description": "Human-facing documentation and content standards for AI assistants: technical writing, copy editing, AI-tell cleanup, marketing copy, SEO and AI citability, with claims grounded in cited evidence.",
+    "version": "0.4.1",
+    "author": "Cadasto B.V.",
+    "repository": "https://github.com/Cadasto/plugin-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "Cadasto/docs-editing-plugin",
+      "ref": "v0.4.1"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178237413",
+      "marketplaceName": "plugin-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402644069-signal-brief",
+    "name": "signal-brief",
+    "description": "Turn one news signal into a three-page executive brief.",
+    "version": "1.5.6",
+    "author": "nodej-ai",
+    "repository": "https://github.com/nodej-ai/nodej",
+    "manifestPath": {
+      "source": "github",
+      "repo": "nodej-ai/signal-brief"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402644069",
+      "marketplaceName": "nodej",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1140723164-osado-ai-assistant",
+    "name": "osado-ai-assistant",
+    "description": "Developer productivity skills for openQA/openSUSE work",
+    "version": "",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1140723164-git-commit",
+    "name": "git-commit",
+    "description": "name: git-commit",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/git-commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-github-pr-create",
+    "name": "github-pr-create",
+    "description": "name: github-pr-create",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/github-pr-create",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-local-lint-test",
+    "name": "local-lint-test",
+    "description": "name: local-lint-test",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/local-lint-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-openqa-log-analyzer",
+    "name": "openqa-log-analyzer",
+    "description": "name: openqa-log-analyzer",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/openqa-log-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-openqa-log-fetcher",
+    "name": "openqa-log-fetcher",
+    "description": "name: openqa-log-fetcher",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/openqa-log-fetcher",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-test-catalog",
+    "name": "test-catalog",
+    "description": "name: test-catalog",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/test-catalog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-unit-test-wizard",
+    "name": "unit-test-wizard",
+    "description": "name: unit-test-wizard",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/unit-test-wizard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1140723164-vr-planner",
+    "name": "vr-planner",
+    "description": "name: vr-planner",
+    "version": "1.0.0",
+    "author": "mpagot",
+    "repository": "https://github.com/mpagot/os-autoinst-distri-opensuse-skills",
+    "manifestPath": "skills/vr-planner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1140723164",
+      "marketplaceName": "os-autoinst-distri-opensuse-skills",
       "hasSkillMd": true
     }
   },
@@ -55228,44 +56050,6 @@
     "metadata": {
       "marketplaceId": "1341895704",
       "marketplaceName": "cli",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1397547001-federal-law",
-    "name": "federal-law",
-    "description": "Find, read, and verify U.S. federal statutes and regulations from official sources: U.S. Code, CFR, Federal Register, public laws, and legislative history, with currency checks, as-of-date pulls, and pinpoint cites.",
-    "version": "1.0.5",
-    "author": "attorneynate",
-    "repository": "https://github.com/attorneynate/legal-skills",
-    "manifestPath": "./plugins/federal-law",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1397547001",
-      "marketplaceName": "legal-skills",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1397547001-florida-citation",
-    "name": "florida-citation",
-    "description": "Format and check legal citations under Florida's Rule 9.800, with the Bluebook system through the public-domain Indigo Book for what the rule doesn't cover: the rule's text, Florida forms, case-number conversion, citations built from their parts, every citation in a brief or motion checked with its page, authority, and fix, and the other side's filing reviewed with facts and pinpoints ahead of form.",
-    "version": "1.1.2",
-    "author": "attorneynate",
-    "repository": "https://github.com/attorneynate/legal-skills",
-    "manifestPath": "./plugins/florida-citation",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1397547001",
-      "marketplaceName": "legal-skills",
       "skills": [],
       "strict": false,
       "modsCount": 0
@@ -64275,512 +65059,6 @@
     }
   },
   {
-    "id": "1233668509-houki-research",
-    "name": "houki-research",
-    "description": "日本の全法規 (法律・政令・通達・判例・裁決・行政解釈) を houki-hub MCP family で横断調査するための Claude Skill。実装する前に仕様が法令のどこに触れるかを条文で確かめる、通達・Q&A から根拠条文へ戻る、改正がいつからかを見る、の各手順を問いの形で選び、「法律で決まっている」と「通達でそうなっている」を混ぜずに答える。業法独占規定 (税理士法 52 条 / 弁護士法 72 条 / 司法書士法 3 条 / 社労士法 27 条) への注意喚起・citation 標準化・横断オーケストレーション・各 MCP のエラーの code の一覧と、受け取ったときの解釈を持つ。 v0.7.0 から 2 つの MCP を dependencies に宣言しており、この plugin を入れれば条文と通達の両方が揃う。",
-    "version": "0.19.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/houki-research-skill"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-houki-egov-mcp",
-    "name": "houki-egov-mcp",
-    "description": "日本の法令 (憲法・法律・政令・省令・規則) を e-Gov 法令API v2 から、条・項・号の単位で、法令番号と URL を添えて返す MCP サーバー。税法・労働法・会社法・民法など全分野の条文を引ける。ローカル DB を作れば条文本文の全文検索もできる。houki-hub family の一員。",
-    "version": "0.20.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/houki-egov-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-houki-nta-mcp",
-    "name": "houki-nta-mcp",
-    "description": "国税庁サイトの基本通達・改正通達・事務運営指針・文書回答事例・タックスアンサー・質疑応答事例を取り込んで全文検索する、税務の下調べ向けの MCP サーバー。「法律で決まっている」と「通達でそうなっている」を混ぜずに、legal_status と根拠条文への案内と鮮度を添えて返す。--quickstart で通達 1 本を約 3〜5 分で試せる。添付 PDF は本文を読まず、種別ごとの読み方と save: true で保存したパスを返す（読み手は固定しない、v0.19.0）。houki-hub family の一員。",
-    "version": "0.25.1",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/houki-nta-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-pdf-publish",
-    "name": "pdf-publish",
-    "description": "PDF の生成・編集から納品までを品質ゲート付きで編成する出力パイプライン Skill。pdf-writer-mcp で書き、pdf-reader-mcp で読み戻し、pdf-verify-mcp (veraPDF) で機械採点する write → read-back → verify ループを回し、根拠付きの Publish Report を添えて納品する。PDF/UA-1 (アクセシブル PDF)・PDF/A-3 添付 (電帳法)・タグ付きフォーム修復に対応。pdf-trust (受入監査) の対になる送り出し側。pdf-writer-mcp が必須。",
-    "version": "0.7.1",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/pdf-publish-skill"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-pdf-trust",
-    "name": "pdf-trust",
-    "description": "PDF の信頼性監査オーケストレーション Skill。契約書・請求書・診療文書・行政文書などの PDF の真正性 (署名・改ざん・PAdES/PDF-A) を pdf-verify-mcp を軸に PDF family MCP を編成して判定し、ドメイン別プロファイルに基づく推奨判定付き Trust Report を返す。4 値判定は pdf-verify-mcp v0.7.0+ の evaluate_policy (決定論的ルールエンジン) に委譲し、Skill は解説・推奨アクション・法令根拠を担う。pdf-verify-mcp v0.10.0+ のリビジョン間オブジェクト単位差分と pdf-reader-mcp v0.10.0+ の locate_objects を組み合わせ、署名後に変わったオブジェクトをページ・矩形まで特定する。pdf-verify-mcp v0.21.0+ 推奨 (verify_signatures / detect_pades_level の最上位が配列から { scope, ... } になった版)。pdf-verify-mcp v0.27.0〜v0.28.0 で変わった失効と検証時刻の判定 (POL-CAUTION-REVOKED-AFTER-SIGNING・revocation_freshness) は pdf-trust v0.8.1 から、v0.29.0 の件数上限 (xxxTruncated) は v0.8.2 から読み分ける。pdf-verify-mcp plugin が必須。",
-    "version": "0.8.2",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/pdf-trust-skill"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-pdf-read",
-    "name": "pdf-read",
-    "description": "大きな PDF・読めない PDF から必要な箇所を取り出す読み取りオーケストレーション Skill。summarize で文書の性質 (ページ数・タグ・暗号化・ページごとのテキスト抽出可能性) を測ってから、構造経路 (extract_structured_text / extract_tables)・絞り込み経路 (search_text → pages 指定の read_text)・画像経路 (render_page = スキャン・図面・手書きを画像として読む) のいずれかで読み、読んだ範囲と読めなかった箇所を Read Report で申告する。空の抽出結果を「テキストが無い」と結論しないのが中核原則。pdf-trust (受入監査)・pdf-publish (納品) に対する 3 本目。pdf-reader-mcp v0.15.1+ 推奨（v0.14.0 の scope で「行われなかった読み」を読み分ける。v0.15.0 で暗号化文書の扱いが変わり、鍵が導ければ復号して読む。v0.15.1 で next の助言が観測と一致する）。",
-    "version": "0.2.2",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/pdf-read-skill"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-pdf-writer-mcp",
-    "name": "pdf-writer-mcp",
-    "description": "PDF 生成・編集 MCP server。テキスト/Markdown/表からの PDF 生成、タグ付き PDF/UA-1 出力、PDF 2.0 出力、ページ操作・しおり・注釈・添付・透かし・フォーム、署名を保持する増分更新、PDF/A-3b / PDF/A-4 / PDF/A-4f の器付け (ensure_pdfa) を提供。**書けるのは「宣言」であって「適合」ではない** — 測ると落ちると分かっている宣言は declarationRisks として構造化して返す (v0.17.0)。ensure_pdfa と ensure_tagged は成功時にも、宣言を書いただけで適合は測っていないことを warnings で返す (ensure_tagged は v0.21.1 から)。npm @shuji-bonji/pdf-writer-mcp を npx で起動する。pdf-publish Skill の必須基盤。",
-    "version": "0.21.2",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/pdf-writer-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-pdf-verify-mcp",
-    "name": "pdf-verify-mcp",
-    "description": "PDF 真正性検証 MCP server (7 tools)。電子署名の暗号学的検証 (CMS/PKCS#7)・改ざん検知 (リビジョン間のオブジェクト単位差分・リビジョン一覧が全履歴かの revisionChain・リビジョン数の食い違いに説明が付いているかの revisionCountAgreement を含む)・DocMDP 証明署名の権限判定 (ISO 32000-2 Table 257 に沿って P=1/2/3 ごとに変更の種類を照合。判定できない場合は indeterminate = pass ではない)・PAdES レベル判定 (B-B/B-T/B-LT/B-LTA)・PDF/A (PDF/A-1〜4) と PDF/UA (PDF/UA-1/2) の適合性検証・ISO 32000 本体条文の制約検査 (validate_clauses = フォント埋め込み / メタデータ / 注釈の 3 ドメイン・26 制約。veraPDF が見ない領域)・決定論的ルールエンジンによる 4 値判定 (evaluate_policy) を提供。v0.27.0 から、証明書の有効期間と失効の判定に使う時刻を署名タイムスタンプ → 文書タイムスタンプ → 現在時刻の順で選び (ISO 32000-2 §12.8.3.4.5・§12.8.3.4.6)、失効した署名者証明書はタイムスタンプが失効より前を示すときだけ revoked_after_validation_time、それ以外は verdict: indeterminate になる。v0.28.0 から、失効情報は既定 24 時間より古ければ good の根拠にしない (revocation_freshness)。v0.29.0 から、JSON の応答を文字数で切らず、配列ごとの件数上限を超えたときは xxxTruncated: { returned, total } を添える。npm @shuji-bonji/pdf-verify-mcp を npx で起動する。pdf-trust Skill の必須基盤。",
-    "version": "0.29.1",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/pdf-verify-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-pdf-reader-mcp",
-    "name": "pdf-reader-mcp",
-    "description": "PDF 構造解析 MCP server (19 tools)。テキスト・画像・表の抽出、署名フィールド・フォント・注釈・タグ構造の inspect、描画座標への変換 (オブジェクト番号は locate_objects、構造要素は extract_structured_text の include_bbox。いずれも pdf-writer-mcp add_annotation がそのまま取る形)、PDF/UA タグ検証を提供。v0.12.0: テキストを返す全ツールがページごとの**テキスト抽出可能性** (extracted / no_text_layer / not_extractable / not_observed, ISO 32000-2 §9.10.1) を申告し、空の抽出結果が「テキストが無い」と取り違えられない。read_images は本物の PNG/JPEG を MCP image content block で返し (視覚モデルがそのまま読める)、render_page がページを画像として描画する (PDFium-WASM = optionalDependencies @hyzyla/pdfium。未導入でも他 18 ツールは動作)。summarize は観測から決まる次の一手 (next) を返す。 v0.14.0: テキストを返す全ツールが **scope**（その答えの背後にある 2 つの読み——ページから文字を取り出すこと・その文字が Unicode に変換できるかの観測——のどちらが行われたか）を申告し、行われなかった読みの項目は `0` や `false` や空文字ではなく **null** になる。「読んでいない」が「読んで無かった」の顔をしない。read_url は取得したバイト列を 2 人の読み手に配るようになり（v0.13.0 までは全件が失敗していた）、render_page は 1 ページ 20 秒の予算を別スレッドで置くので、ラスタライズが終わらないページがあってもサーバは応答を返し続ける。 v0.15.0: pdf-lib を外し、読み取りは @normativepdf/recover を通る。空のユーザーパスワードで鍵が導ける暗号化文書は復号して読み、inspect_structure の objectStats.byType / catalog[].type は pdf-lib のクラス名ではなく COS 型名 (ISO 32000-2 §7.3) を返す。",
-    "version": "0.15.5",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/pdf-reader-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-pdf-spec-mcp",
-    "name": "pdf-spec-mcp",
-    "description": "ISO 32000 (PDF 仕様) の構造化参照 MCP server。条項検索・要求事項 (MUST/SHOULD) 抽出・定義取得・版間比較を提供。ISO 仕様 PDF は利用者が用意し PDF_SPEC_DIR で指定する。収録対象は ISO 32000-1/-2 を中心とする PDF 関連 17 文書で、PDF/A (ISO 19005) と PAdES (ETSI EN 319 142) は対象外 (list_specs の coverage.gaps)。検索が当たらないことは「要件が無い」ではなく「ここでは答えられない」を意味する。v0.5.0: 検索索引と要件の全走査を初回構築後にディスクへキャッシュし (既定 ~/.cache/pdf-spec-mcp、PDF_SPEC_CACHE_DIR で変更・PDF_SPEC_CACHE=off で無効)、以後のプロセスは 1 秒未満で応答する。`--build-cache` CLI で全仕様を事前構築できる。**本サーバは条文の参照であって適合判定器ではありません** — PDF ファイルの検査や適合判定は行わず、それは pdf-verify-mcp の役割です。",
-    "version": "0.6.1",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/pdf-spec-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-pdf-specialist",
-    "name": "pdf-specialist",
-    "description": "PDF 専門家サブエージェント統合プラグイン。pdf-specialist エージェント（監査・検証・生成・読み取り・仕様照会）を提供し、PDF Family 4 MCP サーバ（pdf-reader / pdf-spec / pdf-verify / pdf-writer）と pdf-trust / pdf-publish / pdf-read Skill は dependencies で自動導入する（同梱物なし）。判定は evaluate_policy（決定論的ルールエンジン）と veraPDF が下し、エージェントは編成とナラティブのみを担う。1 プラグインで PDF 専門家が完成する。",
-    "version": "0.7.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/pdf-specialist-plugin"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-rfcxml-mcp",
-    "name": "rfcxml-mcp",
-    "description": "RFC 文書の構造化理解 MCP server。RFCXML 経由でセクション・規範的要求事項 (MUST/SHOULD/MAY)・依存 RFC・準拠チェックリストを取得。",
-    "version": "0.6.53",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/rfcxml-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-w3c-mcp",
-    "name": "w3c-mcp",
-    "description": "W3C Web 仕様参照 MCP server。仕様検索・WebIDL・CSS プロパティ・HTML 要素・PWA 関連仕様の取得を提供。仕様間依存を返す get_spec_dependencies は v0.2.0 で削除 (上流 web-specs に依存データが無い)。",
-    "version": "0.3.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/w3c-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-web-compat-mcp",
-    "name": "web-compat-mcp",
-    "description": "ブラウザ互換性 MCP server。MDN BCD と W3C WebDX web-features (Baseline) に基づき、機能サポート状況の確認・比較・検索を提供。",
-    "version": "0.3.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/web-compat-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-xcomet-mcp",
-    "name": "xcomet-mcp",
-    "description": "xCOMET による翻訳品質評価 MCP server。参照訳なしで翻訳をスコアリングし、エラースパンを検出。xCOMET を導入したローカル Python 環境が必要 (venv 等を使う場合は XCOMET_PYTHON_PATH で指定、未設定なら自動検出)。",
-    "version": "0.7.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/xcomet-mcp-server"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-deepl-glossary-translation",
-    "name": "deepl-glossary-translation",
-    "description": "pdf-spec-mcp と DeepL MCP Server を連携させ、PDF 仕様書 (ISO 32000-2) などを用語統一された日本語に翻訳する Skill。グロッサリー (用語集) の作成・登録・適用までの一連のワークフローをガイドする。",
-    "version": "0.1.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/deepl-glossary-translation"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-factcheck",
-    "name": "factcheck",
-    "description": "情報の信頼性を科学的・体系的に評価するファクトチェック Skill。20項目×4カテゴリの評価フレームワークで記事・URL・主張・LLM 回答をスコアリングし、独立 sub-agent による自己評価バイアス排除を行う。",
-    "version": "0.1.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/factcheck-skill"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-media-literacy-check",
-    "name": "media-literacy-check",
-    "description": "オンライン情報の信頼性をメディアリテラシーの観点から体系的に評価する Skill。ニュース記事・SNS 投稿・ブログ・動画・口コミを 30項目×6カテゴリで分析する。",
-    "version": "0.1.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/media-literacycheck-skill"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-spec-compliance-skills",
-    "name": "spec-compliance-skills",
-    "description": "W3C/IETF仕様準拠チェック用スキル集。EPUB 3.3品質レビュー、PDF/A検証、RFC準拠チェックなど、仕様の規範的要件（MUST/SHOULD/MAY）に基づいた構造化検証とレポート生成を行います。",
-    "version": "0.1.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/spec-compliance-skills"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-ai-design-advisor",
-    "name": "ai-design-advisor",
-    "description": "生成AIシステムの設計判断を支援する Skill。決まっていないことを名指し、canonical の範囲だけ返す。入力が足りないときに発明しない。",
-    "version": "0.1.3",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/ai-design-advisor"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-epsg-mcp",
-    "name": "epsg-mcp",
-    "description": "測地系・座標参照系 (CRS) の専門知識 MCP server。EPSG コード検索・用途別推奨・座標変換提案・Country Pack (日本/US/UK)・トラブルシュートを提供。",
-    "version": "0.10.1",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/epsg-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-ifc-core-mcp",
-    "name": "ifc-core-mcp",
-    "description": "IFC4.3 (BIM) 仕様参照 MCP server。IFC エンティティ定義・属性・継承階層・PropertySet の検索取得を提供。",
-    "version": "0.3.0",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/ifc-core-mcp"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1233668509-rxjs-mcp",
-    "name": "rxjs-mcp",
-    "description": "RxJS ストリームの実行・可視化・検査を行う MCP server (6 tools)。execute_stream は RxJS しか持たない worker thread でスニペットを評価し、発行値・タイムライン・所要時間を返す (プロジェクトのコードは動かない)。generate_marble は ASCII マーブルダイアグラムを描く。analyze_operators / suggest_pattern は RxJS 7.8.2 に固定した同梱データを引き、rxjs.dev・GitHub ソース・バイリンガルガイドの 3 階層リンクを付ける。lint_rxjs は eslint-plugin-rxjs-x の recommended/strict ルールを正規表現で再実装したもので、ESLint を導入せずスニペット単体を検査できる。detect_memory_leak は takeUntilDestroyed / async pipe / useEffect cleanup 等の自動クリーンアップを認識する。**lint_rxjs と detect_memory_leak は型情報を持たない照合であり、プロジェクトでの ESLint 実行を置き換えるものではない**。npm @shuji-bonji/rxjs-mcp を npx で起動する。",
-    "version": "0.5.3",
-    "author": "shuji-bonji",
-    "repository": "https://github.com/shuji-bonji/claude-plugins",
-    "manifestPath": {
-      "source": "github",
-      "repo": "shuji-bonji/rxjs-mcp-server"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1233668509",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
     "id": "1248496316-llm-orchestrator",
     "name": "llm-orchestrator",
     "description": "Agent orchestration toolkit. 19 skills, 15 commands, 7 native subagents, file-based memory, native Claude Code hooks, and an opt-in review cadence with a lock over the rules that state it.",
@@ -65404,25 +65682,6 @@
     "metadata": {
       "marketplaceId": "1404683119",
       "marketplaceName": "laa-claude",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1243505851-oculpm",
-    "name": "oculpm",
-    "description": "ocul-pm 훅 브리지(세션 신호) + oculpm-mcp(journal/plan 구조화 도구) + 스킬 5종(기록 규격·인셉션·self-audit·run-evals·tdd). .oculpm 추적 프로젝트에서만 동작합니다. macOS · Linux · Windows(베타 — Windows 훅은 Git Bash 필요, Windows 의 MCP 는 앱의 MCP 등록으로).",
-    "version": "3.7.0",
-    "author": "ocul-pm",
-    "repository": "https://github.com/bunhine0452/Ocul-PM",
-    "manifestPath": "./plugin/oculpm",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1243505851",
-      "marketplaceName": "Ocul-PM",
       "skills": [],
       "strict": false,
       "modsCount": 0
@@ -76153,234 +76412,6 @@
     }
   },
   {
-    "id": "1376677547-r-bundle-landis",
-    "name": "r-bundle-landis",
-    "description": "The r-bundle-research set plus r-landis-ii, for a project that writes LANDIS-II inputs and reads its outputs. Add r-bundle-targets alongside when the runs are driven from a {targets} pipeline.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-bundle-landis",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-bundle-research",
-    "name": "r-bundle-research",
-    "description": "One entry that enables the plugins every R research project uses on every session: r-project-core, r-geospatial, r-reporting, r-code-review and r-package-dev. Enabling it enables those; r-package-dev in turn pulls the r-lib skills it defers to. It carries no framework: add r-bundle-targets for a {targets} pipeline, and r-bundle-spades or r-bundle-landis for a simulation project.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-bundle-research",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-bundle-spades",
-    "name": "r-bundle-spades",
-    "description": "The r-bundle-research set plus r-spades, for a project that develops or runs SpaDES modules. Add r-bundle-targets alongside when the modules run from a {targets} pipeline.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-bundle-spades",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-bundle-targets",
-    "name": "r-bundle-targets",
-    "description": "The r-bundle-research set plus r-targets, for a project built as a {targets} pipeline.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-bundle-targets",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-code-review",
-    "name": "r-code-review",
-    "description": "Read-only review subagents for the failure classes that research R code produces instead of errors: spatial correctness, dependency declaration, and failed or suspiciously clean runs. Plus the measure-against-an-independent-reference method these projects use to catch bugs that no test would have caught.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-code-review",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-geospatial",
-    "name": "r-geospatial",
-    "description": "Spatial data work in R that survives serialisation, parallel workers and large rasters: the terra external-pointer trap and how to avoid needing wrap(), one declared project CRS, the sf geometry-repair sequence distilled from repeated corrective commits, out-of-core raster and vector strategies, and the silent-wrong-answer failures that spatial code produces instead of errors.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-geospatial",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-landis-ii",
-    "name": "r-landis-ii",
-    "description": "Driving LANDIS-II from R: input validation before a run (because LANDIS fails on bad input in the worst possible way -- non-zero exit, empty stderr, the real message buried in a log inside a scratch dir), the raster and text-format conventions it silently depends on, container execution on shared storage, and the output-reading rules including the geotransform y-flip that invalidated a full calibration with no error at all.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-landis-ii",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-package-dev",
-    "name": "r-package-dev",
-    "description": "Deltas on top of the r-lib package-development skills, not a replacement for them: the development-to-main change workflow for co-developed packages (branch and submodule checks, local tests, CI, merge, install into the project from remote main), per-package overrides the r-lib skills cannot know, the dependency-declaration failures that dominate this corpus, and hooks that catch roxygen/NAMESPACE drift and the recurring .claude R CMD check NOTE.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-package-dev",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-project-core",
-    "name": "r-project-core",
-    "description": "Baseline conventions and deterministic guardrails for R-based research projects: fixing defects at their root cause, air formatting, ASCII-only code and reports, citation integrity, the .Rprofile/_local.R/_hosts.R config split, hermetic tests and CI for projects that are not packages, long runs on shared machines, commit discipline, and PreToolUse guards against destructive commands, hand-editing generated files, and mutating the library while a long run is live.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-project-core",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-reporting",
-    "name": "r-reporting",
-    "description": "Reports and provenance for research deliverables: writing for a stated audience (the user is always asked who the reader is; plain-language summary first, technical detail later or in appendices, no jargon or machine-written phrasing), Quarto project-mode path behaviour and the stale-PDF trap, rendering from a pipeline, deriving report numbers from the pipeline so prose cannot drift, draft marking for AI-assisted content, and input manifests and reproducibility receipts. Chart design is left to the dataviz and r-lib:alt-text skills.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-reporting",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-spades",
-    "name": "r-spades",
-    "description": "Developing and wiring SpaDES modules: the defineModule metadata contract and why it must be read rather than inferred, the .inputObjects timing trap that silently mutates data, reqdPkgs remote specs and nested-module package loading, module renaming, and eight years of accumulated Cache() lessons ending in targets-owns-the-cache.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-spades",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1376677547-r-targets",
-    "name": "r-targets",
-    "description": "Building, testing, debugging and running {targets} pipelines: a tested static validator on top of the general test suite and CI, multi-project stores and the definition-time vs run-time contract, spatial objects and geotargets in the store, launching and stopping runs on shared machines with crew controllers sized to fit, a pipeline-invalidation review agent, and the silent-staleness traps that make pipelines report clean runs while producing wrong answers.",
-    "version": "0.1.0",
-    "author": "FOR-CAST",
-    "repository": "https://github.com/FOR-CAST/ai_workflows",
-    "manifestPath": "./plugins/r-targets",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1376677547",
-      "marketplaceName": "ai_workflows",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
     "id": "1210840573-clooks",
     "name": "clooks",
     "description": "Hook runtime for AI coding agents. TypeScript hooks with fail-closed safety, parallel execution, first-class testing, and cross-agent portability.",
@@ -83788,6 +83819,108 @@
       "marketplaceId": "1252430502",
       "marketplaceName": "claude-legal",
       "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193052113-config",
+    "name": "config",
+    "description": "name: config",
+    "version": "1.0.0",
+    "author": "softwaresoftware-dev",
+    "repository": "https://github.com/softwaresoftware-dev/claude-browser-bridge",
+    "manifestPath": "skills/config",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193052113",
+      "marketplaceName": "claude-browser-bridge",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1193052113-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "softwaresoftware-dev",
+    "repository": "https://github.com/softwaresoftware-dev/claude-browser-bridge",
+    "manifestPath": "skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1193052113",
+      "marketplaceName": "claude-browser-bridge",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1329913439-venture",
+    "name": "venture",
+    "description": "Business copilot suite: market research, competitor analysis, customer discovery, PMF assessment, GTM strategy, unit economics, and board-style review — chained through a shared per-venture workspace.",
+    "version": "",
+    "author": "heyparsadev",
+    "repository": "https://github.com/heyparsadev/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/heyparsadev/claude-venture-plugin.git",
+      "path": "venture"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1329913439",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1329913439-founder-playbook",
+    "name": "founder-playbook",
+    "description": "Idea-stage validation: turns a raw startup idea into a testable hypothesis, red-teams it, researches market and competition, designs and synthesizes customer discovery, and gates the build decision on graded evidence. Coach and auto modes.",
+    "version": "",
+    "author": "heyparsadev",
+    "repository": "https://github.com/heyparsadev/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/heyparsadev/claude-idea-validator.git",
+      "path": "founder-playbook"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1329913439",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1329913439-liquid-glass",
+    "name": "liquid-glass",
+    "description": "iOS 26 Liquid Glass design system for SwiftUI: API reference, HIG principles, design tokens, motion patterns, accessibility and performance rules, anti-patterns, a pattern library, and nine full-screen examples that compile in Xcode 26.",
+    "version": "",
+    "author": "heyparsadev",
+    "repository": "https://github.com/heyparsadev/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/heyparsadev/liquid-glass-skill.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1329913439",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
     }
   },
   {
@@ -102260,6 +102393,42 @@
     }
   },
   {
+    "id": "1347341275-forta-risk",
+    "name": "forta-risk",
+    "description": "Skills for the Forta Risk Graph MCP — on-chain dependency concentration, control closure and blast radius for tokenized assets.",
+    "version": "",
+    "author": "forta-network",
+    "repository": "https://github.com/forta-network/forta-risk-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1347341275",
+      "marketplaceName": "forta-risk-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1347341275-forta-risk-analysis",
+    "name": "forta-risk-analysis",
+    "description": "name: forta-risk-analysis",
+    "version": "1.0.0",
+    "author": "forta-network",
+    "repository": "https://github.com/forta-network/forta-risk-skills",
+    "manifestPath": "skills/forta-risk-analysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1347341275",
+      "marketplaceName": "forta-risk-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1349000066-humanizer",
     "name": "humanizer",
     "description": "Rewrites AI-sounding prose without changing claims, code, identifiers, or normative spec language",
@@ -108026,74 +108195,6 @@
     }
   },
   {
-    "id": "1329913439-venture",
-    "name": "venture",
-    "description": "Business copilot suite: market research, competitor analysis, customer discovery, PMF assessment, GTM strategy, unit economics, and board-style review — chained through a shared per-venture workspace.",
-    "version": "",
-    "author": "heyparsadev",
-    "repository": "https://github.com/heyparsadev/claude-plugins",
-    "manifestPath": {
-      "source": "git-subdir",
-      "url": "https://github.com/heyparsadev/claude-venture-plugin.git",
-      "path": "venture"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1329913439",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1329913439-founder-playbook",
-    "name": "founder-playbook",
-    "description": "Idea-stage validation: turns a raw startup idea into a testable hypothesis, red-teams it, researches market and competition, designs and synthesizes customer discovery, and gates the build decision on graded evidence. Coach and auto modes.",
-    "version": "",
-    "author": "heyparsadev",
-    "repository": "https://github.com/heyparsadev/claude-plugins",
-    "manifestPath": {
-      "source": "git-subdir",
-      "url": "https://github.com/heyparsadev/claude-idea-validator.git",
-      "path": "founder-playbook"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1329913439",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1329913439-liquid-glass",
-    "name": "liquid-glass",
-    "description": "iOS 26 Liquid Glass design system for SwiftUI: API reference, HIG principles, design tokens, motion patterns, accessibility and performance rules, anti-patterns, a pattern library, and nine full-screen examples that compile in Xcode 26.",
-    "version": "",
-    "author": "heyparsadev",
-    "repository": "https://github.com/heyparsadev/claude-plugins",
-    "manifestPath": {
-      "source": "url",
-      "url": "https://github.com/heyparsadev/liquid-glass-skill.git"
-    },
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1329913439",
-      "marketplaceName": "claude-plugins",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
     "id": "1331729385-storm",
     "name": "storm",
     "description": "Multi-perspective deep research that writes Wikipedia-style, fully-cited articles. Unofficial native implementation of the Stanford STORM methodology; not affiliated with Stanford OVAL.",
@@ -110909,142 +111010,6 @@
     }
   },
   {
-    "id": "1160196984-anti-ai",
-    "name": "anti-ai",
-    "description": "name: anti-ai",
-    "version": "1.0.0",
-    "author": "travsteward",
-    "repository": "https://github.com/travsteward/openwriter",
-    "manifestPath": "skills/anti-ai",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1160196984",
-      "marketplaceName": "openwriter",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1160196984-beat-writer",
-    "name": "beat-writer",
-    "description": "name: beat-writer",
-    "version": "1.0.0",
-    "author": "travsteward",
-    "repository": "https://github.com/travsteward/openwriter",
-    "manifestPath": "skills/beat-writer",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1160196984",
-      "marketplaceName": "openwriter",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1160196984-blog-writer",
-    "name": "blog-writer",
-    "description": "name: blog-writer",
-    "version": "1.0.0",
-    "author": "travsteward",
-    "repository": "https://github.com/travsteward/openwriter",
-    "manifestPath": "skills/blog-writer",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1160196984",
-      "marketplaceName": "openwriter",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1160196984-book-writer",
-    "name": "book-writer",
-    "description": "name: book-writer",
-    "version": "1.0.0",
-    "author": "travsteward",
-    "repository": "https://github.com/travsteward/openwriter",
-    "manifestPath": "skills/book-writer",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1160196984",
-      "marketplaceName": "openwriter",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1160196984-newsletter-writer",
-    "name": "newsletter-writer",
-    "description": "name: newsletter-writer",
-    "version": "1.0.0",
-    "author": "travsteward",
-    "repository": "https://github.com/travsteward/openwriter",
-    "manifestPath": "skills/newsletter-writer",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1160196984",
-      "marketplaceName": "openwriter",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1160196984-openwriter",
-    "name": "openwriter",
-    "description": "name: openwriter",
-    "version": "1.0.0",
-    "author": "travsteward",
-    "repository": "https://github.com/travsteward/openwriter",
-    "manifestPath": "skills/openwriter",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1160196984",
-      "marketplaceName": "openwriter",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1160196984-polish",
-    "name": "polish",
-    "description": "name: polish",
-    "version": "1.0.0",
-    "author": "travsteward",
-    "repository": "https://github.com/travsteward/openwriter",
-    "manifestPath": "skills/polish",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1160196984",
-      "marketplaceName": "openwriter",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1160196984-x-writer",
-    "name": "x-writer",
-    "description": "name: x-writer",
-    "version": "1.0.0",
-    "author": "travsteward",
-    "repository": "https://github.com/travsteward/openwriter",
-    "manifestPath": "skills/x-writer",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1160196984",
-      "marketplaceName": "openwriter",
-      "hasSkillMd": true
-    }
-  },
-  {
     "id": "1217635166-context-packet",
     "name": "context-packet",
     "description": "name: context-packet",
@@ -111284,23 +111249,6 @@
     "metadata": {
       "marketplaceId": "1302754015",
       "marketplaceName": "claude-code-plugin",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1367391190-academic-figures",
-    "name": "academic-figures",
-    "description": "name: academic-figures",
-    "version": "1.0.0",
-    "author": "docsor1212",
-    "repository": "https://github.com/docsor1212/academic-figures",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1367391190",
-      "marketplaceName": "academic-figures",
       "hasSkillMd": true
     }
   },
@@ -113831,23 +113779,6 @@
     "metadata": {
       "marketplaceId": "1211796176",
       "marketplaceName": "Ivy-Tendril",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1216108385-pubmed-verifier",
-    "name": "pubmed-verifier",
-    "description": "name: pubmed-verifier",
-    "version": "1.0.0",
-    "author": "docsor1212",
-    "repository": "https://github.com/docsor1212/pubmed-verifier",
-    "manifestPath": ".",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1216108385",
-      "marketplaceName": "pubmed-verifier",
       "hasSkillMd": true
     }
   },
@@ -118755,6 +118686,25 @@
     }
   },
   {
+    "id": "1403521706-status-band",
+    "name": "status-band",
+    "description": "A designed status band under the prompt: model and effort, directory, git, a context gauge, the quota you have left, and cost.",
+    "version": "",
+    "author": "dukechain2333",
+    "repository": "https://github.com/dukechain2333/cc-status-band",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1403521706",
+      "marketplaceName": "cc-status-band",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1403768633-mempalace-sharedbrain",
     "name": "mempalace-sharedbrain",
     "description": "Claude Code client for a MemPalace shared-brain hub: canonical rules block in CLAUDE.md, identity, inbox cursor, session-start hub check, wake on coordination events, machine capabilities and task routing, checkpoint and compaction saves.",
@@ -118901,6 +118851,25 @@
     "metadata": {
       "marketplaceId": "1407425993",
       "marketplaceName": "ccmod-chronicle",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1203308436-cache-ttl-statusline",
+    "name": "cache-ttl-statusline",
+    "description": "Native Claude Code status-line mod showing cache TTL, model, cost, context usage, API rate limits, git, and Headroom stats with an interactive TUI configurator",
+    "version": "1.5.4",
+    "author": "Jerrett Davis",
+    "repository": "https://github.com/JerrettDavis/ClaudeStatusLineWidgets",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1203308436",
+      "marketplaceName": "ClaudeStatusLineWidgets",
       "skills": [],
       "strict": false,
       "modsCount": 0

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1311250602-leaf",
+    "name": "leaf",
+    "description": "Generative UI: the agent builds the page your task needs, writes new widgets when the project calls for them, and answers your comments and edits over a messaging and collaboration bus.",
+    "version": "",
+    "author": "max-sixty",
+    "repository": "https://github.com/max-sixty/leaf",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311250602",
+      "marketplaceName": "leaf",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1311250602-developing-leaf",
+    "name": "developing-leaf",
+    "description": "name: developing-leaf",
+    "version": "1.0.0",
+    "author": "max-sixty",
+    "repository": "https://github.com/max-sixty/leaf",
+    "manifestPath": ".claude/skills/developing-leaf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311250602",
+      "marketplaceName": "leaf",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1311250602-running-tend",
+    "name": "running-tend",
+    "description": "name: running-tend",
+    "version": "1.0.0",
+    "author": "max-sixty",
+    "repository": "https://github.com/max-sixty/leaf",
+    "manifestPath": ".claude/skills/running-tend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311250602",
+      "marketplaceName": "leaf",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1311250602-ui-sweep",
+    "name": "ui-sweep",
+    "description": "name: ui-sweep",
+    "version": "1.0.0",
+    "author": "max-sixty",
+    "repository": "https://github.com/max-sixty/leaf",
+    "manifestPath": ".claude/skills/ui-sweep",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1311250602",
+      "marketplaceName": "leaf",
+      "hasSkillMd": true
+    }
+  }
+]
