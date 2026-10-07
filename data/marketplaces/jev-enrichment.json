@@ -1,7 +1,12 @@
 {
   "model": "jev-1.13.0",
-  "generatedAt": "2026-10-06T23:52:20.613Z",
+  "generatedAt": "2026-10-07T04:55:38.507Z",
   "entries": {
+    "287005473": {
+      "category": "none",
+      "categoryConfidence": 0.56,
+      "isMarketplace": 0.03
+    },
     "305321080": {
       "category": "none",
       "categoryConfidence": 0.7,
@@ -56,6 +61,11 @@
       "category": "none",
       "categoryConfidence": 0.89,
       "isMarketplace": 0.07
+    },
+    "730332115": {
+      "category": "agents",
+      "categoryConfidence": 0.39,
+      "isMarketplace": 0.13
     },
     "780609248": {
       "category": "none",
@@ -206,6 +216,11 @@
       "category": "devtools",
       "categoryConfidence": 0.75,
       "isMarketplace": 0.04
+    },
+    "1126931400": {
+      "category": "none",
+      "categoryConfidence": 0.83,
+      "isMarketplace": 0.1
     },
     "1127505234": {
       "category": "automation",
@@ -1362,6 +1377,11 @@
       "categoryConfidence": 0.32,
       "isMarketplace": 0.13
     },
+    "1311250602": {
+      "category": "none",
+      "categoryConfidence": 0.19,
+      "isMarketplace": 0.16
+    },
     "1312428500": {
       "category": "none",
       "categoryConfidence": 0.98,
@@ -1771,6 +1791,11 @@
       "category": "none",
       "categoryConfidence": 0.79,
       "isMarketplace": 0.09
+    },
+    "1404985102": {
+      "category": "none",
+      "categoryConfidence": 0.34,
+      "isMarketplace": 0.61
     },
     "1405016263": {
       "category": "devtools",
