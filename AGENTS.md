@@ -102,6 +102,9 @@ npm run validate:plugins
 # Generate data files for website
 npm run generate:data
 
+# LLM category enrichment (Jev; runs in scan.yml, skips without provider keys)
+npm run enrich:jev
+
 # Full scanning pipeline (production)
 npm run scan:full
 ```
@@ -133,6 +136,7 @@ The project uses several automated workflows:
 │   ├── scan-marketplaces.ts   # Multi-strategy GitHub discovery -> data/marketplaces/
 │   ├── validate-plugins.ts    # Manifest validation -> data/plugins/
 │   ├── generate-data.ts       # Merges scan output -> data/generated/ + public/data/
+│   ├── jev-categorize.ts      # Jev LLM category enrichment -> data/marketplaces/jev-enrichment.json
 │   ├── validate-generated-data.ts  # Shape + cross-file consistency + freshness gates
 │   ├── plugin-discovery.ts
 │   └── backup-data.ts
@@ -153,6 +157,7 @@ The project uses several automated workflows:
 │   └── data/           # Static fallback (mock) data
 ├── data/                # Pipeline state (JSON, committed by the daily bot PR)
 │   ├── marketplaces/   # Fresh scan output (raw.json, processed.json, summary.json)
+│   │                   # + jev-enrichment.json (persistent LLM category sidecar)
 │   ├── plugins/        # Validation output (valid-plugins.json, ...)
 │   └── generated/      # Site-facing aggregates (also copied to public/data/)
 ├── public/data/         # Served to the browser at ${basePath}/data/*.json
@@ -163,8 +168,11 @@ The project uses several automated workflows:
 ### Data Flow
 
 `scan.yml` (daily) → `scan-marketplaces.ts` discovers repos into `data/marketplaces/` →
-`validate-plugins.ts` validates manifests into `data/plugins/` → `generate-data.ts`
-merges both into `data/generated/` + `public/data/` → `validate-generated-data.ts`
+`validate-plugins.ts` validates manifests into `data/plugins/` → `jev-categorize.ts`
+LLM-classifies marketplaces that topic aliases can't (additive sidecar
+`data/marketplaces/jev-enrichment.json`, confidence-gated; skipped without provider
+keys) → `generate-data.ts` merges both into `data/generated/` + `public/data/` →
+`validate-generated-data.ts`
 gates the PR on consistency/freshness → auto-merge merges with `DATA_UPDATES_PAT`
 → the push triggers `deploy.yml` → static export of `public/` + pages goes live.
 The site fetches `${NEXT_PUBLIC_BASE_PATH}/data/*.json` client-side; if that fetch
@@ -213,6 +221,11 @@ GITHUB_API_URL=https://api.github.com
 
 # Optional: Node environment
 NODE_ENV=production
+
+# Optional: Jev category enrichment (npm run enrich:jev) — AI Gateway primary,
+# TypeSafe direct fallback; the step skips gracefully when both are unset
+AI_GATEWAY_API_KEY=
+TYPESAFE_API_KEY=
 ```
 
 ### Development Setup

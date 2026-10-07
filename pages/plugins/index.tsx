@@ -10,6 +10,7 @@ import SortSelect from '@/components/ui/SortSelect';
 import { Grid, List, Package, ArrowUp, ChevronRight, Zap } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { pickQueryParams } from '@/utils/url-query';
 
 /** How many more plugins the Load-more button reveals per click. */
 const LOAD_CHUNK = 24;
@@ -33,10 +34,7 @@ const PluginsPage: React.FC = () => {
   // Selections persist in the URL (shareable, survives back/forward).
   const updateQuery = React.useCallback(
     (patch: Record<string, string>) => {
-      const query: Record<string, string> = {};
-      for (const [key, value] of Object.entries({ ...router.query, ...patch })) {
-        if (typeof value === 'string' && value) query[key] = value;
-      }
+      const query = pickQueryParams(router.query, patch, ['q', 'sort']);
       router.replace({ pathname: '/plugins', query }, undefined, { shallow: true });
     },
     [router]

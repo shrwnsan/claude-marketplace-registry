@@ -38,8 +38,17 @@ export function usePluginShard(marketplaceId: string | undefined): UsePluginShar
             marketplaceId!
           )}.json`
         );
+        // A 404 is the expected shape for a marketplace with zero discovered
+        // plugins — the pipeline only writes shards for marketplaces that
+        // have at least one plugin. Report settled-empty, not an error.
+        if (response.status === 404) {
+          setPlugins([]);
+          return;
+        }
         if (!response.ok) {
-          throw new Error(`plugins/${marketplaceId}.json ${response.status}`);
+          // marketplaceId originates from a URL route param — keep it out of
+          // the message so it can't flow into console output (log injection).
+          throw new Error(`plugins shard fetch failed: ${response.status}`);
         }
         const json = await response.json();
         if (cancelled) return;
