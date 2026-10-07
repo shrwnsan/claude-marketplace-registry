@@ -5,7 +5,8 @@ import SearchBar from '@/components/Search/SearchBar';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
 import SortSelect from '@/components/ui/SortSelect';
-import { Star, ChevronRight, ShieldCheck, Filter, Grid, List, X } from 'lucide-react';
+import ValidatedManifestBadge from '@/components/ui/ValidatedManifestBadge';
+import { Check, Star, ChevronRight, Filter, Grid, List, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import {
@@ -27,6 +28,7 @@ const MarketplacesPage: React.FC = () => {
     }
   }, [router.query.q]);
   const [selectedTopic, setSelectedTopic] = useState('All');
+  const [validatedOnly, setValidatedOnly] = useState(false);
   const [sortBy, setSortBy] = useState<'stars' | 'name' | 'updated'>('stars');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [visibleCount, setVisibleCount] = useState(12);
@@ -44,6 +46,11 @@ const MarketplacesPage: React.FC = () => {
     const s = router.query.sort;
     if (s === 'stars' || s === 'name' || s === 'updated') setSortBy(s);
   }, [router.query.sort]);
+
+  // Deep-link support: /marketplaces?validated=1 (back/forward safe)
+  useEffect(() => {
+    setValidatedOnly(router.query.validated === '1');
+  }, [router.query.validated]);
 
   const { data: marketplaceData, loading, error } = useRealMarketplaceData();
   const marketplaces = marketplaceData?.marketplaces || [];
@@ -79,7 +86,11 @@ const MarketplacesPage: React.FC = () => {
         marketplace.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         marketplace.description.toLowerCase().includes(searchQuery.toLowerCase());
 
-      return matchesSearch && marketplaceMatchesCategory(marketplace, selectedTopic);
+      const matchesValidated = !validatedOnly || !!marketplace.hasManifest;
+
+      return (
+        matchesSearch && matchesValidated && marketplaceMatchesCategory(marketplace, selectedTopic)
+      );
     });
 
     // Sort marketplaces
@@ -100,7 +111,7 @@ const MarketplacesPage: React.FC = () => {
     });
 
     return filtered;
-  }, [marketplaces, searchQuery, selectedTopic, sortBy]);
+  }, [marketplaces, searchQuery, selectedTopic, validatedOnly, sortBy]);
 
   // Pagination
   const visibleMarketplaces = filteredAndSortedMarketplaces.slice(0, visibleCount);
@@ -115,6 +126,12 @@ const MarketplacesPage: React.FC = () => {
     setSelectedTopic(topic);
     setVisibleCount(12);
     updateQuery({ topic: topic === 'All' ? '' : topic });
+  };
+
+  const handleValidatedChange = (checked: boolean) => {
+    setValidatedOnly(checked);
+    setVisibleCount(12);
+    updateQuery({ validated: checked ? '1' : '' });
   };
 
   const handleSortChange = (sort: 'stars' | 'name' | 'updated') => {
@@ -256,10 +273,29 @@ const MarketplacesPage: React.FC = () => {
                         )?.label.toLowerCase() ?? ''
                       }`
                     : ''}
+                {validatedOnly && ' with validated marketplace.json'}
               </p>
 
-              {/* Sort and View Controls — one unbreakable line, pinned right */}
-              <div className='flex items-center gap-3 ml-auto flex-nowrap flex-shrink-0 h-9'>
+              {/* Filter, Sort and View Controls — pinned right; wraps as a
+                  unit below the count line when they can't fit one line (mobile) */}
+              <div className='flex flex-wrap items-center gap-x-3 gap-y-2 ml-auto lg:flex-nowrap lg:flex-shrink-0 lg:h-9'>
+                <label className='group flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap cursor-pointer select-none'>
+                  <input
+                    id='marketplace-validated-filter'
+                    type='checkbox'
+                    checked={validatedOnly}
+                    onChange={(e) => handleValidatedChange(e.target.checked)}
+                    className='peer sr-only'
+                  />
+                  <span
+                    aria-hidden='true'
+                    className='flex items-center justify-center w-[18px] h-[18px] rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-transparent transition-colors group-hover:border-gray-400 dark:group-hover:border-gray-500 peer-checked:bg-primary-600 peer-checked:border-primary-600 peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-primary-500 peer-focus-visible:ring-offset-2 dark:peer-focus-visible:ring-offset-gray-900'
+                  >
+                    <Check className='w-3 h-3' strokeWidth={3} />
+                  </span>
+                  Validated marketplace.json
+                </label>
+
                 <SortSelect
                   id='marketplace-sort'
                   label='Sort by:'
@@ -331,12 +367,9 @@ const MarketplacesPage: React.FC = () => {
                               {marketplace.description}
                             </p>
                           </div>
-                          {marketplace.verified && (
+                          {marketplace.hasManifest && (
                             <div className='flex-shrink-0 ml-2'>
-                              <ShieldCheck
-                                className='w-5 h-5 text-success-500'
-                                aria-label='Validated marketplace manifest'
-                              />
+                              <ValidatedManifestBadge />
                             </div>
                           )}
                         </div>
@@ -383,12 +416,7 @@ const MarketplacesPage: React.FC = () => {
                                 {marketplace.name}
                               </Link>
                             </h3>
-                            {marketplace.verified && (
-                              <ShieldCheck
-                                className='w-5 h-5 text-success-500'
-                                aria-label='Validated marketplace manifest'
-                              />
-                            )}
+                            {marketplace.hasManifest && <ValidatedManifestBadge />}
                             <span className='badge badge-secondary text-xs'>
                               {(Array.isArray(marketplace.topics) && marketplace.topics[0]) || ''}
                             </span>
@@ -428,15 +456,17 @@ const MarketplacesPage: React.FC = () => {
                   No marketplaces found
                 </h3>
                 <p className='text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto'>
-                  {searchQuery || selectedTopic !== 'All'
+                  {searchQuery || selectedTopic !== 'All' || validatedOnly
                     ? `No marketplaces found matching your criteria. Try different filters or search terms.`
                     : 'No marketplaces available at the moment.'}
                 </p>
-                {(searchQuery || selectedTopic !== 'All') && (
+                {(searchQuery || selectedTopic !== 'All' || validatedOnly) && (
                   <button
                     onClick={() => {
                       setSearchQuery('');
                       setSelectedTopic('All');
+                      setValidatedOnly(false);
+                      updateQuery({ q: '', topic: '', validated: '' });
                     }}
                     className='btn btn-primary'
                     aria-label='Clear all filters'

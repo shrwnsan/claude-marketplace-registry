@@ -9,6 +9,7 @@ import { usePluginShard } from '@/hooks/usePluginShard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
 import { Star, Github, Copy, Check, Package, ArrowLeft, Zap } from 'lucide-react';
+import { pathBasename } from '@/utils/format';
 import fs from 'fs';
 import path from 'path';
 
@@ -146,14 +147,14 @@ const PluginDetailPage: React.FC = () => {
             </Link>
 
             {/* Header */}
-            <div className='card p-6 sm:p-8 mb-6'>
+            <div className='card p-6 sm:p-8 mb-8'>
               <div className='flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4'>
                 <div className='flex-1 min-w-0'>
                   <h1 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
                     {plugin.name}
                   </h1>
                   <p className='text-gray-600 dark:text-gray-300 mb-4'>{plugin.description}</p>
-                  <div className='flex flex-wrap items-center gap-3 text-sm text-gray-500 dark:text-gray-400'>
+                  <div className='flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-gray-500 dark:text-gray-400'>
                     <span>
                       by{' '}
                       <span className='font-medium text-gray-700 dark:text-gray-200'>
@@ -164,7 +165,7 @@ const PluginDetailPage: React.FC = () => {
                     {plugin.marketplaceId && (
                       <Link
                         href={`/marketplaces/${plugin.marketplaceId}`}
-                        className='badge badge-secondary text-xs hover:border-primary-300'
+                        className='badge badge-secondary text-xs hover:border-primary-300 dark:hover:border-primary-600 transition-colors'
                       >
                         {plugin.marketplaceName}
                       </Link>
@@ -179,8 +180,8 @@ const PluginDetailPage: React.FC = () => {
                       </span>
                     )}
                     {marketplace && (
-                      <span className='flex items-center gap-1'>
-                        <Star className='w-4 h-4 text-yellow-500' />
+                      <span className='flex items-center gap-1' title='Stars — parent marketplace'>
+                        <Star className='w-4 h-4 text-yellow-500' aria-hidden='true' />
                         {(marketplace.stars || 0).toLocaleString()}
                       </span>
                     )}
@@ -219,13 +220,15 @@ const PluginDetailPage: React.FC = () => {
               {/* Skills */}
               {(plugin.skills?.length ?? 0) > 0 && (
                 <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700'>
-                  <h2 className='text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2'>
-                    Skills ({plugin.skills!.length})
-                  </h2>
-                  <div className='flex flex-wrap gap-1.5'>
+                  <p className='eyebrow'>ls skills/ ({plugin.skills!.length})</p>
+                  <div className='mt-3 flex flex-wrap gap-1.5'>
                     {plugin.skills!.map((skill) => (
-                      <span key={skill} className='badge badge-secondary text-xs'>
-                        {skill}
+                      <span
+                        key={skill}
+                        className='badge badge-secondary font-mono text-xs'
+                        title={skill}
+                      >
+                        {pathBasename(skill)}
                       </span>
                     ))}
                   </div>
@@ -236,7 +239,8 @@ const PluginDetailPage: React.FC = () => {
             {/* Related plugins */}
             {relatedPlugins.length > 0 && (
               <section className='mt-10'>
-                <h2 className='text-xl font-bold text-gray-900 dark:text-gray-100 mb-4'>
+                <h2 className='text-xl font-bold text-gray-900 dark:text-gray-100 mb-4 flex items-center'>
+                  <Package className='w-5 h-5 mr-2 text-primary-500' />
                   More from {plugin.marketplaceName}
                 </h2>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
