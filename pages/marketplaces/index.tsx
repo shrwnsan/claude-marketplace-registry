@@ -61,12 +61,6 @@ const MarketplacesPage: React.FC = () => {
   // like "claude-code" are too generic to be useful filters).
   const categoryCounts = useMemo(() => countByCategory(marketplaces), [marketplaces]);
 
-  // Shield coverage: entries whose scan produced a validated marketplace.json
-  const withManifestCount = useMemo(
-    () => marketplaces.filter((m) => m.hasManifest).length,
-    [marketplaces]
-  );
-
   // A raw GitHub topic arriving via ?topic= (chart deep links) — not one of
   // the curated categories but still a valid filter.
   const activeRawTopic =
@@ -302,9 +296,6 @@ const MarketplacesPage: React.FC = () => {
                     <Check className='w-3 h-3' strokeWidth={3} />
                   </span>
                   Validated marketplace.json
-                  <span className='text-xs text-gray-400 dark:text-gray-500 tabular-nums'>
-                    {withManifestCount.toLocaleString()}
-                  </span>
                 </label>
 
                 <SortSelect
