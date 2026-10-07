@@ -109,9 +109,9 @@ curl https://shrwnsan.github.io/claude-marketplace-registry/data/status.json
 **Steps**: Linting → Testing → Building → Deployment
 
 #### 2. Data Processing (`scan.yml`)
-**Triggers**: Every 6 hours (cron: `0 */6 * * *`)
+**Triggers**: Daily at 00:00 UTC (cron: `0 0 * * *`)
 **Duration**: 5-10 minutes
-**Steps**: Scan marketplaces → Validate plugins → Generate data
+**Steps**: Scan marketplaces → Validate plugins → Enrich categories with Jev (skipped when `TYPESAFE_API_KEY`/`AI_GATEWAY_API_KEY` are unset) → Generate data → Validate generated data → Open data-update PR
 
 #### 3. Security Scanning (`security.yml`)
 **Triggers**: Daily at 02:00 UTC

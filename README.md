@@ -26,7 +26,7 @@ An automated, open-source aggregator that discovers and curates Claude Code mark
 
 ## How It Works
 
-Every day at midnight UTC, GitHub Actions scans the GitHub API for Claude Code marketplace repositories, validates their `.claude-plugin/marketplace.json` manifests, generates data files, and publishes the results — fully automated, no servers required.
+Every day at midnight UTC, GitHub Actions scans the GitHub API for Claude Code marketplace repositories, validates their `.claude-plugin/marketplace.json` manifests, enriches category labels with the Jev LLM classifier (skipped automatically when no API key is configured), generates data files, and publishes the results — fully automated, no servers required.
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
@@ -46,7 +46,7 @@ Data updates happen automatically — the pipeline creates PRs, verifies they on
 
 - 🔍 **Automated discovery** — multi-strategy GitHub search finds Claude Code marketplaces daily; a persistent registry keeps the catalog monotonic and self-healing
 - ⌨️ **Typeahead search** — WAI-ARIA combobox with grouped marketplace/plugin results, keyboard navigation, and `Cmd/Ctrl+K` from anywhere
-- 🗂️ **Curated categories** — functional filters (MCP servers, skill collections, AI agents, …) derived from real topic data, plus raw topic deep links
+- 🗂️ **Curated categories** — functional filters (MCP servers, skill collections, AI agents, …) derived from real topic data with a Jev LLM fallback for uncategorized marketplaces, plus raw topic deep links
 - 📊 **Honest metrics** — every number traces back to the daily scan; growth trends accumulate one snapshot per day, and no synthetic downloads or invented scores exist anywhere
 - 🌗 **Dark-first design** — terminal-inspired identity with a warm charcoal palette, ember accent, and full light mode
 - 🔗 **Shareable views** — search, category, and sort selections persist in the URL
@@ -94,6 +94,7 @@ See the **[Setup Guide](./SETUP.md)** for detailed configuration including envir
 | `npm run scan:marketplaces` | Scan GitHub for marketplaces |
 | `npm run validate:plugins` | Validate discovered plugins |
 | `npm run generate:data` | Generate website data files |
+| `npm run enrich:jev` | LLM category enrichment via Jev (optional; skipped without API keys) |
 
 ## Architecture
 

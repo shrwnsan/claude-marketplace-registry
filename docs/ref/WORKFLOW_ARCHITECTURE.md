@@ -235,6 +235,7 @@ sequenceDiagram
 **Key Features**:
 - GitHub API integration for marketplace discovery
 - Plugin validation and metadata extraction
+- Jev LLM category enrichment (additive sidecar; skipped without provider keys)
 - Automatic data file generation
 - Backup with integrity verification
 - Incremental updates with smart caching
@@ -673,6 +674,7 @@ graph TB
 
 ```mermaid
 graph TB
+    %% Jev category enrichment (npm run enrich:jev) runs as a step inside generate-data
     subgraph "scan.yml Jobs"
         SCAN_MKT[scan-marketplaces]
         VAL_PLUGINS[validate-plugins]
@@ -750,11 +752,15 @@ graph TB
         GITLEAKS[GITLEAKS_LICENSE<br/>Advanced secrets scanning]
         WEBHOOK[WEBHOOK_URL<br/>Notifications]
         SLACK[SLACK_WEBHOOK<br/>Slack notifications]
+        AI_GATEWAY[AI_GATEWAY_API_KEY<br/>Jev enrichment primary]
+        TYPESAFE[TYPESAFE_API_KEY<br/>Jev enrichment fallback]
     end
 
     subgraph "Workflows"
         ALL[All Workflows] --> GITHUB_TOKEN
         SCAN_WF[scan.yml] --> DATA_PAT
+        SCAN_WF --> AI_GATEWAY
+        SCAN_WF --> TYPESAFE
         CI[ci.yml] --> CODECOV
         CLAUDE[claude-code.yml] --> ANTHROPIC
         OPENCODE[opencode.yml] --> OPENCODE
