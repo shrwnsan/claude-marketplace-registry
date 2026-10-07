@@ -19,8 +19,40 @@ import {
   Grid,
   List,
   Zap,
+  GitFork,
+  Clock,
 } from 'lucide-react';
 import { formatRelativeAge } from '@/utils/format';
+
+// GitHub Linguist colors for the languages that actually occur in the
+// catalog; anything unmapped falls back to neutral gray.
+const LANGUAGE_DOT_COLORS: Record<string, string> = {
+  Python: '#3572A5',
+  JavaScript: '#f1e05a',
+  TypeScript: '#3178c6',
+  Shell: '#89e051',
+  HTML: '#e34c26',
+  Go: '#00ADD8',
+  Rust: '#dea584',
+  Java: '#b07219',
+  Swift: '#F05138',
+  'C++': '#f34b7d',
+  'C#': '#178600',
+  CSS: '#563d7c',
+  'Jupyter Notebook': '#DA5B0B',
+  PowerShell: '#012456',
+  SCSS: '#c6538c',
+  Perl: '#0298c3',
+  TeX: '#3D6117',
+  C: '#555555',
+  Gleam: '#ffaff3',
+  Astro: '#ff5a03',
+  Svelte: '#ff3e00',
+  Markdown: '#083fa1',
+  Typst: '#231815',
+  PHP: '#4F5D95',
+};
+const LANGUAGE_DOT_FALLBACK = '#9ca3af';
 
 import fs from 'fs';
 import path from 'path';
@@ -166,17 +198,36 @@ const MarketplaceDetailPage: React.FC = () => {
                     )}
                   </h1>
                   <p className='text-gray-600 dark:text-gray-300 mb-4'>{marketplace.description}</p>
-                  <div className='flex flex-wrap items-center gap-3 text-sm text-gray-500 dark:text-gray-400'>
-                    <span className='flex items-center gap-1'>
-                      <Star className='w-4 h-4 text-yellow-500' />
+                  <div className='flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-gray-500 dark:text-gray-400'>
+                    <span className='flex items-center gap-1' title='Stars'>
+                      <Star className='w-4 h-4 text-yellow-500' aria-hidden='true' />
                       {(marketplace.stars || 0).toLocaleString()}
                     </span>
-                    <span>
-                      {marketplace.forks ? `${marketplace.forks.toLocaleString()} forks` : ''}
-                    </span>
-                    {marketplace.language && <span>{marketplace.language}</span>}
+                    {marketplace.forks ? (
+                      <span className='flex items-center gap-1' title='Forks'>
+                        <GitFork className='w-4 h-4' aria-hidden='true' />
+                        {marketplace.forks.toLocaleString()}
+                      </span>
+                    ) : null}
+                    {marketplace.language && marketplace.language !== 'Unknown' && (
+                      <span
+                        className='flex items-center gap-1.5'
+                        title={`Language: ${marketplace.language}`}
+                      >
+                        <span
+                          aria-hidden='true'
+                          className='w-2.5 h-2.5 rounded-full flex-shrink-0'
+                          style={{
+                            backgroundColor:
+                              LANGUAGE_DOT_COLORS[marketplace.language] ?? LANGUAGE_DOT_FALLBACK,
+                          }}
+                        />
+                        {marketplace.language}
+                      </span>
+                    )}
                     {marketplace.updatedAt && (
-                      <span title={marketplace.updatedAt}>
+                      <span className='flex items-center gap-1' title={marketplace.updatedAt}>
+                        <Clock className='w-4 h-4' aria-hidden='true' />
                         updated {formatRelativeAge(marketplace.updatedAt)}
                       </span>
                     )}
