@@ -26,7 +26,7 @@ const MarketplacesPage: React.FC = () => {
     }
   }, [router.query.q]);
   const [selectedTopic, setSelectedTopic] = useState('All');
-  const [manifestFilter, setManifestFilter] = useState<'all' | 'with' | 'without'>('all');
+  const [validatedOnly, setValidatedOnly] = useState(false);
   const [sortBy, setSortBy] = useState<'stars' | 'name' | 'updated'>('stars');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [visibleCount, setVisibleCount] = useState(12);
@@ -48,11 +48,10 @@ const MarketplacesPage: React.FC = () => {
     if (s === 'stars' || s === 'name' || s === 'updated') setSortBy(s);
   }, [router.query.sort]);
 
-  // Deep-link support: /marketplaces?manifest=with|without (back/forward safe)
+  // Deep-link support: /marketplaces?validated=1 (back/forward safe)
   useEffect(() => {
-    const m = router.query.manifest;
-    setManifestFilter(m === 'with' || m === 'without' ? m : 'all');
-  }, [router.query.manifest]);
+    setValidatedOnly(router.query.validated === '1');
+  }, [router.query.validated]);
 
   const { data: marketplaceData, loading, error } = useRealMarketplaceData();
   const marketplaces = marketplaceData?.marketplaces || [];
@@ -94,12 +93,10 @@ const MarketplacesPage: React.FC = () => {
         marketplace.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         marketplace.description.toLowerCase().includes(searchQuery.toLowerCase());
 
-      const matchesManifest =
-        manifestFilter === 'all' ||
-        (manifestFilter === 'with' ? !!marketplace.hasManifest : !marketplace.hasManifest);
+      const matchesValidated = !validatedOnly || !!marketplace.hasManifest;
 
       return (
-        matchesSearch && matchesManifest && marketplaceMatchesCategory(marketplace, selectedTopic)
+        matchesSearch && matchesValidated && marketplaceMatchesCategory(marketplace, selectedTopic)
       );
     });
 
@@ -121,7 +118,7 @@ const MarketplacesPage: React.FC = () => {
     });
 
     return filtered;
-  }, [marketplaces, searchQuery, selectedTopic, manifestFilter, sortBy]);
+  }, [marketplaces, searchQuery, selectedTopic, validatedOnly, sortBy]);
 
   // Pagination
   const visibleMarketplaces = filteredAndSortedMarketplaces.slice(0, visibleCount);
@@ -138,10 +135,10 @@ const MarketplacesPage: React.FC = () => {
     updateQuery({ topic: topic === 'All' ? '' : topic });
   };
 
-  const handleManifestChange = (value: string) => {
-    setManifestFilter(value as 'all' | 'with' | 'without');
+  const handleValidatedChange = (checked: boolean) => {
+    setValidatedOnly(checked);
     setVisibleCount(12);
-    updateQuery({ manifest: value === 'all' ? '' : value });
+    updateQuery({ validated: checked ? '1' : '' });
   };
 
   const handleSortChange = (sort: 'stars' | 'name' | 'updated') => {
@@ -283,27 +280,28 @@ const MarketplacesPage: React.FC = () => {
                         )?.label.toLowerCase() ?? ''
                       }`
                     : ''}
-                {manifestFilter === 'with' && ' with validated manifests'}
-                {manifestFilter === 'without' && ' without a manifest'}
+                {validatedOnly && ' with validated manifests'}
               </p>
 
-              {/* Sort, Filter and View Controls — pinned right; wraps as a
-                  unit below the count line once two selects can't fit (mobile) */}
+              {/* Filter, Sort and View Controls — pinned right; wraps as a
+                  unit below the count line when they can't fit one line (mobile) */}
               <div className='flex flex-wrap items-center gap-x-3 gap-y-2 ml-auto lg:flex-nowrap lg:flex-shrink-0 lg:h-9'>
-                <SortSelect
-                  id='marketplace-manifest-filter'
-                  label='Manifest:'
-                  value={manifestFilter}
-                  onChange={handleManifestChange}
-                  options={[
-                    { value: 'all', label: 'All' },
-                    { value: 'with', label: `Validated (${withManifestCount.toLocaleString()})` },
-                    {
-                      value: 'without',
-                      label: `No manifest (${(marketplaces.length - withManifestCount).toLocaleString()})`,
-                    },
-                  ]}
-                />
+                <label
+                  htmlFor='marketplace-validated-filter'
+                  className='flex items-center gap-1.5 text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap cursor-pointer select-none'
+                >
+                  <input
+                    id='marketplace-validated-filter'
+                    type='checkbox'
+                    checked={validatedOnly}
+                    onChange={(e) => handleValidatedChange(e.target.checked)}
+                    className='w-4 h-4 rounded accent-primary-600 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900'
+                  />
+                  Validated manifest
+                  <span className='text-xs text-gray-400 dark:text-gray-500 tabular-nums'>
+                    {withManifestCount.toLocaleString()}
+                  </span>
+                </label>
 
                 <SortSelect
                   id='marketplace-sort'
@@ -473,17 +471,17 @@ const MarketplacesPage: React.FC = () => {
                   No marketplaces found
                 </h3>
                 <p className='text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto'>
-                  {searchQuery || selectedTopic !== 'All' || manifestFilter !== 'all'
+                  {searchQuery || selectedTopic !== 'All' || validatedOnly
                     ? `No marketplaces found matching your criteria. Try different filters or search terms.`
                     : 'No marketplaces available at the moment.'}
                 </p>
-                {(searchQuery || selectedTopic !== 'All' || manifestFilter !== 'all') && (
+                {(searchQuery || selectedTopic !== 'All' || validatedOnly) && (
                   <button
                     onClick={() => {
                       setSearchQuery('');
                       setSelectedTopic('All');
-                      setManifestFilter('all');
-                      updateQuery({ q: '', topic: '', manifest: '' });
+                      setValidatedOnly(false);
+                      updateQuery({ q: '', topic: '', validated: '' });
                     }}
                     className='btn btn-primary'
                     aria-label='Clear all filters'
