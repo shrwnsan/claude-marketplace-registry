@@ -18,6 +18,7 @@ Repositories  data/    data/      public/     .next/    GitHub
 | `npm run scan:marketplaces` | Search GitHub for marketplace repos | `data/marketplaces/*.json` |
 | `npm run validate:plugins` | Parse manifests, score quality | `data/plugins/*.json` |
 | `npm run generate:data` | Combine data for website | `public/data/*.json` |
+| `npm run enrich:jev` | LLM (Jev) category enrichment for marketplaces the topic aliases can't classify | `data/marketplaces/jev-enrichment.json` |
 | `npm run build` | Build Next.js static site | `out/` |
 
 ## Directory Structure
@@ -51,7 +52,7 @@ See: [`src/types/marketplace.ts`](../src/types/marketplace.ts), [`src/types/plug
 |----------|---------|---------|
 | `ci.yml` | Push/PR | Lint, typecheck, test, build |
 | `deploy.yml` | Push to main | Deploy to GitHub Pages |
-| `scan.yml` | Daily at 00:00 UTC | Discover new marketplaces |
+| `scan.yml` | Daily at 00:00 UTC | Discover new marketplaces; LLM-enrich categories (Jev) |
 | `claude-code.yml` | @claude mention | Review, self-review, triage PR findings |
 | `follow-up-implementation.yml` | PR merged | Auto-implement linked follow-up issues |
 | `auto-pr-review.yml` | PR opened | Automated code review |
