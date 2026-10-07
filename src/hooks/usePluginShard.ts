@@ -39,7 +39,9 @@ export function usePluginShard(marketplaceId: string | undefined): UsePluginShar
           )}.json`
         );
         if (!response.ok) {
-          throw new Error(`plugins/${marketplaceId}.json ${response.status}`);
+          // marketplaceId originates from a URL route param — keep it out of
+          // the message so it can't flow into console output (log injection).
+          throw new Error(`plugins shard fetch failed: ${response.status}`);
         }
         const json = await response.json();
         if (cancelled) return;

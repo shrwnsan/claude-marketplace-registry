@@ -9,6 +9,7 @@ import { usePluginData } from '@/hooks/usePluginData';
 import LoadingState from '@/components/ui/LoadingState';
 import SortSelect from '@/components/ui/SortSelect';
 import { Zap, Package, ArrowUp, ChevronRight, Grid, List } from 'lucide-react';
+import { pickQueryParams } from '@/utils/url-query';
 
 /**
  * The mods surface is days old — the "new" pill self-expires instead of
@@ -46,10 +47,7 @@ const ModsPage: React.FC = () => {
   // Selections persist in the URL (shareable, survives back/forward).
   const updateQuery = React.useCallback(
     (patch: Record<string, string>) => {
-      const query: Record<string, string> = {};
-      for (const [key, value] of Object.entries({ ...router.query, ...patch })) {
-        if (typeof value === 'string' && value) query[key] = value;
-      }
+      const query = pickQueryParams(router.query, patch, ['q', 'sort']);
       router.replace({ pathname: '/mods', query }, undefined, { shallow: true });
     },
     [router]

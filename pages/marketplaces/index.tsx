@@ -13,6 +13,7 @@ import {
   marketplaceMatchesCategory,
   countByCategory,
 } from '@/utils/categories';
+import { pickQueryParams } from '@/utils/url-query';
 
 const MarketplacesPage: React.FC = () => {
   const router = useRouter();
@@ -33,10 +34,7 @@ const MarketplacesPage: React.FC = () => {
   // Selections persist in the URL (shareable, survives back/forward).
   const updateQuery = React.useCallback(
     (patch: Record<string, string>) => {
-      const query: Record<string, string> = {};
-      for (const [key, value] of Object.entries({ ...router.query, ...patch })) {
-        if (typeof value === 'string' && value) query[key] = value;
-      }
+      const query = pickQueryParams(router.query, patch, ['q', 'sort', 'topic']);
       router.replace({ pathname: '/marketplaces', query }, undefined, { shallow: true });
     },
     [router]
