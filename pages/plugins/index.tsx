@@ -7,7 +7,7 @@ import { usePluginData } from '@/hooks/usePluginData';
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
 import SortSelect from '@/components/ui/SortSelect';
-import { Grid, List, Package, ArrowUp, ChevronRight } from 'lucide-react';
+import { Grid, List, Package, ArrowUp, ChevronRight, Zap } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -239,11 +239,32 @@ const PluginsPage: React.FC = () => {
                           <p className='text-gray-600 dark:text-gray-300 mb-3 line-clamp-2'>
                             {plugin.description}
                           </p>
-                          <div className='flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400'>
-                            <span>by {plugin.author}</span>
-                            <span>•</span>
-                            <span>{plugin.skillsCount} skills</span>
-                            {plugin.version && <span className='text-xs'>v{plugin.version}</span>}
+                          <div className='flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-gray-500 dark:text-gray-400'>
+                            <span>
+                              by{' '}
+                              <span className='font-medium text-gray-700 dark:text-gray-200'>
+                                {plugin.author}
+                              </span>
+                            </span>
+                            {plugin.skillsCount > 0 && (
+                              <span className='flex items-center gap-1'>
+                                <Package className='w-4 h-4' aria-hidden='true' />
+                                {plugin.skillsCount} skill
+                                {plugin.skillsCount === 1 ? '' : 's'}
+                              </span>
+                            )}
+                            {(plugin.modsCount ?? 0) > 0 && (
+                              <span
+                                className='flex items-center gap-1 text-primary-600 dark:text-primary-400'
+                                title='Ships Claude Code mods (hook modules)'
+                              >
+                                <Zap className='w-4 h-4' aria-hidden='true' />
+                                {plugin.modsCount} mod{plugin.modsCount === 1 ? '' : 's'}
+                              </span>
+                            )}
+                            {plugin.version && (
+                              <span className='font-mono text-xs'>v{plugin.version}</span>
+                            )}
                           </div>
                         </div>
                         <Link
