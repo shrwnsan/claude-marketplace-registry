@@ -15,6 +15,7 @@ import {
 import { useEcosystemStats } from '@/hooks/useEcosystemStats';
 import LoadingState from '@/components/ui/LoadingState';
 import { StatCard } from '@/components/ui/StatCard';
+import ValidatedManifestBadge from '@/components/ui/ValidatedManifestBadge';
 import FriendlyTimestamp from '@/components/ui/FriendlyTimestamp';
 import {
   ChevronRight,
@@ -22,7 +23,6 @@ import {
   Github,
   Package,
   RotateCcw,
-  ShieldCheck,
   Shuffle,
   Star,
   Store,
@@ -66,12 +66,22 @@ const HomePage: React.FC = () => {
     return shufflePopularPlugins(topPluginsByStars(allPlugins, POPULAR_PLUGINS_SHUFFLE_POOL), 9);
   }, [allPlugins, pluginsSeed]);
 
+  // Featured pool = validated manifests only: every featured card carries
+  // the shield, and "view validated →" deep-links the same filter.
+  const validatedMarketplaces = useMemo(
+    () => marketplaces.filter((m) => m.hasManifest),
+    [marketplaces]
+  );
+
   // Deterministic daily rotation over the highest-signal marketplaces, or a
   // shuffled slice of the deeper pool on demand
   const featured = useMemo(() => {
-    if (featuredSeed === null) return selectFeaturedMarketplaces(marketplaces, 6);
-    return shuffleSample(rankFeaturedMarketplaces(marketplaces).slice(0, FEATURED_SHUFFLE_POOL), 6);
-  }, [marketplaces, featuredSeed]);
+    if (featuredSeed === null) return selectFeaturedMarketplaces(validatedMarketplaces, 6);
+    return shuffleSample(
+      rankFeaturedMarketplaces(validatedMarketplaces).slice(0, FEATURED_SHUFFLE_POOL),
+      6
+    );
+  }, [validatedMarketplaces, featuredSeed]);
 
   return (
     <>
@@ -246,10 +256,10 @@ const HomePage: React.FC = () => {
                   shuffle
                 </button>
                 <Link
-                  href='/marketplaces'
+                  href='/marketplaces?validated=1'
                   className='inline-flex items-center justify-center px-4 py-2 lg:pb-0.5 font-mono text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 group transition-colors rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900'
                 >
-                  view all
+                  view validated
                   <span className='ml-1 transform transition-transform group-hover:translate-x-1'>
                     →
                   </span>
@@ -289,10 +299,7 @@ const HomePage: React.FC = () => {
                       </div>
                       {marketplace.hasManifest && (
                         <div className='flex-shrink-0 ml-2'>
-                          <ShieldCheck
-                            className='w-5 h-5 text-success-500'
-                            aria-label='Validated marketplace manifest'
-                          />
+                          <ValidatedManifestBadge />
                         </div>
                       )}
                     </div>

@@ -5,7 +5,8 @@ import SearchBar from '@/components/Search/SearchBar';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
 import SortSelect from '@/components/ui/SortSelect';
-import { Check, Star, ChevronRight, ShieldCheck, Filter, Grid, List, X } from 'lucide-react';
+import ValidatedManifestBadge from '@/components/ui/ValidatedManifestBadge';
+import { Check, Star, ChevronRight, Filter, Grid, List, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import {
@@ -280,7 +281,7 @@ const MarketplacesPage: React.FC = () => {
                         )?.label.toLowerCase() ?? ''
                       }`
                     : ''}
-                {validatedOnly && ' with validated manifests'}
+                {validatedOnly && ' with validated marketplace.json'}
               </p>
 
               {/* Filter, Sort and View Controls — pinned right; wraps as a
@@ -300,7 +301,7 @@ const MarketplacesPage: React.FC = () => {
                   >
                     <Check className='w-3 h-3' strokeWidth={3} />
                   </span>
-                  Validated manifest
+                  Validated marketplace.json
                   <span className='text-xs text-gray-400 dark:text-gray-500 tabular-nums'>
                     {withManifestCount.toLocaleString()}
                   </span>
@@ -379,10 +380,7 @@ const MarketplacesPage: React.FC = () => {
                           </div>
                           {marketplace.hasManifest && (
                             <div className='flex-shrink-0 ml-2'>
-                              <ShieldCheck
-                                className='w-5 h-5 text-success-500'
-                                aria-label='Validated marketplace manifest'
-                              />
+                              <ValidatedManifestBadge />
                             </div>
                           )}
                         </div>
@@ -429,12 +427,7 @@ const MarketplacesPage: React.FC = () => {
                                 {marketplace.name}
                               </Link>
                             </h3>
-                            {marketplace.hasManifest && (
-                              <ShieldCheck
-                                className='w-5 h-5 text-success-500'
-                                aria-label='Validated marketplace manifest'
-                              />
-                            )}
+                            {marketplace.hasManifest && <ValidatedManifestBadge />}
                             <span className='badge badge-secondary text-xs'>
                               {(Array.isArray(marketplace.topics) && marketplace.topics[0]) || ''}
                             </span>

@@ -8,6 +8,7 @@ import PluginCard from '@/components/Marketplace/PluginCard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import { usePluginShard } from '@/hooks/usePluginShard';
 import LoadingState from '@/components/ui/LoadingState';
+import ValidatedManifestBadge from '@/components/ui/ValidatedManifestBadge';
 import {
   Star,
   Github,
@@ -158,8 +159,11 @@ const MarketplaceDetailPage: React.FC = () => {
             <div className='card p-6 sm:p-8 mb-8'>
               <div className='flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4'>
                 <div className='flex-1 min-w-0'>
-                  <h1 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
+                  <h1 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2 flex flex-wrap items-center gap-x-2.5 gap-y-1'>
                     {marketplace.name}
+                    {marketplace.hasManifest && (
+                      <ValidatedManifestBadge className='w-6 h-6 text-success-500' />
+                    )}
                   </h1>
                   <p className='text-gray-600 dark:text-gray-300 mb-4'>{marketplace.description}</p>
                   <div className='flex flex-wrap items-center gap-3 text-sm text-gray-500 dark:text-gray-400'>
