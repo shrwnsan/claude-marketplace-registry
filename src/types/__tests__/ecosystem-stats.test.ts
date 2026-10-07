@@ -204,11 +204,6 @@ describe('Ecosystem Statistics Types', () => {
           },
         } as CommunityData,
         qualityIndicators: {
-          verification: {
-            verifiedPlugins: 525,
-            verificationRate: 42.0,
-            badges: [],
-          },
           maintenance: {
             recentlyUpdated: 892,
             activeMaintenanceRate: 71.4,
@@ -226,7 +221,7 @@ describe('Ecosystem Statistics Types', () => {
       expect(complexData.overview.totalPlugins).toBe(1250);
       expect(complexData.growthTrends.plugins.length).toBeGreaterThan(0);
       expect(complexData.communityData.activeDevelopers).toBe(340);
-      expect(complexData.qualityIndicators.verification.verificationRate).toBe(42.0);
+      expect(complexData.qualityIndicators.maintenance.recentlyUpdated).toBe(892);
     });
   });
 });

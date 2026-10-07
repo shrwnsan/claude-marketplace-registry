@@ -29,7 +29,6 @@ export interface MarketplaceManifestSchema extends BaseManifestSchema {
   type: 'marketplace';
   category: string;
   website?: string;
-  verified?: boolean;
   featured?: boolean;
   plugins?: PluginManifestSchema[];
 }

@@ -404,7 +404,6 @@ export const createPublicEcosystemStats = (fullStats: {
         percentage: cat.percentage,
       })),
     quality: {
-      verificationRate: fullStats.qualityIndicators.verification.verificationRate,
       avgQualityScore: fullStats.qualityIndicators.qualityMetrics.avgQualityScore,
       activeMaintenanceRate: fullStats.qualityIndicators.maintenance.activeMaintenanceRate,
     },
@@ -459,7 +458,7 @@ export const aggregatePluginsByMarketplace = (
  * @returns Filtered and sorted array
  *
  * @example
- * filterAndSortData(plugins, { verified: true }, 'downloads', 'desc')
+ * filterAndSortData(plugins, {}, 'downloads', 'desc')
  */
 export const filterAndSortData = <T>(
   data: T[],

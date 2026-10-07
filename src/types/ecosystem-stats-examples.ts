@@ -280,16 +280,6 @@ export const mockCommunityData: CommunityData = {
  * Mock quality indicators data
  */
 export const mockQualityIndicators: QualityIndicators = {
-  verification: {
-    verifiedPlugins: 525,
-    verificationRate: 42.0,
-    badges: [
-      { type: 'security', count: 85 },
-      { type: 'quality', count: 320 },
-      { type: 'popularity', count: 450 },
-      { type: 'maintenance', count: 380 },
-    ],
-  },
   maintenance: {
     recentlyUpdated: 892,
     activeMaintenanceRate: 71.4,
@@ -328,12 +318,10 @@ export const mockMarketplaceData: MarketplaceData[] = [
       name: 'Claude Official Marketplace',
       description: 'Official marketplace for Claude Code plugins',
       url: 'https://claude.ai/marketplace',
-      verified: true,
       qualityScore: 92.5,
     },
     pluginStats: {
       totalPlugins: 425,
-      verifiedPlugins: 380,
       avgDownloadsPerPlugin: 2500,
       avgQualityScore: 85.2,
     },
@@ -355,12 +343,10 @@ export const mockMarketplaceData: MarketplaceData[] = [
       name: 'Community Plugins Hub',
       description: 'Community-driven plugin repository',
       url: 'https://github.com/claude-community/plugins',
-      verified: true,
       qualityScore: 78.3,
     },
     pluginStats: {
       totalPlugins: 380,
-      verifiedPlugins: 95,
       avgDownloadsPerPlugin: 850,
       avgQualityScore: 72.1,
     },
@@ -382,12 +368,10 @@ export const mockMarketplaceData: MarketplaceData[] = [
       name: 'Developer Tools Collection',
       description: 'Curated collection of development tools',
       url: 'https://github.com/dev-tools/claude-plugins',
-      verified: false,
       qualityScore: 68.7,
     },
     pluginStats: {
       totalPlugins: 195,
-      verifiedPlugins: 28,
       avgDownloadsPerPlugin: 420,
       avgQualityScore: 65.8,
     },
@@ -433,7 +417,6 @@ export const mockPluginData: PluginData[] = [
     },
     quality: {
       qualityScore: 89.2,
-      verified: true,
       lastUpdated: '2025-10-18T14:30:00Z',
       updateFrequency: 7,
       hasSecurityScan: true,
@@ -471,7 +454,6 @@ export const mockPluginData: PluginData[] = [
     },
     quality: {
       qualityScore: 91.5,
-      verified: true,
       lastUpdated: '2025-10-20T10:15:00Z',
       updateFrequency: 5,
       hasSecurityScan: true,
@@ -509,7 +491,6 @@ export const mockPluginData: PluginData[] = [
     },
     quality: {
       qualityScore: 74.8,
-      verified: false,
       lastUpdated: '2025-10-15T16:45:00Z',
       updateFrequency: 14,
       hasSecurityScan: false,
@@ -638,14 +619,6 @@ export const mockPluginGrowthChart: ChartData = {
       color: '#3b82f6',
       type: 'line',
     },
-    {
-      name: 'Verified Plugins',
-      data: mockGrowthTrends.plugins.map(
-        (point) => [point.date, Math.round(point.value * 0.42)] as [string, number]
-      ),
-      color: '#10b981',
-      type: 'line',
-    },
   ],
   options: {
     responsive: true,
@@ -701,13 +674,6 @@ export const mockMarketplaceBarChart: ChartData = {
         (mp) => [mp.marketplace.name, mp.pluginStats.totalPlugins] as [string, number]
       ),
       color: '#3b82f6',
-    },
-    {
-      name: 'Verified Plugins',
-      data: mockMarketplaceData.map(
-        (mp) => [mp.marketplace.name, mp.pluginStats.verifiedPlugins] as [string, number]
-      ),
-      color: '#10b981',
     },
   ],
   options: {
@@ -801,15 +767,11 @@ export const createCompleteEcosystemStats = () => ({
  * Example: Create filtered plugin data for testing
  */
 export const createFilteredPluginData = (filters: {
-  verified?: boolean;
   category?: string;
   minQualityScore?: number;
   minDownloads?: number;
 }) => {
   return mockPluginData.filter((plugin) => {
-    if (filters.verified !== undefined && plugin.quality.verified !== filters.verified) {
-      return false;
-    }
     if (filters.category && plugin.plugin.category !== filters.category) {
       return false;
     }

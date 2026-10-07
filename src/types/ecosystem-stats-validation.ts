@@ -108,14 +108,6 @@ export const categoryDataSchema = z.object({
 });
 
 /**
- * Schema for verification badges
- */
-export const verificationBadgeSchema = z.object({
-  type: z.enum(['security', 'quality', 'popularity', 'maintenance']),
-  count: nonNegativeNumber,
-});
-
-/**
  * Schema for quality issue
  */
 export const qualityIssueSchema = z.object({
@@ -222,11 +214,6 @@ export const communityDataSchema = z.object({
  * Schema for QualityIndicators
  */
 export const qualityIndicatorsSchema = z.object({
-  verification: z.object({
-    verifiedPlugins: nonNegativeNumber,
-    verificationRate: percentage,
-    badges: z.array(verificationBadgeSchema),
-  }),
   maintenance: z.object({
     recentlyUpdated: nonNegativeNumber,
     activeMaintenanceRate: percentage,
@@ -256,12 +243,10 @@ export const marketplaceDataSchema = z.object({
     name: z.string().min(1).max(100),
     description: z.string().max(500),
     url: z.string().url(),
-    verified: z.boolean(),
     qualityScore: qualityScore,
   }),
   pluginStats: z.object({
     totalPlugins: nonNegativeNumber,
-    verifiedPlugins: nonNegativeNumber,
     avgDownloadsPerPlugin: nonNegativeNumber,
     avgQualityScore: qualityScore,
   }),
@@ -301,7 +286,6 @@ export const pluginDataSchema = z.object({
   }),
   quality: z.object({
     qualityScore: qualityScore,
-    verified: z.boolean(),
     lastUpdated: isoDateString,
     updateFrequency: nonNegativeNumber,
     hasSecurityScan: z.boolean(),
@@ -448,7 +432,6 @@ export const ecosystemStatsQuerySchema = z.object({
  * Schema for marketplace filters
  */
 export const marketplaceFilterSchema = z.object({
-  verified: z.boolean().optional(),
   minPlugins: z.number().min(0).optional(),
   minQualityScore: qualityScore.optional(),
   tags: z.array(z.string().max(50)).max(10).optional(),
@@ -462,7 +445,6 @@ export const marketplaceFilterSchema = z.object({
 export const pluginFilterSchema = z.object({
   category: z.string().max(50).optional(),
   marketplaceId: marketplaceId.optional(),
-  verified: z.boolean().optional(),
   minQualityScore: qualityScore.optional(),
   minDownloads: nonNegativeNumber.optional(),
   tags: z.array(z.string().max(50)).max(10).optional(),

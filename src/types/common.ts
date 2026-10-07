@@ -14,7 +14,6 @@ export interface SearchFilters {
   language?: string;
   minStars?: number;
   minQualityScore?: number;
-  verified?: boolean;
   dateRange?: {
     from?: string;
     to?: string;

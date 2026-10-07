@@ -365,8 +365,6 @@ export class MockDataGenerator {
     const totalDownloads = totalPlugins * Math.floor(Math.random() * 1000 + 500);
     const totalStars = totalPlugins * Math.floor(Math.random() * 50 + 10);
     const totalForks = Math.floor(totalStars * 0.3);
-    const verifiedMarketplaces = Math.floor(totalMarketplaces * 0.6);
-    const verifiedPlugins = Math.floor(totalPlugins * 0.7);
     const averageQualityScore = Math.floor(Math.random() * 15 + 75);
     const totalCategories = this.config.categoryCount;
 
@@ -377,8 +375,6 @@ export class MockDataGenerator {
       totalDownloads,
       totalStars,
       totalForks,
-      verifiedMarketplaces,
-      verifiedPlugins,
       averageQualityScore,
       totalCategories,
       lastUpdated: new Date().toISOString(),
@@ -568,7 +564,6 @@ export class MockDataGenerator {
         categories: developerCategories,
         firstPluginDate: firstPluginDate.toISOString(),
         lastPluginDate: lastPluginDate.toISOString(),
-        verifiedPluginCount: Math.floor(Math.random() * pluginCount),
       });
     }
 
@@ -580,22 +575,11 @@ export class MockDataGenerator {
    */
   private generateMockQuality(): QualityIndicators {
     const totalPlugins = this.config.marketplaceCount * this.config.pluginsPerMarketplace;
-    const verifiedPlugins = Math.floor(totalPlugins * 0.7);
     const highQualityPlugins = Math.floor(totalPlugins * 0.4);
     const recentlyUpdated = Math.floor(totalPlugins * 0.6);
     const abandonedPlugins = Math.floor(totalPlugins * 0.1);
 
     return {
-      verification: {
-        verifiedPlugins,
-        verificationRate: (verifiedPlugins / totalPlugins) * 100,
-        badges: [
-          { type: 'security', count: Math.floor(verifiedPlugins * 0.6) },
-          { type: 'quality', count: Math.floor(verifiedPlugins * 0.8) },
-          { type: 'popularity', count: Math.floor(verifiedPlugins * 0.4) },
-          { type: 'maintenance', count: Math.floor(verifiedPlugins * 0.7) },
-        ],
-      },
       maintenance: {
         recentlyUpdated,
         activeMaintenanceRate: (recentlyUpdated / totalPlugins) * 100,
@@ -774,14 +758,6 @@ function generateRealEcosystemStats(realData: any): EcosystemStats {
   const totalStars = marketplaces.reduce((sum: number, m: any) => sum + (m.stars || 0), 0);
   const totalForks = marketplaces.reduce((sum: number, m: any) => sum + (m.forks || 0), 0);
 
-  // Count verified marketplaces (has description and stars > threshold)
-  const verifiedMarketplaces = marketplaces.filter(
-    (m: any) => m.description && (m.stars || 0) > 5
-  ).length;
-
-  // Estimate verified plugins
-  const verifiedPlugins = Math.floor(estimatedPlugins * 0.7); // Assume 70% are verified
-
   // Generate overview metrics from real data
   const _activeMarketplaces = marketplaces.filter((m: any) => {
     const lastUpdate = new Date(m.updatedAt);
@@ -797,8 +773,6 @@ function generateRealEcosystemStats(realData: any): EcosystemStats {
     totalDownloads: estimatedTotalDownloads,
     totalStars: totalStars,
     totalForks: totalForks,
-    verifiedMarketplaces: verifiedMarketplaces,
-    verifiedPlugins: verifiedPlugins,
     averageQualityScore: 0.85, // Calculated from various metrics
     totalCategories: 8, // Based on common plugin categories
     lastUpdated: new Date().toISOString(),
@@ -993,7 +967,6 @@ function generateDeveloperAnalytics(marketplaces: any[], _plugins: any[]): Devel
         ),
         firstPluginDate: firstDate.toISOString(),
         lastPluginDate: lastDate.toISOString(),
-        verifiedPluginCount: Math.floor(estimatedPlugins * (Math.random() * 0.5 + 0.3)), // 30-80% verified
       };
     })
     .sort((a, b) => b.totalStars - a.totalStars)
