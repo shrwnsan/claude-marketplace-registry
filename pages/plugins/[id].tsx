@@ -9,6 +9,7 @@ import { usePluginShard } from '@/hooks/usePluginShard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
 import { Star, Github, Copy, Check, Package, ArrowLeft, Zap } from 'lucide-react';
+import { pathBasename } from '@/utils/format';
 import fs from 'fs';
 import path from 'path';
 
@@ -222,8 +223,12 @@ const PluginDetailPage: React.FC = () => {
                   <p className='eyebrow'>ls skills/ ({plugin.skills!.length})</p>
                   <div className='mt-3 flex flex-wrap gap-1.5'>
                     {plugin.skills!.map((skill) => (
-                      <span key={skill} className='badge badge-secondary text-xs'>
-                        {skill}
+                      <span
+                        key={skill}
+                        className='badge badge-secondary font-mono text-xs'
+                        title={skill}
+                      >
+                        {pathBasename(skill)}
                       </span>
                     ))}
                   </div>

@@ -123,3 +123,12 @@ export function formatRelativeAge(iso: string, now: number = Date.now()): string
   if (months < 12) return `${months}mo ago`;
   return `${Math.floor(days / 365.25)}y ago`;
 }
+
+/**
+ * Manifests list skills as paths ("./skills/xlsx"); readers read names
+ * ("xlsx"). Returns the last path segment, falling back to the input when
+ * it isn't path-shaped.
+ */
+export function pathBasename(p: string): string {
+  return p.split('/').filter(Boolean).pop() || p;
+}
