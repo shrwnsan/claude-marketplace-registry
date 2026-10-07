@@ -52,9 +52,13 @@ jobs:
       # not GITHUB_TOKEN. Pushes attributed to GITHUB_TOKEN do not fire
       # `on: push` workflows, so a bot-token merge would silently skip the
       # Deploy to GitHub Pages workflow and the site would never update.
+      # RATE-LIMIT NOTE: no --delete-branch. The daily scan exhausts this same
+      # PAT's REST quota, so gh's post-merge branch deletion 403s and fails
+      # the step after the merge has already succeeded; the repo auto-deletes
+      # head branches on merge anyway.
       - name: Enable auto-merge
         if: steps.verify-data-only.outputs.safe == 'true'
-        run: gh pr merge "${{ github.event.pull_request.html_url }}" --auto --squash --delete-branch
+        run: gh pr merge "${{ github.event.pull_request.html_url }}" --auto --squash
         env:
           GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
 
