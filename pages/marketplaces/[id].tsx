@@ -8,7 +8,17 @@ import PluginCard from '@/components/Marketplace/PluginCard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import { usePluginShard } from '@/hooks/usePluginShard';
 import LoadingState from '@/components/ui/LoadingState';
-import { Star, Github, Store, Package, ArrowLeft, ChevronRight, Grid, List } from 'lucide-react';
+import {
+  Star,
+  Github,
+  Store,
+  Package,
+  ArrowLeft,
+  ChevronRight,
+  Grid,
+  List,
+  Zap,
+} from 'lucide-react';
 import { formatRelativeAge } from '@/utils/format';
 
 import fs from 'fs';
@@ -219,6 +229,15 @@ const MarketplaceDetailPage: React.FC = () => {
                   </span>
                   <span className='text-xs text-gray-500 dark:text-gray-400'>Skills</span>
                 </div>
+                {marketplacePlugins.some((p) => (p.modsCount ?? 0) > 0) && (
+                  <div className='flex items-baseline gap-1.5 text-primary-600 dark:text-primary-400'>
+                    <span className='text-2xl font-bold font-mono tabular-nums flex items-center gap-1'>
+                      <Zap className='w-5 h-5' aria-hidden='true' />
+                      {marketplacePlugins.reduce((sum, p) => sum + (p.modsCount ?? 0), 0)}
+                    </span>
+                    <span className='text-xs'>Mods shipped</span>
+                  </div>
+                )}
               </div>
 
               {/* Top skills — real counts, share of this marketplace's plugins */}

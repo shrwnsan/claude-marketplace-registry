@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ChevronRight, Copy, Check, Package } from 'lucide-react';
+import { ChevronRight, Copy, Check, Package, Zap } from 'lucide-react';
 import { CatalogPlugin } from '../../hooks/usePluginData';
 import { useClickTracking } from '../../utils/analytics/hooks';
 
@@ -57,6 +57,17 @@ const PluginCard: React.FC<PluginCardProps> = ({ plugin, className = '' }) => {
               <Package className='w-4 h-4' aria-hidden='true' />
               <span className='font-medium'>
                 {plugin.skillsCount} skill{plugin.skillsCount === 1 ? '' : 's'}
+              </span>
+            </div>
+          )}
+          {(plugin.modsCount ?? 0) > 0 && (
+            <div
+              className='flex items-center space-x-1 text-primary-600 dark:text-primary-400'
+              title='Ships Claude Code mods (hook modules)'
+            >
+              <Zap className='w-4 h-4' aria-hidden='true' />
+              <span className='font-medium'>
+                {plugin.modsCount} mod{plugin.modsCount === 1 ? '' : 's'}
               </span>
             </div>
           )}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Github, ExternalLink, Heart } from 'lucide-react';
+import { useEcosystemStats, shouldShowModsNav } from '@/hooks/useEcosystemStats';
 
 interface FooterProps {
   className?: string;
@@ -11,11 +12,13 @@ const API_DOCS_URL = 'https://shrwnsan.github.io/claude-marketplace-registry/doc
 
 const Footer: React.FC<FooterProps> = ({ className = '' }) => {
   const currentYear = new Date().getFullYear();
+  const { data: stats } = useEcosystemStats();
 
   const footerLinks = {
     explore: [
       { name: 'Marketplaces', href: '/marketplaces' },
       { name: 'Plugins', href: '/plugins' },
+      ...(shouldShowModsNav(stats?.overview.totalMods) ? [{ name: 'Mods', href: '/mods' }] : []),
       { name: 'Statistics', href: '/stats' },
     ],
     resources: [

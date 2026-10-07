@@ -9,6 +9,11 @@ export interface EcosystemOverview {
   totalMarketplaces: number;
   totalDevelopers: number;
   totalStars: number;
+  /** Claude Code mods (hook modules) shipped by indexed plugins — absent in
+   * stats.json until the pipeline regenerates with mods detection. */
+  totalMods?: number;
+  /** Marketplaces carrying at least one mod. */
+  marketplacesWithMods?: number;
   lastUpdated: string;
   growthRate: {
     plugins: number | null;
@@ -65,6 +70,17 @@ interface EcosystemStatsResponse {
   success: boolean;
   data: EcosystemStatsData;
   meta: { timestamp: string; requestId: string; responseTime: number };
+}
+
+/**
+ * The MODS nav item (and homepage tidbit) only render once the corpus holds a
+ * real handful of mods — an empty top-level section reads as a dead site.
+ * Pure for unit testing.
+ */
+export const MODS_NAV_MIN = 3;
+
+export function shouldShowModsNav(totalMods?: number): boolean {
+  return typeof totalMods === 'number' && totalMods >= MODS_NAV_MIN;
 }
 
 export interface UseEcosystemStatsReturn {

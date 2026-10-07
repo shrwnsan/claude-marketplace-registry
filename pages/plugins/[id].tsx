@@ -8,7 +8,7 @@ import { usePluginData, CatalogPlugin } from '@/hooks/usePluginData';
 import { usePluginShard } from '@/hooks/usePluginShard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
-import { Star, Github, Copy, Check, Package, ArrowLeft } from 'lucide-react';
+import { Star, Github, Copy, Check, Package, ArrowLeft, Zap } from 'lucide-react';
 import fs from 'fs';
 import path from 'path';
 
@@ -168,6 +168,15 @@ const PluginDetailPage: React.FC = () => {
                       >
                         {plugin.marketplaceName}
                       </Link>
+                    )}
+                    {(plugin.modsCount ?? 0) > 0 && (
+                      <span
+                        className='flex items-center gap-1 text-primary-600 dark:text-primary-400'
+                        title='Ships Claude Code mods (hook modules)'
+                      >
+                        <Zap className='w-4 h-4' aria-hidden='true' />
+                        {plugin.modsCount} mod{plugin.modsCount === 1 ? '' : 's'}
+                      </span>
                     )}
                     {marketplace && (
                       <span className='flex items-center gap-1'>
