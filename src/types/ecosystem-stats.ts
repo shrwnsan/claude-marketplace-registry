@@ -270,24 +270,9 @@ export interface CommunityData {
 
 /**
  * Quality indicators and trust signals
- * Provides metrics about ecosystem quality, verification, and maintenance
+ * Provides metrics about ecosystem quality and maintenance
  */
 export interface QualityIndicators {
-  /** Verification status breakdown */
-  verification: {
-    /** Number of verified plugins */
-    verifiedPlugins: number;
-
-    /** Percentage of verified plugins */
-    verificationRate: number;
-
-    /** Verification badges earned */
-    badges: Array<{
-      type: 'security' | 'quality' | 'popularity' | 'maintenance';
-      count: number;
-    }>;
-  };
-
   /** Maintenance and activity indicators */
   maintenance: {
     /** Plugins updated in last 30 days */
@@ -343,14 +328,12 @@ export interface MarketplaceData {
     name: string;
     description: string;
     url: string;
-    verified: boolean;
     qualityScore: number;
   };
 
   /** Plugin statistics for this marketplace */
   pluginStats: {
     totalPlugins: number;
-    verifiedPlugins: number;
     avgDownloadsPerPlugin: number;
     avgQualityScore: number;
   };
@@ -402,7 +385,6 @@ export interface PluginData {
   /** Quality and maintenance metrics */
   quality: {
     qualityScore: number;
-    verified: boolean;
     lastUpdated: string;
     updateFrequency: number; // days between updates
     hasSecurityScan: boolean;
@@ -595,9 +577,6 @@ export interface EcosystemStatsQuery {
  * Filters for marketplace data queries
  */
 export interface MarketplaceFilter {
-  /** Filter by verification status */
-  verified?: boolean;
-
   /** Filter by minimum plugin count */
   minPlugins?: number;
 
@@ -621,9 +600,6 @@ export interface PluginFilter {
 
   /** Filter by marketplace */
   marketplaceId?: string;
-
-  /** Filter by verification status */
-  verified?: boolean;
 
   /** Filter by minimum quality score */
   minQualityScore?: number;
@@ -788,7 +764,6 @@ export interface PublicEcosystemStats {
 
   /** Quality summary */
   quality: {
-    verificationRate: number;
     avgQualityScore: number;
     activeMaintenanceRate: number;
   };

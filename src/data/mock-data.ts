@@ -16,7 +16,6 @@ export interface MarketplacePlugin {
   marketplace: string;
   marketplaceUrl: string;
   featured: boolean;
-  verified: boolean;
 }
 
 export interface Marketplace {
@@ -29,7 +28,6 @@ export interface Marketplace {
   stars: number;
   plugins: MarketplacePlugin[];
   category: string;
-  verified: boolean;
   featured: boolean;
 }
 
@@ -46,7 +44,6 @@ export const mockMarketplaces: Marketplace[] = [
     stars: 5420,
     plugins: [],
     category: 'Official',
-    verified: true,
     featured: true,
   },
   {
@@ -59,7 +56,6 @@ export const mockMarketplaces: Marketplace[] = [
     stars: 1280,
     plugins: [],
     category: 'Community',
-    verified: false,
     featured: true,
   },
   {
@@ -72,7 +68,6 @@ export const mockMarketplaces: Marketplace[] = [
     stars: 890,
     plugins: [],
     category: 'Curated',
-    verified: true,
     featured: false,
   },
 ];
@@ -97,7 +92,6 @@ export const mockPlugins: MarketplacePlugin[] = [
     marketplace: 'Official Claude Marketplace',
     marketplaceUrl: 'https://claude.ai/marketplace/plugins/code-review-assistant',
     featured: true,
-    verified: true,
   },
   {
     id: 'api-documentation-generator',
@@ -117,7 +111,6 @@ export const mockPlugins: MarketplacePlugin[] = [
     marketplace: 'Community Claude Plugins',
     marketplaceUrl: 'https://community.claude-plugins.com/plugins/api-docs-generator',
     featured: false,
-    verified: false,
   },
   {
     id: 'database-schema-analyzer',
@@ -137,7 +130,6 @@ export const mockPlugins: MarketplacePlugin[] = [
     marketplace: 'Official Claude Marketplace',
     marketplaceUrl: 'https://claude.ai/marketplace/plugins/db-schema-analyzer',
     featured: true,
-    verified: true,
   },
   {
     id: 'unit-test-generator',
@@ -157,7 +149,6 @@ export const mockPlugins: MarketplacePlugin[] = [
     marketplace: 'Community Claude Plugins',
     marketplaceUrl: 'https://community.claude-plugins.com/plugins/unit-test-generator',
     featured: false,
-    verified: false,
   },
   {
     id: 'security-audit-scanner',
@@ -177,7 +168,6 @@ export const mockPlugins: MarketplacePlugin[] = [
     marketplace: 'Official Claude Marketplace',
     marketplaceUrl: 'https://claude.ai/marketplace/plugins/security-audit-scanner',
     featured: true,
-    verified: true,
   },
   {
     id: 'react-component-builder',
@@ -197,7 +187,6 @@ export const mockPlugins: MarketplacePlugin[] = [
     marketplace: 'Community Claude Plugins',
     marketplaceUrl: 'https://community.claude-plugins.com/plugins/react-component-builder',
     featured: false,
-    verified: false,
   },
 ];
 
@@ -224,7 +213,6 @@ export const stats = {
   totalStars:
     mockPlugins.reduce((sum, plugin) => sum + plugin.stars, 0) +
     mockMarketplaces.reduce((sum, marketplace) => sum + marketplace.stars, 0),
-  verifiedPlugins: mockPlugins.filter((plugin) => plugin.verified).length,
   featuredPlugins: mockPlugins.filter((plugin) => plugin.featured).length,
 };
 

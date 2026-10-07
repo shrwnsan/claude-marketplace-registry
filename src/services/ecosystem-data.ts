@@ -571,9 +571,6 @@ export class EcosystemDataService {
       manifestUrl: repo.manifestUrl,
       plugins,
       tags: repoData.topics,
-      verified:
-        repoData.owner.type === 'Organization' &&
-        (repoData.stargazers_count >= 10 || repoData.forks_count >= 5),
       qualityScore: this.calculateMarketplaceQuality(repoData, plugins),
       lastScanned: new Date().toISOString(),
       addedAt: repoData.created_at,
@@ -697,7 +694,6 @@ export class EcosystemDataService {
       manifestUrl: repo.manifestUrl,
       plugins: [], // Will be populated separately
       tags: ['claude', 'plugins', 'ai', 'marketplace'],
-      verified: index === 0, // First marketplace is verified
       qualityScore: Math.floor(Math.random() * 20) + 80, // 80-100 range
       lastScanned: new Date().toISOString(),
       addedAt: new Date(Date.now() - Math.random() * 365 * 24 * 60 * 60 * 1000).toISOString(),

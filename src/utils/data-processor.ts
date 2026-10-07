@@ -36,10 +36,6 @@ export interface EcosystemOverview {
   totalStars: number;
   /** Total forks across all plugins and marketplaces */
   totalForks: number;
-  /** Number of verified marketplaces */
-  verifiedMarketplaces: number;
-  /** Number of verified plugins */
-  verifiedPlugins: number;
   /** Average quality score across all plugins */
   averageQualityScore: number;
   /** Number of categories represented */
@@ -114,18 +110,12 @@ export interface DeveloperAnalytics {
   firstPluginDate: string;
   /** Last plugin update date */
   lastPluginDate: string;
-  /** Verified plugin count */
-  verifiedPluginCount: number;
 }
 
 /**
  * Interface for quality metrics
  */
 export interface QualityMetrics {
-  /** Percentage of verified plugins */
-  verifiedPluginPercentage: number;
-  /** Percentage of verified marketplaces */
-  verifiedMarketplacePercentage: number;
   /** Number of plugins with high quality score (>80) */
   highQualityPlugins: number;
   /** Number of plugins with recent updates (last 30 days) */
@@ -219,9 +209,7 @@ export class DataProcessor {
     const totalForks = this.calculateTotalForks(marketplaceData, pluginData);
     const totalDownloads = this.estimateTotalDownloads(pluginData);
 
-    // Calculate quality and verification metrics
-    const verifiedMarketplaces = marketplaceData.filter((mp) => mp.verified).length;
-    const verifiedPlugins = pluginData.filter((p) => p.validated).length;
+    // Calculate quality metrics
     const averageQualityScore = this.calculateAverageQualityScore(pluginData);
 
     // Calculate categories
@@ -235,8 +223,6 @@ export class DataProcessor {
       totalDownloads,
       totalStars,
       totalForks,
-      verifiedMarketplaces,
-      verifiedPlugins,
       averageQualityScore,
       totalCategories,
       lastUpdated: new Date().toISOString(),
@@ -397,7 +383,6 @@ export class DataProcessor {
       const totalStars = this.calculatePluginStars(developerPlugins);
       const averageQualityScore = this.calculateAverageQualityScore(developerPlugins);
       const categories = this.getUniqueCategories(developerPlugins);
-      const verifiedCount = developerPlugins.filter((p) => p.validated).length;
 
       // Get first and last plugin dates
       const dates = developerPlugins.map((p) => new Date(p.lastScanned)).sort();
@@ -413,7 +398,6 @@ export class DataProcessor {
         categories,
         firstPluginDate,
         lastPluginDate,
-        verifiedPluginCount: verifiedCount,
       });
     }
 
@@ -443,19 +427,7 @@ export class DataProcessor {
       console.log('✨ Processing quality metrics...');
     }
 
-    const marketplaceData = marketplaces.data;
     const pluginData = plugins.data;
-
-    // Calculate verification percentages
-    const verifiedPluginPercentage =
-      pluginData.length > 0
-        ? (pluginData.filter((p) => p.validated).length / pluginData.length) * 100
-        : 0;
-
-    const verifiedMarketplacePercentage =
-      marketplaceData.length > 0
-        ? (marketplaceData.filter((mp) => mp.verified).length / marketplaceData.length) * 100
-        : 0;
 
     // Calculate quality-based metrics
     const highQualityPlugins = pluginData.filter((p) => (p.qualityScore || 0) > 80).length;
@@ -486,8 +458,6 @@ export class DataProcessor {
     };
 
     const metrics: QualityMetrics = {
-      verifiedPluginPercentage,
-      verifiedMarketplacePercentage,
       highQualityPlugins,
       recentlyUpdatedPlugins,
       activeDevelopers,

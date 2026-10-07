@@ -33,8 +33,6 @@ export interface Marketplace {
   plugins: Plugin[];
   /** Tags for categorization */
   tags: string[];
-  /** Whether this marketplace has been verified */
-  verified: boolean;
   /** Quality score (0-100) */
   qualityScore: number;
   /** Last scan timestamp */
@@ -61,7 +59,6 @@ export interface MarketplaceListItem {
   };
   pluginCount: number;
   tags: string[];
-  verified: boolean;
   qualityScore: number;
   lastScanned: string;
 }
@@ -97,7 +94,6 @@ export type MarketplaceUpdateInput = Partial<
   Omit<MarketplaceCreateInput, 'id' | 'addedAt' | 'lastScanned'>
 > & {
   plugins?: Plugin[];
-  verified?: boolean;
   qualityScore?: number;
 };
 

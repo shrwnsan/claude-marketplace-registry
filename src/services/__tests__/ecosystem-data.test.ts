@@ -155,7 +155,7 @@ describe('EcosystemDataService', () => {
         expect(marketplace).toHaveProperty('owner');
         expect(marketplace).toHaveProperty('repository');
         expect(marketplace).toHaveProperty('qualityScore');
-        expect(marketplace).toHaveProperty('verified');
+        expect(marketplace).not.toHaveProperty('verified');
         expect(marketplace).toHaveProperty('lastScanned');
 
         expect(marketplace.id).toMatch(/^[a-z-]+-[a-z-]+$/);
