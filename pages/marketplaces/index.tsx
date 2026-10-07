@@ -5,7 +5,7 @@ import SearchBar from '@/components/Search/SearchBar';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
 import SortSelect from '@/components/ui/SortSelect';
-import { Star, ChevronRight, ShieldCheck, Filter, Grid, List, X } from 'lucide-react';
+import { Check, Star, ChevronRight, ShieldCheck, Filter, Grid, List, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import {
@@ -286,17 +286,20 @@ const MarketplacesPage: React.FC = () => {
               {/* Filter, Sort and View Controls — pinned right; wraps as a
                   unit below the count line when they can't fit one line (mobile) */}
               <div className='flex flex-wrap items-center gap-x-3 gap-y-2 ml-auto lg:flex-nowrap lg:flex-shrink-0 lg:h-9'>
-                <label
-                  htmlFor='marketplace-validated-filter'
-                  className='flex items-center gap-1.5 text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap cursor-pointer select-none'
-                >
+                <label className='group flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap cursor-pointer select-none'>
                   <input
                     id='marketplace-validated-filter'
                     type='checkbox'
                     checked={validatedOnly}
                     onChange={(e) => handleValidatedChange(e.target.checked)}
-                    className='w-4 h-4 rounded accent-primary-600 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900'
+                    className='peer sr-only'
                   />
+                  <span
+                    aria-hidden='true'
+                    className='flex items-center justify-center w-[18px] h-[18px] rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-transparent transition-colors group-hover:border-gray-400 dark:group-hover:border-gray-500 peer-checked:bg-primary-600 peer-checked:border-primary-600 peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-primary-500 peer-focus-visible:ring-offset-2 dark:peer-focus-visible:ring-offset-gray-900'
+                  >
+                    <Check className='w-3 h-3' strokeWidth={3} />
+                  </span>
                   Validated manifest
                   <span className='text-xs text-gray-400 dark:text-gray-500 tabular-nums'>
                     {withManifestCount.toLocaleString()}
