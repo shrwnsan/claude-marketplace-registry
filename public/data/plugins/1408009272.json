@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1408009272-load-handoff",
+    "name": "load-handoff",
+    "description": "name: load-handoff",
+    "version": "1.0.0",
+    "author": "PetroczyP",
+    "repository": "https://github.com/PetroczyP/torch",
+    "manifestPath": "skills/load-handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1408009272",
+      "marketplaceName": "torch",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1408009272-save-handoff",
+    "name": "save-handoff",
+    "description": "name: save-handoff",
+    "version": "1.0.0",
+    "author": "PetroczyP",
+    "repository": "https://github.com/PetroczyP/torch",
+    "manifestPath": "skills/save-handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1408009272",
+      "marketplaceName": "torch",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,276 @@
+[
+  {
+    "id": "1398400311-termux-elite",
+    "name": "termux-elite",
+    "description": "Portable operational skills for agents working inside Termux and Android environments.",
+    "version": "0.6.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1398400311-background-processes",
+    "name": "background-processes",
+    "description": "name: background-processes",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/background-processes",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-git-credentials",
+    "name": "git-credentials",
+    "description": "name: git-credentials",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/git-credentials",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-github-actions",
+    "name": "github-actions",
+    "description": "name: github-actions",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/github-actions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-node-native-build",
+    "name": "node-native-build",
+    "description": "name: node-native-build",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/node-native-build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-package-troubleshooting",
+    "name": "package-troubleshooting",
+    "description": "name: package-troubleshooting",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/package-troubleshooting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-proot-boundaries",
+    "name": "proot-boundaries",
+    "description": "name: proot-boundaries",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/proot-boundaries",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-python-native-build",
+    "name": "python-native-build",
+    "description": "name: python-native-build",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/python-native-build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-storage-permissions",
+    "name": "storage-permissions",
+    "description": "name: storage-permissions",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/storage-permissions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-termux-adb",
+    "name": "termux-adb",
+    "description": "name: termux-adb",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/termux-adb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-termux-api",
+    "name": "termux-api",
+    "description": "name: termux-api",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/termux-api",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-termux-backup",
+    "name": "termux-backup",
+    "description": "name: termux-backup",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/termux-backup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-termux-environment",
+    "name": "termux-environment",
+    "description": "name: termux-environment",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/termux-environment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-termux-network",
+    "name": "termux-network",
+    "description": "name: termux-network",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/termux-network",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-termux-services",
+    "name": "termux-services",
+    "description": "name: termux-services",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/termux-services",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1398400311-termux-sshd",
+    "name": "termux-sshd",
+    "description": "name: termux-sshd",
+    "version": "1.0.0",
+    "author": "Alex72-py",
+    "repository": "https://github.com/Alex72-py/termux-elite",
+    "manifestPath": "skills/termux-sshd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398400311",
+      "marketplaceName": "termux-elite",
+      "hasSkillMd": true
+    }
+  }
+]

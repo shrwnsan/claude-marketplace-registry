@@ -1,0 +1,225 @@
+[
+  {
+    "id": "1402970341-bc",
+    "name": "bc",
+    "description": "Editing skills and the MCP server for the BashCut video editor.",
+    "version": "",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402970341-audio-mix",
+    "name": "audio-mix",
+    "description": "name: audio-mix",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/audio-mix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-beat-cut",
+    "name": "beat-cut",
+    "description": "name: beat-cut",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/beat-cut",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-captions-text",
+    "name": "captions-text",
+    "description": "name: captions-text",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/captions-text",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-color-grade",
+    "name": "color-grade",
+    "description": "name: color-grade",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/color-grade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-edit-workflow",
+    "name": "edit-workflow",
+    "description": "name: edit-workflow",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/edit-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-effects",
+    "name": "effects",
+    "description": "name: effects",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/effects",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-footage-survey",
+    "name": "footage-survey",
+    "description": "name: footage-survey",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/footage-survey",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-library",
+    "name": "library",
+    "description": "name: library",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/library",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-self-learn",
+    "name": "self-learn",
+    "description": "name: self-learn",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/self-learn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-stock-images",
+    "name": "stock-images",
+    "description": "name: stock-images",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/stock-images",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-style-study",
+    "name": "style-study",
+    "description": "name: style-study",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/style-study",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1402970341-voiceover",
+    "name": "voiceover",
+    "description": "name: voiceover",
+    "version": "1.0.0",
+    "author": "dongnguyenvie",
+    "repository": "https://github.com/dongnguyenvie/bashcut-agent-kit",
+    "manifestPath": "skills/voiceover",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402970341",
+      "marketplaceName": "bashcut-agent-kit",
+      "hasSkillMd": true
+    }
+  }
+]

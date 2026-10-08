@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1402213883-skins",
+    "name": "skins",
+    "description": "Skins for Claude Code's transcript: themed tool rows, reply gutters and spinner words. /skin swaps them live.",
+    "version": "",
+    "author": "hellosverre",
+    "repository": "https://github.com/hellosverre/claude-skins",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402213883",
+      "marketplaceName": "claude-skins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 1
+    }
+  },
+  {
+    "id": "1402213883-skin-designer",
+    "name": "skin-designer",
+    "description": "name: skin-designer",
+    "version": "1.0.0",
+    "author": "hellosverre",
+    "repository": "https://github.com/hellosverre/claude-skins",
+    "manifestPath": "skills/skin-designer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402213883",
+      "marketplaceName": "claude-skins",
+      "hasSkillMd": true
+    }
+  }
+]

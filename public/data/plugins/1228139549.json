@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1228139549-harness-maker",
+    "name": "harness-maker",
+    "description": "Project-tailored harness generator — single source renders to .claude/, .cursor/, and .codex/.",
+    "version": "",
+    "author": "Ecro",
+    "repository": "https://github.com/Ecro/harness-maker",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228139549",
+      "marketplaceName": "harness-maker",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1228139549-hm-make",
+    "name": "hm-make",
+    "description": "name: hm-make",
+    "version": "1.0.0",
+    "author": "Ecro",
+    "repository": "https://github.com/Ecro/harness-maker",
+    "manifestPath": "skills/hm-make",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228139549",
+      "marketplaceName": "harness-maker",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1228139549-hm-update",
+    "name": "hm-update",
+    "description": "name: hm-update",
+    "version": "1.0.0",
+    "author": "Ecro",
+    "repository": "https://github.com/Ecro/harness-maker",
+    "manifestPath": "skills/hm-update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1228139549",
+      "marketplaceName": "harness-maker",
+      "hasSkillMd": true
+    }
+  }
+]

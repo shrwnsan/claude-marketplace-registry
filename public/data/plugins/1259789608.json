@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1259789608-crew",
+    "name": "crew",
+    "description": "Team-style feature delivery for Claude Code: a captain agent plans the work and delegates each step to backend, frontend, test, and design specialists behind hook-enforced guardrails, with a consolidated review gate before anything ships. Also pays down tech debt one verified, gated batch at a time.",
+    "version": "",
+    "author": "johantor",
+    "repository": "https://github.com/johantor/crew",
+    "manifestPath": "./plugins/crew",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1259789608",
+      "marketplaceName": "crew",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1259789608-crew-review",
+    "name": "crew-review",
+    "description": "name: crew-review",
+    "version": "1.0.0",
+    "author": "johantor",
+    "repository": "https://github.com/johantor/crew",
+    "manifestPath": ".claude/skills/crew-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1259789608",
+      "marketplaceName": "crew",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1259789608-steward",
+    "name": "steward",
+    "description": "name: steward",
+    "version": "1.0.0",
+    "author": "johantor",
+    "repository": "https://github.com/johantor/crew",
+    "manifestPath": ".claude/skills/steward",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1259789608",
+      "marketplaceName": "crew",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1259789608-writing-style",
+    "name": "writing-style",
+    "description": "name: writing-style",
+    "version": "1.0.0",
+    "author": "johantor",
+    "repository": "https://github.com/johantor/crew",
+    "manifestPath": ".claude/skills/writing-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1259789608",
+      "marketplaceName": "crew",
+      "hasSkillMd": true
+    }
+  }
+]

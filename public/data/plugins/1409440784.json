@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1409440784-receipts",
+    "name": "receipts",
+    "description": "UNVERIFIED when Claude claims done without a check: a receipt line under every answer that claims done, naming the test or build that ran after the last edit, or saying nothing did. Plus a progress band with an estimate that names its basis.",
+    "version": "0.2.3",
+    "author": "shawnpetros",
+    "repository": "https://github.com/shawnpetros/claude-receipts",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409440784",
+      "marketplaceName": "claude-receipts",
+      "skills": [],
+      "strict": false,
+      "modsCount": 1
+    }
+  }
+]

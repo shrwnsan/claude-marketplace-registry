@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1283195334-scalpel",
+    "name": "scalpel",
+    "description": "Surgical precision skills for AI-assisted development: focused workflows, careful implementation, and disciplined delivery",
+    "version": "0.1.4",
+    "author": "Kyle Reczek",
+    "repository": "https://github.com/Banyango/scalpel",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283195334",
+      "marketplaceName": "scalpel",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1283195334-implement",
+    "name": "implement",
+    "description": "name: implement",
+    "version": "1.0.0",
+    "author": "Kyle Reczek",
+    "repository": "https://github.com/Banyango/scalpel",
+    "manifestPath": "skills/implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283195334",
+      "marketplaceName": "scalpel",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1283195334-plan",
+    "name": "plan",
+    "description": "name: plan",
+    "version": "1.0.0",
+    "author": "Kyle Reczek",
+    "repository": "https://github.com/Banyango/scalpel",
+    "manifestPath": "skills/plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1283195334",
+      "marketplaceName": "scalpel",
+      "hasSkillMd": true
+    }
+  }
+]

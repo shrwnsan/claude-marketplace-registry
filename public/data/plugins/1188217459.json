@@ -606,5 +606,24 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1188217459-mac-agent-hygiene",
+    "name": "mac-agent-hygiene",
+    "description": "Keeps a Mac that runs Claude Code agents from filling its disk — daily LaunchAgent + MCP server that clear regenerable caches and reap stale, clean, pushed git worktrees (plan first, apply on confirm)",
+    "version": "0.1.0",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/mac-agent-hygiene",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]

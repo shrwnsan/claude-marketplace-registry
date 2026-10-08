@@ -1,6 +1,6 @@
 {
   "model": "jev-1.13.0",
-  "generatedAt": "2026-10-07T04:55:38.507Z",
+  "generatedAt": "2026-10-08T05:08:51.117Z",
   "entries": {
     "287005473": {
       "category": "none",
@@ -196,6 +196,11 @@
       "category": "skills",
       "categoryConfidence": 1,
       "isMarketplace": 0.74
+    },
+    "1113573066": {
+      "category": "agents",
+      "categoryConfidence": 0.88,
+      "isMarketplace": 0.07
     },
     "1115901290": {
       "category": "devtools",
@@ -547,6 +552,11 @@
       "categoryConfidence": 0.86,
       "isMarketplace": 0.1
     },
+    "1176040792": {
+      "category": "none",
+      "categoryConfidence": 0.76,
+      "isMarketplace": 0.18
+    },
     "1176993017": {
       "category": "devtools",
       "categoryConfidence": 0.29,
@@ -862,6 +872,11 @@
       "categoryConfidence": 0.91,
       "isMarketplace": 0.48
     },
+    "1218372287": {
+      "category": "devtools",
+      "categoryConfidence": 1,
+      "isMarketplace": 0.02
+    },
     "1218789847": {
       "category": "automation",
       "categoryConfidence": 0.77,
@@ -1121,6 +1136,11 @@
       "category": "none",
       "categoryConfidence": 0.57,
       "isMarketplace": 0.65
+    },
+    "1256587916": {
+      "category": "devtools",
+      "categoryConfidence": 0.37,
+      "isMarketplace": 0.12
     },
     "1257475195": {
       "category": "skills",
@@ -1411,6 +1431,11 @@
       "category": "devtools",
       "categoryConfidence": 0.85,
       "isMarketplace": 0.11
+    },
+    "1317914496": {
+      "category": "devtools",
+      "categoryConfidence": 0.74,
+      "isMarketplace": 0.06
     },
     "1318400137": {
       "category": "none",
@@ -1821,6 +1846,16 @@
       "category": "devtools",
       "categoryConfidence": 0.38,
       "isMarketplace": 0.06
+    },
+    "1408009272": {
+      "category": "devtools",
+      "categoryConfidence": 0.33,
+      "isMarketplace": 0.06
+    },
+    "1409440784": {
+      "category": "devtools",
+      "categoryConfidence": 0.25,
+      "isMarketplace": 0.1
     }
   }
 }

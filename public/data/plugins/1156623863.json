@@ -1,0 +1,432 @@
+[
+  {
+    "id": "1156623863-story-skills",
+    "name": "story-skills",
+    "description": "A suite of cross-referenced skills and CLI maintenance tools for end-to-end fiction writing in markdown, in English or any other language. Covers premise development, story initialization, character management, worldbuilding, plot structure, theme, scene craft, outlined and discovery drafting, chapter writing, interactive fiction with branching paths, series and sequels, verse, genre craft, voice and style, line editing, revision passes, continuity, pacing and fair-play checks, beta-reader feedback and simulated reader panels, editorial review, research, query letters and submission tracking, publishing and print production, adaptation, validation, reporting, indexing, word counts, and manuscript export.",
+    "version": "",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/danjdewhurst/story-skills.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1156623863-adaptation",
+    "name": "adaptation",
+    "description": "name: adaptation",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/adaptation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-chapter-writing",
+    "name": "chapter-writing",
+    "description": "name: chapter-writing",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/chapter-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-character-management",
+    "name": "character-management",
+    "description": "name: character-management",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/character-management",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-discovery-drafting",
+    "name": "discovery-drafting",
+    "description": "name: discovery-drafting",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/discovery-drafting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-editorial-review",
+    "name": "editorial-review",
+    "description": "name: editorial-review",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/editorial-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-feedback-triage",
+    "name": "feedback-triage",
+    "description": "name: feedback-triage",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/feedback-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-genre-craft",
+    "name": "genre-craft",
+    "description": "name: genre-craft",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/genre-craft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-interactive-fiction",
+    "name": "interactive-fiction",
+    "description": "name: interactive-fiction",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/interactive-fiction",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-line-editing",
+    "name": "line-editing",
+    "description": "name: line-editing",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/line-editing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-plot-structure",
+    "name": "plot-structure",
+    "description": "name: plot-structure",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/plot-structure",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-premise-workshop",
+    "name": "premise-workshop",
+    "description": "name: premise-workshop",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/premise-workshop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-publishing",
+    "name": "publishing",
+    "description": "name: publishing",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/publishing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-reader-panel",
+    "name": "reader-panel",
+    "description": "name: reader-panel",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/reader-panel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-research",
+    "name": "research",
+    "description": "name: research",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-revision-continuity",
+    "name": "revision-continuity",
+    "description": "name: revision-continuity",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/revision-continuity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-scene-craft",
+    "name": "scene-craft",
+    "description": "name: scene-craft",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/scene-craft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-series-continuity",
+    "name": "series-continuity",
+    "description": "name: series-continuity",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/series-continuity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-story-init",
+    "name": "story-init",
+    "description": "name: story-init",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/story-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-story-maintenance",
+    "name": "story-maintenance",
+    "description": "name: story-maintenance",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/story-maintenance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-submission",
+    "name": "submission",
+    "description": "name: submission",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/submission",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-theme-craft",
+    "name": "theme-craft",
+    "description": "name: theme-craft",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/theme-craft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-verse-craft",
+    "name": "verse-craft",
+    "description": "name: verse-craft",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/verse-craft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-voice-style",
+    "name": "voice-style",
+    "description": "name: voice-style",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/voice-style",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1156623863-worldbuilding",
+    "name": "worldbuilding",
+    "description": "name: worldbuilding",
+    "version": "1.0.0",
+    "author": "Daniel Dewhurst",
+    "repository": "https://github.com/danjdewhurst/story-skills",
+    "manifestPath": "skills/worldbuilding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1156623863",
+      "marketplaceName": "story-skills",
+      "hasSkillMd": true
+    }
+  }
+]

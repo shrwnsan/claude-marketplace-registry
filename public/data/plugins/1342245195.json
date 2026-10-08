@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1342245195-human-review",
+    "name": "human-review",
+    "description": "Assemble .human-review/review.html for a change set — diagram deltas, Code City, a feature video, endpoint complexity, and deep-linked snippets.",
+    "version": "1.0.0",
+    "author": "victorrentea",
+    "repository": "https://github.com/victorrentea/human-review",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1342245195",
+      "marketplaceName": "human-review",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1342245195-human-review-publish-demo",
+    "name": "human-review-publish-demo",
+    "description": "name: human-review-publish-demo",
+    "version": "1.0.0",
+    "author": "victorrentea",
+    "repository": "https://github.com/victorrentea/human-review",
+    "manifestPath": "skills/human-review-publish-demo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1342245195",
+      "marketplaceName": "human-review",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1342245195-publish-demo",
+    "name": "publish-demo",
+    "description": "name: publish-demo",
+    "version": "1.0.0",
+    "author": "victorrentea",
+    "repository": "https://github.com/victorrentea/human-review",
+    "manifestPath": "skills/publish-demo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1342245195",
+      "marketplaceName": "human-review",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1342245195-record-review",
+    "name": "record-review",
+    "description": "name: record-review",
+    "version": "1.0.0",
+    "author": "victorrentea",
+    "repository": "https://github.com/victorrentea/human-review",
+    "manifestPath": "skills/record-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1342245195",
+      "marketplaceName": "human-review",
+      "hasSkillMd": true
+    }
+  }
+]

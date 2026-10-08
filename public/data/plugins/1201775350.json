@@ -3,7 +3,7 @@
     "id": "1201775350-great-cto",
     "name": "great_cto",
     "description": "You already have the agent. This is everything around it. great_cto runs Claude Code as a pipeline of 72 specialist agents — an independent model checks each stage before the next builds on it, spending caps refuse rather than warn, and three decisions stay yours: what gets built, how, and whether it ships.",
-    "version": "3.53.0",
+    "version": "3.58.1",
     "author": "Alexander Velikiy",
     "repository": "https://github.com/avelikiy/great_cto",
     "manifestPath": "./",
@@ -15,7 +15,7 @@
       "marketplaceName": "great_cto",
       "skills": [],
       "strict": false,
-      "modsCount": 0
+      "modsCount": 1
     }
   },
   {

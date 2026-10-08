@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1372433490-agenticos",
+    "name": "agenticos",
+    "description": "Brain context injection, session capture, telemetry, slash commands, skills, and the agenticos MCP server for an AgenticOS vault.",
+    "version": "1.3.1",
+    "author": "zzoretich",
+    "repository": "https://github.com/zzoretich/UniDeX-Agent-Harness",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1372433490",
+      "marketplaceName": "UniDeX-Agent-Harness",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

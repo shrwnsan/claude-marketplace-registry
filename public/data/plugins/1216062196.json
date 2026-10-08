@@ -1,0 +1,154 @@
+[
+  {
+    "id": "1216062196-gitops-kubernetes",
+    "name": "gitops-kubernetes",
+    "description": "Flux CD debugging, knowledge, and tenant onboarding — skills plus the Flux MCP server and a read-only Flux troubleshooter agent for live-cluster debugging",
+    "version": "1.0.2",
+    "author": "devantler-tech",
+    "repository": "https://github.com/devantler-tech/agent-plugins",
+    "manifestPath": "./plugins/gitops-kubernetes",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216062196",
+      "marketplaceName": "agent-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216062196-github",
+    "name": "github",
+    "description": "GitHub CLI, stacked PRs, Actions docs, and issue management skills",
+    "version": "1.0.5",
+    "author": "devantler-tech",
+    "repository": "https://github.com/devantler-tech/agent-plugins",
+    "manifestPath": "./plugins/github",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216062196",
+      "marketplaceName": "agent-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216062196-agentic-engineering",
+    "name": "agentic-engineering",
+    "description": "The autonomous engineering system for repository portfolios — engineer, read-only surveyor, and meta-engineer agents; portfolio, product, spend, and improvement workflows; cross-tool instruction architecture and skill discovery; configured by the consumer AGENTS.md",
+    "version": "6.2.0",
+    "author": "devantler-tech",
+    "repository": "https://github.com/devantler-tech/agent-plugins",
+    "manifestPath": "./plugins/agentic-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216062196",
+      "marketplaceName": "agent-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216062196-go",
+    "name": "go",
+    "description": "Go best practices, concurrency, generics, interfaces, and testing skills",
+    "version": "1.0.1",
+    "author": "devantler-tech",
+    "repository": "https://github.com/devantler-tech/agent-plugins",
+    "manifestPath": "./plugins/go",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216062196",
+      "marketplaceName": "agent-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216062196-engineering-practices",
+    "name": "engineering-practices",
+    "description": "Git commits, conventional releases, refactoring, test-driven development, and engineering ways of working skills",
+    "version": "1.0.1",
+    "author": "devantler-tech",
+    "repository": "https://github.com/devantler-tech/agent-plugins",
+    "manifestPath": "./plugins/engineering-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216062196",
+      "marketplaceName": "agent-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216062196-frontend-design",
+    "name": "frontend-design",
+    "description": "Astro, frontend design, and web design guidelines skills",
+    "version": "1.0.1",
+    "author": "devantler-tech",
+    "repository": "https://github.com/devantler-tech/agent-plugins",
+    "manifestPath": "./plugins/frontend-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216062196",
+      "marketplaceName": "agent-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216062196-vibe-coding",
+    "name": "vibe-coding",
+    "description": "Build a product by conversation alone — a plain-language build companion agent plus skills for needs-to-stack translation, an allowed-stack guardrail, and a jargon-free voice; for people with no technical background",
+    "version": "1.0.0",
+    "author": "devantler-tech",
+    "repository": "https://github.com/devantler-tech/agent-plugins",
+    "manifestPath": "./plugins/vibe-coding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216062196",
+      "marketplaceName": "agent-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216062196-ksail",
+    "name": "ksail",
+    "description": "KSail CLI expertise and MCP server — create and operate Kubernetes clusters (Kind, K3d, Talos, vCluster, KWOK, EKS) and GitOps workloads declaratively",
+    "version": "1.0.0",
+    "author": "devantler-tech",
+    "repository": "https://github.com/devantler-tech/agent-plugins",
+    "manifestPath": "./plugins/ksail",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216062196",
+      "marketplaceName": "agent-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

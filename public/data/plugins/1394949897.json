@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1394949897-dev-flow",
+    "name": "dev-flow",
+    "description": "Drive one large, multi-phase or multi-PR change end to end — plan, execute task-by-task with a live ledger, ship per PR, and resume cleanly across sessions. Works in any repo that has a .claude/dev-flow-context.md.",
+    "version": "",
+    "author": "PramodTKodag",
+    "repository": "https://github.com/PramodTKodag/claude-code-skills",
+    "manifestPath": "./plugins/dev-flow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394949897",
+      "marketplaceName": "claude-code-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1394949897-dependency-audit",
+    "name": "dependency-audit",
+    "description": "Audit dependencies for known vulnerabilities and outdated packages across npm/pnpm/yarn, Go, Python, and Cargo; produces a prioritized, read-only remediation report.",
+    "version": "",
+    "author": "PramodTKodag",
+    "repository": "https://github.com/PramodTKodag/claude-code-skills",
+    "manifestPath": "./plugins/dependency-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394949897",
+      "marketplaceName": "claude-code-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1394949897-plan-flow",
+    "name": "plan-flow",
+    "description": "Investigate a GitHub issue against the real code — cross-service, security, design challenge — and write a self-contained implementation prompt for a separate coding session in any AI tool. Never implements the issue.",
+    "version": "",
+    "author": "PramodTKodag",
+    "repository": "https://github.com/PramodTKodag/claude-code-skills",
+    "manifestPath": "./plugins/plan-flow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1394949897",
+      "marketplaceName": "claude-code-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

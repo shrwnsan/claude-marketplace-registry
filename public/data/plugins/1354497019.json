@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1354497019-oh-my-fable",
+    "name": "oh-my-fable",
+    "description": "Always-on working rules from Anthropic's Fable 5.1 and Opus 5.5 prompting guides via SessionStart and SubagentStart hooks, unattended sessions detected automatically; /fable rewrites rough requests; /fable-status shows what is in effect; /fable-audit finds guide sections your rules are missing, read-only; /fable-setup is optional.",
+    "version": "",
+    "author": "Junhan2",
+    "repository": "https://github.com/Junhan2/oh-my-fable",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1354497019",
+      "marketplaceName": "oh-my-fable",
+      "skills": [],
+      "strict": false,
+      "modsCount": 1
+    }
+  },
+  {
+    "id": "1354497019-fable-audit",
+    "name": "fable-audit",
+    "description": "name: fable-audit",
+    "version": "1.0.0",
+    "author": "Junhan2",
+    "repository": "https://github.com/Junhan2/oh-my-fable",
+    "manifestPath": "skills/fable-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1354497019",
+      "marketplaceName": "oh-my-fable",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1354497019-fable-prompt",
+    "name": "fable-prompt",
+    "description": "name: fable-prompt",
+    "version": "1.0.0",
+    "author": "Junhan2",
+    "repository": "https://github.com/Junhan2/oh-my-fable",
+    "manifestPath": "skills/fable-prompt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1354497019",
+      "marketplaceName": "oh-my-fable",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1354497019-fable-setup",
+    "name": "fable-setup",
+    "description": "name: fable-setup",
+    "version": "1.0.0",
+    "author": "Junhan2",
+    "repository": "https://github.com/Junhan2/oh-my-fable",
+    "manifestPath": "skills/fable-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1354497019",
+      "marketplaceName": "oh-my-fable",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1354497019-fable-status",
+    "name": "fable-status",
+    "description": "name: fable-status",
+    "version": "1.0.0",
+    "author": "Junhan2",
+    "repository": "https://github.com/Junhan2/oh-my-fable",
+    "manifestPath": "skills/fable-status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1354497019",
+      "marketplaceName": "oh-my-fable",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1354497019-fable",
+    "name": "fable",
+    "description": "name: fable",
+    "version": "1.0.0",
+    "author": "Junhan2",
+    "repository": "https://github.com/Junhan2/oh-my-fable",
+    "manifestPath": "skills/fable",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1354497019",
+      "marketplaceName": "oh-my-fable",
+      "hasSkillMd": true
+    }
+  }
+]

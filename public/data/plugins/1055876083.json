@@ -1,0 +1,548 @@
+[
+  {
+    "id": "1055876083-plangate",
+    "name": "plangate",
+    "description": "AI coding governance OS. Provides 4-Gate approval system, Intent/Mode classification, Skill Policy Router, Evidence Ledger, and agent control layer for Claude Code.",
+    "version": "8.23.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": "./plugin/plangate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1055876083-acceptance-criteria-build",
+    "name": "acceptance-criteria-build",
+    "description": "name: acceptance-criteria-build",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/acceptance-criteria-build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-acceptance-review",
+    "name": "acceptance-review",
+    "description": "name: acceptance-review",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/acceptance-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-ai-loop-cycle",
+    "name": "ai-loop-cycle",
+    "description": "name: ai-loop-cycle",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/ai-loop-cycle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-architecture-sketch",
+    "name": "architecture-sketch",
+    "description": "name: architecture-sketch",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/architecture-sketch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-brainstorming",
+    "name": "brainstorming",
+    "description": "name: brainstorming",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/brainstorming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-breakdown-gate",
+    "name": "breakdown-gate",
+    "description": "name: breakdown-gate",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/breakdown-gate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-codex-multi-agent",
+    "name": "codex-multi-agent",
+    "description": "name: codex-multi-agent",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/codex-multi-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-context-load",
+    "name": "context-load",
+    "description": "name: context-load",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/context-load",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-diff-audit",
+    "name": "diff-audit",
+    "description": "name: diff-audit",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/diff-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-edgecase-enumeration",
+    "name": "edgecase-enumeration",
+    "description": "name: edgecase-enumeration",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/edgecase-enumeration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-feature-implement",
+    "name": "feature-implement",
+    "description": "name: feature-implement",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/feature-implement",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-ho-apply-script",
+    "name": "ho-apply-script",
+    "description": "name: ho-apply-script",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/ho-apply-script",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-hypothesis-logger",
+    "name": "hypothesis-logger",
+    "description": "name: hypothesis-logger",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/hypothesis-logger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-instruction-debt-audit",
+    "name": "instruction-debt-audit",
+    "description": "name: instruction-debt-audit",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/instruction-debt-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-intent-classifier",
+    "name": "intent-classifier",
+    "description": "name: intent-classifier",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/intent-classifier",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-known-issues-log",
+    "name": "known-issues-log",
+    "description": "name: known-issues-log",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/known-issues-log",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-nonfunctional-check",
+    "name": "nonfunctional-check",
+    "description": "name: nonfunctional-check",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/nonfunctional-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-plan-quality-check",
+    "name": "plan-quality-check",
+    "description": "name: plan-quality-check",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/plan-quality-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-plan-quality-reviewer",
+    "name": "plan-quality-reviewer",
+    "description": "name: plan-quality-reviewer",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/plan-quality-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-plangate-setup",
+    "name": "plangate-setup",
+    "description": "name: plangate-setup",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/plangate-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-plangate-working-discipline",
+    "name": "plangate-working-discipline",
+    "description": "name: plangate-working-discipline",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/plangate-working-discipline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-pr-watch",
+    "name": "pr-watch",
+    "description": "name: pr-watch",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/pr-watch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-ref-integrity-scan",
+    "name": "ref-integrity-scan",
+    "description": "name: ref-integrity-scan",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/ref-integrity-scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-requirement-gap-scan",
+    "name": "requirement-gap-scan",
+    "description": "name: requirement-gap-scan",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/requirement-gap-scan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-risk-assessment",
+    "name": "risk-assessment",
+    "description": "name: risk-assessment",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/risk-assessment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-skill-creator",
+    "name": "skill-creator",
+    "description": "name: skill-creator",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-skill-policy-router",
+    "name": "skill-policy-router",
+    "description": "name: skill-policy-router",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/skill-policy-router",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-subagent-delegation-brief",
+    "name": "subagent-delegation-brief",
+    "description": "name: subagent-delegation-brief",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/subagent-delegation-brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-subagent-driven-development",
+    "name": "subagent-driven-development",
+    "description": "name: subagent-driven-development",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/subagent-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-subagent-team-design",
+    "name": "subagent-team-design",
+    "description": "name: subagent-team-design",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/subagent-team-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1055876083-systematic-debugging",
+    "name": "systematic-debugging",
+    "description": "name: systematic-debugging",
+    "version": "1.0.0",
+    "author": "PlanGate contributors",
+    "repository": "https://github.com/s977043/PlanGate",
+    "manifestPath": ".claude/skills/systematic-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1055876083",
+      "marketplaceName": "PlanGate",
+      "hasSkillMd": true
+    }
+  }
+]

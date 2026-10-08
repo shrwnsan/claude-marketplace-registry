@@ -3,13 +3,13 @@
     "id": "1358288556-drawer",
     "name": "drawer",
     "description": "A ```dot fence in a reply is drawn in place.",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "author": "Sureffi",
     "repository": "https://github.com/Sureffi/drawer",
     "manifestPath": {
       "source": "archive",
-      "url": "https://github.com/sureffi/drawer/releases/download/v0.4.0/drawer-plugin.zip",
-      "sha256": "d2f4f8b9091e4d3137322c160f80ffd40e27c779fcec0bd683e90ef4df3aa544"
+      "url": "https://github.com/sureffi/drawer/releases/download/v0.4.1/drawer-plugin.zip",
+      "sha256": "ce53c4c48a506d15709a8bd5ac7e40465086e1541af6659720f9d8cded859a55"
     },
     "isValid": true,
     "errors": [],
@@ -19,7 +19,7 @@
       "marketplaceName": "drawer",
       "skills": [],
       "strict": false,
-      "modsCount": 0
+      "modsCount": 1
     }
   }
 ]
