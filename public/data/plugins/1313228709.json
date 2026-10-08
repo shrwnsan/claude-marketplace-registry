@@ -1,0 +1,174 @@
+[
+  {
+    "id": "1313228709-workkit",
+    "name": "workkit",
+    "description": "The issue-pipeline workflow system: standards heal, manager crew, guard hooks, and the workflow skills, for any repo.",
+    "version": "",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1313228709-checkpoint",
+    "name": "checkpoint",
+    "description": "name: checkpoint",
+    "version": "1.0.0",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "skills/checkpoint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1313228709-diagnose",
+    "name": "diagnose",
+    "description": "name: diagnose",
+    "version": "1.0.0",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "skills/diagnose",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1313228709-feature",
+    "name": "feature",
+    "description": "name: feature",
+    "version": "1.0.0",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "skills/feature",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1313228709-interview",
+    "name": "interview",
+    "description": "name: interview",
+    "version": "1.0.0",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "skills/interview",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1313228709-migrate",
+    "name": "migrate",
+    "description": "name: migrate",
+    "version": "1.0.0",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "skills/migrate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1313228709-review",
+    "name": "review",
+    "description": "name: review",
+    "version": "1.0.0",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "skills/review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1313228709-ship",
+    "name": "ship",
+    "description": "name: ship",
+    "version": "1.0.0",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "skills/ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1313228709-status",
+    "name": "status",
+    "description": "name: status",
+    "version": "1.0.0",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "skills/status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1313228709-triage",
+    "name": "triage",
+    "description": "name: triage",
+    "version": "1.0.0",
+    "author": "itw-creative-works",
+    "repository": "https://github.com/itw-creative-works/workkit",
+    "manifestPath": "skills/triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1313228709",
+      "marketplaceName": "workkit",
+      "hasSkillMd": true
+    }
+  }
+]

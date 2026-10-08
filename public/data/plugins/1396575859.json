@@ -2,7 +2,7 @@
   {
     "id": "1396575859-titan-receipts",
     "name": "titan-receipts",
-    "description": "Hash-chained, HMAC-signed receipts for every AI-assisted commit; offline verification; fail-closed chain rules.",
+    "description": "Tamper-evident receipt for every commit — AI-assisted or not, model, tool version, session, file hashes — hash-chained, signed, verified offline. /receipt-report writes the compliance evidence.",
     "version": "",
     "author": "Rmasood1122",
     "repository": "https://github.com/Rmasood1122/titan-gate-plugin",

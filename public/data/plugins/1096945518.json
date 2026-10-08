@@ -1,0 +1,310 @@
+[
+  {
+    "id": "1096945518-claude-patent-creator-standalone",
+    "name": "claude-patent-creator-standalone",
+    "description": "Complete self-contained patent creation system - NO MCP server required. Uses Claude Code skills, agents, commands, and hooks.",
+    "version": "1.1.6",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1096945518-bigquery-patent-search",
+    "name": "bigquery-patent-search",
+    "description": "name: bigquery-patent-search",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/bigquery-patent-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-development-assistant",
+    "name": "development-assistant",
+    "description": "name: development-assistant",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/development-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-epc-search",
+    "name": "epc-search",
+    "description": "name: epc-search",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/epc-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-epo-patent-analyzer",
+    "name": "epo-patent-analyzer",
+    "description": "name: epo-patent-analyzer",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/epo-patent-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-epo-patent-search",
+    "name": "epo-patent-search",
+    "description": "name: epo-patent-search",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/epo-patent-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-index-manager",
+    "name": "index-manager",
+    "description": "name: index-manager",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/index-manager",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-mpep-search",
+    "name": "mpep-search",
+    "description": "name: mpep-search",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/mpep-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-patent-application-creator",
+    "name": "patent-application-creator",
+    "description": "name: patent-application-creator",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/patent-application-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-patent-claims-analyzer",
+    "name": "patent-claims-analyzer",
+    "description": "name: patent-claims-analyzer",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/patent-claims-analyzer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-patent-diagram-generator",
+    "name": "patent-diagram-generator",
+    "description": "name: patent-diagram-generator",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/patent-diagram-generator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-patent-reviewer",
+    "name": "patent-reviewer",
+    "description": "name: patent-reviewer",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/patent-reviewer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-patent-search",
+    "name": "patent-search",
+    "description": "name: patent-search",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/patent-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-pct-application",
+    "name": "pct-application",
+    "description": "name: pct-application",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/pct-application",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-prior-art-search",
+    "name": "prior-art-search",
+    "description": "name: prior-art-search",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/prior-art-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-setup-assistant",
+    "name": "setup-assistant",
+    "description": "name: setup-assistant",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/setup-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-testing-assistant",
+    "name": "testing-assistant",
+    "description": "name: testing-assistant",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/testing-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1096945518-troubleshooting-assistant",
+    "name": "troubleshooting-assistant",
+    "description": "name: troubleshooting-assistant",
+    "version": "1.0.0",
+    "author": "RobThePCGuy",
+    "repository": "https://github.com/RobThePCGuy/Claude-Patent-Creator",
+    "manifestPath": "skills/troubleshooting-assistant",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1096945518",
+      "marketplaceName": "Claude-Patent-Creator",
+      "hasSkillMd": true
+    }
+  }
+]

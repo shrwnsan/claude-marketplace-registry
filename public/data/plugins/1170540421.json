@@ -1,0 +1,70 @@
+[
+  {
+    "id": "1170540421-plan-task",
+    "name": "plan-task",
+    "description": "name: plan-task",
+    "version": "1.0.0",
+    "author": "LevNas",
+    "repository": "https://github.com/LevNas/ccmemo",
+    "manifestPath": "skills/plan-task",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170540421",
+      "marketplaceName": "ccmemo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170540421-recall-knowledge",
+    "name": "recall-knowledge",
+    "description": "name: recall-knowledge",
+    "version": "1.0.0",
+    "author": "LevNas",
+    "repository": "https://github.com/LevNas/ccmemo",
+    "manifestPath": "skills/recall-knowledge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170540421",
+      "marketplaceName": "ccmemo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170540421-record-knowledge",
+    "name": "record-knowledge",
+    "description": "name: record-knowledge",
+    "version": "1.0.0",
+    "author": "LevNas",
+    "repository": "https://github.com/LevNas/ccmemo",
+    "manifestPath": "skills/record-knowledge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170540421",
+      "marketplaceName": "ccmemo",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1170540421-review-knowledge",
+    "name": "review-knowledge",
+    "description": "name: review-knowledge",
+    "version": "1.0.0",
+    "author": "LevNas",
+    "repository": "https://github.com/LevNas/ccmemo",
+    "manifestPath": "skills/review-knowledge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1170540421",
+      "marketplaceName": "ccmemo",
+      "hasSkillMd": true
+    }
+  }
+]

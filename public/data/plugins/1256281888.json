@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1256281888-quarkus-agentic-scaffolding",
+    "name": "quarkus-agentic-scaffolding",
+    "description": "Three-skill flow for building Quarkus + LangChain4j agentic AI applications: setup (prerequisites), scaffold-project (create + component scaffolding), and audit-project (conformance review). Pairs with the repository's CLAUDE.md conventions. Requires the Quarkus Agents MCP and context7 (see README).",
+    "version": "",
+    "author": "eldermoraes",
+    "repository": "https://github.com/eldermoraes/quarkus-agentic-scaffolding",
+    "manifestPath": {
+      "source": "github",
+      "repo": "eldermoraes/quarkus-agentic-scaffolding"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256281888",
+      "marketplaceName": "quarkus-agentic-scaffolding",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1256281888-audit-project",
+    "name": "audit-project",
+    "description": "name: audit-project",
+    "version": "1.0.0",
+    "author": "eldermoraes",
+    "repository": "https://github.com/eldermoraes/quarkus-agentic-scaffolding",
+    "manifestPath": "skills/audit-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256281888",
+      "marketplaceName": "quarkus-agentic-scaffolding",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1256281888-scaffold-project",
+    "name": "scaffold-project",
+    "description": "name: scaffold-project",
+    "version": "1.0.0",
+    "author": "eldermoraes",
+    "repository": "https://github.com/eldermoraes/quarkus-agentic-scaffolding",
+    "manifestPath": "skills/scaffold-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256281888",
+      "marketplaceName": "quarkus-agentic-scaffolding",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1256281888-setup-agentic-scaffolding",
+    "name": "setup-agentic-scaffolding",
+    "description": "name: setup-agentic-scaffolding",
+    "version": "1.0.0",
+    "author": "eldermoraes",
+    "repository": "https://github.com/eldermoraes/quarkus-agentic-scaffolding",
+    "manifestPath": "skills/setup-agentic-scaffolding",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256281888",
+      "marketplaceName": "quarkus-agentic-scaffolding",
+      "hasSkillMd": true
+    }
+  }
+]

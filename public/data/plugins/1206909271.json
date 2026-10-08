@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1206909271-super-fr",
+    "name": "super-fr",
+    "description": "super-fr base: superpowers-wrapped planning, isolation, goal-to-PR",
+    "version": "5.17.1",
+    "author": "derio-net",
+    "repository": "https://github.com/derio-net/super-fr",
+    "manifestPath": "./plugins/super-fr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1206909271",
+      "marketplaceName": "super-fr",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1206909271-super-fr-dispatch",
+    "name": "super-fr-dispatch",
+    "description": "super-fr dispatch: queue phases to autonomous runners",
+    "version": "5.17.1",
+    "author": "derio-net",
+    "repository": "https://github.com/derio-net/super-fr",
+    "manifestPath": "./plugins/super-fr-dispatch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1206909271",
+      "marketplaceName": "super-fr",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

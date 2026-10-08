@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1408592267-zps-pareto",
+    "name": "zps-pareto",
+    "description": "Never lose a request again: turn every request into a GitHub issue, score it with the 80/20 rule, and always work on the vital few first, in one repository or across a portfolio.",
+    "version": "",
+    "author": "zebrapuma",
+    "repository": "https://github.com/zebrapuma/claude-plugins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "zebrapuma/zps-pareto-github-issues",
+      "ref": "zps-pareto--v1.0.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1408592267",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

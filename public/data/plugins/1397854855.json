@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1397854855-claude-referee",
+    "name": "claude-referee",
+    "description": "Checks \"done\" claims and small judgement calls with TypeSafe Jev, and keeps local receipts. Unofficial.",
+    "version": "",
+    "author": "ismaildasci",
+    "repository": "https://github.com/ismaildasci/claude-referee",
+    "manifestPath": "./plugins/claude-referee",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1397854855",
+      "marketplaceName": "claude-referee",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

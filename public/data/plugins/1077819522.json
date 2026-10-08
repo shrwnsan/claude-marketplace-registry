@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1077819522-pascal-agent-skills",
+    "name": "pascal-agent-skills",
+    "description": "Create, inspect, validate, and assess furniture layouts with bounded next actions in Pascal through MCP.",
+    "version": "0.1.10",
+    "author": "Pascal",
+    "repository": "https://github.com/pascalorg/editor",
+    "manifestPath": "./skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1077819522",
+      "marketplaceName": "editor",
+      "skills": [
+        "./pascal-3d",
+        "./furniture-fit"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1077819522-furniture-fit",
+    "name": "furniture-fit",
+    "description": "name: furniture-fit",
+    "version": "1.0.0",
+    "author": "Pascal",
+    "repository": "https://github.com/pascalorg/editor",
+    "manifestPath": "skills/furniture-fit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1077819522",
+      "marketplaceName": "editor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1077819522-pascal-3d",
+    "name": "pascal-3d",
+    "description": "name: pascal-3d",
+    "version": "1.0.0",
+    "author": "Pascal",
+    "repository": "https://github.com/pascalorg/editor",
+    "manifestPath": "skills/pascal-3d",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1077819522",
+      "marketplaceName": "editor",
+      "hasSkillMd": true
+    }
+  }
+]

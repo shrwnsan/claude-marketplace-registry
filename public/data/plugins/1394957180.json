@@ -3,7 +3,7 @@
     "id": "1394957180-code-kit",
     "name": "code-kit",
     "description": "Keeps AI coding agents inside your project's rules, from idea to merged code: spec design, lanes, layer rules, protected paths with an approval log, spec-check and design gates, proof-before-finish checks, dispatch, review, build status and CI verification, configured per project from its docs",
-    "version": "0.4.1",
+    "version": "0.5.0",
     "author": "warrendeanlangeveldt",
     "repository": "https://github.com/warrendeanlangeveldt/code-kit",
     "manifestPath": "./",
@@ -15,7 +15,7 @@
       "marketplaceName": "code-kit",
       "skills": [],
       "strict": false,
-      "modsCount": 0
+      "modsCount": 1
     }
   },
   {

@@ -1,27 +1,28 @@
 {
-  "totalFound": 1151,
-  "withManifest": 499,
-  "lastUpdated": "2026-10-07T04:54:14.148Z",
+  "totalFound": 1178,
+  "withManifest": 607,
+  "lastUpdated": "2026-10-08T05:07:26.023Z",
   "searchQuery": "",
   "languages": {
-    "Python": 353,
-    "JavaScript": 176,
-    "Shell": 109,
-    "TypeScript": 176,
+    "Python": 365,
+    "TypeScript": 180,
+    "JavaScript": 178,
+    "Shell": 110,
     "Go": 27,
-    "Unknown": 190,
+    "Unknown": 198,
     "Rust": 21,
     "HTML": 62,
     "AMPL": 1,
     "C++": 3,
-    "Java": 7,
     "Swift": 5,
-    "Perl": 1,
     "Jupyter Notebook": 2,
+    "Perl": 1,
     "C#": 3,
     "Astro": 1,
     "Ruby": 1,
-    "TeX": 2,
+    "Java": 7,
+    "Gleam": 1,
+    "C": 1,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
@@ -29,19 +30,18 @@
     "Markdown": 1,
     "SCSS": 1,
     "CSS": 2,
-    "Gleam": 1,
-    "C": 1,
+    "TeX": 2,
     "PowerShell": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 274380,
+      "stars": 275028,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179943,
+      "stars": 180078,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -61,7 +61,7 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76613,
+      "stars": 76679,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
@@ -70,19 +70,19 @@
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
+      "name": "ppt-master",
+      "stars": 58122,
+      "url": "https://github.com/hugohe3/ppt-master"
+    },
+    {
       "name": "i-have-adhd",
       "stars": 54382,
       "url": "https://github.com/ayghri/i-have-adhd"
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37477,
+      "stars": 37509,
       "url": "https://github.com/anthropics/claude-plugins-official"
-    },
-    {
-      "name": "invisible_playwright_mcp",
-      "stars": 31754,
-      "url": "https://github.com/feder-cr/invisible_playwright_mcp"
     }
   ]
 }

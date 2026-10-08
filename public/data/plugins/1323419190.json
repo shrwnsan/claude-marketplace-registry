@@ -3,7 +3,7 @@
     "id": "1323419190-skills",
     "name": "skills",
     "description": "The PIV loop (plan, implement, validate, review, commit, PR) plus priming, planning, worktrees, and the meta-skills for building your own AI Layer.",
-    "version": "1.3.1",
+    "version": "1.4.5",
     "author": "Cole Medin",
     "repository": "https://github.com/coleam00/skills",
     "manifestPath": "./",
@@ -79,6 +79,23 @@
     "author": "Cole Medin",
     "repository": "https://github.com/coleam00/skills",
     "manifestPath": ".claude/skills/build-dark-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1323419190",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1323419190-build-signal-engine",
+    "name": "build-signal-engine",
+    "description": "name: build-signal-engine",
+    "version": "1.0.0",
+    "author": "Cole Medin",
+    "repository": "https://github.com/coleam00/skills",
+    "manifestPath": ".claude/skills/build-signal-engine",
     "isValid": true,
     "errors": [],
     "warnings": [],

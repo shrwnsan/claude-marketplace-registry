@@ -128,18 +128,22 @@
   {
     "id": "1397746817-cin7-assistant",
     "name": "cin7-assistant",
-    "description": "name: cin7-assistant",
-    "version": "1.0.0",
+    "description": "Cin7 inventory and order management assistant for consultants and integrators: Cin7 Core (formerly DEAR Systems) API v2 integration development from a bundled extraction of the Cin7 Core developer portal — authentication headers and per-application limits, pagination, status codes and the 60-calls-per-minute limit, UTC dates, void vs undo, sub-document overwrite semantics, sale and purchase stage preconditions, every documented endpoint (295 actions in 33 groups) with field tables, parameters, request and response bodies, status and type value lists, webhooks, and a common-mistakes checklist for reviews. Cin7 Omni not covered yet. More capabilities to follow.",
+    "version": "",
     "author": "fdtaljaard",
     "repository": "https://github.com/fdtaljaard/claude-skills",
-    "manifestPath": "skills/cin7-assistant",
+    "manifestPath": "./",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1397746817",
       "marketplaceName": "claude-skills",
-      "hasSkillMd": true
+      "skills": [
+        "./skills/cin7-assistant"
+      ],
+      "strict": false,
+      "modsCount": 0
     }
   },
   {

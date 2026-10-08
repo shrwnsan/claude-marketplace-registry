@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1259870011-terminal",
+    "name": "terminal",
+    "description": "Terminal tooling: design clean TUIs/CLIs (tui-design) and capture screenshots/GIFs with VHS (vhs-cli-demos).",
+    "version": "1.0.6",
+    "author": "Griffen Fargo",
+    "repository": "https://github.com/gfargo/skills",
+    "manifestPath": "./plugins/terminal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1259870011",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1259870011-devops",
+    "name": "devops",
+    "description": "VPS infrastructure with strut: deploy, backup, drift, secrets, fleet management.",
+    "version": "1.0.19",
+    "author": "Griffen Fargo",
+    "repository": "https://github.com/gfargo/skills",
+    "manifestPath": "./plugins/devops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1259870011",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1259870011-games",
+    "name": "games",
+    "description": "Game-development tooling: terminal card games with ink-playing-cards and reproducible pixel-art pipelines with PixelKiln.",
+    "version": "1.0.53",
+    "author": "Griffen Fargo",
+    "repository": "https://github.com/gfargo/skills",
+    "manifestPath": "./plugins/games",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1259870011",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1259870011-security",
+    "name": "security",
+    "description": "WAF management as code with Doorman: firewall rules, IP blocking, rate limiting, bot protection for Vercel and Cloudflare.",
+    "version": "1.0.7",
+    "author": "Griffen Fargo",
+    "repository": "https://github.com/gfargo/skills",
+    "manifestPath": "./plugins/security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1259870011",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

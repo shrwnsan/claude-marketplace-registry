@@ -1599,5 +1599,651 @@
       "marketplaceName": "plinth",
       "hasSkillMd": true
     }
+  },
+  {
+    "id": "929599382-303-frameworks-spring-boot-validation",
+    "name": "303-frameworks-spring-boot-validation",
+    "description": "name: 303-frameworks-spring-boot-validation",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/303-frameworks-spring-boot-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-304-frameworks-spring-boot-security",
+    "name": "304-frameworks-spring-boot-security",
+    "description": "name: 304-frameworks-spring-boot-security",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/304-frameworks-spring-boot-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-305-frameworks-spring-boot-modulith",
+    "name": "305-frameworks-spring-boot-modulith",
+    "description": "name: 305-frameworks-spring-boot-modulith",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/305-frameworks-spring-boot-modulith",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-314-frameworks-spring-kafka",
+    "name": "314-frameworks-spring-kafka",
+    "description": "name: 314-frameworks-spring-kafka",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/314-frameworks-spring-kafka",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-315-frameworks-spring-mongodb",
+    "name": "315-frameworks-spring-mongodb",
+    "description": "name: 315-frameworks-spring-mongodb",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/315-frameworks-spring-mongodb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-316-frameworks-spring-mongodb-migrations-mongock",
+    "name": "316-frameworks-spring-mongodb-migrations-mongock",
+    "description": "name: 316-frameworks-spring-mongodb-migrations-mongock",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/316-frameworks-spring-mongodb-migrations-mongock",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-400-frameworks-quarkus-create-project",
+    "name": "400-frameworks-quarkus-create-project",
+    "description": "name: 400-frameworks-quarkus-create-project",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/400-frameworks-quarkus-create-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-403-frameworks-quarkus-validation",
+    "name": "403-frameworks-quarkus-validation",
+    "description": "name: 403-frameworks-quarkus-validation",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/403-frameworks-quarkus-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-404-frameworks-quarkus-security",
+    "name": "404-frameworks-quarkus-security",
+    "description": "name: 404-frameworks-quarkus-security",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/404-frameworks-quarkus-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-414-frameworks-quarkus-kafka",
+    "name": "414-frameworks-quarkus-kafka",
+    "description": "name: 414-frameworks-quarkus-kafka",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/414-frameworks-quarkus-kafka",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-415-frameworks-quarkus-mongodb",
+    "name": "415-frameworks-quarkus-mongodb",
+    "description": "name: 415-frameworks-quarkus-mongodb",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/415-frameworks-quarkus-mongodb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-416-frameworks-quarkus-mongodb-migrations-mongock",
+    "name": "416-frameworks-quarkus-mongodb-migrations-mongock",
+    "description": "name: 416-frameworks-quarkus-mongodb-migrations-mongock",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/416-frameworks-quarkus-mongodb-migrations-mongock",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-500-frameworks-micronaut-create-project",
+    "name": "500-frameworks-micronaut-create-project",
+    "description": "name: 500-frameworks-micronaut-create-project",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/500-frameworks-micronaut-create-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-503-frameworks-micronaut-validation",
+    "name": "503-frameworks-micronaut-validation",
+    "description": "name: 503-frameworks-micronaut-validation",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/503-frameworks-micronaut-validation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-504-frameworks-micronaut-security",
+    "name": "504-frameworks-micronaut-security",
+    "description": "name: 504-frameworks-micronaut-security",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/504-frameworks-micronaut-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-514-frameworks-micronaut-kafka",
+    "name": "514-frameworks-micronaut-kafka",
+    "description": "name: 514-frameworks-micronaut-kafka",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/514-frameworks-micronaut-kafka",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-515-frameworks-micronaut-mongodb",
+    "name": "515-frameworks-micronaut-mongodb",
+    "description": "name: 515-frameworks-micronaut-mongodb",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/515-frameworks-micronaut-mongodb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-516-frameworks-micronaut-mongodb-migrations-mongock",
+    "name": "516-frameworks-micronaut-mongodb-migrations-mongock",
+    "description": "name: 516-frameworks-micronaut-mongodb-migrations-mongock",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/516-frameworks-micronaut-mongodb-migrations-mongock",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-701-technologies-openapi",
+    "name": "701-technologies-openapi",
+    "description": "name: 701-technologies-openapi",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/701-technologies-openapi",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-702-technologies-wiremock",
+    "name": "702-technologies-wiremock",
+    "description": "name: 702-technologies-wiremock",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/702-technologies-wiremock",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-703-technologies-fuzzing-testing",
+    "name": "703-technologies-fuzzing-testing",
+    "description": "name: 703-technologies-fuzzing-testing",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/703-technologies-fuzzing-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-704-technologies-sql",
+    "name": "704-technologies-sql",
+    "description": "name: 704-technologies-sql",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/704-technologies-sql",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-705-technologies-nosql-mongodb",
+    "name": "705-technologies-nosql-mongodb",
+    "description": "name: 705-technologies-nosql-mongodb",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/705-technologies-nosql-mongodb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-706-technologies-containers-docker",
+    "name": "706-technologies-containers-docker",
+    "description": "name: 706-technologies-containers-docker",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/706-technologies-containers-docker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-707-technologies-hexagonal-architecture",
+    "name": "707-technologies-hexagonal-architecture",
+    "description": "name: 707-technologies-hexagonal-architecture",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/707-technologies-hexagonal-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-801-regulations-eu-ai-act",
+    "name": "801-regulations-eu-ai-act",
+    "description": "name: 801-regulations-eu-ai-act",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/801-regulations-eu-ai-act",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-802-regulations-dora",
+    "name": "802-regulations-dora",
+    "description": "name: 802-regulations-dora",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/802-regulations-dora",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-803-regulations-gdpr",
+    "name": "803-regulations-gdpr",
+    "description": "name: 803-regulations-gdpr",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/803-regulations-gdpr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-804-regulations-eu-nis2",
+    "name": "804-regulations-eu-nis2",
+    "description": "name: 804-regulations-eu-nis2",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/804-regulations-eu-nis2",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-805-regulations-eu-cyber-resilience-act",
+    "name": "805-regulations-eu-cyber-resilience-act",
+    "description": "name: 805-regulations-eu-cyber-resilience-act",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/805-regulations-eu-cyber-resilience-act",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-806-regulations-eu-data-act",
+    "name": "806-regulations-eu-data-act",
+    "description": "name: 806-regulations-eu-data-act",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/806-regulations-eu-data-act",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-807-regulations-eu-digital-services-act",
+    "name": "807-regulations-eu-digital-services-act",
+    "description": "name: 807-regulations-eu-digital-services-act",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/807-regulations-eu-digital-services-act",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-808-regulations-eu-digital-markets-act",
+    "name": "808-regulations-eu-digital-markets-act",
+    "description": "name: 808-regulations-eu-digital-markets-act",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/808-regulations-eu-digital-markets-act",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-810-regulations-eu-mifid-ii",
+    "name": "810-regulations-eu-mifid-ii",
+    "description": "name: 810-regulations-eu-mifid-ii",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/810-regulations-eu-mifid-ii",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-811-regulations-eu-market-abuse-regulation",
+    "name": "811-regulations-eu-market-abuse-regulation",
+    "description": "name: 811-regulations-eu-market-abuse-regulation",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/811-regulations-eu-market-abuse-regulation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-812-regulations-eu-product-liability-directive",
+    "name": "812-regulations-eu-product-liability-directive",
+    "description": "name: 812-regulations-eu-product-liability-directive",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/812-regulations-eu-product-liability-directive",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-813-regulations-iso-42001",
+    "name": "813-regulations-iso-42001",
+    "description": "name: 813-regulations-iso-42001",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/813-regulations-iso-42001",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "929599382-814-regulations-iso-25010",
+    "name": "814-regulations-iso-25010",
+    "description": "name: 814-regulations-iso-25010",
+    "version": "1.0.0",
+    "author": "jabrena",
+    "repository": "https://github.com/jabrena/plinth",
+    "manifestPath": "skills/814-regulations-iso-25010",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "929599382",
+      "marketplaceName": "plinth",
+      "hasSkillMd": true
+    }
   }
 ]

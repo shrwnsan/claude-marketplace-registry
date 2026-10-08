@@ -1,0 +1,71 @@
+[
+  {
+    "id": "1182152146-sensitive-canary",
+    "name": "sensitive-canary",
+    "description": "Blocks secrets and PII before they reach the Anthropic API",
+    "version": "0.9.1",
+    "author": "coo-quack",
+    "repository": "https://github.com/coo-quack/claude-code-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "coo-quack/sensitive-canary",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1182152146",
+      "marketplaceName": "claude-code-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1182152146-do-not-compact",
+    "name": "do-not-compact",
+    "description": "Reloads CLAUDE.md files into context after conversation compaction",
+    "version": "1.1.4",
+    "author": "coo-quack",
+    "repository": "https://github.com/coo-quack/claude-code-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "coo-quack/do-not-compact",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1182152146",
+      "marketplaceName": "claude-code-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1182152146-calc-mcp",
+    "name": "calc-mcp",
+    "description": "MCP server with 21 tools for things AI is bad at — math, hashing, encoding, date arithmetic, and more.",
+    "version": "2.1.2",
+    "author": "coo-quack",
+    "repository": "https://github.com/coo-quack/claude-code-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "coo-quack/calc-mcp",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1182152146",
+      "marketplaceName": "claude-code-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

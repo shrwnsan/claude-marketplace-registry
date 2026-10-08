@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1396688303-invisible-playwright-mcp",
+    "name": "invisible-playwright-mcp",
+    "description": "AI browser agent: browses, clicks, types, and reads real web pages from plain-English instructions.",
+    "version": "",
+    "author": "feder-cr",
+    "repository": "https://github.com/feder-cr/invisible_playwright_mcp",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396688303",
+      "marketplaceName": "invisible_playwright_mcp",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1396688303-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "feder-cr",
+    "repository": "https://github.com/feder-cr/invisible_playwright_mcp",
+    "manifestPath": "skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396688303",
+      "marketplaceName": "invisible_playwright_mcp",
+      "hasSkillMd": true
+    }
+  }
+]
