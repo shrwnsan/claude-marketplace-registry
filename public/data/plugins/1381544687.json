@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1381544687-router",
+    "name": "router",
+    "description": "Model and effort routing for the main conversation, advised by a prompt classifier, with native Mod controls and unchanged subagent choices.",
+    "version": "",
+    "author": "alexei-led",
+    "repository": "https://github.com/alexei-led/claude-router",
+    "manifestPath": {
+      "source": "github",
+      "repo": "alexei-led/claude-router"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381544687",
+      "marketplaceName": "claude-router",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -21,7 +21,7 @@
   {
     "id": "1242848334-benchmark",
     "name": "benchmark",
-    "description": "description: Run the published 20-task Sipcode benchmark on the user's machine and report measured median savings (target 62.6%). Reproducible, locked corpus. Use when the user asks \"what's the proof?",
+    "description": "description: Run the published 20-task Sipcode benchmark on the user's machine and report the median savings on the synthetic corpus (62.6%). Reproducible, locked corpus. Use when the user asks \"what'",
     "version": "1.0.0",
     "author": "Anuj Ojha",
     "repository": "https://github.com/Anuj7411/sipcode",
