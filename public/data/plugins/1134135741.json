@@ -432,6 +432,23 @@
     }
   },
   {
+    "id": "1134135741-databricks-serverless",
+    "name": "databricks-serverless",
+    "description": "name: databricks-serverless",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-serverless",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1134135741-databricks-setup-local",
     "name": "databricks-setup-local",
     "description": "name: databricks-setup-local",
@@ -490,6 +507,23 @@
     "author": "databricks",
     "repository": "https://github.com/databricks/databricks-agent-skills",
     "manifestPath": "skills/databricks-unity-catalog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1134135741-databricks-unity-gateway",
+    "name": "databricks-unity-gateway",
+    "description": "name: databricks-unity-gateway",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-unity-gateway",
     "isValid": true,
     "errors": [],
     "warnings": [],

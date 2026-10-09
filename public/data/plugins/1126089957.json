@@ -21,7 +21,7 @@
   {
     "id": "1126089957-ai-delegation",
     "name": "ai-delegation",
-    "description": "Delegate tasks to AI models, orchestrate premium-model work, and run autonomous maintenance loops",
+    "description": "Delegate tasks to AI models, run lead-owned work through the subagent roster, and run autonomous maintenance loops",
     "version": "6.4.1",
     "author": "JacobPEvans",
     "repository": "https://github.com/dryvist/claude-code-plugins",
@@ -155,7 +155,7 @@
     "id": "1126089957-github-workflows",
     "name": "github-workflows",
     "description": "PR management, multi-repo PR finalization, and issue shaping with Shape Up methodology",
-    "version": "6.5.1",
+    "version": "6.5.2",
     "author": "JacobPEvans",
     "repository": "https://github.com/dryvist/claude-code-plugins",
     "manifestPath": "./github-workflows",

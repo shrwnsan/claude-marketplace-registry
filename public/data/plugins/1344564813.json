@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1344564813-mkanat-skills",
+    "name": "mkanat-skills",
+    "description": "Code-quality skills by Max Kanat-Alexander.",
+    "version": "",
+    "author": "mkanat",
+    "repository": "https://github.com/mkanat/skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1344564813",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1344564813-cleanup",
+    "name": "cleanup",
+    "description": "name: cleanup",
+    "version": "1.0.0",
+    "author": "mkanat",
+    "repository": "https://github.com/mkanat/skills",
+    "manifestPath": "skills/cleanup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1344564813",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

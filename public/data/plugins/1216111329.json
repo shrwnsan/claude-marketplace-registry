@@ -3,7 +3,7 @@
     "id": "1216111329-dotnet-pilot",
     "name": "dotnet-pilot",
     "description": ".NET development plugin for Claude Code — Roslyn semantic analysis, DI/architecture/EF Core guards, convention-aware scaffolding, TDD agents, security and performance review, and project lifecycle commands.",
-    "version": "3.5.0",
+    "version": "3.7.0",
     "author": "zdanovichnick",
     "repository": "https://github.com/zdanovichnick/dotnet-pilot",
     "manifestPath": "./",
@@ -15,7 +15,7 @@
       "marketplaceName": "dotnet-pilot",
       "skills": [],
       "strict": false,
-      "modsCount": 1
+      "modsCount": 0
     }
   },
   {

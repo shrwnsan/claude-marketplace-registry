@@ -15,7 +15,7 @@
       "marketplaceName": "oh-my-fable",
       "skills": [],
       "strict": false,
-      "modsCount": 1
+      "modsCount": 0
     }
   },
   {
@@ -26,23 +26,6 @@
     "author": "Junhan2",
     "repository": "https://github.com/Junhan2/oh-my-fable",
     "manifestPath": "skills/fable-audit",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1354497019",
-      "marketplaceName": "oh-my-fable",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1354497019-fable-prompt",
-    "name": "fable-prompt",
-    "description": "name: fable-prompt",
-    "version": "1.0.0",
-    "author": "Junhan2",
-    "repository": "https://github.com/Junhan2/oh-my-fable",
-    "manifestPath": "skills/fable-prompt",
     "isValid": true,
     "errors": [],
     "warnings": [],
