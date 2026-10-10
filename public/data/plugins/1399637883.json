@@ -20,5 +20,28 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1399637883-weise-agentische-kanzlei",
+    "name": "weise-agentische-kanzlei",
+    "description": "Knowledge pack for the Weise tutor: eight AI-assisted research reports (German, as of 2026-10-01) on agentic AI in legal services. Data only; import it with /weise:paket.",
+    "version": "",
+    "author": "JasonDavid77",
+    "repository": "https://github.com/JasonDavid77/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/JasonDavid77/weise-pakete.git",
+      "path": "plugins/weise-agentische-kanzlei"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1399637883",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]

@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1409868129-crew-chief",
+    "name": "crew-chief",
+    "description": "Difficulty-based routing to tiered Haiku, Sonnet, and Opus subagents, with escalation, a read-only guard, and user overrides.",
+    "version": "",
+    "author": "aykyusuf",
+    "repository": "https://github.com/aykyusuf/crew-chief",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409868129",
+      "marketplaceName": "crew-chief",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1409868129-crew-handoff",
+    "name": "crew-handoff",
+    "description": "name: crew-handoff",
+    "version": "1.0.0",
+    "author": "aykyusuf",
+    "repository": "https://github.com/aykyusuf/crew-chief",
+    "manifestPath": "skills/crew-handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409868129",
+      "marketplaceName": "crew-chief",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409868129-crew-mode",
+    "name": "crew-mode",
+    "description": "name: crew-mode",
+    "version": "1.0.0",
+    "author": "aykyusuf",
+    "repository": "https://github.com/aykyusuf/crew-chief",
+    "manifestPath": "skills/crew-mode",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409868129",
+      "marketplaceName": "crew-chief",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409868129-crew-routing",
+    "name": "crew-routing",
+    "description": "name: crew-routing",
+    "version": "1.0.0",
+    "author": "aykyusuf",
+    "repository": "https://github.com/aykyusuf/crew-chief",
+    "manifestPath": "skills/crew-routing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409868129",
+      "marketplaceName": "crew-chief",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409868129-crew-setup",
+    "name": "crew-setup",
+    "description": "name: crew-setup",
+    "version": "1.0.0",
+    "author": "aykyusuf",
+    "repository": "https://github.com/aykyusuf/crew-chief",
+    "manifestPath": "skills/crew-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409868129",
+      "marketplaceName": "crew-chief",
+      "hasSkillMd": true
+    }
+  }
+]

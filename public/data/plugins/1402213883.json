@@ -2,11 +2,33 @@
   {
     "id": "1402213883-skins",
     "name": "skins",
-    "description": "Skins for Claude Code's transcript: themed tool rows, reply gutters and spinner words. /skin swaps them live.",
+    "description": "Skins for Claude Code: tool rows with icons, diff, table and Mermaid chart cards, a usage band and fifteen themes. /skin swaps them live.",
     "version": "",
     "author": "hellosverre",
     "repository": "https://github.com/hellosverre/claude-skins",
     "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402213883",
+      "marketplaceName": "claude-skins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402213883-redgreen",
+    "name": "redgreen",
+    "description": "Test results in a pane: failures from Claude's vitest, jest, pytest, cargo, go, bun and deno runs, their detail and run history.",
+    "version": "",
+    "author": "hellosverre",
+    "repository": "https://github.com/hellosverre/claude-skins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "hellosverre/redgreen"
+    },
     "isValid": true,
     "errors": [],
     "warnings": [],

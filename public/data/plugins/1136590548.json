@@ -2,7 +2,7 @@
   {
     "id": "1136590548-ecc",
     "name": "ecc",
-    "description": "Harness-native ECC operator layer - 68 agents, 293 skills, 94 legacy command shims, reusable hooks, rules, selective install profiles, and production-ready workflows for Claude Code, Codex, OpenCode, Cursor, and related agent harnesses",
+    "description": "Harness-native ECC operator layer - 71 agents, 302 skills, 95 legacy command shims, reusable hooks, rules, selective install profiles, and production-ready workflows for Claude Code, Codex, OpenCode, Cursor, and related agent harnesses",
     "version": "2.2.3",
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
@@ -111,6 +111,23 @@
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
     "manifestPath": "skills/agent-payment-x402",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-agent-security-hardening",
+    "name": "agent-security-hardening",
+    "description": "name: agent-security-hardening",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/agent-security-hardening",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -434,6 +451,23 @@
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
     "manifestPath": "skills/benchmark",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-bengali-nlp",
+    "name": "bengali-nlp",
+    "description": "name: bengali-nlp",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/bengali-nlp",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -954,6 +988,23 @@
     }
   },
   {
+    "id": "1136590548-conventional-commit-review",
+    "name": "conventional-commit-review",
+    "description": "name: conventional-commit-review",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/conventional-commit-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1136590548-cost-aware-llm-pipeline",
     "name": "cost-aware-llm-pipeline",
     "description": "name: cost-aware-llm-pipeline",
@@ -1437,6 +1488,23 @@
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
     "manifestPath": "skills/docker-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-docs-governance",
+    "name": "docs-governance",
+    "description": "name: docs-governance",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/docs-governance",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -2943,6 +3011,23 @@
     }
   },
   {
+    "id": "1136590548-mcp-dependency-review",
+    "name": "mcp-dependency-review",
+    "description": "name: mcp-dependency-review",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/mcp-dependency-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1136590548-mcp-server-patterns",
     "name": "mcp-server-patterns",
     "description": "name: mcp-server-patterns",
@@ -3052,6 +3137,23 @@
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
     "manifestPath": "skills/motion-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-mybatis-patterns",
+    "name": "mybatis-patterns",
+    "description": "name: mybatis-patterns",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/mybatis-patterns",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -3419,6 +3521,23 @@
     }
   },
   {
+    "id": "1136590548-osint-investigation",
+    "name": "osint-investigation",
+    "description": "name: osint-investigation",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/osint-investigation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1136590548-parallel-execution-optimizer",
     "name": "parallel-execution-optimizer",
     "description": "name: parallel-execution-optimizer",
@@ -3681,6 +3800,23 @@
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
     "manifestPath": "skills/project-flow-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-prompt-caching-strategy",
+    "name": "prompt-caching-strategy",
+    "description": "name: prompt-caching-strategy",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/prompt-caching-strategy",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -4752,6 +4888,23 @@
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
     "manifestPath": "skills/token-budget-advisor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-token-card",
+    "name": "token-card",
+    "description": "name: token-card",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/token-card",
     "isValid": true,
     "errors": [],
     "warnings": [],
