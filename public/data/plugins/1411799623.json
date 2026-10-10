@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1411799623-context-audit",
+    "name": "context-audit",
+    "description": "Measure what installed skills cost in context on every request; find truncated, undescribed and overlapping ones.",
+    "version": "0.1.0",
+    "author": "talhayme",
+    "repository": "https://github.com/talhayme/claude-plugins",
+    "manifestPath": "./plugins/context-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1411799623",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1411799623-eval-drift",
+    "name": "eval-drift",
+    "description": "Per-case regression detection for claude plugin eval: records a baseline and blocks any pass-to-fail flip, independent of the suite average.",
+    "version": "0.1.0",
+    "author": "talhayme",
+    "repository": "https://github.com/talhayme/claude-plugins",
+    "manifestPath": "./plugins/eval-drift",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1411799623",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1411799623-injection-probe",
+    "name": "injection-probe",
+    "description": "Test whether hidden prompt injection in a document survives your pipeline's text extraction and reaches the model.",
+    "version": "0.1.0",
+    "author": "talhayme",
+    "repository": "https://github.com/talhayme/claude-plugins",
+    "manifestPath": "./plugins/injection-probe",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1411799623",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

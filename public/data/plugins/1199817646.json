@@ -1,0 +1,888 @@
+[
+  {
+    "id": "1199817646-session-orchestrator",
+    "name": "session-orchestrator",
+    "description": "A repeatable Plan, Go, Close workflow for AI coding sessions: /session reads your repo and agrees the scope, /go runs the work in waves with a quality gate between each, /close verifies and commits. Runs on Claude Code, Codex CLI, Cursor and Pi.",
+    "version": "5.10.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1199817646-architecture",
+    "name": "architecture",
+    "description": "name: architecture",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-autopilot",
+    "name": "autopilot",
+    "description": "name: autopilot",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/autopilot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-bootstrap",
+    "name": "bootstrap",
+    "description": "name: bootstrap",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/bootstrap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-brainstorm",
+    "name": "brainstorm",
+    "description": "name: brainstorm",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/brainstorm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-claude-md-drift-check",
+    "name": "claude-md-drift-check",
+    "description": "name: claude-md-drift-check",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/claude-md-drift-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-close",
+    "name": "close",
+    "description": "name: close",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/close",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-convergence-monitoring",
+    "name": "convergence-monitoring",
+    "description": "name: convergence-monitoring",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/convergence-monitoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-debug",
+    "name": "debug",
+    "description": "name: debug",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-discovery",
+    "name": "discovery",
+    "description": "name: discovery",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/discovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-dispatcher",
+    "name": "dispatcher",
+    "description": "name: dispatcher",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/dispatcher",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-docs-orchestrator",
+    "name": "docs-orchestrator",
+    "description": "name: docs-orchestrator",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/docs-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-ecosystem-health",
+    "name": "ecosystem-health",
+    "description": "name: ecosystem-health",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/ecosystem-health",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-eli5",
+    "name": "eli5",
+    "description": "name: eli5",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/eli5",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-eval",
+    "name": "eval",
+    "description": "name: eval",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/eval",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-evolve",
+    "name": "evolve",
+    "description": "name: evolve",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/evolve",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-frontmatter-guard",
+    "name": "frontmatter-guard",
+    "description": "name: frontmatter-guard",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/frontmatter-guard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-gitlab-ops",
+    "name": "gitlab-ops",
+    "description": "name: gitlab-ops",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/gitlab-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-gitlab-portfolio",
+    "name": "gitlab-portfolio",
+    "description": "name: gitlab-portfolio",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/gitlab-portfolio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-go",
+    "name": "go",
+    "description": "name: go",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/go",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-grill",
+    "name": "grill",
+    "description": "name: grill",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/grill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-harness-audit",
+    "name": "harness-audit",
+    "description": "name: harness-audit",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/harness-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-hook-development",
+    "name": "hook-development",
+    "description": "name: hook-development",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/hook-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-mcp-builder",
+    "name": "mcp-builder",
+    "description": "name: mcp-builder",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/mcp-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-memory-cleanup",
+    "name": "memory-cleanup",
+    "description": "name: memory-cleanup",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/memory-cleanup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-mode-selector",
+    "name": "mode-selector",
+    "description": "name: mode-selector",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/mode-selector",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-npm-publish",
+    "name": "npm-publish",
+    "description": "name: npm-publish",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/npm-publish",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-peekaboo-driver",
+    "name": "peekaboo-driver",
+    "description": "name: peekaboo-driver",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/peekaboo-driver",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-persona-panel",
+    "name": "persona-panel",
+    "description": "name: persona-panel",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/persona-panel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-plan",
+    "name": "plan",
+    "description": "name: plan",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-playwright-driver",
+    "name": "playwright-driver",
+    "description": "name: playwright-driver",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/playwright-driver",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-portfolio",
+    "name": "portfolio",
+    "description": "name: portfolio",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/portfolio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-quality-gates",
+    "name": "quality-gates",
+    "description": "name: quality-gates",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/quality-gates",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-reconcile",
+    "name": "reconcile",
+    "description": "name: reconcile",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/reconcile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-release",
+    "name": "release",
+    "description": "name: release",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-remote-offload",
+    "name": "remote-offload",
+    "description": "name: remote-offload",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/remote-offload",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-repo-audit",
+    "name": "repo-audit",
+    "description": "name: repo-audit",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/repo-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-session-end",
+    "name": "session-end",
+    "description": "name: session-end",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/session-end",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-session-plan",
+    "name": "session-plan",
+    "description": "name: session-plan",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/session-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-session-start",
+    "name": "session-start",
+    "description": "name: session-start",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/session-start",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-spinout",
+    "name": "spinout",
+    "description": "name: spinout",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/spinout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-sunset-review",
+    "name": "sunset-review",
+    "description": "name: sunset-review",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/sunset-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-test-audit",
+    "name": "test-audit",
+    "description": "name: test-audit",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/test-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-test-runner",
+    "name": "test-runner",
+    "description": "name: test-runner",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/test-runner",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-test",
+    "name": "test",
+    "description": "name: test",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-tmux-layout",
+    "name": "tmux-layout",
+    "description": "name: tmux-layout",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/tmux-layout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-using-orchestrator",
+    "name": "using-orchestrator",
+    "description": "name: using-orchestrator",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/using-orchestrator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-ux-grill",
+    "name": "ux-grill",
+    "description": "name: ux-grill",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/ux-grill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-vault-mirror",
+    "name": "vault-mirror",
+    "description": "name: vault-mirror",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/vault-mirror",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-vault-sync",
+    "name": "vault-sync",
+    "description": "name: vault-sync",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/vault-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-wave-executor",
+    "name": "wave-executor",
+    "description": "name: wave-executor",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/wave-executor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1199817646-write-executable-plan",
+    "name": "write-executable-plan",
+    "description": "name: write-executable-plan",
+    "version": "1.0.0",
+    "author": "Bernhard Goetzendorfer",
+    "repository": "https://github.com/Kanevry/session-orchestrator",
+    "manifestPath": "skills/write-executable-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1199817646",
+      "marketplaceName": "session-orchestrator",
+      "hasSkillMd": true
+    }
+  }
+]

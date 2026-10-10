@@ -1,31 +1,32 @@
 {
-  "totalFound": 1213,
-  "withManifest": 567,
-  "lastUpdated": "2026-10-09T05:11:43.808Z",
+  "totalFound": 1266,
+  "withManifest": 559,
+  "lastUpdated": "2026-10-10T04:53:44.971Z",
   "searchQuery": "",
   "languages": {
-    "Python": 382,
-    "TypeScript": 186,
-    "JavaScript": 183,
-    "Shell": 113,
+    "Python": 404,
+    "TypeScript": 195,
+    "JavaScript": 192,
+    "Shell": 116,
     "Go": 27,
-    "Unknown": 202,
-    "Rust": 21,
-    "HTML": 62,
+    "Unknown": 205,
+    "Rust": 22,
+    "HTML": 66,
     "AMPL": 1,
     "C++": 3,
+    "Clojure": 1,
     "Swift": 5,
+    "Jupyter Notebook": 3,
     "Astro": 1,
-    "Jupyter Notebook": 2,
     "C#": 3,
     "Perl": 1,
     "Ruby": 1,
+    "Markdown": 1,
     "Java": 7,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
     "Svelte": 1,
-    "Markdown": 1,
     "SCSS": 1,
     "CSS": 2,
     "Gleam": 1,
@@ -36,17 +37,17 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 275483,
+      "stars": 276057,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 180023,
+      "stars": 180198,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "ponytail",
-      "stars": 151954,
+      "stars": 159764,
       "url": "https://github.com/DietrichGebert/ponytail"
     },
     {
@@ -56,17 +57,17 @@
     },
     {
       "name": "archify",
-      "stars": 78761,
+      "stars": 81305,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76721,
+      "stars": 76769,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69909,
+      "stars": 69923,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -81,7 +82,7 @@
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37562,
+      "stars": 37592,
       "url": "https://github.com/anthropics/claude-plugins-official"
     }
   ]

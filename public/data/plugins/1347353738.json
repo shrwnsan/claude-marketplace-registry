@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1347353738-review-map",
+    "name": "review-map",
+    "description": "name: review-map",
+    "version": "1.0.0",
+    "author": "wyeworks",
+    "repository": "https://github.com/wyeworks/accountable-review",
+    "manifestPath": "skills/review-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1347353738",
+      "marketplaceName": "accountable-review",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1347353738-setup-ci",
+    "name": "setup-ci",
+    "description": "name: setup-ci",
+    "version": "1.0.0",
+    "author": "wyeworks",
+    "repository": "https://github.com/wyeworks/accountable-review",
+    "manifestPath": "skills/setup-ci",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1347353738",
+      "marketplaceName": "accountable-review",
+      "hasSkillMd": true
+    }
+  }
+]

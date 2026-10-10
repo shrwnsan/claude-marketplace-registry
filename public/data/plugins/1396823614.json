@@ -171,6 +171,25 @@
     }
   },
   {
+    "id": "1396823614-findmutlu-sounds",
+    "name": "findmutlu-sounds",
+    "description": "A short sound when Claude needs you, a long job finishes, a test fails or a push lands. Packs from StarCraft, Warcraft, Age of Empires, Command & Conquer, Diablo, Counter-Strike, Duke Nukem, Rick and Morty, The Big Lebowski and more, or your own",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/findmutlu-sounds",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1396823614-toolkit",
     "name": "toolkit",
     "description": "The Claude Code Toolkit in one install: small mods for long sessions, each also installable on its own.",

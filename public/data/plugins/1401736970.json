@@ -36,5 +36,24 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1401736970-project-journal",
+    "name": "project-journal",
+    "description": "Persistent project memory for Claude Code: a small markdown journal loads at every session start, every session is captured when it ends, and decisions become ADRs.",
+    "version": "",
+    "author": "EdgeKits",
+    "repository": "https://github.com/EdgeKits/skills",
+    "manifestPath": "./plugins/project-journal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1401736970",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]

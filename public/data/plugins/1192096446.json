@@ -121,6 +121,23 @@
     }
   },
   {
+    "id": "1192096446-planr-connect",
+    "name": "planr-connect",
+    "description": "name: planr-connect",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-connect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1192096446-planr-coo-review",
     "name": "planr-coo-review",
     "description": "name: planr-coo-review",
@@ -400,6 +417,23 @@
     "author": "openplanr",
     "repository": "https://github.com/openplanr/OpenPlanr",
     "manifestPath": "skills/planr-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-share",
+    "name": "planr-share",
+    "description": "name: planr-share",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-share",
     "isValid": true,
     "errors": [],
     "warnings": [],
