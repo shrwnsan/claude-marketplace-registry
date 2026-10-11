@@ -2,8 +2,8 @@
   {
     "id": "1153848836-wicked-garden",
     "name": "wicked-garden",
-    "description": "Your coding agent already plans and swarms — Wicked Garden is the curated toolkit for what it can't: proof-not-claims gates, code links grep can't see, deterministic refactor, cross-session memory, real multi-model second opinions. Don't fight the harness; fill its gaps. The gate needs wicked-vault (a self-contained infra peer, installed directly) and re-derives through garden's built-in engine; estate/bus are opt-in layers (wicked-testing and wicked-brain are retired — QE ships in-catalog as the qe domain, memory lives in wicked-estate).",
-    "version": "12.48.0",
+    "description": "Your coding agent already plans and swarms — Wicked Garden is the curated toolkit for what it can't: proof-not-claims gates, code links grep can't see, deterministic refactor, cross-session memory, multi-model second opinions (fallback seats labelled). Don't fight the harness; fill its gaps. The gate needs wicked-vault (a self-contained infra peer, installed directly) and re-derives through garden's built-in engine; estate/bus are opt-in layers (wicked-testing and wicked-brain are retired — QE ships in-catalog as the qe domain, memory lives in wicked-estate).",
+    "version": "12.49.0",
     "author": "mikeparcewski",
     "repository": "https://github.com/mikeparcewski/wicked-garden",
     "manifestPath": "./",
@@ -281,6 +281,23 @@
     "author": "mikeparcewski",
     "repository": "https://github.com/mikeparcewski/wicked-garden",
     "manifestPath": "skills/draft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1153848836",
+      "marketplaceName": "wicked-garden",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1153848836-editor-scaffold",
+    "name": "editor-scaffold",
+    "description": "name: wicked-garden-editor-scaffold",
+    "version": "1.0.0",
+    "author": "mikeparcewski",
+    "repository": "https://github.com/mikeparcewski/wicked-garden",
+    "manifestPath": "skills/editor-scaffold",
     "isValid": true,
     "errors": [],
     "warnings": [],

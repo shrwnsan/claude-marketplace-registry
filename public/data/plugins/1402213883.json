@@ -41,6 +41,28 @@
     }
   },
   {
+    "id": "1402213883-smart-compact",
+    "name": "smart-compact",
+    "description": "Compacts at the right moment: after a commit or green tests, before the prompt cache expires, or when Claude asks for it.",
+    "version": "",
+    "author": "hellosverre",
+    "repository": "https://github.com/hellosverre/claude-skins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "hellosverre/smart-compact"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402213883",
+      "marketplaceName": "claude-skins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1402213883-skin-designer",
     "name": "skin-designer",
     "description": "name: skin-designer",

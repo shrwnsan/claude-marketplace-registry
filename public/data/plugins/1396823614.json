@@ -19,6 +19,25 @@
     }
   },
   {
+    "id": "1396823614-dev-workflow",
+    "name": "dev-workflow",
+    "description": "Skills for shipping code. watch-ci watches a pull request, a merge or a commit until every check has finished, then reports GREEN or RED by itself.",
+    "version": "",
+    "author": "mutlumehmet",
+    "repository": "https://github.com/mutlumehmet/claude-plugins",
+    "manifestPath": "./plugins/dev-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1396823614",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1396823614-subtask-icons",
     "name": "subtask-icons",
     "description": "Small ⑂ icons under Claude's last answer, one per item; a press puts /subtask with that item's text in the prompt box",
