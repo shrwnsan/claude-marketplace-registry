@@ -1,27 +1,27 @@
 {
-  "totalFound": 1266,
-  "withManifest": 559,
-  "lastUpdated": "2026-10-10T04:53:44.971Z",
+  "totalFound": 1282,
+  "withManifest": 561,
+  "lastUpdated": "2026-10-11T04:33:49.288Z",
   "searchQuery": "",
   "languages": {
-    "Python": 404,
-    "TypeScript": 195,
-    "JavaScript": 192,
-    "Shell": 116,
+    "Python": 410,
+    "TypeScript": 197,
+    "JavaScript": 194,
+    "Shell": 119,
     "Go": 27,
-    "Unknown": 205,
+    "Unknown": 206,
     "Rust": 22,
     "HTML": 66,
     "AMPL": 1,
     "C++": 3,
-    "Clojure": 1,
     "Swift": 5,
     "Jupyter Notebook": 3,
     "Astro": 1,
     "C#": 3,
     "Perl": 1,
     "Ruby": 1,
-    "Markdown": 1,
+    "TeX": 3,
+    "Markdown": 2,
     "Java": 7,
     "PHP": 1,
     "Typst": 1,
@@ -31,18 +31,18 @@
     "CSS": 2,
     "Gleam": 1,
     "C": 1,
-    "TeX": 2,
-    "PowerShell": 1
+    "PowerShell": 1,
+    "Clojure": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 276057,
+      "stars": 276598,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 180198,
+      "stars": 180366,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -57,17 +57,17 @@
     },
     {
       "name": "archify",
-      "stars": 81305,
+      "stars": 81724,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76769,
+      "stars": 76828,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69923,
+      "stars": 69944,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37592,
+      "stars": 37641,
       "url": "https://github.com/anthropics/claude-plugins-official"
     }
   ]

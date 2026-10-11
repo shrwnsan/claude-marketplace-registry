@@ -1,28 +1,28 @@
 {
-  "totalMarketplaces": 1266,
+  "totalMarketplaces": 1282,
   "totalPlugins": 7178,
   "validPlugins": 7178,
-  "lastUpdated": "2026-10-10T04:55:15.501Z",
+  "lastUpdated": "2026-10-11T04:35:01.436Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 404
+      "count": 410
     },
     {
       "language": "Unknown",
-      "count": 205
+      "count": 206
     },
     {
       "language": "TypeScript",
-      "count": 195
+      "count": 197
     },
     {
       "language": "JavaScript",
-      "count": 192
+      "count": 194
     },
     {
       "language": "Shell",
-      "count": 116
+      "count": 119
     },
     {
       "language": "HTML",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 276057,
+      "stars": 276598,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 180198,
+      "stars": 180366,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -68,17 +68,17 @@
     },
     {
       "name": "archify",
-      "stars": 81305,
+      "stars": 81724,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76769,
+      "stars": 76828,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69923,
+      "stars": 69944,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -93,60 +93,60 @@
     },
     {
       "name": "claude-plugins-official",
-      "stars": 37592,
+      "stars": 37641,
       "url": "https://github.com/anthropics/claude-plugins-official"
     }
   ],
   "recentActivity": [
     {
-      "name": "awesome-agent-skills",
-      "updatedAt": "2026-10-10T04:45:16Z",
-      "url": "https://github.com/mailes/awesome-agent-skills"
+      "name": "ai-humanizer-core",
+      "updatedAt": "2026-10-11T04:26:35Z",
+      "url": "https://github.com/edsondviana8/ai-humanizer-core"
     },
     {
-      "name": "ponytail",
-      "updatedAt": "2026-10-10T04:44:58Z",
-      "url": "https://github.com/DietrichGebert/ponytail"
+      "name": "conan-mods",
+      "updatedAt": "2026-10-11T04:26:18Z",
+      "url": "https://github.com/C0nanT/conan-mods"
     },
     {
-      "name": "dex",
-      "updatedAt": "2026-10-10T04:44:43Z",
-      "url": "https://github.com/exmergo/dex"
+      "name": "claude-code-hooks-daemon",
+      "updatedAt": "2026-10-11T04:25:46Z",
+      "url": "https://github.com/Edmonds-Commerce-Limited/claude-code-hooks-daemon"
     },
     {
-      "name": "ja-writing-tools",
-      "updatedAt": "2026-10-10T04:44:02Z",
-      "url": "https://github.com/finelagusaz/ja-writing-tools"
-    },
-    {
-      "name": "Teknesyum-Core",
-      "updatedAt": "2026-10-10T04:43:29Z",
-      "url": "https://github.com/Teknesyum/Teknesyum-Core"
-    },
-    {
-      "name": "personal-understanding",
-      "updatedAt": "2026-10-10T04:43:00Z",
-      "url": "https://github.com/caix84476-netizen/personal-understanding"
+      "name": "multi-agent-folder-cleanup",
+      "updatedAt": "2026-10-11T04:25:10Z",
+      "url": "https://github.com/JesseRaber/multi-agent-folder-cleanup"
     },
     {
       "name": "archify",
-      "updatedAt": "2026-10-10T04:42:48Z",
+      "updatedAt": "2026-10-11T04:24:36Z",
       "url": "https://github.com/tt-a1i/archify"
     },
     {
-      "name": "tycana-claude-hivemind",
-      "updatedAt": "2026-10-10T04:42:29Z",
-      "url": "https://github.com/samuel85194-ux/tycana-claude-hivemind"
+      "name": "oil-ui",
+      "updatedAt": "2026-10-11T04:23:32Z",
+      "url": "https://github.com/oil-oil/oil-ui"
     },
     {
-      "name": "clear-resume",
-      "updatedAt": "2026-10-10T04:42:28Z",
-      "url": "https://github.com/m4cd4r4/clear-resume"
+      "name": "oh-my-openagent",
+      "updatedAt": "2026-10-11T04:23:13Z",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
-      "name": "better-trip-planner",
-      "updatedAt": "2026-10-10T04:40:48Z",
-      "url": "https://github.com/ChenYiming-aaa/better-trip-planner"
+      "name": "galyarder-framework",
+      "updatedAt": "2026-10-11T04:22:52Z",
+      "url": "https://github.com/galyarderlabs/galyarder-framework"
+    },
+    {
+      "name": "claude-db",
+      "updatedAt": "2026-10-11T04:22:42Z",
+      "url": "https://github.com/Avijit07x/claude-db"
+    },
+    {
+      "name": "boss-zhipin-scraper",
+      "updatedAt": "2026-10-11T04:21:29Z",
+      "url": "https://github.com/eatmoreduck/boss-zhipin-scraper"
     }
   ]
 }

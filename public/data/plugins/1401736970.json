@@ -55,5 +55,24 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1401736970-project-curator",
+    "name": "project-curator",
+    "description": "A curator for projects built with a coding agent: verifies the agent's reports against the sources, argues options with you, and writes the relay prompts you hand to the agent.",
+    "version": "",
+    "author": "EdgeKits",
+    "repository": "https://github.com/EdgeKits/skills",
+    "manifestPath": "./plugins/project-curator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1401736970",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]

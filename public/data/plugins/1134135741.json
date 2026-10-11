@@ -58,6 +58,23 @@
     }
   },
   {
+    "id": "1134135741-databricks-ai-runtime",
+    "name": "databricks-ai-runtime",
+    "description": "name: databricks-ai-runtime",
+    "version": "1.0.0",
+    "author": "databricks",
+    "repository": "https://github.com/databricks/databricks-agent-skills",
+    "manifestPath": "skills/databricks-ai-runtime",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1134135741",
+      "marketplaceName": "databricks-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1134135741-databricks-aibi-dashboards",
     "name": "databricks-aibi-dashboards",
     "description": "name: databricks-aibi-dashboards",
