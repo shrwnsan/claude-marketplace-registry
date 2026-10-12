@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1414023520-ugot-mindset",
+    "name": "ugot-mindset",
+    "description": "How the agent should think and talk with the user: read the intent, verify before claiming, no silent omission, keep going, brief human answers. 19 skills, 2 agents and automatic prompt/result/stop/bash gates.",
+    "version": "",
+    "author": "edu-ide",
+    "repository": "https://github.com/edu-ide/ugot-skills",
+    "manifestPath": "./plugins/ugot-mindset",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414023520",
+      "marketplaceName": "ugot-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414023520-ugot-writing",
+    "name": "ugot-writing",
+    "description": "Reader-first writing (mainly Korean): explain for understanding, style editing, applications, songs and lyrics, story craft, short-form ads.",
+    "version": "",
+    "author": "edu-ide",
+    "repository": "https://github.com/edu-ide/ugot-skills",
+    "manifestPath": "./plugins/ugot-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414023520",
+      "marketplaceName": "ugot-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414023520-ugot-engineering-habits",
+    "name": "ugot-engineering-habits",
+    "description": "Engineering habits for coding agents: build it right the first time, check the latest literature, disclose shortcuts, premortem before claims, use fundamental terms, consult on architecture.",
+    "version": "",
+    "author": "edu-ide",
+    "repository": "https://github.com/edu-ide/ugot-skills",
+    "manifestPath": "./plugins/ugot-engineering-habits",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414023520",
+      "marketplaceName": "ugot-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414023520-ugot-career",
+    "name": "ugot-career",
+    "description": "Job applications for developers who work with AI coding tools: screen postings, dissect requirements, research the company, build a tailored resume and portfolio story, submit and track.",
+    "version": "",
+    "author": "edu-ide",
+    "repository": "https://github.com/edu-ide/ugot-skills",
+    "manifestPath": "./plugins/ugot-career",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414023520",
+      "marketplaceName": "ugot-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

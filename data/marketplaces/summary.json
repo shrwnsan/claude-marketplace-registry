@@ -1,17 +1,17 @@
 {
-  "totalFound": 1282,
-  "withManifest": 561,
-  "lastUpdated": "2026-10-11T04:33:49.288Z",
+  "totalFound": 1324,
+  "withManifest": 562,
+  "lastUpdated": "2026-10-12T04:53:38.805Z",
   "searchQuery": "",
   "languages": {
-    "Python": 410,
-    "TypeScript": 197,
-    "JavaScript": 194,
-    "Shell": 119,
-    "Go": 27,
-    "Unknown": 206,
+    "Python": 427,
+    "TypeScript": 208,
+    "JavaScript": 197,
+    "Shell": 122,
     "Rust": 22,
-    "HTML": 66,
+    "Go": 28,
+    "Unknown": 209,
+    "HTML": 67,
     "AMPL": 1,
     "C++": 3,
     "Swift": 5,
@@ -20,29 +20,31 @@
     "C#": 3,
     "Perl": 1,
     "Ruby": 1,
-    "TeX": 3,
-    "Markdown": 2,
+    "Kotlin": 1,
+    "CSS": 3,
+    "jq": 1,
     "Java": 7,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
     "Svelte": 1,
+    "Markdown": 2,
     "SCSS": 1,
-    "CSS": 2,
     "Gleam": 1,
     "C": 1,
+    "TeX": 3,
     "PowerShell": 1,
     "Clojure": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 276598,
+      "stars": 277335,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 180366,
+      "stars": 180555,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -52,7 +54,7 @@
     },
     {
       "name": "claude-mem",
-      "stars": 98634,
+      "stars": 99797,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
@@ -62,12 +64,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76828,
+      "stars": 76894,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69944,
+      "stars": 69968,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -81,9 +83,9 @@
       "url": "https://github.com/ayghri/i-have-adhd"
     },
     {
-      "name": "claude-plugins-official",
-      "stars": 37641,
-      "url": "https://github.com/anthropics/claude-plugins-official"
+      "name": "agents",
+      "stars": 40435,
+      "url": "https://github.com/wshobson/agents"
     }
   ]
 }
