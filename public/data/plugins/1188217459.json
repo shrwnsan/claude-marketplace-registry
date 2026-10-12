@@ -551,13 +551,13 @@
     }
   },
   {
-    "id": "1188217459-claude-md-composer",
-    "name": "claude-md-composer",
+    "id": "1188217459-md-composer",
+    "name": "md-composer",
     "description": "Audit, compose, and refactor CLAUDE.md files — keep memory files under 200 lines, flip negative rules, split across the 4-level hierarchy. Inspired by Kjramsy's 'CLAUDE.md eating your token budget' post.",
     "version": "1.0.0",
     "author": "MSApps",
     "repository": "https://github.com/MSApps-Mobile/claude-plugins",
-    "manifestPath": "./plugins/claude-md-composer",
+    "manifestPath": "./plugins/md-composer",
     "isValid": true,
     "errors": [],
     "warnings": [],

@@ -2,11 +2,33 @@
   {
     "id": "1402669470-gsd-status-mod",
     "name": "gsd-status-mod",
-    "description": "Resume hints for GSD projects: where work stopped, a STATE.md drift warning, the handoff's next action, and a Tab suggestion.",
+    "description": "A Claude Code mod for GSD projects: a live pane (roadmap, agent tree with forks, cost and context, work streams, session log, pace and fit forecast, timeline, trends, a markdown reader) plus a status band, a next-action hint and /gsd-status, read from .planning/.",
     "version": "",
     "author": "helenkwok",
     "repository": "https://github.com/helenkwok/gsd-status-mod",
     "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402669470",
+      "marketplaceName": "gsd-status-mod",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402669470-open-links",
+    "name": "open-links",
+    "description": "A Claude Code mod: file paths in Claude's replies become links that open the file (or your editor at the line). macOS, Linux and Windows paths, relative ones resolved against the session folder.",
+    "version": "",
+    "author": "helenkwok",
+    "repository": "https://github.com/helenkwok/gsd-status-mod",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/helenkwok/open-links.git"
+    },
     "isValid": true,
     "errors": [],
     "warnings": [],

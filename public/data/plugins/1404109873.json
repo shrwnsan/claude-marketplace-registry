@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1404109873-cache-refresher",
+    "name": "cache-refresher",
+    "description": "Shows when your prompt cache expires and what rebuilding it would cost. Optional auto-refresh, off by default, keeps it active while you are away and uses a little plan usage or API credit.",
+    "version": "",
+    "author": "olddonkey",
+    "repository": "https://github.com/olddonkey/cache-refresher",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1404109873",
+      "marketplaceName": "cache-refresher",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

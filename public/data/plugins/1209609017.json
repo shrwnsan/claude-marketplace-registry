@@ -4560,6 +4560,23 @@
     }
   },
   {
+    "id": "1209609017-svg-authoring",
+    "name": "svg-authoring",
+    "description": "model_tier: inherit",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/svg-authoring",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1209609017-symfony-workflow",
     "name": "symfony-workflow",
     "description": "model_tier: medium",

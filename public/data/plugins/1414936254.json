@@ -1,0 +1,104 @@
+[
+  {
+    "id": "1414936254-docs-drift-check",
+    "name": "docs-drift-check",
+    "description": "name: docs-drift-check",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/docs-drift-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-new-plugin",
+    "name": "new-plugin",
+    "description": "name: new-plugin",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/new-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-release",
+    "name": "release",
+    "description": "name: release",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-triage-issues",
+    "name": "triage-issues",
+    "description": "name: triage-issues",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/triage-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-verify",
+    "name": "verify",
+    "description": "name: verify",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-wrap-up",
+    "name": "wrap-up",
+    "description": "name: wrap-up",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/wrap-up",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  }
+]

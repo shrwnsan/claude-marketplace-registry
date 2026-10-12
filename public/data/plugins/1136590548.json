@@ -2,7 +2,7 @@
   {
     "id": "1136590548-ecc",
     "name": "ecc",
-    "description": "Harness-native ECC operator layer - 71 agents, 306 skills, 97 legacy command shims, reusable hooks, rules, selective install profiles, and production-ready workflows for Claude Code, Codex, OpenCode, Cursor, and related agent harnesses",
+    "description": "Harness-native ECC operator layer - 71 agents, 311 skills, 97 legacy command shims, reusable hooks, rules, selective install profiles, and production-ready workflows for Claude Code, Codex, OpenCode, Cursor, and related agent harnesses",
     "version": "2.2.3",
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
@@ -648,6 +648,23 @@
     }
   },
   {
+    "id": "1136590548-change-impact",
+    "name": "change-impact",
+    "description": "name: change-impact",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/change-impact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1136590548-cisco-ios-patterns",
     "name": "cisco-ios-patterns",
     "description": "name: cisco-ios-patterns",
@@ -927,6 +944,23 @@
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
     "manifestPath": "skills/content-hash-cache-pattern",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-context-and-decisions",
+    "name": "context-and-decisions",
+    "description": "name: context-and-decisions",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/context-and-decisions",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -3147,6 +3181,23 @@
     }
   },
   {
+    "id": "1136590548-module-regression",
+    "name": "module-regression",
+    "description": "name: module-regression",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/module-regression",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1136590548-motion-advanced",
     "name": "motion-advanced",
     "description": "name: motion-advanced",
@@ -4694,6 +4745,23 @@
     }
   },
   {
+    "id": "1136590548-story-lifecycle",
+    "name": "story-lifecycle",
+    "description": "name: story-lifecycle",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/story-lifecycle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1136590548-strategic-compact",
     "name": "strategic-compact",
     "description": "name: strategic-compact",
@@ -4922,6 +4990,23 @@
     "author": "Affaan Mustafa",
     "repository": "https://github.com/affaan-m/ECC",
     "manifestPath": "skills/terminal-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1136590548",
+      "marketplaceName": "ECC",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1136590548-test-collaboration",
+    "name": "test-collaboration",
+    "description": "name: test-collaboration",
+    "version": "1.0.0",
+    "author": "Affaan Mustafa",
+    "repository": "https://github.com/affaan-m/ECC",
+    "manifestPath": "skills/test-collaboration",
     "isValid": true,
     "errors": [],
     "warnings": [],

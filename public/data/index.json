@@ -1,37 +1,37 @@
 {
   "stats": {
-    "totalMarketplaces": 1282,
-    "totalPlugins": 7178,
-    "validPlugins": 7178,
-    "lastUpdated": "2026-10-11T04:35:01.436Z",
+    "totalMarketplaces": 1324,
+    "totalPlugins": 7184,
+    "validPlugins": 7184,
+    "lastUpdated": "2026-10-12T04:55:04.509Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 410
+        "count": 427
       },
       {
         "language": "Unknown",
-        "count": 206
+        "count": 209
       },
       {
         "language": "TypeScript",
-        "count": 197
+        "count": 208
       },
       {
         "language": "JavaScript",
-        "count": 194
+        "count": 197
       },
       {
         "language": "Shell",
-        "count": 119
+        "count": 122
       },
       {
         "language": "HTML",
-        "count": 66
+        "count": 67
       },
       {
         "language": "Go",
-        "count": 27
+        "count": 28
       },
       {
         "language": "Rust",
@@ -49,12 +49,12 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 276598,
+        "stars": 277335,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 180366,
+        "stars": 180555,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,7 +64,7 @@
       },
       {
         "name": "claude-mem",
-        "stars": 98634,
+        "stars": 99797,
         "url": "https://github.com/thedotmack/claude-mem"
       },
       {
@@ -74,12 +74,12 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 76828,
+        "stars": 76894,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 69944,
+        "stars": 69968,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -93,61 +93,61 @@
         "url": "https://github.com/ayghri/i-have-adhd"
       },
       {
-        "name": "claude-plugins-official",
-        "stars": 37641,
-        "url": "https://github.com/anthropics/claude-plugins-official"
+        "name": "agents",
+        "stars": 40435,
+        "url": "https://github.com/wshobson/agents"
       }
     ],
     "recentActivity": [
       {
-        "name": "ai-humanizer-core",
-        "updatedAt": "2026-10-11T04:26:35Z",
-        "url": "https://github.com/edsondviana8/ai-humanizer-core"
+        "name": "trending-claude-skills",
+        "updatedAt": "2026-10-12T04:45:17Z",
+        "url": "https://github.com/linny006/trending-claude-skills"
       },
       {
-        "name": "conan-mods",
-        "updatedAt": "2026-10-11T04:26:18Z",
-        "url": "https://github.com/C0nanT/conan-mods"
+        "name": "systemap",
+        "updatedAt": "2026-10-12T04:45:17Z",
+        "url": "https://github.com/0xfauzi/systemap"
       },
       {
-        "name": "claude-code-hooks-daemon",
-        "updatedAt": "2026-10-11T04:25:46Z",
-        "url": "https://github.com/Edmonds-Commerce-Limited/claude-code-hooks-daemon"
+        "name": "vinext-agents-example",
+        "updatedAt": "2026-10-12T04:45:06Z",
+        "url": "https://github.com/usen99/vinext-agents-example"
       },
       {
-        "name": "multi-agent-folder-cleanup",
-        "updatedAt": "2026-10-11T04:25:10Z",
-        "url": "https://github.com/JesseRaber/multi-agent-folder-cleanup"
+        "name": "claude-mem",
+        "updatedAt": "2026-10-12T04:44:53Z",
+        "url": "https://github.com/thedotmack/claude-mem"
       },
       {
-        "name": "archify",
-        "updatedAt": "2026-10-11T04:24:36Z",
-        "url": "https://github.com/tt-a1i/archify"
+        "name": "agents",
+        "updatedAt": "2026-10-12T04:44:31Z",
+        "url": "https://github.com/pertamaxxx/agents"
       },
       {
-        "name": "oil-ui",
-        "updatedAt": "2026-10-11T04:23:32Z",
-        "url": "https://github.com/oil-oil/oil-ui"
+        "name": "skill-manager",
+        "updatedAt": "2026-10-12T04:44:28Z",
+        "url": "https://github.com/mrdenox109-nyx/skill-manager"
       },
       {
-        "name": "oh-my-openagent",
-        "updatedAt": "2026-10-11T04:23:13Z",
-        "url": "https://github.com/code-yeongyu/oh-my-openagent"
+        "name": "claude-code-frontend-skills",
+        "updatedAt": "2026-10-12T04:43:45Z",
+        "url": "https://github.com/JaimeJunr/claude-code-frontend-skills"
       },
       {
-        "name": "galyarder-framework",
-        "updatedAt": "2026-10-11T04:22:52Z",
-        "url": "https://github.com/galyarderlabs/galyarder-framework"
+        "name": "obsidian-skill",
+        "updatedAt": "2026-10-12T04:42:59Z",
+        "url": "https://github.com/wizzy15/obsidian-skill"
       },
       {
-        "name": "claude-db",
-        "updatedAt": "2026-10-11T04:22:42Z",
-        "url": "https://github.com/Avijit07x/claude-db"
+        "name": "openclaw-adapter",
+        "updatedAt": "2026-10-12T04:42:31Z",
+        "url": "https://github.com/windows150/openclaw-adapter"
       },
       {
-        "name": "boss-zhipin-scraper",
-        "updatedAt": "2026-10-11T04:21:29Z",
-        "url": "https://github.com/eatmoreduck/boss-zhipin-scraper"
+        "name": "SeekMoney-ai",
+        "updatedAt": "2026-10-12T04:42:12Z",
+        "url": "https://github.com/zykooooooooo/SeekMoney-ai"
       }
     ]
   },
@@ -155,22 +155,22 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 652
+      "count": 679
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 191
+      "count": 195
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 400
+      "count": 408
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 60
+      "count": 62
     },
     {
       "id": "data",
@@ -180,8 +180,8 @@
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 30
+      "count": 31
     }
   ],
-  "lastUpdated": "2026-10-11T04:35:01.436Z"
+  "lastUpdated": "2026-10-12T04:55:04.509Z"
 }

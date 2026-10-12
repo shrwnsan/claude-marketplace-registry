@@ -1,6 +1,6 @@
 {
   "model": "jev-1.13.0",
-  "generatedAt": "2026-10-11T04:34:58.960Z",
+  "generatedAt": "2026-10-12T04:55:00.427Z",
   "entries": {
     "287005473": {
       "category": "none",
@@ -131,6 +131,11 @@
       "category": "mcp",
       "categoryConfidence": 0.99,
       "isMarketplace": 0.11
+    },
+    "1073725122": {
+      "category": "agents",
+      "categoryConfidence": 0.87,
+      "isMarketplace": 0.07
     },
     "1073908775": {
       "category": "devtools",
@@ -762,6 +767,11 @@
       "categoryConfidence": 0.58,
       "isMarketplace": 0.04
     },
+    "1201771322": {
+      "category": "skills",
+      "categoryConfidence": 0.31,
+      "isMarketplace": 0.91
+    },
     "1201792523": {
       "category": "none",
       "categoryConfidence": 0.93,
@@ -791,6 +801,11 @@
       "category": "none",
       "categoryConfidence": 0.92,
       "isMarketplace": 0.18
+    },
+    "1207434004": {
+      "category": "llm",
+      "categoryConfidence": 0.81,
+      "isMarketplace": 0.12
     },
     "1207622001": {
       "category": "skills",
@@ -1672,6 +1687,11 @@
       "categoryConfidence": 1,
       "isMarketplace": 0.04
     },
+    "1378971052": {
+      "category": "devtools",
+      "categoryConfidence": 0.33,
+      "isMarketplace": 0.04
+    },
     "1378994859": {
       "category": "none",
       "categoryConfidence": 0.2,
@@ -1862,6 +1882,11 @@
       "categoryConfidence": 0.7,
       "isMarketplace": 0.1
     },
+    "1404109873": {
+      "category": "devtools",
+      "categoryConfidence": 0.59,
+      "isMarketplace": 0.07
+    },
     "1404247269": {
       "category": "none",
       "categoryConfidence": 0.67,
@@ -1951,6 +1976,16 @@
       "category": "skills",
       "categoryConfidence": 1,
       "isMarketplace": 0.6
+    },
+    "1410918852": {
+      "category": "devtools",
+      "categoryConfidence": 0.91,
+      "isMarketplace": 0.06
+    },
+    "1414346796": {
+      "category": "devtools",
+      "categoryConfidence": 0.7,
+      "isMarketplace": 0.06
     }
   }
 }
