@@ -1,56 +1,61 @@
 {
-  "totalFound": 1324,
-  "withManifest": 562,
-  "lastUpdated": "2026-10-12T04:53:38.805Z",
+  "totalFound": 1351,
+  "withManifest": 571,
+  "lastUpdated": "2026-10-13T05:58:58.162Z",
   "searchQuery": "",
   "languages": {
-    "Python": 427,
-    "TypeScript": 208,
-    "JavaScript": 197,
-    "Shell": 122,
-    "Rust": 22,
+    "Python": 432,
+    "Rust": 23,
+    "TypeScript": 215,
+    "JavaScript": 204,
+    "Shell": 126,
     "Go": 28,
-    "Unknown": 209,
-    "HTML": 67,
+    "Unknown": 211,
+    "HTML": 68,
     "AMPL": 1,
     "C++": 3,
     "Swift": 5,
-    "Jupyter Notebook": 3,
     "Astro": 1,
+    "Jupyter Notebook": 3,
     "C#": 3,
     "Perl": 1,
     "Ruby": 1,
-    "Kotlin": 1,
-    "CSS": 3,
-    "jq": 1,
+    "Markdown": 1,
+    "SCSS": 1,
+    "Kotlin": 2,
     "Java": 7,
     "PHP": 1,
     "Typst": 1,
     "Makefile": 1,
     "Svelte": 1,
-    "Markdown": 2,
-    "SCSS": 1,
+    "CSS": 3,
     "Gleam": 1,
     "C": 1,
     "TeX": 3,
     "PowerShell": 1,
-    "Clojure": 1
+    "Clojure": 1,
+    "jq": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 277335,
+      "stars": 278054,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 180555,
+      "stars": 180775,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "ponytail",
       "stars": 159764,
       "url": "https://github.com/DietrichGebert/ponytail"
+    },
+    {
+      "name": "paperclip",
+      "stars": 101088,
+      "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "claude-mem",
@@ -64,28 +69,23 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76894,
+      "stars": 76965,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69968,
+      "stars": 69986,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
+    },
+    {
+      "name": "Pake",
+      "stars": 62038,
+      "url": "https://github.com/tw93/Pake"
     },
     {
       "name": "ppt-master",
       "stars": 58122,
       "url": "https://github.com/hugohe3/ppt-master"
-    },
-    {
-      "name": "i-have-adhd",
-      "stars": 54382,
-      "url": "https://github.com/ayghri/i-have-adhd"
-    },
-    {
-      "name": "agents",
-      "stars": 40435,
-      "url": "https://github.com/wshobson/agents"
     }
   ]
 }

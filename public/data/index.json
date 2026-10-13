@@ -1,33 +1,33 @@
 {
   "stats": {
-    "totalMarketplaces": 1324,
-    "totalPlugins": 7184,
-    "validPlugins": 7184,
-    "lastUpdated": "2026-10-12T04:55:04.509Z",
+    "totalMarketplaces": 1351,
+    "totalPlugins": 7252,
+    "validPlugins": 7252,
+    "lastUpdated": "2026-10-13T06:00:24.081Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 427
-      },
-      {
-        "language": "Unknown",
-        "count": 209
+        "count": 432
       },
       {
         "language": "TypeScript",
-        "count": 208
+        "count": 215
+      },
+      {
+        "language": "Unknown",
+        "count": 211
       },
       {
         "language": "JavaScript",
-        "count": 197
+        "count": 204
       },
       {
         "language": "Shell",
-        "count": 122
+        "count": 126
       },
       {
         "language": "HTML",
-        "count": 67
+        "count": 68
       },
       {
         "language": "Go",
@@ -35,7 +35,7 @@
       },
       {
         "language": "Rust",
-        "count": 22
+        "count": 23
       },
       {
         "language": "Java",
@@ -49,18 +49,23 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 277335,
+        "stars": 278054,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 180555,
+        "stars": 180775,
         "url": "https://github.com/anthropics/skills"
       },
       {
         "name": "ponytail",
         "stars": 159764,
         "url": "https://github.com/DietrichGebert/ponytail"
+      },
+      {
+        "name": "paperclip",
+        "stars": 101088,
+        "url": "https://github.com/paperclipai/paperclip"
       },
       {
         "name": "claude-mem",
@@ -74,80 +79,75 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 76894,
+        "stars": 76965,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 69968,
+        "stars": 69986,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
+      },
+      {
+        "name": "Pake",
+        "stars": 62038,
+        "url": "https://github.com/tw93/Pake"
       },
       {
         "name": "ppt-master",
         "stars": 58122,
         "url": "https://github.com/hugohe3/ppt-master"
-      },
-      {
-        "name": "i-have-adhd",
-        "stars": 54382,
-        "url": "https://github.com/ayghri/i-have-adhd"
-      },
-      {
-        "name": "agents",
-        "stars": 40435,
-        "url": "https://github.com/wshobson/agents"
       }
     ],
     "recentActivity": [
       {
-        "name": "trending-claude-skills",
-        "updatedAt": "2026-10-12T04:45:17Z",
-        "url": "https://github.com/linny006/trending-claude-skills"
+        "name": "claude-plugins",
+        "updatedAt": "2026-10-13T05:51:48Z",
+        "url": "https://github.com/Arhaty/claude-plugins"
       },
       {
-        "name": "systemap",
-        "updatedAt": "2026-10-12T04:45:17Z",
-        "url": "https://github.com/0xfauzi/systemap"
+        "name": "paperclip",
+        "updatedAt": "2026-10-13T05:50:52Z",
+        "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "vinext-agents-example",
-        "updatedAt": "2026-10-12T04:45:06Z",
-        "url": "https://github.com/usen99/vinext-agents-example"
+        "name": "haive",
+        "updatedAt": "2026-10-13T05:50:02Z",
+        "url": "https://github.com/martinambrus/haive"
       },
       {
-        "name": "claude-mem",
-        "updatedAt": "2026-10-12T04:44:53Z",
-        "url": "https://github.com/thedotmack/claude-mem"
+        "name": "oil-ui",
+        "updatedAt": "2026-10-13T05:49:58Z",
+        "url": "https://github.com/oil-oil/oil-ui"
       },
       {
-        "name": "agents",
-        "updatedAt": "2026-10-12T04:44:31Z",
-        "url": "https://github.com/pertamaxxx/agents"
+        "name": "paper-proofread",
+        "updatedAt": "2026-10-13T05:49:40Z",
+        "url": "https://github.com/parkjui92/paper-proofread"
       },
       {
-        "name": "skill-manager",
-        "updatedAt": "2026-10-12T04:44:28Z",
-        "url": "https://github.com/mrdenox109-nyx/skill-manager"
+        "name": "shadowclone",
+        "updatedAt": "2026-10-13T05:48:42Z",
+        "url": "https://github.com/theonly1me/shadowclone"
       },
       {
-        "name": "claude-code-frontend-skills",
-        "updatedAt": "2026-10-12T04:43:45Z",
-        "url": "https://github.com/JaimeJunr/claude-code-frontend-skills"
+        "name": "hermes-skills",
+        "updatedAt": "2026-10-13T05:48:17Z",
+        "url": "https://github.com/jiawood2006/hermes-skills"
       },
       {
-        "name": "obsidian-skill",
-        "updatedAt": "2026-10-12T04:42:59Z",
-        "url": "https://github.com/wizzy15/obsidian-skill"
+        "name": "asfakulsiam-motomation-design",
+        "updatedAt": "2026-10-13T05:47:11Z",
+        "url": "https://github.com/asfakulsiam/asfakulsiam-motomation-design"
       },
       {
-        "name": "openclaw-adapter",
-        "updatedAt": "2026-10-12T04:42:31Z",
-        "url": "https://github.com/windows150/openclaw-adapter"
+        "name": "marketingskills",
+        "updatedAt": "2026-10-13T05:47:09Z",
+        "url": "https://github.com/coreyhaines31/marketingskills"
       },
       {
-        "name": "SeekMoney-ai",
-        "updatedAt": "2026-10-12T04:42:12Z",
-        "url": "https://github.com/zykooooooooo/SeekMoney-ai"
+        "name": "saas-marketing-agents",
+        "updatedAt": "2026-10-13T05:46:52Z",
+        "url": "https://github.com/shalintripathi/saas-marketing-agents"
       }
     ]
   },
@@ -155,17 +155,17 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 679
+      "count": 695
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 195
+      "count": 198
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 408
+      "count": 419
     },
     {
       "id": "design",
@@ -180,8 +180,8 @@
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 31
+      "count": 35
     }
   ],
-  "lastUpdated": "2026-10-12T04:55:04.509Z"
+  "lastUpdated": "2026-10-13T06:00:24.081Z"
 }
