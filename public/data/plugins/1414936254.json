@@ -1,5 +1,119 @@
 [
   {
+    "id": "1414936254-bash-lsp-intelligence",
+    "name": "bash-lsp-intelligence",
+    "description": "Gives Claude Code bash-language-server for Bash and POSIX shell scripts, plus a skill that teaches Claude to trace sourced files and same-named functions, fix ShellCheck and shfmt findings without changing behavior, and verify every change with evidence.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/bash-lsp-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-plugin-test-bench",
+    "name": "plugin-test-bench",
+    "description": "Proves your Claude Code plugin works the way your users receive it: installs a copy in a throwaway config, checks it loads, runs your eval suite against that copy, and reviews your eval cases so they measure what the plugin adds.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/plugin-test-bench",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-python-lsp-intelligence",
+    "name": "python-lsp-intelligence",
+    "description": "Gives Claude Code the basedpyright language server for Python, plus a skill that teaches Claude to resolve symbols, aliases and imports semantically, fix basedpyright and Ruff findings without suppressing them, and verify every change with evidence.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/python-lsp-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-session-handoff",
+    "name": "session-handoff",
+    "description": "Carries a project's working state from one session to the next: write a handoff when you stop, and the next session reads it, reports what is still open and asks you where to start.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/session-handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-skill-diagnostics",
+    "name": "skill-diagnostics",
+    "description": "Audits Claude skills for best-practice conformance, portability and whether a model can run them without guessing, with file-and-line evidence and one verdict.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/skill-diagnostics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-typescript7-lsp-intelligence",
+    "name": "typescript7-lsp-intelligence",
+    "description": "Gives Claude Code the native TypeScript 7 language server for TypeScript and JavaScript, plus a skill that teaches Claude to check which program owns a file, fix compiler findings without unsafe assertions or suppressions, and verify every change with evidence.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/typescript7-lsp-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1414936254-docs-drift-check",
     "name": "docs-drift-check",
     "description": "name: docs-drift-check",
@@ -41,6 +155,23 @@
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
     "manifestPath": ".claude/skills/release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-test-installed-plugin",
+    "name": "test-installed-plugin",
+    "description": "name: test-installed-plugin",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/test-installed-plugin",
     "isValid": true,
     "errors": [],
     "warnings": [],

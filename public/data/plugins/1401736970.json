@@ -74,5 +74,29 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1401736970-astro-i18n",
+    "name": "astro-i18n",
+    "description": "Edge-native i18n for Astro on Cloudflare Workers with @edgekits/astro-i18n: translations in Workers KV, a per-namespace edge cache, typed keys; then localized forms and multilingual SEO.",
+    "version": "",
+    "author": "EdgeKits",
+    "repository": "https://github.com/EdgeKits/skills",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/EdgeKits/astro-i18n",
+      "path": "plugins/astro-i18n",
+      "ref": "v0.1.0"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1401736970",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]

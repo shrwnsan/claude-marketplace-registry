@@ -43,5 +43,28 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1399637883-weise-copilot-agenten",
+    "name": "weise-copilot-agenten",
+    "description": "Knowledge pack for the Weise tutor: unmodified Microsoft documentation (English, CC BY 4.0, as of 2026-10-02) on building agents for Microsoft 365 Copilot, with triggers and schedules in Power Automate, written descriptions of all images and German summaries on Copilot Studio. Data only; import it with /weise:paket.",
+    "version": "",
+    "author": "JasonDavid77",
+    "repository": "https://github.com/JasonDavid77/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/JasonDavid77/weise-pakete.git",
+      "path": "plugins/weise-copilot-agenten"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1399637883",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]

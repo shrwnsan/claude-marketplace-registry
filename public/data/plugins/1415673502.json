@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1415673502-subagent-tuner",
+    "name": "subagent-tuner",
+    "description": "Picks the model and reasoning effort of every subagent: a recommendation by task kind, a band above the prompt, and a saved default that wins.",
+    "version": "",
+    "author": "Kruhlikau",
+    "repository": "https://github.com/Kruhlikau/subagent-tuner",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1415673502",
+      "marketplaceName": "subagent-tuner",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

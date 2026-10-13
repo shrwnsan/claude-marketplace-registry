@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1415041436-setkernel",
+    "name": "setkernel",
+    "description": "Org-wide skills (verify, review-blockers, ship-pr), subagents (explorer, reviewer) and shell-only hooks.",
+    "version": "",
+    "author": "setkernel",
+    "repository": "https://github.com/setkernel/agent-plugins",
+    "manifestPath": "./plugins/setkernel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1415041436",
+      "marketplaceName": "agent-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -1,0 +1,650 @@
+[
+  {
+    "id": "1187256167-pigment",
+    "name": "pigment",
+    "description": "Analyze business data and build planning models in your Pigment workspace",
+    "version": "2.0.4",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1187256167-aggregating-view-data",
+    "name": "aggregating-view-data",
+    "description": "name: aggregating-view-data",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/aggregating-view-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-analyzing-views",
+    "name": "analyzing-views",
+    "description": "name: analyzing-views",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/analyzing-views",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-architecting-multi-application-solutions",
+    "name": "architecting-multi-application-solutions",
+    "description": "name: architecting-multi-application-solutions",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/architecting-multi-application-solutions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-auditing-a-pigment-application",
+    "name": "auditing-a-pigment-application",
+    "description": "name: auditing-a-pigment-application",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/auditing-a-pigment-application",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-building-a-full-application",
+    "name": "building-a-full-application",
+    "description": "name: building-a-full-application",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/building-a-full-application",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-building-pigment-frames",
+    "name": "building-pigment-frames",
+    "description": "name: building-pigment-frames",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/building-pigment-frames",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-building-versions-and-planning-cycles",
+    "name": "building-versions-and-planning-cycles",
+    "description": "name: building-versions-and-planning-cycles",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/building-versions-and-planning-cycles",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-choosing-formula-patterns",
+    "name": "choosing-formula-patterns",
+    "description": "name: choosing-formula-patterns",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/choosing-formula-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-copying-metric-data",
+    "name": "copying-metric-data",
+    "description": "name: copying-metric-data",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/copying-metric-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-creating-dimensions-and-hierarchies",
+    "name": "creating-dimensions-and-hierarchies",
+    "description": "name: creating-dimensions-and-hierarchies",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/creating-dimensions-and-hierarchies",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-creating-metrics-and-tables",
+    "name": "creating-metrics-and-tables",
+    "description": "name: creating-metrics-and-tables",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/creating-metrics-and-tables",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-creating-transaction-lists",
+    "name": "creating-transaction-lists",
+    "description": "name: creating-transaction-lists",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/creating-transaction-lists",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-designing-boards-and-views",
+    "name": "designing-boards-and-views",
+    "description": "name: designing-boards-and-views",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/designing-boards-and-views",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-designing-pigment-frames",
+    "name": "designing-pigment-frames",
+    "description": "name: designing-pigment-frames",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/designing-pigment-frames",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-diagnosing-performance-issues",
+    "name": "diagnosing-performance-issues",
+    "description": "name: diagnosing-performance-issues",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/diagnosing-performance-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-editing-an-existing-application",
+    "name": "editing-an-existing-application",
+    "description": "name: editing-an-existing-application",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/editing-an-existing-application",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-forecasting-in-pigment",
+    "name": "forecasting-in-pigment",
+    "description": "name: forecasting-in-pigment",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/forecasting-in-pigment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-formatting-and-highlighting",
+    "name": "formatting-and-highlighting",
+    "description": "name: formatting-and-highlighting",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/formatting-and-highlighting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-gathering-architecture-requirements",
+    "name": "gathering-architecture-requirements",
+    "description": "name: gathering-architecture-requirements",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/gathering-architecture-requirements",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-iterating-with-previous-and-cycles",
+    "name": "iterating-with-previous-and-cycles",
+    "description": "name: iterating-with-previous-and-cycles",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/iterating-with-previous-and-cycles",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-naming-and-organizing-applications",
+    "name": "naming-and-organizing-applications",
+    "description": "name: naming-and-organizing-applications",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/naming-and-organizing-applications",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-profiling-model-performance",
+    "name": "profiling-model-performance",
+    "description": "name: profiling-model-performance",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/profiling-model-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-securing-with-access-rights",
+    "name": "securing-with-access-rights",
+    "description": "name: securing-with-access-rights",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/securing-with-access-rights",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-setting-up-calendar",
+    "name": "setting-up-calendar",
+    "description": "name: setting-up-calendar",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/setting-up-calendar",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-sharing-data-between-applications",
+    "name": "sharing-data-between-applications",
+    "description": "name: sharing-data-between-applications",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/sharing-data-between-applications",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-solving-financial-planning",
+    "name": "solving-financial-planning",
+    "description": "name: solving-financial-planning",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/solving-financial-planning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-solving-sales-performance",
+    "name": "solving-sales-performance",
+    "description": "name: solving-sales-performance",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/solving-sales-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-solving-supply-chain",
+    "name": "solving-supply-chain",
+    "description": "name: solving-supply-chain",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/solving-supply-chain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-solving-workforce-planning",
+    "name": "solving-workforce-planning",
+    "description": "name: solving-workforce-planning",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/solving-workforce-planning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-understanding-pigment-modeling",
+    "name": "understanding-pigment-modeling",
+    "description": "name: understanding-pigment-modeling",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/understanding-pigment-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-using-formula-functions",
+    "name": "using-formula-functions",
+    "description": "name: using-formula-functions",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/using-formula-functions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-using-formula-modifiers",
+    "name": "using-formula-modifiers",
+    "description": "name: using-formula-modifiers",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/using-formula-modifiers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-using-list-subsets",
+    "name": "using-list-subsets",
+    "description": "name: using-list-subsets",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/using-list-subsets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-using-mapped-dimensions",
+    "name": "using-mapped-dimensions",
+    "description": "name: using-mapped-dimensions",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/using-mapped-dimensions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-using-search-tools",
+    "name": "using-search-tools",
+    "description": "name: using-search-tools",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/using-search-tools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-writing-performant-formulas",
+    "name": "writing-performant-formulas",
+    "description": "name: writing-performant-formulas",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/writing-performant-formulas",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1187256167-writing-pigment-formulas",
+    "name": "writing-pigment-formulas",
+    "description": "name: writing-pigment-formulas",
+    "version": "1.0.0",
+    "author": "Pigment",
+    "repository": "https://github.com/gopigment/ai-plugins",
+    "manifestPath": "skills/writing-pigment-formulas",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1187256167",
+      "marketplaceName": "ai-plugins",
+      "hasSkillMd": true
+    }
+  }
+]

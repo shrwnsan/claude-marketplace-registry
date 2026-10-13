@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1148058880-conductor",
+    "name": "conductor",
+    "description": "Validate, run, and execute Conductor multi-agent YAML workflows. Adds the conductor skill that knows the workflow schema, CLI commands, and execution model.",
+    "version": "",
+    "author": "Microsoft",
+    "repository": "https://github.com/microsoft/conductor",
+    "manifestPath": "./plugins/conductor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148058880",
+      "marketplaceName": "conductor",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

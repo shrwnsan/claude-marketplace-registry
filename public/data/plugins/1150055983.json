@@ -38,6 +38,25 @@
     }
   },
   {
+    "id": "1150055983-advanced-workflows",
+    "name": "advanced-workflows",
+    "description": "Vendor-generic MSP automation workflows that adapt to the customer's connected stack.",
+    "version": "",
+    "author": "WYRE-AI",
+    "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+    "manifestPath": "./msp-claude-plugins/advanced-workflows/advanced-workflows",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1150055983",
+      "marketplaceName": "msp-claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1150055983-atera",
     "name": "atera",
     "description": "Atera - tickets, agents, customers, alerts, SNMP/HTTP monitors",
