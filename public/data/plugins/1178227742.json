@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1178227742-actual-cli",
+    "name": "actual-cli",
+    "description": "Feature-complete companion for the actual CLI",
+    "version": "",
+    "author": "actual-software",
+    "repository": "https://github.com/actual-software/actual-skill",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178227742",
+      "marketplaceName": "actual-skill",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1178227742-actual",
+    "name": "actual",
+    "description": "name: actual",
+    "version": "1.0.0",
+    "author": "actual-software",
+    "repository": "https://github.com/actual-software/actual-skill",
+    "manifestPath": "skills/actual",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1178227742",
+      "marketplaceName": "actual-skill",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -2,7 +2,7 @@
   {
     "id": "1414936254-bash-lsp-intelligence",
     "name": "bash-lsp-intelligence",
-    "description": "Gives Claude Code bash-language-server for Bash and POSIX shell scripts, plus a skill that teaches Claude to trace sourced files and same-named functions, fix ShellCheck and shfmt findings without changing behavior, and verify every change with evidence.",
+    "description": "Gives Claude Code bash-language-server for Bash and POSIX shell scripts, formats and checks every script Claude edits with shfmt and ShellCheck using your own configuration, and teaches Claude to trace sourced files and same-named functions before a rename.",
     "version": "",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
@@ -38,9 +38,28 @@
     }
   },
   {
+    "id": "1414936254-prompt-writer",
+    "name": "prompt-writer",
+    "description": "Turns a goal, idea or draft into one copy-ready prompt tuned to the target Claude model and effort: it clarifies intent, checks current official facts and recommends the setup to run it with.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/prompt-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1414936254-python-lsp-intelligence",
     "name": "python-lsp-intelligence",
-    "description": "Gives Claude Code the basedpyright language server for Python, plus a skill that teaches Claude to resolve symbols, aliases and imports semantically, fix basedpyright and Ruff findings without suppressing them, and verify every change with evidence.",
+    "description": "Gives Claude Code the basedpyright language server for Python, checks every Python file Claude edits with ruff and basedpyright using your own configuration, and teaches Claude to navigate by symbol, resolve aliases and imports, and fix findings without suppressing them.",
     "version": "",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
@@ -95,9 +114,28 @@
     }
   },
   {
+    "id": "1414936254-typescript6-lsp-intelligence",
+    "name": "typescript6-lsp-intelligence",
+    "description": "Gives Claude Code a pinned TypeScript 6 language server for TypeScript and JavaScript, type-checks the program of every file Claude edits with the matching compiler, and teaches Claude to find the program that owns a file and fix compiler findings without unsafe assertions or suppressions.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/typescript6-lsp-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1414936254-typescript7-lsp-intelligence",
     "name": "typescript7-lsp-intelligence",
-    "description": "Gives Claude Code the native TypeScript 7 language server for TypeScript and JavaScript, plus a skill that teaches Claude to check which program owns a file, fix compiler findings without unsafe assertions or suppressions, and verify every change with evidence.",
+    "description": "Gives Claude Code a pinned native TypeScript 7 language server for TypeScript and JavaScript, type-checks the program of every file Claude edits with the matching compiler, and teaches Claude to find the program that owns a file and fix compiler findings without unsafe assertions or suppressions.",
     "version": "",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",

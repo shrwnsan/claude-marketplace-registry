@@ -250,7 +250,7 @@
     "id": "1261114117-format-on-edit",
     "name": "format-on-edit",
     "description": "Automation hook that runs the project's own formatter (Biome, Prettier, gofmt, rustfmt, or ruff) on every file Claude edits, so changes land already formatted.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Khaled Saeed",
     "repository": "https://github.com/KhaledSaeed18/dotclaude",
     "manifestPath": "./.claude-plugin/plugins/format-on-edit",
