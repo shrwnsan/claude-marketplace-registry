@@ -1,37 +1,37 @@
 {
   "stats": {
-    "totalMarketplaces": 1351,
-    "totalPlugins": 7252,
-    "validPlugins": 7252,
-    "lastUpdated": "2026-10-13T06:00:24.081Z",
+    "totalMarketplaces": 1384,
+    "totalPlugins": 7272,
+    "validPlugins": 7272,
+    "lastUpdated": "2026-10-14T04:05:07.297Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 432
+        "count": 451
       },
       {
         "language": "TypeScript",
-        "count": 215
+        "count": 216
       },
       {
         "language": "Unknown",
-        "count": 211
+        "count": 213
       },
       {
         "language": "JavaScript",
-        "count": 204
+        "count": 208
       },
       {
         "language": "Shell",
-        "count": 126
+        "count": 128
       },
       {
         "language": "HTML",
-        "count": 68
+        "count": 71
       },
       {
         "language": "Go",
-        "count": 28
+        "count": 29
       },
       {
         "language": "Rust",
@@ -49,12 +49,12 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 278054,
+        "stars": 278681,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 180775,
+        "stars": 180960,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,7 +64,7 @@
       },
       {
         "name": "paperclip",
-        "stars": 101088,
+        "stars": 101648,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -79,12 +79,12 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 76965,
+        "stars": 77037,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 69986,
+        "stars": 70007,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "claude-plugins",
-        "updatedAt": "2026-10-13T05:51:48Z",
-        "url": "https://github.com/Arhaty/claude-plugins"
+        "name": "tedix",
+        "updatedAt": "2026-10-14T03:55:18Z",
+        "url": "https://github.com/tedix-hq/tedix"
       },
       {
-        "name": "paperclip",
-        "updatedAt": "2026-10-13T05:50:52Z",
-        "url": "https://github.com/paperclipai/paperclip"
+        "name": "forge-plugin",
+        "updatedAt": "2026-10-14T03:54:56Z",
+        "url": "https://github.com/nxtg-ai/forge-plugin"
       },
       {
-        "name": "haive",
-        "updatedAt": "2026-10-13T05:50:02Z",
-        "url": "https://github.com/martinambrus/haive"
+        "name": "clawd-actor",
+        "updatedAt": "2026-10-14T03:54:43Z",
+        "url": "https://github.com/BrianHuang813/clawd-actor"
+      },
+      {
+        "name": "found-issues",
+        "updatedAt": "2026-10-14T03:54:35Z",
+        "url": "https://github.com/AltDoug/found-issues"
+      },
+      {
+        "name": "paradigma-skill",
+        "updatedAt": "2026-10-14T03:53:55Z",
+        "url": "https://github.com/qaemu/paradigma-skill"
       },
       {
         "name": "oil-ui",
-        "updatedAt": "2026-10-13T05:49:58Z",
+        "updatedAt": "2026-10-14T03:53:18Z",
         "url": "https://github.com/oil-oil/oil-ui"
       },
       {
-        "name": "paper-proofread",
-        "updatedAt": "2026-10-13T05:49:40Z",
-        "url": "https://github.com/parkjui92/paper-proofread"
+        "name": "paperclip",
+        "updatedAt": "2026-10-14T03:52:54Z",
+        "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "shadowclone",
-        "updatedAt": "2026-10-13T05:48:42Z",
-        "url": "https://github.com/theonly1me/shadowclone"
+        "name": "local-agents",
+        "updatedAt": "2026-10-14T03:52:08Z",
+        "url": "https://github.com/jrodrigopuca/local-agents"
       },
       {
-        "name": "hermes-skills",
-        "updatedAt": "2026-10-13T05:48:17Z",
-        "url": "https://github.com/jiawood2006/hermes-skills"
+        "name": "autocode",
+        "updatedAt": "2026-10-14T03:50:54Z",
+        "url": "https://github.com/ilang-ai/autocode"
       },
       {
-        "name": "asfakulsiam-motomation-design",
-        "updatedAt": "2026-10-13T05:47:11Z",
-        "url": "https://github.com/asfakulsiam/asfakulsiam-motomation-design"
-      },
-      {
-        "name": "marketingskills",
-        "updatedAt": "2026-10-13T05:47:09Z",
-        "url": "https://github.com/coreyhaines31/marketingskills"
-      },
-      {
-        "name": "saas-marketing-agents",
-        "updatedAt": "2026-10-13T05:46:52Z",
-        "url": "https://github.com/shalintripathi/saas-marketing-agents"
+        "name": "claude-plugins",
+        "updatedAt": "2026-10-14T03:50:48Z",
+        "url": "https://github.com/raiki61/claude-plugins"
       }
     ]
   },
@@ -155,22 +155,22 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 695
+      "count": 713
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 198
+      "count": 203
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 419
+      "count": 429
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 62
+      "count": 66
     },
     {
       "id": "data",
@@ -180,8 +180,8 @@
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 35
+      "count": 34
     }
   ],
-  "lastUpdated": "2026-10-13T06:00:24.081Z"
+  "lastUpdated": "2026-10-14T04:05:07.297Z"
 }

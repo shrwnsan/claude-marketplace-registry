@@ -240,5 +240,28 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1309248958-warden",
+    "name": "warden",
+    "description": "Corporate Vaultwarden (vault.dataagile.com.br) — credential reads via rbw, member/collection admin via bw",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/rodrigopg/warden-ops.git",
+      "path": "plugin"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]
