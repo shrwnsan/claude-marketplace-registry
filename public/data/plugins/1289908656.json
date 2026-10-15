@@ -154,8 +154,8 @@
   {
     "id": "1289908656-ml-workflow",
     "name": "ml-workflow",
-    "description": "Run Runspore workflows from inside Claude Code: start, follow, decide and resume durable runs that survive a closed session, with Claude steps that keep one conversation per run. Needs terminal Claude Code 2.1.290 or later and Bun 1.2.0 or later. This release is the skeleton: the claude-spore helper, the mod and the sub-skills are in place, the workflow features arrive next.",
-    "version": "0.1.0",
+    "description": "Run Runspore workflows from inside Claude Code: start, follow, decide and resume durable runs that survive a closed session, with Claude steps that keep one conversation per run. Needs terminal Claude Code 2.1.290 or later and Bun 1.2.0 or later. This release starts, shows and continues runs on spore 0.2.0 or later, and writes or changes workflows by interview; the menu and cancel arrive next.",
+    "version": "0.3.0",
     "author": "Max Levitskiy",
     "repository": "https://github.com/Max-Levitskiy/skills",
     "manifestPath": "./plugins/ml-workflow",

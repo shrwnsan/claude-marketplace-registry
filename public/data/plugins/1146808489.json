@@ -1,0 +1,1075 @@
+[
+  {
+    "id": "1146808489-scientific-agent-skills",
+    "name": "scientific-agent-skills",
+    "description": "Agent skills for scientific computing and research",
+    "version": "",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1146808489-ase",
+    "name": "ase",
+    "description": "name: ase",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/ase",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-astropy",
+    "name": "astropy",
+    "description": "name: astropy",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/astropy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-biopython",
+    "name": "biopython",
+    "description": "name: biopython",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/biopython",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-chempy",
+    "name": "chempy",
+    "description": "name: chempy",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/chempy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-cobrapy",
+    "name": "cobrapy",
+    "description": "name: cobrapy",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/cobrapy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-dask-optimization",
+    "name": "dask-optimization",
+    "description": "name: dask-optimization",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/dask-optimization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-dask",
+    "name": "dask",
+    "description": "name: dask",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/dask",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-duckdb",
+    "name": "duckdb",
+    "description": "name: duckdb",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/duckdb",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-example-skill",
+    "name": "example-skill",
+    "description": "name: example-skill",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/example-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-fastapi-streamlit",
+    "name": "fastapi-streamlit",
+    "description": "name: fastapi-streamlit",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/fastapi-streamlit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-geopandas",
+    "name": "geopandas",
+    "description": "name: geopandas",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/geopandas",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-h5py",
+    "name": "h5py",
+    "description": "name: h5py",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/h5py",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-jax-pde",
+    "name": "jax-pde",
+    "description": "name: jax-pde",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/jax-pde",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-jax",
+    "name": "jax",
+    "description": "name: jax",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/jax",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-lifelines",
+    "name": "lifelines",
+    "description": "name: lifelines",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/lifelines",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-matplotlib-pro",
+    "name": "matplotlib-pro",
+    "description": "name: matplotlib-pro",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/matplotlib-pro",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-matplotlib",
+    "name": "matplotlib",
+    "description": "name: matplotlib",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/matplotlib",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-mdanalysis",
+    "name": "mdanalysis",
+    "description": "name: mdanalysis",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/mdanalysis",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-mne",
+    "name": "mne",
+    "description": "name: mne",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/mne",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-networkx",
+    "name": "networkx",
+    "description": "name: networkx",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/networkx",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-numba",
+    "name": "numba",
+    "description": "name: numba",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/numba",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-numpy-low-level",
+    "name": "numpy-low-level",
+    "description": "name: numpy-low-level",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/numpy-low-level",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-numpy",
+    "name": "numpy",
+    "description": "name: numpy",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/numpy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-openbabel",
+    "name": "openbabel",
+    "description": "name: openbabel",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/openbabel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-opencv",
+    "name": "opencv",
+    "description": "name: opencv",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/opencv",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-ortools",
+    "name": "ortools",
+    "description": "name: ortools",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/ortools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pandas-performance",
+    "name": "pandas-performance",
+    "description": "name: pandas-performance",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pandas-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pennylane",
+    "name": "pennylane",
+    "description": "name: pennylane",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pennylane",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-photutils",
+    "name": "photutils",
+    "description": "name: photutils",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/photutils",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-plotly",
+    "name": "plotly",
+    "description": "name: plotly",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/plotly",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-polars",
+    "name": "polars",
+    "description": "name: polars",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/polars",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-prody",
+    "name": "prody",
+    "description": "name: prody",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/prody",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pydicom",
+    "name": "pydicom",
+    "description": "name: pydicom",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pydicom",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pyomo",
+    "name": "pyomo",
+    "description": "name: pyomo",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pyomo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pyproj",
+    "name": "pyproj",
+    "description": "name: pyproj",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pyproj",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pysam",
+    "name": "pysam",
+    "description": "name: pysam",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pysam",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pyscf",
+    "name": "pyscf",
+    "description": "name: pyscf",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pyscf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pytorch-deployment",
+    "name": "pytorch-deployment",
+    "description": "name: pytorch-deployment",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pytorch-deployment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pytorch-research",
+    "name": "pytorch-research",
+    "description": "name: pytorch-research",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pytorch-research",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-pytorch",
+    "name": "pytorch",
+    "description": "name: pytorch",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/pytorch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-qiskit-hardware",
+    "name": "qiskit-hardware",
+    "description": "name: qiskit-hardware",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/qiskit-hardware",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-qiskit",
+    "name": "qiskit",
+    "description": "name: qiskit",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/qiskit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-qutip",
+    "name": "qutip",
+    "description": "name: qutip",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/qutip",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-rdkit",
+    "name": "rdkit",
+    "description": "name: rdkit",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/rdkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-scanpy",
+    "name": "scanpy",
+    "description": "name: scanpy",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/scanpy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-scikit-bio",
+    "name": "scikit-bio",
+    "description": "name: scikit-bio",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/scikit-bio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-scikit-image",
+    "name": "scikit-image",
+    "description": "name: scikit-image",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/scikit-image",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-scikit-learn",
+    "name": "scikit-learn",
+    "description": "name: scikit-learn",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/scikit-learn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-scikit-video",
+    "name": "scikit-video",
+    "description": "name: scikit-video",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/scikit-video",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-scipy",
+    "name": "scipy",
+    "description": "name: scipy",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/scipy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-seaborn",
+    "name": "seaborn",
+    "description": "name: seaborn",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/seaborn",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-shapely",
+    "name": "shapely",
+    "description": "name: shapely",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/shapely",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-simpy",
+    "name": "simpy",
+    "description": "name: simpy",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/simpy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-sklearn-advanced",
+    "name": "sklearn-advanced",
+    "description": "name: sklearn-advanced",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/sklearn-advanced",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-sklearn-explainability",
+    "name": "sklearn-explainability",
+    "description": "name: sklearn-explainability",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/sklearn-explainability",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-statsmodels",
+    "name": "statsmodels",
+    "description": "name: statsmodels",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/statsmodels",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-sunpy",
+    "name": "sunpy",
+    "description": "name: sunpy",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/sunpy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-sympy",
+    "name": "sympy",
+    "description": "name: sympy",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/sympy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-tqdm",
+    "name": "tqdm",
+    "description": "name: tqdm",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/tqdm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-transformers",
+    "name": "transformers",
+    "description": "name: transformers",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/transformers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-xarray",
+    "name": "xarray",
+    "description": "name: xarray",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/xarray",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1146808489-xgboost-lightgbm",
+    "name": "xgboost-lightgbm",
+    "description": "name: xgboost-lightgbm",
+    "version": "1.0.0",
+    "author": "tondevrel",
+    "repository": "https://github.com/tondevrel/scientific-agent-skills",
+    "manifestPath": "skills/xgboost-lightgbm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1146808489",
+      "marketplaceName": "scientific-agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]

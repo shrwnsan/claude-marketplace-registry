@@ -244,14 +244,13 @@
   {
     "id": "1309248958-warden",
     "name": "warden",
-    "description": "Corporate Vaultwarden (vault.dataagile.com.br) — credential reads via rbw, member/collection admin via bw",
+    "description": "Vaultwarden/Bitwarden in your agent harness — credential reads via rbw, org member admin via bw",
     "version": "",
     "author": "rodrigopg",
     "repository": "https://github.com/rodrigopg/claude-plugins",
     "manifestPath": {
-      "source": "git-subdir",
-      "url": "https://github.com/rodrigopg/warden-ops.git",
-      "path": "plugin"
+      "source": "url",
+      "url": "https://github.com/rodrigopg/warden-plugin.git"
     },
     "isValid": true,
     "errors": [],

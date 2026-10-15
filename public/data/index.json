@@ -1,41 +1,41 @@
 {
   "stats": {
-    "totalMarketplaces": 1384,
-    "totalPlugins": 7272,
-    "validPlugins": 7272,
-    "lastUpdated": "2026-10-14T04:05:07.297Z",
+    "totalMarketplaces": 1435,
+    "totalPlugins": 7325,
+    "validPlugins": 7325,
+    "lastUpdated": "2026-10-15T03:46:26.670Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 451
+        "count": 469
       },
       {
         "language": "TypeScript",
-        "count": 216
-      },
-      {
-        "language": "Unknown",
-        "count": 213
+        "count": 225
       },
       {
         "language": "JavaScript",
-        "count": 208
+        "count": 218
+      },
+      {
+        "language": "Unknown",
+        "count": 214
       },
       {
         "language": "Shell",
-        "count": 128
+        "count": 133
       },
       {
         "language": "HTML",
-        "count": 71
+        "count": 72
       },
       {
         "language": "Go",
-        "count": 29
+        "count": 32
       },
       {
         "language": "Rust",
-        "count": 23
+        "count": 25
       },
       {
         "language": "Java",
@@ -49,12 +49,12 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 278681,
+        "stars": 279547,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 180960,
+        "stars": 181201,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,7 +64,7 @@
       },
       {
         "name": "paperclip",
-        "stars": 101648,
+        "stars": 102226,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -79,12 +79,12 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 77037,
+        "stars": 77130,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 70007,
+        "stars": 70038,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "tedix",
-        "updatedAt": "2026-10-14T03:55:18Z",
-        "url": "https://github.com/tedix-hq/tedix"
+        "name": "Monochromatic",
+        "updatedAt": "2026-10-15T03:36:30Z",
+        "url": "https://github.com/Aquaticat/Monochromatic"
       },
       {
-        "name": "forge-plugin",
-        "updatedAt": "2026-10-14T03:54:56Z",
-        "url": "https://github.com/nxtg-ai/forge-plugin"
+        "name": "onsetter",
+        "updatedAt": "2026-10-15T03:35:56Z",
+        "url": "https://github.com/justinstimatze/onsetter"
       },
       {
-        "name": "clawd-actor",
-        "updatedAt": "2026-10-14T03:54:43Z",
-        "url": "https://github.com/BrianHuang813/clawd-actor"
-      },
-      {
-        "name": "found-issues",
-        "updatedAt": "2026-10-14T03:54:35Z",
-        "url": "https://github.com/AltDoug/found-issues"
-      },
-      {
-        "name": "paradigma-skill",
-        "updatedAt": "2026-10-14T03:53:55Z",
-        "url": "https://github.com/qaemu/paradigma-skill"
-      },
-      {
-        "name": "oil-ui",
-        "updatedAt": "2026-10-14T03:53:18Z",
-        "url": "https://github.com/oil-oil/oil-ui"
+        "name": "pitcrew",
+        "updatedAt": "2026-10-15T03:35:44Z",
+        "url": "https://github.com/gabrielCastorena/pitcrew"
       },
       {
         "name": "paperclip",
-        "updatedAt": "2026-10-14T03:52:54Z",
+        "updatedAt": "2026-10-15T03:35:42Z",
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "local-agents",
-        "updatedAt": "2026-10-14T03:52:08Z",
-        "url": "https://github.com/jrodrigopuca/local-agents"
+        "name": "cc-fleet",
+        "updatedAt": "2026-10-15T03:35:27Z",
+        "url": "https://github.com/ethanhq/cc-fleet"
       },
       {
-        "name": "autocode",
-        "updatedAt": "2026-10-14T03:50:54Z",
-        "url": "https://github.com/ilang-ai/autocode"
+        "name": "merrymen",
+        "updatedAt": "2026-10-15T03:34:45Z",
+        "url": "https://github.com/millw14/merrymen"
       },
       {
-        "name": "claude-plugins",
-        "updatedAt": "2026-10-14T03:50:48Z",
-        "url": "https://github.com/raiki61/claude-plugins"
+        "name": "claude-code-plugins",
+        "updatedAt": "2026-10-15T03:33:44Z",
+        "url": "https://github.com/motlin/claude-code-plugins"
+      },
+      {
+        "name": "odoo-dev-skill",
+        "updatedAt": "2026-10-15T03:33:40Z",
+        "url": "https://github.com/panusbodee-owen/odoo-dev-skill"
+      },
+      {
+        "name": "mcp-builder-kit",
+        "updatedAt": "2026-10-15T03:33:25Z",
+        "url": "https://github.com/RitualDev-Lab/mcp-builder-kit"
+      },
+      {
+        "name": "claude-deck",
+        "updatedAt": "2026-10-15T03:32:49Z",
+        "url": "https://github.com/nvr0x5/claude-deck"
       }
     ]
   },
@@ -155,17 +155,17 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 713
+      "count": 738
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 203
+      "count": 207
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 429
+      "count": 447
     },
     {
       "id": "design",
@@ -175,7 +175,7 @@
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 41
+      "count": 43
     },
     {
       "id": "utilities",
@@ -183,5 +183,5 @@
       "count": 34
     }
   ],
-  "lastUpdated": "2026-10-14T04:05:07.297Z"
+  "lastUpdated": "2026-10-15T03:46:26.670Z"
 }

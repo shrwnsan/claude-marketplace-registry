@@ -39,5 +39,28 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1402669470-rustgis-tui",
+    "name": "rustgis-tui",
+    "description": "A Claude Code mod: RustGIS in a pane, the terminal UI rustgis-tui with its layers, panels and real map picture, driven by you with keys and the mouse and by Claude with its screen and send tools, in the same running app. Needs rustgis-tui and rustgis-cli.",
+    "version": "",
+    "author": "helenkwok",
+    "repository": "https://github.com/helenkwok/gsd-status-mod",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/helenkwok/rustgis-tui.git",
+      "path": "claude-mod"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402669470",
+      "marketplaceName": "gsd-status-mod",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]
