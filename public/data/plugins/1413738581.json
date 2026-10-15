@@ -1,0 +1,116 @@
+[
+  {
+    "id": "1413738581-loxihart-ops",
+    "name": "loxihart-ops",
+    "description": "Loxihart service desk, endpoint imaging, and knowledge-base operations.",
+    "version": "1.0.0",
+    "author": "Krosebrook",
+    "repository": "https://github.com/Krosebrook/loxihart-skills",
+    "manifestPath": "./plugins/loxihart-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1413738581",
+      "marketplaceName": "loxihart-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1413738581-loxihart-ai",
+    "name": "loxihart-ai",
+    "description": "Loxihart AI enablement, solution architecture, agent building, and leadership communication.",
+    "version": "1.0.0",
+    "author": "Krosebrook",
+    "repository": "https://github.com/Krosebrook/loxihart-skills",
+    "manifestPath": "./plugins/loxihart-ai",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1413738581",
+      "marketplaceName": "loxihart-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1413738581-loxihart-engineering",
+    "name": "loxihart-engineering",
+    "description": "Engineering workflows: debugging, testing, refactoring, scripts, stack operations.",
+    "version": "1.0.0",
+    "author": "Krosebrook",
+    "repository": "https://github.com/Krosebrook/loxihart-skills",
+    "manifestPath": "./plugins/loxihart-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1413738581",
+      "marketplaceName": "loxihart-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1413738581-loxihart-design",
+    "name": "loxihart-design",
+    "description": "UI/UX, design systems, frontend execution, and the verified UI pattern library.",
+    "version": "1.0.0",
+    "author": "Krosebrook",
+    "repository": "https://github.com/Krosebrook/loxihart-skills",
+    "manifestPath": "./plugins/loxihart-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1413738581",
+      "marketplaceName": "loxihart-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1413738581-loxihart-business",
+    "name": "loxihart-business",
+    "description": "Business operations, marketing, content, and digital product launches.",
+    "version": "1.0.0",
+    "author": "Krosebrook",
+    "repository": "https://github.com/Krosebrook/loxihart-skills",
+    "manifestPath": "./plugins/loxihart-business",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1413738581",
+      "marketplaceName": "loxihart-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1413738581-tonone",
+    "name": "tonone",
+    "description": "Third-party: tonone by tonone-ai (MIT). Vendored unmodified; see vendor/tonone/LICENSE.",
+    "version": "1.0.0",
+    "author": "Krosebrook",
+    "repository": "https://github.com/Krosebrook/loxihart-skills",
+    "manifestPath": "./vendor/tonone",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1413738581",
+      "marketplaceName": "loxihart-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

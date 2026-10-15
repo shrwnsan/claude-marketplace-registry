@@ -101,7 +101,7 @@
     "id": "1205958039-setup-hygiene",
     "name": "setup-hygiene",
     "description": "Audit an agent setup — global, project and its board — for stale, wasteful or contradictory pieces against today's vendor docs; evidence-backed proposals, applied only on the owner's approval, with a decision ledger.",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": "mralabs",
     "repository": "https://github.com/mralabs/claude-plugins",
     "manifestPath": "./plugins/setup-hygiene",

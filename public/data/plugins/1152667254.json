@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1152667254-pulseline",
+    "name": "pulseline",
+    "description": "cc-pulseline: a multi-line statusline plus an above-the-prompt activity band, with setup commands and diagnostics",
+    "version": "1.5.1",
+    "author": "GregoryHo",
+    "repository": "https://github.com/GregoryHo/cc-pulseline",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152667254",
+      "marketplaceName": "cc-pulseline",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1152667254-pulseline-troubleshoot",
+    "name": "pulseline-troubleshoot",
+    "description": "name: pulseline-troubleshoot",
+    "version": "1.0.0",
+    "author": "GregoryHo",
+    "repository": "https://github.com/GregoryHo/cc-pulseline",
+    "manifestPath": "skills/pulseline-troubleshoot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152667254",
+      "marketplaceName": "cc-pulseline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152667254-preview-layouts",
+    "name": "preview-layouts",
+    "description": "name: preview-layouts",
+    "version": "1.0.0",
+    "author": "GregoryHo",
+    "repository": "https://github.com/GregoryHo/cc-pulseline",
+    "manifestPath": ".claude/skills/preview-layouts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152667254",
+      "marketplaceName": "cc-pulseline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152667254-preview-theme",
+    "name": "preview-theme",
+    "description": "name: preview-theme",
+    "version": "1.0.0",
+    "author": "GregoryHo",
+    "repository": "https://github.com/GregoryHo/cc-pulseline",
+    "manifestPath": ".claude/skills/preview-theme",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152667254",
+      "marketplaceName": "cc-pulseline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152667254-release-bump",
+    "name": "release-bump",
+    "description": "name: release-bump",
+    "version": "1.0.0",
+    "author": "GregoryHo",
+    "repository": "https://github.com/GregoryHo/cc-pulseline",
+    "manifestPath": ".claude/skills/release-bump",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152667254",
+      "marketplaceName": "cc-pulseline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1152667254-release-ship",
+    "name": "release-ship",
+    "description": "name: release-ship",
+    "version": "1.0.0",
+    "author": "GregoryHo",
+    "repository": "https://github.com/GregoryHo/cc-pulseline",
+    "manifestPath": ".claude/skills/release-ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1152667254",
+      "marketplaceName": "cc-pulseline",
+      "hasSkillMd": true
+    }
+  }
+]
