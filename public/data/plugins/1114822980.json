@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1114822980-canva",
+    "name": "canva",
+    "description": "Create, edit, review, resize, and brand-check Canva designs with the Canva MCP server.",
+    "version": "1.0.0",
+    "author": "canva-sdks",
+    "repository": "https://github.com/canva-sdks/canva-skills",
+    "manifestPath": "./plugins/canva",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1114822980",
+      "marketplaceName": "canva-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

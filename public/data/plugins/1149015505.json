@@ -124,6 +124,23 @@
     }
   },
   {
+    "id": "1149015505-create-verification-skill",
+    "name": "create-verification-skill",
+    "description": "name: create-verification-skill",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/create-verification-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1149015505-daily-update",
     "name": "daily-update",
     "description": "name: daily-update",
@@ -352,6 +369,23 @@
     "author": "BenjaminG",
     "repository": "https://github.com/BenjaminG/ai-skills",
     "manifestPath": "skills/jev-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-maintain-verification-skill",
+    "name": "maintain-verification-skill",
+    "description": "name: maintain-verification-skill",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/maintain-verification-skill",
     "isValid": true,
     "errors": [],
     "warnings": [],

@@ -1,27 +1,27 @@
 {
-  "totalFound": 1435,
-  "withManifest": 579,
-  "lastUpdated": "2026-10-15T03:44:11.097Z",
+  "totalFound": 1477,
+  "withManifest": 586,
+  "lastUpdated": "2026-10-16T03:39:18.085Z",
   "searchQuery": "",
   "languages": {
-    "Python": 469,
-    "TypeScript": 225,
-    "JavaScript": 218,
-    "Shell": 133,
+    "Python": 487,
+    "TypeScript": 238,
+    "JavaScript": 222,
+    "Shell": 135,
     "Rust": 25,
+    "HTML": 76,
     "Go": 32,
-    "Unknown": 214,
-    "HTML": 72,
+    "Unknown": 215,
     "AMPL": 1,
     "C++": 3,
     "Swift": 5,
-    "Gherkin": 1,
     "Jupyter Notebook": 3,
+    "Gherkin": 1,
     "C#": 3,
     "Astro": 1,
     "Perl": 1,
     "Ruby": 1,
-    "PowerShell": 2,
+    "Gleam": 1,
     "Markdown": 2,
     "Java": 7,
     "PHP": 1,
@@ -30,9 +30,9 @@
     "Svelte": 1,
     "SCSS": 1,
     "CSS": 3,
-    "Gleam": 1,
     "C": 1,
     "TeX": 3,
+    "PowerShell": 2,
     "Clojure": 1,
     "jq": 1,
     "Kotlin": 2
@@ -40,12 +40,12 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 279547,
+      "stars": 280506,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 181201,
+      "stars": 181422,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -55,27 +55,27 @@
     },
     {
       "name": "paperclip",
-      "stars": 102226,
+      "stars": 102794,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "claude-mem",
-      "stars": 99797,
+      "stars": 101084,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "archify",
-      "stars": 81724,
+      "stars": 84106,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 77130,
+      "stars": 77202,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70038,
+      "stars": 70083,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
