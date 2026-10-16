@@ -6,6 +6,7 @@ import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
 import SortSelect from '@/components/ui/SortSelect';
 import ValidatedManifestBadge from '@/components/ui/ValidatedManifestBadge';
+import SecurityAuditBadge from '@/components/ui/SecurityAuditBadge';
 import { Check, Star, ChevronRight, Filter, Grid, List, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -372,6 +373,11 @@ const MarketplacesPage: React.FC = () => {
                               <ValidatedManifestBadge />
                             </div>
                           )}
+                          {marketplace.securityAudit && (
+                            <div className='flex-shrink-0 ml-2'>
+                              <SecurityAuditBadge audit={marketplace.securityAudit} />
+                            </div>
+                          )}
                         </div>
 
                         <div className='flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4'>
@@ -417,6 +423,9 @@ const MarketplacesPage: React.FC = () => {
                               </Link>
                             </h3>
                             {marketplace.hasManifest && <ValidatedManifestBadge />}
+                            {marketplace.securityAudit && (
+                              <SecurityAuditBadge audit={marketplace.securityAudit} />
+                            )}
                             <span className='badge badge-secondary text-xs'>
                               {(Array.isArray(marketplace.topics) && marketplace.topics[0]) || ''}
                             </span>

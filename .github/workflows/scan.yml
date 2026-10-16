@@ -179,6 +179,16 @@ jobs:
           fi
           npm run enrich:jev
 
+      - name: Fetch security audits (skills.sh)
+        # Enhancement, not load-bearing: the sidecar merges additively and the
+        # script writes only when it fetched something, so a partial or skipped
+        # run leaves the previously committed security-audit.json in place.
+        # Volume is capped in-script (MAX_REPOS_PER_RUN); no secrets required.
+        continue-on-error: true
+        env:
+          NODE_ENV: production
+        run: npm run audit:security
+
       - name: Generate data files
         run: npm run generate:data
         env:
