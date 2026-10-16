@@ -2,7 +2,7 @@
   {
     "id": "1135387321-agent-skills",
     "name": "agent-skills",
-    "description": "Odoo 16-19 skill packs, the odoo-workflow pre-code gate, Odoo commit style, code review, flow diagrams, slide decks, and the Odoo review/tracer agents",
+    "description": "Odoo 16-19 skill packs, the odoo-workflow pre-code gate, Odoo commit style, and the Odoo review/tracer agents",
     "version": "1.0.20",
     "author": "unclecatvn",
     "repository": "https://github.com/unclecatvn/agent-skills",
@@ -19,23 +19,6 @@
     }
   },
   {
-    "id": "1135387321-code-review",
-    "name": "code-review",
-    "description": "name: code-review",
-    "version": "1.0.0",
-    "author": "unclecatvn",
-    "repository": "https://github.com/unclecatvn/agent-skills",
-    "manifestPath": "skills/code-review",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1135387321",
-      "marketplaceName": "agent-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
     "id": "1135387321-dtg-base",
     "name": "dtg-base",
     "description": "name: dtg-base",
@@ -43,23 +26,6 @@
     "author": "unclecatvn",
     "repository": "https://github.com/unclecatvn/agent-skills",
     "manifestPath": "skills/dtg-base",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1135387321",
-      "marketplaceName": "agent-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1135387321-flow-diagram",
-    "name": "flow-diagram",
-    "description": "name: flow-diagram",
-    "version": "1.0.0",
-    "author": "unclecatvn",
-    "repository": "https://github.com/unclecatvn/agent-skills",
-    "manifestPath": "skills/flow-diagram",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -162,23 +128,6 @@
     "author": "unclecatvn",
     "repository": "https://github.com/unclecatvn/agent-skills",
     "manifestPath": "skills/odoo-workflow",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1135387321",
-      "marketplaceName": "agent-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1135387321-slide",
-    "name": "slide",
-    "description": "name: ai-vibe-slides",
-    "version": "1.0.0",
-    "author": "unclecatvn",
-    "repository": "https://github.com/unclecatvn/agent-skills",
-    "manifestPath": "skills/slide",
     "isValid": true,
     "errors": [],
     "warnings": [],

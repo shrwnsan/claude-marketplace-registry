@@ -1,0 +1,362 @@
+[
+  {
+    "id": "1200902996-commit",
+    "name": "commit",
+    "description": "Write conventional commits automatically. Stages changes, analyzes the diff, and crafts a Conventional Commits message with the right type, scope, and summary.",
+    "version": "1.0.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/commit",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-code-review",
+    "name": "code-review",
+    "description": "Review code for correctness, security, performance, and style. Works on staged diffs, individual files, or GitHub PRs. Returns structured findings with P0-P3 severity levels.",
+    "version": "1.1.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/code-review",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-image-gen",
+    "name": "image-gen",
+    "description": "AI image generation with expert prompt engineering. Supports fal.ai, Together AI, Replicate, OpenAI, Stability AI via API, and Higgsfield Nano Banana Pro / Google Gemini via browser automation.",
+    "version": "0.2.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/image-gen",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-agent-repo-search",
+    "name": "agent-repo-search",
+    "description": "Efficiently search and ingest large codebases using structural indexing and token-aware CXML chunking.",
+    "version": "0.1.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/agent-repo-search",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-search",
+    "name": "search",
+    "description": "Precise codebase exploration using ripgrep and tree-sitter. Finds definitions, call sites, and usages with structural awareness.",
+    "version": "1.0.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/search",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-memory",
+    "name": "memory",
+    "description": "Long-term memory via MemPalace — verbatim semantic recall over a local ChromaDB store. Thin wrapper around the real `mempalace` CLI (pip install mempalace); nothing vendored.",
+    "version": "2.0.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/memory",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-pm",
+    "name": "pm",
+    "description": "BMAD Project Manager — orchestrates software projects through the full BMAD lifecycle: Ideation → PRD → Architecture → Stories → Implementation → QA → Integration.",
+    "version": "1.0.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/pm",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-llm-wiki",
+    "name": "llm-wiki",
+    "description": "Persistent markdown wiki maintenance — INGEST sources, QUERY with citations, LINT for drift, LEARNINGS capture. Vault at ~/knowledge-base/. Includes kb-to-wiki skill for publishing the KB as a browsable HTML wiki.",
+    "version": "1.1.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/llm-wiki",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-setup-telemetry",
+    "name": "setup-telemetry",
+    "description": "Instrument Claude with Langfuse telemetry and local dashboard. Visualizes session metrics, tool usage, and performance insights.",
+    "version": "1.0.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/setup-telemetry",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-research",
+    "name": "research",
+    "description": "Research a topic via AutoResearchClaw (full 23-stage pipeline → paper) or Regular Research (fast Claude synthesis).",
+    "version": "1.0.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/research",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-context-os",
+    "name": "context-os",
+    "description": "Unified context suite: knowledge graph (quickstart, ingest), session analytics (cc-lens + ccusage), token-efficiency playbook, context audit, and bundled context-os CLI. Replaces standalone cc-lens and token-efficiency plugins.",
+    "version": "2.1.1",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/context-os",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-dev-guidelines",
+    "name": "dev-guidelines",
+    "description": "General development guidelines — CI/infra decision trees, testing philosophy, Taskfile conventions, and an interactive review companion. Company-agnostic; routes to a local `org` skill for org-specific detail.",
+    "version": "1.0.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/dev-guidelines",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-review-agents",
+    "name": "review-agents",
+    "description": "Full codebase review orchestrated across 9 specialized subagents (architecture, correctness, security, performance, observability, readability, contracts, data, ci) via /review.",
+    "version": "1.1.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/review-agents",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-observability",
+    "name": "observability",
+    "description": "Observability skills — query Loki logs, Prometheus metrics, Tempo traces, Grafana dashboards, and analyze error patterns across a multi-agent system",
+    "version": "1.0.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/observability",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200902996-premium-web",
+    "name": "premium-web",
+    "description": "Build premium, studio-quality web pages with a calibrated critic loop, mandatory signature wow moment, section-level rubric and image generation.",
+    "version": "1.0.0",
+    "author": "Angel Hermon",
+    "repository": "https://github.com/anhermon/claude-public",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/anhermon/claude-public.git",
+      "path": "plugins/premium-web",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200902996",
+      "marketplaceName": "claude-public",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -2,7 +2,7 @@
   {
     "id": "1237046812-netbox-labs",
     "name": "netbox-labs",
-    "description": "Skills for the NetBox ecosystem — data modeling, API integration, plugin development, change management, discovery, assurance, validation, asset lifecycle, data exchange, agent/MCP integration, automation, and migration.",
+    "description": "Skills for the NetBox ecosystem — data modeling, API integration, plugin development, change management, discovery, assurance, validation, asset lifecycle, data exchange, infrastructure-as-code designs, agent/MCP integration, automation, and migration.",
     "version": "",
     "author": "netboxlabs",
     "repository": "https://github.com/netboxlabs/skills",
@@ -196,6 +196,23 @@
     "author": "netboxlabs",
     "repository": "https://github.com/netboxlabs/skills",
     "manifestPath": "skills/netbox-data-modeling",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1237046812",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1237046812-netbox-designs",
+    "name": "netbox-designs",
+    "description": "name: netbox-designs",
+    "version": "1.0.0",
+    "author": "netboxlabs",
+    "repository": "https://github.com/netboxlabs/skills",
+    "manifestPath": "skills/netbox-designs",
     "isValid": true,
     "errors": [],
     "warnings": [],
