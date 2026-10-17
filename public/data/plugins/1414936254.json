@@ -19,13 +19,13 @@
     }
   },
   {
-    "id": "1414936254-git-hygiene",
-    "name": "git-hygiene",
-    "description": "Audits a Git repository end to end, plans the cleanup with you, and executes only what you approve, keeping every piece of valuable work safe.",
+    "id": "1414936254-github-operations",
+    "name": "github-operations",
+    "description": "Carries a GitHub pull request from open to merge, cleans up a Git repository without losing work, and brings the GitHub MCP server with it.",
     "version": "",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": "./plugins/git-hygiene",
+    "manifestPath": "./plugins/github-operations",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -154,7 +154,7 @@
   {
     "id": "1414936254-typescript6-lsp-intelligence",
     "name": "typescript6-lsp-intelligence",
-    "description": "Gives Claude Code a pinned TypeScript 6 language server for TypeScript and JavaScript, type-checks the program of every file Claude edits with the matching compiler, and teaches Claude to find the program that owns a file and fix compiler findings without unsafe assertions or suppressions.",
+    "description": "Connects your TypeScript 6 language server to Claude Code, type-checks every file Claude edits with your own TypeScript under a strictest policy, and teaches Claude to find the program that owns a file and fix compiler findings without unsafe assertions or suppressions.",
     "version": "",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
@@ -173,7 +173,7 @@
   {
     "id": "1414936254-typescript7-lsp-intelligence",
     "name": "typescript7-lsp-intelligence",
-    "description": "Gives Claude Code a pinned native TypeScript 7 language server for TypeScript and JavaScript, type-checks the program of every file Claude edits with the matching compiler, and teaches Claude to find the program that owns a file and fix compiler findings without unsafe assertions or suppressions.",
+    "description": "Connects the native TypeScript 7 language server to Claude Code, type-checks every file Claude edits with your own native TypeScript 7 compiler under a strictest policy, and teaches Claude to find the program that owns a file and fix compiler findings without unsafe assertions or suppressions.",
     "version": "",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
@@ -224,13 +224,13 @@
     }
   },
   {
-    "id": "1414936254-release",
-    "name": "release",
-    "description": "name: release",
+    "id": "1414936254-project-records",
+    "name": "project-records",
+    "description": "name: project-records",
     "version": "1.0.0",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": ".claude/skills/release",
+    "manifestPath": ".claude/skills/project-records",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -265,23 +265,6 @@
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
     "manifestPath": ".claude/skills/triage-issues",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1414936254",
-      "marketplaceName": "the-claude-factory",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1414936254-verify",
-    "name": "verify",
-    "description": "name: verify",
-    "version": "1.0.0",
-    "author": "nerymurillohnd",
-    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": ".claude/skills/verify",
     "isValid": true,
     "errors": [],
     "warnings": [],

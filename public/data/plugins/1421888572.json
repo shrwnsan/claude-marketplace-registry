@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1421888572-operator-discipline",
+    "name": "operator-discipline",
+    "description": "How an agent behaves when doing real work for a busy founder: challenge a bad brief, hand back solutions not problems, write guides and playbooks people can follow, and turn meetings into decisions and actions.",
+    "version": "0.2.0",
+    "author": "kristian-presso",
+    "repository": "https://github.com/kristian-presso/claude-skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "kristian-presso/claude-operator-skills"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1421888572",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1421888572-operator-starter",
+    "name": "operator-starter",
+    "description": "A way of working for running a small business or side project with Claude Code: an interview that writes your CLAUDE.md rules and memory folder, approval-gate hooks that ask before Claude sends, publishes, pays or deletes, a Friday weekly review, and an always-on Mac to run scheduled agent jobs unattended.",
+    "version": "0.2.0",
+    "author": "kristian-presso",
+    "repository": "https://github.com/kristian-presso/claude-skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "kristian-presso/claude-operator-starter"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1421888572",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1421888572-agent-builder",
+    "name": "agent-builder",
+    "description": "MCP servers and MCP Apps that ship, get listed and run well once live, agent security that removes risk rather than describing it, a loop for shipping real work with coding agents, and turning a manual process into a skill.",
+    "version": "0.3.0",
+    "author": "kristian-presso",
+    "repository": "https://github.com/kristian-presso/claude-skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "kristian-presso/claude-agent-builder"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1421888572",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1421888572-gtm",
+    "name": "gtm",
+    "description": "Go-to-market for anyone selling B2B: design the motion (ICP, tiers, signals, weekly routine), run a news and job-feed radar that finds new companies to contact, plan multi-person account plays with proposed use cases, check every draft against what already happened before it goes out, and run sequences that do not burn your sending domains.",
+    "version": "0.3.0",
+    "author": "kristian-presso",
+    "repository": "https://github.com/kristian-presso/claude-skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "kristian-presso/claude-gtm-skills"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1421888572",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1421888572-marketing",
+    "name": "marketing",
+    "description": "Content and search for small teams, built to get you found and cited by AI answer engines as well as Google.",
+    "version": "0.1.0",
+    "author": "kristian-presso",
+    "repository": "https://github.com/kristian-presso/claude-skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "kristian-presso/claude-marketing-skills"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1421888572",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1421888572-uk-business",
+    "name": "uk-business",
+    "description": "Running a small UK limited company with Claude: the rules, the deadlines, and knowing how much cash you really have. Reference, not advice.",
+    "version": "0.1.0",
+    "author": "kristian-presso",
+    "repository": "https://github.com/kristian-presso/claude-skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "kristian-presso/claude-uk-business-skills"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1421888572",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1421888572-eu-business",
+    "name": "eu-business",
+    "description": "Running or selling into a small business in Germany, France, Spain, Denmark or Greece with Claude: VAT, e-invoicing, company forms, corporate tax, minimum wage and data protection, plus the EU-wide rules. Reference, not advice.",
+    "version": "0.1.0",
+    "author": "kristian-presso",
+    "repository": "https://github.com/kristian-presso/claude-skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "kristian-presso/claude-eu-business-skills"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1421888572",
+      "marketplaceName": "claude-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -497,7 +497,7 @@
     "id": "1188217459-cowork-mem",
     "name": "cowork-mem",
     "description": "Persistent memory across Cowork sessions — automatically recalls past decisions, file changes, insights, and errors so you never lose context between sessions. SQLite + FTS5, token-efficient 3-layer retrieval.",
-    "version": "0.2.3",
+    "version": "0.2.6",
     "author": "MSApps",
     "repository": "https://github.com/MSApps-Mobile/claude-plugins",
     "manifestPath": "./plugins/cowork-mem",

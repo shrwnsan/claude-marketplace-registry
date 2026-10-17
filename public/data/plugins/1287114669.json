@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1287114669-webcmd",
+    "name": "webcmd",
+    "description": "Webcmd browser skill for live, authenticated browser automation with local sitemap memory. Requires the @agentrhq/webcmd npm CLI.",
+    "version": "",
+    "author": "agentrhq",
+    "repository": "https://github.com/agentrhq/webcmd",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1287114669",
+      "marketplaceName": "webcmd",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1287114669-webcmd-browser",
+    "name": "webcmd-browser",
+    "description": "name: webcmd-browser",
+    "version": "1.0.0",
+    "author": "agentrhq",
+    "repository": "https://github.com/agentrhq/webcmd",
+    "manifestPath": "skills/webcmd-browser",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1287114669",
+      "marketplaceName": "webcmd",
+      "hasSkillMd": true
+    }
+  }
+]
