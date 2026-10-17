@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1422541802-kitchen-sink",
+    "name": "kitchen-sink",
+    "description": "Interactive Claude Code mod laboratory",
+    "version": "0.1.0",
+    "author": "reachjalil",
+    "repository": "https://github.com/reachjalil/claude-mod-kitchen-sink",
+    "manifestPath": "./plugins/kitchen-sink",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1422541802",
+      "marketplaceName": "claude-mod-kitchen-sink",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1422541802-kitchen-cowork",
+    "name": "kitchen-cowork",
+    "description": "Cowork plugin experiments and guided lab",
+    "version": "0.1.0",
+    "author": "reachjalil",
+    "repository": "https://github.com/reachjalil/claude-mod-kitchen-sink",
+    "manifestPath": "./plugins/kitchen-cowork",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1422541802",
+      "marketplaceName": "claude-mod-kitchen-sink",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -1,0 +1,552 @@
+[
+  {
+    "id": "1200293499-appsec-advisor",
+    "name": "appsec-advisor",
+    "description": "Build an implementation-level threat model from your codebase, mapping architecture, data flows, trust boundaries, and potential attack paths. Complement manual threat modeling with prioritized findings, code references, and actionable remediation guidance for developers.",
+    "version": "",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": {
+      "source": "github",
+      "repo": "appsec-foundry/appsec-advisor",
+      "ref": "main"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1200293499-abuse-cases",
+    "name": "abuse-cases",
+    "description": "name: abuse-cases",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/abuse-cases",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-analyze-threats",
+    "name": "analyze-threats",
+    "description": "name: analyze-threats",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/analyze-threats",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-ask-threat-model",
+    "name": "ask-threat-model",
+    "description": "name: ask-threat-model",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/ask-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-audit-security-requirements",
+    "name": "audit-security-requirements",
+    "description": "name: audit-security-requirements",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/audit-security-requirements",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-authnz-review",
+    "name": "authnz-review",
+    "description": "name: authnz-review",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/authnz-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-check-permissions",
+    "name": "check-permissions",
+    "description": "name: check-permissions",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/check-permissions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-clean-run-state",
+    "name": "clean-run-state",
+    "description": "name: clean-run-state",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/clean-run-state",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-create-threat-model",
+    "name": "create-threat-model",
+    "description": "name: create-threat-model",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/create-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-create-threat-model2",
+    "name": "create-threat-model2",
+    "description": "name: create-threat-model2",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/create-threat-model2",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-diagnose-bundle",
+    "name": "diagnose-bundle",
+    "description": "name: diagnose-bundle",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/diagnose-bundle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-diagnose-run",
+    "name": "diagnose-run",
+    "description": "name: diagnose-run",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/diagnose-run",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-eval-threat-model",
+    "name": "eval-threat-model",
+    "description": "name: eval-threat-model",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/eval-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-export-threat-model",
+    "name": "export-threat-model",
+    "description": "name: export-threat-model",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/export-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-fix-run-issues",
+    "name": "fix-run-issues",
+    "description": "name: fix-run-issues",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/fix-run-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-help",
+    "name": "help",
+    "description": "name: help",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/help",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-install-baseline",
+    "name": "install-baseline",
+    "description": "name: install-baseline",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/install-baseline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-internal-threat-analysis-kernel",
+    "name": "internal-threat-analysis-kernel",
+    "description": "name: internal-threat-analysis-kernel",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/internal-threat-analysis-kernel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-publish-threat-model",
+    "name": "publish-threat-model",
+    "description": "name: publish-threat-model",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/publish-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-remove-baseline",
+    "name": "remove-baseline",
+    "description": "name: remove-baseline",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/remove-baseline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-repo-profile",
+    "name": "repo-profile",
+    "description": "name: repo-profile",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/repo-profile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-report-error",
+    "name": "report-error",
+    "description": "name: report-error",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/report-error",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-review-threat-model",
+    "name": "review-threat-model",
+    "description": "name: review-threat-model",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/review-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-security-score",
+    "name": "security-score",
+    "description": "name: security-score",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/security-score",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-setup-target",
+    "name": "setup-target",
+    "description": "name: setup-target",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/setup-target",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-show-threat-model",
+    "name": "show-threat-model",
+    "description": "name: show-threat-model",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/show-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-status",
+    "name": "status",
+    "description": "name: status",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-threat-model-health",
+    "name": "threat-model-health",
+    "description": "name: threat-model-health",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/threat-model-health",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-update-baseline",
+    "name": "update-baseline",
+    "description": "name: update-baseline",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/update-baseline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-update-threat-model",
+    "name": "update-threat-model",
+    "description": "name: update-threat-model",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/update-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-verify-baseline",
+    "name": "verify-baseline",
+    "description": "name: verify-baseline",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/verify-baseline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1200293499-verify-requirements",
+    "name": "verify-requirements",
+    "description": "name: verify-requirements",
+    "version": "1.0.0",
+    "author": "appsec-foundry",
+    "repository": "https://github.com/appsec-foundry/appsec-advisor",
+    "manifestPath": "skills/verify-requirements",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1200293499",
+      "marketplaceName": "appsec-advisor",
+      "hasSkillMd": true
+    }
+  }
+]

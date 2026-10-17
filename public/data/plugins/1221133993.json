@@ -24,7 +24,7 @@
   {
     "id": "1221133993-mem",
     "name": "mem",
-    "description": "Cross-cwd memory recall + write skills for Claude Code's prompt-based auto-memory",
+    "description": "Cross-project memory recall, write and upkeep skills for Claude Code's prompt-based auto-memory",
     "version": "",
     "author": "howar31",
     "repository": "https://github.com/howar31/howar31-marketplace",
@@ -75,6 +75,28 @@
     "manifestPath": {
       "source": "github",
       "repo": "howar31/handoff"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1221133993",
+      "marketplaceName": "howar31-marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1221133993-closure",
+    "name": "closure",
+    "description": "End-of-session audit that gives every open thread a disposition: resolved, documented, memorized, handed off, or dropped with approval",
+    "version": "",
+    "author": "howar31",
+    "repository": "https://github.com/howar31/howar31-marketplace",
+    "manifestPath": {
+      "source": "github",
+      "repo": "howar31/closure"
     },
     "isValid": true,
     "errors": [],
