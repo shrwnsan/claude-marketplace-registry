@@ -212,7 +212,7 @@
     "id": "1126089957-jpe-ai-delegation",
     "name": "jpe-ai-delegation",
     "description": "Specific to the maintainer's own setup and not intended for general use",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "author": "JacobPEvans",
     "repository": "https://github.com/dryvist/claude-code-plugins",
     "manifestPath": "./jpe-ai-delegation",
@@ -254,6 +254,63 @@
     "author": "JacobPEvans",
     "repository": "https://github.com/dryvist/claude-code-plugins",
     "manifestPath": "./openbao",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1126089957-ansible",
+    "name": "ansible",
+    "description": "Ansible repository conventions for layout, linting, tests, shared dependencies, releases, and secret handling",
+    "version": "1.1.0",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./ansible",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1126089957-cribl",
+    "name": "cribl",
+    "description": "Cribl pack conventions for structure, validation, tests, releases, and secret handling",
+    "version": "1.1.0",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./cribl",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1126089957",
+      "marketplaceName": "claude-code-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1126089957-splunk",
+    "name": "splunk",
+    "description": "Splunk app and deployment conventions for layout, validation, releases, and secret handling",
+    "version": "1.1.0",
+    "author": "JacobPEvans",
+    "repository": "https://github.com/dryvist/claude-code-plugins",
+    "manifestPath": "./splunk",
     "isValid": true,
     "errors": [],
     "warnings": [],

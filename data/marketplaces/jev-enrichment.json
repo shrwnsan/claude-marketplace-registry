@@ -1,6 +1,6 @@
 {
   "model": "jev-1.13.0",
-  "generatedAt": "2026-10-17T03:37:46.020Z",
+  "generatedAt": "2026-10-18T03:33:30.444Z",
   "entries": {
     "287005473": {
       "category": "none",
@@ -611,6 +611,11 @@
       "category": "none",
       "categoryConfidence": 0.76,
       "isMarketplace": 0.18
+    },
+    "1176580541": {
+      "category": "skills",
+      "categoryConfidence": 0.59,
+      "isMarketplace": 0.44
     },
     "1176993017": {
       "category": "devtools",
@@ -1626,6 +1631,11 @@
       "category": "agents",
       "categoryConfidence": 0.35,
       "isMarketplace": 0.06
+    },
+    "1338010782": {
+      "category": "mcp",
+      "categoryConfidence": 0.99,
+      "isMarketplace": 0.12
     },
     "1339902527": {
       "category": "devtools",

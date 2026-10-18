@@ -95,6 +95,25 @@
     }
   },
   {
+    "id": "1404683119-laa-godot",
+    "name": "laa-godot",
+    "description": "Godot 4 / GDScript stack pack: conventions skill, game-dev practices skill, and Godot-specific reviewer.",
+    "version": "",
+    "author": "LucasAntunesdeAlmeida",
+    "repository": "https://github.com/LucasAntunesdeAlmeida/laa-claude",
+    "manifestPath": "./plugins/laa-godot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1404683119",
+      "marketplaceName": "laa-claude",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1404683119-laa-git",
     "name": "laa-git",
     "description": "Git practice pack (any language): Conventional Commits, branch and PR conventions, and a history reviewer.",
