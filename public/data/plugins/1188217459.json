@@ -625,5 +625,81 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1188217459-python-lsp",
+    "name": "python-lsp",
+    "description": "Real-time Python code intelligence for Claude — type errors, go-to-definition, find references, and hover via Pyright language server",
+    "version": "1.0.1",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/python-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1188217459-typescript-lsp",
+    "name": "typescript-lsp",
+    "description": "Real-time TypeScript and JavaScript code intelligence for Claude — type errors, go-to-definition, find references, and hover via typescript-language-server",
+    "version": "1.0.1",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/typescript-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1188217459-csharp-lsp",
+    "name": "csharp-lsp",
+    "description": "Real-time C# code intelligence for Claude — Roslyn diagnostics, go-to-definition, find references, and type info via OmniSharp",
+    "version": "1.0.1",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/csharp-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1188217459-java-lsp",
+    "name": "java-lsp",
+    "description": "Real-time Java code intelligence for Claude — compile errors, go-to-definition, find references, and type info via Eclipse JDT Language Server (jdtls)",
+    "version": "1.0.1",
+    "author": "MSApps",
+    "repository": "https://github.com/MSApps-Mobile/claude-plugins",
+    "manifestPath": "./plugins/java-lsp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1188217459",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]

@@ -1,33 +1,33 @@
 {
   "stats": {
-    "totalMarketplaces": 1516,
-    "totalPlugins": 7437,
-    "validPlugins": 7437,
-    "lastUpdated": "2026-10-17T03:37:49.201Z",
+    "totalMarketplaces": 1563,
+    "totalPlugins": 7375,
+    "validPlugins": 7375,
+    "lastUpdated": "2026-10-18T03:33:34.547Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 497
+        "count": 518
       },
       {
         "language": "TypeScript",
-        "count": 250
+        "count": 258
       },
       {
         "language": "JavaScript",
-        "count": 228
+        "count": 239
       },
       {
         "language": "Unknown",
-        "count": 219
+        "count": 220
       },
       {
         "language": "Shell",
-        "count": 137
+        "count": 139
       },
       {
         "language": "HTML",
-        "count": 78
+        "count": 80
       },
       {
         "language": "Go",
@@ -35,7 +35,7 @@
       },
       {
         "language": "Rust",
-        "count": 27
+        "count": 26
       },
       {
         "language": "Java",
@@ -43,18 +43,18 @@
       },
       {
         "language": "Swift",
-        "count": 5
+        "count": 6
       }
     ],
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 281598,
+        "stars": 282595,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 181620,
+        "stars": 181814,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,7 +64,7 @@
       },
       {
         "name": "paperclip",
-        "stars": 103220,
+        "stars": 103695,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -74,17 +74,17 @@
       },
       {
         "name": "archify",
-        "stars": 84517,
+        "stars": 84932,
         "url": "https://github.com/tt-a1i/archify"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 77257,
+        "stars": 77318,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 70121,
+        "stars": 70146,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "herdr-threads",
-        "updatedAt": "2026-10-17T03:26:35Z",
-        "url": "https://github.com/alepar/herdr-threads"
+        "name": "ai-poster-maker-skill",
+        "updatedAt": "2026-10-18T03:25:01Z",
+        "url": "https://github.com/beatra-ai/ai-poster-maker-skill"
       },
       {
-        "name": "universal-modder",
-        "updatedAt": "2026-10-17T03:26:00Z",
-        "url": "https://github.com/rehan-remade/universal-modder"
+        "name": "tycana-claude-hivemind",
+        "updatedAt": "2026-10-18T03:23:29Z",
+        "url": "https://github.com/samuel85194-ux/tycana-claude-hivemind"
       },
       {
-        "name": "forge",
-        "updatedAt": "2026-10-17T03:25:49Z",
-        "url": "https://github.com/maxwellmattryan/forge"
+        "name": "ai-product-photography-skill",
+        "updatedAt": "2026-10-18T03:23:04Z",
+        "url": "https://github.com/beatra-ai/ai-product-photography-skill"
       },
       {
-        "name": "skill-of-skills",
-        "updatedAt": "2026-10-17T03:25:07Z",
-        "url": "https://github.com/the911fund/skill-of-skills"
+        "name": "toolshed",
+        "updatedAt": "2026-10-18T03:22:02Z",
+        "url": "https://github.com/knitli/toolshed"
       },
       {
-        "name": "tedix",
-        "updatedAt": "2026-10-17T03:24:50Z",
-        "url": "https://github.com/tedix-hq/tedix"
+        "name": "awesome-claude-video-skills",
+        "updatedAt": "2026-10-18T03:21:40Z",
+        "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
       },
       {
-        "name": "paperclip",
-        "updatedAt": "2026-10-17T03:24:12Z",
-        "url": "https://github.com/paperclipai/paperclip"
+        "name": "ai-music-generator-skill",
+        "updatedAt": "2026-10-18T03:21:08Z",
+        "url": "https://github.com/beatra-ai/ai-music-generator-skill"
       },
       {
-        "name": "archify",
-        "updatedAt": "2026-10-17T03:23:58Z",
-        "url": "https://github.com/tt-a1i/archify"
+        "name": "claude-code-marketplace",
+        "updatedAt": "2026-10-18T03:20:02Z",
+        "url": "https://github.com/coo-quack/claude-code-marketplace"
       },
       {
-        "name": "claude-mem",
-        "updatedAt": "2026-10-17T03:23:32Z",
-        "url": "https://github.com/thedotmack/claude-mem"
+        "name": "modelplan",
+        "updatedAt": "2026-10-18T03:20:01Z",
+        "url": "https://github.com/modelplan/modelplan"
       },
       {
-        "name": "spectree-invoker",
-        "updatedAt": "2026-10-17T03:22:24Z",
-        "url": "https://github.com/Spectree-Tecnologia/spectree-invoker"
+        "name": "ai-logo-maker-skill",
+        "updatedAt": "2026-10-18T03:19:08Z",
+        "url": "https://github.com/beatra-ai/ai-logo-maker-skill"
       },
       {
-        "name": "MisakaNet",
-        "updatedAt": "2026-10-17T03:21:07Z",
-        "url": "https://github.com/Ikalus1988/MisakaNet"
+        "name": "easel-js-cpu-render-kit",
+        "updatedAt": "2026-10-18T03:18:58Z",
+        "url": "https://github.com/AllyJuma1/easel-js-cpu-render-kit"
       }
     ]
   },
@@ -155,27 +155,27 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 779
+      "count": 798
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 214
+      "count": 217
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 470
+      "count": 486
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 71
+      "count": 75
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 46
+      "count": 47
     },
     {
       "id": "utilities",
@@ -183,5 +183,5 @@
       "count": 36
     }
   ],
-  "lastUpdated": "2026-10-17T03:37:49.201Z"
+  "lastUpdated": "2026-10-18T03:33:34.547Z"
 }
