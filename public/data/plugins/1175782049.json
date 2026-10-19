@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1175782049-memesh",
+    "name": "memesh",
+    "description": "MeMesh — local collaboration for AI coding agents. Share memory across sessions, exchange task messages, and preserve work context. One SQLite file; no cloud required.",
+    "version": "4.11.0",
+    "author": "PCIRCLE AI",
+    "repository": "https://github.com/PCIRCLE-AI/memesh",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1175782049",
+      "marketplaceName": "memesh",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1175782049-memesh-review",
+    "name": "memesh-review",
+    "description": "name: memesh-review",
+    "version": "1.0.0",
+    "author": "PCIRCLE AI",
+    "repository": "https://github.com/PCIRCLE-AI/memesh",
+    "manifestPath": "skills/memesh-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1175782049",
+      "marketplaceName": "memesh",
+      "hasSkillMd": true
+    }
+  }
+]

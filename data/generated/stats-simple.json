@@ -1,24 +1,24 @@
 {
-  "totalMarketplaces": 1563,
-  "totalPlugins": 7375,
-  "validPlugins": 7375,
-  "lastUpdated": "2026-10-18T03:33:34.547Z",
+  "totalMarketplaces": 1604,
+  "totalPlugins": 7368,
+  "validPlugins": 7368,
+  "lastUpdated": "2026-10-19T03:54:43.554Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 518
+      "count": 534
     },
     {
       "language": "TypeScript",
-      "count": 258
+      "count": 270
     },
     {
       "language": "JavaScript",
-      "count": 239
+      "count": 246
     },
     {
       "language": "Unknown",
-      "count": 220
+      "count": 223
     },
     {
       "language": "Shell",
@@ -26,15 +26,15 @@
     },
     {
       "language": "HTML",
-      "count": 80
+      "count": 82
     },
     {
       "language": "Go",
-      "count": 33
+      "count": 32
     },
     {
       "language": "Rust",
-      "count": 26
+      "count": 27
     },
     {
       "language": "Java",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 282595,
+      "stars": 283374,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 181814,
+      "stars": 182024,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -63,12 +63,12 @@
     },
     {
       "name": "paperclip",
-      "stars": 103695,
+      "stars": 104211,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "claude-mem",
-      "stars": 101250,
+      "stars": 101651,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
@@ -78,12 +78,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 77318,
+      "stars": 77394,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70146,
+      "stars": 70171,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -92,61 +92,61 @@
       "url": "https://github.com/tw93/Pake"
     },
     {
-      "name": "ppt-master",
-      "stars": 58122,
-      "url": "https://github.com/hugohe3/ppt-master"
+      "name": "humanizer",
+      "stars": 58149,
+      "url": "https://github.com/blader/humanizer"
     }
   ],
   "recentActivity": [
     {
-      "name": "ai-poster-maker-skill",
-      "updatedAt": "2026-10-18T03:25:01Z",
-      "url": "https://github.com/beatra-ai/ai-poster-maker-skill"
+      "name": "claude-code-plugins",
+      "updatedAt": "2026-10-19T03:43:03Z",
+      "url": "https://github.com/melodic-software/claude-code-plugins"
     },
     {
-      "name": "tycana-claude-hivemind",
-      "updatedAt": "2026-10-18T03:23:29Z",
-      "url": "https://github.com/samuel85194-ux/tycana-claude-hivemind"
+      "name": "cache-keepwarm",
+      "updatedAt": "2026-10-19T03:42:12Z",
+      "url": "https://github.com/rezzminator/cache-keepwarm"
     },
     {
-      "name": "ai-product-photography-skill",
-      "updatedAt": "2026-10-18T03:23:04Z",
-      "url": "https://github.com/beatra-ai/ai-product-photography-skill"
+      "name": "suede-creator-skills",
+      "updatedAt": "2026-10-19T03:42:00Z",
+      "url": "https://github.com/JasonColapietro/suede-creator-skills"
     },
     {
-      "name": "toolshed",
-      "updatedAt": "2026-10-18T03:22:02Z",
-      "url": "https://github.com/knitli/toolshed"
+      "name": "paperclip",
+      "updatedAt": "2026-10-19T03:41:52Z",
+      "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "awesome-claude-video-skills",
-      "updatedAt": "2026-10-18T03:21:40Z",
-      "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
+      "name": "statusbar",
+      "updatedAt": "2026-10-19T03:41:42Z",
+      "url": "https://github.com/ian-exnodes/statusbar"
     },
     {
-      "name": "ai-music-generator-skill",
-      "updatedAt": "2026-10-18T03:21:08Z",
-      "url": "https://github.com/beatra-ai/ai-music-generator-skill"
+      "name": "rumo-engineering-skills",
+      "updatedAt": "2026-10-19T03:38:55Z",
+      "url": "https://github.com/rumoii/rumo-engineering-skills"
     },
     {
-      "name": "claude-code-marketplace",
-      "updatedAt": "2026-10-18T03:20:02Z",
-      "url": "https://github.com/coo-quack/claude-code-marketplace"
+      "name": "Master-skill",
+      "updatedAt": "2026-10-19T03:38:26Z",
+      "url": "https://github.com/xr843/Master-skill"
     },
     {
-      "name": "modelplan",
-      "updatedAt": "2026-10-18T03:20:01Z",
-      "url": "https://github.com/modelplan/modelplan"
+      "name": "ai-agents",
+      "updatedAt": "2026-10-19T03:38:18Z",
+      "url": "https://github.com/rjmurillo/ai-agents"
     },
     {
-      "name": "ai-logo-maker-skill",
-      "updatedAt": "2026-10-18T03:19:08Z",
-      "url": "https://github.com/beatra-ai/ai-logo-maker-skill"
+      "name": "oh-my-openagent",
+      "updatedAt": "2026-10-19T03:37:58Z",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
-      "name": "easel-js-cpu-render-kit",
-      "updatedAt": "2026-10-18T03:18:58Z",
-      "url": "https://github.com/AllyJuma1/easel-js-cpu-render-kit"
+      "name": "Aria",
+      "updatedAt": "2026-10-19T03:37:31Z",
+      "url": "https://github.com/10CG/Aria"
     }
   ]
 }

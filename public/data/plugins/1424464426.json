@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1424464426-one-star-gold",
+    "name": "one-star-gold",
+    "description": "Finds your competitors, mines their app store reviews, counts what users hate, and tells you what to build — and what not to chase.",
+    "version": "0.3.1",
+    "author": "sude-go",
+    "repository": "https://github.com/sude-go/one-star-gold",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1424464426",
+      "marketplaceName": "one-star-gold",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1424464426-gap-to-spec",
+    "name": "gap-to-spec",
+    "description": "name: gap-to-spec",
+    "version": "1.0.0",
+    "author": "sude-go",
+    "repository": "https://github.com/sude-go/one-star-gold",
+    "manifestPath": "skills/gap-to-spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1424464426",
+      "marketplaceName": "one-star-gold",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1424464426-mine-competitor-reviews",
+    "name": "mine-competitor-reviews",
+    "description": "name: mine-competitor-reviews",
+    "version": "1.0.0",
+    "author": "sude-go",
+    "repository": "https://github.com/sude-go/one-star-gold",
+    "manifestPath": "skills/mine-competitor-reviews",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1424464426",
+      "marketplaceName": "one-star-gold",
+      "hasSkillMd": true
+    }
+  }
+]
