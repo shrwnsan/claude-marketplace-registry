@@ -1,51 +1,51 @@
 {
-  "totalFound": 1563,
-  "withManifest": 588,
-  "lastUpdated": "2026-10-18T03:32:06.618Z",
+  "totalFound": 1604,
+  "withManifest": 593,
+  "lastUpdated": "2026-10-19T03:53:11.758Z",
   "searchQuery": "",
   "languages": {
-    "Python": 518,
-    "TypeScript": 258,
-    "JavaScript": 239,
+    "Python": 534,
+    "TypeScript": 270,
+    "JavaScript": 246,
     "Shell": 139,
-    "Rust": 26,
-    "HTML": 80,
-    "Go": 33,
-    "Unknown": 220,
+    "Rust": 27,
+    "HTML": 82,
+    "Go": 32,
+    "Unknown": 223,
     "AMPL": 1,
     "C++": 3,
     "Swift": 6,
     "Jupyter Notebook": 3,
+    "Svelte": 2,
     "C#": 3,
     "Makefile": 2,
     "Gherkin": 1,
     "Astro": 2,
     "Perl": 1,
     "Ruby": 1,
+    "Markdown": 2,
+    "Kotlin": 2,
+    "jq": 1,
     "Java": 7,
     "PHP": 1,
     "Typst": 1,
-    "Svelte": 1,
-    "Markdown": 2,
     "SCSS": 1,
     "CSS": 3,
     "Gleam": 1,
     "C": 1,
     "TeX": 3,
     "PowerShell": 2,
-    "Clojure": 1,
-    "jq": 1,
-    "Kotlin": 2
+    "Clojure": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 282595,
+      "stars": 283374,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 181814,
+      "stars": 182024,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -55,12 +55,12 @@
     },
     {
       "name": "paperclip",
-      "stars": 103695,
+      "stars": 104211,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "claude-mem",
-      "stars": 101250,
+      "stars": 101651,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
@@ -70,12 +70,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 77318,
+      "stars": 77394,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70146,
+      "stars": 70171,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -84,9 +84,9 @@
       "url": "https://github.com/tw93/Pake"
     },
     {
-      "name": "ppt-master",
-      "stars": 58122,
-      "url": "https://github.com/hugohe3/ppt-master"
+      "name": "humanizer",
+      "stars": 58149,
+      "url": "https://github.com/blader/humanizer"
     }
   ]
 }

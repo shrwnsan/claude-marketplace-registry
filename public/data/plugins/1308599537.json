@@ -1,0 +1,415 @@
+[
+  {
+    "id": "1308599537-tavernweave-agent-skills",
+    "name": "tavernweave-agent-skills",
+    "description": "TavernWeaveX无限月读 2.2.0. Describe the card or software task; TW checks host capabilities, works within the agreed scope and records evidence for continuation.",
+    "version": "",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": {
+      "source": "github",
+      "repo": "LiarMTTT/TavernWeave"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1308599537-activate-tavernweave-soul",
+    "name": "activate-tavernweave-soul",
+    "description": "name: activate-tavernweave-soul",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/activate-tavernweave-soul",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-build-work-library",
+    "name": "build-work-library",
+    "description": "name: build-work-library",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/build-work-library",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-code-quality-workflow",
+    "name": "code-quality-workflow",
+    "description": "name: code-quality-workflow",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/code-quality-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-consult-tavernweave-library",
+    "name": "consult-tavernweave-library",
+    "description": "name: consult-tavernweave-library",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/consult-tavernweave-library",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-orchestrate-project-blueprint",
+    "name": "orchestrate-project-blueprint",
+    "description": "name: orchestrate-project-blueprint",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/orchestrate-project-blueprint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-reflect-on-vibe-code-growth",
+    "name": "reflect-on-vibe-code-growth",
+    "description": "name: reflect-on-vibe-code-growth",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/reflect-on-vibe-code-growth",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-rewrite-natural-prose",
+    "name": "rewrite-natural-prose",
+    "description": "name: rewrite-natural-prose",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/rewrite-natural-prose",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-rolecard-workshop-ops",
+    "name": "rolecard-workshop-ops",
+    "description": "name: rolecard-workshop-ops",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/rolecard-workshop-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-shadcn-tailwind-ui",
+    "name": "shadcn-tailwind-ui",
+    "description": "name: shadcn-tailwind-ui",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/shadcn-tailwind-ui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-api-reference",
+    "name": "sillytavern-api-reference",
+    "description": "name: sillytavern-api-reference",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-api-reference",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-card-components",
+    "name": "sillytavern-card-components",
+    "description": "name: sillytavern-card-components",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-card-components",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-card-pipeline",
+    "name": "sillytavern-card-pipeline",
+    "description": "name: sillytavern-card-pipeline",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-card-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-component-update",
+    "name": "sillytavern-component-update",
+    "description": "name: sillytavern-component-update",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-component-update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-database-rolecards",
+    "name": "sillytavern-database-rolecards",
+    "description": "name: sillytavern-database-rolecards",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-database-rolecards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-embedded-ui",
+    "name": "sillytavern-embedded-ui",
+    "description": "name: sillytavern-embedded-ui",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-embedded-ui",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-extension-dev",
+    "name": "sillytavern-extension-dev",
+    "description": "name: sillytavern-extension-dev",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-extension-dev",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-media-live2d-runtime",
+    "name": "sillytavern-media-live2d-runtime",
+    "description": "name: sillytavern-media-live2d-runtime",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-media-live2d-runtime",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-render-regex-pipeline",
+    "name": "sillytavern-render-regex-pipeline",
+    "description": "name: sillytavern-render-regex-pipeline",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-render-regex-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-rolecard-performance",
+    "name": "sillytavern-rolecard-performance",
+    "description": "name: sillytavern-rolecard-performance",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-rolecard-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-rolecard-security",
+    "name": "sillytavern-rolecard-security",
+    "description": "name: sillytavern-rolecard-security",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-rolecard-security",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-sillytavern-runtime-debug",
+    "name": "sillytavern-runtime-debug",
+    "description": "name: sillytavern-runtime-debug",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/sillytavern-runtime-debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-tavern-card-builder",
+    "name": "tavern-card-builder",
+    "description": "name: tavern-card-builder",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/tavern-card-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1308599537-worldbook-design-and-writing",
+    "name": "worldbook-design-and-writing",
+    "description": "name: worldbook-design-and-writing",
+    "version": "1.0.0",
+    "author": "LiarMTTT",
+    "repository": "https://github.com/LiarMTTT/TavernWeave",
+    "manifestPath": "skills/worldbook-design-and-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1308599537",
+      "marketplaceName": "TavernWeave",
+      "hasSkillMd": true
+    }
+  }
+]

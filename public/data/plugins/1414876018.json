@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1414876018-awwwards",
+    "name": "awwwards",
+    "description": "Build award-caliber websites from a one-line prompt: concept, art direction, motion, WebGL and a real-browser QA loop.",
+    "version": "",
+    "author": "juliobsz",
+    "repository": "https://github.com/juliobsz/skills",
+    "manifestPath": "./awwwards",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414876018",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414876018-jury",
+    "name": "jury",
+    "description": "Score any website the way an Awwwards jury would: real-browser evidence, a blind critic, and a ranked fix list.",
+    "version": "",
+    "author": "juliobsz",
+    "repository": "https://github.com/juliobsz/skills",
+    "manifestPath": "./jury",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414876018",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -4832,6 +4832,23 @@
     }
   },
   {
+    "id": "1209609017-type-design",
+    "name": "type-design",
+    "description": "model_tier: high",
+    "version": "1.0.0",
+    "author": "event4u-app",
+    "repository": "https://github.com/event4u-app/agent-config",
+    "manifestPath": "src/skills/type-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1209609017",
+      "marketplaceName": "agent-config",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1209609017-typography-system",
     "name": "typography-system",
     "description": "model_tier: inherit",

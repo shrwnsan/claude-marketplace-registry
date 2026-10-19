@@ -70,6 +70,23 @@
     }
   },
   {
+    "id": "1301657572-recruit",
+    "name": "recruit",
+    "description": "name: recruit",
+    "version": "1.0.0",
+    "author": "superdesigndev",
+    "repository": "https://github.com/superdesigndev/treg",
+    "manifestPath": "skills/recruit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1301657572",
+      "marketplaceName": "treg",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1301657572-web-access",
     "name": "web-access",
     "description": "name: web-access",

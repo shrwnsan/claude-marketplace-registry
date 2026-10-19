@@ -3,7 +3,7 @@
     "id": "1079028084-finance-guru",
     "name": "finance-guru",
     "description": "Private, self-hosted family-office workflows for research, quantitative analysis, portfolio strategy, and financial operations.",
-    "version": "2.3.0",
+    "version": "",
     "author": "AojdevStudio",
     "repository": "https://github.com/AojdevStudio/Finance-Guru",
     "manifestPath": ".",
@@ -196,6 +196,23 @@
     "author": "AojdevStudio",
     "repository": "https://github.com/AojdevStudio/Finance-Guru",
     "manifestPath": ".claude/skills/fin-guru-learner-profile",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1079028084",
+      "marketplaceName": "Finance-Guru",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1079028084-fin-guru-output-contract",
+    "name": "fin-guru-output-contract",
+    "description": "name: fin-guru-output-contract",
+    "version": "1.0.0",
+    "author": "AojdevStudio",
+    "repository": "https://github.com/AojdevStudio/Finance-Guru",
+    "manifestPath": ".claude/skills/fin-guru-output-contract",
     "isValid": true,
     "errors": [],
     "warnings": [],

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1266863056-sessionwiki",
+    "name": "sessionwiki",
+    "description": "Recall past AI coding sessions as long-term memory: search prior work, pull context, trace a file to the session that wrote it. Requires the sessionwiki CLI.",
+    "version": "0.1.0",
+    "author": "youdie006",
+    "repository": "https://github.com/youdie006/sessionwiki",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1266863056",
+      "marketplaceName": "sessionwiki",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]
