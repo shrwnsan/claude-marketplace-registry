@@ -9,7 +9,10 @@
  * the BreadcrumbList anchors sitelinks.
  */
 
-export const SITE_URL = 'https://shrwnsan.github.io/claude-marketplace-registry';
+// Site-wide SEO constants live in seo.ts since the #456 rollout; re-exported
+// here so existing mods consumers and tests keep their import paths.
+import { SITE_URL } from './seo';
+export { SITE_URL };
 
 /** Minimal mod shape the page needs for the ItemList (from build-time data). */
 export interface ModSummary {

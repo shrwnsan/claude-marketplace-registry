@@ -11,6 +11,13 @@ const StatsPage: React.FC = () => (
         name='description'
         content='Live Claude Code ecosystem statistics: growth trends, topic distribution, and quality indicators from the daily marketplace scans.'
       />
+      <link rel='canonical' href='https://shrwnsan.github.io/claude-marketplace-registry/stats' />
+      <meta property='og:type' content='website' />
+      <meta
+        property='og:url'
+        content='https://shrwnsan.github.io/claude-marketplace-registry/stats'
+      />
+      <meta property='og:title' content='Ecosystem Statistics - Claude Marketplace Registry' />
       <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
     </Head>
 

@@ -140,44 +140,70 @@ const MarketplacesPage: React.FC = () => {
     updateQuery({ sort: sort === 'stars' ? '' : sort });
   };
 
+  // Rendered in EVERY return path (loading/error included): the static export
+  // bakes the prerender-time head, and prerender sees the loading state.
+  const pageHead = (
+    <Head>
+      <title>All Marketplaces - Claude Marketplace Registry</title>
+      <meta
+        name='description'
+        content='Browse all Claude Code marketplaces from across GitHub. Discover new plugins and tools for your development workflow.'
+      />
+      <link
+        rel='canonical'
+        href='https://shrwnsan.github.io/claude-marketplace-registry/marketplaces'
+      />
+      <meta property='og:type' content='website' />
+      <meta
+        property='og:url'
+        content='https://shrwnsan.github.io/claude-marketplace-registry/marketplaces'
+      />
+      <meta property='og:title' content='All Marketplaces - Claude Marketplace Registry' />
+      <meta
+        property='og:description'
+        content='Browse all Claude Code marketplaces from across GitHub. Discover new plugins and tools for your development workflow.'
+      />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
+    </Head>
+  );
+
   if (loading) {
     return (
-      <MainLayout>
-        <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-            <LoadingState variant='skeleton' className='max-w-4xl' />
+      <>
+        {pageHead}
+        <MainLayout>
+          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
+            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+              <LoadingState variant='skeleton' className='max-w-4xl' />
+            </div>
           </div>
-        </div>
-      </MainLayout>
+        </MainLayout>
+      </>
     );
   }
 
   if (error) {
     return (
-      <MainLayout>
-        <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-            <div className='text-center'>
-              <h1 className='text-2xl font-bold text-red-600 mb-4'>Error Loading Marketplaces</h1>
-              <p className='text-gray-600 dark:text-gray-400'>{error}</p>
+      <>
+        {pageHead}
+        <MainLayout>
+          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
+            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+              <div className='text-center'>
+                <h1 className='text-2xl font-bold text-red-600 mb-4'>Error Loading Marketplaces</h1>
+                <p className='text-gray-600 dark:text-gray-400'>{error}</p>
+              </div>
             </div>
           </div>
-        </div>
-      </MainLayout>
+        </MainLayout>
+      </>
     );
   }
 
   return (
     <>
-      <Head>
-        <title>All Marketplaces - Claude Marketplace Registry</title>
-        <meta
-          name='description'
-          content='Browse all Claude Code marketplaces from across GitHub. Discover new plugins and tools for your development workflow.'
-        />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
-      </Head>
+      {pageHead}
 
       <MainLayout>
         <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
