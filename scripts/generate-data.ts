@@ -9,7 +9,6 @@
 
 import fs from 'fs';
 import path from 'path';
-import { format, parseISO } from 'date-fns';
 import { canonicalAuthor } from './validate-plugins';
 import { applyJevEnrichment, loadJevEnrichment } from './jev-categorize';
 
@@ -257,7 +256,6 @@ class DataGenerator {
       await this.generateWebsiteData(data);
 
       // Generate sitemap
-      await this.generateSitemap(data);
 
       // Generate RSS feed
       await this.generateRSSFeed(data);
@@ -1069,85 +1067,6 @@ class DataGenerator {
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 10);
-  }
-
-  private async generateSitemap(data: GeneratedData): Promise<void> {
-    console.log('🗺️ Generating sitemap...');
-
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://localhost:3000';
-    const currentDate = format(new Date(), 'yyyy-MM-dd');
-
-    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>${baseUrl}</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/marketplaces</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/plugins</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/mods</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/stats</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/docs</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/docs/api</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  ${data.marketplaces
-    .map(
-      (mp) => `
-  <url>
-    <loc>${baseUrl}/marketplaces/${mp.id}</loc>
-    <lastmod>${format(parseISO(mp.updatedAt), 'yyyy-MM-dd')}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>`
-    )
-    .join('')}
-  ${data.plugins
-    .map(
-      (p) => `
-  <url>
-    <loc>${baseUrl}/plugins/${p.id}</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>`
-    )
-    .join('')}
-</urlset>`;
-
-    const sitemapPath = path.join(process.cwd(), 'public', 'sitemap.xml');
-    fs.writeFileSync(sitemapPath, sitemap);
-    console.log('🗺️ Generated sitemap.xml');
   }
 
   private async generateRSSFeed(data: GeneratedData): Promise<void> {
