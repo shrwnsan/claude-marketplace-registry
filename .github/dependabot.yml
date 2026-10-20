@@ -4,6 +4,20 @@
 # https://docs.github.com/en/code-security/dependabot
 
 version: 2
+
+# Rejected major bumps: each needs deliberate migration work tracked in the
+# repo's dependency-migrations issue — Dependabot stops re-raising these, while
+# minor/patch and security updates for the same deps still flow.
+ignore:
+  - dependency-name: "@types/node"
+    versions: [">=25"]          # types must track the Node 24 runtime major
+  - dependency-name: "eslint"
+    versions: [">=10"]          # eslint 10 migration is deliberate follow-up work
+  - dependency-name: "isomorphic-dompurify"
+    versions: [">=3"]           # v4 needs API migration work
+  - dependency-name: "lucide-react"
+    versions: [">=1"]           # 1.x needs icon API migration work
+
 updates:
   # npm dependencies: weekly batch of minor/patch bumps; major bumps get
   # their own PRs (they are excluded from the group by default).

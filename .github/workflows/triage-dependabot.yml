@@ -1,0 +1,35 @@
+# Deterministic Dependabot triage (replaces the manual/LLM session automation).
+# Merges green minor/patch dependency bumps; leaves majors and anything else
+# for manual review. Runs Tuesdays because Dependabot opens its PRs on Mondays
+# (cron cannot express "every 3 days"; weekly matches the update cadence).
+name: Triage Dependabot PRs
+
+on:
+  schedule:
+    - cron: "0 10 * * 2" # Tuesdays 10:00 UTC, after Monday's Dependabot batch
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: triage-dependabot
+  cancel-in-progress: false
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # DATA_UPDATES_PAT so the merge push is PAT-attributed and triggers
+      # downstream workflows (a GITHUB_TOKEN merge would not).
+      - name: Triage Dependabot PRs
+        env:
+          GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node scripts/triage-dependabot.mjs | tee "$GITHUB_STEP_SUMMARY"
