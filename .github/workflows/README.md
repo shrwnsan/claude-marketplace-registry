@@ -29,14 +29,14 @@ These workflows never run automatically on PRs or schedules — they fire only w
 | Workflow | Trigger | What it does | Cost notes |
 |----------|---------|--------------|------------|
 | **claude-code.yml** | Comment `@claude` on an open PR/issue, or manual dispatch | Single job: runs the review, then triages its own findings | On-demand only; the automatic PR-review runs were removed. |
-| **droid.yml** | `@droid` mention in a comment, or issue events | Factory Droid assistance on demand | On-demand only, trusted authors. |
 | **follow-up-implementation.yml** | Merge of a maintainer PR to main, or manual dispatch | Implements issues labeled `follow-up`/`claude-generated` linked to that PR | Runs only after a maintainer merge. |
 
 ## 💰 Cost & Usage Notes
 
 Rationale for the trim (Actions minutes + API rate limits):
 
-- **AI PR-review fleet removed**: `route-pr-to-model.yml`, `amp-review-tier1.yml`, `claude-auto-pr-review.yml`, and `droid-review.yml` formed an automated 3-tier AI review pipeline that produced no visible output while driving run volume and GitHub API rate limits. AI assistance is now on-demand only (`@claude` / `@droid`).
+- **droid.yml removed**: Factory Droid harness retired in favor of the Z.ai GLM wiring (`glm-5.3-flash @ effort low`) used by claude-code.yml / follow-up-implementation.yml.
+- **AI PR-review fleet removed**: `route-pr-to-model.yml`, `amp-review-tier1.yml`, `claude-auto-pr-review.yml`, and `droid-review.yml` formed an automated 3-tier AI review pipeline that produced no visible output while driving run volume and GitHub API rate limits. AI assistance is now on-demand only (`@claude`; Droid/Factory retired).
 - **CodeQL once per event**: CodeQL analysis runs only in `security.yml`, not duplicated in CI.
 - **Audits once per event**: the `npm audit` *gate* runs in CI; `security.yml` handles the weekly scheduled audit + issue creation. Per-PR audit comment jobs were removed.
 - **Light path for data-only PRs**: CI skips lint/test/security/scan-test when a PR touches only data files — the daily bot PRs get a build check and move on.
