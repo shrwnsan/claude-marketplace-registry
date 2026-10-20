@@ -2,7 +2,7 @@
   {
     "id": "1414023520-ugot-mindset",
     "name": "ugot-mindset",
-    "description": "How the agent should think and talk with the user: read the intent, verify before claiming, no silent omission, keep going, brief human answers. 19 skills, 2 agents and automatic prompt/result/stop/bash gates.",
+    "description": "How the agent should think and talk with the user: read the intent, declare requirements before the first tool call, verify before claiming, picture first, blame the instrument before the result, solve before saying impossible, keep going, brief human answers. 31 skills, 2 agents and automatic prompt/result/stop/bash gates.",
     "version": "",
     "author": "edu-ide",
     "repository": "https://github.com/edu-ide/ugot-skills",
@@ -21,7 +21,7 @@
   {
     "id": "1414023520-ugot-writing",
     "name": "ugot-writing",
-    "description": "Reader-first writing (mainly Korean): explain for understanding, style editing, applications, songs and lyrics, story craft, short-form ads.",
+    "description": "Reader-first writing (mainly Korean): style editing, applications, songs and lyrics, story craft, short-form ads, and CriticMarkup evidence notes on every claim (criticmarkup). Explaining with pictures moved to ugot-mindset (visual-first). Working-copy skill runs with per-requirement CriticMarkup notes (skill-run).",
     "version": "",
     "author": "edu-ide",
     "repository": "https://github.com/edu-ide/ugot-skills",
@@ -40,7 +40,7 @@
   {
     "id": "1414023520-ugot-engineering-habits",
     "name": "ugot-engineering-habits",
-    "description": "Engineering habits for coding agents: build it right the first time, check the latest literature, disclose shortcuts, premortem before claims, use fundamental terms, consult on architecture.",
+    "description": "Engineering habits for coding agents: build it right the first time, check the latest literature, disclose shortcuts, premortem before claims, use fundamental terms, consult on architecture, separate incident mitigation from the root fix.",
     "version": "",
     "author": "edu-ide",
     "repository": "https://github.com/edu-ide/ugot-skills",

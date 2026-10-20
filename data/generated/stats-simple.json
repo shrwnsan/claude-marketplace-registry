@@ -1,20 +1,20 @@
 {
-  "totalMarketplaces": 1604,
-  "totalPlugins": 7368,
-  "validPlugins": 7368,
-  "lastUpdated": "2026-10-19T03:54:43.554Z",
+  "totalMarketplaces": 1651,
+  "totalPlugins": 7365,
+  "validPlugins": 7365,
+  "lastUpdated": "2026-10-20T03:58:15.078Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 534
+      "count": 551
     },
     {
       "language": "TypeScript",
-      "count": 270
+      "count": 278
     },
     {
       "language": "JavaScript",
-      "count": 246
+      "count": 260
     },
     {
       "language": "Unknown",
@@ -22,11 +22,11 @@
     },
     {
       "language": "Shell",
-      "count": 139
+      "count": 142
     },
     {
       "language": "HTML",
-      "count": 82
+      "count": 84
     },
     {
       "language": "Go",
@@ -34,7 +34,7 @@
     },
     {
       "language": "Rust",
-      "count": 27
+      "count": 28
     },
     {
       "language": "Java",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 283374,
+      "stars": 284213,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 182024,
+      "stars": 182274,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "name": "paperclip",
-      "stars": 104211,
+      "stars": 104824,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -73,17 +73,17 @@
     },
     {
       "name": "archify",
-      "stars": 84932,
+      "stars": 85923,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 77394,
+      "stars": 77461,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70171,
+      "stars": 70210,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -93,60 +93,60 @@
     },
     {
       "name": "humanizer",
-      "stars": 58149,
+      "stars": 58563,
       "url": "https://github.com/blader/humanizer"
     }
   ],
   "recentActivity": [
     {
-      "name": "claude-code-plugins",
-      "updatedAt": "2026-10-19T03:43:03Z",
-      "url": "https://github.com/melodic-software/claude-code-plugins"
+      "name": "gaia",
+      "updatedAt": "2026-10-20T03:48:56Z",
+      "url": "https://github.com/gaia-react/gaia"
     },
     {
-      "name": "cache-keepwarm",
-      "updatedAt": "2026-10-19T03:42:12Z",
-      "url": "https://github.com/rezzminator/cache-keepwarm"
+      "name": "guaardvark",
+      "updatedAt": "2026-10-20T03:47:59Z",
+      "url": "https://github.com/guaardvark/guaardvark"
     },
     {
-      "name": "suede-creator-skills",
-      "updatedAt": "2026-10-19T03:42:00Z",
-      "url": "https://github.com/JasonColapietro/suede-creator-skills"
+      "name": "deskstudio",
+      "updatedAt": "2026-10-20T03:47:53Z",
+      "url": "https://github.com/adityareddy-dev/deskstudio"
     },
     {
       "name": "paperclip",
-      "updatedAt": "2026-10-19T03:41:52Z",
+      "updatedAt": "2026-10-20T03:47:41Z",
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "statusbar",
-      "updatedAt": "2026-10-19T03:41:42Z",
-      "url": "https://github.com/ian-exnodes/statusbar"
+      "name": "awesome-short-drama-skills",
+      "updatedAt": "2026-10-20T03:47:09Z",
+      "url": "https://github.com/UnderleveledBuilder/awesome-short-drama-skills"
     },
     {
-      "name": "rumo-engineering-skills",
-      "updatedAt": "2026-10-19T03:38:55Z",
-      "url": "https://github.com/rumoii/rumo-engineering-skills"
+      "name": "plumbbob",
+      "updatedAt": "2026-10-20T03:46:45Z",
+      "url": "https://github.com/robmclarty/plumbbob"
     },
     {
-      "name": "Master-skill",
-      "updatedAt": "2026-10-19T03:38:26Z",
-      "url": "https://github.com/xr843/Master-skill"
+      "name": "elnora-cli",
+      "updatedAt": "2026-10-20T03:46:32Z",
+      "url": "https://github.com/Elnora-AI/elnora-cli"
     },
     {
-      "name": "ai-agents",
-      "updatedAt": "2026-10-19T03:38:18Z",
-      "url": "https://github.com/rjmurillo/ai-agents"
+      "name": "3dprint-scout",
+      "updatedAt": "2026-10-20T03:46:12Z",
+      "url": "https://github.com/madrobotnet/3dprint-scout"
     },
     {
-      "name": "oh-my-openagent",
-      "updatedAt": "2026-10-19T03:37:58Z",
-      "url": "https://github.com/code-yeongyu/oh-my-openagent"
+      "name": "tycana-claude-hivemind",
+      "updatedAt": "2026-10-20T03:45:52Z",
+      "url": "https://github.com/samuel85194-ux/tycana-claude-hivemind"
     },
     {
-      "name": "Aria",
-      "updatedAt": "2026-10-19T03:37:31Z",
-      "url": "https://github.com/10CG/Aria"
+      "name": "trending-claude-skills",
+      "updatedAt": "2026-10-20T03:45:18Z",
+      "url": "https://github.com/linny006/trending-claude-skills"
     }
   ]
 }

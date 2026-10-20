@@ -87,23 +87,6 @@
     }
   },
   {
-    "id": "1229567447-data-science-python-stack",
-    "name": "data-science-python-stack",
-    "description": "name: data-science-python-stack",
-    "version": "1.0.0",
-    "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skore-skills",
-    "manifestPath": "skills/data-science-python-stack",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1229567447",
-      "marketplaceName": "skore-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
     "id": "1229567447-evaluate-ml-pipeline",
     "name": "evaluate-ml-pipeline",
     "description": "name: evaluate-ml-pipeline",
@@ -230,23 +213,6 @@
     "author": "Probabl",
     "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/model-ml-pipeline",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1229567447",
-      "marketplaceName": "skore-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1229567447-organize-ml-workspace",
-    "name": "organize-ml-workspace",
-    "description": "name: organize-ml-workspace",
-    "version": "1.0.0",
-    "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skore-skills",
-    "manifestPath": "skills/organize-ml-workspace",
     "isValid": true,
     "errors": [],
     "warnings": [],
