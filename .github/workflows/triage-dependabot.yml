@@ -1,0 +1,114 @@
+name: Triage Dependabot PRs
+
+# Deterministic replacement for the manual/every-3-days session triage:
+# squash-merge Dependabot PRs whose diff is dependency-manifest or workflow
+# pin churn only (belt-and-braces: reject major bumps in the title), enable
+# auto-merge so required checks gate the actual merge, and leave an audit
+# comment. Anything outside the policy is left open for manual review.
+#
+# SECURITY NOTES:
+# - Only Dependabot-authored PRs are ever touched. Human PRs (including
+#   fork PRs) are never merged here.
+# - Workflow-file changes are allowed (action SHA bumps) EXCEPT the
+#   AI-assist trio (claude-code.yml / droid.yml / follow-up-implementation.yml)
+#   whose OWNER/MEMBER/COLLABORATOR trust gates must never be edited by
+#   automation.
+# - Major version bumps are always skipped; migrations are deliberate work
+#   tracked in the dependency-migrations issue.
+#
+# DEPLOY NOTE: merges run with DATA_UPDATES_PAT, not GITHUB_TOKEN — pushes
+# attributed to GITHUB_TOKEN do not fire `on: push` workflows (see
+# auto-merge-data-updates.yml). No --delete-branch: the repo auto-deletes
+# head branches, and the PAT's REST quota is shared with the daily scan.
+
+on:
+  schedule:
+    # Every 3 days at 02:30 UTC — after main is quiet, before the ~04:00 UTC
+    # daily scan starts draining the shared DATA_UPDATES_PAT quota.
+    - cron: "30 2 * * */3"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  triage:
+    name: Auto-merge safe Dependabot PRs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+      - name: Triage open Dependabot PRs
+        env:
+          GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
+        run: |
+          set -euo pipefail
+
+          # Path allowlist: manifests/lockfile + workflow SHA-pin bumps.
+          # The AI-assist trio is excluded — their trust gates are never
+          # touched by automation.
+          allowed_paths() {
+            local f="$1"
+            case "$f" in
+              package.json|package-lock.json) return 0 ;;
+              .github/workflows/*.yml|.github/workflows/*.yaml)
+                case "$f" in
+                  .github/workflows/claude-code.yml|\
+                  .github/workflows/droid.yml|\
+                  .github/workflows/follow-up-implementation.yml) return 1 ;;
+                  *) return 0 ;;
+                esac ;;
+              *) return 1 ;;
+            esac
+          }
+
+          # Reject any "from X to Y" title pair whose major version changes.
+          has_major_bump() {
+            local title="$1" from to
+            while read -r pair; do
+              [ -z "$pair" ] && continue
+              from="${pair%% *}"; to="${pair##* }"
+              if [ "${from%%.*}" != "${to%%.*}" ]; then
+                return 0
+              fi
+            done < <(echo "$title" | grep -oE 'from [0-9]+\.[0-9]+\.[0-9]+[^ ]* to [0-9]+\.[0-9]+\.[0-9]+[^ ]*' | sed 's/from //')
+            return 1
+          }
+
+          prs=$(gh pr list --author "app/dependabot" --state open \
+            --json number,title,files --limit 30)
+          count=$(echo "$prs" | jq 'length')
+          echo "Open Dependabot PRs: $count"
+
+          echo "$prs" | jq -c '.[]' | while read -r pr; do
+            num=$(echo "$pr" | jq -r '.number')
+            title=$(echo "$pr" | jq -r '.title')
+            echo "--- PR #$num: $title"
+
+            bad_paths=$(echo "$pr" | jq -r '.files[].path' \
+              | while read -r f; do allowed_paths "$f" || echo "$f"; done)
+
+            if [ -n "$bad_paths" ]; then
+              echo "SKIP #$num: paths outside allowlist"
+              gh pr comment "$num" --body \
+                "⚠️ **Auto-triage skipped:** changed paths outside the dependency-manifest allowlist require manual review:
+                $(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')" > /dev/null
+              continue
+            fi
+
+            if has_major_bump "$title"; then
+              echo "SKIP #$num: major version bump"
+              gh pr comment "$num" --body \
+                "⚠️ **Auto-triage skipped:** major version bump. Migrations are deliberate follow-up work (see the dependency-migrations tracking issue); close this PR if it is already superseded." > /dev/null
+              continue
+            fi
+
+            echo "MERGE #$num: safe (allowlist paths, no major bump) — enabling auto-merge"
+            gh pr merge "$num" --auto --squash > /dev/null
+            gh pr comment "$num" --body \
+              "✅ **Auto-triaged:** dependency-manifest/workflow-pin change with no major bump. Auto-merge enabled — will squash once status checks pass." > /dev/null
+          done
+
+          echo "Triage pass complete."

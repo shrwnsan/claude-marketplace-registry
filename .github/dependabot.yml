@@ -18,6 +18,23 @@ updates:
         update-types:
           - "minor"
           - "patch"
+    # Known-rejected major bumps: each migration is deliberate separate work,
+    # tracked in the dependency-migrations tracking issue. Ignoring only the
+    # future majors keeps minor/patch (and security) updates flowing.
+    ignore:
+      # Repo pins Node 24 (ci.yml NODE_VERSION, engines >=24); dev types must
+      # track the runtime major.
+      - dependency-name: "@types/node"
+        versions: [">=25"]
+      # ESLint 10: needs flat-config/Jest-ESM migration work.
+      - dependency-name: "eslint"
+        versions: [">=10"]
+      # isomorphic-dompurify 3+: breaking API change; migration is someday-work.
+      - dependency-name: "isomorphic-dompurify"
+        versions: [">=3"]
+      # lucide-react 1.x: breaking icon API changes; migrate deliberately.
+      - dependency-name: "lucide-react"
+        versions: [">=1"]
 
   # GitHub Actions: weekly, all action bumps batched into one PR.
   - package-ecosystem: "github-actions"
