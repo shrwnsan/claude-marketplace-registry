@@ -1098,6 +1098,12 @@ class DataGenerator {
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>${baseUrl}/mods</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>${baseUrl}/stats</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>daily</changefreq>

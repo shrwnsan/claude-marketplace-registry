@@ -97,7 +97,9 @@ export default function Document() {
           content='Claude, Claude Code, marketplace, plugins, aggregator, GitHub, development tools, AI, automation'
         />
         <meta name='author' content='Claude Marketplace Contributors' />
-        <link rel='canonical' href={`${SITE_URL}/`} />
+        {/* No canonical here: a document-level canonical points EVERY page at
+            `/`, telling crawlers the whole site is one duplicate page. Each
+            page declares its own canonical in its <Head> instead. */}
 
         {/* Brand fonts — display / mono voice / reading sans, one request */}
         <link
