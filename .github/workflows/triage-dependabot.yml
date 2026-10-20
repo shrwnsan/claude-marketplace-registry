@@ -2,19 +2,27 @@ name: Triage Dependabot PRs
 
 # Deterministic replacement for the manual/every-3-days session triage:
 # squash-merge Dependabot PRs whose diff is dependency-manifest or workflow
-# pin churn only (belt-and-braces: reject major bumps in the title), enable
-# auto-merge so required checks gate the actual merge, and leave an audit
-# comment. Anything outside the policy is left open for manual review.
+# pin churn only (belt-and-braces: reject major bumps in the title), and
+# leave an audit comment. Anything outside the policy is left open for
+# manual review.
 #
 # SECURITY NOTES:
 # - Only Dependabot-authored PRs are ever touched. Human PRs (including
-#   fork PRs) are never merged here.
+#   fork PRs) are never merged here (`app/dependabot` authorship cannot be
+#   forged).
 # - Workflow-file changes are allowed (action SHA bumps) EXCEPT the
 #   AI-assist trio (claude-code.yml / droid.yml / follow-up-implementation.yml)
 #   whose OWNER/MEMBER/COLLABORATOR trust gates must never be edited by
-#   automation.
+#   automation. Keep this denylist in sync with the gate inventory in
+#   AGENTS.md when new trust-gated workflows are added.
 # - Major version bumps are always skipped; migrations are deliberate work
-#   tracked in the dependency-migrations issue.
+#   tracked in the dependency-migrations issue (#452).
+# - CI GATING: main currently has NO required status checks, so `--auto`
+#   would merge immediately. Instead this workflow waits for `gh pr checks`
+#   to complete green BEFORE merging directly. If branch protection gains
+#   required checks later, this wait is redundant but harmless.
+# - The workflow-level `permissions:` block constrains only GITHUB_TOKEN;
+#   the DATA_UPDATES_PAT in GH_TOKEN acts with the granting user's scopes.
 #
 # DEPLOY NOTE: merges run with DATA_UPDATES_PAT, not GITHUB_TOKEN — pushes
 # attributed to GITHUB_TOKEN do not fire `on: push` workflows (see
@@ -23,8 +31,9 @@ name: Triage Dependabot PRs
 
 on:
   schedule:
-    # Every 3 days at 02:30 UTC — after main is quiet, before the ~04:00 UTC
-    # daily scan starts draining the shared DATA_UPDATES_PAT quota.
+    # Sun/Wed/Sat 02:30 UTC — a 3,3,1-day cadence (cron can't express a true
+    # every-3-days), before the ~04:00 UTC daily scan starts draining the
+    # shared DATA_UPDATES_PAT quota.
     - cron: "30 2 * * */3"
   workflow_dispatch:
 
@@ -32,14 +41,15 @@ permissions:
   contents: read
   pull-requests: write
 
+concurrency:
+  group: triage-dependabot
+  cancel-in-progress: true
+
 jobs:
   triage:
-    name: Auto-merge safe Dependabot PRs
+    name: Merge safe Dependabot PRs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
-
       - name: Triage open Dependabot PRs
         env:
           GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
@@ -64,51 +74,98 @@ jobs:
             esac
           }
 
-          # Reject any "from X to Y" title pair whose major version changes.
+          # Reject any "from X to Y" title pair whose major version changes
+          # (tolerates 1- and 2-component versions and a leading "v").
           has_major_bump() {
-            local title="$1" from to
-            while read -r pair; do
+            local title="$1" pair from to
+            while IFS= read -r pair; do
               [ -z "$pair" ] && continue
               from="${pair%% *}"; to="${pair##* }"
+              from="${from#v}"; to="${to#v}"
               if [ "${from%%.*}" != "${to%%.*}" ]; then
                 return 0
               fi
-            done < <(echo "$title" | grep -oE 'from [0-9]+\.[0-9]+\.[0-9]+[^ ]* to [0-9]+\.[0-9]+\.[0-9]+[^ ]*' | sed 's/from //')
+            done < <(echo "$title" | grep -oE 'from v?[0-9]+(\.[0-9]+){0,2}[^ ]* to v?[0-9]+(\.[0-9]+){0,2}[^ ]*' | sed 's/from //')
             return 1
+          }
+
+          # Comment only once per PR: skip/triage comments carry a marker,
+          # so recurring runs don't spam lingering PRs.
+          already_triaged() {
+            gh pr view "$1" --json comments \
+              --jq '.comments[].body' | grep -q 'Auto-triage' || return 1
+          }
+
+          # Wait for CI to finish green. main has no required checks, so a
+          # bare `gh pr merge --auto` would merge un-gated; this poll is the
+          # actual gate. Returns nonzero on red checks or timeout.
+          checks_green() {
+            local num="$1" tries=0
+            until gh pr checks "$num" > /dev/null 2>&1; do
+              tries=$((tries + 1))
+              if [ "$tries" -ge 30 ]; then
+                echo "checks for #$num not green within ~30 min"
+                return 1
+              fi
+              sleep 60
+            done
           }
 
           prs=$(gh pr list --author "app/dependabot" --state open \
             --json number,title,files --limit 30)
           count=$(echo "$prs" | jq 'length')
           echo "Open Dependabot PRs: $count"
+          if [ "$count" -eq 30 ]; then
+            echo "WARNING: at the list limit — some PRs may be untriaged"
+          fi
 
           echo "$prs" | jq -c '.[]' | while read -r pr; do
             num=$(echo "$pr" | jq -r '.number')
             title=$(echo "$pr" | jq -r '.title')
             echo "--- PR #$num: $title"
 
-            bad_paths=$(echo "$pr" | jq -r '.files[].path' \
+            bad_paths=$(echo "$pr" | jq -r '.files[]?.path' \
               | while read -r f; do allowed_paths "$f" || echo "$f"; done)
 
             if [ -n "$bad_paths" ]; then
               echo "SKIP #$num: paths outside allowlist"
-              gh pr comment "$num" --body \
-                "⚠️ **Auto-triage skipped:** changed paths outside the dependency-manifest allowlist require manual review:
-                $(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')" > /dev/null
+              if ! already_triaged "$num"; then
+                gh pr comment "$num" --body \
+"⚠️ **Auto-triage skipped:** changed paths outside the dependency-manifest allowlist require manual review:
+$(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')" > /dev/null \
+                  || echo "WARN: comment on #$num failed"
+              fi
               continue
             fi
 
             if has_major_bump "$title"; then
               echo "SKIP #$num: major version bump"
-              gh pr comment "$num" --body \
-                "⚠️ **Auto-triage skipped:** major version bump. Migrations are deliberate follow-up work (see the dependency-migrations tracking issue); close this PR if it is already superseded." > /dev/null
+              if ! already_triaged "$num"; then
+                gh pr comment "$num" --body \
+"⚠️ **Auto-triage skipped:** major version bump. Migrations are deliberate follow-up work (see the dependency-migrations tracking issue #452); close this PR if it is already superseded." > /dev/null \
+                  || echo "WARN: comment on #$num failed"
+              fi
               continue
             fi
 
-            echo "MERGE #$num: safe (allowlist paths, no major bump) — enabling auto-merge"
-            gh pr merge "$num" --auto --squash > /dev/null
+            if ! checks_green "$num"; then
+              echo "SKIP #$num: checks not green"
+              if ! already_triaged "$num"; then
+                gh pr comment "$num" --body \
+"⚠️ **Auto-triage skipped:** status checks are not green (or did not complete within the wait window). Will be retried on the next triage run." > /dev/null \
+                  || echo "WARN: comment on #$num failed"
+              fi
+              continue
+            fi
+
+            echo "MERGE #$num: safe (allowlist paths, no major bump, checks green)"
+            if ! out=$(gh pr merge "$num" --squash 2>&1); then
+              echo "WARN: merge #$num failed: $out"
+              continue
+            fi
             gh pr comment "$num" --body \
-              "✅ **Auto-triaged:** dependency-manifest/workflow-pin change with no major bump. Auto-merge enabled — will squash once status checks pass." > /dev/null
+"✅ **Auto-triaged:** dependency-manifest/workflow-pin change, no major bump, checks green. Squash-merged." > /dev/null \
+              || echo "WARN: comment on #$num failed"
           done
 
           echo "Triage pass complete."
