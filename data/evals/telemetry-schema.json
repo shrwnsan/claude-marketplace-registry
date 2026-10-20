@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "description": "One JSON object per LLM call in the triage cascade (generator or evaluator). Written as a run artifact (JSONL) and aggregated to data/llm-telemetry/YYYY-MM.json by the automation PR. This is the retro/blog dataset.",
+  "required_fields": {
+    "ts": "ISO-8601 UTC timestamp of call completion",
+    "run_id": "GitHub Actions run id",
+    "pr": "PR number under triage, or null for golden-set replay",
+    "role": "generator | evaluator",
+    "provider": "openrouter | zai",
+    "model": "full model id, e.g. z-ai/glm-5.3-flash:free or glm-5.3-flash",
+    "effort": "reasoning effort requested: low | high | max | free-tier-default",
+    "round": "cascade round 1 | 2 (HITL escalation produces no further calls)",
+    "latency_ms": "wall-clock round trip"
+  },
+  "usage_fields": {
+    "prompt_tokens": "input tokens billed",
+    "completion_tokens": "output tokens billed",
+    "cache_read_tokens": "tokens served from prompt cache",
+    "cache_hit": "cache_read_tokens > 0",
+    "cost_estimate_usd": "0 for :free; Z.ai coding-plan calls amortized to 0 but flagged in provider note"
+  },
+  "outcome_fields": {
+    "decision": "generator output: merge | skip",
+    "reason": "generator cited reason (truncated 300 chars)",
+    "eval_verdict": "evaluator output: pass | fail | null (generator rows carry the paired verdict)",
+    "golden_case_id": "matched golden fixture case, or null for novel",
+    "escalated_to_hitl": "true when cascade exhausted rounds"
+  }
+}
