@@ -10,6 +10,44 @@ import LoadingState from '@/components/ui/LoadingState';
 import SortSelect from '@/components/ui/SortSelect';
 import { Zap, Package, ArrowUp, ChevronRight, Grid, List } from 'lucide-react';
 import { pickQueryParams } from '@/utils/url-query';
+import { buildModsJsonLd, MODS_META, ModSummary, SITE_URL } from '@/utils/mods-aeo';
+import fs from 'fs';
+import path from 'path';
+
+/**
+ * Build-time mod summaries for SEO/AEO: the static HTML carries the real
+ * ItemList JSON-LD and header counts (crawlers and answer engines don't run
+ * the client-side data fetch), while the live listing still renders from the
+ * plugin index hook as everywhere else on the site.
+ */
+export async function getStaticProps() {
+  let modsSummary: ModSummary[] = [];
+  try {
+    const raw = fs.readFileSync(
+      path.join(process.cwd(), 'data', 'generated', 'plugins.json'),
+      'utf-8'
+    );
+    const index = JSON.parse(raw) as Array<{
+      id: string;
+      name: string;
+      description?: string;
+      modsCount?: number;
+      marketplaceName?: string;
+    }>;
+    modsSummary = index
+      .filter((p) => (p.modsCount ?? 0) > 0)
+      .map((p) => ({
+        id: p.id,
+        name: p.name,
+        description: p.description || '',
+        modsCount: p.modsCount ?? 0,
+        marketplaceName: p.marketplaceName || '',
+      }));
+  } catch {
+    // No generated data (fresh checkout) — empty ItemList, page still valid.
+  }
+  return { props: { modsSummary } };
+}
 
 /**
  * The mods surface is days old — the "new" pill self-expires instead of
@@ -22,13 +60,17 @@ const isModsSectionNew = () => Date.now() < new Date(`${MODS_NEW_UNTIL}T23:59:59
 /** How many more mods the Load-more button reveals per click. */
 const LOAD_CHUNK = 24;
 
+interface ModsPageProps {
+  modsSummary: ModSummary[];
+}
+
 /**
  * Mods landing — a pre-filtered view over the plugin index (modsCount > 0)
  * following the same page pattern as /plugins and /marketplaces. Mods are a
  * pattern, not a category: they ship inside plugins and install the same way,
  * so the page is a standard listing, not a custom explainer.
  */
-const ModsPage: React.FC = () => {
+const ModsPage: React.FC<ModsPageProps> = ({ modsSummary }) => {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -65,6 +107,15 @@ const ModsPage: React.FC = () => {
     () => new Set(mods.map((p) => p.marketplaceId).filter(Boolean)).size,
     [mods]
   );
+
+  // Static HTML carries the build-time counts (crawlers don't run the client
+  // fetch); once client data lands these reflect the same live index anyway.
+  const buildMarketplaces = useMemo(
+    () => new Set(modsSummary.map((m) => m.marketplaceName).filter(Boolean)).size,
+    [modsSummary]
+  );
+  const headerMods = mods.length || modsSummary.length;
+  const headerMarketplaces = marketplacesWithMods || buildMarketplaces;
 
   const filteredAndSortedMods = useMemo(() => {
     const filtered = mods.filter((plugin) => {
@@ -114,44 +165,79 @@ const ModsPage: React.FC = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Rendered in EVERY return path (including loading/error): the static
+  // export bakes whatever head exists at prerender time, and prerender sees
+  // the loading state — a head that only renders after the client fetch
+  // would leave crawlers and social scrapers with the _document shell.
+  const pageHead = (
+    <Head>
+      <title>{MODS_META.title}</title>
+      <meta name='description' content={MODS_META.description} />
+      {/* Page-level canonical + social cards: _document.tsx only covers the
+          homepage, so without these every deep link dilutes to `/`. SITE_URL
+          already contains the GitHub Pages repo path — do not append BASE_PATH. */}
+      <link rel='canonical' href={`${SITE_URL}/mods`} />
+      <meta property='og:type' content='website' />
+      <meta property='og:url' content={`${SITE_URL}/mods`} />
+      <meta property='og:title' content={MODS_META.title} />
+      <meta property='og:description' content={MODS_META.description} />
+      <meta property='og:image' content={`${SITE_URL}/og-image.png`} />
+      <meta
+        property='og:image:alt'
+        content='Claude Marketplace Registry — Claude Code mods directory'
+      />
+      <meta property='twitter:card' content='summary_large_image' />
+      <meta property='twitter:url' content={`${SITE_URL}/mods`} />
+      <meta property='twitter:title' content={MODS_META.title} />
+      <meta property='twitter:description' content={MODS_META.description} />
+      {/* Structured data for answer engines and rich results — the FAQ
+          carries the extractable answers, the ItemList is baked at export
+          time from the scan data. */}
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildModsJsonLd(modsSummary)) }}
+      />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
+    </Head>
+  );
+
   if (loading) {
     return (
-      <MainLayout>
-        <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-            <LoadingState variant='skeleton' className='max-w-4xl' />
+      <>
+        {pageHead}
+        <MainLayout>
+          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
+            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+              <LoadingState variant='skeleton' className='max-w-4xl' />
+            </div>
           </div>
-        </div>
-      </MainLayout>
+        </MainLayout>
+      </>
     );
   }
 
   if (error) {
     return (
-      <MainLayout>
-        <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
-            <div className='text-center'>
-              <h1 className='text-2xl font-bold text-red-600 mb-4'>Error Loading Mods</h1>
-              <p className='text-gray-600 dark:text-gray-400'>{error}</p>
+      <>
+        {pageHead}
+        <MainLayout>
+          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
+            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+              <div className='text-center'>
+                <h1 className='text-2xl font-bold text-red-600 mb-4'>Error Loading Mods</h1>
+                <p className='text-gray-600 dark:text-gray-400'>{error}</p>
+              </div>
             </div>
           </div>
-        </div>
-      </MainLayout>
+        </MainLayout>
+      </>
     );
   }
 
   return (
     <>
-      <Head>
-        <title>Claude Code Mods — Hook Modules Shipped as Plugins</title>
-        <meta
-          name='description'
-          content='Browse Claude Code mods: TypeScript hook modules that ship inside plugins. Guard risky commands, meter spend, and draw live terminal UI. Nightly-scanned directory of mod-carrying plugins.'
-        />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
-      </Head>
+      {pageHead}
 
       <MainLayout>
         <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
@@ -172,7 +258,7 @@ const ModsPage: React.FC = () => {
                   )}
                 </h1>
                 <p className='text-lg text-gray-600 dark:text-gray-400 mb-8'>
-                  {mods.length.toLocaleString()} mods across {marketplacesWithMods.toLocaleString()}{' '}
+                  {headerMods.toLocaleString()} mods across {headerMarketplaces.toLocaleString()}{' '}
                   marketplaces
                 </p>
 
