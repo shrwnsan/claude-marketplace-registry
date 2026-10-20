@@ -8,6 +8,8 @@ name: Claude Code Assistant
 on:
   issue_comment:
     types: [created]
+  pull_request_review_comment:
+    types: [created]
   workflow_dispatch:
     inputs:
       pr_number:
@@ -31,12 +33,17 @@ jobs:
   review:
     name: Code Review
     runs-on: ubuntu-latest
-    # On-demand only: '@claude' comment on an open issue/PR from a trusted
-    # author, or a manual workflow_dispatch
+    # On-demand only: '@claude' comment on an open issue/PR (Conversation tab
+    # or review-thread reply) from a trusted author, or a manual dispatch
     if: |
       (
         (github.event_name == 'issue_comment' &&
          github.event.issue.state == 'open' &&
+         contains(github.event.comment.body, '@claude') &&
+         github.event.comment.user.type != 'Bot' &&
+         (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'COLLABORATOR')) ||
+        (github.event_name == 'pull_request_review_comment' &&
+         github.event.pull_request.state == 'open' &&
          contains(github.event.comment.body, '@claude') &&
          github.event.comment.user.type != 'Bot' &&
          (github.event.comment.author_association == 'OWNER' || github.event.comment.author_association == 'MEMBER' || github.event.comment.author_association == 'COLLABORATOR')) ||
@@ -48,6 +55,9 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
           fetch-depth: 20
+          # workflow_dispatch runs on the default branch by default; review
+          # the dispatched PR's head instead.
+          ref: ${{ github.event_name == 'workflow_dispatch' && format('refs/pull/{0}/head', inputs.pr_number) || github.ref }}
 
       - name: Setup Node.js
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020  # v7.0.0
@@ -78,11 +88,11 @@ jobs:
             --effort low
           settings: |
             {
-              "instructions": "## CODE REVIEW TASK\\n\\nYou are reviewing PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES - READ CAREFULLY\\n\\n1. **REVIEW THE CODE, NOT THE WORKFLOW** - Analyze the actual source code changes in this PR. Do NOT discuss the review process, workflow architecture, or how you are conducting the review.\\n\\n2. **BE CONCISE** - Each finding should be 2-3 sentences maximum. No lengthy explanations. No meta-commentary.\\n\\n3. **ONLY REPORT ACTUAL ISSUES** - Report bugs, security vulnerabilities, code quality problems. Do NOT report hypothetical concerns or suggestions for improvement unless they fix a real bug.\\n\\n4. **USE STRUCTURED FORMAT** - Write findings to JSON file, nothing else.\\n\\n### WHAT TO LOOK FOR\\n\\n- Security issues (injection, auth bypass, secrets exposure)\\n- Bugs (null refs, type errors, logic errors)\\n- Breaking changes (API changes, removed exports)\\n- Unused variables or imports\\n- Missing error handling for critical paths\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/review-results.json:\\n\\n```json\\n{\\n  \\\"findingsMarkdown\\\": \\\"Brief summary of issues found\\\",\\n  \\\"findingsJson\\\": [\\n    {\\\"id\\\":\\\"F-001\\\",\\\"severity\\\":\\\"critical|medium|low\\\",\\\"category\\\":\\\"security|bug|quality\\\",\\\"file\\\":\\\"path/to/file.ts\\\",\\\"lineStart\\\":10,\\\"lineEnd\\\":15,\\\"title\\\":\\\"Brief title\\\",\\\"description\\\":\\\"What is wrong (1-2 sentences)\\\",\\\"recommendation\\\":\\\"How to fix (1 sentence)\\\"}\\n  ]\\n}\\n```\\n\\nIf no issues: `{\\\"findingsMarkdown\\\":\\\"No issues found.\\\",\\\"findingsJson\\\":[]}`\\n\\nAfter writing, run: cat /tmp/claude-output/review-results.json",
+              "instructions": "## CODE REVIEW TASK\\n\\nYou are reviewing PR #${{ github.event.pull_request.number || github.event.issue.number || inputs.pr_number }}.\\n\\n### CRITICAL RULES - READ CAREFULLY\\n\\n1. **REVIEW THE CODE, NOT THE WORKFLOW** - Analyze the actual source code changes in this PR. Do NOT discuss the review process, workflow architecture, or how you are conducting the review.\\n\\n2. **BE CONCISE** - Each finding should be 2-3 sentences maximum. No lengthy explanations. No meta-commentary.\\n\\n3. **ONLY REPORT ACTUAL ISSUES** - Report bugs, security vulnerabilities, code quality problems. Do NOT report hypothetical concerns or suggestions for improvement unless they fix a real bug.\\n\\n4. **USE STRUCTURED FORMAT** - Write findings to JSON file, nothing else.\\n\\n### WHAT TO LOOK FOR\\n\\n- Security issues (injection, auth bypass, secrets exposure)\\n- Bugs (null refs, type errors, logic errors)\\n- Breaking changes (API changes, removed exports)\\n- Unused variables or imports\\n- Missing error handling for critical paths\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/review-results.json:\\n\\n```json\\n{\\n  \\\"findingsMarkdown\\\": \\\"Brief summary of issues found\\\",\\n  \\\"findingsJson\\\": [\\n    {\\\"id\\\":\\\"F-001\\\",\\\"severity\\\":\\\"critical|medium|low\\\",\\\"category\\\":\\\"security|bug|quality\\\",\\\"file\\\":\\\"path/to/file.ts\\\",\\\"lineStart\\\":10,\\\"lineEnd\\\":15,\\\"title\\\":\\\"Brief title\\\",\\\"description\\\":\\\"What is wrong (1-2 sentences)\\\",\\\"recommendation\\\":\\\"How to fix (1 sentence)\\\"}\\n  ]\\n}\\n```\\n\\nIf no issues: `{\\\"findingsMarkdown\\\":\\\"No issues found.\\\",\\\"findingsJson\\\":[]}`\\n\\nAfter writing, run: cat /tmp/claude-output/review-results.json",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
-                "PR_NUMBER": "${{ github.event.pull_request.number || github.event.issue.number }}"
+                "PR_NUMBER": "${{ github.event.pull_request.number || github.event.issue.number || inputs.pr_number }}"
               }
             }
         env:
@@ -108,11 +118,11 @@ jobs:
             --effort low
           settings: |
             {
-              "instructions": "## TRIAGE TASK\\n\\nProcess findings from the code review for PR #${{ github.event.pull_request.number || github.event.issue.number }}.\\n\\n### CRITICAL RULES\\n\\n1. **NO META-COMMENTARY** - Do not discuss the triage process. Just process and output results.\\n\\n2. **ACTION ONLY** - For each finding, take action or skip. No lengthy explanations.\\n\\n### STEPS\\n\\n1. Run: cat /tmp/claude-output/review-results.json\\n2. Extract findingsJson from the file\\n3. Process each:\\n   - CRITICAL: Fix code, run tests, commit, push\\n   - MEDIUM/LOW: Create issue with gh issue create\\n   - Skip if not applicable\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/triage-results.json:\\n\\n```json\\n{\\n  \\\"triageMarkdown\\\": \\\"Fixed N critical, created M issues, skipped K\\\",\\n  \\\"actions\\\": [{\\\"findingId\\\":\\\"F-001\\\",\\\"action\\\":\\\"fixed|issue|skipped\\\",\\\"details\\\":\\\"Brief note\\\"}],\\n  \\\"summary\\\": {\\\"criticalFixed\\\":N,\\\"issuesCreated\\\":M,\\\"skipped\\\":K}\\n}\\n```\\n\\nAfter writing, run: cat /tmp/claude-output/triage-results.json",
+              "instructions": "## TRIAGE TASK\\n\\nProcess findings from the code review for PR #${{ github.event.pull_request.number || github.event.issue.number || inputs.pr_number }}.\\n\\n### CRITICAL RULES\\n\\n1. **NO META-COMMENTARY** - Do not discuss the triage process. Just process and output results.\\n\\n2. **ACTION ONLY** - For each finding, take action or skip. No lengthy explanations.\\n\\n### STEPS\\n\\n1. Run: cat /tmp/claude-output/review-results.json\\n2. Extract findingsJson from the file\\n3. Process each:\\n   - CRITICAL: Fix code, run tests, commit, push\\n   - MEDIUM/LOW: Create issue with gh issue create\\n   - Skip if not applicable\\n\\n### OUTPUT FORMAT\\n\\nWrite to /tmp/claude-output/triage-results.json:\\n\\n```json\\n{\\n  \\\"triageMarkdown\\\": \\\"Fixed N critical, created M issues, skipped K\\\",\\n  \\\"actions\\\": [{\\\"findingId\\\":\\\"F-001\\\",\\\"action\\\":\\\"fixed|issue|skipped\\\",\\\"details\\\":\\\"Brief note\\\"}],\\n  \\\"summary\\\": {\\\"criticalFixed\\\":N,\\\"issuesCreated\\\":M,\\\"skipped\\\":K}\\n}\\n```\\n\\nAfter writing, run: cat /tmp/claude-output/triage-results.json",
               "env": {
                 "NODE_ENV": "test",
                 "CI": "true",
-                "PR_NUMBER": "${{ github.event.pull_request.number || github.event.issue.number }}"
+                "PR_NUMBER": "${{ github.event.pull_request.number || github.event.issue.number || inputs.pr_number }}"
               }
             }
         env:
