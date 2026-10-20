@@ -1132,6 +1132,17 @@ class DataGenerator {
   </url>`
     )
     .join('')}
+  ${data.plugins
+    .map(
+      (p) => `
+  <url>
+    <loc>${baseUrl}/plugins/${p.id}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>`
+    )
+    .join('')}
 </urlset>`;
 
     const sitemapPath = path.join(process.cwd(), 'public', 'sitemap.xml');

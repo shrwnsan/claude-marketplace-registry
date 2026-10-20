@@ -133,6 +133,16 @@ const ApiDocumentation: React.FC = () => {
           name='description'
           content='Free public JSON catalog of Claude Code marketplaces and plugins. No API key, CORS enabled, updated daily.'
         />
+        <link
+          rel='canonical'
+          href='https://shrwnsan.github.io/claude-marketplace-registry/docs/api'
+        />
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:url'
+          content='https://shrwnsan.github.io/claude-marketplace-registry/docs/api'
+        />
+        <meta property='og:title' content='JSON Data API - Claude Marketplace Registry' />
         <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
       </Head>
 
