@@ -1,18 +1,18 @@
 {
-  "totalFound": 1604,
-  "withManifest": 593,
-  "lastUpdated": "2026-10-19T03:53:11.758Z",
+  "totalFound": 1651,
+  "withManifest": 583,
+  "lastUpdated": "2026-10-20T03:56:36.413Z",
   "searchQuery": "",
   "languages": {
-    "Python": 534,
-    "TypeScript": 270,
-    "JavaScript": 246,
-    "Shell": 139,
-    "Rust": 27,
-    "HTML": 82,
+    "Python": 551,
+    "TypeScript": 278,
+    "JavaScript": 260,
+    "Markdown": 3,
+    "Shell": 142,
+    "Rust": 28,
+    "HTML": 84,
     "Go": 32,
     "Unknown": 223,
-    "AMPL": 1,
     "C++": 3,
     "Swift": 6,
     "Jupyter Notebook": 3,
@@ -23,29 +23,29 @@
     "Astro": 2,
     "Perl": 1,
     "Ruby": 1,
-    "Markdown": 2,
-    "Kotlin": 2,
-    "jq": 1,
+    "PowerShell": 3,
     "Java": 7,
     "PHP": 1,
+    "AMPL": 1,
     "Typst": 1,
     "SCSS": 1,
     "CSS": 3,
     "Gleam": 1,
     "C": 1,
     "TeX": 3,
-    "PowerShell": 2,
-    "Clojure": 1
+    "Clojure": 1,
+    "jq": 1,
+    "Kotlin": 2
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 283374,
+      "stars": 284213,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 182024,
+      "stars": 182274,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "name": "paperclip",
-      "stars": 104211,
+      "stars": 104824,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -65,17 +65,17 @@
     },
     {
       "name": "archify",
-      "stars": 84932,
+      "stars": 85923,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 77394,
+      "stars": 77461,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70171,
+      "stars": 70210,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "name": "humanizer",
-      "stars": 58149,
+      "stars": 58563,
       "url": "https://github.com/blader/humanizer"
     }
   ]

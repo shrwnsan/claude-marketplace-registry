@@ -116,7 +116,7 @@
   {
     "id": "1414936254-session-handoff",
     "name": "session-handoff",
-    "description": "Carries a project's working state from one session to the next: write a handoff when you stop, and the next session reads it, reports what is still open and asks you where to start.",
+    "description": "Carries a project's working state from one session to the next: write a handoff when you stop, and the next session reads it, does what you ask and ends its reply with what is still open.",
     "version": "",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
@@ -140,6 +140,25 @@
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
     "manifestPath": "./plugins/skill-diagnostics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-svelte-development",
+    "name": "svelte-development",
+    "description": "Writes, reviews and migrates Svelte 5 and SvelteKit 3 code by current practice, checking every change against the official Svelte docs and autofixer, the Svelte language server and your project's own check.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/svelte-development",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -231,23 +250,6 @@
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
     "manifestPath": ".claude/skills/project-records",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1414936254",
-      "marketplaceName": "the-claude-factory",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1414936254-test-installed-plugin",
-    "name": "test-installed-plugin",
-    "description": "name: test-installed-plugin",
-    "version": "1.0.0",
-    "author": "nerymurillohnd",
-    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": ".claude/skills/test-installed-plugin",
     "isValid": true,
     "errors": [],
     "warnings": [],
