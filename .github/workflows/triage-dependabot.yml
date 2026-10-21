@@ -33,8 +33,10 @@ on:
   schedule:
     # Sun/Wed/Sat 02:30 UTC — a 3,3,1-day cadence (cron can't express a true
     # every-3-days), before the ~04:00 UTC daily scan starts draining the
-    # shared DATA_UPDATES_PAT quota.
-    - cron: "30 2 * * */3"
+    # shared DATA_UPDATES_PAT quota. Explicit weekdays: GitHub's parser
+    # rejected the "*/3" day-of-month step (runs registered as invalid-file
+    # push failures and the schedule never fired).
+    - cron: "30 2 * * 0,3,6"
   workflow_dispatch:
 
 permissions:
@@ -130,9 +132,10 @@ jobs:
             if [ -n "$bad_paths" ]; then
               echo "SKIP #$num: paths outside allowlist"
               if ! already_triaged "$num"; then
-                gh pr comment "$num" --body \
-"⚠️ **Auto-triage skipped:** changed paths outside the dependency-manifest allowlist require manual review:
-$(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')" > /dev/null \
+                msg="⚠️ **Auto-triage skipped:** changed paths outside the dependency-manifest allowlist require manual review:"
+                msg="$msg
+                $(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')"
+                gh pr comment "$num" --body "$msg" > /dev/null \
                   || echo "WARN: comment on #$num failed"
               fi
               continue
@@ -141,8 +144,8 @@ $(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')" > /dev/null \
             if has_major_bump "$title"; then
               echo "SKIP #$num: major version bump"
               if ! already_triaged "$num"; then
-                gh pr comment "$num" --body \
-"⚠️ **Auto-triage skipped:** major version bump. Migrations are deliberate follow-up work (see the dependency-migrations tracking issue #452); close this PR if it is already superseded." > /dev/null \
+                msg="⚠️ **Auto-triage skipped:** major version bump. Migrations are deliberate follow-up work (see the dependency-migrations tracking issue #452); close this PR if it is already superseded."
+                gh pr comment "$num" --body "$msg" > /dev/null \
                   || echo "WARN: comment on #$num failed"
               fi
               continue
@@ -151,8 +154,8 @@ $(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')" > /dev/null \
             if ! checks_green "$num"; then
               echo "SKIP #$num: checks not green"
               if ! already_triaged "$num"; then
-                gh pr comment "$num" --body \
-"⚠️ **Auto-triage skipped:** status checks are not green (or did not complete within the wait window). Will be retried on the next triage run." > /dev/null \
+                msg="⚠️ **Auto-triage skipped:** status checks are not green (or did not complete within the wait window). Will be retried on the next triage run."
+                gh pr comment "$num" --body "$msg" > /dev/null \
                   || echo "WARN: comment on #$num failed"
               fi
               continue
@@ -163,8 +166,8 @@ $(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')" > /dev/null \
               echo "WARN: merge #$num failed: $out"
               continue
             fi
-            gh pr comment "$num" --body \
-"✅ **Auto-triaged:** dependency-manifest/workflow-pin change, no major bump, checks green. Squash-merged." > /dev/null \
+            msg="✅ **Auto-triaged:** dependency-manifest/workflow-pin change, no major bump, checks green. Squash-merged."
+            gh pr comment "$num" --body "$msg" > /dev/null \
               || echo "WARN: comment on #$num failed"
           done
 
