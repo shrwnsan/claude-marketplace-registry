@@ -56,23 +56,6 @@
     }
   },
   {
-    "id": "1149015505-chrome-cdp",
-    "name": "chrome-cdp",
-    "description": "name: chrome-cdp",
-    "version": "1.0.0",
-    "author": "BenjaminG",
-    "repository": "https://github.com/BenjaminG/ai-skills",
-    "manifestPath": "skills/chrome-cdp",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1149015505",
-      "marketplaceName": "ai-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
     "id": "1149015505-code-slop",
     "name": "code-slop",
     "description": "name: code-slop",
@@ -607,23 +590,6 @@
     "author": "BenjaminG",
     "repository": "https://github.com/BenjaminG/ai-skills",
     "manifestPath": "skills/qa-plan",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1149015505",
-      "marketplaceName": "ai-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1149015505-qa-run",
-    "name": "qa-run",
-    "description": "name: qa-run",
-    "version": "1.0.0",
-    "author": "BenjaminG",
-    "repository": "https://github.com/BenjaminG/ai-skills",
-    "manifestPath": "skills/qa-run",
     "isValid": true,
     "errors": [],
     "warnings": [],

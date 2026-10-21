@@ -1,7 +1,12 @@
 {
   "model": "jev-1.13.0",
-  "generatedAt": "2026-10-20T03:58:11.125Z",
+  "generatedAt": "2026-10-21T03:57:17.634Z",
   "entries": {
+    "170797156": {
+      "category": "none",
+      "categoryConfidence": 0.78,
+      "isMarketplace": 0.02
+    },
     "287005473": {
       "category": "none",
       "categoryConfidence": 0.56,
@@ -1227,6 +1232,11 @@
       "categoryConfidence": 0.76,
       "isMarketplace": 0.09
     },
+    "1248143141": {
+      "category": "skills",
+      "categoryConfidence": 0.84,
+      "isMarketplace": 0.05
+    },
     "1248589376": {
       "category": "devtools",
       "categoryConfidence": 0.5,
@@ -1472,6 +1482,11 @@
       "categoryConfidence": 0.77,
       "isMarketplace": 0.08
     },
+    "1295117727": {
+      "category": "devtools",
+      "categoryConfidence": 0.96,
+      "isMarketplace": 0.08
+    },
     "1295274853": {
       "category": "skills",
       "categoryConfidence": 1,
@@ -1611,6 +1626,11 @@
       "category": "skills",
       "categoryConfidence": 0.99,
       "isMarketplace": 0.28
+    },
+    "1321122940": {
+      "category": "devtools",
+      "categoryConfidence": 0.94,
+      "isMarketplace": 0.04
     },
     "1323419190": {
       "category": "skills",
@@ -1801,6 +1821,11 @@
       "category": "devtools",
       "categoryConfidence": 0.89,
       "isMarketplace": 0.5
+    },
+    "1378191829": {
+      "category": "devtools",
+      "categoryConfidence": 0.51,
+      "isMarketplace": 0.1
     },
     "1378276369": {
       "category": "llm",
@@ -2172,6 +2197,11 @@
       "categoryConfidence": 0.73,
       "isMarketplace": 0.09
     },
+    "1423802373": {
+      "category": "devtools",
+      "categoryConfidence": 0.4,
+      "isMarketplace": 0.68
+    },
     "1423928128": {
       "category": "devtools",
       "categoryConfidence": 0.98,
@@ -2191,6 +2221,11 @@
       "category": "devtools",
       "categoryConfidence": 0.64,
       "isMarketplace": 0.05
+    },
+    "1424725638": {
+      "category": "mcp",
+      "categoryConfidence": 0.66,
+      "isMarketplace": 0.04
     }
   }
 }
