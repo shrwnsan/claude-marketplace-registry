@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1141147675-agentifind-benchmark",
+    "name": "agentifind_benchmark",
+    "description": "name: agentifind-benchmark",
+    "version": "1.0.0",
+    "author": "AvivK5498",
+    "repository": "https://github.com/AvivK5498/Agentifind",
+    "manifestPath": "skills/agentifind_benchmark",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1141147675",
+      "marketplaceName": "Agentifind",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1141147675-agentifind",
+    "name": "Agentifind",
+    "description": "name: agentifind",
+    "version": "1.0.0",
+    "author": "AvivK5498",
+    "repository": "https://github.com/AvivK5498/Agentifind",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1141147675",
+      "marketplaceName": "Agentifind",
+      "hasSkillMd": true
+    }
+  }
+]

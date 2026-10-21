@@ -1,0 +1,104 @@
+[
+  {
+    "id": "1402213883-skins",
+    "name": "skins",
+    "description": "Skins for Claude Code: tool rows with icons, diff, table and Mermaid chart cards, a usage band and fifteen themes. /skin swaps them live.",
+    "version": "",
+    "author": "hellosverre",
+    "repository": "https://github.com/hellosverre/claude-skins",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402213883",
+      "marketplaceName": "claude-skins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402213883-redgreen",
+    "name": "redgreen",
+    "description": "Test results in a pane: failures from Claude's vitest, jest, pytest, cargo, go, bun and deno runs, their detail and run history.",
+    "version": "",
+    "author": "hellosverre",
+    "repository": "https://github.com/hellosverre/claude-skins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "hellosverre/redgreen"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402213883",
+      "marketplaceName": "claude-skins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402213883-smart-compact",
+    "name": "smart-compact",
+    "description": "Compacts at the right moment: after a commit or green tests, before the prompt cache expires, or when Claude asks for it.",
+    "version": "",
+    "author": "hellosverre",
+    "repository": "https://github.com/hellosverre/claude-skins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "hellosverre/smart-compact"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402213883",
+      "marketplaceName": "claude-skins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402213883-mod-store",
+    "name": "mod-store",
+    "description": "An app store for Claude Code mods in a pane: /mods to browse, search and install 2,700 community mods, with what each can access shown before you install.",
+    "version": "",
+    "author": "hellosverre",
+    "repository": "https://github.com/hellosverre/claude-skins",
+    "manifestPath": {
+      "source": "github",
+      "repo": "hellosverre/mod-store"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402213883",
+      "marketplaceName": "claude-skins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402213883-skin-designer",
+    "name": "skin-designer",
+    "description": "name: skin-designer",
+    "version": "1.0.0",
+    "author": "hellosverre",
+    "repository": "https://github.com/hellosverre/claude-skins",
+    "manifestPath": "skills/skin-designer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402213883",
+      "marketplaceName": "claude-skins",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "id": "1383943924-hermes-helmet",
+    "name": "hermes-helmet",
+    "description": "Captain-side setup-helmet, helmet-issue, helmet-epic, helmet-review, and helmet-write skills (hermes-helmet:helmet-epic and hermes-helmet:helmet-write).",
+    "version": "",
+    "author": "MachineWisdomAI",
+    "repository": "https://github.com/MachineWisdomAI/hermes-helmet",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1383943924",
+      "marketplaceName": "hermes-helmet",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1383943924-helmet-epic",
+    "name": "helmet-epic",
+    "description": "name: helmet-epic",
+    "version": "1.0.0",
+    "author": "MachineWisdomAI",
+    "repository": "https://github.com/MachineWisdomAI/hermes-helmet",
+    "manifestPath": "skills/helmet-epic",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1383943924",
+      "marketplaceName": "hermes-helmet",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1383943924-helmet-issue",
+    "name": "helmet-issue",
+    "description": "name: helmet-issue",
+    "version": "1.0.0",
+    "author": "MachineWisdomAI",
+    "repository": "https://github.com/MachineWisdomAI/hermes-helmet",
+    "manifestPath": "skills/helmet-issue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1383943924",
+      "marketplaceName": "hermes-helmet",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1383943924-helmet-review",
+    "name": "helmet-review",
+    "description": "name: helmet-review",
+    "version": "1.0.0",
+    "author": "MachineWisdomAI",
+    "repository": "https://github.com/MachineWisdomAI/hermes-helmet",
+    "manifestPath": "skills/helmet-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1383943924",
+      "marketplaceName": "hermes-helmet",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1383943924-helmet-write",
+    "name": "helmet-write",
+    "description": "name: helmet-write",
+    "version": "1.0.0",
+    "author": "MachineWisdomAI",
+    "repository": "https://github.com/MachineWisdomAI/hermes-helmet",
+    "manifestPath": "skills/helmet-write",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1383943924",
+      "marketplaceName": "hermes-helmet",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1383943924-observe-chat",
+    "name": "observe-chat",
+    "description": "name: observe-chat",
+    "version": "1.0.0",
+    "author": "MachineWisdomAI",
+    "repository": "https://github.com/MachineWisdomAI/hermes-helmet",
+    "manifestPath": "skills/observe-chat",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1383943924",
+      "marketplaceName": "hermes-helmet",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1383943924-setup-helmet",
+    "name": "setup-helmet",
+    "description": "name: setup-helmet",
+    "version": "1.0.0",
+    "author": "MachineWisdomAI",
+    "repository": "https://github.com/MachineWisdomAI/hermes-helmet",
+    "manifestPath": "skills/setup-helmet",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1383943924",
+      "marketplaceName": "hermes-helmet",
+      "hasSkillMd": true
+    }
+  }
+]

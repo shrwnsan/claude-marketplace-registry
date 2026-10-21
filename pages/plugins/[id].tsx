@@ -6,6 +6,11 @@ import MainLayout from '@/components/layout/MainLayout';
 import PluginCard from '@/components/Marketplace/PluginCard';
 import { usePluginData, CatalogPlugin } from '@/hooks/usePluginData';
 import { usePluginShard } from '@/hooks/usePluginShard';
+import {
+  buildBreadcrumbJsonLd,
+  buildSoftwareApplicationJsonLd,
+  buildWebPageJsonLd,
+} from '@/utils/seo';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import LoadingState from '@/components/ui/LoadingState';
 import { Star, Github, Copy, Check, Package, ArrowLeft, Zap } from 'lucide-react';
@@ -14,7 +19,13 @@ import fs from 'fs';
 import path from 'path';
 
 interface PluginDetailPageProps {
-  pluginIds: string[];
+  id: string;
+  /** Build-time truth from the generated index — bakes unique titles,
+   *  descriptions, canonicals, and JSON-LD into each exported page. */
+  name?: string;
+  description?: string;
+  marketplaceName?: string;
+  modsCount?: number;
 }
 
 // Generate one static page per plugin at build time (static export has no
@@ -41,11 +52,40 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
-  return { props: {} as PluginDetailPageProps };
+export async function getStaticProps({ params }: { params: { id: string } }) {
+  let summary: Omit<PluginDetailPageProps, 'id'> = {};
+  try {
+    const raw = fs.readFileSync(
+      path.join(process.cwd(), 'public', 'data', 'plugins.json'),
+      'utf-8'
+    );
+    const entries = JSON.parse(raw) as Array<{
+      id?: string;
+      name?: string;
+      description?: string;
+      marketplaceName?: string;
+      modsCount?: number;
+    }>;
+    const entry = entries.find((e) => e.id === params.id);
+    if (entry) {
+      summary = {
+        name: entry.name,
+        description: entry.description,
+        marketplaceName: entry.marketplaceName,
+        modsCount: entry.modsCount,
+      };
+    }
+  } catch {
+    /* no data at build time — page still renders from the client index */
+  }
+  return { props: { id: params.id, ...summary } };
 }
 
-const PluginDetailPage: React.FC = () => {
+const PluginDetailPage: React.FC<PluginDetailPageProps> = ({
+  id: buildId,
+  name: buildName,
+  description: buildDescription,
+}) => {
   const router = useRouter();
   const { id: rawId } = router.query;
   // Static-export direct loads can carry a .html suffix (e.g. /plugins/x.html)
@@ -94,46 +134,101 @@ const PluginDetailPage: React.FC = () => {
     }
   };
 
+  // SEO surface — build-time truth first (baked into the export), the live
+  // client record wins once it lands. Rendered in EVERY return path: the
+  // static export bakes the prerender-time head, and prerender sees loading.
+  const seoId = id || buildId;
+  const seoName = plugin?.name || buildName || 'Claude Code Plugin';
+  const seoDescription =
+    (plugin?.description || buildDescription || '').slice(0, 155) ||
+    `${seoName} — a Claude Code plugin discovered by the Claude Marketplace Registry.`;
+  const pageHead = (
+    <Head>
+      <title>{`${seoName} — Claude Code Plugin`}</title>
+      <meta name='description' content={seoDescription} />
+      <link
+        rel='canonical'
+        href={`https://shrwnsan.github.io/claude-marketplace-registry/plugins/${seoId ?? ''}`}
+      />
+      <meta property='og:type' content='website' />
+      <meta
+        property='og:url'
+        content={`https://shrwnsan.github.io/claude-marketplace-registry/plugins/${seoId ?? ''}`}
+      />
+      <meta property='og:title' content={`${seoName} — Claude Code Plugin`} />
+      <meta property='og:description' content={seoDescription} />
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              buildWebPageJsonLd({
+                name: `${seoName} — Claude Code Plugin`,
+                description: seoDescription,
+                path: `/plugins/${seoId ?? ''}`,
+              }),
+              buildBreadcrumbJsonLd([
+                { name: 'Home', path: '/' },
+                { name: 'Plugins', path: '/plugins' },
+                { name: seoName, path: `/plugins/${seoId ?? ''}` },
+              ]),
+              buildSoftwareApplicationJsonLd({
+                name: seoName,
+                description: seoDescription,
+                pluginPath: `/plugins/${seoId ?? ''}`,
+              }),
+            ],
+          }),
+        }}
+      />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
+    </Head>
+  );
+
   if (indexLoading || (summary && shardLoading && !shardError)) {
     return (
-      <MainLayout>
-        <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='container-detail py-12'>
-            <LoadingState variant='skeleton' className='max-w-3xl' />
+      <>
+        {pageHead}
+        <MainLayout>
+          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
+            <div className='container-detail py-12'>
+              <LoadingState variant='skeleton' className='max-w-3xl' />
+            </div>
           </div>
-        </div>
-      </MainLayout>
+        </MainLayout>
+      </>
     );
   }
 
   if (!plugin) {
     return (
-      <MainLayout>
-        <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='container-detail py-20 text-center'>
-            <Package className='w-16 h-16 mx-auto text-gray-300 dark:text-gray-600 mb-4' />
-            <h1 className='text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3'>
-              Plugin not found
-            </h1>
-            <p className='text-gray-600 dark:text-gray-400 mb-8'>
-              This plugin may have been removed from its marketplace catalog.
-            </p>
-            <Link href='/plugins' className='btn btn-primary'>
-              Browse all plugins
-            </Link>
+      <>
+        {pageHead}
+        <MainLayout>
+          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
+            <div className='container-detail py-20 text-center'>
+              <Package className='w-16 h-16 mx-auto text-gray-300 dark:text-gray-600 mb-4' />
+              <h1 className='text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3'>
+                Plugin not found
+              </h1>
+              <p className='text-gray-600 dark:text-gray-400 mb-8'>
+                This plugin may have been removed from its marketplace catalog.
+              </p>
+              <Link href='/plugins' className='btn btn-primary'>
+                Browse all plugins
+              </Link>
+            </div>
           </div>
-        </div>
-      </MainLayout>
+        </MainLayout>
+      </>
     );
   }
 
   return (
     <>
-      <Head>
-        <title>{plugin.name} - Claude Marketplace Registry</title>
-        <meta name='description' content={plugin.description} />
-        <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
-      </Head>
+      {pageHead}
 
       <MainLayout>
         <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>

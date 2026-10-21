@@ -198,6 +198,28 @@
     }
   },
   {
+    "id": "1381673725-headless-gui",
+    "name": "headless-gui",
+    "description": "Run, see and drive a GUI app in a private headless sway, so that no window, focus change, cursor move or keystroke reaches the desktop the user works in",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/headless-gui-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1381673725-huix-standard",
     "name": "huix-standard",
     "description": "Making Nix-flake-first Linux repositories installable on any distribution without Nix: a canonical install.sh, uninstall by manifest, and a dependency preflight that never installs",
@@ -308,6 +330,28 @@
     }
   },
   {
+    "id": "1381673725-phone-alert",
+    "name": "phone-alert",
+    "description": "Call a person to their Android phone through Termux: a long-short-long vibration, the torch and a notification with sound now, or an alarm in the clock app at a set time",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/phone-alert-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1381673725-skill-authoring",
     "name": "skill-authoring",
     "description": "The house rules for text an agent loads whole into a conversation, and check-skill.sh, the gate that proves a skill loadable, its references reachable and its links resolvable",
@@ -361,6 +405,28 @@
     "manifestPath": {
       "source": "github",
       "repo": "rokokol/telegram-skill"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1381673725",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1381673725-termux-api",
+    "name": "termux-api",
+    "description": "Use an Android phone's cameras, location, calls, messages and notifications from Termux through termux-api, knowing which commands hang or exit 0 without an effect",
+    "version": "",
+    "author": "rokokol",
+    "repository": "https://github.com/rokokol/skills",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rokokol/termux-api-skill"
     },
     "isValid": true,
     "errors": [],

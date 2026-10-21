@@ -1,0 +1,920 @@
+[
+  {
+    "id": "1211349294-accessibility-web",
+    "name": "accessibility-web",
+    "description": "name: accessibility-web",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/accessibility-web",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-ads-audit",
+    "name": "ads-audit",
+    "description": "name: ads-audit",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/ads-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-animation-animejs",
+    "name": "animation-animejs",
+    "description": "name: animation-animejs",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/animation-animejs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-animation-gsap",
+    "name": "animation-gsap",
+    "description": "name: animation-gsap",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/animation-gsap",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-animation-lottie",
+    "name": "animation-lottie",
+    "description": "name: animation-lottie",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/animation-lottie",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-animation-scroll-reveal",
+    "name": "animation-scroll-reveal",
+    "description": "name: animation-scroll-reveal",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/animation-scroll-reveal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-backport-to-template",
+    "name": "backport-to-template",
+    "description": "name: backport-to-template",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/backport-to-template",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-blog-engine",
+    "name": "blog-engine",
+    "description": "name: blog-engine",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/blog-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-brand-check",
+    "name": "brand-check",
+    "description": "name: brand-check",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/brand-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-brandkit",
+    "name": "brandkit",
+    "description": "name: brandkit",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/brandkit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-captions",
+    "name": "captions",
+    "description": "name: captions",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/captions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-carousel",
+    "name": "carousel",
+    "description": "name: carousel",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/carousel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-cockpit-setup",
+    "name": "cockpit-setup",
+    "description": "name: cockpit-setup",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/cockpit-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-content-strategy",
+    "name": "content-strategy",
+    "description": "name: content-strategy",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/content-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-copy-editing",
+    "name": "copy-editing",
+    "description": "name: copy-editing",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/copy-editing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-copywriting",
+    "name": "copywriting",
+    "description": "name: copywriting",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/copywriting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-cro-form",
+    "name": "cro-form",
+    "description": "name: cro-form",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/cro-form",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-cro-page",
+    "name": "cro-page",
+    "description": "name: cro-page",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/cro-page",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-cro-popup",
+    "name": "cro-popup",
+    "description": "name: cro-popup",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/cro-popup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-cro-pricing",
+    "name": "cro-pricing",
+    "description": "name: cro-pricing",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/cro-pricing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-design-direction",
+    "name": "design-direction",
+    "description": "name: design-direction",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/design-direction",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-design-redesign",
+    "name": "design-redesign",
+    "description": "name: design-redesign",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/design-redesign",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-design-review",
+    "name": "design-review",
+    "description": "name: design-review",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/design-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-design-system",
+    "name": "design-system",
+    "description": "name: design-system",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/design-system",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-design-taste",
+    "name": "design-taste",
+    "description": "name: design-taste",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/design-taste",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-email-deliverability",
+    "name": "email-deliverability",
+    "description": "name: email-deliverability",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/email-deliverability",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-email",
+    "name": "email",
+    "description": "name: email",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/email",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-event-marketing",
+    "name": "event-marketing",
+    "description": "name: event-marketing",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/event-marketing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-humanize-writing",
+    "name": "humanize-writing",
+    "description": "name: humanize-writing",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/humanize-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-image-generation",
+    "name": "image-generation",
+    "description": "name: image-generation",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/image-generation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-inventory",
+    "name": "inventory",
+    "description": "name: inventory",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/inventory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-landing-page",
+    "name": "landing-page",
+    "description": "name: landing-page",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/landing-page",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-lead-magnet",
+    "name": "lead-magnet",
+    "description": "name: lead-magnet",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/lead-magnet",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-n8n-audit",
+    "name": "n8n-audit",
+    "description": "name: n8n-audit",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/n8n-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-n8n-builder",
+    "name": "n8n-builder",
+    "description": "name: n8n-builder",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/n8n-builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-performance-report",
+    "name": "performance-report",
+    "description": "name: performance-report",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/performance-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-print",
+    "name": "print",
+    "description": "name: print",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/print",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-reel-talking-head",
+    "name": "reel-talking-head",
+    "description": "name: reel-talking-head",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/reel-talking-head",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-scraping",
+    "name": "scraping",
+    "description": "name: scraping",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/scraping",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-sea-google-ads",
+    "name": "sea-google-ads",
+    "description": "name: sea-google-ads",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/sea-google-ads",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-seo-audit",
+    "name": "seo-audit",
+    "description": "name: seo-audit",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/seo-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-seo-cluster",
+    "name": "seo-cluster",
+    "description": "name: seo-cluster",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/seo-cluster",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-seo-geo",
+    "name": "seo-geo",
+    "description": "name: seo-geo",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/seo-geo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-seo-schema",
+    "name": "seo-schema",
+    "description": "name: seo-schema",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/seo-schema",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-seo",
+    "name": "seo",
+    "description": "name: seo",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/seo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-slides",
+    "name": "slides",
+    "description": "name: slides",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/slides",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-social-content",
+    "name": "social-content",
+    "description": "name: social-content",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/social-content",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-strategy-challenger",
+    "name": "strategy-challenger",
+    "description": "name: strategy-challenger",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/strategy-challenger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-sync-template",
+    "name": "sync-template",
+    "description": "name: sync-template",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/sync-template",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-translation",
+    "name": "translation",
+    "description": "name: translation",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/translation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-veille-strategy",
+    "name": "veille-strategy",
+    "description": "name: veille-strategy",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/veille-strategy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-video-editing",
+    "name": "video-editing",
+    "description": "name: video-editing",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/video-editing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-video-generation",
+    "name": "video-generation",
+    "description": "name: video-generation",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/video-generation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1211349294-video-matting",
+    "name": "video-matting",
+    "description": "name: video-matting",
+    "version": "1.0.0",
+    "author": "Littlpinguin",
+    "repository": "https://github.com/Littlpinguin/marketing-cockpit-template",
+    "manifestPath": ".claude/skills/video-matting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1211349294",
+      "marketplaceName": "marketing-cockpit-template",
+      "hasSkillMd": true
+    }
+  }
+]

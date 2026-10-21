@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prebuild": "node scripts/generate-sitemap.mjs",
     "build:production": "node scripts/build-production.js",
     "build:with-scan": "npm run scan:full && npm run build",
     "start": "next start",

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1253564325-serenity-stock-choke",
+    "name": "serenity-stock-choke",
+    "description": "A股/港股/美股卡脖子选股技能：Serenity 供应链瓶颈理论六步法，含零依赖行情脚本",
+    "version": "3.2.1",
+    "author": "fadewalk",
+    "repository": "https://github.com/fadewalk/serenity-stock-choke",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1253564325",
+      "marketplaceName": "serenity-stock-choke",
+      "skills": [
+        "./"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

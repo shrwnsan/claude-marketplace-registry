@@ -1,0 +1,116 @@
+[
+  {
+    "id": "1398886137-comprehension-check",
+    "name": "comprehension-check",
+    "description": "Use when the user asks to be quizzed on, or to check their understanding of, code Claude wrote this session (for example 'quiz me on that' or 'do I actually understand this change?').",
+    "version": "0.1.0",
+    "author": "NarenDawar",
+    "repository": "https://github.com/NarenDawar/narens-claude-toolkit",
+    "manifestPath": "./plugins/comprehension-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398886137",
+      "marketplaceName": "narens-claude-toolkit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1398886137-decision-journal",
+    "name": "decision-journal",
+    "description": "Use when the user wants to log a prediction or estimate about a dev or project decision, grade past predictions, or see how calibrated they are (for example 'log a prediction', 'grade my predictions', 'how calibrated am I?').",
+    "version": "0.1.0",
+    "author": "NarenDawar",
+    "repository": "https://github.com/NarenDawar/narens-claude-toolkit",
+    "manifestPath": "./plugins/decision-journal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398886137",
+      "marketplaceName": "narens-claude-toolkit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1398886137-rule-promoter",
+    "name": "rule-promoter",
+    "description": "Use when the user wants rules in CLAUDE.md enforced with hooks, says Claude keeps ignoring a CLAUDE.md rule, or asks to turn CLAUDE.md rules into hooks (for example 'promote my CLAUDE.md rules to hooks' or 'make Claude stop editing migrations').",
+    "version": "0.1.0",
+    "author": "NarenDawar",
+    "repository": "https://github.com/NarenDawar/narens-claude-toolkit",
+    "manifestPath": "./plugins/rule-promoter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398886137",
+      "marketplaceName": "narens-claude-toolkit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1398886137-subagent-meter",
+    "name": "subagent-meter",
+    "description": "A live status line showing how much of your session's tokens go to subagents, and which agent type uses the most.",
+    "version": "0.1.0",
+    "author": "NarenDawar",
+    "repository": "https://github.com/NarenDawar/narens-claude-toolkit",
+    "manifestPath": "./plugins/subagent-meter",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398886137",
+      "marketplaceName": "narens-claude-toolkit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1398886137-subagent-tax-auditor",
+    "name": "subagent-tax-auditor",
+    "description": "Use when the user asks why their Claude Code quota or usage limit runs out so fast, which subagents cost the most, or wants their subagents made cheaper (for example 'audit my subagents', 'which agent is eating my quota', 'make my agents cheaper').",
+    "version": "0.1.0",
+    "author": "NarenDawar",
+    "repository": "https://github.com/NarenDawar/narens-claude-toolkit",
+    "manifestPath": "./plugins/subagent-tax-auditor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398886137",
+      "marketplaceName": "narens-claude-toolkit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1398886137-schedule-doctor",
+    "name": "schedule-doctor",
+    "description": "Use when the user is about to schedule a Claude task, or asks why a scheduled task, /loop, cron job or routine did not run, ran late, or stopped partway (for example 'will this scheduled task actually run?', 'why didn't my 7am task fire?', 'check this before I schedule it').",
+    "version": "0.1.0",
+    "author": "NarenDawar",
+    "repository": "https://github.com/NarenDawar/narens-claude-toolkit",
+    "manifestPath": "./plugins/schedule-doctor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1398886137",
+      "marketplaceName": "narens-claude-toolkit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

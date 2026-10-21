@@ -212,6 +212,7 @@ const AnalyticsDashboard: React.FC = () => {
     <>
       <Head>
         <title>Analytics Dashboard - Claude Marketplace Registry</title>
+        <meta name='robots' content='noindex, nofollow' />
         <meta name='description' content='Analytics dashboard for Claude Marketplace Registry' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />

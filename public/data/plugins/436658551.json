@@ -1,0 +1,349 @@
+[
+  {
+    "id": "436658551-repomatic",
+    "name": "repomatic",
+    "description": "Skills and agents to automate repository maintenance, releases, and CI/CD workflows",
+    "version": "7.17.1",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": {
+      "path": ".claude",
+      "ref": "main",
+      "source": "git-subdir",
+      "url": "https://github.com/kdeldycke/repomatic"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "436658551-av-false-positive",
+    "name": "av-false-positive",
+    "description": "name: av-false-positive",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/av-false-positive",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-awesome-triage",
+    "name": "awesome-triage",
+    "description": "name: awesome-triage",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/awesome-triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-babysit-ci",
+    "name": "babysit-ci",
+    "description": "name: babysit-ci",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/babysit-ci",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-benchmark-update",
+    "name": "benchmark-update",
+    "description": "name: benchmark-update",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/benchmark-update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-brand-assets",
+    "name": "brand-assets",
+    "description": "name: brand-assets",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/brand-assets",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-file-bug-report",
+    "name": "file-bug-report",
+    "description": "name: file-bug-report",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/file-bug-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-github-housekeeping",
+    "name": "github-housekeeping",
+    "description": "name: github-housekeeping",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/github-housekeeping",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-probe-workflow",
+    "name": "probe-workflow",
+    "description": "name: probe-workflow",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/probe-workflow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-repomatic-audit",
+    "name": "repomatic-audit",
+    "description": "name: repomatic-audit",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/repomatic-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-repomatic-changelog",
+    "name": "repomatic-changelog",
+    "description": "name: repomatic-changelog",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/repomatic-changelog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-repomatic-deps",
+    "name": "repomatic-deps",
+    "description": "name: repomatic-deps",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/repomatic-deps",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-repomatic-init",
+    "name": "repomatic-init",
+    "description": "name: repomatic-init",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/repomatic-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-repomatic-ship",
+    "name": "repomatic-ship",
+    "description": "name: repomatic-ship",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/repomatic-ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-repomatic-test-matrix",
+    "name": "repomatic-test-matrix",
+    "description": "name: repomatic-test-matrix",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/repomatic-test-matrix",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-repomatic-topics",
+    "name": "repomatic-topics",
+    "description": "name: repomatic-topics",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/repomatic-topics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-repomatic-upgrade",
+    "name": "repomatic-upgrade",
+    "description": "name: repomatic-upgrade",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/repomatic-upgrade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-sphinx-docs-sync",
+    "name": "sphinx-docs-sync",
+    "description": "name: sphinx-docs-sync",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/sphinx-docs-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-translation-sync",
+    "name": "translation-sync",
+    "description": "name: translation-sync",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/translation-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "436658551-upstream-audit",
+    "name": "upstream-audit",
+    "description": "name: upstream-audit",
+    "version": "1.0.0",
+    "author": "kdeldycke",
+    "repository": "https://github.com/kdeldycke/repomatic",
+    "manifestPath": ".claude/skills/upstream-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "436658551",
+      "marketplaceName": "repomatic",
+      "hasSkillMd": true
+    }
+  }
+]

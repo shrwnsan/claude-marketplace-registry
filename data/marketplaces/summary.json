@@ -1,88 +1,93 @@
 {
-  "totalFound": 1151,
-  "withManifest": 499,
-  "lastUpdated": "2026-10-07T04:54:14.148Z",
+  "totalFound": 1688,
+  "withManifest": 613,
+  "lastUpdated": "2026-10-21T03:56:02.406Z",
   "searchQuery": "",
   "languages": {
-    "Python": 353,
-    "JavaScript": 176,
-    "Shell": 109,
-    "TypeScript": 176,
-    "Go": 27,
-    "Unknown": 190,
-    "Rust": 21,
-    "HTML": 62,
-    "AMPL": 1,
+    "Python": 559,
+    "TypeScript": 289,
+    "JavaScript": 267,
+    "Markdown": 3,
+    "Shell": 144,
+    "Rust": 28,
+    "HTML": 86,
+    "Go": 35,
+    "Unknown": 225,
     "C++": 3,
-    "Java": 7,
-    "Swift": 5,
-    "Perl": 1,
-    "Jupyter Notebook": 2,
+    "Swift": 6,
+    "Astro": 2,
+    "Jupyter Notebook": 3,
     "C#": 3,
-    "Astro": 1,
-    "Ruby": 1,
-    "TeX": 2,
-    "PHP": 1,
-    "Typst": 1,
-    "Makefile": 1,
-    "Svelte": 1,
-    "Markdown": 1,
-    "SCSS": 1,
-    "CSS": 2,
-    "Gleam": 1,
+    "Svelte": 2,
+    "Gherkin": 1,
+    "Perl": 1,
+    "Ruby": 2,
+    "Kotlin": 2,
+    "MDX": 1,
     "C": 1,
-    "PowerShell": 1
+    "Java": 7,
+    "PHP": 1,
+    "AMPL": 1,
+    "Typst": 1,
+    "Makefile": 2,
+    "SCSS": 1,
+    "CSS": 3,
+    "Gleam": 1,
+    "TeX": 3,
+    "PowerShell": 3,
+    "Clojure": 1,
+    "jq": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 274380,
+      "stars": 284975,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179943,
+      "stars": 182530,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "ponytail",
-      "stars": 151954,
+      "stars": 159764,
       "url": "https://github.com/DietrichGebert/ponytail"
     },
     {
+      "name": "paperclip",
+      "stars": 105295,
+      "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
       "name": "claude-mem",
-      "stars": 97149,
+      "stars": 101651,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "archify",
-      "stars": 78761,
+      "stars": 85923,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76613,
+      "stars": 77543,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69851,
+      "stars": 70234,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
-      "name": "i-have-adhd",
-      "stars": 54382,
-      "url": "https://github.com/ayghri/i-have-adhd"
+      "name": "Pake",
+      "stars": 62038,
+      "url": "https://github.com/tw93/Pake"
     },
     {
-      "name": "claude-plugins-official",
-      "stars": 37477,
-      "url": "https://github.com/anthropics/claude-plugins-official"
-    },
-    {
-      "name": "invisible_playwright_mcp",
-      "stars": 31754,
-      "url": "https://github.com/feder-cr/invisible_playwright_mcp"
+      "name": "humanizer",
+      "stars": 58956,
+      "url": "https://github.com/blader/humanizer"
     }
   ]
 }

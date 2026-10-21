@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1393016124-rule-fairy",
+    "name": "rule-fairy",
+    "description": "Injects Cursor-style rules into Claude Code and Codex by prompt keyword, edited path, or alwaysApply.",
+    "version": "0.3.0",
+    "author": "Cyrik",
+    "repository": "https://github.com/Cyrik/rule-fairy",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393016124",
+      "marketplaceName": "rule-fairy",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1393016124-review-plan",
+    "name": "review-plan",
+    "description": "name: review-plan",
+    "version": "1.0.0",
+    "author": "Cyrik",
+    "repository": "https://github.com/Cyrik/rule-fairy",
+    "manifestPath": "skills/review-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393016124",
+      "marketplaceName": "rule-fairy",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1393016124-review",
+    "name": "review",
+    "description": "name: review",
+    "version": "1.0.0",
+    "author": "Cyrik",
+    "repository": "https://github.com/Cyrik/rule-fairy",
+    "manifestPath": "skills/review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1393016124",
+      "marketplaceName": "rule-fairy",
+      "hasSkillMd": true
+    }
+  }
+]

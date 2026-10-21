@@ -1,40 +1,40 @@
 {
-  "totalMarketplaces": 1151,
-  "totalPlugins": 6504,
-  "validPlugins": 6504,
-  "lastUpdated": "2026-10-07T04:55:41.526Z",
+  "totalMarketplaces": 1688,
+  "totalPlugins": 7620,
+  "validPlugins": 7620,
+  "lastUpdated": "2026-10-21T03:57:20.098Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 353
-    },
-    {
-      "language": "Unknown",
-      "count": 190
-    },
-    {
-      "language": "JavaScript",
-      "count": 176
+      "count": 559
     },
     {
       "language": "TypeScript",
-      "count": 176
+      "count": 289
+    },
+    {
+      "language": "JavaScript",
+      "count": 267
+    },
+    {
+      "language": "Unknown",
+      "count": 225
     },
     {
       "language": "Shell",
-      "count": 109
+      "count": 144
     },
     {
       "language": "HTML",
-      "count": 62
+      "count": 86
     },
     {
       "language": "Go",
-      "count": 27
+      "count": 35
     },
     {
       "language": "Rust",
-      "count": 21
+      "count": 28
     },
     {
       "language": "Java",
@@ -42,111 +42,111 @@
     },
     {
       "language": "Swift",
-      "count": 5
+      "count": 6
     }
   ],
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 274380,
+      "stars": 284975,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 179943,
+      "stars": 182530,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "ponytail",
-      "stars": 151954,
+      "stars": 159764,
       "url": "https://github.com/DietrichGebert/ponytail"
     },
     {
+      "name": "paperclip",
+      "stars": 105295,
+      "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
       "name": "claude-mem",
-      "stars": 97149,
+      "stars": 101651,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "archify",
-      "stars": 78761,
+      "stars": 85923,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 76613,
+      "stars": 77543,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 69851,
+      "stars": 70234,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
-      "name": "i-have-adhd",
-      "stars": 54382,
-      "url": "https://github.com/ayghri/i-have-adhd"
+      "name": "Pake",
+      "stars": 62038,
+      "url": "https://github.com/tw93/Pake"
     },
     {
-      "name": "claude-plugins-official",
-      "stars": 37477,
-      "url": "https://github.com/anthropics/claude-plugins-official"
-    },
-    {
-      "name": "invisible_playwright_mcp",
-      "stars": 31754,
-      "url": "https://github.com/feder-cr/invisible_playwright_mcp"
+      "name": "humanizer",
+      "stars": 58956,
+      "url": "https://github.com/blader/humanizer"
     }
   ],
   "recentActivity": [
     {
-      "name": "claude",
-      "updatedAt": "2026-10-07T04:46:07Z",
-      "url": "https://github.com/bendrucker/claude"
+      "name": "enterprise-software-AI-skills",
+      "updatedAt": "2026-10-21T03:44:43Z",
+      "url": "https://github.com/techfleetworks/enterprise-software-AI-skills"
     },
     {
-      "name": "claude-codecraft-toolkit",
-      "updatedAt": "2026-10-07T04:45:49Z",
-      "url": "https://github.com/Frun1753/claude-codecraft-toolkit"
+      "name": "paperclip",
+      "updatedAt": "2026-10-21T03:44:30Z",
+      "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "claude-brain",
-      "updatedAt": "2026-10-07T04:45:38Z",
-      "url": "https://github.com/2josEx/claude-brain"
+      "name": "obsidian-wiki",
+      "updatedAt": "2026-10-21T03:44:30Z",
+      "url": "https://github.com/Ar9av/obsidian-wiki"
     },
     {
-      "name": "agent-skills",
-      "updatedAt": "2026-10-07T04:45:37Z",
-      "url": "https://github.com/heymegabyte/agent-skills"
+      "name": "claude-code-plugins",
+      "updatedAt": "2026-10-21T03:43:55Z",
+      "url": "https://github.com/melodic-software/claude-code-plugins"
     },
     {
-      "name": "trending-claude-skills",
-      "updatedAt": "2026-10-07T04:45:19Z",
-      "url": "https://github.com/linny006/trending-claude-skills"
+      "name": "sdl3-porter",
+      "updatedAt": "2026-10-21T03:43:31Z",
+      "url": "https://github.com/hazeliscoding/sdl3-porter"
     },
     {
-      "name": "awesome-ai-tools",
-      "updatedAt": "2026-10-07T04:45:18Z",
-      "url": "https://github.com/foodman1227/awesome-ai-tools"
+      "name": "agent-tools",
+      "updatedAt": "2026-10-21T03:41:06Z",
+      "url": "https://github.com/tuanxminhxgi/agent-tools"
     },
     {
-      "name": "archify",
-      "updatedAt": "2026-10-07T04:45:17Z",
-      "url": "https://github.com/tt-a1i/archify"
+      "name": "frihet-mcp",
+      "updatedAt": "2026-10-21T03:40:49Z",
+      "url": "https://github.com/Frihet-io/frihet-mcp"
     },
     {
-      "name": "kraft",
-      "updatedAt": "2026-10-07T04:45:09Z",
-      "url": "https://github.com/itsOmidKarami/kraft"
+      "name": "answer-me-with-html",
+      "updatedAt": "2026-10-21T03:40:28Z",
+      "url": "https://github.com/QingYunA/answer-me-with-html"
     },
     {
-      "name": "bootstrap-expert",
-      "updatedAt": "2026-10-07T04:44:53Z",
-      "url": "https://github.com/ronnieiscoo/bootstrap-expert"
+      "name": "foreman",
+      "updatedAt": "2026-10-21T03:39:35Z",
+      "url": "https://github.com/ChaseSunstrom/foreman"
     },
     {
-      "name": "oil-ui",
-      "updatedAt": "2026-10-07T04:44:41Z",
-      "url": "https://github.com/oil-oil/oil-ui"
+      "name": "methodsmith",
+      "updatedAt": "2026-10-21T03:39:32Z",
+      "url": "https://github.com/sajor2000/methodsmith"
     }
   ]
 }

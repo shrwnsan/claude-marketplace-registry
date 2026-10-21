@@ -1,0 +1,298 @@
+[
+  {
+    "id": "1414936254-bash-lsp-intelligence",
+    "name": "bash-lsp-intelligence",
+    "description": "Gives Claude Code bash-language-server for Bash and POSIX shell scripts, formats and checks every script Claude edits with shfmt and ShellCheck using your own configuration, and teaches Claude to trace sourced files and same-named functions before a rename.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/bash-lsp-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-block-no-verify",
+    "name": "block-no-verify",
+    "description": "Blocks Claude's git commands that skip commit hooks or signing (--no-verify, --no-gpg-sign, commit.gpgsign=false), so your quality gates always run.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/block-no-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-github-operations",
+    "name": "github-operations",
+    "description": "Carries a GitHub pull request from open to merge, cleans up a Git repository without losing work, and brings the GitHub MCP server with it.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/github-operations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-plugin-evals",
+    "name": "plugin-evals",
+    "description": "Makes Claude an expert in Claude Code plugin evals: designs suites that prove what a plugin adds, writes cases, graders and mocks, runs and gates them in CI, and reads the results, always checked against the CLI and docs you have today.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/plugin-evals",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-plugin-test-bench",
+    "name": "plugin-test-bench",
+    "description": "Proves your Claude Code plugin works the way your users receive it: installs a copy in a throwaway config, checks it loads, runs your eval suite against that copy, and reviews your eval cases so they measure what the plugin adds.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/plugin-test-bench",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-project-maintainer",
+    "name": "project-maintainer",
+    "description": "Keeps a project's memory in its .claude folder: decisions recorded as ADRs, technical debt tracked in a ledger, and a handoff that carries each session's state to the next one.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/project-maintainer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-prompt-writer",
+    "name": "prompt-writer",
+    "description": "Turns a goal, idea or draft into one copy-ready prompt tuned to the target Claude model and effort: it clarifies intent, checks current official facts and recommends the setup to run it with.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/prompt-writer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-python-lsp-intelligence",
+    "name": "python-lsp-intelligence",
+    "description": "Gives Claude Code the basedpyright language server for Python, checks every Python file Claude edits with ruff and basedpyright using your own configuration, and teaches Claude to navigate by symbol, resolve aliases and imports, and fix findings without suppressing them.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/python-lsp-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-skill-diagnostics",
+    "name": "skill-diagnostics",
+    "description": "Audits Claude skills for best-practice conformance, portability and whether a model can run them without guessing, with file-and-line evidence and one verdict.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/skill-diagnostics",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-svelte-development",
+    "name": "svelte-development",
+    "description": "Writes, reviews and migrates Svelte 5 and SvelteKit 3 code by current practice, checking every change against the official Svelte docs and autofixer, the Svelte language server and your project's own check.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/svelte-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-typescript6-lsp-intelligence",
+    "name": "typescript6-lsp-intelligence",
+    "description": "Connects your TypeScript 6 language server to Claude Code, type-checks every file Claude edits with your own TypeScript under a strictest policy, and teaches Claude to find the program that owns a file and fix compiler findings without unsafe assertions or suppressions.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/typescript6-lsp-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-typescript7-lsp-intelligence",
+    "name": "typescript7-lsp-intelligence",
+    "description": "Connects the native TypeScript 7 language server to Claude Code, type-checks every file Claude edits with your own native TypeScript 7 compiler under a strictest policy, and teaches Claude to find the program that owns a file and fix compiler findings without unsafe assertions or suppressions.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/typescript7-lsp-intelligence",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414936254-docs-drift-check",
+    "name": "docs-drift-check",
+    "description": "name: docs-drift-check",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/docs-drift-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-new-plugin",
+    "name": "new-plugin",
+    "description": "name: new-plugin",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/new-plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-triage-issues",
+    "name": "triage-issues",
+    "description": "name: triage-issues",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/triage-issues",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-wrap-up",
+    "name": "wrap-up",
+    "description": "name: wrap-up",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/wrap-up",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  }
+]

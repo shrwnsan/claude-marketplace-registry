@@ -1,0 +1,70 @@
+[
+  {
+    "id": "1295622661-bank-map",
+    "name": "bank-map",
+    "description": "name: bank-map",
+    "version": "1.0.0",
+    "author": "ledq",
+    "repository": "https://github.com/ledq/resumery",
+    "manifestPath": ".claude/skills/bank-map",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1295622661",
+      "marketplaceName": "resumery",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1295622661-onboard",
+    "name": "onboard",
+    "description": "name: onboard",
+    "version": "1.0.0",
+    "author": "ledq",
+    "repository": "https://github.com/ledq/resumery",
+    "manifestPath": ".claude/skills/onboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1295622661",
+      "marketplaceName": "resumery",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1295622661-setup",
+    "name": "setup",
+    "description": "name: setup",
+    "version": "1.0.0",
+    "author": "ledq",
+    "repository": "https://github.com/ledq/resumery",
+    "manifestPath": ".claude/skills/setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1295622661",
+      "marketplaceName": "resumery",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1295622661-tailor",
+    "name": "tailor",
+    "description": "name: tailor",
+    "version": "1.0.0",
+    "author": "ledq",
+    "repository": "https://github.com/ledq/resumery",
+    "manifestPath": ".claude/skills/tailor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1295622661",
+      "marketplaceName": "resumery",
+      "hasSkillMd": true
+    }
+  }
+]

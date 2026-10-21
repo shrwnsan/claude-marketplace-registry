@@ -1,0 +1,93 @@
+[
+  {
+    "id": "1215417088-wenlan",
+    "name": "wenlan",
+    "description": "A living knowledge base your agents build as they work. What they learn becomes source-cited wiki pages that refresh between sessions, so each new thread starts from your latest work.",
+    "version": "",
+    "author": "7xuanlu",
+    "repository": "https://github.com/7xuanlu/wenlan",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/7xuanlu/wenlan.git",
+      "path": "plugin"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215417088",
+      "marketplaceName": "wenlan",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1215417088-prove",
+    "name": "prove",
+    "description": "name: prove",
+    "version": "1.0.0",
+    "author": "7xuanlu",
+    "repository": "https://github.com/7xuanlu/wenlan",
+    "manifestPath": ".claude/skills/prove",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215417088",
+      "marketplaceName": "wenlan",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215417088-run-wenlan-app",
+    "name": "run-wenlan-app",
+    "description": "name: run-wenlan-app",
+    "version": "1.0.0",
+    "author": "7xuanlu",
+    "repository": "https://github.com/7xuanlu/wenlan",
+    "manifestPath": ".claude/skills/run-wenlan-app",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215417088",
+      "marketplaceName": "wenlan",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215417088-run-wenlan",
+    "name": "run-wenlan",
+    "description": "name: run-wenlan",
+    "version": "1.0.0",
+    "author": "7xuanlu",
+    "repository": "https://github.com/7xuanlu/wenlan",
+    "manifestPath": ".claude/skills/run-wenlan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215417088",
+      "marketplaceName": "wenlan",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1215417088-verify",
+    "name": "verify",
+    "description": "name: verify",
+    "version": "1.0.0",
+    "author": "7xuanlu",
+    "repository": "https://github.com/7xuanlu/wenlan",
+    "manifestPath": ".claude/skills/verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1215417088",
+      "marketplaceName": "wenlan",
+      "hasSkillMd": true
+    }
+  }
+]

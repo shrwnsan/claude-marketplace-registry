@@ -1,0 +1,633 @@
+[
+  {
+    "id": "1279760665-fdeops",
+    "name": "fdeops",
+    "description": "Skills for forward deployed engineers across strategy, architecture and engineering. Use individual tasks or @fde coordination; local customer memory supports continuity.",
+    "version": "",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1279760665-audit",
+    "name": "audit",
+    "description": "name: audit",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-board-memo",
+    "name": "board-memo",
+    "description": "name: board-memo",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/board-memo",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-brief",
+    "name": "brief",
+    "description": "name: brief",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/brief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-build",
+    "name": "build",
+    "description": "name: build",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-business-case",
+    "name": "business-case",
+    "description": "name: business-case",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/business-case",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-connect",
+    "name": "connect",
+    "description": "name: connect",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/connect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-dashboard",
+    "name": "dashboard",
+    "description": "name: dashboard",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/dashboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-debrief",
+    "name": "debrief",
+    "description": "name: debrief",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/debrief",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-debug",
+    "name": "debug",
+    "description": "name: debug",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/debug",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-demo-prep",
+    "name": "demo-prep",
+    "description": "name: demo-prep",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/demo-prep",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-discover",
+    "name": "discover",
+    "description": "name: discover",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/discover",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-earn-trust",
+    "name": "earn-trust",
+    "description": "name: earn-trust",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/earn-trust",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-evaluate",
+    "name": "evaluate",
+    "description": "name: evaluate",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/evaluate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-fde",
+    "name": "fde",
+    "description": "name: fde",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/fde",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-feedback",
+    "name": "feedback",
+    "description": "name: feedback",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/feedback",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-handoff",
+    "name": "handoff",
+    "description": "name: handoff",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-ingest",
+    "name": "ingest",
+    "description": "name: ingest",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/ingest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-integrate",
+    "name": "integrate",
+    "description": "name: integrate",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/integrate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-options",
+    "name": "options",
+    "description": "name: options",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/options",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-plan",
+    "name": "plan",
+    "description": "name: plan",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-poc",
+    "name": "poc",
+    "description": "name: poc",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/poc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-prioritize",
+    "name": "prioritize",
+    "description": "name: prioritize",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/prioritize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-qa",
+    "name": "qa",
+    "description": "name: qa",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-readout",
+    "name": "readout",
+    "description": "name: readout",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/readout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-red-team",
+    "name": "red-team",
+    "description": "name: red-team",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/red-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-rescue",
+    "name": "rescue",
+    "description": "name: rescue",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/rescue",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-review",
+    "name": "review",
+    "description": "name: review",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-rollback",
+    "name": "rollback",
+    "description": "name: rollback",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/rollback",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-runbook",
+    "name": "runbook",
+    "description": "name: runbook",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/runbook",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-scope",
+    "name": "scope",
+    "description": "name: scope",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/scope",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-score-use-cases",
+    "name": "score-use-cases",
+    "description": "name: score-use-cases",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/score-use-cases",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-ship",
+    "name": "ship",
+    "description": "name: ship",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/ship",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-switch-clients",
+    "name": "switch-clients",
+    "description": "name: switch-clients",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/switch-clients",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-test-assumptions",
+    "name": "test-assumptions",
+    "description": "name: test-assumptions",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/test-assumptions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-what-breaks",
+    "name": "what-breaks",
+    "description": "name: what-breaks",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/what-breaks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1279760665-who-decides",
+    "name": "who-decides",
+    "description": "name: who-decides",
+    "version": "1.0.0",
+    "author": "suboss87",
+    "repository": "https://github.com/suboss87/FDEOps",
+    "manifestPath": "skills/who-decides",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1279760665",
+      "marketplaceName": "FDEOps",
+      "hasSkillMd": true
+    }
+  }
+]

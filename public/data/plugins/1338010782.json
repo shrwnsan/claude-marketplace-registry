@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1338010782-tooljet-app-builder",
+    "name": "tooljet-app-builder",
+    "description": "Build ToolJet apps end-to-end via governed MCP tools and an app-builder skill.",
+    "version": "0.8.0",
+    "author": "ToolJet",
+    "repository": "https://github.com/ToolJet/tooljet-mcp",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1338010782",
+      "marketplaceName": "tooljet-mcp",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

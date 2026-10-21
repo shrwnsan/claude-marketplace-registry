@@ -138,6 +138,23 @@
     }
   },
   {
+    "id": "1138027710-rsdoctor-v2-upgrade",
+    "name": "rsdoctor-v2-upgrade",
+    "description": "name: rsdoctor-v2-upgrade",
+    "version": "1.0.0",
+    "author": "RstackJS",
+    "repository": "https://github.com/rstackjs/agent-skills",
+    "manifestPath": "skills/rsdoctor-v2-upgrade",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1138027710",
+      "marketplaceName": "agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1138027710-rslib-best-practices",
     "name": "rslib-best-practices",
     "description": "name: rslib-best-practices",

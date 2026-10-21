@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1411674028-jev-router",
+    "name": "jev-router",
+    "description": "Asks TypeSafe Jev before each task which Claude model and effort fit best, then runs the turn on it",
+    "version": "",
+    "author": "dominicrico",
+    "repository": "https://github.com/dominicrico/jev-router",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1411674028",
+      "marketplaceName": "jev-router",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

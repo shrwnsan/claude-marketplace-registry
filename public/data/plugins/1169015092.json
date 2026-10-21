@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1169015092-claude-memory-3layer",
+    "name": "claude-memory-3layer",
+    "description": "A cross-session memory system that automatically extracts, stores, and loads knowledge across Claude Code sessions.",
+    "version": "1.0.0",
+    "author": "KimYx0207",
+    "repository": "https://github.com/KimYx0207/claude-memory-3layer",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1169015092",
+      "marketplaceName": "claude-memory-3layer",
+      "hasSkillMd": true
+    }
+  }
+]

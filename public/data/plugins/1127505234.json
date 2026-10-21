@@ -3,7 +3,7 @@
     "id": "1127505234-workflows",
     "name": "workflows",
     "description": "One loop — work — for code, data, writing and workshop presentations: an approved plan as the run's only authority, delegated implementation, independent verification against computed gates, and human review",
-    "version": "6.38.1",
+    "version": "6.56.0",
     "author": "edwinhu",
     "repository": "https://github.com/edwinhu/workflows",
     "manifestPath": "./",
@@ -16,6 +16,23 @@
       "skills": [],
       "strict": false,
       "modsCount": 0
+    }
+  },
+  {
+    "id": "1127505234-afk",
+    "name": "afk",
+    "description": "name: afk",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/afk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
     }
   },
   {
@@ -349,6 +366,23 @@
     "author": "edwinhu",
     "repository": "https://github.com/edwinhu/workflows",
     "manifestPath": "skills/docx-typst",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-ds-rules",
+    "name": "ds-rules",
+    "description": "name: ds-rules",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/ds-rules",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -818,6 +852,74 @@
     }
   },
   {
+    "id": "1127505234-prose-rules-econ",
+    "name": "prose-rules-econ",
+    "description": "name: prose-rules-econ",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/prose-rules-econ",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-prose-rules-legal",
+    "name": "prose-rules-legal",
+    "description": "name: prose-rules-legal",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/prose-rules-legal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-prose-rules-review",
+    "name": "prose-rules-review",
+    "description": "name: prose-rules-review",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/prose-rules-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-prose-rules",
+    "name": "prose-rules",
+    "description": "name: prose-rules",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/prose-rules",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1127505234-readwise-chat",
     "name": "readwise-chat",
     "description": "name: readwise-chat",
@@ -893,6 +995,23 @@
     "author": "edwinhu",
     "repository": "https://github.com/edwinhu/workflows",
     "manifestPath": "skills/readwise",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1127505234",
+      "marketplaceName": "workflows",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1127505234-replicate-paper",
+    "name": "replicate-paper",
+    "description": "name: replicate-paper",
+    "version": "1.0.0",
+    "author": "edwinhu",
+    "repository": "https://github.com/edwinhu/workflows",
+    "manifestPath": "skills/replicate-paper",
     "isValid": true,
     "errors": [],
     "warnings": [],

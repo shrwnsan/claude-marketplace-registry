@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1315293781-agent-usage-guard",
+    "name": "agent-usage-guard",
+    "description": "A Claude Code mod that holds subagent fan-out, heavy-context prompts and retry loops before they spend your usage window. It reads your plan's usage, counts agents across every session, and asks in Claude Code's own dialog.",
+    "version": "",
+    "author": "rbartoli",
+    "repository": "https://github.com/rbartoli/agent-usage-guard",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1315293781",
+      "marketplaceName": "agent-usage-guard",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

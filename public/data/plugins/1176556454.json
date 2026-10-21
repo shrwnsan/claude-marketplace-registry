@@ -1,0 +1,123 @@
+[
+  {
+    "id": "1176556454-context-optimizer",
+    "name": "context-optimizer",
+    "description": "See what Claude costs you and spend less of it. In chat: hand a long chat over to a new one, digest long documents, set up Projects, check tokens, sharpen prompts. In Claude Code: a live line with context, cost, plan limits and the cache countdown; Haiku 5.5 subagents for reading and test runs; /cco audit of your own transcripts. Local, no telemetry.",
+    "version": "5.0.2",
+    "author": "egorfedorov",
+    "repository": "https://github.com/egorfedorov/claude-context-optimizer",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176556454",
+      "marketplaceName": "claude-context-optimizer",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1176556454-cco",
+    "name": "cco",
+    "description": "name: cco",
+    "version": "1.0.0",
+    "author": "egorfedorov",
+    "repository": "https://github.com/egorfedorov/claude-context-optimizer",
+    "manifestPath": "skills/cco",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176556454",
+      "marketplaceName": "claude-context-optimizer",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176556454-doc-digest",
+    "name": "doc-digest",
+    "description": "name: doc-digest",
+    "version": "1.0.0",
+    "author": "egorfedorov",
+    "repository": "https://github.com/egorfedorov/claude-context-optimizer",
+    "manifestPath": "skills/doc-digest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176556454",
+      "marketplaceName": "claude-context-optimizer",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176556454-fresh-start",
+    "name": "fresh-start",
+    "description": "name: fresh-start",
+    "version": "1.0.0",
+    "author": "egorfedorov",
+    "repository": "https://github.com/egorfedorov/claude-context-optimizer",
+    "manifestPath": "skills/fresh-start",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176556454",
+      "marketplaceName": "claude-context-optimizer",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176556454-project-context",
+    "name": "project-context",
+    "description": "name: project-context",
+    "version": "1.0.0",
+    "author": "egorfedorov",
+    "repository": "https://github.com/egorfedorov/claude-context-optimizer",
+    "manifestPath": "skills/project-context",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176556454",
+      "marketplaceName": "claude-context-optimizer",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176556454-sharpen-prompt",
+    "name": "sharpen-prompt",
+    "description": "name: sharpen-prompt",
+    "version": "1.0.0",
+    "author": "egorfedorov",
+    "repository": "https://github.com/egorfedorov/claude-context-optimizer",
+    "manifestPath": "skills/sharpen-prompt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176556454",
+      "marketplaceName": "claude-context-optimizer",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176556454-token-check",
+    "name": "token-check",
+    "description": "name: token-check",
+    "version": "1.0.0",
+    "author": "egorfedorov",
+    "repository": "https://github.com/egorfedorov/claude-context-optimizer",
+    "manifestPath": "skills/token-check",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176556454",
+      "marketplaceName": "claude-context-optimizer",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "1148789379-java-dev",
+    "name": "java-dev",
+    "description": "A collection of agents, skills, hooks, commands, and rules for AI Agentic development workflow",
+    "version": "1.0.0",
+    "author": "K Siva Prasad Reddy",
+    "repository": "https://github.com/sivaprasadreddy/sivalabs-agent-skills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148789379",
+      "marketplaceName": "sivalabs-agent-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1148789379-apply-renovate-prs",
+    "name": "apply-renovate-prs",
+    "description": "name: apply-renovate-prs",
+    "version": "1.0.0",
+    "author": "K Siva Prasad Reddy",
+    "repository": "https://github.com/sivaprasadreddy/sivalabs-agent-skills",
+    "manifestPath": "skills/apply-renovate-prs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148789379",
+      "marketplaceName": "sivalabs-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1148789379-java-code-review",
+    "name": "java-code-review",
+    "description": "name: java-code-review",
+    "version": "1.0.0",
+    "author": "K Siva Prasad Reddy",
+    "repository": "https://github.com/sivaprasadreddy/sivalabs-agent-skills",
+    "manifestPath": "skills/java-code-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148789379",
+      "marketplaceName": "sivalabs-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1148789379-jspecify",
+    "name": "jspecify",
+    "description": "name: jspecify-skill",
+    "version": "1.0.0",
+    "author": "K Siva Prasad Reddy",
+    "repository": "https://github.com/sivaprasadreddy/sivalabs-agent-skills",
+    "manifestPath": "skills/jspecify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148789379",
+      "marketplaceName": "sivalabs-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1148789379-pair-programming",
+    "name": "pair-programming",
+    "description": "name: Pair Programming",
+    "version": "1.0.0",
+    "author": "K Siva Prasad Reddy",
+    "repository": "https://github.com/sivaprasadreddy/sivalabs-agent-skills",
+    "manifestPath": "skills/pair-programming",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148789379",
+      "marketplaceName": "sivalabs-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1148789379-progen",
+    "name": "progen",
+    "description": "name: progen",
+    "version": "1.0.0",
+    "author": "K Siva Prasad Reddy",
+    "repository": "https://github.com/sivaprasadreddy/sivalabs-agent-skills",
+    "manifestPath": "skills/progen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148789379",
+      "marketplaceName": "sivalabs-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1148789379-spring-boot",
+    "name": "spring-boot",
+    "description": "name: spring-boot-skill",
+    "version": "1.0.0",
+    "author": "K Siva Prasad Reddy",
+    "repository": "https://github.com/sivaprasadreddy/sivalabs-agent-skills",
+    "manifestPath": "skills/spring-boot",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148789379",
+      "marketplaceName": "sivalabs-agent-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1148789379-spring-modulith-verifier",
+    "name": "spring-modulith-verifier",
+    "description": "name: spring-modulith-verifier",
+    "version": "1.0.0",
+    "author": "K Siva Prasad Reddy",
+    "repository": "https://github.com/sivaprasadreddy/sivalabs-agent-skills",
+    "manifestPath": "skills/spring-modulith-verifier",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1148789379",
+      "marketplaceName": "sivalabs-agent-skills",
+      "hasSkillMd": true
+    }
+  }
+]

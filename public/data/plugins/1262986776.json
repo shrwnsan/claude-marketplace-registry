@@ -1,0 +1,2180 @@
+[
+  {
+    "id": "1262986776-claude-kit",
+    "name": "claude-kit",
+    "description": "Evidence-gated SDLC for Claude Code, installed as configuration (no app code, no Docker): install CLAUDE.md + .claude/ (rules, the profile's agents/skills, hooks, artifact templates) + optional .mcp.json, then run /sdlc to drive spec → review → build → test → security → ship through profile-aware quality gates with an evidence-hashed gate ledger, working memory, and a self-improving learnings loop.",
+    "version": "0.84.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1262986776-accessibility-review",
+    "name": "accessibility-review",
+    "description": "name: accessibility-review",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/accessibility-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-alembic-migrations",
+    "name": "alembic-migrations",
+    "description": "name: alembic-migrations",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/alembic-migrations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-anthropic-vertex-integration",
+    "name": "anthropic-vertex-integration",
+    "description": "name: anthropic-vertex-integration",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/anthropic-vertex-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-api-and-interface-design",
+    "name": "api-and-interface-design",
+    "description": "name: api-and-interface-design",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/api-and-interface-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-api-integration",
+    "name": "api-integration",
+    "description": "name: api-integration",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/api-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-api-pagination-filtering-sorting",
+    "name": "api-pagination-filtering-sorting",
+    "description": "name: api-pagination-filtering-sorting",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/api-pagination-filtering-sorting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-archive-sprint",
+    "name": "archive-sprint",
+    "description": "name: archive-sprint",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/archive-sprint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-async-python-patterns",
+    "name": "async-python-patterns",
+    "description": "name: async-python-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/async-python-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-auth-and-rbac",
+    "name": "auth-and-rbac",
+    "description": "name: auth-and-rbac",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/auth-and-rbac",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-backend-repo-architecture",
+    "name": "backend-repo-architecture",
+    "description": "name: backend-repo-architecture",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/backend-repo-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-backlog",
+    "name": "backlog",
+    "description": "name: backlog",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/backlog",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-browser-testing-with-devtools",
+    "name": "browser-testing-with-devtools",
+    "description": "name: browser-testing-with-devtools",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/browser-testing-with-devtools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-bug-hunt",
+    "name": "bug-hunt",
+    "description": "name: bug-hunt",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/bug-hunt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-ci-cd-and-automation",
+    "name": "ci-cd-and-automation",
+    "description": "name: ci-cd-and-automation",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/ci-cd-and-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-ckit-command-abort",
+    "name": "ckit-command-abort",
+    "description": "name: ckit-command-abort",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/ckit-command-abort",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-ckit-command-init",
+    "name": "ckit-command-init",
+    "description": "name: ckit-command-init",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/ckit-command-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-ckit-command-sdlc",
+    "name": "ckit-command-sdlc",
+    "description": "name: ckit-command-sdlc",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/ckit-command-sdlc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-ckit-command-status",
+    "name": "ckit-command-status",
+    "description": "name: ckit-command-status",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/ckit-command-status",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-code-review-and-quality",
+    "name": "code-review-and-quality",
+    "description": "name: code-review-and-quality",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/code-review-and-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-code-simplification",
+    "name": "code-simplification",
+    "description": "name: code-simplification",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/code-simplification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-component-design",
+    "name": "component-design",
+    "description": "name: component-design",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/component-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-configargparse-yaml-env-layering",
+    "name": "configargparse-yaml-env-layering",
+    "description": "name: configargparse-yaml-env-layering",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/configargparse-yaml-env-layering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-consolidate-learnings",
+    "name": "consolidate-learnings",
+    "description": "name: consolidate-learnings",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/consolidate-learnings",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-containerization-and-deployment",
+    "name": "containerization-and-deployment",
+    "description": "name: containerization-and-deployment",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/containerization-and-deployment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-context-engineering",
+    "name": "context-engineering",
+    "description": "name: context-engineering",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/context-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-cron-and-scheduled-jobs",
+    "name": "cron-and-scheduled-jobs",
+    "description": "name: cron-and-scheduled-jobs",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/cron-and-scheduled-jobs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-data-engineering-bigquery-gcs",
+    "name": "data-engineering-bigquery-gcs",
+    "description": "name: data-engineering-bigquery-gcs",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/data-engineering-bigquery-gcs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-debugging-and-error-recovery",
+    "name": "debugging-and-error-recovery",
+    "description": "name: debugging-and-error-recovery",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/debugging-and-error-recovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-decision",
+    "name": "decision",
+    "description": "name: decision",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/decision",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-dependency-verification",
+    "name": "dependency-verification",
+    "description": "name: dependency-verification",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/dependency-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-deploy",
+    "name": "deploy",
+    "description": "name: deploy",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/deploy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-deprecation-and-migration",
+    "name": "deprecation-and-migration",
+    "description": "name: deprecation-and-migration",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/deprecation-and-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-design-patterns-and-conventions",
+    "name": "design-patterns-and-conventions",
+    "description": "name: design-patterns-and-conventions",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/design-patterns-and-conventions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-design-system-ops",
+    "name": "design-system-ops",
+    "description": "name: design-system-ops",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/design-system-ops",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-distributed-systems-patterns",
+    "name": "distributed-systems-patterns",
+    "description": "name: distributed-systems-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/distributed-systems-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-django-async-patterns",
+    "name": "django-async-patterns",
+    "description": "name: django-async-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/django-async-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-django-migrations",
+    "name": "django-migrations",
+    "description": "name: django-migrations",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/django-migrations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-django-react-integration",
+    "name": "django-react-integration",
+    "description": "name: django-react-integration",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/django-react-integration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-django-rest-framework-packages",
+    "name": "django-rest-framework-packages",
+    "description": "name: django-rest-framework-packages",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/django-rest-framework-packages",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-django-rest-framework-patterns",
+    "name": "django-rest-framework-patterns",
+    "description": "name: django-rest-framework-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/django-rest-framework-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-django-service-patterns",
+    "name": "django-service-patterns",
+    "description": "name: django-service-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/django-service-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-doc-consolidation",
+    "name": "doc-consolidation",
+    "description": "name: doc-consolidation",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/doc-consolidation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-docker-compose",
+    "name": "docker-compose",
+    "description": "name: docker-compose",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/docker-compose",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-docker-shared",
+    "name": "docker-shared",
+    "description": "name: docker-shared",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/docker-shared",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-dockerfile-backend",
+    "name": "dockerfile-backend",
+    "description": "name: dockerfile-backend",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/dockerfile-backend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-dockerfile-frontend",
+    "name": "dockerfile-frontend",
+    "description": "name: dockerfile-frontend",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/dockerfile-frontend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-documentation-and-adrs",
+    "name": "documentation-and-adrs",
+    "description": "name: documentation-and-adrs",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/documentation-and-adrs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-doubt-driven-development",
+    "name": "doubt-driven-development",
+    "description": "name: doubt-driven-development",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/doubt-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-edge-to-service-trust-boundary",
+    "name": "edge-to-service-trust-boundary",
+    "description": "name: edge-to-service-trust-boundary",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/edge-to-service-trust-boundary",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-execute",
+    "name": "execute",
+    "description": "name: execute",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/execute",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-express",
+    "name": "express",
+    "description": "name: express",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/express",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-fastapi-service-patterns",
+    "name": "fastapi-service-patterns",
+    "description": "name: fastapi-service-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/fastapi-service-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-file-export-and-reporting",
+    "name": "file-export-and-reporting",
+    "description": "name: file-export-and-reporting",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/file-export-and-reporting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-frontend-repo-architecture",
+    "name": "frontend-repo-architecture",
+    "description": "name: frontend-repo-architecture",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/frontend-repo-architecture",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-frontend-ui-engineering",
+    "name": "frontend-ui-engineering",
+    "description": "name: frontend-ui-engineering",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/frontend-ui-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-gcp-cloud-run-github-actions",
+    "name": "gcp-cloud-run-github-actions",
+    "description": "name: gcp-cloud-run-github-actions",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/gcp-cloud-run-github-actions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-gcs-file-storage-patterns",
+    "name": "gcs-file-storage-patterns",
+    "description": "name: gcs-file-storage-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/gcs-file-storage-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-git-workflow-and-versioning",
+    "name": "git-workflow-and-versioning",
+    "description": "name: git-workflow-and-versioning",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/git-workflow-and-versioning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-grafana-dashboards-and-alerts",
+    "name": "grafana-dashboards-and-alerts",
+    "description": "name: grafana-dashboards-and-alerts",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/grafana-dashboards-and-alerts",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-graphql-patterns",
+    "name": "graphql-patterns",
+    "description": "name: graphql-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/graphql-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-idea-refine",
+    "name": "idea-refine",
+    "description": "name: idea-refine",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/idea-refine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-incident-postmortem",
+    "name": "incident-postmortem",
+    "description": "name: incident-postmortem",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/incident-postmortem",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-incremental-implementation",
+    "name": "incremental-implementation",
+    "description": "name: incremental-implementation",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/incremental-implementation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-interview-me",
+    "name": "interview-me",
+    "description": "name: interview-me",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/interview-me",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-kafka-config-driven",
+    "name": "kafka-config-driven",
+    "description": "name: kafka-config-driven",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/kafka-config-driven",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-kubectl-operations",
+    "name": "kubectl-operations",
+    "description": "name: kubectl-operations",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/kubectl-operations",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-kubernetes-workload-hardening",
+    "name": "kubernetes-workload-hardening",
+    "description": "name: kubernetes-workload-hardening",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/kubernetes-workload-hardening",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-langfuse-llm-tracing",
+    "name": "langfuse-llm-tracing",
+    "description": "name: langfuse-llm-tracing",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/langfuse-llm-tracing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-library-review",
+    "name": "library-review",
+    "description": "name: library-review",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/library-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-llm-caching-strategies",
+    "name": "llm-caching-strategies",
+    "description": "name: llm-caching-strategies",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/llm-caching-strategies",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-llm-gateway-and-routing",
+    "name": "llm-gateway-and-routing",
+    "description": "name: llm-gateway-and-routing",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/llm-gateway-and-routing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-llm-inference-optimization",
+    "name": "llm-inference-optimization",
+    "description": "name: llm-inference-optimization",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/llm-inference-optimization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-load-testing",
+    "name": "load-testing",
+    "description": "name: load-testing",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/load-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-maker-checker",
+    "name": "maker-checker",
+    "description": "name: maker-checker",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/maker-checker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-manual-test",
+    "name": "manual-test",
+    "description": "name: manual-test",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/manual-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-modernization-and-migration",
+    "name": "modernization-and-migration",
+    "description": "name: modernization-and-migration",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/modernization-and-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-multi-tenancy-patterns",
+    "name": "multi-tenancy-patterns",
+    "description": "name: multi-tenancy-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/multi-tenancy-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-node-express-service",
+    "name": "node-express-service",
+    "description": "name: node-express-service",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/node-express-service",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-node-objection-knex",
+    "name": "node-objection-knex",
+    "description": "name: node-objection-knex",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/node-objection-knex",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-notifications-and-messaging",
+    "name": "notifications-and-messaging",
+    "description": "name: notifications-and-messaging",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/notifications-and-messaging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-object-oriented-design",
+    "name": "object-oriented-design",
+    "description": "name: object-oriented-design",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/object-oriented-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-observability-and-logging",
+    "name": "observability-and-logging",
+    "description": "name: observability-and-logging",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/observability-and-logging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-otel-tracing",
+    "name": "otel-tracing",
+    "description": "name: otel-tracing",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/otel-tracing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-over-engineering-review",
+    "name": "over-engineering-review",
+    "description": "name: over-engineering-review",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/over-engineering-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-pentesterflow-pentest",
+    "name": "pentesterflow-pentest",
+    "description": "name: pentesterflow-pentest",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/pentesterflow-pentest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-performance-optimization",
+    "name": "performance-optimization",
+    "description": "name: performance-optimization",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/performance-optimization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-planning-and-task-breakdown",
+    "name": "planning-and-task-breakdown",
+    "description": "name: planning-and-task-breakdown",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/planning-and-task-breakdown",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-playwright-verification",
+    "name": "playwright-verification",
+    "description": "name: playwright-verification",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/playwright-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-pydantic-schema-patterns",
+    "name": "pydantic-schema-patterns",
+    "description": "name: pydantic-schema-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/pydantic-schema-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-python-dao-and-database",
+    "name": "python-dao-and-database",
+    "description": "name: python-dao-and-database",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/python-dao-and-database",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-radix-tailwind-component-patterns",
+    "name": "radix-tailwind-component-patterns",
+    "description": "name: radix-tailwind-component-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/radix-tailwind-component-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-rag-and-model-tuning",
+    "name": "rag-and-model-tuning",
+    "description": "name: rag-and-model-tuning",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/rag-and-model-tuning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-react-hook-form-zod-patterns",
+    "name": "react-hook-form-zod-patterns",
+    "description": "name: react-hook-form-zod-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/react-hook-form-zod-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-redis-caching-patterns",
+    "name": "redis-caching-patterns",
+    "description": "name: redis-caching-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/redis-caching-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-refresh-docs",
+    "name": "refresh-docs",
+    "description": "name: refresh-docs",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/refresh-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-remember",
+    "name": "remember",
+    "description": "name: remember",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/remember",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-safety-critical-patterns",
+    "name": "safety-critical-patterns",
+    "description": "name: safety-critical-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/safety-critical-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-scope",
+    "name": "scope",
+    "description": "name: scope",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/scope",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-sdlc",
+    "name": "sdlc",
+    "description": "name: sdlc",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/sdlc",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-security-and-hardening",
+    "name": "security-and-hardening",
+    "description": "name: security-and-hardening",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/security-and-hardening",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-security-verification",
+    "name": "security-verification",
+    "description": "name: security-verification",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/security-verification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-shannon-ai-pentest",
+    "name": "shannon-ai-pentest",
+    "description": "name: shannon-ai-pentest",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/shannon-ai-pentest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-shell-review",
+    "name": "shell-review",
+    "description": "name: shell-review",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/shell-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-shipping-and-launch",
+    "name": "shipping-and-launch",
+    "description": "name: shipping-and-launch",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/shipping-and-launch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-simplification-debt",
+    "name": "simplification-debt",
+    "description": "name: simplification-debt",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/simplification-debt",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-smoke-test",
+    "name": "smoke-test",
+    "description": "name: smoke-test",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/smoke-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-source-driven-development",
+    "name": "source-driven-development",
+    "description": "name: source-driven-development",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/source-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-spec-driven-development",
+    "name": "spec-driven-development",
+    "description": "name: spec-driven-development",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/spec-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-sprint",
+    "name": "sprint",
+    "description": "name: sprint",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/sprint",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-strix-ai-pentest",
+    "name": "strix-ai-pentest",
+    "description": "name: strix-ai-pentest",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/strix-ai-pentest",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-system-design-patterns",
+    "name": "system-design-patterns",
+    "description": "name: system-design-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/system-design-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-tanstack-react-query-patterns",
+    "name": "tanstack-react-query-patterns",
+    "description": "name: tanstack-react-query-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/tanstack-react-query-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-task-tracker-sync",
+    "name": "task-tracker-sync",
+    "description": "name: task-tracker-sync",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/task-tracker-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-temporal-config-driven",
+    "name": "temporal-config-driven",
+    "description": "name: temporal-config-driven",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/temporal-config-driven",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-temporal-developer",
+    "name": "temporal-developer",
+    "description": "name: temporal-developer",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/temporal-developer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-test-driven-development",
+    "name": "test-driven-development",
+    "description": "name: test-driven-development",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/test-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-test-plan-review",
+    "name": "test-plan-review",
+    "description": "name: test-plan-review",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/test-plan-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-testing-conventions",
+    "name": "testing-conventions",
+    "description": "name: testing-conventions",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/testing-conventions",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-threat-model",
+    "name": "threat-model",
+    "description": "name: threat-model",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-ticketing-and-traceability",
+    "name": "ticketing-and-traceability",
+    "description": "name: ticketing-and-traceability",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/ticketing-and-traceability",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-triage",
+    "name": "triage",
+    "description": "name: triage",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/triage",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-ui-ux-design",
+    "name": "ui-ux-design",
+    "description": "name: ui-ux-design",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/ui-ux-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-unit-test",
+    "name": "unit-test",
+    "description": "name: unit-test",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/unit-test",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-using-agent-skills",
+    "name": "using-agent-skills",
+    "description": "name: using-agent-skills",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/using-agent-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-vitest-rtl-msw-patterns",
+    "name": "vitest-rtl-msw-patterns",
+    "description": "name: vitest-rtl-msw-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/vitest-rtl-msw-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-zap-vapt-scanning",
+    "name": "zap-vapt-scanning",
+    "description": "name: zap-vapt-scanning",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/zap-vapt-scanning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1262986776-zustand-state-patterns",
+    "name": "zustand-state-patterns",
+    "description": "name: zustand-state-patterns",
+    "version": "1.0.0",
+    "author": "ajyadav013",
+    "repository": "https://github.com/ajyadav013/claude-kit",
+    "manifestPath": "skills/zustand-state-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1262986776",
+      "marketplaceName": "claude-kit",
+      "hasSkillMd": true
+    }
+  }
+]

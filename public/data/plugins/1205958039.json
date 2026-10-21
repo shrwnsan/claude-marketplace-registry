@@ -44,7 +44,7 @@
     "id": "1205958039-commit",
     "name": "commit",
     "description": "Conventional commit plugin — delegates message generation to a Haiku subagent for cost-efficient, format-enforced git commits.",
-    "version": "0.4.2",
+    "version": "0.5.0",
     "author": "mralabs",
     "repository": "https://github.com/mralabs/claude-plugins",
     "manifestPath": "./plugins/commit",
@@ -67,6 +67,44 @@
     "author": "mralabs",
     "repository": "https://github.com/mralabs/claude-plugins",
     "manifestPath": "./plugins/human-voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1205958039",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1205958039-launch-qa",
+    "name": "launch-qa",
+    "description": "Phased, multi-session pre-launch QA for apps with a web UI — flow inventory, coverage map, edge-case seed, hands-on tours, severity-ranked findings, test-first fixes — that collects its own lessons from every run.",
+    "version": "0.2.1",
+    "author": "mralabs",
+    "repository": "https://github.com/mralabs/claude-plugins",
+    "manifestPath": "./plugins/launch-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1205958039",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1205958039-setup-hygiene",
+    "name": "setup-hygiene",
+    "description": "Audit an agent setup — global, project and its board — for stale, wasteful or contradictory pieces against today's vendor docs; evidence-backed proposals, applied only on the owner's approval, with a decision ledger.",
+    "version": "0.1.2",
+    "author": "mralabs",
+    "repository": "https://github.com/mralabs/claude-plugins",
+    "manifestPath": "./plugins/setup-hygiene",
     "isValid": true,
     "errors": [],
     "warnings": [],

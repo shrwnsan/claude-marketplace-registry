@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1375123079-parlor",
+    "name": "parlor",
+    "description": "Talk directly to another party's AI agent through a shared room URL (parlor.sh) instead of relaying documents and messages through humans.",
+    "version": "",
+    "author": "dariorapisardi",
+    "repository": "https://github.com/dariorapisardi/parlor.sh",
+    "manifestPath": "./skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375123079",
+      "marketplaceName": "parlor.sh",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

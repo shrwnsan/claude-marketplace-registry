@@ -24,6 +24,7 @@ import {
   Clock,
 } from 'lucide-react';
 import { formatRelativeAge, pathBasename } from '@/utils/format';
+import { buildBreadcrumbJsonLd, buildWebPageJsonLd } from '@/utils/seo';
 
 // GitHub Linguist colors for the languages that actually occur in the
 // catalog; anything unmapped falls back to neutral gray.
@@ -82,11 +83,39 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
-  return { props: {} };
+export async function getStaticProps({ params }: { params: { id: string } }) {
+  let summary: { name?: string; description?: string } = {};
+  try {
+    const raw = fs.readFileSync(
+      path.join(process.cwd(), 'public', 'data', 'marketplaces.json'),
+      'utf-8'
+    );
+    const entries = JSON.parse(raw) as Array<{
+      id?: string | number;
+      name?: string;
+      description?: string;
+    }>;
+    const entry = entries.find((e) => String(e.id) === params.id);
+    if (entry) {
+      summary = { name: entry.name, description: entry.description };
+    }
+  } catch {
+    /* no data at build time — page still renders from the client index */
+  }
+  return { props: { id: params.id, ...summary } };
 }
 
-const MarketplaceDetailPage: React.FC = () => {
+interface MarketplaceDetailPageProps {
+  id: string;
+  name?: string;
+  description?: string;
+}
+
+const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
+  id: buildId,
+  name: buildName,
+  description: buildDescription,
+}) => {
   const router = useRouter();
   const { id: rawId } = router.query;
   // Static-export direct loads can carry a .html suffix (e.g. /plugins/x.html)
@@ -140,46 +169,96 @@ const MarketplaceDetailPage: React.FC = () => {
   const visibleSkills = showAllSkills ? skillStats : skillStats.slice(0, skillsCap);
   const pluginsWithoutSkills = marketplacePlugins.filter((p) => !(p.skills || []).length).length;
 
+  // SEO surface — build-time truth first, the live record wins once loaded.
+  // Rendered in EVERY return path: the static export bakes the prerender-time
+  // head, and prerender sees the loading state.
+  const seoId = id || buildId;
+  const seoName = marketplace?.name || buildName || 'Claude Code Marketplace';
+  const seoDescription =
+    (marketplace?.description || buildDescription || '').slice(0, 155) ||
+    `${seoName} — a Claude Code marketplace discovered by the Claude Marketplace Registry.`;
+  const pageHead = (
+    <Head>
+      <title>{`${seoName} — Claude Code Marketplace`}</title>
+      <meta name='description' content={seoDescription} />
+      <link
+        rel='canonical'
+        href={`https://shrwnsan.github.io/claude-marketplace-registry/marketplaces/${seoId ?? ''}`}
+      />
+      <meta property='og:type' content='website' />
+      <meta
+        property='og:url'
+        content={`https://shrwnsan.github.io/claude-marketplace-registry/marketplaces/${seoId ?? ''}`}
+      />
+      <meta property='og:title' content={`${seoName} — Claude Code Marketplace`} />
+      <meta property='og:description' content={seoDescription} />
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              buildWebPageJsonLd({
+                name: `${seoName} — Claude Code Marketplace`,
+                description: seoDescription,
+                path: `/marketplaces/${seoId ?? ''}`,
+              }),
+              buildBreadcrumbJsonLd([
+                { name: 'Home', path: '/' },
+                { name: 'Marketplaces', path: '/marketplaces' },
+                { name: seoName, path: `/marketplaces/${seoId ?? ''}` },
+              ]),
+            ],
+          }),
+        }}
+      />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
+    </Head>
+  );
+
   if (marketplaceLoading || shardLoading) {
     return (
-      <MainLayout>
-        <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='container-detail py-12'>
-            <LoadingState variant='skeleton' className='max-w-4xl' />
+      <>
+        {pageHead}
+        <MainLayout>
+          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
+            <div className='container-detail py-12'>
+              <LoadingState variant='skeleton' className='max-w-4xl' />
+            </div>
           </div>
-        </div>
-      </MainLayout>
+        </MainLayout>
+      </>
     );
   }
 
   if (!marketplace) {
     return (
-      <MainLayout>
-        <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-          <div className='container-detail py-20 text-center'>
-            <Store className='w-16 h-16 mx-auto text-gray-300 dark:text-gray-600 mb-4' />
-            <h1 className='text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3'>
-              Marketplace not found
-            </h1>
-            <p className='text-gray-600 dark:text-gray-400 mb-8'>
-              This marketplace may no longer be indexed.
-            </p>
-            <Link href='/marketplaces' className='btn btn-primary'>
-              Browse all marketplaces
-            </Link>
+      <>
+        {pageHead}
+        <MainLayout>
+          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
+            <div className='container-detail py-20 text-center'>
+              <Store className='w-16 h-16 mx-auto text-gray-300 dark:text-gray-600 mb-4' />
+              <h1 className='text-2xl font-bold text-gray-900 dark:text-gray-100 mb-3'>
+                Marketplace not found
+              </h1>
+              <p className='text-gray-600 dark:text-gray-400 mb-8'>
+                This marketplace may no longer be indexed.
+              </p>
+              <Link href='/marketplaces' className='btn btn-primary'>
+                Browse all marketplaces
+              </Link>
+            </div>
           </div>
-        </div>
-      </MainLayout>
+        </MainLayout>
+      </>
     );
   }
 
   return (
     <>
-      <Head>
-        <title>{marketplace.name} - Claude Marketplace Registry</title>
-        <meta name='description' content={marketplace.description || ''} />
-        <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
-      </Head>
+      {pageHead}
 
       <MainLayout>
         <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>

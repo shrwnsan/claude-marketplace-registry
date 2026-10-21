@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1395027137-git-analyze",
+    "name": "git-analyze",
+    "description": "name: git-analyze",
+    "version": "1.0.0",
+    "author": "UlyssesLeoLee",
+    "repository": "https://github.com/UlyssesLeoLee/MAGOS",
+    "manifestPath": "skills/git-analyze",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395027137",
+      "marketplaceName": "MAGOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1395027137-git-cleanup",
+    "name": "git-cleanup",
+    "description": "name: git-cleanup",
+    "version": "1.0.0",
+    "author": "UlyssesLeoLee",
+    "repository": "https://github.com/UlyssesLeoLee/MAGOS",
+    "manifestPath": "skills/git-cleanup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395027137",
+      "marketplaceName": "MAGOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1395027137-git-converge",
+    "name": "git-converge",
+    "description": "name: git-converge",
+    "version": "1.0.0",
+    "author": "UlyssesLeoLee",
+    "repository": "https://github.com/UlyssesLeoLee/MAGOS",
+    "manifestPath": "skills/git-converge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395027137",
+      "marketplaceName": "MAGOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1395027137-git-integrate",
+    "name": "git-integrate",
+    "description": "name: git-integrate",
+    "version": "1.0.0",
+    "author": "UlyssesLeoLee",
+    "repository": "https://github.com/UlyssesLeoLee/MAGOS",
+    "manifestPath": "skills/git-integrate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395027137",
+      "marketplaceName": "MAGOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1395027137-git-recommend",
+    "name": "git-recommend",
+    "description": "name: git-recommend",
+    "version": "1.0.0",
+    "author": "UlyssesLeoLee",
+    "repository": "https://github.com/UlyssesLeoLee/MAGOS",
+    "manifestPath": "skills/git-recommend",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395027137",
+      "marketplaceName": "MAGOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1395027137-git-recon",
+    "name": "git-recon",
+    "description": "name: git-recon",
+    "version": "1.0.0",
+    "author": "UlyssesLeoLee",
+    "repository": "https://github.com/UlyssesLeoLee/MAGOS",
+    "manifestPath": "skills/git-recon",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395027137",
+      "marketplaceName": "MAGOS",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1395027137-magos",
+    "name": "MAGOS",
+    "description": "name: multi-agent-git-orchestrator",
+    "version": "1.0.0",
+    "author": "UlyssesLeoLee",
+    "repository": "https://github.com/UlyssesLeoLee/MAGOS",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395027137",
+      "marketplaceName": "MAGOS",
+      "hasSkillMd": true
+    }
+  }
+]

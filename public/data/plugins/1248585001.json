@@ -1,0 +1,140 @@
+[
+  {
+    "id": "1248585001-super-board",
+    "name": "super-board",
+    "description": "Autonomous GitHub Project board runner: super-board, super-build, super-qa, super-review, super-collect, visual, git-sync, ui-refine-loop. After install, run /super-board onboard to add the guard hooks, .claude/bin scripts and workflows a plugin cannot ship.",
+    "version": "",
+    "author": "EricTechPro",
+    "repository": "https://github.com/EricTechPro/super-board",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248585001",
+      "marketplaceName": "super-board",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1248585001-git-sync",
+    "name": "git-sync",
+    "description": "name: git-sync",
+    "version": "1.0.0",
+    "author": "EricTechPro",
+    "repository": "https://github.com/EricTechPro/super-board",
+    "manifestPath": "skills/git-sync",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248585001",
+      "marketplaceName": "super-board",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248585001-super-build",
+    "name": "super-build",
+    "description": "name: super-build",
+    "version": "1.0.0",
+    "author": "EricTechPro",
+    "repository": "https://github.com/EricTechPro/super-board",
+    "manifestPath": "skills/super-build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248585001",
+      "marketplaceName": "super-board",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248585001-super-collect",
+    "name": "super-collect",
+    "description": "name: super-collect",
+    "version": "1.0.0",
+    "author": "EricTechPro",
+    "repository": "https://github.com/EricTechPro/super-board",
+    "manifestPath": "skills/super-collect",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248585001",
+      "marketplaceName": "super-board",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248585001-super-qa",
+    "name": "super-qa",
+    "description": "name: super-qa",
+    "version": "1.0.0",
+    "author": "EricTechPro",
+    "repository": "https://github.com/EricTechPro/super-board",
+    "manifestPath": "skills/super-qa",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248585001",
+      "marketplaceName": "super-board",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248585001-super-review",
+    "name": "super-review",
+    "description": "name: super-review",
+    "version": "1.0.0",
+    "author": "EricTechPro",
+    "repository": "https://github.com/EricTechPro/super-board",
+    "manifestPath": "skills/super-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248585001",
+      "marketplaceName": "super-board",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248585001-ui-refine-loop",
+    "name": "ui-refine-loop",
+    "description": "name: ui-refine-loop",
+    "version": "1.0.0",
+    "author": "EricTechPro",
+    "repository": "https://github.com/EricTechPro/super-board",
+    "manifestPath": "skills/ui-refine-loop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248585001",
+      "marketplaceName": "super-board",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1248585001-visual",
+    "name": "visual",
+    "description": "name: visual",
+    "version": "1.0.0",
+    "author": "EricTechPro",
+    "repository": "https://github.com/EricTechPro/super-board",
+    "manifestPath": "skills/visual",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1248585001",
+      "marketplaceName": "super-board",
+      "hasSkillMd": true
+    }
+  }
+]

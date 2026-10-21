@@ -1,0 +1,449 @@
+[
+  {
+    "id": "1233876194-agent-skills",
+    "name": "agent-skills",
+    "description": "覆盖软件开发每个阶段的生产级工程 skills：spec、plan、build、verify、review 和 ship。",
+    "version": "0.6.13",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": {
+      "source": "github",
+      "repo": "vinvcn/addyosmani-agent-skills-zh"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1233876194-api-and-interface-design",
+    "name": "api-and-interface-design",
+    "description": "name: api-and-interface-design",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/api-and-interface-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-browser-testing-with-devtools",
+    "name": "browser-testing-with-devtools",
+    "description": "name: browser-testing-with-devtools",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/browser-testing-with-devtools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-ci-cd-and-automation",
+    "name": "ci-cd-and-automation",
+    "description": "name: ci-cd-and-automation",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/ci-cd-and-automation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-code-review-and-quality",
+    "name": "code-review-and-quality",
+    "description": "name: code-review-and-quality",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/code-review-and-quality",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-code-simplification",
+    "name": "code-simplification",
+    "description": "name: code-simplification",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/code-simplification",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-constraint-driven-development",
+    "name": "constraint-driven-development",
+    "description": "name: constraint-driven-development",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/constraint-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-context-engineering",
+    "name": "context-engineering",
+    "description": "name: context-engineering",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/context-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-debugging-and-error-recovery",
+    "name": "debugging-and-error-recovery",
+    "description": "name: debugging-and-error-recovery",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/debugging-and-error-recovery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-deprecation-and-migration",
+    "name": "deprecation-and-migration",
+    "description": "name: deprecation-and-migration",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/deprecation-and-migration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-documentation-and-adrs",
+    "name": "documentation-and-adrs",
+    "description": "name: documentation-and-adrs",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/documentation-and-adrs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-doubt-driven-development",
+    "name": "doubt-driven-development",
+    "description": "name: doubt-driven-development",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/doubt-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-frontend-ui-engineering",
+    "name": "frontend-ui-engineering",
+    "description": "name: frontend-ui-engineering",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/frontend-ui-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-git-workflow-and-versioning",
+    "name": "git-workflow-and-versioning",
+    "description": "name: git-workflow-and-versioning",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/git-workflow-and-versioning",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-idea-refine",
+    "name": "idea-refine",
+    "description": "name: idea-refine",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/idea-refine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-incremental-implementation",
+    "name": "incremental-implementation",
+    "description": "name: incremental-implementation",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/incremental-implementation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-interview-me",
+    "name": "interview-me",
+    "description": "name: interview-me",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/interview-me",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-observability-and-instrumentation",
+    "name": "observability-and-instrumentation",
+    "description": "name: observability-and-instrumentation",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/observability-and-instrumentation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-performance-optimization",
+    "name": "performance-optimization",
+    "description": "name: performance-optimization",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/performance-optimization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-planning-and-task-breakdown",
+    "name": "planning-and-task-breakdown",
+    "description": "name: planning-and-task-breakdown",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/planning-and-task-breakdown",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-security-and-hardening",
+    "name": "security-and-hardening",
+    "description": "name: security-and-hardening",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/security-and-hardening",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-shipping-and-launch",
+    "name": "shipping-and-launch",
+    "description": "name: shipping-and-launch",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/shipping-and-launch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-source-driven-development",
+    "name": "source-driven-development",
+    "description": "name: source-driven-development",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/source-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-spec-driven-development",
+    "name": "spec-driven-development",
+    "description": "name: spec-driven-development",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/spec-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-test-driven-development",
+    "name": "test-driven-development",
+    "description": "name: test-driven-development",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/test-driven-development",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1233876194-using-agent-skills",
+    "name": "using-agent-skills",
+    "description": "name: using-agent-skills",
+    "version": "1.0.0",
+    "author": "vinvcn",
+    "repository": "https://github.com/vinvcn/addyosmani-agent-skills-zh",
+    "manifestPath": "skills/using-agent-skills",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1233876194",
+      "marketplaceName": "addyosmani-agent-skills-zh",
+      "hasSkillMd": true
+    }
+  }
+]

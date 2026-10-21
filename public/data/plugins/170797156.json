@@ -1,0 +1,112 @@
+[
+  {
+    "id": "170797156-data-client",
+    "name": "data-client",
+    "description": "Sets up Data Client, then points your agent at the skills shipped in your installed @data-client packages, so React or Vue apps get the guidance for their version",
+    "version": "",
+    "author": "reactive",
+    "repository": "https://github.com/reactive/data-client",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "170797156",
+      "marketplaceName": "data-client",
+      "skills": [
+        "./.agents/skills/data-client",
+        "./.agents/skills/data-client-setup"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "170797156-core",
+    "name": "core",
+    "description": "Renamed to data-client; kept so existing installs keep updating",
+    "version": "",
+    "author": "reactive",
+    "repository": "https://github.com/reactive/data-client",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "170797156",
+      "marketplaceName": "data-client",
+      "skills": [
+        "./.agents/skills/data-client",
+        "./.agents/skills/data-client-setup"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "170797156-react",
+    "name": "react",
+    "description": "Renamed to data-client; kept so existing installs keep updating",
+    "version": "",
+    "author": "reactive",
+    "repository": "https://github.com/reactive/data-client",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "170797156",
+      "marketplaceName": "data-client",
+      "skills": [
+        "./.agents/skills/data-client",
+        "./.agents/skills/data-client-setup"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "170797156-vue",
+    "name": "vue",
+    "description": "Renamed to data-client; kept so existing installs keep updating",
+    "version": "",
+    "author": "reactive",
+    "repository": "https://github.com/reactive/data-client",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "170797156",
+      "marketplaceName": "data-client",
+      "skills": [
+        "./.agents/skills/data-client",
+        "./.agents/skills/data-client-setup"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "170797156-migrations",
+    "name": "migrations",
+    "description": "Renamed to data-client; kept so existing installs keep updating",
+    "version": "",
+    "author": "reactive",
+    "repository": "https://github.com/reactive/data-client",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "170797156",
+      "marketplaceName": "data-client",
+      "skills": [
+        "./.agents/skills/data-client",
+        "./.agents/skills/data-client-setup"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

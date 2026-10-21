@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1424650737-cswap-cross-device",
+    "name": "cswap-cross-device",
+    "description": "Run, steer, follow, stop and resume Claude Code sessions across cswap accounts and machines (cxd CLI + hooks)",
+    "version": "",
+    "author": "guuslangelaar0",
+    "repository": "https://github.com/guuslangelaar0/cswap-cross-device",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/guuslangelaar0/cswap-cross-device.git",
+      "ref": "v0.1.0",
+      "sha": "c8cc23a052d55f62dee94753debc5cb3d4ab5073"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1424650737",
+      "marketplaceName": "cswap-cross-device",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

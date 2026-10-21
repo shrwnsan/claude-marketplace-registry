@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1158692577-task-observer",
+    "name": "task-observer",
+    "description": "Observes agent work sessions and turns recurring friction, corrections and judgement calls into proposed skill improvements and new skill candidates, with a human review gate.",
+    "version": "",
+    "author": "rebelytics",
+    "repository": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "manifestPath": {
+      "source": "github",
+      "repo": "rebelytics/one-skill-to-rule-them-all"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1158692577",
+      "marketplaceName": "one-skill-to-rule-them-all",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1158692577-one-skill-to-rule-them-all",
+    "name": "one-skill-to-rule-them-all",
+    "description": "name: \"task-observer\"",
+    "version": "1.0.0",
+    "author": "rebelytics",
+    "repository": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1158692577",
+      "marketplaceName": "one-skill-to-rule-them-all",
+      "hasSkillMd": true
+    }
+  }
+]

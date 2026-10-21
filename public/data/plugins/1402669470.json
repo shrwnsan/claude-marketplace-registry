@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1402669470-gsd-status-mod",
+    "name": "gsd-status-mod",
+    "description": "A Claude Code mod for GSD projects: a live pane (roadmap, agent tree with forks, cost and context, work streams, session log, pace and fit forecast, timeline, trends, a markdown reader) plus a status band, a next-action hint and /gsd-status, read from .planning/.",
+    "version": "",
+    "author": "helenkwok",
+    "repository": "https://github.com/helenkwok/gsd-status-mod",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402669470",
+      "marketplaceName": "gsd-status-mod",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402669470-open-links",
+    "name": "open-links",
+    "description": "A Claude Code mod: file paths in Claude's replies become links that open the file (or your editor at the line). macOS, Linux and Windows paths, relative ones resolved against the session folder.",
+    "version": "",
+    "author": "helenkwok",
+    "repository": "https://github.com/helenkwok/gsd-status-mod",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/helenkwok/open-links.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402669470",
+      "marketplaceName": "gsd-status-mod",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1402669470-rustgis-tui",
+    "name": "rustgis-tui",
+    "description": "A Claude Code mod: RustGIS in a pane, the terminal UI rustgis-tui with its layers, panels and real map picture, driven by you with keys and the mouse and by Claude with its screen and send tools, in the same running app. Needs rustgis-tui and rustgis-cli.",
+    "version": "",
+    "author": "helenkwok",
+    "repository": "https://github.com/helenkwok/gsd-status-mod",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/helenkwok/rustgis-tui.git",
+      "path": "claude-mod"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1402669470",
+      "marketplaceName": "gsd-status-mod",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

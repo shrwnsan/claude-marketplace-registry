@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1362455054-kraft",
+    "name": "kraft",
+    "description": "Drive Kraft from an agent session: file work, read the board, act on gates, recover stopped work.",
+    "version": "",
+    "author": "itsOmidKarami",
+    "repository": "https://github.com/itsOmidKarami/kraft",
+    "manifestPath": "./plugins/kraft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1362455054",
+      "marketplaceName": "kraft",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1362455054-kraft-lite",
+    "name": "kraft-lite",
+    "description": "Run a Kraft chain in this session: ordered nodes, human gates, capped fix loops. No orchestrator.",
+    "version": "",
+    "author": "itsOmidKarami",
+    "repository": "https://github.com/itsOmidKarami/kraft",
+    "manifestPath": "./plugins/kraft-lite",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1362455054",
+      "marketplaceName": "kraft",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "id": "1265593992-planwright",
+    "name": "planwright",
+    "description": "Autopilot for spec-driven development. The human signs off and merges; planwright flies the spec. Scales to a multi-spec fleet: an agentic software factory on Claude Code primitives.",
+    "version": "",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1265593992-builder",
+    "name": "builder",
+    "description": "name: builder",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/builder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-drain",
+    "name": "drain",
+    "description": "name: drain",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/drain",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-execute-task",
+    "name": "execute-task",
+    "description": "name: execute-task",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/execute-task",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-offload",
+    "name": "offload",
+    "description": "name: offload",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/offload",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-orchestrate",
+    "name": "orchestrate",
+    "description": "name: orchestrate",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/orchestrate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-polish",
+    "name": "polish",
+    "description": "name: polish",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/polish",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-resume",
+    "name": "resume",
+    "description": "name: resume",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/resume",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-self-review",
+    "name": "self-review",
+    "description": "name: self-review",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/self-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-spec-draft",
+    "name": "spec-draft",
+    "description": "name: spec-draft",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/spec-draft",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-spec-kickoff",
+    "name": "spec-kickoff",
+    "description": "name: spec-kickoff",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/spec-kickoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-spec-walkthrough",
+    "name": "spec-walkthrough",
+    "description": "name: spec-walkthrough",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/spec-walkthrough",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1265593992-tower",
+    "name": "tower",
+    "description": "name: tower",
+    "version": "1.0.0",
+    "author": "inkatze",
+    "repository": "https://github.com/inkatze/planwright",
+    "manifestPath": "skills/tower",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1265593992",
+      "marketplaceName": "planwright",
+      "hasSkillMd": true
+    }
+  }
+]

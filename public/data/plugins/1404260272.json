@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1404260272-m365-governance",
+    "name": "m365-governance",
+    "description": "Ten Microsoft 365 governance skills: Graph permission preflight, Entra ID posture review, Conditional Access gap analysis, privileged access review, guest and external sharing review, licence and service plan audit, Intune baseline check, Teams and groups sprawl, access review pack, Copilot oversharing readiness. Read-only exports, offline evaluation.",
+    "version": "0.3.0",
+    "author": "Muhammad Basit Ali",
+    "repository": "https://github.com/basitalisandhu/m365-governance-skills",
+    "manifestPath": "./plugins/m365-governance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1404260272",
+      "marketplaceName": "m365-governance-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

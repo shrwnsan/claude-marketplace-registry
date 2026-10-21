@@ -23,6 +23,13 @@ const DocsPage: React.FC = () => {
           name='description'
           content='How the Claude Marketplace Registry discovers, validates, and serves the Claude Code plugin ecosystem.'
         />
+        <link rel='canonical' href='https://shrwnsan.github.io/claude-marketplace-registry/docs' />
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:url'
+          content='https://shrwnsan.github.io/claude-marketplace-registry/docs'
+        />
+        <meta property='og:title' content='Documentation - Claude Marketplace Registry' />
         <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
       </Head>
 

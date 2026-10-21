@@ -104,6 +104,23 @@
     }
   },
   {
+    "id": "1296059462-deputy",
+    "name": "deputy",
+    "description": "name: deputy",
+    "version": "1.0.0",
+    "author": "toverux",
+    "repository": "https://github.com/toverux/cantrips",
+    "manifestPath": "skills/deputy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1296059462",
+      "marketplaceName": "cantrips",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1296059462-diagnosing-bugs",
     "name": "diagnosing-bugs",
     "description": "name: diagnosing-bugs",

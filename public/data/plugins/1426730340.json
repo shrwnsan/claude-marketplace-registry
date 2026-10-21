@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1426730340-aurora-lab",
+    "name": "aurora-lab",
+    "description": "Two free research skills: test-readers (fresh-eyes feedback on a draft before you send it) and py-lib (citable Python packages from research code).",
+    "version": "",
+    "author": "the-aurora-lab",
+    "repository": "https://github.com/the-aurora-lab/skills",
+    "manifestPath": ".",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1426730340",
+      "marketplaceName": "skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1426730340-py-lib",
+    "name": "py-lib",
+    "description": "name: py-lib",
+    "version": "1.0.0",
+    "author": "the-aurora-lab",
+    "repository": "https://github.com/the-aurora-lab/skills",
+    "manifestPath": "skills/py-lib",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1426730340",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1426730340-test-readers",
+    "name": "test-readers",
+    "description": "name: test-readers",
+    "version": "1.0.0",
+    "author": "the-aurora-lab",
+    "repository": "https://github.com/the-aurora-lab/skills",
+    "manifestPath": "skills/test-readers",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1426730340",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  }
+]

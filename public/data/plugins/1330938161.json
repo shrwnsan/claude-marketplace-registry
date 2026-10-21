@@ -1,0 +1,310 @@
+[
+  {
+    "id": "1330938161-qadvisor",
+    "name": "qadvisor",
+    "description": "An AI advisory board for Claude built on 17 documented thinking frameworks (Munger, Buffett, Jobs, Sun Tzu, Paul Graham, Karpathy and more): it reframes your question, consults the advisors in parallel, makes them debate disagreements, and hands you a verdict report.",
+    "version": "",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-buffett",
+    "name": "qadvisor-buffett",
+    "description": "name: qadvisor-buffett",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-buffett",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-chen",
+    "name": "qadvisor-chen",
+    "description": "name: qadvisor-chen",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-chen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-christensen",
+    "name": "qadvisor-christensen",
+    "description": "name: qadvisor-christensen",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-christensen",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-drucker",
+    "name": "qadvisor-drucker",
+    "description": "name: qadvisor-drucker",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-drucker",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-eyal",
+    "name": "qadvisor-eyal",
+    "description": "name: qadvisor-eyal",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-eyal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-godin",
+    "name": "qadvisor-godin",
+    "description": "name: qadvisor-godin",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-godin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-hara",
+    "name": "qadvisor-hara",
+    "description": "name: qadvisor-hara",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-hara",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-helmer",
+    "name": "qadvisor-helmer",
+    "description": "name: qadvisor-helmer",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-helmer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-jobs",
+    "name": "qadvisor-jobs",
+    "description": "name: qadvisor-jobs",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-jobs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-kahneman",
+    "name": "qadvisor-kahneman",
+    "description": "name: qadvisor-kahneman",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-kahneman",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-karpathy",
+    "name": "qadvisor-karpathy",
+    "description": "name: qadvisor-karpathy",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-karpathy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-lois",
+    "name": "qadvisor-lois",
+    "description": "name: qadvisor-lois",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-lois",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-miller",
+    "name": "qadvisor-miller",
+    "description": "name: qadvisor-miller",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-miller",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-munger",
+    "name": "qadvisor-munger",
+    "description": "name: qadvisor-munger",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-munger",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-musk",
+    "name": "qadvisor-musk",
+    "description": "name: qadvisor-musk",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-musk",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-pg",
+    "name": "qadvisor-pg",
+    "description": "name: qadvisor-pg",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-pg",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1330938161-qadvisor-sunzi",
+    "name": "qadvisor-sunzi",
+    "description": "name: qadvisor-sunzi",
+    "version": "1.0.0",
+    "author": "wolfqing",
+    "repository": "https://github.com/wolfqing/QadvisorSkills",
+    "manifestPath": "skills/qadvisor-sunzi",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1330938161",
+      "marketplaceName": "QadvisorSkills",
+      "hasSkillMd": true
+    }
+  }
+]

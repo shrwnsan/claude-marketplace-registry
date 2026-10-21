@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1412790470-fresh",
+    "name": "fresh",
+    "description": "Start clean after a merged PR: on the default branch, level with the remote, with the branches and worktrees that already landed gone.",
+    "version": "0.2.0",
+    "author": "Obedience Corp",
+    "repository": "https://github.com/Obedience-Corp/fresh",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1412790470",
+      "marketplaceName": "fresh",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1412790470-fresh-configure",
+    "name": "fresh-configure",
+    "description": "name: fresh-configure",
+    "version": "1.0.0",
+    "author": "Obedience Corp",
+    "repository": "https://github.com/Obedience-Corp/fresh",
+    "manifestPath": "skills/fresh-configure",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1412790470",
+      "marketplaceName": "fresh",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -56,23 +56,6 @@
     }
   },
   {
-    "id": "1149015505-chrome-cdp",
-    "name": "chrome-cdp",
-    "description": "name: chrome-cdp",
-    "version": "1.0.0",
-    "author": "BenjaminG",
-    "repository": "https://github.com/BenjaminG/ai-skills",
-    "manifestPath": "skills/chrome-cdp",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1149015505",
-      "marketplaceName": "ai-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
     "id": "1149015505-code-slop",
     "name": "code-slop",
     "description": "name: code-slop",
@@ -114,6 +97,23 @@
     "author": "BenjaminG",
     "repository": "https://github.com/BenjaminG/ai-skills",
     "manifestPath": "skills/commit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1149015505-create-verification-skill",
+    "name": "create-verification-skill",
+    "description": "name: create-verification-skill",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/create-verification-skill",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -362,6 +362,23 @@
     }
   },
   {
+    "id": "1149015505-maintain-verification-skill",
+    "name": "maintain-verification-skill",
+    "description": "name: maintain-verification-skill",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/maintain-verification-skill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1149015505-orchestrate",
     "name": "orchestrate",
     "description": "name: orchestrate",
@@ -532,6 +549,23 @@
     }
   },
   {
+    "id": "1149015505-pr-shots",
+    "name": "pr-shots",
+    "description": "name: pr-shots",
+    "version": "1.0.0",
+    "author": "BenjaminG",
+    "repository": "https://github.com/BenjaminG/ai-skills",
+    "manifestPath": "skills/pr-shots",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1149015505",
+      "marketplaceName": "ai-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1149015505-product-qa",
     "name": "product-qa",
     "description": "name: product-qa",
@@ -556,23 +590,6 @@
     "author": "BenjaminG",
     "repository": "https://github.com/BenjaminG/ai-skills",
     "manifestPath": "skills/qa-plan",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1149015505",
-      "marketplaceName": "ai-skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1149015505-qa-run",
-    "name": "qa-run",
-    "description": "name: qa-run",
-    "version": "1.0.0",
-    "author": "BenjaminG",
-    "repository": "https://github.com/BenjaminG/ai-skills",
-    "manifestPath": "skills/qa-run",
     "isValid": true,
     "errors": [],
     "warnings": [],

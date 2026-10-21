@@ -2,18 +2,18 @@
   "success": true,
   "data": {
     "overview": {
-      "totalPlugins": 6504,
-      "totalMarketplaces": 1151,
-      "totalDevelopers": 710,
-      "totalStars": 1246883,
-      "totalMods": 0,
-      "marketplacesWithMods": 0,
-      "lastUpdated": "2026-10-07T04:55:41.563Z",
+      "totalPlugins": 7620,
+      "totalMarketplaces": 1688,
+      "totalDevelopers": 839,
+      "totalStars": 1867235,
+      "totalMods": 3,
+      "marketplacesWithMods": 3,
+      "lastUpdated": "2026-10-21T03:57:20.138Z",
       "growthRate": {
-        "plugins": 410.5,
-        "marketplaces": 1051,
-        "developers": 79.3,
-        "stars": 300.2
+        "plugins": 86.1,
+        "marketplaces": 419.4,
+        "developers": 89.4,
+        "stars": 189.4
       }
     },
     "plugins": [
@@ -115,6 +115,76 @@
         "date": "2026-10-07",
         "value": 6504,
         "change": -3
+      },
+      {
+        "date": "2026-10-08",
+        "value": 7555,
+        "change": 1051
+      },
+      {
+        "date": "2026-10-09",
+        "value": 7188,
+        "change": -367
+      },
+      {
+        "date": "2026-10-10",
+        "value": 7178,
+        "change": -10
+      },
+      {
+        "date": "2026-10-11",
+        "value": 7178,
+        "change": 0
+      },
+      {
+        "date": "2026-10-12",
+        "value": 7184,
+        "change": 6
+      },
+      {
+        "date": "2026-10-13",
+        "value": 7252,
+        "change": 68
+      },
+      {
+        "date": "2026-10-14",
+        "value": 7272,
+        "change": 20
+      },
+      {
+        "date": "2026-10-15",
+        "value": 7325,
+        "change": 53
+      },
+      {
+        "date": "2026-10-16",
+        "value": 7397,
+        "change": 72
+      },
+      {
+        "date": "2026-10-17",
+        "value": 7437,
+        "change": 40
+      },
+      {
+        "date": "2026-10-18",
+        "value": 7375,
+        "change": -62
+      },
+      {
+        "date": "2026-10-19",
+        "value": 7368,
+        "change": -7
+      },
+      {
+        "date": "2026-10-20",
+        "value": 7365,
+        "change": -3
+      },
+      {
+        "date": "2026-10-21",
+        "value": 7620,
+        "change": 255
       }
     ],
     "marketplaces": [
@@ -216,6 +286,76 @@
         "date": "2026-10-07",
         "value": 1151,
         "change": 29
+      },
+      {
+        "date": "2026-10-08",
+        "value": 1178,
+        "change": 27
+      },
+      {
+        "date": "2026-10-09",
+        "value": 1213,
+        "change": 35
+      },
+      {
+        "date": "2026-10-10",
+        "value": 1266,
+        "change": 53
+      },
+      {
+        "date": "2026-10-11",
+        "value": 1282,
+        "change": 16
+      },
+      {
+        "date": "2026-10-12",
+        "value": 1324,
+        "change": 42
+      },
+      {
+        "date": "2026-10-13",
+        "value": 1351,
+        "change": 27
+      },
+      {
+        "date": "2026-10-14",
+        "value": 1384,
+        "change": 33
+      },
+      {
+        "date": "2026-10-15",
+        "value": 1435,
+        "change": 51
+      },
+      {
+        "date": "2026-10-16",
+        "value": 1477,
+        "change": 42
+      },
+      {
+        "date": "2026-10-17",
+        "value": 1516,
+        "change": 39
+      },
+      {
+        "date": "2026-10-18",
+        "value": 1563,
+        "change": 47
+      },
+      {
+        "date": "2026-10-19",
+        "value": 1604,
+        "change": 41
+      },
+      {
+        "date": "2026-10-20",
+        "value": 1651,
+        "change": 47
+      },
+      {
+        "date": "2026-10-21",
+        "value": 1688,
+        "change": 37
       }
     ],
     "developers": [
@@ -316,6 +456,76 @@
         "date": "2026-10-07",
         "value": 710,
         "change": 2
+      },
+      {
+        "date": "2026-10-08",
+        "value": 863,
+        "change": 153
+      },
+      {
+        "date": "2026-10-09",
+        "value": 806,
+        "change": -57
+      },
+      {
+        "date": "2026-10-10",
+        "value": 792,
+        "change": -14
+      },
+      {
+        "date": "2026-10-11",
+        "value": 787,
+        "change": -5
+      },
+      {
+        "date": "2026-10-12",
+        "value": 792,
+        "change": 5
+      },
+      {
+        "date": "2026-10-13",
+        "value": 799,
+        "change": 7
+      },
+      {
+        "date": "2026-10-14",
+        "value": 804,
+        "change": 5
+      },
+      {
+        "date": "2026-10-15",
+        "value": 804,
+        "change": 0
+      },
+      {
+        "date": "2026-10-16",
+        "value": 812,
+        "change": 8
+      },
+      {
+        "date": "2026-10-17",
+        "value": 814,
+        "change": 2
+      },
+      {
+        "date": "2026-10-18",
+        "value": 812,
+        "change": -2
+      },
+      {
+        "date": "2026-10-19",
+        "value": 817,
+        "change": 5
+      },
+      {
+        "date": "2026-10-20",
+        "value": 810,
+        "change": -7
+      },
+      {
+        "date": "2026-10-21",
+        "value": 839,
+        "change": 29
       }
     ],
     "stars": [
@@ -417,6 +627,76 @@
         "date": "2026-10-07",
         "value": 1246883,
         "change": 82606
+      },
+      {
+        "date": "2026-10-08",
+        "value": 1334448,
+        "change": 87565
+      },
+      {
+        "date": "2026-10-09",
+        "value": 1338860,
+        "change": 4412
+      },
+      {
+        "date": "2026-10-10",
+        "value": 1353454,
+        "change": 14594
+      },
+      {
+        "date": "2026-10-11",
+        "value": 1371356,
+        "change": 17902
+      },
+      {
+        "date": "2026-10-12",
+        "value": 1424403,
+        "change": 53047
+      },
+      {
+        "date": "2026-10-13",
+        "value": 1673440,
+        "change": 249037
+      },
+      {
+        "date": "2026-10-14",
+        "value": 1709100,
+        "change": 35660
+      },
+      {
+        "date": "2026-10-15",
+        "value": 1769864,
+        "change": 60764
+      },
+      {
+        "date": "2026-10-16",
+        "value": 1801839,
+        "change": 31975
+      },
+      {
+        "date": "2026-10-17",
+        "value": 1828958,
+        "change": 27119
+      },
+      {
+        "date": "2026-10-18",
+        "value": 1835274,
+        "change": 6316
+      },
+      {
+        "date": "2026-10-19",
+        "value": 1845283,
+        "change": 10009
+      },
+      {
+        "date": "2026-10-20",
+        "value": 1857537,
+        "change": 12254
+      },
+      {
+        "date": "2026-10-21",
+        "value": 1867235,
+        "change": 9698
       }
     ],
     "starred": [
@@ -507,6 +787,76 @@
         "date": "2026-10-07",
         "value": 403,
         "change": 11
+      },
+      {
+        "date": "2026-10-08",
+        "value": 412,
+        "change": 9
+      },
+      {
+        "date": "2026-10-09",
+        "value": 423,
+        "change": 11
+      },
+      {
+        "date": "2026-10-10",
+        "value": 442,
+        "change": 19
+      },
+      {
+        "date": "2026-10-11",
+        "value": 450,
+        "change": 8
+      },
+      {
+        "date": "2026-10-12",
+        "value": 460,
+        "change": 10
+      },
+      {
+        "date": "2026-10-13",
+        "value": 476,
+        "change": 16
+      },
+      {
+        "date": "2026-10-14",
+        "value": 484,
+        "change": 8
+      },
+      {
+        "date": "2026-10-15",
+        "value": 494,
+        "change": 10
+      },
+      {
+        "date": "2026-10-16",
+        "value": 507,
+        "change": 13
+      },
+      {
+        "date": "2026-10-17",
+        "value": 520,
+        "change": 13
+      },
+      {
+        "date": "2026-10-18",
+        "value": 525,
+        "change": 5
+      },
+      {
+        "date": "2026-10-19",
+        "value": 533,
+        "change": 8
+      },
+      {
+        "date": "2026-10-20",
+        "value": 543,
+        "change": 10
+      },
+      {
+        "date": "2026-10-21",
+        "value": 554,
+        "change": 11
       }
     ],
     "period": "all",
@@ -515,97 +865,97 @@
       {
         "id": "claude-code",
         "name": "claude-code",
-        "count": 759,
+        "count": 1156,
         "description": "Marketplaces tagged \"claude-code\" (topics overlap)"
       },
       {
         "id": "claude-skills",
         "name": "claude-skills",
-        "count": 524,
+        "count": 798,
         "description": "Marketplaces tagged \"claude-skills\" (topics overlap)"
       },
       {
         "id": "claude",
         "name": "claude",
-        "count": 329,
+        "count": 507,
         "description": "Marketplaces tagged \"claude\" (topics overlap)"
-      },
-      {
-        "id": "ai-agents",
-        "name": "ai-agents",
-        "count": 325,
-        "description": "Marketplaces tagged \"ai-agents\" (topics overlap)"
       },
       {
         "id": "claude-code-plugin",
         "name": "claude-code-plugin",
-        "count": 305,
+        "count": 507,
         "description": "Marketplaces tagged \"claude-code-plugin\" (topics overlap)"
+      },
+      {
+        "id": "ai-agents",
+        "name": "ai-agents",
+        "count": 501,
+        "description": "Marketplaces tagged \"ai-agents\" (topics overlap)"
       },
       {
         "id": "agent-skills",
         "name": "agent-skills",
-        "count": 297,
+        "count": 496,
         "description": "Marketplaces tagged \"agent-skills\" (topics overlap)"
       },
       {
         "id": "claude-plugins",
         "name": "claude-plugins",
-        "count": 278,
+        "count": 367,
         "description": "Marketplaces tagged \"claude-plugins\" (topics overlap)"
       },
       {
         "id": "developer-tools",
         "name": "developer-tools",
-        "count": 222,
+        "count": 360,
         "description": "Marketplaces tagged \"developer-tools\" (topics overlap)"
       },
       {
         "id": "mcp",
         "name": "mcp",
-        "count": 205,
+        "count": 336,
         "description": "Marketplaces tagged \"mcp\" (topics overlap)"
       },
       {
         "id": "codex",
         "name": "codex",
-        "count": 188,
+        "count": 308,
         "description": "Marketplaces tagged \"codex\" (topics overlap)"
       }
     ],
     "insights": [
-      "6504 plugins discovered across 1151 marketplaces",
-      "Most starred: ECC (274,380 stars)",
-      "Most common topic: claude-code (759 marketplaces)",
-      "998 marketplaces updated in the last 30 days",
-      "1058 independent publishers run a single marketplace each"
+      "7620 plugins discovered across 1688 marketplaces",
+      "Most starred: ECC (284,975 stars)",
+      "Most common topic: claude-code (1156 marketplaces)",
+      "1495 marketplaces updated in the last 30 days",
+      "1529 independent publishers run a single marketplace each"
     ],
     "manifestCoverage": {
-      "withManifest": 499,
-      "total": 1151,
-      "rate": 43.4
+      "withManifest": 613,
+      "total": 1688,
+      "rate": 36.3
     },
     "maintenance": {
-      "recentlyUpdated": 998,
-      "recentlyUpdatedRate": 86.7,
-      "staleOver180Days": 22,
-      "medianDaysSinceUpdate": 5
+      "recentlyUpdated": 1495,
+      "recentlyUpdatedRate": 88.6,
+      "staleOver180Days": 27,
+      "medianDaysSinceUpdate": 10
     },
     "pluginSkills": {
-      "withSkills": 4252,
-      "total": 6504,
-      "rate": 65.4
+      "withSkills": 5064,
+      "total": 7620,
+      "rate": 66.5
     },
-    "avgStarsPerMarketplace": 1083,
+    "avgStarsPerMarketplace": 1106,
     "traction": {
-      "count": 403,
-      "total": 1151,
-      "share": 35,
+      "count": 554,
+      "total": 1688,
+      "share": 32.8,
       "threshold": 10
     }
   },
   "meta": {
-    "timestamp": "2026-10-07T04:55:41.563Z",
+    "timestamp": "2026-10-21T03:57:20.138Z",
     "requestId": "static-build",
     "responseTime": 0
   }

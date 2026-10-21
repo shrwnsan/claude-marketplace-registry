@@ -1,0 +1,135 @@
+[
+  {
+    "id": "1201771322-father-time",
+    "name": "father-time",
+    "description": "Time-aware agent for Claude Code. Peak hour warnings, session tracking, daily briefings, rate limit forecasting, focus timers, and activity pattern learning.",
+    "version": "",
+    "author": "AfterRealm",
+    "repository": "https://github.com/AfterRealm/marketplace",
+    "manifestPath": "./plugins/father-time",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201771322",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1201771322-blunt-cake",
+    "name": "blunt-cake",
+    "description": "Brutal but brilliant code reviewer with the personality of a celebrity chef. 8 modes, 6 personalities, auto-fix, shareable roast cards. Real findings with real jokes.",
+    "version": "",
+    "author": "AfterRealm",
+    "repository": "https://github.com/AfterRealm/marketplace",
+    "manifestPath": "./plugins/blunt-cake",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201771322",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1201771322-curb-cut",
+    "name": "curb-cut",
+    "description": "Professional web accessibility auditor. Scans HTML, JSX, Vue, and Svelte for WCAG 2.2 Level AA violations with plain-English findings and concrete fixes.",
+    "version": "",
+    "author": "AfterRealm",
+    "repository": "https://github.com/AfterRealm/marketplace",
+    "manifestPath": "./plugins/curb-cut",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201771322",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1201771322-level-up",
+    "name": "level-up",
+    "description": "Agent management skill for Claude Code. List, inspect, promote, and merge agents across projects and global scope. Stats show real per-agent token costs from your session history, with optimization audits to trim turns and cache growth.",
+    "version": "",
+    "author": "AfterRealm",
+    "repository": "https://github.com/AfterRealm/marketplace",
+    "manifestPath": "./plugins/level-up",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201771322",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1201771322-session-continuity",
+    "name": "session-continuity",
+    "description": "Detects prior session history for any project at startup and offers to name or rename the session for you automatically.",
+    "version": "",
+    "author": "AfterRealm",
+    "repository": "https://github.com/AfterRealm/marketplace",
+    "manifestPath": "./plugins/session-continuity",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201771322",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1201771322-open-voice",
+    "name": "open-voice",
+    "description": "Multilingual voice input for anywhere you type into Claude — Desktop App, Code Desktop, or regular Code terminal. Hold a hotkey, speak any of 99 Whisper languages, transcript pastes into whatever Claude window has focus. Fills the gap while official voice mode is English-only. Lightweight plugin — no MCP, no TTS. (Windows-tested; macOS/Linux feedback welcome.)",
+    "version": "",
+    "author": "AfterRealm",
+    "repository": "https://github.com/AfterRealm/marketplace",
+    "manifestPath": "./plugins/open-voice",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201771322",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1201771322-ue5-blueprints",
+    "name": "ue5-blueprints",
+    "description": "UE5 Blueprint analysis, debugging, and teaching tools. Export Blueprints from a running UE5 editor, detect 25+ anti-patterns, and get beginner-friendly fix instructions.",
+    "version": "",
+    "author": "AfterRealm",
+    "repository": "https://github.com/AfterRealm/marketplace",
+    "manifestPath": "./plugins/ue5-blueprints",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1201771322",
+      "marketplaceName": "marketplace",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

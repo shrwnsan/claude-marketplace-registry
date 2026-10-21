@@ -240,5 +240,27 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1309248958-warden",
+    "name": "warden",
+    "description": "Vaultwarden/Bitwarden in your agent harness — credential reads via rbw, org member admin via bw",
+    "version": "",
+    "author": "rodrigopg",
+    "repository": "https://github.com/rodrigopg/claude-plugins",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/rodrigopg/warden-plugin.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1309248958",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]

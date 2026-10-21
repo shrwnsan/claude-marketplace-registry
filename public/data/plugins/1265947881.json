@@ -3,7 +3,7 @@
     "id": "1265947881-reticle",
     "name": "reticle",
     "description": "Verify a running web app from the inside. Installs the Reticle skill and registers the Reticle MCP server.",
-    "version": "3.5.0",
+    "version": "3.6.0",
     "author": "reticlehq",
     "repository": "https://github.com/reticlehq/reticle",
     "manifestPath": "./plugin",
@@ -14,7 +14,8 @@
       "marketplaceId": "1265947881",
       "marketplaceName": "reticle",
       "skills": [],
-      "strict": false
+      "strict": false,
+      "modsCount": 0
     }
   },
   {

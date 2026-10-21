@@ -91,6 +91,9 @@ const HomePage: React.FC = () => {
           name='description'
           content='Discover and explore Claude Code plugins and marketplaces from across GitHub. Find the best tools to enhance your development workflow.'
         />
+        {/* Homepage canonical: _document.tsx no longer declares a document-level
+            one (it marked every deep page a duplicate of `/`). */}
+        <link rel='canonical' href='https://shrwnsan.github.io/claude-marketplace-registry/' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`} />
       </Head>

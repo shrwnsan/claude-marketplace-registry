@@ -3,7 +3,7 @@
     "id": "1192096446-planr",
     "name": "planr",
     "description": "Close the loop from intent to delivery. Plan, design, build, review, and operate from durable context in your repository.",
-    "version": "2.2641.2",
+    "version": "3.1.1",
     "author": "openplanr",
     "repository": "https://github.com/openplanr/OpenPlanr",
     "manifestPath": "./dist/plugins/claude/openplanr",
@@ -111,6 +111,23 @@
     "author": "openplanr",
     "repository": "https://github.com/openplanr/OpenPlanr",
     "manifestPath": "skills/planr-cmo-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-connect",
+    "name": "planr-connect",
+    "description": "name: planr-connect",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-connect",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -400,6 +417,23 @@
     "author": "openplanr",
     "repository": "https://github.com/openplanr/OpenPlanr",
     "manifestPath": "skills/planr-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1192096446",
+      "marketplaceName": "OpenPlanr",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1192096446-planr-share",
+    "name": "planr-share",
+    "description": "name: planr-share",
+    "version": "1.0.0",
+    "author": "openplanr",
+    "repository": "https://github.com/openplanr/OpenPlanr",
+    "manifestPath": "skills/planr-share",
     "isValid": true,
     "errors": [],
     "warnings": [],

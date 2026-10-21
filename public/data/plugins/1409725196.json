@@ -1,0 +1,293 @@
+[
+  {
+    "id": "1409725196-ios-app-lifecycle",
+    "name": "ios-app-lifecycle",
+    "description": "Claude Code, Claude Cowork & Codex plugin for iOS development: 16 agent skills + XcodeBuildMCP, Xcode MCP, RevenueCat & Mobbin MCP servers. Plan, build SwiftUI, debug on Simulator, test, profile, add subscriptions, ship to TestFlight & the App Store, ASO, and post-launch.",
+    "version": "0.2.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1409725196-app-store-listing",
+    "name": "app-store-listing",
+    "description": "name: app-store-listing",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/app-store-listing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-app-intents",
+    "name": "ios-app-intents",
+    "description": "name: ios-app-intents",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-app-intents",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-crash-monitoring-sentry",
+    "name": "ios-crash-monitoring-sentry",
+    "description": "name: \"ios-crash-monitoring-sentry\"",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-crash-monitoring-sentry",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-debugger-agent",
+    "name": "ios-debugger-agent",
+    "description": "name: ios-debugger-agent",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-debugger-agent",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-ettrace-performance",
+    "name": "ios-ettrace-performance",
+    "description": "name: ios-ettrace-performance",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-ettrace-performance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-lifecycle",
+    "name": "ios-lifecycle",
+    "description": "name: ios-lifecycle",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-lifecycle",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-memgraph-leaks",
+    "name": "ios-memgraph-leaks",
+    "description": "name: ios-memgraph-leaks",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-memgraph-leaks",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-monetization",
+    "name": "ios-monetization",
+    "description": "name: ios-monetization",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-monetization",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-post-launch",
+    "name": "ios-post-launch",
+    "description": "name: ios-post-launch",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-post-launch",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-project-setup",
+    "name": "ios-project-setup",
+    "description": "name: ios-project-setup",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-project-setup",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-release",
+    "name": "ios-release",
+    "description": "name: ios-release",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-ios-testing",
+    "name": "ios-testing",
+    "description": "name: ios-testing",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/ios-testing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-swiftui-liquid-glass",
+    "name": "swiftui-liquid-glass",
+    "description": "name: swiftui-liquid-glass",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/swiftui-liquid-glass",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-swiftui-performance-audit",
+    "name": "swiftui-performance-audit",
+    "description": "name: swiftui-performance-audit",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/swiftui-performance-audit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-swiftui-ui-patterns",
+    "name": "swiftui-ui-patterns",
+    "description": "name: swiftui-ui-patterns",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/swiftui-ui-patterns",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1409725196-swiftui-view-refactor",
+    "name": "swiftui-view-refactor",
+    "description": "name: swiftui-view-refactor",
+    "version": "1.0.0",
+    "author": "tarunyadav1",
+    "repository": "https://github.com/tarunyadav1/ios-app-lifecycle",
+    "manifestPath": "skills/swiftui-view-refactor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1409725196",
+      "marketplaceName": "ios-app-lifecycle",
+      "hasSkillMd": true
+    }
+  }
+]

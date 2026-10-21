@@ -1,0 +1,357 @@
+[
+  {
+    "id": "1298273456-plumbline",
+    "name": "plumbline",
+    "description": "Proportional, evidence-driven engineering workflows for Claude Code with optional continuity and manual Checkpoint Relay boundaries.",
+    "version": "",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "skills": [
+        "./skills/plumbline",
+        "./skills/maintainable-code",
+        "./skills/plumbline-init",
+        "./skills/plumbline-shape",
+        "./skills/plumbline-spec",
+        "./skills/plumbline-plan",
+        "./skills/plumbline-execute",
+        "./skills/plumbline-diagnose",
+        "./skills/plumbline-review",
+        "./skills/plumbline-closeout",
+        "./skills/plumbline-agent-team",
+        "./skills/plumbline-offboard"
+      ],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1298273456-maintainable-code",
+    "name": "maintainable-code",
+    "description": "name: maintainable-code",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/maintainable-code",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-agent-team",
+    "name": "plumbline-agent-team",
+    "description": "name: plumbline-agent-team",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-agent-team",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-closeout-engine",
+    "name": "plumbline-closeout-engine",
+    "description": "name: plumbline-closeout-engine",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-closeout-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-closeout",
+    "name": "plumbline-closeout",
+    "description": "name: plumbline-closeout",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-closeout",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-diagnose-engine",
+    "name": "plumbline-diagnose-engine",
+    "description": "name: plumbline-diagnose-engine",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-diagnose-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-diagnose",
+    "name": "plumbline-diagnose",
+    "description": "name: plumbline-diagnose",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-diagnose",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-execute-engine",
+    "name": "plumbline-execute-engine",
+    "description": "name: plumbline-execute-engine",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-execute-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-execute",
+    "name": "plumbline-execute",
+    "description": "name: plumbline-execute",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-execute",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-init",
+    "name": "plumbline-init",
+    "description": "name: plumbline-init",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-init",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-offboard",
+    "name": "plumbline-offboard",
+    "description": "name: plumbline-offboard",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-offboard",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-plan-adoption-engine",
+    "name": "plumbline-plan-adoption-engine",
+    "description": "name: plumbline-plan-adoption-engine",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-plan-adoption-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-plan-engine",
+    "name": "plumbline-plan-engine",
+    "description": "name: plumbline-plan-engine",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-plan-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-plan",
+    "name": "plumbline-plan",
+    "description": "name: plumbline-plan",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-plan",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-review-engine",
+    "name": "plumbline-review-engine",
+    "description": "name: plumbline-review-engine",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-review-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-review",
+    "name": "plumbline-review",
+    "description": "name: plumbline-review",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-shape-engine",
+    "name": "plumbline-shape-engine",
+    "description": "name: plumbline-shape-engine",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-shape-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-shape",
+    "name": "plumbline-shape",
+    "description": "name: plumbline-shape",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-shape",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-spec-engine",
+    "name": "plumbline-spec-engine",
+    "description": "name: plumbline-spec-engine",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-spec-engine",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298273456-plumbline-spec",
+    "name": "plumbline-spec",
+    "description": "name: plumbline-spec",
+    "version": "1.0.0",
+    "author": "nickyfactz",
+    "repository": "https://github.com/nickyfactz/plumbline",
+    "manifestPath": "skills/plumbline-spec",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298273456",
+      "marketplaceName": "plumbline",
+      "hasSkillMd": true
+    }
+  }
+]

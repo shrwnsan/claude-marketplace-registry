@@ -1,0 +1,126 @@
+[
+  {
+    "id": "1202295583-claude-carbon",
+    "name": "claude-carbon",
+    "description": "Track the carbon footprint of your Claude Code sessions, in the terminal and the Claude desktop app",
+    "version": "1.16.0",
+    "author": "Gaetan Wittebolle",
+    "repository": "https://github.com/gwittebolle/claude-carbon",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/gwittebolle/claude-carbon.git"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202295583",
+      "marketplaceName": "claude-carbon",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1202295583-carbon-badge",
+    "name": "carbon-badge",
+    "description": "name: carbon-badge",
+    "version": "1.0.0",
+    "author": "Gaetan Wittebolle",
+    "repository": "https://github.com/gwittebolle/claude-carbon",
+    "manifestPath": "skills/carbon-badge",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202295583",
+      "marketplaceName": "claude-carbon",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202295583-carbon-card",
+    "name": "carbon-card",
+    "description": "name: carbon-card",
+    "version": "1.0.0",
+    "author": "Gaetan Wittebolle",
+    "repository": "https://github.com/gwittebolle/claude-carbon",
+    "manifestPath": "skills/carbon-card",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202295583",
+      "marketplaceName": "claude-carbon",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202295583-carbon-panel",
+    "name": "carbon-panel",
+    "description": "name: carbon-panel",
+    "version": "1.0.0",
+    "author": "Gaetan Wittebolle",
+    "repository": "https://github.com/gwittebolle/claude-carbon",
+    "manifestPath": "skills/carbon-panel",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202295583",
+      "marketplaceName": "claude-carbon",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202295583-carbon-pr",
+    "name": "carbon-pr",
+    "description": "name: carbon-pr",
+    "version": "1.0.0",
+    "author": "Gaetan Wittebolle",
+    "repository": "https://github.com/gwittebolle/claude-carbon",
+    "manifestPath": "skills/carbon-pr",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202295583",
+      "marketplaceName": "claude-carbon",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202295583-carbon-report",
+    "name": "carbon-report",
+    "description": "name: carbon-report",
+    "version": "1.0.0",
+    "author": "Gaetan Wittebolle",
+    "repository": "https://github.com/gwittebolle/claude-carbon",
+    "manifestPath": "skills/carbon-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202295583",
+      "marketplaceName": "claude-carbon",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1202295583-carbon-update",
+    "name": "carbon-update",
+    "description": "name: carbon-update",
+    "version": "1.0.0",
+    "author": "Gaetan Wittebolle",
+    "repository": "https://github.com/gwittebolle/claude-carbon",
+    "manifestPath": "skills/carbon-update",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1202295583",
+      "marketplaceName": "claude-carbon",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1347639300-counterparts",
+    "name": "counterparts",
+    "description": "Memory that turns Claude into a counterpart. Local-first; everything stays on your computer.",
+    "version": "",
+    "author": "mlapeter",
+    "repository": "https://github.com/mlapeter/counterparts",
+    "manifestPath": {
+      "source": "url",
+      "url": "https://github.com/counterparts-ai/counterparts-plugin.git",
+      "ref": "v0.3.28"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1347639300",
+      "marketplaceName": "counterparts",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

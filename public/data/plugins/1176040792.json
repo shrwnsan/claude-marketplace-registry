@@ -1,0 +1,701 @@
+[
+  {
+    "id": "1176040792-neuroflow",
+    "name": "neuroflow",
+    "description": "End-to-end research workflow plugin for neuroscience teams — from hypothesis to publication. Supports EEG, iEEG, fMRI, eye tracking, ECG, and multimodal recordings.",
+    "version": "0.2.22",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1176040792-autoresearch-protocol",
+    "name": "autoresearch-protocol",
+    "description": "name: autoresearch-protocol",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/autoresearch-protocol",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-bids",
+    "name": "bids",
+    "description": "name: bids",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/bids",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-humanizer",
+    "name": "humanizer",
+    "description": "name: humanizer",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/humanizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-neuroflow-core",
+    "name": "neuroflow-core",
+    "description": "name: neuroflow-core",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/neuroflow-core",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-neuroflow-develop",
+    "name": "neuroflow-develop",
+    "description": "name: neuroflow-develop",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/neuroflow-develop",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-notebooklm",
+    "name": "notebooklm",
+    "description": "name: notebooklm",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/notebooklm",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-brain-build",
+    "name": "phase-brain-build",
+    "description": "name: phase-brain-build",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-brain-build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-brain-optimize",
+    "name": "phase-brain-optimize",
+    "description": "name: phase-brain-optimize",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-brain-optimize",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-brain-run",
+    "name": "phase-brain-run",
+    "description": "name: phase-brain-run",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-brain-run",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-data-analyze",
+    "name": "phase-data-analyze",
+    "description": "name: phase-data-analyze",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-data-analyze",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-data-preprocess",
+    "name": "phase-data-preprocess",
+    "description": "name: phase-data-preprocess",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-data-preprocess",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-data",
+    "name": "phase-data",
+    "description": "name: phase-data",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-data",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-experiment",
+    "name": "phase-experiment",
+    "description": "name: phase-experiment",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-experiment",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-fails",
+    "name": "phase-fails",
+    "description": "name: phase-fails",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-fails",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-finance",
+    "name": "phase-finance",
+    "description": "name: phase-finance",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-finance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-flowie",
+    "name": "phase-flowie",
+    "description": "name: phase-flowie",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-flowie",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-git",
+    "name": "phase-git",
+    "description": "name: phase-git",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-git",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-grant-proposal",
+    "name": "phase-grant-proposal",
+    "description": "name: phase-grant-proposal",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-grant-proposal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-hive",
+    "name": "phase-hive",
+    "description": "name: phase-hive",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-hive",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-ideation",
+    "name": "phase-ideation",
+    "description": "name: phase-ideation",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-ideation",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-meeting",
+    "name": "phase-meeting",
+    "description": "name: phase-meeting",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-meeting",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-notes",
+    "name": "phase-notes",
+    "description": "name: phase-notes",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-notes",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-output",
+    "name": "phase-output",
+    "description": "name: phase-output",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-output",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-paper",
+    "name": "phase-paper",
+    "description": "name: phase-paper",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-paper",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-pipeline",
+    "name": "phase-pipeline",
+    "description": "name: phase-pipeline",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-pipeline",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-poster",
+    "name": "phase-poster",
+    "description": "name: phase-poster",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-poster",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-preregistration",
+    "name": "phase-preregistration",
+    "description": "name: phase-preregistration",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-preregistration",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-quiz",
+    "name": "phase-quiz",
+    "description": "name: phase-quiz",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-quiz",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-review",
+    "name": "phase-review",
+    "description": "name: phase-review",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-review",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-search",
+    "name": "phase-search",
+    "description": "name: phase-search",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-search",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-slideshow",
+    "name": "phase-slideshow",
+    "description": "name: phase-slideshow",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-slideshow",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-tool-build",
+    "name": "phase-tool-build",
+    "description": "name: phase-tool-build",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-tool-build",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-tool-validate",
+    "name": "phase-tool-validate",
+    "description": "name: phase-tool-validate",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-tool-validate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-phase-write-report",
+    "name": "phase-write-report",
+    "description": "name: phase-write-report",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/phase-write-report",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-pupil-labs-neon-realtime",
+    "name": "pupil-labs-neon-realtime",
+    "description": "name: pupil-labs-neon-realtime",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/pupil-labs-neon-realtime",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-review-neuro",
+    "name": "review-neuro",
+    "description": "name: review-neuro",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/review-neuro",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-setup-guide",
+    "name": "setup-guide",
+    "description": "name: setup-guide",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/setup-guide",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-skill-creator",
+    "name": "skill-creator",
+    "description": "name: skill-creator",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/skill-creator",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-wiki-protocol",
+    "name": "wiki-protocol",
+    "description": "name: wiki-protocol",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/wiki-protocol",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1176040792-worker-critic",
+    "name": "worker-critic",
+    "description": "name: worker-critic",
+    "version": "1.0.0",
+    "author": "Stanislav Jiricek",
+    "repository": "https://github.com/stanislavjiricek/neuroflow",
+    "manifestPath": "skills/worker-critic",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1176040792",
+      "marketplaceName": "neuroflow",
+      "hasSkillMd": true
+    }
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "id": "1216493497-ndf",
+    "name": "ndf",
+    "description": "Claude Code plugin (v10.17.66): 8 specialized agents (plus 1 worker agent for the 3-layer workflow) and 47 focused NDF skills for PR/review workflows, cross-review, implementation planning, plan-to-spec, Docker container access, statusline, external AI delegation (Codex/agy), transcript retention guard, and optional Slack notifications.",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/ndf",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-playwright-kit",
+    "name": "playwright-kit",
+    "description": "Claude Code plugin (v3.0.0): 4 Playwright E2E skills — test planning by page role, script authoring with video / trace evidence, report generation with collected evidence, and the playwright_kit runtime (init, a11y / CWV scans).",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/playwright-kit",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-playwright",
+    "name": "mcp-playwright",
+    "description": "Playwright MCP auto-setup plugin with Chromium browser installation and configuration",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-playwright",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-chrome-devtools",
+    "name": "mcp-chrome-devtools",
+    "description": "Chrome DevTools MCP server for browser automation and testing",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-chrome-devtools",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-bigquery",
+    "name": "mcp-bigquery",
+    "description": "BigQuery MCP server for data analysis and SQL queries",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-bigquery",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-aws-docs",
+    "name": "mcp-aws-docs",
+    "description": "AWS Documentation MCP server for accessing official AWS documentation",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-aws-docs",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-dbhub",
+    "name": "mcp-dbhub",
+    "description": "DBHub MCP server for database operations and SQL queries",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-dbhub",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-notion",
+    "name": "mcp-notion",
+    "description": "Notion MCP server for note management and knowledge base operations",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-notion",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-devin",
+    "name": "mcp-devin",
+    "description": "Devin MCP server for accessing repository documentation and code knowledge via DeepWiki",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-devin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-redash",
+    "name": "mcp-redash",
+    "description": "Redash MCP server with multi-environment support (arbitrary suffix)",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-redash",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-markitdown",
+    "name": "mcp-markitdown",
+    "description": "MarkItDown MCP server for converting documents (PDF, Office, images, etc.) to Markdown",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-markitdown",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1216493497-mcp-serena",
+    "name": "mcp-serena",
+    "description": "Serena MCP server (serena-agent 1.7.0) for symbol-level code reading and editing, with a per-project language-server setup skill and hooks that steer repeated grep/reads toward symbol tools",
+    "version": "",
+    "author": "devbasex",
+    "repository": "https://github.com/devbasex/ai-plugins",
+    "manifestPath": "./plugins/mcp/mcp-serena",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216493497",
+      "marketplaceName": "ai-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1354152153-notchmeter",
+    "name": "notchmeter",
+    "description": "Lets Claude check this Mac's AI usage limits (Claude Code, Codex, Cursor, Antigravity / Gemini CLI, Copilot), cost estimate and Notchmeter's advice before long work. Needs the Notchmeter app or its notchmeter command. It reads the app's cache; only when the app isn't running (or on --force) does it use the logins your AI tools saved on this Mac for one read-only request to each tool's own usage endpoint, never inference. Claude Code cost is priced from local transcripts' usage lines. No telemetry.",
+    "version": "",
+    "author": "Amir Hackett",
+    "repository": "https://github.com/Amir-Hackett/notchmeter",
+    "manifestPath": "./plugin",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1354152153",
+      "marketplaceName": "notchmeter",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1354152153-release",
+    "name": "release",
+    "description": "name: release",
+    "version": "1.0.0",
+    "author": "Amir Hackett",
+    "repository": "https://github.com/Amir-Hackett/notchmeter",
+    "manifestPath": ".claude/skills/release",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1354152153",
+      "marketplaceName": "notchmeter",
+      "hasSkillMd": true
+    }
+  }
+]

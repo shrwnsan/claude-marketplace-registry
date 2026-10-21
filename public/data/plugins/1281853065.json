@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1281853065-the-loop",
+    "name": "the-loop",
+    "description": "Plan, execute, review and ship work items end-to-end with a predictable agent loop.",
+    "version": "19.28.0",
+    "author": "MadaraUchiha-314",
+    "repository": "https://github.com/MadaraUchiha-314/the-loop",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1281853065",
+      "marketplaceName": "the-loop",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1281853065-writing",
+    "name": "writing",
+    "description": "name: writing",
+    "version": "1.0.0",
+    "author": "MadaraUchiha-314",
+    "repository": "https://github.com/MadaraUchiha-314/the-loop",
+    "manifestPath": "skills/writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1281853065",
+      "marketplaceName": "the-loop",
+      "hasSkillMd": true
+    }
+  }
+]

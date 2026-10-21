@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1256587916-claude-governance",
+    "name": "claude-governance",
+    "description": "Governance templates that make Claude Code follow your architecture, security rules, and team conventions automatically — across Java, Python, Go, .NET, PHP, and JavaScript stacks.",
+    "version": "",
+    "author": "datallmhub",
+    "repository": "https://github.com/datallmhub/claude-governance",
+    "manifestPath": {
+      "source": "github",
+      "repo": "datallmhub/claude-governance"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1256587916",
+      "marketplaceName": "claude-governance",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

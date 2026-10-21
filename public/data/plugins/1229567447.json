@@ -3,16 +3,16 @@
     "id": "1229567447-probabl-skills",
     "name": "probabl-skills",
     "description": "Workflow skills for ML experimentation with skrub, scikit-learn, and skore: pipeline build / evaluate / test / audit, iteration loop, workspace + tooling.",
-    "version": "0.7.0",
+    "version": "",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "./",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "skills": [],
       "strict": false,
       "modsCount": 0
@@ -24,14 +24,14 @@
     "description": "name: add-python-package",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/add-python-package",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -41,14 +41,14 @@
     "description": "name: audit-ml-pipeline",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/audit-ml-pipeline",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -58,14 +58,14 @@
     "description": "name: build-ml-pipeline",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/build-ml-pipeline",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -75,31 +75,14 @@
     "description": "name: choose-python-library",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/choose-python-library",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1229567447-data-science-python-stack",
-    "name": "data-science-python-stack",
-    "description": "name: data-science-python-stack",
-    "version": "1.0.0",
-    "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
-    "manifestPath": "skills/data-science-python-stack",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -109,14 +92,14 @@
     "description": "name: evaluate-ml-pipeline",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/evaluate-ml-pipeline",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -126,14 +109,14 @@
     "description": "name: explore-ml-data",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/explore-ml-data",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -143,14 +126,14 @@
     "description": "name: export-ml-notebook",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/export-ml-notebook",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -160,14 +143,14 @@
     "description": "name: export-ml-project",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/export-ml-project",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -177,14 +160,14 @@
     "description": "name: export-ml-site",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/export-ml-site",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -194,14 +177,14 @@
     "description": "name: frame-ml-problem",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/frame-ml-problem",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -211,14 +194,14 @@
     "description": "name: manage-ml-backlog",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/manage-ml-backlog",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -228,31 +211,14 @@
     "description": "name: model-ml-pipeline",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/model-ml-pipeline",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1229567447-organize-ml-workspace",
-    "name": "organize-ml-workspace",
-    "description": "name: organize-ml-workspace",
-    "version": "1.0.0",
-    "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
-    "manifestPath": "skills/organize-ml-workspace",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -262,14 +228,14 @@
     "description": "name: persist-ml-git",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/persist-ml-git",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -279,14 +245,14 @@
     "description": "name: plot-ml-figure",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/plot-ml-figure",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -296,14 +262,14 @@
     "description": "name: research-ml-practice",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/research-ml-practice",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -313,14 +279,14 @@
     "description": "name: review-ml-choices",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/review-ml-choices",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -330,14 +296,14 @@
     "description": "name: review-ml-experiment",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/review-ml-experiment",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -347,14 +313,14 @@
     "description": "name: search-ml-literature",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/search-ml-literature",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -364,14 +330,14 @@
     "description": "name: setup-git",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/setup-git",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -381,14 +347,14 @@
     "description": "name: setup-ml-project",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/setup-ml-project",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -398,14 +364,14 @@
     "description": "name: setup-python-env",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/setup-python-env",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -415,14 +381,14 @@
     "description": "name: setup-workspace",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/setup-workspace",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -432,14 +398,14 @@
     "description": "name: shape-user-idea",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/shape-user-idea",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -449,14 +415,14 @@
     "description": "name: smoke-test-ml-pipeline",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/smoke-test-ml-pipeline",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -466,14 +432,14 @@
     "description": "name: sync-ml-reports",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/sync-ml-reports",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   },
@@ -483,14 +449,14 @@
     "description": "name: triage-ml-task",
     "version": "1.0.0",
     "author": "Probabl",
-    "repository": "https://github.com/probabl-ai/skills",
+    "repository": "https://github.com/probabl-ai/skore-skills",
     "manifestPath": "skills/triage-ml-task",
     "isValid": true,
     "errors": [],
     "warnings": [],
     "metadata": {
       "marketplaceId": "1229567447",
-      "marketplaceName": "skills",
+      "marketplaceName": "skore-skills",
       "hasSkillMd": true
     }
   }

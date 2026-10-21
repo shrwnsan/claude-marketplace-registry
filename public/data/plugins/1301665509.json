@@ -2,7 +2,7 @@
   {
     "id": "1301665509-theedoran",
     "name": "theedoran",
-    "description": "Personal skills: explain (read-only implementation review reported to markdown), explain-fix (review + TDD hardening), explain-implementation (decision-oriented walkthroughs), and gcp (logical commits + push).",
+    "description": "Personal skills: explain (read-only implementation review reported to markdown), explain-fix (review + TDD hardening), explain-implementation (decision-oriented walkthroughs), gcp (logical commits + push), and use-subagents (parallel subagents with per-task model and effort).",
     "version": "",
     "author": "TheEdoRan",
     "repository": "https://github.com/TheEdoRan/skills",
@@ -77,6 +77,23 @@
     "author": "TheEdoRan",
     "repository": "https://github.com/TheEdoRan/skills",
     "manifestPath": "skills/gcp",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1301665509",
+      "marketplaceName": "skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1301665509-use-subagents",
+    "name": "use-subagents",
+    "description": "name: use-subagents",
+    "version": "1.0.0",
+    "author": "TheEdoRan",
+    "repository": "https://github.com/TheEdoRan/skills",
+    "manifestPath": "skills/use-subagents",
     "isValid": true,
     "errors": [],
     "warnings": [],

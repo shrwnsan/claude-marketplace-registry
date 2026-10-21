@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1414023520-ugot-mindset",
+    "name": "ugot-mindset",
+    "description": "How the agent should think and talk with the user: read the intent, declare requirements before the first tool call, verify before claiming, picture first, blame the instrument before the result, solve before saying impossible, keep going, brief human answers; seven pre-output decisions (persona, lens, sources, KPIs, 5W1H, format, constraints), shorten dated plans by harvesting what others already solved, persuade with the intent lineage. 42 skills, 2 agents and automatic prompt/result/stop/bash gates. 0.8.37: create-every-moment — every work turn hands the user a new idea (what · mechanism · prior · cheapest test), asked mid-turn and checked at Stop; 0.8.36: a self-diagnosed wrong direction with no corrective action in the turn is blocked once (noticing is an action); 0.8.35: notice-the-drift — a mid-turn noticing channel (drift-gate: the user's goal line + three questions every 8 tool calls or on a repository change); 0.8.34: a separate model judges every work turn at Stop (critic gate, no API key), every-means-now (urgency).",
+    "version": "",
+    "author": "edu-ide",
+    "repository": "https://github.com/edu-ide/ugot-skills",
+    "manifestPath": "./plugins/ugot-mindset",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414023520",
+      "marketplaceName": "ugot-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414023520-ugot-writing",
+    "name": "ugot-writing",
+    "description": "Reader-first writing (mainly Korean): style editing, applications, songs and lyrics, story craft, short-form ads, and CriticMarkup evidence notes on every claim (criticmarkup). Explaining with pictures moved to ugot-mindset (visual-first). Working-copy skill runs with per-requirement CriticMarkup notes (skill-run).",
+    "version": "",
+    "author": "edu-ide",
+    "repository": "https://github.com/edu-ide/ugot-skills",
+    "manifestPath": "./plugins/ugot-writing",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414023520",
+      "marketplaceName": "ugot-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414023520-ugot-engineering-habits",
+    "name": "ugot-engineering-habits",
+    "description": "Engineering habits for coding agents: build it right the first time, check the latest literature, disclose shortcuts, premortem before claims, use fundamental terms, consult on architecture, separate incident mitigation from the root fix; a mitigation (retry, rollback, backoff, raised limit) is closed only with the root fix in the same turn or an explicit stop.",
+    "version": "",
+    "author": "edu-ide",
+    "repository": "https://github.com/edu-ide/ugot-skills",
+    "manifestPath": "./plugins/ugot-engineering-habits",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414023520",
+      "marketplaceName": "ugot-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1414023520-ugot-career",
+    "name": "ugot-career",
+    "description": "Job applications for developers who work with AI coding tools: screen postings, dissect requirements, research the company, build a tailored resume and portfolio story, submit and track.",
+    "version": "",
+    "author": "edu-ide",
+    "repository": "https://github.com/edu-ide/ugot-skills",
+    "manifestPath": "./plugins/ugot-career",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414023520",
+      "marketplaceName": "ugot-skills",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

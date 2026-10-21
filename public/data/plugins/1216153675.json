@@ -1,0 +1,70 @@
+[
+  {
+    "id": "1216153675-autoname",
+    "name": "autoname",
+    "description": "name: autoname",
+    "version": "1.0.0",
+    "author": "ddaanet",
+    "repository": "https://github.com/ddaanet/autodrive-handoff",
+    "manifestPath": "skills/autoname",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216153675",
+      "marketplaceName": "autodrive-handoff",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216153675-handoff",
+    "name": "handoff",
+    "description": "name: handoff",
+    "version": "1.0.0",
+    "author": "ddaanet",
+    "repository": "https://github.com/ddaanet/autodrive-handoff",
+    "manifestPath": "skills/handoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216153675",
+      "marketplaceName": "autodrive-handoff",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216153675-pending",
+    "name": "pending",
+    "description": "name: pending",
+    "version": "1.0.0",
+    "author": "ddaanet",
+    "repository": "https://github.com/ddaanet/autodrive-handoff",
+    "manifestPath": "skills/pending",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216153675",
+      "marketplaceName": "autodrive-handoff",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1216153675-precompact",
+    "name": "precompact",
+    "description": "name: precompact",
+    "version": "1.0.0",
+    "author": "ddaanet",
+    "repository": "https://github.com/ddaanet/autodrive-handoff",
+    "manifestPath": "skills/precompact",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1216153675",
+      "marketplaceName": "autodrive-handoff",
+      "hasSkillMd": true
+    }
+  }
+]
