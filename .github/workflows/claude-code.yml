@@ -25,6 +25,13 @@ permissions:
   pull-requests: write
   issues: write
   actions: read
+
+# One review per PR/issue at a time: duplicate triggers (e.g. the same
+# '@claude' observed firing twice in run 39556711832/39556736995) race each
+# other on the same finding and the loser dies at --max-turns.
+concurrency:
+  group: claude-code-assist-${{ github.event.issue.number || inputs.pr_number || github.event.pull_request.number }}
+  cancel-in-progress: true
   # Required by claude-code-action: it exchanges an OIDC token for a GitHub
   # App token. The trusted-author gate above is the security boundary here.
   id-token: write
@@ -83,7 +90,7 @@ jobs:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
             --allowedTools "Read,Glob,Grep,WebSearch,WebFetch,Write,Bash(cat:*)"
-            --max-turns 15
+            --max-turns 25
             --model glm-5.3-flash
             --effort low
           settings: |
