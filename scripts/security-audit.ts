@@ -371,7 +371,13 @@ async function main(): Promise<void> {
 
   file.generatedAt = new Date().toISOString();
   const serialized = JSON.stringify(file, null, 2);
-  if (fs.existsSync(sidecarPath) && fs.readFileSync(sidecarPath, 'utf-8') === serialized) {
+  let current: string | null = null;
+  try {
+    current = fs.readFileSync(sidecarPath, 'utf-8');
+  } catch {
+    current = null; // absent (or raced away) — write below
+  }
+  if (current === serialized) {
     console.log('ℹ️ Sidecar unchanged.');
     return;
   }
