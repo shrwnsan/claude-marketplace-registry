@@ -33,8 +33,10 @@ on:
   schedule:
     # Sun/Wed/Sat 02:30 UTC — a 3,3,1-day cadence (cron can't express a true
     # every-3-days), before the ~04:00 UTC daily scan starts draining the
-    # shared DATA_UPDATES_PAT quota.
-    - cron: "30 2 * * */3"
+    # shared DATA_UPDATES_PAT quota. Explicit weekdays: GitHub's parser
+    # rejected the "*/3" day-of-month step (runs registered as invalid-file
+    # push failures and the schedule never fired).
+    - cron: "30 2 * * 0,3,6"
   workflow_dispatch:
 
 permissions:

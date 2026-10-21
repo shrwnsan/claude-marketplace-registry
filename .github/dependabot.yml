@@ -35,6 +35,10 @@ updates:
       # lucide-react 1.x: breaking icon API changes; migrate deliberately.
       - dependency-name: "lucide-react"
         versions: [">=1"]
+      # @typesafe-ai/sdk 0.7: minor bump breaks the Jev categorize callback
+      # type (TS2322 in scripts/jev-categorize.ts); migrate deliberately.
+      - dependency-name: "@typesafe-ai/sdk"
+        versions: [">=0.7"]
 
   # GitHub Actions: weekly, all action bumps batched into one PR.
   - package-ecosystem: "github-actions"
