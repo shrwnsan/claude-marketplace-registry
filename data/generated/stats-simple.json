@@ -1,36 +1,36 @@
 {
-  "totalMarketplaces": 1651,
-  "totalPlugins": 7365,
-  "validPlugins": 7365,
-  "lastUpdated": "2026-10-20T03:58:15.078Z",
+  "totalMarketplaces": 1688,
+  "totalPlugins": 7620,
+  "validPlugins": 7620,
+  "lastUpdated": "2026-10-21T03:57:20.098Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 551
+      "count": 559
     },
     {
       "language": "TypeScript",
-      "count": 278
+      "count": 289
     },
     {
       "language": "JavaScript",
-      "count": 260
+      "count": 267
     },
     {
       "language": "Unknown",
-      "count": 223
+      "count": 225
     },
     {
       "language": "Shell",
-      "count": 142
+      "count": 144
     },
     {
       "language": "HTML",
-      "count": 84
+      "count": 86
     },
     {
       "language": "Go",
-      "count": 32
+      "count": 35
     },
     {
       "language": "Rust",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 284213,
+      "stars": 284975,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 182274,
+      "stars": 182530,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "name": "paperclip",
-      "stars": 104824,
+      "stars": 105295,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -78,12 +78,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 77461,
+      "stars": 77543,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70210,
+      "stars": 70234,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -93,60 +93,60 @@
     },
     {
       "name": "humanizer",
-      "stars": 58563,
+      "stars": 58956,
       "url": "https://github.com/blader/humanizer"
     }
   ],
   "recentActivity": [
     {
-      "name": "gaia",
-      "updatedAt": "2026-10-20T03:48:56Z",
-      "url": "https://github.com/gaia-react/gaia"
-    },
-    {
-      "name": "guaardvark",
-      "updatedAt": "2026-10-20T03:47:59Z",
-      "url": "https://github.com/guaardvark/guaardvark"
-    },
-    {
-      "name": "deskstudio",
-      "updatedAt": "2026-10-20T03:47:53Z",
-      "url": "https://github.com/adityareddy-dev/deskstudio"
+      "name": "enterprise-software-AI-skills",
+      "updatedAt": "2026-10-21T03:44:43Z",
+      "url": "https://github.com/techfleetworks/enterprise-software-AI-skills"
     },
     {
       "name": "paperclip",
-      "updatedAt": "2026-10-20T03:47:41Z",
+      "updatedAt": "2026-10-21T03:44:30Z",
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "awesome-short-drama-skills",
-      "updatedAt": "2026-10-20T03:47:09Z",
-      "url": "https://github.com/UnderleveledBuilder/awesome-short-drama-skills"
+      "name": "obsidian-wiki",
+      "updatedAt": "2026-10-21T03:44:30Z",
+      "url": "https://github.com/Ar9av/obsidian-wiki"
     },
     {
-      "name": "plumbbob",
-      "updatedAt": "2026-10-20T03:46:45Z",
-      "url": "https://github.com/robmclarty/plumbbob"
+      "name": "claude-code-plugins",
+      "updatedAt": "2026-10-21T03:43:55Z",
+      "url": "https://github.com/melodic-software/claude-code-plugins"
     },
     {
-      "name": "elnora-cli",
-      "updatedAt": "2026-10-20T03:46:32Z",
-      "url": "https://github.com/Elnora-AI/elnora-cli"
+      "name": "sdl3-porter",
+      "updatedAt": "2026-10-21T03:43:31Z",
+      "url": "https://github.com/hazeliscoding/sdl3-porter"
     },
     {
-      "name": "3dprint-scout",
-      "updatedAt": "2026-10-20T03:46:12Z",
-      "url": "https://github.com/madrobotnet/3dprint-scout"
+      "name": "agent-tools",
+      "updatedAt": "2026-10-21T03:41:06Z",
+      "url": "https://github.com/tuanxminhxgi/agent-tools"
     },
     {
-      "name": "tycana-claude-hivemind",
-      "updatedAt": "2026-10-20T03:45:52Z",
-      "url": "https://github.com/samuel85194-ux/tycana-claude-hivemind"
+      "name": "frihet-mcp",
+      "updatedAt": "2026-10-21T03:40:49Z",
+      "url": "https://github.com/Frihet-io/frihet-mcp"
     },
     {
-      "name": "trending-claude-skills",
-      "updatedAt": "2026-10-20T03:45:18Z",
-      "url": "https://github.com/linny006/trending-claude-skills"
+      "name": "answer-me-with-html",
+      "updatedAt": "2026-10-21T03:40:28Z",
+      "url": "https://github.com/QingYunA/answer-me-with-html"
+    },
+    {
+      "name": "foreman",
+      "updatedAt": "2026-10-21T03:39:35Z",
+      "url": "https://github.com/ChaseSunstrom/foreman"
+    },
+    {
+      "name": "methodsmith",
+      "updatedAt": "2026-10-21T03:39:32Z",
+      "url": "https://github.com/sajor2000/methodsmith"
     }
   ]
 }

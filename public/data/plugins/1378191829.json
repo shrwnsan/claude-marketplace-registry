@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1378191829-lossless-compact",
+    "name": "lossless-compact",
+    "description": "Lossless compaction for Claude Code: nothing is summarized; everything removed is archived verbatim and restorable by id. /lossless to inspect and restore.",
+    "version": "0.7.1",
+    "author": "MusicStudioNYC",
+    "repository": "https://github.com/MusicStudioNYC/lossless-compact",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1378191829",
+      "marketplaceName": "lossless-compact",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

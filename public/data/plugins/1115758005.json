@@ -746,5 +746,260 @@
       "marketplaceName": "claude-skills",
       "hasSkillMd": true
     }
+  },
+  {
+    "id": "1115758005-prompt-factory",
+    "name": "prompt-factory",
+    "description": "name: prompt-factory",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/prompt-factory",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-qmd",
+    "name": "qmd",
+    "description": "name: qmd",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/qmd",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-scientific-critical-thinking",
+    "name": "scientific-critical-thinking",
+    "description": "name: scientific-critical-thinking",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/scientific-critical-thinking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-security-best-practices",
+    "name": "security-best-practices",
+    "description": "name: security-best-practices",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/security-best-practices",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-security-threat-model",
+    "name": "security-threat-model",
+    "description": "name: security-threat-model",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/security-threat-model",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-seo-optimizer",
+    "name": "seo-optimizer",
+    "description": "name: seo-optimizer",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/seo-optimizer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-shadertoy",
+    "name": "shadertoy",
+    "description": "name: shadertoy",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/shadertoy",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-skill-finder",
+    "name": "skill-finder",
+    "description": "name: skill-finder",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/skill-finder",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-skimmable",
+    "name": "skimmable",
+    "description": "name: skimmable",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/skimmable",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-subway-info",
+    "name": "subway-info",
+    "description": "name: subway-info",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/subway-info",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-systematic-debugging",
+    "name": "systematic-debugging",
+    "description": "name: systematic-debugging",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/systematic-debugging",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-tui-designer",
+    "name": "tui-designer",
+    "description": "name: tui-designer",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/tui-designer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-ui-design",
+    "name": "ui-design",
+    "description": "name: ui-design",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/ui-design",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-video-editor",
+    "name": "video-editor",
+    "description": "name: video-editor",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/video-editor",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1115758005-writing-plans",
+    "name": "writing-plans",
+    "description": "name: writing-plans",
+    "version": "1.0.0",
+    "author": "ckorhonen",
+    "repository": "https://github.com/ckorhonen/claude-skills",
+    "manifestPath": "skills/writing-plans",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1115758005",
+      "marketplaceName": "claude-skills",
+      "hasSkillMd": true
+    }
   }
 ]

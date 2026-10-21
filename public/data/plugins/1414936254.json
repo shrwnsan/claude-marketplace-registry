@@ -19,6 +19,25 @@
     }
   },
   {
+    "id": "1414936254-block-no-verify",
+    "name": "block-no-verify",
+    "description": "Blocks Claude's git commands that skip commit hooks or signing (--no-verify, --no-gpg-sign, commit.gpgsign=false), so your quality gates always run.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/block-no-verify",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1414936254-github-operations",
     "name": "github-operations",
     "description": "Carries a GitHub pull request from open to merge, cleans up a Git repository without losing work, and brings the GitHub MCP server with it.",
@@ -76,6 +95,25 @@
     }
   },
   {
+    "id": "1414936254-project-maintainer",
+    "name": "project-maintainer",
+    "description": "Keeps a project's memory in its .claude folder: decisions recorded as ADRs, technical debt tracked in a ledger, and a handoff that carries each session's state to the next one.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/project-maintainer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1414936254-prompt-writer",
     "name": "prompt-writer",
     "description": "Turns a goal, idea or draft into one copy-ready prompt tuned to the target Claude model and effort: it clarifies intent, checks current official facts and recommends the setup to run it with.",
@@ -102,25 +140,6 @@
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
     "manifestPath": "./plugins/python-lsp-intelligence",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1414936254",
-      "marketplaceName": "the-claude-factory",
-      "skills": [],
-      "strict": false,
-      "modsCount": 0
-    }
-  },
-  {
-    "id": "1414936254-session-handoff",
-    "name": "session-handoff",
-    "description": "Carries a project's working state from one session to the next: write a handoff when you stop, and the next session reads it, does what you ask and ends its reply with what is still open.",
-    "version": "",
-    "author": "nerymurillohnd",
-    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": "./plugins/session-handoff",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -233,23 +252,6 @@
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
     "manifestPath": ".claude/skills/new-plugin",
-    "isValid": true,
-    "errors": [],
-    "warnings": [],
-    "metadata": {
-      "marketplaceId": "1414936254",
-      "marketplaceName": "the-claude-factory",
-      "hasSkillMd": true
-    }
-  },
-  {
-    "id": "1414936254-project-records",
-    "name": "project-records",
-    "description": "name: project-records",
-    "version": "1.0.0",
-    "author": "nerymurillohnd",
-    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": ".claude/skills/project-records",
     "isValid": true,
     "errors": [],
     "warnings": [],

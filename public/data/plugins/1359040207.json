@@ -43,5 +43,28 @@
       "strict": false,
       "modsCount": 0
     }
+  },
+  {
+    "id": "1359040207-dia",
+    "name": "dia",
+    "description": "Seven reasoning-and-review skills: intent confirmation, Socratic elenchus and brainstorming, reductio ad absurdum, negative dialectics, single-pass refine and verification-gated iteration.",
+    "version": "",
+    "author": "ajitta",
+    "repository": "https://github.com/ajitta/claude-plugins",
+    "manifestPath": {
+      "source": "git-subdir",
+      "url": "https://github.com/ajitta/dialectic-skills.git",
+      "path": "plugins/dia"
+    },
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1359040207",
+      "marketplaceName": "claude-plugins",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
   }
 ]
