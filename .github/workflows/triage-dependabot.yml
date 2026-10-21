@@ -55,6 +55,9 @@ jobs:
       - name: Triage open Dependabot PRs
         env:
           GH_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
+          # No checkout step (gh-only job) — gh needs this to resolve
+          # the repo without a git remote.
+          GH_REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
 
