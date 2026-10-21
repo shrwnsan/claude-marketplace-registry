@@ -132,8 +132,9 @@ jobs:
             if [ -n "$bad_paths" ]; then
               echo "SKIP #$num: paths outside allowlist"
               if ! already_triaged "$num"; then
-                msg="⚠️ **Auto-triage skipped:** changed paths outside the dependency-manifest allowlist require manual review:
-$(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')"
+                msg="⚠️ **Auto-triage skipped:** changed paths outside the dependency-manifest allowlist require manual review:"
+                msg="$msg
+                $(echo "$bad_paths" | sed 's/^/- `/' | sed 's/$/`/')"
                 gh pr comment "$num" --body "$msg" > /dev/null \
                   || echo "WARN: comment on #$num failed"
               fi
