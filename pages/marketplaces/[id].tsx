@@ -9,6 +9,7 @@ import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import { usePluginShard } from '@/hooks/usePluginShard';
 import LoadingState from '@/components/ui/LoadingState';
 import ValidatedManifestBadge from '@/components/ui/ValidatedManifestBadge';
+import SecurityAuditBadge from '@/components/ui/SecurityAuditBadge';
 import {
   Star,
   Github,
@@ -279,6 +280,9 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
                     {marketplace.hasManifest && (
                       <ValidatedManifestBadge className='w-6 h-6 text-success-500' />
                     )}
+                    {marketplace.securityAudit && (
+                      <SecurityAuditBadge audit={marketplace.securityAudit} className='w-6 h-6' />
+                    )}
                   </h1>
                   <p className='text-gray-600 dark:text-gray-300 mb-4'>{marketplace.description}</p>
                   <div className='flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-gray-500 dark:text-gray-400'>
@@ -316,6 +320,16 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
                     )}
                     {marketplace.hasManifest && (
                       <span className='badge badge-secondary text-xs'>marketplace.json ✓</span>
+                    )}
+                    {marketplace.securityAudit && (
+                      <span
+                        className='badge badge-secondary text-xs'
+                        title='Gen/Socket/Snyk via skills.sh — indicative, not a guarantee'
+                      >
+                        skills.sh audit: {marketplace.securityAudit.risk} (
+                        {marketplace.securityAudit.auditedSkills}/
+                        {marketplace.securityAudit.totalSkills} skills)
+                      </span>
                     )}
                   </div>
                   {topics.length > 0 && (

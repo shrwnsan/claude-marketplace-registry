@@ -52,7 +52,8 @@ const ENDPOINTS: Endpoint[] = [
     "language": "Python",
     "updatedAt": "2026-09-18T…Z",
     "topics": ["agent-skills"],
-    "hasManifest": true
+    "hasManifest": true,
+    "securityAudit": { "risk": "medium", "alerts": 0, "auditedSkills": 4, "totalSkills": 4, "auditedAt": "2026-09-15T…Z", "source": "skills.sh" }
   }, … ]`,
     example: `curl -s ${BASE}/data/marketplaces.json \\
   | jq '[.[] | select(.stars > 1000)] | sort_by(-.stars)'`,

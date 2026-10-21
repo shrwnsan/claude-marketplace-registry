@@ -11,6 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import { canonicalAuthor } from './validate-plugins';
 import { applyJevEnrichment, loadJevEnrichment } from './jev-categorize';
+import { applySecurityAudit, loadSecurityAudit, type SecurityAuditSummary } from './security-audit';
 
 interface Marketplace {
   id: string;
@@ -26,6 +27,8 @@ interface Marketplace {
   topics: string[];
   hasManifest: boolean;
   manifest?: any;
+  /** skills.sh verdict summary (Gen/Socket/Snyk), when audit data exists. */
+  securityAudit?: SecurityAuditSummary;
 }
 
 export interface Plugin {
@@ -312,7 +315,10 @@ class DataGenerator {
       hasManifest: mp.hasManifest ?? !!mp.manifest,
       manifest: mp.manifest,
     }));
-    return applyJevEnrichment(normalized, loadJevEnrichment(this.inputDir));
+    return applySecurityAudit(
+      applyJevEnrichment(normalized, loadJevEnrichment(this.inputDir)),
+      loadSecurityAudit(this.inputDir)
+    );
   }
 
   private loadPluginData(): Plugin[] {

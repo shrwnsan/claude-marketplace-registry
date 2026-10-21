@@ -23,6 +23,7 @@
     "validate:plugins": "ts-node scripts/validate-plugins.ts",
     "validate:data": "ts-node scripts/validate-generated-data.ts",
     "enrich:jev": "ts-node scripts/jev-categorize.ts",
+    "audit:security": "ts-node scripts/security-audit.ts",
     "generate:data": "ts-node scripts/generate-data.ts",
     "scan:full": "npm run scan:marketplaces && npm run validate:data && npm run generate:data",
     "backup": "ts-node scripts/backup-data.ts",

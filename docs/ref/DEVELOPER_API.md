@@ -51,6 +51,8 @@ CORS is enabled for every origin, so you can fetch these files directly from bro
 
 Both are bare arrays. `marketplaces.json` entries carry `id`, `name`, `description`, `url`, `stars`, `forks`, `language`, `license`, `topics[]`, `hasManifest`, `createdAt`, `updatedAt`. `plugins.json` entries carry `id`, `name`, `description`, `author`, `version`, `skills[]`, `marketplaceId`, `marketplaceName`, and source metadata.
 
+Marketplaces may also carry an optional `securityAudit` object (`risk`, `alerts`, `auditedSkills`, `totalSkills`, `auditedAt`, `source`) — the worst-case verdict from skills.sh's Gen/Socket/Snyk audits across that repo's skills. Treat it as indicative, not authoritative; `source` names the audit provider and `auditedAt` the assessment date.
+
 ### Joining plugins to marketplaces
 
 ```js

@@ -1,0 +1,278 @@
+{
+  "source": "skills.sh (Gen / Socket / Snyk)",
+  "generatedAt": "2026-10-15T01:43:03.592Z",
+  "entries": {
+    "1061953414": {
+      "repo": "anthropics/skills",
+      "auditedAt": "2026-10-15T01:43:03.142Z",
+      "skills": {
+        "xlsx": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 1,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T14:14:26.520Z"
+        },
+        "docx": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 2,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T13:14:12.403Z"
+        },
+        "pptx": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 1,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T12:13:30.381Z"
+        },
+        "pdf": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-09-15T12:21:41.621Z"
+        },
+        "algorithmic-art": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T22:05:43.381Z"
+        },
+        "brand-guidelines": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T19:45:43.167Z"
+        },
+        "canvas-design": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T17:35:38.718Z"
+        },
+        "doc-coauthoring": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-09-14T23:58:20.274Z"
+        },
+        "frontend-design": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T09:04:21.210Z"
+        },
+        "internal-comms": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-09-15T00:04:08.674Z"
+        },
+        "mcp-builder": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-09-14T17:03:56.231Z"
+        },
+        "skill-creator": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 1,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T09:56:02.766Z"
+        },
+        "slack-gif-creator": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:26:51.026Z"
+        },
+        "theme-factory": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T20:42:16.959Z"
+        },
+        "web-artifacts-builder": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 1,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T18:39:12.951Z"
+        },
+        "webapp-testing": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 1,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-09-14T14:53:45.460Z"
+        },
+        "claude-api": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-10T10:14:38.142Z"
+        },
+        "academy-guide": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-08-18T16:19:52.933Z"
+        },
+        "discernment-nudge": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-08-17T17:27:32.591Z"
+        }
+      }
+    }
+  }
+}
