@@ -1,0 +1,264 @@
+{
+  "ranAt": "2026-10-22T23:52:23.659Z",
+  "query": "\"modules\" filename:hooks.json path:hooks",
+  "budget": 25,
+  "census": {
+    "totalCount": 427,
+    "fetchedFiles": 200,
+    "distinctReposInSample": 200,
+    "sample": [
+      {
+        "repo": "hex/claude-council",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "ccd9888fc37e48b670e115482dd9a7494b425c3c"
+      },
+      {
+        "repo": "alexgreensh/token-optimizer",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "b5edb961111493967c116bb067e127259b1b9e68"
+      },
+      {
+        "repo": "uppinote20/claude-dashboard",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "2ff41ac4f2917b08cce77bf60659350ae1619049"
+      },
+      {
+        "repo": "qf-studio/navigator",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "166c83af9b9a4ee33895fae8d5f52d6da1fc52bb"
+      },
+      {
+        "repo": "karanb192/cache-tax",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "82f22b8239c00ed690b1069ab83f5a633d78448e"
+      },
+      {
+        "repo": "gwittebolle/claude-carbon",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "4d4e16d3441f294cbdaaab3bedd5e6f98777069e"
+      },
+      {
+        "repo": "iamumeransari/claude-show-your-work",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "6b38cffb1fb69d37053a5de026d4f935948088f8"
+      },
+      {
+        "repo": "LiarMTTT/TavernWeave",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "479eedeccc03110165f267bc0781df0c3f7209da"
+      },
+      {
+        "repo": "tamaratran/jev-pruner",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "b929bab3cdf8e42c2f8b9abcd6ef27a438ab0e52"
+      },
+      {
+        "repo": "transkatgirl/vibeclaude",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "4f4495c7a05b98979de2017abf823b3ef35eec33"
+      },
+      {
+        "repo": "Claudate/project-multilevel-index",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "0c5b67efd55891eba8c41d2c387f604971bcf6b6"
+      },
+      {
+        "repo": "GhalebDweikat/winnow",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "5d80cc924ad5ac3fe3b2bda8f5e0126b472486d6"
+      },
+      {
+        "repo": "avelikiy/great_cto",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "113a7eace37ca18c83a7b21edb23acee51acde05"
+      },
+      {
+        "repo": "halluton/Mindful-Claude",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "ba06bac514cb514f0f66888e4d15cf2f0d28706d"
+      },
+      {
+        "repo": "rbartoli/agent-usage-guard",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "b7a0432d53a3d24a73928f3040ff0a519b2d036f"
+      },
+      {
+        "repo": "kiycoh/silica-core",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "d1f334a87f0ddf3b2d873f01828487aaf43fb233"
+      },
+      {
+        "repo": "Junhan2/oh-my-fable",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "4d1e8b6c6e312607bf0afb806dc17855face64f2"
+      },
+      {
+        "repo": "lossless-claude/lcm",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "94fc53792e0ff5193589c7d1562ed3b6822a8aee"
+      },
+      {
+        "repo": "Oqura-ai/optim-jev",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "af27e184565ae15a37b3caed325677a041d2dca6"
+      },
+      {
+        "repo": "wyeworks/accountable-review",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "ea6b56b365619e7fed475ebd4a71ea99d9f19d58"
+      },
+      {
+        "repo": "sezaakgun/cc-arcade",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "68ab8826e062a71e10fbf8eee55994d16190e3d6"
+      },
+      {
+        "repo": "tzafrir/human-in-the-loop",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "991c27739a730f9cb72b1a6f8da6e4a8be7d34f5"
+      },
+      {
+        "repo": "alexei-led/claude-router",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "66d02f68f88fab061b40f9ae0a36e1a859143b14"
+      },
+      {
+        "repo": "renzrollon/interlock",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "f206fcc3349d1de460cc79a1d43c196b760dcdd0"
+      },
+      {
+        "repo": "tsanva/cc-discord-presence",
+        "hooksPath": "hooks/hooks.json",
+        "stars": null,
+        "pushedAt": null,
+        "sha": "b5208cc9c20ee43dc5331b352c5aa43191cc8d81"
+      }
+    ]
+  },
+  "split": {
+    "probed": [
+      "hex/claude-council",
+      "alexgreensh/token-optimizer",
+      "uppinote20/claude-dashboard",
+      "qf-studio/navigator",
+      "karanb192/cache-tax",
+      "gwittebolle/claude-carbon",
+      "iamumeransari/claude-show-your-work",
+      "LiarMTTT/TavernWeave",
+      "tamaratran/jev-pruner",
+      "transkatgirl/vibeclaude",
+      "Claudate/project-multilevel-index",
+      "GhalebDweikat/winnow",
+      "avelikiy/great_cto",
+      "halluton/Mindful-Claude",
+      "rbartoli/agent-usage-guard",
+      "lossless-claude/lcm",
+      "renzrollon/interlock",
+      "tsanva/cc-discord-presence",
+      "dgokcin/claude-pokemon-mod",
+      "AlmogBaku/ContextSaver"
+    ],
+    "marketplace": [
+      "alexgreensh/token-optimizer",
+      "uppinote20/claude-dashboard",
+      "qf-studio/navigator",
+      "gwittebolle/claude-carbon",
+      "iamumeransari/claude-show-your-work",
+      "LiarMTTT/TavernWeave",
+      "tamaratran/jev-pruner",
+      "transkatgirl/vibeclaude",
+      "Claudate/project-multilevel-index",
+      "GhalebDweikat/winnow",
+      "avelikiy/great_cto",
+      "halluton/Mindful-Claude",
+      "rbartoli/agent-usage-guard",
+      "lossless-claude/lcm",
+      "renzrollon/interlock",
+      "tsanva/cc-discord-presence",
+      "dgokcin/claude-pokemon-mod",
+      "AlmogBaku/ContextSaver"
+    ],
+    "standalone": ["hex/claude-council", "karanb192/cache-tax"],
+    "unknown": []
+  },
+  "eventSurfaces": [
+    {
+      "repo": "hex/claude-council",
+      "hooksPath": "hooks/hooks.json",
+      "stars": null,
+      "classicEventKeys": ["Stop"],
+      "modsCount": 1,
+      "modules": [
+        {
+          "index": 0,
+          "events": []
+        }
+      ]
+    },
+    {
+      "repo": "karanb192/cache-tax",
+      "hooksPath": "hooks/hooks.json",
+      "stars": null,
+      "classicEventKeys": [],
+      "modsCount": 1,
+      "modules": [
+        {
+          "index": 0,
+          "events": []
+        }
+      ]
+    }
+  ],
+  "apiCallsUsed": 24,
+  "truncated": false,
+  "resumeAt": "2026-10-22T23:55:16.287Z"
+}
