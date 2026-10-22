@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1420138124-cloud-local-bridge",
+    "name": "cloud-local-bridge",
+    "description": "Let Claude Code on the web use your computer: hand browser, OAuth sign-in, desktop-app and local-file steps from a claude.ai/code session to a local Claude Desktop or Remote Control session, and get the result back. Also runs several related tasks in parallel sessions from one orchestrator.",
+    "version": "",
+    "author": "ShiJianXi",
+    "repository": "https://github.com/ShiJianXi/cloud-local-bridge",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1420138124",
+      "marketplaceName": "cloud-local-bridge",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1420138124-orchestrate",
+    "name": "orchestrate",
+    "description": "name: orchestrate",
+    "version": "1.0.0",
+    "author": "ShiJianXi",
+    "repository": "https://github.com/ShiJianXi/cloud-local-bridge",
+    "manifestPath": "skills/orchestrate",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1420138124",
+      "marketplaceName": "cloud-local-bridge",
+      "hasSkillMd": true
+    }
+  }
+]

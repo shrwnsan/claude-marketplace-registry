@@ -104,6 +104,23 @@
     }
   },
   {
+    "id": "1298859391-vobiz-forward-deployed-engineer",
+    "name": "vobiz-forward-deployed-engineer",
+    "description": "name: vobiz-forward-deployed-engineer",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-forward-deployed-engineer",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
     "id": "1298859391-vobiz-partner-api",
     "name": "vobiz-partner-api",
     "description": "name: vobiz-partner-api",
@@ -162,6 +179,23 @@
     "author": "vobiz-ai",
     "repository": "https://github.com/vobiz-ai/Agent-Skills",
     "manifestPath": "skills/vobiz-sip-trunking",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1298859391",
+      "marketplaceName": "Agent-Skills",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1298859391-vobiz-sms",
+    "name": "vobiz-sms",
+    "description": "name: vobiz-sms",
+    "version": "1.0.0",
+    "author": "vobiz-ai",
+    "repository": "https://github.com/vobiz-ai/Agent-Skills",
+    "manifestPath": "skills/vobiz-sms",
     "isValid": true,
     "errors": [],
     "warnings": [],

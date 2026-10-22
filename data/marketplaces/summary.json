@@ -1,30 +1,28 @@
 {
-  "totalFound": 1688,
-  "withManifest": 613,
-  "lastUpdated": "2026-10-21T03:56:02.406Z",
+  "totalFound": 1716,
+  "withManifest": 629,
+  "lastUpdated": "2026-10-22T03:54:17.408Z",
   "searchQuery": "",
   "languages": {
-    "Python": 559,
-    "TypeScript": 289,
-    "JavaScript": 267,
+    "Python": 569,
+    "TypeScript": 294,
+    "JavaScript": 273,
     "Markdown": 3,
-    "Shell": 144,
-    "Rust": 28,
+    "Shell": 146,
+    "Rust": 29,
     "HTML": 86,
-    "Go": 35,
-    "Unknown": 225,
+    "Go": 34,
+    "Unknown": 228,
     "C++": 3,
     "Swift": 6,
-    "Astro": 2,
     "Jupyter Notebook": 3,
+    "Astro": 3,
     "C#": 3,
     "Svelte": 2,
     "Gherkin": 1,
     "Perl": 1,
     "Ruby": 2,
-    "Kotlin": 2,
-    "MDX": 1,
-    "C": 1,
+    "PowerShell": 4,
     "Java": 7,
     "PHP": 1,
     "AMPL": 1,
@@ -33,20 +31,22 @@
     "SCSS": 1,
     "CSS": 3,
     "Gleam": 1,
+    "C": 1,
     "TeX": 3,
-    "PowerShell": 3,
     "Clojure": 1,
-    "jq": 1
+    "jq": 1,
+    "Kotlin": 2,
+    "MDX": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 284975,
+      "stars": 285809,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 182530,
+      "stars": 182797,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "name": "paperclip",
-      "stars": 105295,
+      "stars": 105742,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -71,12 +71,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 77543,
+      "stars": 77628,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70234,
+      "stars": 70253,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -86,7 +86,7 @@
     },
     {
       "name": "humanizer",
-      "stars": 58956,
+      "stars": 59344,
       "url": "https://github.com/blader/humanizer"
     }
   ]

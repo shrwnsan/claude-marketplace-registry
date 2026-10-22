@@ -41,7 +41,7 @@
     "id": "1314117137-phi-redactor",
     "name": "phi-redactor",
     "description": "De-identify PHI in clinical text and documents entirely on the local machine, with no network call at redaction time. Reads .txt, .md, .pdf, .docx, .xlsx, and .pptx, and offers a reversible mode so text can be de-identified, processed elsewhere, then restored. Requires a one-time model download",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "digitaljavelina",
     "repository": "https://github.com/digitaljavelina/the-ai-clinicians-claude-plugins",
     "manifestPath": "./plugins/phi-redactor",
