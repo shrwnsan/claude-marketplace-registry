@@ -18,6 +18,7 @@ export default function Document() {
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='anonymous' />
         <link rel='preconnect' href='https://api.github.com' />
         <link rel='preconnect' href='https://github.com' />
+        <link rel='preconnect' href='https://pulse.sherwintechico.com' />
 
         {/* DNS prefetch for potential external resources */}
         <link rel='dns-prefetch' href='https://raw.githubusercontent.com' />
@@ -38,7 +39,7 @@ export default function Document() {
         {/* Content Security Policy */}
         <meta
           httpEquiv='Content-Security-Policy'
-          content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: http:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; frame-src 'none'; base-uri 'self'; form-action 'self';"
+          content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://fonts.googleapis.com https://pulse.sherwintechico.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: http:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://pulse.sherwintechico.com; frame-src 'none'; base-uri 'self'; form-action 'self';"
         />
 
         {/* Additional Security Headers */}
@@ -100,6 +101,14 @@ export default function Document() {
         {/* No canonical here: a document-level canonical points EVERY page at
             `/`, telling crawlers the whole site is one duplicate page. Each
             page declares its own canonical in its <Head> instead. */}
+
+        {/* Plausible analytics — self-hosted pulse instance; the Plausible site
+            entry uses subdirectory tracking, so data-domain includes the path. */}
+        <script
+          defer
+          data-domain='shrwnsan.github.io/claude-marketplace-registry'
+          src='https://pulse.sherwintechico.com/js/script.js'
+        />
 
         {/* Brand fonts — display / mono voice / reading sans, one request */}
         <link
