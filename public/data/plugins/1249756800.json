@@ -1,0 +1,123 @@
+[
+  {
+    "id": "1249756800-cortexes",
+    "name": "cortexes",
+    "description": "Personal knowledge vault plugin — auto-logs commits, manual memory saves, semantic retrieval",
+    "version": "2.2.0",
+    "author": "XBlueSky",
+    "repository": "https://github.com/XBlueSky/cortexes",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1249756800",
+      "marketplaceName": "cortexes",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1249756800-cortex-broadcast",
+    "name": "cortex-broadcast",
+    "description": "name: cortex-broadcast",
+    "version": "1.0.0",
+    "author": "XBlueSky",
+    "repository": "https://github.com/XBlueSky/cortexes",
+    "manifestPath": "skills/cortex-broadcast",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1249756800",
+      "marketplaceName": "cortexes",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1249756800-cortex-distill",
+    "name": "cortex-distill",
+    "description": "name: cortex-distill",
+    "version": "1.0.0",
+    "author": "XBlueSky",
+    "repository": "https://github.com/XBlueSky/cortexes",
+    "manifestPath": "skills/cortex-distill",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1249756800",
+      "marketplaceName": "cortexes",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1249756800-cortex-evolve",
+    "name": "cortex-evolve",
+    "description": "name: cortex-evolve",
+    "version": "1.0.0",
+    "author": "XBlueSky",
+    "repository": "https://github.com/XBlueSky/cortexes",
+    "manifestPath": "skills/cortex-evolve",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1249756800",
+      "marketplaceName": "cortexes",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1249756800-cortex-query",
+    "name": "cortex-query",
+    "description": "name: cortex-query",
+    "version": "1.0.0",
+    "author": "XBlueSky",
+    "repository": "https://github.com/XBlueSky/cortexes",
+    "manifestPath": "skills/cortex-query",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1249756800",
+      "marketplaceName": "cortexes",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1249756800-cortex-takeoff",
+    "name": "cortex-takeoff",
+    "description": "name: cortex-takeoff",
+    "version": "1.0.0",
+    "author": "XBlueSky",
+    "repository": "https://github.com/XBlueSky/cortexes",
+    "manifestPath": "skills/cortex-takeoff",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1249756800",
+      "marketplaceName": "cortexes",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1249756800-using-cortex",
+    "name": "using-cortex",
+    "description": "name: using-cortex",
+    "version": "1.0.0",
+    "author": "XBlueSky",
+    "repository": "https://github.com/XBlueSky/cortexes",
+    "manifestPath": "skills/using-cortex",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1249756800",
+      "marketplaceName": "cortexes",
+      "hasSkillMd": true
+    }
+  }
+]

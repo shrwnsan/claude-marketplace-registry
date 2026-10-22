@@ -1,0 +1,154 @@
+[
+  {
+    "id": "1375964899-criterio-portfolio",
+    "name": "criterio-portfolio",
+    "description": "Oficina de proyectos: consolidación de portafolio, estado contra plan, RAID, control de cambios, proveedores, presupuesto, comité y cierre. Procesa la documentación que ya existe y dice qué cambió, qué se contradice y qué lleva semanas en silencio.",
+    "version": "",
+    "author": "josenanez",
+    "repository": "https://github.com/josenanez/criterio",
+    "manifestPath": "./plugins/criterio-portfolio",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375964899",
+      "marketplaceName": "criterio",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1375964899-criterio-project",
+    "name": "criterio-project",
+    "description": "Gerencia de un proyecto: el compromiso dicho y no cumplido, extraído de la minuta con doliente, fecha y fuente — y el que se viene reprogramando reunión tras reunión, que no es un problema de seguimiento sino un bloqueo que nadie ha nombrado. Una instancia por proyecto.",
+    "version": "",
+    "author": "josenanez",
+    "repository": "https://github.com/josenanez/criterio",
+    "manifestPath": "./plugins/criterio-project",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375964899",
+      "marketplaceName": "criterio",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1375964899-criterio-product",
+    "name": "criterio-product",
+    "description": "Definición de producto antes de que exista el proyecto: qué de la definición sostiene la evidencia de demanda y qué se sostiene solo, el requerimiento que se decidió y nadie está construyendo, y el supuesto que nadie verificó. Una instancia por producto.",
+    "version": "",
+    "author": "josenanez",
+    "repository": "https://github.com/josenanez/criterio",
+    "manifestPath": "./plugins/criterio-product",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375964899",
+      "marketplaceName": "criterio",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1375964899-criterio-legal",
+    "name": "criterio-legal",
+    "description": "Fidel, los contratos: el registro de contratos contra sus documentos, los vencimientos y los preavisos de renovación, las obligaciones con su evidencia, quién firmó con qué facultad y lo pagado contra lo pactado y sus garantías. Colombia y Ecuador; cada fecha y cada monto los calcula el código y cada dato cita su documento. Sin opinión jurídica.",
+    "version": "",
+    "author": "josenanez",
+    "repository": "https://github.com/josenanez/criterio",
+    "manifestPath": "./plugins/criterio-legal",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375964899",
+      "marketplaceName": "criterio",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1375964899-criterio-compliance",
+    "name": "criterio-compliance",
+    "description": "Constanza, el cumplimiento: la matriz de obligaciones de la organización contra su evidencia, periodo a periodo, las obligaciones de cumplimiento de los contratos, las políticas por revisar, las normas nuevas sin evaluar y los plazos del canal de denuncias. Colombia y Ecuador; las obligaciones las define la organización y cada dato cita su documento.",
+    "version": "",
+    "author": "josenanez",
+    "repository": "https://github.com/josenanez/criterio",
+    "manifestPath": "./plugins/criterio-compliance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375964899",
+      "marketplaceName": "criterio",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1375964899-criterio-finance",
+    "name": "criterio-finance",
+    "description": "Clara, la contralora: el cierre mensual con su checklist y su evidencia, las conciliaciones bancarias y de cuentas, la factura electrónica de la DIAN y del SRI contra la contabilidad y el paquete del auditor. NIIF adoptadas en Colombia y Ecuador; cada cifra la calcula el código y cada dato cita su documento.",
+    "version": "",
+    "author": "josenanez",
+    "repository": "https://github.com/josenanez/criterio",
+    "manifestPath": "./plugins/criterio-finance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375964899",
+      "marketplaceName": "criterio",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1375964899-criterio-budget",
+    "name": "criterio-budget",
+    "description": "Tomás, FP&A: el presupuesto aprobado contra lo ejecutado y lo comprometido, la proyección al cierre del año con su supuesto escrito, los traslados con su acta y el material del comité de presupuesto. Toma la ejecución de la misma contabilidad que cierra Clara.",
+    "version": "",
+    "author": "josenanez",
+    "repository": "https://github.com/josenanez/criterio",
+    "manifestPath": "./plugins/criterio-budget",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375964899",
+      "marketplaceName": "criterio",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1375964899-criterio-server",
+    "name": "criterio-server",
+    "description": "Rostrum, el portal de todas las familias: publica lo que los agentes ya escribieron —el informe de la PMO, los reportes de la CFO y de la CLO, lo que vence en todas, la historia de cada corrida— para quien no abre una carpeta, y recibe preguntas escritas para cualquier agente. Un mapa por selección de carpeta dice qué se sirve. No calcula, no escribe fichas y no autentica.",
+    "version": "",
+    "author": "josenanez",
+    "repository": "https://github.com/josenanez/criterio",
+    "manifestPath": "./plugins/criterio-server",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1375964899",
+      "marketplaceName": "criterio",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  }
+]

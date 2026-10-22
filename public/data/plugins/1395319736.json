@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1395319736-coachline",
+    "name": "coachline",
+    "description": "This thread's prompts and what can be improved, in colour-coded cards, analysed by Claude on your subscription (no API key) with your past chats; drafts skills for what you repeat. Stdlib Python.",
+    "version": "",
+    "author": "teransarathchandra",
+    "repository": "https://github.com/teransarathchandra/coachline",
+    "manifestPath": "./",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395319736",
+      "marketplaceName": "coachline",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
+    "id": "1395319736-coach",
+    "name": "coach",
+    "description": "name: coach",
+    "version": "1.0.0",
+    "author": "teransarathchandra",
+    "repository": "https://github.com/teransarathchandra/coachline",
+    "manifestPath": "skills/coach",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1395319736",
+      "marketplaceName": "coachline",
+      "hasSkillMd": true
+    }
+  }
+]

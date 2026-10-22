@@ -57,6 +57,25 @@
     }
   },
   {
+    "id": "1414936254-hook-engineering",
+    "name": "hook-engineering",
+    "description": "Designs, writes, audits and debugs Claude Code hooks end to end: the event and configuration that decide when a hook runs, the input and output contract that decides what it does, prompt, agent and background hooks, workspace trust and security, and how mods interact with hooks, checked against the current docs and changelog.",
+    "version": "",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": "./plugins/hook-engineering",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "skills": [],
+      "strict": false,
+      "modsCount": 0
+    }
+  },
+  {
     "id": "1414936254-plugin-evals",
     "name": "plugin-evals",
     "description": "Makes Claude an expert in Claude Code plugin evals: designs suites that prove what a plugin adds, writes cases, graders and mocks, runs and gates them in CI, and reads the results, always checked against the CLI and docs you have today.",
@@ -228,13 +247,13 @@
     }
   },
   {
-    "id": "1414936254-docs-drift-check",
-    "name": "docs-drift-check",
-    "description": "name: docs-drift-check",
+    "id": "1414936254-github-workflow",
+    "name": "github-workflow",
+    "description": "name: github-workflow",
     "version": "1.0.0",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": ".claude/skills/docs-drift-check",
+    "manifestPath": ".claude/skills/github-workflow",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -245,13 +264,13 @@
     }
   },
   {
-    "id": "1414936254-new-plugin",
-    "name": "new-plugin",
-    "description": "name: new-plugin",
+    "id": "1414936254-plugin-consistency",
+    "name": "plugin-consistency",
+    "description": "name: plugin-consistency",
     "version": "1.0.0",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": ".claude/skills/new-plugin",
+    "manifestPath": ".claude/skills/plugin-consistency",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -262,13 +281,13 @@
     }
   },
   {
-    "id": "1414936254-triage-issues",
-    "name": "triage-issues",
-    "description": "name: triage-issues",
+    "id": "1414936254-plugin-development",
+    "name": "plugin-development",
+    "description": "name: plugin-development",
     "version": "1.0.0",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": ".claude/skills/triage-issues",
+    "manifestPath": ".claude/skills/plugin-development",
     "isValid": true,
     "errors": [],
     "warnings": [],
@@ -279,13 +298,47 @@
     }
   },
   {
-    "id": "1414936254-wrap-up",
-    "name": "wrap-up",
-    "description": "name: wrap-up",
+    "id": "1414936254-plugin-hooks-guidance",
+    "name": "plugin-hooks-guidance",
+    "description": "name: plugin-hooks-guidance",
     "version": "1.0.0",
     "author": "nerymurillohnd",
     "repository": "https://github.com/nerymurillohnd/the-claude-factory",
-    "manifestPath": ".claude/skills/wrap-up",
+    "manifestPath": ".claude/skills/plugin-hooks-guidance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-plugin-mcp-guidance",
+    "name": "plugin-mcp-guidance",
+    "description": "name: plugin-mcp-guidance",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/plugin-mcp-guidance",
+    "isValid": true,
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "marketplaceId": "1414936254",
+      "marketplaceName": "the-claude-factory",
+      "hasSkillMd": true
+    }
+  },
+  {
+    "id": "1414936254-release-and-versioning",
+    "name": "release-and-versioning",
+    "description": "name: release-and-versioning",
+    "version": "1.0.0",
+    "author": "nerymurillohnd",
+    "repository": "https://github.com/nerymurillohnd/the-claude-factory",
+    "manifestPath": ".claude/skills/release-and-versioning",
     "isValid": true,
     "errors": [],
     "warnings": [],
