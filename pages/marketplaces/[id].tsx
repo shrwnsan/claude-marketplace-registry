@@ -7,7 +7,6 @@ import SearchBar from '@/components/Search/SearchBar';
 import PluginCard from '@/components/Marketplace/PluginCard';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
 import { usePluginShard } from '@/hooks/usePluginShard';
-import LoadingState from '@/components/ui/LoadingState';
 import ValidatedManifestBadge from '@/components/ui/ValidatedManifestBadge';
 import SecurityAuditBadge from '@/components/ui/SecurityAuditBadge';
 import {
@@ -24,6 +23,7 @@ import {
   Clock,
 } from 'lucide-react';
 import { formatRelativeAge, pathBasename } from '@/utils/format';
+import { displayText } from '@/utils/display-values';
 import { buildBreadcrumbJsonLd, buildWebPageJsonLd } from '@/utils/seo';
 
 // GitHub Linguist colors for the languages that actually occur in the
@@ -177,6 +177,17 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
   const seoDescription =
     (marketplace?.description || buildDescription || '').slice(0, 155) ||
     `${seoName} — a Claude Code marketplace discovered by the Claude Marketplace Registry.`;
+  // Body display values — same precedence as the SEO surface: the live record
+  // wins once loaded, the build-time record prerenders the header card so
+  // non-JS crawlers see real content. Client-only data (stats line, skills
+  // inventory, plugin grid) stays gated on its data and is simply absent
+  // from the prerendered HTML — no numbers are fabricated.
+  const displayName = seoName;
+  const displayDescription = displayText(
+    marketplace?.description,
+    buildDescription,
+    `${displayName} — a Claude Code marketplace discovered by the Claude Marketplace Registry.`
+  );
   const pageHead = (
     <Head>
       <title>{`${seoName} — Claude Code Marketplace`}</title>
@@ -217,22 +228,11 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
     </Head>
   );
 
-  if (marketplaceLoading || shardLoading) {
-    return (
-      <>
-        {pageHead}
-        <MainLayout>
-          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-            <div className='container-detail py-12'>
-              <LoadingState variant='skeleton' className='max-w-4xl' />
-            </div>
-          </div>
-        </MainLayout>
-      </>
-    );
-  }
-
-  if (!marketplace) {
+  // Definite not-found only: the client catalog and shard have both settled,
+  // the marketplace is absent, and the build-time record has nothing to show
+  // either. While loading — and always at prerender, where buildName exists —
+  // the main body renders below with whatever truth is available so far.
+  if (!marketplace && !buildName && !marketplaceLoading && !shardLoading) {
     return (
       <>
         {pageHead}
@@ -276,62 +276,66 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
               <div className='flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4'>
                 <div className='flex-1 min-w-0'>
                   <h1 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2 flex flex-wrap items-center gap-x-2.5 gap-y-1'>
-                    {marketplace.name}
-                    {marketplace.hasManifest && (
+                    {displayName}
+                    {marketplace?.hasManifest && (
                       <ValidatedManifestBadge className='w-6 h-6 text-success-500' />
                     )}
-                    {marketplace.securityAudit && (
+                    {marketplace?.securityAudit && (
                       <SecurityAuditBadge audit={marketplace.securityAudit} className='w-6 h-6' />
                     )}
                   </h1>
-                  <p className='text-gray-600 dark:text-gray-300 mb-4'>{marketplace.description}</p>
-                  <div className='flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-gray-500 dark:text-gray-400'>
-                    <span className='flex items-center gap-1' title='Stars'>
-                      <Star className='w-4 h-4 text-yellow-500' aria-hidden='true' />
-                      {(marketplace.stars || 0).toLocaleString()}
-                    </span>
-                    {marketplace.forks ? (
-                      <span className='flex items-center gap-1' title='Forks'>
-                        <GitFork className='w-4 h-4' aria-hidden='true' />
-                        {marketplace.forks.toLocaleString()}
+                  <p className='text-gray-600 dark:text-gray-300 mb-4'>{displayDescription}</p>
+                  {/* Repo stats row — client-gated: every field comes from
+                      the loaded record, and zeros would be fabricated. */}
+                  {marketplace && (
+                    <div className='flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-gray-500 dark:text-gray-400'>
+                      <span className='flex items-center gap-1' title='Stars'>
+                        <Star className='w-4 h-4 text-yellow-500' aria-hidden='true' />
+                        {(marketplace.stars || 0).toLocaleString()}
                       </span>
-                    ) : null}
-                    {marketplace.language && marketplace.language !== 'Unknown' && (
-                      <span
-                        className='flex items-center gap-1.5'
-                        title={`Language: ${marketplace.language}`}
-                      >
+                      {marketplace.forks ? (
+                        <span className='flex items-center gap-1' title='Forks'>
+                          <GitFork className='w-4 h-4' aria-hidden='true' />
+                          {marketplace.forks.toLocaleString()}
+                        </span>
+                      ) : null}
+                      {marketplace.language && marketplace.language !== 'Unknown' && (
                         <span
-                          aria-hidden='true'
-                          className='w-2.5 h-2.5 rounded-full flex-shrink-0'
-                          style={{
-                            backgroundColor:
-                              LANGUAGE_DOT_COLORS[marketplace.language] ?? LANGUAGE_DOT_FALLBACK,
-                          }}
-                        />
-                        {marketplace.language}
-                      </span>
-                    )}
-                    {marketplace.updatedAt && (
-                      <span className='flex items-center gap-1' title={marketplace.updatedAt}>
-                        <Clock className='w-4 h-4' aria-hidden='true' />
-                        updated {formatRelativeAge(marketplace.updatedAt)}
-                      </span>
-                    )}
-                    {marketplace.hasManifest && (
-                      <span className='badge badge-secondary text-xs'>marketplace.json ✓</span>
-                    )}
-                    {marketplace.securityAudit && (
-                      <span
-                        className='badge badge-secondary text-xs'
-                        title='Gen/Socket/Snyk via skills.sh — indicative, not a guarantee'
-                      >
-                        skills.sh audit: {marketplace.securityAudit.risk} (
-                        {marketplace.securityAudit.auditedSkills}/
-                        {marketplace.securityAudit.totalSkills} skills)
-                      </span>
-                    )}
-                  </div>
+                          className='flex items-center gap-1.5'
+                          title={`Language: ${marketplace.language}`}
+                        >
+                          <span
+                            aria-hidden='true'
+                            className='w-2.5 h-2.5 rounded-full flex-shrink-0'
+                            style={{
+                              backgroundColor:
+                                LANGUAGE_DOT_COLORS[marketplace.language] ?? LANGUAGE_DOT_FALLBACK,
+                            }}
+                          />
+                          {marketplace.language}
+                        </span>
+                      )}
+                      {marketplace.updatedAt && (
+                        <span className='flex items-center gap-1' title={marketplace.updatedAt}>
+                          <Clock className='w-4 h-4' aria-hidden='true' />
+                          updated {formatRelativeAge(marketplace.updatedAt)}
+                        </span>
+                      )}
+                      {marketplace.hasManifest && (
+                        <span className='badge badge-secondary text-xs'>marketplace.json ✓</span>
+                      )}
+                      {marketplace.securityAudit && (
+                        <span
+                          className='badge badge-secondary text-xs'
+                          title='Gen/Socket/Snyk via skills.sh — indicative, not a guarantee'
+                        >
+                          skills.sh audit: {marketplace.securityAudit.risk} (
+                          {marketplace.securityAudit.auditedSkills}/
+                          {marketplace.securityAudit.totalSkills} skills)
+                        </span>
+                      )}
+                    </div>
+                  )}
                   {topics.length > 0 && (
                     <div className='flex flex-wrap gap-1.5 mt-3'>
                       {topics.slice(0, 6).map((topic) => (
@@ -347,7 +351,7 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
                     </div>
                   )}
                 </div>
-                {marketplace.url && (
+                {marketplace?.url && (
                   <a
                     href={marketplace.url}
                     target='_blank'
@@ -361,42 +365,48 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
                 )}
               </div>
 
-              {/* Plugin count stats — one tight, left-aligned line */}
-              <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700 flex flex-wrap items-baseline gap-x-6 gap-y-2'>
-                <div
-                  className='flex items-baseline gap-1.5'
-                  title='Plugins discovered in this marketplace manifest'
-                >
-                  <span className='text-2xl font-bold font-mono tabular-nums text-gray-900 dark:text-gray-100'>
-                    {marketplacePlugins.length}
-                  </span>
-                  <span className='text-xs text-gray-500 dark:text-gray-400'>Plugins indexed</span>
-                </div>
-                <div className='flex items-baseline gap-1.5' title='Distinct plugin authors'>
-                  <span className='text-2xl font-bold font-mono tabular-nums text-gray-900 dark:text-gray-100'>
-                    {new Set(marketplacePlugins.map((p) => p.author)).size}
-                  </span>
-                  <span className='text-xs text-gray-500 dark:text-gray-400'>Authors</span>
-                </div>
-                <div
-                  className='flex items-baseline gap-1.5'
-                  title='Distinct skills carried by the indexed plugins'
-                >
-                  <span className='text-2xl font-bold font-mono tabular-nums text-gray-900 dark:text-gray-100'>
-                    {new Set(marketplacePlugins.flatMap((p) => p.skills || [])).size}
-                  </span>
-                  <span className='text-xs text-gray-500 dark:text-gray-400'>Skills</span>
-                </div>
-                {marketplacePlugins.some((p) => (p.modsCount ?? 0) > 0) && (
-                  <div className='flex items-baseline gap-1.5 text-primary-600 dark:text-primary-400'>
-                    <span className='text-2xl font-bold font-mono tabular-nums flex items-center gap-1'>
-                      <Zap className='w-5 h-5' aria-hidden='true' />
-                      {marketplacePlugins.reduce((sum, p) => sum + (p.modsCount ?? 0), 0)}
+              {/* Plugin count stats — one tight, left-aligned line.
+                  Client-gated: the numbers need the loaded record, and the
+                  prerendered page must not fabricate zeros. */}
+              {marketplace && (
+                <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700 flex flex-wrap items-baseline gap-x-6 gap-y-2'>
+                  <div
+                    className='flex items-baseline gap-1.5'
+                    title='Plugins discovered in this marketplace manifest'
+                  >
+                    <span className='text-2xl font-bold font-mono tabular-nums text-gray-900 dark:text-gray-100'>
+                      {marketplacePlugins.length}
                     </span>
-                    <span className='text-xs'>Mods shipped</span>
+                    <span className='text-xs text-gray-500 dark:text-gray-400'>
+                      Plugins indexed
+                    </span>
                   </div>
-                )}
-              </div>
+                  <div className='flex items-baseline gap-1.5' title='Distinct plugin authors'>
+                    <span className='text-2xl font-bold font-mono tabular-nums text-gray-900 dark:text-gray-100'>
+                      {new Set(marketplacePlugins.map((p) => p.author)).size}
+                    </span>
+                    <span className='text-xs text-gray-500 dark:text-gray-400'>Authors</span>
+                  </div>
+                  <div
+                    className='flex items-baseline gap-1.5'
+                    title='Distinct skills carried by the indexed plugins'
+                  >
+                    <span className='text-2xl font-bold font-mono tabular-nums text-gray-900 dark:text-gray-100'>
+                      {new Set(marketplacePlugins.flatMap((p) => p.skills || [])).size}
+                    </span>
+                    <span className='text-xs text-gray-500 dark:text-gray-400'>Skills</span>
+                  </div>
+                  {marketplacePlugins.some((p) => (p.modsCount ?? 0) > 0) && (
+                    <div className='flex items-baseline gap-1.5 text-primary-600 dark:text-primary-400'>
+                      <span className='text-2xl font-bold font-mono tabular-nums flex items-center gap-1'>
+                        <Zap className='w-5 h-5' aria-hidden='true' />
+                        {marketplacePlugins.reduce((sum, p) => sum + (p.modsCount ?? 0), 0)}
+                      </span>
+                      <span className='text-xs'>Mods shipped</span>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* Skills inventory — chips when the distribution is flat
                   (bars would compare nothing), share bars when skills are
@@ -472,7 +482,7 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
               <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4'>
                 <h2 className='text-xl font-bold text-gray-900 dark:text-gray-100 flex items-center'>
                   <Package className='w-5 h-5 mr-2 text-primary-500' />
-                  Plugins ({filteredPlugins.length})
+                  Plugins{shardLoading ? '' : ` (${filteredPlugins.length})`}
                 </h2>
                 <div className='flex items-center gap-3'>
                   <div className='max-w-sm w-full'>
@@ -499,6 +509,9 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
                 </div>
               </div>
 
+              {/* Client-gated: until the shard settles, render neither the
+                  grid nor an empty-state — an exported "no plugins" claim
+                  or a zero count would be fabricated data. */}
               {shardError ? (
                 <p className='text-center text-gray-500 dark:text-gray-400 py-10'>
                   Plugin data temporarily unavailable — please refresh.
@@ -549,13 +562,13 @@ const MarketplaceDetailPage: React.FC<MarketplaceDetailPageProps> = ({
                     )
                   )}
                 </div>
-              ) : (
+              ) : !shardLoading ? (
                 <p className='text-center text-gray-500 dark:text-gray-400 py-10'>
                   {marketplacePlugins.length === 0
                     ? 'No plugins discovered in this marketplace yet.'
                     : 'No plugins match your search.'}
                 </p>
-              )}
+              ) : null}
             </section>
           </div>
         </div>
