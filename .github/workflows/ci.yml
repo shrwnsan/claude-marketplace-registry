@@ -13,6 +13,12 @@ on:
 env:
   NODE_VERSION: '24'
   CACHE_VERSION: 'v1'
+  # puppeteer is a devDependency used only by the manual scripts/browser-test.ts
+  # screenshot helper (OG image regen); no CI job launches a browser. Its
+  # postinstall Chrome download is intermittently flaky on runners ("npm error
+  # code 13" / "unsettled top-level await" in install.mjs, e.g. PR #462's
+  # Security Audit job), so skip the download for every job.
+  PUPPETEER_SKIP_DOWNLOAD: 'true'
 
 # Global permissions for security
 # (security-events: write was only needed by CodeQL, which now lives in security.yml)
