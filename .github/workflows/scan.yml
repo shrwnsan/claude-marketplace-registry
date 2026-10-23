@@ -83,52 +83,10 @@ jobs:
           path: data/marketplaces/
           retention-days: 1
 
-  validate-plugins:
-    name: Validate Plugins
-    runs-on: ubuntu-latest
-    needs: scan-marketplaces
-    if: github.event.inputs.scan_type == 'validation' || github.event.inputs.scan_type == 'full' || github.event_name == 'schedule'
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1  # v7.1.0
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Download scan results
-        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333  # v8.0.2
-        with:
-          name: marketplace-scan-results
-          path: data/marketplaces/
-
-      - name: Run plugin validation
-        run: npm run validate:plugins
-        env:
-          # Same rate-limit pool consideration as the scan job above.
-          GITHUB_TOKEN: ${{ secrets.DATA_UPDATES_PAT }}
-          NODE_ENV: production
-
-      - name: Upload validation results
-        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9  # v7.0.2
-        with:
-          name: plugin-validation-results
-          path: data/plugins/
-          retention-days: 1
-
   generate-data:
     name: Generate Data Files
     runs-on: ubuntu-latest
-    needs: [scan-marketplaces, validate-plugins]
+    needs: [scan-marketplaces]
     if: github.event.inputs.scan_type == 'data' || github.event.inputs.scan_type == 'full' || github.event_name == 'schedule'
 
     steps:
@@ -156,12 +114,6 @@ jobs:
         with:
           name: marketplace-scan-results
           path: data/marketplaces/
-
-      - name: Download validation artifacts
-        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333  # v8.0.2
-        with:
-          name: plugin-validation-results
-          path: data/plugins/
 
       - name: Enrich categories with Jev
         # Enhancement, not load-bearing: the sidecar merges additively and the
@@ -211,7 +163,7 @@ jobs:
   commit-changes:
     name: Commit Changes
     runs-on: ubuntu-latest
-    needs: [scan-marketplaces, validate-plugins, generate-data]
+    needs: [scan-marketplaces, generate-data]
     if: (github.event.inputs.commit_changes == 'true' || github.event_name == 'schedule') && needs.generate-data.result == 'success'
 
     steps:
@@ -246,7 +198,6 @@ jobs:
             🔄 Update marketplace data
 
             - Automated marketplace scan results
-            - Plugin validation updates
             - Generated data files
 
             Trigger: ${{ github.event_name }}
@@ -280,7 +231,7 @@ jobs:
   notify:
     name: Notify Scan Results
     runs-on: ubuntu-latest
-    needs: [scan-marketplaces, validate-plugins, generate-data, commit-changes]
+    needs: [scan-marketplaces, generate-data, commit-changes]
     if: always()
 
     steps:
@@ -291,12 +242,11 @@ jobs:
           echo "| Step | Status |" >> $GITHUB_STEP_SUMMARY
           echo "|------|--------|" >> $GITHUB_STEP_SUMMARY
           echo "| Marketplace Scan | ${{ needs.scan-marketplaces.result }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| Plugin Validation | ${{ needs.validate-plugins.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Data Generation | ${{ needs.generate-data.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Commit Changes | ${{ needs.commit-changes.result }} |" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
 
-          if [[ "${{ needs.scan-marketplaces.result }}" == "success" && "${{ needs.validate-plugins.result }}" == "success" && "${{ needs.generate-data.result }}" == "success" ]]; then
+          if [[ "${{ needs.scan-marketplaces.result }}" == "success" && "${{ needs.generate-data.result }}" == "success" ]]; then
             echo "✅ **Scan completed successfully!**" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
 
