@@ -12,18 +12,23 @@ import {
   buildWebPageJsonLd,
 } from '@/utils/seo';
 import { useRealMarketplaceData } from '@/hooks/useRealMarketplaceData';
-import LoadingState from '@/components/ui/LoadingState';
 import { Star, Github, Copy, Check, Package, ArrowLeft, Zap } from 'lucide-react';
 import { pathBasename } from '@/utils/format';
+import { displayCount, displayText } from '@/utils/display-values';
 import fs from 'fs';
 import path from 'path';
 
 interface PluginDetailPageProps {
   id: string;
   /** Build-time truth from the generated index — bakes unique titles,
-   *  descriptions, canonicals, and JSON-LD into each exported page. */
+   *  descriptions, canonicals, and JSON-LD into each exported page, and
+   *  prerenders the header body (name, description, byline) so non-JS
+   *  crawlers see real content instead of a loading skeleton. */
   name?: string;
   description?: string;
+  author?: string;
+  version?: string;
+  marketplaceId?: string;
   marketplaceName?: string;
   modsCount?: number;
 }
@@ -63,6 +68,9 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
       id?: string;
       name?: string;
       description?: string;
+      author?: string;
+      version?: string;
+      marketplaceId?: string;
       marketplaceName?: string;
       modsCount?: number;
     }>;
@@ -71,6 +79,9 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
       summary = {
         name: entry.name,
         description: entry.description,
+        author: entry.author,
+        version: entry.version,
+        marketplaceId: entry.marketplaceId,
         marketplaceName: entry.marketplaceName,
         modsCount: entry.modsCount,
       };
@@ -85,6 +96,11 @@ const PluginDetailPage: React.FC<PluginDetailPageProps> = ({
   id: buildId,
   name: buildName,
   description: buildDescription,
+  author: buildAuthor,
+  version: buildVersion,
+  marketplaceId: buildMarketplaceId,
+  marketplaceName: buildMarketplaceName,
+  modsCount: buildModsCount,
 }) => {
   const router = useRouter();
   const { id: rawId } = router.query;
@@ -100,11 +116,7 @@ const PluginDetailPage: React.FC<PluginDetailPageProps> = ({
   const { data: marketplaceData } = useRealMarketplaceData();
 
   const summary = useMemo(() => plugins.find((p) => p.id === id) || null, [id, plugins]);
-  const {
-    plugins: shardPlugins,
-    loading: shardLoading,
-    error: shardError,
-  } = usePluginShard(summary?.marketplaceId);
+  const { plugins: shardPlugins } = usePluginShard(summary?.marketplaceId);
 
   const full = useMemo(() => shardPlugins.find((p) => p.id === id) || null, [id, shardPlugins]);
   const plugin: CatalogPlugin | null = full || summary;
@@ -142,6 +154,22 @@ const PluginDetailPage: React.FC<PluginDetailPageProps> = ({
   const seoDescription =
     (plugin?.description || buildDescription || '').slice(0, 155) ||
     `${seoName} — a Claude Code plugin discovered by the Claude Marketplace Registry.`;
+  // Body display values — same precedence as the SEO surface: the live client
+  // record wins once loaded, the build-time record prerenders the header so
+  // non-JS crawlers see real content, generic copy is the last resort.
+  // Client-only enrichments (stars join, skill names, related plugins) stay
+  // gated on their data and are simply absent from the prerendered HTML.
+  const displayName = seoName;
+  const displayDescription = displayText(
+    plugin?.description,
+    buildDescription,
+    `${displayName} — a Claude Code plugin discovered by the Claude Marketplace Registry.`
+  );
+  const displayAuthor = displayText(plugin?.author, buildAuthor, '');
+  const displayVersion = displayText(plugin?.version, buildVersion, '');
+  const displayMarketplaceId = displayText(plugin?.marketplaceId, buildMarketplaceId, '');
+  const displayMarketplaceName = displayText(plugin?.marketplaceName, buildMarketplaceName, '');
+  const displayModsCount = displayCount(plugin?.modsCount, buildModsCount);
   const pageHead = (
     <Head>
       <title>{`${seoName} — Claude Code Plugin`}</title>
@@ -187,22 +215,11 @@ const PluginDetailPage: React.FC<PluginDetailPageProps> = ({
     </Head>
   );
 
-  if (indexLoading || (summary && shardLoading && !shardError)) {
-    return (
-      <>
-        {pageHead}
-        <MainLayout>
-          <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-            <div className='container-detail py-12'>
-              <LoadingState variant='skeleton' className='max-w-3xl' />
-            </div>
-          </div>
-        </MainLayout>
-      </>
-    );
-  }
-
-  if (!plugin) {
+  // Definite not-found only: the client catalog has settled, the plugin is
+  // absent from it, and the build-time record has nothing to show either.
+  // While loading — and always at prerender, where buildName exists — the
+  // main body renders below with whatever truth is available so far.
+  if (!plugin && !buildName && !indexLoading) {
     return (
       <>
         {pageHead}
@@ -246,32 +263,34 @@ const PluginDetailPage: React.FC<PluginDetailPageProps> = ({
               <div className='flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4'>
                 <div className='flex-1 min-w-0'>
                   <h1 className='text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2'>
-                    {plugin.name}
+                    {displayName}
                   </h1>
-                  <p className='text-gray-600 dark:text-gray-300 mb-4'>{plugin.description}</p>
+                  <p className='text-gray-600 dark:text-gray-300 mb-4'>{displayDescription}</p>
                   <div className='flex flex-wrap items-center gap-x-4 gap-y-1.5 text-sm text-gray-500 dark:text-gray-400'>
-                    <span>
-                      by{' '}
-                      <span className='font-medium text-gray-700 dark:text-gray-200'>
-                        {plugin.author}
+                    {displayAuthor && (
+                      <span>
+                        by{' '}
+                        <span className='font-medium text-gray-700 dark:text-gray-200'>
+                          {displayAuthor}
+                        </span>
                       </span>
-                    </span>
-                    {plugin.version && <span className='font-mono text-xs'>v{plugin.version}</span>}
-                    {plugin.marketplaceId && (
+                    )}
+                    {displayVersion && <span className='font-mono text-xs'>v{displayVersion}</span>}
+                    {displayMarketplaceId && (
                       <Link
-                        href={`/marketplaces/${plugin.marketplaceId}`}
+                        href={`/marketplaces/${displayMarketplaceId}`}
                         className='badge badge-secondary text-xs hover:border-primary-300 dark:hover:border-primary-600 transition-colors'
                       >
-                        {plugin.marketplaceName}
+                        {displayMarketplaceName}
                       </Link>
                     )}
-                    {(plugin.modsCount ?? 0) > 0 && (
+                    {displayModsCount > 0 && (
                       <span
                         className='flex items-center gap-1 text-primary-600 dark:text-primary-400'
                         title='Ships Claude Code mods (hook modules)'
                       >
                         <Zap className='w-4 h-4' aria-hidden='true' />
-                        {plugin.modsCount} mod{plugin.modsCount === 1 ? '' : 's'}
+                        {displayModsCount} mod{displayModsCount === 1 ? '' : 's'}
                       </span>
                     )}
                     {marketplace && (
@@ -297,7 +316,7 @@ const PluginDetailPage: React.FC<PluginDetailPageProps> = ({
                       <Copy className='w-5 h-5' />
                     )}
                   </button>
-                  {(plugin.sourceUrl || plugin.repositoryUrl) && (
+                  {plugin && (plugin.sourceUrl || plugin.repositoryUrl) && (
                     <a
                       href={plugin.sourceUrl || plugin.repositoryUrl}
                       target='_blank'
@@ -312,8 +331,9 @@ const PluginDetailPage: React.FC<PluginDetailPageProps> = ({
                 </div>
               </div>
 
-              {/* Skills */}
-              {(plugin.skills?.length ?? 0) > 0 && (
+              {/* Skills — full skill names only exist on the shard record,
+                  so this section is absent from the prerendered HTML */}
+              {plugin && (plugin.skills?.length ?? 0) > 0 && (
                 <div className='mt-5 pt-5 border-t border-gray-100 dark:border-gray-700'>
                   <p className='eyebrow'>ls skills/ ({plugin.skills!.length})</p>
                   <div className='mt-3 flex flex-wrap gap-1.5'>
@@ -336,7 +356,7 @@ const PluginDetailPage: React.FC<PluginDetailPageProps> = ({
               <section className='mt-10'>
                 <h2 className='text-xl font-bold text-gray-900 dark:text-gray-100 mb-4 flex items-center'>
                   <Package className='w-5 h-5 mr-2 text-primary-500' />
-                  More from {plugin.marketplaceName}
+                  More from {displayMarketplaceName}
                 </h2>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                   {relatedPlugins.map((related) => (
