@@ -1,10 +1,50 @@
 {
   "source": "skills.sh (Gen / Socket / Snyk)",
-  "generatedAt": "2026-10-22T03:55:20.970Z",
+  "generatedAt": "2026-10-23T04:01:41.261Z",
   "entries": {
+    "170797156": {
+      "repo": "reactive/data-client",
+      "auditedAt": "2026-10-23T04:01:25.485Z",
+      "skills": {
+        "data-client-setup": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T09:34:58.920Z"
+        }
+      }
+    },
+    "787362890": {
+      "repo": "dahlia/logtape",
+      "auditedAt": "2026-10-23T04:01:26.256Z",
+      "skills": {
+        "logtape": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-08-30T19:45:42.334Z"
+        }
+      }
+    },
     "1061953414": {
       "repo": "anthropics/skills",
-      "auditedAt": "2026-10-15T01:43:03.142Z",
+      "auditedAt": "2026-10-23T04:01:22.548Z",
       "skills": {
         "xlsx": {
           "ath": {
@@ -271,6 +311,1531 @@
             "risk": "low"
           },
           "analyzedAt": "2026-08-17T17:27:32.591Z"
+        }
+      }
+    },
+    "1077819522": {
+      "repo": "pascalorg/editor",
+      "auditedAt": "2026-10-23T04:01:23.530Z",
+      "skills": {
+        "pascal-3d": {
+          "ath": {
+            "risk": "medium"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-20T20:53:53.549Z"
+        },
+        "furniture-fit": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-22T11:53:05.475Z"
+        }
+      }
+    },
+    "1100923190": {
+      "repo": "kylehughes/the-unofficial-swift-programming-language-skill",
+      "auditedAt": "2026-10-23T04:01:30.345Z",
+      "skills": {
+        "programming-swift": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-03-30T09:06:25.093Z"
+        }
+      }
+    },
+    "1137485434": {
+      "repo": "softaworks/agent-toolkit",
+      "auditedAt": "2026-10-23T04:01:24.146Z",
+      "skills": {
+        "codex": {
+          "ath": {
+            "risk": "medium"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:06:40.542Z"
+        },
+        "gemini": {
+          "ath": {
+            "risk": "high"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 1,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:54:01.093Z"
+        },
+        "perplexity": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-09-15T00:53:55.746Z"
+        },
+        "agent-md-refactor": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:53:59.741Z"
+        },
+        "command-creator": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T14:43:54.610Z"
+        },
+        "plugin-forge": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:54:10.865Z"
+        },
+        "skill-judge": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T13:05:10.190Z"
+        },
+        "backend-to-frontend-handoff-docs": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T20:33:15.105Z"
+        },
+        "c4-architecture": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T19:08:24.613Z"
+        },
+        "crafting-effective-readmes": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:53:49.710Z"
+        },
+        "draw-io": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:53:49.204Z"
+        },
+        "excalidraw": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T22:12:09.533Z"
+        },
+        "frontend-to-backend-requirements": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:54:06.584Z"
+        },
+        "marp-slide": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:53:49.973Z"
+        },
+        "mermaid-diagrams": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T09:50:37.641Z"
+        },
+        "writing-clearly-and-concisely": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T14:00:33.478Z"
+        },
+        "design-system-starter": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:53:49.704Z"
+        },
+        "mui": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:53:56.376Z"
+        },
+        "openapi-to-typescript": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:54:03.489Z"
+        },
+        "react-dev": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T00:53:57.640Z"
+        }
+      }
+    },
+    "1145158024": {
+      "repo": "wondelai/skills",
+      "auditedAt": "2026-10-23T04:01:25.027Z",
+      "skills": {
+        "jobs-to-be-done": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T23:07:49.921Z"
+        },
+        "negotiation": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T08:41:53.604Z"
+        },
+        "mom-test": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T15:42:18.965Z"
+        },
+        "monetizing-innovation": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-01T14:24:34.904Z"
+        },
+        "lean-analytics": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-01T14:24:36.792Z"
+        },
+        "refactoring-ui": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T14:13:07.846Z"
+        },
+        "ios-hig-design": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T15:05:38.873Z"
+        },
+        "ux-heuristics": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T13:20:13.819Z"
+        },
+        "hooked-ux": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T15:42:18.576Z"
+        },
+        "improve-retention": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T15:43:18.368Z"
+        },
+        "web-typography": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T14:44:34.218Z"
+        },
+        "top-design": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T12:59:17.276Z"
+        },
+        "design-everyday-things": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T15:40:48.085Z"
+        },
+        "lean-ux": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T13:20:13.704Z"
+        },
+        "microinteractions": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-15T13:20:13.779Z"
+        },
+        "steve-jobs-design-review": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-06-30T22:28:52.012Z"
+        },
+        "cro-methodology": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T15:42:21.319Z"
+        },
+        "storybrand-messaging": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T15:42:40.782Z"
+        },
+        "scorecard-marketing": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T15:42:37.249Z"
+        },
+        "contagious": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-14T15:42:58.287Z"
+        }
+      }
+    },
+    "1202576122": {
+      "repo": "Aperivue/medsci-skills",
+      "auditedAt": "2026-10-23T04:01:27.994Z",
+      "skills": {
+        "fulltext-retrieval": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:28:40.330Z"
+        },
+        "lit-sync": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:27:57.211Z"
+        },
+        "manage-refs": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-09T04:40:32.906968+00:00"
+        },
+        "obsidian-paper-vault": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:29:12.036Z"
+        },
+        "search-lit": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-04T13:29:45.289Z"
+        },
+        "verify-refs": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-09T04:41:10.137Z"
+        },
+        "calc-sample-size": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:28:09.210Z"
+        },
+        "clean-data": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:27:38.564Z"
+        },
+        "define-variables": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:27:51.849Z"
+        },
+        "deidentify": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 2,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-17T11:22:07.492Z"
+        },
+        "design-ai-benchmarking": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 1,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:28:07.197Z"
+        },
+        "design-study": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-09T04:41:03.777Z"
+        },
+        "generate-codebook": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:28:08.379Z"
+        },
+        "version-dataset": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:29:14.429Z"
+        },
+        "architecture-zoo": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:27:48.171Z"
+        },
+        "explainability": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:27:36.873Z"
+        },
+        "imaging-data": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:28:39.881Z"
+        },
+        "mllm-eval": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-09T04:41:36.059Z"
+        },
+        "model-assessment": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:29:43.210Z"
+        },
+        "model-card": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:28:40.363Z"
+        }
+      }
+    },
+    "1207161577": {
+      "repo": "NatiCha/bunwv",
+      "auditedAt": "2026-10-23T04:01:28.235Z",
+      "skills": {
+        "bunwv": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-09-16T05:11:59.340Z"
+        }
+      }
+    },
+    "1209609017": {
+      "repo": "event4u-app/agent-config",
+      "auditedAt": "2026-10-23T04:01:31.800Z",
+      "skills": {
+        "install-agent-config": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-09T19:46:47.606Z"
+        }
+      }
+    },
+    "1230639327": {
+      "repo": "leek/agent-skills",
+      "auditedAt": "2026-10-23T04:01:34.168Z",
+      "skills": {
+        "architecture-satisfaction": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-19T19:05:50.679Z"
+        },
+        "autopilot": {
+          "ath": {
+            "risk": "high"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 1,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-07T12:03:28.094Z"
+        },
+        "browser-test": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-19T19:06:52.565Z"
+        },
+        "chatter-scout": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-22T12:12:14.722Z"
+        },
+        "closeout": {
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-22T00:35:52.309Z"
+        },
+        "code-review": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-19T19:07:17.090Z"
+        },
+        "code-smells-audit": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-07T12:02:09.248Z"
+        },
+        "codebase-design": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-07T12:02:00.672Z"
+        },
+        "commit": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-22T00:35:55.309Z"
+        },
+        "dependency-audit": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-08T22:00:26.488Z"
+        },
+        "diagnosing-bugs": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-07T12:01:05.643Z"
+        },
+        "domain-modeling": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-05T19:07:03.173Z"
+        },
+        "fix-ci-failures": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-19T19:07:16.141Z"
+        },
+        "fix-github-issues": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "critical",
+            "alerts": 1,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-19T19:07:10.124Z"
+        },
+        "fix-nightwatch-issues": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-19T19:06:46.722Z"
+        },
+        "fix-posthog-issues": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-19T19:07:08.831Z"
+        },
+        "grill-me": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T17:50:06.937Z"
+        },
+        "grill-with-docs": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-05T19:05:56.023Z"
+        },
+        "grilling": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-07T12:01:07.284Z"
+        },
+        "handoff": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-08-31T00:39:16.584Z"
+        }
+      }
+    },
+    "1248751622": {
+      "repo": "brycewang-stanford/AER-Skills",
+      "auditedAt": "2026-10-23T04:01:29.588Z",
+      "skills": {
+        "aer-workflow": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:11:49.550Z"
+        },
+        "aer-topic-selection": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:16.816Z"
+        },
+        "aer-literature": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-07-30T06:10:47.075Z"
+        },
+        "aer-identification": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:16.537Z"
+        },
+        "aer-preregistration": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:23.444Z"
+        },
+        "aer-robustness": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:15.304Z"
+        },
+        "aer-paper-body": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:16.214Z"
+        },
+        "aer-introduction": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:15.359Z"
+        },
+        "aer-tables-figures": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:47.260Z"
+        },
+        "aer-consistency": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-07-30T06:10:16.327Z"
+        },
+        "aer-referee-sim": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:16.632Z"
+        },
+        "aer-replication": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:20.516Z"
+        },
+        "aer-submission": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:47.327Z"
+        },
+        "aer-rebuttal": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:10:15.549Z"
+        },
+        "aer-statspai": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-30T06:11:17.473Z"
+        }
+      }
+    },
+    "1254422214": {
+      "repo": "rollinsio/beyond-test-coverage",
+      "auditedAt": "2026-10-23T04:01:30.091Z",
+      "skills": {
+        "test-quality": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-07T23:32:45.778Z"
+        },
+        "results-dashboard": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-07-07T23:32:48.319Z"
+        }
+      }
+    },
+    "1354760955": {
+      "repo": "aws-samples/sample-sagemaker-marketplace-onboarding-skill",
+      "auditedAt": "2026-10-23T04:01:34.485Z",
+      "skills": {
+        "sagemaker-marketplace-onboarding": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-09-03T18:14:16.991Z"
+        }
+      }
+    },
+    "1398499540": {
+      "repo": "harrison-ming/chuhai-skills",
+      "auditedAt": "2026-10-23T04:01:41.261Z",
+      "skills": {
+        "shopify-store-teardown": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-09-30T17:08:50.445Z"
         }
       }
     }

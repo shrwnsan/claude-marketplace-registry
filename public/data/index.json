@@ -1,29 +1,29 @@
 {
   "stats": {
-    "totalMarketplaces": 1716,
+    "totalMarketplaces": 1742,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-10-22T03:55:23.337Z",
+    "lastUpdated": "2026-10-23T04:01:43.554Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 569
+        "count": 579
       },
       {
         "language": "TypeScript",
-        "count": 294
+        "count": 298
       },
       {
         "language": "JavaScript",
-        "count": 273
+        "count": 280
       },
       {
         "language": "Unknown",
-        "count": 228
+        "count": 230
       },
       {
         "language": "Shell",
-        "count": 146
+        "count": 147
       },
       {
         "language": "HTML",
@@ -35,7 +35,7 @@
       },
       {
         "language": "Rust",
-        "count": 29
+        "count": 30
       },
       {
         "language": "Java",
@@ -49,12 +49,12 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 285809,
+        "stars": 286620,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 182797,
+        "stars": 183074,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,27 +64,27 @@
       },
       {
         "name": "paperclip",
-        "stars": 105742,
+        "stars": 106231,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
         "name": "claude-mem",
-        "stars": 101651,
+        "stars": 102350,
         "url": "https://github.com/thedotmack/claude-mem"
       },
       {
         "name": "archify",
-        "stars": 85923,
+        "stars": 87799,
         "url": "https://github.com/tt-a1i/archify"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 77628,
+        "stars": 77703,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 70253,
+        "stars": 70278,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -94,60 +94,60 @@
       },
       {
         "name": "humanizer",
-        "stars": 59344,
+        "stars": 59695,
         "url": "https://github.com/blader/humanizer"
       }
     ],
     "recentActivity": [
       {
-        "name": "claude-plugins",
-        "updatedAt": "2026-10-22T03:44:04Z",
-        "url": "https://github.com/FutureProg/claude-plugins"
+        "name": "git-into-gsoc",
+        "updatedAt": "2026-10-23T03:49:08Z",
+        "url": "https://github.com/anandkaranubc/git-into-gsoc"
       },
       {
-        "name": "ptbr-writer",
-        "updatedAt": "2026-10-22T03:44:00Z",
-        "url": "https://github.com/h0ffmann/ptbr-writer"
+        "name": "personal-ai",
+        "updatedAt": "2026-10-23T03:48:51Z",
+        "url": "https://github.com/ooooooooooooooooooop/personal-ai"
+      },
+      {
+        "name": "jiangzuo",
+        "updatedAt": "2026-10-23T03:48:17Z",
+        "url": "https://github.com/Zhang-jx00/jiangzuo"
+      },
+      {
+        "name": "archify",
+        "updatedAt": "2026-10-23T03:47:36Z",
+        "url": "https://github.com/tt-a1i/archify"
+      },
+      {
+        "name": "overture",
+        "updatedAt": "2026-10-23T03:47:23Z",
+        "url": "https://github.com/MikeHeid/overture"
+      },
+      {
+        "name": "claude-code-plugins",
+        "updatedAt": "2026-10-23T03:46:35Z",
+        "url": "https://github.com/melodic-software/claude-code-plugins"
+      },
+      {
+        "name": "codemem",
+        "updatedAt": "2026-10-23T03:46:34Z",
+        "url": "https://github.com/kunickiaj/codemem"
       },
       {
         "name": "paperclip",
-        "updatedAt": "2026-10-22T03:42:54Z",
+        "updatedAt": "2026-10-23T03:46:04Z",
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "jev-gate",
-        "updatedAt": "2026-10-22T03:42:47Z",
-        "url": "https://github.com/MongLong0214/jev-gate"
+        "name": "trending-claude-skills",
+        "updatedAt": "2026-10-23T03:45:17Z",
+        "url": "https://github.com/linny006/trending-claude-skills"
       },
       {
-        "name": "skills",
-        "updatedAt": "2026-10-22T03:42:30Z",
-        "url": "https://github.com/MrBinnacle/skills"
-      },
-      {
-        "name": "MisakaNet",
-        "updatedAt": "2026-10-22T03:42:06Z",
-        "url": "https://github.com/Ikalus1988/MisakaNet"
-      },
-      {
-        "name": "claude-opencode-delegate",
-        "updatedAt": "2026-10-22T03:42:04Z",
-        "url": "https://github.com/lehcode/claude-opencode-delegate"
-      },
-      {
-        "name": "beady-eye",
-        "updatedAt": "2026-10-22T03:41:57Z",
-        "url": "https://github.com/CodeForBreakfast/beady-eye"
-      },
-      {
-        "name": "ai-kit",
-        "updatedAt": "2026-10-22T03:41:52Z",
-        "url": "https://github.com/solanabr/ai-kit"
-      },
-      {
-        "name": "groundwork",
-        "updatedAt": "2026-10-22T03:41:50Z",
-        "url": "https://github.com/choiyounggi/groundwork"
+        "name": "trove",
+        "updatedAt": "2026-10-23T03:44:15Z",
+        "url": "https://github.com/anishfyi/trove"
       }
     ]
   },
@@ -155,17 +155,17 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 873
+      "count": 886
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 232
+      "count": 233
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 524
+      "count": 531
     },
     {
       "id": "design",
@@ -175,7 +175,7 @@
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 53
+      "count": 54
     },
     {
       "id": "utilities",
@@ -183,5 +183,5 @@
       "count": 40
     }
   ],
-  "lastUpdated": "2026-10-22T03:55:23.337Z"
+  "lastUpdated": "2026-10-23T04:01:43.554Z"
 }
