@@ -1,20 +1,19 @@
 {
-  "totalFound": 1742,
-  "withManifest": 633,
-  "lastUpdated": "2026-10-23T04:00:43.236Z",
+  "totalFound": 1773,
+  "withManifest": 638,
+  "lastUpdated": "2026-10-24T03:54:41.325Z",
   "searchQuery": "",
   "languages": {
-    "Python": 579,
-    "TypeScript": 298,
-    "JavaScript": 280,
+    "Python": 587,
+    "TypeScript": 303,
+    "JavaScript": 285,
     "Markdown": 3,
-    "Shell": 147,
-    "Rust": 30,
+    "Shell": 151,
+    "Rust": 33,
     "HTML": 86,
-    "Go": 34,
-    "Unknown": 230,
-    "AMPL": 1,
-    "C++": 3,
+    "Go": 35,
+    "Unknown": 232,
+    "C++": 4,
     "Swift": 6,
     "Jupyter Notebook": 3,
     "C#": 3,
@@ -23,30 +22,32 @@
     "Gherkin": 1,
     "Perl": 1,
     "Ruby": 2,
-    "Kotlin": 2,
-    "C": 2,
-    "Java": 7,
+    "Java": 8,
+    "D": 1,
     "PHP": 1,
+    "AMPL": 1,
     "Typst": 1,
     "Makefile": 2,
     "SCSS": 1,
     "CSS": 3,
     "Gleam": 1,
+    "C": 2,
     "TeX": 3,
     "PowerShell": 4,
     "Clojure": 1,
     "jq": 1,
+    "Kotlin": 2,
     "MDX": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 286620,
+      "stars": 287413,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 183074,
+      "stars": 183325,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -56,27 +57,27 @@
     },
     {
       "name": "paperclip",
-      "stars": 106231,
+      "stars": 106635,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "claude-mem",
-      "stars": 102350,
+      "stars": 102597,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "archify",
-      "stars": 87799,
+      "stars": 88341,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 77703,
+      "stars": 77777,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70278,
+      "stars": 70292,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -86,7 +87,7 @@
     },
     {
       "name": "humanizer",
-      "stars": 59695,
+      "stars": 60022,
       "url": "https://github.com/blader/humanizer"
     }
   ]
