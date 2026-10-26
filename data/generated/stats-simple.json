@@ -1,40 +1,40 @@
 {
-  "totalMarketplaces": 1794,
+  "totalMarketplaces": 1874,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-10-25T03:48:15.224Z",
+  "lastUpdated": "2026-10-26T03:54:43.525Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 598
+      "count": 625
     },
     {
       "language": "TypeScript",
-      "count": 309
+      "count": 321
     },
     {
       "language": "JavaScript",
-      "count": 288
+      "count": 312
     },
     {
       "language": "Unknown",
-      "count": 235
+      "count": 239
     },
     {
       "language": "Shell",
-      "count": 149
+      "count": 152
     },
     {
       "language": "HTML",
-      "count": 87
+      "count": 91
     },
     {
       "language": "Go",
-      "count": 35
+      "count": 36
     },
     {
       "language": "Rust",
-      "count": 33
+      "count": 34
     },
     {
       "language": "Java",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 288161,
+      "stars": 288930,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 183535,
+      "stars": 183786,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "name": "paperclip",
-      "stars": 107012,
+      "stars": 107346,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -78,12 +78,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 77851,
+      "stars": 77944,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70318,
+      "stars": 70334,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -99,54 +99,54 @@
   ],
   "recentActivity": [
     {
-      "name": "claude-code-plugins",
-      "updatedAt": "2026-10-25T03:37:22Z",
-      "url": "https://github.com/melodic-software/claude-code-plugins"
+      "name": "free-agents",
+      "updatedAt": "2026-10-26T03:42:54Z",
+      "url": "https://github.com/haiggoh/free-agents"
+    },
+    {
+      "name": "stock-skill",
+      "updatedAt": "2026-10-26T03:42:32Z",
+      "url": "https://github.com/xiongcp/stock-skill"
+    },
+    {
+      "name": "structural-llm-wiki",
+      "updatedAt": "2026-10-26T03:42:16Z",
+      "url": "https://github.com/mengjiasun1992/structural-llm-wiki"
     },
     {
       "name": "paperclip",
-      "updatedAt": "2026-10-25T03:36:34Z",
+      "updatedAt": "2026-10-26T03:41:55Z",
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "BeautifulRust",
-      "updatedAt": "2026-10-25T03:36:27Z",
-      "url": "https://github.com/morganlinton/BeautifulRust"
+      "name": "forge",
+      "updatedAt": "2026-10-26T03:41:19Z",
+      "url": "https://github.com/maxwellmattryan/forge"
     },
     {
-      "name": "claude-mem",
-      "updatedAt": "2026-10-25T03:35:53Z",
-      "url": "https://github.com/thedotmack/claude-mem"
+      "name": "reticle",
+      "updatedAt": "2026-10-26T03:41:12Z",
+      "url": "https://github.com/reticlehq/reticle"
     },
     {
-      "name": "claude-autopilot",
-      "updatedAt": "2026-10-25T03:35:17Z",
-      "url": "https://github.com/ImLiquify/claude-autopilot"
+      "name": "CLAUDE-DESIGN-GOD-MODE",
+      "updatedAt": "2026-10-26T03:40:01Z",
+      "url": "https://github.com/F0rger123/CLAUDE-DESIGN-GOD-MODE"
     },
     {
-      "name": "UniDeX-Agent-Harness",
-      "updatedAt": "2026-10-25T03:33:59Z",
-      "url": "https://github.com/zzoretich/UniDeX-Agent-Harness"
+      "name": "openwriter",
+      "updatedAt": "2026-10-26T03:38:59Z",
+      "url": "https://github.com/travsteward/openwriter"
     },
     {
-      "name": "oss-autopilot",
-      "updatedAt": "2026-10-25T03:31:55Z",
-      "url": "https://github.com/costajohnt/oss-autopilot"
+      "name": "ashlr-plugin",
+      "updatedAt": "2026-10-26T03:37:27Z",
+      "url": "https://github.com/ashlrai/ashlr-plugin"
     },
     {
-      "name": "skills",
-      "updatedAt": "2026-10-25T03:30:38Z",
-      "url": "https://github.com/chrislacey89/skills"
-    },
-    {
-      "name": "trending-claude-skills",
-      "updatedAt": "2026-10-25T03:30:19Z",
-      "url": "https://github.com/linny006/trending-claude-skills"
-    },
-    {
-      "name": "claude-code-mods",
-      "updatedAt": "2026-10-25T03:29:42Z",
-      "url": "https://github.com/GarvitNangru/claude-code-mods"
+      "name": "praetor",
+      "updatedAt": "2026-10-26T03:36:13Z",
+      "url": "https://github.com/TyrusRC/praetor"
     }
   ]
 }

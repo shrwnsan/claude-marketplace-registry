@@ -1,10 +1,10 @@
 {
   "source": "skills.sh (Gen / Socket / Snyk)",
-  "generatedAt": "2026-10-25T03:48:12.642Z",
+  "generatedAt": "2026-10-26T03:54:41.707Z",
   "entries": {
     "170797156": {
       "repo": "reactive/data-client",
-      "auditedAt": "2026-10-25T03:48:02.977Z",
+      "auditedAt": "2026-10-26T03:54:31.979Z",
       "skills": {
         "data-client-setup": {
           "ath": {
@@ -24,7 +24,7 @@
     },
     "787362890": {
       "repo": "dahlia/logtape",
-      "auditedAt": "2026-10-25T03:48:03.227Z",
+      "auditedAt": "2026-10-26T03:54:32.271Z",
       "skills": {
         "logtape": {
           "ath": {
@@ -44,7 +44,7 @@
     },
     "1061953414": {
       "repo": "anthropics/skills",
-      "auditedAt": "2026-10-25T03:48:01.145Z",
+      "auditedAt": "2026-10-26T03:54:29.865Z",
       "skills": {
         "xlsx": {
           "ath": {
@@ -350,7 +350,7 @@
     },
     "1100923190": {
       "repo": "kylehughes/the-unofficial-swift-programming-language-skill",
-      "auditedAt": "2026-10-25T03:48:07.584Z",
+      "auditedAt": "2026-10-26T03:54:36.824Z",
       "skills": {
         "programming-swift": {
           "ath": {
@@ -370,7 +370,7 @@
     },
     "1137485434": {
       "repo": "softaworks/agent-toolkit",
-      "auditedAt": "2026-10-25T03:48:02.035Z",
+      "auditedAt": "2026-10-26T03:54:30.908Z",
       "skills": {
         "codex": {
           "ath": {
@@ -656,7 +656,7 @@
     },
     "1145158024": {
       "repo": "wondelai/skills",
-      "auditedAt": "2026-10-25T03:48:02.828Z",
+      "auditedAt": "2026-10-26T03:54:31.641Z",
       "skills": {
         "jobs-to-be-done": {
           "ath": {
@@ -942,7 +942,7 @@
     },
     "1202576122": {
       "repo": "Aperivue/medsci-skills",
-      "auditedAt": "2026-10-25T03:48:04.257Z",
+      "auditedAt": "2026-10-26T03:54:34.675Z",
       "skills": {
         "fulltext-retrieval": {
           "ath": {
@@ -1242,7 +1242,7 @@
     },
     "1207161577": {
       "repo": "NatiCha/bunwv",
-      "auditedAt": "2026-10-25T03:48:04.577Z",
+      "auditedAt": "2026-10-26T03:54:34.933Z",
       "skills": {
         "bunwv": {
           "ath": {
@@ -1262,7 +1262,7 @@
     },
     "1209609017": {
       "repo": "event4u-app/agent-config",
-      "auditedAt": "2026-10-25T03:48:08.578Z",
+      "auditedAt": "2026-10-26T03:54:37.954Z",
       "skills": {
         "install-agent-config": {
           "ath": {
@@ -1282,7 +1282,7 @@
     },
     "1230639327": {
       "repo": "leek/agent-skills",
-      "auditedAt": "2026-10-25T03:48:09.296Z",
+      "auditedAt": "2026-10-26T03:54:39.533Z",
       "skills": {
         "architecture-satisfaction": {
           "ath": {
@@ -1700,12 +1700,124 @@
             "risk": "low"
           },
           "analyzedAt": "2026-10-22T12:11:35.213Z"
+        },
+        "repository-cleanup": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-19T19:06:05.745Z"
+        },
+        "research": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-07T12:02:13.541Z"
+        },
+        "retro": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-22T12:11:59.863Z"
+        },
+        "resolve-review-comments": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-19T19:06:26.535Z"
+        },
+        "resolving-merge-conflicts": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-10-22T12:11:43.232Z"
+        },
+        "scratch-cleanup": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-17T10:05:22.412Z"
+        },
+        "scratch-status": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-19T19:06:06.744Z"
+        },
+        "setup": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-05T19:06:39.674Z"
         }
       }
     },
     "1248751622": {
       "repo": "brycewang-stanford/AER-Skills",
-      "auditedAt": "2026-10-25T03:48:06.785Z",
+      "auditedAt": "2026-10-26T03:54:35.975Z",
       "skills": {
         "aer-workflow": {
           "ath": {
@@ -1921,7 +2033,7 @@
     },
     "1254422214": {
       "repo": "rollinsio/beyond-test-coverage",
-      "auditedAt": "2026-10-25T03:48:07.341Z",
+      "auditedAt": "2026-10-26T03:54:36.518Z",
       "skills": {
         "test-quality": {
           "ath": {
@@ -1955,7 +2067,7 @@
     },
     "1354760955": {
       "repo": "aws-samples/sample-sagemaker-marketplace-onboarding-skill",
-      "auditedAt": "2026-10-25T03:48:11.334Z",
+      "auditedAt": "2026-10-26T03:54:39.824Z",
       "skills": {
         "sagemaker-marketplace-onboarding": {
           "ath": {
@@ -1975,7 +2087,7 @@
     },
     "1398499540": {
       "repo": "harrison-ming/chuhai-skills",
-      "auditedAt": "2026-10-25T03:48:12.642Z",
+      "auditedAt": "2026-10-26T03:54:41.707Z",
       "skills": {
         "shopify-store-teardown": {
           "ath": {
