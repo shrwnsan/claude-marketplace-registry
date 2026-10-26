@@ -39,6 +39,10 @@ updates:
       # type (TS2322 in scripts/jev-categorize.ts); migrate deliberately.
       - dependency-name: "@typesafe-ai/sdk"
         versions: [">=0.7"]
+      # tailwindcss 4: CSS-first config migration; the postcss-selector-parser
+      # advisory chain behind it is triaged on #416, tracked in #452.
+      - dependency-name: "tailwindcss"
+        versions: [">=4"]
 
   # GitHub Actions: weekly, all action bumps batched into one PR.
   - package-ecosystem: "github-actions"
