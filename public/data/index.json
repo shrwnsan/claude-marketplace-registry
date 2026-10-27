@@ -1,29 +1,29 @@
 {
   "stats": {
-    "totalMarketplaces": 1874,
+    "totalMarketplaces": 1893,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-10-26T03:54:43.525Z",
+    "lastUpdated": "2026-10-27T04:23:38.627Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 625
+        "count": 632
       },
       {
         "language": "TypeScript",
-        "count": 321
+        "count": 323
       },
       {
         "language": "JavaScript",
-        "count": 312
+        "count": 318
       },
       {
         "language": "Unknown",
-        "count": 239
+        "count": 240
       },
       {
         "language": "Shell",
-        "count": 152
+        "count": 155
       },
       {
         "language": "HTML",
@@ -49,12 +49,12 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 288930,
+        "stars": 289979,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 183786,
+        "stars": 184021,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,7 +64,7 @@
       },
       {
         "name": "paperclip",
-        "stars": 107346,
+        "stars": 107720,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -79,12 +79,12 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 77944,
+        "stars": 78022,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 70334,
+        "stars": 70377,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "free-agents",
-        "updatedAt": "2026-10-26T03:42:54Z",
-        "url": "https://github.com/haiggoh/free-agents"
+        "name": "soleur",
+        "updatedAt": "2026-10-27T04:11:54Z",
+        "url": "https://github.com/jikig-ai/soleur"
       },
       {
-        "name": "stock-skill",
-        "updatedAt": "2026-10-26T03:42:32Z",
-        "url": "https://github.com/xiongcp/stock-skill"
+        "name": "claude-code-hooks-daemon",
+        "updatedAt": "2026-10-27T04:11:23Z",
+        "url": "https://github.com/Edmonds-Commerce-Limited/claude-code-hooks-daemon"
       },
       {
-        "name": "structural-llm-wiki",
-        "updatedAt": "2026-10-26T03:42:16Z",
-        "url": "https://github.com/mengjiasun1992/structural-llm-wiki"
+        "name": "elephant-goldfish-model",
+        "updatedAt": "2026-10-27T04:11:18Z",
+        "url": "https://github.com/google/elephant-goldfish-model"
       },
       {
         "name": "paperclip",
-        "updatedAt": "2026-10-26T03:41:55Z",
+        "updatedAt": "2026-10-27T04:11:08Z",
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "forge",
-        "updatedAt": "2026-10-26T03:41:19Z",
-        "url": "https://github.com/maxwellmattryan/forge"
+        "name": "groundwork",
+        "updatedAt": "2026-10-27T04:10:26Z",
+        "url": "https://github.com/enebin/groundwork"
       },
       {
-        "name": "reticle",
-        "updatedAt": "2026-10-26T03:41:12Z",
-        "url": "https://github.com/reticlehq/reticle"
+        "name": "claude",
+        "updatedAt": "2026-10-27T04:10:05Z",
+        "url": "https://github.com/bendrucker/claude"
       },
       {
-        "name": "CLAUDE-DESIGN-GOD-MODE",
-        "updatedAt": "2026-10-26T03:40:01Z",
-        "url": "https://github.com/F0rger123/CLAUDE-DESIGN-GOD-MODE"
+        "name": "plugin",
+        "updatedAt": "2026-10-27T04:09:42Z",
+        "url": "https://github.com/trustmybot/plugin"
       },
       {
-        "name": "openwriter",
-        "updatedAt": "2026-10-26T03:38:59Z",
-        "url": "https://github.com/travsteward/openwriter"
+        "name": "Claude-Guardian",
+        "updatedAt": "2026-10-27T04:08:09Z",
+        "url": "https://github.com/DUNHKpcc/Claude-Guardian"
       },
       {
-        "name": "ashlr-plugin",
-        "updatedAt": "2026-10-26T03:37:27Z",
-        "url": "https://github.com/ashlrai/ashlr-plugin"
+        "name": "launch-audit",
+        "updatedAt": "2026-10-27T04:07:26Z",
+        "url": "https://github.com/guavovic/launch-audit"
       },
       {
-        "name": "praetor",
-        "updatedAt": "2026-10-26T03:36:13Z",
-        "url": "https://github.com/TyrusRC/praetor"
+        "name": "claude-smart",
+        "updatedAt": "2026-10-27T04:06:43Z",
+        "url": "https://github.com/ReflexioAI/claude-smart"
       }
     ]
   },
@@ -155,22 +155,22 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 948
+      "count": 959
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 242
+      "count": 246
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 569
+      "count": 572
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 95
+      "count": 97
     },
     {
       "id": "data",
@@ -180,8 +180,8 @@
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 42
+      "count": 43
     }
   ],
-  "lastUpdated": "2026-10-26T03:54:43.525Z"
+  "lastUpdated": "2026-10-27T04:23:38.627Z"
 }
