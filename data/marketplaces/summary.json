@@ -1,22 +1,22 @@
 {
-  "totalFound": 1893,
-  "withManifest": 683,
-  "lastUpdated": "2026-10-27T04:22:50.077Z",
+  "totalFound": 1963,
+  "withManifest": 706,
+  "lastUpdated": "2026-10-28T04:40:19.431Z",
   "searchQuery": "",
   "languages": {
-    "Python": 632,
-    "Unknown": 240,
-    "TypeScript": 323,
-    "JavaScript": 318,
+    "Python": 665,
+    "TypeScript": 337,
+    "C#": 5,
+    "Shell": 156,
+    "JavaScript": 324,
     "Go": 36,
+    "Unknown": 246,
     "Rust": 34,
-    "C": 3,
-    "Shell": 155,
-    "C#": 4,
-    "AMPL": 1,
-    "HTML": 91,
+    "HTML": 98,
+    "C": 4,
     "C++": 4,
     "Swift": 6,
+    "MDX": 2,
     "Jupyter Notebook": 3,
     "Astro": 3,
     "Svelte": 2,
@@ -26,6 +26,7 @@
     "Markdown": 4,
     "Java": 8,
     "PHP": 2,
+    "AMPL": 1,
     "Typst": 1,
     "Makefile": 2,
     "SCSS": 1,
@@ -35,18 +36,17 @@
     "PowerShell": 4,
     "Clojure": 1,
     "jq": 1,
-    "Kotlin": 2,
-    "MDX": 1
+    "Kotlin": 2
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 289979,
+      "stars": 291021,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 184021,
+      "stars": 184291,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -56,27 +56,27 @@
     },
     {
       "name": "paperclip",
-      "stars": 107720,
+      "stars": 108069,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "claude-mem",
-      "stars": 102855,
+      "stars": 103775,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "archify",
-      "stars": 88341,
+      "stars": 90562,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 78022,
+      "stars": 78105,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70377,
+      "stars": 70415,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
