@@ -1,25 +1,25 @@
 {
   "stats": {
-    "totalMarketplaces": 1963,
+    "totalMarketplaces": 1948,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-10-28T04:41:17.924Z",
+    "lastUpdated": "2026-10-30T05:08:24.000Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 665
+        "count": 669
       },
       {
         "language": "TypeScript",
-        "count": 337
+        "count": 326
       },
       {
         "language": "JavaScript",
-        "count": 324
+        "count": 312
       },
       {
         "language": "Unknown",
-        "count": 246
+        "count": 247
       },
       {
         "language": "Shell",
@@ -35,7 +35,7 @@
       },
       {
         "language": "Rust",
-        "count": 34
+        "count": 35
       },
       {
         "language": "Java",
@@ -43,18 +43,18 @@
       },
       {
         "language": "Swift",
-        "count": 6
+        "count": 7
       }
     ],
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 291021,
+        "stars": 292814,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 184291,
+        "stars": 184839,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,7 +64,7 @@
       },
       {
         "name": "paperclip",
-        "stars": 108069,
+        "stars": 108729,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -79,12 +79,12 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 78105,
+        "stars": 78297,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 70415,
+        "stars": 70488,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "cc-desktop-mod",
-        "updatedAt": "2026-10-28T04:29:42Z",
-        "url": "https://github.com/KyongSik-Yoon/cc-desktop-mod"
-      },
-      {
-        "name": "e2e-skills",
-        "updatedAt": "2026-10-28T04:28:44Z",
-        "url": "https://github.com/voidmatcha/e2e-skills"
-      },
-      {
-        "name": "archify",
-        "updatedAt": "2026-10-28T04:27:46Z",
-        "url": "https://github.com/tt-a1i/archify"
-      },
-      {
-        "name": "antigravitymb",
-        "updatedAt": "2026-10-28T04:27:40Z",
-        "url": "https://github.com/lumiag5/antigravitymb"
-      },
-      {
-        "name": "claude-code-plugins",
-        "updatedAt": "2026-10-28T04:27:31Z",
-        "url": "https://github.com/melodic-software/claude-code-plugins"
-      },
-      {
-        "name": "tedy-kit",
-        "updatedAt": "2026-10-28T04:26:52Z",
-        "url": "https://github.com/Tedydev-web/tedy-kit"
+        "name": "dev-companion",
+        "updatedAt": "2026-10-30T04:50:38Z",
+        "url": "https://github.com/gulshankundnani/dev-companion"
       },
       {
         "name": "paperclip",
-        "updatedAt": "2026-10-28T04:26:36Z",
+        "updatedAt": "2026-10-30T04:50:16Z",
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "claude-mem",
-        "updatedAt": "2026-10-28T04:26:24Z",
-        "url": "https://github.com/thedotmack/claude-mem"
+        "name": "scar-tissue",
+        "updatedAt": "2026-10-30T04:49:45Z",
+        "url": "https://github.com/aldo01/scar-tissue"
       },
       {
-        "name": "nix-agent",
-        "updatedAt": "2026-10-28T04:26:01Z",
-        "url": "https://github.com/JEFF7712/nix-agent"
+        "name": "awesome-short-drama-skills",
+        "updatedAt": "2026-10-30T04:48:36Z",
+        "url": "https://github.com/UnderleveledBuilder/awesome-short-drama-skills"
       },
       {
-        "name": "market-mirror",
-        "updatedAt": "2026-10-28T04:25:52Z",
-        "url": "https://github.com/DarkWorldCoder/market-mirror"
+        "name": "brigade",
+        "updatedAt": "2026-10-30T04:48:21Z",
+        "url": "https://github.com/escoffier-labs/brigade"
+      },
+      {
+        "name": "gagip-dev",
+        "updatedAt": "2026-10-30T04:46:53Z",
+        "url": "https://github.com/gagip/gagip-dev"
+      },
+      {
+        "name": "foreman",
+        "updatedAt": "2026-10-30T04:46:39Z",
+        "url": "https://github.com/ChaseSunstrom/foreman"
+      },
+      {
+        "name": "vibe-kit",
+        "updatedAt": "2026-10-30T04:45:22Z",
+        "url": "https://github.com/guidocameraeq/vibe-kit"
+      },
+      {
+        "name": "jarvis",
+        "updatedAt": "2026-10-30T04:45:15Z",
+        "url": "https://github.com/gorock007/jarvis"
+      },
+      {
+        "name": "ui-consistency",
+        "updatedAt": "2026-10-30T04:45:08Z",
+        "url": "https://github.com/kamenkurtev/ui-consistency"
       }
     ]
   },
@@ -155,33 +155,33 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 986
+      "count": 980
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 250
+      "count": 253
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 593
+      "count": 597
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 102
+      "count": 101
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 66
+      "count": 65
     },
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 46
+      "count": 48
     }
   ],
-  "lastUpdated": "2026-10-28T04:41:17.924Z"
+  "lastUpdated": "2026-10-30T05:08:24.000Z"
 }
