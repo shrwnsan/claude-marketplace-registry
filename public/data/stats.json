@@ -3,17 +3,17 @@
   "data": {
     "overview": {
       "totalPlugins": 7736,
-      "totalMarketplaces": 1948,
+      "totalMarketplaces": 1982,
       "totalDevelopers": 852,
-      "totalStars": 2021739,
+      "totalStars": 2026503,
       "totalMods": 3,
       "marketplacesWithMods": 3,
-      "lastUpdated": "2026-10-30T05:08:24.057Z",
+      "lastUpdated": "2026-10-31T04:43:02.537Z",
       "growthRate": {
         "plugins": 38.2,
-        "marketplaces": 140.8,
+        "marketplaces": 145,
         "developers": 29.7,
-        "stars": 136.9
+        "stars": 137.4
       }
     },
     "plugins": [
@@ -223,6 +223,11 @@
       },
       {
         "date": "2026-10-30",
+        "value": 7736,
+        "change": 0
+      },
+      {
+        "date": "2026-10-31",
         "value": 7736,
         "change": 0
       }
@@ -436,6 +441,11 @@
         "date": "2026-10-30",
         "value": 1948,
         "change": -15
+      },
+      {
+        "date": "2026-10-31",
+        "value": 1982,
+        "change": 34
       }
     ],
     "developers": [
@@ -644,6 +654,11 @@
       },
       {
         "date": "2026-10-30",
+        "value": 852,
+        "change": 0
+      },
+      {
+        "date": "2026-10-31",
         "value": 852,
         "change": 0
       }
@@ -857,6 +872,11 @@
         "date": "2026-10-30",
         "value": 2021739,
         "change": -3302
+      },
+      {
+        "date": "2026-10-31",
+        "value": 2026503,
+        "change": 4764
       }
     ],
     "starred": [
@@ -1057,6 +1077,11 @@
         "date": "2026-10-30",
         "value": 702,
         "change": -1
+      },
+      {
+        "date": "2026-10-31",
+        "value": 717,
+        "change": 15
       }
     ],
     "period": "all",
@@ -1065,79 +1090,79 @@
       {
         "id": "claude-code",
         "name": "claude-code",
-        "count": 1305,
+        "count": 1327,
         "description": "Marketplaces tagged \"claude-code\" (topics overlap)"
       },
       {
         "id": "claude-skills",
         "name": "claude-skills",
-        "count": 928,
+        "count": 948,
         "description": "Marketplaces tagged \"claude-skills\" (topics overlap)"
       },
       {
         "id": "agent-skills",
         "name": "agent-skills",
-        "count": 592,
+        "count": 612,
         "description": "Marketplaces tagged \"agent-skills\" (topics overlap)"
       },
       {
         "id": "ai-agents",
         "name": "ai-agents",
-        "count": 578,
+        "count": 593,
         "description": "Marketplaces tagged \"ai-agents\" (topics overlap)"
       },
       {
         "id": "claude-code-plugin",
         "name": "claude-code-plugin",
-        "count": 577,
+        "count": 587,
         "description": "Marketplaces tagged \"claude-code-plugin\" (topics overlap)"
       },
       {
         "id": "claude",
         "name": "claude",
-        "count": 552,
+        "count": 555,
         "description": "Marketplaces tagged \"claude\" (topics overlap)"
       },
       {
         "id": "developer-tools",
         "name": "developer-tools",
-        "count": 405,
+        "count": 410,
         "description": "Marketplaces tagged \"developer-tools\" (topics overlap)"
-      },
-      {
-        "id": "mcp",
-        "name": "mcp",
-        "count": 366,
-        "description": "Marketplaces tagged \"mcp\" (topics overlap)"
       },
       {
         "id": "codex",
         "name": "codex",
-        "count": 365,
+        "count": 373,
         "description": "Marketplaces tagged \"codex\" (topics overlap)"
+      },
+      {
+        "id": "mcp",
+        "name": "mcp",
+        "count": 370,
+        "description": "Marketplaces tagged \"mcp\" (topics overlap)"
       },
       {
         "id": "claude-plugins",
         "name": "claude-plugins",
-        "count": 351,
+        "count": 352,
         "description": "Marketplaces tagged \"claude-plugins\" (topics overlap)"
       }
     ],
     "insights": [
-      "7736 plugins discovered across 1948 marketplaces",
-      "Most starred: ECC (292,814 stars)",
-      "Most common topic: claude-code (1305 marketplaces)",
-      "1620 marketplaces updated in the last 30 days",
-      "1749 independent publishers run a single marketplace each"
+      "7736 plugins discovered across 1982 marketplaces",
+      "Most starred: ECC (293,485 stars)",
+      "Most common topic: claude-code (1327 marketplaces)",
+      "1623 marketplaces updated in the last 30 days",
+      "1780 independent publishers run a single marketplace each"
     ],
     "manifestCoverage": {
-      "withManifest": 812,
-      "total": 1948,
-      "rate": 41.7
+      "withManifest": 771,
+      "total": 1982,
+      "rate": 38.9
     },
     "maintenance": {
-      "recentlyUpdated": 1620,
-      "recentlyUpdatedRate": 83.2,
+      "recentlyUpdated": 1623,
+      "recentlyUpdatedRate": 81.9,
       "staleOver180Days": 26,
       "medianDaysSinceUpdate": 16
     },
@@ -1146,16 +1171,16 @@
       "total": 7736,
       "rate": 66.5
     },
-    "avgStarsPerMarketplace": 1038,
+    "avgStarsPerMarketplace": 1022,
     "traction": {
-      "count": 702,
-      "total": 1948,
-      "share": 36,
+      "count": 717,
+      "total": 1982,
+      "share": 36.2,
       "threshold": 10
     }
   },
   "meta": {
-    "timestamp": "2026-10-30T05:08:24.057Z",
+    "timestamp": "2026-10-31T04:43:02.537Z",
     "requestId": "static-build",
     "responseTime": 0
   }
