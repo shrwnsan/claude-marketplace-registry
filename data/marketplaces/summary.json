@@ -1,21 +1,23 @@
 {
-  "totalFound": 1982,
-  "withManifest": 771,
-  "lastUpdated": "2026-10-31T04:41:11.912Z",
+  "totalFound": 2008,
+  "withManifest": 777,
+  "lastUpdated": "2026-11-01T05:07:08.133Z",
   "searchQuery": "",
   "languages": {
-    "Python": 684,
+    "Python": 692,
     "Shell": 157,
-    "TypeScript": 332,
-    "JavaScript": 317,
-    "Go": 37,
+    "TypeScript": 342,
+    "JavaScript": 322,
+    "Go": 39,
     "Unknown": 250,
     "Rust": 35,
     "HTML": 100,
-    "C": 3,
+    "C": 2,
+    "AMPL": 1,
     "C++": 4,
     "Swift": 8,
     "Jupyter Notebook": 3,
+    "PowerShell": 7,
     "C#": 5,
     "Astro": 3,
     "Svelte": 2,
@@ -23,16 +25,14 @@
     "Perl": 1,
     "Ruby": 2,
     "Markdown": 4,
+    "Gleam": 2,
     "Java": 8,
     "PHP": 2,
-    "AMPL": 1,
     "Typst": 1,
     "Makefile": 2,
     "SCSS": 1,
     "CSS": 3,
-    "Gleam": 1,
     "TeX": 3,
-    "PowerShell": 6,
     "Clojure": 1,
     "jq": 1,
     "Kotlin": 2,
@@ -42,12 +42,12 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 293485,
+      "stars": 294175,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 185421,
+      "stars": 185965,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -57,12 +57,12 @@
     },
     {
       "name": "paperclip",
-      "stars": 109024,
+      "stars": 109552,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "claude-mem",
-      "stars": 103775,
+      "stars": 108081,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
@@ -72,12 +72,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 78364,
+      "stars": 78458,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70511,
+      "stars": 70558,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {

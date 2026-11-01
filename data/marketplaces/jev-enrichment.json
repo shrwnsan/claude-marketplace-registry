@@ -1,6 +1,6 @@
 {
   "model": "jev-1.14.0",
-  "generatedAt": "2026-10-31T04:42:44.984Z",
+  "generatedAt": "2026-11-01T05:08:40.914Z",
   "entries": {
     "111509154": {
       "category": "devtools",
@@ -191,6 +191,11 @@
       "category": "agents",
       "categoryConfidence": 0.77,
       "isMarketplace": 0.82
+    },
+    "1077970947": {
+      "category": "skills",
+      "categoryConfidence": 0.79,
+      "isMarketplace": 0.07
     },
     "1078332194": {
       "category": "skills",
@@ -1922,6 +1927,11 @@
       "categoryConfidence": 0.98,
       "isMarketplace": 0.11
     },
+    "1332398228": {
+      "category": "agents",
+      "categoryConfidence": 0.56,
+      "isMarketplace": 0.06
+    },
     "1332665268": {
       "category": "skills",
       "categoryConfidence": 0.91,
@@ -2171,6 +2181,11 @@
       "category": "devtools",
       "categoryConfidence": 0.52,
       "isMarketplace": 0.07
+    },
+    "1382589784": {
+      "category": "llm",
+      "categoryConfidence": 0.48,
+      "isMarketplace": 0.06
     },
     "1382722883": {
       "category": "devtools",
