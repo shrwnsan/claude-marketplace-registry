@@ -1,37 +1,38 @@
 {
-  "totalFound": 2024,
-  "withManifest": 803,
-  "lastUpdated": "2026-11-02T05:07:39.675Z",
+  "totalFound": 2037,
+  "withManifest": 862,
+  "lastUpdated": "2026-11-03T06:11:06.641Z",
   "searchQuery": "",
   "languages": {
-    "Python": 701,
-    "Shell": 158,
-    "TypeScript": 345,
-    "JavaScript": 323,
+    "Python": 704,
+    "Shell": 159,
+    "TypeScript": 348,
+    "JavaScript": 324,
     "Go": 38,
-    "Unknown": 251,
-    "Rust": 35,
+    "Unknown": 252,
+    "Rust": 36,
     "C": 2,
-    "HTML": 102,
+    "HTML": 103,
     "AMPL": 1,
     "C++": 4,
     "Swift": 8,
     "Jupyter Notebook": 3,
+    "Astro": 3,
     "PowerShell": 7,
     "C#": 5,
-    "Astro": 3,
     "Svelte": 2,
     "Gherkin": 1,
     "Perl": 1,
     "Ruby": 2,
+    "Nix": 1,
     "Markdown": 4,
+    "CSS": 4,
     "Java": 8,
+    "Gleam": 2,
     "PHP": 2,
     "Typst": 1,
     "Makefile": 2,
     "SCSS": 1,
-    "CSS": 3,
-    "Gleam": 2,
     "TeX": 3,
     "Clojure": 1,
     "jq": 1,
@@ -42,22 +43,22 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 294915,
+      "stars": 295819,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 186434,
+      "stars": 186848,
       "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "ponytail",
-      "stars": 159764,
+      "stars": 183043,
       "url": "https://github.com/DietrichGebert/ponytail"
     },
     {
       "name": "paperclip",
-      "stars": 109552,
+      "stars": 110542,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -72,7 +73,7 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 78532,
+      "stars": 78614,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
