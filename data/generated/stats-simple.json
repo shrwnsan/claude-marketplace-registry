@@ -1,36 +1,36 @@
 {
-  "totalMarketplaces": 2037,
+  "totalMarketplaces": 2059,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-11-03T06:12:57.015Z",
+  "lastUpdated": "2026-11-04T05:24:59.269Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 704
+      "count": 712
     },
     {
       "language": "TypeScript",
-      "count": 348
+      "count": 351
     },
     {
       "language": "JavaScript",
-      "count": 324
+      "count": 328
     },
     {
       "language": "Unknown",
-      "count": 252
+      "count": 253
     },
     {
       "language": "Shell",
-      "count": 159
+      "count": 162
     },
     {
       "language": "HTML",
-      "count": 103
+      "count": 105
     },
     {
       "language": "Go",
-      "count": 38
+      "count": 39
     },
     {
       "language": "Rust",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 295819,
+      "stars": 296657,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 186848,
+      "stars": 187172,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -62,14 +62,14 @@
       "url": "https://github.com/DietrichGebert/ponytail"
     },
     {
-      "name": "paperclip",
-      "stars": 110542,
-      "url": "https://github.com/paperclipai/paperclip"
+      "name": "claude-mem",
+      "stars": 112128,
+      "url": "https://github.com/thedotmack/claude-mem"
     },
     {
-      "name": "claude-mem",
-      "stars": 108081,
-      "url": "https://github.com/thedotmack/claude-mem"
+      "name": "paperclip",
+      "stars": 110879,
+      "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "archify",
@@ -78,12 +78,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 78614,
+      "stars": 78692,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70558,
+      "stars": 70677,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -99,54 +99,54 @@
   ],
   "recentActivity": [
     {
+      "name": "AI-Skills",
+      "updatedAt": "2026-11-04T05:12:43Z",
+      "url": "https://github.com/mickpletcher/AI-Skills"
+    },
+    {
+      "name": "claude-mem",
+      "updatedAt": "2026-11-04T05:12:32Z",
+      "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+      "name": "aeo-skills",
+      "updatedAt": "2026-11-04T05:12:07Z",
+      "url": "https://github.com/himoose/aeo-skills"
+    },
+    {
       "name": "skills",
-      "updatedAt": "2026-11-03T05:52:03Z",
-      "url": "https://github.com/zahidakhyar/skills"
+      "updatedAt": "2026-11-04T05:12:05Z",
+      "url": "https://github.com/LLM-preneur/skills"
     },
     {
-      "name": "aleph",
-      "updatedAt": "2026-11-03T05:51:48Z",
-      "url": "https://github.com/crsmithdev/aleph"
+      "name": "workspace-architect",
+      "updatedAt": "2026-11-04T05:10:47Z",
+      "url": "https://github.com/archubbuck/workspace-architect"
     },
     {
-      "name": "paperclip",
-      "updatedAt": "2026-11-03T05:51:41Z",
-      "url": "https://github.com/paperclipai/paperclip"
+      "name": "adhd-status",
+      "updatedAt": "2026-11-04T05:10:47Z",
+      "url": "https://github.com/maumoya/adhd-status"
     },
     {
-      "name": "rigup.nix",
-      "updatedAt": "2026-11-03T05:49:08Z",
-      "url": "https://github.com/YPares/rigup.nix"
+      "name": "lattice-scan",
+      "updatedAt": "2026-11-04T05:10:39Z",
+      "url": "https://github.com/namiq-ai/lattice-scan"
     },
     {
-      "name": "study-with-ai",
-      "updatedAt": "2026-11-03T05:48:47Z",
-      "url": "https://github.com/bj0322/study-with-ai"
+      "name": "brigade",
+      "updatedAt": "2026-11-04T05:10:35Z",
+      "url": "https://github.com/escoffier-labs/brigade"
     },
     {
-      "name": "creative-director",
-      "updatedAt": "2026-11-03T05:48:05Z",
-      "url": "https://github.com/SnazzyGaz/creative-director"
+      "name": "software-factory",
+      "updatedAt": "2026-11-04T05:10:24Z",
+      "url": "https://github.com/achisolomon/software-factory"
     },
     {
-      "name": "ponytail",
-      "updatedAt": "2026-11-03T05:47:13Z",
-      "url": "https://github.com/DietrichGebert/ponytail"
-    },
-    {
-      "name": "awesome-book-to-skill",
-      "updatedAt": "2026-11-03T05:44:42Z",
-      "url": "https://github.com/shtokolov-k/awesome-book-to-skill"
-    },
-    {
-      "name": "saas-marketing-agents",
-      "updatedAt": "2026-11-03T05:44:06Z",
-      "url": "https://github.com/shalintripathi/saas-marketing-agents"
-    },
-    {
-      "name": "dev-gongbang",
-      "updatedAt": "2026-11-03T05:43:56Z",
-      "url": "https://github.com/develeep/dev-gongbang"
+      "name": "vn-law-check",
+      "updatedAt": "2026-11-04T05:10:20Z",
+      "url": "https://github.com/mhfed/vn-law-check"
     }
   ]
 }
