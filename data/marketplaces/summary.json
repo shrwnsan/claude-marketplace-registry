@@ -1,54 +1,54 @@
 {
-  "totalFound": 2037,
-  "withManifest": 862,
-  "lastUpdated": "2026-11-03T06:11:06.641Z",
+  "totalFound": 2059,
+  "withManifest": 819,
+  "lastUpdated": "2026-11-04T05:23:18.083Z",
   "searchQuery": "",
   "languages": {
-    "Python": 704,
-    "Shell": 159,
-    "TypeScript": 348,
-    "JavaScript": 324,
-    "Go": 38,
-    "Unknown": 252,
+    "Python": 712,
+    "Shell": 162,
+    "TypeScript": 351,
+    "JavaScript": 328,
+    "Go": 39,
+    "Unknown": 253,
     "Rust": 36,
     "C": 2,
-    "HTML": 103,
+    "HTML": 105,
     "AMPL": 1,
     "C++": 4,
     "Swift": 8,
     "Jupyter Notebook": 3,
+    "C#": 5,
     "Astro": 3,
     "PowerShell": 7,
-    "C#": 5,
     "Svelte": 2,
     "Gherkin": 1,
     "Perl": 1,
     "Ruby": 2,
-    "Nix": 1,
     "Markdown": 4,
-    "CSS": 4,
     "Java": 8,
-    "Gleam": 2,
     "PHP": 2,
     "Typst": 1,
     "Makefile": 2,
     "SCSS": 1,
+    "CSS": 4,
+    "Gleam": 2,
     "TeX": 3,
     "Clojure": 1,
     "jq": 1,
     "Kotlin": 2,
     "MDX": 1,
-    "Batchfile": 1
+    "Batchfile": 1,
+    "Nix": 1
   },
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 295819,
+      "stars": 296657,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 186848,
+      "stars": 187172,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -57,14 +57,14 @@
       "url": "https://github.com/DietrichGebert/ponytail"
     },
     {
-      "name": "paperclip",
-      "stars": 110542,
-      "url": "https://github.com/paperclipai/paperclip"
+      "name": "claude-mem",
+      "stars": 112128,
+      "url": "https://github.com/thedotmack/claude-mem"
     },
     {
-      "name": "claude-mem",
-      "stars": 108081,
-      "url": "https://github.com/thedotmack/claude-mem"
+      "name": "paperclip",
+      "stars": 110879,
+      "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "archify",
@@ -73,12 +73,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 78614,
+      "stars": 78692,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70558,
+      "stars": 70677,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
