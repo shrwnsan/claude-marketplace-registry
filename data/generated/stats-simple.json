@@ -1,32 +1,32 @@
 {
-  "totalMarketplaces": 2059,
+  "totalMarketplaces": 2082,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-11-04T05:24:59.269Z",
+  "lastUpdated": "2026-11-05T05:53:23.953Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 712
+      "count": 721
     },
     {
       "language": "TypeScript",
-      "count": 351
+      "count": 355
     },
     {
       "language": "JavaScript",
-      "count": 328
+      "count": 331
     },
     {
       "language": "Unknown",
-      "count": 253
+      "count": 254
     },
     {
       "language": "Shell",
-      "count": 162
+      "count": 164
     },
     {
       "language": "HTML",
-      "count": 105
+      "count": 107
     },
     {
       "language": "Go",
@@ -38,22 +38,22 @@
     },
     {
       "language": "Swift",
-      "count": 8
+      "count": 9
     },
     {
-      "language": "Java",
+      "language": "PowerShell",
       "count": 8
     }
   ],
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 296657,
+      "stars": 297366,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 187172,
+      "stars": 187488,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "name": "paperclip",
-      "stars": 110879,
+      "stars": 111177,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -78,12 +78,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 78692,
+      "stars": 78773,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70677,
+      "stars": 70720,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -99,54 +99,54 @@
   ],
   "recentActivity": [
     {
-      "name": "AI-Skills",
-      "updatedAt": "2026-11-04T05:12:43Z",
-      "url": "https://github.com/mickpletcher/AI-Skills"
+      "name": "agent-board",
+      "updatedAt": "2026-11-05T05:38:25Z",
+      "url": "https://github.com/WenyuChiou/agent-board"
     },
     {
-      "name": "claude-mem",
-      "updatedAt": "2026-11-04T05:12:32Z",
-      "url": "https://github.com/thedotmack/claude-mem"
+      "name": "paperclip",
+      "updatedAt": "2026-11-05T05:38:04Z",
+      "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "aeo-skills",
-      "updatedAt": "2026-11-04T05:12:07Z",
-      "url": "https://github.com/himoose/aeo-skills"
+      "name": "claude-skills",
+      "updatedAt": "2026-11-05T05:37:40Z",
+      "url": "https://github.com/alirezarezvani/claude-skills"
     },
     {
-      "name": "skills",
-      "updatedAt": "2026-11-04T05:12:05Z",
-      "url": "https://github.com/LLM-preneur/skills"
+      "name": "Claude-Guardian",
+      "updatedAt": "2026-11-05T05:37:39Z",
+      "url": "https://github.com/DUNHKpcc/Claude-Guardian"
     },
     {
-      "name": "workspace-architect",
-      "updatedAt": "2026-11-04T05:10:47Z",
-      "url": "https://github.com/archubbuck/workspace-architect"
+      "name": "awesome-claude-video-skills",
+      "updatedAt": "2026-11-05T05:36:28Z",
+      "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
     },
     {
-      "name": "adhd-status",
-      "updatedAt": "2026-11-04T05:10:47Z",
-      "url": "https://github.com/maumoya/adhd-status"
+      "name": "ashlr-plugin",
+      "updatedAt": "2026-11-05T05:36:27Z",
+      "url": "https://github.com/ashlrai/ashlr-plugin"
     },
     {
-      "name": "lattice-scan",
-      "updatedAt": "2026-11-04T05:10:39Z",
-      "url": "https://github.com/namiq-ai/lattice-scan"
+      "name": "aleph",
+      "updatedAt": "2026-11-05T05:36:26Z",
+      "url": "https://github.com/crsmithdev/aleph"
     },
     {
-      "name": "brigade",
-      "updatedAt": "2026-11-04T05:10:35Z",
-      "url": "https://github.com/escoffier-labs/brigade"
+      "name": "cc-config",
+      "updatedAt": "2026-11-05T05:35:09Z",
+      "url": "https://github.com/clever-cc-plugins/cc-config"
     },
     {
-      "name": "software-factory",
-      "updatedAt": "2026-11-04T05:10:24Z",
-      "url": "https://github.com/achisolomon/software-factory"
+      "name": "tabpulse",
+      "updatedAt": "2026-11-05T05:33:53Z",
+      "url": "https://github.com/imtripleq/tabpulse"
     },
     {
-      "name": "vn-law-check",
-      "updatedAt": "2026-11-04T05:10:20Z",
-      "url": "https://github.com/mhfed/vn-law-check"
+      "name": "claude-skills",
+      "updatedAt": "2026-11-05T05:33:28Z",
+      "url": "https://github.com/Xindaan/claude-skills"
     }
   ]
 }
