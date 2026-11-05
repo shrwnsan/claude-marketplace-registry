@@ -101,7 +101,7 @@ jobs:
           git config --global user.email "claude-code[bot]@users.noreply.github.com"
 
       - name: Process follow-up issues
-        uses: anthropics/claude-code-action@5eb090f3c3afd701a0672cd32981197ca27688f6  # v1.0.253
+        uses: anthropics/claude-code-action@6d5ae526d25ce88daa2200be073e1a373167f064  # v1.0.265
         with:
           anthropic_api_key: ${{ secrets.CLAUDE_ZAI_API_KEY }}
           claude_args: |
