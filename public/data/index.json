@@ -1,37 +1,37 @@
 {
   "stats": {
-    "totalMarketplaces": 2082,
+    "totalMarketplaces": 2106,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-11-05T05:53:23.953Z",
+    "lastUpdated": "2026-11-06T05:52:33.809Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 721
+        "count": 730
       },
       {
         "language": "TypeScript",
-        "count": 355
+        "count": 356
       },
       {
         "language": "JavaScript",
-        "count": 331
+        "count": 334
       },
       {
         "language": "Unknown",
-        "count": 254
+        "count": 255
       },
       {
         "language": "Shell",
-        "count": 164
+        "count": 168
       },
       {
         "language": "HTML",
-        "count": 107
+        "count": 112
       },
       {
         "language": "Go",
-        "count": 39
+        "count": 40
       },
       {
         "language": "Rust",
@@ -49,12 +49,12 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 297366,
+        "stars": 297976,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 187488,
+        "stars": 187831,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,12 +64,12 @@
       },
       {
         "name": "claude-mem",
-        "stars": 112128,
+        "stars": 113651,
         "url": "https://github.com/thedotmack/claude-mem"
       },
       {
         "name": "paperclip",
-        "stars": 111177,
+        "stars": 111504,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -79,12 +79,12 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 78773,
+        "stars": 78873,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 70720,
+        "stars": 70738,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "agent-board",
-        "updatedAt": "2026-11-05T05:38:25Z",
-        "url": "https://github.com/WenyuChiou/agent-board"
+        "name": "clawock",
+        "updatedAt": "2026-11-06T05:37:44Z",
+        "url": "https://github.com/KCNyu/clawock"
+      },
+      {
+        "name": "claude-mem",
+        "updatedAt": "2026-11-06T05:36:37Z",
+        "url": "https://github.com/thedotmack/claude-mem"
+      },
+      {
+        "name": "brigade",
+        "updatedAt": "2026-11-06T05:36:30Z",
+        "url": "https://github.com/benomite/brigade"
+      },
+      {
+        "name": "session-recap",
+        "updatedAt": "2026-11-06T05:35:56Z",
+        "url": "https://github.com/BruceXcluding/session-recap"
+      },
+      {
+        "name": "metadump",
+        "updatedAt": "2026-11-06T05:35:47Z",
+        "url": "https://github.com/globalanomalyindex/metadump"
+      },
+      {
+        "name": "kinan-orchestre",
+        "updatedAt": "2026-11-06T05:35:05Z",
+        "url": "https://github.com/StudioObsidienne/kinan-orchestre"
+      },
+      {
+        "name": "sampo",
+        "updatedAt": "2026-11-06T05:34:04Z",
+        "url": "https://github.com/ChaseSunstrom/sampo"
+      },
+      {
+        "name": "oh-my-openagent",
+        "updatedAt": "2026-11-06T05:34:03Z",
+        "url": "https://github.com/code-yeongyu/oh-my-openagent"
+      },
+      {
+        "name": "harness-kit",
+        "updatedAt": "2026-11-06T05:33:37Z",
+        "url": "https://github.com/harnessprotocol/harness-kit"
       },
       {
         "name": "paperclip",
-        "updatedAt": "2026-11-05T05:38:04Z",
+        "updatedAt": "2026-11-06T05:32:41Z",
         "url": "https://github.com/paperclipai/paperclip"
-      },
-      {
-        "name": "claude-skills",
-        "updatedAt": "2026-11-05T05:37:40Z",
-        "url": "https://github.com/alirezarezvani/claude-skills"
-      },
-      {
-        "name": "Claude-Guardian",
-        "updatedAt": "2026-11-05T05:37:39Z",
-        "url": "https://github.com/DUNHKpcc/Claude-Guardian"
-      },
-      {
-        "name": "awesome-claude-video-skills",
-        "updatedAt": "2026-11-05T05:36:28Z",
-        "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
-      },
-      {
-        "name": "ashlr-plugin",
-        "updatedAt": "2026-11-05T05:36:27Z",
-        "url": "https://github.com/ashlrai/ashlr-plugin"
-      },
-      {
-        "name": "aleph",
-        "updatedAt": "2026-11-05T05:36:26Z",
-        "url": "https://github.com/crsmithdev/aleph"
-      },
-      {
-        "name": "cc-config",
-        "updatedAt": "2026-11-05T05:35:09Z",
-        "url": "https://github.com/clever-cc-plugins/cc-config"
-      },
-      {
-        "name": "tabpulse",
-        "updatedAt": "2026-11-05T05:33:53Z",
-        "url": "https://github.com/imtripleq/tabpulse"
-      },
-      {
-        "name": "claude-skills",
-        "updatedAt": "2026-11-05T05:33:28Z",
-        "url": "https://github.com/Xindaan/claude-skills"
       }
     ]
   },
@@ -155,27 +155,27 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 1038
+      "count": 1052
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 273
+      "count": 278
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 649
+      "count": 659
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 108
+      "count": 109
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 68
+      "count": 69
     },
     {
       "id": "utilities",
@@ -183,5 +183,5 @@
       "count": 52
     }
   ],
-  "lastUpdated": "2026-11-05T05:53:23.953Z"
+  "lastUpdated": "2026-11-06T05:52:33.809Z"
 }
