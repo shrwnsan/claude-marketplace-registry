@@ -1,10 +1,10 @@
 {
   "source": "skills.sh (Gen / Socket / Snyk)",
-  "generatedAt": "2026-11-06T05:52:31.346Z",
+  "generatedAt": "2026-11-07T05:17:37.835Z",
   "entries": {
     "170797156": {
       "repo": "reactive/data-client",
-      "auditedAt": "2026-11-06T05:52:23.424Z",
+      "auditedAt": "2026-11-07T05:17:29.219Z",
       "skills": {
         "data-client-setup": {
           "ath": {
@@ -24,7 +24,7 @@
     },
     "787362890": {
       "repo": "dahlia/logtape",
-      "auditedAt": "2026-11-06T05:52:23.705Z",
+      "auditedAt": "2026-11-07T05:17:29.487Z",
       "skills": {
         "logtape": {
           "ath": {
@@ -44,7 +44,7 @@
     },
     "1061953414": {
       "repo": "anthropics/skills",
-      "auditedAt": "2026-11-06T05:52:21.391Z",
+      "auditedAt": "2026-11-07T05:17:26.452Z",
       "skills": {
         "xlsx": {
           "ath": {
@@ -316,7 +316,7 @@
     },
     "1077819522": {
       "repo": "pascalorg/editor",
-      "auditedAt": "2026-11-06T05:52:21.851Z",
+      "auditedAt": "2026-11-07T05:17:27.120Z",
       "skills": {
         "pascal-3d": {
           "ath": {
@@ -350,7 +350,7 @@
     },
     "1100923190": {
       "repo": "kylehughes/the-unofficial-swift-programming-language-skill",
-      "auditedAt": "2026-11-06T05:52:26.800Z",
+      "auditedAt": "2026-11-07T05:17:34.065Z",
       "skills": {
         "programming-swift": {
           "ath": {
@@ -370,7 +370,7 @@
     },
     "1137485434": {
       "repo": "softaworks/agent-toolkit",
-      "auditedAt": "2026-11-06T05:52:23.048Z",
+      "auditedAt": "2026-11-07T05:17:28.991Z",
       "skills": {
         "codex": {
           "ath": {
@@ -656,7 +656,7 @@
     },
     "1145158024": {
       "repo": "wondelai/skills",
-      "auditedAt": "2026-11-06T05:52:22.415Z",
+      "auditedAt": "2026-11-07T05:17:28.003Z",
       "skills": {
         "jobs-to-be-done": {
           "ath": {
@@ -942,7 +942,7 @@
     },
     "1202576122": {
       "repo": "Aperivue/medsci-skills",
-      "auditedAt": "2026-11-06T05:52:24.742Z",
+      "auditedAt": "2026-11-07T05:17:30.800Z",
       "skills": {
         "fulltext-retrieval": {
           "ath": {
@@ -1242,7 +1242,7 @@
     },
     "1207161577": {
       "repo": "NatiCha/bunwv",
-      "auditedAt": "2026-11-06T05:52:24.952Z",
+      "auditedAt": "2026-11-07T05:17:31.040Z",
       "skills": {
         "bunwv": {
           "ath": {
@@ -1262,7 +1262,7 @@
     },
     "1209609017": {
       "repo": "event4u-app/agent-config",
-      "auditedAt": "2026-11-06T05:52:27.893Z",
+      "auditedAt": "2026-11-07T05:17:35.096Z",
       "skills": {
         "install-agent-config": {
           "ath": {
@@ -1282,7 +1282,7 @@
     },
     "1230639327": {
       "repo": "leek/agent-skills",
-      "auditedAt": "2026-11-06T05:52:28.716Z",
+      "auditedAt": "2026-11-07T05:17:35.901Z",
       "skills": {
         "architecture-satisfaction": {
           "ath": {
@@ -1604,11 +1604,11 @@
           "snyk": {
             "risk": "low"
           },
-          "analyzedAt": "2026-10-29T20:44:53.079Z"
+          "analyzedAt": "2026-11-05T15:38:23.965Z"
         },
         "improve-codebase-architecture": {
           "ath": {
-            "risk": "safe"
+            "risk": "medium"
           },
           "socket": {
             "risk": "safe",
@@ -1616,9 +1616,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "low"
+            "risk": "medium"
           },
-          "analyzedAt": "2026-10-07T12:00:56.124Z"
+          "analyzedAt": "2026-11-05T15:37:53.201Z"
         },
         "laravel-herd-worktrees": {
           "ath": {
@@ -1632,21 +1632,21 @@
           "snyk": {
             "risk": "low"
           },
-          "analyzedAt": "2026-10-22T12:12:45.985Z"
+          "analyzedAt": "2026-11-05T15:37:22.482Z"
         },
         "panel": {
           "ath": {
-            "risk": "medium"
+            "risk": "safe"
           },
           "socket": {
             "risk": "critical",
-            "alerts": 1,
+            "alerts": 2,
             "score": 77
           },
           "snyk": {
-            "risk": "medium"
+            "risk": "low"
           },
-          "analyzedAt": "2026-10-19T19:07:17.561Z"
+          "analyzedAt": "2026-11-05T15:38:24.006Z"
         },
         "pr": {
           "ath": {
@@ -1674,7 +1674,7 @@
           "snyk": {
             "risk": "low"
           },
-          "analyzedAt": "2026-10-30T18:40:57.702Z"
+          "analyzedAt": "2026-11-05T15:37:52.687Z"
         },
         "prototype": {
           "ath": {
@@ -1702,11 +1702,11 @@
           "snyk": {
             "risk": "low"
           },
-          "analyzedAt": "2026-10-26T17:04:35.193Z"
+          "analyzedAt": "2026-11-05T15:37:22.032Z"
         },
         "repository-cleanup": {
           "ath": {
-            "risk": "safe"
+            "risk": "medium"
           },
           "socket": {
             "risk": "safe",
@@ -1716,7 +1716,7 @@
           "snyk": {
             "risk": "medium"
           },
-          "analyzedAt": "2026-10-26T17:05:08.496Z"
+          "analyzedAt": "2026-11-05T15:37:22.034Z"
         },
         "research": {
           "ath": {
@@ -1730,7 +1730,7 @@
           "snyk": {
             "risk": "medium"
           },
-          "analyzedAt": "2026-10-07T12:02:13.541Z"
+          "analyzedAt": "2026-11-05T15:37:21.625Z"
         },
         "retro": {
           "ath": {
@@ -1742,13 +1742,13 @@
             "score": 90
           },
           "snyk": {
-            "risk": "low"
+            "risk": "medium"
           },
-          "analyzedAt": "2026-10-30T18:40:23.795Z"
+          "analyzedAt": "2026-11-05T15:38:23.967Z"
         },
         "resolve-review-comments": {
           "ath": {
-            "risk": "safe"
+            "risk": "medium"
           },
           "socket": {
             "risk": "safe",
@@ -1758,7 +1758,7 @@
           "snyk": {
             "risk": "medium"
           },
-          "analyzedAt": "2026-10-19T19:06:26.535Z"
+          "analyzedAt": "2026-11-05T15:37:22.286Z"
         },
         "resolving-merge-conflicts": {
           "ath": {
@@ -1772,7 +1772,7 @@
           "snyk": {
             "risk": "medium"
           },
-          "analyzedAt": "2026-10-22T12:11:43.232Z"
+          "analyzedAt": "2026-11-05T15:37:21.367Z"
         },
         "scratch-cleanup": {
           "ath": {
@@ -1786,11 +1786,11 @@
           "snyk": {
             "risk": "low"
           },
-          "analyzedAt": "2026-10-17T10:05:22.412Z"
+          "analyzedAt": "2026-11-05T15:37:25.493Z"
         },
         "scratch-status": {
           "ath": {
-            "risk": "safe"
+            "risk": "high"
           },
           "socket": {
             "risk": "safe",
@@ -1800,7 +1800,7 @@
           "snyk": {
             "risk": "low"
           },
-          "analyzedAt": "2026-10-19T19:06:06.744Z"
+          "analyzedAt": "2026-11-05T15:37:52.738Z"
         },
         "setup": {
           "ath": {
@@ -1814,13 +1814,13 @@
           "snyk": {
             "risk": "low"
           },
-          "analyzedAt": "2026-10-05T19:06:39.674Z"
+          "analyzedAt": "2026-11-05T15:37:53.418Z"
         }
       }
     },
     "1248751622": {
       "repo": "brycewang-stanford/AER-Skills",
-      "auditedAt": "2026-11-06T05:52:25.970Z",
+      "auditedAt": "2026-11-07T05:17:32.359Z",
       "skills": {
         "aer-workflow": {
           "ath": {
@@ -2036,7 +2036,7 @@
     },
     "1254422214": {
       "repo": "rollinsio/beyond-test-coverage",
-      "auditedAt": "2026-11-06T05:52:26.606Z",
+      "auditedAt": "2026-11-07T05:17:32.960Z",
       "skills": {
         "test-quality": {
           "ath": {
@@ -2070,7 +2070,7 @@
     },
     "1354760955": {
       "repo": "aws-samples/sample-sagemaker-marketplace-onboarding-skill",
-      "auditedAt": "2026-11-06T05:52:28.904Z",
+      "auditedAt": "2026-11-07T05:17:36.221Z",
       "skills": {
         "sagemaker-marketplace-onboarding": {
           "ath": {
@@ -2090,7 +2090,7 @@
     },
     "1398499540": {
       "repo": "harrison-ming/chuhai-skills",
-      "auditedAt": "2026-11-06T05:52:31.346Z",
+      "auditedAt": "2026-11-07T05:17:37.835Z",
       "skills": {
         "shopify-store-teardown": {
           "ath": {
