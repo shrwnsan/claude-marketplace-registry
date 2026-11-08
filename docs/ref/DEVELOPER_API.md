@@ -21,6 +21,8 @@ CORS is enabled for every origin, so you can fetch these files directly from bro
 
 ### stats.json
 
+_Field shapes current as of 2026-11-08; the example numbers below are from the 2026-09-18 scan. The live `overview` also carries `totalMods` and `marketplacesWithMods`, and the trend map includes a `starred` series (see `history.json` below)._
+
 ```json
 {
   "success": true,
@@ -49,24 +51,37 @@ CORS is enabled for every origin, so you can fetch these files directly from bro
 
 ### marketplaces.json / plugins.json
 
-Both are bare arrays. `marketplaces.json` entries carry `id`, `name`, `description`, `url`, `stars`, `forks`, `language`, `license`, `topics[]`, `hasManifest`, `createdAt`, `updatedAt`. `plugins.json` entries carry `id`, `name`, `description`, `author`, `version`, `skills[]`, `marketplaceId`, `marketplaceName`, and source metadata.
+Both are bare arrays. `marketplaces.json` entries carry `id`, `name`, `description`, `url`, `stars`, `forks`, `language`, `license`, `topics[]`, `hasManifest`, `createdAt`, `updatedAt`. `plugins.json` entries carry `id`, `name`, `description`, `author`, `version`, `isValid`, `skillsCount`, `modsCount`, `marketplaceId`, `marketplaceName` — counts, not arrays. There is no `skills[]` field and no plugin-level `stars` field (an earlier revision of this document described `skills[]` and "source metadata"; corrected against the live scan of 2026-11-08).
 
 Marketplaces may also carry an optional `securityAudit` object (`risk`, `alerts`, `auditedSkills`, `totalSkills`, `auditedAt`, `source`) — the worst-case verdict from skills.sh's Gen/Socket/Snyk audits across that repo's skills. Treat it as indicative, not authoritative; `source` names the audit provider and `auditedAt` the assessment date.
+
+### history.json
+
+Bare array, oldest snapshot first, one entry per daily scan (50+ entries since 2026-02-23):
+
+```json
+{ "date": "2026-11-08T05:14:18.714Z", "marketplaces": 2146, "plugins": 7736, "stars": 2149270, "developers": 852, "starred": 769 }
+```
+
+Field notes for strict parsers:
+
+- `developers` was added to the entry shape after launch and is **not backfilled** — treat it as absent in early entries.
+- `starred` (added later, also not backfilled) counts marketplaces with `stars >= 10` (`TRACTION_STAR_THRESHOLD` in `scripts/generate-data.ts`) — marketplaces with real traction. It is not the ecosystem star total; that is `stars`.
 
 ### Joining plugins to marketplaces
 
 ```js
-String(plugin.metadata.marketplaceId) === String(marketplace.id)
+String(plugin.marketplaceId) === String(marketplace.id)
 ```
 
-Compare as strings on both sides — IDs are numeric-looking but join as strings.
+Compare as strings on both sides — IDs are numeric-looking but join as strings. `marketplaceId` sits at the top level of each plugin entry.
 
 ## Data contract notes
 
 - `growthRate` compares the current scan against the oldest snapshot within the last 30 days. Treat `null` (early history) as "no data", not zero.
 - Trend arrays gain one point per daily scan; the site renders big-number deltas until five snapshots exist.
 - Topic counts overlap: one plugin appears under every topic its parent marketplace carries. Never render them as a pie chart.
-- Plugin-level `stars` are the parent marketplace's stars. Download counts are not published — GitHub does not expose them per plugin, and none of these numbers are estimated or mocked.
+- `plugins.json` carries no `stars` field. Plugin popularity is the parent marketplace's `stars` — join on `marketplaceId`. Download counts are not published — GitHub does not expose them per plugin, and none of these numbers are estimated or mocked.
 
 ## Examples
 
@@ -87,4 +102,18 @@ curl -s https://shrwnsan.github.io/claude-marketplace-registry/data/plugins.json
 
 The daily scan (00:00 UTC) runs 11 discovery strategies, validates every manifest, and opens a data-update PR that a validator gates on shape, cross-file consistency, and freshness before auto-merge. Catalog data on the CDN is at most one day old; deleted repositories are pruned and the registry is monotonic — everything ever discovered stays indexed unless it disappears from GitHub.
 
+### Conditional requests
+
+Every endpoint ships an `ETag` and `Last-Modified`. Daily pollers (agents, dashboards) should re-validate instead of re-downloading:
+
+```bash
+# first fetch: save the validator with the body
+curl -s --etag-save etag.txt "$BASE/stats.json" -o stats.json
+
+# later polls: HTTP 304 and empty body when unchanged, full body when stale
+curl -s --etag-compare etag.txt "$BASE/stats.json" -o stats.json
+```
+
 Interactive browsing of the same data lives on the site itself; a human-readable version of this reference is at [/docs/api](https://shrwnsan.github.io/claude-marketplace-registry/docs/api).
+
+Known schema gaps and planned improvements are tracked in [API-IMPROVEMENTS-2026-11-08.md](./API-IMPROVEMENTS-2026-11-08.md).
