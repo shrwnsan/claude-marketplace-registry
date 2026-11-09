@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- `docs/ref/API-IMPROVEMENTS-2026-11-08.md` — external-consumer audit of the public JSON API with a prioritized improvement backlog (schema versioning, compact index slice, denormalized plugin stars, history backfill)
+- `DEVELOPER_API.md` now documents `history.json` (entry shape, late-added `developers`/`starred` fields, traction-threshold meaning) and ETag/`If-None-Match` polling
+
+### Fixed
+- `DEVELOPER_API.md` corrected to the live schema: plugin fields are counts (`skillsCount`, `modsCount`, `isValid`) — there is no `skills[]`; the join key is top-level `marketplaceId` (not `plugin.metadata.marketplaceId`); `plugins.json` carries no `stars` field; the `stats.json` example is date-stamped
+
 ### Security
 - Gated AI-assist workflows (`claude-code.yml`, `droid.yml`) to OWNER/MEMBER/COLLABORATOR authors and excluded bot accounts — anonymous comments/PRs can no longer drive an agent holding a repo-write token
 - Dropped unused `id-token: write` from agent workflows; `follow-up-implementation.yml` now only implements owner-authored issues
