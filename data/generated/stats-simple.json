@@ -1,32 +1,32 @@
 {
-  "totalMarketplaces": 2146,
+  "totalMarketplaces": 2167,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-11-08T05:14:18.649Z",
+  "lastUpdated": "2026-11-09T05:22:00.879Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 751
+      "count": 760
     },
     {
       "language": "TypeScript",
-      "count": 360
+      "count": 363
     },
     {
       "language": "JavaScript",
-      "count": 341
+      "count": 345
     },
     {
       "language": "Unknown",
-      "count": 258
+      "count": 261
     },
     {
       "language": "Shell",
-      "count": 171
+      "count": 172
     },
     {
       "language": "HTML",
-      "count": 112
+      "count": 113
     },
     {
       "language": "Go",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 299254,
+      "stars": 299780,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 188894,
+      "stars": 189841,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -63,27 +63,27 @@
     },
     {
       "name": "claude-mem",
-      "stars": 114092,
+      "stars": 115001,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "paperclip",
-      "stars": 112073,
+      "stars": 112383,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "archify",
-      "stars": 94520,
+      "stars": 94801,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 79006,
+      "stars": 79081,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70771,
+      "stars": 70793,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -99,54 +99,54 @@
   ],
   "recentActivity": [
     {
-      "name": "skills",
-      "updatedAt": "2026-11-08T04:59:37Z",
-      "url": "https://github.com/filippolmt/skills"
+      "name": "claude-pod",
+      "updatedAt": "2026-11-09T05:07:29Z",
+      "url": "https://github.com/iamphduc/claude-pod"
     },
     {
-      "name": "Anamnesis",
-      "updatedAt": "2026-11-08T04:58:54Z",
-      "url": "https://github.com/Anbu-00001/Anamnesis"
-    },
-    {
-      "name": "oh-my-openagent",
-      "updatedAt": "2026-11-08T04:58:15Z",
-      "url": "https://github.com/code-yeongyu/oh-my-openagent"
-    },
-    {
-      "name": "archify",
-      "updatedAt": "2026-11-08T04:56:57Z",
-      "url": "https://github.com/tt-a1i/archify"
-    },
-    {
-      "name": "paperclip",
-      "updatedAt": "2026-11-08T04:56:01Z",
-      "url": "https://github.com/paperclipai/paperclip"
-    },
-    {
-      "name": "dev-circuit-ultra",
-      "updatedAt": "2026-11-08T04:54:43Z",
-      "url": "https://github.com/iswalterwu/dev-circuit-ultra"
-    },
-    {
-      "name": "claude-drawing-skill",
-      "updatedAt": "2026-11-08T04:54:30Z",
-      "url": "https://github.com/cloveric/claude-drawing-skill"
-    },
-    {
-      "name": "design-playbook",
-      "updatedAt": "2026-11-08T04:54:21Z",
-      "url": "https://github.com/Bandersnatch0x/design-playbook"
-    },
-    {
-      "name": "openInvest",
-      "updatedAt": "2026-11-08T04:53:04Z",
-      "url": "https://github.com/longsizhuo/openInvest"
+      "name": "Claude-Guardian",
+      "updatedAt": "2026-11-09T05:06:47Z",
+      "url": "https://github.com/DUNHKpcc/Claude-Guardian"
     },
     {
       "name": "brigade",
-      "updatedAt": "2026-11-08T04:52:11Z",
-      "url": "https://github.com/benomite/brigade"
+      "updatedAt": "2026-11-09T05:06:24Z",
+      "url": "https://github.com/escoffier-labs/brigade"
+    },
+    {
+      "name": "awesome-claude-video-skills",
+      "updatedAt": "2026-11-09T05:05:42Z",
+      "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
+    },
+    {
+      "name": "paperclip",
+      "updatedAt": "2026-11-09T05:05:39Z",
+      "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+      "name": "cheap-ag",
+      "updatedAt": "2026-11-09T05:05:37Z",
+      "url": "https://github.com/muaaz9329/cheap-ag"
+    },
+    {
+      "name": "sampo",
+      "updatedAt": "2026-11-09T05:04:43Z",
+      "url": "https://github.com/ChaseSunstrom/sampo"
+    },
+    {
+      "name": "guaardvark",
+      "updatedAt": "2026-11-09T05:04:18Z",
+      "url": "https://github.com/guaardvark/guaardvark"
+    },
+    {
+      "name": "dev-setup",
+      "updatedAt": "2026-11-09T05:04:09Z",
+      "url": "https://github.com/ssaarthakk/dev-setup"
+    },
+    {
+      "name": "skills-financas-br",
+      "updatedAt": "2026-11-09T05:03:36Z",
+      "url": "https://github.com/financeailab/skills-financas-br"
     }
   ]
 }
