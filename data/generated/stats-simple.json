@@ -1,20 +1,20 @@
 {
-  "totalMarketplaces": 2167,
+  "totalMarketplaces": 2193,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-11-09T05:22:00.879Z",
+  "lastUpdated": "2026-11-10T06:34:13.408Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 760
+      "count": 773
     },
     {
       "language": "TypeScript",
-      "count": 363
+      "count": 364
     },
     {
       "language": "JavaScript",
-      "count": 345
+      "count": 353
     },
     {
       "language": "Unknown",
@@ -22,7 +22,7 @@
     },
     {
       "language": "Shell",
-      "count": 172
+      "count": 175
     },
     {
       "language": "HTML",
@@ -34,7 +34,7 @@
     },
     {
       "language": "Rust",
-      "count": 37
+      "count": 38
     },
     {
       "language": "Swift",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 299780,
+      "stars": 300340,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 189841,
+      "stars": 191332,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -68,22 +68,22 @@
     },
     {
       "name": "paperclip",
-      "stars": 112383,
+      "stars": 112702,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "archify",
-      "stars": 94801,
+      "stars": 95159,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 79081,
+      "stars": 79161,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70793,
+      "stars": 70810,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
@@ -99,54 +99,54 @@
   ],
   "recentActivity": [
     {
-      "name": "claude-pod",
-      "updatedAt": "2026-11-09T05:07:29Z",
-      "url": "https://github.com/iamphduc/claude-pod"
+      "name": "claude-plugins",
+      "updatedAt": "2026-11-10T06:20:22Z",
+      "url": "https://github.com/it-all-playpark/claude-plugins"
     },
     {
-      "name": "Claude-Guardian",
-      "updatedAt": "2026-11-09T05:06:47Z",
-      "url": "https://github.com/DUNHKpcc/Claude-Guardian"
+      "name": "Tractus",
+      "updatedAt": "2026-11-10T06:19:40Z",
+      "url": "https://github.com/sjoon21/Tractus"
     },
     {
-      "name": "brigade",
-      "updatedAt": "2026-11-09T05:06:24Z",
-      "url": "https://github.com/escoffier-labs/brigade"
+      "name": "wake-skills",
+      "updatedAt": "2026-11-10T06:19:26Z",
+      "url": "https://github.com/uwakeme/wake-skills"
     },
     {
-      "name": "awesome-claude-video-skills",
-      "updatedAt": "2026-11-09T05:05:42Z",
-      "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
+      "name": "omics-skills",
+      "updatedAt": "2026-11-10T06:18:55Z",
+      "url": "https://github.com/fmschulz/omics-skills"
+    },
+    {
+      "name": "archify",
+      "updatedAt": "2026-11-10T06:18:23Z",
+      "url": "https://github.com/tt-a1i/archify"
+    },
+    {
+      "name": "claude-for-everything",
+      "updatedAt": "2026-11-10T06:18:07Z",
+      "url": "https://github.com/nishaj0/claude-for-everything"
     },
     {
       "name": "paperclip",
-      "updatedAt": "2026-11-09T05:05:39Z",
+      "updatedAt": "2026-11-10T06:18:06Z",
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "cheap-ag",
-      "updatedAt": "2026-11-09T05:05:37Z",
-      "url": "https://github.com/muaaz9329/cheap-ag"
+      "name": "spec-driven-dev",
+      "updatedAt": "2026-11-10T06:18:02Z",
+      "url": "https://github.com/benjaminthomas/spec-driven-dev"
     },
     {
-      "name": "sampo",
-      "updatedAt": "2026-11-09T05:04:43Z",
-      "url": "https://github.com/ChaseSunstrom/sampo"
+      "name": "brenna-plugs",
+      "updatedAt": "2026-11-10T06:17:49Z",
+      "url": "https://github.com/brennacodes/brenna-plugs"
     },
     {
-      "name": "guaardvark",
-      "updatedAt": "2026-11-09T05:04:18Z",
-      "url": "https://github.com/guaardvark/guaardvark"
-    },
-    {
-      "name": "dev-setup",
-      "updatedAt": "2026-11-09T05:04:09Z",
-      "url": "https://github.com/ssaarthakk/dev-setup"
-    },
-    {
-      "name": "skills-financas-br",
-      "updatedAt": "2026-11-09T05:03:36Z",
-      "url": "https://github.com/financeailab/skills-financas-br"
+      "name": "elephant-goldfish-model",
+      "updatedAt": "2026-11-10T06:17:42Z",
+      "url": "https://github.com/google/elephant-goldfish-model"
     }
   ]
 }
