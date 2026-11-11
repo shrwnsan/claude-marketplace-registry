@@ -1,28 +1,28 @@
 {
-  "totalMarketplaces": 2193,
+  "totalMarketplaces": 2210,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-11-10T06:34:13.408Z",
+  "lastUpdated": "2026-11-11T05:25:45.265Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 773
+      "count": 777
     },
     {
       "language": "TypeScript",
-      "count": 364
+      "count": 367
     },
     {
       "language": "JavaScript",
-      "count": 353
+      "count": 358
     },
     {
       "language": "Unknown",
-      "count": 261
+      "count": 265
     },
     {
       "language": "Shell",
-      "count": 175
+      "count": 176
     },
     {
       "language": "HTML",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 300340,
+      "stars": 300888,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 191332,
+      "stars": 192517,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -63,12 +63,12 @@
     },
     {
       "name": "claude-mem",
-      "stars": 115001,
+      "stars": 115916,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "paperclip",
-      "stars": 112702,
+      "stars": 112990,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 79161,
+      "stars": 79234,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
@@ -99,54 +99,54 @@
   ],
   "recentActivity": [
     {
-      "name": "claude-plugins",
-      "updatedAt": "2026-11-10T06:20:22Z",
-      "url": "https://github.com/it-all-playpark/claude-plugins"
-    },
-    {
-      "name": "Tractus",
-      "updatedAt": "2026-11-10T06:19:40Z",
-      "url": "https://github.com/sjoon21/Tractus"
-    },
-    {
-      "name": "wake-skills",
-      "updatedAt": "2026-11-10T06:19:26Z",
-      "url": "https://github.com/uwakeme/wake-skills"
-    },
-    {
-      "name": "omics-skills",
-      "updatedAt": "2026-11-10T06:18:55Z",
-      "url": "https://github.com/fmschulz/omics-skills"
-    },
-    {
-      "name": "archify",
-      "updatedAt": "2026-11-10T06:18:23Z",
-      "url": "https://github.com/tt-a1i/archify"
-    },
-    {
-      "name": "claude-for-everything",
-      "updatedAt": "2026-11-10T06:18:07Z",
-      "url": "https://github.com/nishaj0/claude-for-everything"
-    },
-    {
       "name": "paperclip",
-      "updatedAt": "2026-11-10T06:18:06Z",
+      "updatedAt": "2026-11-11T05:10:19Z",
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
+      "name": "claude-mem",
+      "updatedAt": "2026-11-11T05:10:17Z",
+      "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+      "name": "skills",
+      "updatedAt": "2026-11-11T05:09:23Z",
+      "url": "https://github.com/wensity/skills"
+    },
+    {
+      "name": "oil-ui",
+      "updatedAt": "2026-11-11T05:05:39Z",
+      "url": "https://github.com/oil-oil/oil-ui"
+    },
+    {
+      "name": "blocks",
+      "updatedAt": "2026-11-11T05:05:02Z",
+      "url": "https://github.com/TheSethRose/blocks"
+    },
+    {
       "name": "spec-driven-dev",
-      "updatedAt": "2026-11-10T06:18:02Z",
+      "updatedAt": "2026-11-11T05:03:04Z",
       "url": "https://github.com/benjaminthomas/spec-driven-dev"
     },
     {
-      "name": "brenna-plugs",
-      "updatedAt": "2026-11-10T06:17:49Z",
-      "url": "https://github.com/brennacodes/brenna-plugs"
+      "name": "skills",
+      "updatedAt": "2026-11-11T05:02:54Z",
+      "url": "https://github.com/vanducng/skills"
     },
     {
-      "name": "elephant-goldfish-model",
-      "updatedAt": "2026-11-10T06:17:42Z",
-      "url": "https://github.com/google/elephant-goldfish-model"
+      "name": "soes-skills",
+      "updatedAt": "2026-11-11T05:02:27Z",
+      "url": "https://github.com/Soe-Reh/soes-skills"
+    },
+    {
+      "name": "comprende",
+      "updatedAt": "2026-11-11T04:59:26Z",
+      "url": "https://github.com/AbdulrahmanMasoud/comprende"
+    },
+    {
+      "name": "create-viral-content",
+      "updatedAt": "2026-11-11T04:59:14Z",
+      "url": "https://github.com/aaaronmiller/create-viral-content"
     }
   ]
 }
