@@ -1,24 +1,24 @@
 {
-  "totalMarketplaces": 2210,
+  "totalMarketplaces": 2228,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-11-11T05:25:45.265Z",
+  "lastUpdated": "2026-11-12T06:27:05.479Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 777
+      "count": 783
     },
     {
       "language": "TypeScript",
-      "count": 367
+      "count": 371
     },
     {
       "language": "JavaScript",
-      "count": 358
+      "count": 363
     },
     {
       "language": "Unknown",
-      "count": 265
+      "count": 266
     },
     {
       "language": "Shell",
@@ -26,7 +26,7 @@
     },
     {
       "language": "HTML",
-      "count": 113
+      "count": 114
     },
     {
       "language": "Go",
@@ -34,7 +34,7 @@
     },
     {
       "language": "Rust",
-      "count": 38
+      "count": 39
     },
     {
       "language": "Swift",
@@ -48,12 +48,12 @@
   "topMarketplaces": [
     {
       "name": "ECC",
-      "stars": 300888,
+      "stars": 301513,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 192517,
+      "stars": 193277,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -68,85 +68,85 @@
     },
     {
       "name": "paperclip",
-      "stars": 112990,
+      "stars": 113232,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "archify",
-      "stars": 95159,
+      "stars": 95704,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
+      "name": "career-ops",
+      "stars": 82051,
+      "url": "https://github.com/career-ops-hq/career-ops"
+    },
+    {
       "name": "awesome-claude-skills",
-      "stars": 79234,
+      "stars": 79298,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70810,
+      "stars": 70860,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
       "name": "Pake",
       "stars": 62038,
       "url": "https://github.com/tw93/Pake"
-    },
-    {
-      "name": "humanizer",
-      "stars": 60299,
-      "url": "https://github.com/blader/humanizer"
     }
   ],
   "recentActivity": [
     {
+      "name": "career-ops",
+      "updatedAt": "2026-11-12T06:13:08Z",
+      "url": "https://github.com/career-ops-hq/career-ops"
+    },
+    {
       "name": "paperclip",
-      "updatedAt": "2026-11-11T05:10:19Z",
+      "updatedAt": "2026-11-12T06:12:46Z",
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "claude-mem",
-      "updatedAt": "2026-11-11T05:10:17Z",
-      "url": "https://github.com/thedotmack/claude-mem"
+      "name": "archify",
+      "updatedAt": "2026-11-12T06:11:48Z",
+      "url": "https://github.com/tt-a1i/archify"
     },
     {
-      "name": "skills",
-      "updatedAt": "2026-11-11T05:09:23Z",
-      "url": "https://github.com/wensity/skills"
+      "name": "pixelwright",
+      "updatedAt": "2026-11-12T06:10:48Z",
+      "url": "https://github.com/m4bwav/pixelwright"
     },
     {
-      "name": "oil-ui",
-      "updatedAt": "2026-11-11T05:05:39Z",
-      "url": "https://github.com/oil-oil/oil-ui"
+      "name": "skill",
+      "updatedAt": "2026-11-12T06:10:35Z",
+      "url": "https://github.com/anbeime/skill"
     },
     {
-      "name": "blocks",
-      "updatedAt": "2026-11-11T05:05:02Z",
-      "url": "https://github.com/TheSethRose/blocks"
+      "name": "lemo-opuscar",
+      "updatedAt": "2026-11-12T06:09:27Z",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar"
     },
     {
-      "name": "spec-driven-dev",
-      "updatedAt": "2026-11-11T05:03:04Z",
-      "url": "https://github.com/benjaminthomas/spec-driven-dev"
+      "name": "Laika",
+      "updatedAt": "2026-11-12T06:09:17Z",
+      "url": "https://github.com/PawanSirsat/Laika"
     },
     {
-      "name": "skills",
-      "updatedAt": "2026-11-11T05:02:54Z",
-      "url": "https://github.com/vanducng/skills"
+      "name": "stack-diagram",
+      "updatedAt": "2026-11-12T06:07:06Z",
+      "url": "https://github.com/caru-ini/stack-diagram"
     },
     {
-      "name": "soes-skills",
-      "updatedAt": "2026-11-11T05:02:27Z",
-      "url": "https://github.com/Soe-Reh/soes-skills"
+      "name": "hivehouse",
+      "updatedAt": "2026-11-12T06:04:48Z",
+      "url": "https://github.com/Cleveland-RD/hivehouse"
     },
     {
-      "name": "comprende",
-      "updatedAt": "2026-11-11T04:59:26Z",
-      "url": "https://github.com/AbdulrahmanMasoud/comprende"
-    },
-    {
-      "name": "create-viral-content",
-      "updatedAt": "2026-11-11T04:59:14Z",
-      "url": "https://github.com/aaaronmiller/create-viral-content"
+      "name": "msp-skills",
+      "updatedAt": "2026-11-12T06:03:36Z",
+      "url": "https://github.com/Servosity/msp-skills"
     }
   ]
 }
