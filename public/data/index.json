@@ -1,37 +1,37 @@
 {
   "stats": {
-    "totalMarketplaces": 2228,
+    "totalMarketplaces": 2256,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-11-12T06:27:05.479Z",
+    "lastUpdated": "2026-11-13T05:55:54.356Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 783
+        "count": 796
       },
       {
         "language": "TypeScript",
-        "count": 371
+        "count": 375
       },
       {
         "language": "JavaScript",
-        "count": 363
+        "count": 370
       },
       {
         "language": "Unknown",
-        "count": 266
+        "count": 268
       },
       {
         "language": "Shell",
-        "count": 176
+        "count": 175
       },
       {
         "language": "HTML",
-        "count": 114
+        "count": 116
       },
       {
         "language": "Go",
-        "count": 40
+        "count": 41
       },
       {
         "language": "Rust",
@@ -49,12 +49,12 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 301513,
+        "stars": 302097,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 193277,
+        "stars": 193785,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,12 +64,12 @@
       },
       {
         "name": "claude-mem",
-        "stars": 115916,
+        "stars": 116631,
         "url": "https://github.com/thedotmack/claude-mem"
       },
       {
         "name": "paperclip",
-        "stars": 113232,
+        "stars": 113461,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -84,12 +84,12 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 79298,
+        "stars": 79369,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 70860,
+        "stars": 70885,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "career-ops",
-        "updatedAt": "2026-11-12T06:13:08Z",
-        "url": "https://github.com/career-ops-hq/career-ops"
+        "name": "claude-mem",
+        "updatedAt": "2026-11-13T05:35:11Z",
+        "url": "https://github.com/thedotmack/claude-mem"
       },
       {
         "name": "paperclip",
-        "updatedAt": "2026-11-12T06:12:46Z",
+        "updatedAt": "2026-11-13T05:33:12Z",
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "archify",
-        "updatedAt": "2026-11-12T06:11:48Z",
-        "url": "https://github.com/tt-a1i/archify"
+        "name": "oh-my-openagent",
+        "updatedAt": "2026-11-13T05:29:32Z",
+        "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
-        "name": "pixelwright",
-        "updatedAt": "2026-11-12T06:10:48Z",
-        "url": "https://github.com/m4bwav/pixelwright"
+        "name": "agent-skills",
+        "updatedAt": "2026-11-13T05:28:27Z",
+        "url": "https://github.com/RIJUDEVx/agent-skills"
       },
       {
-        "name": "skill",
-        "updatedAt": "2026-11-12T06:10:35Z",
-        "url": "https://github.com/anbeime/skill"
+        "name": "youtube-research-skills",
+        "updatedAt": "2026-11-13T05:25:53Z",
+        "url": "https://github.com/TubeLabHQ/youtube-research-skills"
       },
       {
-        "name": "lemo-opuscar",
-        "updatedAt": "2026-11-12T06:09:27Z",
-        "url": "https://github.com/lemomo-ai/lemo-opuscar"
+        "name": "ECC",
+        "updatedAt": "2026-11-13T05:20:27Z",
+        "url": "https://github.com/affaan-m/ECC"
       },
       {
-        "name": "Laika",
-        "updatedAt": "2026-11-12T06:09:17Z",
-        "url": "https://github.com/PawanSirsat/Laika"
+        "name": "oh-my-claudecode",
+        "updatedAt": "2026-11-13T05:15:27Z",
+        "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
       },
       {
-        "name": "stack-diagram",
-        "updatedAt": "2026-11-12T06:07:06Z",
-        "url": "https://github.com/caru-ini/stack-diagram"
+        "name": "ai-skills",
+        "updatedAt": "2026-11-13T05:14:11Z",
+        "url": "https://github.com/Enginatics/ai-skills"
       },
       {
-        "name": "hivehouse",
-        "updatedAt": "2026-11-12T06:04:48Z",
-        "url": "https://github.com/Cleveland-RD/hivehouse"
+        "name": "skills",
+        "updatedAt": "2026-11-13T05:10:02Z",
+        "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "msp-skills",
-        "updatedAt": "2026-11-12T06:03:36Z",
-        "url": "https://github.com/Servosity/msp-skills"
+        "name": "claude-plugins-official",
+        "updatedAt": "2026-11-13T05:05:16Z",
+        "url": "https://github.com/anthropics/claude-plugins-official"
       }
     ]
   },
@@ -155,7 +155,7 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 1108
+      "count": 1123
     },
     {
       "id": "productivity",
@@ -165,17 +165,17 @@
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 709
+      "count": 720
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 117
+      "count": 122
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 74
+      "count": 76
     },
     {
       "id": "utilities",
@@ -183,5 +183,5 @@
       "count": 53
     }
   ],
-  "lastUpdated": "2026-11-12T06:27:05.479Z"
+  "lastUpdated": "2026-11-13T05:55:54.356Z"
 }

@@ -1,7 +1,12 @@
 {
   "model": "jev-1.14.0",
-  "generatedAt": "2026-11-12T06:26:47.755Z",
+  "generatedAt": "2026-11-13T05:55:38.567Z",
   "entries": {
+    "50709152": {
+      "category": "none",
+      "categoryConfidence": 0.76,
+      "isMarketplace": 0.02
+    },
     "111509154": {
       "category": "devtools",
       "categoryConfidence": 0.52,
@@ -966,6 +971,11 @@
       "category": "skills",
       "categoryConfidence": 0.57,
       "isMarketplace": 0.19
+    },
+    "1199477892": {
+      "category": "automation",
+      "categoryConfidence": 0.24,
+      "isMarketplace": 0.04
     },
     "1199582283": {
       "category": "devtools",
@@ -2791,6 +2801,11 @@
       "category": "devtools",
       "categoryConfidence": 0.32,
       "isMarketplace": 0.6
+    },
+    "1455142999": {
+      "category": "llm",
+      "categoryConfidence": 0.34,
+      "isMarketplace": 0.86
     }
   }
 }
