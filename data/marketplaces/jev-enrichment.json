@@ -1,6 +1,6 @@
 {
   "model": "jev-1.14.0",
-  "generatedAt": "2026-11-13T05:55:38.567Z",
+  "generatedAt": "2026-11-14T05:36:40.457Z",
   "entries": {
     "50709152": {
       "category": "none",
@@ -746,6 +746,11 @@
       "category": "skills",
       "categoryConfidence": 0.89,
       "isMarketplace": 0.09
+    },
+    "1172810071": {
+      "category": "none",
+      "categoryConfidence": 0.36,
+      "isMarketplace": 0.66
     },
     "1172921262": {
       "category": "skills",
@@ -2696,6 +2701,11 @@
       "category": "agents",
       "categoryConfidence": 0.69,
       "isMarketplace": 0.1
+    },
+    "1424009810": {
+      "category": "mcp",
+      "categoryConfidence": 0.44,
+      "isMarketplace": 0.05
     },
     "1424368636": {
       "category": "llm",
