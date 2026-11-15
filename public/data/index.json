@@ -1,33 +1,33 @@
 {
   "stats": {
-    "totalMarketplaces": 2292,
+    "totalMarketplaces": 2310,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-11-14T05:36:53.863Z",
+    "lastUpdated": "2026-11-15T05:27:08.134Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 816
+        "count": 822
       },
       {
         "language": "TypeScript",
-        "count": 379
+        "count": 382
       },
       {
         "language": "JavaScript",
-        "count": 372
+        "count": 376
       },
       {
         "language": "Unknown",
-        "count": 275
+        "count": 276
       },
       {
         "language": "Shell",
-        "count": 175
+        "count": 176
       },
       {
         "language": "HTML",
-        "count": 116
+        "count": 117
       },
       {
         "language": "Go",
@@ -49,12 +49,12 @@
     "topMarketplaces": [
       {
         "name": "ECC",
-        "stars": 302537,
+        "stars": 303224,
         "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "stars": 194200,
+        "stars": 194695,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -69,12 +69,12 @@
       },
       {
         "name": "paperclip",
-        "stars": 113737,
+        "stars": 113963,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
         "name": "archify",
-        "stars": 96256,
+        "stars": 96500,
         "url": "https://github.com/tt-a1i/archify"
       },
       {
@@ -84,12 +84,12 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 79451,
+        "stars": 79519,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 70885,
+        "stars": 70916,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "paint-video-skill",
-        "updatedAt": "2026-11-14T05:14:17Z",
-        "url": "https://github.com/nzl153/paint-video-skill"
+        "name": "awesome-claude-video-skills",
+        "updatedAt": "2026-11-15T05:10:46Z",
+        "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
       },
       {
-        "name": "awesome-short-drama-skills",
-        "updatedAt": "2026-11-14T05:14:09Z",
-        "url": "https://github.com/UnderleveledBuilder/awesome-short-drama-skills"
-      },
-      {
-        "name": "ECC",
-        "updatedAt": "2026-11-14T05:08:23Z",
-        "url": "https://github.com/affaan-m/ECC"
+        "name": "paperclip",
+        "updatedAt": "2026-11-15T05:07:00Z",
+        "url": "https://github.com/paperclipai/paperclip"
       },
       {
         "name": "archify",
-        "updatedAt": "2026-11-14T05:06:55Z",
+        "updatedAt": "2026-11-15T05:06:41Z",
         "url": "https://github.com/tt-a1i/archify"
       },
       {
-        "name": "affiliate-skills",
-        "updatedAt": "2026-11-14T05:05:46Z",
-        "url": "https://github.com/Affitor/affiliate-skills"
+        "name": "ECC",
+        "updatedAt": "2026-11-15T05:01:39Z",
+        "url": "https://github.com/affaan-m/ECC"
       },
       {
         "name": "skills",
-        "updatedAt": "2026-11-14T05:05:31Z",
+        "updatedAt": "2026-11-15T04:57:21Z",
         "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "awesome-claude-skills",
-        "updatedAt": "2026-11-14T05:05:03Z",
-        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+        "name": "oh-my-openagent",
+        "updatedAt": "2026-11-15T04:56:25Z",
+        "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
-        "name": "msp-skills",
-        "updatedAt": "2026-11-14T05:04:14Z",
-        "url": "https://github.com/Servosity/msp-skills"
+        "name": "novel-to-game",
+        "updatedAt": "2026-11-15T04:55:59Z",
+        "url": "https://github.com/zenstory-ai/novel-to-game"
       },
       {
-        "name": "Super-set",
-        "updatedAt": "2026-11-14T05:03:02Z",
-        "url": "https://github.com/Nazhra05/Super-set"
+        "name": "polymarket-paper-trader",
+        "updatedAt": "2026-11-15T04:55:18Z",
+        "url": "https://github.com/agent-next/polymarket-paper-trader"
       },
       {
-        "name": "styleseed",
-        "updatedAt": "2026-11-14T04:59:09Z",
-        "url": "https://github.com/bitjaru/styleseed"
+        "name": "Skills",
+        "updatedAt": "2026-11-15T04:54:10Z",
+        "url": "https://github.com/ommakes/Skills"
+      },
+      {
+        "name": "reticle",
+        "updatedAt": "2026-11-15T04:50:50Z",
+        "url": "https://github.com/reticlehq/reticle"
       }
     ]
   },
@@ -155,17 +155,17 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 1132
+      "count": 1144
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 294
+      "count": 296
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 732
+      "count": 741
     },
     {
       "id": "design",
@@ -183,5 +183,5 @@
       "count": 54
     }
   ],
-  "lastUpdated": "2026-11-14T05:36:53.863Z"
+  "lastUpdated": "2026-11-15T05:27:08.134Z"
 }
