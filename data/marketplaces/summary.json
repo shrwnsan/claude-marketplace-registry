@@ -1,30 +1,31 @@
 {
-  "totalFound": 2310,
-  "withManifest": 849,
-  "lastUpdated": "2026-11-15T05:26:18.767Z",
+  "totalFound": 2350,
+  "withManifest": 812,
+  "lastUpdated": "2026-11-16T05:21:05.948Z",
   "searchQuery": "",
   "languages": {
-    "Python": 822,
-    "Shell": 176,
-    "JavaScript": 376,
-    "Go": 42,
-    "Rust": 39,
-    "TypeScript": 382,
-    "Unknown": 276,
+    "Python": 840,
+    "Shell": 178,
+    "JavaScript": 383,
+    "Rust": 43,
+    "C": 2,
+    "TypeScript": 384,
+    "Go": 41,
+    "Unknown": 278,
     "AMPL": 1,
-    "HTML": 117,
-    "C++": 4,
+    "HTML": 121,
+    "C++": 5,
     "Swift": 9,
-    "TeX": 3,
+    "Gherkin": 1,
     "Jupyter Notebook": 3,
     "C#": 5,
-    "Gherkin": 1,
     "Astro": 4,
     "Svelte": 2,
-    "PowerShell": 9,
+    "PowerShell": 10,
     "Perl": 1,
     "Ruby": 2,
-    "Markdown": 5,
+    "jq": 1,
+    "Markdown": 6,
     "Java": 8,
     "PHP": 2,
     "Typst": 1,
@@ -32,10 +33,9 @@
     "SCSS": 1,
     "CSS": 4,
     "Gleam": 2,
-    "C": 2,
+    "TeX": 2,
     "Lua": 1,
     "Clojure": 1,
-    "jq": 1,
     "Kotlin": 2,
     "MDX": 2,
     "Batchfile": 1,
@@ -44,12 +44,12 @@
   "topRepos": [
     {
       "name": "ECC",
-      "stars": 303224,
+      "stars": 303934,
       "url": "https://github.com/affaan-m/ECC"
     },
     {
       "name": "skills",
-      "stars": 194695,
+      "stars": 195477,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -64,12 +64,12 @@
     },
     {
       "name": "paperclip",
-      "stars": 113963,
+      "stars": 114179,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "archify",
-      "stars": 96500,
+      "stars": 96889,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
@@ -79,12 +79,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 79519,
+      "stars": 79595,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 70916,
+      "stars": 70934,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
