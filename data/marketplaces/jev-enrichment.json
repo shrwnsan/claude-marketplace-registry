@@ -1,6 +1,6 @@
 {
   "model": "jev-1.14.0",
-  "generatedAt": "2026-11-17T07:12:19.071Z",
+  "generatedAt": "2026-11-18T06:29:12.134Z",
   "entries": {
     "50709152": {
       "category": "none",
@@ -77,6 +77,11 @@
       "categoryConfidence": 0.59,
       "isMarketplace": 0.02
     },
+    "625411727": {
+      "category": "none",
+      "categoryConfidence": 0.8,
+      "isMarketplace": 0.02
+    },
     "654870350": {
       "category": "none",
       "categoryConfidence": 0.86,
@@ -102,6 +107,11 @@
       "categoryConfidence": 0.39,
       "isMarketplace": 0.13
     },
+    "750110442": {
+      "category": "automation",
+      "categoryConfidence": 0.5,
+      "isMarketplace": 0.02
+    },
     "776924173": {
       "category": "devtools",
       "categoryConfidence": 0.51,
@@ -112,6 +122,11 @@
       "categoryConfidence": 0.96,
       "isMarketplace": 0.06
     },
+    "780814119": {
+      "category": "none",
+      "categoryConfidence": 0.95,
+      "isMarketplace": 0.04
+    },
     "787362890": {
       "category": "devtools",
       "categoryConfidence": 0.69,
@@ -121,6 +136,16 @@
       "category": "none",
       "categoryConfidence": 0.89,
       "isMarketplace": 0.17
+    },
+    "820775904": {
+      "category": "devtools",
+      "categoryConfidence": 0.74,
+      "isMarketplace": 0.03
+    },
+    "823403442": {
+      "category": "devtools",
+      "categoryConfidence": 0.59,
+      "isMarketplace": 0.05
     },
     "852849707": {
       "category": "none",
@@ -567,6 +592,11 @@
       "categoryConfidence": 0.46,
       "isMarketplace": 0.04
     },
+    "1152959863": {
+      "category": "skills",
+      "categoryConfidence": 0.94,
+      "isMarketplace": 0.13
+    },
     "1153065898": {
       "category": "devtools",
       "categoryConfidence": 0.99,
@@ -835,6 +865,11 @@
     "1182787940": {
       "category": "devtools",
       "categoryConfidence": 0.16,
+      "isMarketplace": 0.12
+    },
+    "1182868041": {
+      "category": "skills",
+      "categoryConfidence": 0.72,
       "isMarketplace": 0.12
     },
     "1183098621": {
@@ -1312,6 +1347,11 @@
       "categoryConfidence": 1,
       "isMarketplace": 0.45
     },
+    "1224392175": {
+      "category": "none",
+      "categoryConfidence": 0.5,
+      "isMarketplace": 0.11
+    },
     "1225439149": {
       "category": "automation",
       "categoryConfidence": 0.93,
@@ -1396,6 +1436,11 @@
       "category": "none",
       "categoryConfidence": 0.87,
       "isMarketplace": 0.18
+    },
+    "1235005413": {
+      "category": "devtools",
+      "categoryConfidence": 0.42,
+      "isMarketplace": 0.06
     },
     "1235517297": {
       "category": "devtools",
@@ -1912,6 +1957,11 @@
       "categoryConfidence": 0.99,
       "isMarketplace": 0.13
     },
+    "1304957651": {
+      "category": "skills",
+      "categoryConfidence": 0.37,
+      "isMarketplace": 0.2
+    },
     "1304975762": {
       "category": "skills",
       "categoryConfidence": 0.36,
@@ -2372,6 +2422,11 @@
       "categoryConfidence": 1,
       "isMarketplace": 0.35
     },
+    "1394909606": {
+      "category": "llm",
+      "categoryConfidence": 0.22,
+      "isMarketplace": 0.06
+    },
     "1395032568": {
       "category": "llm",
       "categoryConfidence": 0.35,
@@ -2587,6 +2642,11 @@
       "categoryConfidence": 0.92,
       "isMarketplace": 0.13
     },
+    "1404534080": {
+      "category": "automation",
+      "categoryConfidence": 0.7,
+      "isMarketplace": 0.06
+    },
     "1404549958": {
       "category": "automation",
       "categoryConfidence": 0.31,
@@ -2681,6 +2741,11 @@
       "category": "none",
       "categoryConfidence": 0.72,
       "isMarketplace": 0.1
+    },
+    "1413151018": {
+      "category": "none",
+      "categoryConfidence": 0.71,
+      "isMarketplace": 0.14
     },
     "1413381965": {
       "category": "devtools",
@@ -2822,10 +2887,20 @@
       "categoryConfidence": 0.57,
       "isMarketplace": 0.87
     },
+    "1440694965": {
+      "category": "none",
+      "categoryConfidence": 0.3,
+      "isMarketplace": 0.05
+    },
     "1442534268": {
       "category": "none",
       "categoryConfidence": 0.32,
       "isMarketplace": 0.61
+    },
+    "1443984951": {
+      "category": "none",
+      "categoryConfidence": 0.25,
+      "isMarketplace": 0.05
     },
     "1446943244": {
       "category": "agents",
@@ -2842,6 +2917,11 @@
       "categoryConfidence": 0.52,
       "isMarketplace": 0.86
     },
+    "1452522556": {
+      "category": "agents",
+      "categoryConfidence": 0.89,
+      "isMarketplace": 0.13
+    },
     "1453521668": {
       "category": "devtools",
       "categoryConfidence": 0.32,
@@ -2856,6 +2936,11 @@
       "category": "agents",
       "categoryConfidence": 0.44,
       "isMarketplace": 0.15
+    },
+    "1459257529": {
+      "category": "devtools",
+      "categoryConfidence": 0.37,
+      "isMarketplace": 0.06
     }
   }
 }
