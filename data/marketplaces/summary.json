@@ -1,20 +1,21 @@
 {
-  "totalFound": 2434,
-  "withManifest": 878,
-  "lastUpdated": "2026-11-19T06:33:48.202Z",
+  "totalFound": 2447,
+  "withManifest": 881,
+  "lastUpdated": "2026-11-20T06:16:29.759Z",
   "searchQuery": "",
   "languages": {
-    "Python": 869,
-    "Shell": 180,
-    "TypeScript": 399,
+    "Python": 872,
+    "Shell": 182,
+    "TypeScript": 401,
     "Stata": 1,
     "JavaScript": 398,
     "Go": 43,
     "Rust": 43,
-    "C": 2,
-    "HTML": 128,
-    "Unknown": 290,
+    "HTML": 129,
+    "Unknown": 294,
+    "AMPL": 1,
     "C++": 5,
+    "PHP": 3,
     "Swift": 10,
     "Jupyter Notebook": 3,
     "C#": 5,
@@ -25,14 +26,13 @@
     "Perl": 1,
     "Ruby": 2,
     "Java": 8,
-    "PHP": 2,
-    "AMPL": 1,
     "Typst": 1,
     "Makefile": 2,
     "Markdown": 6,
     "SCSS": 1,
     "CSS": 4,
     "Gleam": 2,
+    "C": 2,
     "TeX": 2,
     "Lua": 1,
     "Clojure": 1,
@@ -50,7 +50,7 @@
     },
     {
       "name": "skills",
-      "stars": 197329,
+      "stars": 197795,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "name": "paperclip",
-      "stars": 114869,
+      "stars": 115274,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -75,12 +75,12 @@
     },
     {
       "name": "career-ops",
-      "stars": 83603,
+      "stars": 83833,
       "url": "https://github.com/career-ops-hq/career-ops"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 79839,
+      "stars": 79911,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {

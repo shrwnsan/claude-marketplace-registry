@@ -1,17 +1,17 @@
 {
   "stats": {
-    "totalMarketplaces": 2434,
+    "totalMarketplaces": 2447,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-11-19T06:34:48.167Z",
+    "lastUpdated": "2026-11-20T06:17:16.024Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 869
+        "count": 872
       },
       {
         "language": "TypeScript",
-        "count": 399
+        "count": 401
       },
       {
         "language": "JavaScript",
@@ -19,15 +19,15 @@
       },
       {
         "language": "Unknown",
-        "count": 290
+        "count": 294
       },
       {
         "language": "Shell",
-        "count": 180
+        "count": 182
       },
       {
         "language": "HTML",
-        "count": 128
+        "count": 129
       },
       {
         "language": "Go",
@@ -54,7 +54,7 @@
       },
       {
         "name": "skills",
-        "stars": 197329,
+        "stars": 197795,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "name": "paperclip",
-        "stars": 114869,
+        "stars": 115274,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -79,12 +79,12 @@
       },
       {
         "name": "career-ops",
-        "stars": 83603,
+        "stars": 83833,
         "url": "https://github.com/career-ops-hq/career-ops"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 79839,
+        "stars": 79911,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "Ducktor",
-        "updatedAt": "2026-11-19T06:18:53Z",
-        "url": "https://github.com/HKUSTDial/Ducktor"
-      },
-      {
-        "name": "Quarterdeck",
-        "updatedAt": "2026-11-19T06:16:28Z",
-        "url": "https://github.com/shannonbay/Quarterdeck"
-      },
-      {
-        "name": "paperclip",
-        "updatedAt": "2026-11-19T06:14:04Z",
-        "url": "https://github.com/paperclipai/paperclip"
-      },
-      {
-        "name": "claude-skills",
-        "updatedAt": "2026-11-19T06:10:27Z",
-        "url": "https://github.com/alirezarezvani/claude-skills"
+        "name": "stickman-video-director",
+        "updatedAt": "2026-11-20T06:05:20Z",
+        "url": "https://github.com/kaomei/stickman-video-director"
       },
       {
         "name": "career-ops",
-        "updatedAt": "2026-11-19T06:10:07Z",
+        "updatedAt": "2026-11-20T06:05:01Z",
         "url": "https://github.com/career-ops-hq/career-ops"
       },
       {
-        "name": "attention-control",
-        "updatedAt": "2026-11-19T06:03:39Z",
-        "url": "https://github.com/aaddrick/attention-control"
+        "name": "drama-skills",
+        "updatedAt": "2026-11-20T06:03:54Z",
+        "url": "https://github.com/zenstory-ai/drama-skills"
       },
       {
-        "name": "oh-my-openagent",
-        "updatedAt": "2026-11-19T06:03:02Z",
-        "url": "https://github.com/code-yeongyu/oh-my-openagent"
+        "name": "paperclip",
+        "updatedAt": "2026-11-20T05:56:55Z",
+        "url": "https://github.com/paperclipai/paperclip"
+      },
+      {
+        "name": "oh-story-claudecode",
+        "updatedAt": "2026-11-20T05:54:53Z",
+        "url": "https://github.com/zenstory-ai/oh-story-claudecode"
+      },
+      {
+        "name": "awesome-claude-video-skills",
+        "updatedAt": "2026-11-20T05:54:50Z",
+        "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
       },
       {
         "name": "skills",
-        "updatedAt": "2026-11-19T06:03:00Z",
+        "updatedAt": "2026-11-20T05:51:14Z",
         "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "ste80-humanizer",
-        "updatedAt": "2026-11-19T06:02:43Z",
-        "url": "https://github.com/Dodaios/ste80-humanizer"
+        "name": "baoyu-skills",
+        "updatedAt": "2026-11-20T05:47:16Z",
+        "url": "https://github.com/JimLiu/baoyu-skills"
       },
       {
-        "name": "vibes-plug",
-        "updatedAt": "2026-11-19T05:59:42Z",
-        "url": "https://github.com/roedyrustam/vibes-plug"
+        "name": "AutoMode",
+        "updatedAt": "2026-11-20T05:45:12Z",
+        "url": "https://github.com/mralexivy/AutoMode"
+      },
+      {
+        "name": "nlsy77-video-dedup-skill",
+        "updatedAt": "2026-11-20T05:41:03Z",
+        "url": "https://github.com/q250111061-ops/nlsy77-video-dedup-skill"
       }
     ]
   },
@@ -155,22 +155,22 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 1199
+      "count": 1209
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 310
+      "count": 311
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 791
+      "count": 793
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 135
+      "count": 136
     },
     {
       "id": "data",
@@ -183,5 +183,5 @@
       "count": 58
     }
   ],
-  "lastUpdated": "2026-11-19T06:34:48.167Z"
+  "lastUpdated": "2026-11-20T06:17:16.024Z"
 }
