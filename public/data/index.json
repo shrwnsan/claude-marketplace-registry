@@ -1,17 +1,17 @@
 {
   "stats": {
-    "totalMarketplaces": 2447,
+    "totalMarketplaces": 2466,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-11-20T06:17:16.024Z",
+    "lastUpdated": "2026-11-21T06:11:33.241Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 872
+        "count": 886
       },
       {
         "language": "TypeScript",
-        "count": 401
+        "count": 400
       },
       {
         "language": "JavaScript",
@@ -19,22 +19,22 @@
       },
       {
         "language": "Unknown",
-        "count": 294
+        "count": 296
       },
       {
         "language": "Shell",
-        "count": 182
+        "count": 183
       },
       {
         "language": "HTML",
-        "count": 129
-      },
-      {
-        "language": "Go",
-        "count": 43
+        "count": 131
       },
       {
         "language": "Rust",
+        "count": 44
+      },
+      {
+        "language": "Go",
         "count": 43
       },
       {
@@ -54,7 +54,7 @@
       },
       {
         "name": "skills",
-        "stars": 197795,
+        "stars": 198138,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "name": "paperclip",
-        "stars": 115274,
+        "stars": 115538,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -79,17 +79,17 @@
       },
       {
         "name": "career-ops",
-        "stars": 83833,
+        "stars": 83978,
         "url": "https://github.com/career-ops-hq/career-ops"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 79911,
+        "stars": 79965,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 70993,
+        "stars": 71034,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "stickman-video-director",
-        "updatedAt": "2026-11-20T06:05:20Z",
-        "url": "https://github.com/kaomei/stickman-video-director"
-      },
-      {
         "name": "career-ops",
-        "updatedAt": "2026-11-20T06:05:01Z",
+        "updatedAt": "2026-11-21T05:59:36Z",
         "url": "https://github.com/career-ops-hq/career-ops"
       },
       {
-        "name": "drama-skills",
-        "updatedAt": "2026-11-20T06:03:54Z",
-        "url": "https://github.com/zenstory-ai/drama-skills"
+        "name": "appllama-skills",
+        "updatedAt": "2026-11-21T05:59:28Z",
+        "url": "https://github.com/Appllama/appllama-skills"
+      },
+      {
+        "name": "Claude-BugHunter",
+        "updatedAt": "2026-11-21T05:58:57Z",
+        "url": "https://github.com/elementalsouls/Claude-BugHunter"
+      },
+      {
+        "name": "spritecast",
+        "updatedAt": "2026-11-21T05:57:38Z",
+        "url": "https://github.com/Sunghwan0112/spritecast"
       },
       {
         "name": "paperclip",
-        "updatedAt": "2026-11-20T05:56:55Z",
+        "updatedAt": "2026-11-21T05:53:31Z",
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "oh-story-claudecode",
-        "updatedAt": "2026-11-20T05:54:53Z",
-        "url": "https://github.com/zenstory-ai/oh-story-claudecode"
-      },
-      {
-        "name": "awesome-claude-video-skills",
-        "updatedAt": "2026-11-20T05:54:50Z",
-        "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
+        "name": "claude-skills",
+        "updatedAt": "2026-11-21T05:53:28Z",
+        "url": "https://github.com/alirezarezvani/claude-skills"
       },
       {
         "name": "skills",
-        "updatedAt": "2026-11-20T05:51:14Z",
+        "updatedAt": "2026-11-21T05:49:03Z",
+        "url": "https://github.com/omnigami-ai/skills"
+      },
+      {
+        "name": "skills",
+        "updatedAt": "2026-11-21T05:46:48Z",
         "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "baoyu-skills",
-        "updatedAt": "2026-11-20T05:47:16Z",
-        "url": "https://github.com/JimLiu/baoyu-skills"
+        "name": "claude-plugins-official",
+        "updatedAt": "2026-11-21T05:45:11Z",
+        "url": "https://github.com/anthropics/claude-plugins-official"
       },
       {
-        "name": "AutoMode",
-        "updatedAt": "2026-11-20T05:45:12Z",
-        "url": "https://github.com/mralexivy/AutoMode"
-      },
-      {
-        "name": "nlsy77-video-dedup-skill",
-        "updatedAt": "2026-11-20T05:41:03Z",
-        "url": "https://github.com/q250111061-ops/nlsy77-video-dedup-skill"
+        "name": "superdesign-skill",
+        "updatedAt": "2026-11-21T05:42:02Z",
+        "url": "https://github.com/superdesigndev/superdesign-skill"
       }
     ]
   },
@@ -155,22 +155,22 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 1209
+      "count": 1217
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 311
+      "count": 312
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 793
+      "count": 797
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 136
+      "count": 137
     },
     {
       "id": "data",
@@ -183,5 +183,5 @@
       "count": 58
     }
   ],
-  "lastUpdated": "2026-11-20T06:17:16.024Z"
+  "lastUpdated": "2026-11-21T06:11:33.241Z"
 }
