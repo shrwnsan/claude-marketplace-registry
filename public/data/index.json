@@ -1,29 +1,29 @@
 {
   "stats": {
-    "totalMarketplaces": 2479,
+    "totalMarketplaces": 2499,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-11-22T05:44:59.851Z",
+    "lastUpdated": "2026-11-23T06:28:56.756Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 890
+        "count": 896
       },
       {
         "language": "TypeScript",
-        "count": 402
+        "count": 406
       },
       {
         "language": "JavaScript",
-        "count": 400
+        "count": 403
       },
       {
         "language": "Unknown",
-        "count": 300
+        "count": 303
       },
       {
         "language": "Shell",
-        "count": 182
+        "count": 184
       },
       {
         "language": "HTML",
@@ -31,11 +31,11 @@
       },
       {
         "language": "Rust",
-        "count": 44
+        "count": 45
       },
       {
         "language": "Go",
-        "count": 43
+        "count": 44
       },
       {
         "language": "Swift",
@@ -54,7 +54,7 @@
       },
       {
         "name": "skills",
-        "stars": 198581,
+        "stars": 199116,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "name": "paperclip",
-        "stars": 115713,
+        "stars": 116052,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -79,17 +79,17 @@
       },
       {
         "name": "career-ops",
-        "stars": 83978,
+        "stars": 84257,
         "url": "https://github.com/career-ops-hq/career-ops"
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 80021,
+        "stars": 80088,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 71050,
+        "stars": 71068,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       },
       {
@@ -100,54 +100,54 @@
     ],
     "recentActivity": [
       {
-        "name": "oil-ui",
-        "updatedAt": "2026-11-22T05:31:08Z",
-        "url": "https://github.com/oil-oil/oil-ui"
+        "name": "shorts-studio",
+        "updatedAt": "2026-11-23T06:14:03Z",
+        "url": "https://github.com/irrationalpi2008-bot/shorts-studio"
       },
       {
-        "name": "awesome-claude-video-skills",
-        "updatedAt": "2026-11-22T05:27:58Z",
-        "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
+        "name": "huashu-design",
+        "updatedAt": "2026-11-23T06:13:33Z",
+        "url": "https://github.com/alchaincyf/huashu-design"
       },
       {
         "name": "paperclip",
-        "updatedAt": "2026-11-22T05:27:38Z",
+        "updatedAt": "2026-11-23T06:13:21Z",
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "drama-skills",
-        "updatedAt": "2026-11-22T05:21:52Z",
-        "url": "https://github.com/zenstory-ai/drama-skills"
+        "name": "loom",
+        "updatedAt": "2026-11-23T06:13:05Z",
+        "url": "https://github.com/ClickHouse/loom"
       },
       {
-        "name": "stickman-video-director",
-        "updatedAt": "2026-11-22T05:19:50Z",
-        "url": "https://github.com/kaomei/stickman-video-director"
+        "name": "career-ops",
+        "updatedAt": "2026-11-23T06:12:40Z",
+        "url": "https://github.com/career-ops-hq/career-ops"
       },
       {
-        "name": "GitHub-ETL-Engine-V2",
-        "updatedAt": "2026-11-22T05:18:29Z",
-        "url": "https://github.com/DishantBhere/GitHub-ETL-Engine-V2"
-      },
-      {
-        "name": "spritecast",
-        "updatedAt": "2026-11-22T05:18:05Z",
-        "url": "https://github.com/Sunghwan0112/spritecast"
+        "name": "obsidian-wiki",
+        "updatedAt": "2026-11-23T06:12:27Z",
+        "url": "https://github.com/Ar9av/obsidian-wiki"
       },
       {
         "name": "skills",
-        "updatedAt": "2026-11-22T05:17:26Z",
+        "updatedAt": "2026-11-23T05:56:02Z",
         "url": "https://github.com/anthropics/skills"
       },
       {
-        "name": "awesome-claude-skills",
-        "updatedAt": "2026-11-22T05:17:06Z",
-        "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+        "name": "cinetic",
+        "updatedAt": "2026-11-23T05:52:54Z",
+        "url": "https://github.com/Leonxlnx/cinetic"
       },
       {
-        "name": "take-one",
-        "updatedAt": "2026-11-22T05:16:16Z",
-        "url": "https://github.com/talsiach/take-one"
+        "name": "ralphex",
+        "updatedAt": "2026-11-23T05:52:11Z",
+        "url": "https://github.com/umputun/ralphex"
+      },
+      {
+        "name": "agent-skills",
+        "updatedAt": "2026-11-23T05:50:16Z",
+        "url": "https://github.com/callstackincubator/agent-skills"
       }
     ]
   },
@@ -155,7 +155,7 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 1223
+      "count": 1236
     },
     {
       "id": "productivity",
@@ -165,17 +165,17 @@
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 801
+      "count": 806
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 139
+      "count": 140
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 81
+      "count": 82
     },
     {
       "id": "utilities",
@@ -183,5 +183,5 @@
       "count": 58
     }
   ],
-  "lastUpdated": "2026-11-22T05:44:59.851Z"
+  "lastUpdated": "2026-11-23T06:28:56.756Z"
 }
