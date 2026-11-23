@@ -1,10 +1,10 @@
 {
   "source": "skills.sh (Gen / Socket / Snyk)",
-  "generatedAt": "2026-11-22T05:44:58.119Z",
+  "generatedAt": "2026-11-23T06:28:55.194Z",
   "entries": {
     "170797156": {
       "repo": "reactive/data-client",
-      "auditedAt": "2026-11-22T05:44:49.388Z",
+      "auditedAt": "2026-11-23T06:28:44.806Z",
       "skills": {
         "data-client-setup": {
           "ath": {
@@ -24,7 +24,7 @@
     },
     "787362890": {
       "repo": "dahlia/logtape",
-      "auditedAt": "2026-11-22T05:44:49.599Z",
+      "auditedAt": "2026-11-23T06:28:45.173Z",
       "skills": {
         "logtape": {
           "ath": {
@@ -44,7 +44,7 @@
     },
     "1061953414": {
       "repo": "anthropics/skills",
-      "auditedAt": "2026-11-22T05:44:47.333Z",
+      "auditedAt": "2026-11-23T06:28:41.043Z",
       "skills": {
         "xlsx": {
           "ath": {
@@ -350,7 +350,7 @@
     },
     "1100923190": {
       "repo": "kylehughes/the-unofficial-swift-programming-language-skill",
-      "auditedAt": "2026-11-22T05:44:53.744Z",
+      "auditedAt": "2026-11-23T06:28:50.704Z",
       "skills": {
         "programming-swift": {
           "ath": {
@@ -370,7 +370,7 @@
     },
     "1137485434": {
       "repo": "softaworks/agent-toolkit",
-      "auditedAt": "2026-11-22T05:44:49.041Z",
+      "auditedAt": "2026-11-23T06:28:43.557Z",
       "skills": {
         "codex": {
           "ath": {
@@ -656,7 +656,7 @@
     },
     "1145158024": {
       "repo": "wondelai/skills",
-      "auditedAt": "2026-11-22T05:44:48.383Z",
+      "auditedAt": "2026-11-23T06:28:42.669Z",
       "skills": {
         "jobs-to-be-done": {
           "ath": {
@@ -942,7 +942,7 @@
     },
     "1202576122": {
       "repo": "Aperivue/medsci-skills",
-      "auditedAt": "2026-11-22T05:44:51.736Z",
+      "auditedAt": "2026-11-23T06:28:47.444Z",
       "skills": {
         "fulltext-retrieval": {
           "ath": {
@@ -1242,7 +1242,7 @@
     },
     "1207161577": {
       "repo": "NatiCha/bunwv",
-      "auditedAt": "2026-11-22T05:44:52.014Z",
+      "auditedAt": "2026-11-23T06:28:47.790Z",
       "skills": {
         "bunwv": {
           "ath": {
@@ -1262,7 +1262,7 @@
     },
     "1209609017": {
       "repo": "event4u-app/agent-config",
-      "auditedAt": "2026-11-22T05:44:55.266Z",
+      "auditedAt": "2026-11-23T06:28:51.893Z",
       "skills": {
         "install-agent-config": {
           "ath": {
@@ -1282,7 +1282,7 @@
     },
     "1230639327": {
       "repo": "leek/agent-skills",
-      "auditedAt": "2026-11-22T05:44:55.943Z",
+      "auditedAt": "2026-11-23T06:28:52.688Z",
       "skills": {
         "architecture-satisfaction": {
           "ath": {
@@ -1588,9 +1588,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "low"
+            "risk": "critical"
           },
-          "analyzedAt": "2026-11-14T17:16:48.966Z"
+          "analyzedAt": "2026-11-22T04:09:23.424Z"
         },
         "implement-spec": {
           "ath": {
@@ -1602,9 +1602,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "low"
+            "risk": "medium"
           },
-          "analyzedAt": "2026-11-14T17:16:48.568Z"
+          "analyzedAt": "2026-11-22T04:09:55.248Z"
         },
         "improve-codebase-architecture": {
           "ath": {
@@ -1616,9 +1616,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "medium"
+            "risk": "critical"
           },
-          "analyzedAt": "2026-11-14T17:16:47.317Z"
+          "analyzedAt": "2026-11-22T04:08:27.418645+00:00"
         },
         "laravel-herd-worktrees": {
           "ath": {
@@ -1630,9 +1630,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "low"
+            "risk": "medium"
           },
-          "analyzedAt": "2026-11-14T17:16:47.560Z"
+          "analyzedAt": "2026-11-22T04:09:21.881Z"
         },
         "panel": {
           "ath": {
@@ -1644,9 +1644,9 @@
             "score": 77
           },
           "snyk": {
-            "risk": "low"
+            "risk": "critical"
           },
-          "analyzedAt": "2026-11-14T17:17:17.681Z"
+          "analyzedAt": "2026-11-22T04:09:53.932Z"
         },
         "pr": {
           "ath": {
@@ -1658,9 +1658,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "low"
+            "risk": "medium"
           },
-          "analyzedAt": "2026-11-14T17:16:17.179Z"
+          "analyzedAt": "2026-11-22T04:08:51.620Z"
         },
         "prune-tests": {
           "ath": {
@@ -1686,9 +1686,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "low"
+            "risk": "medium"
           },
-          "analyzedAt": "2026-11-14T17:16:48.612Z"
+          "analyzedAt": "2026-11-22T04:08:23.505237+00:00"
         },
         "release": {
           "ath": {
@@ -1700,9 +1700,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "low"
+            "risk": "medium"
           },
-          "analyzedAt": "2026-11-14T17:16:16.632Z"
+          "analyzedAt": "2026-11-22T04:08:51.835Z"
         },
         "repository-cleanup": {
           "ath": {
@@ -1716,7 +1716,7 @@
           "snyk": {
             "risk": "medium"
           },
-          "analyzedAt": "2026-11-14T17:16:48.853Z"
+          "analyzedAt": "2026-11-22T04:09:23.906Z"
         },
         "research": {
           "ath": {
@@ -1744,11 +1744,11 @@
           "snyk": {
             "risk": "medium"
           },
-          "analyzedAt": "2026-11-14T17:17:19.692Z"
+          "analyzedAt": "2026-11-22T04:09:24.036Z"
         },
         "resolve-review-comments": {
           "ath": {
-            "risk": "medium"
+            "risk": "safe"
           },
           "socket": {
             "risk": "safe",
@@ -1756,9 +1756,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "medium"
+            "risk": "critical"
           },
-          "analyzedAt": "2026-11-05T15:37:22.286Z"
+          "analyzedAt": "2026-11-22T04:09:22.187Z"
         },
         "resolving-merge-conflicts": {
           "ath": {
@@ -1770,11 +1770,25 @@
             "score": 90
           },
           "snyk": {
-            "risk": "medium"
+            "risk": "critical"
           },
-          "analyzedAt": "2026-11-14T17:16:48.271Z"
+          "analyzedAt": "2026-11-22T04:08:38.742Z"
         },
         "scratch-cleanup": {
+          "ath": {
+            "risk": "medium"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "medium"
+          },
+          "analyzedAt": "2026-11-22T04:09:54.427Z"
+        },
+        "scratch-status": {
           "ath": {
             "risk": "safe"
           },
@@ -1784,23 +1798,9 @@
             "score": 90
           },
           "snyk": {
-            "risk": "low"
+            "risk": "medium"
           },
-          "analyzedAt": "2026-11-14T17:16:47.026Z"
-        },
-        "scratch-status": {
-          "ath": {
-            "risk": "high"
-          },
-          "socket": {
-            "risk": "safe",
-            "alerts": 0,
-            "score": 90
-          },
-          "snyk": {
-            "risk": "low"
-          },
-          "analyzedAt": "2026-11-14T17:17:19.559Z"
+          "analyzedAt": "2026-11-22T04:09:10.816Z"
         },
         "setup": {
           "ath": {
@@ -2030,7 +2030,7 @@
     },
     "1248751622": {
       "repo": "brycewang-stanford/AER-Skills",
-      "auditedAt": "2026-11-22T05:44:53.053Z",
+      "auditedAt": "2026-11-23T06:28:48.978Z",
       "skills": {
         "aer-workflow": {
           "ath": {
@@ -2246,7 +2246,7 @@
     },
     "1254422214": {
       "repo": "rollinsio/beyond-test-coverage",
-      "auditedAt": "2026-11-22T05:44:53.474Z",
+      "auditedAt": "2026-11-23T06:28:50.386Z",
       "skills": {
         "test-quality": {
           "ath": {
@@ -2280,7 +2280,7 @@
     },
     "1354760955": {
       "repo": "aws-samples/sample-sagemaker-marketplace-onboarding-skill",
-      "auditedAt": "2026-11-22T05:44:56.349Z",
+      "auditedAt": "2026-11-23T06:28:53.012Z",
       "skills": {
         "sagemaker-marketplace-onboarding": {
           "ath": {
@@ -2300,7 +2300,7 @@
     },
     "1398499540": {
       "repo": "harrison-ming/chuhai-skills",
-      "auditedAt": "2026-11-22T05:44:58.119Z",
+      "auditedAt": "2026-11-23T06:28:55.194Z",
       "skills": {
         "shopify-store-teardown": {
           "ath": {
