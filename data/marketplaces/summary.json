@@ -1,18 +1,18 @@
 {
-  "totalFound": 2519,
-  "withManifest": 889,
-  "lastUpdated": "2026-11-24T09:02:19.437Z",
+  "totalFound": 2550,
+  "withManifest": 895,
+  "lastUpdated": "2026-11-25T07:34:46.829Z",
   "searchQuery": "",
   "languages": {
-    "Python": 903,
-    "Shell": 185,
-    "TypeScript": 408,
+    "Python": 913,
+    "Shell": 188,
+    "TypeScript": 411,
     "Stata": 1,
-    "JavaScript": 405,
+    "JavaScript": 408,
     "Rust": 46,
     "Go": 45,
-    "HTML": 135,
-    "Unknown": 307,
+    "Unknown": 317,
+    "HTML": 137,
     "AMPL": 1,
     "C++": 5,
     "PHP": 3,
@@ -50,7 +50,7 @@
     },
     {
       "name": "skills",
-      "stars": 199627,
+      "stars": 200120,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -60,12 +60,12 @@
     },
     {
       "name": "claude-mem",
-      "stars": 117776,
+      "stars": 119616,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "paperclip",
-      "stars": 116052,
+      "stars": 116850,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -74,24 +74,24 @@
       "url": "https://github.com/tt-a1i/archify"
     },
     {
+      "name": "Understand-Anything",
+      "stars": 94214,
+      "url": "https://github.com/Egonex-AI/Understand-Anything"
+    },
+    {
       "name": "career-ops",
       "stars": 84488,
       "url": "https://github.com/career-ops-hq/career-ops"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 80206,
+      "stars": 80264,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
       "stars": 71090,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
-    },
-    {
-      "name": "Pake",
-      "stars": 62038,
-      "url": "https://github.com/tw93/Pake"
     }
   ]
 }
