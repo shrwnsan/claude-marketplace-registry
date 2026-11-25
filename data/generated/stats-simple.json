@@ -1,32 +1,32 @@
 {
-  "totalMarketplaces": 2519,
+  "totalMarketplaces": 2550,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-11-24T09:03:12.086Z",
+  "lastUpdated": "2026-11-25T07:35:50.100Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 903
+      "count": 913
     },
     {
       "language": "TypeScript",
-      "count": 408
+      "count": 411
     },
     {
       "language": "JavaScript",
-      "count": 405
+      "count": 408
     },
     {
       "language": "Unknown",
-      "count": 307
+      "count": 317
     },
     {
       "language": "Shell",
-      "count": 185
+      "count": 188
     },
     {
       "language": "HTML",
-      "count": 135
+      "count": 137
     },
     {
       "language": "Rust",
@@ -53,7 +53,7 @@
     },
     {
       "name": "skills",
-      "stars": 199627,
+      "stars": 200120,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -63,12 +63,12 @@
     },
     {
       "name": "claude-mem",
-      "stars": 117776,
+      "stars": 119616,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "paperclip",
-      "stars": 116052,
+      "stars": 116850,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -77,76 +77,76 @@
       "url": "https://github.com/tt-a1i/archify"
     },
     {
+      "name": "Understand-Anything",
+      "stars": 94214,
+      "url": "https://github.com/Egonex-AI/Understand-Anything"
+    },
+    {
       "name": "career-ops",
       "stars": 84488,
       "url": "https://github.com/career-ops-hq/career-ops"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 80206,
+      "stars": 80264,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
       "stars": 71090,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
-    },
-    {
-      "name": "Pake",
-      "stars": 62038,
-      "url": "https://github.com/tw93/Pake"
     }
   ],
   "recentActivity": [
     {
-      "name": "google-maps-scraper",
-      "updatedAt": "2026-11-24T08:50:18Z",
-      "url": "https://github.com/gosom/google-maps-scraper"
+      "name": "claude-mem",
+      "updatedAt": "2026-11-25T07:22:08Z",
+      "url": "https://github.com/thedotmack/claude-mem"
     },
     {
-      "name": "career-ops",
-      "updatedAt": "2026-11-24T08:50:00Z",
-      "url": "https://github.com/career-ops-hq/career-ops"
+      "name": "Understand-Anything",
+      "updatedAt": "2026-11-25T07:21:48Z",
+      "url": "https://github.com/Egonex-AI/Understand-Anything"
     },
     {
-      "name": "video-shotcraft",
-      "updatedAt": "2026-11-24T08:48:15Z",
-      "url": "https://github.com/Vincentwei1021/video-shotcraft"
+      "name": "paperclip",
+      "updatedAt": "2026-11-25T07:19:41Z",
+      "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "medsci-skills",
-      "updatedAt": "2026-11-24T08:35:46Z",
-      "url": "https://github.com/Aperivue/medsci-skills"
+      "name": "unslop-anything",
+      "updatedAt": "2026-11-25T07:19:02Z",
+      "url": "https://github.com/erkamyaman/unslop-anything"
     },
     {
-      "name": "arxiv-mcp-server",
-      "updatedAt": "2026-11-24T08:33:41Z",
-      "url": "https://github.com/blazickjp/arxiv-mcp-server"
+      "name": "SOTA-skills",
+      "updatedAt": "2026-11-25T07:14:21Z",
+      "url": "https://github.com/martinholovsky/SOTA-skills"
     },
     {
-      "name": "awesome-claude-skills",
-      "updatedAt": "2026-11-24T08:33:26Z",
-      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+      "name": "planning-with-files",
+      "updatedAt": "2026-11-25T07:13:38Z",
+      "url": "https://github.com/OthmanAdi/planning-with-files"
+    },
+    {
+      "name": "pstack-claude",
+      "updatedAt": "2026-11-25T07:11:03Z",
+      "url": "https://github.com/michael-denyer/pstack-claude"
+    },
+    {
+      "name": "tokendoctor",
+      "updatedAt": "2026-11-25T07:10:42Z",
+      "url": "https://github.com/localixai/tokendoctor"
+    },
+    {
+      "name": "claude-architect-exam-guide",
+      "updatedAt": "2026-11-25T07:09:33Z",
+      "url": "https://github.com/utkarsh1agarwal/claude-architect-exam-guide"
     },
     {
       "name": "skills",
-      "updatedAt": "2026-11-24T08:32:16Z",
+      "updatedAt": "2026-11-25T07:09:01Z",
       "url": "https://github.com/anthropics/skills"
-    },
-    {
-      "name": "claude-bionify",
-      "updatedAt": "2026-11-24T08:26:59Z",
-      "url": "https://github.com/abullard1/claude-bionify"
-    },
-    {
-      "name": "claude-haejo",
-      "updatedAt": "2026-11-24T08:21:08Z",
-      "url": "https://github.com/ff-1204/claude-haejo"
-    },
-    {
-      "name": "skills",
-      "updatedAt": "2026-11-24T08:20:59Z",
-      "url": "https://github.com/nyxandro/skills"
     }
   ]
 }
