@@ -1,18 +1,17 @@
 {
-  "totalFound": 2550,
-  "withManifest": 895,
-  "lastUpdated": "2026-11-25T07:34:46.829Z",
+  "totalFound": 2636,
+  "withManifest": 833,
+  "lastUpdated": "2026-11-26T07:28:54.829Z",
   "searchQuery": "",
   "languages": {
-    "Python": 913,
-    "Shell": 188,
-    "TypeScript": 411,
-    "Stata": 1,
-    "JavaScript": 408,
-    "Rust": 46,
-    "Go": 45,
-    "Unknown": 317,
-    "HTML": 137,
+    "Python": 941,
+    "Shell": 190,
+    "TypeScript": 421,
+    "JavaScript": 420,
+    "Rust": 47,
+    "Go": 47,
+    "Unknown": 345,
+    "HTML": 138,
     "AMPL": 1,
     "C++": 5,
     "PHP": 3,
@@ -21,13 +20,13 @@
     "Perl": 1,
     "C#": 5,
     "Astro": 4,
-    "Gherkin": 1,
     "Svelte": 2,
-    "PowerShell": 10,
-    "Ruby": 2,
+    "PowerShell": 11,
+    "Kotlin": 3,
     "Java": 8,
     "Typst": 1,
     "Makefile": 2,
+    "Ruby": 2,
     "Markdown": 6,
     "SCSS": 1,
     "CSS": 4,
@@ -37,10 +36,11 @@
     "Lua": 1,
     "Clojure": 1,
     "jq": 1,
-    "Kotlin": 2,
+    "Gherkin": 1,
     "MDX": 2,
     "Batchfile": 1,
-    "Nix": 1
+    "Nix": 1,
+    "Stata": 1
   },
   "topRepos": [
     {
@@ -50,7 +50,7 @@
     },
     {
       "name": "skills",
-      "stars": 200120,
+      "stars": 200674,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -60,12 +60,12 @@
     },
     {
       "name": "claude-mem",
-      "stars": 119616,
+      "stars": 119831,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "paperclip",
-      "stars": 116850,
+      "stars": 117158,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -85,12 +85,12 @@
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 80264,
+      "stars": 80334,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 71090,
+      "stars": 71127,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     }
   ]
