@@ -1,6 +1,6 @@
 {
   "model": "jev-1.14.0",
-  "generatedAt": "2026-11-25T07:35:32.998Z",
+  "generatedAt": "2026-11-26T07:29:26.975Z",
   "entries": {
     "50709152": {
       "category": "none",
@@ -647,6 +647,11 @@
       "categoryConfidence": 0.64,
       "isMarketplace": 0.06
     },
+    "1157393793": {
+      "category": "agents",
+      "categoryConfidence": 0.37,
+      "isMarketplace": 0.08
+    },
     "1158115109": {
       "category": "none",
       "categoryConfidence": 0.84,
@@ -846,6 +851,11 @@
       "category": "skills",
       "categoryConfidence": 0.98,
       "isMarketplace": 0.11
+    },
+    "1180700597": {
+      "category": "skills",
+      "categoryConfidence": 1,
+      "isMarketplace": 0.76
     },
     "1181194548": {
       "category": "skills",
@@ -1822,6 +1832,11 @@
       "categoryConfidence": 1,
       "isMarketplace": 0.41
     },
+    "1277559764": {
+      "category": "agents",
+      "categoryConfidence": 0.5,
+      "isMarketplace": 0.08
+    },
     "1278265633": {
       "category": "agents",
       "categoryConfidence": 0.33,
@@ -1831,6 +1846,11 @@
       "category": "skills",
       "categoryConfidence": 1,
       "isMarketplace": 0.62
+    },
+    "1283324496": {
+      "category": "skills",
+      "categoryConfidence": 0.51,
+      "isMarketplace": 0.18
     },
     "1288431722": {
       "category": "skills",
@@ -2897,6 +2917,11 @@
       "categoryConfidence": 0.32,
       "isMarketplace": 0.05
     },
+    "1438455992": {
+      "category": "agents",
+      "categoryConfidence": 0.79,
+      "isMarketplace": 0.07
+    },
     "1439071155": {
       "category": "devtools",
       "categoryConfidence": 0.44,
@@ -2947,6 +2972,11 @@
       "categoryConfidence": 0.32,
       "isMarketplace": 0.6
     },
+    "1453813959": {
+      "category": "skills",
+      "categoryConfidence": 0.99,
+      "isMarketplace": 0.65
+    },
     "1455142999": {
       "category": "llm",
       "categoryConfidence": 0.34,
@@ -2961,6 +2991,11 @@
       "category": "devtools",
       "categoryConfidence": 0.37,
       "isMarketplace": 0.06
+    },
+    "1463914360": {
+      "category": "agents",
+      "categoryConfidence": 0.49,
+      "isMarketplace": 0.17
     },
     "1465160680": {
       "category": "skills",

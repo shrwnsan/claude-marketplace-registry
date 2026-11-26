@@ -1,48 +1,48 @@
 {
   "stats": {
-    "totalMarketplaces": 2550,
+    "totalMarketplaces": 2636,
     "totalPlugins": 7736,
     "validPlugins": 7736,
-    "lastUpdated": "2026-11-25T07:35:50.100Z",
+    "lastUpdated": "2026-11-26T07:29:41.398Z",
     "topLanguages": [
       {
         "language": "Python",
-        "count": 913
+        "count": 941
       },
       {
         "language": "TypeScript",
-        "count": 411
+        "count": 421
       },
       {
         "language": "JavaScript",
-        "count": 408
+        "count": 420
       },
       {
         "language": "Unknown",
-        "count": 317
+        "count": 345
       },
       {
         "language": "Shell",
-        "count": 188
+        "count": 190
       },
       {
         "language": "HTML",
-        "count": 137
+        "count": 138
       },
       {
         "language": "Rust",
-        "count": 46
+        "count": 47
       },
       {
         "language": "Go",
-        "count": 45
-      },
-      {
-        "language": "Swift",
-        "count": 10
+        "count": 47
       },
       {
         "language": "PowerShell",
+        "count": 11
+      },
+      {
+        "language": "Swift",
         "count": 10
       }
     ],
@@ -54,7 +54,7 @@
       },
       {
         "name": "skills",
-        "stars": 200120,
+        "stars": 200674,
         "url": "https://github.com/anthropics/skills"
       },
       {
@@ -64,12 +64,12 @@
       },
       {
         "name": "claude-mem",
-        "stars": 119616,
+        "stars": 119831,
         "url": "https://github.com/thedotmack/claude-mem"
       },
       {
         "name": "paperclip",
-        "stars": 116850,
+        "stars": 117158,
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
@@ -89,65 +89,65 @@
       },
       {
         "name": "awesome-claude-skills",
-        "stars": 80264,
+        "stars": 80334,
         "url": "https://github.com/ComposioHQ/awesome-claude-skills"
       },
       {
         "name": "oh-my-openagent",
-        "stars": 71090,
+        "stars": 71127,
         "url": "https://github.com/code-yeongyu/oh-my-openagent"
       }
     ],
     "recentActivity": [
       {
+        "name": "Claude-BugHunter",
+        "updatedAt": "2026-11-26T07:16:00Z",
+        "url": "https://github.com/elementalsouls/Claude-BugHunter"
+      },
+      {
         "name": "claude-mem",
-        "updatedAt": "2026-11-25T07:22:08Z",
+        "updatedAt": "2026-11-26T07:13:53Z",
         "url": "https://github.com/thedotmack/claude-mem"
       },
       {
-        "name": "Understand-Anything",
-        "updatedAt": "2026-11-25T07:21:48Z",
-        "url": "https://github.com/Egonex-AI/Understand-Anything"
+        "name": "unmistakable",
+        "updatedAt": "2026-11-26T07:13:50Z",
+        "url": "https://github.com/AntonioCardenas/unmistakable"
+      },
+      {
+        "name": "best-skills",
+        "updatedAt": "2026-11-26T07:13:28Z",
+        "url": "https://github.com/LinklyAI/best-skills"
+      },
+      {
+        "name": "MeowKit",
+        "updatedAt": "2026-11-26T07:12:17Z",
+        "url": "https://github.com/ngocsangyem/MeowKit"
+      },
+      {
+        "name": "worklog",
+        "updatedAt": "2026-11-26T07:11:13Z",
+        "url": "https://github.com/Abdoul-sudo/worklog"
+      },
+      {
+        "name": "claude-ai-music-skills",
+        "updatedAt": "2026-11-26T07:11:03Z",
+        "url": "https://github.com/bitwize-music-studio/claude-ai-music-skills"
       },
       {
         "name": "paperclip",
-        "updatedAt": "2026-11-25T07:19:41Z",
+        "updatedAt": "2026-11-26T07:10:09Z",
         "url": "https://github.com/paperclipai/paperclip"
       },
       {
-        "name": "unslop-anything",
-        "updatedAt": "2026-11-25T07:19:02Z",
-        "url": "https://github.com/erkamyaman/unslop-anything"
+        "name": "awesome-claude-video-skills",
+        "updatedAt": "2026-11-26T07:08:43Z",
+        "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
       },
       {
-        "name": "SOTA-skills",
-        "updatedAt": "2026-11-25T07:14:21Z",
-        "url": "https://github.com/martinholovsky/SOTA-skills"
-      },
-      {
-        "name": "planning-with-files",
-        "updatedAt": "2026-11-25T07:13:38Z",
-        "url": "https://github.com/OthmanAdi/planning-with-files"
-      },
-      {
-        "name": "pstack-claude",
-        "updatedAt": "2026-11-25T07:11:03Z",
-        "url": "https://github.com/michael-denyer/pstack-claude"
-      },
-      {
-        "name": "tokendoctor",
-        "updatedAt": "2026-11-25T07:10:42Z",
-        "url": "https://github.com/localixai/tokendoctor"
-      },
-      {
-        "name": "claude-architect-exam-guide",
-        "updatedAt": "2026-11-25T07:09:33Z",
-        "url": "https://github.com/utkarsh1agarwal/claude-architect-exam-guide"
-      },
-      {
-        "name": "skills",
-        "updatedAt": "2026-11-25T07:09:01Z",
-        "url": "https://github.com/anthropics/skills"
+        "name": "dislop",
+        "updatedAt": "2026-11-26T07:08:03Z",
+        "url": "https://github.com/dislop-ai/dislop"
       }
     ]
   },
@@ -155,33 +155,33 @@
     {
       "id": "development",
       "name": "Development Tools",
-      "count": 1257
+      "count": 1294
     },
     {
       "id": "productivity",
       "name": "Productivity",
-      "count": 318
+      "count": 328
     },
     {
       "id": "ai-ml",
       "name": "AI & Machine Learning",
-      "count": 826
+      "count": 848
     },
     {
       "id": "design",
       "name": "Design & Creative",
-      "count": 145
+      "count": 155
     },
     {
       "id": "data",
       "name": "Data & Analytics",
-      "count": 84
+      "count": 88
     },
     {
       "id": "utilities",
       "name": "Utilities",
-      "count": 58
+      "count": 60
     }
   ],
-  "lastUpdated": "2026-11-25T07:35:50.100Z"
+  "lastUpdated": "2026-11-26T07:29:41.398Z"
 }
