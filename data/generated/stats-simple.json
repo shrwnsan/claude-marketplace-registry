@@ -1,36 +1,36 @@
 {
-  "totalMarketplaces": 2636,
+  "totalMarketplaces": 2694,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-11-26T07:29:41.398Z",
+  "lastUpdated": "2026-11-27T07:28:51.985Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 941
-    },
-    {
-      "language": "TypeScript",
-      "count": 421
+      "count": 958
     },
     {
       "language": "JavaScript",
-      "count": 420
+      "count": 433
+    },
+    {
+      "language": "TypeScript",
+      "count": 427
     },
     {
       "language": "Unknown",
-      "count": 345
+      "count": 353
     },
     {
       "language": "Shell",
-      "count": 190
+      "count": 194
     },
     {
       "language": "HTML",
-      "count": 138
+      "count": 143
     },
     {
       "language": "Rust",
-      "count": 47
+      "count": 49
     },
     {
       "language": "Go",
@@ -53,7 +53,7 @@
     },
     {
       "name": "skills",
-      "stars": 200674,
+      "stars": 201167,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "name": "paperclip",
-      "stars": 117158,
+      "stars": 117445,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -83,70 +83,70 @@
     },
     {
       "name": "career-ops",
-      "stars": 84488,
+      "stars": 85111,
       "url": "https://github.com/career-ops-hq/career-ops"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 80334,
+      "stars": 80412,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 71127,
+      "stars": 71149,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     }
   ],
   "recentActivity": [
     {
+      "name": "career-ops",
+      "updatedAt": "2026-11-27T07:12:44Z",
+      "url": "https://github.com/career-ops-hq/career-ops"
+    },
+    {
       "name": "Claude-BugHunter",
-      "updatedAt": "2026-11-26T07:16:00Z",
+      "updatedAt": "2026-11-27T07:11:43Z",
       "url": "https://github.com/elementalsouls/Claude-BugHunter"
     },
     {
-      "name": "claude-mem",
-      "updatedAt": "2026-11-26T07:13:53Z",
-      "url": "https://github.com/thedotmack/claude-mem"
-    },
-    {
-      "name": "unmistakable",
-      "updatedAt": "2026-11-26T07:13:50Z",
-      "url": "https://github.com/AntonioCardenas/unmistakable"
-    },
-    {
-      "name": "best-skills",
-      "updatedAt": "2026-11-26T07:13:28Z",
-      "url": "https://github.com/LinklyAI/best-skills"
-    },
-    {
-      "name": "MeowKit",
-      "updatedAt": "2026-11-26T07:12:17Z",
-      "url": "https://github.com/ngocsangyem/MeowKit"
-    },
-    {
-      "name": "worklog",
-      "updatedAt": "2026-11-26T07:11:13Z",
-      "url": "https://github.com/Abdoul-sudo/worklog"
-    },
-    {
-      "name": "claude-ai-music-skills",
-      "updatedAt": "2026-11-26T07:11:03Z",
-      "url": "https://github.com/bitwize-music-studio/claude-ai-music-skills"
-    },
-    {
-      "name": "paperclip",
-      "updatedAt": "2026-11-26T07:10:09Z",
-      "url": "https://github.com/paperclipai/paperclip"
-    },
-    {
       "name": "awesome-claude-video-skills",
-      "updatedAt": "2026-11-26T07:08:43Z",
+      "updatedAt": "2026-11-27T07:11:32Z",
       "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
     },
     {
-      "name": "dislop",
-      "updatedAt": "2026-11-26T07:08:03Z",
-      "url": "https://github.com/dislop-ai/dislop"
+      "name": "paperclip",
+      "updatedAt": "2026-11-27T07:10:42Z",
+      "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+      "name": "shingle",
+      "updatedAt": "2026-11-27T07:09:29Z",
+      "url": "https://github.com/OneLab-X/shingle"
+    },
+    {
+      "name": "stickman-video-director",
+      "updatedAt": "2026-11-27T07:07:34Z",
+      "url": "https://github.com/kaomei/stickman-video-director"
+    },
+    {
+      "name": "claude-code-token-optimization",
+      "updatedAt": "2026-11-27T07:06:27Z",
+      "url": "https://github.com/khasky/claude-code-token-optimization"
+    },
+    {
+      "name": "skills",
+      "updatedAt": "2026-11-27T07:06:16Z",
+      "url": "https://github.com/wondelai/skills"
+    },
+    {
+      "name": "oh-my-openagent",
+      "updatedAt": "2026-11-27T07:03:24Z",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent"
+    },
+    {
+      "name": "awesome-agents",
+      "updatedAt": "2026-11-27T06:59:20Z",
+      "url": "https://github.com/jyjyxt/awesome-agents"
     }
   ]
 }

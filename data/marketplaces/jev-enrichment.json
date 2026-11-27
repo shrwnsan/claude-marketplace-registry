@@ -1,6 +1,6 @@
 {
   "model": "jev-1.14.0",
-  "generatedAt": "2026-11-26T07:29:26.975Z",
+  "generatedAt": "2026-11-27T07:28:32.032Z",
   "entries": {
     "50709152": {
       "category": "none",
@@ -697,6 +697,11 @@
       "categoryConfidence": 0.88,
       "isMarketplace": 0.13
     },
+    "1164474371": {
+      "category": "none",
+      "categoryConfidence": 0.65,
+      "isMarketplace": 0.39
+    },
     "1164651475": {
       "category": "automation",
       "categoryConfidence": 0.46,
@@ -1357,6 +1362,11 @@
       "categoryConfidence": 0.96,
       "isMarketplace": 0.21
     },
+    "1223626037": {
+      "category": "devtools",
+      "categoryConfidence": 0.37,
+      "isMarketplace": 0.66
+    },
     "1223827138": {
       "category": "skills",
       "categoryConfidence": 1,
@@ -1541,6 +1551,11 @@
       "category": "devtools",
       "categoryConfidence": 0.69,
       "isMarketplace": 0.04
+    },
+    "1244016181": {
+      "category": "none",
+      "categoryConfidence": 0.6,
+      "isMarketplace": 0.3
     },
     "1245221146": {
       "category": "skills",
@@ -1852,6 +1867,11 @@
       "categoryConfidence": 0.51,
       "isMarketplace": 0.18
     },
+    "1286688352": {
+      "category": "agents",
+      "categoryConfidence": 0.81,
+      "isMarketplace": 0.15
+    },
     "1288431722": {
       "category": "skills",
       "categoryConfidence": 1,
@@ -2091,6 +2111,11 @@
       "category": "devtools",
       "categoryConfidence": 0.94,
       "isMarketplace": 0.04
+    },
+    "1321935392": {
+      "category": "skills",
+      "categoryConfidence": 0.99,
+      "isMarketplace": 0.18
     },
     "1323419190": {
       "category": "skills",
@@ -2947,6 +2972,11 @@
       "categoryConfidence": 0.25,
       "isMarketplace": 0.05
     },
+    "1445797135": {
+      "category": "automation",
+      "categoryConfidence": 0.23,
+      "isMarketplace": 0.1
+    },
     "1446943244": {
       "category": "agents",
       "categoryConfidence": 0.87,
@@ -3011,6 +3041,26 @@
       "category": "devtools",
       "categoryConfidence": 0.25,
       "isMarketplace": 0.06
+    },
+    "1471479018": {
+      "category": "devtools",
+      "categoryConfidence": 0.43,
+      "isMarketplace": 0.17
+    },
+    "1472010776": {
+      "category": "none",
+      "categoryConfidence": 0.96,
+      "isMarketplace": 0.04
+    },
+    "1473348968": {
+      "category": "none",
+      "categoryConfidence": 0.29,
+      "isMarketplace": 0.28
+    },
+    "1473605386": {
+      "category": "agents",
+      "categoryConfidence": 0.68,
+      "isMarketplace": 0.24
     }
   }
 }

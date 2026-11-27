@@ -1,33 +1,32 @@
 {
-  "totalFound": 2636,
-  "withManifest": 833,
-  "lastUpdated": "2026-11-26T07:28:54.829Z",
+  "totalFound": 2694,
+  "withManifest": 844,
+  "lastUpdated": "2026-11-27T07:27:47.100Z",
   "searchQuery": "",
   "languages": {
-    "Python": 941,
-    "Shell": 190,
-    "TypeScript": 421,
-    "JavaScript": 420,
-    "Rust": 47,
+    "Python": 958,
+    "Shell": 194,
+    "TypeScript": 427,
+    "JavaScript": 433,
+    "Rust": 49,
     "Go": 47,
-    "Unknown": 345,
-    "HTML": 138,
+    "Unknown": 353,
+    "HTML": 143,
     "AMPL": 1,
     "C++": 5,
     "PHP": 3,
     "Swift": 10,
-    "Jupyter Notebook": 3,
+    "Jupyter Notebook": 6,
+    "Ruby": 2,
     "Perl": 1,
     "C#": 5,
     "Astro": 4,
     "Svelte": 2,
     "PowerShell": 11,
-    "Kotlin": 3,
+    "Markdown": 6,
     "Java": 8,
     "Typst": 1,
     "Makefile": 2,
-    "Ruby": 2,
-    "Markdown": 6,
     "SCSS": 1,
     "CSS": 4,
     "Gleam": 2,
@@ -36,6 +35,7 @@
     "Lua": 1,
     "Clojure": 1,
     "jq": 1,
+    "Kotlin": 3,
     "Gherkin": 1,
     "MDX": 2,
     "Batchfile": 1,
@@ -50,7 +50,7 @@
     },
     {
       "name": "skills",
-      "stars": 200674,
+      "stars": 201167,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "name": "paperclip",
-      "stars": 117158,
+      "stars": 117445,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
@@ -80,17 +80,17 @@
     },
     {
       "name": "career-ops",
-      "stars": 84488,
+      "stars": 85111,
       "url": "https://github.com/career-ops-hq/career-ops"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 80334,
+      "stars": 80412,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 71127,
+      "stars": 71149,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     }
   ]
