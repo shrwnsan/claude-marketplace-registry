@@ -1,32 +1,32 @@
 {
-  "totalMarketplaces": 2694,
+  "totalMarketplaces": 2746,
   "totalPlugins": 7736,
   "validPlugins": 7736,
-  "lastUpdated": "2026-11-27T07:28:51.985Z",
+  "lastUpdated": "2026-11-28T07:00:23.202Z",
   "topLanguages": [
     {
       "language": "Python",
-      "count": 958
+      "count": 979
     },
     {
       "language": "JavaScript",
-      "count": 433
+      "count": 442
     },
     {
       "language": "TypeScript",
-      "count": 427
+      "count": 440
     },
     {
       "language": "Unknown",
-      "count": 353
+      "count": 358
     },
     {
       "language": "Shell",
-      "count": 194
+      "count": 195
     },
     {
       "language": "HTML",
-      "count": 143
+      "count": 145
     },
     {
       "language": "Rust",
@@ -37,12 +37,12 @@
       "count": 47
     },
     {
-      "language": "PowerShell",
+      "language": "Swift",
       "count": 11
     },
     {
-      "language": "Swift",
-      "count": 10
+      "language": "PowerShell",
+      "count": 11
     }
   ],
   "topMarketplaces": [
@@ -53,7 +53,7 @@
     },
     {
       "name": "skills",
-      "stars": 201167,
+      "stars": 201614,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -63,17 +63,17 @@
     },
     {
       "name": "claude-mem",
-      "stars": 119831,
+      "stars": 120261,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "paperclip",
-      "stars": 117445,
+      "stars": 117650,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "archify",
-      "stars": 97556,
+      "stars": 101047,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
@@ -83,70 +83,70 @@
     },
     {
       "name": "career-ops",
-      "stars": 85111,
+      "stars": 85262,
       "url": "https://github.com/career-ops-hq/career-ops"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 80412,
+      "stars": 80477,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 71149,
+      "stars": 71159,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     }
   ],
   "recentActivity": [
     {
-      "name": "career-ops",
-      "updatedAt": "2026-11-27T07:12:44Z",
-      "url": "https://github.com/career-ops-hq/career-ops"
+      "name": "archify",
+      "updatedAt": "2026-11-28T06:45:30Z",
+      "url": "https://github.com/tt-a1i/archify"
     },
     {
-      "name": "Claude-BugHunter",
-      "updatedAt": "2026-11-27T07:11:43Z",
-      "url": "https://github.com/elementalsouls/Claude-BugHunter"
-    },
-    {
-      "name": "awesome-claude-video-skills",
-      "updatedAt": "2026-11-27T07:11:32Z",
-      "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
+      "name": "foster",
+      "updatedAt": "2026-11-28T06:45:13Z",
+      "url": "https://github.com/foster-oss/foster"
     },
     {
       "name": "paperclip",
-      "updatedAt": "2026-11-27T07:10:42Z",
+      "updatedAt": "2026-11-28T06:43:53Z",
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
-      "name": "shingle",
-      "updatedAt": "2026-11-27T07:09:29Z",
-      "url": "https://github.com/OneLab-X/shingle"
+      "name": "Claude-BugHunter",
+      "updatedAt": "2026-11-28T06:43:48Z",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter"
     },
     {
-      "name": "stickman-video-director",
-      "updatedAt": "2026-11-27T07:07:34Z",
-      "url": "https://github.com/kaomei/stickman-video-director"
+      "name": "claude-mem",
+      "updatedAt": "2026-11-28T06:43:32Z",
+      "url": "https://github.com/thedotmack/claude-mem"
     },
     {
-      "name": "claude-code-token-optimization",
-      "updatedAt": "2026-11-27T07:06:27Z",
-      "url": "https://github.com/khasky/claude-code-token-optimization"
+      "name": "Papermorph",
+      "updatedAt": "2026-11-28T06:43:05Z",
+      "url": "https://github.com/DozenTwelve/Papermorph"
+    },
+    {
+      "name": "final-round-ai-desktop",
+      "updatedAt": "2026-11-28T06:41:05Z",
+      "url": "https://github.com/thebodytheory01-commits/final-round-ai-desktop"
+    },
+    {
+      "name": "career-ops",
+      "updatedAt": "2026-11-28T06:40:07Z",
+      "url": "https://github.com/career-ops-hq/career-ops"
+    },
+    {
+      "name": "awesome-claude-video-skills",
+      "updatedAt": "2026-11-28T06:39:51Z",
+      "url": "https://github.com/zhuyansen/awesome-claude-video-skills"
     },
     {
       "name": "skills",
-      "updatedAt": "2026-11-27T07:06:16Z",
+      "updatedAt": "2026-11-28T06:32:25Z",
       "url": "https://github.com/wondelai/skills"
-    },
-    {
-      "name": "oh-my-openagent",
-      "updatedAt": "2026-11-27T07:03:24Z",
-      "url": "https://github.com/code-yeongyu/oh-my-openagent"
-    },
-    {
-      "name": "awesome-agents",
-      "updatedAt": "2026-11-27T06:59:20Z",
-      "url": "https://github.com/jyjyxt/awesome-agents"
     }
   ]
 }

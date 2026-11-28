@@ -1,32 +1,33 @@
 {
-  "totalFound": 2694,
-  "withManifest": 844,
-  "lastUpdated": "2026-11-27T07:27:47.100Z",
+  "totalFound": 2746,
+  "withManifest": 843,
+  "lastUpdated": "2026-11-28T06:59:28.091Z",
   "searchQuery": "",
   "languages": {
-    "Python": 958,
-    "Shell": 194,
-    "TypeScript": 427,
-    "JavaScript": 433,
+    "Python": 979,
+    "Shell": 195,
+    "TypeScript": 440,
     "Rust": 49,
     "Go": 47,
-    "Unknown": 353,
-    "HTML": 143,
+    "JavaScript": 442,
+    "Unknown": 358,
+    "HTML": 145,
     "AMPL": 1,
     "C++": 5,
     "PHP": 3,
-    "Swift": 10,
+    "Swift": 11,
     "Jupyter Notebook": 6,
-    "Ruby": 2,
+    "Ruby": 3,
     "Perl": 1,
     "C#": 5,
-    "Astro": 4,
+    "Astro": 3,
     "Svelte": 2,
     "PowerShell": 11,
-    "Markdown": 6,
+    "Kotlin": 3,
     "Java": 8,
     "Typst": 1,
     "Makefile": 2,
+    "Markdown": 6,
     "SCSS": 1,
     "CSS": 4,
     "Gleam": 2,
@@ -35,7 +36,6 @@
     "Lua": 1,
     "Clojure": 1,
     "jq": 1,
-    "Kotlin": 3,
     "Gherkin": 1,
     "MDX": 2,
     "Batchfile": 1,
@@ -50,7 +50,7 @@
     },
     {
       "name": "skills",
-      "stars": 201167,
+      "stars": 201614,
       "url": "https://github.com/anthropics/skills"
     },
     {
@@ -60,17 +60,17 @@
     },
     {
       "name": "claude-mem",
-      "stars": 119831,
+      "stars": 120261,
       "url": "https://github.com/thedotmack/claude-mem"
     },
     {
       "name": "paperclip",
-      "stars": 117445,
+      "stars": 117650,
       "url": "https://github.com/paperclipai/paperclip"
     },
     {
       "name": "archify",
-      "stars": 97556,
+      "stars": 101047,
       "url": "https://github.com/tt-a1i/archify"
     },
     {
@@ -80,17 +80,17 @@
     },
     {
       "name": "career-ops",
-      "stars": 85111,
+      "stars": 85262,
       "url": "https://github.com/career-ops-hq/career-ops"
     },
     {
       "name": "awesome-claude-skills",
-      "stars": 80412,
+      "stars": 80477,
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
       "name": "oh-my-openagent",
-      "stars": 71149,
+      "stars": 71159,
       "url": "https://github.com/code-yeongyu/oh-my-openagent"
     }
   ]
