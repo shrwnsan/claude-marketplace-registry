@@ -1,10 +1,10 @@
 {
   "source": "skills.sh (Gen / Socket / Snyk)",
-  "generatedAt": "2026-11-27T07:28:50.190Z",
+  "generatedAt": "2026-11-28T07:00:21.000Z",
   "entries": {
     "170797156": {
       "repo": "reactive/data-client",
-      "auditedAt": "2026-11-27T07:28:38.796Z",
+      "auditedAt": "2026-11-28T07:00:07.741Z",
       "skills": {
         "data-client-setup": {
           "ath": {
@@ -24,7 +24,7 @@
     },
     "787362890": {
       "repo": "dahlia/logtape",
-      "auditedAt": "2026-11-27T07:28:39.115Z",
+      "auditedAt": "2026-11-28T07:00:07.975Z",
       "skills": {
         "logtape": {
           "ath": {
@@ -44,7 +44,7 @@
     },
     "1061953414": {
       "repo": "anthropics/skills",
-      "auditedAt": "2026-11-27T07:28:34.285Z",
+      "auditedAt": "2026-11-28T07:00:05.308Z",
       "skills": {
         "xlsx": {
           "ath": {
@@ -350,7 +350,7 @@
     },
     "1100923190": {
       "repo": "kylehughes/the-unofficial-swift-programming-language-skill",
-      "auditedAt": "2026-11-27T07:28:43.514Z",
+      "auditedAt": "2026-11-28T07:00:14.859Z",
       "skills": {
         "programming-swift": {
           "ath": {
@@ -370,7 +370,7 @@
     },
     "1137485434": {
       "repo": "softaworks/agent-toolkit",
-      "auditedAt": "2026-11-27T07:28:38.493Z",
+      "auditedAt": "2026-11-28T07:00:07.396Z",
       "skills": {
         "codex": {
           "ath": {
@@ -656,7 +656,7 @@
     },
     "1145158024": {
       "repo": "wondelai/skills",
-      "auditedAt": "2026-11-27T07:28:37.176Z",
+      "auditedAt": "2026-11-28T07:00:06.527Z",
       "skills": {
         "jobs-to-be-done": {
           "ath": {
@@ -942,7 +942,7 @@
     },
     "1202576122": {
       "repo": "Aperivue/medsci-skills",
-      "auditedAt": "2026-11-27T07:28:41.439Z",
+      "auditedAt": "2026-11-28T07:00:10.456Z",
       "skills": {
         "fulltext-retrieval": {
           "ath": {
@@ -1419,12 +1419,26 @@
             "risk": "medium"
           },
           "analyzedAt": "2026-11-25T13:19:31.730Z"
+        },
+        "replicate-study": {
+          "ath": {
+            "risk": "safe"
+          },
+          "socket": {
+            "risk": "safe",
+            "alerts": 0,
+            "score": 90
+          },
+          "snyk": {
+            "risk": "low"
+          },
+          "analyzedAt": "2026-10-04T13:28:42.522Z"
         }
       }
     },
     "1207161577": {
       "repo": "NatiCha/bunwv",
-      "auditedAt": "2026-11-27T07:28:41.809Z",
+      "auditedAt": "2026-11-28T07:00:10.715Z",
       "skills": {
         "bunwv": {
           "ath": {
@@ -1444,7 +1458,7 @@
     },
     "1209609017": {
       "repo": "event4u-app/agent-config",
-      "auditedAt": "2026-11-27T07:28:45.647Z",
+      "auditedAt": "2026-11-28T07:00:16.584Z",
       "skills": {
         "install-agent-config": {
           "ath": {
@@ -1464,7 +1478,7 @@
     },
     "1230639327": {
       "repo": "leek/agent-skills",
-      "auditedAt": "2026-11-27T07:28:46.458Z",
+      "auditedAt": "2026-11-28T07:00:18.708Z",
       "skills": {
         "architecture-satisfaction": {
           "ath": {
@@ -2212,7 +2226,7 @@
     },
     "1248751622": {
       "repo": "brycewang-stanford/AER-Skills",
-      "auditedAt": "2026-11-27T07:28:42.703Z",
+      "auditedAt": "2026-11-28T07:00:13.518Z",
       "skills": {
         "aer-workflow": {
           "ath": {
@@ -2428,7 +2442,7 @@
     },
     "1254422214": {
       "repo": "rollinsio/beyond-test-coverage",
-      "auditedAt": "2026-11-27T07:28:43.230Z",
+      "auditedAt": "2026-11-28T07:00:14.067Z",
       "skills": {
         "test-quality": {
           "ath": {
@@ -2462,7 +2476,7 @@
     },
     "1354760955": {
       "repo": "aws-samples/sample-sagemaker-marketplace-onboarding-skill",
-      "auditedAt": "2026-11-27T07:28:47.349Z",
+      "auditedAt": "2026-11-28T07:00:19.051Z",
       "skills": {
         "sagemaker-marketplace-onboarding": {
           "ath": {
@@ -2482,7 +2496,7 @@
     },
     "1398499540": {
       "repo": "harrison-ming/chuhai-skills",
-      "auditedAt": "2026-11-27T07:28:50.190Z",
+      "auditedAt": "2026-11-28T07:00:21.000Z",
       "skills": {
         "shopify-store-teardown": {
           "ath": {
